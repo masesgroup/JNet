@@ -46,57 +46,88 @@ namespace Javax.Swing.Plaf
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getNextVisualPositionFrom(javax.swing.text.JTextComponent,int,javax.swing.text.Position$Bias,int,javax.swing.text.Position$Bias[]) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getNextVisualPositionFrom(javax.swing.text.JTextComponent,int,javax.swing.text.Position$Bias,int,javax.swing.text.Position$Bias[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Javax.Swing.Text.Position.Bias"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public int GetNextVisualPositionFrom(Javax.Swing.Text.JTextComponent arg0, int arg1, Javax.Swing.Text.Position.Bias arg2, int arg3, Javax.Swing.Text.Position.Bias[] arg4)
         {
             return IExecute<int>("getNextVisualPositionFrom", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getEditorKit(javax.swing.text.JTextComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getEditorKit(javax.swing.text.JTextComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <returns><see cref="Javax.Swing.Text.EditorKit"/></returns>
         public Javax.Swing.Text.EditorKit GetEditorKit(Javax.Swing.Text.JTextComponent arg0)
         {
             return IExecute<Javax.Swing.Text.EditorKit>("getEditorKit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getRootView(javax.swing.text.JTextComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getRootView(javax.swing.text.JTextComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public Javax.Swing.Text.View GetRootView(Javax.Swing.Text.JTextComponent arg0)
         {
             return IExecute<Javax.Swing.Text.View>("getRootView", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#damageRange(javax.swing.text.JTextComponent,int,int,javax.swing.text.Position$Bias,javax.swing.text.Position$Bias)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#damageRange(javax.swing.text.JTextComponent,int,int,javax.swing.text.Position$Bias,javax.swing.text.Position$Bias)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Javax.Swing.Text.Position.Bias"/></param>
+        /// <param name="arg4"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         public void DamageRange(Javax.Swing.Text.JTextComponent arg0, int arg1, int arg2, Javax.Swing.Text.Position.Bias arg3, Javax.Swing.Text.Position.Bias arg4)
         {
             IExecute("damageRange", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#damageRange(javax.swing.text.JTextComponent,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#damageRange(javax.swing.text.JTextComponent,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void DamageRange(Javax.Swing.Text.JTextComponent arg0, int arg1, int arg2)
         {
             IExecute("damageRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#viewToModel2D(javax.swing.text.JTextComponent,java.awt.geom.Point2D,javax.swing.text.Position$Bias[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#viewToModel2D(javax.swing.text.JTextComponent,java.awt.geom.Point2D,javax.swing.text.Position$Bias[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
+        /// <returns><see langword="int"/></returns>
         public int ViewToModel2D(Javax.Swing.Text.JTextComponent arg0, Java.Awt.Geom.Point2D arg1, Javax.Swing.Text.Position.Bias[] arg2)
         {
             return IExecute<int>("viewToModel2D", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#modelToView2D(javax.swing.text.JTextComponent,int,javax.swing.text.Position$Bias) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#modelToView2D(javax.swing.text.JTextComponent,int,javax.swing.text.Position$Bias)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Java.Awt.Geom.Rectangle2D ModelToView2D(Javax.Swing.Text.JTextComponent arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("modelToView2D", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getToolTipText2D(javax.swing.text.JTextComponent,java.awt.geom.Point2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getToolTipText2D(javax.swing.text.JTextComponent,java.awt.geom.Point2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetToolTipText2D(Javax.Swing.Text.JTextComponent arg0, Java.Awt.Geom.Point2D arg1)
         {
             return IExecute<string>("getToolTipText2D", arg0, arg1);

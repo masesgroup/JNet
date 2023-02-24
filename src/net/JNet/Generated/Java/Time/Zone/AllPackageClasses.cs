@@ -25,7 +25,7 @@ namespace Java.Time.Zone
 {
     #region ZoneOffsetTransition
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html"/>
     /// </summary>
     public partial class ZoneOffsetTransition : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ZoneOffsetTransition>
     {
@@ -38,19 +38,19 @@ namespace Java.Time.Zone
         /// </summary>
         public ZoneOffsetTransition(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.zone.ZoneOffsetTransition";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -60,7 +60,7 @@ namespace Java.Time.Zone
 
     #region ZoneOffsetTransitionRule
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html"/>
     /// </summary>
     public partial class ZoneOffsetTransitionRule : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ZoneOffsetTransitionRule>
     {
@@ -73,25 +73,25 @@ namespace Java.Time.Zone
         /// </summary>
         public ZoneOffsetTransitionRule(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.zone.ZoneOffsetTransitionRule";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
         #region TimeDefinition
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html"/>
         /// </summary>
         public partial class TimeDefinition : Java.Lang.Enum
         {
@@ -104,19 +104,19 @@ namespace Java.Time.Zone
             /// </summary>
             public TimeDefinition(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.time.zone.ZoneOffsetTransitionRule$TimeDefinition";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -129,7 +129,7 @@ namespace Java.Time.Zone
 
     #region ZoneRules
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html"/>
     /// </summary>
     public partial class ZoneRules : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ZoneRules>
     {
@@ -142,19 +142,19 @@ namespace Java.Time.Zone
         /// </summary>
         public ZoneRules(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.zone.ZoneRules";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -164,13 +164,11 @@ namespace Java.Time.Zone
 
     #region ZoneRulesException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesException.html"/>
     /// </summary>
     public partial class ZoneRulesException : Java.Time.DateTimeException
     {
-        public ZoneRulesException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.time.zone.ZoneRulesException";
 
         // TODO: complete the class
@@ -180,7 +178,7 @@ namespace Java.Time.Zone
 
     #region ZoneRulesProvider
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html"/>
     /// </summary>
     public partial class ZoneRulesProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ZoneRulesProvider>
     {
@@ -193,19 +191,19 @@ namespace Java.Time.Zone
         /// </summary>
         public ZoneRulesProvider(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.zone.ZoneRulesProvider";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class

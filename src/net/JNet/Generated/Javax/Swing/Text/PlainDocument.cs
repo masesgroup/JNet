@@ -30,8 +30,9 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainDocument.html#<init>(javax.swing.text.AbstractDocument$Content)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainDocument.html#%3Cinit%3E(javax.swing.text.AbstractDocument$Content)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument.Content"/></param>
         public PlainDocument(Javax.Swing.Text.AbstractDocument.Content arg0)
             : base(arg0)
         {
@@ -45,11 +46,11 @@ namespace Javax.Swing.Text
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainDocument.html#lineLimitAttribute
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainDocument.html#lineLimitAttribute"/>
         /// </summary>
         public static string lineLimitAttribute => Clazz.GetField<string>("lineLimitAttribute");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainDocument.html#tabSizeAttribute
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainDocument.html#tabSizeAttribute"/>
         /// </summary>
         public static string tabSizeAttribute => Clazz.GetField<string>("tabSizeAttribute");
         

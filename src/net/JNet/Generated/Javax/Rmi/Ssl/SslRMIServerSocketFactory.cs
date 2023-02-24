@@ -30,15 +30,24 @@ namespace Javax.Rmi.Ssl
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#<init>(java.lang.String[],java.lang.String[],boolean) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#%3Cinit%3E(java.lang.String[],java.lang.String[],boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public SslRMIServerSocketFactory(string[] arg0, string[] arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#<init>(javax.net.ssl.SSLContext,java.lang.String[],java.lang.String[],boolean) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#%3Cinit%3E(javax.net.ssl.SSLContext,java.lang.String[],java.lang.String[],boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLContext"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public SslRMIServerSocketFactory(Javax.Net.Ssl.SSLContext arg0, string[] arg1, string[] arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,6 +56,9 @@ namespace Javax.Rmi.Ssl
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Rmi.Ssl.SslRMIServerSocketFactory"/> to <see cref="Java.Rmi.Server.RMIServerSocketFactory"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Server.RMIServerSocketFactory(Javax.Rmi.Ssl.SslRMIServerSocketFactory t) => t.Cast<Java.Rmi.Server.RMIServerSocketFactory>();
         
         #endregion
@@ -61,29 +73,32 @@ namespace Javax.Rmi.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#getEnabledCipherSuites() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#getEnabledCipherSuites()"/> 
         /// </summary>
         public string[] EnabledCipherSuites
         {
             get { return IExecuteArray<string>("getEnabledCipherSuites"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#getEnabledProtocols() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#getEnabledProtocols()"/> 
         /// </summary>
         public string[] EnabledProtocols
         {
             get { return IExecuteArray<string>("getEnabledProtocols"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#getNeedClientAuth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#getNeedClientAuth()"/> 
         /// </summary>
         public bool NeedClientAuth
         {
             get { return IExecute<bool>("getNeedClientAuth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#createServerSocket(int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#createServerSocket(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Net.ServerSocket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.ServerSocket CreateServerSocket(int arg0)
         {
             return IExecute<Java.Net.ServerSocket>("createServerSocket", arg0);

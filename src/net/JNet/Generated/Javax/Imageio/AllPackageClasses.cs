@@ -25,13 +25,11 @@ namespace Javax.Imageio
 {
     #region IIOException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOException.html"/>
     /// </summary>
     public partial class IIOException : Java.Io.IOException
     {
-        public IIOException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "javax.imageio.IIOException";
 
         // TODO: complete the class
@@ -41,7 +39,7 @@ namespace Javax.Imageio
 
     #region IIOImage
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOImage.html"/>
     /// </summary>
     public partial class IIOImage : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOImage>
     {
@@ -54,19 +52,19 @@ namespace Javax.Imageio
         /// </summary>
         public IIOImage(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "javax.imageio.IIOImage";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -76,7 +74,7 @@ namespace Javax.Imageio
 
     #region IIOParam
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html"/>
     /// </summary>
     public partial class IIOParam : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOParam>
     {
@@ -89,19 +87,19 @@ namespace Javax.Imageio
         /// </summary>
         public IIOParam(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "javax.imageio.IIOParam";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -111,7 +109,7 @@ namespace Javax.Imageio
 
     #region IIOParamController
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParamController.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParamController.html"/>
     /// </summary>
     public partial class IIOParamController : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOParamController>
     {
@@ -124,19 +122,19 @@ namespace Javax.Imageio
         /// </summary>
         public IIOParamController(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "javax.imageio.IIOParamController";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -146,7 +144,7 @@ namespace Javax.Imageio
 
     #region ImageIO
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html"/>
     /// </summary>
     public partial class ImageIO : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ImageIO>
     {
@@ -159,19 +157,19 @@ namespace Javax.Imageio
         /// </summary>
         public ImageIO(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "javax.imageio.ImageIO";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -181,7 +179,7 @@ namespace Javax.Imageio
 
     #region ImageReader
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html"/>
     /// </summary>
     public partial class ImageReader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ImageReader>
     {
@@ -194,19 +192,19 @@ namespace Javax.Imageio
         /// </summary>
         public ImageReader(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "javax.imageio.ImageReader";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -216,7 +214,7 @@ namespace Javax.Imageio
 
     #region ImageReadParam
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html"/>
     /// </summary>
     public partial class ImageReadParam : Javax.Imageio.IIOParam
     {
@@ -229,19 +227,19 @@ namespace Javax.Imageio
         /// </summary>
         public ImageReadParam(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "javax.imageio.ImageReadParam";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -251,7 +249,7 @@ namespace Javax.Imageio
 
     #region ImageTranscoder
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTranscoder.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTranscoder.html"/>
     /// </summary>
     public partial class ImageTranscoder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ImageTranscoder>
     {
@@ -264,19 +262,19 @@ namespace Javax.Imageio
         /// </summary>
         public ImageTranscoder(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "javax.imageio.ImageTranscoder";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -286,7 +284,7 @@ namespace Javax.Imageio
 
     #region ImageTypeSpecifier
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html"/>
     /// </summary>
     public partial class ImageTypeSpecifier : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ImageTypeSpecifier>
     {
@@ -299,19 +297,19 @@ namespace Javax.Imageio
         /// </summary>
         public ImageTypeSpecifier(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "javax.imageio.ImageTypeSpecifier";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -321,7 +319,7 @@ namespace Javax.Imageio
 
     #region ImageWriteParam
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html"/>
     /// </summary>
     public partial class ImageWriteParam : Javax.Imageio.IIOParam
     {
@@ -334,19 +332,19 @@ namespace Javax.Imageio
         /// </summary>
         public ImageWriteParam(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "javax.imageio.ImageWriteParam";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -356,7 +354,7 @@ namespace Javax.Imageio
 
     #region ImageWriter
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html"/>
     /// </summary>
     public partial class ImageWriter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ImageWriter>
     {
@@ -369,19 +367,19 @@ namespace Javax.Imageio
         /// </summary>
         public ImageWriter(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "javax.imageio.ImageWriter";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class

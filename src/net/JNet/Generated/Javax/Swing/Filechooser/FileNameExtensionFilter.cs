@@ -30,8 +30,10 @@ namespace Javax.Swing.Filechooser
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileNameExtensionFilter.html#<init>(java.lang.String,java.lang.String...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileNameExtensionFilter.html#%3Cinit%3E(java.lang.String,java.lang.String...)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public FileNameExtensionFilter(string arg0, params string[] arg1)
             : base(arg0)
         {
@@ -53,7 +55,7 @@ namespace Javax.Swing.Filechooser
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileNameExtensionFilter.html#getExtensions() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileNameExtensionFilter.html#getExtensions()"/> 
         /// </summary>
         public string[] Extensions
         {

@@ -46,28 +46,28 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getContentPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#setContentPane(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getContentPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#setContentPane(java.awt.Container)"/>
         /// </summary>
         public Java.Awt.Container ContentPane
         {
             get { return IExecute<Java.Awt.Container>("getContentPane"); } set { IExecute("setContentPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getGlassPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#setGlassPane(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getGlassPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#setGlassPane(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component GlassPane
         {
             get { return IExecute<Java.Awt.Component>("getGlassPane"); } set { IExecute("setGlassPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getLayeredPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#setLayeredPane(javax.swing.JLayeredPane)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getLayeredPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#setLayeredPane(javax.swing.JLayeredPane)"/>
         /// </summary>
         public Javax.Swing.JLayeredPane LayeredPane
         {
             get { return IExecute<Javax.Swing.JLayeredPane>("getLayeredPane"); } set { IExecute("setLayeredPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getRootPane() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getRootPane()"/> 
         /// </summary>
         public Javax.Swing.JRootPane RootPane
         {

@@ -30,15 +30,20 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#<init>(int,boolean) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#%3Cinit%3E(int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public List(int arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#<init>(int) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public List(int arg0)
             : base(arg0)
         {
@@ -47,7 +52,13 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.List"/> to <see cref="Java.Awt.ItemSelectable"/>
+        /// </summary>
         public static implicit operator Java.Awt.ItemSelectable(Java.Awt.List t) => t.Cast<Java.Awt.ItemSelectable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.List"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.List t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
@@ -62,211 +73,236 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getActionListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getActionListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ActionListener[] ActionListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.ActionListener>("getActionListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItemCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItemCount()"/> 
         /// </summary>
         public int ItemCount
         {
             get { return IExecute<int>("getItemCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItemListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItemListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ItemListener[] ItemListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.ItemListener>("getItemListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItems() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItems()"/> 
         /// </summary>
         public string[] Items
         {
             get { return IExecuteArray<string>("getItems"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getRows() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getRows()"/> 
         /// </summary>
         public int Rows
         {
             get { return IExecute<int>("getRows"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedIndex()"/> 
         /// </summary>
         public int SelectedIndex
         {
             get { return IExecute<int>("getSelectedIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedIndexes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedIndexes()"/> 
         /// </summary>
         public int[] SelectedIndexes
         {
             get { return IExecuteArray<int>("getSelectedIndexes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedItem() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedItem()"/> 
         /// </summary>
         public string SelectedItem
         {
             get { return IExecute<string>("getSelectedItem"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedItems() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedItems()"/> 
         /// </summary>
         public string[] SelectedItems
         {
             get { return IExecuteArray<string>("getSelectedItems"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedObjects() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getSelectedObjects()"/> 
         /// </summary>
         public object[] SelectedObjects
         {
             get { return IExecuteArray<object>("getSelectedObjects"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getVisibleIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getVisibleIndex()"/> 
         /// </summary>
         public int VisibleIndex
         {
             get { return IExecute<int>("getVisibleIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#isIndexSelected(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#isIndexSelected(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsIndexSelected(int arg0)
         {
             return IExecute<bool>("isIndexSelected", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#isMultipleMode()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#isMultipleMode()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMultipleMode()
         {
             return IExecute<bool>("isMultipleMode");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getMinimumSize(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getMinimumSize(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetMinimumSize(int arg0)
         {
             return IExecute<Java.Awt.Dimension>("getMinimumSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getPreferredSize(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getPreferredSize(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetPreferredSize(int arg0)
         {
             return IExecute<Java.Awt.Dimension>("getPreferredSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItem(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#getItem(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetItem(int arg0)
         {
             return IExecute<string>("getItem", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#addActionListener(java.awt.event.ActionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#addActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecute("addActionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#addItemListener(java.awt.event.ItemListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#addItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
             IExecute("addItemListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#deselect(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#deselect(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Deselect(int arg0)
         {
             IExecute("deselect", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#makeVisible(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#makeVisible(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void MakeVisible(int arg0)
         {
             IExecute("makeVisible", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#remove(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#remove(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void Remove(string arg0)
         {
             IExecute("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#removeActionListener(java.awt.event.ActionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#removeActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecute("removeActionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#removeItemListener(java.awt.event.ItemListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#removeItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
             IExecute("removeItemListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#replaceItem(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#replaceItem(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void ReplaceItem(string arg0, int arg1)
         {
             IExecute("replaceItem", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#add(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#add(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Add(string arg0, int arg1)
         {
             IExecute("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#add(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#add(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void Add(string arg0)
         {
             IExecute("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#remove(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#remove(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Remove(int arg0)
         {
             IExecute("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#removeAll()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#removeAll()"/>
         /// </summary>
         public void RemoveAll()
         {
             IExecute("removeAll");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#select(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#select(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Select(int arg0)
         {
             IExecute("select", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#setMultipleMode(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/List.html#setMultipleMode(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetMultipleMode(bool arg0)
         {
             IExecute("setMultipleMode", arg0);

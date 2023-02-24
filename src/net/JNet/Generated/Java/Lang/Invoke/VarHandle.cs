@@ -42,35 +42,35 @@ namespace Java.Lang.Invoke
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#acquireFence()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#acquireFence()"/>
         /// </summary>
         public static void AcquireFence()
         {
             SExecute("acquireFence");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#fullFence()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#fullFence()"/>
         /// </summary>
         public static void FullFence()
         {
             SExecute("fullFence");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#loadLoadFence()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#loadLoadFence()"/>
         /// </summary>
         public static void LoadLoadFence()
         {
             SExecute("loadLoadFence");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#releaseFence()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#releaseFence()"/>
         /// </summary>
         public static void ReleaseFence()
         {
             SExecute("releaseFence");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#storeStoreFence()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#storeStoreFence()"/>
         /// </summary>
         public static void StoreStoreFence()
         {
@@ -81,218 +81,276 @@ namespace Java.Lang.Invoke
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndSet(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndSet(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CompareAndSet(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute<bool>("compareAndSet"); else return IExecute<bool>("compareAndSet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSet(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSet(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSet(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute<bool>("weakCompareAndSet"); else return IExecute<bool>("weakCompareAndSet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetAcquire(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetAcquire(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSetAcquire(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute<bool>("weakCompareAndSetAcquire"); else return IExecute<bool>("weakCompareAndSetAcquire", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetPlain(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSetPlain(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute<bool>("weakCompareAndSetPlain"); else return IExecute<bool>("weakCompareAndSetPlain", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetRelease(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#weakCompareAndSetRelease(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSetRelease(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute<bool>("weakCompareAndSetRelease"); else return IExecute<bool>("weakCompareAndSetRelease", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndExchange(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndExchange(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object CompareAndExchange(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("compareAndExchange"); else return IExecute("compareAndExchange", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndExchangeAcquire(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndExchangeAcquire(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object CompareAndExchangeAcquire(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("compareAndExchangeAcquire"); else return IExecute("compareAndExchangeAcquire", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndExchangeRelease(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndExchangeRelease(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object CompareAndExchangeRelease(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("compareAndExchangeRelease"); else return IExecute("compareAndExchangeRelease", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#get(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#get(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Get(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("get"); else return IExecute("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAcquire(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAcquire(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAcquire(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAcquire"); else return IExecute("getAcquire", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndAdd(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndAdd(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndAdd(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndAdd"); else return IExecute("getAndAdd", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndAddAcquire(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndAddAcquire(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndAddAcquire(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndAddAcquire"); else return IExecute("getAndAddAcquire", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndAddRelease(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndAddRelease(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndAddRelease(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndAddRelease"); else return IExecute("getAndAddRelease", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAnd(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAnd(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndBitwiseAnd(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndBitwiseAnd"); else return IExecute("getAndBitwiseAnd", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAndAcquire(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAndAcquire(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndBitwiseAndAcquire(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndBitwiseAndAcquire"); else return IExecute("getAndBitwiseAndAcquire", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAndRelease(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseAndRelease(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndBitwiseAndRelease(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndBitwiseAndRelease"); else return IExecute("getAndBitwiseAndRelease", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOr(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOr(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndBitwiseOr(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndBitwiseOr"); else return IExecute("getAndBitwiseOr", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOrAcquire(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOrAcquire(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndBitwiseOrAcquire(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndBitwiseOrAcquire"); else return IExecute("getAndBitwiseOrAcquire", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOrRelease(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseOrRelease(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndBitwiseOrRelease(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndBitwiseOrRelease"); else return IExecute("getAndBitwiseOrRelease", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXor(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXor(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndBitwiseXor(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndBitwiseXor"); else return IExecute("getAndBitwiseXor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXorAcquire(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXorAcquire(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndBitwiseXorAcquire(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndBitwiseXorAcquire"); else return IExecute("getAndBitwiseXorAcquire", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXorRelease(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndBitwiseXorRelease(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndBitwiseXorRelease(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndBitwiseXorRelease"); else return IExecute("getAndBitwiseXorRelease", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndSet(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndSet(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndSet(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndSet"); else return IExecute("getAndSet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndSetAcquire(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndSetAcquire(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndSetAcquire(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndSetAcquire"); else return IExecute("getAndSetAcquire", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndSetRelease(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getAndSetRelease(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAndSetRelease(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getAndSetRelease"); else return IExecute("getAndSetRelease", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getOpaque(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getOpaque(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetOpaque(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getOpaque"); else return IExecute("getOpaque", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getVolatile(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#getVolatile(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetVolatile(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("getVolatile"); else return IExecute("getVolatile", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#set(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#set(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
         public void Set(params object[] arg0)
         {
             if (arg0.Length == 0) IExecute("set"); else IExecute("set", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#setOpaque(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#setOpaque(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
         public void SetOpaque(params object[] arg0)
         {
             if (arg0.Length == 0) IExecute("setOpaque"); else IExecute("setOpaque", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#setRelease(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#setRelease(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
         public void SetRelease(params object[] arg0)
         {
             if (arg0.Length == 0) IExecute("setRelease"); else IExecute("setRelease", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#setVolatile(java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#setVolatile(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
         public void SetVolatile(params object[] arg0)
         {
             if (arg0.Length == 0) IExecute("setVolatile"); else IExecute("setVolatile", arg0);
@@ -314,127 +372,127 @@ namespace Java.Lang.Invoke
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_EXCHANGE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_EXCHANGE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode COMPARE_AND_EXCHANGE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("COMPARE_AND_EXCHANGE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_EXCHANGE_ACQUIRE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_EXCHANGE_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode COMPARE_AND_EXCHANGE_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("COMPARE_AND_EXCHANGE_ACQUIRE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_EXCHANGE_RELEASE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_EXCHANGE_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode COMPARE_AND_EXCHANGE_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("COMPARE_AND_EXCHANGE_RELEASE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_SET
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_SET"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode COMPARE_AND_SET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("COMPARE_AND_SET");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_ACQUIRE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_ACQUIRE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_ADD
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_ADD"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_ADD => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_ADD");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_ADD_ACQUIRE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_ADD_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_ADD_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_ADD_ACQUIRE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_ADD_RELEASE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_ADD_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_ADD_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_ADD_RELEASE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_AND => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_AND");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND_ACQUIRE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_AND_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_AND_ACQUIRE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND_RELEASE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_AND_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_AND_RELEASE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_OR => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_OR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR_ACQUIRE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_OR_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_OR_ACQUIRE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR_RELEASE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_OR_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_OR_RELEASE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_XOR => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_XOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR_ACQUIRE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_XOR_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_XOR_ACQUIRE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR_RELEASE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_XOR_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_XOR_RELEASE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_SET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_SET");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET_ACQUIRE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_SET_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_SET_ACQUIRE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET_RELEASE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_SET_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_SET_RELEASE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_OPAQUE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_OPAQUE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_OPAQUE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_OPAQUE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_VOLATILE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_VOLATILE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_VOLATILE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_VOLATILE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode SET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("SET");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_OPAQUE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_OPAQUE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode SET_OPAQUE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("SET_OPAQUE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_RELEASE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode SET_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("SET_RELEASE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_VOLATILE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_VOLATILE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode SET_VOLATILE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("SET_VOLATILE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("WEAK_COMPARE_AND_SET");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_ACQUIRE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_ACQUIRE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("WEAK_COMPARE_AND_SET_ACQUIRE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_PLAIN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_PLAIN"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET_PLAIN => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("WEAK_COMPARE_AND_SET_PLAIN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_RELEASE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_RELEASE"/>
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("WEAK_COMPARE_AND_SET_RELEASE");
             
@@ -442,8 +500,10 @@ namespace Java.Lang.Invoke
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></returns>
             public static Java.Lang.Invoke.VarHandle.AccessMode[] Values()
             {
                 return SExecuteArray<Java.Lang.Invoke.VarHandle.AccessMode>("values");
@@ -453,8 +513,10 @@ namespace Java.Lang.Invoke
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#methodName()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#methodName()"/>
             /// </summary>
+            
+            /// <returns><see langword="string"/></returns>
             public string MethodName()
             {
                 return IExecute<string>("methodName");

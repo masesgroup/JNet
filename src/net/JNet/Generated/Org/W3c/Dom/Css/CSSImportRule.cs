@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Css
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Css.CSSImportRule"/> to <see cref="Org.W3c.Dom.Css.CSSRule"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Css.CSSRule(Org.W3c.Dom.Css.CSSImportRule t) => t.Cast<Org.W3c.Dom.Css.CSSRule>();
         
         #endregion
@@ -47,21 +50,21 @@ namespace Org.W3c.Dom.Css
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSImportRule.html#getHref() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSImportRule.html#getHref()"/> 
         /// </summary>
         public string Href
         {
             get { return IExecute<string>("getHref"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSImportRule.html#getMedia() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSImportRule.html#getMedia()"/> 
         /// </summary>
         public Org.W3c.Dom.Stylesheets.MediaList Media
         {
             get { return IExecute<Org.W3c.Dom.Stylesheets.MediaList>("getMedia"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSImportRule.html#getStyleSheet() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSImportRule.html#getStyleSheet()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSStyleSheet StyleSheet
         {

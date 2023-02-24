@@ -30,15 +30,19 @@ namespace Javax.Imageio.Stream
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html#<init>(java.io.File) throws java.io.FileNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <exception cref="Java.Io.FileNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public FileImageOutputStream(Java.Io.File arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html#<init>(java.io.RandomAccessFile)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html#%3Cinit%3E(java.io.RandomAccessFile)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.RandomAccessFile"/></param>
         public FileImageOutputStream(Java.Io.RandomAccessFile arg0)
             : base(arg0)
         {

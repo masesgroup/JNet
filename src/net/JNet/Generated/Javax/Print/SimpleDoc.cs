@@ -30,8 +30,11 @@ namespace Javax.Print
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html#<init>(java.lang.Object,javax.print.DocFlavor,javax.print.attribute.DocAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html#%3Cinit%3E(java.lang.Object,javax.print.DocFlavor,javax.print.attribute.DocAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Print.DocFlavor"/></param>
+        /// <param name="arg2"><see cref="Javax.Print.Attribute.DocAttributeSet"/></param>
         public SimpleDoc(object arg0, Javax.Print.DocFlavor arg1, Javax.Print.Attribute.DocAttributeSet arg2)
             : base(arg0, arg1, arg2)
         {
@@ -40,6 +43,9 @@ namespace Javax.Print
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.SimpleDoc"/> to <see cref="Javax.Print.Doc"/>
+        /// </summary>
         public static implicit operator Javax.Print.Doc(Javax.Print.SimpleDoc t) => t.Cast<Javax.Print.Doc>();
         
         #endregion
@@ -54,35 +60,35 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html#getAttributes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html#getAttributes()"/> 
         /// </summary>
         public Javax.Print.Attribute.DocAttributeSet Attributes
         {
             get { return IExecute<Javax.Print.Attribute.DocAttributeSet>("getAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html#getDocFlavor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html#getDocFlavor()"/> 
         /// </summary>
         public Javax.Print.DocFlavor DocFlavor
         {
             get { return IExecute<Javax.Print.DocFlavor>("getDocFlavor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html#getPrintData() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html#getPrintData()"/> 
         /// </summary>
         public object PrintData
         {
             get { return IExecute("getPrintData"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html#getReaderForText() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html#getReaderForText()"/> 
         /// </summary>
         public Java.Io.Reader ReaderForText
         {
             get { return IExecute<Java.Io.Reader>("getReaderForText"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html#getStreamForBytes() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html#getStreamForBytes()"/> 
         /// </summary>
         public Java.Io.InputStream StreamForBytes
         {

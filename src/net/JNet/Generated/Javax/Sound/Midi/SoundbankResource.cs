@@ -46,21 +46,21 @@ namespace Javax.Sound.Midi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html#getData() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html#getData()"/> 
         /// </summary>
         public object Data
         {
             get { return IExecute("getData"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html#getSoundbank() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html#getSoundbank()"/> 
         /// </summary>
         public Javax.Sound.Midi.Soundbank Soundbank
         {

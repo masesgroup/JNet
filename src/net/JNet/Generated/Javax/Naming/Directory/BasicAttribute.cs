@@ -30,29 +30,37 @@ namespace Javax.Naming.Directory
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#<init>(java.lang.String,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public BasicAttribute(string arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#<init>(java.lang.String,java.lang.Object,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#%3Cinit%3E(java.lang.String,java.lang.Object,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public BasicAttribute(string arg0, object arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#<init>(java.lang.String,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#%3Cinit%3E(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public BasicAttribute(string arg0, object arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public BasicAttribute(string arg0)
             : base(arg0)
         {
@@ -61,6 +69,9 @@ namespace Javax.Naming.Directory
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Directory.BasicAttribute"/> to <see cref="Javax.Naming.Directory.Attribute"/>
+        /// </summary>
         public static implicit operator Javax.Naming.Directory.Attribute(Javax.Naming.Directory.BasicAttribute t) => t.Cast<Javax.Naming.Directory.Attribute>();
         
         #endregion
@@ -75,98 +86,121 @@ namespace Javax.Naming.Directory
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#getAttributeDefinition() throws javax.naming.NamingException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#getAttributeDefinition()"/> 
         /// </summary>
         public Javax.Naming.Directory.DirContext AttributeDefinition
         {
             get { return IExecute<Javax.Naming.Directory.DirContext>("getAttributeDefinition"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#getAttributeSyntaxDefinition() throws javax.naming.NamingException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#getAttributeSyntaxDefinition()"/> 
         /// </summary>
         public Javax.Naming.Directory.DirContext AttributeSyntaxDefinition
         {
             get { return IExecute<Javax.Naming.Directory.DirContext>("getAttributeSyntaxDefinition"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#getID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#getID()"/> 
         /// </summary>
         public string ID
         {
             get { return IExecute<string>("getID"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#add(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#add(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Add(object arg0)
         {
             return IExecute<bool>("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#contains(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#contains(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(object arg0)
         {
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#isOrdered()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#isOrdered()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsOrdered()
         {
             return IExecute<bool>("isOrdered");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#remove(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#remove(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Remove(object arg0)
         {
             return IExecute<bool>("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#size()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#get() throws javax.naming.NamingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#get()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
         public object Get()
         {
             return IExecute("get");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#get(int) throws javax.naming.NamingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#get(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
         public object Get(int arg0)
         {
             return IExecute("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#remove(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#remove(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Remove(int arg0)
         {
             return IExecute("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#set(int,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#set(int,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Set(int arg0, object arg1)
         {
             return IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#add(int,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#add(int,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void Add(int arg0, object arg1)
         {
             IExecute("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#clear()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#clear()"/>
         /// </summary>
         public void Clear()
         {

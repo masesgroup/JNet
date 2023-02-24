@@ -33,6 +33,9 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.WatchService"/> to <see cref="Java.Io.Closeable"/>
+        /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Nio.File.WatchService t) => t.Cast<Java.Io.Closeable>();
         
         #endregion
@@ -47,22 +50,29 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#poll()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#poll()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
         public Java.Nio.File.WatchKey Poll()
         {
             return IExecute<Java.Nio.File.WatchKey>("poll");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#take() throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#take()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Nio.File.WatchKey Take()
         {
             return IExecute<Java.Nio.File.WatchKey>("take");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#close() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");

@@ -33,17 +33,20 @@ namespace Javax.Swing.Plaf.Metal
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#DARK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#DARK"/>
         /// </summary>
         public static bool DARK => Clazz.GetField<bool>("DARK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#LIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#LIGHT"/>
         /// </summary>
         public static bool LIGHT => Clazz.GetField<bool>("LIGHT");
         
@@ -51,176 +54,224 @@ namespace Javax.Swing.Plaf.Metal
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getMenuItemCheckIcon() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getMenuItemCheckIcon()"/> 
         /// </summary>
         public static Javax.Swing.Icon MenuItemCheckIcon
         {
             get { return SExecute<Javax.Swing.Icon>("getMenuItemCheckIcon"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getCheckBoxIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getCheckBoxIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetCheckBoxIcon()
         {
             return SExecute<Javax.Swing.Icon>("getCheckBoxIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getCheckBoxMenuItemIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getCheckBoxMenuItemIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetCheckBoxMenuItemIcon()
         {
             return SExecute<Javax.Swing.Icon>("getCheckBoxMenuItemIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserDetailViewIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserDetailViewIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetFileChooserDetailViewIcon()
         {
             return SExecute<Javax.Swing.Icon>("getFileChooserDetailViewIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserHomeFolderIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserHomeFolderIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetFileChooserHomeFolderIcon()
         {
             return SExecute<Javax.Swing.Icon>("getFileChooserHomeFolderIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserListViewIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserListViewIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetFileChooserListViewIcon()
         {
             return SExecute<Javax.Swing.Icon>("getFileChooserListViewIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserNewFolderIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserNewFolderIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetFileChooserNewFolderIcon()
         {
             return SExecute<Javax.Swing.Icon>("getFileChooserNewFolderIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserUpFolderIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getFileChooserUpFolderIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetFileChooserUpFolderIcon()
         {
             return SExecute<Javax.Swing.Icon>("getFileChooserUpFolderIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getHorizontalSliderThumbIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getHorizontalSliderThumbIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetHorizontalSliderThumbIcon()
         {
             return SExecute<Javax.Swing.Icon>("getHorizontalSliderThumbIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameAltMaximizeIcon(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameAltMaximizeIcon(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetInternalFrameAltMaximizeIcon(int arg0)
         {
             return SExecute<Javax.Swing.Icon>("getInternalFrameAltMaximizeIcon", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameCloseIcon(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameCloseIcon(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetInternalFrameCloseIcon(int arg0)
         {
             return SExecute<Javax.Swing.Icon>("getInternalFrameCloseIcon", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameDefaultMenuIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameDefaultMenuIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetInternalFrameDefaultMenuIcon()
         {
             return SExecute<Javax.Swing.Icon>("getInternalFrameDefaultMenuIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameMaximizeIcon(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameMaximizeIcon(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetInternalFrameMaximizeIcon(int arg0)
         {
             return SExecute<Javax.Swing.Icon>("getInternalFrameMaximizeIcon", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameMinimizeIcon(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameMinimizeIcon(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetInternalFrameMinimizeIcon(int arg0)
         {
             return SExecute<Javax.Swing.Icon>("getInternalFrameMinimizeIcon", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getMenuArrowIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getMenuArrowIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetMenuArrowIcon()
         {
             return SExecute<Javax.Swing.Icon>("getMenuArrowIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getMenuItemArrowIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getMenuItemArrowIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetMenuItemArrowIcon()
         {
             return SExecute<Javax.Swing.Icon>("getMenuItemArrowIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getRadioButtonIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getRadioButtonIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetRadioButtonIcon()
         {
             return SExecute<Javax.Swing.Icon>("getRadioButtonIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getRadioButtonMenuItemIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getRadioButtonMenuItemIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetRadioButtonMenuItemIcon()
         {
             return SExecute<Javax.Swing.Icon>("getRadioButtonMenuItemIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeComputerIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeComputerIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetTreeComputerIcon()
         {
             return SExecute<Javax.Swing.Icon>("getTreeComputerIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeControlIcon(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeControlIcon(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetTreeControlIcon(bool arg0)
         {
             return SExecute<Javax.Swing.Icon>("getTreeControlIcon", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeFloppyDriveIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeFloppyDriveIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetTreeFloppyDriveIcon()
         {
             return SExecute<Javax.Swing.Icon>("getTreeFloppyDriveIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeFolderIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeFolderIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetTreeFolderIcon()
         {
             return SExecute<Javax.Swing.Icon>("getTreeFolderIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeHardDriveIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeHardDriveIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetTreeHardDriveIcon()
         {
             return SExecute<Javax.Swing.Icon>("getTreeHardDriveIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeLeafIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeLeafIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetTreeLeafIcon()
         {
             return SExecute<Javax.Swing.Icon>("getTreeLeafIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getVerticalSliderThumbIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getVerticalSliderThumbIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetVerticalSliderThumbIcon()
         {
             return SExecute<Javax.Swing.Icon>("getVerticalSliderThumbIcon");
@@ -241,7 +292,13 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.FileIcon16"/> to <see cref="Javax.Swing.Icon"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.FileIcon16 t) => t.Cast<Javax.Swing.Icon>();
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.FileIcon16"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.FileIcon16 t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
@@ -256,36 +313,40 @@ namespace Javax.Swing.Plaf.Metal
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html#getAdditionalHeight() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html#getAdditionalHeight()"/> 
             /// </summary>
             public int AdditionalHeight
             {
                 get { return IExecute<int>("getAdditionalHeight"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html#getIconHeight() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html#getIconHeight()"/> 
             /// </summary>
             public int IconHeight
             {
                 get { return IExecute<int>("getIconHeight"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html#getIconWidth() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html#getIconWidth()"/> 
             /// </summary>
             public int IconWidth
             {
                 get { return IExecute<int>("getIconWidth"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html#getShift() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html#getShift()"/> 
             /// </summary>
             public int Shift
             {
                 get { return IExecute<int>("getShift"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FileIcon16.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg3"><see langword="int"/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecute("paintIcon", arg0, arg1, arg2, arg3);
@@ -305,7 +366,13 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16"/> to <see cref="Javax.Swing.Icon"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16 t) => t.Cast<Javax.Swing.Icon>();
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16 t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
@@ -320,36 +387,40 @@ namespace Javax.Swing.Plaf.Metal
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getAdditionalHeight() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getAdditionalHeight()"/> 
             /// </summary>
             public int AdditionalHeight
             {
                 get { return IExecute<int>("getAdditionalHeight"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getIconHeight() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getIconHeight()"/> 
             /// </summary>
             public int IconHeight
             {
                 get { return IExecute<int>("getIconHeight"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getIconWidth() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getIconWidth()"/> 
             /// </summary>
             public int IconWidth
             {
                 get { return IExecute<int>("getIconWidth"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getShift() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getShift()"/> 
             /// </summary>
             public int Shift
             {
                 get { return IExecute<int>("getShift"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg3"><see langword="int"/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecute("paintIcon", arg0, arg1, arg2, arg3);
@@ -369,8 +440,17 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon"/> to <see cref="Javax.Swing.Icon"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon t) => t.Cast<Javax.Swing.Icon>();
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
@@ -385,22 +465,26 @@ namespace Javax.Swing.Plaf.Metal
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.PaletteCloseIcon.html#getIconHeight() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.PaletteCloseIcon.html#getIconHeight()"/> 
             /// </summary>
             public int IconHeight
             {
                 get { return IExecute<int>("getIconHeight"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.PaletteCloseIcon.html#getIconWidth() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.PaletteCloseIcon.html#getIconWidth()"/> 
             /// </summary>
             public int IconWidth
             {
                 get { return IExecute<int>("getIconWidth"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.PaletteCloseIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.PaletteCloseIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg3"><see langword="int"/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecute("paintIcon", arg0, arg1, arg2, arg3);
@@ -417,8 +501,9 @@ namespace Javax.Swing.Plaf.Metal
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#<init>(boolean)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#%3Cinit%3E(boolean)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="bool"/></param>
             public TreeControlIcon(bool arg0)
                 : base(arg0)
             {
@@ -427,7 +512,13 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.TreeControlIcon"/> to <see cref="Javax.Swing.Icon"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.TreeControlIcon t) => t.Cast<Javax.Swing.Icon>();
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory.TreeControlIcon"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.TreeControlIcon t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
@@ -442,29 +533,37 @@ namespace Javax.Swing.Plaf.Metal
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#getIconHeight() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#getIconHeight()"/> 
             /// </summary>
             public int IconHeight
             {
                 get { return IExecute<int>("getIconHeight"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#getIconWidth() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#getIconWidth()"/> 
             /// </summary>
             public int IconWidth
             {
                 get { return IExecute<int>("getIconWidth"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg3"><see langword="int"/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecute("paintIcon", arg0, arg1, arg2, arg3);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#paintMe(java.awt.Component,java.awt.Graphics,int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#paintMe(java.awt.Component,java.awt.Graphics,int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg3"><see langword="int"/></param>
             public void PaintMe(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecute("paintMe", arg0, arg1, arg2, arg3);

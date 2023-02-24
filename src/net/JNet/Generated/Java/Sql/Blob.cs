@@ -46,78 +46,114 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#getBinaryStream() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#getBinaryStream()"/> 
         /// </summary>
         public Java.Io.InputStream BinaryStream
         {
             get { return IExecute<Java.Io.InputStream>("getBinaryStream"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#getBytes(long,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#getBytes(long,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public byte[] GetBytes(long arg0, int arg1)
         {
             return IExecuteArray<byte>("getBytes", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBytes(long,byte[],int,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBytes(long,byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public int SetBytes(long arg0, byte[] arg1, int arg2, int arg3)
         {
             return IExecute<int>("setBytes", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBytes(long,byte[]) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBytes(long,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public int SetBytes(long arg0, byte[] arg1)
         {
             return IExecute<int>("setBytes", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#getBinaryStream(long,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#getBinaryStream(long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream GetBinaryStream(long arg0, long arg1)
         {
             return IExecute<Java.Io.InputStream>("getBinaryStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBinaryStream(long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBinaryStream(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.OutputStream SetBinaryStream(long arg0)
         {
             return IExecute<Java.Io.OutputStream>("setBinaryStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#length() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#length()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public long Length()
         {
             return IExecute<long>("length");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#position(byte[],long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#position(byte[],long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public long Position(byte[] arg0, long arg1)
         {
             return IExecute<long>("position", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#position(java.sql.Blob,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#position(java.sql.Blob,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.Blob"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public long Position(Java.Sql.Blob arg0, long arg1)
         {
             return IExecute<long>("position", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#free() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#free()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void Free()
         {
             IExecute("free");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#truncate(long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#truncate(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void Truncate(long arg0)
         {
             IExecute("truncate", arg0);

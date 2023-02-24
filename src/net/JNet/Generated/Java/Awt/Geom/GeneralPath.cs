@@ -30,22 +30,26 @@ namespace Java.Awt.Geom
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html#<init>(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html#%3Cinit%3E(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public GeneralPath(int arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public GeneralPath(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html#<init>(java.awt.Shape)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html#%3Cinit%3E(java.awt.Shape)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
         public GeneralPath(Java.Awt.Shape arg0)
             : base(arg0)
         {

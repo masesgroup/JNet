@@ -46,57 +46,64 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#getExtent() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#setExtent(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#getExtent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#setExtent(int)"/>
         /// </summary>
         public int Extent
         {
             get { return IExecute<int>("getExtent"); } set { IExecute("setExtent", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#getMaximum() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#setMaximum(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#setMaximum(int)"/>
         /// </summary>
         public int Maximum
         {
             get { return IExecute<int>("getMaximum"); } set { IExecute("setMaximum", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#getMinimum() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#setMinimum(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#setMinimum(int)"/>
         /// </summary>
         public int Minimum
         {
             get { return IExecute<int>("getMinimum"); } set { IExecute("setMinimum", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#getValue() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#setValue(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#setValue(int)"/>
         /// </summary>
         public int Value
         {
             get { return IExecute<int>("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#getValueIsAdjusting() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#setValueIsAdjusting(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#getValueIsAdjusting()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#setValueIsAdjusting(boolean)"/>
         /// </summary>
         public bool ValueIsAdjusting
         {
             get { return IExecute<bool>("getValueIsAdjusting"); } set { IExecute("setValueIsAdjusting", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#addChangeListener(javax.swing.event.ChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecute("addChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#removeChangeListener(javax.swing.event.ChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecute("removeChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#setRangeProperties(int,int,int,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#setRangeProperties(int,int,int,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="bool"/></param>
         public void SetRangeProperties(int arg0, int arg1, int arg2, int arg3, bool arg4)
         {
             IExecute("setRangeProperties", arg0, arg1, arg2, arg3, arg4);

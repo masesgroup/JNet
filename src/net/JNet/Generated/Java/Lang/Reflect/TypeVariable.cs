@@ -33,7 +33,13 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Reflect.TypeVariable"/> to <see cref="Java.Lang.Reflect.Type"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.Type(Java.Lang.Reflect.TypeVariable t) => t.Cast<Java.Lang.Reflect.Type>();
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Reflect.TypeVariable"/> to <see cref="Java.Lang.Reflect.AnnotatedElement"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Reflect.TypeVariable t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
         
         #endregion
@@ -48,28 +54,28 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getAnnotatedBounds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getAnnotatedBounds()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType[] AnnotatedBounds
         {
             get { return IExecuteArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedBounds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getBounds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getBounds()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type[] Bounds
         {
             get { return IExecuteArray<Java.Lang.Reflect.Type>("getBounds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getGenericDeclaration() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getGenericDeclaration()"/> 
         /// </summary>
         public Java.Lang.Reflect.GenericDeclaration GenericDeclaration
         {
             get { return IExecute<Java.Lang.Reflect.GenericDeclaration>("getGenericDeclaration"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getName()"/> 
         /// </summary>
         public string Name
         {

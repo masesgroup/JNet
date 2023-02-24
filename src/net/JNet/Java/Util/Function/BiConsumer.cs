@@ -43,7 +43,7 @@ namespace Java.Util.Function
     /// <typeparam name="U">The data associated to the event</typeparam> 
     public class BiConsumer<T, U> : JVMBridgeListener, IBiConsumer<T, U>
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "org.mases.jnet.util.function.JNetBiConsumer";
 
         Action<T, U> executionFunction = null;

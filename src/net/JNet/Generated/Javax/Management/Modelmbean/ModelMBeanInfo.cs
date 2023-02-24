@@ -46,99 +46,129 @@ namespace Javax.Management.Modelmbean
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getAttributes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getAttributes()"/> 
         /// </summary>
         public Javax.Management.MBeanAttributeInfo[] Attributes
         {
             get { return IExecuteArray<Javax.Management.MBeanAttributeInfo>("getAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getConstructors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getConstructors()"/> 
         /// </summary>
         public Javax.Management.MBeanConstructorInfo[] Constructors
         {
             get { return IExecuteArray<Javax.Management.MBeanConstructorInfo>("getConstructors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getDescription() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getDescription()"/> 
         /// </summary>
         public string Description
         {
             get { return IExecute<string>("getDescription"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getMBeanDescriptor() throws javax.management.MBeanException,javax.management.RuntimeOperationsException https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#setMBeanDescriptor(javax.management.Descriptor) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getMBeanDescriptor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#setMBeanDescriptor(javax.management.Descriptor)"/>
         /// </summary>
         public Javax.Management.Descriptor MBeanDescriptor
         {
             get { return IExecute<Javax.Management.Descriptor>("getMBeanDescriptor"); } set { IExecute("setMBeanDescriptor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getNotifications() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getNotifications()"/> 
         /// </summary>
         public Javax.Management.MBeanNotificationInfo[] Notifications
         {
             get { return IExecuteArray<Javax.Management.MBeanNotificationInfo>("getNotifications"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getOperations() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getOperations()"/> 
         /// </summary>
         public Javax.Management.MBeanOperationInfo[] Operations
         {
             get { return IExecuteArray<Javax.Management.MBeanOperationInfo>("getOperations"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getClassName()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getClassName()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string GetClassName()
         {
             return IExecute<string>("getClassName");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getDescriptor(java.lang.String,java.lang.String) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getDescriptor(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.Descriptor"/></returns>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public Javax.Management.Descriptor GetDescriptor(string arg0, string arg1)
         {
             return IExecute<Javax.Management.Descriptor>("getDescriptor", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getDescriptors(java.lang.String) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getDescriptors(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.Descriptor"/></returns>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public Javax.Management.Descriptor[] GetDescriptors(string arg0)
         {
             return IExecuteArray<Javax.Management.Descriptor>("getDescriptors", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getAttribute(java.lang.String) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getAttribute(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.Modelmbean.ModelMBeanAttributeInfo"/></returns>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public Javax.Management.Modelmbean.ModelMBeanAttributeInfo GetAttribute(string arg0)
         {
             return IExecute<Javax.Management.Modelmbean.ModelMBeanAttributeInfo>("getAttribute", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getNotification(java.lang.String) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getNotification(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.Modelmbean.ModelMBeanNotificationInfo"/></returns>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public Javax.Management.Modelmbean.ModelMBeanNotificationInfo GetNotification(string arg0)
         {
             return IExecute<Javax.Management.Modelmbean.ModelMBeanNotificationInfo>("getNotification", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getOperation(java.lang.String) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#getOperation(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.Modelmbean.ModelMBeanOperationInfo"/></returns>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public Javax.Management.Modelmbean.ModelMBeanOperationInfo GetOperation(string arg0)
         {
             return IExecute<Javax.Management.Modelmbean.ModelMBeanOperationInfo>("getOperation", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#setDescriptor(javax.management.Descriptor,java.lang.String) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#setDescriptor(javax.management.Descriptor,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SetDescriptor(Javax.Management.Descriptor arg0, string arg1)
         {
             IExecute("setDescriptor", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#setDescriptors(javax.management.Descriptor[]) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfo.html#setDescriptors(javax.management.Descriptor[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SetDescriptors(Javax.Management.Descriptor[] arg0)
         {
             IExecute("setDescriptors", arg0);

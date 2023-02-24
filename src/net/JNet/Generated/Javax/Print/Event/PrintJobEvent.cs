@@ -30,8 +30,10 @@ namespace Javax.Print.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#<init>(javax.print.DocPrintJob,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#%3Cinit%3E(javax.print.DocPrintJob,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.DocPrintJob"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public PrintJobEvent(Javax.Print.DocPrintJob arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -45,27 +47,27 @@ namespace Javax.Print.Event
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#DATA_TRANSFER_COMPLETE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#DATA_TRANSFER_COMPLETE"/>
         /// </summary>
         public static int DATA_TRANSFER_COMPLETE => Clazz.GetField<int>("DATA_TRANSFER_COMPLETE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#JOB_CANCELED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#JOB_CANCELED"/>
         /// </summary>
         public static int JOB_CANCELED => Clazz.GetField<int>("JOB_CANCELED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#JOB_COMPLETE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#JOB_COMPLETE"/>
         /// </summary>
         public static int JOB_COMPLETE => Clazz.GetField<int>("JOB_COMPLETE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#JOB_FAILED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#JOB_FAILED"/>
         /// </summary>
         public static int JOB_FAILED => Clazz.GetField<int>("JOB_FAILED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#NO_MORE_EVENTS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#NO_MORE_EVENTS"/>
         /// </summary>
         public static int NO_MORE_EVENTS => Clazz.GetField<int>("NO_MORE_EVENTS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#REQUIRES_ATTENTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#REQUIRES_ATTENTION"/>
         /// </summary>
         public static int REQUIRES_ATTENTION => Clazz.GetField<int>("REQUIRES_ATTENTION");
         
@@ -77,14 +79,14 @@ namespace Javax.Print.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#getPrintEventType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#getPrintEventType()"/> 
         /// </summary>
         public int PrintEventType
         {
             get { return IExecute<int>("getPrintEventType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#getPrintJob() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#getPrintJob()"/> 
         /// </summary>
         public Javax.Print.DocPrintJob PrintJob
         {

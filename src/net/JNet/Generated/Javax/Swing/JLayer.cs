@@ -30,8 +30,9 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#<init>(V)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#%3Cinit%3E(V)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public JLayer(Java.Awt.Component arg0)
             : base(arg0)
         {
@@ -40,8 +41,17 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JLayer"/> to <see cref="Javax.Swing.Scrollable"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Scrollable(Javax.Swing.JLayer t) => t.Cast<Javax.Swing.Scrollable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JLayer"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+        /// </summary>
         public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.JLayer t) => t.Cast<Java.Beans.PropertyChangeListener>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JLayer"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JLayer t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
@@ -56,71 +66,82 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getGlassPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setGlassPane(javax.swing.JPanel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getGlassPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setGlassPane(javax.swing.JPanel)"/>
         /// </summary>
         public Javax.Swing.JPanel GlassPane
         {
             get { return IExecute<Javax.Swing.JPanel>("getGlassPane"); } set { IExecute("setGlassPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getLayerEventMask() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setLayerEventMask(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getLayerEventMask()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setLayerEventMask(long)"/>
         /// </summary>
         public long LayerEventMask
         {
             get { return IExecute<long>("getLayerEventMask"); } set { IExecute("setLayerEventMask", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getPreferredScrollableViewportSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getPreferredScrollableViewportSize()"/> 
         /// </summary>
         public Java.Awt.Dimension PreferredScrollableViewportSize
         {
             get { return IExecute<Java.Awt.Dimension>("getPreferredScrollableViewportSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableTracksViewportHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableTracksViewportHeight()"/> 
         /// </summary>
         public bool ScrollableTracksViewportHeight
         {
             get { return IExecute<bool>("getScrollableTracksViewportHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableTracksViewportWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableTracksViewportWidth()"/> 
         /// </summary>
         public bool ScrollableTracksViewportWidth
         {
             get { return IExecute<bool>("getScrollableTracksViewportWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getView() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setView(V)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getView()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setView(V)"/>
         /// </summary>
         public Java.Awt.Component View
         {
             get { return IExecute<Java.Awt.Component>("getView"); } set { IExecute("setView", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableBlockIncrement", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#createGlassPane()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#createGlassPane()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.JPanel"/></returns>
         public Javax.Swing.JPanel CreateGlassPane()
         {
             return IExecute<Javax.Swing.JPanel>("createGlassPane");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#propertyChange(java.beans.PropertyChangeEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecute("propertyChange", arg0);

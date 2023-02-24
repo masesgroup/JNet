@@ -33,6 +33,9 @@ namespace Java.Util.Concurrent.Atomic
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.Atomic.DoubleAdder"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Atomic.DoubleAdder t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,28 +50,33 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#sum()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#sum()"/>
         /// </summary>
+        
+        /// <returns><see langword="double"/></returns>
         public double Sum()
         {
             return IExecute<double>("sum");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#sumThenReset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#sumThenReset()"/>
         /// </summary>
+        
+        /// <returns><see langword="double"/></returns>
         public double SumThenReset()
         {
             return IExecute<double>("sumThenReset");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#add(double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#add(double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
         public void Add(double arg0)
         {
             IExecute("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#reset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html#reset()"/>
         /// </summary>
         public void Reset()
         {

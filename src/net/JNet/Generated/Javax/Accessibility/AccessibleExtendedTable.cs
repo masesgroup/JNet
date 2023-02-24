@@ -33,6 +33,9 @@ namespace Javax.Accessibility
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Accessibility.AccessibleExtendedTable"/> to <see cref="Javax.Accessibility.AccessibleTable"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.AccessibleTable(Javax.Accessibility.AccessibleExtendedTable t) => t.Cast<Javax.Accessibility.AccessibleTable>();
         
         #endregion
@@ -47,22 +50,29 @@ namespace Javax.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedTable.html#getAccessibleColumn(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedTable.html#getAccessibleColumn(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAccessibleColumn(int arg0)
         {
             return IExecute<int>("getAccessibleColumn", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedTable.html#getAccessibleIndex(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedTable.html#getAccessibleIndex(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAccessibleIndex(int arg0, int arg1)
         {
             return IExecute<int>("getAccessibleIndex", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedTable.html#getAccessibleRow(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedTable.html#getAccessibleRow(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAccessibleRow(int arg0)
         {
             return IExecute<int>("getAccessibleRow", arg0);

@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Html
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Html.HTMLDocument"/> to <see cref="Org.W3c.Dom.Document"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Document(Org.W3c.Dom.Html.HTMLDocument t) => t.Cast<Org.W3c.Dom.Document>();
         
         #endregion
@@ -47,113 +50,117 @@ namespace Org.W3c.Dom.Html
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getAnchors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getAnchors()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLCollection Anchors
         {
             get { return IExecute<Org.W3c.Dom.Html.HTMLCollection>("getAnchors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getApplets() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getApplets()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLCollection Applets
         {
             get { return IExecute<Org.W3c.Dom.Html.HTMLCollection>("getApplets"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getBody() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#setBody(org.w3c.dom.html.HTMLElement)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getBody()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#setBody(org.w3c.dom.html.HTMLElement)"/>
         /// </summary>
         public Org.W3c.Dom.Html.HTMLElement Body
         {
             get { return IExecute<Org.W3c.Dom.Html.HTMLElement>("getBody"); } set { IExecute("setBody", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getCookie() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#setCookie(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getCookie()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#setCookie(java.lang.String)"/>
         /// </summary>
         public string Cookie
         {
             get { return IExecute<string>("getCookie"); } set { IExecute("setCookie", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getDomain() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getDomain()"/> 
         /// </summary>
         public string Domain
         {
             get { return IExecute<string>("getDomain"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getForms() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getForms()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLCollection Forms
         {
             get { return IExecute<Org.W3c.Dom.Html.HTMLCollection>("getForms"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getImages() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getImages()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLCollection Images
         {
             get { return IExecute<Org.W3c.Dom.Html.HTMLCollection>("getImages"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getLinks() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getLinks()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLCollection Links
         {
             get { return IExecute<Org.W3c.Dom.Html.HTMLCollection>("getLinks"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getReferrer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getReferrer()"/> 
         /// </summary>
         public string Referrer
         {
             get { return IExecute<string>("getReferrer"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getTitle() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#setTitle(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getTitle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#setTitle(java.lang.String)"/>
         /// </summary>
         public string Title
         {
             get { return IExecute<string>("getTitle"); } set { IExecute("setTitle", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getURL() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getURL()"/> 
         /// </summary>
         public string URL
         {
             get { return IExecute<string>("getURL"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getElementsByName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#getElementsByName(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
         public Org.W3c.Dom.NodeList GetElementsByName(string arg0)
         {
             return IExecute<Org.W3c.Dom.NodeList>("getElementsByName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#close()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#close()"/>
         /// </summary>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#open()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#open()"/>
         /// </summary>
         public void Open()
         {
             IExecute("open");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#write(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#write(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void Write(string arg0)
         {
             IExecute("write", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#writeln(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDocument.html#writeln(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void Writeln(string arg0)
         {
             IExecute("writeln", arg0);

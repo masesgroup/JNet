@@ -33,6 +33,9 @@ namespace Javax.Naming
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.RefAddr"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.RefAddr t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Javax.Naming
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/RefAddr.html#getContent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/RefAddr.html#getContent()"/> 
         /// </summary>
         public object Content
         {
             get { return IExecute("getContent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/RefAddr.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/RefAddr.html#getType()"/> 
         /// </summary>
         public string Type
         {

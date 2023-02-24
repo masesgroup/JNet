@@ -30,22 +30,44 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#<init>(java.awt.Image,int,int,int,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#%3Cinit%3E(java.awt.Image,int,int,int,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="bool"/></param>
         public PixelGrabber(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, bool arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#<init>(java.awt.Image,int,int,int,int,int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#%3Cinit%3E(java.awt.Image,int,int,int,int,int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg7"><see langword="int"/></param>
         public PixelGrabber(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#<init>(java.awt.image.ImageProducer,int,int,int,int,int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#%3Cinit%3E(java.awt.image.ImageProducer,int,int,int,int,int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageProducer"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg7"><see langword="int"/></param>
         public PixelGrabber(Java.Awt.ImageNs.ImageProducer arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
@@ -54,6 +76,9 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.PixelGrabber"/> to <see cref="Java.Awt.ImageNs.ImageConsumer"/>
+        /// </summary>
         public static implicit operator Java.Awt.ImageNs.ImageConsumer(Java.Awt.ImageNs.PixelGrabber t) => t.Cast<Java.Awt.ImageNs.ImageConsumer>();
         
         #endregion
@@ -68,106 +93,136 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getColorModel() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setColorModel(java.awt.image.ColorModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getColorModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setColorModel(java.awt.image.ColorModel)"/>
         /// </summary>
         public Java.Awt.ImageNs.ColorModel ColorModel
         {
             get { return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel"); } set { IExecute("setColorModel", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
             get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getPixels() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getPixels()"/> 
         /// </summary>
         public object Pixels
         {
             get { return IExecute("getPixels"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
             get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#grabPixels() throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#grabPixels()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public bool GrabPixels()
         {
             return IExecute<bool>("grabPixels");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#grabPixels(long) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#grabPixels(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public bool GrabPixels(long arg0)
         {
             return IExecute<bool>("grabPixels", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getStatus()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#getStatus()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int GetStatus()
         {
             return IExecute<int>("getStatus");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#status()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#status()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Status()
         {
             return IExecute<int>("status");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#abortGrabbing()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#abortGrabbing()"/>
         /// </summary>
         public void AbortGrabbing()
         {
             IExecute("abortGrabbing");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#imageComplete(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#imageComplete(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void ImageComplete(int arg0)
         {
             IExecute("imageComplete", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#startGrabbing()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#startGrabbing()"/>
         /// </summary>
         public void StartGrabbing()
         {
             IExecute("startGrabbing");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setDimensions(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setDimensions(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetDimensions(int arg0, int arg1)
         {
             IExecute("setDimensions", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setHints(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setHints(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetHints(int arg0)
         {
             IExecute("setHints", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setPixels(int,int,int,int,java.awt.image.ColorModel,byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setPixels(int,int,int,int,java.awt.image.ColorModel,byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg5"><see cref="byte"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg7"><see langword="int"/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, Java.Awt.ImageNs.ColorModel arg4, byte[] arg5, int arg6, int arg7)
         {
             IExecute("setPixels", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setPixels(int,int,int,int,java.awt.image.ColorModel,int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setPixels(int,int,int,int,java.awt.image.ColorModel,int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg7"><see langword="int"/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, Java.Awt.ImageNs.ColorModel arg4, int[] arg5, int arg6, int arg7)
         {
             IExecute("setPixels", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);

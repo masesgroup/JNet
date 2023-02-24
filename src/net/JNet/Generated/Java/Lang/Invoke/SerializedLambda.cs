@@ -33,6 +33,9 @@ namespace Java.Lang.Invoke
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Invoke.SerializedLambda"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.Invoke.SerializedLambda t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,78 +50,80 @@ namespace Java.Lang.Invoke
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getCapturedArgCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getCapturedArgCount()"/> 
         /// </summary>
         public int CapturedArgCount
         {
             get { return IExecute<int>("getCapturedArgCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getCapturingClass() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getCapturingClass()"/> 
         /// </summary>
         public string CapturingClass
         {
             get { return IExecute<string>("getCapturingClass"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getFunctionalInterfaceClass() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getFunctionalInterfaceClass()"/> 
         /// </summary>
         public string FunctionalInterfaceClass
         {
             get { return IExecute<string>("getFunctionalInterfaceClass"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getFunctionalInterfaceMethodName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getFunctionalInterfaceMethodName()"/> 
         /// </summary>
         public string FunctionalInterfaceMethodName
         {
             get { return IExecute<string>("getFunctionalInterfaceMethodName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getFunctionalInterfaceMethodSignature() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getFunctionalInterfaceMethodSignature()"/> 
         /// </summary>
         public string FunctionalInterfaceMethodSignature
         {
             get { return IExecute<string>("getFunctionalInterfaceMethodSignature"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getImplClass() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getImplClass()"/> 
         /// </summary>
         public string ImplClass
         {
             get { return IExecute<string>("getImplClass"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getImplMethodKind() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getImplMethodKind()"/> 
         /// </summary>
         public int ImplMethodKind
         {
             get { return IExecute<int>("getImplMethodKind"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getImplMethodName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getImplMethodName()"/> 
         /// </summary>
         public string ImplMethodName
         {
             get { return IExecute<string>("getImplMethodName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getImplMethodSignature() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getImplMethodSignature()"/> 
         /// </summary>
         public string ImplMethodSignature
         {
             get { return IExecute<string>("getImplMethodSignature"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getInstantiatedMethodType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getInstantiatedMethodType()"/> 
         /// </summary>
         public string InstantiatedMethodType
         {
             get { return IExecute<string>("getInstantiatedMethodType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getCapturedArg(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html#getCapturedArg(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetCapturedArg(int arg0)
         {
             return IExecute("getCapturedArg", arg0);

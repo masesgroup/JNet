@@ -30,29 +30,37 @@ namespace Java.Awt.ImageNs.Renderable
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#<init>(java.awt.geom.AffineTransform,java.awt.RenderingHints)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#%3Cinit%3E(java.awt.geom.AffineTransform,java.awt.RenderingHints)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.RenderingHints"/></param>
         public RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#<init>(java.awt.geom.AffineTransform,java.awt.Shape,java.awt.RenderingHints)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#%3Cinit%3E(java.awt.geom.AffineTransform,java.awt.Shape,java.awt.RenderingHints)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.RenderingHints"/></param>
         public RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1, Java.Awt.RenderingHints arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#<init>(java.awt.geom.AffineTransform,java.awt.Shape)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#%3Cinit%3E(java.awt.geom.AffineTransform,java.awt.Shape)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
         public RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#<init>(java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#%3Cinit%3E(java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public RenderContext(Java.Awt.Geom.AffineTransform arg0)
             : base(arg0)
         {
@@ -61,6 +69,9 @@ namespace Java.Awt.ImageNs.Renderable
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.Renderable.RenderContext"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.Renderable.RenderContext t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -75,36 +86,38 @@ namespace Java.Awt.ImageNs.Renderable
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#getAreaOfInterest() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#setAreaOfInterest(java.awt.Shape)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#getAreaOfInterest()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#setAreaOfInterest(java.awt.Shape)"/>
         /// </summary>
         public Java.Awt.Shape AreaOfInterest
         {
             get { return IExecute<Java.Awt.Shape>("getAreaOfInterest"); } set { IExecute("setAreaOfInterest", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#getRenderingHints() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#setRenderingHints(java.awt.RenderingHints)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#getRenderingHints()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#setRenderingHints(java.awt.RenderingHints)"/>
         /// </summary>
         public Java.Awt.RenderingHints RenderingHints
         {
             get { return IExecute<Java.Awt.RenderingHints>("getRenderingHints"); } set { IExecute("setRenderingHints", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#getTransform() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#setTransform(java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#getTransform()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#setTransform(java.awt.geom.AffineTransform)"/>
         /// </summary>
         public Java.Awt.Geom.AffineTransform Transform
         {
             get { return IExecute<Java.Awt.Geom.AffineTransform>("getTransform"); } set { IExecute("setTransform", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#concatenateTransform(java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#concatenateTransform(java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void ConcatenateTransform(Java.Awt.Geom.AffineTransform arg0)
         {
             IExecute("concatenateTransform", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#preConcatenateTransform(java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#preConcatenateTransform(java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void PreConcatenateTransform(Java.Awt.Geom.AffineTransform arg0)
         {
             IExecute("preConcatenateTransform", arg0);

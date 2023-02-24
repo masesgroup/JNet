@@ -46,15 +46,19 @@ namespace Javax.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleBundle.html#toDisplayString()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleBundle.html#toDisplayString()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string ToDisplayString()
         {
             return IExecute<string>("toDisplayString");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleBundle.html#toDisplayString(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleBundle.html#toDisplayString(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see langword="string"/></returns>
         public string ToDisplayString(Java.Util.Locale arg0)
         {
             return IExecute<string>("toDisplayString", arg0);

@@ -33,7 +33,13 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.AsynchronousSocketChannel"/> to <see cref="Java.Nio.Channels.AsynchronousByteChannel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.AsynchronousByteChannel(Java.Nio.Channels.AsynchronousSocketChannel t) => t.Cast<Java.Nio.Channels.AsynchronousByteChannel>();
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.AsynchronousSocketChannel"/> to <see cref="Java.Nio.Channels.NetworkChannel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.NetworkChannel(Java.Nio.Channels.AsynchronousSocketChannel t) => t.Cast<Java.Nio.Channels.NetworkChannel>();
         
         #endregion
@@ -44,15 +50,21 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#open() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#open()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.AsynchronousSocketChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousSocketChannel Open()
         {
             return SExecute<Java.Nio.Channels.AsynchronousSocketChannel>("open");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#open(java.nio.channels.AsynchronousChannelGroup) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#open(java.nio.channels.AsynchronousChannelGroup)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></param>
+        /// <returns><see cref="Java.Nio.Channels.AsynchronousSocketChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousSocketChannel Open(Java.Nio.Channels.AsynchronousChannelGroup arg0)
         {
             return SExecute<Java.Nio.Channels.AsynchronousSocketChannel>("open", arg0);
@@ -62,43 +74,54 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#getLocalAddress() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#getLocalAddress()"/> 
         /// </summary>
         public Java.Net.SocketAddress LocalAddress
         {
             get { return IExecute<Java.Net.SocketAddress>("getLocalAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#getRemoteAddress() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#getRemoteAddress()"/> 
         /// </summary>
         public Java.Net.SocketAddress RemoteAddress
         {
             get { return IExecute<Java.Net.SocketAddress>("getRemoteAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#shutdownInput() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#shutdownInput()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.AsynchronousSocketChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.AsynchronousSocketChannel ShutdownInput()
         {
             return IExecute<Java.Nio.Channels.AsynchronousSocketChannel>("shutdownInput");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#shutdownOutput() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#shutdownOutput()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.AsynchronousSocketChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.AsynchronousSocketChannel ShutdownOutput()
         {
             return IExecute<Java.Nio.Channels.AsynchronousSocketChannel>("shutdownOutput");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#provider()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#provider()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.Spi.AsynchronousChannelProvider"/></returns>
         public Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider()
         {
             return IExecute<Java.Nio.Channels.Spi.AsynchronousChannelProvider>("provider");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#bind(java.net.SocketAddress) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#bind(java.net.SocketAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.NetworkChannel Bind(Java.Net.SocketAddress arg0)
         {
             return IExecute<Java.Nio.Channels.NetworkChannel>("bind", arg0);

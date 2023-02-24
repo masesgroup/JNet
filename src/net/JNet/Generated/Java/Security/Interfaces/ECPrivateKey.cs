@@ -33,14 +33,20 @@ namespace Java.Security.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.ECPrivateKey"/> to <see cref="Java.Security.PrivateKey"/>
+        /// </summary>
         public static implicit operator Java.Security.PrivateKey(Java.Security.Interfaces.ECPrivateKey t) => t.Cast<Java.Security.PrivateKey>();
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.ECPrivateKey"/> to <see cref="Java.Security.Interfaces.ECKey"/>
+        /// </summary>
         public static implicit operator Java.Security.Interfaces.ECKey(Java.Security.Interfaces.ECPrivateKey t) => t.Cast<Java.Security.Interfaces.ECKey>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPrivateKey.html#serialVersionUID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPrivateKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         
@@ -52,7 +58,7 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPrivateKey.html#getS() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPrivateKey.html#getS()"/> 
         /// </summary>
         public Java.Math.BigInteger S
         {

@@ -33,21 +33,24 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.Severity"/> to <see cref="Javax.Print.Attribute.Attribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.Attribute(Javax.Print.Attribute.Standard.Severity t) => t.Cast<Javax.Print.Attribute.Attribute>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#ERROR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#ERROR"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Severity ERROR => Clazz.GetField<Javax.Print.Attribute.Standard.Severity>("ERROR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#REPORT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#REPORT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Severity REPORT => Clazz.GetField<Javax.Print.Attribute.Standard.Severity>("REPORT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#WARNING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#WARNING"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Severity WARNING => Clazz.GetField<Javax.Print.Attribute.Standard.Severity>("WARNING");
         
@@ -59,7 +62,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#getName()"/> 
         /// </summary>
         public string Name
         {

@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Events
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Events.UIEvent"/> to <see cref="Org.W3c.Dom.Events.Event"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Events.Event(Org.W3c.Dom.Events.UIEvent t) => t.Cast<Org.W3c.Dom.Events.Event>();
         
         #endregion
@@ -47,22 +50,27 @@ namespace Org.W3c.Dom.Events
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html#getDetail() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html#getDetail()"/> 
         /// </summary>
         public int Detail
         {
             get { return IExecute<int>("getDetail"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html#getView() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html#getView()"/> 
         /// </summary>
         public Org.W3c.Dom.Views.AbstractView View
         {
             get { return IExecute<Org.W3c.Dom.Views.AbstractView>("getView"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html#initUIEvent(java.lang.String,boolean,boolean,org.w3c.dom.views.AbstractView,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html#initUIEvent(java.lang.String,boolean,boolean,org.w3c.dom.views.AbstractView,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="Org.W3c.Dom.Views.AbstractView"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public void InitUIEvent(string arg0, bool arg1, bool arg2, Org.W3c.Dom.Views.AbstractView arg3, int arg4)
         {
             IExecute("initUIEvent", arg0, arg1, arg2, arg3, arg4);

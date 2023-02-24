@@ -42,92 +42,157 @@ namespace Javax.Swing.Text
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#drawTabbedText(javax.swing.text.Segment,float,float,java.awt.Graphics2D,javax.swing.text.TabExpander,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#drawTabbedText(javax.swing.text.Segment,float,float,java.awt.Graphics2D,javax.swing.text.TabExpander,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Segment"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Graphics2D"/></param>
+        /// <param name="arg4"><see cref="Javax.Swing.Text.TabExpander"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="float"/></returns>
         public static float DrawTabbedText(Javax.Swing.Text.Segment arg0, float arg1, float arg2, Java.Awt.Graphics2D arg3, Javax.Swing.Text.TabExpander arg4, int arg5)
         {
             return SExecute<float>("drawTabbedText", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextWidth(javax.swing.text.Segment,java.awt.FontMetrics,float,javax.swing.text.TabExpander,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextWidth(javax.swing.text.Segment,java.awt.FontMetrics,float,javax.swing.text.TabExpander,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Segment"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontMetrics"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg3"><see cref="Javax.Swing.Text.TabExpander"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <returns><see langword="float"/></returns>
         public static float GetTabbedTextWidth(Javax.Swing.Text.Segment arg0, Java.Awt.FontMetrics arg1, float arg2, Javax.Swing.Text.TabExpander arg3, int arg4)
         {
             return SExecute<float>("getTabbedTextWidth", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getBreakLocation(javax.swing.text.Segment,java.awt.FontMetrics,float,float,javax.swing.text.TabExpander,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getBreakLocation(javax.swing.text.Segment,java.awt.FontMetrics,float,float,javax.swing.text.TabExpander,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Segment"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontMetrics"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg4"><see cref="Javax.Swing.Text.TabExpander"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int GetBreakLocation(Javax.Swing.Text.Segment arg0, Java.Awt.FontMetrics arg1, float arg2, float arg3, Javax.Swing.Text.TabExpander arg4, int arg5)
         {
             return SExecute<int>("getBreakLocation", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getNextWord(javax.swing.text.JTextComponent,int) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getNextWord(javax.swing.text.JTextComponent,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetNextWord(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
             return SExecute<int>("getNextWord", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPositionAbove(javax.swing.text.JTextComponent,int,float) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPositionAbove(javax.swing.text.JTextComponent,int,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetPositionAbove(Javax.Swing.Text.JTextComponent arg0, int arg1, float arg2)
         {
             return SExecute<int>("getPositionAbove", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPositionBelow(javax.swing.text.JTextComponent,int,float) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPositionBelow(javax.swing.text.JTextComponent,int,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetPositionBelow(Javax.Swing.Text.JTextComponent arg0, int arg1, float arg2)
         {
             return SExecute<int>("getPositionBelow", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPreviousWord(javax.swing.text.JTextComponent,int) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getPreviousWord(javax.swing.text.JTextComponent,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetPreviousWord(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
             return SExecute<int>("getPreviousWord", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getRowEnd(javax.swing.text.JTextComponent,int) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getRowEnd(javax.swing.text.JTextComponent,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetRowEnd(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
             return SExecute<int>("getRowEnd", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getRowStart(javax.swing.text.JTextComponent,int) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getRowStart(javax.swing.text.JTextComponent,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetRowStart(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
             return SExecute<int>("getRowStart", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextOffset(javax.swing.text.Segment,java.awt.FontMetrics,float,float,javax.swing.text.TabExpander,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getTabbedTextOffset(javax.swing.text.Segment,java.awt.FontMetrics,float,float,javax.swing.text.TabExpander,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Segment"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontMetrics"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg4"><see cref="Javax.Swing.Text.TabExpander"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg6"><see langword="bool"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int GetTabbedTextOffset(Javax.Swing.Text.Segment arg0, Java.Awt.FontMetrics arg1, float arg2, float arg3, Javax.Swing.Text.TabExpander arg4, int arg5, bool arg6)
         {
             return SExecute<int>("getTabbedTextOffset", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getWordEnd(javax.swing.text.JTextComponent,int) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getWordEnd(javax.swing.text.JTextComponent,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetWordEnd(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
             return SExecute<int>("getWordEnd", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getWordStart(javax.swing.text.JTextComponent,int) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getWordStart(javax.swing.text.JTextComponent,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public static int GetWordStart(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
             return SExecute<int>("getWordStart", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getParagraphElement(javax.swing.text.JTextComponent,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Utilities.html#getParagraphElement(javax.swing.text.JTextComponent,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public static Javax.Swing.Text.Element GetParagraphElement(Javax.Swing.Text.JTextComponent arg0, int arg1)
         {
             return SExecute<Javax.Swing.Text.Element>("getParagraphElement", arg0, arg1);

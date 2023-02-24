@@ -25,7 +25,7 @@ namespace Java.Time.Chrono
 {
     #region AbstractChronology
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/AbstractChronology.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/AbstractChronology.html"/>
     /// </summary>
     public partial class AbstractChronology : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractChronology>
     {
@@ -38,19 +38,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public AbstractChronology(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.AbstractChronology";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -60,7 +60,7 @@ namespace Java.Time.Chrono
 
     #region ChronoLocalDate
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html"/>
     /// </summary>
     public partial class ChronoLocalDate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChronoLocalDate>
     {
@@ -73,19 +73,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public ChronoLocalDate(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.ChronoLocalDate";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -95,7 +95,7 @@ namespace Java.Time.Chrono
 
     #region ChronoLocalDateTime
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html"/>
     /// </summary>
     public partial class ChronoLocalDateTime : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChronoLocalDateTime>
     {
@@ -108,19 +108,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public ChronoLocalDateTime(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.ChronoLocalDateTime";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -130,7 +130,7 @@ namespace Java.Time.Chrono
 
     #region Chronology
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html"/>
     /// </summary>
     public partial class Chronology : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Chronology>
     {
@@ -143,19 +143,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public Chronology(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.Chronology";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -165,7 +165,7 @@ namespace Java.Time.Chrono
 
     #region ChronoPeriod
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html"/>
     /// </summary>
     public partial class ChronoPeriod : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChronoPeriod>
     {
@@ -178,19 +178,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public ChronoPeriod(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.ChronoPeriod";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -200,7 +200,7 @@ namespace Java.Time.Chrono
 
     #region ChronoZonedDateTime
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html"/>
     /// </summary>
     public partial class ChronoZonedDateTime : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChronoZonedDateTime>
     {
@@ -213,19 +213,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public ChronoZonedDateTime(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.ChronoZonedDateTime";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -235,7 +235,7 @@ namespace Java.Time.Chrono
 
     #region Era
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html"/>
     /// </summary>
     public partial class Era : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Era>
     {
@@ -248,19 +248,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public Era(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.Era";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -270,7 +270,7 @@ namespace Java.Time.Chrono
 
     #region HijrahChronology
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahChronology.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahChronology.html"/>
     /// </summary>
     public partial class HijrahChronology : Java.Time.Chrono.AbstractChronology
     {
@@ -283,19 +283,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public HijrahChronology(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.HijrahChronology";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -305,7 +305,7 @@ namespace Java.Time.Chrono
 
     #region HijrahDate
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahDate.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahDate.html"/>
     /// </summary>
     public partial class HijrahDate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HijrahDate>
     {
@@ -318,19 +318,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public HijrahDate(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.HijrahDate";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -340,7 +340,7 @@ namespace Java.Time.Chrono
 
     #region HijrahEra
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html"/>
     /// </summary>
     public partial class HijrahEra : Java.Lang.Enum
     {
@@ -353,19 +353,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public HijrahEra(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.HijrahEra";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -375,7 +375,7 @@ namespace Java.Time.Chrono
 
     #region IsoChronology
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoChronology.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoChronology.html"/>
     /// </summary>
     public partial class IsoChronology : Java.Time.Chrono.AbstractChronology
     {
@@ -388,19 +388,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public IsoChronology(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.IsoChronology";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -410,7 +410,7 @@ namespace Java.Time.Chrono
 
     #region IsoEra
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html"/>
     /// </summary>
     public partial class IsoEra : Java.Lang.Enum
     {
@@ -423,19 +423,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public IsoEra(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.IsoEra";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -445,7 +445,7 @@ namespace Java.Time.Chrono
 
     #region JapaneseChronology
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseChronology.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseChronology.html"/>
     /// </summary>
     public partial class JapaneseChronology : Java.Time.Chrono.AbstractChronology
     {
@@ -458,19 +458,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public JapaneseChronology(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.JapaneseChronology";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -480,7 +480,7 @@ namespace Java.Time.Chrono
 
     #region JapaneseDate
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseDate.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseDate.html"/>
     /// </summary>
     public partial class JapaneseDate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JapaneseDate>
     {
@@ -493,19 +493,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public JapaneseDate(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.JapaneseDate";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -515,7 +515,7 @@ namespace Java.Time.Chrono
 
     #region JapaneseEra
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html"/>
     /// </summary>
     public partial class JapaneseEra : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JapaneseEra>
     {
@@ -528,19 +528,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public JapaneseEra(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.JapaneseEra";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -550,7 +550,7 @@ namespace Java.Time.Chrono
 
     #region MinguoChronology
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoChronology.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoChronology.html"/>
     /// </summary>
     public partial class MinguoChronology : Java.Time.Chrono.AbstractChronology
     {
@@ -563,19 +563,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public MinguoChronology(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.MinguoChronology";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -585,7 +585,7 @@ namespace Java.Time.Chrono
 
     #region MinguoDate
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoDate.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoDate.html"/>
     /// </summary>
     public partial class MinguoDate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MinguoDate>
     {
@@ -598,19 +598,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public MinguoDate(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.MinguoDate";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -620,7 +620,7 @@ namespace Java.Time.Chrono
 
     #region MinguoEra
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html"/>
     /// </summary>
     public partial class MinguoEra : Java.Lang.Enum
     {
@@ -633,19 +633,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public MinguoEra(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.MinguoEra";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -655,7 +655,7 @@ namespace Java.Time.Chrono
 
     #region ThaiBuddhistChronology
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html"/>
     /// </summary>
     public partial class ThaiBuddhistChronology : Java.Time.Chrono.AbstractChronology
     {
@@ -668,19 +668,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public ThaiBuddhistChronology(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.ThaiBuddhistChronology";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -690,7 +690,7 @@ namespace Java.Time.Chrono
 
     #region ThaiBuddhistDate
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistDate.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistDate.html"/>
     /// </summary>
     public partial class ThaiBuddhistDate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ThaiBuddhistDate>
     {
@@ -703,19 +703,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public ThaiBuddhistDate(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.ThaiBuddhistDate";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -725,7 +725,7 @@ namespace Java.Time.Chrono
 
     #region ThaiBuddhistEra
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html"/>
     /// </summary>
     public partial class ThaiBuddhistEra : Java.Lang.Enum
     {
@@ -738,19 +738,19 @@ namespace Java.Time.Chrono
         /// </summary>
         public ThaiBuddhistEra(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.time.chrono.ThaiBuddhistEra";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class

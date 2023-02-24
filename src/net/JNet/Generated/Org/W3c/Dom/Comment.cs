@@ -33,6 +33,9 @@ namespace Org.W3c.Dom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Comment"/> to <see cref="Org.W3c.Dom.CharacterData"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.CharacterData(Org.W3c.Dom.Comment t) => t.Cast<Org.W3c.Dom.CharacterData>();
         
         #endregion

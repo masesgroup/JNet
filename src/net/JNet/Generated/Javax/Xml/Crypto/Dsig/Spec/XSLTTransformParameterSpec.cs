@@ -30,8 +30,9 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XSLTTransformParameterSpec.html#<init>(javax.xml.crypto.XMLStructure)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XSLTTransformParameterSpec.html#%3Cinit%3E(javax.xml.crypto.XMLStructure)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
         public XSLTTransformParameterSpec(Javax.Xml.Crypto.XMLStructure arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Spec.XSLTTransformParameterSpec"/> to <see cref="Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec(Javax.Xml.Crypto.Dsig.Spec.XSLTTransformParameterSpec t) => t.Cast<Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec>();
         
         #endregion
@@ -54,7 +58,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XSLTTransformParameterSpec.html#getStylesheet() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XSLTTransformParameterSpec.html#getStylesheet()"/> 
         /// </summary>
         public Javax.Xml.Crypto.XMLStructure Stylesheet
         {

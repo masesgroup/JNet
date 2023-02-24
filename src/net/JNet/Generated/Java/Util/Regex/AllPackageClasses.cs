@@ -25,7 +25,7 @@ namespace Java.Util.Regex
 {
     #region Matcher
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html"/>
     /// </summary>
     public partial class Matcher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Matcher>
     {
@@ -38,19 +38,19 @@ namespace Java.Util.Regex
         /// </summary>
         public Matcher(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.util.regex.Matcher";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -60,7 +60,7 @@ namespace Java.Util.Regex
 
     #region MatchResult
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/MatchResult.html"/>
     /// </summary>
     public partial class MatchResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MatchResult>
     {
@@ -73,19 +73,19 @@ namespace Java.Util.Regex
         /// </summary>
         public MatchResult(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.util.regex.MatchResult";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -95,7 +95,7 @@ namespace Java.Util.Regex
 
     #region Pattern
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html"/>
     /// </summary>
     public partial class Pattern : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Pattern>
     {
@@ -108,19 +108,19 @@ namespace Java.Util.Regex
         /// </summary>
         public Pattern(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.util.regex.Pattern";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -130,13 +130,11 @@ namespace Java.Util.Regex
 
     #region PatternSyntaxException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/PatternSyntaxException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/PatternSyntaxException.html"/>
     /// </summary>
     public partial class PatternSyntaxException : Java.Lang.IllegalArgumentException
     {
-        public PatternSyntaxException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.util.regex.PatternSyntaxException";
 
         // TODO: complete the class

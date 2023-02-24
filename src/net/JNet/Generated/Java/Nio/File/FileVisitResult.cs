@@ -38,19 +38,19 @@ namespace Java.Nio.File
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#CONTINUE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#CONTINUE"/>
         /// </summary>
         public static Java.Nio.File.FileVisitResult CONTINUE => Clazz.GetField<Java.Nio.File.FileVisitResult>("CONTINUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#SKIP_SIBLINGS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#SKIP_SIBLINGS"/>
         /// </summary>
         public static Java.Nio.File.FileVisitResult SKIP_SIBLINGS => Clazz.GetField<Java.Nio.File.FileVisitResult>("SKIP_SIBLINGS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#SKIP_SUBTREE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#SKIP_SUBTREE"/>
         /// </summary>
         public static Java.Nio.File.FileVisitResult SKIP_SUBTREE => Clazz.GetField<Java.Nio.File.FileVisitResult>("SKIP_SUBTREE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#TERMINATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#TERMINATE"/>
         /// </summary>
         public static Java.Nio.File.FileVisitResult TERMINATE => Clazz.GetField<Java.Nio.File.FileVisitResult>("TERMINATE");
         
@@ -58,8 +58,10 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         public static Java.Nio.File.FileVisitResult[] Values()
         {
             return SExecuteArray<Java.Nio.File.FileVisitResult>("values");

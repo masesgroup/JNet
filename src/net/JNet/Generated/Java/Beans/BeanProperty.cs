@@ -33,6 +33,9 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.BeanProperty"/> to <see cref="Java.Lang.Annotation.Annotation"/>
+        /// </summary>
         public static implicit operator Java.Lang.Annotation.Annotation(Java.Beans.BeanProperty t) => t.Cast<Java.Lang.Annotation.Annotation>();
         
         #endregion
@@ -47,57 +50,73 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#bound()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#bound()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Bound()
         {
             return IExecute<bool>("bound");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#expert()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#expert()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Expert()
         {
             return IExecute<bool>("expert");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#hidden()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#hidden()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Hidden()
         {
             return IExecute<bool>("hidden");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#preferred()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#preferred()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Preferred()
         {
             return IExecute<bool>("preferred");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#required()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#required()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Required()
         {
             return IExecute<bool>("required");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#visualUpdate()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#visualUpdate()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool VisualUpdate()
         {
             return IExecute<bool>("visualUpdate");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#description()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#description()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Description()
         {
             return IExecute<string>("description");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#enumerationValues()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanProperty.html#enumerationValues()"/>
         /// </summary>
+        
+        /// <returns><see cref="string"/></returns>
         public string[] EnumerationValues()
         {
             return IExecuteArray<string>("enumerationValues");

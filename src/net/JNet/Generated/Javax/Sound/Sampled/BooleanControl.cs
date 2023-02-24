@@ -46,15 +46,17 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.html#getValue() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.html#setValue(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.html#setValue(boolean)"/>
         /// </summary>
         public bool Value
         {
             get { return IExecute<bool>("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.html#getStateLabel(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.html#getStateLabel(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetStateLabel(bool arg0)
         {
             return IExecute<string>("getStateLabel", arg0);
@@ -76,11 +78,11 @@ namespace Javax.Sound.Sampled
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.Type.html#APPLY_REVERB
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.Type.html#APPLY_REVERB"/>
             /// </summary>
             public static Javax.Sound.Sampled.BooleanControl.Type APPLY_REVERB => Clazz.GetField<Javax.Sound.Sampled.BooleanControl.Type>("APPLY_REVERB");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.Type.html#MUTE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/BooleanControl.Type.html#MUTE"/>
             /// </summary>
             public static Javax.Sound.Sampled.BooleanControl.Type MUTE => Clazz.GetField<Javax.Sound.Sampled.BooleanControl.Type>("MUTE");
             

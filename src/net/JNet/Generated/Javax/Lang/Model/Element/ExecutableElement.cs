@@ -33,7 +33,13 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Element.ExecutableElement"/> to <see cref="Javax.Lang.Model.Element.Element"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Element(Javax.Lang.Model.Element.ExecutableElement t) => t.Cast<Javax.Lang.Model.Element.Element>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Element.ExecutableElement"/> to <see cref="Javax.Lang.Model.Element.Parameterizable"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Parameterizable(Javax.Lang.Model.Element.ExecutableElement t) => t.Cast<Javax.Lang.Model.Element.Parameterizable>();
         
         #endregion
@@ -48,43 +54,47 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getDefaultValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getDefaultValue()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.AnnotationValue DefaultValue
         {
             get { return IExecute<Javax.Lang.Model.Element.AnnotationValue>("getDefaultValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getReceiverType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getReceiverType()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror ReceiverType
         {
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getReceiverType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getReturnType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getReturnType()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror ReturnType
         {
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getReturnType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getSimpleName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getSimpleName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name SimpleName
         {
             get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isDefault()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isDefault()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDefault()
         {
             return IExecute<bool>("isDefault");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isVarArgs()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isVarArgs()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsVarArgs()
         {
             return IExecute<bool>("isVarArgs");

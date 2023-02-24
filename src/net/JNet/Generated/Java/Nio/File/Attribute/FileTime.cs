@@ -42,15 +42,19 @@ namespace Java.Nio.File.Attribute
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#from(java.time.Instant)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#from(java.time.Instant)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
         public static Java.Nio.File.Attribute.FileTime From(Java.Time.Instant arg0)
         {
             return SExecute<Java.Nio.File.Attribute.FileTime>("from", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#fromMillis(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#fromMillis(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
         public static Java.Nio.File.Attribute.FileTime FromMillis(long arg0)
         {
             return SExecute<Java.Nio.File.Attribute.FileTime>("fromMillis", arg0);
@@ -60,29 +64,37 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#compareTo(java.nio.file.attribute.FileTime)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#compareTo(java.nio.file.attribute.FileTime)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Java.Nio.File.Attribute.FileTime arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toInstant()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toInstant()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant ToInstant()
         {
             return IExecute<Java.Time.Instant>("toInstant");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toMillis()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toMillis()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long ToMillis()
         {
             return IExecute<long>("toMillis");

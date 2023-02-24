@@ -30,15 +30,20 @@ namespace Javax.Naming
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#<init>(java.lang.String,java.lang.String,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#%3Cinit%3E(java.lang.String,java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public NameClassPair(string arg0, string arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#<init>(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public NameClassPair(string arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -47,6 +52,9 @@ namespace Javax.Naming
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.NameClassPair"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.NameClassPair t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -61,43 +69,49 @@ namespace Javax.Naming
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#getName() https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setName(java.lang.String)"/>
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#getNameInNamespace() https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setNameInNamespace(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#getNameInNamespace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setNameInNamespace(java.lang.String)"/>
         /// </summary>
         public string NameInNamespace
         {
             get { return IExecute<string>("getNameInNamespace"); } set { IExecute("setNameInNamespace", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#isRelative()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#isRelative()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsRelative()
         {
             return IExecute<bool>("isRelative");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#getClassName()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#getClassName()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string GetClassName()
         {
             return IExecute<string>("getClassName");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setClassName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setClassName(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void SetClassName(string arg0)
         {
             IExecute("setClassName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setRelative(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setRelative(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetRelative(bool arg0)
         {
             IExecute("setRelative", arg0);

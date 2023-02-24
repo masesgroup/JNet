@@ -25,7 +25,7 @@ namespace Java.Security
 {
     #region AccessControlContext
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessControlContext.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessControlContext.html"/>
     /// </summary>
     public partial class AccessControlContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AccessControlContext>
     {
@@ -38,19 +38,19 @@ namespace Java.Security
         /// </summary>
         public AccessControlContext(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.AccessControlContext";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -60,13 +60,11 @@ namespace Java.Security
 
     #region AccessControlException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessControlException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessControlException.html"/>
     /// </summary>
     public partial class AccessControlException : Java.Lang.SecurityException
     {
-        public AccessControlException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.AccessControlException";
 
         // TODO: complete the class
@@ -76,7 +74,7 @@ namespace Java.Security
 
     #region AccessController
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html"/>
     /// </summary>
     public partial class AccessController : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AccessController>
     {
@@ -89,19 +87,19 @@ namespace Java.Security
         /// </summary>
         public AccessController(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.AccessController";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -111,7 +109,7 @@ namespace Java.Security
 
     #region AlgorithmConstraints
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmConstraints.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmConstraints.html"/>
     /// </summary>
     public partial class AlgorithmConstraints : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AlgorithmConstraints>
     {
@@ -124,19 +122,19 @@ namespace Java.Security
         /// </summary>
         public AlgorithmConstraints(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.AlgorithmConstraints";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -146,7 +144,7 @@ namespace Java.Security
 
     #region AlgorithmParameterGenerator
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html"/>
     /// </summary>
     public partial class AlgorithmParameterGenerator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AlgorithmParameterGenerator>
     {
@@ -159,19 +157,19 @@ namespace Java.Security
         /// </summary>
         public AlgorithmParameterGenerator(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.AlgorithmParameterGenerator";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -181,7 +179,7 @@ namespace Java.Security
 
     #region AlgorithmParameterGeneratorSpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGeneratorSpi.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGeneratorSpi.html"/>
     /// </summary>
     public partial class AlgorithmParameterGeneratorSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AlgorithmParameterGeneratorSpi>
     {
@@ -194,19 +192,19 @@ namespace Java.Security
         /// </summary>
         public AlgorithmParameterGeneratorSpi(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.AlgorithmParameterGeneratorSpi";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -216,7 +214,7 @@ namespace Java.Security
 
     #region AlgorithmParameters
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html"/>
     /// </summary>
     public partial class AlgorithmParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AlgorithmParameters>
     {
@@ -229,19 +227,19 @@ namespace Java.Security
         /// </summary>
         public AlgorithmParameters(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.AlgorithmParameters";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -251,7 +249,7 @@ namespace Java.Security
 
     #region AlgorithmParametersSpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParametersSpi.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParametersSpi.html"/>
     /// </summary>
     public partial class AlgorithmParametersSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AlgorithmParametersSpi>
     {
@@ -264,19 +262,19 @@ namespace Java.Security
         /// </summary>
         public AlgorithmParametersSpi(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.AlgorithmParametersSpi";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -286,7 +284,7 @@ namespace Java.Security
 
     #region AllPermission
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AllPermission.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AllPermission.html"/>
     /// </summary>
     public partial class AllPermission : Java.Security.Permission
     {
@@ -299,19 +297,19 @@ namespace Java.Security
         /// </summary>
         public AllPermission(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.AllPermission";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -321,7 +319,7 @@ namespace Java.Security
 
     #region AuthProvider
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AuthProvider.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AuthProvider.html"/>
     /// </summary>
     public partial class AuthProvider : Java.Security.Provider
     {
@@ -334,19 +332,19 @@ namespace Java.Security
         /// </summary>
         public AuthProvider(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.AuthProvider";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -356,7 +354,7 @@ namespace Java.Security
 
     #region BasicPermission
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/BasicPermission.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/BasicPermission.html"/>
     /// </summary>
     public partial class BasicPermission : Java.Security.Permission
     {
@@ -369,19 +367,19 @@ namespace Java.Security
         /// </summary>
         public BasicPermission(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.BasicPermission";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -391,7 +389,7 @@ namespace Java.Security
 
     #region CodeSigner
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSigner.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSigner.html"/>
     /// </summary>
     public partial class CodeSigner : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CodeSigner>
     {
@@ -404,19 +402,19 @@ namespace Java.Security
         /// </summary>
         public CodeSigner(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.CodeSigner";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -426,7 +424,7 @@ namespace Java.Security
 
     #region CodeSource
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html"/>
     /// </summary>
     public partial class CodeSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CodeSource>
     {
@@ -439,19 +437,19 @@ namespace Java.Security
         /// </summary>
         public CodeSource(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.CodeSource";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -461,7 +459,7 @@ namespace Java.Security
 
     #region CryptoPrimitive
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html"/>
     /// </summary>
     public partial class CryptoPrimitive : Java.Lang.Enum
     {
@@ -474,19 +472,19 @@ namespace Java.Security
         /// </summary>
         public CryptoPrimitive(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.CryptoPrimitive";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -496,13 +494,11 @@ namespace Java.Security
 
     #region DigestException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestException.html"/>
     /// </summary>
     public partial class DigestException : Java.Security.GeneralSecurityException
     {
-        public DigestException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.DigestException";
 
         // TODO: complete the class
@@ -512,7 +508,7 @@ namespace Java.Security
 
     #region DigestInputStream
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestInputStream.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestInputStream.html"/>
     /// </summary>
     public partial class DigestInputStream : Java.Io.FilterInputStream
     {
@@ -525,19 +521,19 @@ namespace Java.Security
         /// </summary>
         public DigestInputStream(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.DigestInputStream";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -547,7 +543,7 @@ namespace Java.Security
 
     #region DigestOutputStream
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestOutputStream.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestOutputStream.html"/>
     /// </summary>
     public partial class DigestOutputStream : Java.Io.FilterOutputStream
     {
@@ -560,19 +556,19 @@ namespace Java.Security
         /// </summary>
         public DigestOutputStream(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.DigestOutputStream";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -582,7 +578,7 @@ namespace Java.Security
 
     #region DomainCombiner
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainCombiner.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainCombiner.html"/>
     /// </summary>
     public partial class DomainCombiner : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DomainCombiner>
     {
@@ -595,19 +591,19 @@ namespace Java.Security
         /// </summary>
         public DomainCombiner(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.DomainCombiner";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -617,7 +613,7 @@ namespace Java.Security
 
     #region DomainLoadStoreParameter
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainLoadStoreParameter.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainLoadStoreParameter.html"/>
     /// </summary>
     public partial class DomainLoadStoreParameter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DomainLoadStoreParameter>
     {
@@ -630,19 +626,19 @@ namespace Java.Security
         /// </summary>
         public DomainLoadStoreParameter(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.DomainLoadStoreParameter";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -652,7 +648,7 @@ namespace Java.Security
 
     #region DrbgParameters
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html"/>
     /// </summary>
     public partial class DrbgParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DrbgParameters>
     {
@@ -665,25 +661,25 @@ namespace Java.Security
         /// </summary>
         public DrbgParameters(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.DrbgParameters";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
         #region Capability
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html"/>
         /// </summary>
         public partial class Capability : Java.Lang.Enum
         {
@@ -696,19 +692,19 @@ namespace Java.Security
             /// </summary>
             public Capability(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.DrbgParameters$Capability";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -717,7 +713,7 @@ namespace Java.Security
 
         #region Instantiation
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html"/>
         /// </summary>
         public partial class Instantiation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Instantiation>
         {
@@ -730,19 +726,19 @@ namespace Java.Security
             /// </summary>
             public Instantiation(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.DrbgParameters$Instantiation";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -751,7 +747,7 @@ namespace Java.Security
 
         #region NextBytes
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.NextBytes.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.NextBytes.html"/>
         /// </summary>
         public partial class NextBytes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NextBytes>
         {
@@ -764,19 +760,19 @@ namespace Java.Security
             /// </summary>
             public NextBytes(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.DrbgParameters$NextBytes";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -785,7 +781,7 @@ namespace Java.Security
 
         #region Reseed
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html"/>
         /// </summary>
         public partial class Reseed : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Reseed>
         {
@@ -798,19 +794,19 @@ namespace Java.Security
             /// </summary>
             public Reseed(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.DrbgParameters$Reseed";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -823,13 +819,11 @@ namespace Java.Security
 
     #region GeneralSecurityException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/GeneralSecurityException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/GeneralSecurityException.html"/>
     /// </summary>
     public partial class GeneralSecurityException : Java.Lang.Exception
     {
-        public GeneralSecurityException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.GeneralSecurityException";
 
         // TODO: complete the class
@@ -839,7 +833,7 @@ namespace Java.Security
 
     #region Guard
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Guard.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Guard.html"/>
     /// </summary>
     public partial class Guard : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Guard>
     {
@@ -852,19 +846,19 @@ namespace Java.Security
         /// </summary>
         public Guard(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.Guard";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -874,7 +868,7 @@ namespace Java.Security
 
     #region GuardedObject
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/GuardedObject.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/GuardedObject.html"/>
     /// </summary>
     public partial class GuardedObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GuardedObject>
     {
@@ -887,19 +881,19 @@ namespace Java.Security
         /// </summary>
         public GuardedObject(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.GuardedObject";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -909,13 +903,11 @@ namespace Java.Security
 
     #region InvalidAlgorithmParameterException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/InvalidAlgorithmParameterException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/InvalidAlgorithmParameterException.html"/>
     /// </summary>
     public partial class InvalidAlgorithmParameterException : Java.Security.GeneralSecurityException
     {
-        public InvalidAlgorithmParameterException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.InvalidAlgorithmParameterException";
 
         // TODO: complete the class
@@ -925,13 +917,11 @@ namespace Java.Security
 
     #region InvalidKeyException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/InvalidKeyException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/InvalidKeyException.html"/>
     /// </summary>
     public partial class InvalidKeyException : Java.Security.KeyException
     {
-        public InvalidKeyException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.InvalidKeyException";
 
         // TODO: complete the class
@@ -941,13 +931,11 @@ namespace Java.Security
 
     #region InvalidParameterException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/InvalidParameterException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/InvalidParameterException.html"/>
     /// </summary>
     public partial class InvalidParameterException : Java.Lang.IllegalArgumentException
     {
-        public InvalidParameterException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.InvalidParameterException";
 
         // TODO: complete the class
@@ -957,7 +945,7 @@ namespace Java.Security
 
     #region Key
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html"/>
     /// </summary>
     public partial class Key : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Key>
     {
@@ -970,19 +958,19 @@ namespace Java.Security
         /// </summary>
         public Key(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.Key";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -992,13 +980,11 @@ namespace Java.Security
 
     #region KeyException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyException.html"/>
     /// </summary>
     public partial class KeyException : Java.Security.GeneralSecurityException
     {
-        public KeyException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.KeyException";
 
         // TODO: complete the class
@@ -1008,7 +994,7 @@ namespace Java.Security
 
     #region KeyFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactory.html"/>
     /// </summary>
     public partial class KeyFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyFactory>
     {
@@ -1021,19 +1007,19 @@ namespace Java.Security
         /// </summary>
         public KeyFactory(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.KeyFactory";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1043,7 +1029,7 @@ namespace Java.Security
 
     #region KeyFactorySpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactorySpi.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyFactorySpi.html"/>
     /// </summary>
     public partial class KeyFactorySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyFactorySpi>
     {
@@ -1056,19 +1042,19 @@ namespace Java.Security
         /// </summary>
         public KeyFactorySpi(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.KeyFactorySpi";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1078,13 +1064,11 @@ namespace Java.Security
 
     #region KeyManagementException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyManagementException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyManagementException.html"/>
     /// </summary>
     public partial class KeyManagementException : Java.Security.KeyException
     {
-        public KeyManagementException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.KeyManagementException";
 
         // TODO: complete the class
@@ -1094,7 +1078,7 @@ namespace Java.Security
 
     #region KeyPair
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPair.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPair.html"/>
     /// </summary>
     public partial class KeyPair : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyPair>
     {
@@ -1107,19 +1091,19 @@ namespace Java.Security
         /// </summary>
         public KeyPair(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.KeyPair";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1129,7 +1113,7 @@ namespace Java.Security
 
     #region KeyPairGenerator
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html"/>
     /// </summary>
     public partial class KeyPairGenerator : Java.Security.KeyPairGeneratorSpi
     {
@@ -1142,19 +1126,19 @@ namespace Java.Security
         /// </summary>
         public KeyPairGenerator(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.KeyPairGenerator";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1164,7 +1148,7 @@ namespace Java.Security
 
     #region KeyPairGeneratorSpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html"/>
     /// </summary>
     public partial class KeyPairGeneratorSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyPairGeneratorSpi>
     {
@@ -1177,19 +1161,19 @@ namespace Java.Security
         /// </summary>
         public KeyPairGeneratorSpi(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.KeyPairGeneratorSpi";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1199,7 +1183,7 @@ namespace Java.Security
 
     #region KeyRep
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.html"/>
     /// </summary>
     public partial class KeyRep : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyRep>
     {
@@ -1212,25 +1196,25 @@ namespace Java.Security
         /// </summary>
         public KeyRep(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.KeyRep";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
         #region Type
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html"/>
         /// </summary>
         public partial class Type : Java.Lang.Enum
         {
@@ -1243,19 +1227,19 @@ namespace Java.Security
             /// </summary>
             public Type(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.KeyRep$Type";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1268,7 +1252,7 @@ namespace Java.Security
 
     #region KeyStore
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html"/>
     /// </summary>
     public partial class KeyStore : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyStore>
     {
@@ -1281,25 +1265,25 @@ namespace Java.Security
         /// </summary>
         public KeyStore(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.KeyStore";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
         #region Builder
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html"/>
         /// </summary>
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
         {
@@ -1312,19 +1296,19 @@ namespace Java.Security
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.KeyStore$Builder";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => true;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1333,7 +1317,7 @@ namespace Java.Security
 
         #region CallbackHandlerProtection
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.CallbackHandlerProtection.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.CallbackHandlerProtection.html"/>
         /// </summary>
         public partial class CallbackHandlerProtection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CallbackHandlerProtection>
         {
@@ -1346,19 +1330,19 @@ namespace Java.Security
             /// </summary>
             public CallbackHandlerProtection(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.KeyStore$CallbackHandlerProtection";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1367,7 +1351,7 @@ namespace Java.Security
 
         #region Entry
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Entry.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Entry.html"/>
         /// </summary>
         public partial class Entry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Entry>
         {
@@ -1380,19 +1364,19 @@ namespace Java.Security
             /// </summary>
             public Entry(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.KeyStore$Entry";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => true;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => true;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1401,7 +1385,7 @@ namespace Java.Security
 
         #region LoadStoreParameter
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.LoadStoreParameter.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.LoadStoreParameter.html"/>
         /// </summary>
         public partial class LoadStoreParameter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LoadStoreParameter>
         {
@@ -1414,19 +1398,19 @@ namespace Java.Security
             /// </summary>
             public LoadStoreParameter(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.KeyStore$LoadStoreParameter";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => true;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => true;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1435,7 +1419,7 @@ namespace Java.Security
 
         #region PasswordProtection
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html"/>
         /// </summary>
         public partial class PasswordProtection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PasswordProtection>
         {
@@ -1448,19 +1432,19 @@ namespace Java.Security
             /// </summary>
             public PasswordProtection(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.KeyStore$PasswordProtection";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1469,7 +1453,7 @@ namespace Java.Security
 
         #region PrivateKeyEntry
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html"/>
         /// </summary>
         public partial class PrivateKeyEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrivateKeyEntry>
         {
@@ -1482,19 +1466,19 @@ namespace Java.Security
             /// </summary>
             public PrivateKeyEntry(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.KeyStore$PrivateKeyEntry";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1503,7 +1487,7 @@ namespace Java.Security
 
         #region ProtectionParameter
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.ProtectionParameter.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.ProtectionParameter.html"/>
         /// </summary>
         public partial class ProtectionParameter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProtectionParameter>
         {
@@ -1516,19 +1500,19 @@ namespace Java.Security
             /// </summary>
             public ProtectionParameter(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.KeyStore$ProtectionParameter";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => true;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => true;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1537,7 +1521,7 @@ namespace Java.Security
 
         #region SecretKeyEntry
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html"/>
         /// </summary>
         public partial class SecretKeyEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecretKeyEntry>
         {
@@ -1550,19 +1534,19 @@ namespace Java.Security
             /// </summary>
             public SecretKeyEntry(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.KeyStore$SecretKeyEntry";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1571,7 +1555,7 @@ namespace Java.Security
 
         #region TrustedCertificateEntry
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html"/>
         /// </summary>
         public partial class TrustedCertificateEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TrustedCertificateEntry>
         {
@@ -1584,19 +1568,19 @@ namespace Java.Security
             /// </summary>
             public TrustedCertificateEntry(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.KeyStore$TrustedCertificateEntry";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1609,13 +1593,11 @@ namespace Java.Security
 
     #region KeyStoreException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreException.html"/>
     /// </summary>
     public partial class KeyStoreException : Java.Security.GeneralSecurityException
     {
-        public KeyStoreException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.KeyStoreException";
 
         // TODO: complete the class
@@ -1625,7 +1607,7 @@ namespace Java.Security
 
     #region KeyStoreSpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html"/>
     /// </summary>
     public partial class KeyStoreSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyStoreSpi>
     {
@@ -1638,19 +1620,19 @@ namespace Java.Security
         /// </summary>
         public KeyStoreSpi(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.KeyStoreSpi";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1660,7 +1642,7 @@ namespace Java.Security
 
     #region MessageDigest
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html"/>
     /// </summary>
     public partial class MessageDigest : Java.Security.MessageDigestSpi
     {
@@ -1673,19 +1655,19 @@ namespace Java.Security
         /// </summary>
         public MessageDigest(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.MessageDigest";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1695,7 +1677,7 @@ namespace Java.Security
 
     #region MessageDigestSpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigestSpi.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigestSpi.html"/>
     /// </summary>
     public partial class MessageDigestSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MessageDigestSpi>
     {
@@ -1708,19 +1690,19 @@ namespace Java.Security
         /// </summary>
         public MessageDigestSpi(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.MessageDigestSpi";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1730,13 +1712,11 @@ namespace Java.Security
 
     #region NoSuchAlgorithmException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/NoSuchAlgorithmException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/NoSuchAlgorithmException.html"/>
     /// </summary>
     public partial class NoSuchAlgorithmException : Java.Security.GeneralSecurityException
     {
-        public NoSuchAlgorithmException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.NoSuchAlgorithmException";
 
         // TODO: complete the class
@@ -1746,13 +1726,11 @@ namespace Java.Security
 
     #region NoSuchProviderException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/NoSuchProviderException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/NoSuchProviderException.html"/>
     /// </summary>
     public partial class NoSuchProviderException : Java.Security.GeneralSecurityException
     {
-        public NoSuchProviderException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.NoSuchProviderException";
 
         // TODO: complete the class
@@ -1762,7 +1740,7 @@ namespace Java.Security
 
     #region Permission
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permission.html"/>
     /// </summary>
     public partial class Permission : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Permission>
     {
@@ -1775,19 +1753,19 @@ namespace Java.Security
         /// </summary>
         public Permission(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.Permission";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1797,7 +1775,7 @@ namespace Java.Security
 
     #region PermissionCollection
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html"/>
     /// </summary>
     public partial class PermissionCollection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PermissionCollection>
     {
@@ -1810,19 +1788,19 @@ namespace Java.Security
         /// </summary>
         public PermissionCollection(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.PermissionCollection";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1832,7 +1810,7 @@ namespace Java.Security
 
     #region Permissions
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permissions.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Permissions.html"/>
     /// </summary>
     public partial class Permissions : Java.Security.PermissionCollection
     {
@@ -1845,19 +1823,19 @@ namespace Java.Security
         /// </summary>
         public Permissions(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.Permissions";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1867,7 +1845,7 @@ namespace Java.Security
 
     #region PKCS12Attribute
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PKCS12Attribute.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PKCS12Attribute.html"/>
     /// </summary>
     public partial class PKCS12Attribute : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PKCS12Attribute>
     {
@@ -1880,19 +1858,19 @@ namespace Java.Security
         /// </summary>
         public PKCS12Attribute(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.PKCS12Attribute";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1902,7 +1880,7 @@ namespace Java.Security
 
     #region Policy
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html"/>
     /// </summary>
     public partial class Policy : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Policy>
     {
@@ -1915,25 +1893,25 @@ namespace Java.Security
         /// </summary>
         public Policy(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.Policy";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
         #region Parameters
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.Parameters.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.Parameters.html"/>
         /// </summary>
         public partial class Parameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Parameters>
         {
@@ -1946,19 +1924,19 @@ namespace Java.Security
             /// </summary>
             public Parameters(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.Policy$Parameters";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => true;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => true;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1971,7 +1949,7 @@ namespace Java.Security
 
     #region PolicySpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PolicySpi.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PolicySpi.html"/>
     /// </summary>
     public partial class PolicySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PolicySpi>
     {
@@ -1984,19 +1962,19 @@ namespace Java.Security
         /// </summary>
         public PolicySpi(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.PolicySpi";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2006,7 +1984,7 @@ namespace Java.Security
 
     #region Principal
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Principal.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Principal.html"/>
     /// </summary>
     public partial class Principal : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Principal>
     {
@@ -2019,19 +1997,19 @@ namespace Java.Security
         /// </summary>
         public Principal(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.Principal";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2041,7 +2019,7 @@ namespace Java.Security
 
     #region PrivateKey
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivateKey.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivateKey.html"/>
     /// </summary>
     public partial class PrivateKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrivateKey>
     {
@@ -2054,19 +2032,19 @@ namespace Java.Security
         /// </summary>
         public PrivateKey(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.PrivateKey";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2076,7 +2054,7 @@ namespace Java.Security
 
     #region PrivilegedAction
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html"/>
     /// </summary>
     public partial class PrivilegedAction : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrivilegedAction>
     {
@@ -2089,19 +2067,19 @@ namespace Java.Security
         /// </summary>
         public PrivilegedAction(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.PrivilegedAction";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2111,13 +2089,11 @@ namespace Java.Security
 
     #region PrivilegedActionException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedActionException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedActionException.html"/>
     /// </summary>
     public partial class PrivilegedActionException : Java.Lang.Exception
     {
-        public PrivilegedActionException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.PrivilegedActionException";
 
         // TODO: complete the class
@@ -2127,7 +2103,7 @@ namespace Java.Security
 
     #region PrivilegedExceptionAction
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedExceptionAction.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedExceptionAction.html"/>
     /// </summary>
     public partial class PrivilegedExceptionAction : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrivilegedExceptionAction>
     {
@@ -2140,19 +2116,19 @@ namespace Java.Security
         /// </summary>
         public PrivilegedExceptionAction(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.PrivilegedExceptionAction";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2162,7 +2138,7 @@ namespace Java.Security
 
     #region ProtectionDomain
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html"/>
     /// </summary>
     public partial class ProtectionDomain : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProtectionDomain>
     {
@@ -2175,19 +2151,19 @@ namespace Java.Security
         /// </summary>
         public ProtectionDomain(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.ProtectionDomain";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2197,7 +2173,7 @@ namespace Java.Security
 
     #region Provider
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html"/>
     /// </summary>
     public partial class Provider : Java.Util.Properties
     {
@@ -2210,25 +2186,25 @@ namespace Java.Security
         /// </summary>
         public Provider(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.Provider";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
         #region Service
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html"/>
         /// </summary>
         public partial class Service : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Service>
         {
@@ -2241,19 +2217,19 @@ namespace Java.Security
             /// </summary>
             public Service(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "java.security.Provider$Service";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => false;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -2266,13 +2242,11 @@ namespace Java.Security
 
     #region ProviderException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProviderException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProviderException.html"/>
     /// </summary>
     public partial class ProviderException : Java.Lang.RuntimeException
     {
-        public ProviderException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.ProviderException";
 
         // TODO: complete the class
@@ -2282,7 +2256,7 @@ namespace Java.Security
 
     #region PublicKey
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PublicKey.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PublicKey.html"/>
     /// </summary>
     public partial class PublicKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PublicKey>
     {
@@ -2295,19 +2269,19 @@ namespace Java.Security
         /// </summary>
         public PublicKey(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.PublicKey";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2317,7 +2291,7 @@ namespace Java.Security
 
     #region SecureClassLoader
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureClassLoader.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureClassLoader.html"/>
     /// </summary>
     public partial class SecureClassLoader : Java.Lang.ClassLoader
     {
@@ -2330,19 +2304,19 @@ namespace Java.Security
         /// </summary>
         public SecureClassLoader(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.SecureClassLoader";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2352,7 +2326,7 @@ namespace Java.Security
 
     #region SecureRandom
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html"/>
     /// </summary>
     public partial class SecureRandom : Java.Util.Random
     {
@@ -2365,19 +2339,19 @@ namespace Java.Security
         /// </summary>
         public SecureRandom(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.SecureRandom";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2387,7 +2361,7 @@ namespace Java.Security
 
     #region SecureRandomParameters
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandomParameters.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandomParameters.html"/>
     /// </summary>
     public partial class SecureRandomParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecureRandomParameters>
     {
@@ -2400,19 +2374,19 @@ namespace Java.Security
         /// </summary>
         public SecureRandomParameters(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.SecureRandomParameters";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2422,7 +2396,7 @@ namespace Java.Security
 
     #region SecureRandomSpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandomSpi.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandomSpi.html"/>
     /// </summary>
     public partial class SecureRandomSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecureRandomSpi>
     {
@@ -2435,19 +2409,19 @@ namespace Java.Security
         /// </summary>
         public SecureRandomSpi(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.SecureRandomSpi";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2457,7 +2431,7 @@ namespace Java.Security
 
     #region Security
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html"/>
     /// </summary>
     public partial class Security : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Security>
     {
@@ -2470,19 +2444,19 @@ namespace Java.Security
         /// </summary>
         public Security(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.Security";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2492,7 +2466,7 @@ namespace Java.Security
 
     #region SecurityPermission
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecurityPermission.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecurityPermission.html"/>
     /// </summary>
     public partial class SecurityPermission : Java.Security.BasicPermission
     {
@@ -2505,19 +2479,19 @@ namespace Java.Security
         /// </summary>
         public SecurityPermission(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.SecurityPermission";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2527,7 +2501,7 @@ namespace Java.Security
 
     #region Signature
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html"/>
     /// </summary>
     public partial class Signature : Java.Security.SignatureSpi
     {
@@ -2540,19 +2514,19 @@ namespace Java.Security
         /// </summary>
         public Signature(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.Signature";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2562,13 +2536,11 @@ namespace Java.Security
 
     #region SignatureException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignatureException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignatureException.html"/>
     /// </summary>
     public partial class SignatureException : Java.Security.GeneralSecurityException
     {
-        public SignatureException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.SignatureException";
 
         // TODO: complete the class
@@ -2578,7 +2550,7 @@ namespace Java.Security
 
     #region SignatureSpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignatureSpi.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignatureSpi.html"/>
     /// </summary>
     public partial class SignatureSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SignatureSpi>
     {
@@ -2591,19 +2563,19 @@ namespace Java.Security
         /// </summary>
         public SignatureSpi(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.SignatureSpi";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2613,7 +2585,7 @@ namespace Java.Security
 
     #region SignedObject
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html"/>
     /// </summary>
     public partial class SignedObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SignedObject>
     {
@@ -2626,19 +2598,19 @@ namespace Java.Security
         /// </summary>
         public SignedObject(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.SignedObject";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2648,7 +2620,7 @@ namespace Java.Security
 
     #region Timestamp
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Timestamp.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Timestamp.html"/>
     /// </summary>
     public partial class Timestamp : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Timestamp>
     {
@@ -2661,19 +2633,19 @@ namespace Java.Security
         /// </summary>
         public Timestamp(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.Timestamp";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2683,13 +2655,11 @@ namespace Java.Security
 
     #region UnrecoverableEntryException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnrecoverableEntryException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnrecoverableEntryException.html"/>
     /// </summary>
     public partial class UnrecoverableEntryException : Java.Security.GeneralSecurityException
     {
-        public UnrecoverableEntryException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.UnrecoverableEntryException";
 
         // TODO: complete the class
@@ -2699,13 +2669,11 @@ namespace Java.Security
 
     #region UnrecoverableKeyException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnrecoverableKeyException.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnrecoverableKeyException.html"/>
     /// </summary>
     public partial class UnrecoverableKeyException : Java.Security.UnrecoverableEntryException
     {
-        public UnrecoverableKeyException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.security.UnrecoverableKeyException";
 
         // TODO: complete the class
@@ -2715,7 +2683,7 @@ namespace Java.Security
 
     #region UnresolvedPermission
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html"/>
     /// </summary>
     public partial class UnresolvedPermission : Java.Security.Permission
     {
@@ -2728,19 +2696,19 @@ namespace Java.Security
         /// </summary>
         public UnresolvedPermission(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.UnresolvedPermission";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2750,7 +2718,7 @@ namespace Java.Security
 
     #region URIParameter
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/URIParameter.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/URIParameter.html"/>
     /// </summary>
     public partial class URIParameter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<URIParameter>
     {
@@ -2763,19 +2731,19 @@ namespace Java.Security
         /// </summary>
         public URIParameter(params object[] args) : base(args) { }
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.security.URIParameter";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
         public override bool IsCloseable => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class

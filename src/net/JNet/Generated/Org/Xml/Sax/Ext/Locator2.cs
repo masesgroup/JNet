@@ -33,6 +33,9 @@ namespace Org.Xml.Sax.Ext
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.Xml.Sax.Ext.Locator2"/> to <see cref="Org.Xml.Sax.Locator"/>
+        /// </summary>
         public static implicit operator Org.Xml.Sax.Locator(Org.Xml.Sax.Ext.Locator2 t) => t.Cast<Org.Xml.Sax.Locator>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Org.Xml.Sax.Ext
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Locator2.html#getEncoding() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Locator2.html#getEncoding()"/> 
         /// </summary>
         public string Encoding
         {
             get { return IExecute<string>("getEncoding"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Locator2.html#getXMLVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Locator2.html#getXMLVersion()"/> 
         /// </summary>
         public string XMLVersion
         {

@@ -30,8 +30,10 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/StreamHandler.html#<init>(java.io.OutputStream,java.util.logging.Formatter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/StreamHandler.html#%3Cinit%3E(java.io.OutputStream,java.util.logging.Formatter)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Logging.Formatter"/></param>
         public StreamHandler(Java.Io.OutputStream arg0, Java.Util.Logging.Formatter arg1)
             : base(arg0, arg1)
         {

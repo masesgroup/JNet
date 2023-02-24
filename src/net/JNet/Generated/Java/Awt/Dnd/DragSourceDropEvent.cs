@@ -30,22 +30,31 @@ namespace Java.Awt.Dnd
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#<init>(java.awt.dnd.DragSourceContext,int,boolean,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#%3Cinit%3E(java.awt.dnd.DragSourceContext,int,boolean,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#<init>(java.awt.dnd.DragSourceContext,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#%3Cinit%3E(java.awt.dnd.DragSourceContext,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#<init>(java.awt.dnd.DragSourceContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#%3Cinit%3E(java.awt.dnd.DragSourceContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
         public DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0)
             : base(arg0)
         {
@@ -67,14 +76,14 @@ namespace Java.Awt.Dnd
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#getDropAction() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#getDropAction()"/> 
         /// </summary>
         public int DropAction
         {
             get { return IExecute<int>("getDropAction"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#getDropSuccess() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#getDropSuccess()"/> 
         /// </summary>
         public bool DropSuccess
         {

@@ -30,15 +30,20 @@ namespace Javax.Security.Auth.X500
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#<init>(java.security.cert.X509Certificate,java.security.PrivateKey,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#%3Cinit%3E(java.security.cert.X509Certificate,java.security.PrivateKey,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
+        /// <param name="arg1"><see cref="Java.Security.PrivateKey"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
         public X500PrivateCredential(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#<init>(java.security.cert.X509Certificate,java.security.PrivateKey)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#%3Cinit%3E(java.security.cert.X509Certificate,java.security.PrivateKey)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
+        /// <param name="arg1"><see cref="Java.Security.PrivateKey"/></param>
         public X500PrivateCredential(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1)
             : base(arg0, arg1)
         {
@@ -47,6 +52,9 @@ namespace Javax.Security.Auth.X500
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.X500.X500PrivateCredential"/> to <see cref="Javax.Security.Auth.Destroyable"/>
+        /// </summary>
         public static implicit operator Javax.Security.Auth.Destroyable(Javax.Security.Auth.X500.X500PrivateCredential t) => t.Cast<Javax.Security.Auth.Destroyable>();
         
         #endregion
@@ -61,35 +69,37 @@ namespace Javax.Security.Auth.X500
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#getAlias() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#getAlias()"/> 
         /// </summary>
         public string Alias
         {
             get { return IExecute<string>("getAlias"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#getCertificate() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#getCertificate()"/> 
         /// </summary>
         public Java.Security.Cert.X509Certificate Certificate
         {
             get { return IExecute<Java.Security.Cert.X509Certificate>("getCertificate"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#getPrivateKey() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#getPrivateKey()"/> 
         /// </summary>
         public Java.Security.PrivateKey PrivateKey
         {
             get { return IExecute<Java.Security.PrivateKey>("getPrivateKey"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#isDestroyed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#isDestroyed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDestroyed()
         {
             return IExecute<bool>("isDestroyed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#destroy()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#destroy()"/>
         /// </summary>
         public void Destroy()
         {

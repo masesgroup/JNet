@@ -46,16 +46,19 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CompositeContext.html#compose(java.awt.image.Raster,java.awt.image.Raster,java.awt.image.WritableRaster)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CompositeContext.html#compose(java.awt.image.Raster,java.awt.image.Raster,java.awt.image.WritableRaster)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.Raster"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
         public void Compose(Java.Awt.ImageNs.Raster arg0, Java.Awt.ImageNs.Raster arg1, Java.Awt.ImageNs.WritableRaster arg2)
         {
             IExecute("compose", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CompositeContext.html#dispose()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CompositeContext.html#dispose()"/>
         /// </summary>
-        public void Dispose()
+        public new void Dispose()
         {
             IExecute("dispose");
         }

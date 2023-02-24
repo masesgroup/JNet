@@ -33,6 +33,9 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.LayeredHighlighter"/> to <see cref="Javax.Swing.Text.Highlighter"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Text.Highlighter(Javax.Swing.Text.LayeredHighlighter t) => t.Cast<Javax.Swing.Text.Highlighter>();
         
         #endregion
@@ -47,8 +50,14 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.html#paintLayeredHighlights(java.awt.Graphics,int,int,java.awt.Shape,javax.swing.text.JTextComponent,javax.swing.text.View)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.html#paintLayeredHighlights(java.awt.Graphics,int,int,java.awt.Shape,javax.swing.text.JTextComponent,javax.swing.text.View)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Shape"/></param>
+        /// <param name="arg4"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+        /// <param name="arg5"><see cref="Javax.Swing.Text.View"/></param>
         public void PaintLayeredHighlights(Java.Awt.Graphics arg0, int arg1, int arg2, Java.Awt.Shape arg3, Javax.Swing.Text.JTextComponent arg4, Javax.Swing.Text.View arg5)
         {
             IExecute("paintLayeredHighlights", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -78,8 +87,15 @@ namespace Javax.Swing.Text
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.LayerPainter.html#paintLayer(java.awt.Graphics,int,int,java.awt.Shape,javax.swing.text.JTextComponent,javax.swing.text.View)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.LayerPainter.html#paintLayer(java.awt.Graphics,int,int,java.awt.Shape,javax.swing.text.JTextComponent,javax.swing.text.View)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg3"><see cref="Java.Awt.Shape"/></param>
+            /// <param name="arg4"><see cref="Javax.Swing.Text.JTextComponent"/></param>
+            /// <param name="arg5"><see cref="Javax.Swing.Text.View"/></param>
+            /// <returns><see cref="Java.Awt.Shape"/></returns>
             public Java.Awt.Shape PaintLayer(Java.Awt.Graphics arg0, int arg1, int arg2, Java.Awt.Shape arg3, Javax.Swing.Text.JTextComponent arg4, Javax.Swing.Text.View arg5)
             {
                 return IExecute<Java.Awt.Shape>("paintLayer", arg0, arg1, arg2, arg3, arg4, arg5);

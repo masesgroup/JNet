@@ -13,19 +13,19 @@
             /// </summary>
             public ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER(params object[] args) : base(args) { }
 
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <see href="https://www.jcobridge.com/api-clr_ALLPACKAGE_CLASSES_STUB_NESTED_JCOBRIDGE_VERSION_PLACEHOLDER/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
             public override string ClassName => "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
 
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            /// <see href="https://www.jcobridge.com/api-clr_ALLPACKAGE_CLASSES_STUB_NESTED_JCOBRIDGE_VERSION_PLACEHOLDER/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
             public override bool IsAbstract => ALLPACKAGE_CLASSES_STUB_NESTED_ISABSTRACT_PLACEHOLDER;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            /// <see href="https://www.jcobridge.com/api-clr_ALLPACKAGE_CLASSES_STUB_NESTED_JCOBRIDGE_VERSION_PLACEHOLDER/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
             public override bool IsCloseable => ALLPACKAGE_CLASSES_STUB_NESTED_ISCLOSEABLE_PLACEHOLDER;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            /// <see href="https://www.jcobridge.com/api-clr_ALLPACKAGE_CLASSES_STUB_NESTED_JCOBRIDGE_VERSION_PLACEHOLDER/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => ALLPACKAGE_CLASSES_STUB_NESTED_ISINTERFACE_PLACEHOLDER;
             
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            /// <see href="https://www.jcobridge.com/api-clr_ALLPACKAGE_CLASSES_STUB_NESTED_JCOBRIDGE_VERSION_PLACEHOLDER/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
             public override bool IsStatic => ALLPACKAGE_CLASSES_STUB_NESTED_ISSTATIC_PLACEHOLDER;
 
             // TODO: complete the class

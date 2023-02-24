@@ -46,71 +46,95 @@ namespace Javax.Swing.Plaf
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#isEditing(javax.swing.JTree)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#isEditing(javax.swing.JTree)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsEditing(Javax.Swing.JTree arg0)
         {
             return IExecute<bool>("isEditing", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#stopEditing(javax.swing.JTree)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#stopEditing(javax.swing.JTree)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool StopEditing(Javax.Swing.JTree arg0)
         {
             return IExecute<bool>("stopEditing", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getRowCount(javax.swing.JTree)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getRowCount(javax.swing.JTree)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRowCount(Javax.Swing.JTree arg0)
         {
             return IExecute<int>("getRowCount", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getRowForPath(javax.swing.JTree,javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getRowForPath(javax.swing.JTree,javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRowForPath(Javax.Swing.JTree arg0, Javax.Swing.Tree.TreePath arg1)
         {
             return IExecute<int>("getRowForPath", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getPathBounds(javax.swing.JTree,javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getPathBounds(javax.swing.JTree,javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetPathBounds(Javax.Swing.JTree arg0, Javax.Swing.Tree.TreePath arg1)
         {
             return IExecute<Java.Awt.Rectangle>("getPathBounds", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getClosestPathForLocation(javax.swing.JTree,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getClosestPathForLocation(javax.swing.JTree,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetClosestPathForLocation(Javax.Swing.JTree arg0, int arg1, int arg2)
         {
             return IExecute<Javax.Swing.Tree.TreePath>("getClosestPathForLocation", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getEditingPath(javax.swing.JTree)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getEditingPath(javax.swing.JTree)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetEditingPath(Javax.Swing.JTree arg0)
         {
             return IExecute<Javax.Swing.Tree.TreePath>("getEditingPath", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getPathForRow(javax.swing.JTree,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getPathForRow(javax.swing.JTree,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetPathForRow(Javax.Swing.JTree arg0, int arg1)
         {
             return IExecute<Javax.Swing.Tree.TreePath>("getPathForRow", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#cancelEditing(javax.swing.JTree)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#cancelEditing(javax.swing.JTree)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
         public void CancelEditing(Javax.Swing.JTree arg0)
         {
             IExecute("cancelEditing", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#startEditingAtPath(javax.swing.JTree,javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#startEditingAtPath(javax.swing.JTree,javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void StartEditingAtPath(Javax.Swing.JTree arg0, Javax.Swing.Tree.TreePath arg1)
         {
             IExecute("startEditingAtPath", arg0, arg1);

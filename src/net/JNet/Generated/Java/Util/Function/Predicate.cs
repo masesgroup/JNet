@@ -46,8 +46,10 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(T)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Test(object arg0)
         {
             return IExecute<bool>("test", arg0);

@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Html
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Html.HTMLAppletElement"/> to <see cref="Org.W3c.Dom.Html.HTMLElement"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Html.HTMLElement(Org.W3c.Dom.Html.HTMLAppletElement t) => t.Cast<Org.W3c.Dom.Html.HTMLElement>();
         
         #endregion
@@ -47,77 +50,77 @@ namespace Org.W3c.Dom.Html
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getAlign() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setAlign(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setAlign(java.lang.String)"/>
         /// </summary>
         public string Align
         {
             get { return IExecute<string>("getAlign"); } set { IExecute("setAlign", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getAlt() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setAlt(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getAlt()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setAlt(java.lang.String)"/>
         /// </summary>
         public string Alt
         {
             get { return IExecute<string>("getAlt"); } set { IExecute("setAlt", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getArchive() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setArchive(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getArchive()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setArchive(java.lang.String)"/>
         /// </summary>
         public string Archive
         {
             get { return IExecute<string>("getArchive"); } set { IExecute("setArchive", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getCode() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setCode(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getCode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setCode(java.lang.String)"/>
         /// </summary>
         public string Code
         {
             get { return IExecute<string>("getCode"); } set { IExecute("setCode", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getCodeBase() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setCodeBase(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getCodeBase()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setCodeBase(java.lang.String)"/>
         /// </summary>
         public string CodeBase
         {
             get { return IExecute<string>("getCodeBase"); } set { IExecute("setCodeBase", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getHeight() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setHeight(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setHeight(java.lang.String)"/>
         /// </summary>
         public string Height
         {
             get { return IExecute<string>("getHeight"); } set { IExecute("setHeight", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getHspace() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setHspace(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getHspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setHspace(java.lang.String)"/>
         /// </summary>
         public string Hspace
         {
             get { return IExecute<string>("getHspace"); } set { IExecute("setHspace", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getName() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setName(java.lang.String)"/>
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getObject() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setObject(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getObject()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setObject(java.lang.String)"/>
         /// </summary>
         public string Object
         {
             get { return IExecute<string>("getObject"); } set { IExecute("setObject", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getVspace() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setVspace(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getVspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setVspace(java.lang.String)"/>
         /// </summary>
         public string Vspace
         {
             get { return IExecute<string>("getVspace"); } set { IExecute("setVspace", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getWidth() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setWidth(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLAppletElement.html#setWidth(java.lang.String)"/>
         /// </summary>
         public string Width
         {

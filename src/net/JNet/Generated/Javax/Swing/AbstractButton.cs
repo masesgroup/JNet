@@ -33,86 +33,92 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.AbstractButton"/> to <see cref="Java.Awt.ItemSelectable"/>
+        /// </summary>
         public static implicit operator Java.Awt.ItemSelectable(Javax.Swing.AbstractButton t) => t.Cast<Java.Awt.ItemSelectable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.AbstractButton"/> to <see cref="Javax.Swing.SwingConstants"/>
+        /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.AbstractButton t) => t.Cast<Javax.Swing.SwingConstants>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#BORDER_PAINTED_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#BORDER_PAINTED_CHANGED_PROPERTY"/>
         /// </summary>
         public static string BORDER_PAINTED_CHANGED_PROPERTY => Clazz.GetField<string>("BORDER_PAINTED_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#CONTENT_AREA_FILLED_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#CONTENT_AREA_FILLED_CHANGED_PROPERTY"/>
         /// </summary>
         public static string CONTENT_AREA_FILLED_CHANGED_PROPERTY => Clazz.GetField<string>("CONTENT_AREA_FILLED_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#DISABLED_ICON_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#DISABLED_ICON_CHANGED_PROPERTY"/>
         /// </summary>
         public static string DISABLED_ICON_CHANGED_PROPERTY => Clazz.GetField<string>("DISABLED_ICON_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#DISABLED_SELECTED_ICON_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#DISABLED_SELECTED_ICON_CHANGED_PROPERTY"/>
         /// </summary>
         public static string DISABLED_SELECTED_ICON_CHANGED_PROPERTY => Clazz.GetField<string>("DISABLED_SELECTED_ICON_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#FOCUS_PAINTED_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#FOCUS_PAINTED_CHANGED_PROPERTY"/>
         /// </summary>
         public static string FOCUS_PAINTED_CHANGED_PROPERTY => Clazz.GetField<string>("FOCUS_PAINTED_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#HORIZONTAL_ALIGNMENT_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#HORIZONTAL_ALIGNMENT_CHANGED_PROPERTY"/>
         /// </summary>
         public static string HORIZONTAL_ALIGNMENT_CHANGED_PROPERTY => Clazz.GetField<string>("HORIZONTAL_ALIGNMENT_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#HORIZONTAL_TEXT_POSITION_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#HORIZONTAL_TEXT_POSITION_CHANGED_PROPERTY"/>
         /// </summary>
         public static string HORIZONTAL_TEXT_POSITION_CHANGED_PROPERTY => Clazz.GetField<string>("HORIZONTAL_TEXT_POSITION_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#ICON_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#ICON_CHANGED_PROPERTY"/>
         /// </summary>
         public static string ICON_CHANGED_PROPERTY => Clazz.GetField<string>("ICON_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#MARGIN_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#MARGIN_CHANGED_PROPERTY"/>
         /// </summary>
         public static string MARGIN_CHANGED_PROPERTY => Clazz.GetField<string>("MARGIN_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#MNEMONIC_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#MNEMONIC_CHANGED_PROPERTY"/>
         /// </summary>
         public static string MNEMONIC_CHANGED_PROPERTY => Clazz.GetField<string>("MNEMONIC_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#MODEL_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#MODEL_CHANGED_PROPERTY"/>
         /// </summary>
         public static string MODEL_CHANGED_PROPERTY => Clazz.GetField<string>("MODEL_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#PRESSED_ICON_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#PRESSED_ICON_CHANGED_PROPERTY"/>
         /// </summary>
         public static string PRESSED_ICON_CHANGED_PROPERTY => Clazz.GetField<string>("PRESSED_ICON_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#ROLLOVER_ENABLED_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#ROLLOVER_ENABLED_CHANGED_PROPERTY"/>
         /// </summary>
         public static string ROLLOVER_ENABLED_CHANGED_PROPERTY => Clazz.GetField<string>("ROLLOVER_ENABLED_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#ROLLOVER_ICON_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#ROLLOVER_ICON_CHANGED_PROPERTY"/>
         /// </summary>
         public static string ROLLOVER_ICON_CHANGED_PROPERTY => Clazz.GetField<string>("ROLLOVER_ICON_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#ROLLOVER_SELECTED_ICON_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#ROLLOVER_SELECTED_ICON_CHANGED_PROPERTY"/>
         /// </summary>
         public static string ROLLOVER_SELECTED_ICON_CHANGED_PROPERTY => Clazz.GetField<string>("ROLLOVER_SELECTED_ICON_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#SELECTED_ICON_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#SELECTED_ICON_CHANGED_PROPERTY"/>
         /// </summary>
         public static string SELECTED_ICON_CHANGED_PROPERTY => Clazz.GetField<string>("SELECTED_ICON_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#TEXT_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#TEXT_CHANGED_PROPERTY"/>
         /// </summary>
         public static string TEXT_CHANGED_PROPERTY => Clazz.GetField<string>("TEXT_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#VERTICAL_ALIGNMENT_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#VERTICAL_ALIGNMENT_CHANGED_PROPERTY"/>
         /// </summary>
         public static string VERTICAL_ALIGNMENT_CHANGED_PROPERTY => Clazz.GetField<string>("VERTICAL_ALIGNMENT_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#VERTICAL_TEXT_POSITION_CHANGED_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#VERTICAL_TEXT_POSITION_CHANGED_PROPERTY"/>
         /// </summary>
         public static string VERTICAL_TEXT_POSITION_CHANGED_PROPERTY => Clazz.GetField<string>("VERTICAL_TEXT_POSITION_CHANGED_PROPERTY");
         
@@ -124,323 +130,348 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getAction() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setAction(javax.swing.Action)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getAction()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setAction(javax.swing.Action)"/>
         /// </summary>
         public Javax.Swing.Action Action
         {
             get { return IExecute<Javax.Swing.Action>("getAction"); } set { IExecute("setAction", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getActionCommand() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setActionCommand(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getActionCommand()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setActionCommand(java.lang.String)"/>
         /// </summary>
         public string ActionCommand
         {
             get { return IExecute<string>("getActionCommand"); } set { IExecute("setActionCommand", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getActionListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getActionListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ActionListener[] ActionListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.ActionListener>("getActionListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getChangeListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getChangeListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.ChangeListener[] ChangeListeners
         {
             get { return IExecuteArray<Javax.Swing.Event.ChangeListener>("getChangeListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getDisabledIcon() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setDisabledIcon(javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getDisabledIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setDisabledIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon DisabledIcon
         {
             get { return IExecute<Javax.Swing.Icon>("getDisabledIcon"); } set { IExecute("setDisabledIcon", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getDisabledSelectedIcon() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setDisabledSelectedIcon(javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getDisabledSelectedIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setDisabledSelectedIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon DisabledSelectedIcon
         {
             get { return IExecute<Javax.Swing.Icon>("getDisabledSelectedIcon"); } set { IExecute("setDisabledSelectedIcon", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getDisplayedMnemonicIndex() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setDisplayedMnemonicIndex(int) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getDisplayedMnemonicIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setDisplayedMnemonicIndex(int)"/>
         /// </summary>
         public int DisplayedMnemonicIndex
         {
             get { return IExecute<int>("getDisplayedMnemonicIndex"); } set { IExecute("setDisplayedMnemonicIndex", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getHideActionText() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setHideActionText(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getHideActionText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setHideActionText(boolean)"/>
         /// </summary>
         public bool HideActionText
         {
             get { return IExecute<bool>("getHideActionText"); } set { IExecute("setHideActionText", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getHorizontalAlignment() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setHorizontalAlignment(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getHorizontalAlignment()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setHorizontalAlignment(int)"/>
         /// </summary>
         public int HorizontalAlignment
         {
             get { return IExecute<int>("getHorizontalAlignment"); } set { IExecute("setHorizontalAlignment", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getHorizontalTextPosition() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setHorizontalTextPosition(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getHorizontalTextPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setHorizontalTextPosition(int)"/>
         /// </summary>
         public int HorizontalTextPosition
         {
             get { return IExecute<int>("getHorizontalTextPosition"); } set { IExecute("setHorizontalTextPosition", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getIcon() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setIcon(javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon Icon
         {
             get { return IExecute<Javax.Swing.Icon>("getIcon"); } set { IExecute("setIcon", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getIconTextGap() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setIconTextGap(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getIconTextGap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setIconTextGap(int)"/>
         /// </summary>
         public int IconTextGap
         {
             get { return IExecute<int>("getIconTextGap"); } set { IExecute("setIconTextGap", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getItemListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getItemListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ItemListener[] ItemListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.ItemListener>("getItemListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getMargin() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMargin(java.awt.Insets)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getMargin()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMargin(java.awt.Insets)"/>
         /// </summary>
         public Java.Awt.Insets Margin
         {
             get { return IExecute<Java.Awt.Insets>("getMargin"); } set { IExecute("setMargin", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getMnemonic() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getMnemonic()"/> 
         /// </summary>
         public int Mnemonic
         {
             get { return IExecute<int>("getMnemonic"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getModel() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setModel(javax.swing.ButtonModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setModel(javax.swing.ButtonModel)"/>
         /// </summary>
         public Javax.Swing.ButtonModel Model
         {
             get { return IExecute<Javax.Swing.ButtonModel>("getModel"); } set { IExecute("setModel", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getMultiClickThreshhold() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMultiClickThreshhold(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getMultiClickThreshhold()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMultiClickThreshhold(long)"/>
         /// </summary>
         public long MultiClickThreshhold
         {
             get { return IExecute<long>("getMultiClickThreshhold"); } set { IExecute("setMultiClickThreshhold", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getPressedIcon() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setPressedIcon(javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getPressedIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setPressedIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon PressedIcon
         {
             get { return IExecute<Javax.Swing.Icon>("getPressedIcon"); } set { IExecute("setPressedIcon", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getRolloverIcon() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setRolloverIcon(javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getRolloverIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setRolloverIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon RolloverIcon
         {
             get { return IExecute<Javax.Swing.Icon>("getRolloverIcon"); } set { IExecute("setRolloverIcon", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getRolloverSelectedIcon() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setRolloverSelectedIcon(javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getRolloverSelectedIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setRolloverSelectedIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon RolloverSelectedIcon
         {
             get { return IExecute<Javax.Swing.Icon>("getRolloverSelectedIcon"); } set { IExecute("setRolloverSelectedIcon", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getSelectedIcon() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setSelectedIcon(javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getSelectedIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setSelectedIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon SelectedIcon
         {
             get { return IExecute<Javax.Swing.Icon>("getSelectedIcon"); } set { IExecute("setSelectedIcon", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getSelectedObjects() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getSelectedObjects()"/> 
         /// </summary>
         public object[] SelectedObjects
         {
             get { return IExecuteArray<object>("getSelectedObjects"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getText() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setText(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setText(java.lang.String)"/>
         /// </summary>
         public string Text
         {
             get { return IExecute<string>("getText"); } set { IExecute("setText", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getVerticalAlignment() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setVerticalAlignment(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getVerticalAlignment()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setVerticalAlignment(int)"/>
         /// </summary>
         public int VerticalAlignment
         {
             get { return IExecute<int>("getVerticalAlignment"); } set { IExecute("setVerticalAlignment", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getVerticalTextPosition() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setVerticalTextPosition(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getVerticalTextPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setVerticalTextPosition(int)"/>
         /// </summary>
         public int VerticalTextPosition
         {
             get { return IExecute<int>("getVerticalTextPosition"); } set { IExecute("setVerticalTextPosition", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isBorderPainted()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isBorderPainted()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsBorderPainted()
         {
             return IExecute<bool>("isBorderPainted");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isContentAreaFilled()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isContentAreaFilled()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsContentAreaFilled()
         {
             return IExecute<bool>("isContentAreaFilled");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isFocusPainted()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isFocusPainted()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsFocusPainted()
         {
             return IExecute<bool>("isFocusPainted");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isRolloverEnabled()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isRolloverEnabled()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsRolloverEnabled()
         {
             return IExecute<bool>("isRolloverEnabled");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isSelected()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isSelected()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSelected()
         {
             return IExecute<bool>("isSelected");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#addActionListener(java.awt.event.ActionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#addActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecute("addActionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#addChangeListener(javax.swing.event.ChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecute("addChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#addItemListener(java.awt.event.ItemListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#addItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
             IExecute("addItemListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#doClick()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#doClick()"/>
         /// </summary>
         public void DoClick()
         {
             IExecute("doClick");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#doClick(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#doClick(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void DoClick(int arg0)
         {
             IExecute("doClick", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#removeActionListener(java.awt.event.ActionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#removeActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecute("removeActionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#removeChangeListener(javax.swing.event.ChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecute("removeChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#removeItemListener(java.awt.event.ItemListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#removeItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
             IExecute("removeItemListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setBorderPainted(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setBorderPainted(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetBorderPainted(bool arg0)
         {
             IExecute("setBorderPainted", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setContentAreaFilled(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setContentAreaFilled(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetContentAreaFilled(bool arg0)
         {
             IExecute("setContentAreaFilled", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setFocusPainted(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setFocusPainted(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetFocusPainted(bool arg0)
         {
             IExecute("setFocusPainted", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMnemonic(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMnemonic(char)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="char"/></param>
         public void SetMnemonic(char arg0)
         {
             IExecute("setMnemonic", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMnemonic(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setMnemonic(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetMnemonic(int arg0)
         {
             IExecute("setMnemonic", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setRolloverEnabled(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setRolloverEnabled(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetRolloverEnabled(bool arg0)
         {
             IExecute("setRolloverEnabled", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setSelected(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setSelected(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetSelected(bool arg0)
         {
             IExecute("setSelected", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setUI(javax.swing.plaf.ButtonUI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#setUI(javax.swing.plaf.ButtonUI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.ButtonUI"/></param>
         public void SetUI(Javax.Swing.Plaf.ButtonUI arg0)
         {
             IExecute("setUI", arg0);

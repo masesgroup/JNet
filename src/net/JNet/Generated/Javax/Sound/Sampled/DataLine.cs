@@ -33,6 +33,9 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sound.Sampled.DataLine"/> to <see cref="Javax.Sound.Sampled.Line"/>
+        /// </summary>
         public static implicit operator Javax.Sound.Sampled.Line(Javax.Sound.Sampled.DataLine t) => t.Cast<Javax.Sound.Sampled.Line>();
         
         #endregion
@@ -47,91 +50,97 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getBufferSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getBufferSize()"/> 
         /// </summary>
         public int BufferSize
         {
             get { return IExecute<int>("getBufferSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getFormat() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getFormat()"/> 
         /// </summary>
         public Javax.Sound.Sampled.AudioFormat Format
         {
             get { return IExecute<Javax.Sound.Sampled.AudioFormat>("getFormat"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getFramePosition() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getFramePosition()"/> 
         /// </summary>
         public int FramePosition
         {
             get { return IExecute<int>("getFramePosition"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getLevel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getLevel()"/> 
         /// </summary>
         public float Level
         {
             get { return IExecute<float>("getLevel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getLongFramePosition() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getLongFramePosition()"/> 
         /// </summary>
         public long LongFramePosition
         {
             get { return IExecute<long>("getLongFramePosition"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getMicrosecondPosition() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getMicrosecondPosition()"/> 
         /// </summary>
         public long MicrosecondPosition
         {
             get { return IExecute<long>("getMicrosecondPosition"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isActive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isActive()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsActive()
         {
             return IExecute<bool>("isActive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isRunning()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isRunning()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsRunning()
         {
             return IExecute<bool>("isRunning");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#available()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#available()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Available()
         {
             return IExecute<int>("available");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#drain()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#drain()"/>
         /// </summary>
         public void Drain()
         {
             IExecute("drain");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#flush()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#flush()"/>
         /// </summary>
         public void Flush()
         {
             IExecute("flush");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#start()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#start()"/>
         /// </summary>
         public void Start()
         {
             IExecute("start");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#stop()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#stop()"/>
         /// </summary>
         public void Stop()
         {
@@ -162,29 +171,31 @@ namespace Javax.Sound.Sampled
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#getFormats() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#getFormats()"/> 
             /// </summary>
             public Javax.Sound.Sampled.AudioFormat[] Formats
             {
                 get { return IExecuteArray<Javax.Sound.Sampled.AudioFormat>("getFormats"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#getMaxBufferSize() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#getMaxBufferSize()"/> 
             /// </summary>
             public int MaxBufferSize
             {
                 get { return IExecute<int>("getMaxBufferSize"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#getMinBufferSize() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#getMinBufferSize()"/> 
             /// </summary>
             public int MinBufferSize
             {
                 get { return IExecute<int>("getMinBufferSize"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#isFormatSupported(javax.sound.sampled.AudioFormat)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#isFormatSupported(javax.sound.sampled.AudioFormat)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+            /// <returns><see langword="bool"/></returns>
             public bool IsFormatSupported(Javax.Sound.Sampled.AudioFormat arg0)
             {
                 return IExecute<bool>("isFormatSupported", arg0);

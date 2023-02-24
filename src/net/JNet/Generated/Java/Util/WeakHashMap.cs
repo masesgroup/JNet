@@ -30,15 +30,18 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html#<init>(int,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html#%3Cinit%3E(int,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
         public WeakHashMap(int arg0, float arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public WeakHashMap(int arg0)
             : base(arg0)
         {

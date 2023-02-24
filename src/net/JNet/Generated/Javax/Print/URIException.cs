@@ -38,15 +38,15 @@ namespace Javax.Print
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#URIInaccessible
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#URIInaccessible"/>
         /// </summary>
         public static int URIInaccessible => Clazz.GetField<int>("URIInaccessible");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#URIOtherProblem
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#URIOtherProblem"/>
         /// </summary>
         public static int URIOtherProblem => Clazz.GetField<int>("URIOtherProblem");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#URISchemeNotSupported
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#URISchemeNotSupported"/>
         /// </summary>
         public static int URISchemeNotSupported => Clazz.GetField<int>("URISchemeNotSupported");
         
@@ -58,14 +58,14 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#getReason() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#getReason()"/> 
         /// </summary>
         public int Reason
         {
             get { return IExecute<int>("getReason"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#getUnsupportedURI() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#getUnsupportedURI()"/> 
         /// </summary>
         public Java.Net.URI UnsupportedURI
         {

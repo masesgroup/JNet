@@ -42,22 +42,28 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#getDefault() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#getDefault()"/> 
         /// </summary>
         public static Java.Nio.File.FileSystem Default
         {
             get { return SExecute<Java.Nio.File.FileSystem>("getDefault"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#getFileSystem(java.net.URI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#getFileSystem(java.net.URI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
         public static Java.Nio.File.FileSystem GetFileSystem(Java.Net.URI arg0)
         {
             return SExecute<Java.Nio.File.FileSystem>("getFileSystem", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.lang.ClassLoader) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.lang.ClassLoader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.FileSystem NewFileSystem(Java.Nio.File.Path arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecute<Java.Nio.File.FileSystem>("newFileSystem", arg0, arg1);

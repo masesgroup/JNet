@@ -46,57 +46,67 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getDefaultValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getDefaultValue()"/> 
         /// </summary>
         public object DefaultValue
         {
             get { return IExecute("getDefaultValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getDescription() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getDescription()"/> 
         /// </summary>
         public string Description
         {
             get { return IExecute<string>("getDescription"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasDefaultValue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasDefaultValue()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasDefaultValue()
         {
             return IExecute<bool>("hasDefaultValue");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasLegalValues()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasLegalValues()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasLegalValues()
         {
             return IExecute<bool>("hasLegalValues");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMaxValue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMaxValue()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasMaxValue()
         {
             return IExecute<bool>("hasMaxValue");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMinValue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMinValue()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasMinValue()
         {
             return IExecute<bool>("hasMinValue");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#isValue(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#isValue(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsValue(object arg0)
         {
             return IExecute<bool>("isValue", arg0);

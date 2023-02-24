@@ -46,29 +46,37 @@ namespace Java.Text.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html#getCharacterInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html#getCharacterInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
         public Java.Text.BreakIterator GetCharacterInstance(Java.Util.Locale arg0)
         {
             return IExecute<Java.Text.BreakIterator>("getCharacterInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html#getLineInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html#getLineInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
         public Java.Text.BreakIterator GetLineInstance(Java.Util.Locale arg0)
         {
             return IExecute<Java.Text.BreakIterator>("getLineInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html#getSentenceInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html#getSentenceInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
         public Java.Text.BreakIterator GetSentenceInstance(Java.Util.Locale arg0)
         {
             return IExecute<Java.Text.BreakIterator>("getSentenceInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html#getWordInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html#getWordInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
         public Java.Text.BreakIterator GetWordInstance(Java.Util.Locale arg0)
         {
             return IExecute<Java.Text.BreakIterator>("getWordInstance", arg0);

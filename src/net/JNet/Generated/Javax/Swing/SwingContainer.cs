@@ -33,6 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.SwingContainer"/> to <see cref="Java.Lang.Annotation.Annotation"/>
+        /// </summary>
         public static implicit operator Java.Lang.Annotation.Annotation(Javax.Swing.SwingContainer t) => t.Cast<Java.Lang.Annotation.Annotation>();
         
         #endregion
@@ -47,15 +50,19 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#value()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#value()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Value()
         {
             return IExecute<bool>("value");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#delegate()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#delegate()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Delegate()
         {
             return IExecute<string>("delegate");

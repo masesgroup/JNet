@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Events
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Events.MouseEvent"/> to <see cref="Org.W3c.Dom.Events.UIEvent"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Events.UIEvent(Org.W3c.Dom.Events.MouseEvent t) => t.Cast<Org.W3c.Dom.Events.UIEvent>();
         
         #endregion
@@ -47,78 +50,93 @@ namespace Org.W3c.Dom.Events
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getAltKey() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getAltKey()"/> 
         /// </summary>
         public bool AltKey
         {
             get { return IExecute<bool>("getAltKey"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getButton() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getButton()"/> 
         /// </summary>
         public short Button
         {
             get { return IExecute<short>("getButton"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getClientX() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getClientX()"/> 
         /// </summary>
         public int ClientX
         {
             get { return IExecute<int>("getClientX"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getClientY() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getClientY()"/> 
         /// </summary>
         public int ClientY
         {
             get { return IExecute<int>("getClientY"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getCtrlKey() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getCtrlKey()"/> 
         /// </summary>
         public bool CtrlKey
         {
             get { return IExecute<bool>("getCtrlKey"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getMetaKey() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getMetaKey()"/> 
         /// </summary>
         public bool MetaKey
         {
             get { return IExecute<bool>("getMetaKey"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getRelatedTarget() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getRelatedTarget()"/> 
         /// </summary>
         public Org.W3c.Dom.Events.EventTarget RelatedTarget
         {
             get { return IExecute<Org.W3c.Dom.Events.EventTarget>("getRelatedTarget"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getScreenX() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getScreenX()"/> 
         /// </summary>
         public int ScreenX
         {
             get { return IExecute<int>("getScreenX"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getScreenY() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getScreenY()"/> 
         /// </summary>
         public int ScreenY
         {
             get { return IExecute<int>("getScreenY"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getShiftKey() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getShiftKey()"/> 
         /// </summary>
         public bool ShiftKey
         {
             get { return IExecute<bool>("getShiftKey"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#initMouseEvent(java.lang.String,boolean,boolean,org.w3c.dom.views.AbstractView,int,int,int,int,int,boolean,boolean,boolean,boolean,short,org.w3c.dom.events.EventTarget)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#initMouseEvent(java.lang.String,boolean,boolean,org.w3c.dom.views.AbstractView,int,int,int,int,int,boolean,boolean,boolean,boolean,short,org.w3c.dom.events.EventTarget)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="Org.W3c.Dom.Views.AbstractView"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg7"><see langword="int"/></param>
+        /// <param name="arg8"><see langword="int"/></param>
+        /// <param name="arg9"><see langword="bool"/></param>
+        /// <param name="arg10"><see langword="bool"/></param>
+        /// <param name="arg11"><see langword="bool"/></param>
+        /// <param name="arg12"><see langword="bool"/></param>
+        /// <param name="arg13"><see langword="short"/></param>
+        /// <param name="arg14"><see cref="Org.W3c.Dom.Events.EventTarget"/></param>
         public void InitMouseEvent(string arg0, bool arg1, bool arg2, Org.W3c.Dom.Views.AbstractView arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, bool arg10, bool arg11, bool arg12, short arg13, Org.W3c.Dom.Events.EventTarget arg14)
         {
             IExecute("initMouseEvent", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);

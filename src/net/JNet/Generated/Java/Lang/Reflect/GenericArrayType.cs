@@ -33,6 +33,9 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Reflect.GenericArrayType"/> to <see cref="Java.Lang.Reflect.Type"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.Type(Java.Lang.Reflect.GenericArrayType t) => t.Cast<Java.Lang.Reflect.Type>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericArrayType.html#getGenericComponentType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericArrayType.html#getGenericComponentType()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type GenericComponentType
         {

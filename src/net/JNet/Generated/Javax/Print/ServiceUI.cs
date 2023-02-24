@@ -42,8 +42,17 @@ namespace Javax.Print
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUI.html#printDialog(java.awt.GraphicsConfiguration,int,int,javax.print.PrintService[],javax.print.PrintService,javax.print.DocFlavor,javax.print.attribute.PrintRequestAttributeSet) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUI.html#printDialog(java.awt.GraphicsConfiguration,int,int,javax.print.PrintService[],javax.print.PrintService,javax.print.DocFlavor,javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Javax.Print.PrintService"/></param>
+        /// <param name="arg4"><see cref="Javax.Print.PrintService"/></param>
+        /// <param name="arg5"><see cref="Javax.Print.DocFlavor"/></param>
+        /// <param name="arg6"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <returns><see cref="Javax.Print.PrintService"/></returns>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public static Javax.Print.PrintService PrintDialog(Java.Awt.GraphicsConfiguration arg0, int arg1, int arg2, Javax.Print.PrintService[] arg3, Javax.Print.PrintService arg4, Javax.Print.DocFlavor arg5, Javax.Print.Attribute.PrintRequestAttributeSet arg6)
         {
             return SExecute<Javax.Print.PrintService>("printDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6);

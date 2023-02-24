@@ -46,15 +46,23 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/PersistentMBean.html#load() throws javax.management.MBeanException,javax.management.RuntimeOperationsException,javax.management.InstanceNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/PersistentMBean.html#load()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void Load()
         {
             IExecute("load");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/PersistentMBean.html#store() throws javax.management.MBeanException,javax.management.RuntimeOperationsException,javax.management.InstanceNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/PersistentMBean.html#store()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void Store()
         {
             IExecute("store");

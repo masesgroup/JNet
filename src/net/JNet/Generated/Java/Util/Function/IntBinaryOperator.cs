@@ -46,8 +46,11 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntBinaryOperator.html#applyAsInt(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntBinaryOperator.html#applyAsInt(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int ApplyAsInt(int arg0, int arg1)
         {
             return IExecute<int>("applyAsInt", arg0, arg1);

@@ -33,30 +33,36 @@ namespace Javax.Management.Timer
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Timer.Timer"/> to <see cref="Javax.Management.Timer.TimerMBean"/>
+        /// </summary>
         public static implicit operator Javax.Management.Timer.TimerMBean(Javax.Management.Timer.Timer t) => t.Cast<Javax.Management.Timer.TimerMBean>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Timer.Timer"/> to <see cref="Javax.Management.MBeanRegistration"/>
+        /// </summary>
         public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Timer.Timer t) => t.Cast<Javax.Management.MBeanRegistration>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_DAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_DAY"/>
         /// </summary>
         public static long ONE_DAY => Clazz.GetField<long>("ONE_DAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_HOUR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_HOUR"/>
         /// </summary>
         public static long ONE_HOUR => Clazz.GetField<long>("ONE_HOUR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_MINUTE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_MINUTE"/>
         /// </summary>
         public static long ONE_MINUTE => Clazz.GetField<long>("ONE_MINUTE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_SECOND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_SECOND"/>
         /// </summary>
         public static long ONE_SECOND => Clazz.GetField<long>("ONE_SECOND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_WEEK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_WEEK"/>
         /// </summary>
         public static long ONE_WEEK => Clazz.GetField<long>("ONE_WEEK");
         
@@ -68,169 +74,228 @@ namespace Javax.Management.Timer
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNbNotifications() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNbNotifications()"/> 
         /// </summary>
         public int NbNotifications
         {
             get { return IExecute<int>("getNbNotifications"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getSendPastNotifications() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#setSendPastNotifications(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getSendPastNotifications()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#setSendPastNotifications(boolean)"/>
         /// </summary>
         public bool SendPastNotifications
         {
             get { return IExecute<bool>("getSendPastNotifications"); } set { IExecute("setSendPastNotifications", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#isActive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#isActive()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsActive()
         {
             return IExecute<bool>("isActive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName) throws java.lang.Exception
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
             return IExecute<Javax.Management.ObjectName>("preRegister", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#isEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#isEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getFixedRate(java.lang.Integer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getFixedRate(java.lang.Integer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int?"/></param>
+        /// <returns><see langword="bool?"/></returns>
         public bool? GetFixedRate(int? arg0)
         {
             return IExecute<bool?>("getFixedRate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long,boolean) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg4"><see langword="long"/></param>
+        /// <param name="arg5"><see langword="long"/></param>
+        /// <param name="arg6"><see langword="bool"/></param>
+        /// <returns><see langword="int?"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public int? AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5, bool arg6)
         {
             return IExecute<int?>("addNotification", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg4"><see langword="long"/></param>
+        /// <param name="arg5"><see langword="long"/></param>
+        /// <returns><see langword="int?"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public int? AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5)
         {
             return IExecute<int?>("addNotification", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg4"><see langword="long"/></param>
+        /// <returns><see langword="int?"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public int? AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4)
         {
             return IExecute<int?>("addNotification", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Date"/></param>
+        /// <returns><see langword="int?"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public int? AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3)
         {
             return IExecute<int?>("addNotification", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNbOccurences(java.lang.Integer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNbOccurences(java.lang.Integer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int?"/></param>
+        /// <returns><see langword="long?"/></returns>
         public long? GetNbOccurences(int? arg0)
         {
             return IExecute<long?>("getNbOccurences", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getPeriod(java.lang.Integer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getPeriod(java.lang.Integer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int?"/></param>
+        /// <returns><see langword="long?"/></returns>
         public long? GetPeriod(int? arg0)
         {
             return IExecute<long?>("getPeriod", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNotificationUserData(java.lang.Integer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNotificationUserData(java.lang.Integer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int?"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetNotificationUserData(int? arg0)
         {
             return IExecute("getNotificationUserData", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNotificationMessage(java.lang.Integer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNotificationMessage(java.lang.Integer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int?"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetNotificationMessage(int? arg0)
         {
             return IExecute<string>("getNotificationMessage", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNotificationType(java.lang.Integer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNotificationType(java.lang.Integer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int?"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetNotificationType(int? arg0)
         {
             return IExecute<string>("getNotificationType", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getDate(java.lang.Integer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getDate(java.lang.Integer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int?"/></param>
+        /// <returns><see cref="Java.Util.Date"/></returns>
         public Java.Util.Date GetDate(int? arg0)
         {
             return IExecute<Java.Util.Date>("getDate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#removeAllNotifications()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#removeAllNotifications()"/>
         /// </summary>
         public void RemoveAllNotifications()
         {
             IExecute("removeAllNotifications");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#removeNotification(java.lang.Integer) throws javax.management.InstanceNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#removeNotification(java.lang.Integer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int?"/></param>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void RemoveNotification(int? arg0)
         {
             IExecute("removeNotification", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#removeNotifications(java.lang.String) throws javax.management.InstanceNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#removeNotifications(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void RemoveNotifications(string arg0)
         {
             IExecute("removeNotifications", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#start()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#start()"/>
         /// </summary>
         public void Start()
         {
             IExecute("start");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#stop()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#stop()"/>
         /// </summary>
         public void Stop()
         {
             IExecute("stop");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#postDeregister()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#postDeregister()"/>
         /// </summary>
         public void PostDeregister()
         {
             IExecute("postDeregister");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#postRegister(java.lang.Boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#postRegister(java.lang.Boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool?"/></param>
         public void PostRegister(bool? arg0)
         {
             IExecute("postRegister", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#preDeregister() throws java.lang.Exception
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#preDeregister()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
             IExecute("preDeregister");

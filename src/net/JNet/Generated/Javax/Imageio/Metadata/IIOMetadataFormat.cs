@@ -38,91 +38,91 @@ namespace Javax.Imageio.Metadata
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_ALL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_ALL"/>
         /// </summary>
         public static int CHILD_POLICY_ALL => Clazz.GetField<int>("CHILD_POLICY_ALL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_CHOICE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_CHOICE"/>
         /// </summary>
         public static int CHILD_POLICY_CHOICE => Clazz.GetField<int>("CHILD_POLICY_CHOICE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_EMPTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_EMPTY"/>
         /// </summary>
         public static int CHILD_POLICY_EMPTY => Clazz.GetField<int>("CHILD_POLICY_EMPTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_MAX
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_MAX"/>
         /// </summary>
         public static int CHILD_POLICY_MAX => Clazz.GetField<int>("CHILD_POLICY_MAX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_REPEAT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_REPEAT"/>
         /// </summary>
         public static int CHILD_POLICY_REPEAT => Clazz.GetField<int>("CHILD_POLICY_REPEAT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_SEQUENCE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_SEQUENCE"/>
         /// </summary>
         public static int CHILD_POLICY_SEQUENCE => Clazz.GetField<int>("CHILD_POLICY_SEQUENCE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_SOME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_SOME"/>
         /// </summary>
         public static int CHILD_POLICY_SOME => Clazz.GetField<int>("CHILD_POLICY_SOME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_BOOLEAN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_BOOLEAN"/>
         /// </summary>
         public static int DATATYPE_BOOLEAN => Clazz.GetField<int>("DATATYPE_BOOLEAN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_DOUBLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_DOUBLE"/>
         /// </summary>
         public static int DATATYPE_DOUBLE => Clazz.GetField<int>("DATATYPE_DOUBLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_FLOAT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_FLOAT"/>
         /// </summary>
         public static int DATATYPE_FLOAT => Clazz.GetField<int>("DATATYPE_FLOAT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_INTEGER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_INTEGER"/>
         /// </summary>
         public static int DATATYPE_INTEGER => Clazz.GetField<int>("DATATYPE_INTEGER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_STRING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_STRING"/>
         /// </summary>
         public static int DATATYPE_STRING => Clazz.GetField<int>("DATATYPE_STRING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_ARBITRARY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_ARBITRARY"/>
         /// </summary>
         public static int VALUE_ARBITRARY => Clazz.GetField<int>("VALUE_ARBITRARY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_ENUMERATION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_ENUMERATION"/>
         /// </summary>
         public static int VALUE_ENUMERATION => Clazz.GetField<int>("VALUE_ENUMERATION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_LIST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_LIST"/>
         /// </summary>
         public static int VALUE_LIST => Clazz.GetField<int>("VALUE_LIST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_NONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_NONE"/>
         /// </summary>
         public static int VALUE_NONE => Clazz.GetField<int>("VALUE_NONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE"/>
         /// </summary>
         public static int VALUE_RANGE => Clazz.GetField<int>("VALUE_RANGE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MAX_INCLUSIVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MAX_INCLUSIVE"/>
         /// </summary>
         public static int VALUE_RANGE_MAX_INCLUSIVE => Clazz.GetField<int>("VALUE_RANGE_MAX_INCLUSIVE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MAX_INCLUSIVE_MASK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MAX_INCLUSIVE_MASK"/>
         /// </summary>
         public static int VALUE_RANGE_MAX_INCLUSIVE_MASK => Clazz.GetField<int>("VALUE_RANGE_MAX_INCLUSIVE_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_INCLUSIVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_INCLUSIVE"/>
         /// </summary>
         public static int VALUE_RANGE_MIN_INCLUSIVE => Clazz.GetField<int>("VALUE_RANGE_MIN_INCLUSIVE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_INCLUSIVE_MASK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_INCLUSIVE_MASK"/>
         /// </summary>
         public static int VALUE_RANGE_MIN_INCLUSIVE_MASK => Clazz.GetField<int>("VALUE_RANGE_MIN_INCLUSIVE_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_MAX_INCLUSIVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_MAX_INCLUSIVE"/>
         /// </summary>
         public static int VALUE_RANGE_MIN_MAX_INCLUSIVE => Clazz.GetField<int>("VALUE_RANGE_MIN_MAX_INCLUSIVE");
         
@@ -134,162 +134,219 @@ namespace Javax.Imageio.Metadata
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getRootName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getRootName()"/> 
         /// </summary>
         public string RootName
         {
             get { return IExecute<string>("getRootName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#canNodeAppear(java.lang.String,javax.imageio.ImageTypeSpecifier)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#canNodeAppear(java.lang.String,javax.imageio.ImageTypeSpecifier)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Imageio.ImageTypeSpecifier"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CanNodeAppear(string arg0, Javax.Imageio.ImageTypeSpecifier arg1)
         {
             return IExecute<bool>("canNodeAppear", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#isAttributeRequired(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#isAttributeRequired(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsAttributeRequired(string arg0, string arg1)
         {
             return IExecute<bool>("isAttributeRequired", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeDataType(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeDataType(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAttributeDataType(string arg0, string arg1)
         {
             return IExecute<int>("getAttributeDataType", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeListMaxLength(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeListMaxLength(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAttributeListMaxLength(string arg0, string arg1)
         {
             return IExecute<int>("getAttributeListMaxLength", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeListMinLength(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeListMinLength(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAttributeListMinLength(string arg0, string arg1)
         {
             return IExecute<int>("getAttributeListMinLength", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeValueType(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeValueType(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAttributeValueType(string arg0, string arg1)
         {
             return IExecute<int>("getAttributeValueType", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getChildPolicy(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getChildPolicy(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetChildPolicy(string arg0)
         {
             return IExecute<int>("getChildPolicy", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getElementMaxChildren(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getElementMaxChildren(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetElementMaxChildren(string arg0)
         {
             return IExecute<int>("getElementMaxChildren", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getElementMinChildren(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getElementMinChildren(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetElementMinChildren(string arg0)
         {
             return IExecute<int>("getElementMinChildren", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectArrayMaxLength(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectArrayMaxLength(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetObjectArrayMaxLength(string arg0)
         {
             return IExecute<int>("getObjectArrayMaxLength", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectArrayMinLength(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectArrayMinLength(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetObjectArrayMinLength(string arg0)
         {
             return IExecute<int>("getObjectArrayMinLength", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectValueType(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectValueType(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetObjectValueType(string arg0)
         {
             return IExecute<int>("getObjectValueType", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectDefaultValue(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectDefaultValue(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetObjectDefaultValue(string arg0)
         {
             return IExecute("getObjectDefaultValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectEnumerations(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getObjectEnumerations(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="object"/></returns>
         public object[] GetObjectEnumerations(string arg0)
         {
             return IExecuteArray<object>("getObjectEnumerations", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeDefaultValue(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeDefaultValue(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetAttributeDefaultValue(string arg0, string arg1)
         {
             return IExecute<string>("getAttributeDefaultValue", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeDescription(java.lang.String,java.lang.String,java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeDescription(java.lang.String,java.lang.String,java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetAttributeDescription(string arg0, string arg1, Java.Util.Locale arg2)
         {
             return IExecute<string>("getAttributeDescription", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeMaxValue(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeMaxValue(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetAttributeMaxValue(string arg0, string arg1)
         {
             return IExecute<string>("getAttributeMaxValue", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeMinValue(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeMinValue(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetAttributeMinValue(string arg0, string arg1)
         {
             return IExecute<string>("getAttributeMinValue", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getElementDescription(java.lang.String,java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getElementDescription(java.lang.String,java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetElementDescription(string arg0, Java.Util.Locale arg1)
         {
             return IExecute<string>("getElementDescription", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeEnumerations(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeEnumerations(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="string"/></returns>
         public string[] GetAttributeEnumerations(string arg0, string arg1)
         {
             return IExecuteArray<string>("getAttributeEnumerations", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeNames(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getAttributeNames(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="string"/></returns>
         public string[] GetAttributeNames(string arg0)
         {
             return IExecuteArray<string>("getAttributeNames", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getChildNames(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#getChildNames(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="string"/></returns>
         public string[] GetChildNames(string arg0)
         {
             return IExecuteArray<string>("getChildNames", arg0);

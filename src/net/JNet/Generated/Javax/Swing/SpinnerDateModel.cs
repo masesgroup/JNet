@@ -33,6 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.SpinnerDateModel"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.SpinnerDateModel t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#getCalendarField() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#setCalendarField(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#getCalendarField()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#setCalendarField(int)"/>
         /// </summary>
         public int CalendarField
         {
             get { return IExecute<int>("getCalendarField"); } set { IExecute("setCalendarField", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#getDate() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#getDate()"/> 
         /// </summary>
         public Java.Util.Date Date
         {

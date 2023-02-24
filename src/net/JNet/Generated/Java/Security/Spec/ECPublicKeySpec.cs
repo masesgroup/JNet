@@ -30,8 +30,10 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPublicKeySpec.html#<init>(java.security.spec.ECPoint,java.security.spec.ECParameterSpec)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPublicKeySpec.html#%3Cinit%3E(java.security.spec.ECPoint,java.security.spec.ECParameterSpec)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Spec.ECPoint"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Spec.ECParameterSpec"/></param>
         public ECPublicKeySpec(Java.Security.Spec.ECPoint arg0, Java.Security.Spec.ECParameterSpec arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Spec.ECPublicKeySpec"/> to <see cref="Java.Security.Spec.KeySpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.KeySpec(Java.Security.Spec.ECPublicKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
         
         #endregion
@@ -54,14 +59,14 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPublicKeySpec.html#getParams() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPublicKeySpec.html#getParams()"/> 
         /// </summary>
         public Java.Security.Spec.ECParameterSpec Params
         {
             get { return IExecute<Java.Security.Spec.ECParameterSpec>("getParams"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPublicKeySpec.html#getW() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPublicKeySpec.html#getW()"/> 
         /// </summary>
         public Java.Security.Spec.ECPoint W
         {

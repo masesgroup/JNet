@@ -30,15 +30,18 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PKCS8EncodedKeySpec.html#<init>(byte[],java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PKCS8EncodedKeySpec.html#%3Cinit%3E(byte[],java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public PKCS8EncodedKeySpec(byte[] arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PKCS8EncodedKeySpec.html#<init>(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PKCS8EncodedKeySpec.html#%3Cinit%3E(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
         public PKCS8EncodedKeySpec(byte[] arg0)
             : base(arg0)
         {

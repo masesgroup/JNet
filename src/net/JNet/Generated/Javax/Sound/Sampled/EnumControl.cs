@@ -46,14 +46,14 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/EnumControl.html#getValue() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/EnumControl.html#setValue(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/EnumControl.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/EnumControl.html#setValue(java.lang.Object)"/>
         /// </summary>
         public object Value
         {
             get { return IExecute("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/EnumControl.html#getValues() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/EnumControl.html#getValues()"/> 
         /// </summary>
         public object[] Values
         {
@@ -76,7 +76,7 @@ namespace Javax.Sound.Sampled
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/EnumControl.Type.html#REVERB
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/EnumControl.Type.html#REVERB"/>
             /// </summary>
             public static Javax.Sound.Sampled.EnumControl.Type REVERB => Clazz.GetField<Javax.Sound.Sampled.EnumControl.Type>("REVERB");
             

@@ -33,17 +33,20 @@ namespace Javax.Sql.Rowset
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.WebRowSet"/> to <see cref="Javax.Sql.Rowset.CachedRowSet"/>
+        /// </summary>
         public static implicit operator Javax.Sql.Rowset.CachedRowSet(Javax.Sql.Rowset.WebRowSet t) => t.Cast<Javax.Sql.Rowset.CachedRowSet>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#PUBLIC_XML_SCHEMA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#PUBLIC_XML_SCHEMA"/>
         /// </summary>
         public static string PUBLIC_XML_SCHEMA => Clazz.GetField<string>("PUBLIC_XML_SCHEMA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#SCHEMA_SYSTEM_ID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#SCHEMA_SYSTEM_ID"/>
         /// </summary>
         public static string SCHEMA_SYSTEM_ID => Clazz.GetField<string>("SCHEMA_SYSTEM_ID");
         
@@ -55,43 +58,60 @@ namespace Javax.Sql.Rowset
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#readXml(java.io.InputStream) throws java.sql.SQLException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#readXml(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void ReadXml(Java.Io.InputStream arg0)
         {
             IExecute("readXml", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#readXml(java.io.Reader) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#readXml(java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void ReadXml(Java.Io.Reader arg0)
         {
             IExecute("readXml", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.io.OutputStream) throws java.sql.SQLException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteXml(Java.Io.OutputStream arg0)
         {
             IExecute("writeXml", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.io.Writer) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.io.Writer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void WriteXml(Java.Io.Writer arg0)
         {
             IExecute("writeXml", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.sql.ResultSet,java.io.OutputStream) throws java.sql.SQLException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.sql.ResultSet,java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.ResultSet"/></param>
+        /// <param name="arg1"><see cref="Java.Io.OutputStream"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteXml(Java.Sql.ResultSet arg0, Java.Io.OutputStream arg1)
         {
             IExecute("writeXml", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.sql.ResultSet,java.io.Writer) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.sql.ResultSet,java.io.Writer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.ResultSet"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Writer"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void WriteXml(Java.Sql.ResultSet arg0, Java.Io.Writer arg1)
         {
             IExecute("writeXml", arg0, arg1);

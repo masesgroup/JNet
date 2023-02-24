@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Element.VariableElement"/> to <see cref="Javax.Lang.Model.Element.Element"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Element(Javax.Lang.Model.Element.VariableElement t) => t.Cast<Javax.Lang.Model.Element.Element>();
         
         #endregion
@@ -47,21 +50,21 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#getConstantValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#getConstantValue()"/> 
         /// </summary>
         public object ConstantValue
         {
             get { return IExecute("getConstantValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#getEnclosingElement() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement
         {
             get { return IExecute<Javax.Lang.Model.Element.Element>("getEnclosingElement"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#getSimpleName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#getSimpleName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name SimpleName
         {

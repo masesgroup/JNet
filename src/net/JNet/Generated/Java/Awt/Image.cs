@@ -38,27 +38,27 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_AREA_AVERAGING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_AREA_AVERAGING"/>
         /// </summary>
         public static int SCALE_AREA_AVERAGING => Clazz.GetField<int>("SCALE_AREA_AVERAGING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_DEFAULT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_DEFAULT"/>
         /// </summary>
         public static int SCALE_DEFAULT => Clazz.GetField<int>("SCALE_DEFAULT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_FAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_FAST"/>
         /// </summary>
         public static int SCALE_FAST => Clazz.GetField<int>("SCALE_FAST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_REPLICATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_REPLICATE"/>
         /// </summary>
         public static int SCALE_REPLICATE => Clazz.GetField<int>("SCALE_REPLICATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_SMOOTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_SMOOTH"/>
         /// </summary>
         public static int SCALE_SMOOTH => Clazz.GetField<int>("SCALE_SMOOTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#UndefinedProperty
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#UndefinedProperty"/>
         /// </summary>
         public static object UndefinedProperty => Clazz.GetField("UndefinedProperty");
         
@@ -70,63 +70,76 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getAccelerationPriority() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#setAccelerationPriority(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getAccelerationPriority()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#setAccelerationPriority(float)"/>
         /// </summary>
         public float AccelerationPriority
         {
             get { return IExecute<float>("getAccelerationPriority"); } set { IExecute("setAccelerationPriority", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getGraphics() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getGraphics()"/> 
         /// </summary>
         public Java.Awt.Graphics Graphics
         {
             get { return IExecute<Java.Awt.Graphics>("getGraphics"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getSource() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getSource()"/> 
         /// </summary>
         public Java.Awt.ImageNs.ImageProducer Source
         {
             get { return IExecute<Java.Awt.ImageNs.ImageProducer>("getSource"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getHeight(java.awt.image.ImageObserver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getHeight(java.awt.image.ImageObserver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetHeight(Java.Awt.ImageNs.ImageObserver arg0)
         {
             return IExecute<int>("getHeight", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getWidth(java.awt.image.ImageObserver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getWidth(java.awt.image.ImageObserver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetWidth(Java.Awt.ImageNs.ImageObserver arg0)
         {
             return IExecute<int>("getWidth", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getProperty(java.lang.String,java.awt.image.ImageObserver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getProperty(java.lang.String,java.awt.image.ImageObserver)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetProperty(string arg0, Java.Awt.ImageNs.ImageObserver arg1)
         {
             return IExecute("getProperty", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getScaledInstance(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getScaledInstance(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image GetScaledInstance(int arg0, int arg1, int arg2)
         {
             return IExecute<Java.Awt.Image>("getScaledInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getCapabilities(java.awt.GraphicsConfiguration)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getCapabilities(java.awt.GraphicsConfiguration)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        /// <returns><see cref="Java.Awt.ImageCapabilities"/></returns>
         public Java.Awt.ImageCapabilities GetCapabilities(Java.Awt.GraphicsConfiguration arg0)
         {
             return IExecute<Java.Awt.ImageCapabilities>("getCapabilities", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#flush()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#flush()"/>
         /// </summary>
         public void Flush()
         {

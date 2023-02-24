@@ -30,8 +30,9 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public StringContent(int arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.StringContent"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.StringContent t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,43 +58,64 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#length()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#length()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Length()
         {
             return IExecute<int>("length");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#getString(int,int) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#getString(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public string GetString(int arg0, int arg1)
         {
             return IExecute<string>("getString", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#createPosition(int) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#createPosition(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Position"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Javax.Swing.Text.Position CreatePosition(int arg0)
         {
             return IExecute<Javax.Swing.Text.Position>("createPosition", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#insertString(int,java.lang.String) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#insertString(int,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Undo.UndoableEdit"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Javax.Swing.Undo.UndoableEdit InsertString(int arg0, string arg1)
         {
             return IExecute<Javax.Swing.Undo.UndoableEdit>("insertString", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#remove(int,int) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#remove(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Undo.UndoableEdit"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Javax.Swing.Undo.UndoableEdit Remove(int arg0, int arg1)
         {
             return IExecute<Javax.Swing.Undo.UndoableEdit>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#getChars(int,int,javax.swing.text.Segment) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StringContent.html#getChars(int,int,javax.swing.text.Segment)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Text.Segment"/></param>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void GetChars(int arg0, int arg1, Javax.Swing.Text.Segment arg2)
         {
             IExecute("getChars", arg0, arg1, arg2);

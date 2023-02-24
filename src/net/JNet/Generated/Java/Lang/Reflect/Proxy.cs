@@ -33,6 +33,9 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Reflect.Proxy"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.Reflect.Proxy t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -43,15 +46,22 @@ namespace Java.Lang.Reflect
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#newProxyInstance(java.lang.ClassLoader,java.lang.Class<?>[],java.lang.reflect.InvocationHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#newProxyInstance(java.lang.ClassLoader,java.lang.Class%3C?%3E[],java.lang.reflect.InvocationHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Reflect.InvocationHandler"/></param>
+        /// <returns><see langword="object"/></returns>
         public static object NewProxyInstance(Java.Lang.ClassLoader arg0, Java.Lang.Class[] arg1, Java.Lang.Reflect.InvocationHandler arg2)
         {
             return SExecute("newProxyInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#getInvocationHandler(java.lang.Object) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#getInvocationHandler(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see cref="Java.Lang.Reflect.InvocationHandler"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Lang.Reflect.InvocationHandler GetInvocationHandler(object arg0)
         {
             return SExecute<Java.Lang.Reflect.InvocationHandler>("getInvocationHandler", arg0);

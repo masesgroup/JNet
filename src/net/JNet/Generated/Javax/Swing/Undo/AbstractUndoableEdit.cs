@@ -33,7 +33,13 @@ namespace Javax.Swing.Undo
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Undo.AbstractUndoableEdit"/> to <see cref="Javax.Swing.Undo.UndoableEdit"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Undo.UndoableEdit(Javax.Swing.Undo.AbstractUndoableEdit t) => t.Cast<Javax.Swing.Undo.UndoableEdit>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Undo.AbstractUndoableEdit"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Undo.AbstractUndoableEdit t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -48,78 +54,92 @@ namespace Javax.Swing.Undo
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#getPresentationName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#getPresentationName()"/> 
         /// </summary>
         public string PresentationName
         {
             get { return IExecute<string>("getPresentationName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#getRedoPresentationName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#getRedoPresentationName()"/> 
         /// </summary>
         public string RedoPresentationName
         {
             get { return IExecute<string>("getRedoPresentationName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#getUndoPresentationName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#getUndoPresentationName()"/> 
         /// </summary>
         public string UndoPresentationName
         {
             get { return IExecute<string>("getUndoPresentationName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#addEdit(javax.swing.undo.UndoableEdit)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#addEdit(javax.swing.undo.UndoableEdit)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Undo.UndoableEdit"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool AddEdit(Javax.Swing.Undo.UndoableEdit arg0)
         {
             return IExecute<bool>("addEdit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#canRedo()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#canRedo()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool CanRedo()
         {
             return IExecute<bool>("canRedo");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#canUndo()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#canUndo()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool CanUndo()
         {
             return IExecute<bool>("canUndo");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#isSignificant()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#isSignificant()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSignificant()
         {
             return IExecute<bool>("isSignificant");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#replaceEdit(javax.swing.undo.UndoableEdit)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#replaceEdit(javax.swing.undo.UndoableEdit)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Undo.UndoableEdit"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ReplaceEdit(Javax.Swing.Undo.UndoableEdit arg0)
         {
             return IExecute<bool>("replaceEdit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#die()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#die()"/>
         /// </summary>
         public void Die()
         {
             IExecute("die");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#redo() throws javax.swing.undo.CannotRedoException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#redo()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Swing.Undo.CannotRedoException"/>
         public void Redo()
         {
             IExecute("redo");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#undo.AbstractUndoableEdit.undo() throws javax.swing.undo.CannotUndoException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html#undo.AbstractUndoableEdit.undo()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Swing.Undo.CannotUndoException"/>
         public void Undo()
         {
             IExecute("undo");

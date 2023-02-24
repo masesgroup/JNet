@@ -22,32 +22,52 @@ using System;
 
 namespace Javax.Swing.Event
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html"/>
+    /// </summary>
     public interface IMouseInputAdapter : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseClicked(java.awt.event.MouseEvent)"/>
+        /// </summary>
         public void MouseClicked(MouseEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseEntered(java.awt.event.MouseEvent)"/>
+        /// </summary>
         public void MouseEntered(MouseEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseExited(java.awt.event.MouseEvent)"/>
+        /// </summary>
         public void MouseExited(MouseEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mousePressed(java.awt.event.MouseEvent)"/>
+        /// </summary>
         public void MousePressed(MouseEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseReleased(java.awt.event.MouseEvent)"/>
+        /// </summary>
         public void MouseReleased(MouseEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseDragged(java.awt.event.MouseEvent)"/>
+        /// </summary>
         public void MouseDragged(MouseEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseMoved(java.awt.event.MouseEvent)"/>
+        /// </summary>
         public void MouseMoved(MouseEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseAdapter.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
+        /// </summary>
         public void MouseWheelMoved(MouseWheelEvent e);
     }
 
     /// <summary>
-    /// Listener for MouseInputAdapter. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IMouseInputAdapter"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IMouseInputAdapter"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class MouseInputAdapter : IMouseInputAdapter
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "org.mases.jnet.awt.event.JNetMouseInputAdapter";
 
         readonly Action<MouseEvent> MouseClickedFunction = null;
@@ -181,42 +201,42 @@ namespace Javax.Swing.Event
         {
             OnMouseWheelMoved(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IMouseInputAdapter.MouseClicked(MouseEvent)"/>
         public virtual void MouseClicked(MouseEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IMouseInputAdapter.MouseEntered(MouseEvent)"/>
         public virtual void MouseEntered(MouseEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IMouseInputAdapter.MouseExited(MouseEvent)"/>
         public virtual void MouseExited(MouseEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IMouseInputAdapter.MousePressed(MouseEvent)"/>
         public virtual void MousePressed(MouseEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IMouseInputAdapter.MouseReleased(MouseEvent)"/>
         public virtual void MouseReleased(MouseEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IMouseInputAdapter.MouseDragged(MouseEvent)"/>
         public virtual void MouseDragged(MouseEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IMouseInputAdapter.MouseMoved(MouseEvent)"/>
         public virtual void MouseMoved(MouseEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IMouseInputAdapter.MouseWheelMoved(MouseWheelEvent)"/>
         public virtual void MouseWheelMoved(MouseWheelEvent e)
         {
 

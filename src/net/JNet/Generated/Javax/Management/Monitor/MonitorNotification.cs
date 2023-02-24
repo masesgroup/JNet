@@ -38,43 +38,43 @@ namespace Javax.Management.Monitor
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#OBSERVED_ATTRIBUTE_ERROR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#OBSERVED_ATTRIBUTE_ERROR"/>
         /// </summary>
         public static string OBSERVED_ATTRIBUTE_ERROR => Clazz.GetField<string>("OBSERVED_ATTRIBUTE_ERROR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#OBSERVED_ATTRIBUTE_TYPE_ERROR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#OBSERVED_ATTRIBUTE_TYPE_ERROR"/>
         /// </summary>
         public static string OBSERVED_ATTRIBUTE_TYPE_ERROR => Clazz.GetField<string>("OBSERVED_ATTRIBUTE_TYPE_ERROR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#OBSERVED_OBJECT_ERROR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#OBSERVED_OBJECT_ERROR"/>
         /// </summary>
         public static string OBSERVED_OBJECT_ERROR => Clazz.GetField<string>("OBSERVED_OBJECT_ERROR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#RUNTIME_ERROR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#RUNTIME_ERROR"/>
         /// </summary>
         public static string RUNTIME_ERROR => Clazz.GetField<string>("RUNTIME_ERROR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#STRING_TO_COMPARE_VALUE_DIFFERED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#STRING_TO_COMPARE_VALUE_DIFFERED"/>
         /// </summary>
         public static string STRING_TO_COMPARE_VALUE_DIFFERED => Clazz.GetField<string>("STRING_TO_COMPARE_VALUE_DIFFERED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#STRING_TO_COMPARE_VALUE_MATCHED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#STRING_TO_COMPARE_VALUE_MATCHED"/>
         /// </summary>
         public static string STRING_TO_COMPARE_VALUE_MATCHED => Clazz.GetField<string>("STRING_TO_COMPARE_VALUE_MATCHED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_ERROR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_ERROR"/>
         /// </summary>
         public static string THRESHOLD_ERROR => Clazz.GetField<string>("THRESHOLD_ERROR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_HIGH_VALUE_EXCEEDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_HIGH_VALUE_EXCEEDED"/>
         /// </summary>
         public static string THRESHOLD_HIGH_VALUE_EXCEEDED => Clazz.GetField<string>("THRESHOLD_HIGH_VALUE_EXCEEDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_LOW_VALUE_EXCEEDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_LOW_VALUE_EXCEEDED"/>
         /// </summary>
         public static string THRESHOLD_LOW_VALUE_EXCEEDED => Clazz.GetField<string>("THRESHOLD_LOW_VALUE_EXCEEDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_VALUE_EXCEEDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_VALUE_EXCEEDED"/>
         /// </summary>
         public static string THRESHOLD_VALUE_EXCEEDED => Clazz.GetField<string>("THRESHOLD_VALUE_EXCEEDED");
         
@@ -86,28 +86,28 @@ namespace Javax.Management.Monitor
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#getDerivedGauge() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#getDerivedGauge()"/> 
         /// </summary>
         public object DerivedGauge
         {
             get { return IExecute("getDerivedGauge"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#getObservedAttribute() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#getObservedAttribute()"/> 
         /// </summary>
         public string ObservedAttribute
         {
             get { return IExecute<string>("getObservedAttribute"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#getObservedObject() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#getObservedObject()"/> 
         /// </summary>
         public Javax.Management.ObjectName ObservedObject
         {
             get { return IExecute<Javax.Management.ObjectName>("getObservedObject"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#getTrigger() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#getTrigger()"/> 
         /// </summary>
         public object Trigger
         {

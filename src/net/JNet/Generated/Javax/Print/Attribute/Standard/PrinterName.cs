@@ -30,8 +30,10 @@ namespace Javax.Print.Attribute.Standard
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterName.html#<init>(java.lang.String,java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterName.html#%3Cinit%3E(java.lang.String,java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         public PrinterName(string arg0, Java.Util.Locale arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.PrinterName"/> to <see cref="Javax.Print.Attribute.PrintServiceAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintServiceAttribute(Javax.Print.Attribute.Standard.PrinterName t) => t.Cast<Javax.Print.Attribute.PrintServiceAttribute>();
         
         #endregion
@@ -54,7 +59,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterName.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterName.html#getName()"/> 
         /// </summary>
         public string Name
         {

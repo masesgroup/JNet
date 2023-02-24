@@ -46,8 +46,10 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocketImplFactory.html#createDatagramSocketImpl()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocketImplFactory.html#createDatagramSocketImpl()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.DatagramSocketImpl"/></returns>
         public Java.Net.DatagramSocketImpl CreateDatagramSocketImpl()
         {
             return IExecute<Java.Net.DatagramSocketImpl>("createDatagramSocketImpl");

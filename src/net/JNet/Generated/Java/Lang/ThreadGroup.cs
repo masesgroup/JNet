@@ -30,15 +30,18 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public ThreadGroup(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#<init>(java.lang.ThreadGroup,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public ThreadGroup(Java.Lang.ThreadGroup arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -60,127 +63,150 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#getMaxPriority() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#setMaxPriority(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#getMaxPriority()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#setMaxPriority(int)"/>
         /// </summary>
         public int MaxPriority
         {
             get { return IExecute<int>("getMaxPriority"); } set { IExecute("setMaxPriority", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#getParent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#getParent()"/> 
         /// </summary>
         public Java.Lang.ThreadGroup Parent
         {
             get { return IExecute<Java.Lang.ThreadGroup>("getParent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#isDaemon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#isDaemon()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDaemon()
         {
             return IExecute<bool>("isDaemon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#parentOf(java.lang.ThreadGroup)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#parentOf(java.lang.ThreadGroup)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ParentOf(Java.Lang.ThreadGroup arg0)
         {
             return IExecute<bool>("parentOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#checkAccess()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#checkAccess()"/>
         /// </summary>
         public void CheckAccess()
         {
             IExecute("checkAccess");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#destroy()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#destroy()"/>
         /// </summary>
         public void Destroy()
         {
             IExecute("destroy");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#interrupt()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#interrupt()"/>
         /// </summary>
         public void Interrupt()
         {
             IExecute("interrupt");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#setDaemon(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#setDaemon(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetDaemon(bool arg0)
         {
             IExecute("setDaemon", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#activeCount()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#activeCount()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int ActiveCount()
         {
             return IExecute<int>("activeCount");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#activeGroupCount()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#activeGroupCount()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int ActiveGroupCount()
         {
             return IExecute<int>("activeGroupCount");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.Thread[],boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.Thread[],boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Enumerate(Java.Lang.Thread[] arg0, bool arg1)
         {
             return IExecute<int>("enumerate", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.Thread[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.Thread[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Enumerate(Java.Lang.Thread[] arg0)
         {
             return IExecute<int>("enumerate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.ThreadGroup[],boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.ThreadGroup[],boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Enumerate(Java.Lang.ThreadGroup[] arg0, bool arg1)
         {
             return IExecute<int>("enumerate", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.ThreadGroup[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.ThreadGroup[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Enumerate(Java.Lang.ThreadGroup[] arg0)
         {
             return IExecute<int>("enumerate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#isDestroyed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#isDestroyed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDestroyed()
         {
             return IExecute<bool>("isDestroyed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#list()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#list()"/>
         /// </summary>
         public void List()
         {
             IExecute("list");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#uncaughtException(java.lang.Thread,java.lang.Throwable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#uncaughtException(java.lang.Thread,java.lang.Throwable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
         public void UncaughtException(Java.Lang.Thread arg0, Java.Lang.Throwable arg1)
         {
             IExecute("uncaughtException", arg0, arg1);

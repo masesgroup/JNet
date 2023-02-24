@@ -30,8 +30,14 @@ namespace Javax.Management.Openmbean
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#<init>(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],javax.management.openmbean.OpenType<?>[]) throws javax.management.openmbean.OpenDataException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],javax.management.openmbean.OpenType%3C?%3E[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="Javax.Management.Openmbean.OpenType"/></param>
+        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
         public CompositeType(string arg0, string arg1, string[] arg2, string[] arg3, Javax.Management.Openmbean.OpenType[] arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -53,15 +59,19 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#containsKey(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#containsKey(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsKey(string arg0)
         {
             return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#getDescription(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#getDescription(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetDescription(string arg0)
         {
             return IExecute<string>("getDescription", arg0);

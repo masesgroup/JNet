@@ -33,45 +33,48 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JRootPane"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JRootPane t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#COLOR_CHOOSER_DIALOG
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#COLOR_CHOOSER_DIALOG"/>
         /// </summary>
         public static int COLOR_CHOOSER_DIALOG => Clazz.GetField<int>("COLOR_CHOOSER_DIALOG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#ERROR_DIALOG
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#ERROR_DIALOG"/>
         /// </summary>
         public static int ERROR_DIALOG => Clazz.GetField<int>("ERROR_DIALOG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#FILE_CHOOSER_DIALOG
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#FILE_CHOOSER_DIALOG"/>
         /// </summary>
         public static int FILE_CHOOSER_DIALOG => Clazz.GetField<int>("FILE_CHOOSER_DIALOG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#FRAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#FRAME"/>
         /// </summary>
         public static int FRAME => Clazz.GetField<int>("FRAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#INFORMATION_DIALOG
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#INFORMATION_DIALOG"/>
         /// </summary>
         public static int INFORMATION_DIALOG => Clazz.GetField<int>("INFORMATION_DIALOG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#NONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#NONE"/>
         /// </summary>
         public static int NONE => Clazz.GetField<int>("NONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#PLAIN_DIALOG
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#PLAIN_DIALOG"/>
         /// </summary>
         public static int PLAIN_DIALOG => Clazz.GetField<int>("PLAIN_DIALOG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#QUESTION_DIALOG
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#QUESTION_DIALOG"/>
         /// </summary>
         public static int QUESTION_DIALOG => Clazz.GetField<int>("QUESTION_DIALOG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#WARNING_DIALOG
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#WARNING_DIALOG"/>
         /// </summary>
         public static int WARNING_DIALOG => Clazz.GetField<int>("WARNING_DIALOG");
         
@@ -83,50 +86,51 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getContentPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setContentPane(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getContentPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setContentPane(java.awt.Container)"/>
         /// </summary>
         public Java.Awt.Container ContentPane
         {
             get { return IExecute<Java.Awt.Container>("getContentPane"); } set { IExecute("setContentPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getDefaultButton() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setDefaultButton(javax.swing.JButton)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getDefaultButton()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setDefaultButton(javax.swing.JButton)"/>
         /// </summary>
         public Javax.Swing.JButton DefaultButton
         {
             get { return IExecute<Javax.Swing.JButton>("getDefaultButton"); } set { IExecute("setDefaultButton", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getGlassPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setGlassPane(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getGlassPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setGlassPane(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component GlassPane
         {
             get { return IExecute<Java.Awt.Component>("getGlassPane"); } set { IExecute("setGlassPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getJMenuBar() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setJMenuBar(javax.swing.JMenuBar)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getJMenuBar()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setJMenuBar(javax.swing.JMenuBar)"/>
         /// </summary>
         public Javax.Swing.JMenuBar JMenuBar
         {
             get { return IExecute<Javax.Swing.JMenuBar>("getJMenuBar"); } set { IExecute("setJMenuBar", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getLayeredPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setLayeredPane(javax.swing.JLayeredPane)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getLayeredPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setLayeredPane(javax.swing.JLayeredPane)"/>
         /// </summary>
         public Javax.Swing.JLayeredPane LayeredPane
         {
             get { return IExecute<Javax.Swing.JLayeredPane>("getLayeredPane"); } set { IExecute("setLayeredPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getWindowDecorationStyle() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setWindowDecorationStyle(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#getWindowDecorationStyle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setWindowDecorationStyle(int)"/>
         /// </summary>
         public int WindowDecorationStyle
         {
             get { return IExecute<int>("getWindowDecorationStyle"); } set { IExecute("setWindowDecorationStyle", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setUI(javax.swing.plaf.RootPaneUI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#setUI(javax.swing.plaf.RootPaneUI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.RootPaneUI"/></param>
         public void SetUI(Javax.Swing.Plaf.RootPaneUI arg0)
         {
             IExecute("setUI", arg0);

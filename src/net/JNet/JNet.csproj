@@ -10,10 +10,14 @@
 		<PackageTags>jnet dotnet clr jvm dotnetcore netcore dotnet6 net6 java bridge gateway</PackageTags>
 		<PackageId>MASES.JNet</PackageId>
 		<PackageReadmeFile>usage.md</PackageReadmeFile>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
   <ItemGroup>
     <None Include="mases.jnet.targets" Pack="true" PackagePath="build" />
     <None Include="..\..\..\jars\*.jar" Pack="true" PackagePath="build\jars" />
+    <None Include="..\Documentation\articles\usage.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Remove="Generated\Java\Util\Function\**" />
     <Compile Remove="JavaGenerated\Java\Util\Function\**" />
     <EmbeddedResource Remove="Generated\Java\Util\Function\**" />
@@ -126,7 +130,6 @@
     <Compile Remove="JavaGenerated\Java\Lang\ThreadGroup.cs" />
     <Compile Remove="JavaGenerated\Java\Lang\ThreadLocal.cs" />
     <Compile Remove="JavaGenerated\Java\Lang\Void.cs" />
-    <None Include="..\Documentation\articles\usage.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MASES.CLIParser" Version="3.1.2" />

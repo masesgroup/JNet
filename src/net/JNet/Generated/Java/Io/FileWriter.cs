@@ -30,64 +30,89 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.io.File,boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.File,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public FileWriter(Java.Io.File arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.io.File,java.nio.charset.Charset,boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public FileWriter(Java.Io.File arg0, Java.Nio.Charset.Charset arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.io.File,java.nio.charset.Charset) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public FileWriter(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.io.File) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public FileWriter(Java.Io.File arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.io.FileDescriptor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.io.FileDescriptor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public FileWriter(Java.Io.FileDescriptor arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.lang.String,boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public FileWriter(string arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.lang.String,java.nio.charset.Charset,boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public FileWriter(string arg0, Java.Nio.Charset.Charset arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.lang.String,java.nio.charset.Charset) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public FileWriter(string arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public FileWriter(string arg0)
             : base(arg0)
         {

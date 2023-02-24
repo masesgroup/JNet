@@ -30,15 +30,18 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#<init>(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#%3Cinit%3E(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public Point(int arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#<init>(java.awt.Point)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#%3Cinit%3E(java.awt.Point)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
         public Point(Java.Awt.Point arg0)
             : base(arg0)
         {
@@ -47,17 +50,20 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Point"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Point t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#x
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#x"/>
         /// </summary>
         public int x => Instance.GetField<int>("x");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#y
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#y"/>
         /// </summary>
         public int y => Instance.GetField<int>("y");
         
@@ -69,29 +75,35 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#getLocation() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#setLocation(java.awt.Point)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#getLocation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#setLocation(java.awt.Point)"/>
         /// </summary>
         public Java.Awt.Point Location
         {
             get { return IExecute<Java.Awt.Point>("getLocation"); } set { IExecute("setLocation", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#move(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#move(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Move(int arg0, int arg1)
         {
             IExecute("move", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#setLocation(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#setLocation(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetLocation(int arg0, int arg1)
         {
             IExecute("setLocation", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#translate(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#translate(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Translate(int arg0, int arg1)
         {
             IExecute("translate", arg0, arg1);

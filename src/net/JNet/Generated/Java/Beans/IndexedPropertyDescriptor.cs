@@ -30,8 +30,14 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#<init>(java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method,java.lang.reflect.Method,java.lang.reflect.Method) throws java.beans.IntrospectionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method,java.lang.reflect.Method,java.lang.reflect.Method)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <exception cref="Java.Beans.IntrospectionException"/>
         public IndexedPropertyDescriptor(string arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3, Java.Lang.Reflect.Method arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -53,14 +59,14 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#getIndexedReadMethod() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#setIndexedReadMethod(java.lang.reflect.Method) throws java.beans.IntrospectionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#getIndexedReadMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#setIndexedReadMethod(java.lang.reflect.Method)"/>
         /// </summary>
         public Java.Lang.Reflect.Method IndexedReadMethod
         {
             get { return IExecute<Java.Lang.Reflect.Method>("getIndexedReadMethod"); } set { IExecute("setIndexedReadMethod", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#getIndexedWriteMethod() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#setIndexedWriteMethod(java.lang.reflect.Method) throws java.beans.IntrospectionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#getIndexedWriteMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#setIndexedWriteMethod(java.lang.reflect.Method)"/>
         /// </summary>
         public Java.Lang.Reflect.Method IndexedWriteMethod
         {

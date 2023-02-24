@@ -46,64 +46,69 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getEncoding() https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setEncoding(java.lang.String) throws java.lang.SecurityException,java.io.UnsupportedEncodingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getEncoding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setEncoding(java.lang.String)"/>
         /// </summary>
         public string Encoding
         {
             get { return IExecute<string>("getEncoding"); } set { IExecute("setEncoding", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getErrorManager() https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setErrorManager(java.util.logging.ErrorManager)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getErrorManager()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setErrorManager(java.util.logging.ErrorManager)"/>
         /// </summary>
         public Java.Util.Logging.ErrorManager ErrorManager
         {
             get { return IExecute<Java.Util.Logging.ErrorManager>("getErrorManager"); } set { IExecute("setErrorManager", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFilter() https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFilter(java.util.logging.Filter) throws java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFilter(java.util.logging.Filter)"/>
         /// </summary>
         public Java.Util.Logging.Filter Filter
         {
             get { return IExecute<Java.Util.Logging.Filter>("getFilter"); } set { IExecute("setFilter", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFormatter() https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFormatter(java.util.logging.Formatter) throws java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getFormatter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setFormatter(java.util.logging.Formatter)"/>
         /// </summary>
         public Java.Util.Logging.Formatter Formatter
         {
             get { return IExecute<Java.Util.Logging.Formatter>("getFormatter"); } set { IExecute("setFormatter", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getLevel() https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setLevel(java.util.logging.Level) throws java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#getLevel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#setLevel(java.util.logging.Level)"/>
         /// </summary>
         public Java.Util.Logging.Level Level
         {
             get { return IExecute<Java.Util.Logging.Level>("getLevel"); } set { IExecute("setLevel", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#close() throws java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Lang.SecurityException"/>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#flush()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#flush()"/>
         /// </summary>
         public void Flush()
         {
             IExecute("flush");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#publish(java.util.logging.LogRecord)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#publish(java.util.logging.LogRecord)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
         public void Publish(Java.Util.Logging.LogRecord arg0)
         {
             IExecute("publish", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#isLoggable(java.util.logging.LogRecord)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html#isLoggable(java.util.logging.LogRecord)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsLoggable(Java.Util.Logging.LogRecord arg0)
         {
             return IExecute<bool>("isLoggable", arg0);

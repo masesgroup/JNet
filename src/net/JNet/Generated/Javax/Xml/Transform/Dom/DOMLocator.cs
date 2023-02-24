@@ -33,6 +33,9 @@ namespace Javax.Xml.Transform.Dom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Transform.Dom.DOMLocator"/> to <see cref="Javax.Xml.Transform.SourceLocator"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Transform.SourceLocator(Javax.Xml.Transform.Dom.DOMLocator t) => t.Cast<Javax.Xml.Transform.SourceLocator>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Javax.Xml.Transform.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMLocator.html#getOriginatingNode() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMLocator.html#getOriginatingNode()"/> 
         /// </summary>
         public Org.W3c.Dom.Node OriginatingNode
         {

@@ -33,7 +33,13 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.TreeMap"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.TreeMap t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.TreeMap"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.TreeMap t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -48,43 +54,55 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#ceilingKey(K)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#ceilingKey(K)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object CeilingKey(object arg0)
         {
             return IExecute("ceilingKey", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#firstKey()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#firstKey()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object FirstKey()
         {
             return IExecute("firstKey");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#floorKey(K)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#floorKey(K)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object FloorKey(object arg0)
         {
             return IExecute("floorKey", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#higherKey(K)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#higherKey(K)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object HigherKey(object arg0)
         {
             return IExecute("higherKey", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#lastKey()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#lastKey()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object LastKey()
         {
             return IExecute("lastKey");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#lowerKey(K)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#lowerKey(K)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object LowerKey(object arg0)
         {
             return IExecute("lowerKey", arg0);

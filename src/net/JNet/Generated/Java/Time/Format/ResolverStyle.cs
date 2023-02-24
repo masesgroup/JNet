@@ -38,15 +38,15 @@ namespace Java.Time.Format
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#LENIENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#LENIENT"/>
         /// </summary>
         public static Java.Time.Format.ResolverStyle LENIENT => Clazz.GetField<Java.Time.Format.ResolverStyle>("LENIENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#SMART
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#SMART"/>
         /// </summary>
         public static Java.Time.Format.ResolverStyle SMART => Clazz.GetField<Java.Time.Format.ResolverStyle>("SMART");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#STRICT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#STRICT"/>
         /// </summary>
         public static Java.Time.Format.ResolverStyle STRICT => Clazz.GetField<Java.Time.Format.ResolverStyle>("STRICT");
         
@@ -54,8 +54,10 @@ namespace Java.Time.Format
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.ResolverStyle"/></returns>
         public static Java.Time.Format.ResolverStyle[] Values()
         {
             return SExecuteArray<Java.Time.Format.ResolverStyle>("values");

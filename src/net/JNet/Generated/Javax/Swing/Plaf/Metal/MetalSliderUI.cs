@@ -46,7 +46,7 @@ namespace Javax.Swing.Plaf.Metal
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalSliderUI.html#getTickLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalSliderUI.html#getTickLength()"/> 
         /// </summary>
         public int TickLength
         {

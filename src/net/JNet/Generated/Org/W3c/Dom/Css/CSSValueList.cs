@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Css
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Css.CSSValueList"/> to <see cref="Org.W3c.Dom.Css.CSSValue"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Css.CSSValue(Org.W3c.Dom.Css.CSSValueList t) => t.Cast<Org.W3c.Dom.Css.CSSValue>();
         
         #endregion
@@ -47,15 +50,17 @@ namespace Org.W3c.Dom.Css
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValueList.html#getLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValueList.html#getLength()"/> 
         /// </summary>
         public int Length
         {
             get { return IExecute<int>("getLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValueList.html#item(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValueList.html#item(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Css.CSSValue"/></returns>
         public Org.W3c.Dom.Css.CSSValue Item(int arg0)
         {
             return IExecute<Org.W3c.Dom.Css.CSSValue>("item", arg0);

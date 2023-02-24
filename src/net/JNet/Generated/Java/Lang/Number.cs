@@ -33,6 +33,9 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Number"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.Number t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,43 +50,55 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#doubleValue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#doubleValue()"/>
         /// </summary>
+        
+        /// <returns><see langword="double"/></returns>
         public double DoubleValue()
         {
             return IExecute<double>("doubleValue");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#floatValue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#floatValue()"/>
         /// </summary>
+        
+        /// <returns><see langword="float"/></returns>
         public float FloatValue()
         {
             return IExecute<float>("floatValue");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#intValue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#intValue()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int IntValue()
         {
             return IExecute<int>("intValue");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#longValue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#longValue()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long LongValue()
         {
             return IExecute<long>("longValue");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#byteValue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#byteValue()"/>
         /// </summary>
+        
+        /// <returns><see langword="byte"/></returns>
         public byte ByteValue()
         {
             return IExecute<byte>("byteValue");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#shortValue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html#shortValue()"/>
         /// </summary>
+        
+        /// <returns><see langword="short"/></returns>
         public short ShortValue()
         {
             return IExecute<short>("shortValue");

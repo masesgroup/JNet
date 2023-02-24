@@ -46,8 +46,10 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyEventDispatcher.html#dispatchKeyEvent(java.awt.event.KeyEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyEventDispatcher.html#dispatchKeyEvent(java.awt.event.KeyEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool DispatchKeyEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
             return IExecute<bool>("dispatchKeyEvent", arg0);

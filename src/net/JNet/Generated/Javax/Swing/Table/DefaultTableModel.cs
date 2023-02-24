@@ -30,8 +30,10 @@ namespace Javax.Swing.Table
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#<init>(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#%3Cinit%3E(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public DefaultTableModel(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Javax.Swing.Table
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Table.DefaultTableModel"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Table.DefaultTableModel t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,92 +59,110 @@ namespace Javax.Swing.Table
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addColumn(java.lang.Object,java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addColumn(java.lang.Object,java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void AddColumn(object arg0, object[] arg1)
         {
             IExecute("addColumn", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addColumn(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addColumn(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void AddColumn(object arg0)
         {
             IExecute("addColumn", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addRow(java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addRow(java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
         public void AddRow(object[] arg0)
         {
             IExecute("addRow", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#insertRow(int,java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#insertRow(int,java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void InsertRow(int arg0, object[] arg1)
         {
             IExecute("insertRow", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#moveRow(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#moveRow(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void MoveRow(int arg0, int arg1, int arg2)
         {
             IExecute("moveRow", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#newDataAvailable(javax.swing.event.TableModelEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#newDataAvailable(javax.swing.event.TableModelEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelEvent"/></param>
         public void NewDataAvailable(Javax.Swing.Event.TableModelEvent arg0)
         {
             IExecute("newDataAvailable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#newRowsAdded(javax.swing.event.TableModelEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#newRowsAdded(javax.swing.event.TableModelEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelEvent"/></param>
         public void NewRowsAdded(Javax.Swing.Event.TableModelEvent arg0)
         {
             IExecute("newRowsAdded", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#removeRow(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#removeRow(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void RemoveRow(int arg0)
         {
             IExecute("removeRow", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#rowsRemoved(javax.swing.event.TableModelEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#rowsRemoved(javax.swing.event.TableModelEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelEvent"/></param>
         public void RowsRemoved(Javax.Swing.Event.TableModelEvent arg0)
         {
             IExecute("rowsRemoved", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setColumnCount(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setColumnCount(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetColumnCount(int arg0)
         {
             IExecute("setColumnCount", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setDataVector(java.lang.Object[][],java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setDataVector(java.lang.Object[][],java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void SetDataVector(object[][] arg0, object[] arg1)
         {
             IExecute("setDataVector", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setNumRows(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setNumRows(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetNumRows(int arg0)
         {
             IExecute("setNumRows", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setRowCount(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setRowCount(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetRowCount(int arg0)
         {
             IExecute("setRowCount", arg0);

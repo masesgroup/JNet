@@ -46,35 +46,41 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#tryLock()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#tryLock()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool TryLock()
         {
             return IExecute<bool>("tryLock");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#newCondition()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#newCondition()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
         public Java.Util.Concurrent.Locks.Condition NewCondition()
         {
             return IExecute<Java.Util.Concurrent.Locks.Condition>("newCondition");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#locks.Lock.lock()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#locks.Lock.lock()"/>
         /// </summary>
         public void LockMethod()
         {
             IExecute("lock");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#lockInterruptibly() throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#lockInterruptibly()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public void LockInterruptibly()
         {
             IExecute("lockInterruptibly");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#unlock()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#unlock()"/>
         /// </summary>
         public void Unlock()
         {

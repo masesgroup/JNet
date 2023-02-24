@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Type
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Type.WildcardType"/> to <see cref="Javax.Lang.Model.Type.TypeMirror"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Type.TypeMirror(Javax.Lang.Model.Type.WildcardType t) => t.Cast<Javax.Lang.Model.Type.TypeMirror>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Javax.Lang.Model.Type
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/WildcardType.html#getExtendsBound() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/WildcardType.html#getExtendsBound()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror ExtendsBound
         {
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getExtendsBound"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/WildcardType.html#getSuperBound() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/WildcardType.html#getSuperBound()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror SuperBound
         {

@@ -33,6 +33,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyName"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.Keyinfo.KeyName t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyName.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyName.html#getName()"/> 
         /// </summary>
         public string Name
         {

@@ -30,8 +30,9 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public BitSet(int arg0)
             : base(arg0)
         {
@@ -40,7 +41,13 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.BitSet"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.BitSet t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.BitSet"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.BitSet t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -51,29 +58,37 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#valueOf(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#valueOf(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see cref="Java.Util.BitSet"/></returns>
         public static Java.Util.BitSet ValueOf(byte[] arg0)
         {
             return SExecute<Java.Util.BitSet>("valueOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#valueOf(java.nio.ByteBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#valueOf(java.nio.ByteBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see cref="Java.Util.BitSet"/></returns>
         public static Java.Util.BitSet ValueOf(Java.Nio.ByteBuffer arg0)
         {
             return SExecute<Java.Util.BitSet>("valueOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#valueOf(java.nio.LongBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#valueOf(java.nio.LongBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.LongBuffer"/></param>
+        /// <returns><see cref="Java.Util.BitSet"/></returns>
         public static Java.Util.BitSet ValueOf(Java.Nio.LongBuffer arg0)
         {
             return SExecute<Java.Util.BitSet>("valueOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#valueOf(long[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#valueOf(long[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="Java.Util.BitSet"/></returns>
         public static Java.Util.BitSet ValueOf(long[] arg0)
         {
             return SExecute<Java.Util.BitSet>("valueOf", arg0);
@@ -83,190 +98,237 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#get(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#get(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Get(int arg0)
         {
             return IExecute<bool>("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#intersects(java.util.BitSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#intersects(java.util.BitSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Intersects(Java.Util.BitSet arg0)
         {
             return IExecute<bool>("intersects", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#isEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#isEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#toByteArray()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#toByteArray()"/>
         /// </summary>
+        
+        /// <returns><see cref="byte"/></returns>
         public byte[] ToByteArray()
         {
             return IExecuteArray<byte>("toByteArray");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#cardinality()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#cardinality()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Cardinality()
         {
             return IExecute<int>("cardinality");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#length()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#length()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Length()
         {
             return IExecute<int>("length");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#nextClearBit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#nextClearBit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int NextClearBit(int arg0)
         {
             return IExecute<int>("nextClearBit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#nextSetBit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#nextSetBit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int NextSetBit(int arg0)
         {
             return IExecute<int>("nextSetBit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#previousClearBit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#previousClearBit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int PreviousClearBit(int arg0)
         {
             return IExecute<int>("previousClearBit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#previousSetBit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#previousSetBit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int PreviousSetBit(int arg0)
         {
             return IExecute<int>("previousSetBit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#size()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#get(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#get(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Util.BitSet"/></returns>
         public Java.Util.BitSet Get(int arg0, int arg1)
         {
             return IExecute<Java.Util.BitSet>("get", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#stream.IntStream java.util.BitSet.stream()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#stream.IntStream java.util.BitSet.stream()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Stream()
         {
             return IExecute<Java.Util.Stream.IntStream>("stream");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#toLongArray()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#toLongArray()"/>
         /// </summary>
+        
+        /// <returns><see cref="long"/></returns>
         public long[] ToLongArray()
         {
             return IExecuteArray<long>("toLongArray");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#and(java.util.BitSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#and(java.util.BitSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
         public void And(Java.Util.BitSet arg0)
         {
             IExecute("and", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#andNot(java.util.BitSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#andNot(java.util.BitSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
         public void AndNot(Java.Util.BitSet arg0)
         {
             IExecute("andNot", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#clear()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecute("clear");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#clear(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#clear(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Clear(int arg0, int arg1)
         {
             IExecute("clear", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#clear(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#clear(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Clear(int arg0)
         {
             IExecute("clear", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#flip(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#flip(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Flip(int arg0, int arg1)
         {
             IExecute("flip", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#flip(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#flip(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Flip(int arg0)
         {
             IExecute("flip", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#or(java.util.BitSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#or(java.util.BitSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
         public void Or(Java.Util.BitSet arg0)
         {
             IExecute("or", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public void Set(int arg0, bool arg1)
         {
             IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public void Set(int arg0, int arg1, bool arg2)
         {
             IExecute("set", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Set(int arg0, int arg1)
         {
             IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Set(int arg0)
         {
             IExecute("set", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#xor(java.util.BitSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#xor(java.util.BitSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
         public void Xor(Java.Util.BitSet arg0)
         {
             IExecute("xor", arg0);

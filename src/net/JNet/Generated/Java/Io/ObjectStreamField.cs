@@ -46,50 +46,56 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getOffset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getOffset()"/> 
         /// </summary>
         public int Offset
         {
             get { return IExecute<int>("getOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getTypeCode() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getTypeCode()"/> 
         /// </summary>
         public char TypeCode
         {
             get { return IExecute<char>("getTypeCode"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getTypeString() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getTypeString()"/> 
         /// </summary>
         public string TypeString
         {
             get { return IExecute<string>("getTypeString"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#isPrimitive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#isPrimitive()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPrimitive()
         {
             return IExecute<bool>("isPrimitive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#isUnshared()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#isUnshared()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsUnshared()
         {
             return IExecute<bool>("isUnshared");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);

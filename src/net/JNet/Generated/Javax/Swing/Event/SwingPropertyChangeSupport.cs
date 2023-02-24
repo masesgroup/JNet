@@ -30,15 +30,18 @@ namespace Javax.Swing.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/SwingPropertyChangeSupport.html#<init>(java.lang.Object,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/SwingPropertyChangeSupport.html#%3Cinit%3E(java.lang.Object,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public SwingPropertyChangeSupport(object arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/SwingPropertyChangeSupport.html#<init>(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/SwingPropertyChangeSupport.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public SwingPropertyChangeSupport(object arg0)
             : base(arg0)
         {
@@ -60,8 +63,10 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/SwingPropertyChangeSupport.html#isNotifyOnEDT()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/SwingPropertyChangeSupport.html#isNotifyOnEDT()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsNotifyOnEDT()
         {
             return IExecute<bool>("isNotifyOnEDT");

@@ -33,7 +33,13 @@ namespace Javax.Management.Monitor
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Monitor.Monitor"/> to <see cref="Javax.Management.Monitor.MonitorMBean"/>
+        /// </summary>
         public static implicit operator Javax.Management.Monitor.MonitorMBean(Javax.Management.Monitor.Monitor t) => t.Cast<Javax.Management.Monitor.MonitorMBean>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Monitor.Monitor"/> to <see cref="Javax.Management.MBeanRegistration"/>
+        /// </summary>
         public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Monitor.Monitor t) => t.Cast<Javax.Management.MBeanRegistration>();
         
         #endregion
@@ -48,92 +54,106 @@ namespace Javax.Management.Monitor
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#getGranularityPeriod() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#setGranularityPeriod(long) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#getGranularityPeriod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#setGranularityPeriod(long)"/>
         /// </summary>
         public long GranularityPeriod
         {
             get { return IExecute<long>("getGranularityPeriod"); } set { IExecute("setGranularityPeriod", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#getObservedAttribute() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#setObservedAttribute(java.lang.String) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#getObservedAttribute()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#setObservedAttribute(java.lang.String)"/>
         /// </summary>
         public string ObservedAttribute
         {
             get { return IExecute<string>("getObservedAttribute"); } set { IExecute("setObservedAttribute", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#getObservedObjects() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#getObservedObjects()"/> 
         /// </summary>
         public Javax.Management.ObjectName[] ObservedObjects
         {
             get { return IExecuteArray<Javax.Management.ObjectName>("getObservedObjects"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#start()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#start()"/>
         /// </summary>
         public void Start()
         {
             IExecute("start");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#stop()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#stop()"/>
         /// </summary>
         public void Stop()
         {
             IExecute("stop");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName) throws java.lang.Exception
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
             return IExecute<Javax.Management.ObjectName>("preRegister", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#containsObservedObject(javax.management.ObjectName)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#containsObservedObject(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsObservedObject(Javax.Management.ObjectName arg0)
         {
             return IExecute<bool>("containsObservedObject", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#isActive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#isActive()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsActive()
         {
             return IExecute<bool>("isActive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#addObservedObject(javax.management.ObjectName) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#addObservedObject(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void AddObservedObject(Javax.Management.ObjectName arg0)
         {
             IExecute("addObservedObject", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#removeObservedObject(javax.management.ObjectName)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#removeObservedObject(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         public void RemoveObservedObject(Javax.Management.ObjectName arg0)
         {
             IExecute("removeObservedObject", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#postDeregister()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#postDeregister()"/>
         /// </summary>
         public void PostDeregister()
         {
             IExecute("postDeregister");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#postRegister(java.lang.Boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#postRegister(java.lang.Boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool?"/></param>
         public void PostRegister(bool? arg0)
         {
             IExecute("postRegister", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#preDeregister() throws java.lang.Exception
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#preDeregister()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
             IExecute("preDeregister");

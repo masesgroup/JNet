@@ -33,6 +33,9 @@ namespace Javax.Xml.Crypto.Dsig
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.XMLValidateContext"/> to <see cref="Javax.Xml.Crypto.XMLCryptoContext"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLCryptoContext(Javax.Xml.Crypto.Dsig.XMLValidateContext t) => t.Cast<Javax.Xml.Crypto.XMLCryptoContext>();
         
         #endregion

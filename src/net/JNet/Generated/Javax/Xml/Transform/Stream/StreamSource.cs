@@ -30,43 +30,51 @@ namespace Javax.Xml.Transform.Stream
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.io.File)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
         public StreamSource(Java.Io.File arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.io.InputStream,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.InputStream,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public StreamSource(Java.Io.InputStream arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public StreamSource(Java.Io.InputStream arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.io.Reader,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.Reader,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public StreamSource(Java.Io.Reader arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.io.Reader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public StreamSource(Java.Io.Reader arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public StreamSource(string arg0)
             : base(arg0)
         {
@@ -75,13 +83,16 @@ namespace Javax.Xml.Transform.Stream
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Transform.Stream.StreamSource"/> to <see cref="Javax.Xml.Transform.Source"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Transform.Source(Javax.Xml.Transform.Stream.StreamSource t) => t.Cast<Javax.Xml.Transform.Source>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#FEATURE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#FEATURE"/>
         /// </summary>
         public static string FEATURE => Clazz.GetField<string>("FEATURE");
         
@@ -93,50 +104,54 @@ namespace Javax.Xml.Transform.Stream
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#getInputStream() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setInputStream(java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#getInputStream()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setInputStream(java.io.InputStream)"/>
         /// </summary>
         public Java.Io.InputStream InputStream
         {
             get { return IExecute<Java.Io.InputStream>("getInputStream"); } set { IExecute("setInputStream", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#getPublicId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setPublicId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#getPublicId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setPublicId(java.lang.String)"/>
         /// </summary>
         public string PublicId
         {
             get { return IExecute<string>("getPublicId"); } set { IExecute("setPublicId", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#getReader() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setReader(java.io.Reader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#getReader()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setReader(java.io.Reader)"/>
         /// </summary>
         public Java.Io.Reader Reader
         {
             get { return IExecute<Java.Io.Reader>("getReader"); } set { IExecute("setReader", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#getSystemId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#getSystemId()"/> 
         /// </summary>
         public string SystemId
         {
             get { return IExecute<string>("getSystemId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#isEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#isEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setSystemId(java.io.File)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setSystemId(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
         public void SetSystemId(Java.Io.File arg0)
         {
             IExecute("setSystemId", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setSystemId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setSystemId(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void SetSystemId(string arg0)
         {
             IExecute("setSystemId", arg0);

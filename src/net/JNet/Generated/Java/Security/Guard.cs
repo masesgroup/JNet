@@ -46,8 +46,10 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Guard.html#checkGuard(java.lang.Object) throws java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Guard.html#checkGuard(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <exception cref="Java.Lang.SecurityException"/>
         public void CheckGuard(object arg0)
         {
             IExecute("checkGuard", arg0);

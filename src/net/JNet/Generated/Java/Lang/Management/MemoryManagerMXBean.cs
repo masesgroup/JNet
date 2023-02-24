@@ -33,6 +33,9 @@ namespace Java.Lang.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Management.MemoryManagerMXBean"/> to <see cref="Java.Lang.Management.PlatformManagedObject"/>
+        /// </summary>
         public static implicit operator Java.Lang.Management.PlatformManagedObject(Java.Lang.Management.MemoryManagerMXBean t) => t.Cast<Java.Lang.Management.PlatformManagedObject>();
         
         #endregion
@@ -47,22 +50,24 @@ namespace Java.Lang.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#getMemoryPoolNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#getMemoryPoolNames()"/> 
         /// </summary>
         public string[] MemoryPoolNames
         {
             get { return IExecuteArray<string>("getMemoryPoolNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#isValid()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#isValid()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsValid()
         {
             return IExecute<bool>("isValid");

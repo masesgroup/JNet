@@ -30,29 +30,43 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#<init>(int,int) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#%3Cinit%3E(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public TextArea(int arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#<init>(java.lang.String,int,int,int) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#%3Cinit%3E(java.lang.String,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public TextArea(string arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#<init>(java.lang.String,int,int) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#%3Cinit%3E(java.lang.String,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public TextArea(string arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#<init>(java.lang.String) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public TextArea(string arg0)
             : base(arg0)
         {
@@ -66,19 +80,19 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_BOTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_BOTH"/>
         /// </summary>
         public static int SCROLLBARS_BOTH => Clazz.GetField<int>("SCROLLBARS_BOTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_HORIZONTAL_ONLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_HORIZONTAL_ONLY"/>
         /// </summary>
         public static int SCROLLBARS_HORIZONTAL_ONLY => Clazz.GetField<int>("SCROLLBARS_HORIZONTAL_ONLY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_NONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_NONE"/>
         /// </summary>
         public static int SCROLLBARS_NONE => Clazz.GetField<int>("SCROLLBARS_NONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_VERTICAL_ONLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_VERTICAL_ONLY"/>
         /// </summary>
         public static int SCROLLBARS_VERTICAL_ONLY => Clazz.GetField<int>("SCROLLBARS_VERTICAL_ONLY");
         
@@ -90,57 +104,69 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getColumns() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#setColumns(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getColumns()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#setColumns(int)"/>
         /// </summary>
         public int Columns
         {
             get { return IExecute<int>("getColumns"); } set { IExecute("setColumns", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getRows() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#setRows(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#setRows(int)"/>
         /// </summary>
         public int Rows
         {
             get { return IExecute<int>("getRows"); } set { IExecute("setRows", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getScrollbarVisibility() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getScrollbarVisibility()"/> 
         /// </summary>
         public int ScrollbarVisibility
         {
             get { return IExecute<int>("getScrollbarVisibility"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getMinimumSize(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getMinimumSize(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetMinimumSize(int arg0, int arg1)
         {
             return IExecute<Java.Awt.Dimension>("getMinimumSize", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getPreferredSize(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#getPreferredSize(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetPreferredSize(int arg0, int arg1)
         {
             return IExecute<Java.Awt.Dimension>("getPreferredSize", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#append(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#append(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void Append(string arg0)
         {
             IExecute("append", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#insert(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#insert(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Insert(string arg0, int arg1)
         {
             IExecute("insert", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#replaceRange(java.lang.String,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#replaceRange(java.lang.String,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void ReplaceRange(string arg0, int arg1, int arg2)
         {
             IExecute("replaceRange", arg0, arg1, arg2);

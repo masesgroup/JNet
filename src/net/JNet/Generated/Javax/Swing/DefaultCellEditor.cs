@@ -30,15 +30,17 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#<init>(javax.swing.JCheckBox)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#%3Cinit%3E(javax.swing.JCheckBox)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JCheckBox"/></param>
         public DefaultCellEditor(Javax.Swing.JCheckBox arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#<init>(javax.swing.JTextField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#%3Cinit%3E(javax.swing.JTextField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTextField"/></param>
         public DefaultCellEditor(Javax.Swing.JTextField arg0)
             : base(arg0)
         {
@@ -47,7 +49,13 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.DefaultCellEditor"/> to <see cref="Javax.Swing.Table.TableCellEditor"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Table.TableCellEditor(Javax.Swing.DefaultCellEditor t) => t.Cast<Javax.Swing.Table.TableCellEditor>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.DefaultCellEditor"/> to <see cref="Javax.Swing.Tree.TreeCellEditor"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Tree.TreeCellEditor(Javax.Swing.DefaultCellEditor t) => t.Cast<Javax.Swing.Tree.TreeCellEditor>();
         
         #endregion
@@ -62,29 +70,42 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#getClickCountToStart() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#setClickCountToStart(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#getClickCountToStart()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#setClickCountToStart(int)"/>
         /// </summary>
         public int ClickCountToStart
         {
             get { return IExecute<int>("getClickCountToStart"); } set { IExecute("setClickCountToStart", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#getComponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#getComponent()"/> 
         /// </summary>
         public Java.Awt.Component Component
         {
             get { return IExecute<Java.Awt.Component>("getComponent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#getTableCellEditorComponent(javax.swing.JTable,java.lang.Object,boolean,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#getTableCellEditorComponent(javax.swing.JTable,java.lang.Object,boolean,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTable"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetTableCellEditorComponent(Javax.Swing.JTable arg0, object arg1, bool arg2, int arg3, int arg4)
         {
             return IExecute<Java.Awt.Component>("getTableCellEditorComponent", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#getTreeCellEditorComponent(javax.swing.JTree,java.lang.Object,boolean,boolean,boolean,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultCellEditor.html#getTreeCellEditorComponent(javax.swing.JTree,java.lang.Object,boolean,boolean,boolean,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg4"><see langword="bool"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetTreeCellEditorComponent(Javax.Swing.JTree arg0, object arg1, bool arg2, bool arg3, bool arg4, int arg5)
         {
             return IExecute<Java.Awt.Component>("getTreeCellEditorComponent", arg0, arg1, arg2, arg3, arg4, arg5);

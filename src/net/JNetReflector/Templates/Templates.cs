@@ -86,17 +86,14 @@ namespace MASES.JNetReflector.Templates
         public const string SingleNestedClassTemplate = "SingleNestedClass.template";
     }
 
-    public class Usings
-    {
-        public const string USING = "using {0};";
-    }
-
     public class AllPackageClasses
     {
         public const string VERSION = "ALLPACKAGE_VERSION_PLACEHOLDER";
         public const string JAR = "ALLPACKAGE_JAR_PLACEHOLDER";
         public const string NAMESPACE = "ALLPACKAGE_NAMESPACE_PLACEHOLDER";
         public const string CLASSES = "// ALLPACKAGE_CLASSES_PLACEHOLDER";
+
+        public const string HREF_URL = "<see href=\"{0}\"/>";
 
         public class ClassStub
         {
@@ -117,6 +114,8 @@ namespace MASES.JNetReflector.Templates
             public const string ISINTERFACE = "ALLPACKAGE_CLASSES_STUB_ISINTERFACE_PLACEHOLDER";
             public const string ISSTATIC = "ALLPACKAGE_CLASSES_STUB_ISSTATIC_PLACEHOLDER";
 
+            public const string JCOBRIDGE_VERSION = "ALLPACKAGE_CLASSES_STUB_JCOBRIDGE_VERSION_PLACEHOLDER";
+
             public const string DEFAULT_DECORATION = "    #region ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
             public const string OBSOLETE_DECORATION = "    [System.Obsolete()]";
 
@@ -132,12 +131,17 @@ namespace MASES.JNetReflector.Templates
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                                  + "/// CONSTRUCTOR_STUB_CONSTRUCTOR_HELP_PLACEHOLDER" + Environment.NewLine
                                                                  + "/// </summary>";
+                public static readonly string HELP_PARAM_DECORATION = "/// <param name=\"{0}\"><see {1}=\"{2}\"/></param>";
+                public static readonly string HELP_EXCEPTION_DECORATION = "/// <exception cref=\"{0}\"/>";
                 public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
 
             public class OperatorStub
             {
                 public const string IMPLICIT_EXECUTION_FORMAT = "public static implicit operator {0}({1} t) => t.Cast<{0}>();";
+                public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
+                                                                   + "/// Converter from <see cref=\"{1}\"/> to <see cref=\"{0}\"/>" + Environment.NewLine
+                                                                   + "/// </summary>";
             }
 
             public class MethodStub
@@ -155,6 +159,9 @@ namespace MASES.JNetReflector.Templates
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                                  + "/// METHOD_STUB_METHOD_HELP_PLACEHOLDER" + Environment.NewLine
                                                                  + "/// </summary>";
+                public static readonly string HELP_PARAM_DECORATION = "/// <param name=\"{0}\"><see {1}=\"{2}\"/></param>";
+                public static readonly string HELP_RETURN_DECORATION = "/// <returns><see {0}=\"{1}\"/></returns>";
+                public static readonly string HELP_EXCEPTION_DECORATION = "/// <exception cref=\"{0}\"/>";
                 public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
 
@@ -210,6 +217,8 @@ namespace MASES.JNetReflector.Templates
                 public const string ISCLOSEABLE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISCLOSEABLE_PLACEHOLDER";
                 public const string ISINTERFACE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISINTERFACE_PLACEHOLDER";
                 public const string ISSTATIC = "ALLPACKAGE_CLASSES_STUB_NESTED_ISSTATIC_PLACEHOLDER";
+
+                public const string JCOBRIDGE_VERSION = "ALLPACKAGE_CLASSES_STUB_NESTED_JCOBRIDGE_VERSION_PLACEHOLDER";
 
                 public const string DEFAULT_DECORATION = "        #region ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
                 public const string OBSOLETE_DECORATION = "        [System.Obsolete()]";

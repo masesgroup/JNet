@@ -30,8 +30,9 @@ namespace Javax.Print.Attribute.Standard
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogOwner.html#<init>(java.awt.Window)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogOwner.html#%3Cinit%3E(java.awt.Window)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
         public DialogOwner(Java.Awt.Window arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.DialogOwner"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.DialogOwner t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
         
         #endregion
@@ -54,14 +58,14 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogOwner.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogOwner.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogOwner.html#getOwner() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogOwner.html#getOwner()"/> 
         /// </summary>
         public Java.Awt.Window Owner
         {

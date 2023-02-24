@@ -46,92 +46,123 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsKey(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsKey(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsKey(object arg0)
         {
             return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsValue(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsValue(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsValue(object arg0)
         {
             return IExecute<bool>("containsValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#isEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#isEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#size()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#get(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#get(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Get(object arg0)
         {
             return IExecute("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#put(K,V)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#put(K,V)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Put(object arg0, object arg1)
         {
             return IExecute("put", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Remove(object arg0)
         {
             return IExecute("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#clear()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecute("clear");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Remove(object arg0, object arg1)
         {
             return IExecute<bool>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(K,V,V)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(K,V,V)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Replace(object arg0, object arg1, object arg2)
         {
             return IExecute<bool>("replace", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,V)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,V)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetOrDefault(object arg0, object arg1)
         {
             return IExecute("getOrDefault", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putIfAbsent(K,V)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putIfAbsent(K,V)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object PutIfAbsent(object arg0, object arg1)
         {
             return IExecute("putIfAbsent", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(K,V)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(K,V)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Replace(object arg0, object arg1)
         {
             return IExecute("replace", arg0, arg1);
@@ -161,22 +192,24 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#getKey() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#getKey()"/> 
             /// </summary>
             public object Key
             {
                 get { return IExecute("getKey"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#getValue() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#getValue()"/> 
             /// </summary>
             public object Value
             {
                 get { return IExecute("getValue"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#setValue(V)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#setValue(V)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
+            /// <returns><see langword="object"/></returns>
             public object SetValue(object arg0)
             {
                 return IExecute("setValue", arg0);

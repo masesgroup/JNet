@@ -30,8 +30,10 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html#<init>(long,java.awt.event.AWTEventListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html#%3Cinit%3E(long,java.awt.event.AWTEventListener)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.AWTEventListener"/></param>
         public AWTEventListenerProxy(long arg0, Java.Awt.EventNs.AWTEventListener arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.EventNs.AWTEventListenerProxy"/> to <see cref="Java.Awt.EventNs.AWTEventListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.AWTEventListener(Java.Awt.EventNs.AWTEventListenerProxy t) => t.Cast<Java.Awt.EventNs.AWTEventListener>();
         
         #endregion
@@ -54,15 +59,16 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html#getEventMask() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html#getEventMask()"/> 
         /// </summary>
         public long EventMask
         {
             get { return IExecute<long>("getEventMask"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html#eventDispatched(java.awt.AWTEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html#eventDispatched(java.awt.AWTEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
         public void EventDispatched(Java.Awt.AWTEvent arg0)
         {
             IExecute("eventDispatched", arg0);

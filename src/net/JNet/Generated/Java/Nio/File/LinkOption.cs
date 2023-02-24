@@ -33,14 +33,20 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.LinkOption"/> to <see cref="Java.Nio.File.OpenOption"/>
+        /// </summary>
         public static implicit operator Java.Nio.File.OpenOption(Java.Nio.File.LinkOption t) => t.Cast<Java.Nio.File.OpenOption>();
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.LinkOption"/> to <see cref="Java.Nio.File.CopyOption"/>
+        /// </summary>
         public static implicit operator Java.Nio.File.CopyOption(Java.Nio.File.LinkOption t) => t.Cast<Java.Nio.File.CopyOption>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#NOFOLLOW_LINKS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#NOFOLLOW_LINKS"/>
         /// </summary>
         public static Java.Nio.File.LinkOption NOFOLLOW_LINKS => Clazz.GetField<Java.Nio.File.LinkOption>("NOFOLLOW_LINKS");
         
@@ -48,8 +54,10 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.LinkOption"/></returns>
         public static Java.Nio.File.LinkOption[] Values()
         {
             return SExecuteArray<Java.Nio.File.LinkOption>("values");

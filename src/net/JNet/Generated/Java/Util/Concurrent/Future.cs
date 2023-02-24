@@ -46,29 +46,39 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#cancel(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#cancel(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Cancel(bool arg0)
         {
             return IExecute<bool>("cancel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isCancelled()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isCancelled()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCancelled()
         {
             return IExecute<bool>("isCancelled");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isDone()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isDone()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDone()
         {
             return IExecute<bool>("isDone");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#get() throws java.lang.InterruptedException,java.util.concurrent.ExecutionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#get()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         public object Get()
         {
             return IExecute("get");

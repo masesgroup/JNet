@@ -30,15 +30,18 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#<init>(int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#%3Cinit%3E(int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public Deflater(int arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public Deflater(int arg0)
             : base(arg0)
         {
@@ -52,47 +55,47 @@ namespace Java.Util.Zip
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#BEST_COMPRESSION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#BEST_COMPRESSION"/>
         /// </summary>
         public static int BEST_COMPRESSION => Clazz.GetField<int>("BEST_COMPRESSION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#BEST_SPEED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#BEST_SPEED"/>
         /// </summary>
         public static int BEST_SPEED => Clazz.GetField<int>("BEST_SPEED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFAULT_COMPRESSION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFAULT_COMPRESSION"/>
         /// </summary>
         public static int DEFAULT_COMPRESSION => Clazz.GetField<int>("DEFAULT_COMPRESSION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFAULT_STRATEGY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFAULT_STRATEGY"/>
         /// </summary>
         public static int DEFAULT_STRATEGY => Clazz.GetField<int>("DEFAULT_STRATEGY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFLATED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFLATED"/>
         /// </summary>
         public static int DEFLATED => Clazz.GetField<int>("DEFLATED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#FILTERED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#FILTERED"/>
         /// </summary>
         public static int FILTERED => Clazz.GetField<int>("FILTERED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#FULL_FLUSH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#FULL_FLUSH"/>
         /// </summary>
         public static int FULL_FLUSH => Clazz.GetField<int>("FULL_FLUSH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#HUFFMAN_ONLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#HUFFMAN_ONLY"/>
         /// </summary>
         public static int HUFFMAN_ONLY => Clazz.GetField<int>("HUFFMAN_ONLY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#NO_COMPRESSION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#NO_COMPRESSION"/>
         /// </summary>
         public static int NO_COMPRESSION => Clazz.GetField<int>("NO_COMPRESSION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#NO_FLUSH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#NO_FLUSH"/>
         /// </summary>
         public static int NO_FLUSH => Clazz.GetField<int>("NO_FLUSH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#SYNC_FLUSH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#SYNC_FLUSH"/>
         /// </summary>
         public static int SYNC_FLUSH => Clazz.GetField<int>("SYNC_FLUSH");
         
@@ -104,148 +107,178 @@ namespace Java.Util.Zip
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#getAdler() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#getAdler()"/> 
         /// </summary>
         public int Adler
         {
             get { return IExecute<int>("getAdler"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#getBytesRead() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#getBytesRead()"/> 
         /// </summary>
         public long BytesRead
         {
             get { return IExecute<long>("getBytesRead"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#getBytesWritten() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#getBytesWritten()"/> 
         /// </summary>
         public long BytesWritten
         {
             get { return IExecute<long>("getBytesWritten"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#getTotalIn() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#getTotalIn()"/> 
         /// </summary>
         public int TotalIn
         {
             get { return IExecute<int>("getTotalIn"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#getTotalOut() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#getTotalOut()"/> 
         /// </summary>
         public int TotalOut
         {
             get { return IExecute<int>("getTotalOut"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#finished()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#finished()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Finished()
         {
             return IExecute<bool>("finished");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#needsInput()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#needsInput()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool NeedsInput()
         {
             return IExecute<bool>("needsInput");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(byte[],int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(byte[],int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Deflate(byte[] arg0, int arg1, int arg2, int arg3)
         {
             return IExecute<int>("deflate", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Deflate(byte[] arg0, int arg1, int arg2)
         {
             return IExecute<int>("deflate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Deflate(byte[] arg0)
         {
             return IExecute<int>("deflate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(java.nio.ByteBuffer,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(java.nio.ByteBuffer,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Deflate(Java.Nio.ByteBuffer arg0, int arg1)
         {
             return IExecute<int>("deflate", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(java.nio.ByteBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(java.nio.ByteBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Deflate(Java.Nio.ByteBuffer arg0)
         {
             return IExecute<int>("deflate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#end()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#end()"/>
         /// </summary>
         public void End()
         {
             IExecute("end");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#finish()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#finish()"/>
         /// </summary>
         public void Finish()
         {
             IExecute("finish");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#reset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecute("reset");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void SetDictionary(byte[] arg0, int arg1, int arg2)
         {
             IExecute("setDictionary", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
         public void SetDictionary(byte[] arg0)
         {
             IExecute("setDictionary", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setInput(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setInput(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void SetInput(byte[] arg0, int arg1, int arg2)
         {
             IExecute("setInput", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setInput(java.nio.ByteBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setInput(java.nio.ByteBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void SetInput(Java.Nio.ByteBuffer arg0)
         {
             IExecute("setInput", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setLevel(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setLevel(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetLevel(int arg0)
         {
             IExecute("setLevel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setStrategy(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setStrategy(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetStrategy(int arg0)
         {
             IExecute("setStrategy", arg0);

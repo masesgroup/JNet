@@ -30,8 +30,10 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html#<init>(byte[]) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html#%3Cinit%3E(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public PolicyQualifierInfo(byte[] arg0)
             : base(arg0)
         {
@@ -53,21 +55,21 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html#getEncoded() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
             get { return IExecuteArray<byte>("getEncoded"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifier() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifier()"/> 
         /// </summary>
         public byte[] PolicyQualifier
         {
             get { return IExecuteArray<byte>("getPolicyQualifier"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifierId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html#getPolicyQualifierId()"/> 
         /// </summary>
         public string PolicyQualifierId
         {

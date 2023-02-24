@@ -33,6 +33,9 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.Attribute.FileStoreAttributeView"/> to <see cref="Java.Nio.File.Attribute.AttributeView"/>
+        /// </summary>
         public static implicit operator Java.Nio.File.Attribute.AttributeView(Java.Nio.File.Attribute.FileStoreAttributeView t) => t.Cast<Java.Nio.File.Attribute.AttributeView>();
         
         #endregion

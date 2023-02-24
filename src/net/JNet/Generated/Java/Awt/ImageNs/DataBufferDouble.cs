@@ -30,43 +30,56 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(double[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#%3Cinit%3E(double[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public DataBufferDouble(double[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(double[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#%3Cinit%3E(double[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public DataBufferDouble(double[] arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(double[][],int,int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#%3Cinit%3E(double[][],int,int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public DataBufferDouble(double[][] arg0, int arg1, int[] arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(double[][],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#%3Cinit%3E(double[][],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public DataBufferDouble(double[][] arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#%3Cinit%3E(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public DataBufferDouble(int arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public DataBufferDouble(int arg0)
             : base(arg0)
         {
@@ -88,22 +101,24 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#getBankData() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#getBankData()"/> 
         /// </summary>
         public double[] BankData
         {
             get { return IExecuteArray<double>("getBankData"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#getData() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#getData()"/> 
         /// </summary>
         public double[] Data
         {
             get { return IExecuteArray<double>("getData"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#getData(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#getData(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="double"/></returns>
         public double[] GetData(int arg0)
         {
             return IExecuteArray<double>("getData", arg0);

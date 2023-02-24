@@ -33,17 +33,20 @@ namespace Java.Rmi.Server
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Server.RemoteRef"/> to <see cref="Java.Io.Externalizable"/>
+        /// </summary>
         public static implicit operator Java.Io.Externalizable(Java.Rmi.Server.RemoteRef t) => t.Cast<Java.Io.Externalizable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#packagePrefix
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#packagePrefix"/>
         /// </summary>
         public static string packagePrefix => Clazz.GetField<string>("packagePrefix");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#serialVersionUID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         
@@ -55,36 +58,50 @@ namespace Java.Rmi.Server
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteEquals(java.rmi.server.RemoteRef)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteEquals(java.rmi.server.RemoteRef)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteRef"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool RemoteEquals(Java.Rmi.Server.RemoteRef arg0)
         {
             return IExecute<bool>("remoteEquals", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteHashCode()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteHashCode()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int RemoteHashCode()
         {
             return IExecute<int>("remoteHashCode");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#invoke(java.rmi.Remote,java.lang.reflect.Method,java.lang.Object[],long) throws java.lang.Exception
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#invoke(java.rmi.Remote,java.lang.reflect.Method,java.lang.Object[],long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see langword="long"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
         public object Invoke(Java.Rmi.Remote arg0, Java.Lang.Reflect.Method arg1, object[] arg2, long arg3)
         {
             return IExecute("invoke", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#getRefClass(java.io.ObjectOutput)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#getRefClass(java.io.ObjectOutput)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetRefClass(Java.Io.ObjectOutput arg0)
         {
             return IExecute<string>("getRefClass", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteToString()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteToString()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string RemoteToString()
         {
             return IExecute<string>("remoteToString");

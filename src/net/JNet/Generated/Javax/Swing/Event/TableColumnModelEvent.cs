@@ -30,8 +30,11 @@ namespace Javax.Swing.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelEvent.html#<init>(javax.swing.table.TableColumnModel,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelEvent.html#%3Cinit%3E(javax.swing.table.TableColumnModel,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Table.TableColumnModel"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public TableColumnModelEvent(Javax.Swing.Table.TableColumnModel arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -53,14 +56,14 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelEvent.html#getFromIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelEvent.html#getFromIndex()"/> 
         /// </summary>
         public int FromIndex
         {
             get { return IExecute<int>("getFromIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelEvent.html#getToIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelEvent.html#getToIndex()"/> 
         /// </summary>
         public int ToIndex
         {

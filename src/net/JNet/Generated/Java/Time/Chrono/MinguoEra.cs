@@ -33,17 +33,20 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.MinguoEra"/> to <see cref="Java.Time.Chrono.Era"/>
+        /// </summary>
         public static implicit operator Java.Time.Chrono.Era(Java.Time.Chrono.MinguoEra t) => t.Cast<Java.Time.Chrono.Era>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#BEFORE_ROC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#BEFORE_ROC"/>
         /// </summary>
         public static Java.Time.Chrono.MinguoEra BEFORE_ROC => Clazz.GetField<Java.Time.Chrono.MinguoEra>("BEFORE_ROC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#ROC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#ROC"/>
         /// </summary>
         public static Java.Time.Chrono.MinguoEra ROC => Clazz.GetField<Java.Time.Chrono.MinguoEra>("ROC");
         
@@ -51,8 +54,10 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.MinguoEra"/></returns>
         public static Java.Time.Chrono.MinguoEra[] Values()
         {
             return SExecuteArray<Java.Time.Chrono.MinguoEra>("values");
@@ -62,7 +67,7 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#getValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#getValue()"/> 
         /// </summary>
         public int Value
         {

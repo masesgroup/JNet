@@ -30,15 +30,20 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#<init>(java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
         public RSAPublicKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#<init>(java.math.BigInteger,java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
         public RSAPublicKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1)
             : base(arg0, arg1)
         {
@@ -47,6 +52,9 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Spec.RSAPublicKeySpec"/> to <see cref="Java.Security.Spec.KeySpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.KeySpec(Java.Security.Spec.RSAPublicKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
         
         #endregion
@@ -61,21 +69,21 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#getModulus() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#getModulus()"/> 
         /// </summary>
         public Java.Math.BigInteger Modulus
         {
             get { return IExecute<Java.Math.BigInteger>("getModulus"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#getParams() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#getParams()"/> 
         /// </summary>
         public Java.Security.Spec.AlgorithmParameterSpec Params
         {
             get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getParams"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#getPublicExponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html#getPublicExponent()"/> 
         /// </summary>
         public Java.Math.BigInteger PublicExponent
         {

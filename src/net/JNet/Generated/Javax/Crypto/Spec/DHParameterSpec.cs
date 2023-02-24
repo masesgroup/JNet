@@ -30,15 +30,20 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#<init>(java.math.BigInteger,java.math.BigInteger,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public DHParameterSpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#<init>(java.math.BigInteger,java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
         public DHParameterSpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1)
             : base(arg0, arg1)
         {
@@ -47,6 +52,9 @@ namespace Javax.Crypto.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Crypto.Spec.DHParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Javax.Crypto.Spec.DHParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
         
         #endregion
@@ -61,21 +69,21 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#getG() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#getG()"/> 
         /// </summary>
         public Java.Math.BigInteger G
         {
             get { return IExecute<Java.Math.BigInteger>("getG"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#getL() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#getL()"/> 
         /// </summary>
         public int L
         {
             get { return IExecute<int>("getL"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#getP() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#getP()"/> 
         /// </summary>
         public Java.Math.BigInteger P
         {

@@ -33,6 +33,9 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Activation.ActivationMonitor"/> to <see cref="Java.Rmi.Remote"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Remote(Java.Rmi.Activation.ActivationMonitor t) => t.Cast<Java.Rmi.Remote>();
         
         #endregion
@@ -47,15 +50,22 @@ namespace Java.Rmi.Activation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html#inactiveGroup(java.rmi.activation.ActivationGroupID,long) throws java.rmi.activation.UnknownGroupException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html#inactiveGroup(java.rmi.activation.ActivationGroupID,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <exception cref="Java.Rmi.Activation.UnknownGroupException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public void InactiveGroup(Java.Rmi.Activation.ActivationGroupID arg0, long arg1)
         {
             IExecute("inactiveGroup", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html#inactiveObject(java.rmi.activation.ActivationID) throws java.rmi.activation.UnknownObjectException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html#inactiveObject(java.rmi.activation.ActivationID)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public void InactiveObject(Java.Rmi.Activation.ActivationID arg0)
         {
             IExecute("inactiveObject", arg0);

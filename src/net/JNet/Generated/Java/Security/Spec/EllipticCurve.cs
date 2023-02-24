@@ -30,15 +30,22 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#<init>(java.security.spec.ECField,java.math.BigInteger,java.math.BigInteger,byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#%3Cinit%3E(java.security.spec.ECField,java.math.BigInteger,java.math.BigInteger,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Spec.ECField"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg2"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
         public EllipticCurve(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, byte[] arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#<init>(java.security.spec.ECField,java.math.BigInteger,java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#%3Cinit%3E(java.security.spec.ECField,java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Spec.ECField"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg2"><see cref="Java.Math.BigInteger"/></param>
         public EllipticCurve(Java.Security.Spec.ECField arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
             : base(arg0, arg1, arg2)
         {
@@ -60,28 +67,28 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#getA() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#getA()"/> 
         /// </summary>
         public Java.Math.BigInteger A
         {
             get { return IExecute<Java.Math.BigInteger>("getA"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#getB() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#getB()"/> 
         /// </summary>
         public Java.Math.BigInteger B
         {
             get { return IExecute<Java.Math.BigInteger>("getB"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#getField() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#getField()"/> 
         /// </summary>
         public Java.Security.Spec.ECField Field
         {
             get { return IExecute<Java.Security.Spec.ECField>("getField"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#getSeed() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EllipticCurve.html#getSeed()"/> 
         /// </summary>
         public byte[] Seed
         {

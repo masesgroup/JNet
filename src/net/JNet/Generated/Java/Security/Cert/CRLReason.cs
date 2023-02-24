@@ -38,47 +38,47 @@ namespace Java.Security.Cert
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#AA_COMPROMISE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#AA_COMPROMISE"/>
         /// </summary>
         public static Java.Security.Cert.CRLReason AA_COMPROMISE => Clazz.GetField<Java.Security.Cert.CRLReason>("AA_COMPROMISE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#AFFILIATION_CHANGED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#AFFILIATION_CHANGED"/>
         /// </summary>
         public static Java.Security.Cert.CRLReason AFFILIATION_CHANGED => Clazz.GetField<Java.Security.Cert.CRLReason>("AFFILIATION_CHANGED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#CA_COMPROMISE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#CA_COMPROMISE"/>
         /// </summary>
         public static Java.Security.Cert.CRLReason CA_COMPROMISE => Clazz.GetField<Java.Security.Cert.CRLReason>("CA_COMPROMISE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#CERTIFICATE_HOLD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#CERTIFICATE_HOLD"/>
         /// </summary>
         public static Java.Security.Cert.CRLReason CERTIFICATE_HOLD => Clazz.GetField<Java.Security.Cert.CRLReason>("CERTIFICATE_HOLD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#CESSATION_OF_OPERATION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#CESSATION_OF_OPERATION"/>
         /// </summary>
         public static Java.Security.Cert.CRLReason CESSATION_OF_OPERATION => Clazz.GetField<Java.Security.Cert.CRLReason>("CESSATION_OF_OPERATION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#KEY_COMPROMISE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#KEY_COMPROMISE"/>
         /// </summary>
         public static Java.Security.Cert.CRLReason KEY_COMPROMISE => Clazz.GetField<Java.Security.Cert.CRLReason>("KEY_COMPROMISE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#PRIVILEGE_WITHDRAWN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#PRIVILEGE_WITHDRAWN"/>
         /// </summary>
         public static Java.Security.Cert.CRLReason PRIVILEGE_WITHDRAWN => Clazz.GetField<Java.Security.Cert.CRLReason>("PRIVILEGE_WITHDRAWN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#REMOVE_FROM_CRL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#REMOVE_FROM_CRL"/>
         /// </summary>
         public static Java.Security.Cert.CRLReason REMOVE_FROM_CRL => Clazz.GetField<Java.Security.Cert.CRLReason>("REMOVE_FROM_CRL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#SUPERSEDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#SUPERSEDED"/>
         /// </summary>
         public static Java.Security.Cert.CRLReason SUPERSEDED => Clazz.GetField<Java.Security.Cert.CRLReason>("SUPERSEDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#UNSPECIFIED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#UNSPECIFIED"/>
         /// </summary>
         public static Java.Security.Cert.CRLReason UNSPECIFIED => Clazz.GetField<Java.Security.Cert.CRLReason>("UNSPECIFIED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#UNUSED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#UNUSED"/>
         /// </summary>
         public static Java.Security.Cert.CRLReason UNUSED => Clazz.GetField<Java.Security.Cert.CRLReason>("UNUSED");
         
@@ -86,8 +86,10 @@ namespace Java.Security.Cert
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Security.Cert.CRLReason"/></returns>
         public static Java.Security.Cert.CRLReason[] Values()
         {
             return SExecuteArray<Java.Security.Cert.CRLReason>("values");

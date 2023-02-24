@@ -46,8 +46,9 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(T)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void Accept(object arg0)
         {
             IExecute("accept", arg0);

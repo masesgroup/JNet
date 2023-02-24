@@ -33,6 +33,9 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Reflect.GenericDeclaration"/> to <see cref="Java.Lang.Reflect.AnnotatedElement"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Reflect.GenericDeclaration t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericDeclaration.html#getTypeParameters() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericDeclaration.html#getTypeParameters()"/> 
         /// </summary>
         public Java.Lang.Reflect.TypeVariable[] TypeParameters
         {

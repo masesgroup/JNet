@@ -30,15 +30,18 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashSet.html#<init>(int,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashSet.html#%3Cinit%3E(int,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
         public HashSet(int arg0, float arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashSet.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashSet.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public HashSet(int arg0)
             : base(arg0)
         {
@@ -47,7 +50,13 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.HashSet"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.HashSet t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.HashSet"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.HashSet t) => t.Cast<Java.Io.Serializable>();
         
         #endregion

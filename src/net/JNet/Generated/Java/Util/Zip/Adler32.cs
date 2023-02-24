@@ -33,6 +33,9 @@ namespace Java.Util.Zip
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Zip.Adler32"/> to <see cref="Java.Util.Zip.Checksum"/>
+        /// </summary>
         public static implicit operator Java.Util.Zip.Checksum(Java.Util.Zip.Adler32 t) => t.Cast<Java.Util.Zip.Checksum>();
         
         #endregion
@@ -47,36 +50,41 @@ namespace Java.Util.Zip
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html#getValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html#getValue()"/> 
         /// </summary>
         public long Value
         {
             get { return IExecute<long>("getValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html#reset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecute("reset");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html#update(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html#update(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void Update(byte[] arg0, int arg1, int arg2)
         {
             IExecute("update", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html#update(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html#update(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Update(int arg0)
         {
             IExecute("update", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html#update(java.nio.ByteBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html#update(java.nio.ByteBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void Update(Java.Nio.ByteBuffer arg0)
         {
             IExecute("update", arg0);

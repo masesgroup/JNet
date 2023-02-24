@@ -46,22 +46,26 @@ namespace Javax.Sound.Sampled.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html#getMixerInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html#getMixerInfo()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Mixer.Info[] MixerInfo
         {
             get { return IExecuteArray<Javax.Sound.Sampled.Mixer.Info>("getMixerInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html#getMixer(javax.sound.sampled.Mixer$Info)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html#getMixer(javax.sound.sampled.Mixer$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Mixer.Info"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.Mixer"/></returns>
         public Javax.Sound.Sampled.Mixer GetMixer(Javax.Sound.Sampled.Mixer.Info arg0)
         {
             return IExecute<Javax.Sound.Sampled.Mixer>("getMixer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html#isMixerSupported(javax.sound.sampled.Mixer$Info)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/MixerProvider.html#isMixerSupported(javax.sound.sampled.Mixer$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Mixer.Info"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsMixerSupported(Javax.Sound.Sampled.Mixer.Info arg0)
         {
             return IExecute<bool>("isMixerSupported", arg0);

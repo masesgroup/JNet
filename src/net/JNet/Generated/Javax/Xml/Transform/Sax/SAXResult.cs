@@ -30,8 +30,9 @@ namespace Javax.Xml.Transform.Sax
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#<init>(org.xml.sax.ContentHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#%3Cinit%3E(org.xml.sax.ContentHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.ContentHandler"/></param>
         public SAXResult(Org.Xml.Sax.ContentHandler arg0)
             : base(arg0)
         {
@@ -40,13 +41,16 @@ namespace Javax.Xml.Transform.Sax
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Transform.Sax.SAXResult"/> to <see cref="Javax.Xml.Transform.Result"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Transform.Result(Javax.Xml.Transform.Sax.SAXResult t) => t.Cast<Javax.Xml.Transform.Result>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#FEATURE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#FEATURE"/>
         /// </summary>
         public static string FEATURE => Clazz.GetField<string>("FEATURE");
         
@@ -58,21 +62,21 @@ namespace Javax.Xml.Transform.Sax
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#getHandler() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#setHandler(org.xml.sax.ContentHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#getHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#setHandler(org.xml.sax.ContentHandler)"/>
         /// </summary>
         public Org.Xml.Sax.ContentHandler Handler
         {
             get { return IExecute<Org.Xml.Sax.ContentHandler>("getHandler"); } set { IExecute("setHandler", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#getLexicalHandler() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#setLexicalHandler(org.xml.sax.ext.LexicalHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#getLexicalHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#setLexicalHandler(org.xml.sax.ext.LexicalHandler)"/>
         /// </summary>
         public Org.Xml.Sax.Ext.LexicalHandler LexicalHandler
         {
             get { return IExecute<Org.Xml.Sax.Ext.LexicalHandler>("getLexicalHandler"); } set { IExecute("setLexicalHandler", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#getSystemId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#setSystemId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public string SystemId
         {

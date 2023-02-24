@@ -42,57 +42,67 @@ namespace Java.Util.Concurrent.Locks
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#getBlocker(java.lang.Thread)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#getBlocker(java.lang.Thread)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
+        /// <returns><see langword="object"/></returns>
         public static object GetBlocker(Java.Lang.Thread arg0)
         {
             return SExecute("getBlocker", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#park()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#park()"/>
         /// </summary>
         public static void Park()
         {
             SExecute("park");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#park(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#park(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public static void Park(object arg0)
         {
             SExecute("park", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkNanos(java.lang.Object,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkNanos(java.lang.Object,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
         public static void ParkNanos(object arg0, long arg1)
         {
             SExecute("parkNanos", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkNanos(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkNanos(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
         public static void ParkNanos(long arg0)
         {
             SExecute("parkNanos", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkUntil(java.lang.Object,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkUntil(java.lang.Object,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
         public static void ParkUntil(object arg0, long arg1)
         {
             SExecute("parkUntil", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkUntil(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkUntil(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
         public static void ParkUntil(long arg0)
         {
             SExecute("parkUntil", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#unpark(java.lang.Thread)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#unpark(java.lang.Thread)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         public static void Unpark(Java.Lang.Thread arg0)
         {
             SExecute("unpark", arg0);

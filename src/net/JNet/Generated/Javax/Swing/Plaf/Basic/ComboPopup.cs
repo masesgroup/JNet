@@ -46,49 +46,51 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getKeyListener() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getKeyListener()"/> 
         /// </summary>
         public Java.Awt.EventNs.KeyListener KeyListener
         {
             get { return IExecute<Java.Awt.EventNs.KeyListener>("getKeyListener"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getMouseListener() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getMouseListener()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseListener MouseListener
         {
             get { return IExecute<Java.Awt.EventNs.MouseListener>("getMouseListener"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getMouseMotionListener() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getMouseMotionListener()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseMotionListener MouseMotionListener
         {
             get { return IExecute<Java.Awt.EventNs.MouseMotionListener>("getMouseMotionListener"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#isVisible()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#isVisible()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsVisible()
         {
             return IExecute<bool>("isVisible");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#hide()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#hide()"/>
         /// </summary>
         public void Hide()
         {
             IExecute("hide");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#show()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#show()"/>
         /// </summary>
         public void Show()
         {
             IExecute("show");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#uninstallingUI()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#uninstallingUI()"/>
         /// </summary>
         public void UninstallingUI()
         {

@@ -33,7 +33,13 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Io.Reader"/> to <see cref="Java.Lang.Readable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Readable(Java.Io.Reader t) => t.Cast<Java.Lang.Readable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Io.Reader"/> to <see cref="Java.Io.Closeable"/>
+        /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Io.Reader t) => t.Cast<Java.Io.Closeable>();
         
         #endregion
@@ -44,8 +50,10 @@ namespace Java.Io
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#nullReader()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#nullReader()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NullReader()
         {
             return SExecute<Java.Io.Reader>("nullReader");
@@ -55,78 +63,109 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(char[],int,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public int Read(char[] arg0, int arg1, int arg2)
         {
             return IExecute<int>("read", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#close() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#markSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#markSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool MarkSupported()
         {
             return IExecute<bool>("markSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#ready() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#ready()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public bool Ready()
         {
             return IExecute<bool>("ready");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public int Read()
         {
             return IExecute<int>("read");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(char[]) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(char[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public int Read(char[] arg0)
         {
             return IExecute<int>("read", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(java.nio.CharBuffer) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(java.nio.CharBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public int Read(Java.Nio.CharBuffer arg0)
         {
             return IExecute<int>("read", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#skip(long) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#skip(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public long Skip(long arg0)
         {
             return IExecute<long>("skip", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#transferTo(java.io.Writer) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#transferTo(java.io.Writer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public long TransferTo(Java.Io.Writer arg0)
         {
             return IExecute<long>("transferTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#mark(int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#mark(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Mark(int arg0)
         {
             IExecute("mark", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#reset() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#reset()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Reset()
         {
             IExecute("reset");

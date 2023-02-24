@@ -46,77 +46,77 @@ namespace Java.Awt.FontNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getAscent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getAscent()"/> 
         /// </summary>
         public float Ascent
         {
             get { return IExecute<float>("getAscent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getBaselineIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getBaselineIndex()"/> 
         /// </summary>
         public int BaselineIndex
         {
             get { return IExecute<int>("getBaselineIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getBaselineOffsets() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getBaselineOffsets()"/> 
         /// </summary>
         public float[] BaselineOffsets
         {
             get { return IExecuteArray<float>("getBaselineOffsets"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getDescent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getDescent()"/> 
         /// </summary>
         public float Descent
         {
             get { return IExecute<float>("getDescent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getHeight()"/> 
         /// </summary>
         public float Height
         {
             get { return IExecute<float>("getHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getLeading() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getLeading()"/> 
         /// </summary>
         public float Leading
         {
             get { return IExecute<float>("getLeading"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getNumChars() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getNumChars()"/> 
         /// </summary>
         public int NumChars
         {
             get { return IExecute<int>("getNumChars"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getStrikethroughOffset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getStrikethroughOffset()"/> 
         /// </summary>
         public float StrikethroughOffset
         {
             get { return IExecute<float>("getStrikethroughOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getStrikethroughThickness() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getStrikethroughThickness()"/> 
         /// </summary>
         public float StrikethroughThickness
         {
             get { return IExecute<float>("getStrikethroughThickness"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getUnderlineOffset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getUnderlineOffset()"/> 
         /// </summary>
         public float UnderlineOffset
         {
             get { return IExecute<float>("getUnderlineOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getUnderlineThickness() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineMetrics.html#getUnderlineThickness()"/> 
         /// </summary>
         public float UnderlineThickness
         {

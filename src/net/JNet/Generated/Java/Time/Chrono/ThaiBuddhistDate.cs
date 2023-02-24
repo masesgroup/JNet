@@ -33,7 +33,13 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.ThaiBuddhistDate"/> to <see cref="Java.Time.Chrono.ChronoLocalDate"/>
+        /// </summary>
         public static implicit operator Java.Time.Chrono.ChronoLocalDate(Java.Time.Chrono.ThaiBuddhistDate t) => t.Cast<Java.Time.Chrono.ChronoLocalDate>();
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.ThaiBuddhistDate"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Chrono.ThaiBuddhistDate t) => t.Cast<Java.Io.Serializable>();
         
         #endregion

@@ -30,36 +30,61 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="string"/></param>
+        /// <param name="arg5"><see langword="string"/></param>
+        /// <param name="arg6"><see langword="string"/></param>
+        /// <exception cref="Java.Net.URISyntaxException"/>
         public URI(string arg0, string arg1, string arg2, int arg3, string arg4, string arg5, string arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
+        /// <param name="arg4"><see langword="string"/></param>
+        /// <exception cref="Java.Net.URISyntaxException"/>
         public URI(string arg0, string arg1, string arg2, string arg3, string arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
+        /// <exception cref="Java.Net.URISyntaxException"/>
         public URI(string arg0, string arg1, string arg2, string arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <exception cref="Java.Net.URISyntaxException"/>
         public URI(string arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String) throws java.net.URISyntaxException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Net.URISyntaxException"/>
         public URI(string arg0)
             : base(arg0)
         {
@@ -68,6 +93,9 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Net.URI"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Net.URI t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -78,8 +106,10 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#create(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#create(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Net.URI"/></returns>
         public static Java.Net.URI Create(string arg0)
         {
             return SExecute<Java.Net.URI>("create", arg0);
@@ -89,183 +119,207 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getAuthority() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getAuthority()"/> 
         /// </summary>
         public string Authority
         {
             get { return IExecute<string>("getAuthority"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getFragment() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getFragment()"/> 
         /// </summary>
         public string Fragment
         {
             get { return IExecute<string>("getFragment"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getHost() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getHost()"/> 
         /// </summary>
         public string Host
         {
             get { return IExecute<string>("getHost"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getPath()"/> 
         /// </summary>
         public string Path
         {
             get { return IExecute<string>("getPath"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getPort() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getPort()"/> 
         /// </summary>
         public int Port
         {
             get { return IExecute<int>("getPort"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getQuery() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getQuery()"/> 
         /// </summary>
         public string Query
         {
             get { return IExecute<string>("getQuery"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawAuthority() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawAuthority()"/> 
         /// </summary>
         public string RawAuthority
         {
             get { return IExecute<string>("getRawAuthority"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawFragment() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawFragment()"/> 
         /// </summary>
         public string RawFragment
         {
             get { return IExecute<string>("getRawFragment"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawPath()"/> 
         /// </summary>
         public string RawPath
         {
             get { return IExecute<string>("getRawPath"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawQuery() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawQuery()"/> 
         /// </summary>
         public string RawQuery
         {
             get { return IExecute<string>("getRawQuery"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawSchemeSpecificPart() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawSchemeSpecificPart()"/> 
         /// </summary>
         public string RawSchemeSpecificPart
         {
             get { return IExecute<string>("getRawSchemeSpecificPart"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawUserInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getRawUserInfo()"/> 
         /// </summary>
         public string RawUserInfo
         {
             get { return IExecute<string>("getRawUserInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getScheme() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getScheme()"/> 
         /// </summary>
         public string Scheme
         {
             get { return IExecute<string>("getScheme"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getSchemeSpecificPart() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getSchemeSpecificPart()"/> 
         /// </summary>
         public string SchemeSpecificPart
         {
             get { return IExecute<string>("getSchemeSpecificPart"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getUserInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getUserInfo()"/> 
         /// </summary>
         public string UserInfo
         {
             get { return IExecute<string>("getUserInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#isAbsolute()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#isAbsolute()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAbsolute()
         {
             return IExecute<bool>("isAbsolute");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#isOpaque()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#isOpaque()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsOpaque()
         {
             return IExecute<bool>("isOpaque");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#compareTo(java.net.URI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#compareTo(java.net.URI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Java.Net.URI arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#toASCIIString()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#toASCIIString()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string ToASCIIString()
         {
             return IExecute<string>("toASCIIString");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#normalize()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#normalize()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI Normalize()
         {
             return IExecute<Java.Net.URI>("normalize");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#parseServerAuthority() throws java.net.URISyntaxException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#parseServerAuthority()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.URI"/></returns>
+        /// <exception cref="Java.Net.URISyntaxException"/>
         public Java.Net.URI ParseServerAuthority()
         {
             return IExecute<Java.Net.URI>("parseServerAuthority");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#relativize(java.net.URI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#relativize(java.net.URI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI Relativize(Java.Net.URI arg0)
         {
             return IExecute<Java.Net.URI>("relativize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#resolve(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#resolve(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI Resolve(string arg0)
         {
             return IExecute<Java.Net.URI>("resolve", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#resolve(java.net.URI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#resolve(java.net.URI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI Resolve(Java.Net.URI arg0)
         {
             return IExecute<Java.Net.URI>("resolve", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#toURL() throws java.net.MalformedURLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#toURL()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.URL"/></returns>
+        /// <exception cref="Java.Net.MalformedURLException"/>
         public Java.Net.URL ToURL()
         {
             return IExecute<Java.Net.URL>("toURL");

@@ -30,22 +30,28 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC2ParameterSpec.html#<init>(int,byte[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC2ParameterSpec.html#%3Cinit%3E(int,byte[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public RC2ParameterSpec(int arg0, byte[] arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC2ParameterSpec.html#<init>(int,byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC2ParameterSpec.html#%3Cinit%3E(int,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
         public RC2ParameterSpec(int arg0, byte[] arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC2ParameterSpec.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC2ParameterSpec.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public RC2ParameterSpec(int arg0)
             : base(arg0)
         {
@@ -54,6 +60,9 @@ namespace Javax.Crypto.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Crypto.Spec.RC2ParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Javax.Crypto.Spec.RC2ParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
         
         #endregion
@@ -68,14 +77,14 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC2ParameterSpec.html#getEffectiveKeyBits() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC2ParameterSpec.html#getEffectiveKeyBits()"/> 
         /// </summary>
         public int EffectiveKeyBits
         {
             get { return IExecute<int>("getEffectiveKeyBits"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC2ParameterSpec.html#getIV() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC2ParameterSpec.html#getIV()"/> 
         /// </summary>
         public byte[] IV
         {

@@ -33,7 +33,13 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Io.OutputStream"/> to <see cref="Java.Io.Closeable"/>
+        /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Io.OutputStream t) => t.Cast<Java.Io.Closeable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Io.OutputStream"/> to <see cref="Java.Io.Flushable"/>
+        /// </summary>
         public static implicit operator Java.Io.Flushable(Java.Io.OutputStream t) => t.Cast<Java.Io.Flushable>();
         
         #endregion
@@ -44,8 +50,10 @@ namespace Java.Io
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#nullOutputStream()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#nullOutputStream()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
         public static Java.Io.OutputStream NullOutputStream()
         {
             return SExecute<Java.Io.OutputStream>("nullOutputStream");
@@ -55,36 +63,48 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#write(int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#write(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Write(int arg0)
         {
             IExecute("write", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#close() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#flush() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#flush()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
             IExecute("flush");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#write(byte[],int,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#write(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Write(byte[] arg0, int arg1, int arg2)
         {
             IExecute("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#write(byte[]) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#write(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Write(byte[] arg0)
         {
             IExecute("write", arg0);

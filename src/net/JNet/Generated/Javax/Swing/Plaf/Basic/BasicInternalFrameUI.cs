@@ -30,8 +30,9 @@ namespace Javax.Swing.Plaf.Basic
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#<init>(javax.swing.JInternalFrame)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#%3Cinit%3E(javax.swing.JInternalFrame)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
         public BasicInternalFrameUI(Javax.Swing.JInternalFrame arg0)
             : base(arg0)
         {
@@ -53,36 +54,38 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#getEastPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#setEastPane(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#getEastPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#setEastPane(javax.swing.JComponent)"/>
         /// </summary>
         public Javax.Swing.JComponent EastPane
         {
             get { return IExecute<Javax.Swing.JComponent>("getEastPane"); } set { IExecute("setEastPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#getNorthPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#setNorthPane(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#getNorthPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#setNorthPane(javax.swing.JComponent)"/>
         /// </summary>
         public Javax.Swing.JComponent NorthPane
         {
             get { return IExecute<Javax.Swing.JComponent>("getNorthPane"); } set { IExecute("setNorthPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#getSouthPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#setSouthPane(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#getSouthPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#setSouthPane(javax.swing.JComponent)"/>
         /// </summary>
         public Javax.Swing.JComponent SouthPane
         {
             get { return IExecute<Javax.Swing.JComponent>("getSouthPane"); } set { IExecute("setSouthPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#getWestPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#setWestPane(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#getWestPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#setWestPane(javax.swing.JComponent)"/>
         /// </summary>
         public Javax.Swing.JComponent WestPane
         {
             get { return IExecute<Javax.Swing.JComponent>("getWestPane"); } set { IExecute("setWestPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#isKeyBindingActive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#isKeyBindingActive()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsKeyBindingActive()
         {
             return IExecute<bool>("isKeyBindingActive");
@@ -96,8 +99,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#<init>(javax.swing.plaf.basic.BasicInternalFrameUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#%3Cinit%3E(javax.swing.plaf.basic.BasicInternalFrameUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameUI"/></param>
             public InternalFrameLayout(Javax.Swing.Plaf.Basic.BasicInternalFrameUI arg0)
                 : base(arg0)
             {
@@ -106,6 +110,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameUI.InternalFrameLayout"/> to <see cref="Java.Awt.LayoutManager"/>
+            /// </summary>
             public static implicit operator Java.Awt.LayoutManager(Javax.Swing.Plaf.Basic.BasicInternalFrameUI.InternalFrameLayout t) => t.Cast<Java.Awt.LayoutManager>();
             
             #endregion
@@ -120,36 +127,44 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#minimumLayoutSize(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#minimumLayoutSize(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <returns><see cref="Java.Awt.Dimension"/></returns>
             public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#preferredLayoutSize(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#preferredLayoutSize(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <returns><see cref="Java.Awt.Dimension"/></returns>
             public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
             public void AddLayoutComponent(string arg0, Java.Awt.Component arg1)
             {
                 IExecute("addLayoutComponent", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#layoutContainer(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#layoutContainer(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
             public void LayoutContainer(Java.Awt.Container arg0)
             {
                 IExecute("layoutContainer", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#removeLayoutComponent(java.awt.Component)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html#removeLayoutComponent(java.awt.Component)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
                 IExecute("removeLayoutComponent", arg0);

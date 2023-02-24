@@ -42,15 +42,22 @@ namespace Javax.Sql.Rowset
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetProvider.html#newFactory() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetProvider.html#newFactory()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Sql.Rowset.RowSetFactory"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public static Javax.Sql.Rowset.RowSetFactory NewFactory()
         {
             return SExecute<Javax.Sql.Rowset.RowSetFactory>("newFactory");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetProvider.html#newFactory(java.lang.String,java.lang.ClassLoader) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetProvider.html#newFactory(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Javax.Sql.Rowset.RowSetFactory"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public static Javax.Sql.Rowset.RowSetFactory NewFactory(string arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecute<Javax.Sql.Rowset.RowSetFactory>("newFactory", arg0, arg1);

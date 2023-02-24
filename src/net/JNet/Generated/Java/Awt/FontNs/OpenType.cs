@@ -38,207 +38,207 @@ namespace Java.Awt.FontNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_ACNT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_ACNT"/>
         /// </summary>
         public static int TAG_ACNT => Clazz.GetField<int>("TAG_ACNT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_AVAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_AVAR"/>
         /// </summary>
         public static int TAG_AVAR => Clazz.GetField<int>("TAG_AVAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_BASE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_BASE"/>
         /// </summary>
         public static int TAG_BASE => Clazz.GetField<int>("TAG_BASE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_BDAT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_BDAT"/>
         /// </summary>
         public static int TAG_BDAT => Clazz.GetField<int>("TAG_BDAT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_BLOC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_BLOC"/>
         /// </summary>
         public static int TAG_BLOC => Clazz.GetField<int>("TAG_BLOC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_BSLN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_BSLN"/>
         /// </summary>
         public static int TAG_BSLN => Clazz.GetField<int>("TAG_BSLN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_CFF
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_CFF"/>
         /// </summary>
         public static int TAG_CFF => Clazz.GetField<int>("TAG_CFF");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_CMAP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_CMAP"/>
         /// </summary>
         public static int TAG_CMAP => Clazz.GetField<int>("TAG_CMAP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_CVAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_CVAR"/>
         /// </summary>
         public static int TAG_CVAR => Clazz.GetField<int>("TAG_CVAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_CVT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_CVT"/>
         /// </summary>
         public static int TAG_CVT => Clazz.GetField<int>("TAG_CVT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_DSIG
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_DSIG"/>
         /// </summary>
         public static int TAG_DSIG => Clazz.GetField<int>("TAG_DSIG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_EBDT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_EBDT"/>
         /// </summary>
         public static int TAG_EBDT => Clazz.GetField<int>("TAG_EBDT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_EBLC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_EBLC"/>
         /// </summary>
         public static int TAG_EBLC => Clazz.GetField<int>("TAG_EBLC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_EBSC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_EBSC"/>
         /// </summary>
         public static int TAG_EBSC => Clazz.GetField<int>("TAG_EBSC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FDSC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FDSC"/>
         /// </summary>
         public static int TAG_FDSC => Clazz.GetField<int>("TAG_FDSC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FEAT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FEAT"/>
         /// </summary>
         public static int TAG_FEAT => Clazz.GetField<int>("TAG_FEAT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FMTX
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FMTX"/>
         /// </summary>
         public static int TAG_FMTX => Clazz.GetField<int>("TAG_FMTX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FPGM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FPGM"/>
         /// </summary>
         public static int TAG_FPGM => Clazz.GetField<int>("TAG_FPGM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FVAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_FVAR"/>
         /// </summary>
         public static int TAG_FVAR => Clazz.GetField<int>("TAG_FVAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GASP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GASP"/>
         /// </summary>
         public static int TAG_GASP => Clazz.GetField<int>("TAG_GASP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GDEF
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GDEF"/>
         /// </summary>
         public static int TAG_GDEF => Clazz.GetField<int>("TAG_GDEF");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GLYF
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GLYF"/>
         /// </summary>
         public static int TAG_GLYF => Clazz.GetField<int>("TAG_GLYF");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GPOS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GPOS"/>
         /// </summary>
         public static int TAG_GPOS => Clazz.GetField<int>("TAG_GPOS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GSUB
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GSUB"/>
         /// </summary>
         public static int TAG_GSUB => Clazz.GetField<int>("TAG_GSUB");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GVAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_GVAR"/>
         /// </summary>
         public static int TAG_GVAR => Clazz.GetField<int>("TAG_GVAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_HDMX
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_HDMX"/>
         /// </summary>
         public static int TAG_HDMX => Clazz.GetField<int>("TAG_HDMX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_HEAD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_HEAD"/>
         /// </summary>
         public static int TAG_HEAD => Clazz.GetField<int>("TAG_HEAD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_HHEA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_HHEA"/>
         /// </summary>
         public static int TAG_HHEA => Clazz.GetField<int>("TAG_HHEA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_HMTX
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_HMTX"/>
         /// </summary>
         public static int TAG_HMTX => Clazz.GetField<int>("TAG_HMTX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_JSTF
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_JSTF"/>
         /// </summary>
         public static int TAG_JSTF => Clazz.GetField<int>("TAG_JSTF");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_JUST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_JUST"/>
         /// </summary>
         public static int TAG_JUST => Clazz.GetField<int>("TAG_JUST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_KERN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_KERN"/>
         /// </summary>
         public static int TAG_KERN => Clazz.GetField<int>("TAG_KERN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_LCAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_LCAR"/>
         /// </summary>
         public static int TAG_LCAR => Clazz.GetField<int>("TAG_LCAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_LOCA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_LOCA"/>
         /// </summary>
         public static int TAG_LOCA => Clazz.GetField<int>("TAG_LOCA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_LTSH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_LTSH"/>
         /// </summary>
         public static int TAG_LTSH => Clazz.GetField<int>("TAG_LTSH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_MAXP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_MAXP"/>
         /// </summary>
         public static int TAG_MAXP => Clazz.GetField<int>("TAG_MAXP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_MMFX
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_MMFX"/>
         /// </summary>
         public static int TAG_MMFX => Clazz.GetField<int>("TAG_MMFX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_MMSD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_MMSD"/>
         /// </summary>
         public static int TAG_MMSD => Clazz.GetField<int>("TAG_MMSD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_MORT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_MORT"/>
         /// </summary>
         public static int TAG_MORT => Clazz.GetField<int>("TAG_MORT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_NAME"/>
         /// </summary>
         public static int TAG_NAME => Clazz.GetField<int>("TAG_NAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_OPBD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_OPBD"/>
         /// </summary>
         public static int TAG_OPBD => Clazz.GetField<int>("TAG_OPBD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_OS2
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_OS2"/>
         /// </summary>
         public static int TAG_OS2 => Clazz.GetField<int>("TAG_OS2");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_PCLT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_PCLT"/>
         /// </summary>
         public static int TAG_PCLT => Clazz.GetField<int>("TAG_PCLT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_POST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_POST"/>
         /// </summary>
         public static int TAG_POST => Clazz.GetField<int>("TAG_POST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_PREP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_PREP"/>
         /// </summary>
         public static int TAG_PREP => Clazz.GetField<int>("TAG_PREP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_PROP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_PROP"/>
         /// </summary>
         public static int TAG_PROP => Clazz.GetField<int>("TAG_PROP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_TRAK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_TRAK"/>
         /// </summary>
         public static int TAG_TRAK => Clazz.GetField<int>("TAG_TRAK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_TYP1
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_TYP1"/>
         /// </summary>
         public static int TAG_TYP1 => Clazz.GetField<int>("TAG_TYP1");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_VDMX
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_VDMX"/>
         /// </summary>
         public static int TAG_VDMX => Clazz.GetField<int>("TAG_VDMX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_VHEA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_VHEA"/>
         /// </summary>
         public static int TAG_VHEA => Clazz.GetField<int>("TAG_VHEA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_VMTX
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#TAG_VMTX"/>
         /// </summary>
         public static int TAG_VMTX => Clazz.GetField<int>("TAG_VMTX");
         
@@ -250,50 +250,66 @@ namespace Java.Awt.FontNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getVersion()"/> 
         /// </summary>
         public int Version
         {
             get { return IExecute<int>("getVersion"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTable(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTable(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="byte"/></returns>
         public byte[] GetFontTable(int arg0, int arg1, int arg2)
         {
             return IExecuteArray<byte>("getFontTable", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTable(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTable(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="byte"/></returns>
         public byte[] GetFontTable(int arg0)
         {
             return IExecuteArray<byte>("getFontTable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTable(java.lang.String,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTable(java.lang.String,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="byte"/></returns>
         public byte[] GetFontTable(string arg0, int arg1, int arg2)
         {
             return IExecuteArray<byte>("getFontTable", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTable(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTable(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="byte"/></returns>
         public byte[] GetFontTable(string arg0)
         {
             return IExecuteArray<byte>("getFontTable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTableSize(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTableSize(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetFontTableSize(int arg0)
         {
             return IExecute<int>("getFontTableSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTableSize(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTableSize(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetFontTableSize(string arg0)
         {
             return IExecute<int>("getFontTableSize", arg0);

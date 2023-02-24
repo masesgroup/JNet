@@ -46,8 +46,10 @@ namespace Java.Beans.Beancontext
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextProxy.html#getBeanContextProxy()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextProxy.html#getBeanContextProxy()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Beans.Beancontext.BeanContextChild"/></returns>
         public Java.Beans.Beancontext.BeanContextChild GetBeanContextProxy()
         {
             return IExecute<Java.Beans.Beancontext.BeanContextChild>("getBeanContextProxy");

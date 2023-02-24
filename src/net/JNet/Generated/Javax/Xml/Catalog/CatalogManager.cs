@@ -42,22 +42,30 @@ namespace Javax.Xml.Catalog
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogManager.html#catalog.Catalog javax.xml.catalog.CatalogManager.catalog(javax.xml.catalog.CatalogFeatures,java.net.URI...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogManager.html#catalog.Catalog javax.xml.catalog.CatalogManager.catalog(javax.xml.catalog.CatalogFeatures,java.net.URI...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Catalog.CatalogFeatures"/></param>
+        /// <param name="arg1"><see cref="Java.Net.URI"/></param>
+        /// <returns><see cref="Javax.Xml.Catalog.Catalog"/></returns>
         public static Javax.Xml.Catalog.Catalog Catalog(Javax.Xml.Catalog.CatalogFeatures arg0, params Java.Net.URI[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Javax.Xml.Catalog.Catalog>("catalog", arg0); else return SExecute<Javax.Xml.Catalog.Catalog>("catalog", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogManager.html#catalogResolver(javax.xml.catalog.Catalog)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogManager.html#catalogResolver(javax.xml.catalog.Catalog)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Catalog.Catalog"/></param>
+        /// <returns><see cref="Javax.Xml.Catalog.CatalogResolver"/></returns>
         public static Javax.Xml.Catalog.CatalogResolver CatalogResolver(Javax.Xml.Catalog.Catalog arg0)
         {
             return SExecute<Javax.Xml.Catalog.CatalogResolver>("catalogResolver", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogManager.html#catalogResolver(javax.xml.catalog.CatalogFeatures,java.net.URI...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogManager.html#catalogResolver(javax.xml.catalog.CatalogFeatures,java.net.URI...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Catalog.CatalogFeatures"/></param>
+        /// <param name="arg1"><see cref="Java.Net.URI"/></param>
+        /// <returns><see cref="Javax.Xml.Catalog.CatalogResolver"/></returns>
         public static Javax.Xml.Catalog.CatalogResolver CatalogResolver(Javax.Xml.Catalog.CatalogFeatures arg0, params Java.Net.URI[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Javax.Xml.Catalog.CatalogResolver>("catalogResolver", arg0); else return SExecute<Javax.Xml.Catalog.CatalogResolver>("catalogResolver", arg0, arg1);

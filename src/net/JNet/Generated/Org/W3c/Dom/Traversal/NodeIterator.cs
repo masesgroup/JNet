@@ -46,49 +46,55 @@ namespace Org.W3c.Dom.Traversal
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getExpandEntityReferences() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getExpandEntityReferences()"/> 
         /// </summary>
         public bool ExpandEntityReferences
         {
             get { return IExecute<bool>("getExpandEntityReferences"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getFilter() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getFilter()"/> 
         /// </summary>
         public Org.W3c.Dom.Traversal.NodeFilter Filter
         {
             get { return IExecute<Org.W3c.Dom.Traversal.NodeFilter>("getFilter"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getRoot() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getRoot()"/> 
         /// </summary>
         public Org.W3c.Dom.Node Root
         {
             get { return IExecute<Org.W3c.Dom.Node>("getRoot"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getWhatToShow() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getWhatToShow()"/> 
         /// </summary>
         public int WhatToShow
         {
             get { return IExecute<int>("getWhatToShow"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#nextNode() throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#nextNode()"/>
         /// </summary>
+        
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node NextNode()
         {
             return IExecute<Org.W3c.Dom.Node>("nextNode");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#previousNode() throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#previousNode()"/>
         /// </summary>
+        
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node PreviousNode()
         {
             return IExecute<Org.W3c.Dom.Node>("previousNode");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#detach()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#detach()"/>
         /// </summary>
         public void Detach()
         {

@@ -33,6 +33,9 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.LinkedTransferQueue"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.LinkedTransferQueue t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,50 +50,62 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#getWaitingConsumerCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#getWaitingConsumerCount()"/> 
         /// </summary>
         public int WaitingConsumerCount
         {
             get { return IExecute<int>("getWaitingConsumerCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#hasWaitingConsumer()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#hasWaitingConsumer()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasWaitingConsumer()
         {
             return IExecute<bool>("hasWaitingConsumer");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#tryTransfer(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#tryTransfer(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool TryTransfer(object arg0)
         {
             return IExecute<bool>("tryTransfer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#take() throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#take()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public object Take()
         {
             return IExecute("take");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#remainingCapacity()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#remainingCapacity()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int RemainingCapacity()
         {
             return IExecute<int>("remainingCapacity");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#put(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#put(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void Put(object arg0)
         {
             IExecute("put", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#transfer(E) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedTransferQueue.html#transfer(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public void Transfer(object arg0)
         {
             IExecute("transfer", arg0);

@@ -33,14 +33,20 @@ namespace Javax.Crypto.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Crypto.Interfaces.DHPrivateKey"/> to <see cref="Javax.Crypto.Interfaces.DHKey"/>
+        /// </summary>
         public static implicit operator Javax.Crypto.Interfaces.DHKey(Javax.Crypto.Interfaces.DHPrivateKey t) => t.Cast<Javax.Crypto.Interfaces.DHKey>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Crypto.Interfaces.DHPrivateKey"/> to <see cref="Java.Security.PrivateKey"/>
+        /// </summary>
         public static implicit operator Java.Security.PrivateKey(Javax.Crypto.Interfaces.DHPrivateKey t) => t.Cast<Java.Security.PrivateKey>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html#serialVersionUID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         
@@ -52,7 +58,7 @@ namespace Javax.Crypto.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html#getX() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html#getX()"/> 
         /// </summary>
         public Java.Math.BigInteger X
         {

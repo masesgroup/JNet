@@ -38,7 +38,7 @@ namespace Java.Awt.ImageNs.Renderable
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#HINTS_OBSERVED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#HINTS_OBSERVED"/>
         /// </summary>
         public static string HINTS_OBSERVED => Clazz.GetField<string>("HINTS_OBSERVED");
         
@@ -50,71 +50,83 @@ namespace Java.Awt.ImageNs.Renderable
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getHeight()"/> 
         /// </summary>
         public float Height
         {
             get { return IExecute<float>("getHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getMinX() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getMinX()"/> 
         /// </summary>
         public float MinX
         {
             get { return IExecute<float>("getMinX"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getMinY() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getMinY()"/> 
         /// </summary>
         public float MinY
         {
             get { return IExecute<float>("getMinY"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getPropertyNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getPropertyNames()"/> 
         /// </summary>
         public string[] PropertyNames
         {
             get { return IExecuteArray<string>("getPropertyNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getWidth()"/> 
         /// </summary>
         public float Width
         {
             get { return IExecute<float>("getWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#isDynamic()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#isDynamic()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDynamic()
         {
             return IExecute<bool>("isDynamic");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createDefaultRendering()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createDefaultRendering()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
         public Java.Awt.ImageNs.RenderedImage CreateDefaultRendering()
         {
             return IExecute<Java.Awt.ImageNs.RenderedImage>("createDefaultRendering");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createRendering(java.awt.image.renderable.RenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createRendering(java.awt.image.renderable.RenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
         public Java.Awt.ImageNs.RenderedImage CreateRendering(Java.Awt.ImageNs.Renderable.RenderContext arg0)
         {
             return IExecute<Java.Awt.ImageNs.RenderedImage>("createRendering", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createScaledRendering(int,int,java.awt.RenderingHints)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createScaledRendering(int,int,java.awt.RenderingHints)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.RenderingHints"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
         public Java.Awt.ImageNs.RenderedImage CreateScaledRendering(int arg0, int arg1, Java.Awt.RenderingHints arg2)
         {
             return IExecute<Java.Awt.ImageNs.RenderedImage>("createScaledRendering", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getProperty(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getProperty(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetProperty(string arg0)
         {
             return IExecute("getProperty", arg0);

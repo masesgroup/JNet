@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Html
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Html.HTMLTextAreaElement"/> to <see cref="Org.W3c.Dom.Html.HTMLElement"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Html.HTMLElement(Org.W3c.Dom.Html.HTMLTextAreaElement t) => t.Cast<Org.W3c.Dom.Html.HTMLElement>();
         
         #endregion
@@ -47,98 +50,98 @@ namespace Org.W3c.Dom.Html
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getAccessKey() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setAccessKey(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getAccessKey()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setAccessKey(java.lang.String)"/>
         /// </summary>
         public string AccessKey
         {
             get { return IExecute<string>("getAccessKey"); } set { IExecute("setAccessKey", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getCols() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setCols(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getCols()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setCols(int)"/>
         /// </summary>
         public int Cols
         {
             get { return IExecute<int>("getCols"); } set { IExecute("setCols", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getDefaultValue() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setDefaultValue(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getDefaultValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setDefaultValue(java.lang.String)"/>
         /// </summary>
         public string DefaultValue
         {
             get { return IExecute<string>("getDefaultValue"); } set { IExecute("setDefaultValue", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getDisabled() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setDisabled(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getDisabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setDisabled(boolean)"/>
         /// </summary>
         public bool Disabled
         {
             get { return IExecute<bool>("getDisabled"); } set { IExecute("setDisabled", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getForm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getForm()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLFormElement Form
         {
             get { return IExecute<Org.W3c.Dom.Html.HTMLFormElement>("getForm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getName() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setName(java.lang.String)"/>
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getReadOnly() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setReadOnly(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getReadOnly()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setReadOnly(boolean)"/>
         /// </summary>
         public bool ReadOnly
         {
             get { return IExecute<bool>("getReadOnly"); } set { IExecute("setReadOnly", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getRows() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setRows(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setRows(int)"/>
         /// </summary>
         public int Rows
         {
             get { return IExecute<int>("getRows"); } set { IExecute("setRows", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getTabIndex() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setTabIndex(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getTabIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setTabIndex(int)"/>
         /// </summary>
         public int TabIndex
         {
             get { return IExecute<int>("getTabIndex"); } set { IExecute("setTabIndex", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getValue() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setValue(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#setValue(java.lang.String)"/>
         /// </summary>
         public string Value
         {
             get { return IExecute<string>("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#blur()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#blur()"/>
         /// </summary>
         public void Blur()
         {
             IExecute("blur");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#focus()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#focus()"/>
         /// </summary>
         public void Focus()
         {
             IExecute("focus");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#select()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTextAreaElement.html#select()"/>
         /// </summary>
         public void Select()
         {

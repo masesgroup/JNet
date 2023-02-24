@@ -46,211 +46,284 @@ namespace Java.Time.Format
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#toFormatter()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#toFormatter()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
         public Java.Time.Format.DateTimeFormatter ToFormatter()
         {
             return IExecute<Java.Time.Format.DateTimeFormatter>("toFormatter");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#toFormatter(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#toFormatter(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
         public Java.Time.Format.DateTimeFormatter ToFormatter(Java.Util.Locale arg0)
         {
             return IExecute<Java.Time.Format.DateTimeFormatter>("toFormatter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#append(java.time.format.DateTimeFormatter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#append(java.time.format.DateTimeFormatter)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.DateTimeFormatter"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder Append(Java.Time.Format.DateTimeFormatter arg0)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("append", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendChronologyId()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendChronologyId()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendChronologyId()
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendChronologyId");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendFraction(java.time.temporal.TemporalField,int,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendFraction(java.time.temporal.TemporalField,int,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendFraction(Java.Time.Temporal.TemporalField arg0, int arg1, int arg2, bool arg3)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendFraction", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendInstant()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendInstant()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendInstant()
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendInstant");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendInstant(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendInstant(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendInstant(int arg0)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendInstant", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendLiteral(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendLiteral(char)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="char"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendLiteral(char arg0)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendLiteral", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendLiteral(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendLiteral(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendLiteral(string arg0)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendLiteral", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendOffset(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendOffset(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendOffset(string arg0, string arg1)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendOffset", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendOffsetId()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendOffsetId()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendOffsetId()
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendOffsetId");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendOptional(java.time.format.DateTimeFormatter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendOptional(java.time.format.DateTimeFormatter)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.DateTimeFormatter"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendOptional(Java.Time.Format.DateTimeFormatter arg0)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendOptional", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendPattern(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendPattern(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendPattern(string arg0)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendPattern", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendText(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendText", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendValue(Java.Time.Temporal.TemporalField arg0, int arg1)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendValue", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendValue(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValueReduced(java.time.temporal.TemporalField,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValueReduced(java.time.temporal.TemporalField,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendValueReduced(Java.Time.Temporal.TemporalField arg0, int arg1, int arg2, int arg3)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendValueReduced", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValueReduced(java.time.temporal.TemporalField,int,int,java.time.chrono.ChronoLocalDate)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValueReduced(java.time.temporal.TemporalField,int,int,java.time.chrono.ChronoLocalDate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendValueReduced(Java.Time.Temporal.TemporalField arg0, int arg1, int arg2, Java.Time.Chrono.ChronoLocalDate arg3)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendValueReduced", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendZoneId()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendZoneId()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendZoneId()
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendZoneId");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendZoneOrOffsetId()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendZoneOrOffsetId()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendZoneOrOffsetId()
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendZoneOrOffsetId");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendZoneRegionId()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendZoneRegionId()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder AppendZoneRegionId()
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendZoneRegionId");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#optionalEnd()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#optionalEnd()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder OptionalEnd()
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("optionalEnd");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#optionalStart()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#optionalStart()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder OptionalStart()
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("optionalStart");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#padNext(int,char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#padNext(int,char)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="char"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder PadNext(int arg0, char arg1)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("padNext", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#padNext(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#padNext(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder PadNext(int arg0)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("padNext", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#parseCaseInsensitive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#parseCaseInsensitive()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder ParseCaseInsensitive()
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("parseCaseInsensitive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#parseCaseSensitive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#parseCaseSensitive()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder ParseCaseSensitive()
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("parseCaseSensitive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#parseDefaulting(java.time.temporal.TemporalField,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#parseDefaulting(java.time.temporal.TemporalField,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder ParseDefaulting(Java.Time.Temporal.TemporalField arg0, long arg1)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("parseDefaulting", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#parseLenient()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#parseLenient()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder ParseLenient()
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("parseLenient");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#parseStrict()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#parseStrict()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
         public Java.Time.Format.DateTimeFormatterBuilder ParseStrict()
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("parseStrict");

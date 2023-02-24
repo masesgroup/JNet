@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Element.QualifiedNameable"/> to <see cref="Javax.Lang.Model.Element.Element"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Element(Javax.Lang.Model.Element.QualifiedNameable t) => t.Cast<Javax.Lang.Model.Element.Element>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/QualifiedNameable.html#getQualifiedName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/QualifiedNameable.html#getQualifiedName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name QualifiedName
         {

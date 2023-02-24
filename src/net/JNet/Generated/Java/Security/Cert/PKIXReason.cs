@@ -38,35 +38,35 @@ namespace Java.Security.Cert
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#INVALID_KEY_USAGE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#INVALID_KEY_USAGE"/>
         /// </summary>
         public static Java.Security.Cert.PKIXReason INVALID_KEY_USAGE => Clazz.GetField<Java.Security.Cert.PKIXReason>("INVALID_KEY_USAGE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#INVALID_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#INVALID_NAME"/>
         /// </summary>
         public static Java.Security.Cert.PKIXReason INVALID_NAME => Clazz.GetField<Java.Security.Cert.PKIXReason>("INVALID_NAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#INVALID_POLICY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#INVALID_POLICY"/>
         /// </summary>
         public static Java.Security.Cert.PKIXReason INVALID_POLICY => Clazz.GetField<Java.Security.Cert.PKIXReason>("INVALID_POLICY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#NAME_CHAINING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#NAME_CHAINING"/>
         /// </summary>
         public static Java.Security.Cert.PKIXReason NAME_CHAINING => Clazz.GetField<Java.Security.Cert.PKIXReason>("NAME_CHAINING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#NO_TRUST_ANCHOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#NO_TRUST_ANCHOR"/>
         /// </summary>
         public static Java.Security.Cert.PKIXReason NO_TRUST_ANCHOR => Clazz.GetField<Java.Security.Cert.PKIXReason>("NO_TRUST_ANCHOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#NOT_CA_CERT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#NOT_CA_CERT"/>
         /// </summary>
         public static Java.Security.Cert.PKIXReason NOT_CA_CERT => Clazz.GetField<Java.Security.Cert.PKIXReason>("NOT_CA_CERT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#PATH_TOO_LONG
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#PATH_TOO_LONG"/>
         /// </summary>
         public static Java.Security.Cert.PKIXReason PATH_TOO_LONG => Clazz.GetField<Java.Security.Cert.PKIXReason>("PATH_TOO_LONG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#UNRECOGNIZED_CRIT_EXT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#UNRECOGNIZED_CRIT_EXT"/>
         /// </summary>
         public static Java.Security.Cert.PKIXReason UNRECOGNIZED_CRIT_EXT => Clazz.GetField<Java.Security.Cert.PKIXReason>("UNRECOGNIZED_CRIT_EXT");
         
@@ -74,8 +74,10 @@ namespace Java.Security.Cert
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Security.Cert.PKIXReason"/></returns>
         public static Java.Security.Cert.PKIXReason[] Values()
         {
             return SExecuteArray<Java.Security.Cert.PKIXReason>("values");

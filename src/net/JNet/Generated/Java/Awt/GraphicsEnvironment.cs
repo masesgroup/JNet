@@ -42,15 +42,17 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getLocalGraphicsEnvironment() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getLocalGraphicsEnvironment()"/> 
         /// </summary>
         public static Java.Awt.GraphicsEnvironment LocalGraphicsEnvironment
         {
             get { return SExecute<Java.Awt.GraphicsEnvironment>("getLocalGraphicsEnvironment"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadless()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadless()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public static bool IsHeadless()
         {
             return SExecute<bool>("isHeadless");
@@ -60,84 +62,92 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getAllFonts() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getAllFonts()"/> 
         /// </summary>
         public Java.Awt.Font[] AllFonts
         {
             get { return IExecuteArray<Java.Awt.Font>("getAllFonts"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getAvailableFontFamilyNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getAvailableFontFamilyNames()"/> 
         /// </summary>
         public string[] AvailableFontFamilyNames
         {
             get { return IExecuteArray<string>("getAvailableFontFamilyNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getCenterPoint() throws java.awt.HeadlessException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getCenterPoint()"/> 
         /// </summary>
         public Java.Awt.Point CenterPoint
         {
             get { return IExecute<Java.Awt.Point>("getCenterPoint"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getDefaultScreenDevice() throws java.awt.HeadlessException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getDefaultScreenDevice()"/> 
         /// </summary>
         public Java.Awt.GraphicsDevice DefaultScreenDevice
         {
             get { return IExecute<Java.Awt.GraphicsDevice>("getDefaultScreenDevice"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getMaximumWindowBounds() throws java.awt.HeadlessException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getMaximumWindowBounds()"/> 
         /// </summary>
         public Java.Awt.Rectangle MaximumWindowBounds
         {
             get { return IExecute<Java.Awt.Rectangle>("getMaximumWindowBounds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getScreenDevices() throws java.awt.HeadlessException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getScreenDevices()"/> 
         /// </summary>
         public Java.Awt.GraphicsDevice[] ScreenDevices
         {
             get { return IExecuteArray<Java.Awt.GraphicsDevice>("getScreenDevices"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#createGraphics(java.awt.image.BufferedImage)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#createGraphics(java.awt.image.BufferedImage)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
+        /// <returns><see cref="Java.Awt.Graphics2D"/></returns>
         public Java.Awt.Graphics2D CreateGraphics(Java.Awt.ImageNs.BufferedImage arg0)
         {
             return IExecute<Java.Awt.Graphics2D>("createGraphics", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getAvailableFontFamilyNames(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getAvailableFontFamilyNames(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="string"/></returns>
         public string[] GetAvailableFontFamilyNames(Java.Util.Locale arg0)
         {
             return IExecuteArray<string>("getAvailableFontFamilyNames", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadlessInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadlessInstance()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsHeadlessInstance()
         {
             return IExecute<bool>("isHeadlessInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#registerFont(java.awt.Font)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#registerFont(java.awt.Font)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Font"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool RegisterFont(Java.Awt.Font arg0)
         {
             return IExecute<bool>("registerFont", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#preferLocaleFonts()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#preferLocaleFonts()"/>
         /// </summary>
         public void PreferLocaleFonts()
         {
             IExecute("preferLocaleFonts");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#preferProportionalFonts()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#preferProportionalFonts()"/>
         /// </summary>
         public void PreferProportionalFonts()
         {

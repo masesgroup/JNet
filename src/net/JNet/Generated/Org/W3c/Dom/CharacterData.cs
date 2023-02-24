@@ -33,6 +33,9 @@ namespace Org.W3c.Dom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.CharacterData"/> to <see cref="Org.W3c.Dom.Node"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Node(Org.W3c.Dom.CharacterData t) => t.Cast<Org.W3c.Dom.Node>();
         
         #endregion
@@ -47,50 +50,66 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#getData() throws org.w3c.dom.DOMException https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#setData(java.lang.String) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#getData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#setData(java.lang.String)"/>
         /// </summary>
         public string Data
         {
             get { return IExecute<string>("getData"); } set { IExecute("setData", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#getLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#getLength()"/> 
         /// </summary>
         public int Length
         {
             get { return IExecute<int>("getLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#substringData(int,int) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#substringData(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public string SubstringData(int arg0, int arg1)
         {
             return IExecute<string>("substringData", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#appendData(java.lang.String) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#appendData(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void AppendData(string arg0)
         {
             IExecute("appendData", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#deleteData(int,int) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#deleteData(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void DeleteData(int arg0, int arg1)
         {
             IExecute("deleteData", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#insertData(int,java.lang.String) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#insertData(int,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void InsertData(int arg0, string arg1)
         {
             IExecute("insertData", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#replaceData(int,int,java.lang.String) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html#replaceData(int,int,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void ReplaceData(int arg0, int arg1, string arg2)
         {
             IExecute("replaceData", arg0, arg1, arg2);

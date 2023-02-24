@@ -46,36 +46,46 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPresent()
         {
             return IExecute<bool>("isPresent");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#get()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#get()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Get()
         {
             return IExecute("get");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElse(T)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElse(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object OrElse(object arg0)
         {
             return IExecute("orElse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseThrow()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#orElseThrow()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object OrElseThrow()
         {
             return IExecute("orElseThrow");

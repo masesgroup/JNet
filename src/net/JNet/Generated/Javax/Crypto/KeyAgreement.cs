@@ -42,15 +42,23 @@ namespace Javax.Crypto
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#getInstance(java.lang.String,java.lang.String) throws java.security.NoSuchAlgorithmException,java.security.NoSuchProviderException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Crypto.KeyAgreement"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Crypto.KeyAgreement GetInstance(string arg0, string arg1)
         {
             return SExecute<Javax.Crypto.KeyAgreement>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#getInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Crypto.KeyAgreement"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Crypto.KeyAgreement GetInstance(string arg0)
         {
             return SExecute<Javax.Crypto.KeyAgreement>("getInstance", arg0);
@@ -60,64 +68,96 @@ namespace Javax.Crypto
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#generateSecret() throws java.lang.IllegalStateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#generateSecret()"/>
         /// </summary>
+        
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
         public byte[] GenerateSecret()
         {
             return IExecuteArray<byte>("generateSecret");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#generateSecret(byte[],int) throws java.lang.IllegalStateException,javax.crypto.ShortBufferException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#generateSecret(byte[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Javax.Crypto.ShortBufferException"/>
         public int GenerateSecret(byte[] arg0, int arg1)
         {
             return IExecute<int>("generateSecret", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#doPhase(java.security.Key,boolean) throws java.security.InvalidKeyException,java.lang.IllegalStateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#doPhase(java.security.Key,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Security.Key"/></returns>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
         public Java.Security.Key DoPhase(Java.Security.Key arg0, bool arg1)
         {
             return IExecute<Java.Security.Key>("doPhase", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#generateSecret(java.lang.String) throws java.lang.IllegalStateException,java.security.NoSuchAlgorithmException,java.security.InvalidKeyException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#generateSecret(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Crypto.SecretKey"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
         public Javax.Crypto.SecretKey GenerateSecret(string arg0)
         {
             return IExecute<Javax.Crypto.SecretKey>("generateSecret", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.SecureRandom) throws java.security.InvalidKeyException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.SecureRandom)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
         public void Init(Java.Security.Key arg0, Java.Security.SecureRandom arg1)
         {
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom) throws java.security.InvalidKeyException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
+        /// <param name="arg2"><see cref="Java.Security.SecureRandom"/></param>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(Java.Security.Key arg0, Java.Security.Spec.AlgorithmParameterSpec arg1, Java.Security.SecureRandom arg2)
         {
             IExecute("init", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidKeyException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(Java.Security.Key arg0, Java.Security.Spec.AlgorithmParameterSpec arg1)
         {
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key) throws java.security.InvalidKeyException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
         public void Init(Java.Security.Key arg0)
         {
             IExecute("init", arg0);

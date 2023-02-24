@@ -33,30 +33,36 @@ namespace Javax.Xml.Crypto.Dsig
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Transform"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.Transform t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Transform"/> to <see cref="Javax.Xml.Crypto.AlgorithmMethod"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.AlgorithmMethod(Javax.Xml.Crypto.Dsig.Transform t) => t.Cast<Javax.Xml.Crypto.AlgorithmMethod>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#BASE64
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#BASE64"/>
         /// </summary>
         public static string BASE64 => Clazz.GetField<string>("BASE64");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#ENVELOPED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#ENVELOPED"/>
         /// </summary>
         public static string ENVELOPED => Clazz.GetField<string>("ENVELOPED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#XPATH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#XPATH"/>
         /// </summary>
         public static string XPATH => Clazz.GetField<string>("XPATH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#XPATH2
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#XPATH2"/>
         /// </summary>
         public static string XPATH2 => Clazz.GetField<string>("XPATH2");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#XSLT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#XSLT"/>
         /// </summary>
         public static string XSLT => Clazz.GetField<string>("XSLT");
         
@@ -68,22 +74,31 @@ namespace Javax.Xml.Crypto.Dsig
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#getParameterSpec() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#getParameterSpec()"/> 
         /// </summary>
         public Java.Security.Spec.AlgorithmParameterSpec ParameterSpec
         {
             get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getParameterSpec"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data,javax.xml.crypto.XMLCryptoContext,java.io.OutputStream) throws javax.xml.crypto.dsig.TransformException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data,javax.xml.crypto.XMLCryptoContext,java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Data"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
+        /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.Dsig.TransformException"/>
         public Javax.Xml.Crypto.Data TransformMethod(Javax.Xml.Crypto.Data arg0, Javax.Xml.Crypto.XMLCryptoContext arg1, Java.Io.OutputStream arg2)
         {
             return IExecute<Javax.Xml.Crypto.Data>("transform", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data,javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.dsig.TransformException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Data"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.Dsig.TransformException"/>
         public Javax.Xml.Crypto.Data TransformMethod(Javax.Xml.Crypto.Data arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
             return IExecute<Javax.Xml.Crypto.Data>("transform", arg0, arg1);

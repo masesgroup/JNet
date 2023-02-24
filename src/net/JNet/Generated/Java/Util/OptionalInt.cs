@@ -42,15 +42,19 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#empty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#empty()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.OptionalInt"/></returns>
         public static Java.Util.OptionalInt Empty()
         {
             return SExecute<Java.Util.OptionalInt>("empty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#of(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#of(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Util.OptionalInt"/></returns>
         public static Java.Util.OptionalInt Of(int arg0)
         {
             return SExecute<Java.Util.OptionalInt>("of", arg0);
@@ -60,64 +64,79 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#getAsInt() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#getAsInt()"/> 
         /// </summary>
         public int AsInt
         {
             get { return IExecute<int>("getAsInt"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isPresent()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isPresent()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPresent()
         {
             return IExecute<bool>("isPresent");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElse(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElse(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int OrElse(int arg0)
         {
             return IExecute<int>("orElse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseGet(java.util.function.IntSupplier)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseGet(java.util.function.IntSupplier)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntSupplier"/></param>
+        /// <returns><see langword="int"/></returns>
         public int OrElseGet(Java.Util.Function.IntSupplier arg0)
         {
             return IExecute<int>("orElseGet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseThrow()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseThrow()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int OrElseThrow()
         {
             return IExecute<int>("orElseThrow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#stream.IntStream java.util.OptionalInt.stream()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#stream.IntStream java.util.OptionalInt.stream()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Stream()
         {
             return IExecute<Java.Util.Stream.IntStream>("stream");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#ifPresent(java.util.function.IntConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#ifPresent(java.util.function.IntConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         public void IfPresent(Java.Util.Function.IntConsumer arg0)
         {
             IExecute("ifPresent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#ifPresentOrElse(java.util.function.IntConsumer,java.lang.Runnable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#ifPresentOrElse(java.util.function.IntConsumer,java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         public void IfPresentOrElse(Java.Util.Function.IntConsumer arg0, Java.Lang.Runnable arg1)
         {
             IExecute("ifPresentOrElse", arg0, arg1);

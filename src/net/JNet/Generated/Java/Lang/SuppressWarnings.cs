@@ -33,6 +33,9 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.SuppressWarnings"/> to <see cref="Java.Lang.Annotation.Annotation"/>
+        /// </summary>
         public static implicit operator Java.Lang.Annotation.Annotation(Java.Lang.SuppressWarnings t) => t.Cast<Java.Lang.Annotation.Annotation>();
         
         #endregion
@@ -47,8 +50,10 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SuppressWarnings.html#value()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SuppressWarnings.html#value()"/>
         /// </summary>
+        
+        /// <returns><see cref="string"/></returns>
         public string[] Value()
         {
             return IExecuteArray<string>("value");

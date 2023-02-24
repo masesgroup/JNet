@@ -46,85 +46,121 @@ namespace Javax.Lang.Model.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsModule(javax.lang.model.type.NoType,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsModule(javax.lang.model.type.NoType,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.NoType"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object VisitNoTypeAsModule(Javax.Lang.Model.Type.NoType arg0, object arg1)
         {
             return IExecute("visitNoTypeAsModule", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsNone(javax.lang.model.type.NoType,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsNone(javax.lang.model.type.NoType,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.NoType"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object VisitNoTypeAsNone(Javax.Lang.Model.Type.NoType arg0, object arg1)
         {
             return IExecute("visitNoTypeAsNone", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsPackage(javax.lang.model.type.NoType,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsPackage(javax.lang.model.type.NoType,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.NoType"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object VisitNoTypeAsPackage(Javax.Lang.Model.Type.NoType arg0, object arg1)
         {
             return IExecute("visitNoTypeAsPackage", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsVoid(javax.lang.model.type.NoType,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitNoTypeAsVoid(javax.lang.model.type.NoType,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.NoType"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object VisitNoTypeAsVoid(Javax.Lang.Model.Type.NoType arg0, object arg1)
         {
             return IExecute("visitNoTypeAsVoid", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsBoolean(javax.lang.model.type.PrimitiveType,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsBoolean(javax.lang.model.type.PrimitiveType,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object VisitPrimitiveAsBoolean(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsBoolean", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsByte(javax.lang.model.type.PrimitiveType,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsByte(javax.lang.model.type.PrimitiveType,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object VisitPrimitiveAsByte(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsByte", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsChar(javax.lang.model.type.PrimitiveType,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsChar(javax.lang.model.type.PrimitiveType,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object VisitPrimitiveAsChar(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsChar", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsDouble(javax.lang.model.type.PrimitiveType,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsDouble(javax.lang.model.type.PrimitiveType,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object VisitPrimitiveAsDouble(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsDouble", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsFloat(javax.lang.model.type.PrimitiveType,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsFloat(javax.lang.model.type.PrimitiveType,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object VisitPrimitiveAsFloat(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsFloat", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsInt(javax.lang.model.type.PrimitiveType,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsInt(javax.lang.model.type.PrimitiveType,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object VisitPrimitiveAsInt(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsInt", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsLong(javax.lang.model.type.PrimitiveType,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsLong(javax.lang.model.type.PrimitiveType,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object VisitPrimitiveAsLong(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsLong", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsShort(javax.lang.model.type.PrimitiveType,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html#visitPrimitiveAsShort(javax.lang.model.type.PrimitiveType,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object VisitPrimitiveAsShort(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
             return IExecute("visitPrimitiveAsShort", arg0, arg1);

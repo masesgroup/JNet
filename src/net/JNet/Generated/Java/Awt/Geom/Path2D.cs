@@ -33,18 +33,24 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Geom.Path2D"/> to <see cref="Java.Awt.Shape"/>
+        /// </summary>
         public static implicit operator Java.Awt.Shape(Java.Awt.Geom.Path2D t) => t.Cast<Java.Awt.Shape>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Geom.Path2D"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.Path2D t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#WIND_EVEN_ODD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#WIND_EVEN_ODD"/>
         /// </summary>
         public static int WIND_EVEN_ODD => Clazz.GetField<int>("WIND_EVEN_ODD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#WIND_NON_ZERO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#WIND_NON_ZERO"/>
         /// </summary>
         public static int WIND_NON_ZERO => Clazz.GetField<int>("WIND_NON_ZERO");
         
@@ -52,43 +58,68 @@ namespace Java.Awt.Geom
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg4"><see langword="double"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Contains(Java.Awt.Geom.PathIterator arg0, double arg1, double arg2, double arg3, double arg4)
         {
             return SExecute<bool>("contains", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Contains(Java.Awt.Geom.PathIterator arg0, double arg1, double arg2)
         {
             return SExecute<bool>("contains", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,java.awt.geom.Point2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,java.awt.geom.Point2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Contains(Java.Awt.Geom.PathIterator arg0, Java.Awt.Geom.Point2D arg1)
         {
             return SExecute<bool>("contains", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,java.awt.geom.Rectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.PathIterator,java.awt.geom.Rectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Contains(Java.Awt.Geom.PathIterator arg0, Java.Awt.Geom.Rectangle2D arg1)
         {
             return SExecute<bool>("contains", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(java.awt.geom.PathIterator,double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(java.awt.geom.PathIterator,double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg4"><see langword="double"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Intersects(Java.Awt.Geom.PathIterator arg0, double arg1, double arg2, double arg3, double arg4)
         {
             return SExecute<bool>("intersects", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(java.awt.geom.PathIterator,java.awt.geom.Rectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(java.awt.geom.PathIterator,java.awt.geom.Rectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Intersects(Java.Awt.Geom.PathIterator arg0, Java.Awt.Geom.Rectangle2D arg1)
         {
             return SExecute<bool>("intersects", arg0, arg1);
@@ -98,148 +129,191 @@ namespace Java.Awt.Geom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#getBounds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#getBounds()"/> 
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
             get { return IExecute<Java.Awt.Rectangle>("getBounds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#getCurrentPoint() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#getCurrentPoint()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D CurrentPoint
         {
             get { return IExecute<Java.Awt.Geom.Point2D>("getCurrentPoint"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#getWindingRule() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#setWindingRule(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#getWindingRule()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#setWindingRule(int)"/>
         /// </summary>
         public int WindingRule
         {
             get { return IExecute<int>("getWindingRule"); } set { IExecute("setWindingRule", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#append(java.awt.geom.PathIterator,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#append(java.awt.geom.PathIterator,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public void Append(Java.Awt.Geom.PathIterator arg0, bool arg1)
         {
             IExecute("append", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#curveTo(double,double,double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#curveTo(double,double,double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg4"><see langword="double"/></param>
+        /// <param name="arg5"><see langword="double"/></param>
         public void CurveTo(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
             IExecute("curveTo", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#lineTo(double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#lineTo(double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
         public void LineTo(double arg0, double arg1)
         {
             IExecute("lineTo", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#moveTo(double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#moveTo(double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
         public void MoveTo(double arg0, double arg1)
         {
             IExecute("moveTo", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#quadTo(double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#quadTo(double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
         public void QuadTo(double arg0, double arg1, double arg2, double arg3)
         {
             IExecute("quadTo", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#transform(java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#transform(java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void Transform(Java.Awt.Geom.AffineTransform arg0)
         {
             IExecute("transform", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#trimToSize()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#trimToSize()"/>
         /// </summary>
         public void TrimToSize()
         {
             IExecute("trimToSize");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(double arg0, double arg1, double arg2, double arg3)
         {
             return IExecute<bool>("contains", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(double arg0, double arg1)
         {
             return IExecute<bool>("contains", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.Point2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.Point2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Point2D arg0)
         {
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.Rectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#contains(java.awt.geom.Rectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Intersects(double arg0, double arg1, double arg2, double arg3)
         {
             return IExecute<bool>("intersects", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(java.awt.geom.Rectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#intersects(java.awt.geom.Rectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Intersects(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecute<bool>("intersects", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#getPathIterator(java.awt.geom.AffineTransform,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#getPathIterator(java.awt.geom.AffineTransform,double)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0, double arg1)
         {
             return IExecute<Java.Awt.Geom.PathIterator>("getPathIterator", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#createTransformedShape(java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#createTransformedShape(java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape CreateTransformedShape(Java.Awt.Geom.AffineTransform arg0)
         {
             return IExecute<Java.Awt.Shape>("createTransformedShape", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#closePath()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#closePath()"/>
         /// </summary>
         public void ClosePath()
         {
             IExecute("closePath");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#reset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecute("reset");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#append(java.awt.Shape,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.html#append(java.awt.Shape,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public void Append(Java.Awt.Shape arg0, bool arg1)
         {
             IExecute("append", arg0, arg1);
@@ -253,29 +327,35 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#<init>(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#%3Cinit%3E(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
             public Double(int arg0, int arg1)
                 : base(arg0, arg1)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#<init>(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#%3Cinit%3E(int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
             public Double(int arg0)
                 : base(arg0)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#<init>(java.awt.Shape,java.awt.geom.AffineTransform)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#%3Cinit%3E(java.awt.Shape,java.awt.geom.AffineTransform)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Geom.AffineTransform"/></param>
             public Double(Java.Awt.Shape arg0, Java.Awt.Geom.AffineTransform arg1)
                 : base(arg0, arg1)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#<init>(java.awt.Shape)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#%3Cinit%3E(java.awt.Shape)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
             public Double(Java.Awt.Shape arg0)
                 : base(arg0)
             {
@@ -284,6 +364,9 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Awt.Geom.Path2D.Double"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Path2D.Double t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
@@ -309,29 +392,35 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#<init>(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#%3Cinit%3E(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
             public Float(int arg0, int arg1)
                 : base(arg0, arg1)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#<init>(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#%3Cinit%3E(int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
             public Float(int arg0)
                 : base(arg0)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#<init>(java.awt.Shape,java.awt.geom.AffineTransform)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#%3Cinit%3E(java.awt.Shape,java.awt.geom.AffineTransform)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Geom.AffineTransform"/></param>
             public Float(Java.Awt.Shape arg0, Java.Awt.Geom.AffineTransform arg1)
                 : base(arg0, arg1)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#<init>(java.awt.Shape)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#%3Cinit%3E(java.awt.Shape)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
             public Float(Java.Awt.Shape arg0)
                 : base(arg0)
             {
@@ -340,6 +429,9 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Awt.Geom.Path2D.Float"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Path2D.Float t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
@@ -354,29 +446,43 @@ namespace Java.Awt.Geom
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#curveTo(float,float,float,float,float,float)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#curveTo(float,float,float,float,float,float)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="float"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg2"><see langword="float"/></param>
+            /// <param name="arg3"><see langword="float"/></param>
+            /// <param name="arg4"><see langword="float"/></param>
+            /// <param name="arg5"><see langword="float"/></param>
             public void CurveTo(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
             {
                 IExecute("curveTo", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#lineTo(float,float)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#lineTo(float,float)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="float"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
             public void LineTo(float arg0, float arg1)
             {
                 IExecute("lineTo", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#moveTo(float,float)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#moveTo(float,float)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="float"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
             public void MoveTo(float arg0, float arg1)
             {
                 IExecute("moveTo", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#quadTo(float,float,float,float)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Float.html#quadTo(float,float,float,float)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="float"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg2"><see langword="float"/></param>
+            /// <param name="arg3"><see langword="float"/></param>
             public void QuadTo(float arg0, float arg1, float arg2, float arg3)
             {
                 IExecute("quadTo", arg0, arg1, arg2, arg3);

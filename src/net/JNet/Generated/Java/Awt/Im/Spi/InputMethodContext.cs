@@ -33,6 +33,9 @@ namespace Java.Awt.Im.Spi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Im.Spi.InputMethodContext"/> to <see cref="Java.Awt.Im.InputMethodRequests"/>
+        /// </summary>
         public static implicit operator Java.Awt.Im.InputMethodRequests(Java.Awt.Im.Spi.InputMethodContext t) => t.Cast<Java.Awt.Im.InputMethodRequests>();
         
         #endregion
@@ -47,29 +50,42 @@ namespace Java.Awt.Im.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#createInputMethodWindow(java.lang.String,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#createInputMethodWindow(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Awt.Window"/></returns>
         public Java.Awt.Window CreateInputMethodWindow(string arg0, bool arg1)
         {
             return IExecute<Java.Awt.Window>("createInputMethodWindow", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#createInputMethodJFrame(java.lang.String,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#createInputMethodJFrame(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see cref="Javax.Swing.JFrame"/></returns>
         public Javax.Swing.JFrame CreateInputMethodJFrame(string arg0, bool arg1)
         {
             return IExecute<Javax.Swing.JFrame>("createInputMethodJFrame", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#dispatchInputMethodEvent(int,java.text.AttributedCharacterIterator,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#dispatchInputMethodEvent(int,java.text.AttributedCharacterIterator,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Text.AttributedCharacterIterator"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
         public void DispatchInputMethodEvent(int arg0, Java.Text.AttributedCharacterIterator arg1, int arg2, Java.Awt.FontNs.TextHitInfo arg3, Java.Awt.FontNs.TextHitInfo arg4)
         {
             IExecute("dispatchInputMethodEvent", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#enableClientWindowNotification(java.awt.im.spi.InputMethod,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#enableClientWindowNotification(java.awt.im.spi.InputMethod,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Im.Spi.InputMethod"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public void EnableClientWindowNotification(Java.Awt.Im.Spi.InputMethod arg0, bool arg1)
         {
             IExecute("enableClientWindowNotification", arg0, arg1);

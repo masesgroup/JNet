@@ -30,8 +30,9 @@ namespace Javax.Net.Ssl
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyStoreBuilderParameters.html#<init>(java.security.KeyStore$Builder)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyStoreBuilderParameters.html#%3Cinit%3E(java.security.KeyStore$Builder)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.KeyStore.Builder"/></param>
         public KeyStoreBuilderParameters(Java.Security.KeyStore.Builder arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Net.Ssl.KeyStoreBuilderParameters"/> to <see cref="Javax.Net.Ssl.ManagerFactoryParameters"/>
+        /// </summary>
         public static implicit operator Javax.Net.Ssl.ManagerFactoryParameters(Javax.Net.Ssl.KeyStoreBuilderParameters t) => t.Cast<Javax.Net.Ssl.ManagerFactoryParameters>();
         
         #endregion

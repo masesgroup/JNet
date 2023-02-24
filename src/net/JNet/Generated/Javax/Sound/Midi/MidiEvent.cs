@@ -30,8 +30,10 @@ namespace Javax.Sound.Midi
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiEvent.html#<init>(javax.sound.midi.MidiMessage,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiEvent.html#%3Cinit%3E(javax.sound.midi.MidiMessage,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiMessage"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
         public MidiEvent(Javax.Sound.Midi.MidiMessage arg0, long arg1)
             : base(arg0, arg1)
         {
@@ -53,14 +55,14 @@ namespace Javax.Sound.Midi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiEvent.html#getMessage() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiEvent.html#getMessage()"/> 
         /// </summary>
         public Javax.Sound.Midi.MidiMessage Message
         {
             get { return IExecute<Javax.Sound.Midi.MidiMessage>("getMessage"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiEvent.html#getTick() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiEvent.html#setTick(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiEvent.html#getTick()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiEvent.html#setTick(long)"/>
         /// </summary>
         public long Tick
         {

@@ -54,8 +54,12 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#<init>(double,double,double,double)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#%3Cinit%3E(double,double,double,double)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="double"/></param>
+            /// <param name="arg1"><see langword="double"/></param>
+            /// <param name="arg2"><see langword="double"/></param>
+            /// <param name="arg3"><see langword="double"/></param>
             public Double(double arg0, double arg1, double arg2, double arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -64,25 +68,28 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Awt.Geom.Ellipse2D.Double"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Ellipse2D.Double t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#height
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#height"/>
             /// </summary>
             public double height => Instance.GetField<double>("height");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#width
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#width"/>
             /// </summary>
             public double width => Instance.GetField<double>("width");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#x
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#x"/>
             /// </summary>
             public double x => Instance.GetField<double>("x");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#y
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#y"/>
             /// </summary>
             public double y => Instance.GetField<double>("y");
             
@@ -105,8 +112,12 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#<init>(float,float,float,float)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#%3Cinit%3E(float,float,float,float)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="float"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg2"><see langword="float"/></param>
+            /// <param name="arg3"><see langword="float"/></param>
             public Float(float arg0, float arg1, float arg2, float arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -115,25 +126,28 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Awt.Geom.Ellipse2D.Float"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Ellipse2D.Float t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#height
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#height"/>
             /// </summary>
             public float height => Instance.GetField<float>("height");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#width
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#width"/>
             /// </summary>
             public float width => Instance.GetField<float>("width");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#x
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#x"/>
             /// </summary>
             public float x => Instance.GetField<float>("x");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#y
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#y"/>
             /// </summary>
             public float y => Instance.GetField<float>("y");
             
@@ -145,8 +159,12 @@ namespace Java.Awt.Geom
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#setFrame(float,float,float,float)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#setFrame(float,float,float,float)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="float"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg2"><see langword="float"/></param>
+            /// <param name="arg3"><see langword="float"/></param>
             public void SetFrame(float arg0, float arg1, float arg2, float arg3)
             {
                 IExecute("setFrame", arg0, arg1, arg2, arg3);

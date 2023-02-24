@@ -33,6 +33,9 @@ namespace Javax.Print
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.CancelablePrintJob"/> to <see cref="Javax.Print.DocPrintJob"/>
+        /// </summary>
         public static implicit operator Javax.Print.DocPrintJob(Javax.Print.CancelablePrintJob t) => t.Cast<Javax.Print.DocPrintJob>();
         
         #endregion
@@ -47,8 +50,10 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/CancelablePrintJob.html#cancel() throws javax.print.PrintException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/CancelablePrintJob.html#cancel()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Print.PrintException"/>
         public void Cancel()
         {
             IExecute("cancel");

@@ -46,197 +46,225 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#getSecurityContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#getSecurityContext()"/> 
         /// </summary>
         public object SecurityContext
         {
             get { return IExecute("getSecurityContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#getThreadGroup() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#getThreadGroup()"/> 
         /// </summary>
         public Java.Lang.ThreadGroup ThreadGroup
         {
             get { return IExecute<Java.Lang.ThreadGroup>("getThreadGroup"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkAccept(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkAccept(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void CheckAccept(string arg0, int arg1)
         {
             IExecute("checkAccept", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkAccess(java.lang.Thread)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkAccess(java.lang.Thread)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         public void CheckAccess(Java.Lang.Thread arg0)
         {
             IExecute("checkAccess", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkAccess(java.lang.ThreadGroup)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkAccess(java.lang.ThreadGroup)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         public void CheckAccess(Java.Lang.ThreadGroup arg0)
         {
             IExecute("checkAccess", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkConnect(java.lang.String,int,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkConnect(java.lang.String,int,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
         public void CheckConnect(string arg0, int arg1, object arg2)
         {
             IExecute("checkConnect", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkConnect(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkConnect(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void CheckConnect(string arg0, int arg1)
         {
             IExecute("checkConnect", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkCreateClassLoader()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkCreateClassLoader()"/>
         /// </summary>
         public void CheckCreateClassLoader()
         {
             IExecute("checkCreateClassLoader");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkDelete(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkDelete(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void CheckDelete(string arg0)
         {
             IExecute("checkDelete", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkExec(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkExec(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void CheckExec(string arg0)
         {
             IExecute("checkExec", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkExit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkExit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void CheckExit(int arg0)
         {
             IExecute("checkExit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkLink(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkLink(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void CheckLink(string arg0)
         {
             IExecute("checkLink", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkListen(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkListen(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void CheckListen(int arg0)
         {
             IExecute("checkListen", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkMulticast(java.net.InetAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         public void CheckMulticast(Java.Net.InetAddress arg0)
         {
             IExecute("checkMulticast", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPackageAccess(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPackageAccess(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void CheckPackageAccess(string arg0)
         {
             IExecute("checkPackageAccess", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPackageDefinition(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPackageDefinition(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void CheckPackageDefinition(string arg0)
         {
             IExecute("checkPackageDefinition", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPermission(java.security.Permission,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPermission(java.security.Permission,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void CheckPermission(Java.Security.Permission arg0, object arg1)
         {
             IExecute("checkPermission", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPermission(java.security.Permission)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPermission(java.security.Permission)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
         public void CheckPermission(Java.Security.Permission arg0)
         {
             IExecute("checkPermission", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPrintJobAccess()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPrintJobAccess()"/>
         /// </summary>
         public void CheckPrintJobAccess()
         {
             IExecute("checkPrintJobAccess");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPropertiesAccess()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPropertiesAccess()"/>
         /// </summary>
         public void CheckPropertiesAccess()
         {
             IExecute("checkPropertiesAccess");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPropertyAccess(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPropertyAccess(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void CheckPropertyAccess(string arg0)
         {
             IExecute("checkPropertyAccess", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkRead(java.io.FileDescriptor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkRead(java.io.FileDescriptor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public void CheckRead(Java.Io.FileDescriptor arg0)
         {
             IExecute("checkRead", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkRead(java.lang.String,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkRead(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void CheckRead(string arg0, object arg1)
         {
             IExecute("checkRead", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkRead(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkRead(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void CheckRead(string arg0)
         {
             IExecute("checkRead", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkSecurityAccess(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkSecurityAccess(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void CheckSecurityAccess(string arg0)
         {
             IExecute("checkSecurityAccess", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkSetFactory()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkSetFactory()"/>
         /// </summary>
         public void CheckSetFactory()
         {
             IExecute("checkSetFactory");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkWrite(java.io.FileDescriptor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkWrite(java.io.FileDescriptor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public void CheckWrite(Java.Io.FileDescriptor arg0)
         {
             IExecute("checkWrite", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkWrite(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkWrite(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void CheckWrite(string arg0)
         {
             IExecute("checkWrite", arg0);

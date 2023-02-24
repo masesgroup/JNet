@@ -42,15 +42,19 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#empty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#empty()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public static Java.Util.OptionalLong Empty()
         {
             return SExecute<Java.Util.OptionalLong>("empty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#of(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#of(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public static Java.Util.OptionalLong Of(long arg0)
         {
             return SExecute<Java.Util.OptionalLong>("of", arg0);
@@ -60,64 +64,79 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#getAsLong() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#getAsLong()"/> 
         /// </summary>
         public long AsLong
         {
             get { return IExecute<long>("getAsLong"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#isEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#isEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#isPresent()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#isPresent()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPresent()
         {
             return IExecute<bool>("isPresent");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#stream.LongStream java.util.OptionalLong.stream()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#stream.LongStream java.util.OptionalLong.stream()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Stream()
         {
             return IExecute<Java.Util.Stream.LongStream>("stream");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElse(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElse(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public long OrElse(long arg0)
         {
             return IExecute<long>("orElse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElseGet(java.util.function.LongSupplier)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElseGet(java.util.function.LongSupplier)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongSupplier"/></param>
+        /// <returns><see langword="long"/></returns>
         public long OrElseGet(Java.Util.Function.LongSupplier arg0)
         {
             return IExecute<long>("orElseGet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElseThrow()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElseThrow()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long OrElseThrow()
         {
             return IExecute<long>("orElseThrow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#ifPresent(java.util.function.LongConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#ifPresent(java.util.function.LongConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         public void IfPresent(Java.Util.Function.LongConsumer arg0)
         {
             IExecute("ifPresent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#ifPresentOrElse(java.util.function.LongConsumer,java.lang.Runnable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#ifPresentOrElse(java.util.function.LongConsumer,java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         public void IfPresentOrElse(Java.Util.Function.LongConsumer arg0, Java.Lang.Runnable arg1)
         {
             IExecute("ifPresentOrElse", arg0, arg1);

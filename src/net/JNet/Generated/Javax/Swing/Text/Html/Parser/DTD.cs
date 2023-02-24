@@ -33,73 +33,76 @@ namespace Javax.Swing.Text.Html.Parser
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.Html.Parser.DTD"/> to <see cref="Javax.Swing.Text.Html.Parser.DTDConstants"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Text.Html.Parser.DTDConstants(Javax.Swing.Text.Html.Parser.DTD t) => t.Cast<Javax.Swing.Text.Html.Parser.DTDConstants>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#applet
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#applet"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element applet => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("applet");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#base
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#base"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element baseField => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("base");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#body
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#body"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element body => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("body");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#head
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#head"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element head => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("head");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#html
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#html"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element html => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("html");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#isindex
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#isindex"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element isindex => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("isindex");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#meta
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#meta"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element meta => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("meta");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#p
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#p"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element p => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("p");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#param
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#param"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element param => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("param");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#pcdata
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#pcdata"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element pcdata => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("pcdata");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#title
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#title"/>
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element title => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("title");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#name
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#name"/>
         /// </summary>
         public string name => Instance.GetField<string>("name");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#entityHash
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#entityHash"/>
         /// </summary>
         public Java.Util.Hashtable entityHash => Instance.GetField<Java.Util.Hashtable>("entityHash");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#elementHash
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#elementHash"/>
         /// </summary>
         public Java.Util.Hashtable elementHash => Instance.GetField<Java.Util.Hashtable>("elementHash");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#elements
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#elements"/>
         /// </summary>
         public Java.Util.Vector elements => Instance.GetField<Java.Util.Vector>("elements");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#FILE_VERSION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#FILE_VERSION"/>
         /// </summary>
         public static int FILE_VERSION => Clazz.GetField<int>("FILE_VERSION");
         
@@ -107,15 +110,20 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getDTD(java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getDTD(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.Parser.DTD"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Javax.Swing.Text.Html.Parser.DTD GetDTD(string arg0)
         {
             return SExecute<Javax.Swing.Text.Html.Parser.DTD>("getDTD", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#putDTDHash(java.lang.String,javax.swing.text.html.parser.DTD)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#putDTDHash(java.lang.String,javax.swing.text.html.parser.DTD)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.Parser.DTD"/></param>
         public static void PutDTDHash(string arg0, Javax.Swing.Text.Html.Parser.DTD arg1)
         {
             SExecute("putDTDHash", arg0, arg1);
@@ -125,71 +133,100 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#defineElement(java.lang.String,int,boolean,boolean,javax.swing.text.html.parser.ContentModel,java.util.BitSet,java.util.BitSet,javax.swing.text.html.parser.AttributeList)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#defineElement(java.lang.String,int,boolean,boolean,javax.swing.text.html.parser.ContentModel,java.util.BitSet,java.util.BitSet,javax.swing.text.html.parser.AttributeList)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg4"><see cref="Javax.Swing.Text.Html.Parser.ContentModel"/></param>
+        /// <param name="arg5"><see cref="Java.Util.BitSet"/></param>
+        /// <param name="arg6"><see cref="Java.Util.BitSet"/></param>
+        /// <param name="arg7"><see cref="Javax.Swing.Text.Html.Parser.AttributeList"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Element"/></returns>
         public Javax.Swing.Text.Html.Parser.Element DefineElement(string arg0, int arg1, bool arg2, bool arg3, Javax.Swing.Text.Html.Parser.ContentModel arg4, Java.Util.BitSet arg5, Java.Util.BitSet arg6, Javax.Swing.Text.Html.Parser.AttributeList arg7)
         {
             return IExecute<Javax.Swing.Text.Html.Parser.Element>("defineElement", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getElement(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getElement(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Element"/></returns>
         public Javax.Swing.Text.Html.Parser.Element GetElement(int arg0)
         {
             return IExecute<Javax.Swing.Text.Html.Parser.Element>("getElement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getElement(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getElement(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Element"/></returns>
         public Javax.Swing.Text.Html.Parser.Element GetElement(string arg0)
         {
             return IExecute<Javax.Swing.Text.Html.Parser.Element>("getElement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#defEntity(java.lang.String,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#defEntity(java.lang.String,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Entity"/></returns>
         public Javax.Swing.Text.Html.Parser.Entity DefEntity(string arg0, int arg1, int arg2)
         {
             return IExecute<Javax.Swing.Text.Html.Parser.Entity>("defEntity", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#defineEntity(java.lang.String,int,char[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#defineEntity(java.lang.String,int,char[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="char"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Entity"/></returns>
         public Javax.Swing.Text.Html.Parser.Entity DefineEntity(string arg0, int arg1, char[] arg2)
         {
             return IExecute<Javax.Swing.Text.Html.Parser.Entity>("defineEntity", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getEntity(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getEntity(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Entity"/></returns>
         public Javax.Swing.Text.Html.Parser.Entity GetEntity(int arg0)
         {
             return IExecute<Javax.Swing.Text.Html.Parser.Entity>("getEntity", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getEntity(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getEntity(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.Parser.Entity"/></returns>
         public Javax.Swing.Text.Html.Parser.Entity GetEntity(string arg0)
         {
             return IExecute<Javax.Swing.Text.Html.Parser.Entity>("getEntity", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#defineAttributes(java.lang.String,javax.swing.text.html.parser.AttributeList)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#defineAttributes(java.lang.String,javax.swing.text.html.parser.AttributeList)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.Parser.AttributeList"/></param>
         public void DefineAttributes(string arg0, Javax.Swing.Text.Html.Parser.AttributeList arg1)
         {
             IExecute("defineAttributes", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#read(java.io.DataInputStream) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#read(java.io.DataInputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.DataInputStream"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Read(Java.Io.DataInputStream arg0)
         {
             IExecute("read", arg0);

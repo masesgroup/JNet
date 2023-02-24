@@ -46,92 +46,116 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#getNumberOfDependents() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#getNumberOfDependents()"/> 
         /// </summary>
         public int NumberOfDependents
         {
             get { return IExecute<int>("getNumberOfDependents"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#cancel(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#cancel(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Cancel(bool arg0)
         {
             return IExecute<bool>("cancel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#complete(T)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#complete(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Complete(object arg0)
         {
             return IExecute<bool>("complete", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#completeExceptionally(java.lang.Throwable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#completeExceptionally(java.lang.Throwable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CompleteExceptionally(Java.Lang.Throwable arg0)
         {
             return IExecute<bool>("completeExceptionally", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#isCancelled()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#isCancelled()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCancelled()
         {
             return IExecute<bool>("isCancelled");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#isCompletedExceptionally()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#isCompletedExceptionally()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCompletedExceptionally()
         {
             return IExecute<bool>("isCompletedExceptionally");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#isDone()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#isDone()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDone()
         {
             return IExecute<bool>("isDone");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#defaultExecutor()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#defaultExecutor()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
         public Java.Util.Concurrent.Executor DefaultExecutor()
         {
             return IExecute<Java.Util.Concurrent.Executor>("defaultExecutor");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#get() throws java.lang.InterruptedException,java.util.concurrent.ExecutionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#get()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         public object Get()
         {
             return IExecute("get");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#getNow(T)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#getNow(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetNow(object arg0)
         {
             return IExecute("getNow", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#join()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#join()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Join()
         {
             return IExecute("join");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#obtrudeException(java.lang.Throwable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#obtrudeException(java.lang.Throwable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         public void ObtrudeException(Java.Lang.Throwable arg0)
         {
             IExecute("obtrudeException", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#obtrudeValue(T)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#obtrudeValue(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void ObtrudeValue(object arg0)
         {
             IExecute("obtrudeValue", arg0);

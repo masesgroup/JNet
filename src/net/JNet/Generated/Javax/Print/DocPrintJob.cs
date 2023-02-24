@@ -46,50 +46,58 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#getAttributes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#getAttributes()"/> 
         /// </summary>
         public Javax.Print.Attribute.PrintJobAttributeSet Attributes
         {
             get { return IExecute<Javax.Print.Attribute.PrintJobAttributeSet>("getAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#getPrintService() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#getPrintService()"/> 
         /// </summary>
         public Javax.Print.PrintService PrintService
         {
             get { return IExecute<Javax.Print.PrintService>("getPrintService"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#addPrintJobAttributeListener(javax.print.event.PrintJobAttributeListener,javax.print.attribute.PrintJobAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#addPrintJobAttributeListener(javax.print.event.PrintJobAttributeListener,javax.print.attribute.PrintJobAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobAttributeListener"/></param>
+        /// <param name="arg1"><see cref="Javax.Print.Attribute.PrintJobAttributeSet"/></param>
         public void AddPrintJobAttributeListener(Javax.Print.Event.PrintJobAttributeListener arg0, Javax.Print.Attribute.PrintJobAttributeSet arg1)
         {
             IExecute("addPrintJobAttributeListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#addPrintJobListener(javax.print.event.PrintJobListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#addPrintJobListener(javax.print.event.PrintJobListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobListener"/></param>
         public void AddPrintJobListener(Javax.Print.Event.PrintJobListener arg0)
         {
             IExecute("addPrintJobListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#print.DocPrintJob.print(javax.print.Doc,javax.print.attribute.PrintRequestAttributeSet) throws javax.print.PrintException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#print.DocPrintJob.print(javax.print.Doc,javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Doc"/></param>
+        /// <param name="arg1"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <exception cref="Javax.Print.PrintException"/>
         public void Print(Javax.Print.Doc arg0, Javax.Print.Attribute.PrintRequestAttributeSet arg1)
         {
             IExecute("print", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#removePrintJobAttributeListener(javax.print.event.PrintJobAttributeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#removePrintJobAttributeListener(javax.print.event.PrintJobAttributeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobAttributeListener"/></param>
         public void RemovePrintJobAttributeListener(Javax.Print.Event.PrintJobAttributeListener arg0)
         {
             IExecute("removePrintJobAttributeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#removePrintJobListener(javax.print.event.PrintJobListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#removePrintJobListener(javax.print.event.PrintJobListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobListener"/></param>
         public void RemovePrintJobListener(Javax.Print.Event.PrintJobListener arg0)
         {
             IExecute("removePrintJobListener", arg0);

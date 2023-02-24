@@ -30,15 +30,20 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#<init>(java.io.OutputStream,java.lang.String,boolean,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#%3Cinit%3E(java.io.OutputStream,java.lang.String,boolean,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public XMLEncoder(Java.Io.OutputStream arg0, string arg1, bool arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#<init>(java.io.OutputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public XMLEncoder(Java.Io.OutputStream arg0)
             : base(arg0)
         {
@@ -47,6 +52,9 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.XMLEncoder"/> to <see cref="Java.Lang.AutoCloseable"/>
+        /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Beans.XMLEncoder t) => t.Cast<Java.Lang.AutoCloseable>();
         
         #endregion
@@ -61,29 +69,30 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#getOwner() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#setOwner(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#getOwner()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#setOwner(java.lang.Object)"/>
         /// </summary>
         public object Owner
         {
             get { return IExecute("getOwner"); } set { IExecute("setOwner", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#close()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#close()"/>
         /// </summary>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#flush()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#flush()"/>
         /// </summary>
         public void Flush()
         {
             IExecute("flush");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#writeObject(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#writeObject(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void WriteObject(object arg0)
         {
             IExecute("writeObject", arg0);

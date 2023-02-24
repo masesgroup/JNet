@@ -46,8 +46,10 @@ namespace Javax.Xml.Stream
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/StreamFilter.html#accept(javax.xml.stream.XMLStreamReader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/StreamFilter.html#accept(javax.xml.stream.XMLStreamReader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamReader"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Accept(Javax.Xml.Stream.XMLStreamReader arg0)
         {
             return IExecute<bool>("accept", arg0);

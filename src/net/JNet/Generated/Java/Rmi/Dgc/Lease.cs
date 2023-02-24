@@ -30,8 +30,10 @@ namespace Java.Rmi.Dgc
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/Lease.html#<init>(java.rmi.dgc.VMID,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/Lease.html#%3Cinit%3E(java.rmi.dgc.VMID,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Dgc.VMID"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
         public Lease(Java.Rmi.Dgc.VMID arg0, long arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Rmi.Dgc
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Dgc.Lease"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Dgc.Lease t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,14 +59,14 @@ namespace Java.Rmi.Dgc
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/Lease.html#getValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/Lease.html#getValue()"/> 
         /// </summary>
         public long Value
         {
             get { return IExecute<long>("getValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/Lease.html#getVMID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/Lease.html#getVMID()"/> 
         /// </summary>
         public Java.Rmi.Dgc.VMID VMID
         {

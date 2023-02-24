@@ -30,8 +30,11 @@ namespace Java.Util.Prefs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeEvent.html#<init>(java.util.prefs.Preferences,java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeEvent.html#%3Cinit%3E(java.util.prefs.Preferences,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.Preferences"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
         public PreferenceChangeEvent(Java.Util.Prefs.Preferences arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
@@ -53,21 +56,21 @@ namespace Java.Util.Prefs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeEvent.html#getKey() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeEvent.html#getKey()"/> 
         /// </summary>
         public string Key
         {
             get { return IExecute<string>("getKey"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeEvent.html#getNewValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeEvent.html#getNewValue()"/> 
         /// </summary>
         public string NewValue
         {
             get { return IExecute<string>("getNewValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeEvent.html#getNode() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeEvent.html#getNode()"/> 
         /// </summary>
         public Java.Util.Prefs.Preferences Node
         {

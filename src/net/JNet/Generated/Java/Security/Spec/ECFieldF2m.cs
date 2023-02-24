@@ -30,22 +30,27 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#<init>(int,int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#%3Cinit%3E(int,int[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public ECFieldF2m(int arg0, int[] arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#<init>(int,java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#%3Cinit%3E(int,java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
         public ECFieldF2m(int arg0, Java.Math.BigInteger arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public ECFieldF2m(int arg0)
             : base(arg0)
         {
@@ -54,6 +59,9 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Spec.ECFieldF2m"/> to <see cref="Java.Security.Spec.ECField"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.ECField(Java.Security.Spec.ECFieldF2m t) => t.Cast<Java.Security.Spec.ECField>();
         
         #endregion
@@ -68,28 +76,28 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#getFieldSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#getFieldSize()"/> 
         /// </summary>
         public int FieldSize
         {
             get { return IExecute<int>("getFieldSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#getM() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#getM()"/> 
         /// </summary>
         public int M
         {
             get { return IExecute<int>("getM"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#getMidTermsOfReductionPolynomial() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#getMidTermsOfReductionPolynomial()"/> 
         /// </summary>
         public int[] MidTermsOfReductionPolynomial
         {
             get { return IExecuteArray<int>("getMidTermsOfReductionPolynomial"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#getReductionPolynomial() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#getReductionPolynomial()"/> 
         /// </summary>
         public Java.Math.BigInteger ReductionPolynomial
         {

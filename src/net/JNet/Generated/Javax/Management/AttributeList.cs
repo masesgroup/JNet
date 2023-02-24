@@ -30,8 +30,9 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public AttributeList(int arg0)
             : base(arg0)
         {
@@ -53,22 +54,27 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#add(int,javax.management.Attribute)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#add(int,javax.management.Attribute)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.Attribute"/></param>
         public void Add(int arg0, Javax.Management.Attribute arg1)
         {
             IExecute("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#add(javax.management.Attribute)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#add(javax.management.Attribute)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Attribute"/></param>
         public void Add(Javax.Management.Attribute arg0)
         {
             IExecute("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#set(int,javax.management.Attribute)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#set(int,javax.management.Attribute)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.Attribute"/></param>
         public void Set(int arg0, Javax.Management.Attribute arg1)
         {
             IExecute("set", arg0, arg1);

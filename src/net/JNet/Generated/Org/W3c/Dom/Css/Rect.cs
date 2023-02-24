@@ -46,28 +46,28 @@ namespace Org.W3c.Dom.Css
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Rect.html#getBottom() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Rect.html#getBottom()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSPrimitiveValue Bottom
         {
             get { return IExecute<Org.W3c.Dom.Css.CSSPrimitiveValue>("getBottom"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Rect.html#getLeft() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Rect.html#getLeft()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSPrimitiveValue Left
         {
             get { return IExecute<Org.W3c.Dom.Css.CSSPrimitiveValue>("getLeft"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Rect.html#getRight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Rect.html#getRight()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSPrimitiveValue Right
         {
             get { return IExecute<Org.W3c.Dom.Css.CSSPrimitiveValue>("getRight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Rect.html#getTop() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Rect.html#getTop()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSPrimitiveValue Top
         {

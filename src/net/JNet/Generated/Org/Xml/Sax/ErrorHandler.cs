@@ -46,22 +46,28 @@ namespace Org.Xml.Sax
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html#error(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html#error(org.xml.sax.SAXParseException)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Error(Org.Xml.Sax.SAXParseException arg0)
         {
             IExecute("error", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html#fatalError(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html#fatalError(org.xml.sax.SAXParseException)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void FatalError(Org.Xml.Sax.SAXParseException arg0)
         {
             IExecute("fatalError", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html#warning(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html#warning(org.xml.sax.SAXParseException)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Warning(Org.Xml.Sax.SAXParseException arg0)
         {
             IExecute("warning", arg0);

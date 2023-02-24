@@ -38,7 +38,7 @@ namespace Java.Util.Function
     /// </summary>
     public class BooleanSupplier : JVMBridgeListener, IBooleanSupplier
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetBooleanSupplier";
 
         Func<bool> executionFunction = null;

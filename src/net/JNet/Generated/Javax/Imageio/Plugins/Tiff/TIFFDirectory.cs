@@ -30,8 +30,10 @@ namespace Javax.Imageio.Plugins.Tiff
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#<init>(javax.imageio.plugins.tiff.TIFFTagSet[],javax.imageio.plugins.tiff.TIFFTag)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#%3Cinit%3E(javax.imageio.plugins.tiff.TIFFTagSet[],javax.imageio.plugins.tiff.TIFFTag)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTagSet"/></param>
+        /// <param name="arg1"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTag"/></param>
         public TIFFDirectory(Javax.Imageio.Plugins.Tiff.TIFFTagSet[] arg0, Javax.Imageio.Plugins.Tiff.TIFFTag arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Javax.Imageio.Plugins.Tiff
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Imageio.Plugins.Tiff.TIFFDirectory"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Imageio.Plugins.Tiff.TIFFDirectory t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -50,8 +55,11 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#createFromMetadata(javax.imageio.metadata.IIOMetadata) throws javax.imageio.metadata.IIOInvalidTreeException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#createFromMetadata(javax.imageio.metadata.IIOMetadata)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
+        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFDirectory"/></returns>
+        /// <exception cref="Javax.Imageio.Metadata.IIOInvalidTreeException"/>
         public static Javax.Imageio.Plugins.Tiff.TIFFDirectory CreateFromMetadata(Javax.Imageio.Metadata.IIOMetadata arg0)
         {
             return SExecute<Javax.Imageio.Plugins.Tiff.TIFFDirectory>("createFromMetadata", arg0);
@@ -61,98 +69,111 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getAsMetadata() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getAsMetadata()"/> 
         /// </summary>
         public Javax.Imageio.Metadata.IIOMetadata AsMetadata
         {
             get { return IExecute<Javax.Imageio.Metadata.IIOMetadata>("getAsMetadata"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getNumTIFFFields() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getNumTIFFFields()"/> 
         /// </summary>
         public int NumTIFFFields
         {
             get { return IExecute<int>("getNumTIFFFields"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getParentTag() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getParentTag()"/> 
         /// </summary>
         public Javax.Imageio.Plugins.Tiff.TIFFTag ParentTag
         {
             get { return IExecute<Javax.Imageio.Plugins.Tiff.TIFFTag>("getParentTag"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getTagSets() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getTagSets()"/> 
         /// </summary>
         public Javax.Imageio.Plugins.Tiff.TIFFTagSet[] TagSets
         {
             get { return IExecuteArray<Javax.Imageio.Plugins.Tiff.TIFFTagSet>("getTagSets"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getTIFFFields() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getTIFFFields()"/> 
         /// </summary>
         public Javax.Imageio.Plugins.Tiff.TIFFField[] TIFFFields
         {
             get { return IExecuteArray<Javax.Imageio.Plugins.Tiff.TIFFField>("getTIFFFields"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#containsTIFFField(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#containsTIFFField(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsTIFFField(int arg0)
         {
             return IExecute<bool>("containsTIFFField", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#clone() throws java.lang.CloneNotSupportedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#clone()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFDirectory"/></returns>
+        /// <exception cref="Java.Lang.CloneNotSupportedException"/>
         public Javax.Imageio.Plugins.Tiff.TIFFDirectory Clone()
         {
             return IExecute<Javax.Imageio.Plugins.Tiff.TIFFDirectory>("clone");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getTIFFField(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getTIFFField(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFField"/></returns>
         public Javax.Imageio.Plugins.Tiff.TIFFField GetTIFFField(int arg0)
         {
             return IExecute<Javax.Imageio.Plugins.Tiff.TIFFField>("getTIFFField", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getTag(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#getTag(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFTag"/></returns>
         public Javax.Imageio.Plugins.Tiff.TIFFTag GetTag(int arg0)
         {
             return IExecute<Javax.Imageio.Plugins.Tiff.TIFFTag>("getTag", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#addTagSet(javax.imageio.plugins.tiff.TIFFTagSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#addTagSet(javax.imageio.plugins.tiff.TIFFTagSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTagSet"/></param>
         public void AddTagSet(Javax.Imageio.Plugins.Tiff.TIFFTagSet arg0)
         {
             IExecute("addTagSet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#addTIFFField(javax.imageio.plugins.tiff.TIFFField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#addTIFFField(javax.imageio.plugins.tiff.TIFFField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFField"/></param>
         public void AddTIFFField(Javax.Imageio.Plugins.Tiff.TIFFField arg0)
         {
             IExecute("addTIFFField", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#removeTagSet(javax.imageio.plugins.tiff.TIFFTagSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#removeTagSet(javax.imageio.plugins.tiff.TIFFTagSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTagSet"/></param>
         public void RemoveTagSet(Javax.Imageio.Plugins.Tiff.TIFFTagSet arg0)
         {
             IExecute("removeTagSet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#removeTIFFField(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#removeTIFFField(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void RemoveTIFFField(int arg0)
         {
             IExecute("removeTIFFField", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#removeTIFFFields()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html#removeTIFFFields()"/>
         /// </summary>
         public void RemoveTIFFFields()
         {

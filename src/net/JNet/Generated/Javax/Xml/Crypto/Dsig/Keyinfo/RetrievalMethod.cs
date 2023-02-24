@@ -33,7 +33,13 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod"/> to <see cref="Javax.Xml.Crypto.URIReference"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.URIReference(Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod t) => t.Cast<Javax.Xml.Crypto.URIReference>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
         
         #endregion
@@ -48,15 +54,18 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#getURI() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#getURI()"/> 
         /// </summary>
         public string URI
         {
             get { return IExecute<string>("getURI"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#dereference(javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.URIReferenceException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#dereference(javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.URIReferenceException"/>
         public Javax.Xml.Crypto.Data Dereference(Javax.Xml.Crypto.XMLCryptoContext arg0)
         {
             return IExecute<Javax.Xml.Crypto.Data>("dereference", arg0);

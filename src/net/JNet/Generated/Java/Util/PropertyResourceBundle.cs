@@ -30,15 +30,19 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PropertyResourceBundle.html#<init>(java.io.InputStream) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PropertyResourceBundle.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public PropertyResourceBundle(Java.Io.InputStream arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PropertyResourceBundle.html#<init>(java.io.Reader) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PropertyResourceBundle.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public PropertyResourceBundle(Java.Io.Reader arg0)
             : base(arg0)
         {
@@ -60,8 +64,10 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PropertyResourceBundle.html#handleGetObject(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PropertyResourceBundle.html#handleGetObject(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object HandleGetObject(string arg0)
         {
             return IExecute("handleGetObject", arg0);

@@ -38,7 +38,7 @@ namespace Javax.Tools
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#NOPOS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#NOPOS"/>
         /// </summary>
         public static long NOPOS => Clazz.GetField<long>("NOPOS");
         
@@ -50,57 +50,59 @@ namespace Javax.Tools
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getCode() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getCode()"/> 
         /// </summary>
         public string Code
         {
             get { return IExecute<string>("getCode"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getColumnNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getColumnNumber()"/> 
         /// </summary>
         public long ColumnNumber
         {
             get { return IExecute<long>("getColumnNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getEndPosition() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getEndPosition()"/> 
         /// </summary>
         public long EndPosition
         {
             get { return IExecute<long>("getEndPosition"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getLineNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getLineNumber()"/> 
         /// </summary>
         public long LineNumber
         {
             get { return IExecute<long>("getLineNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getPosition() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getPosition()"/> 
         /// </summary>
         public long Position
         {
             get { return IExecute<long>("getPosition"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getSource() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getSource()"/> 
         /// </summary>
         public object Source
         {
             get { return IExecute("getSource"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getStartPosition() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getStartPosition()"/> 
         /// </summary>
         public long StartPosition
         {
             get { return IExecute<long>("getStartPosition"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getMessage(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getMessage(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetMessage(Java.Util.Locale arg0)
         {
             return IExecute<string>("getMessage", arg0);
@@ -122,23 +124,23 @@ namespace Javax.Tools
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#ERROR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#ERROR"/>
             /// </summary>
             public static Javax.Tools.Diagnostic.Kind ERROR => Clazz.GetField<Javax.Tools.Diagnostic.Kind>("ERROR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#MANDATORY_WARNING
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#MANDATORY_WARNING"/>
             /// </summary>
             public static Javax.Tools.Diagnostic.Kind MANDATORY_WARNING => Clazz.GetField<Javax.Tools.Diagnostic.Kind>("MANDATORY_WARNING");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#NOTE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#NOTE"/>
             /// </summary>
             public static Javax.Tools.Diagnostic.Kind NOTE => Clazz.GetField<Javax.Tools.Diagnostic.Kind>("NOTE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#OTHER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#OTHER"/>
             /// </summary>
             public static Javax.Tools.Diagnostic.Kind OTHER => Clazz.GetField<Javax.Tools.Diagnostic.Kind>("OTHER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#WARNING
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#WARNING"/>
             /// </summary>
             public static Javax.Tools.Diagnostic.Kind WARNING => Clazz.GetField<Javax.Tools.Diagnostic.Kind>("WARNING");
             
@@ -146,8 +148,10 @@ namespace Javax.Tools
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Tools.Diagnostic.Kind"/></returns>
             public static Javax.Tools.Diagnostic.Kind[] Values()
             {
                 return SExecuteArray<Javax.Tools.Diagnostic.Kind>("values");

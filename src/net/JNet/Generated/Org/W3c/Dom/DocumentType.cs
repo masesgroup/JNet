@@ -33,6 +33,9 @@ namespace Org.W3c.Dom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.DocumentType"/> to <see cref="Org.W3c.Dom.Node"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Node(Org.W3c.Dom.DocumentType t) => t.Cast<Org.W3c.Dom.Node>();
         
         #endregion
@@ -47,42 +50,42 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getEntities() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getEntities()"/> 
         /// </summary>
         public Org.W3c.Dom.NamedNodeMap Entities
         {
             get { return IExecute<Org.W3c.Dom.NamedNodeMap>("getEntities"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getInternalSubset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getInternalSubset()"/> 
         /// </summary>
         public string InternalSubset
         {
             get { return IExecute<string>("getInternalSubset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getNotations() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getNotations()"/> 
         /// </summary>
         public Org.W3c.Dom.NamedNodeMap Notations
         {
             get { return IExecute<Org.W3c.Dom.NamedNodeMap>("getNotations"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getPublicId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getPublicId()"/> 
         /// </summary>
         public string PublicId
         {
             get { return IExecute<string>("getPublicId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getSystemId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getSystemId()"/> 
         /// </summary>
         public string SystemId
         {

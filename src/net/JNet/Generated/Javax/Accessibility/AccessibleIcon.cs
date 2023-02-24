@@ -46,21 +46,21 @@ namespace Javax.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconDescription() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#setAccessibleIconDescription(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconDescription()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#setAccessibleIconDescription(java.lang.String)"/>
         /// </summary>
         public string AccessibleIconDescription
         {
             get { return IExecute<string>("getAccessibleIconDescription"); } set { IExecute("setAccessibleIconDescription", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconHeight()"/> 
         /// </summary>
         public int AccessibleIconHeight
         {
             get { return IExecute<int>("getAccessibleIconHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconWidth()"/> 
         /// </summary>
         public int AccessibleIconWidth
         {

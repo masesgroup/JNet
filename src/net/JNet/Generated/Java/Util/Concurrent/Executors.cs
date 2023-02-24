@@ -42,113 +42,147 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newCachedThreadPool()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newCachedThreadPool()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewCachedThreadPool()
         {
             return SExecute<Java.Util.Concurrent.ExecutorService>("newCachedThreadPool");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newCachedThreadPool(java.util.concurrent.ThreadFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newCachedThreadPool(java.util.concurrent.ThreadFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewCachedThreadPool(Java.Util.Concurrent.ThreadFactory arg0)
         {
             return SExecute<Java.Util.Concurrent.ExecutorService>("newCachedThreadPool", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newFixedThreadPool(int,java.util.concurrent.ThreadFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newFixedThreadPool(int,java.util.concurrent.ThreadFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewFixedThreadPool(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
         {
             return SExecute<Java.Util.Concurrent.ExecutorService>("newFixedThreadPool", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newFixedThreadPool(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newFixedThreadPool(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewFixedThreadPool(int arg0)
         {
             return SExecute<Java.Util.Concurrent.ExecutorService>("newFixedThreadPool", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadExecutor()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadExecutor()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewSingleThreadExecutor()
         {
             return SExecute<Java.Util.Concurrent.ExecutorService>("newSingleThreadExecutor");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadExecutor(java.util.concurrent.ThreadFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadExecutor(java.util.concurrent.ThreadFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewSingleThreadExecutor(Java.Util.Concurrent.ThreadFactory arg0)
         {
             return SExecute<Java.Util.Concurrent.ExecutorService>("newSingleThreadExecutor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newWorkStealingPool()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newWorkStealingPool()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewWorkStealingPool()
         {
             return SExecute<Java.Util.Concurrent.ExecutorService>("newWorkStealingPool");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newWorkStealingPool(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newWorkStealingPool(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewWorkStealingPool(int arg0)
         {
             return SExecute<Java.Util.Concurrent.ExecutorService>("newWorkStealingPool", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#unconfigurableExecutorService(java.util.concurrent.ExecutorService)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#unconfigurableExecutorService(java.util.concurrent.ExecutorService)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.ExecutorService"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService UnconfigurableExecutorService(Java.Util.Concurrent.ExecutorService arg0)
         {
             return SExecute<Java.Util.Concurrent.ExecutorService>("unconfigurableExecutorService", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newScheduledThreadPool(int,java.util.concurrent.ThreadFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newScheduledThreadPool(int,java.util.concurrent.ThreadFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ScheduledExecutorService"/></returns>
         public static Java.Util.Concurrent.ScheduledExecutorService NewScheduledThreadPool(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
         {
             return SExecute<Java.Util.Concurrent.ScheduledExecutorService>("newScheduledThreadPool", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newScheduledThreadPool(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newScheduledThreadPool(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ScheduledExecutorService"/></returns>
         public static Java.Util.Concurrent.ScheduledExecutorService NewScheduledThreadPool(int arg0)
         {
             return SExecute<Java.Util.Concurrent.ScheduledExecutorService>("newScheduledThreadPool", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadScheduledExecutor()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadScheduledExecutor()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.ScheduledExecutorService"/></returns>
         public static Java.Util.Concurrent.ScheduledExecutorService NewSingleThreadScheduledExecutor()
         {
             return SExecute<Java.Util.Concurrent.ScheduledExecutorService>("newSingleThreadScheduledExecutor");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadScheduledExecutor(java.util.concurrent.ThreadFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newSingleThreadScheduledExecutor(java.util.concurrent.ThreadFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ScheduledExecutorService"/></returns>
         public static Java.Util.Concurrent.ScheduledExecutorService NewSingleThreadScheduledExecutor(Java.Util.Concurrent.ThreadFactory arg0)
         {
             return SExecute<Java.Util.Concurrent.ScheduledExecutorService>("newSingleThreadScheduledExecutor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#unconfigurableScheduledExecutorService(java.util.concurrent.ScheduledExecutorService)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#unconfigurableScheduledExecutorService(java.util.concurrent.ScheduledExecutorService)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.ScheduledExecutorService"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ScheduledExecutorService"/></returns>
         public static Java.Util.Concurrent.ScheduledExecutorService UnconfigurableScheduledExecutorService(Java.Util.Concurrent.ScheduledExecutorService arg0)
         {
             return SExecute<Java.Util.Concurrent.ScheduledExecutorService>("unconfigurableScheduledExecutorService", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#defaultThreadFactory()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#defaultThreadFactory()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.ThreadFactory"/></returns>
         public static Java.Util.Concurrent.ThreadFactory DefaultThreadFactoryMethod()
         {
             return SExecute<Java.Util.Concurrent.ThreadFactory>("defaultThreadFactory");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedThreadFactory()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedThreadFactory()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.ThreadFactory"/></returns>
         public static Java.Util.Concurrent.ThreadFactory PrivilegedThreadFactoryMethod()
         {
             return SExecute<Java.Util.Concurrent.ThreadFactory>("privilegedThreadFactory");

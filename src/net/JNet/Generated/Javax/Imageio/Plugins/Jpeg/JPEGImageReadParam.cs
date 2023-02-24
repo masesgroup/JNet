@@ -46,42 +46,47 @@ namespace Javax.Imageio.Plugins.Jpeg
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#getACHuffmanTables() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#getACHuffmanTables()"/> 
         /// </summary>
         public Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable[] ACHuffmanTables
         {
             get { return IExecuteArray<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("getACHuffmanTables"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#getDCHuffmanTables() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#getDCHuffmanTables()"/> 
         /// </summary>
         public Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable[] DCHuffmanTables
         {
             get { return IExecuteArray<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("getDCHuffmanTables"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#getQTables() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#getQTables()"/> 
         /// </summary>
         public Javax.Imageio.Plugins.Jpeg.JPEGQTable[] QTables
         {
             get { return IExecuteArray<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("getQTables"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#areTablesSet()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#areTablesSet()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool AreTablesSet()
         {
             return IExecute<bool>("areTablesSet");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#setDecodeTables(javax.imageio.plugins.jpeg.JPEGQTable[],javax.imageio.plugins.jpeg.JPEGHuffmanTable[],javax.imageio.plugins.jpeg.JPEGHuffmanTable[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#setDecodeTables(javax.imageio.plugins.jpeg.JPEGQTable[],javax.imageio.plugins.jpeg.JPEGHuffmanTable[],javax.imageio.plugins.jpeg.JPEGHuffmanTable[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Jpeg.JPEGQTable"/></param>
+        /// <param name="arg1"><see cref="Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable"/></param>
+        /// <param name="arg2"><see cref="Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable"/></param>
         public void SetDecodeTables(Javax.Imageio.Plugins.Jpeg.JPEGQTable[] arg0, Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable[] arg1, Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable[] arg2)
         {
             IExecute("setDecodeTables", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#unsetDecodeTables()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageReadParam.html#unsetDecodeTables()"/>
         /// </summary>
         public void UnsetDecodeTables()
         {

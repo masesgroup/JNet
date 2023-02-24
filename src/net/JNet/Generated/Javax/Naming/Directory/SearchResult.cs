@@ -30,29 +30,45 @@ namespace Javax.Naming.Directory
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#<init>(java.lang.String,java.lang.Object,javax.naming.directory.Attributes,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#%3Cinit%3E(java.lang.String,java.lang.Object,javax.naming.directory.Attributes,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Directory.Attributes"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
         public SearchResult(string arg0, object arg1, Javax.Naming.Directory.Attributes arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#<init>(java.lang.String,java.lang.Object,javax.naming.directory.Attributes)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#%3Cinit%3E(java.lang.String,java.lang.Object,javax.naming.directory.Attributes)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Directory.Attributes"/></param>
         public SearchResult(string arg0, object arg1, Javax.Naming.Directory.Attributes arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#<init>(java.lang.String,java.lang.String,java.lang.Object,javax.naming.directory.Attributes,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.Object,javax.naming.directory.Attributes,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="Javax.Naming.Directory.Attributes"/></param>
+        /// <param name="arg4"><see langword="bool"/></param>
         public SearchResult(string arg0, string arg1, object arg2, Javax.Naming.Directory.Attributes arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#<init>(java.lang.String,java.lang.String,java.lang.Object,javax.naming.directory.Attributes)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.Object,javax.naming.directory.Attributes)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="Javax.Naming.Directory.Attributes"/></param>
         public SearchResult(string arg0, string arg1, object arg2, Javax.Naming.Directory.Attributes arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -74,7 +90,7 @@ namespace Javax.Naming.Directory
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#getAttributes() https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#setAttributes(javax.naming.directory.Attributes)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#getAttributes()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#setAttributes(javax.naming.directory.Attributes)"/>
         /// </summary>
         public Javax.Naming.Directory.Attributes Attributes
         {

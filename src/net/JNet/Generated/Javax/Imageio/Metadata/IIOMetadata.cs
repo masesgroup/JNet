@@ -46,99 +46,117 @@ namespace Javax.Imageio.Metadata
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getController() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#setController(javax.imageio.metadata.IIOMetadataController)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getController()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#setController(javax.imageio.metadata.IIOMetadataController)"/>
         /// </summary>
         public Javax.Imageio.Metadata.IIOMetadataController Controller
         {
             get { return IExecute<Javax.Imageio.Metadata.IIOMetadataController>("getController"); } set { IExecute("setController", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getDefaultController() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getDefaultController()"/> 
         /// </summary>
         public Javax.Imageio.Metadata.IIOMetadataController DefaultController
         {
             get { return IExecute<Javax.Imageio.Metadata.IIOMetadataController>("getDefaultController"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getExtraMetadataFormatNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getExtraMetadataFormatNames()"/> 
         /// </summary>
         public string[] ExtraMetadataFormatNames
         {
             get { return IExecuteArray<string>("getExtraMetadataFormatNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getMetadataFormatNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getMetadataFormatNames()"/> 
         /// </summary>
         public string[] MetadataFormatNames
         {
             get { return IExecuteArray<string>("getMetadataFormatNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getNativeMetadataFormatName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getNativeMetadataFormatName()"/> 
         /// </summary>
         public string NativeMetadataFormatName
         {
             get { return IExecute<string>("getNativeMetadataFormatName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isReadOnly()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isReadOnly()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsReadOnly()
         {
             return IExecute<bool>("isReadOnly");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getAsTree(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getAsTree(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node GetAsTree(string arg0)
         {
             return IExecute<Org.W3c.Dom.Node>("getAsTree", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#mergeTree(java.lang.String,org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#mergeTree(java.lang.String,org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <exception cref="Javax.Imageio.Metadata.IIOInvalidTreeException"/>
         public void MergeTree(string arg0, Org.W3c.Dom.Node arg1)
         {
             IExecute("mergeTree", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#reset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecute("reset");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#activateController()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#activateController()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool ActivateController()
         {
             return IExecute<bool>("activateController");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#hasController()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#hasController()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasController()
         {
             return IExecute<bool>("hasController");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isStandardMetadataFormatSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isStandardMetadataFormatSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsStandardMetadataFormatSupported()
         {
             return IExecute<bool>("isStandardMetadataFormatSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getMetadataFormat(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getMetadataFormat(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/></returns>
         public Javax.Imageio.Metadata.IIOMetadataFormat GetMetadataFormat(string arg0)
         {
             return IExecute<Javax.Imageio.Metadata.IIOMetadataFormat>("getMetadataFormat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#setFromTree(java.lang.String,org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#setFromTree(java.lang.String,org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <exception cref="Javax.Imageio.Metadata.IIOInvalidTreeException"/>
         public void SetFromTree(string arg0, Org.W3c.Dom.Node arg1)
         {
             IExecute("setFromTree", arg0, arg1);

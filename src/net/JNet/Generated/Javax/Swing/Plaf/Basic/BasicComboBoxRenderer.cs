@@ -33,6 +33,9 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxRenderer"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Basic.BasicComboBoxRenderer t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -58,6 +61,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboBoxRenderer.UIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicComboBoxRenderer.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion

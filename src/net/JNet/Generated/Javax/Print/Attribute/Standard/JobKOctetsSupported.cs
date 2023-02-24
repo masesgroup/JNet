@@ -30,8 +30,10 @@ namespace Javax.Print.Attribute.Standard
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobKOctetsSupported.html#<init>(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobKOctetsSupported.html#%3Cinit%3E(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public JobKOctetsSupported(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.JobKOctetsSupported"/> to <see cref="Javax.Print.Attribute.SupportedValuesAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.SupportedValuesAttribute(Javax.Print.Attribute.Standard.JobKOctetsSupported t) => t.Cast<Javax.Print.Attribute.SupportedValuesAttribute>();
         
         #endregion
@@ -54,7 +59,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobKOctetsSupported.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobKOctetsSupported.html#getName()"/> 
         /// </summary>
         public string Name
         {

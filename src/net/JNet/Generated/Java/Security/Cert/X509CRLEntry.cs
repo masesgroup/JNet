@@ -33,6 +33,9 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Cert.X509CRLEntry"/> to <see cref="Java.Security.Cert.X509Extension"/>
+        /// </summary>
         public static implicit operator Java.Security.Cert.X509Extension(Java.Security.Cert.X509CRLEntry t) => t.Cast<Java.Security.Cert.X509Extension>();
         
         #endregion
@@ -47,36 +50,38 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getCertificateIssuer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getCertificateIssuer()"/> 
         /// </summary>
         public Javax.Security.Auth.X500.X500Principal CertificateIssuer
         {
             get { return IExecute<Javax.Security.Auth.X500.X500Principal>("getCertificateIssuer"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getEncoded() throws java.security.cert.CRLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
             get { return IExecuteArray<byte>("getEncoded"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getRevocationDate() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getRevocationDate()"/> 
         /// </summary>
         public Java.Util.Date RevocationDate
         {
             get { return IExecute<Java.Util.Date>("getRevocationDate"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getSerialNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getSerialNumber()"/> 
         /// </summary>
         public Java.Math.BigInteger SerialNumber
         {
             get { return IExecute<Java.Math.BigInteger>("getSerialNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#hasExtensions()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#hasExtensions()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasExtensions()
         {
             return IExecute<bool>("hasExtensions");

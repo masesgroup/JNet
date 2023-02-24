@@ -33,14 +33,20 @@ namespace Java.Security.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.ECPublicKey"/> to <see cref="Java.Security.PublicKey"/>
+        /// </summary>
         public static implicit operator Java.Security.PublicKey(Java.Security.Interfaces.ECPublicKey t) => t.Cast<Java.Security.PublicKey>();
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.ECPublicKey"/> to <see cref="Java.Security.Interfaces.ECKey"/>
+        /// </summary>
         public static implicit operator Java.Security.Interfaces.ECKey(Java.Security.Interfaces.ECPublicKey t) => t.Cast<Java.Security.Interfaces.ECKey>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPublicKey.html#serialVersionUID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPublicKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         
@@ -52,7 +58,7 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPublicKey.html#getW() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPublicKey.html#getW()"/> 
         /// </summary>
         public Java.Security.Spec.ECPoint W
         {

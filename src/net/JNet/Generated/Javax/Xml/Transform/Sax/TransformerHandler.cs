@@ -33,8 +33,17 @@ namespace Javax.Xml.Transform.Sax
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Transform.Sax.TransformerHandler"/> to <see cref="Org.Xml.Sax.ContentHandler"/>
+        /// </summary>
         public static implicit operator Org.Xml.Sax.ContentHandler(Javax.Xml.Transform.Sax.TransformerHandler t) => t.Cast<Org.Xml.Sax.ContentHandler>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Transform.Sax.TransformerHandler"/> to <see cref="Org.Xml.Sax.Ext.LexicalHandler"/>
+        /// </summary>
         public static implicit operator Org.Xml.Sax.Ext.LexicalHandler(Javax.Xml.Transform.Sax.TransformerHandler t) => t.Cast<Org.Xml.Sax.Ext.LexicalHandler>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Transform.Sax.TransformerHandler"/> to <see cref="Org.Xml.Sax.DTDHandler"/>
+        /// </summary>
         public static implicit operator Org.Xml.Sax.DTDHandler(Javax.Xml.Transform.Sax.TransformerHandler t) => t.Cast<Org.Xml.Sax.DTDHandler>();
         
         #endregion
@@ -49,22 +58,24 @@ namespace Javax.Xml.Transform.Sax
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#getSystemId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#setSystemId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public string SystemId
         {
             get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#getTransformer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#getTransformer()"/> 
         /// </summary>
         public Javax.Xml.Transform.Transformer Transformer
         {
             get { return IExecute<Javax.Xml.Transform.Transformer>("getTransformer"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#setResult(javax.xml.transform.Result) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#setResult(javax.xml.transform.Result)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.Result"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetResult(Javax.Xml.Transform.Result arg0)
         {
             IExecute("setResult", arg0);

@@ -46,8 +46,10 @@ namespace Javax.Tools
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/OptionChecker.html#isSupportedOption(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/OptionChecker.html#isSupportedOption(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int IsSupportedOption(string arg0)
         {
             return IExecute<int>("isSupportedOption", arg0);

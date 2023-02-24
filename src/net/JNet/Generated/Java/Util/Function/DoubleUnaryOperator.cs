@@ -42,8 +42,10 @@ namespace Java.Util.Function
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#identity()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#identity()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
         public static Java.Util.Function.DoubleUnaryOperator Identity()
         {
             return SExecute<Java.Util.Function.DoubleUnaryOperator>("identity");
@@ -53,22 +55,28 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#applyAsDouble(double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#applyAsDouble(double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <returns><see langword="double"/></returns>
         public double ApplyAsDouble(double arg0)
         {
             return IExecute<double>("applyAsDouble", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#andThen(java.util.function.DoubleUnaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#andThen(java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
         public Java.Util.Function.DoubleUnaryOperator AndThen(Java.Util.Function.DoubleUnaryOperator arg0)
         {
             return IExecute<Java.Util.Function.DoubleUnaryOperator>("andThen", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#compose(java.util.function.DoubleUnaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#compose(java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
         public Java.Util.Function.DoubleUnaryOperator Compose(Java.Util.Function.DoubleUnaryOperator arg0)
         {
             return IExecute<Java.Util.Function.DoubleUnaryOperator>("compose", arg0);

@@ -30,8 +30,10 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#<init>(javax.swing.text.Element,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#%3Cinit%3E(javax.swing.text.Element,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public BoxView(Javax.Swing.Text.Element arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -53,29 +55,30 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#getAxis() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#setAxis(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#getAxis()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#setAxis(int)"/>
         /// </summary>
         public int Axis
         {
             get { return IExecute<int>("getAxis"); } set { IExecute("setAxis", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#getHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
             get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#getWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
             get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#layoutChanged(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/BoxView.html#layoutChanged(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void LayoutChanged(int arg0)
         {
             IExecute("layoutChanged", arg0);

@@ -30,15 +30,21 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#<init>(int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#%3Cinit%3E(int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public GridLayout(int arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#<init>(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#%3Cinit%3E(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public GridLayout(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -47,7 +53,13 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.GridLayout"/> to <see cref="Java.Awt.LayoutManager"/>
+        /// </summary>
         public static implicit operator Java.Awt.LayoutManager(Java.Awt.GridLayout t) => t.Cast<Java.Awt.LayoutManager>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.GridLayout"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.GridLayout t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -62,64 +74,72 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#getColumns() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#setColumns(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#getColumns()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#setColumns(int)"/>
         /// </summary>
         public int Columns
         {
             get { return IExecute<int>("getColumns"); } set { IExecute("setColumns", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#getHgap() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#setHgap(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#getHgap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#setHgap(int)"/>
         /// </summary>
         public int Hgap
         {
             get { return IExecute<int>("getHgap"); } set { IExecute("setHgap", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#getRows() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#setRows(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#getRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#setRows(int)"/>
         /// </summary>
         public int Rows
         {
             get { return IExecute<int>("getRows"); } set { IExecute("setRows", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#getVgap() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#setVgap(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#getVgap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#setVgap(int)"/>
         /// </summary>
         public int Vgap
         {
             get { return IExecute<int>("getVgap"); } set { IExecute("setVgap", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#minimumLayoutSize(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#minimumLayoutSize(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
         {
             return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#preferredLayoutSize(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#preferredLayoutSize(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
         {
             return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public void AddLayoutComponent(string arg0, Java.Awt.Component arg1)
         {
             IExecute("addLayoutComponent", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#layoutContainer(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#layoutContainer(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void LayoutContainer(Java.Awt.Container arg0)
         {
             IExecute("layoutContainer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#removeLayoutComponent(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridLayout.html#removeLayoutComponent(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void RemoveLayoutComponent(Java.Awt.Component arg0)
         {
             IExecute("removeLayoutComponent", arg0);

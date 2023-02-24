@@ -40,7 +40,7 @@ namespace Java.Util.Function
     /// <typeparam name="TObject">The data type associated to the event</typeparam>
     public class Consumer<TObject> : JVMBridgeListener, IConsumer<TObject>
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "org.mases.jnet.util.function.JNetConsumer";
 
         Action<TObject> executionFunction = null;

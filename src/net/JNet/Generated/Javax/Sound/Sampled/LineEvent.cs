@@ -30,8 +30,11 @@ namespace Javax.Sound.Sampled
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#<init>(javax.sound.sampled.Line,javax.sound.sampled.LineEvent$Type,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#%3Cinit%3E(javax.sound.sampled.Line,javax.sound.sampled.LineEvent$Type,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Sampled.LineEvent.Type"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
         public LineEvent(Javax.Sound.Sampled.Line arg0, Javax.Sound.Sampled.LineEvent.Type arg1, long arg2)
             : base(arg0, arg1, arg2)
         {
@@ -53,22 +56,24 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#getFramePosition() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#getFramePosition()"/> 
         /// </summary>
         public long FramePosition
         {
             get { return IExecute<long>("getFramePosition"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#getLine() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#getLine()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Line Line
         {
             get { return IExecute<Javax.Sound.Sampled.Line>("getLine"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#getType()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.html#getType()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Sound.Sampled.LineEvent.Type"/></returns>
         public Javax.Sound.Sampled.LineEvent.Type GetType()
         {
             return IExecute<Javax.Sound.Sampled.LineEvent.Type>("getType");
@@ -90,19 +95,19 @@ namespace Javax.Sound.Sampled
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#CLOSE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#CLOSE"/>
             /// </summary>
             public static Javax.Sound.Sampled.LineEvent.Type CLOSE => Clazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("CLOSE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#OPEN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#OPEN"/>
             /// </summary>
             public static Javax.Sound.Sampled.LineEvent.Type OPEN => Clazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("OPEN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#START
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#START"/>
             /// </summary>
             public static Javax.Sound.Sampled.LineEvent.Type START => Clazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("START");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#STOP
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#STOP"/>
             /// </summary>
             public static Javax.Sound.Sampled.LineEvent.Type STOP => Clazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("STOP");
             

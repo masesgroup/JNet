@@ -46,36 +46,48 @@ namespace Javax.Smartcardio
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#isCardPresent() throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#isCardPresent()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public bool IsCardPresent()
         {
             return IExecute<bool>("isCardPresent");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#waitForCardAbsent(long) throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#waitForCardAbsent(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public bool WaitForCardAbsent(long arg0)
         {
             return IExecute<bool>("waitForCardAbsent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#waitForCardPresent(long) throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#waitForCardPresent(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public bool WaitForCardPresent(long arg0)
         {
             return IExecute<bool>("waitForCardPresent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#connect(java.lang.String) throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html#connect(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Smartcardio.Card"/></returns>
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public Javax.Smartcardio.Card Connect(string arg0)
         {
             return IExecute<Javax.Smartcardio.Card>("connect", arg0);

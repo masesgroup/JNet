@@ -30,8 +30,9 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public TransferHandler(string arg0)
             : base(arg0)
         {
@@ -40,29 +41,32 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.TransferHandler"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.TransferHandler t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#COPY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#COPY"/>
         /// </summary>
         public static int COPY => Clazz.GetField<int>("COPY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#COPY_OR_MOVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#COPY_OR_MOVE"/>
         /// </summary>
         public static int COPY_OR_MOVE => Clazz.GetField<int>("COPY_OR_MOVE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#LINK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#LINK"/>
         /// </summary>
         public static int LINK => Clazz.GetField<int>("LINK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#MOVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#MOVE"/>
         /// </summary>
         public static int MOVE => Clazz.GetField<int>("MOVE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#NONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#NONE"/>
         /// </summary>
         public static int NONE => Clazz.GetField<int>("NONE");
         
@@ -70,21 +74,21 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getCopyAction() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getCopyAction()"/> 
         /// </summary>
         public static Javax.Swing.Action CopyAction
         {
             get { return SExecute<Javax.Swing.Action>("getCopyAction"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getCutAction() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getCutAction()"/> 
         /// </summary>
         public static Javax.Swing.Action CutAction
         {
             get { return SExecute<Javax.Swing.Action>("getCutAction"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getPasteAction() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getPasteAction()"/> 
         /// </summary>
         public static Javax.Swing.Action PasteAction
         {
@@ -95,71 +99,92 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getDragImage() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#setDragImage(java.awt.Image)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getDragImage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#setDragImage(java.awt.Image)"/>
         /// </summary>
         public Java.Awt.Image DragImage
         {
             get { return IExecute<Java.Awt.Image>("getDragImage"); } set { IExecute("setDragImage", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getDragImageOffset() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#setDragImageOffset(java.awt.Point)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getDragImageOffset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#setDragImageOffset(java.awt.Point)"/>
         /// </summary>
         public Java.Awt.Point DragImageOffset
         {
             get { return IExecute<Java.Awt.Point>("getDragImageOffset"); } set { IExecute("setDragImageOffset", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#canImport(javax.swing.JComponent,java.awt.datatransfer.DataFlavor[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#canImport(javax.swing.JComponent,java.awt.datatransfer.DataFlavor[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CanImport(Javax.Swing.JComponent arg0, Java.Awt.Datatransfer.DataFlavor[] arg1)
         {
             return IExecute<bool>("canImport", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#canImport(javax.swing.TransferHandler$TransferSupport)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#canImport(javax.swing.TransferHandler$TransferSupport)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.TransferHandler.TransferSupport"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CanImport(Javax.Swing.TransferHandler.TransferSupport arg0)
         {
             return IExecute<bool>("canImport", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#importData(javax.swing.JComponent,java.awt.datatransfer.Transferable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#importData(javax.swing.JComponent,java.awt.datatransfer.Transferable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ImportData(Javax.Swing.JComponent arg0, Java.Awt.Datatransfer.Transferable arg1)
         {
             return IExecute<bool>("importData", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#importData(javax.swing.TransferHandler$TransferSupport)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#importData(javax.swing.TransferHandler$TransferSupport)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.TransferHandler.TransferSupport"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ImportData(Javax.Swing.TransferHandler.TransferSupport arg0)
         {
             return IExecute<bool>("importData", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getSourceActions(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getSourceActions(javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetSourceActions(Javax.Swing.JComponent arg0)
         {
             return IExecute<int>("getSourceActions", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getVisualRepresentation(java.awt.datatransfer.Transferable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getVisualRepresentation(java.awt.datatransfer.Transferable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetVisualRepresentation(Java.Awt.Datatransfer.Transferable arg0)
         {
             return IExecute<Javax.Swing.Icon>("getVisualRepresentation", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#exportAsDrag(javax.swing.JComponent,java.awt.event.InputEvent,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#exportAsDrag(javax.swing.JComponent,java.awt.event.InputEvent,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.InputEvent"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void ExportAsDrag(Javax.Swing.JComponent arg0, Java.Awt.EventNs.InputEvent arg1, int arg2)
         {
             IExecute("exportAsDrag", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#exportToClipboard(javax.swing.JComponent,java.awt.datatransfer.Clipboard,int) throws java.lang.IllegalStateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#exportToClipboard(javax.swing.JComponent,java.awt.datatransfer.Clipboard,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Clipboard"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
         public void ExportToClipboard(Javax.Swing.JComponent arg0, Java.Awt.Datatransfer.Clipboard arg1, int arg2)
         {
             IExecute("exportToClipboard", arg0, arg1, arg2);
@@ -189,7 +214,7 @@ namespace Javax.Swing
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.DropLocation.html#getDropPoint() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.DropLocation.html#getDropPoint()"/> 
             /// </summary>
             public Java.Awt.Point DropPoint
             {
@@ -207,8 +232,10 @@ namespace Javax.Swing
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#<init>(java.awt.Component,java.awt.datatransfer.Transferable)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#%3Cinit%3E(java.awt.Component,java.awt.datatransfer.Transferable)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
             public TransferSupport(Java.Awt.Component arg0, Java.Awt.Datatransfer.Transferable arg1)
                 : base(arg0, arg1)
             {
@@ -230,71 +257,78 @@ namespace Javax.Swing
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getComponent() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getComponent()"/> 
             /// </summary>
             public Java.Awt.Component Component
             {
                 get { return IExecute<Java.Awt.Component>("getComponent"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDataFlavors() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDataFlavors()"/> 
             /// </summary>
             public Java.Awt.Datatransfer.DataFlavor[] DataFlavors
             {
                 get { return IExecuteArray<Java.Awt.Datatransfer.DataFlavor>("getDataFlavors"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDropAction() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#setDropAction(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDropAction()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#setDropAction(int)"/>
             /// </summary>
             public int DropAction
             {
                 get { return IExecute<int>("getDropAction"); } set { IExecute("setDropAction", value); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getSourceDropActions() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getSourceDropActions()"/> 
             /// </summary>
             public int SourceDropActions
             {
                 get { return IExecute<int>("getSourceDropActions"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getTransferable() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getTransferable()"/> 
             /// </summary>
             public Java.Awt.Datatransfer.Transferable Transferable
             {
                 get { return IExecute<Java.Awt.Datatransfer.Transferable>("getTransferable"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getUserDropAction() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getUserDropAction()"/> 
             /// </summary>
             public int UserDropAction
             {
                 get { return IExecute<int>("getUserDropAction"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+            /// <returns><see langword="bool"/></returns>
             public bool IsDataFlavorSupported(Java.Awt.Datatransfer.DataFlavor arg0)
             {
                 return IExecute<bool>("isDataFlavorSupported", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#isDrop()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#isDrop()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool IsDrop()
             {
                 return IExecute<bool>("isDrop");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDropLocation()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#getDropLocation()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Swing.TransferHandler.DropLocation"/></returns>
             public Javax.Swing.TransferHandler.DropLocation GetDropLocation()
             {
                 return IExecute<Javax.Swing.TransferHandler.DropLocation>("getDropLocation");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#setShowDropLocation(boolean)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#setShowDropLocation(boolean)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="bool"/></param>
             public void SetShowDropLocation(bool arg0)
             {
                 IExecute("setShowDropLocation", arg0);

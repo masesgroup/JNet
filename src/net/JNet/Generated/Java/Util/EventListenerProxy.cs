@@ -30,8 +30,9 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html#<init>(T)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html#%3Cinit%3E(T)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.EventListener"/></param>
         public EventListenerProxy(Java.Util.EventListener arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.EventListenerProxy"/> to <see cref="Java.Util.EventListener"/>
+        /// </summary>
         public static implicit operator Java.Util.EventListener(Java.Util.EventListenerProxy t) => t.Cast<Java.Util.EventListener>();
         
         #endregion
@@ -54,7 +58,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html#getListener() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html#getListener()"/> 
         /// </summary>
         public Java.Util.EventListener Listener
         {

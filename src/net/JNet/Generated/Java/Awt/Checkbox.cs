@@ -30,29 +30,42 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#<init>(java.lang.String,boolean,java.awt.CheckboxGroup) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#%3Cinit%3E(java.lang.String,boolean,java.awt.CheckboxGroup)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.CheckboxGroup"/></param>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public Checkbox(string arg0, bool arg1, Java.Awt.CheckboxGroup arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#<init>(java.lang.String,boolean) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public Checkbox(string arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#<init>(java.lang.String,java.awt.CheckboxGroup,boolean) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#%3Cinit%3E(java.lang.String,java.awt.CheckboxGroup,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.CheckboxGroup"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public Checkbox(string arg0, Java.Awt.CheckboxGroup arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#<init>(java.lang.String) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public Checkbox(string arg0)
             : base(arg0)
         {
@@ -61,7 +74,13 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Checkbox"/> to <see cref="Java.Awt.ItemSelectable"/>
+        /// </summary>
         public static implicit operator Java.Awt.ItemSelectable(Java.Awt.Checkbox t) => t.Cast<Java.Awt.ItemSelectable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Checkbox"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.Checkbox t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
@@ -76,50 +95,52 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#getCheckboxGroup() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#setCheckboxGroup(java.awt.CheckboxGroup)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#getCheckboxGroup()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#setCheckboxGroup(java.awt.CheckboxGroup)"/>
         /// </summary>
         public Java.Awt.CheckboxGroup CheckboxGroup
         {
             get { return IExecute<Java.Awt.CheckboxGroup>("getCheckboxGroup"); } set { IExecute("setCheckboxGroup", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#getItemListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#getItemListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ItemListener[] ItemListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.ItemListener>("getItemListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#getLabel() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#setLabel(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#getLabel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#setLabel(java.lang.String)"/>
         /// </summary>
         public string Label
         {
             get { return IExecute<string>("getLabel"); } set { IExecute("setLabel", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#getSelectedObjects() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#getSelectedObjects()"/> 
         /// </summary>
         public object[] SelectedObjects
         {
             get { return IExecuteArray<object>("getSelectedObjects"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#getState() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#setState(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#getState()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#setState(boolean)"/>
         /// </summary>
         public bool State
         {
             get { return IExecute<bool>("getState"); } set { IExecute("setState", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#addItemListener(java.awt.event.ItemListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#addItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void AddItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
             IExecute("addItemListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#removeItemListener(java.awt.event.ItemListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Checkbox.html#removeItemListener(java.awt.event.ItemListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
         public void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0)
         {
             IExecute("removeItemListener", arg0);

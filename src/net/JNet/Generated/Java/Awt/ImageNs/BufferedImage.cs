@@ -30,15 +30,22 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#<init>(int,int,int,java.awt.image.IndexColorModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#%3Cinit%3E(int,int,int,java.awt.image.IndexColorModel)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.IndexColorModel"/></param>
         public BufferedImage(int arg0, int arg1, int arg2, Java.Awt.ImageNs.IndexColorModel arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#<init>(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public BufferedImage(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -47,66 +54,72 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.BufferedImage"/> to <see cref="Java.Awt.ImageNs.WritableRenderedImage"/>
+        /// </summary>
         public static implicit operator Java.Awt.ImageNs.WritableRenderedImage(Java.Awt.ImageNs.BufferedImage t) => t.Cast<Java.Awt.ImageNs.WritableRenderedImage>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.BufferedImage"/> to <see cref="Java.Awt.Transparency"/>
+        /// </summary>
         public static implicit operator Java.Awt.Transparency(Java.Awt.ImageNs.BufferedImage t) => t.Cast<Java.Awt.Transparency>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_3BYTE_BGR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_3BYTE_BGR"/>
         /// </summary>
         public static int TYPE_3BYTE_BGR => Clazz.GetField<int>("TYPE_3BYTE_BGR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_4BYTE_ABGR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_4BYTE_ABGR"/>
         /// </summary>
         public static int TYPE_4BYTE_ABGR => Clazz.GetField<int>("TYPE_4BYTE_ABGR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_4BYTE_ABGR_PRE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_4BYTE_ABGR_PRE"/>
         /// </summary>
         public static int TYPE_4BYTE_ABGR_PRE => Clazz.GetField<int>("TYPE_4BYTE_ABGR_PRE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_BINARY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_BINARY"/>
         /// </summary>
         public static int TYPE_BYTE_BINARY => Clazz.GetField<int>("TYPE_BYTE_BINARY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_GRAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_GRAY"/>
         /// </summary>
         public static int TYPE_BYTE_GRAY => Clazz.GetField<int>("TYPE_BYTE_GRAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_INDEXED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_INDEXED"/>
         /// </summary>
         public static int TYPE_BYTE_INDEXED => Clazz.GetField<int>("TYPE_BYTE_INDEXED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_CUSTOM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_CUSTOM"/>
         /// </summary>
         public static int TYPE_CUSTOM => Clazz.GetField<int>("TYPE_CUSTOM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_ARGB
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_ARGB"/>
         /// </summary>
         public static int TYPE_INT_ARGB => Clazz.GetField<int>("TYPE_INT_ARGB");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_ARGB_PRE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_ARGB_PRE"/>
         /// </summary>
         public static int TYPE_INT_ARGB_PRE => Clazz.GetField<int>("TYPE_INT_ARGB_PRE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_BGR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_BGR"/>
         /// </summary>
         public static int TYPE_INT_BGR => Clazz.GetField<int>("TYPE_INT_BGR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_RGB
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_RGB"/>
         /// </summary>
         public static int TYPE_INT_RGB => Clazz.GetField<int>("TYPE_INT_RGB");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_USHORT_555_RGB
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_USHORT_555_RGB"/>
         /// </summary>
         public static int TYPE_USHORT_555_RGB => Clazz.GetField<int>("TYPE_USHORT_555_RGB");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_USHORT_565_RGB
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_USHORT_565_RGB"/>
         /// </summary>
         public static int TYPE_USHORT_565_RGB => Clazz.GetField<int>("TYPE_USHORT_565_RGB");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_USHORT_GRAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_USHORT_GRAY"/>
         /// </summary>
         public static int TYPE_USHORT_GRAY => Clazz.GetField<int>("TYPE_USHORT_GRAY");
         
@@ -118,274 +131,326 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getAlphaRaster() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getAlphaRaster()"/> 
         /// </summary>
         public Java.Awt.ImageNs.WritableRaster AlphaRaster
         {
             get { return IExecute<Java.Awt.ImageNs.WritableRaster>("getAlphaRaster"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getColorModel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getColorModel()"/> 
         /// </summary>
         public Java.Awt.ImageNs.ColorModel ColorModel
         {
             get { return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getData() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#setData(java.awt.image.Raster)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#setData(java.awt.image.Raster)"/>
         /// </summary>
         public Java.Awt.ImageNs.Raster Data
         {
             get { return IExecute<Java.Awt.ImageNs.Raster>("getData"); } set { IExecute("setData", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
             get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getMinTileX() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getMinTileX()"/> 
         /// </summary>
         public int MinTileX
         {
             get { return IExecute<int>("getMinTileX"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getMinTileY() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getMinTileY()"/> 
         /// </summary>
         public int MinTileY
         {
             get { return IExecute<int>("getMinTileY"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getMinX() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getMinX()"/> 
         /// </summary>
         public int MinX
         {
             get { return IExecute<int>("getMinX"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getMinY() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getMinY()"/> 
         /// </summary>
         public int MinY
         {
             get { return IExecute<int>("getMinY"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getNumXTiles() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getNumXTiles()"/> 
         /// </summary>
         public int NumXTiles
         {
             get { return IExecute<int>("getNumXTiles"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getNumYTiles() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getNumYTiles()"/> 
         /// </summary>
         public int NumYTiles
         {
             get { return IExecute<int>("getNumYTiles"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getPropertyNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getPropertyNames()"/> 
         /// </summary>
         public string[] PropertyNames
         {
             get { return IExecuteArray<string>("getPropertyNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getRaster() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getRaster()"/> 
         /// </summary>
         public Java.Awt.ImageNs.WritableRaster Raster
         {
             get { return IExecute<Java.Awt.ImageNs.WritableRaster>("getRaster"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getSampleModel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getSampleModel()"/> 
         /// </summary>
         public Java.Awt.ImageNs.SampleModel SampleModel
         {
             get { return IExecute<Java.Awt.ImageNs.SampleModel>("getSampleModel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileGridXOffset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileGridXOffset()"/> 
         /// </summary>
         public int TileGridXOffset
         {
             get { return IExecute<int>("getTileGridXOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileGridYOffset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileGridYOffset()"/> 
         /// </summary>
         public int TileGridYOffset
         {
             get { return IExecute<int>("getTileGridYOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileHeight()"/> 
         /// </summary>
         public int TileHeight
         {
             get { return IExecute<int>("getTileHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileWidth()"/> 
         /// </summary>
         public int TileWidth
         {
             get { return IExecute<int>("getTileWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTransparency() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTransparency()"/> 
         /// </summary>
         public int Transparency
         {
             get { return IExecute<int>("getTransparency"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getType()"/> 
         /// </summary>
         public int Type
         {
             get { return IExecute<int>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
             get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getWritableTileIndices() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getWritableTileIndices()"/> 
         /// </summary>
         public Java.Awt.Point[] WritableTileIndices
         {
             get { return IExecuteArray<Java.Awt.Point>("getWritableTileIndices"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#hasTileWriters()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#hasTileWriters()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasTileWriters()
         {
             return IExecute<bool>("hasTileWriters");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#isAlphaPremultiplied()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#isAlphaPremultiplied()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAlphaPremultiplied()
         {
             return IExecute<bool>("isAlphaPremultiplied");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#isTileWritable(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#isTileWritable(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsTileWritable(int arg0, int arg1)
         {
             return IExecute<bool>("isTileWritable", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getRGB(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getRGB(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRGB(int arg0, int arg1)
         {
             return IExecute<int>("getRGB", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getRGB(int,int,int,int,int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getRGB(int,int,int,int,int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
+        /// <returns><see cref="int"/></returns>
         public int[] GetRGB(int arg0, int arg1, int arg2, int arg3, int[] arg4, int arg5, int arg6)
         {
             return IExecuteArray<int>("getRGB", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#createGraphics()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#createGraphics()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.Graphics2D"/></returns>
         public Java.Awt.Graphics2D CreateGraphics()
         {
             return IExecute<Java.Awt.Graphics2D>("createGraphics");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getSubimage(int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getSubimage(int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage GetSubimage(int arg0, int arg1, int arg2, int arg3)
         {
             return IExecute<Java.Awt.ImageNs.BufferedImage>("getSubimage", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getData(java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getData(java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
         public Java.Awt.ImageNs.Raster GetData(Java.Awt.Rectangle arg0)
         {
             return IExecute<Java.Awt.ImageNs.Raster>("getData", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTile(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTile(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
         public Java.Awt.ImageNs.Raster GetTile(int arg0, int arg1)
         {
             return IExecute<Java.Awt.ImageNs.Raster>("getTile", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#copyData(java.awt.image.WritableRaster)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#copyData(java.awt.image.WritableRaster)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CopyData(Java.Awt.ImageNs.WritableRaster arg0)
         {
             return IExecute<Java.Awt.ImageNs.WritableRaster>("copyData", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getWritableTile(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getWritableTile(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster GetWritableTile(int arg0, int arg1)
         {
             return IExecute<Java.Awt.ImageNs.WritableRaster>("getWritableTile", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getProperty(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getProperty(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetProperty(string arg0)
         {
             return IExecute("getProperty", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#addTileObserver(java.awt.image.TileObserver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#addTileObserver(java.awt.image.TileObserver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.TileObserver"/></param>
         public void AddTileObserver(Java.Awt.ImageNs.TileObserver arg0)
         {
             IExecute("addTileObserver", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#coerceData(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#coerceData(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void CoerceData(bool arg0)
         {
             IExecute("coerceData", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#releaseWritableTile(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#releaseWritableTile(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void ReleaseWritableTile(int arg0, int arg1)
         {
             IExecute("releaseWritableTile", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#removeTileObserver(java.awt.image.TileObserver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#removeTileObserver(java.awt.image.TileObserver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.TileObserver"/></param>
         public void RemoveTileObserver(Java.Awt.ImageNs.TileObserver arg0)
         {
             IExecute("removeTileObserver", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#setRGB(int,int,int,int,int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#setRGB(int,int,int,int,int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
         public void SetRGB(int arg0, int arg1, int arg2, int arg3, int[] arg4, int arg5, int arg6)
         {
             IExecute("setRGB", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#setRGB(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#setRGB(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void SetRGB(int arg0, int arg1, int arg2)
         {
             IExecute("setRGB", arg0, arg1, arg2);

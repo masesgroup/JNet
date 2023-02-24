@@ -46,29 +46,37 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#test(double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#test(double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Test(double arg0)
         {
             return IExecute<bool>("test", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
         public Java.Util.Function.DoublePredicate And(Java.Util.Function.DoublePredicate arg0)
         {
             return IExecute<Java.Util.Function.DoublePredicate>("and", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
         public Java.Util.Function.DoublePredicate Negate()
         {
             return IExecute<Java.Util.Function.DoublePredicate>("negate");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
         public Java.Util.Function.DoublePredicate Or(Java.Util.Function.DoublePredicate arg0)
         {
             return IExecute<Java.Util.Function.DoublePredicate>("or", arg0);

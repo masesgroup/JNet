@@ -30,8 +30,10 @@ namespace Java.Awt.ImageNs.Renderable
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#<init>(java.awt.image.renderable.RenderableImage,java.awt.image.renderable.RenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#%3Cinit%3E(java.awt.image.renderable.RenderableImage,java.awt.image.renderable.RenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.RenderableImage"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
         public RenderableImageProducer(Java.Awt.ImageNs.Renderable.RenderableImage arg0, Java.Awt.ImageNs.Renderable.RenderContext arg1)
             : base(arg0, arg1)
         {
@@ -40,7 +42,13 @@ namespace Java.Awt.ImageNs.Renderable
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.Renderable.RenderableImageProducer"/> to <see cref="Java.Awt.ImageNs.ImageProducer"/>
+        /// </summary>
         public static implicit operator Java.Awt.ImageNs.ImageProducer(Java.Awt.ImageNs.Renderable.RenderableImageProducer t) => t.Cast<Java.Awt.ImageNs.ImageProducer>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.Renderable.RenderableImageProducer"/> to <see cref="Java.Lang.Runnable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Runnable(Java.Awt.ImageNs.Renderable.RenderableImageProducer t) => t.Cast<Java.Lang.Runnable>();
         
         #endregion
@@ -55,49 +63,56 @@ namespace Java.Awt.ImageNs.Renderable
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#isConsumer(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#isConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             return IExecute<bool>("isConsumer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#addConsumer(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#addConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void AddConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecute("addConsumer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#removeConsumer(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#removeConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void RemoveConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecute("removeConsumer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#setRenderContext(java.awt.image.renderable.RenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#setRenderContext(java.awt.image.renderable.RenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
         public void SetRenderContext(Java.Awt.ImageNs.Renderable.RenderContext arg0)
         {
             IExecute("setRenderContext", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#startProduction(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#startProduction(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void StartProduction(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecute("startProduction", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void RequestTopDownLeftRightResend(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecute("requestTopDownLeftRightResend", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#run()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageProducer.html#run()"/>
         /// </summary>
         public void Run()
         {

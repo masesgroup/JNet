@@ -42,8 +42,11 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#open() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#open()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.Pipe"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.Pipe Open()
         {
             return SExecute<Java.Nio.Channels.Pipe>("open");
@@ -53,15 +56,19 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#sink()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#sink()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.Pipe.SinkChannel"/></returns>
         public Java.Nio.Channels.Pipe.SinkChannel Sink()
         {
             return IExecute<Java.Nio.Channels.Pipe.SinkChannel>("sink");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#source()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html#source()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.Pipe.SourceChannel"/></returns>
         public Java.Nio.Channels.Pipe.SourceChannel Source()
         {
             return IExecute<Java.Nio.Channels.Pipe.SourceChannel>("source");
@@ -78,7 +85,13 @@ namespace Java.Nio.Channels
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Nio.Channels.Pipe.SinkChannel"/> to <see cref="Java.Nio.Channels.WritableByteChannel"/>
+            /// </summary>
             public static implicit operator Java.Nio.Channels.WritableByteChannel(Java.Nio.Channels.Pipe.SinkChannel t) => t.Cast<Java.Nio.Channels.WritableByteChannel>();
+            /// <summary>
+            /// Converter from <see cref="Java.Nio.Channels.Pipe.SinkChannel"/> to <see cref="Java.Nio.Channels.GatheringByteChannel"/>
+            /// </summary>
             public static implicit operator Java.Nio.Channels.GatheringByteChannel(Java.Nio.Channels.Pipe.SinkChannel t) => t.Cast<Java.Nio.Channels.GatheringByteChannel>();
             
             #endregion
@@ -107,7 +120,13 @@ namespace Java.Nio.Channels
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Nio.Channels.Pipe.SourceChannel"/> to <see cref="Java.Nio.Channels.ReadableByteChannel"/>
+            /// </summary>
             public static implicit operator Java.Nio.Channels.ReadableByteChannel(Java.Nio.Channels.Pipe.SourceChannel t) => t.Cast<Java.Nio.Channels.ReadableByteChannel>();
+            /// <summary>
+            /// Converter from <see cref="Java.Nio.Channels.Pipe.SourceChannel"/> to <see cref="Java.Nio.Channels.ScatteringByteChannel"/>
+            /// </summary>
             public static implicit operator Java.Nio.Channels.ScatteringByteChannel(Java.Nio.Channels.Pipe.SourceChannel t) => t.Cast<Java.Nio.Channels.ScatteringByteChannel>();
             
             #endregion

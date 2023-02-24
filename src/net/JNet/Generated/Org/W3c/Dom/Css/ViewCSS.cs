@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Css
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Css.ViewCSS"/> to <see cref="Org.W3c.Dom.Views.AbstractView"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Views.AbstractView(Org.W3c.Dom.Css.ViewCSS t) => t.Cast<Org.W3c.Dom.Views.AbstractView>();
         
         #endregion
@@ -47,8 +50,11 @@ namespace Org.W3c.Dom.Css
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/ViewCSS.html#getComputedStyle(org.w3c.dom.Element,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/ViewCSS.html#getComputedStyle(org.w3c.dom.Element,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Element"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Css.CSSStyleDeclaration"/></returns>
         public Org.W3c.Dom.Css.CSSStyleDeclaration GetComputedStyle(Org.W3c.Dom.Element arg0, string arg1)
         {
             return IExecute<Org.W3c.Dom.Css.CSSStyleDeclaration>("getComputedStyle", arg0, arg1);

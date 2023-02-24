@@ -46,71 +46,93 @@ namespace Org.Xml.Sax
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getContentHandler() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setContentHandler(org.xml.sax.ContentHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getContentHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setContentHandler(org.xml.sax.ContentHandler)"/>
         /// </summary>
         public Org.Xml.Sax.ContentHandler ContentHandler
         {
             get { return IExecute<Org.Xml.Sax.ContentHandler>("getContentHandler"); } set { IExecute("setContentHandler", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getDTDHandler() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setDTDHandler(org.xml.sax.DTDHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getDTDHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
         /// </summary>
         public Org.Xml.Sax.DTDHandler DTDHandler
         {
             get { return IExecute<Org.Xml.Sax.DTDHandler>("getDTDHandler"); } set { IExecute("setDTDHandler", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getEntityResolver() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setEntityResolver(org.xml.sax.EntityResolver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getEntityResolver()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
         /// </summary>
         public Org.Xml.Sax.EntityResolver EntityResolver
         {
             get { return IExecute<Org.Xml.Sax.EntityResolver>("getEntityResolver"); } set { IExecute("setEntityResolver", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getErrorHandler() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setErrorHandler(org.xml.sax.ErrorHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getErrorHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
         public Org.Xml.Sax.ErrorHandler ErrorHandler
         {
             get { return IExecute<Org.Xml.Sax.ErrorHandler>("getErrorHandler"); } set { IExecute("setErrorHandler", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getFeature(java.lang.String) throws org.xml.sax.SAXNotRecognizedException,org.xml.sax.SAXNotSupportedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getFeature(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
+        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public bool GetFeature(string arg0)
         {
             return IExecute<bool>("getFeature", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getProperty(java.lang.String) throws org.xml.sax.SAXNotRecognizedException,org.xml.sax.SAXNotSupportedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#getProperty(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
+        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public object GetProperty(string arg0)
         {
             return IExecute("getProperty", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#parse(java.lang.String) throws java.io.IOException,org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#parse(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Parse(string arg0)
         {
             IExecute("parse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#parse(org.xml.sax.InputSource) throws java.io.IOException,org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Parse(Org.Xml.Sax.InputSource arg0)
         {
             IExecute("parse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setFeature(java.lang.String,boolean) throws org.xml.sax.SAXNotRecognizedException,org.xml.sax.SAXNotSupportedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
+        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetFeature(string arg0, bool arg1)
         {
             IExecute("setFeature", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setProperty(java.lang.String,java.lang.Object) throws org.xml.sax.SAXNotRecognizedException,org.xml.sax.SAXNotSupportedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
+        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetProperty(string arg0, object arg1)
         {
             IExecute("setProperty", arg0, arg1);

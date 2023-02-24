@@ -33,6 +33,9 @@ namespace Javax.Annotation.Processing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Annotation.Processing.SupportedSourceVersion"/> to <see cref="Java.Lang.Annotation.Annotation"/>
+        /// </summary>
         public static implicit operator Java.Lang.Annotation.Annotation(Javax.Annotation.Processing.SupportedSourceVersion t) => t.Cast<Java.Lang.Annotation.Annotation>();
         
         #endregion

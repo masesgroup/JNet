@@ -30,29 +30,45 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#<init>(java.lang.String,java.lang.Object,long,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#%3Cinit%3E(java.lang.String,java.lang.Object,long,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
         public Notification(string arg0, object arg1, long arg2, string arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#<init>(java.lang.String,java.lang.Object,long,long,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#%3Cinit%3E(java.lang.String,java.lang.Object,long,long,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg3"><see langword="long"/></param>
+        /// <param name="arg4"><see langword="string"/></param>
         public Notification(string arg0, object arg1, long arg2, long arg3, string arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#<init>(java.lang.String,java.lang.Object,long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#%3Cinit%3E(java.lang.String,java.lang.Object,long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg3"><see langword="long"/></param>
         public Notification(string arg0, object arg1, long arg2, long arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#<init>(java.lang.String,java.lang.Object,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#%3Cinit%3E(java.lang.String,java.lang.Object,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
         public Notification(string arg0, object arg1, long arg2)
             : base(arg0, arg1, arg2)
         {
@@ -74,43 +90,44 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getMessage() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getMessage()"/> 
         /// </summary>
         public string Message
         {
             get { return IExecute<string>("getMessage"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getSequenceNumber() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#setSequenceNumber(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getSequenceNumber()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#setSequenceNumber(long)"/>
         /// </summary>
         public long SequenceNumber
         {
             get { return IExecute<long>("getSequenceNumber"); } set { IExecute("setSequenceNumber", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getTimeStamp() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#setTimeStamp(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getTimeStamp()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#setTimeStamp(long)"/>
         /// </summary>
         public long TimeStamp
         {
             get { return IExecute<long>("getTimeStamp"); } set { IExecute("setTimeStamp", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getUserData() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#setUserData(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#getUserData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#setUserData(java.lang.Object)"/>
         /// </summary>
         public object UserData
         {
             get { return IExecute("getUserData"); } set { IExecute("setUserData", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#setSource(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#setSource(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void SetSource(object arg0)
         {
             IExecute("setSource", arg0);

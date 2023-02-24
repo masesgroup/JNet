@@ -46,29 +46,32 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#getLoginTimeout() throws java.sql.SQLException https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#setLoginTimeout(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#getLoginTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#setLoginTimeout(int)"/>
         /// </summary>
         public int LoginTimeout
         {
             get { return IExecute<int>("getLoginTimeout"); } set { IExecute("setLoginTimeout", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#getLogWriter() throws java.sql.SQLException https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#setLogWriter(java.io.PrintWriter) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#getLogWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#setLogWriter(java.io.PrintWriter)"/>
         /// </summary>
         public Java.Io.PrintWriter LogWriter
         {
             get { return IExecute<Java.Io.PrintWriter>("getLogWriter"); } set { IExecute("setLogWriter", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#getParentLogger() throws java.sql.SQLFeatureNotSupportedException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#getParentLogger()"/> 
         /// </summary>
         public Java.Util.Logging.Logger ParentLogger
         {
             get { return IExecute<Java.Util.Logging.Logger>("getParentLogger"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#createShardingKeyBuilder() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#createShardingKeyBuilder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ShardingKeyBuilder CreateShardingKeyBuilder()
         {
             return IExecute<Java.Sql.ShardingKeyBuilder>("createShardingKeyBuilder");

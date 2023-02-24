@@ -30,8 +30,11 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LoggingPermission.html#<init>(java.lang.String,java.lang.String) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LoggingPermission.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public LoggingPermission(string arg0, string arg1)
             : base(arg0, arg1)
         {

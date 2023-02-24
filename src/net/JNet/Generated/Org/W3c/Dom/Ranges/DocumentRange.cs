@@ -46,8 +46,10 @@ namespace Org.W3c.Dom.Ranges
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/DocumentRange.html#createRange()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/DocumentRange.html#createRange()"/>
         /// </summary>
+        
+        /// <returns><see cref="Org.W3c.Dom.Ranges.Range"/></returns>
         public Org.W3c.Dom.Ranges.Range CreateRange()
         {
             return IExecute<Org.W3c.Dom.Ranges.Range>("createRange");

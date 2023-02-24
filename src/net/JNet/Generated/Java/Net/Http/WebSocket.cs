@@ -38,7 +38,7 @@ namespace Java.Net.Http
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#NORMAL_CLOSURE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#NORMAL_CLOSURE"/>
         /// </summary>
         public static int NORMAL_CLOSURE => Clazz.GetField<int>("NORMAL_CLOSURE");
         
@@ -50,36 +50,41 @@ namespace Java.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#getSubprotocol() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#getSubprotocol()"/> 
         /// </summary>
         public string Subprotocol
         {
             get { return IExecute<string>("getSubprotocol"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsInputClosed()
         {
             return IExecute<bool>("isInputClosed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isOutputClosed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isOutputClosed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsOutputClosed()
         {
             return IExecute<bool>("isOutputClosed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#abort()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#abort()"/>
         /// </summary>
         public void Abort()
         {
             IExecute("abort");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#request(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#request(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
         public void Request(long arg0)
         {
             IExecute("request", arg0);
@@ -109,22 +114,30 @@ namespace Java.Net.Http
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#connectTimeout(java.time.Duration)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#connectTimeout(java.time.Duration)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Time.Duration"/></param>
+            /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
             public Java.Net.Http.WebSocket.Builder ConnectTimeout(Java.Time.Duration arg0)
             {
                 return IExecute<Java.Net.Http.WebSocket.Builder>("connectTimeout", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#header(java.lang.String,java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#header(java.lang.String,java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="string"/></param>
+            /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
             public Java.Net.Http.WebSocket.Builder Header(string arg0, string arg1)
             {
                 return IExecute<Java.Net.Http.WebSocket.Builder>("header", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#subprotocols(java.lang.String,java.lang.String...)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#subprotocols(java.lang.String,java.lang.String...)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
+            /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
             public Java.Net.Http.WebSocket.Builder Subprotocols(string arg0, params string[] arg1)
             {
                 if (arg1.Length == 0) return IExecute<Java.Net.Http.WebSocket.Builder>("subprotocols", arg0); else return IExecute<Java.Net.Http.WebSocket.Builder>("subprotocols", arg0, arg1);

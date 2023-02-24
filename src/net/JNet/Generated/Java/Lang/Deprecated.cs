@@ -33,6 +33,9 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Deprecated"/> to <see cref="Java.Lang.Annotation.Annotation"/>
+        /// </summary>
         public static implicit operator Java.Lang.Annotation.Annotation(Java.Lang.Deprecated t) => t.Cast<Java.Lang.Annotation.Annotation>();
         
         #endregion
@@ -47,15 +50,19 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#forRemoval()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#forRemoval()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool ForRemoval()
         {
             return IExecute<bool>("forRemoval");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Since()
         {
             return IExecute<string>("since");

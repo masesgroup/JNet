@@ -38,35 +38,35 @@ namespace Java.Awt.ImageNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#ABORT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#ABORT"/>
         /// </summary>
         public static int ABORT => Clazz.GetField<int>("ABORT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#ALLBITS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#ALLBITS"/>
         /// </summary>
         public static int ALLBITS => Clazz.GetField<int>("ALLBITS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#ERROR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#ERROR"/>
         /// </summary>
         public static int ERROR => Clazz.GetField<int>("ERROR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#FRAMEBITS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#FRAMEBITS"/>
         /// </summary>
         public static int FRAMEBITS => Clazz.GetField<int>("FRAMEBITS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#HEIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#HEIGHT"/>
         /// </summary>
         public static int HEIGHT => Clazz.GetField<int>("HEIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#PROPERTIES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#PROPERTIES"/>
         /// </summary>
         public static int PROPERTIES => Clazz.GetField<int>("PROPERTIES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#SOMEBITS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#SOMEBITS"/>
         /// </summary>
         public static int SOMEBITS => Clazz.GetField<int>("SOMEBITS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#WIDTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#WIDTH"/>
         /// </summary>
         public static int WIDTH => Clazz.GetField<int>("WIDTH");
         
@@ -78,8 +78,15 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#imageUpdate(java.awt.Image,int,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#imageUpdate(java.awt.Image,int,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ImageUpdate(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
             return IExecute<bool>("imageUpdate", arg0, arg1, arg2, arg3, arg4, arg5);

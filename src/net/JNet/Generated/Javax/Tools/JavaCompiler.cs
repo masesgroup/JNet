@@ -33,7 +33,13 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Tools.JavaCompiler"/> to <see cref="Javax.Tools.Tool"/>
+        /// </summary>
         public static implicit operator Javax.Tools.Tool(Javax.Tools.JavaCompiler t) => t.Cast<Javax.Tools.Tool>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Tools.JavaCompiler"/> to <see cref="Javax.Tools.OptionChecker"/>
+        /// </summary>
         public static implicit operator Javax.Tools.OptionChecker(Javax.Tools.JavaCompiler t) => t.Cast<Javax.Tools.OptionChecker>();
         
         #endregion
@@ -72,15 +78,19 @@ namespace Javax.Tools
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#setLocale(java.util.Locale)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#setLocale(java.util.Locale)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
             public void SetLocale(Java.Util.Locale arg0)
             {
                 IExecute("setLocale", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#call() throws java.lang.Exception
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#call()"/>
             /// </summary>
+            
+            /// <returns><see langword="object"/></returns>
+            /// <exception cref="Java.Lang.Exception"/>
             public object Call()
             {
                 return IExecute("call");

@@ -30,8 +30,11 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#<init>(java.awt.Component,int,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#%3Cinit%3E(java.awt.Component,int,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
         public ContainerEvent(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2)
             : base(arg0, arg1, arg2)
         {
@@ -45,19 +48,19 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#COMPONENT_ADDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#COMPONENT_ADDED"/>
         /// </summary>
         public static int COMPONENT_ADDED => Clazz.GetField<int>("COMPONENT_ADDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#COMPONENT_REMOVED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#COMPONENT_REMOVED"/>
         /// </summary>
         public static int COMPONENT_REMOVED => Clazz.GetField<int>("COMPONENT_REMOVED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#CONTAINER_FIRST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#CONTAINER_FIRST"/>
         /// </summary>
         public static int CONTAINER_FIRST => Clazz.GetField<int>("CONTAINER_FIRST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#CONTAINER_LAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#CONTAINER_LAST"/>
         /// </summary>
         public static int CONTAINER_LAST => Clazz.GetField<int>("CONTAINER_LAST");
         
@@ -69,14 +72,14 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#getChild() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#getChild()"/> 
         /// </summary>
         public Java.Awt.Component Child
         {
             get { return IExecute<Java.Awt.Component>("getChild"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#getContainer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#getContainer()"/> 
         /// </summary>
         public Java.Awt.Container Container
         {

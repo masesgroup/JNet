@@ -46,14 +46,16 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDesktopIconUI.html#getInsets(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDesktopIconUI.html#getInsets(javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetInsets(Javax.Swing.JComponent arg0)
         {
             return IExecute<Java.Awt.Insets>("getInsets", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDesktopIconUI.html#deiconize()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDesktopIconUI.html#deiconize()"/>
         /// </summary>
         public void Deiconize()
         {

@@ -46,8 +46,10 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListResourceBundle.html#handleGetObject(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListResourceBundle.html#handleGetObject(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object HandleGetObject(string arg0)
         {
             return IExecute("handleGetObject", arg0);

@@ -33,7 +33,13 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.DefaultSingleSelectionModel"/> to <see cref="Javax.Swing.SingleSelectionModel"/>
+        /// </summary>
         public static implicit operator Javax.Swing.SingleSelectionModel(Javax.Swing.DefaultSingleSelectionModel t) => t.Cast<Javax.Swing.SingleSelectionModel>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.DefaultSingleSelectionModel"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.DefaultSingleSelectionModel t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -48,43 +54,47 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#getChangeListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#getChangeListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.ChangeListener[] ChangeListeners
         {
             get { return IExecuteArray<Javax.Swing.Event.ChangeListener>("getChangeListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#getSelectedIndex() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#setSelectedIndex(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#getSelectedIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#setSelectedIndex(int)"/>
         /// </summary>
         public int SelectedIndex
         {
             get { return IExecute<int>("getSelectedIndex"); } set { IExecute("setSelectedIndex", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#isSelected()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#isSelected()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSelected()
         {
             return IExecute<bool>("isSelected");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#addChangeListener(javax.swing.event.ChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecute("addChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#clearSelection()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#clearSelection()"/>
         /// </summary>
         public void ClearSelection()
         {
             IExecute("clearSelection");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#removeChangeListener(javax.swing.event.ChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecute("removeChangeListener", arg0);

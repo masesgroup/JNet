@@ -46,8 +46,11 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FilenameFilter.html#accept(java.io.File,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FilenameFilter.html#accept(java.io.File,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Accept(Java.Io.File arg0, string arg1)
         {
             return IExecute<bool>("accept", arg0, arg1);

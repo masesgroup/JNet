@@ -33,6 +33,9 @@ namespace Javax.Management.Relation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Relation.RelationType"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Relation.RelationType t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,15 +50,19 @@ namespace Javax.Management.Relation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRelationTypeName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRelationTypeName()"/> 
         /// </summary>
         public string RelationTypeName
         {
             get { return IExecute<string>("getRelationTypeName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRoleInfo(java.lang.String) throws java.lang.IllegalArgumentException,javax.management.relation.RoleInfoNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRoleInfo(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.Relation.RoleInfo"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Javax.Management.Relation.RoleInfoNotFoundException"/>
         public Javax.Management.Relation.RoleInfo GetRoleInfo(string arg0)
         {
             return IExecute<Javax.Management.Relation.RoleInfo>("getRoleInfo", arg0);

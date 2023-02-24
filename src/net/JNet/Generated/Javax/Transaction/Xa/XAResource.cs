@@ -38,47 +38,47 @@ namespace Javax.Transaction.Xa
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMENDRSCAN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMENDRSCAN"/>
         /// </summary>
         public static int TMENDRSCAN => Clazz.GetField<int>("TMENDRSCAN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMFAIL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMFAIL"/>
         /// </summary>
         public static int TMFAIL => Clazz.GetField<int>("TMFAIL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMJOIN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMJOIN"/>
         /// </summary>
         public static int TMJOIN => Clazz.GetField<int>("TMJOIN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMNOFLAGS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMNOFLAGS"/>
         /// </summary>
         public static int TMNOFLAGS => Clazz.GetField<int>("TMNOFLAGS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMONEPHASE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMONEPHASE"/>
         /// </summary>
         public static int TMONEPHASE => Clazz.GetField<int>("TMONEPHASE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMRESUME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMRESUME"/>
         /// </summary>
         public static int TMRESUME => Clazz.GetField<int>("TMRESUME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMSTARTRSCAN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMSTARTRSCAN"/>
         /// </summary>
         public static int TMSTARTRSCAN => Clazz.GetField<int>("TMSTARTRSCAN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMSUCCESS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMSUCCESS"/>
         /// </summary>
         public static int TMSUCCESS => Clazz.GetField<int>("TMSUCCESS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMSUSPEND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMSUSPEND"/>
         /// </summary>
         public static int TMSUSPEND => Clazz.GetField<int>("TMSUSPEND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#XA_OK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#XA_OK"/>
         /// </summary>
         public static int XA_OK => Clazz.GetField<int>("XA_OK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#XA_RDONLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#XA_RDONLY"/>
         /// </summary>
         public static int XA_RDONLY => Clazz.GetField<int>("XA_RDONLY");
         
@@ -90,71 +90,96 @@ namespace Javax.Transaction.Xa
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#getTransactionTimeout() throws javax.transaction.xa.XAException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#getTransactionTimeout()"/> 
         /// </summary>
         public int TransactionTimeout
         {
             get { return IExecute<int>("getTransactionTimeout"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#isSameRM(javax.transaction.xa.XAResource) throws javax.transaction.xa.XAException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#isSameRM(javax.transaction.xa.XAResource)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.XAResource"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public bool IsSameRM(Javax.Transaction.Xa.XAResource arg0)
         {
             return IExecute<bool>("isSameRM", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#setTransactionTimeout(int) throws javax.transaction.xa.XAException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#setTransactionTimeout(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public bool SetTransactionTimeout(int arg0)
         {
             return IExecute<bool>("setTransactionTimeout", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#prepare(javax.transaction.xa.Xid) throws javax.transaction.xa.XAException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#prepare(javax.transaction.xa.Xid)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public int Prepare(Javax.Transaction.Xa.Xid arg0)
         {
             return IExecute<int>("prepare", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#recover(int) throws javax.transaction.xa.XAException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#recover(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Transaction.Xa.Xid"/></returns>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public Javax.Transaction.Xa.Xid[] Recover(int arg0)
         {
             return IExecuteArray<Javax.Transaction.Xa.Xid>("recover", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#commit(javax.transaction.xa.Xid,boolean) throws javax.transaction.xa.XAException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#commit(javax.transaction.xa.Xid,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public void Commit(Javax.Transaction.Xa.Xid arg0, bool arg1)
         {
             IExecute("commit", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#end(javax.transaction.xa.Xid,int) throws javax.transaction.xa.XAException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#end(javax.transaction.xa.Xid,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public void End(Javax.Transaction.Xa.Xid arg0, int arg1)
         {
             IExecute("end", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#forget(javax.transaction.xa.Xid) throws javax.transaction.xa.XAException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#forget(javax.transaction.xa.Xid)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public void Forget(Javax.Transaction.Xa.Xid arg0)
         {
             IExecute("forget", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#rollback(javax.transaction.xa.Xid) throws javax.transaction.xa.XAException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#rollback(javax.transaction.xa.Xid)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public void Rollback(Javax.Transaction.Xa.Xid arg0)
         {
             IExecute("rollback", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#start(javax.transaction.xa.Xid,int) throws javax.transaction.xa.XAException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#start(javax.transaction.xa.Xid,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public void Start(Javax.Transaction.Xa.Xid arg0, int arg1)
         {
             IExecute("start", arg0, arg1);

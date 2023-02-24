@@ -33,6 +33,9 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.Attribute.GroupPrincipal"/> to <see cref="Java.Nio.File.Attribute.UserPrincipal"/>
+        /// </summary>
         public static implicit operator Java.Nio.File.Attribute.UserPrincipal(Java.Nio.File.Attribute.GroupPrincipal t) => t.Cast<Java.Nio.File.Attribute.UserPrincipal>();
         
         #endregion

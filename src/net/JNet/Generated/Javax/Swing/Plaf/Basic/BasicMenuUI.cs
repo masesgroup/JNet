@@ -54,8 +54,11 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#<init>(javax.swing.plaf.basic.BasicMenuUI,javax.swing.JMenu,javax.swing.plaf.basic.BasicMenuUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicMenuUI,javax.swing.JMenu,javax.swing.plaf.basic.BasicMenuUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicMenuUI"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.JMenu"/></param>
+            /// <param name="arg2"><see cref="Javax.Swing.Plaf.Basic.BasicMenuUI"/></param>
             public ChangeHandler(Javax.Swing.Plaf.Basic.BasicMenuUI arg0, Javax.Swing.JMenu arg1, Javax.Swing.Plaf.Basic.BasicMenuUI arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -64,25 +67,28 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicMenuUI.ChangeHandler"/> to <see cref="Javax.Swing.Event.ChangeListener"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicMenuUI.ChangeHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
             
             #endregion
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#isSelected
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#isSelected"/>
             /// </summary>
             public bool isSelected => Instance.GetField<bool>("isSelected");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#wasFocused
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#wasFocused"/>
             /// </summary>
             public Java.Awt.Component wasFocused => Instance.GetField<Java.Awt.Component>("wasFocused");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#menu
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#menu"/>
             /// </summary>
             public Javax.Swing.JMenu menu => Instance.GetField<Javax.Swing.JMenu>("menu");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#ui
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#ui"/>
             /// </summary>
             public Javax.Swing.Plaf.Basic.BasicMenuUI ui => Instance.GetField<Javax.Swing.Plaf.Basic.BasicMenuUI>("ui");
             
@@ -94,8 +100,9 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#stateChanged(javax.swing.event.ChangeEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#stateChanged(javax.swing.event.ChangeEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
             public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
             {
                 IExecute("stateChanged", arg0);

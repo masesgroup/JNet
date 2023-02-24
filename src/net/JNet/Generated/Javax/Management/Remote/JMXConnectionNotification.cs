@@ -30,8 +30,14 @@ namespace Javax.Management.Remote
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#<init>(java.lang.String,java.lang.Object,java.lang.String,long,java.lang.String,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#%3Cinit%3E(java.lang.String,java.lang.Object,java.lang.String,long,java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="long"/></param>
+        /// <param name="arg4"><see langword="string"/></param>
+        /// <param name="arg5"><see langword="object"/></param>
         public JMXConnectionNotification(string arg0, object arg1, string arg2, long arg3, string arg4, object arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -45,19 +51,19 @@ namespace Javax.Management.Remote
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#CLOSED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#CLOSED"/>
         /// </summary>
         public static string CLOSED => Clazz.GetField<string>("CLOSED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#FAILED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#FAILED"/>
         /// </summary>
         public static string FAILED => Clazz.GetField<string>("FAILED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#NOTIFS_LOST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#NOTIFS_LOST"/>
         /// </summary>
         public static string NOTIFS_LOST => Clazz.GetField<string>("NOTIFS_LOST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#OPENED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#OPENED"/>
         /// </summary>
         public static string OPENED => Clazz.GetField<string>("OPENED");
         
@@ -69,7 +75,7 @@ namespace Javax.Management.Remote
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#getConnectionId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#getConnectionId()"/> 
         /// </summary>
         public string ConnectionId
         {

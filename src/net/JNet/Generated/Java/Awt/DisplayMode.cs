@@ -30,8 +30,12 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#<init>(int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#%3Cinit%3E(int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public DisplayMode(int arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -45,11 +49,11 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#BIT_DEPTH_MULTI
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#BIT_DEPTH_MULTI"/>
         /// </summary>
         public static int BIT_DEPTH_MULTI => Clazz.GetField<int>("BIT_DEPTH_MULTI");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#REFRESH_RATE_UNKNOWN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#REFRESH_RATE_UNKNOWN"/>
         /// </summary>
         public static int REFRESH_RATE_UNKNOWN => Clazz.GetField<int>("REFRESH_RATE_UNKNOWN");
         
@@ -61,28 +65,28 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#getBitDepth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#getBitDepth()"/> 
         /// </summary>
         public int BitDepth
         {
             get { return IExecute<int>("getBitDepth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#getHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
             get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#getRefreshRate() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#getRefreshRate()"/> 
         /// </summary>
         public int RefreshRate
         {
             get { return IExecute<int>("getRefreshRate"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#getWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/DisplayMode.html#getWidth()"/> 
         /// </summary>
         public int Width
         {

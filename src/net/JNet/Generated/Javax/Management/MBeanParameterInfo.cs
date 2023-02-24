@@ -30,15 +30,22 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanParameterInfo.html#<init>(java.lang.String,java.lang.String,java.lang.String,javax.management.Descriptor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanParameterInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,javax.management.Descriptor)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see cref="Javax.Management.Descriptor"/></param>
         public MBeanParameterInfo(string arg0, string arg1, string arg2, Javax.Management.Descriptor arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanParameterInfo.html#<init>(java.lang.String,java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanParameterInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
         public MBeanParameterInfo(string arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
@@ -47,6 +54,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.MBeanParameterInfo"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Management.MBeanParameterInfo t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -61,7 +71,7 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanParameterInfo.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanParameterInfo.html#getType()"/> 
         /// </summary>
         public string Type
         {

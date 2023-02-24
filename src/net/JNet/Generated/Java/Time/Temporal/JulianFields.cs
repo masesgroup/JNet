@@ -38,15 +38,15 @@ namespace Java.Time.Temporal
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/JulianFields.html#JULIAN_DAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/JulianFields.html#JULIAN_DAY"/>
         /// </summary>
         public static Java.Time.Temporal.TemporalField JULIAN_DAY => Clazz.GetField<Java.Time.Temporal.TemporalField>("JULIAN_DAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/JulianFields.html#MODIFIED_JULIAN_DAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/JulianFields.html#MODIFIED_JULIAN_DAY"/>
         /// </summary>
         public static Java.Time.Temporal.TemporalField MODIFIED_JULIAN_DAY => Clazz.GetField<Java.Time.Temporal.TemporalField>("MODIFIED_JULIAN_DAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/JulianFields.html#RATA_DIE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/JulianFields.html#RATA_DIE"/>
         /// </summary>
         public static Java.Time.Temporal.TemporalField RATA_DIE => Clazz.GetField<Java.Time.Temporal.TemporalField>("RATA_DIE");
         

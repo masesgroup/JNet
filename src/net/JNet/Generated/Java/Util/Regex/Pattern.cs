@@ -33,45 +33,48 @@ namespace Java.Util.Regex
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Regex.Pattern"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Regex.Pattern t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#CANON_EQ
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#CANON_EQ"/>
         /// </summary>
         public static int CANON_EQ => Clazz.GetField<int>("CANON_EQ");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#CASE_INSENSITIVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#CASE_INSENSITIVE"/>
         /// </summary>
         public static int CASE_INSENSITIVE => Clazz.GetField<int>("CASE_INSENSITIVE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#COMMENTS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#COMMENTS"/>
         /// </summary>
         public static int COMMENTS => Clazz.GetField<int>("COMMENTS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#DOTALL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#DOTALL"/>
         /// </summary>
         public static int DOTALL => Clazz.GetField<int>("DOTALL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#LITERAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#LITERAL"/>
         /// </summary>
         public static int LITERAL => Clazz.GetField<int>("LITERAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#MULTILINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#MULTILINE"/>
         /// </summary>
         public static int MULTILINE => Clazz.GetField<int>("MULTILINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNICODE_CASE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNICODE_CASE"/>
         /// </summary>
         public static int UNICODE_CASE => Clazz.GetField<int>("UNICODE_CASE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNICODE_CHARACTER_CLASS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNICODE_CHARACTER_CLASS"/>
         /// </summary>
         public static int UNICODE_CHARACTER_CLASS => Clazz.GetField<int>("UNICODE_CHARACTER_CLASS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNIX_LINES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNIX_LINES"/>
         /// </summary>
         public static int UNIX_LINES => Clazz.GetField<int>("UNIX_LINES");
         
@@ -79,29 +82,39 @@ namespace Java.Util.Regex
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#matches(java.lang.String,java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#matches(java.lang.String,java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Matches(string arg0, Java.Lang.CharSequence arg1)
         {
             return SExecute<bool>("matches", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#quote(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#quote(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string Quote(string arg0)
         {
             return SExecute<string>("quote", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#compile(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#compile(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Util.Regex.Pattern"/></returns>
         public static Java.Util.Regex.Pattern Compile(string arg0, int arg1)
         {
             return SExecute<Java.Util.Regex.Pattern>("compile", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#compile(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#compile(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Util.Regex.Pattern"/></returns>
         public static Java.Util.Regex.Pattern Compile(string arg0)
         {
             return SExecute<Java.Util.Regex.Pattern>("compile", arg0);
@@ -111,36 +124,47 @@ namespace Java.Util.Regex
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#flags()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#flags()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Flags()
         {
             return IExecute<int>("flags");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#pattern()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#pattern()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string PatternMethod()
         {
             return IExecute<string>("pattern");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#split(java.lang.CharSequence,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#split(java.lang.CharSequence,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="string"/></returns>
         public string[] Split(Java.Lang.CharSequence arg0, int arg1)
         {
             return IExecuteArray<string>("split", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#split(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#split(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="string"/></returns>
         public string[] Split(Java.Lang.CharSequence arg0)
         {
             return IExecuteArray<string>("split", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#matcher(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#matcher(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher Matcher(Java.Lang.CharSequence arg0)
         {
             return IExecute<Java.Util.Regex.Matcher>("matcher", arg0);

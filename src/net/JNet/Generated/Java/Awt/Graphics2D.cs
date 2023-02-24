@@ -46,197 +46,243 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getBackground() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setBackground(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getBackground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setBackground(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color Background
         {
             get { return IExecute<Java.Awt.Color>("getBackground"); } set { IExecute("setBackground", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getComposite() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setComposite(java.awt.Composite)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getComposite()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setComposite(java.awt.Composite)"/>
         /// </summary>
         public Java.Awt.Composite Composite
         {
             get { return IExecute<Java.Awt.Composite>("getComposite"); } set { IExecute("setComposite", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getDeviceConfiguration() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getDeviceConfiguration()"/> 
         /// </summary>
         public Java.Awt.GraphicsConfiguration DeviceConfiguration
         {
             get { return IExecute<Java.Awt.GraphicsConfiguration>("getDeviceConfiguration"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getFontRenderContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getFontRenderContext()"/> 
         /// </summary>
         public Java.Awt.FontNs.FontRenderContext FontRenderContext
         {
             get { return IExecute<Java.Awt.FontNs.FontRenderContext>("getFontRenderContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getPaint() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setPaint(java.awt.Paint)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getPaint()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setPaint(java.awt.Paint)"/>
         /// </summary>
         public Java.Awt.Paint Paint
         {
             get { return IExecute<Java.Awt.Paint>("getPaint"); } set { IExecute("setPaint", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getRenderingHints() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setRenderingHints(java.util.Map<?, ?>)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getRenderingHints()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setRenderingHints(java.util.Map%3C?, ?%3E)"/>
         /// </summary>
         public Java.Awt.RenderingHints RenderingHints
         {
             get { return IExecute<Java.Awt.RenderingHints>("getRenderingHints"); } set { IExecute("setRenderingHints", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getStroke() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setStroke(java.awt.Stroke)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getStroke()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setStroke(java.awt.Stroke)"/>
         /// </summary>
         public Java.Awt.Stroke Stroke
         {
             get { return IExecute<Java.Awt.Stroke>("getStroke"); } set { IExecute("setStroke", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawImage(java.awt.Image,java.awt.geom.AffineTransform,java.awt.image.ImageObserver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawImage(java.awt.Image,java.awt.geom.AffineTransform,java.awt.image.ImageObserver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool DrawImage(Java.Awt.Image arg0, Java.Awt.Geom.AffineTransform arg1, Java.Awt.ImageNs.ImageObserver arg2)
         {
             return IExecute<bool>("drawImage", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#hit(java.awt.Rectangle,java.awt.Shape,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#hit(java.awt.Rectangle,java.awt.Shape,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Hit(Java.Awt.Rectangle arg0, Java.Awt.Shape arg1, bool arg2)
         {
             return IExecute<bool>("hit", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getTransform()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getTransform()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public Java.Awt.Geom.AffineTransform GetTransform()
         {
             return IExecute<Java.Awt.Geom.AffineTransform>("getTransform");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getRenderingHint(java.awt.RenderingHints$Key)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getRenderingHint(java.awt.RenderingHints$Key)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.RenderingHints.Key"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetRenderingHint(Java.Awt.RenderingHints.Key arg0)
         {
             return IExecute("getRenderingHint", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#clip(java.awt.Shape)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#clip(java.awt.Shape)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
         public void Clip(Java.Awt.Shape arg0)
         {
             IExecute("clip", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#draw(java.awt.Shape)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#draw(java.awt.Shape)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
         public void Draw(Java.Awt.Shape arg0)
         {
             IExecute("draw", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawGlyphVector(java.awt.font.GlyphVector,float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawGlyphVector(java.awt.font.GlyphVector,float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.GlyphVector"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
         public void DrawGlyphVector(Java.Awt.FontNs.GlyphVector arg0, float arg1, float arg2)
         {
             IExecute("drawGlyphVector", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawImage(java.awt.image.BufferedImage,java.awt.image.BufferedImageOp,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawImage(java.awt.image.BufferedImage,java.awt.image.BufferedImageOp,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.BufferedImageOp"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public void DrawImage(Java.Awt.ImageNs.BufferedImage arg0, Java.Awt.ImageNs.BufferedImageOp arg1, int arg2, int arg3)
         {
             IExecute("drawImage", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawRenderableImage(java.awt.image.renderable.RenderableImage,java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawRenderableImage(java.awt.image.renderable.RenderableImage,java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.RenderableImage"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void DrawRenderableImage(Java.Awt.ImageNs.Renderable.RenderableImage arg0, Java.Awt.Geom.AffineTransform arg1)
         {
             IExecute("drawRenderableImage", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawRenderedImage(java.awt.image.RenderedImage,java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawRenderedImage(java.awt.image.RenderedImage,java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void DrawRenderedImage(Java.Awt.ImageNs.RenderedImage arg0, Java.Awt.Geom.AffineTransform arg1)
         {
             IExecute("drawRenderedImage", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawString(java.lang.String,float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawString(java.lang.String,float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
         public void DrawString(string arg0, float arg1, float arg2)
         {
             IExecute("drawString", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawString(java.text.AttributedCharacterIterator,float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawString(java.text.AttributedCharacterIterator,float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
         public void DrawString(Java.Text.AttributedCharacterIterator arg0, float arg1, float arg2)
         {
             IExecute("drawString", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#fill(java.awt.Shape)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#fill(java.awt.Shape)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
         public void Fill(Java.Awt.Shape arg0)
         {
             IExecute("fill", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#rotate(double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#rotate(double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
         public void Rotate(double arg0, double arg1, double arg2)
         {
             IExecute("rotate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#rotate(double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#rotate(double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
         public void Rotate(double arg0)
         {
             IExecute("rotate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#scale(double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#scale(double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
         public void Scale(double arg0, double arg1)
         {
             IExecute("scale", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setRenderingHint(java.awt.RenderingHints$Key,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setRenderingHint(java.awt.RenderingHints$Key,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.RenderingHints.Key"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void SetRenderingHint(Java.Awt.RenderingHints.Key arg0, object arg1)
         {
             IExecute("setRenderingHint", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setTransform(java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setTransform(java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void SetTransform(Java.Awt.Geom.AffineTransform arg0)
         {
             IExecute("setTransform", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#shear(double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#shear(double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
         public void Shear(double arg0, double arg1)
         {
             IExecute("shear", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#transform(java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#transform(java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void Transform(Java.Awt.Geom.AffineTransform arg0)
         {
             IExecute("transform", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#translate(double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#translate(double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
         public void Translate(double arg0, double arg1)
         {
             IExecute("translate", arg0, arg1);

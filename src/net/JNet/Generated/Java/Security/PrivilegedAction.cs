@@ -46,8 +46,10 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Run()
         {
             return IExecute("run");

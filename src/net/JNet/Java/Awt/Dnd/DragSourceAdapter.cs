@@ -21,18 +21,34 @@ using System;
 
 namespace Java.Awt.Dnd
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html"/>
+    /// </summary>
     public interface IDragSourceAdapter : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragEnter(java.awt.dnd.DragSourceDragEvent)"/>
+        /// </summary>
         void DragEnter(DragSourceDragEvent dtde);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragOver(java.awt.dnd.DragSourceDragEvent)"/>
+        /// </summary>
         void DragOver(DragSourceDragEvent dtde);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dropActionChanged(java.awt.dnd.DragSourceDragEvent)"/>
+        /// </summary>
         void DropActionChanged(DragSourceDragEvent dtde);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragExit(java.awt.dnd.DragSourceEvent)"/>
+        /// </summary>
         void DragExit(DragSourceEvent dte);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragDropEnd(java.awt.dnd.DragSourceDropEvent)"/>
+        /// </summary>
         void DragDropEnd(DragSourceDropEvent dsde);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent)"/>
+        /// </summary>
         void DragMouseMoved(DragSourceDragEvent dsde);
     }
 
@@ -42,7 +58,7 @@ namespace Java.Awt.Dnd
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class DragSourceAdapter : IDragSourceAdapter
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.awt.dnd.JNetDragSourceAdapter";
 
         readonly Action<DragSourceDragEvent> DragEnterFunction = null;
@@ -146,32 +162,32 @@ namespace Java.Awt.Dnd
         {
             OnDragMouseMoved(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IDragSourceAdapter.DragEnter(DragSourceDragEvent)"/>
         public virtual void DragEnter(DragSourceDragEvent dtde)
         {
 
         }
-
+        /// <inheritdoc cref="IDragSourceAdapter.DragOver(DragSourceDragEvent)"/>
         public virtual void DragOver(DragSourceDragEvent dtde)
         {
 
         }
-
+        /// <inheritdoc cref="IDragSourceAdapter.DropActionChanged(DragSourceDragEvent)"/>
         public virtual void DropActionChanged(DragSourceDragEvent dtde)
         {
 
         }
-
+        /// <inheritdoc cref="IDragSourceAdapter.DragExit(DragSourceEvent)"/>
         public virtual void DragExit(DragSourceEvent dte)
         {
 
         }
-
+        /// <inheritdoc cref="IDragSourceAdapter.DragDropEnd(DragSourceDropEvent)"/>
         public virtual void DragDropEnd(DragSourceDropEvent dsde)
         {
 
         }
-
+        /// <inheritdoc cref="IDragSourceAdapter.DragMouseMoved(DragSourceDragEvent)"/>
         public virtual void DragMouseMoved(DragSourceDragEvent dsde)
         {
 

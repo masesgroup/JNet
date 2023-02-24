@@ -46,8 +46,9 @@ namespace Javax.Swing.Plaf.Metal
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalScrollPaneUI.html#installListeners(javax.swing.JScrollPane)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalScrollPaneUI.html#installListeners(javax.swing.JScrollPane)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JScrollPane"/></param>
         public void InstallListeners(Javax.Swing.JScrollPane arg0)
         {
             IExecute("installListeners", arg0);

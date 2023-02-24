@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Html
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Html.HTMLMetaElement"/> to <see cref="Org.W3c.Dom.Html.HTMLElement"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Html.HTMLElement(Org.W3c.Dom.Html.HTMLMetaElement t) => t.Cast<Org.W3c.Dom.Html.HTMLElement>();
         
         #endregion
@@ -47,28 +50,28 @@ namespace Org.W3c.Dom.Html
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#getContent() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#setContent(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#getContent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#setContent(java.lang.String)"/>
         /// </summary>
         public string Content
         {
             get { return IExecute<string>("getContent"); } set { IExecute("setContent", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#getHttpEquiv() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#setHttpEquiv(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#getHttpEquiv()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#setHttpEquiv(java.lang.String)"/>
         /// </summary>
         public string HttpEquiv
         {
             get { return IExecute<string>("getHttpEquiv"); } set { IExecute("setHttpEquiv", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#getName() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#setName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#setName(java.lang.String)"/>
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#getScheme() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#setScheme(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#getScheme()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMetaElement.html#setScheme(java.lang.String)"/>
         /// </summary>
         public string Scheme
         {

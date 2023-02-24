@@ -38,15 +38,15 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#TAG_INTEROPERABILITY_INDEX
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#TAG_INTEROPERABILITY_INDEX"/>
         /// </summary>
         public static int TAG_INTEROPERABILITY_INDEX => Clazz.GetField<int>("TAG_INTEROPERABILITY_INDEX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#INTEROPERABILITY_INDEX_R98
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#INTEROPERABILITY_INDEX_R98"/>
         /// </summary>
         public static string INTEROPERABILITY_INDEX_R98 => Clazz.GetField<string>("INTEROPERABILITY_INDEX_R98");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#INTEROPERABILITY_INDEX_THM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#INTEROPERABILITY_INDEX_THM"/>
         /// </summary>
         public static string INTEROPERABILITY_INDEX_THM => Clazz.GetField<string>("INTEROPERABILITY_INDEX_THM");
         
@@ -54,8 +54,10 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#getInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#getInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.ExifInteroperabilityTagSet"/></returns>
         public static Javax.Imageio.Plugins.Tiff.ExifInteroperabilityTagSet GetInstance()
         {
             return SExecute<Javax.Imageio.Plugins.Tiff.ExifInteroperabilityTagSet>("getInstance");

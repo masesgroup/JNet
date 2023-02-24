@@ -30,8 +30,10 @@ namespace Javax.Security.Sasl
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#<init>(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public AuthorizeCallback(string arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -40,7 +42,13 @@ namespace Javax.Security.Sasl
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Sasl.AuthorizeCallback"/> to <see cref="Javax.Security.Auth.Callback.Callback"/>
+        /// </summary>
         public static implicit operator Javax.Security.Auth.Callback.Callback(Javax.Security.Sasl.AuthorizeCallback t) => t.Cast<Javax.Security.Auth.Callback.Callback>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Sasl.AuthorizeCallback"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Sasl.AuthorizeCallback t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -55,36 +63,39 @@ namespace Javax.Security.Sasl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#getAuthenticationID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#getAuthenticationID()"/> 
         /// </summary>
         public string AuthenticationID
         {
             get { return IExecute<string>("getAuthenticationID"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#getAuthorizationID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#getAuthorizationID()"/> 
         /// </summary>
         public string AuthorizationID
         {
             get { return IExecute<string>("getAuthorizationID"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#getAuthorizedID() https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#setAuthorizedID(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#getAuthorizedID()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#setAuthorizedID(java.lang.String)"/>
         /// </summary>
         public string AuthorizedID
         {
             get { return IExecute<string>("getAuthorizedID"); } set { IExecute("setAuthorizedID", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#isAuthorized()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#isAuthorized()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAuthorized()
         {
             return IExecute<bool>("isAuthorized");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#setAuthorized(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#setAuthorized(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetAuthorized(bool arg0)
         {
             IExecute("setAuthorized", arg0);

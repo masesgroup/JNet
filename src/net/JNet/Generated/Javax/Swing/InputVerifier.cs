@@ -46,22 +46,29 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputVerifier.html#verify(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputVerifier.html#verify(javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Verify(Javax.Swing.JComponent arg0)
         {
             return IExecute<bool>("verify", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputVerifier.html#shouldYieldFocus(javax.swing.JComponent,javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputVerifier.html#shouldYieldFocus(javax.swing.JComponent,javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ShouldYieldFocus(Javax.Swing.JComponent arg0, Javax.Swing.JComponent arg1)
         {
             return IExecute<bool>("shouldYieldFocus", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputVerifier.html#verifyTarget(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputVerifier.html#verifyTarget(javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool VerifyTarget(Javax.Swing.JComponent arg0)
         {
             return IExecute<bool>("verifyTarget", arg0);

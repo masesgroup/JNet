@@ -30,22 +30,28 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#<init>(java.lang.String,java.lang.String,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#%3Cinit%3E(java.lang.String,java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public StringTokenizer(string arg0, string arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#<init>(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public StringTokenizer(string arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public StringTokenizer(string arg0)
             : base(arg0)
         {
@@ -67,43 +73,55 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#hasMoreElements()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#hasMoreElements()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasMoreElements()
         {
             return IExecute<bool>("hasMoreElements");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#hasMoreTokens()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#hasMoreTokens()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasMoreTokens()
         {
             return IExecute<bool>("hasMoreTokens");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#countTokens()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#countTokens()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int CountTokens()
         {
             return IExecute<int>("countTokens");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextElement()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextElement()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object NextElement()
         {
             return IExecute("nextElement");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextToken()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextToken()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string NextToken()
         {
             return IExecute<string>("nextToken");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextToken(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html#nextToken(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string NextToken(string arg0)
         {
             return IExecute<string>("nextToken", arg0);

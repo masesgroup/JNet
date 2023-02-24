@@ -46,43 +46,51 @@ namespace Java.Awt.FontNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getDesignAxisDefaults() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getDesignAxisDefaults()"/> 
         /// </summary>
         public float[] DesignAxisDefaults
         {
             get { return IExecuteArray<float>("getDesignAxisDefaults"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getDesignAxisNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getDesignAxisNames()"/> 
         /// </summary>
         public string[] DesignAxisNames
         {
             get { return IExecuteArray<string>("getDesignAxisNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getDesignAxisRanges() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getDesignAxisRanges()"/> 
         /// </summary>
         public float[] DesignAxisRanges
         {
             get { return IExecuteArray<float>("getDesignAxisRanges"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getNumDesignAxes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#getNumDesignAxes()"/> 
         /// </summary>
         public int NumDesignAxes
         {
             get { return IExecute<int>("getNumDesignAxes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#deriveMMFont(float[],float,float,float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#deriveMMFont(float[],float,float,float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg4"><see langword="float"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveMMFont(float[] arg0, float arg1, float arg2, float arg3, float arg4)
         {
             return IExecute<Java.Awt.Font>("deriveMMFont", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#deriveMMFont(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#deriveMMFont(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveMMFont(float[] arg0)
         {
             return IExecute<Java.Awt.Font>("deriveMMFont", arg0);

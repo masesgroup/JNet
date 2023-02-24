@@ -46,28 +46,32 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#avoidingGui()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#avoidingGui()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool AvoidingGui()
         {
             return IExecute<bool>("avoidingGui");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#needsGui()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#needsGui()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool NeedsGui()
         {
             return IExecute<bool>("needsGui");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#dontUseGui()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#dontUseGui()"/>
         /// </summary>
         public void DontUseGui()
         {
             IExecute("dontUseGui");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#okToUseGui()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#okToUseGui()"/>
         /// </summary>
         public void OkToUseGui()
         {

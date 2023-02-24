@@ -30,15 +30,21 @@ namespace Javax.Swing.Text.Html
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLWriter.html#<init>(java.io.Writer,javax.swing.text.html.HTMLDocument,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLWriter.html#%3Cinit%3E(java.io.Writer,javax.swing.text.html.HTMLDocument,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.HTMLDocument"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public HTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.Html.HTMLDocument arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLWriter.html#<init>(java.io.Writer,javax.swing.text.html.HTMLDocument)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLWriter.html#%3Cinit%3E(java.io.Writer,javax.swing.text.html.HTMLDocument)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.HTMLDocument"/></param>
         public HTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.Html.HTMLDocument arg1)
             : base(arg0, arg1)
         {
@@ -60,8 +66,11 @@ namespace Javax.Swing.Text.Html
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLWriter.html#write() throws java.io.IOException,javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLWriter.html#write()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Write()
         {
             IExecute("write");

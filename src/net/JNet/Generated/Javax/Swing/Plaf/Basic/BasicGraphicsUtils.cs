@@ -42,99 +42,173 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getEtchedInsets() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getEtchedInsets()"/> 
         /// </summary>
         public static Java.Awt.Insets EtchedInsets
         {
             get { return SExecute<Java.Awt.Insets>("getEtchedInsets"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getGrooveInsets() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getGrooveInsets()"/> 
         /// </summary>
         public static Java.Awt.Insets GrooveInsets
         {
             get { return SExecute<Java.Awt.Insets>("getGrooveInsets"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getStringWidth(javax.swing.JComponent,java.awt.FontMetrics,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getStringWidth(javax.swing.JComponent,java.awt.FontMetrics,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontMetrics"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <returns><see langword="float"/></returns>
         public static float GetStringWidth(Javax.Swing.JComponent arg0, Java.Awt.FontMetrics arg1, string arg2)
         {
             return SExecute<float>("getStringWidth", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getPreferredButtonSize(javax.swing.AbstractButton,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getPreferredButtonSize(javax.swing.AbstractButton,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.AbstractButton"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public static Java.Awt.Dimension GetPreferredButtonSize(Javax.Swing.AbstractButton arg0, int arg1)
         {
             return SExecute<Java.Awt.Dimension>("getPreferredButtonSize", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getClippedString(javax.swing.JComponent,java.awt.FontMetrics,java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#getClippedString(javax.swing.JComponent,java.awt.FontMetrics,java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontMetrics"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string GetClippedString(Javax.Swing.JComponent arg0, Java.Awt.FontMetrics arg1, string arg2, int arg3)
         {
             return SExecute<string>("getClippedString", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawBezel(java.awt.Graphics,int,int,int,int,boolean,boolean,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawBezel(java.awt.Graphics,int,int,int,int,boolean,boolean,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="bool"/></param>
+        /// <param name="arg6"><see langword="bool"/></param>
+        /// <param name="arg7"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg8"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg9"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg10"><see cref="Java.Awt.Color"/></param>
         public static void DrawBezel(Java.Awt.Graphics arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, bool arg6, Java.Awt.Color arg7, Java.Awt.Color arg8, Java.Awt.Color arg9, Java.Awt.Color arg10)
         {
             SExecute("drawBezel", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawDashedRect(java.awt.Graphics,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawDashedRect(java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public static void DrawDashedRect(Java.Awt.Graphics arg0, int arg1, int arg2, int arg3, int arg4)
         {
             SExecute("drawDashedRect", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawEtchedRect(java.awt.Graphics,int,int,int,int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawEtchedRect(java.awt.Graphics,int,int,int,int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg6"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg7"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg8"><see cref="Java.Awt.Color"/></param>
         public static void DrawEtchedRect(Java.Awt.Graphics arg0, int arg1, int arg2, int arg3, int arg4, Java.Awt.Color arg5, Java.Awt.Color arg6, Java.Awt.Color arg7, Java.Awt.Color arg8)
         {
             SExecute("drawEtchedRect", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawGroove(java.awt.Graphics,int,int,int,int,java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawGroove(java.awt.Graphics,int,int,int,int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg6"><see cref="Java.Awt.Color"/></param>
         public static void DrawGroove(Java.Awt.Graphics arg0, int arg1, int arg2, int arg3, int arg4, Java.Awt.Color arg5, Java.Awt.Color arg6)
         {
             SExecute("drawGroove", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawLoweredBezel(java.awt.Graphics,int,int,int,int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawLoweredBezel(java.awt.Graphics,int,int,int,int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg6"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg7"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg8"><see cref="Java.Awt.Color"/></param>
         public static void DrawLoweredBezel(Java.Awt.Graphics arg0, int arg1, int arg2, int arg3, int arg4, Java.Awt.Color arg5, Java.Awt.Color arg6, Java.Awt.Color arg7, Java.Awt.Color arg8)
         {
             SExecute("drawLoweredBezel", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawString(java.awt.Graphics,java.lang.String,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawString(java.awt.Graphics,java.lang.String,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public static void DrawString(Java.Awt.Graphics arg0, string arg1, int arg2, int arg3, int arg4)
         {
             SExecute("drawString", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawString(javax.swing.JComponent,java.awt.Graphics2D,java.lang.String,float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawString(javax.swing.JComponent,java.awt.Graphics2D,java.lang.String,float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Graphics2D"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg4"><see langword="float"/></param>
         public static void DrawString(Javax.Swing.JComponent arg0, Java.Awt.Graphics2D arg1, string arg2, float arg3, float arg4)
         {
             SExecute("drawString", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawStringUnderlineCharAt(java.awt.Graphics,java.lang.String,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawStringUnderlineCharAt(java.awt.Graphics,java.lang.String,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public static void DrawStringUnderlineCharAt(Java.Awt.Graphics arg0, string arg1, int arg2, int arg3, int arg4)
         {
             SExecute("drawStringUnderlineCharAt", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawStringUnderlineCharAt(javax.swing.JComponent,java.awt.Graphics2D,java.lang.String,int,float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicGraphicsUtils.html#drawStringUnderlineCharAt(javax.swing.JComponent,java.awt.Graphics2D,java.lang.String,int,float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Graphics2D"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="float"/></param>
+        /// <param name="arg5"><see langword="float"/></param>
         public static void DrawStringUnderlineCharAt(Javax.Swing.JComponent arg0, Java.Awt.Graphics2D arg1, string arg2, int arg3, float arg4, float arg5)
         {
             SExecute("drawStringUnderlineCharAt", arg0, arg1, arg2, arg3, arg4, arg5);

@@ -30,29 +30,54 @@ namespace Javax.Management.Relation
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#<init>(java.lang.String,java.lang.String,boolean,boolean,int,int,java.lang.String) throws java.lang.IllegalArgumentException,javax.management.relation.InvalidRoleInfoException,java.lang.ClassNotFoundException,javax.management.NotCompliantMBeanException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,boolean,boolean,int,int,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg6"><see langword="string"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Javax.Management.Relation.InvalidRoleInfoException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         public RoleInfo(string arg0, string arg1, bool arg2, bool arg3, int arg4, int arg5, string arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#<init>(java.lang.String,java.lang.String,boolean,boolean) throws java.lang.IllegalArgumentException,java.lang.ClassNotFoundException,javax.management.NotCompliantMBeanException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         public RoleInfo(string arg0, string arg1, bool arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#<init>(java.lang.String,java.lang.String) throws java.lang.IllegalArgumentException,java.lang.ClassNotFoundException,javax.management.NotCompliantMBeanException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         public RoleInfo(string arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#<init>(javax.management.relation.RoleInfo) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#%3Cinit%3E(javax.management.relation.RoleInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Relation.RoleInfo"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public RoleInfo(Javax.Management.Relation.RoleInfo arg0)
             : base(arg0)
         {
@@ -61,13 +86,16 @@ namespace Javax.Management.Relation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Relation.RoleInfo"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Relation.RoleInfo t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#ROLE_CARDINALITY_INFINITY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#ROLE_CARDINALITY_INFINITY"/>
         /// </summary>
         public static int ROLE_CARDINALITY_INFINITY => Clazz.GetField<int>("ROLE_CARDINALITY_INFINITY");
         
@@ -79,64 +107,72 @@ namespace Javax.Management.Relation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getDescription() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getDescription()"/> 
         /// </summary>
         public string Description
         {
             get { return IExecute<string>("getDescription"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getMaxDegree() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getMaxDegree()"/> 
         /// </summary>
         public int MaxDegree
         {
             get { return IExecute<int>("getMaxDegree"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getMinDegree() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getMinDegree()"/> 
         /// </summary>
         public int MinDegree
         {
             get { return IExecute<int>("getMinDegree"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getRefMBeanClassName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#getRefMBeanClassName()"/> 
         /// </summary>
         public string RefMBeanClassName
         {
             get { return IExecute<string>("getRefMBeanClassName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#checkMaxDegree(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#checkMaxDegree(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CheckMaxDegree(int arg0)
         {
             return IExecute<bool>("checkMaxDegree", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#checkMinDegree(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#checkMinDegree(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CheckMinDegree(int arg0)
         {
             return IExecute<bool>("checkMinDegree", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isReadable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isReadable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsReadable()
         {
             return IExecute<bool>("isReadable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isWritable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#isWritable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsWritable()
         {
             return IExecute<bool>("isWritable");

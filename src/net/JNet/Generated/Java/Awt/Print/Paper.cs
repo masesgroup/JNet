@@ -33,6 +33,9 @@ namespace Java.Awt.Print
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Print.Paper"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Print.Paper t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -47,57 +50,63 @@ namespace Java.Awt.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getHeight()"/> 
         /// </summary>
         public double Height
         {
             get { return IExecute<double>("getHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getImageableHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getImageableHeight()"/> 
         /// </summary>
         public double ImageableHeight
         {
             get { return IExecute<double>("getImageableHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getImageableWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getImageableWidth()"/> 
         /// </summary>
         public double ImageableWidth
         {
             get { return IExecute<double>("getImageableWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getImageableX() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getImageableX()"/> 
         /// </summary>
         public double ImageableX
         {
             get { return IExecute<double>("getImageableX"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getImageableY() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getImageableY()"/> 
         /// </summary>
         public double ImageableY
         {
             get { return IExecute<double>("getImageableY"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#getWidth()"/> 
         /// </summary>
         public double Width
         {
             get { return IExecute<double>("getWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#setImageableArea(double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#setImageableArea(double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
         public void SetImageableArea(double arg0, double arg1, double arg2, double arg3)
         {
             IExecute("setImageableArea", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#setSize(double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#setSize(double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
         public void SetSize(double arg0, double arg1)
         {
             IExecute("setSize", arg0, arg1);

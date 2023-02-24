@@ -46,21 +46,26 @@ namespace Java.Awt.Dnd.Peer
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#getCursor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#setCursor(java.awt.Cursor) throws java.awt.dnd.InvalidDnDOperationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#getCursor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#setCursor(java.awt.Cursor)"/>
         /// </summary>
         public Java.Awt.Cursor Cursor
         {
             get { return IExecute<Java.Awt.Cursor>("getCursor"); } set { IExecute("setCursor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#startDrag(java.awt.dnd.DragSourceContext,java.awt.Cursor,java.awt.Image,java.awt.Point) throws java.awt.dnd.InvalidDnDOperationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#startDrag(java.awt.dnd.DragSourceContext,java.awt.Cursor,java.awt.Image,java.awt.Point)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Cursor"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Point"/></param>
+        /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
         public void StartDrag(Java.Awt.Dnd.DragSourceContext arg0, Java.Awt.Cursor arg1, Java.Awt.Image arg2, Java.Awt.Point arg3)
         {
             IExecute("startDrag", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#transferablesFlavorsChanged()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#transferablesFlavorsChanged()"/>
         /// </summary>
         public void TransferablesFlavorsChanged()
         {

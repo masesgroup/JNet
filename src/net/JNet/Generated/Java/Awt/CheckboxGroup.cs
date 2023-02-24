@@ -33,6 +33,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.CheckboxGroup"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.CheckboxGroup t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CheckboxGroup.html#getSelectedCheckbox() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CheckboxGroup.html#setSelectedCheckbox(java.awt.Checkbox)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CheckboxGroup.html#getSelectedCheckbox()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CheckboxGroup.html#setSelectedCheckbox(java.awt.Checkbox)"/>
         /// </summary>
         public Java.Awt.Checkbox SelectedCheckbox
         {

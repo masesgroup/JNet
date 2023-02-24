@@ -30,8 +30,9 @@ namespace Javax.Management.Remote.Rmi
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl_Stub.html#<init>(java.rmi.server.RemoteRef)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl_Stub.html#%3Cinit%3E(java.rmi.server.RemoteRef)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteRef"/></param>
         public RMIServerImpl_Stub(Java.Rmi.Server.RemoteRef arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Management.Remote.Rmi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIServerImpl_Stub"/> to <see cref="Javax.Management.Remote.Rmi.RMIServer"/>
+        /// </summary>
         public static implicit operator Javax.Management.Remote.Rmi.RMIServer(Javax.Management.Remote.Rmi.RMIServerImpl_Stub t) => t.Cast<Javax.Management.Remote.Rmi.RMIServer>();
         
         #endregion
@@ -54,15 +58,18 @@ namespace Javax.Management.Remote.Rmi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl_Stub.html#getVersion() throws java.rmi.RemoteException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl_Stub.html#getVersion()"/> 
         /// </summary>
         public string Version
         {
             get { return IExecute<string>("getVersion"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl_Stub.html#newClient(java.lang.Object) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl_Stub.html#newClient(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see cref="Javax.Management.Remote.Rmi.RMIConnection"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.Remote.Rmi.RMIConnection NewClient(object arg0)
         {
             return IExecute<Javax.Management.Remote.Rmi.RMIConnection>("newClient", arg0);

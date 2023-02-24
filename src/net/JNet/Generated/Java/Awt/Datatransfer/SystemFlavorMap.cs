@@ -33,7 +33,13 @@ namespace Java.Awt.Datatransfer
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Datatransfer.SystemFlavorMap"/> to <see cref="Java.Awt.Datatransfer.FlavorMap"/>
+        /// </summary>
         public static implicit operator Java.Awt.Datatransfer.FlavorMap(Java.Awt.Datatransfer.SystemFlavorMap t) => t.Cast<Java.Awt.Datatransfer.FlavorMap>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Datatransfer.SystemFlavorMap"/> to <see cref="Java.Awt.Datatransfer.FlavorTable"/>
+        /// </summary>
         public static implicit operator Java.Awt.Datatransfer.FlavorTable(Java.Awt.Datatransfer.SystemFlavorMap t) => t.Cast<Java.Awt.Datatransfer.FlavorTable>();
         
         #endregion
@@ -44,43 +50,54 @@ namespace Java.Awt.Datatransfer
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#getDefaultFlavorMap() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#getDefaultFlavorMap()"/> 
         /// </summary>
         public static Java.Awt.Datatransfer.FlavorMap DefaultFlavorMap
         {
             get { return SExecute<Java.Awt.Datatransfer.FlavorMap>("getDefaultFlavorMap"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#isJavaMIMEType(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#isJavaMIMEType(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsJavaMIMEType(string arg0)
         {
             return SExecute<bool>("isJavaMIMEType", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#decodeDataFlavor(java.lang.String) throws java.lang.ClassNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#decodeDataFlavor(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Awt.Datatransfer.DataFlavor"/></returns>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Awt.Datatransfer.DataFlavor DecodeDataFlavor(string arg0)
         {
             return SExecute<Java.Awt.Datatransfer.DataFlavor>("decodeDataFlavor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#decodeJavaMIMEType(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#decodeJavaMIMEType(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string DecodeJavaMIMEType(string arg0)
         {
             return SExecute<string>("decodeJavaMIMEType", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#encodeDataFlavor(java.awt.datatransfer.DataFlavor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#encodeDataFlavor(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string EncodeDataFlavor(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return SExecute<string>("encodeDataFlavor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#encodeJavaMIMEType(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#encodeJavaMIMEType(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string EncodeJavaMIMEType(string arg0)
         {
             return SExecute<string>("encodeJavaMIMEType", arg0);
@@ -90,29 +107,37 @@ namespace Java.Awt.Datatransfer
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#addFlavorForUnencodedNative(java.lang.String,java.awt.datatransfer.DataFlavor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#addFlavorForUnencodedNative(java.lang.String,java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
         public void AddFlavorForUnencodedNative(string arg0, Java.Awt.Datatransfer.DataFlavor arg1)
         {
             IExecute("addFlavorForUnencodedNative", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#addUnencodedNativeForFlavor(java.awt.datatransfer.DataFlavor,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#addUnencodedNativeForFlavor(java.awt.datatransfer.DataFlavor,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public void AddUnencodedNativeForFlavor(Java.Awt.Datatransfer.DataFlavor arg0, string arg1)
         {
             IExecute("addUnencodedNativeForFlavor", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#setFlavorsForNative(java.lang.String,java.awt.datatransfer.DataFlavor[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#setFlavorsForNative(java.lang.String,java.awt.datatransfer.DataFlavor[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
         public void SetFlavorsForNative(string arg0, Java.Awt.Datatransfer.DataFlavor[] arg1)
         {
             IExecute("setFlavorsForNative", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#setNativesForFlavor(java.awt.datatransfer.DataFlavor,java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#setNativesForFlavor(java.awt.datatransfer.DataFlavor,java.lang.String[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public void SetNativesForFlavor(Java.Awt.Datatransfer.DataFlavor arg0, string[] arg1)
         {
             IExecute("setNativesForFlavor", arg0, arg1);

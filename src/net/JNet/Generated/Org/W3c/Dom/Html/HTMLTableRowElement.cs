@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Html
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Html.HTMLTableRowElement"/> to <see cref="Org.W3c.Dom.Html.HTMLElement"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Html.HTMLElement(Org.W3c.Dom.Html.HTMLTableRowElement t) => t.Cast<Org.W3c.Dom.Html.HTMLElement>();
         
         #endregion
@@ -47,71 +50,76 @@ namespace Org.W3c.Dom.Html
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getAlign() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#setAlign(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#setAlign(java.lang.String)"/>
         /// </summary>
         public string Align
         {
             get { return IExecute<string>("getAlign"); } set { IExecute("setAlign", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getBgColor() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#setBgColor(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getBgColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#setBgColor(java.lang.String)"/>
         /// </summary>
         public string BgColor
         {
             get { return IExecute<string>("getBgColor"); } set { IExecute("setBgColor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getCells() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getCells()"/> 
         /// </summary>
         public Org.W3c.Dom.Html.HTMLCollection Cells
         {
             get { return IExecute<Org.W3c.Dom.Html.HTMLCollection>("getCells"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getCh() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#setCh(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getCh()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#setCh(java.lang.String)"/>
         /// </summary>
         public string Ch
         {
             get { return IExecute<string>("getCh"); } set { IExecute("setCh", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getChOff() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#setChOff(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getChOff()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#setChOff(java.lang.String)"/>
         /// </summary>
         public string ChOff
         {
             get { return IExecute<string>("getChOff"); } set { IExecute("setChOff", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getRowIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getRowIndex()"/> 
         /// </summary>
         public int RowIndex
         {
             get { return IExecute<int>("getRowIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getSectionRowIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getSectionRowIndex()"/> 
         /// </summary>
         public int SectionRowIndex
         {
             get { return IExecute<int>("getSectionRowIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getVAlign() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#setVAlign(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#getVAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#setVAlign(java.lang.String)"/>
         /// </summary>
         public string VAlign
         {
             get { return IExecute<string>("getVAlign"); } set { IExecute("setVAlign", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#insertCell(int) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#insertCell(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Html.HTMLElement InsertCell(int arg0)
         {
             return IExecute<Org.W3c.Dom.Html.HTMLElement>("insertCell", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#deleteCell(int) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableRowElement.html#deleteCell(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void DeleteCell(int arg0)
         {
             IExecute("deleteCell", arg0);

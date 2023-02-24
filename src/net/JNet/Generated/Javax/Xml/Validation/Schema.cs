@@ -46,15 +46,19 @@ namespace Javax.Xml.Validation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html#newValidator()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html#newValidator()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Validation.Validator"/></returns>
         public Javax.Xml.Validation.Validator NewValidator()
         {
             return IExecute<Javax.Xml.Validation.Validator>("newValidator");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html#newValidatorHandler()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html#newValidatorHandler()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Validation.ValidatorHandler"/></returns>
         public Javax.Xml.Validation.ValidatorHandler NewValidatorHandler()
         {
             return IExecute<Javax.Xml.Validation.ValidatorHandler>("newValidatorHandler");

@@ -30,8 +30,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#<init>(java.awt.Component,java.lang.Object,java.lang.String,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#%3Cinit%3E(java.awt.Component,java.lang.Object,java.lang.String,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public ProgressMonitor(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -40,6 +45,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.ProgressMonitor"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.ProgressMonitor t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
@@ -54,64 +62,67 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getAccessibleContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getAccessibleContext()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleContext AccessibleContext
         {
             get { return IExecute<Javax.Accessibility.AccessibleContext>("getAccessibleContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getMaximum() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setMaximum(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setMaximum(int)"/>
         /// </summary>
         public int Maximum
         {
             get { return IExecute<int>("getMaximum"); } set { IExecute("setMaximum", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getMillisToDecideToPopup() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setMillisToDecideToPopup(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getMillisToDecideToPopup()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setMillisToDecideToPopup(int)"/>
         /// </summary>
         public int MillisToDecideToPopup
         {
             get { return IExecute<int>("getMillisToDecideToPopup"); } set { IExecute("setMillisToDecideToPopup", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getMillisToPopup() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setMillisToPopup(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getMillisToPopup()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setMillisToPopup(int)"/>
         /// </summary>
         public int MillisToPopup
         {
             get { return IExecute<int>("getMillisToPopup"); } set { IExecute("setMillisToPopup", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getMinimum() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setMinimum(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setMinimum(int)"/>
         /// </summary>
         public int Minimum
         {
             get { return IExecute<int>("getMinimum"); } set { IExecute("setMinimum", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getNote() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setNote(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getNote()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setNote(java.lang.String)"/>
         /// </summary>
         public string Note
         {
             get { return IExecute<string>("getNote"); } set { IExecute("setNote", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#isCanceled()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#isCanceled()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCanceled()
         {
             return IExecute<bool>("isCanceled");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#close()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#close()"/>
         /// </summary>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setProgress(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setProgress(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetProgress(int arg0)
         {
             IExecute("setProgress", arg0);

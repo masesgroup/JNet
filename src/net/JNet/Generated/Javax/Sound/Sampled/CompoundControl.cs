@@ -46,7 +46,7 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/CompoundControl.html#getMemberControls() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/CompoundControl.html#getMemberControls()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Control[] MemberControls
         {

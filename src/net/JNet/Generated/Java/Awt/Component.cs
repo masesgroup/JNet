@@ -33,31 +33,40 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Component"/> to <see cref="Java.Awt.ImageNs.ImageObserver"/>
+        /// </summary>
         public static implicit operator Java.Awt.ImageNs.ImageObserver(Java.Awt.Component t) => t.Cast<Java.Awt.ImageNs.ImageObserver>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Component"/> to <see cref="Java.Awt.MenuContainer"/>
+        /// </summary>
         public static implicit operator Java.Awt.MenuContainer(Java.Awt.Component t) => t.Cast<Java.Awt.MenuContainer>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Component"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Component t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#BOTTOM_ALIGNMENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#BOTTOM_ALIGNMENT"/>
         /// </summary>
         public static float BOTTOM_ALIGNMENT => Clazz.GetField<float>("BOTTOM_ALIGNMENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#CENTER_ALIGNMENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#CENTER_ALIGNMENT"/>
         /// </summary>
         public static float CENTER_ALIGNMENT => Clazz.GetField<float>("CENTER_ALIGNMENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#LEFT_ALIGNMENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#LEFT_ALIGNMENT"/>
         /// </summary>
         public static float LEFT_ALIGNMENT => Clazz.GetField<float>("LEFT_ALIGNMENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#RIGHT_ALIGNMENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#RIGHT_ALIGNMENT"/>
         /// </summary>
         public static float RIGHT_ALIGNMENT => Clazz.GetField<float>("RIGHT_ALIGNMENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#TOP_ALIGNMENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#TOP_ALIGNMENT"/>
         /// </summary>
         public static float TOP_ALIGNMENT => Clazz.GetField<float>("TOP_ALIGNMENT");
         
@@ -69,1036 +78,1217 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getAccessibleContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getAccessibleContext()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleContext AccessibleContext
         {
             get { return IExecute<Javax.Accessibility.AccessibleContext>("getAccessibleContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getAlignmentX() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getAlignmentX()"/> 
         /// </summary>
         public float AlignmentX
         {
             get { return IExecute<float>("getAlignmentX"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getAlignmentY() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getAlignmentY()"/> 
         /// </summary>
         public float AlignmentY
         {
             get { return IExecute<float>("getAlignmentY"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBackground() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setBackground(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBackground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setBackground(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color Background
         {
             get { return IExecute<Java.Awt.Color>("getBackground"); } set { IExecute("setBackground", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBounds() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setBounds(java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBounds()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setBounds(java.awt.Rectangle)"/>
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
             get { return IExecute<Java.Awt.Rectangle>("getBounds"); } set { IExecute("setBounds", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getColorModel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getColorModel()"/> 
         /// </summary>
         public Java.Awt.ImageNs.ColorModel ColorModel
         {
             get { return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getComponentListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getComponentListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ComponentListener[] ComponentListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.ComponentListener>("getComponentListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getComponentOrientation() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setComponentOrientation(java.awt.ComponentOrientation)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getComponentOrientation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setComponentOrientation(java.awt.ComponentOrientation)"/>
         /// </summary>
         public Java.Awt.ComponentOrientation ComponentOrientation
         {
             get { return IExecute<Java.Awt.ComponentOrientation>("getComponentOrientation"); } set { IExecute("setComponentOrientation", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getCursor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setCursor(java.awt.Cursor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getCursor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setCursor(java.awt.Cursor)"/>
         /// </summary>
         public Java.Awt.Cursor Cursor
         {
             get { return IExecute<Java.Awt.Cursor>("getCursor"); } set { IExecute("setCursor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getDropTarget() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setDropTarget(java.awt.dnd.DropTarget)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getDropTarget()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setDropTarget(java.awt.dnd.DropTarget)"/>
         /// </summary>
         public Java.Awt.Dnd.DropTarget DropTarget
         {
             get { return IExecute<Java.Awt.Dnd.DropTarget>("getDropTarget"); } set { IExecute("setDropTarget", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFocusCycleRootAncestor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFocusCycleRootAncestor()"/> 
         /// </summary>
         public Java.Awt.Container FocusCycleRootAncestor
         {
             get { return IExecute<Java.Awt.Container>("getFocusCycleRootAncestor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFocusListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFocusListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.FocusListener[] FocusListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.FocusListener>("getFocusListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFocusTraversalKeysEnabled() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setFocusTraversalKeysEnabled(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFocusTraversalKeysEnabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setFocusTraversalKeysEnabled(boolean)"/>
         /// </summary>
         public bool FocusTraversalKeysEnabled
         {
             get { return IExecute<bool>("getFocusTraversalKeysEnabled"); } set { IExecute("setFocusTraversalKeysEnabled", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFont() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setFont(java.awt.Font)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFont()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setFont(java.awt.Font)"/>
         /// </summary>
         public Java.Awt.Font Font
         {
             get { return IExecute<Java.Awt.Font>("getFont"); } set { IExecute("setFont", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getForeground() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setForeground(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getForeground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setForeground(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color Foreground
         {
             get { return IExecute<Java.Awt.Color>("getForeground"); } set { IExecute("setForeground", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getGraphics() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getGraphics()"/> 
         /// </summary>
         public Java.Awt.Graphics Graphics
         {
             get { return IExecute<Java.Awt.Graphics>("getGraphics"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getGraphicsConfiguration() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getGraphicsConfiguration()"/> 
         /// </summary>
         public Java.Awt.GraphicsConfiguration GraphicsConfiguration
         {
             get { return IExecute<Java.Awt.GraphicsConfiguration>("getGraphicsConfiguration"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
             get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getHierarchyBoundsListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getHierarchyBoundsListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.HierarchyBoundsListener[] HierarchyBoundsListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.HierarchyBoundsListener>("getHierarchyBoundsListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getHierarchyListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getHierarchyListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.HierarchyListener[] HierarchyListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.HierarchyListener>("getHierarchyListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getIgnoreRepaint() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setIgnoreRepaint(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getIgnoreRepaint()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setIgnoreRepaint(boolean)"/>
         /// </summary>
         public bool IgnoreRepaint
         {
             get { return IExecute<bool>("getIgnoreRepaint"); } set { IExecute("setIgnoreRepaint", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getInputContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getInputContext()"/> 
         /// </summary>
         public Java.Awt.Im.InputContext InputContext
         {
             get { return IExecute<Java.Awt.Im.InputContext>("getInputContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getInputMethodListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getInputMethodListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.InputMethodListener[] InputMethodListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.InputMethodListener>("getInputMethodListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getInputMethodRequests() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getInputMethodRequests()"/> 
         /// </summary>
         public Java.Awt.Im.InputMethodRequests InputMethodRequests
         {
             get { return IExecute<Java.Awt.Im.InputMethodRequests>("getInputMethodRequests"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getKeyListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getKeyListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.KeyListener[] KeyListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.KeyListener>("getKeyListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getLocale() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setLocale(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getLocale()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setLocale(java.util.Locale)"/>
         /// </summary>
         public Java.Util.Locale Locale
         {
             get { return IExecute<Java.Util.Locale>("getLocale"); } set { IExecute("setLocale", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getLocation() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setLocation(java.awt.Point)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getLocation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setLocation(java.awt.Point)"/>
         /// </summary>
         public Java.Awt.Point Location
         {
             get { return IExecute<Java.Awt.Point>("getLocation"); } set { IExecute("setLocation", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getLocationOnScreen() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getLocationOnScreen()"/> 
         /// </summary>
         public Java.Awt.Point LocationOnScreen
         {
             get { return IExecute<Java.Awt.Point>("getLocationOnScreen"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMaximumSize() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setMaximumSize(java.awt.Dimension)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMaximumSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setMaximumSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension MaximumSize
         {
             get { return IExecute<Java.Awt.Dimension>("getMaximumSize"); } set { IExecute("setMaximumSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMinimumSize() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setMinimumSize(java.awt.Dimension)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMinimumSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setMinimumSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension MinimumSize
         {
             get { return IExecute<Java.Awt.Dimension>("getMinimumSize"); } set { IExecute("setMinimumSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMouseListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMouseListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseListener[] MouseListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.MouseListener>("getMouseListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMouseMotionListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMouseMotionListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseMotionListener[] MouseMotionListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.MouseMotionListener>("getMouseMotionListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMousePosition() throws java.awt.HeadlessException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMousePosition()"/> 
         /// </summary>
         public Java.Awt.Point MousePosition
         {
             get { return IExecute<Java.Awt.Point>("getMousePosition"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMouseWheelListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getMouseWheelListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseWheelListener[] MouseWheelListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.MouseWheelListener>("getMouseWheelListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getName() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setName(java.lang.String)"/>
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getParent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getParent()"/> 
         /// </summary>
         public Java.Awt.Container Parent
         {
             get { return IExecute<Java.Awt.Container>("getParent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getPreferredSize() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setPreferredSize(java.awt.Dimension)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getPreferredSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setPreferredSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension PreferredSize
         {
             get { return IExecute<Java.Awt.Dimension>("getPreferredSize"); } set { IExecute("setPreferredSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getPropertyChangeListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getPropertyChangeListeners()"/> 
         /// </summary>
         public Java.Beans.PropertyChangeListener[] PropertyChangeListeners
         {
             get { return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getSize() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setSize(java.awt.Dimension)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension Size
         {
             get { return IExecute<Java.Awt.Dimension>("getSize"); } set { IExecute("setSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getToolkit() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getToolkit()"/> 
         /// </summary>
         public Java.Awt.Toolkit Toolkit
         {
             get { return IExecute<Java.Awt.Toolkit>("getToolkit"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getTreeLock() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getTreeLock()"/> 
         /// </summary>
         public object TreeLock
         {
             get { return IExecute("getTreeLock"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
             get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getX() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getX()"/> 
         /// </summary>
         public int X
         {
             get { return IExecute<int>("getX"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getY() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getY()"/> 
         /// </summary>
         public int Y
         {
             get { return IExecute<int>("getY"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#areFocusTraversalKeysSet(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#areFocusTraversalKeysSet(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool AreFocusTraversalKeysSet(int arg0)
         {
             return IExecute<bool>("areFocusTraversalKeysSet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#contains(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#contains(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(int arg0, int arg1)
         {
             return IExecute<bool>("contains", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#contains(java.awt.Point)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#contains(java.awt.Point)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(Java.Awt.Point arg0)
         {
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#hasFocus()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#hasFocus()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasFocus()
         {
             return IExecute<bool>("hasFocus");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#imageUpdate(java.awt.Image,int,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#imageUpdate(java.awt.Image,int,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ImageUpdate(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
             return IExecute<bool>("imageUpdate", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isBackgroundSet()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isBackgroundSet()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsBackgroundSet()
         {
             return IExecute<bool>("isBackgroundSet");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isCursorSet()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isCursorSet()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCursorSet()
         {
             return IExecute<bool>("isCursorSet");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isDisplayable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isDisplayable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDisplayable()
         {
             return IExecute<bool>("isDisplayable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isDoubleBuffered()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isDoubleBuffered()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDoubleBuffered()
         {
             return IExecute<bool>("isDoubleBuffered");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isEnabled()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isEnabled()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEnabled()
         {
             return IExecute<bool>("isEnabled");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsFocusable()
         {
             return IExecute<bool>("isFocusable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusCycleRoot(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusCycleRoot(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsFocusCycleRoot(Java.Awt.Container arg0)
         {
             return IExecute<bool>("isFocusCycleRoot", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusOwner()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFocusOwner()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsFocusOwner()
         {
             return IExecute<bool>("isFocusOwner");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFontSet()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isFontSet()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsFontSet()
         {
             return IExecute<bool>("isFontSet");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isForegroundSet()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isForegroundSet()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsForegroundSet()
         {
             return IExecute<bool>("isForegroundSet");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isLightweight()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isLightweight()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsLightweight()
         {
             return IExecute<bool>("isLightweight");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isMaximumSizeSet()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isMaximumSizeSet()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMaximumSizeSet()
         {
             return IExecute<bool>("isMaximumSizeSet");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isMinimumSizeSet()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isMinimumSizeSet()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMinimumSizeSet()
         {
             return IExecute<bool>("isMinimumSizeSet");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isOpaque()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isOpaque()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsOpaque()
         {
             return IExecute<bool>("isOpaque");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isPreferredSizeSet()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isPreferredSizeSet()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPreferredSizeSet()
         {
             return IExecute<bool>("isPreferredSizeSet");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isShowing()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isShowing()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsShowing()
         {
             return IExecute<bool>("isShowing");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isValid()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isValid()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsValid()
         {
             return IExecute<bool>("isValid");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isVisible()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#isVisible()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsVisible()
         {
             return IExecute<bool>("isVisible");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#prepareImage(java.awt.Image,int,int,java.awt.image.ImageObserver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#prepareImage(java.awt.Image,int,int,java.awt.image.ImageObserver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool PrepareImage(Java.Awt.Image arg0, int arg1, int arg2, Java.Awt.ImageNs.ImageObserver arg3)
         {
             return IExecute<bool>("prepareImage", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#prepareImage(java.awt.Image,java.awt.image.ImageObserver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#prepareImage(java.awt.Image,java.awt.image.ImageObserver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool PrepareImage(Java.Awt.Image arg0, Java.Awt.ImageNs.ImageObserver arg1)
         {
             return IExecute<bool>("prepareImage", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#requestFocusInWindow()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#requestFocusInWindow()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool RequestFocusInWindow()
         {
             return IExecute<bool>("requestFocusInWindow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#dispatchEvent(java.awt.AWTEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#dispatchEvent(java.awt.AWTEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
         public void DispatchEvent(Java.Awt.AWTEvent arg0)
         {
             IExecute("dispatchEvent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#checkImage(java.awt.Image,int,int,java.awt.image.ImageObserver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#checkImage(java.awt.Image,int,int,java.awt.image.ImageObserver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CheckImage(Java.Awt.Image arg0, int arg1, int arg2, Java.Awt.ImageNs.ImageObserver arg3)
         {
             return IExecute<int>("checkImage", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#checkImage(java.awt.Image,java.awt.image.ImageObserver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#checkImage(java.awt.Image,java.awt.image.ImageObserver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CheckImage(Java.Awt.Image arg0, Java.Awt.ImageNs.ImageObserver arg1)
         {
             return IExecute<int>("checkImage", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBaseline(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBaseline(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetBaseline(int arg0, int arg1)
         {
             return IExecute<int>("getBaseline", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getComponentAt(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getComponentAt(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetComponentAt(int arg0, int arg1)
         {
             return IExecute<Java.Awt.Component>("getComponentAt", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getComponentAt(java.awt.Point)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getComponentAt(java.awt.Point)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetComponentAt(Java.Awt.Point arg0)
         {
             return IExecute<Java.Awt.Component>("getComponentAt", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getSize(java.awt.Dimension)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getSize(java.awt.Dimension)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetSize(Java.Awt.Dimension arg0)
         {
             return IExecute<Java.Awt.Dimension>("getSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFontMetrics(java.awt.Font)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFontMetrics(java.awt.Font)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Font"/></param>
+        /// <returns><see cref="Java.Awt.FontMetrics"/></returns>
         public Java.Awt.FontMetrics GetFontMetrics(Java.Awt.Font arg0)
         {
             return IExecute<Java.Awt.FontMetrics>("getFontMetrics", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#createImage(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#createImage(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image CreateImage(int arg0, int arg1)
         {
             return IExecute<Java.Awt.Image>("createImage", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#createImage(java.awt.image.ImageProducer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#createImage(java.awt.image.ImageProducer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageProducer"/></param>
+        /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image CreateImage(Java.Awt.ImageNs.ImageProducer arg0)
         {
             return IExecute<Java.Awt.Image>("createImage", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#createVolatileImage(int,int,java.awt.ImageCapabilities) throws java.awt.AWTException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#createVolatileImage(int,int,java.awt.ImageCapabilities)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.ImageCapabilities"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.VolatileImage"/></returns>
+        /// <exception cref="Java.Awt.AWTException"/>
         public Java.Awt.ImageNs.VolatileImage CreateVolatileImage(int arg0, int arg1, Java.Awt.ImageCapabilities arg2)
         {
             return IExecute<Java.Awt.ImageNs.VolatileImage>("createVolatileImage", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#createVolatileImage(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#createVolatileImage(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.VolatileImage"/></returns>
         public Java.Awt.ImageNs.VolatileImage CreateVolatileImage(int arg0, int arg1)
         {
             return IExecute<Java.Awt.ImageNs.VolatileImage>("createVolatileImage", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getLocation(java.awt.Point)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getLocation(java.awt.Point)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
+        /// <returns><see cref="Java.Awt.Point"/></returns>
         public Java.Awt.Point GetLocation(Java.Awt.Point arg0)
         {
             return IExecute<Java.Awt.Point>("getLocation", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBounds(java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBounds(java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetBounds(Java.Awt.Rectangle arg0)
         {
             return IExecute<Java.Awt.Rectangle>("getBounds", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getPropertyChangeListeners(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getPropertyChangeListeners(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners(string arg0)
         {
             return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addComponentListener(java.awt.event.ComponentListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addComponentListener(java.awt.event.ComponentListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
         public void AddComponentListener(Java.Awt.EventNs.ComponentListener arg0)
         {
             IExecute("addComponentListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addFocusListener(java.awt.event.FocusListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addFocusListener(java.awt.event.FocusListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
         public void AddFocusListener(Java.Awt.EventNs.FocusListener arg0)
         {
             IExecute("addFocusListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addInputMethodListener(java.awt.event.InputMethodListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addInputMethodListener(java.awt.event.InputMethodListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
         public void AddInputMethodListener(Java.Awt.EventNs.InputMethodListener arg0)
         {
             IExecute("addInputMethodListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addKeyListener(java.awt.event.KeyListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addKeyListener(java.awt.event.KeyListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyListener"/></param>
         public void AddKeyListener(Java.Awt.EventNs.KeyListener arg0)
         {
             IExecute("addKeyListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addMouseListener(java.awt.event.MouseListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addMouseListener(java.awt.event.MouseListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
         public void AddMouseListener(Java.Awt.EventNs.MouseListener arg0)
         {
             IExecute("addMouseListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addMouseMotionListener(java.awt.event.MouseMotionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addMouseMotionListener(java.awt.event.MouseMotionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
         public void AddMouseMotionListener(Java.Awt.EventNs.MouseMotionListener arg0)
         {
             IExecute("addMouseMotionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addMouseWheelListener(java.awt.event.MouseWheelListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addMouseWheelListener(java.awt.event.MouseWheelListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
         public void AddMouseWheelListener(Java.Awt.EventNs.MouseWheelListener arg0)
         {
             IExecute("addMouseWheelListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeComponentListener(java.awt.event.ComponentListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeComponentListener(java.awt.event.ComponentListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
         public void RemoveComponentListener(Java.Awt.EventNs.ComponentListener arg0)
         {
             IExecute("removeComponentListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeFocusListener(java.awt.event.FocusListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeFocusListener(java.awt.event.FocusListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
         public void RemoveFocusListener(Java.Awt.EventNs.FocusListener arg0)
         {
             IExecute("removeFocusListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeInputMethodListener(java.awt.event.InputMethodListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeInputMethodListener(java.awt.event.InputMethodListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
         public void RemoveInputMethodListener(Java.Awt.EventNs.InputMethodListener arg0)
         {
             IExecute("removeInputMethodListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeKeyListener(java.awt.event.KeyListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeKeyListener(java.awt.event.KeyListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyListener"/></param>
         public void RemoveKeyListener(Java.Awt.EventNs.KeyListener arg0)
         {
             IExecute("removeKeyListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeMouseListener(java.awt.event.MouseListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeMouseListener(java.awt.event.MouseListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
         public void RemoveMouseListener(Java.Awt.EventNs.MouseListener arg0)
         {
             IExecute("removeMouseListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeMouseMotionListener(java.awt.event.MouseMotionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeMouseMotionListener(java.awt.event.MouseMotionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
         public void RemoveMouseMotionListener(Java.Awt.EventNs.MouseMotionListener arg0)
         {
             IExecute("removeMouseMotionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeMouseWheelListener(java.awt.event.MouseWheelListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeMouseWheelListener(java.awt.event.MouseWheelListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
         public void RemoveMouseWheelListener(Java.Awt.EventNs.MouseWheelListener arg0)
         {
             IExecute("removeMouseWheelListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#add(java.awt.PopupMenu)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#add(java.awt.PopupMenu)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.PopupMenu"/></param>
         public void Add(Java.Awt.PopupMenu arg0)
         {
             IExecute("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addHierarchyBoundsListener(java.awt.event.HierarchyBoundsListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addHierarchyBoundsListener(java.awt.event.HierarchyBoundsListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
         public void AddHierarchyBoundsListener(Java.Awt.EventNs.HierarchyBoundsListener arg0)
         {
             IExecute("addHierarchyBoundsListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addHierarchyListener(java.awt.event.HierarchyListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addHierarchyListener(java.awt.event.HierarchyListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
         public void AddHierarchyListener(Java.Awt.EventNs.HierarchyListener arg0)
         {
             IExecute("addHierarchyListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addNotify()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addNotify()"/>
         /// </summary>
         public void AddNotify()
         {
             IExecute("addNotify");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addPropertyChangeListener(java.beans.PropertyChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecute("addPropertyChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1)
         {
             IExecute("addPropertyChangeListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#applyComponentOrientation(java.awt.ComponentOrientation)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#applyComponentOrientation(java.awt.ComponentOrientation)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ComponentOrientation"/></param>
         public void ApplyComponentOrientation(Java.Awt.ComponentOrientation arg0)
         {
             IExecute("applyComponentOrientation", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#doLayout()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#doLayout()"/>
         /// </summary>
         public void DoLayout()
         {
             IExecute("doLayout");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#enableInputMethods(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#enableInputMethods(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void EnableInputMethods(bool arg0)
         {
             IExecute("enableInputMethods", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#firePropertyChange(java.lang.String,byte,byte)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#firePropertyChange(java.lang.String,byte,byte)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="byte"/></param>
+        /// <param name="arg2"><see langword="byte"/></param>
         public void FirePropertyChange(string arg0, byte arg1, byte arg2)
         {
             IExecute("firePropertyChange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#firePropertyChange(java.lang.String,char,char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#firePropertyChange(java.lang.String,char,char)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="char"/></param>
+        /// <param name="arg2"><see langword="char"/></param>
         public void FirePropertyChange(string arg0, char arg1, char arg2)
         {
             IExecute("firePropertyChange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#firePropertyChange(java.lang.String,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#firePropertyChange(java.lang.String,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
         public void FirePropertyChange(string arg0, double arg1, double arg2)
         {
             IExecute("firePropertyChange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#firePropertyChange(java.lang.String,float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#firePropertyChange(java.lang.String,float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
         public void FirePropertyChange(string arg0, float arg1, float arg2)
         {
             IExecute("firePropertyChange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#firePropertyChange(java.lang.String,long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#firePropertyChange(java.lang.String,long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
         public void FirePropertyChange(string arg0, long arg1, long arg2)
         {
             IExecute("firePropertyChange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#firePropertyChange(java.lang.String,short,short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#firePropertyChange(java.lang.String,short,short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="short"/></param>
+        /// <param name="arg2"><see langword="short"/></param>
         public void FirePropertyChange(string arg0, short arg1, short arg2)
         {
             IExecute("firePropertyChange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#invalidate()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#invalidate()"/>
         /// </summary>
         public void Invalidate()
         {
             IExecute("invalidate");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#list()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#list()"/>
         /// </summary>
         public void List()
         {
             IExecute("list");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#list(java.io.PrintStream,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#list(java.io.PrintStream,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void List(Java.Io.PrintStream arg0, int arg1)
         {
             IExecute("list", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#list(java.io.PrintStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#list(java.io.PrintStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public void List(Java.Io.PrintStream arg0)
         {
             IExecute("list", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#list(java.io.PrintWriter,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#list(java.io.PrintWriter,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void List(Java.Io.PrintWriter arg0, int arg1)
         {
             IExecute("list", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#list(java.io.PrintWriter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#list(java.io.PrintWriter)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
         public void List(Java.Io.PrintWriter arg0)
         {
             IExecute("list", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#paint(java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#paint(java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void Paint(Java.Awt.Graphics arg0)
         {
             IExecute("paint", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#paintAll(java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#paintAll(java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void PaintAll(Java.Awt.Graphics arg0)
         {
             IExecute("paintAll", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#print(java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#print(java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void Print(Java.Awt.Graphics arg0)
         {
             IExecute("print", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#printAll(java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#printAll(java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void PrintAll(Java.Awt.Graphics arg0)
         {
             IExecute("printAll", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#remove(java.awt.MenuComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#remove(java.awt.MenuComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.MenuComponent"/></param>
         public void Remove(Java.Awt.MenuComponent arg0)
         {
             IExecute("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeHierarchyBoundsListener(java.awt.event.HierarchyBoundsListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeHierarchyBoundsListener(java.awt.event.HierarchyBoundsListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
         public void RemoveHierarchyBoundsListener(Java.Awt.EventNs.HierarchyBoundsListener arg0)
         {
             IExecute("removeHierarchyBoundsListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeHierarchyListener(java.awt.event.HierarchyListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeHierarchyListener(java.awt.event.HierarchyListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
         public void RemoveHierarchyListener(Java.Awt.EventNs.HierarchyListener arg0)
         {
             IExecute("removeHierarchyListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeNotify()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removeNotify()"/>
         /// </summary>
         public void RemoveNotify()
         {
             IExecute("removeNotify");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removePropertyChangeListener(java.beans.PropertyChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecute("removePropertyChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1)
         {
             IExecute("removePropertyChangeListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#repaint()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#repaint()"/>
         /// </summary>
         public void Repaint()
         {
             IExecute("repaint");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#repaint(int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#repaint(int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public void Repaint(int arg0, int arg1, int arg2, int arg3)
         {
             IExecute("repaint", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#repaint(long,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#repaint(long,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public void Repaint(long arg0, int arg1, int arg2, int arg3, int arg4)
         {
             IExecute("repaint", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#repaint(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#repaint(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
         public void Repaint(long arg0)
         {
             IExecute("repaint", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#requestFocus()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#requestFocus()"/>
         /// </summary>
         public void RequestFocus()
         {
             IExecute("requestFocus");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#revalidate()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#revalidate()"/>
         /// </summary>
         public void Revalidate()
         {
             IExecute("revalidate");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setBounds(int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setBounds(int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public void SetBounds(int arg0, int arg1, int arg2, int arg3)
         {
             IExecute("setBounds", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setEnabled(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setEnabled(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetEnabled(bool arg0)
         {
             IExecute("setEnabled", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setFocusable(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setFocusable(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetFocusable(bool arg0)
         {
             IExecute("setFocusable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setLocation(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setLocation(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetLocation(int arg0, int arg1)
         {
             IExecute("setLocation", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setMixingCutoutShape(java.awt.Shape)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setMixingCutoutShape(java.awt.Shape)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
         public void SetMixingCutoutShape(Java.Awt.Shape arg0)
         {
             IExecute("setMixingCutoutShape", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setSize(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setSize(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetSize(int arg0, int arg1)
         {
             IExecute("setSize", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setVisible(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setVisible(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetVisible(bool arg0)
         {
             IExecute("setVisible", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#transferFocus()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#transferFocus()"/>
         /// </summary>
         public void TransferFocus()
         {
             IExecute("transferFocus");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#transferFocusBackward()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#transferFocusBackward()"/>
         /// </summary>
         public void TransferFocusBackward()
         {
             IExecute("transferFocusBackward");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#transferFocusUpCycle()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#transferFocusUpCycle()"/>
         /// </summary>
         public void TransferFocusUpCycle()
         {
             IExecute("transferFocusUpCycle");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#update(java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#update(java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void Update(Java.Awt.Graphics arg0)
         {
             IExecute("update", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#validate()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#validate()"/>
         /// </summary>
         public void Validate()
         {
@@ -1121,19 +1311,19 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CENTER_OFFSET
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CENTER_OFFSET"/>
             /// </summary>
             public static Java.Awt.Component.BaselineResizeBehavior CENTER_OFFSET => Clazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("CENTER_OFFSET");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CONSTANT_ASCENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CONSTANT_ASCENT"/>
             /// </summary>
             public static Java.Awt.Component.BaselineResizeBehavior CONSTANT_ASCENT => Clazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("CONSTANT_ASCENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CONSTANT_DESCENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CONSTANT_DESCENT"/>
             /// </summary>
             public static Java.Awt.Component.BaselineResizeBehavior CONSTANT_DESCENT => Clazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("CONSTANT_DESCENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#OTHER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#OTHER"/>
             /// </summary>
             public static Java.Awt.Component.BaselineResizeBehavior OTHER => Clazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("OTHER");
             
@@ -1141,8 +1331,10 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Awt.Component.BaselineResizeBehavior"/></returns>
             public static Java.Awt.Component.BaselineResizeBehavior[] Values()
             {
                 return SExecuteArray<Java.Awt.Component.BaselineResizeBehavior>("values");

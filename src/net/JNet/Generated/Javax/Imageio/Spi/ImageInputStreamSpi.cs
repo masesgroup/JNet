@@ -46,29 +46,41 @@ namespace Javax.Imageio.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#createInputStreamInstance(java.lang.Object,boolean,java.io.File) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#createInputStreamInstance(java.lang.Object,boolean,java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Javax.Imageio.Stream.ImageInputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.Stream.ImageInputStream CreateInputStreamInstance(object arg0, bool arg1, Java.Io.File arg2)
         {
             return IExecute<Javax.Imageio.Stream.ImageInputStream>("createInputStreamInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#canUseCacheFile()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#canUseCacheFile()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool CanUseCacheFile()
         {
             return IExecute<bool>("canUseCacheFile");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#needsCacheFile()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#needsCacheFile()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool NeedsCacheFile()
         {
             return IExecute<bool>("needsCacheFile");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#createInputStreamInstance(java.lang.Object) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#createInputStreamInstance(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see cref="Javax.Imageio.Stream.ImageInputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.Stream.ImageInputStream CreateInputStreamInstance(object arg0)
         {
             return IExecute<Javax.Imageio.Stream.ImageInputStream>("createInputStreamInstance", arg0);

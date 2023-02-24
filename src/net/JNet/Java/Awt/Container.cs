@@ -24,6 +24,9 @@ namespace Java.Awt
     {
         // can be extended with methods not reflected or not available in Java;
 
+        /// <summary>
+        /// Finalizer of <see cref="Container"/>
+        /// </summary>
         ~Container()
         {
             Dispose();
@@ -51,7 +54,9 @@ namespace Java.Awt
         /// Returns the hostable <see cref="IJCGraphicContainer"/>
         /// </summary>
         public IJCGraphicContainer HostedContainer => _container;
-
+        /// <summary>
+        /// Dispose this resource
+        /// </summary>
         public override void Dispose()
         {
             lock (this)

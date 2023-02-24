@@ -33,6 +33,9 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Dnd.DropTargetContext"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Dnd.DropTargetContext t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,22 +50,24 @@ namespace Java.Awt.Dnd
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html#getComponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html#getComponent()"/> 
         /// </summary>
         public Java.Awt.Component Component
         {
             get { return IExecute<Java.Awt.Component>("getComponent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html#getDropTarget() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html#getDropTarget()"/> 
         /// </summary>
         public Java.Awt.Dnd.DropTarget DropTarget
         {
             get { return IExecute<Java.Awt.Dnd.DropTarget>("getDropTarget"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html#dropComplete(boolean) throws java.awt.dnd.InvalidDnDOperationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html#dropComplete(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
         public void DropComplete(bool arg0)
         {
             IExecute("dropComplete", arg0);

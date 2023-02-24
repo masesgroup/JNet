@@ -38,15 +38,15 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#MULTIPLE_INTERVAL_SELECTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#MULTIPLE_INTERVAL_SELECTION"/>
         /// </summary>
         public static int MULTIPLE_INTERVAL_SELECTION => Clazz.GetField<int>("MULTIPLE_INTERVAL_SELECTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#SINGLE_INTERVAL_SELECTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#SINGLE_INTERVAL_SELECTION"/>
         /// </summary>
         public static int SINGLE_INTERVAL_SELECTION => Clazz.GetField<int>("SINGLE_INTERVAL_SELECTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#SINGLE_SELECTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#SINGLE_SELECTION"/>
         /// </summary>
         public static int SINGLE_SELECTION => Clazz.GetField<int>("SINGLE_SELECTION");
         
@@ -58,127 +58,144 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getAnchorSelectionIndex() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setAnchorSelectionIndex(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getAnchorSelectionIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setAnchorSelectionIndex(int)"/>
         /// </summary>
         public int AnchorSelectionIndex
         {
             get { return IExecute<int>("getAnchorSelectionIndex"); } set { IExecute("setAnchorSelectionIndex", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getLeadSelectionIndex() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setLeadSelectionIndex(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getLeadSelectionIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setLeadSelectionIndex(int)"/>
         /// </summary>
         public int LeadSelectionIndex
         {
             get { return IExecute<int>("getLeadSelectionIndex"); } set { IExecute("setLeadSelectionIndex", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getMaxSelectionIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getMaxSelectionIndex()"/> 
         /// </summary>
         public int MaxSelectionIndex
         {
             get { return IExecute<int>("getMaxSelectionIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getMinSelectionIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getMinSelectionIndex()"/> 
         /// </summary>
         public int MinSelectionIndex
         {
             get { return IExecute<int>("getMinSelectionIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getSelectedIndices() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getSelectedIndices()"/> 
         /// </summary>
         public int[] SelectedIndices
         {
             get { return IExecuteArray<int>("getSelectedIndices"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getSelectedItemsCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getSelectedItemsCount()"/> 
         /// </summary>
         public int SelectedItemsCount
         {
             get { return IExecute<int>("getSelectedItemsCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getSelectionMode() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setSelectionMode(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getSelectionMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setSelectionMode(int)"/>
         /// </summary>
         public int SelectionMode
         {
             get { return IExecute<int>("getSelectionMode"); } set { IExecute("setSelectionMode", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getValueIsAdjusting() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setValueIsAdjusting(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getValueIsAdjusting()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setValueIsAdjusting(boolean)"/>
         /// </summary>
         public bool ValueIsAdjusting
         {
             get { return IExecute<bool>("getValueIsAdjusting"); } set { IExecute("setValueIsAdjusting", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#isSelectedIndex(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#isSelectedIndex(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsSelectedIndex(int arg0)
         {
             return IExecute<bool>("isSelectedIndex", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#isSelectionEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#isSelectionEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSelectionEmpty()
         {
             return IExecute<bool>("isSelectionEmpty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#addListSelectionListener(javax.swing.event.ListSelectionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#addListSelectionListener(javax.swing.event.ListSelectionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
         public void AddListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
             IExecute("addListSelectionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#addSelectionInterval(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#addSelectionInterval(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void AddSelectionInterval(int arg0, int arg1)
         {
             IExecute("addSelectionInterval", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#clearSelection()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#clearSelection()"/>
         /// </summary>
         public void ClearSelection()
         {
             IExecute("clearSelection");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#insertIndexInterval(int,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#insertIndexInterval(int,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public void InsertIndexInterval(int arg0, int arg1, bool arg2)
         {
             IExecute("insertIndexInterval", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#removeIndexInterval(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#removeIndexInterval(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void RemoveIndexInterval(int arg0, int arg1)
         {
             IExecute("removeIndexInterval", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#removeListSelectionListener(javax.swing.event.ListSelectionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#removeListSelectionListener(javax.swing.event.ListSelectionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionListener"/></param>
         public void RemoveListSelectionListener(Javax.Swing.Event.ListSelectionListener arg0)
         {
             IExecute("removeListSelectionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#removeSelectionInterval(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#removeSelectionInterval(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void RemoveSelectionInterval(int arg0, int arg1)
         {
             IExecute("removeSelectionInterval", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setSelectionInterval(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setSelectionInterval(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetSelectionInterval(int arg0, int arg1)
         {
             IExecute("setSelectionInterval", arg0, arg1);

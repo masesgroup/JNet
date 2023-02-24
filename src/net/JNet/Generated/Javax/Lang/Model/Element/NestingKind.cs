@@ -38,19 +38,19 @@ namespace Javax.Lang.Model.Element
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#ANONYMOUS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#ANONYMOUS"/>
         /// </summary>
         public static Javax.Lang.Model.Element.NestingKind ANONYMOUS => Clazz.GetField<Javax.Lang.Model.Element.NestingKind>("ANONYMOUS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#LOCAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#LOCAL"/>
         /// </summary>
         public static Javax.Lang.Model.Element.NestingKind LOCAL => Clazz.GetField<Javax.Lang.Model.Element.NestingKind>("LOCAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#MEMBER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#MEMBER"/>
         /// </summary>
         public static Javax.Lang.Model.Element.NestingKind MEMBER => Clazz.GetField<Javax.Lang.Model.Element.NestingKind>("MEMBER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#TOP_LEVEL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#TOP_LEVEL"/>
         /// </summary>
         public static Javax.Lang.Model.Element.NestingKind TOP_LEVEL => Clazz.GetField<Javax.Lang.Model.Element.NestingKind>("TOP_LEVEL");
         
@@ -58,8 +58,10 @@ namespace Javax.Lang.Model.Element
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Lang.Model.Element.NestingKind"/></returns>
         public static Javax.Lang.Model.Element.NestingKind[] Values()
         {
             return SExecuteArray<Javax.Lang.Model.Element.NestingKind>("values");
@@ -69,8 +71,10 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#isNested()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#isNested()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsNested()
         {
             return IExecute<bool>("isNested");

@@ -33,6 +33,9 @@ namespace Javax.Print
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.MultiDocPrintService"/> to <see cref="Javax.Print.PrintService"/>
+        /// </summary>
         public static implicit operator Javax.Print.PrintService(Javax.Print.MultiDocPrintService t) => t.Cast<Javax.Print.PrintService>();
         
         #endregion
@@ -47,8 +50,10 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintService.html#createMultiDocPrintJob()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintService.html#createMultiDocPrintJob()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Print.MultiDocPrintJob"/></returns>
         public Javax.Print.MultiDocPrintJob CreateMultiDocPrintJob()
         {
             return IExecute<Javax.Print.MultiDocPrintJob>("createMultiDocPrintJob");

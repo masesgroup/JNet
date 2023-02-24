@@ -38,15 +38,15 @@ namespace Javax.Management.Remote
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#DEFAULT_CLASS_LOADER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#DEFAULT_CLASS_LOADER"/>
         /// </summary>
         public static string DEFAULT_CLASS_LOADER => Clazz.GetField<string>("DEFAULT_CLASS_LOADER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#PROTOCOL_PROVIDER_CLASS_LOADER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#PROTOCOL_PROVIDER_CLASS_LOADER"/>
         /// </summary>
         public static string PROTOCOL_PROVIDER_CLASS_LOADER => Clazz.GetField<string>("PROTOCOL_PROVIDER_CLASS_LOADER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#PROTOCOL_PROVIDER_PACKAGES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#PROTOCOL_PROVIDER_PACKAGES"/>
         /// </summary>
         public static string PROTOCOL_PROVIDER_PACKAGES => Clazz.GetField<string>("PROTOCOL_PROVIDER_PACKAGES");
         
@@ -54,8 +54,11 @@ namespace Javax.Management.Remote
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#connect(javax.management.remote.JMXServiceURL) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html#connect(javax.management.remote.JMXServiceURL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
+        /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Javax.Management.Remote.JMXConnector Connect(Javax.Management.Remote.JMXServiceURL arg0)
         {
             return SExecute<Javax.Management.Remote.JMXConnector>("connect", arg0);

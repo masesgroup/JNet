@@ -33,6 +33,9 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Reflect.AccessibleObject"/> to <see cref="Java.Lang.Reflect.AnnotatedElement"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Reflect.AccessibleObject t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
         
         #endregion
@@ -43,8 +46,10 @@ namespace Java.Lang.Reflect
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#setAccessible(java.lang.reflect.AccessibleObject[],boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#setAccessible(java.lang.reflect.AccessibleObject[],boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Reflect.AccessibleObject"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public static void SetAccessible(Java.Lang.Reflect.AccessibleObject[] arg0, bool arg1)
         {
             SExecute("setAccessible", arg0, arg1);
@@ -54,36 +59,41 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getAnnotations() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getAnnotations()"/> 
         /// </summary>
         public Java.Lang.Annotation.Annotation[] Annotations
         {
             get { return IExecuteArray<Java.Lang.Annotation.Annotation>("getAnnotations"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotations() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotations()"/> 
         /// </summary>
         public Java.Lang.Annotation.Annotation[] DeclaredAnnotations
         {
             get { return IExecuteArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#canAccess(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#canAccess(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CanAccess(object arg0)
         {
             return IExecute<bool>("canAccess", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#trySetAccessible()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#trySetAccessible()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool TrySetAccessible()
         {
             return IExecute<bool>("trySetAccessible");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#setAccessible(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#setAccessible(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetAccessible(bool arg0)
         {
             IExecute("setAccessible", arg0);

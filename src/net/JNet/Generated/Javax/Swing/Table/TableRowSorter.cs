@@ -30,8 +30,9 @@ namespace Javax.Swing.Table
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#<init>(M)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#%3Cinit%3E(M)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
         public TableRowSorter(Javax.Swing.Table.TableModel arg0)
             : base(arg0)
         {
@@ -53,15 +54,16 @@ namespace Javax.Swing.Table
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#getStringConverter() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#setStringConverter(javax.swing.table.TableStringConverter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#getStringConverter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#setStringConverter(javax.swing.table.TableStringConverter)"/>
         /// </summary>
         public Javax.Swing.Table.TableStringConverter StringConverter
         {
             get { return IExecute<Javax.Swing.Table.TableStringConverter>("getStringConverter"); } set { IExecute("setStringConverter", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#setModel(M)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html#setModel(M)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
         public void SetModel(Javax.Swing.Table.TableModel arg0)
         {
             IExecute("setModel", arg0);

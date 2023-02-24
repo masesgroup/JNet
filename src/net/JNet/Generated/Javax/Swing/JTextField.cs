@@ -30,29 +30,36 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public JTextField(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#<init>(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public JTextField(string arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public JTextField(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#<init>(javax.swing.text.Document,java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(javax.swing.text.Document,java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Document"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public JTextField(Javax.Swing.Text.Document arg0, string arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -61,13 +68,16 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JTextField"/> to <see cref="Javax.Swing.SwingConstants"/>
+        /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.JTextField t) => t.Cast<Javax.Swing.SwingConstants>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#notifyAction
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#notifyAction"/>
         /// </summary>
         public static string notifyAction => Clazz.GetField<string>("notifyAction");
         
@@ -79,71 +89,74 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#getAction() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#setAction(javax.swing.Action)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#getAction()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#setAction(javax.swing.Action)"/>
         /// </summary>
         public Javax.Swing.Action Action
         {
             get { return IExecute<Javax.Swing.Action>("getAction"); } set { IExecute("setAction", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#getActionListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#getActionListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ActionListener[] ActionListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.ActionListener>("getActionListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#getColumns() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#setColumns(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#getColumns()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#setColumns(int)"/>
         /// </summary>
         public int Columns
         {
             get { return IExecute<int>("getColumns"); } set { IExecute("setColumns", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#getHorizontalAlignment() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#setHorizontalAlignment(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#getHorizontalAlignment()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#setHorizontalAlignment(int)"/>
         /// </summary>
         public int HorizontalAlignment
         {
             get { return IExecute<int>("getHorizontalAlignment"); } set { IExecute("setHorizontalAlignment", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#getHorizontalVisibility() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#getHorizontalVisibility()"/> 
         /// </summary>
         public Javax.Swing.BoundedRangeModel HorizontalVisibility
         {
             get { return IExecute<Javax.Swing.BoundedRangeModel>("getHorizontalVisibility"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#getScrollOffset() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#setScrollOffset(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#getScrollOffset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#setScrollOffset(int)"/>
         /// </summary>
         public int ScrollOffset
         {
             get { return IExecute<int>("getScrollOffset"); } set { IExecute("setScrollOffset", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#addActionListener(java.awt.event.ActionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#addActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void AddActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecute("addActionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#removeActionListener(java.awt.event.ActionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#removeActionListener(java.awt.event.ActionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0)
         {
             IExecute("removeActionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#postActionEvent()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#postActionEvent()"/>
         /// </summary>
         public void PostActionEvent()
         {
             IExecute("postActionEvent");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#setActionCommand(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#setActionCommand(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void SetActionCommand(string arg0)
         {
             IExecute("setActionCommand", arg0);

@@ -42,22 +42,28 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#from(java.time.temporal.TemporalAccessor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
+        /// <returns><see cref="Java.Time.Chrono.Chronology"/></returns>
         public static Java.Time.Chrono.Chronology From(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return SExecute<Java.Time.Chrono.Chronology>("from", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#of(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#of(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Time.Chrono.Chronology"/></returns>
         public static Java.Time.Chrono.Chronology Of(string arg0)
         {
             return SExecute<Java.Time.Chrono.Chronology>("of", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#ofLocale(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#ofLocale(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Time.Chrono.Chronology"/></returns>
         public static Java.Time.Chrono.Chronology OfLocale(Java.Util.Locale arg0)
         {
             return SExecute<Java.Time.Chrono.Chronology>("ofLocale", arg0);
@@ -67,134 +73,192 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#getCalendarType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#getCalendarType()"/> 
         /// </summary>
         public string CalendarType
         {
             get { return IExecute<string>("getCalendarType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#getId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#getId()"/> 
         /// </summary>
         public string Id
         {
             get { return IExecute<string>("getId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#isLeapYear(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#isLeapYear(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsLeapYear(long arg0)
         {
             return IExecute<bool>("isLeapYear", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#compareTo(java.time.chrono.Chronology)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#compareTo(java.time.chrono.Chronology)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.Chronology"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Java.Time.Chrono.Chronology arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#prolepticYear(java.time.chrono.Era,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#prolepticYear(java.time.chrono.Era,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.Era"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int ProlepticYear(Java.Time.Chrono.Era arg0, int arg1)
         {
             return IExecute<int>("prolepticYear", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#date(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#date(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate Date(int arg0, int arg1, int arg2)
         {
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("date", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#date(java.time.temporal.TemporalAccessor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#date(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate Date(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("date", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateEpochDay(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateEpochDay(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate DateEpochDay(long arg0)
         {
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("dateEpochDay", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateYearDay(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateYearDay(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate DateYearDay(int arg0, int arg1)
         {
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("dateYearDay", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#eraOf(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#eraOf(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.Era"/></returns>
         public Java.Time.Chrono.Era EraOf(int arg0)
         {
             return IExecute<Java.Time.Chrono.Era>("eraOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#date(java.time.chrono.Era,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#date(java.time.chrono.Era,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.Era"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate Date(Java.Time.Chrono.Era arg0, int arg1, int arg2, int arg3)
         {
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("date", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateNow()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateNow()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate DateNow()
         {
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("dateNow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateNow(java.time.Clock)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateNow(java.time.Clock)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate DateNow(Java.Time.Clock arg0)
         {
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("dateNow", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateNow(java.time.ZoneId)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateNow(java.time.ZoneId)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate DateNow(Java.Time.ZoneId arg0)
         {
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("dateNow", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateYearDay(java.time.chrono.Era,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#dateYearDay(java.time.chrono.Era,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.Era"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate DateYearDay(Java.Time.Chrono.Era arg0, int arg1, int arg2)
         {
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("dateYearDay", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#period(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#period(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Period(int arg0, int arg1, int arg2)
         {
             return IExecute<Java.Time.Chrono.ChronoPeriod>("period", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#epochSecond(int,int,int,int,int,int,java.time.ZoneOffset)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#epochSecond(int,int,int,int,int,int,java.time.ZoneOffset)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg6"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <returns><see langword="long"/></returns>
         public long EpochSecond(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, Java.Time.ZoneOffset arg6)
         {
             return IExecute<long>("epochSecond", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#epochSecond(java.time.chrono.Era,int,int,int,int,int,int,java.time.ZoneOffset)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#epochSecond(java.time.chrono.Era,int,int,int,int,int,int,java.time.ZoneOffset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.Era"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg7"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <returns><see langword="long"/></returns>
         public long EpochSecond(Java.Time.Chrono.Era arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Time.ZoneOffset arg7)
         {
             return IExecute<long>("epochSecond", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);

@@ -30,8 +30,10 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#<init>(java.io.InputStream) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public ObjectInputStream(Java.Io.InputStream arg0)
             : base(arg0)
         {
@@ -40,7 +42,13 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Io.ObjectInputStream"/> to <see cref="Java.Io.ObjectInput"/>
+        /// </summary>
         public static implicit operator Java.Io.ObjectInput(Java.Io.ObjectInputStream t) => t.Cast<Java.Io.ObjectInput>();
+        /// <summary>
+        /// Converter from <see cref="Java.Io.ObjectInputStream"/> to <see cref="Java.Io.ObjectStreamConstants"/>
+        /// </summary>
         public static implicit operator Java.Io.ObjectStreamConstants(Java.Io.ObjectInputStream t) => t.Cast<Java.Io.ObjectStreamConstants>();
         
         #endregion
@@ -55,141 +63,202 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#getObjectInputFilter() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#setObjectInputFilter(java.io.ObjectInputFilter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#getObjectInputFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#setObjectInputFilter(java.io.ObjectInputFilter)"/>
         /// </summary>
         public Java.Io.ObjectInputFilter ObjectInputFilter
         {
             get { return IExecute<Java.Io.ObjectInputFilter>("getObjectInputFilter"); } set { IExecute("setObjectInputFilter", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readBoolean() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readBoolean()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public bool ReadBoolean()
         {
             return IExecute<bool>("readBoolean");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readByte() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readByte()"/>
         /// </summary>
+        
+        /// <returns><see langword="byte"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public byte ReadByte()
         {
             return IExecute<byte>("readByte");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readChar() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readChar()"/>
         /// </summary>
+        
+        /// <returns><see langword="char"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public char ReadChar()
         {
             return IExecute<char>("readChar");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readDouble() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readDouble()"/>
         /// </summary>
+        
+        /// <returns><see langword="double"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public double ReadDouble()
         {
             return IExecute<double>("readDouble");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readObject() throws java.io.IOException,java.lang.ClassNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readObject()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public object ReadObject()
         {
             return IExecute("readObject");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readFloat() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readFloat()"/>
         /// </summary>
+        
+        /// <returns><see langword="float"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public float ReadFloat()
         {
             return IExecute<float>("readFloat");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readInt() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readInt()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public int ReadInt()
         {
             return IExecute<int>("readInt");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUnsignedByte() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUnsignedByte()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public int ReadUnsignedByte()
         {
             return IExecute<int>("readUnsignedByte");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUnsignedShort() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUnsignedShort()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public int ReadUnsignedShort()
         {
             return IExecute<int>("readUnsignedShort");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#skipBytes(int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#skipBytes(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public int SkipBytes(int arg0)
         {
             return IExecute<int>("skipBytes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readFields() throws java.io.IOException,java.lang.ClassNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readFields()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Io.ObjectInputStream.GetField"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public Java.Io.ObjectInputStream.GetField ReadFields()
         {
             return IExecute<Java.Io.ObjectInputStream.GetField>("readFields");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUnshared() throws java.io.IOException,java.lang.ClassNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUnshared()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public object ReadUnshared()
         {
             return IExecute("readUnshared");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUTF() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readUTF()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public string ReadUTF()
         {
             return IExecute<string>("readUTF");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readLong() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readLong()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public long ReadLong()
         {
             return IExecute<long>("readLong");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readShort() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readShort()"/>
         /// </summary>
+        
+        /// <returns><see langword="short"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public short ReadShort()
         {
             return IExecute<short>("readShort");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#defaultReadObject() throws java.io.IOException,java.lang.ClassNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#defaultReadObject()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public void DefaultReadObject()
         {
             IExecute("defaultReadObject");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readFully(byte[],int,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readFully(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(byte[] arg0, int arg1, int arg2)
         {
             IExecute("readFully", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readFully(byte[]) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readFully(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(byte[] arg0)
         {
             IExecute("readFully", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#registerValidation(java.io.ObjectInputValidation,int) throws java.io.NotActiveException,java.io.InvalidObjectException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#registerValidation(java.io.ObjectInputValidation,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.ObjectInputValidation"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Java.Io.NotActiveException"/>
+        /// <exception cref="Java.Io.InvalidObjectException"/>
         public void RegisterValidation(Java.Io.ObjectInputValidation arg0, int arg1)
         {
             IExecute("registerValidation", arg0, arg1);
@@ -219,78 +288,117 @@ namespace Java.Io
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#getObjectStreamClass() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#getObjectStreamClass()"/> 
             /// </summary>
             public Java.Io.ObjectStreamClass ObjectStreamClass
             {
                 get { return IExecute<Java.Io.ObjectStreamClass>("getObjectStreamClass"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#defaulted(java.lang.String) throws java.io.IOException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#defaulted(java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <returns><see langword="bool"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
             public bool Defaulted(string arg0)
             {
                 return IExecute<bool>("defaulted", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,boolean) throws java.io.IOException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,boolean)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="bool"/></param>
+            /// <returns><see langword="bool"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
             public bool Get(string arg0, bool arg1)
             {
                 return IExecute<bool>("get", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,byte) throws java.io.IOException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,byte)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="byte"/></param>
+            /// <returns><see langword="byte"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
             public byte Get(string arg0, byte arg1)
             {
                 return IExecute<byte>("get", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,char) throws java.io.IOException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,char)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="char"/></param>
+            /// <returns><see langword="char"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
             public char Get(string arg0, char arg1)
             {
                 return IExecute<char>("get", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,double) throws java.io.IOException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,double)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="double"/></param>
+            /// <returns><see langword="double"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
             public double Get(string arg0, double arg1)
             {
                 return IExecute<double>("get", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,float) throws java.io.IOException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,float)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <returns><see langword="float"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
             public float Get(string arg0, float arg1)
             {
                 return IExecute<float>("get", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,int) throws java.io.IOException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <returns><see langword="int"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
             public int Get(string arg0, int arg1)
             {
                 return IExecute<int>("get", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,java.lang.Object) throws java.io.IOException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="object"/></param>
+            /// <returns><see langword="object"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
             public object Get(string arg0, object arg1)
             {
                 return IExecute("get", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,long) throws java.io.IOException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,long)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="long"/></param>
+            /// <returns><see langword="long"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
             public long Get(string arg0, long arg1)
             {
                 return IExecute<long>("get", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,short) throws java.io.IOException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,short)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="short"/></param>
+            /// <returns><see langword="short"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
             public short Get(string arg0, short arg1)
             {
                 return IExecute<short>("get", arg0, arg1);

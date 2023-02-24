@@ -30,29 +30,39 @@ namespace Java.Beans.Beancontext
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#<init>(java.beans.beancontext.BeanContext,java.util.Locale,boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContext,java.util.Locale,boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
         public BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#<init>(java.beans.beancontext.BeanContext,java.util.Locale,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContext,java.util.Locale,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#<init>(java.beans.beancontext.BeanContext,java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContext,java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         public BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#<init>(java.beans.beancontext.BeanContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
         public BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0)
             : base(arg0)
         {
@@ -61,9 +71,21 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.Beancontext.BeanContextSupport"/> to <see cref="Java.Beans.Beancontext.BeanContext"/>
+        /// </summary>
         public static implicit operator Java.Beans.Beancontext.BeanContext(Java.Beans.Beancontext.BeanContextSupport t) => t.Cast<Java.Beans.Beancontext.BeanContext>();
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.Beancontext.BeanContextSupport"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Beans.Beancontext.BeanContextSupport t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.Beancontext.BeanContextSupport"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+        /// </summary>
         public static implicit operator Java.Beans.PropertyChangeListener(Java.Beans.Beancontext.BeanContextSupport t) => t.Cast<Java.Beans.PropertyChangeListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.Beancontext.BeanContextSupport"/> to <see cref="Java.Beans.VetoableChangeListener"/>
+        /// </summary>
         public static implicit operator Java.Beans.VetoableChangeListener(Java.Beans.Beancontext.BeanContextSupport t) => t.Cast<Java.Beans.VetoableChangeListener>();
         
         #endregion
@@ -78,190 +100,235 @@ namespace Java.Beans.Beancontext
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getBeanContextPeer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getBeanContextPeer()"/> 
         /// </summary>
         public Java.Beans.Beancontext.BeanContext BeanContextPeer
         {
             get { return IExecute<Java.Beans.Beancontext.BeanContext>("getBeanContextPeer"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getLocale() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#setLocale(java.util.Locale) throws java.beans.PropertyVetoException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getLocale()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#setLocale(java.util.Locale)"/>
         /// </summary>
         public Java.Util.Locale Locale
         {
             get { return IExecute<Java.Util.Locale>("getLocale"); } set { IExecute("setLocale", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#add(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#add(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Add(object arg0)
         {
             return IExecute<bool>("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#avoidingGui()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#avoidingGui()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool AvoidingGui()
         {
             return IExecute<bool>("avoidingGui");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#contains(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#contains(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(object arg0)
         {
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#containsKey(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#containsKey(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsKey(object arg0)
         {
             return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#isEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#isEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#isSerializing()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#isSerializing()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSerializing()
         {
             return IExecute<bool>("isSerializing");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#remove(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#remove(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Remove(object arg0)
         {
             return IExecute<bool>("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#readChildren(java.io.ObjectInputStream) throws java.io.IOException,java.lang.ClassNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#readChildren(java.io.ObjectInputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.ObjectInputStream"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public void ReadChildren(Java.Io.ObjectInputStream arg0)
         {
             IExecute("readChildren", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#writeChildren(java.io.ObjectOutputStream) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#writeChildren(java.io.ObjectOutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.ObjectOutputStream"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteChildren(Java.Io.ObjectOutputStream arg0)
         {
             IExecute("writeChildren", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#size()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getResourceAsStream(java.lang.String,java.beans.beancontext.BeanContextChild)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getResourceAsStream(java.lang.String,java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
         public Java.Io.InputStream GetResourceAsStream(string arg0, Java.Beans.Beancontext.BeanContextChild arg1)
         {
             return IExecute<Java.Io.InputStream>("getResourceAsStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#instantiateChild(java.lang.String) throws java.io.IOException,java.lang.ClassNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#instantiateChild(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public object InstantiateChild(string arg0)
         {
             return IExecute("instantiateChild", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#toArray()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#toArray()"/>
         /// </summary>
+        
+        /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
             return IExecuteArray<object>("toArray");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#toArray(java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#toArray(java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
         public object[] ToArray(object[] arg0)
         {
             return IExecuteArray<object>("toArray", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getResource(java.lang.String,java.beans.beancontext.BeanContextChild)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#getResource(java.lang.String,java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
+        /// <returns><see cref="Java.Net.URL"/></returns>
         public Java.Net.URL GetResource(string arg0, Java.Beans.Beancontext.BeanContextChild arg1)
         {
             return IExecute<Java.Net.URL>("getResource", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#isDesignTime()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#isDesignTime()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDesignTime()
         {
             return IExecute<bool>("isDesignTime");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#needsGui()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#needsGui()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool NeedsGui()
         {
             return IExecute<bool>("needsGui");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#dontUseGui()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#dontUseGui()"/>
         /// </summary>
         public void DontUseGui()
         {
             IExecute("dontUseGui");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#okToUseGui()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#okToUseGui()"/>
         /// </summary>
         public void OkToUseGui()
         {
             IExecute("okToUseGui");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#setDesignTime(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#setDesignTime(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetDesignTime(bool arg0)
         {
             IExecute("setDesignTime", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#addBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#addBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipListener"/></param>
         public void AddBeanContextMembershipListener(Java.Beans.Beancontext.BeanContextMembershipListener arg0)
         {
             IExecute("addBeanContextMembershipListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#clear()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecute("clear");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#propertyChange(java.beans.PropertyChangeEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecute("propertyChange", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#removeBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#removeBeanContextMembershipListener(java.beans.beancontext.BeanContextMembershipListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipListener"/></param>
         public void RemoveBeanContextMembershipListener(Java.Beans.Beancontext.BeanContextMembershipListener arg0)
         {
             IExecute("removeBeanContextMembershipListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#vetoableChange(java.beans.PropertyChangeEvent) throws java.beans.PropertyVetoException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#vetoableChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        /// <exception cref="Java.Beans.PropertyVetoException"/>
         public void VetoableChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecute("vetoableChange", arg0);

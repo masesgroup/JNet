@@ -33,13 +33,16 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sound.Sampled.Clip"/> to <see cref="Javax.Sound.Sampled.DataLine"/>
+        /// </summary>
         public static implicit operator Javax.Sound.Sampled.DataLine(Javax.Sound.Sampled.Clip t) => t.Cast<Javax.Sound.Sampled.DataLine>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#LOOP_CONTINUOUSLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#LOOP_CONTINUOUSLY"/>
         /// </summary>
         public static int LOOP_CONTINUOUSLY => Clazz.GetField<int>("LOOP_CONTINUOUSLY");
         
@@ -51,57 +54,70 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#getFrameLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#getFrameLength()"/> 
         /// </summary>
         public int FrameLength
         {
             get { return IExecute<int>("getFrameLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#getMicrosecondLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#getMicrosecondLength()"/> 
         /// </summary>
         public long MicrosecondLength
         {
             get { return IExecute<long>("getMicrosecondLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#loop(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#loop(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Loop(int arg0)
         {
             IExecute("loop", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#open(javax.sound.sampled.AudioFormat,byte[],int,int) throws javax.sound.sampled.LineUnavailableException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#open(javax.sound.sampled.AudioFormat,byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public void Open(Javax.Sound.Sampled.AudioFormat arg0, byte[] arg1, int arg2, int arg3)
         {
             IExecute("open", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#open(javax.sound.sampled.AudioInputStream) throws javax.sound.sampled.LineUnavailableException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#open(javax.sound.sampled.AudioInputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void Open(Javax.Sound.Sampled.AudioInputStream arg0)
         {
             IExecute("open", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setFramePosition(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setFramePosition(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetFramePosition(int arg0)
         {
             IExecute("setFramePosition", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setLoopPoints(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setLoopPoints(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetLoopPoints(int arg0, int arg1)
         {
             IExecute("setLoopPoints", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setMicrosecondPosition(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setMicrosecondPosition(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
         public void SetMicrosecondPosition(long arg0)
         {
             IExecute("setMicrosecondPosition", arg0);

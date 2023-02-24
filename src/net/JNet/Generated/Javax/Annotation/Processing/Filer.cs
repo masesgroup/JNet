@@ -46,29 +46,48 @@ namespace Javax.Annotation.Processing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#createResource(javax.tools.JavaFileManager$Location,java.lang.CharSequence,java.lang.CharSequence,javax.lang.model.element.Element...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#createResource(javax.tools.JavaFileManager$Location,java.lang.CharSequence,java.lang.CharSequence,javax.lang.model.element.Element...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg3"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <returns><see cref="Javax.Tools.FileObject"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.FileObject CreateResource(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2, params Javax.Lang.Model.Element.Element[] arg3)
         {
             if (arg3.Length == 0) return IExecute<Javax.Tools.FileObject>("createResource", arg0, arg1, arg2); else return IExecute<Javax.Tools.FileObject>("createResource", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#getResource(javax.tools.JavaFileManager$Location,java.lang.CharSequence,java.lang.CharSequence) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#getResource(javax.tools.JavaFileManager$Location,java.lang.CharSequence,java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Javax.Tools.FileObject"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.FileObject GetResource(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
         {
             return IExecute<Javax.Tools.FileObject>("getResource", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#createClassFile(java.lang.CharSequence,javax.lang.model.element.Element...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#createClassFile(java.lang.CharSequence,javax.lang.model.element.Element...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <returns><see cref="Javax.Tools.JavaFileObject"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.JavaFileObject CreateClassFile(Java.Lang.CharSequence arg0, params Javax.Lang.Model.Element.Element[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Javax.Tools.JavaFileObject>("createClassFile", arg0); else return IExecute<Javax.Tools.JavaFileObject>("createClassFile", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#createSourceFile(java.lang.CharSequence,javax.lang.model.element.Element...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#createSourceFile(java.lang.CharSequence,javax.lang.model.element.Element...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <returns><see cref="Javax.Tools.JavaFileObject"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.JavaFileObject CreateSourceFile(Java.Lang.CharSequence arg0, params Javax.Lang.Model.Element.Element[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Javax.Tools.JavaFileObject>("createSourceFile", arg0); else return IExecute<Javax.Tools.JavaFileObject>("createSourceFile", arg0, arg1);

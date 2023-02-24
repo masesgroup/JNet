@@ -30,8 +30,12 @@ namespace Javax.Swing.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#<init>(java.lang.Object,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#%3Cinit%3E(java.lang.Object,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public ListDataEvent(object arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -45,15 +49,15 @@ namespace Javax.Swing.Event
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#CONTENTS_CHANGED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#CONTENTS_CHANGED"/>
         /// </summary>
         public static int CONTENTS_CHANGED => Clazz.GetField<int>("CONTENTS_CHANGED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#INTERVAL_ADDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#INTERVAL_ADDED"/>
         /// </summary>
         public static int INTERVAL_ADDED => Clazz.GetField<int>("INTERVAL_ADDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#INTERVAL_REMOVED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#INTERVAL_REMOVED"/>
         /// </summary>
         public static int INTERVAL_REMOVED => Clazz.GetField<int>("INTERVAL_REMOVED");
         
@@ -65,21 +69,21 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#getIndex0() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#getIndex0()"/> 
         /// </summary>
         public int Index0
         {
             get { return IExecute<int>("getIndex0"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#getIndex1() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#getIndex1()"/> 
         /// </summary>
         public int Index1
         {
             get { return IExecute<int>("getIndex1"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataEvent.html#getType()"/> 
         /// </summary>
         public int Type
         {

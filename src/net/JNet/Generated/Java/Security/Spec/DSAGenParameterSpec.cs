@@ -30,15 +30,20 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#<init>(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public DSAGenParameterSpec(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#<init>(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#%3Cinit%3E(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public DSAGenParameterSpec(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -47,6 +52,9 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Spec.DSAGenParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Java.Security.Spec.DSAGenParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
         
         #endregion
@@ -61,21 +69,21 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#getPrimePLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#getPrimePLength()"/> 
         /// </summary>
         public int PrimePLength
         {
             get { return IExecute<int>("getPrimePLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#getSeedLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#getSeedLength()"/> 
         /// </summary>
         public int SeedLength
         {
             get { return IExecute<int>("getSeedLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#getSubprimeQLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html#getSubprimeQLength()"/> 
         /// </summary>
         public int SubprimeQLength
         {

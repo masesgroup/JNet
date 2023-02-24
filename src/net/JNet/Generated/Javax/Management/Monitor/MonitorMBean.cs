@@ -46,63 +46,70 @@ namespace Javax.Management.Monitor
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getGranularityPeriod() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#setGranularityPeriod(long) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getGranularityPeriod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#setGranularityPeriod(long)"/>
         /// </summary>
         public long GranularityPeriod
         {
             get { return IExecute<long>("getGranularityPeriod"); } set { IExecute("setGranularityPeriod", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getObservedAttribute() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#setObservedAttribute(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getObservedAttribute()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#setObservedAttribute(java.lang.String)"/>
         /// </summary>
         public string ObservedAttribute
         {
             get { return IExecute<string>("getObservedAttribute"); } set { IExecute("setObservedAttribute", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getObservedObjects() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getObservedObjects()"/> 
         /// </summary>
         public Javax.Management.ObjectName[] ObservedObjects
         {
             get { return IExecuteArray<Javax.Management.ObjectName>("getObservedObjects"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#containsObservedObject(javax.management.ObjectName)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#containsObservedObject(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsObservedObject(Javax.Management.ObjectName arg0)
         {
             return IExecute<bool>("containsObservedObject", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#isActive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#isActive()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsActive()
         {
             return IExecute<bool>("isActive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#addObservedObject(javax.management.ObjectName) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#addObservedObject(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void AddObservedObject(Javax.Management.ObjectName arg0)
         {
             IExecute("addObservedObject", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#removeObservedObject(javax.management.ObjectName)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#removeObservedObject(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         public void RemoveObservedObject(Javax.Management.ObjectName arg0)
         {
             IExecute("removeObservedObject", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#start()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#start()"/>
         /// </summary>
         public void Start()
         {
             IExecute("start");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#stop()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#stop()"/>
         /// </summary>
         public void Stop()
         {

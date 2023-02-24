@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Css
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Css.CSSUnknownRule"/> to <see cref="Org.W3c.Dom.Css.CSSRule"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Css.CSSRule(Org.W3c.Dom.Css.CSSUnknownRule t) => t.Cast<Org.W3c.Dom.Css.CSSRule>();
         
         #endregion

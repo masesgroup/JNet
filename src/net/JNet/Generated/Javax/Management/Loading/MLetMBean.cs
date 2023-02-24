@@ -46,43 +46,50 @@ namespace Javax.Management.Loading
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getLibraryDirectory() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#setLibraryDirectory(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getLibraryDirectory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#setLibraryDirectory(java.lang.String)"/>
         /// </summary>
         public string LibraryDirectory
         {
             get { return IExecute<string>("getLibraryDirectory"); } set { IExecute("setLibraryDirectory", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getURLs() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getURLs()"/> 
         /// </summary>
         public Java.Net.URL[] URLs
         {
             get { return IExecuteArray<Java.Net.URL>("getURLs"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getResourceAsStream(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getResourceAsStream(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
         public Java.Io.InputStream GetResourceAsStream(string arg0)
         {
             return IExecute<Java.Io.InputStream>("getResourceAsStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getResource(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getResource(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Net.URL"/></returns>
         public Java.Net.URL GetResource(string arg0)
         {
             return IExecute<Java.Net.URL>("getResource", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#addURL(java.lang.String) throws javax.management.ServiceNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#addURL(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Javax.Management.ServiceNotFoundException"/>
         public void AddURL(string arg0)
         {
             IExecute("addURL", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#addURL(java.net.URL)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#addURL(java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         public void AddURL(Java.Net.URL arg0)
         {
             IExecute("addURL", arg0);

@@ -33,6 +33,9 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.FileLock"/> to <see cref="Java.Lang.AutoCloseable"/>
+        /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Nio.Channels.FileLock t) => t.Cast<Java.Lang.AutoCloseable>();
         
         #endregion
@@ -47,64 +50,83 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#isValid()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#isValid()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsValid()
         {
             return IExecute<bool>("isValid");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#release() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#release()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Release()
         {
             IExecute("release");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#isShared()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#isShared()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsShared()
         {
             return IExecute<bool>("isShared");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#overlaps(long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#overlaps(long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Overlaps(long arg0, long arg1)
         {
             return IExecute<bool>("overlaps", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#channels.FileChannel java.nio.channels.FileLock.channel()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#channels.FileChannel java.nio.channels.FileLock.channel()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
         public Java.Nio.Channels.FileChannel Channel()
         {
             return IExecute<Java.Nio.Channels.FileChannel>("channel");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#position()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#position()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long Position()
         {
             return IExecute<long>("position");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#size()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long Size()
         {
             return IExecute<long>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#close() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#acquiredBy()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#acquiredBy()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.Channel"/></returns>
         public Java.Nio.Channels.Channel AcquiredBy()
         {
             return IExecute<Java.Nio.Channels.Channel>("acquiredBy");

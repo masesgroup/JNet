@@ -30,8 +30,9 @@ namespace Javax.Swing.Tree
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#<init>(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public TreePath(object arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Tree.TreePath"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Tree.TreePath t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,50 +58,56 @@ namespace Javax.Swing.Tree
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#getLastPathComponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#getLastPathComponent()"/> 
         /// </summary>
         public object LastPathComponent
         {
             get { return IExecute("getLastPathComponent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#getParentPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#getParentPath()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath ParentPath
         {
             get { return IExecute<Javax.Swing.Tree.TreePath>("getParentPath"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#getPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#getPath()"/> 
         /// </summary>
         public object[] Path
         {
             get { return IExecuteArray<object>("getPath"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#getPathCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#getPathCount()"/> 
         /// </summary>
         public int PathCount
         {
             get { return IExecute<int>("getPathCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#isDescendant(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#isDescendant(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsDescendant(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<bool>("isDescendant", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#getPathComponent(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#getPathComponent(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetPathComponent(int arg0)
         {
             return IExecute("getPathComponent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#pathByAddingChild(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#pathByAddingChild(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath PathByAddingChild(object arg0)
         {
             return IExecute<Javax.Swing.Tree.TreePath>("pathByAddingChild", arg0);

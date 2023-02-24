@@ -46,7 +46,7 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/HasControls.html#getControls() throws javax.naming.NamingException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/HasControls.html#getControls()"/> 
         /// </summary>
         public Javax.Naming.Ldap.Control[] Controls
         {

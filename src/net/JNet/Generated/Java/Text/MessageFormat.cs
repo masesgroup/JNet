@@ -30,15 +30,18 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#<init>(java.lang.String,java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#%3Cinit%3E(java.lang.String,java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         public MessageFormat(string arg0, Java.Util.Locale arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public MessageFormat(string arg0)
             : base(arg0)
         {
@@ -56,8 +59,11 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#format(java.lang.String,java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#format(java.lang.String,java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string Format(string arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return SExecute<string>("format", arg0); else return SExecute<string>("format", arg0, arg1);
@@ -67,71 +73,88 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#getFormats() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormats(java.text.Format[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#getFormats()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormats(java.text.Format[])"/>
         /// </summary>
         public Java.Text.Format[] Formats
         {
             get { return IExecuteArray<Java.Text.Format>("getFormats"); } set { IExecute("setFormats", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#getFormatsByArgumentIndex() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormatsByArgumentIndex(java.text.Format[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#getFormatsByArgumentIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormatsByArgumentIndex(java.text.Format[])"/>
         /// </summary>
         public Java.Text.Format[] FormatsByArgumentIndex
         {
             get { return IExecuteArray<Java.Text.Format>("getFormatsByArgumentIndex"); } set { IExecute("setFormatsByArgumentIndex", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#getLocale() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setLocale(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#getLocale()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setLocale(java.util.Locale)"/>
         /// </summary>
         public Java.Util.Locale Locale
         {
             get { return IExecute<Java.Util.Locale>("getLocale"); } set { IExecute("setLocale", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#format(java.lang.Object[],java.lang.StringBuffer,java.text.FieldPosition)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#format(java.lang.Object[],java.lang.StringBuffer,java.text.FieldPosition)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.StringBuffer"/></param>
+        /// <param name="arg2"><see cref="Java.Text.FieldPosition"/></param>
+        /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(object[] arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
             return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#parse(java.lang.String,java.text.ParsePosition)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Text.ParsePosition"/></param>
+        /// <returns><see cref="object"/></returns>
         public object[] Parse(string arg0, Java.Text.ParsePosition arg1)
         {
             return IExecuteArray<object>("parse", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#parse(java.lang.String) throws java.text.ParseException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#parse(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Text.ParseException"/>
         public object[] Parse(string arg0)
         {
             return IExecuteArray<object>("parse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#toPattern()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#toPattern()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string ToPattern()
         {
             return IExecute<string>("toPattern");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#applyPattern(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#applyPattern(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void ApplyPattern(string arg0)
         {
             IExecute("applyPattern", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormat(int,java.text.Format)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormat(int,java.text.Format)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Text.Format"/></param>
         public void SetFormat(int arg0, Java.Text.Format arg1)
         {
             IExecute("setFormat", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormatByArgumentIndex(int,java.text.Format)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormatByArgumentIndex(int,java.text.Format)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Text.Format"/></param>
         public void SetFormatByArgumentIndex(int arg0, Java.Text.Format arg1)
         {
             IExecute("setFormatByArgumentIndex", arg0, arg1);
@@ -153,7 +176,7 @@ namespace Java.Text
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.Field.html#ARGUMENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.Field.html#ARGUMENT"/>
             /// </summary>
             public static Java.Text.MessageFormat.Field ARGUMENT => Clazz.GetField<Java.Text.MessageFormat.Field>("ARGUMENT");
             

@@ -42,22 +42,30 @@ namespace Java.Security.Cert
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getDefaultType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getDefaultType()"/> 
         /// </summary>
         public static string DefaultType
         {
             get { return SExecute<string>("getDefaultType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getInstance(java.lang.String,java.lang.String) throws java.security.NoSuchAlgorithmException,java.security.NoSuchProviderException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertPathValidator"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.Cert.CertPathValidator GetInstance(string arg0, string arg1)
         {
             return SExecute<Java.Security.Cert.CertPathValidator>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertPathValidator"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Cert.CertPathValidator GetInstance(string arg0)
         {
             return SExecute<Java.Security.Cert.CertPathValidator>("getInstance", arg0);
@@ -67,22 +75,27 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getRevocationChecker() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#getRevocationChecker()"/> 
         /// </summary>
         public Java.Security.Cert.CertPathChecker RevocationChecker
         {
             get { return IExecute<Java.Security.Cert.CertPathChecker>("getRevocationChecker"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#validate(java.security.cert.CertPath,java.security.cert.CertPathParameters) throws java.security.cert.CertPathValidatorException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html#validate(java.security.cert.CertPath,java.security.cert.CertPathParameters)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.CertPath"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.CertPathParameters"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertPathValidatorResult"/></returns>
+        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public Java.Security.Cert.CertPathValidatorResult Validate(Java.Security.Cert.CertPath arg0, Java.Security.Cert.CertPathParameters arg1)
         {
             return IExecute<Java.Security.Cert.CertPathValidatorResult>("validate", arg0, arg1);

@@ -33,6 +33,9 @@ namespace Javax.Xml.Stream.Events
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Stream.Events.EntityDeclaration"/> to <see cref="Javax.Xml.Stream.Events.XMLEvent"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Stream.Events.XMLEvent(Javax.Xml.Stream.Events.EntityDeclaration t) => t.Cast<Javax.Xml.Stream.Events.XMLEvent>();
         
         #endregion
@@ -47,42 +50,42 @@ namespace Javax.Xml.Stream.Events
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getBaseURI() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getBaseURI()"/> 
         /// </summary>
         public string BaseURI
         {
             get { return IExecute<string>("getBaseURI"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getNotationName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getNotationName()"/> 
         /// </summary>
         public string NotationName
         {
             get { return IExecute<string>("getNotationName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getPublicId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getPublicId()"/> 
         /// </summary>
         public string PublicId
         {
             get { return IExecute<string>("getPublicId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getReplacementText() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getReplacementText()"/> 
         /// </summary>
         public string ReplacementText
         {
             get { return IExecute<string>("getReplacementText"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getSystemId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getSystemId()"/> 
         /// </summary>
         public string SystemId
         {

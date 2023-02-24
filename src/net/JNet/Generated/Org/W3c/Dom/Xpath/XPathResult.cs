@@ -38,43 +38,43 @@ namespace Org.W3c.Dom.Xpath
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ANY_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ANY_TYPE"/>
         /// </summary>
         public static short ANY_TYPE => Clazz.GetField<short>("ANY_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ANY_UNORDERED_NODE_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ANY_UNORDERED_NODE_TYPE"/>
         /// </summary>
         public static short ANY_UNORDERED_NODE_TYPE => Clazz.GetField<short>("ANY_UNORDERED_NODE_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#BOOLEAN_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#BOOLEAN_TYPE"/>
         /// </summary>
         public static short BOOLEAN_TYPE => Clazz.GetField<short>("BOOLEAN_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#FIRST_ORDERED_NODE_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#FIRST_ORDERED_NODE_TYPE"/>
         /// </summary>
         public static short FIRST_ORDERED_NODE_TYPE => Clazz.GetField<short>("FIRST_ORDERED_NODE_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#NUMBER_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#NUMBER_TYPE"/>
         /// </summary>
         public static short NUMBER_TYPE => Clazz.GetField<short>("NUMBER_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ORDERED_NODE_ITERATOR_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ORDERED_NODE_ITERATOR_TYPE"/>
         /// </summary>
         public static short ORDERED_NODE_ITERATOR_TYPE => Clazz.GetField<short>("ORDERED_NODE_ITERATOR_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ORDERED_NODE_SNAPSHOT_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ORDERED_NODE_SNAPSHOT_TYPE"/>
         /// </summary>
         public static short ORDERED_NODE_SNAPSHOT_TYPE => Clazz.GetField<short>("ORDERED_NODE_SNAPSHOT_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#STRING_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#STRING_TYPE"/>
         /// </summary>
         public static short STRING_TYPE => Clazz.GetField<short>("STRING_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#UNORDERED_NODE_ITERATOR_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#UNORDERED_NODE_ITERATOR_TYPE"/>
         /// </summary>
         public static short UNORDERED_NODE_ITERATOR_TYPE => Clazz.GetField<short>("UNORDERED_NODE_ITERATOR_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#UNORDERED_NODE_SNAPSHOT_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#UNORDERED_NODE_SNAPSHOT_TYPE"/>
         /// </summary>
         public static short UNORDERED_NODE_SNAPSHOT_TYPE => Clazz.GetField<short>("UNORDERED_NODE_SNAPSHOT_TYPE");
         
@@ -86,64 +86,71 @@ namespace Org.W3c.Dom.Xpath
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getBooleanValue() throws org.w3c.dom.xpath.XPathException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getBooleanValue()"/> 
         /// </summary>
         public bool BooleanValue
         {
             get { return IExecute<bool>("getBooleanValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getInvalidIteratorState() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getInvalidIteratorState()"/> 
         /// </summary>
         public bool InvalidIteratorState
         {
             get { return IExecute<bool>("getInvalidIteratorState"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getNumberValue() throws org.w3c.dom.xpath.XPathException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getNumberValue()"/> 
         /// </summary>
         public double NumberValue
         {
             get { return IExecute<double>("getNumberValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getResultType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getResultType()"/> 
         /// </summary>
         public short ResultType
         {
             get { return IExecute<short>("getResultType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getSingleNodeValue() throws org.w3c.dom.xpath.XPathException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getSingleNodeValue()"/> 
         /// </summary>
         public Org.W3c.Dom.Node SingleNodeValue
         {
             get { return IExecute<Org.W3c.Dom.Node>("getSingleNodeValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getSnapshotLength() throws org.w3c.dom.xpath.XPathException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getSnapshotLength()"/> 
         /// </summary>
         public int SnapshotLength
         {
             get { return IExecute<int>("getSnapshotLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getStringValue() throws org.w3c.dom.xpath.XPathException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getStringValue()"/> 
         /// </summary>
         public string StringValue
         {
             get { return IExecute<string>("getStringValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#iterateNext() throws org.w3c.dom.xpath.XPathException,org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#iterateNext()"/>
         /// </summary>
+        
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node IterateNext()
         {
             return IExecute<Org.W3c.Dom.Node>("iterateNext");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#snapshotItem(int) throws org.w3c.dom.xpath.XPathException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#snapshotItem(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
         public Org.W3c.Dom.Node SnapshotItem(int arg0)
         {
             return IExecute<Org.W3c.Dom.Node>("snapshotItem", arg0);

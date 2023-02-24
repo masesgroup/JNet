@@ -30,8 +30,10 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#<init>(java.lang.String) throws java.text.ParseException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Text.ParseException"/>
         public RuleBasedCollator(string arg0)
             : base(arg0)
         {
@@ -53,22 +55,26 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#getRules() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#getRules()"/> 
         /// </summary>
         public string Rules
         {
             get { return IExecute<string>("getRules"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#getCollationElementIterator(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#getCollationElementIterator(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Text.CollationElementIterator"/></returns>
         public Java.Text.CollationElementIterator GetCollationElementIterator(string arg0)
         {
             return IExecute<Java.Text.CollationElementIterator>("getCollationElementIterator", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#getCollationElementIterator(java.text.CharacterIterator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#getCollationElementIterator(java.text.CharacterIterator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
+        /// <returns><see cref="Java.Text.CollationElementIterator"/></returns>
         public Java.Text.CollationElementIterator GetCollationElementIterator(Java.Text.CharacterIterator arg0)
         {
             return IExecute<Java.Text.CollationElementIterator>("getCollationElementIterator", arg0);

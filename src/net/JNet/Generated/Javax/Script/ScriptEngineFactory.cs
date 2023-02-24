@@ -46,64 +46,74 @@ namespace Javax.Script
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getEngineName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getEngineName()"/> 
         /// </summary>
         public string EngineName
         {
             get { return IExecute<string>("getEngineName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getEngineVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getEngineVersion()"/> 
         /// </summary>
         public string EngineVersion
         {
             get { return IExecute<string>("getEngineVersion"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getLanguageName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getLanguageName()"/> 
         /// </summary>
         public string LanguageName
         {
             get { return IExecute<string>("getLanguageName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getLanguageVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getLanguageVersion()"/> 
         /// </summary>
         public string LanguageVersion
         {
             get { return IExecute<string>("getLanguageVersion"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getScriptEngine() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getScriptEngine()"/> 
         /// </summary>
         public Javax.Script.ScriptEngine ScriptEngine
         {
             get { return IExecute<Javax.Script.ScriptEngine>("getScriptEngine"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getParameter(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getParameter(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetParameter(string arg0)
         {
             return IExecute("getParameter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getMethodCallSyntax(java.lang.String,java.lang.String,java.lang.String...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getMethodCallSyntax(java.lang.String,java.lang.String,java.lang.String...)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetMethodCallSyntax(string arg0, string arg1, params string[] arg2)
         {
             if (arg2.Length == 0) return IExecute<string>("getMethodCallSyntax", arg0, arg1); else return IExecute<string>("getMethodCallSyntax", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getOutputStatement(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getOutputStatement(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetOutputStatement(string arg0)
         {
             return IExecute<string>("getOutputStatement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getProgram(java.lang.String...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getProgram(java.lang.String...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetProgram(params string[] arg0)
         {
             if (arg0.Length == 0) return IExecute<string>("getProgram"); else return IExecute<string>("getProgram", arg0);

@@ -33,6 +33,9 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.ExecutorService"/> to <see cref="Java.Util.Concurrent.Executor"/>
+        /// </summary>
         public static implicit operator Java.Util.Concurrent.Executor(Java.Util.Concurrent.ExecutorService t) => t.Cast<Java.Util.Concurrent.Executor>();
         
         #endregion
@@ -47,21 +50,25 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#isShutdown()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#isShutdown()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsShutdown()
         {
             return IExecute<bool>("isShutdown");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#isTerminated()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#isTerminated()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsTerminated()
         {
             return IExecute<bool>("isTerminated");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#shutdown()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html#shutdown()"/>
         /// </summary>
         public void Shutdown()
         {

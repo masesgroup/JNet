@@ -46,15 +46,19 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#deleteDirectory(T) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#deleteDirectory(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void DeleteDirectory(object arg0)
         {
             IExecute("deleteDirectory", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#deleteFile(T) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#deleteFile(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void DeleteFile(object arg0)
         {
             IExecute("deleteFile", arg0);

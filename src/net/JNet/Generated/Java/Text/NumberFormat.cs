@@ -38,11 +38,11 @@ namespace Java.Text
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#FRACTION_FIELD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#FRACTION_FIELD"/>
         /// </summary>
         public static int FRACTION_FIELD => Clazz.GetField<int>("FRACTION_FIELD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#INTEGER_FIELD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#INTEGER_FIELD"/>
         /// </summary>
         public static int INTEGER_FIELD => Clazz.GetField<int>("INTEGER_FIELD");
         
@@ -50,78 +50,90 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getAvailableLocales() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getAvailableLocales()"/> 
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
             get { return SExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getCurrencyInstance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getCurrencyInstance()"/> 
         /// </summary>
         public static Java.Text.NumberFormat CurrencyInstance
         {
             get { return SExecute<Java.Text.NumberFormat>("getCurrencyInstance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getIntegerInstance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getIntegerInstance()"/> 
         /// </summary>
         public static Java.Text.NumberFormat IntegerInstance
         {
             get { return SExecute<Java.Text.NumberFormat>("getIntegerInstance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getNumberInstance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getNumberInstance()"/> 
         /// </summary>
         public static Java.Text.NumberFormat NumberInstance
         {
             get { return SExecute<Java.Text.NumberFormat>("getNumberInstance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getPercentInstance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getPercentInstance()"/> 
         /// </summary>
         public static Java.Text.NumberFormat PercentInstance
         {
             get { return SExecute<Java.Text.NumberFormat>("getPercentInstance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetInstance()
         {
             return SExecute<Java.Text.NumberFormat>("getInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getCurrencyInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getCurrencyInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetCurrencyInstance(Java.Util.Locale arg0)
         {
             return SExecute<Java.Text.NumberFormat>("getCurrencyInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetInstance(Java.Util.Locale arg0)
         {
             return SExecute<Java.Text.NumberFormat>("getInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getIntegerInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getIntegerInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetIntegerInstance(Java.Util.Locale arg0)
         {
             return SExecute<Java.Text.NumberFormat>("getIntegerInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getNumberInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getNumberInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetNumberInstance(Java.Util.Locale arg0)
         {
             return SExecute<Java.Text.NumberFormat>("getNumberInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getPercentInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getPercentInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetPercentInstance(Java.Util.Locale arg0)
         {
             return SExecute<Java.Text.NumberFormat>("getPercentInstance", arg0);
@@ -131,106 +143,130 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getCurrency() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setCurrency(java.util.Currency)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getCurrency()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setCurrency(java.util.Currency)"/>
         /// </summary>
         public Java.Util.Currency Currency
         {
             get { return IExecute<Java.Util.Currency>("getCurrency"); } set { IExecute("setCurrency", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getMaximumFractionDigits() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setMaximumFractionDigits(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getMaximumFractionDigits()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setMaximumFractionDigits(int)"/>
         /// </summary>
         public int MaximumFractionDigits
         {
             get { return IExecute<int>("getMaximumFractionDigits"); } set { IExecute("setMaximumFractionDigits", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getMaximumIntegerDigits() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setMaximumIntegerDigits(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getMaximumIntegerDigits()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setMaximumIntegerDigits(int)"/>
         /// </summary>
         public int MaximumIntegerDigits
         {
             get { return IExecute<int>("getMaximumIntegerDigits"); } set { IExecute("setMaximumIntegerDigits", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getMinimumFractionDigits() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setMinimumFractionDigits(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getMinimumFractionDigits()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setMinimumFractionDigits(int)"/>
         /// </summary>
         public int MinimumFractionDigits
         {
             get { return IExecute<int>("getMinimumFractionDigits"); } set { IExecute("setMinimumFractionDigits", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getMinimumIntegerDigits() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setMinimumIntegerDigits(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getMinimumIntegerDigits()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setMinimumIntegerDigits(int)"/>
         /// </summary>
         public int MinimumIntegerDigits
         {
             get { return IExecute<int>("getMinimumIntegerDigits"); } set { IExecute("setMinimumIntegerDigits", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#parse(java.lang.String,java.text.ParsePosition)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Text.ParsePosition"/></param>
+        /// <returns><see cref="Java.Lang.Number"/></returns>
         public Java.Lang.Number Parse(string arg0, Java.Text.ParsePosition arg1)
         {
             return IExecute<Java.Lang.Number>("parse", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(double,java.lang.StringBuffer,java.text.FieldPosition)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(double,java.lang.StringBuffer,java.text.FieldPosition)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.StringBuffer"/></param>
+        /// <param name="arg2"><see cref="Java.Text.FieldPosition"/></param>
+        /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(double arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
             return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(long,java.lang.StringBuffer,java.text.FieldPosition)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(long,java.lang.StringBuffer,java.text.FieldPosition)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.StringBuffer"/></param>
+        /// <param name="arg2"><see cref="Java.Text.FieldPosition"/></param>
+        /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer Format(long arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
             return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#isGroupingUsed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#isGroupingUsed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsGroupingUsed()
         {
             return IExecute<bool>("isGroupingUsed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#isParseIntegerOnly()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#isParseIntegerOnly()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsParseIntegerOnly()
         {
             return IExecute<bool>("isParseIntegerOnly");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <returns><see langword="string"/></returns>
         public string Format(double arg0)
         {
             return IExecute<string>("format", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#format(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="string"/></returns>
         public string Format(long arg0)
         {
             return IExecute<string>("format", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#parse(java.lang.String) throws java.text.ParseException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#parse(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Lang.Number"/></returns>
+        /// <exception cref="Java.Text.ParseException"/>
         public Java.Lang.Number Parse(string arg0)
         {
             return IExecute<Java.Lang.Number>("parse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setGroupingUsed(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setGroupingUsed(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetGroupingUsed(bool arg0)
         {
             IExecute("setGroupingUsed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setParseIntegerOnly(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setParseIntegerOnly(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetParseIntegerOnly(bool arg0)
         {
             IExecute("setParseIntegerOnly", arg0);
@@ -252,47 +288,47 @@ namespace Java.Text
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#CURRENCY
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#CURRENCY"/>
             /// </summary>
             public static Java.Text.NumberFormat.Field CURRENCY => Clazz.GetField<Java.Text.NumberFormat.Field>("CURRENCY");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#DECIMAL_SEPARATOR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#DECIMAL_SEPARATOR"/>
             /// </summary>
             public static Java.Text.NumberFormat.Field DECIMAL_SEPARATOR => Clazz.GetField<Java.Text.NumberFormat.Field>("DECIMAL_SEPARATOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT"/>
             /// </summary>
             public static Java.Text.NumberFormat.Field EXPONENT => Clazz.GetField<Java.Text.NumberFormat.Field>("EXPONENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT_SIGN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT_SIGN"/>
             /// </summary>
             public static Java.Text.NumberFormat.Field EXPONENT_SIGN => Clazz.GetField<Java.Text.NumberFormat.Field>("EXPONENT_SIGN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT_SYMBOL
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT_SYMBOL"/>
             /// </summary>
             public static Java.Text.NumberFormat.Field EXPONENT_SYMBOL => Clazz.GetField<Java.Text.NumberFormat.Field>("EXPONENT_SYMBOL");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#FRACTION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#FRACTION"/>
             /// </summary>
             public static Java.Text.NumberFormat.Field FRACTION => Clazz.GetField<Java.Text.NumberFormat.Field>("FRACTION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#GROUPING_SEPARATOR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#GROUPING_SEPARATOR"/>
             /// </summary>
             public static Java.Text.NumberFormat.Field GROUPING_SEPARATOR => Clazz.GetField<Java.Text.NumberFormat.Field>("GROUPING_SEPARATOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#INTEGER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#INTEGER"/>
             /// </summary>
             public static Java.Text.NumberFormat.Field INTEGER => Clazz.GetField<Java.Text.NumberFormat.Field>("INTEGER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#PERCENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#PERCENT"/>
             /// </summary>
             public static Java.Text.NumberFormat.Field PERCENT => Clazz.GetField<Java.Text.NumberFormat.Field>("PERCENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#PERMILLE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#PERMILLE"/>
             /// </summary>
             public static Java.Text.NumberFormat.Field PERMILLE => Clazz.GetField<Java.Text.NumberFormat.Field>("PERMILLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#SIGN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#SIGN"/>
             /// </summary>
             public static Java.Text.NumberFormat.Field SIGN => Clazz.GetField<Java.Text.NumberFormat.Field>("SIGN");
             

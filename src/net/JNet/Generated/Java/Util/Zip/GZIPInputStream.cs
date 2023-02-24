@@ -30,15 +30,20 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPInputStream.html#<init>(java.io.InputStream,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPInputStream.html#%3Cinit%3E(java.io.InputStream,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public GZIPInputStream(Java.Io.InputStream arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPInputStream.html#<init>(java.io.InputStream) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public GZIPInputStream(Java.Io.InputStream arg0)
             : base(arg0)
         {
@@ -52,7 +57,7 @@ namespace Java.Util.Zip
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPInputStream.html#GZIP_MAGIC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPInputStream.html#GZIP_MAGIC"/>
         /// </summary>
         public static int GZIP_MAGIC => Clazz.GetField<int>("GZIP_MAGIC");
         

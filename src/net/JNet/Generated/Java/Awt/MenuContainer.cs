@@ -46,15 +46,16 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuContainer.html#getFont() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuContainer.html#getFont()"/> 
         /// </summary>
         public Java.Awt.Font Font
         {
             get { return IExecute<Java.Awt.Font>("getFont"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuContainer.html#remove(java.awt.MenuComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuContainer.html#remove(java.awt.MenuComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.MenuComponent"/></param>
         public void Remove(Java.Awt.MenuComponent arg0)
         {
             IExecute("remove", arg0);

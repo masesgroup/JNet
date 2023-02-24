@@ -30,8 +30,12 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXBuilderParameters.html#<init>(java.security.KeyStore,java.security.cert.CertSelector) throws java.security.KeyStoreException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXBuilderParameters.html#%3Cinit%3E(java.security.KeyStore,java.security.cert.CertSelector)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.KeyStore"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.CertSelector"/></param>
+        /// <exception cref="Java.Security.KeyStoreException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public PKIXBuilderParameters(Java.Security.KeyStore arg0, Java.Security.Cert.CertSelector arg1)
             : base(arg0, arg1)
         {
@@ -53,7 +57,7 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXBuilderParameters.html#getMaxPathLength() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXBuilderParameters.html#setMaxPathLength(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXBuilderParameters.html#getMaxPathLength()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXBuilderParameters.html#setMaxPathLength(int)"/>
         /// </summary>
         public int MaxPathLength
         {

@@ -30,8 +30,12 @@ namespace Javax.Swing.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionEvent.html#<init>(java.lang.Object,int,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionEvent.html#%3Cinit%3E(java.lang.Object,int,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
         public ListSelectionEvent(object arg0, int arg1, int arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -53,21 +57,21 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionEvent.html#getFirstIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionEvent.html#getFirstIndex()"/> 
         /// </summary>
         public int FirstIndex
         {
             get { return IExecute<int>("getFirstIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionEvent.html#getLastIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionEvent.html#getLastIndex()"/> 
         /// </summary>
         public int LastIndex
         {
             get { return IExecute<int>("getLastIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionEvent.html#getValueIsAdjusting() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionEvent.html#getValueIsAdjusting()"/> 
         /// </summary>
         public bool ValueIsAdjusting
         {

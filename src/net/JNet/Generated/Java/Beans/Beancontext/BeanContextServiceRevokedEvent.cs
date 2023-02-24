@@ -46,15 +46,17 @@ namespace Java.Beans.Beancontext
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#getSourceAsBeanContextServices() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#getSourceAsBeanContextServices()"/> 
         /// </summary>
         public Java.Beans.Beancontext.BeanContextServices SourceAsBeanContextServices
         {
             get { return IExecute<Java.Beans.Beancontext.BeanContextServices>("getSourceAsBeanContextServices"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isCurrentServiceInvalidNow()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isCurrentServiceInvalidNow()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCurrentServiceInvalidNow()
         {
             return IExecute<bool>("isCurrentServiceInvalidNow");

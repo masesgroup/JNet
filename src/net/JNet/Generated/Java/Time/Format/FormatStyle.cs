@@ -38,19 +38,19 @@ namespace Java.Time.Format
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#FULL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#FULL"/>
         /// </summary>
         public static Java.Time.Format.FormatStyle FULL => Clazz.GetField<Java.Time.Format.FormatStyle>("FULL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#LONG
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#LONG"/>
         /// </summary>
         public static Java.Time.Format.FormatStyle LONG => Clazz.GetField<Java.Time.Format.FormatStyle>("LONG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#MEDIUM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#MEDIUM"/>
         /// </summary>
         public static Java.Time.Format.FormatStyle MEDIUM => Clazz.GetField<Java.Time.Format.FormatStyle>("MEDIUM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#SHORT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#SHORT"/>
         /// </summary>
         public static Java.Time.Format.FormatStyle SHORT => Clazz.GetField<Java.Time.Format.FormatStyle>("SHORT");
         
@@ -58,8 +58,10 @@ namespace Java.Time.Format
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Format.FormatStyle"/></returns>
         public static Java.Time.Format.FormatStyle[] Values()
         {
             return SExecuteArray<Java.Time.Format.FormatStyle>("values");

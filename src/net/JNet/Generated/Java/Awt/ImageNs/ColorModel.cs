@@ -30,8 +30,9 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public ColorModel(int arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.ColorModel"/> to <see cref="Java.Awt.Transparency"/>
+        /// </summary>
         public static implicit operator Java.Awt.Transparency(Java.Awt.ImageNs.ColorModel t) => t.Cast<Java.Awt.Transparency>();
         
         #endregion
@@ -50,7 +54,7 @@ namespace Java.Awt.ImageNs
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRGBdefault() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRGBdefault()"/> 
         /// </summary>
         public static Java.Awt.ImageNs.ColorModel RGBdefault
         {
@@ -61,253 +65,333 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getColorSpace() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getColorSpace()"/> 
         /// </summary>
         public Java.Awt.ColorNs.ColorSpace ColorSpace
         {
             get { return IExecute<Java.Awt.ColorNs.ColorSpace>("getColorSpace"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getComponentSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getComponentSize()"/> 
         /// </summary>
         public int[] ComponentSize
         {
             get { return IExecuteArray<int>("getComponentSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNumColorComponents() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNumColorComponents()"/> 
         /// </summary>
         public int NumColorComponents
         {
             get { return IExecute<int>("getNumColorComponents"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNumComponents() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNumComponents()"/> 
         /// </summary>
         public int NumComponents
         {
             get { return IExecute<int>("getNumComponents"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getPixelSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getPixelSize()"/> 
         /// </summary>
         public int PixelSize
         {
             get { return IExecute<int>("getPixelSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getTransferType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getTransferType()"/> 
         /// </summary>
         public int TransferType
         {
             get { return IExecute<int>("getTransferType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getTransparency() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getTransparency()"/> 
         /// </summary>
         public int Transparency
         {
             get { return IExecute<int>("getTransparency"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getAlpha(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getAlpha(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAlpha(int arg0)
         {
             return IExecute<int>("getAlpha", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getBlue(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getBlue(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetBlue(int arg0)
         {
             return IExecute<int>("getBlue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getGreen(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getGreen(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetGreen(int arg0)
         {
             return IExecute<int>("getGreen", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRed(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRed(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRed(int arg0)
         {
             return IExecute<int>("getRed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isCompatibleRaster(java.awt.image.Raster)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isCompatibleRaster(java.awt.image.Raster)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsCompatibleRaster(Java.Awt.ImageNs.Raster arg0)
         {
             return IExecute<bool>("isCompatibleRaster", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isCompatibleSampleModel(java.awt.image.SampleModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isCompatibleSampleModel(java.awt.image.SampleModel)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.SampleModel"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsCompatibleSampleModel(Java.Awt.ImageNs.SampleModel arg0)
         {
             return IExecute<bool>("isCompatibleSampleModel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#hasAlpha()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#hasAlpha()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasAlpha()
         {
             return IExecute<bool>("hasAlpha");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isAlphaPremultiplied()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#isAlphaPremultiplied()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAlphaPremultiplied()
         {
             return IExecute<bool>("isAlphaPremultiplied");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNormalizedComponents(int[],int,float[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNormalizedComponents(int[],int,float[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] GetNormalizedComponents(int[] arg0, int arg1, float[] arg2, int arg3)
         {
             return IExecuteArray<float>("getNormalizedComponents", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNormalizedComponents(java.lang.Object,float[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getNormalizedComponents(java.lang.Object,float[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] GetNormalizedComponents(object arg0, float[] arg1, int arg2)
         {
             return IExecuteArray<float>("getNormalizedComponents", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getAlpha(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getAlpha(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAlpha(object arg0)
         {
             return IExecute<int>("getAlpha", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getBlue(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getBlue(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetBlue(object arg0)
         {
             return IExecute<int>("getBlue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getComponentSize(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getComponentSize(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetComponentSize(int arg0)
         {
             return IExecute<int>("getComponentSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElement(float[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElement(float[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetDataElement(float[] arg0, int arg1)
         {
             return IExecute<int>("getDataElement", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElement(int[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElement(int[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetDataElement(int[] arg0, int arg1)
         {
             return IExecute<int>("getDataElement", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getGreen(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getGreen(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetGreen(object arg0)
         {
             return IExecute<int>("getGreen", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRed(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRed(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRed(object arg0)
         {
             return IExecute<int>("getRed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRGB(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRGB(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRGB(int arg0)
         {
             return IExecute<int>("getRGB", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRGB(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getRGB(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRGB(object arg0)
         {
             return IExecute<int>("getRGB", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getComponents(int,int[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getComponents(int,int[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="int"/></returns>
         public int[] GetComponents(int arg0, int[] arg1, int arg2)
         {
             return IExecuteArray<int>("getComponents", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getComponents(java.lang.Object,int[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getComponents(java.lang.Object,int[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="int"/></returns>
         public int[] GetComponents(object arg0, int[] arg1, int arg2)
         {
             return IExecuteArray<int>("getComponents", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getUnnormalizedComponents(float[],int,int[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getUnnormalizedComponents(float[],int,int[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see cref="int"/></returns>
         public int[] GetUnnormalizedComponents(float[] arg0, int arg1, int[] arg2, int arg3)
         {
             return IExecuteArray<int>("getUnnormalizedComponents", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#coerceData(java.awt.image.WritableRaster,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#coerceData(java.awt.image.WritableRaster,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.ColorModel"/></returns>
         public Java.Awt.ImageNs.ColorModel CoerceData(Java.Awt.ImageNs.WritableRaster arg0, bool arg1)
         {
             return IExecute<Java.Awt.ImageNs.ColorModel>("coerceData", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#createCompatibleSampleModel(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#createCompatibleSampleModel(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.SampleModel"/></returns>
         public Java.Awt.ImageNs.SampleModel CreateCompatibleSampleModel(int arg0, int arg1)
         {
             return IExecute<Java.Awt.ImageNs.SampleModel>("createCompatibleSampleModel", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#createCompatibleWritableRaster(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#createCompatibleWritableRaster(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleWritableRaster(int arg0, int arg1)
         {
             return IExecute<Java.Awt.ImageNs.WritableRaster>("createCompatibleWritableRaster", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getAlphaRaster(java.awt.image.WritableRaster)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getAlphaRaster(java.awt.image.WritableRaster)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster GetAlphaRaster(Java.Awt.ImageNs.WritableRaster arg0)
         {
             return IExecute<Java.Awt.ImageNs.WritableRaster>("getAlphaRaster", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElements(float[],int,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElements(float[],int,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetDataElements(float[] arg0, int arg1, object arg2)
         {
             return IExecute("getDataElements", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElements(int,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElements(int,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetDataElements(int arg0, object arg1)
         {
             return IExecute("getDataElements", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElements(int[],int,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html#getDataElements(int[],int,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetDataElements(int[] arg0, int arg1, object arg2)
         {
             return IExecute("getDataElements", arg0, arg1, arg2);

@@ -46,21 +46,25 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasNext()
         {
             return IExecute<bool>("hasNext");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Next()
         {
             return IExecute("next");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#remove()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#remove()"/>
         /// </summary>
         public void Remove()
         {

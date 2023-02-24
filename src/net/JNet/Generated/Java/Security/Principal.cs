@@ -46,15 +46,17 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Principal.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Principal.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Principal.html#implies(javax.security.auth.Subject)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Principal.html#implies(javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Implies(Javax.Security.Auth.Subject arg0)
         {
             return IExecute<bool>("implies", arg0);

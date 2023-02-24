@@ -33,31 +33,40 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.Sides"/> to <see cref="Javax.Print.Attribute.DocAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.DocAttribute(Javax.Print.Attribute.Standard.Sides t) => t.Cast<Javax.Print.Attribute.DocAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.Sides"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.Sides t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.Sides"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.Sides t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#DUPLEX
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#DUPLEX"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Sides DUPLEX => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("DUPLEX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#ONE_SIDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#ONE_SIDED"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Sides ONE_SIDED => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("ONE_SIDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TUMBLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TUMBLE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Sides TUMBLE => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("TUMBLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TWO_SIDED_LONG_EDGE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TWO_SIDED_LONG_EDGE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Sides TWO_SIDED_LONG_EDGE => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("TWO_SIDED_LONG_EDGE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TWO_SIDED_SHORT_EDGE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TWO_SIDED_SHORT_EDGE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Sides TWO_SIDED_SHORT_EDGE => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("TWO_SIDED_SHORT_EDGE");
         
@@ -69,7 +78,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#getName()"/> 
         /// </summary>
         public string Name
         {

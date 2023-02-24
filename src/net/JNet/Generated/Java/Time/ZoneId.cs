@@ -33,13 +33,16 @@ namespace Java.Time
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.ZoneId"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.ZoneId t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#SHORT_IDS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#SHORT_IDS"/>
         /// </summary>
         public static Java.Util.Map SHORT_IDS => Clazz.GetField<Java.Util.Map>("SHORT_IDS");
         
@@ -47,29 +50,38 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#from(java.time.temporal.TemporalAccessor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
+        /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public static Java.Time.ZoneId From(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return SExecute<Java.Time.ZoneId>("from", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#of(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#of(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public static Java.Time.ZoneId Of(string arg0)
         {
             return SExecute<Java.Time.ZoneId>("of", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#ofOffset(java.lang.String,java.time.ZoneOffset)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#ofOffset(java.lang.String,java.time.ZoneOffset)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public static Java.Time.ZoneId OfOffset(string arg0, Java.Time.ZoneOffset arg1)
         {
             return SExecute<Java.Time.ZoneId>("ofOffset", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#systemDefault()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#systemDefault()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public static Java.Time.ZoneId SystemDefault()
         {
             return SExecute<Java.Time.ZoneId>("systemDefault");
@@ -79,22 +91,24 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#getId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#getId()"/> 
         /// </summary>
         public string Id
         {
             get { return IExecute<string>("getId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#getRules() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#getRules()"/> 
         /// </summary>
         public Java.Time.Zone.ZoneRules Rules
         {
             get { return IExecute<Java.Time.Zone.ZoneRules>("getRules"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#normalized()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#normalized()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public Java.Time.ZoneId Normalized()
         {
             return IExecute<Java.Time.ZoneId>("normalized");

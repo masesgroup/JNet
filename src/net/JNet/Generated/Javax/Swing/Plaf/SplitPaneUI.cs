@@ -46,43 +46,54 @@ namespace Javax.Swing.Plaf
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#getDividerLocation(javax.swing.JSplitPane)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#getDividerLocation(javax.swing.JSplitPane)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JSplitPane"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetDividerLocation(Javax.Swing.JSplitPane arg0)
         {
             return IExecute<int>("getDividerLocation", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#getMaximumDividerLocation(javax.swing.JSplitPane)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#getMaximumDividerLocation(javax.swing.JSplitPane)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JSplitPane"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetMaximumDividerLocation(Javax.Swing.JSplitPane arg0)
         {
             return IExecute<int>("getMaximumDividerLocation", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#getMinimumDividerLocation(javax.swing.JSplitPane)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#getMinimumDividerLocation(javax.swing.JSplitPane)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JSplitPane"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetMinimumDividerLocation(Javax.Swing.JSplitPane arg0)
         {
             return IExecute<int>("getMinimumDividerLocation", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#finishedPaintingChildren(javax.swing.JSplitPane,java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#finishedPaintingChildren(javax.swing.JSplitPane,java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JSplitPane"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
         public void FinishedPaintingChildren(Javax.Swing.JSplitPane arg0, Java.Awt.Graphics arg1)
         {
             IExecute("finishedPaintingChildren", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#resetToPreferredSizes(javax.swing.JSplitPane)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#resetToPreferredSizes(javax.swing.JSplitPane)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JSplitPane"/></param>
         public void ResetToPreferredSizes(Javax.Swing.JSplitPane arg0)
         {
             IExecute("resetToPreferredSizes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#setDividerLocation(javax.swing.JSplitPane,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#setDividerLocation(javax.swing.JSplitPane,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JSplitPane"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetDividerLocation(Javax.Swing.JSplitPane arg0, int arg1)
         {
             IExecute("setDividerLocation", arg0, arg1);

@@ -44,7 +44,7 @@ namespace Java.Util.Function
     /// <typeparam name="U">The data type associated to the event</typeparam>
     public class ToLongBiFunction<T, U> : JVMBridgeListener, IToLongBiFunction<T, U>
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetToLongBiFunction";
 
         Func<T, U, long> executionFunction = null;

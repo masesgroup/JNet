@@ -30,8 +30,9 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#<init>(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#%3Cinit%3E(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
         public Random(long arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Random"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Random t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,148 +58,197 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextBoolean()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextBoolean()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool NextBoolean()
         {
             return IExecute<bool>("nextBoolean");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextDouble()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextDouble()"/>
         /// </summary>
+        
+        /// <returns><see langword="double"/></returns>
         public double NextDouble()
         {
             return IExecute<double>("nextDouble");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextFloat()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextFloat()"/>
         /// </summary>
+        
+        /// <returns><see langword="float"/></returns>
         public float NextFloat()
         {
             return IExecute<float>("nextFloat");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextInt()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextInt()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int NextInt()
         {
             return IExecute<int>("nextInt");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextInt(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextInt(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int NextInt(int arg0)
         {
             return IExecute<int>("nextInt", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#doubles()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#doubles()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles()
         {
             return IExecute<Java.Util.Stream.DoubleStream>("doubles");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#doubles(double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#doubles(double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles(double arg0, double arg1)
         {
             return IExecute<Java.Util.Stream.DoubleStream>("doubles", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#doubles(long,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#doubles(long,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles(long arg0, double arg1, double arg2)
         {
             return IExecute<Java.Util.Stream.DoubleStream>("doubles", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#doubles(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#doubles(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles(long arg0)
         {
             return IExecute<Java.Util.Stream.DoubleStream>("doubles", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#ints()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#ints()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints()
         {
             return IExecute<Java.Util.Stream.IntStream>("ints");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#ints(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#ints(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints(int arg0, int arg1)
         {
             return IExecute<Java.Util.Stream.IntStream>("ints", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#ints(long,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#ints(long,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints(long arg0, int arg1, int arg2)
         {
             return IExecute<Java.Util.Stream.IntStream>("ints", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#ints(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#ints(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints(long arg0)
         {
             return IExecute<Java.Util.Stream.IntStream>("ints", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#longs()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#longs()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs()
         {
             return IExecute<Java.Util.Stream.LongStream>("longs");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#longs(long,long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#longs(long,long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs(long arg0, long arg1, long arg2)
         {
             return IExecute<Java.Util.Stream.LongStream>("longs", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#longs(long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#longs(long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs(long arg0, long arg1)
         {
             return IExecute<Java.Util.Stream.LongStream>("longs", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#longs(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#longs(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs(long arg0)
         {
             return IExecute<Java.Util.Stream.LongStream>("longs", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextLong()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextLong()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long NextLong()
         {
             return IExecute<long>("nextLong");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextGaussian()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextGaussian()"/>
         /// </summary>
+        
+        /// <returns><see langword="double"/></returns>
         public double NextGaussian()
         {
             return IExecute<double>("nextGaussian");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#setSeed(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#setSeed(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
         public void SetSeed(long arg0)
         {
             IExecute("setSeed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextBytes(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html#nextBytes(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
         public void NextBytes(byte[] arg0)
         {
             IExecute("nextBytes", arg0);

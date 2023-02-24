@@ -38,7 +38,7 @@ namespace Javax.Sound.Sampled
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#NOT_SPECIFIED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#NOT_SPECIFIED"/>
         /// </summary>
         public static int NOT_SPECIFIED => Clazz.GetField<int>("NOT_SPECIFIED");
         
@@ -46,218 +46,306 @@ namespace Javax.Sound.Sampled
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioFileTypes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioFileTypes()"/> 
         /// </summary>
         public static Javax.Sound.Sampled.AudioFileFormat.Type[] AudioFileTypes
         {
             get { return SExecuteArray<Javax.Sound.Sampled.AudioFileFormat.Type>("getAudioFileTypes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getClip() throws javax.sound.sampled.LineUnavailableException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getClip()"/> 
         /// </summary>
         public static Javax.Sound.Sampled.Clip Clip
         {
             get { return SExecute<Javax.Sound.Sampled.Clip>("getClip"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getMixerInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getMixerInfo()"/> 
         /// </summary>
         public static Javax.Sound.Sampled.Mixer.Info[] MixerInfo
         {
             get { return SExecuteArray<Javax.Sound.Sampled.Mixer.Info>("getMixerInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#isConversionSupported(javax.sound.sampled.AudioFormat,javax.sound.sampled.AudioFormat)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#isConversionSupported(javax.sound.sampled.AudioFormat,javax.sound.sampled.AudioFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsConversionSupported(Javax.Sound.Sampled.AudioFormat arg0, Javax.Sound.Sampled.AudioFormat arg1)
         {
             return SExecute<bool>("isConversionSupported", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#isConversionSupported(javax.sound.sampled.AudioFormat$Encoding,javax.sound.sampled.AudioFormat)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#isConversionSupported(javax.sound.sampled.AudioFormat$Encoding,javax.sound.sampled.AudioFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsConversionSupported(Javax.Sound.Sampled.AudioFormat.Encoding arg0, Javax.Sound.Sampled.AudioFormat arg1)
         {
             return SExecute<bool>("isConversionSupported", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#isFileTypeSupported(javax.sound.sampled.AudioFileFormat$Type,javax.sound.sampled.AudioInputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#isFileTypeSupported(javax.sound.sampled.AudioFileFormat$Type,javax.sound.sampled.AudioInputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsFileTypeSupported(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioInputStream arg1)
         {
             return SExecute<bool>("isFileTypeSupported", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#isFileTypeSupported(javax.sound.sampled.AudioFileFormat$Type)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#isFileTypeSupported(javax.sound.sampled.AudioFileFormat$Type)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsFileTypeSupported(Javax.Sound.Sampled.AudioFileFormat.Type arg0)
         {
             return SExecute<bool>("isFileTypeSupported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#isLineSupported(javax.sound.sampled.Line$Info)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#isLineSupported(javax.sound.sampled.Line$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsLineSupported(Javax.Sound.Sampled.Line.Info arg0)
         {
             return SExecute<bool>("isLineSupported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#write(javax.sound.sampled.AudioInputStream,javax.sound.sampled.AudioFileFormat$Type,java.io.File) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#write(javax.sound.sampled.AudioInputStream,javax.sound.sampled.AudioFileFormat$Type,java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></param>
+        /// <param name="arg2"><see cref="Java.Io.File"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static int Write(Javax.Sound.Sampled.AudioInputStream arg0, Javax.Sound.Sampled.AudioFileFormat.Type arg1, Java.Io.File arg2)
         {
             return SExecute<int>("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#write(javax.sound.sampled.AudioInputStream,javax.sound.sampled.AudioFileFormat$Type,java.io.OutputStream) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#write(javax.sound.sampled.AudioInputStream,javax.sound.sampled.AudioFileFormat$Type,java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></param>
+        /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static int Write(Javax.Sound.Sampled.AudioInputStream arg0, Javax.Sound.Sampled.AudioFileFormat.Type arg1, Java.Io.OutputStream arg2)
         {
             return SExecute<int>("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioFileFormat(java.io.File) throws javax.sound.sampled.UnsupportedAudioFileException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioFileFormat(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.AudioFileFormat"/></returns>
+        /// <exception cref="Javax.Sound.Sampled.UnsupportedAudioFileException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Sampled.AudioFileFormat GetAudioFileFormat(Java.Io.File arg0)
         {
             return SExecute<Javax.Sound.Sampled.AudioFileFormat>("getAudioFileFormat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioFileFormat(java.io.InputStream) throws javax.sound.sampled.UnsupportedAudioFileException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioFileFormat(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.AudioFileFormat"/></returns>
+        /// <exception cref="Javax.Sound.Sampled.UnsupportedAudioFileException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Sampled.AudioFileFormat GetAudioFileFormat(Java.Io.InputStream arg0)
         {
             return SExecute<Javax.Sound.Sampled.AudioFileFormat>("getAudioFileFormat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioFileFormat(java.net.URL) throws javax.sound.sampled.UnsupportedAudioFileException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioFileFormat(java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.AudioFileFormat"/></returns>
+        /// <exception cref="Javax.Sound.Sampled.UnsupportedAudioFileException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Sampled.AudioFileFormat GetAudioFileFormat(Java.Net.URL arg0)
         {
             return SExecute<Javax.Sound.Sampled.AudioFileFormat>("getAudioFileFormat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioFileTypes(javax.sound.sampled.AudioInputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioFileTypes(javax.sound.sampled.AudioInputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.AudioFileFormat.Type"/></returns>
         public static Javax.Sound.Sampled.AudioFileFormat.Type[] GetAudioFileTypes(Javax.Sound.Sampled.AudioInputStream arg0)
         {
             return SExecuteArray<Javax.Sound.Sampled.AudioFileFormat.Type>("getAudioFileTypes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetFormats(javax.sound.sampled.AudioFormat$Encoding,javax.sound.sampled.AudioFormat)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetFormats(javax.sound.sampled.AudioFormat$Encoding,javax.sound.sampled.AudioFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.AudioFormat"/></returns>
         public static Javax.Sound.Sampled.AudioFormat[] GetTargetFormats(Javax.Sound.Sampled.AudioFormat.Encoding arg0, Javax.Sound.Sampled.AudioFormat arg1)
         {
             return SExecuteArray<Javax.Sound.Sampled.AudioFormat>("getTargetFormats", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetEncodings(javax.sound.sampled.AudioFormat)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetEncodings(javax.sound.sampled.AudioFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></returns>
         public static Javax.Sound.Sampled.AudioFormat.Encoding[] GetTargetEncodings(Javax.Sound.Sampled.AudioFormat arg0)
         {
             return SExecuteArray<Javax.Sound.Sampled.AudioFormat.Encoding>("getTargetEncodings", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetEncodings(javax.sound.sampled.AudioFormat$Encoding)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetEncodings(javax.sound.sampled.AudioFormat$Encoding)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></returns>
         public static Javax.Sound.Sampled.AudioFormat.Encoding[] GetTargetEncodings(Javax.Sound.Sampled.AudioFormat.Encoding arg0)
         {
             return SExecuteArray<Javax.Sound.Sampled.AudioFormat.Encoding>("getTargetEncodings", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(java.io.File) throws javax.sound.sampled.UnsupportedAudioFileException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.AudioInputStream"/></returns>
+        /// <exception cref="Javax.Sound.Sampled.UnsupportedAudioFileException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Java.Io.File arg0)
         {
             return SExecute<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(java.io.InputStream) throws javax.sound.sampled.UnsupportedAudioFileException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.AudioInputStream"/></returns>
+        /// <exception cref="Javax.Sound.Sampled.UnsupportedAudioFileException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Java.Io.InputStream arg0)
         {
             return SExecute<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(java.net.URL) throws javax.sound.sampled.UnsupportedAudioFileException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.AudioInputStream"/></returns>
+        /// <exception cref="Javax.Sound.Sampled.UnsupportedAudioFileException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public static Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Java.Net.URL arg0)
         {
             return SExecute<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(javax.sound.sampled.AudioFormat,javax.sound.sampled.AudioInputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(javax.sound.sampled.AudioFormat,javax.sound.sampled.AudioInputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.AudioInputStream"/></returns>
         public static Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Javax.Sound.Sampled.AudioFormat arg0, Javax.Sound.Sampled.AudioInputStream arg1)
         {
             return SExecute<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(javax.sound.sampled.AudioFormat$Encoding,javax.sound.sampled.AudioInputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getAudioInputStream(javax.sound.sampled.AudioFormat$Encoding,javax.sound.sampled.AudioInputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioInputStream"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.AudioInputStream"/></returns>
         public static Javax.Sound.Sampled.AudioInputStream GetAudioInputStream(Javax.Sound.Sampled.AudioFormat.Encoding arg0, Javax.Sound.Sampled.AudioInputStream arg1)
         {
             return SExecute<Javax.Sound.Sampled.AudioInputStream>("getAudioInputStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getClip(javax.sound.sampled.Mixer$Info) throws javax.sound.sampled.LineUnavailableException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getClip(javax.sound.sampled.Mixer$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Mixer.Info"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.Clip"/></returns>
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public static Javax.Sound.Sampled.Clip GetClip(Javax.Sound.Sampled.Mixer.Info arg0)
         {
             return SExecute<Javax.Sound.Sampled.Clip>("getClip", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getLine(javax.sound.sampled.Line$Info) throws javax.sound.sampled.LineUnavailableException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getLine(javax.sound.sampled.Line$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.Line"/></returns>
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public static Javax.Sound.Sampled.Line GetLine(Javax.Sound.Sampled.Line.Info arg0)
         {
             return SExecute<Javax.Sound.Sampled.Line>("getLine", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getSourceLineInfo(javax.sound.sampled.Line$Info)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getSourceLineInfo(javax.sound.sampled.Line$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.Line.Info"/></returns>
         public static Javax.Sound.Sampled.Line.Info[] GetSourceLineInfo(Javax.Sound.Sampled.Line.Info arg0)
         {
             return SExecuteArray<Javax.Sound.Sampled.Line.Info>("getSourceLineInfo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetLineInfo(javax.sound.sampled.Line$Info)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetLineInfo(javax.sound.sampled.Line$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.Line.Info"/></returns>
         public static Javax.Sound.Sampled.Line.Info[] GetTargetLineInfo(Javax.Sound.Sampled.Line.Info arg0)
         {
             return SExecuteArray<Javax.Sound.Sampled.Line.Info>("getTargetLineInfo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getMixer(javax.sound.sampled.Mixer$Info)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getMixer(javax.sound.sampled.Mixer$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Mixer.Info"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.Mixer"/></returns>
         public static Javax.Sound.Sampled.Mixer GetMixer(Javax.Sound.Sampled.Mixer.Info arg0)
         {
             return SExecute<Javax.Sound.Sampled.Mixer>("getMixer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getSourceDataLine(javax.sound.sampled.AudioFormat,javax.sound.sampled.Mixer$Info) throws javax.sound.sampled.LineUnavailableException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getSourceDataLine(javax.sound.sampled.AudioFormat,javax.sound.sampled.Mixer$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Sampled.Mixer.Info"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.SourceDataLine"/></returns>
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public static Javax.Sound.Sampled.SourceDataLine GetSourceDataLine(Javax.Sound.Sampled.AudioFormat arg0, Javax.Sound.Sampled.Mixer.Info arg1)
         {
             return SExecute<Javax.Sound.Sampled.SourceDataLine>("getSourceDataLine", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getSourceDataLine(javax.sound.sampled.AudioFormat) throws javax.sound.sampled.LineUnavailableException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getSourceDataLine(javax.sound.sampled.AudioFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.SourceDataLine"/></returns>
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public static Javax.Sound.Sampled.SourceDataLine GetSourceDataLine(Javax.Sound.Sampled.AudioFormat arg0)
         {
             return SExecute<Javax.Sound.Sampled.SourceDataLine>("getSourceDataLine", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetDataLine(javax.sound.sampled.AudioFormat,javax.sound.sampled.Mixer$Info) throws javax.sound.sampled.LineUnavailableException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetDataLine(javax.sound.sampled.AudioFormat,javax.sound.sampled.Mixer$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Sampled.Mixer.Info"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.TargetDataLine"/></returns>
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public static Javax.Sound.Sampled.TargetDataLine GetTargetDataLine(Javax.Sound.Sampled.AudioFormat arg0, Javax.Sound.Sampled.Mixer.Info arg1)
         {
             return SExecute<Javax.Sound.Sampled.TargetDataLine>("getTargetDataLine", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetDataLine(javax.sound.sampled.AudioFormat) throws javax.sound.sampled.LineUnavailableException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioSystem.html#getTargetDataLine(javax.sound.sampled.AudioFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.TargetDataLine"/></returns>
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public static Javax.Sound.Sampled.TargetDataLine GetTargetDataLine(Javax.Sound.Sampled.AudioFormat arg0)
         {
             return SExecute<Javax.Sound.Sampled.TargetDataLine>("getTargetDataLine", arg0);

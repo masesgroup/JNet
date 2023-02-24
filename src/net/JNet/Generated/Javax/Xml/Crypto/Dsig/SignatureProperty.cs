@@ -33,6 +33,9 @@ namespace Javax.Xml.Crypto.Dsig
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.SignatureProperty"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.SignatureProperty t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Javax.Xml.Crypto.Dsig
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureProperty.html#getId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureProperty.html#getId()"/> 
         /// </summary>
         public string Id
         {
             get { return IExecute<string>("getId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureProperty.html#getTarget() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureProperty.html#getTarget()"/> 
         /// </summary>
         public string Target
         {

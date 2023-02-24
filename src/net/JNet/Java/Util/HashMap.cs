@@ -19,28 +19,37 @@
 namespace Java.Util
 {
     /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html"/>
+    /// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html"/>
     /// </summary>
     public class HashMap<K, V> : AbstractMap<K, V>
     {
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
-
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.util.HashMap";
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E()"/>
+        /// </summary>
         public HashMap()
         {
         }
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E(int)"/>
+        /// </summary>
         public HashMap(int initialCapacity)
             : base(initialCapacity)
         {
         }
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E(int,float)"/>
+        /// </summary>
         public HashMap(int initialCapacity, float loadFactor)
             : base(initialCapacity, loadFactor)
         {
         }
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E(java.util.Map)"/>
+        /// </summary>
         public HashMap(Map<K, V> m)
             : base(m)
         {

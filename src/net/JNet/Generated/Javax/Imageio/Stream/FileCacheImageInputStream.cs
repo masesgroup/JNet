@@ -30,8 +30,11 @@ namespace Javax.Imageio.Stream
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileCacheImageInputStream.html#<init>(java.io.InputStream,java.io.File) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileCacheImageInputStream.html#%3Cinit%3E(java.io.InputStream,java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="Java.Io.File"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public FileCacheImageInputStream(Java.Io.InputStream arg0, Java.Io.File arg1)
             : base(arg0, arg1)
         {

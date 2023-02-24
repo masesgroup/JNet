@@ -30,8 +30,9 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/URICertStoreParameters.html#<init>(java.net.URI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/URICertStoreParameters.html#%3Cinit%3E(java.net.URI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         public URICertStoreParameters(Java.Net.URI arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Cert.URICertStoreParameters"/> to <see cref="Java.Security.Cert.CertStoreParameters"/>
+        /// </summary>
         public static implicit operator Java.Security.Cert.CertStoreParameters(Java.Security.Cert.URICertStoreParameters t) => t.Cast<Java.Security.Cert.CertStoreParameters>();
         
         #endregion
@@ -54,7 +58,7 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/URICertStoreParameters.html#getURI() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/URICertStoreParameters.html#getURI()"/> 
         /// </summary>
         public Java.Net.URI URI
         {

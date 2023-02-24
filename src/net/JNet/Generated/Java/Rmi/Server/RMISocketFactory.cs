@@ -33,7 +33,13 @@ namespace Java.Rmi.Server
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Server.RMISocketFactory"/> to <see cref="Java.Rmi.Server.RMIClientSocketFactory"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Server.RMIClientSocketFactory(Java.Rmi.Server.RMISocketFactory t) => t.Cast<Java.Rmi.Server.RMIClientSocketFactory>();
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Server.RMISocketFactory"/> to <see cref="Java.Rmi.Server.RMIServerSocketFactory"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Server.RMIServerSocketFactory(Java.Rmi.Server.RMISocketFactory t) => t.Cast<Java.Rmi.Server.RMIServerSocketFactory>();
         
         #endregion
@@ -44,21 +50,21 @@ namespace Java.Rmi.Server
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#getDefaultSocketFactory() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#getDefaultSocketFactory()"/> 
         /// </summary>
         public static Java.Rmi.Server.RMISocketFactory DefaultSocketFactory
         {
             get { return SExecute<Java.Rmi.Server.RMISocketFactory>("getDefaultSocketFactory"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#getFailureHandler() https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#setFailureHandler(java.rmi.server.RMIFailureHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#getFailureHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#setFailureHandler(java.rmi.server.RMIFailureHandler)"/>
         /// </summary>
         public static Java.Rmi.Server.RMIFailureHandler FailureHandler
         {
             get { return SExecute<Java.Rmi.Server.RMIFailureHandler>("getFailureHandler"); } set { SExecute("setFailureHandler", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#getSocketFactory() https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#setSocketFactory(java.rmi.server.RMISocketFactory) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#getSocketFactory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#setSocketFactory(java.rmi.server.RMISocketFactory)"/>
         /// </summary>
         public static Java.Rmi.Server.RMISocketFactory SocketFactory
         {
@@ -69,15 +75,22 @@ namespace Java.Rmi.Server
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#createServerSocket(int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#createServerSocket(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Net.ServerSocket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.ServerSocket CreateServerSocket(int arg0)
         {
             return IExecute<Java.Net.ServerSocket>("createServerSocket", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#createSocket(java.lang.String,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMISocketFactory.html#createSocket(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(string arg0, int arg1)
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);

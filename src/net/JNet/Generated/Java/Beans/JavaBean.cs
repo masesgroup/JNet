@@ -33,6 +33,9 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.JavaBean"/> to <see cref="Java.Lang.Annotation.Annotation"/>
+        /// </summary>
         public static implicit operator Java.Lang.Annotation.Annotation(Java.Beans.JavaBean t) => t.Cast<Java.Lang.Annotation.Annotation>();
         
         #endregion
@@ -47,22 +50,28 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultEventSet()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultEventSet()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string DefaultEventSet()
         {
             return IExecute<string>("defaultEventSet");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultProperty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultProperty()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string DefaultProperty()
         {
             return IExecute<string>("defaultProperty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#description()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#description()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Description()
         {
             return IExecute<string>("description");

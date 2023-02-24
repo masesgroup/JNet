@@ -46,21 +46,21 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAParams.html#getG() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAParams.html#getG()"/> 
         /// </summary>
         public Java.Math.BigInteger G
         {
             get { return IExecute<Java.Math.BigInteger>("getG"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAParams.html#getP() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAParams.html#getP()"/> 
         /// </summary>
         public Java.Math.BigInteger P
         {
             get { return IExecute<Java.Math.BigInteger>("getP"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAParams.html#getQ() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAParams.html#getQ()"/> 
         /// </summary>
         public Java.Math.BigInteger Q
         {

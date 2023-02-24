@@ -46,43 +46,57 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getComponentAfter(java.awt.Container,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getComponentAfter(java.awt.Container,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetComponentAfter(Java.Awt.Container arg0, Java.Awt.Component arg1)
         {
             return IExecute<Java.Awt.Component>("getComponentAfter", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getComponentBefore(java.awt.Container,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getComponentBefore(java.awt.Container,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetComponentBefore(Java.Awt.Container arg0, Java.Awt.Component arg1)
         {
             return IExecute<Java.Awt.Component>("getComponentBefore", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getDefaultComponent(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getDefaultComponent(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetDefaultComponent(Java.Awt.Container arg0)
         {
             return IExecute<Java.Awt.Component>("getDefaultComponent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getFirstComponent(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getFirstComponent(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetFirstComponent(Java.Awt.Container arg0)
         {
             return IExecute<Java.Awt.Component>("getFirstComponent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getLastComponent(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getLastComponent(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetLastComponent(Java.Awt.Container arg0)
         {
             return IExecute<Java.Awt.Component>("getLastComponent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getInitialComponent(java.awt.Window)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getInitialComponent(java.awt.Window)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetInitialComponent(Java.Awt.Window arg0)
         {
             return IExecute<Java.Awt.Component>("getInitialComponent", arg0);

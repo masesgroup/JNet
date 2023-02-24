@@ -46,22 +46,31 @@ namespace Javax.Swing.Plaf
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html#getTabRunCount(javax.swing.JTabbedPane)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html#getTabRunCount(javax.swing.JTabbedPane)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTabbedPane"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetTabRunCount(Javax.Swing.JTabbedPane arg0)
         {
             return IExecute<int>("getTabRunCount", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html#tabForCoordinate(javax.swing.JTabbedPane,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html#tabForCoordinate(javax.swing.JTabbedPane,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTabbedPane"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int TabForCoordinate(Javax.Swing.JTabbedPane arg0, int arg1, int arg2)
         {
             return IExecute<int>("tabForCoordinate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html#getTabBounds(javax.swing.JTabbedPane,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html#getTabBounds(javax.swing.JTabbedPane,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTabbedPane"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetTabBounds(Javax.Swing.JTabbedPane arg0, int arg1)
         {
             return IExecute<Java.Awt.Rectangle>("getTabBounds", arg0, arg1);

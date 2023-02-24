@@ -30,8 +30,10 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestOutputStream.html#<init>(java.io.OutputStream,java.security.MessageDigest)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.security.MessageDigest)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <param name="arg1"><see cref="Java.Security.MessageDigest"/></param>
         public DigestOutputStream(Java.Io.OutputStream arg0, Java.Security.MessageDigest arg1)
             : base(arg0, arg1)
         {
@@ -53,15 +55,16 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestOutputStream.html#getMessageDigest() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestOutputStream.html#setMessageDigest(java.security.MessageDigest)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestOutputStream.html#getMessageDigest()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestOutputStream.html#setMessageDigest(java.security.MessageDigest)"/>
         /// </summary>
         public Java.Security.MessageDigest MessageDigest
         {
             get { return IExecute<Java.Security.MessageDigest>("getMessageDigest"); } set { IExecute("setMessageDigest", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestOutputStream.html#on(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DigestOutputStream.html#on(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void On(bool arg0)
         {
             IExecute("on", arg0);

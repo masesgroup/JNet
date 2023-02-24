@@ -38,27 +38,27 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#CLEAN_FAX_DATA_ERRORS_CORRECTED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#CLEAN_FAX_DATA_ERRORS_CORRECTED"/>
         /// </summary>
         public static int CLEAN_FAX_DATA_ERRORS_CORRECTED => Clazz.GetField<int>("CLEAN_FAX_DATA_ERRORS_CORRECTED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#CLEAN_FAX_DATA_ERRORS_UNCORRECTED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#CLEAN_FAX_DATA_ERRORS_UNCORRECTED"/>
         /// </summary>
         public static int CLEAN_FAX_DATA_ERRORS_UNCORRECTED => Clazz.GetField<int>("CLEAN_FAX_DATA_ERRORS_UNCORRECTED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#CLEAN_FAX_DATA_NO_ERRORS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#CLEAN_FAX_DATA_NO_ERRORS"/>
         /// </summary>
         public static int CLEAN_FAX_DATA_NO_ERRORS => Clazz.GetField<int>("CLEAN_FAX_DATA_NO_ERRORS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#TAG_BAD_FAX_LINES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#TAG_BAD_FAX_LINES"/>
         /// </summary>
         public static int TAG_BAD_FAX_LINES => Clazz.GetField<int>("TAG_BAD_FAX_LINES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#TAG_CLEAN_FAX_DATA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#TAG_CLEAN_FAX_DATA"/>
         /// </summary>
         public static int TAG_CLEAN_FAX_DATA => Clazz.GetField<int>("TAG_CLEAN_FAX_DATA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#TAG_CONSECUTIVE_BAD_LINES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#TAG_CONSECUTIVE_BAD_LINES"/>
         /// </summary>
         public static int TAG_CONSECUTIVE_BAD_LINES => Clazz.GetField<int>("TAG_CONSECUTIVE_BAD_LINES");
         
@@ -66,8 +66,10 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#getInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html#getInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.FaxTIFFTagSet"/></returns>
         public static Javax.Imageio.Plugins.Tiff.FaxTIFFTagSet GetInstance()
         {
             return SExecute<Javax.Imageio.Plugins.Tiff.FaxTIFFTagSet>("getInstance");

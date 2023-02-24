@@ -33,13 +33,16 @@ namespace Java.Security.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.RSAMultiPrimePrivateCrtKey"/> to <see cref="Java.Security.Interfaces.RSAPrivateKey"/>
+        /// </summary>
         public static implicit operator Java.Security.Interfaces.RSAPrivateKey(Java.Security.Interfaces.RSAMultiPrimePrivateCrtKey t) => t.Cast<Java.Security.Interfaces.RSAPrivateKey>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#serialVersionUID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         
@@ -51,49 +54,49 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getCrtCoefficient() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getCrtCoefficient()"/> 
         /// </summary>
         public Java.Math.BigInteger CrtCoefficient
         {
             get { return IExecute<Java.Math.BigInteger>("getCrtCoefficient"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getOtherPrimeInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getOtherPrimeInfo()"/> 
         /// </summary>
         public Java.Security.Spec.RSAOtherPrimeInfo[] OtherPrimeInfo
         {
             get { return IExecuteArray<Java.Security.Spec.RSAOtherPrimeInfo>("getOtherPrimeInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeExponentP() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeExponentP()"/> 
         /// </summary>
         public Java.Math.BigInteger PrimeExponentP
         {
             get { return IExecute<Java.Math.BigInteger>("getPrimeExponentP"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeExponentQ() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeExponentQ()"/> 
         /// </summary>
         public Java.Math.BigInteger PrimeExponentQ
         {
             get { return IExecute<Java.Math.BigInteger>("getPrimeExponentQ"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeP() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeP()"/> 
         /// </summary>
         public Java.Math.BigInteger PrimeP
         {
             get { return IExecute<Java.Math.BigInteger>("getPrimeP"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeQ() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPrimeQ()"/> 
         /// </summary>
         public Java.Math.BigInteger PrimeQ
         {
             get { return IExecute<Java.Math.BigInteger>("getPrimeQ"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPublicExponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html#getPublicExponent()"/> 
         /// </summary>
         public Java.Math.BigInteger PublicExponent
         {

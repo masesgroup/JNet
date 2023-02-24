@@ -42,15 +42,18 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#getInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#getInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.LayoutStyle"/></returns>
         public static Javax.Swing.LayoutStyle GetInstance()
         {
             return SExecute<Javax.Swing.LayoutStyle>("getInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#setInstance(javax.swing.LayoutStyle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#setInstance(javax.swing.LayoutStyle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.LayoutStyle"/></param>
         public static void SetInstance(Javax.Swing.LayoutStyle arg0)
         {
             SExecute("setInstance", arg0);
@@ -60,8 +63,12 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#getContainerGap(javax.swing.JComponent,int,java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#getContainerGap(javax.swing.JComponent,int,java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetContainerGap(Javax.Swing.JComponent arg0, int arg1, Java.Awt.Container arg2)
         {
             return IExecute<int>("getContainerGap", arg0, arg1, arg2);
@@ -83,15 +90,15 @@ namespace Javax.Swing
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#INDENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#INDENT"/>
             /// </summary>
             public static Javax.Swing.LayoutStyle.ComponentPlacement INDENT => Clazz.GetField<Javax.Swing.LayoutStyle.ComponentPlacement>("INDENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#RELATED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#RELATED"/>
             /// </summary>
             public static Javax.Swing.LayoutStyle.ComponentPlacement RELATED => Clazz.GetField<Javax.Swing.LayoutStyle.ComponentPlacement>("RELATED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#UNRELATED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#UNRELATED"/>
             /// </summary>
             public static Javax.Swing.LayoutStyle.ComponentPlacement UNRELATED => Clazz.GetField<Javax.Swing.LayoutStyle.ComponentPlacement>("UNRELATED");
             
@@ -99,8 +106,10 @@ namespace Javax.Swing
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></returns>
             public static Javax.Swing.LayoutStyle.ComponentPlacement[] Values()
             {
                 return SExecuteArray<Javax.Swing.LayoutStyle.ComponentPlacement>("values");

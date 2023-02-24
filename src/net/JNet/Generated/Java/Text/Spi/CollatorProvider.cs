@@ -46,8 +46,10 @@ namespace Java.Text.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/CollatorProvider.html#getInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/CollatorProvider.html#getInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.Collator"/></returns>
         public Java.Text.Collator GetInstance(Java.Util.Locale arg0)
         {
             return IExecute<Java.Text.Collator>("getInstance", arg0);

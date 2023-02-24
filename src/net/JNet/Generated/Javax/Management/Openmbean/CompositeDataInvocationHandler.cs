@@ -30,8 +30,9 @@ namespace Javax.Management.Openmbean
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataInvocationHandler.html#<init>(javax.management.openmbean.CompositeData)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataInvocationHandler.html#%3Cinit%3E(javax.management.openmbean.CompositeData)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
         public CompositeDataInvocationHandler(Javax.Management.Openmbean.CompositeData arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Openmbean.CompositeDataInvocationHandler"/> to <see cref="Java.Lang.Reflect.InvocationHandler"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.InvocationHandler(Javax.Management.Openmbean.CompositeDataInvocationHandler t) => t.Cast<Java.Lang.Reflect.InvocationHandler>();
         
         #endregion
@@ -54,15 +58,20 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataInvocationHandler.html#getCompositeData() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataInvocationHandler.html#getCompositeData()"/> 
         /// </summary>
         public Javax.Management.Openmbean.CompositeData CompositeData
         {
             get { return IExecute<Javax.Management.Openmbean.CompositeData>("getCompositeData"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataInvocationHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[]) throws java.lang.Throwable
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataInvocationHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.Throwable"/>
         public object Invoke(object arg0, Java.Lang.Reflect.Method arg1, object[] arg2)
         {
             return IExecute("invoke", arg0, arg1, arg2);

@@ -30,8 +30,9 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public MGF1ParameterSpec(string arg0)
             : base(arg0)
         {
@@ -40,37 +41,40 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Spec.MGF1ParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Java.Security.Spec.MGF1ParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA1
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA1"/>
         /// </summary>
         public static Java.Security.Spec.MGF1ParameterSpec SHA1 => Clazz.GetField<Java.Security.Spec.MGF1ParameterSpec>("SHA1");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA224
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA224"/>
         /// </summary>
         public static Java.Security.Spec.MGF1ParameterSpec SHA224 => Clazz.GetField<Java.Security.Spec.MGF1ParameterSpec>("SHA224");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA256
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA256"/>
         /// </summary>
         public static Java.Security.Spec.MGF1ParameterSpec SHA256 => Clazz.GetField<Java.Security.Spec.MGF1ParameterSpec>("SHA256");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA384
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA384"/>
         /// </summary>
         public static Java.Security.Spec.MGF1ParameterSpec SHA384 => Clazz.GetField<Java.Security.Spec.MGF1ParameterSpec>("SHA384");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA512
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA512"/>
         /// </summary>
         public static Java.Security.Spec.MGF1ParameterSpec SHA512 => Clazz.GetField<Java.Security.Spec.MGF1ParameterSpec>("SHA512");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA512_224
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA512_224"/>
         /// </summary>
         public static Java.Security.Spec.MGF1ParameterSpec SHA512_224 => Clazz.GetField<Java.Security.Spec.MGF1ParameterSpec>("SHA512_224");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA512_256
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA512_256"/>
         /// </summary>
         public static Java.Security.Spec.MGF1ParameterSpec SHA512_256 => Clazz.GetField<Java.Security.Spec.MGF1ParameterSpec>("SHA512_256");
         
@@ -82,7 +86,7 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#getDigestAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#getDigestAlgorithm()"/> 
         /// </summary>
         public string DigestAlgorithm
         {

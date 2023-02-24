@@ -33,6 +33,9 @@ namespace Java.Lang.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Management.MemoryMXBean"/> to <see cref="Java.Lang.Management.PlatformManagedObject"/>
+        /// </summary>
         public static implicit operator Java.Lang.Management.PlatformManagedObject(Java.Lang.Management.MemoryMXBean t) => t.Cast<Java.Lang.Management.PlatformManagedObject>();
         
         #endregion
@@ -47,43 +50,46 @@ namespace Java.Lang.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage()"/> 
         /// </summary>
         public Java.Lang.Management.MemoryUsage HeapMemoryUsage
         {
             get { return IExecute<Java.Lang.Management.MemoryUsage>("getHeapMemoryUsage"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#getNonHeapMemoryUsage() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#getNonHeapMemoryUsage()"/> 
         /// </summary>
         public Java.Lang.Management.MemoryUsage NonHeapMemoryUsage
         {
             get { return IExecute<Java.Lang.Management.MemoryUsage>("getNonHeapMemoryUsage"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#getObjectPendingFinalizationCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#getObjectPendingFinalizationCount()"/> 
         /// </summary>
         public int ObjectPendingFinalizationCount
         {
             get { return IExecute<int>("getObjectPendingFinalizationCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#isVerbose()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#isVerbose()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsVerbose()
         {
             return IExecute<bool>("isVerbose");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#gc()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#gc()"/>
         /// </summary>
         public void Gc()
         {
             IExecute("gc");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#setVerbose(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#setVerbose(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetVerbose(bool arg0)
         {
             IExecute("setVerbose", arg0);

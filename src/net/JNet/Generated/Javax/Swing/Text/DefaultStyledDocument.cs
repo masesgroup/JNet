@@ -30,15 +30,18 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#<init>(javax.swing.text.AbstractDocument$Content,javax.swing.text.StyleContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#%3Cinit%3E(javax.swing.text.AbstractDocument$Content,javax.swing.text.StyleContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument.Content"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.StyleContext"/></param>
         public DefaultStyledDocument(Javax.Swing.Text.AbstractDocument.Content arg0, Javax.Swing.Text.StyleContext arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#<init>(javax.swing.text.StyleContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#%3Cinit%3E(javax.swing.text.StyleContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.StyleContext"/></param>
         public DefaultStyledDocument(Javax.Swing.Text.StyleContext arg0)
             : base(arg0)
         {
@@ -47,13 +50,16 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.DefaultStyledDocument"/> to <see cref="Javax.Swing.Text.StyledDocument"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Text.StyledDocument(Javax.Swing.Text.DefaultStyledDocument t) => t.Cast<Javax.Swing.Text.StyledDocument>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#BUFFER_SIZE_DEFAULT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#BUFFER_SIZE_DEFAULT"/>
         /// </summary>
         public static int BUFFER_SIZE_DEFAULT => Clazz.GetField<int>("BUFFER_SIZE_DEFAULT");
         
@@ -65,85 +71,112 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getBackground(javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getBackground(javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetBackground(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecute<Java.Awt.Color>("getBackground", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getForeground(javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getForeground(javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetForeground(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecute<Java.Awt.Color>("getForeground", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getFont(javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getFont(javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font GetFont(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecute<Java.Awt.Font>("getFont", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getCharacterElement(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getCharacterElement(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetCharacterElement(int arg0)
         {
             return IExecute<Javax.Swing.Text.Element>("getCharacterElement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#addStyle(java.lang.String,javax.swing.text.Style)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#addStyle(java.lang.String,javax.swing.text.Style)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Style"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style AddStyle(string arg0, Javax.Swing.Text.Style arg1)
         {
             return IExecute<Javax.Swing.Text.Style>("addStyle", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getLogicalStyle(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getLogicalStyle(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style GetLogicalStyle(int arg0)
         {
             return IExecute<Javax.Swing.Text.Style>("getLogicalStyle", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getStyle(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getStyle(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style GetStyle(string arg0)
         {
             return IExecute<Javax.Swing.Text.Style>("getStyle", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#removeElement(javax.swing.text.Element)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#removeElement(javax.swing.text.Element)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
         public void RemoveElement(Javax.Swing.Text.Element arg0)
         {
             IExecute("removeElement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#removeStyle(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#removeStyle(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void RemoveStyle(string arg0)
         {
             IExecute("removeStyle", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#setCharacterAttributes(int,int,javax.swing.text.AttributeSet,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#setCharacterAttributes(int,int,javax.swing.text.AttributeSet,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
         public void SetCharacterAttributes(int arg0, int arg1, Javax.Swing.Text.AttributeSet arg2, bool arg3)
         {
             IExecute("setCharacterAttributes", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#setLogicalStyle(int,javax.swing.text.Style)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#setLogicalStyle(int,javax.swing.text.Style)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Style"/></param>
         public void SetLogicalStyle(int arg0, Javax.Swing.Text.Style arg1)
         {
             IExecute("setLogicalStyle", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#setParagraphAttributes(int,int,javax.swing.text.AttributeSet,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#setParagraphAttributes(int,int,javax.swing.text.AttributeSet,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
         public void SetParagraphAttributes(int arg0, int arg1, Javax.Swing.Text.AttributeSet arg2, bool arg3)
         {
             IExecute("setParagraphAttributes", arg0, arg1, arg2, arg3);
@@ -157,8 +190,11 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.AttributeUndoableEdit.html#<init>(javax.swing.text.Element,javax.swing.text.AttributeSet,boolean)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.AttributeUndoableEdit.html#%3Cinit%3E(javax.swing.text.Element,javax.swing.text.AttributeSet,boolean)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg2"><see langword="bool"/></param>
             public AttributeUndoableEdit(Javax.Swing.Text.Element arg0, Javax.Swing.Text.AttributeSet arg1, bool arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -191,8 +227,10 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#<init>(javax.swing.text.DefaultStyledDocument,javax.swing.text.Element)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#%3Cinit%3E(javax.swing.text.DefaultStyledDocument,javax.swing.text.Element)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.DefaultStyledDocument"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.Text.Element"/></param>
             public ElementBuffer(Javax.Swing.Text.DefaultStyledDocument arg0, Javax.Swing.Text.Element arg1)
                 : base(arg0, arg1)
             {
@@ -201,6 +239,9 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Text.DefaultStyledDocument.ElementBuffer"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Text.DefaultStyledDocument.ElementBuffer t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
@@ -215,36 +256,49 @@ namespace Javax.Swing.Text
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#getRootElement() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#getRootElement()"/> 
             /// </summary>
             public Javax.Swing.Text.Element RootElement
             {
                 get { return IExecute<Javax.Swing.Text.Element>("getRootElement"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#clone(javax.swing.text.Element,javax.swing.text.Element)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#clone(javax.swing.text.Element,javax.swing.text.Element)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.Text.Element"/></param>
+            /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
             public Javax.Swing.Text.Element Clone(Javax.Swing.Text.Element arg0, Javax.Swing.Text.Element arg1)
             {
                 return IExecute<Javax.Swing.Text.Element>("clone", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#change(int,int,javax.swing.text.AbstractDocument$DefaultDocumentEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#change(int,int,javax.swing.text.AbstractDocument$DefaultDocumentEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see cref="Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent"/></param>
             public void Change(int arg0, int arg1, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg2)
             {
                 IExecute("change", arg0, arg1, arg2);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#insert(int,int,javax.swing.text.DefaultStyledDocument$ElementSpec[],javax.swing.text.AbstractDocument$DefaultDocumentEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#insert(int,int,javax.swing.text.DefaultStyledDocument$ElementSpec[],javax.swing.text.AbstractDocument$DefaultDocumentEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see cref="Javax.Swing.Text.DefaultStyledDocument.ElementSpec"/></param>
+            /// <param name="arg3"><see cref="Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent"/></param>
             public void Insert(int arg0, int arg1, Javax.Swing.Text.DefaultStyledDocument.ElementSpec[] arg2, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg3)
             {
                 IExecute("insert", arg0, arg1, arg2, arg3);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#remove(int,int,javax.swing.text.AbstractDocument$DefaultDocumentEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#remove(int,int,javax.swing.text.AbstractDocument$DefaultDocumentEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see cref="Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent"/></param>
             public void Remove(int arg0, int arg1, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg2)
             {
                 IExecute("remove", arg0, arg1, arg2);
@@ -261,22 +315,32 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#<init>(javax.swing.text.AttributeSet,short,char[],int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#%3Cinit%3E(javax.swing.text.AttributeSet,short,char[],int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg1"><see langword="short"/></param>
+            /// <param name="arg2"><see cref="char"/></param>
+            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg4"><see langword="int"/></param>
             public ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1, char[] arg2, int arg3, int arg4)
                 : base(arg0, arg1, arg2, arg3, arg4)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#<init>(javax.swing.text.AttributeSet,short,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#%3Cinit%3E(javax.swing.text.AttributeSet,short,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg1"><see langword="short"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
             public ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1, int arg2)
                 : base(arg0, arg1, arg2)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#<init>(javax.swing.text.AttributeSet,short)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#%3Cinit%3E(javax.swing.text.AttributeSet,short)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg1"><see langword="short"/></param>
             public ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1)
                 : base(arg0, arg1)
             {
@@ -290,31 +354,31 @@ namespace Javax.Swing.Text
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#ContentType
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#ContentType"/>
             /// </summary>
             public static short ContentType => Clazz.GetField<short>("ContentType");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#EndTagType
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#EndTagType"/>
             /// </summary>
             public static short EndTagType => Clazz.GetField<short>("EndTagType");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinFractureDirection
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinFractureDirection"/>
             /// </summary>
             public static short JoinFractureDirection => Clazz.GetField<short>("JoinFractureDirection");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinNextDirection
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinNextDirection"/>
             /// </summary>
             public static short JoinNextDirection => Clazz.GetField<short>("JoinNextDirection");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinPreviousDirection
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinPreviousDirection"/>
             /// </summary>
             public static short JoinPreviousDirection => Clazz.GetField<short>("JoinPreviousDirection");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#OriginateDirection
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#OriginateDirection"/>
             /// </summary>
             public static short OriginateDirection => Clazz.GetField<short>("OriginateDirection");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#StartTagType
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#StartTagType"/>
             /// </summary>
             public static short StartTagType => Clazz.GetField<short>("StartTagType");
             
@@ -326,42 +390,42 @@ namespace Javax.Swing.Text
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getArray() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getArray()"/> 
             /// </summary>
             public char[] Array
             {
                 get { return IExecuteArray<char>("getArray"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getAttributes() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getAttributes()"/> 
             /// </summary>
             public Javax.Swing.Text.AttributeSet Attributes
             {
                 get { return IExecute<Javax.Swing.Text.AttributeSet>("getAttributes"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getDirection() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#setDirection(short)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getDirection()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#setDirection(short)"/>
             /// </summary>
             public short Direction
             {
                 get { return IExecute<short>("getDirection"); } set { IExecute("setDirection", value); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getLength() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getLength()"/> 
             /// </summary>
             public int Length
             {
                 get { return IExecute<int>("getLength"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getOffset() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getOffset()"/> 
             /// </summary>
             public int Offset
             {
                 get { return IExecute<int>("getOffset"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getType() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#setType(short)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#setType(short)"/>
             /// </summary>
             public short Type
             {

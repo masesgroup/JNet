@@ -33,6 +33,9 @@ namespace Org.W3c.Dom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.ProcessingInstruction"/> to <see cref="Org.W3c.Dom.Node"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Node(Org.W3c.Dom.ProcessingInstruction t) => t.Cast<Org.W3c.Dom.Node>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ProcessingInstruction.html#getData() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ProcessingInstruction.html#setData(java.lang.String) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ProcessingInstruction.html#getData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ProcessingInstruction.html#setData(java.lang.String)"/>
         /// </summary>
         public string Data
         {
             get { return IExecute<string>("getData"); } set { IExecute("setData", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ProcessingInstruction.html#getTarget() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ProcessingInstruction.html#getTarget()"/> 
         /// </summary>
         public string Target
         {

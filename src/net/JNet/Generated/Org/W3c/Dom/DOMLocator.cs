@@ -46,42 +46,42 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getByteOffset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getByteOffset()"/> 
         /// </summary>
         public int ByteOffset
         {
             get { return IExecute<int>("getByteOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getColumnNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getColumnNumber()"/> 
         /// </summary>
         public int ColumnNumber
         {
             get { return IExecute<int>("getColumnNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getLineNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getLineNumber()"/> 
         /// </summary>
         public int LineNumber
         {
             get { return IExecute<int>("getLineNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getRelatedNode() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getRelatedNode()"/> 
         /// </summary>
         public Org.W3c.Dom.Node RelatedNode
         {
             get { return IExecute<Org.W3c.Dom.Node>("getRelatedNode"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getUri() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getUri()"/> 
         /// </summary>
         public string Uri
         {
             get { return IExecute<string>("getUri"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getUtf16Offset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMLocator.html#getUtf16Offset()"/> 
         /// </summary>
         public int Utf16Offset
         {

@@ -46,29 +46,35 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#getWaitingConsumerCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#getWaitingConsumerCount()"/> 
         /// </summary>
         public int WaitingConsumerCount
         {
             get { return IExecute<int>("getWaitingConsumerCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#hasWaitingConsumer()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#hasWaitingConsumer()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasWaitingConsumer()
         {
             return IExecute<bool>("hasWaitingConsumer");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool TryTransfer(object arg0)
         {
             return IExecute<bool>("tryTransfer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#transfer(E) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#transfer(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public void Transfer(object arg0)
         {
             IExecute("transfer", arg0);

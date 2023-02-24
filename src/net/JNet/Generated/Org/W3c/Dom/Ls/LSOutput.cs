@@ -46,28 +46,28 @@ namespace Org.W3c.Dom.Ls
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#getByteStream() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#setByteStream(java.io.OutputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#getByteStream()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#setByteStream(java.io.OutputStream)"/>
         /// </summary>
         public Java.Io.OutputStream ByteStream
         {
             get { return IExecute<Java.Io.OutputStream>("getByteStream"); } set { IExecute("setByteStream", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#getCharacterStream() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#setCharacterStream(java.io.Writer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#getCharacterStream()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#setCharacterStream(java.io.Writer)"/>
         /// </summary>
         public Java.Io.Writer CharacterStream
         {
             get { return IExecute<Java.Io.Writer>("getCharacterStream"); } set { IExecute("setCharacterStream", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#getEncoding() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#setEncoding(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#getEncoding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#setEncoding(java.lang.String)"/>
         /// </summary>
         public string Encoding
         {
             get { return IExecute<string>("getEncoding"); } set { IExecute("setEncoding", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#getSystemId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#setSystemId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public string SystemId
         {

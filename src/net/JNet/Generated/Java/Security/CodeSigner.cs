@@ -30,8 +30,10 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSigner.html#<init>(java.security.cert.CertPath,java.security.Timestamp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSigner.html#%3Cinit%3E(java.security.cert.CertPath,java.security.Timestamp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.CertPath"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Timestamp"/></param>
         public CodeSigner(Java.Security.Cert.CertPath arg0, Java.Security.Timestamp arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Security
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.CodeSigner"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.CodeSigner t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,14 +59,14 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSigner.html#getSignerCertPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSigner.html#getSignerCertPath()"/> 
         /// </summary>
         public Java.Security.Cert.CertPath SignerCertPath
         {
             get { return IExecute<Java.Security.Cert.CertPath>("getSignerCertPath"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSigner.html#getTimestamp() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSigner.html#getTimestamp()"/> 
         /// </summary>
         public Java.Security.Timestamp Timestamp
         {

@@ -30,36 +30,51 @@ namespace Javax.Swing.Border
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#<init>(int,int,int,int,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#%3Cinit%3E(int,int,int,int,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Color"/></param>
         public MatteBorder(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#<init>(int,int,int,int,javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#%3Cinit%3E(int,int,int,int,javax.swing.Icon)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
         public MatteBorder(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#<init>(java.awt.Insets,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#%3Cinit%3E(java.awt.Insets,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Insets"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
         public MatteBorder(Java.Awt.Insets arg0, Java.Awt.Color arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#<init>(java.awt.Insets,javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#%3Cinit%3E(java.awt.Insets,javax.swing.Icon)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Insets"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
         public MatteBorder(Java.Awt.Insets arg0, Javax.Swing.Icon arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#<init>(javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#%3Cinit%3E(javax.swing.Icon)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
         public MatteBorder(Javax.Swing.Icon arg0)
             : base(arg0)
         {
@@ -81,14 +96,14 @@ namespace Javax.Swing.Border
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#getMatteColor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#getMatteColor()"/> 
         /// </summary>
         public Java.Awt.Color MatteColor
         {
             get { return IExecute<Java.Awt.Color>("getMatteColor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#getTileIcon() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#getTileIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon TileIcon
         {

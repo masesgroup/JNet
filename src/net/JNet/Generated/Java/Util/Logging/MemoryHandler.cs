@@ -30,8 +30,11 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/MemoryHandler.html#<init>(java.util.logging.Handler,int,java.util.logging.Level)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/MemoryHandler.html#%3Cinit%3E(java.util.logging.Handler,int,java.util.logging.Level)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Logging.Handler"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Logging.Level"/></param>
         public MemoryHandler(Java.Util.Logging.Handler arg0, int arg1, Java.Util.Logging.Level arg2)
             : base(arg0, arg1, arg2)
         {
@@ -53,14 +56,14 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/MemoryHandler.html#getPushLevel() https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/MemoryHandler.html#setPushLevel(java.util.logging.Level) throws java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/MemoryHandler.html#getPushLevel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/MemoryHandler.html#setPushLevel(java.util.logging.Level)"/>
         /// </summary>
         public Java.Util.Logging.Level PushLevel
         {
             get { return IExecute<Java.Util.Logging.Level>("getPushLevel"); } set { IExecute("setPushLevel", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/MemoryHandler.html#push()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/MemoryHandler.html#push()"/>
         /// </summary>
         public void Push()
         {

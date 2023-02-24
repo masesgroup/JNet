@@ -30,8 +30,10 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#<init>(java.util.concurrent.Executor,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#%3Cinit%3E(java.util.concurrent.Executor,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public SubmissionPublisher(Java.Util.Concurrent.Executor arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.SubmissionPublisher"/> to <see cref="Java.Lang.AutoCloseable"/>
+        /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Util.Concurrent.SubmissionPublisher t) => t.Cast<Java.Lang.AutoCloseable>();
         
         #endregion
@@ -54,78 +59,89 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getClosedException() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getClosedException()"/> 
         /// </summary>
         public Java.Lang.Throwable ClosedException
         {
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getClosedException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getExecutor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getExecutor()"/> 
         /// </summary>
         public Java.Util.Concurrent.Executor Executor
         {
             get { return IExecute<Java.Util.Concurrent.Executor>("getExecutor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getMaxBufferCapacity() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getMaxBufferCapacity()"/> 
         /// </summary>
         public int MaxBufferCapacity
         {
             get { return IExecute<int>("getMaxBufferCapacity"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getNumberOfSubscribers() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getNumberOfSubscribers()"/> 
         /// </summary>
         public int NumberOfSubscribers
         {
             get { return IExecute<int>("getNumberOfSubscribers"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#hasSubscribers()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#hasSubscribers()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasSubscribers()
         {
             return IExecute<bool>("hasSubscribers");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#isClosed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#isClosed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsClosed()
         {
             return IExecute<bool>("isClosed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMaximumLag()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMaximumLag()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int EstimateMaximumLag()
         {
             return IExecute<int>("estimateMaximumLag");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#submit(T)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#submit(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Submit(object arg0)
         {
             return IExecute<int>("submit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMinimumDemand()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMinimumDemand()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long EstimateMinimumDemand()
         {
             return IExecute<long>("estimateMinimumDemand");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#close()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#close()"/>
         /// </summary>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#closeExceptionally(java.lang.Throwable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#closeExceptionally(java.lang.Throwable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         public void CloseExceptionally(Java.Lang.Throwable arg0)
         {
             IExecute("closeExceptionally", arg0);

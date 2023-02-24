@@ -30,8 +30,10 @@ namespace Javax.Management.Remote
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html#<init>(javax.management.Notification,java.lang.Integer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html#%3Cinit%3E(javax.management.Notification,java.lang.Integer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
+        /// <param name="arg1"><see langword="int?"/></param>
         public TargetedNotification(Javax.Management.Notification arg0, int? arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Javax.Management.Remote
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Remote.TargetedNotification"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Remote.TargetedNotification t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,14 +59,14 @@ namespace Javax.Management.Remote
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html#getListenerID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html#getListenerID()"/> 
         /// </summary>
         public int? ListenerID
         {
             get { return IExecute<int?>("getListenerID"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html#getNotification() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html#getNotification()"/> 
         /// </summary>
         public Javax.Management.Notification Notification
         {

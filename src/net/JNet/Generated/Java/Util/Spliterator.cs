@@ -38,35 +38,35 @@ namespace Java.Util
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#CONCURRENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#CONCURRENT"/>
         /// </summary>
         public static int CONCURRENT => Clazz.GetField<int>("CONCURRENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#DISTINCT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#DISTINCT"/>
         /// </summary>
         public static int DISTINCT => Clazz.GetField<int>("DISTINCT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#IMMUTABLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#IMMUTABLE"/>
         /// </summary>
         public static int IMMUTABLE => Clazz.GetField<int>("IMMUTABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#NONNULL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#NONNULL"/>
         /// </summary>
         public static int NONNULL => Clazz.GetField<int>("NONNULL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#ORDERED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#ORDERED"/>
         /// </summary>
         public static int ORDERED => Clazz.GetField<int>("ORDERED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SIZED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SIZED"/>
         /// </summary>
         public static int SIZED => Clazz.GetField<int>("SIZED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SORTED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SORTED"/>
         /// </summary>
         public static int SORTED => Clazz.GetField<int>("SORTED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SUBSIZED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SUBSIZED"/>
         /// </summary>
         public static int SUBSIZED => Clazz.GetField<int>("SUBSIZED");
         
@@ -78,29 +78,35 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getExactSizeIfKnown() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getExactSizeIfKnown()"/> 
         /// </summary>
         public long ExactSizeIfKnown
         {
             get { return IExecute<long>("getExactSizeIfKnown"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Characteristics()
         {
             return IExecute<int>("characteristics");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#estimateSize()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#estimateSize()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long EstimateSize()
         {
             return IExecute<long>("estimateSize");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#hasCharacteristics(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#hasCharacteristics(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool HasCharacteristics(int arg0)
         {
             return IExecute<bool>("hasCharacteristics", arg0);
@@ -130,29 +136,35 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.util.function.DoubleConsumer)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.util.function.DoubleConsumer)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
+            /// <returns><see langword="bool"/></returns>
             public bool TryAdvance(Java.Util.Function.DoubleConsumer arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.lang.Object)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
+            /// <returns><see langword="bool"/></returns>
             public bool TryAdvance(object arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.lang.Object)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.util.function.DoubleConsumer)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.util.function.DoubleConsumer)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
             public void ForEachRemaining(Java.Util.Function.DoubleConsumer arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -185,29 +197,35 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.util.function.IntConsumer)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.util.function.IntConsumer)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
+            /// <returns><see langword="bool"/></returns>
             public bool TryAdvance(Java.Util.Function.IntConsumer arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.lang.Object)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
+            /// <returns><see langword="bool"/></returns>
             public bool TryAdvance(object arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.lang.Object)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.util.function.IntConsumer)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.util.function.IntConsumer)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
             public void ForEachRemaining(Java.Util.Function.IntConsumer arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -240,29 +258,35 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.util.function.LongConsumer)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.util.function.LongConsumer)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
+            /// <returns><see langword="bool"/></returns>
             public bool TryAdvance(Java.Util.Function.LongConsumer arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.lang.Object)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
+            /// <returns><see langword="bool"/></returns>
             public bool TryAdvance(object arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.lang.Object)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.util.function.LongConsumer)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.util.function.LongConsumer)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
             public void ForEachRemaining(Java.Util.Function.LongConsumer arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -295,15 +319,18 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#tryAdvance(T_CONS)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#tryAdvance(T_CONS)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
+            /// <returns><see langword="bool"/></returns>
             public bool TryAdvance(object arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#forEachRemaining(T_CONS)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#forEachRemaining(T_CONS)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);

@@ -38,23 +38,23 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#BYTES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#BYTES"/>
         /// </summary>
         public static int BYTES => Clazz.GetField<int>("BYTES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#SIZE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#SIZE"/>
         /// </summary>
         public static int SIZE => Clazz.GetField<int>("SIZE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#MAX_VALUE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#MAX_VALUE"/>
         /// </summary>
         public static long MAX_VALUE => Clazz.GetField<long>("MAX_VALUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#MIN_VALUE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#MIN_VALUE"/>
         /// </summary>
         public static long MIN_VALUE => Clazz.GetField<long>("MIN_VALUE");
         
@@ -62,267 +62,374 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#bitCount(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#bitCount(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BitCount(long arg0)
         {
             return SExecute<int>("bitCount", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compare(long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compare(long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(long arg0, long arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compareUnsigned(long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compareUnsigned(long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int CompareUnsigned(long arg0, long arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#hashCode(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#hashCode(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int HashCode(long arg0)
         {
             return SExecute<int>("hashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#numberOfLeadingZeros(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#numberOfLeadingZeros(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int NumberOfLeadingZeros(long arg0)
         {
             return SExecute<int>("numberOfLeadingZeros", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#numberOfTrailingZeros(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#numberOfTrailingZeros(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int NumberOfTrailingZeros(long arg0)
         {
             return SExecute<int>("numberOfTrailingZeros", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#signum(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#signum(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Signum(long arg0)
         {
             return SExecute<int>("signum", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#decode(java.lang.String) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#decode(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="long?"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long? Decode(string arg0)
         {
             return SExecute<long?>("decode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String,java.lang.Long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String,java.lang.Long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="long?"/></param>
+        /// <returns><see langword="long?"/></returns>
         public static long? GetLong(string arg0, long? arg1)
         {
             return SExecute<long?>("getLong", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="long?"/></returns>
         public static long? GetLong(string arg0, long arg1)
         {
             return SExecute<long?>("getLong", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="long?"/></returns>
         public static long? GetLong(string arg0)
         {
             return SExecute<long?>("getLong", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(java.lang.String,int) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="long?"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long? ValueOf(string arg0, int arg1)
         {
             return SExecute<long?>("valueOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(java.lang.String) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="long?"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long? ValueOf(string arg0)
         {
             return SExecute<long?>("valueOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long?"/></returns>
         public static long? ValueOf(long arg0)
         {
             return SExecute<long?>("valueOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toBinaryString(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toBinaryString(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToBinaryString(long arg0)
         {
             return SExecute<string>("toBinaryString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toHexString(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toHexString(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToHexString(long arg0)
         {
             return SExecute<string>("toHexString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toOctalString(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toOctalString(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToOctalString(long arg0)
         {
             return SExecute<string>("toOctalString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toString(long,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toString(long,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(long arg0, int arg1)
         {
             return SExecute<string>("toString", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toString(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toString(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(long arg0)
         {
             return SExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toUnsignedString(long,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toUnsignedString(long,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToUnsignedString(long arg0, int arg1)
         {
             return SExecute<string>("toUnsignedString", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toUnsignedString(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toUnsignedString(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToUnsignedString(long arg0)
         {
             return SExecute<string>("toUnsignedString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#divideUnsigned(long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#divideUnsigned(long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public static long DivideUnsigned(long arg0, long arg1)
         {
             return SExecute<long>("divideUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#highestOneBit(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#highestOneBit(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public static long HighestOneBit(long arg0)
         {
             return SExecute<long>("highestOneBit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#lowestOneBit(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#lowestOneBit(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public static long LowestOneBit(long arg0)
         {
             return SExecute<long>("lowestOneBit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#max(long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#max(long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public static long Max(long arg0, long arg1)
         {
             return SExecute<long>("max", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#min(long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#min(long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public static long Min(long arg0, long arg1)
         {
             return SExecute<long>("min", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.CharSequence,int,int,int) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.CharSequence,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseLong(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
             return SExecute<long>("parseLong", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.String,int) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseLong(string arg0, int arg1)
         {
             return SExecute<long>("parseLong", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.String) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseLong(string arg0)
         {
             return SExecute<long>("parseLong", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.CharSequence,int,int,int) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.CharSequence,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseUnsignedLong(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
             return SExecute<long>("parseUnsignedLong", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.String,int) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseUnsignedLong(string arg0, int arg1)
         {
             return SExecute<long>("parseUnsignedLong", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.String) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseUnsignedLong(string arg0)
         {
             return SExecute<long>("parseUnsignedLong", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#remainderUnsigned(long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#remainderUnsigned(long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public static long RemainderUnsigned(long arg0, long arg1)
         {
             return SExecute<long>("remainderUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#reverse(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#reverse(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public static long Reverse(long arg0)
         {
             return SExecute<long>("reverse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#reverseBytes(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#reverseBytes(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public static long ReverseBytes(long arg0)
         {
             return SExecute<long>("reverseBytes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#rotateLeft(long,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#rotateLeft(long,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="long"/></returns>
         public static long RotateLeft(long arg0, int arg1)
         {
             return SExecute<long>("rotateLeft", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#rotateRight(long,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#rotateRight(long,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="long"/></returns>
         public static long RotateRight(long arg0, int arg1)
         {
             return SExecute<long>("rotateRight", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#sum(long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#sum(long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public static long Sum(long arg0, long arg1)
         {
             return SExecute<long>("sum", arg0, arg1);
@@ -332,15 +439,19 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compareTo(java.lang.Long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compareTo(java.lang.Long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long?"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(long? arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);

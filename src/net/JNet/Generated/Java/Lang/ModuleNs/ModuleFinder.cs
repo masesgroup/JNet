@@ -42,22 +42,28 @@ namespace Java.Lang.ModuleNs
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#compose(java.lang.module.ModuleFinder...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#compose(java.lang.module.ModuleFinder...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleFinder"/></param>
+        /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
         public static Java.Lang.ModuleNs.ModuleFinder Compose(params Java.Lang.ModuleNs.ModuleFinder[] arg0)
         {
             if (arg0.Length == 0) return SExecute<Java.Lang.ModuleNs.ModuleFinder>("compose"); else return SExecute<Java.Lang.ModuleNs.ModuleFinder>("compose", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#of(java.nio.file.Path...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#of(java.nio.file.Path...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
         public static Java.Lang.ModuleNs.ModuleFinder Of(params Java.Nio.File.Path[] arg0)
         {
             if (arg0.Length == 0) return SExecute<Java.Lang.ModuleNs.ModuleFinder>("of"); else return SExecute<Java.Lang.ModuleNs.ModuleFinder>("of", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#ofSystem()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#ofSystem()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
         public static Java.Lang.ModuleNs.ModuleFinder OfSystem()
         {
             return SExecute<Java.Lang.ModuleNs.ModuleFinder>("ofSystem");

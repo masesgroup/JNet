@@ -46,7 +46,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#reload()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#reload()"/>
         /// </summary>
         public void Reload()
         {
@@ -77,8 +77,10 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#get()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#get()"/>
             /// </summary>
+            
+            /// <returns><see langword="object"/></returns>
             public object Get()
             {
                 return IExecute("get");

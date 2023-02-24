@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Element.Parameterizable"/> to <see cref="Javax.Lang.Model.Element.Element"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Element(Javax.Lang.Model.Element.Parameterizable t) => t.Cast<Javax.Lang.Model.Element.Element>();
         
         #endregion

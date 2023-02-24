@@ -30,8 +30,9 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/URIParameter.html#<init>(java.net.URI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/URIParameter.html#%3Cinit%3E(java.net.URI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         public URIParameter(Java.Net.URI arg0)
             : base(arg0)
         {
@@ -53,7 +54,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/URIParameter.html#getURI() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/URIParameter.html#getURI()"/> 
         /// </summary>
         public Java.Net.URI URI
         {

@@ -30,8 +30,9 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#<init>(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#%3Cinit%3E(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public DateFormatSymbols(Java.Util.Locale arg0)
             : base(arg0)
         {
@@ -40,7 +41,13 @@ namespace Java.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Text.DateFormatSymbols"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Text.DateFormatSymbols t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Text.DateFormatSymbols"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.DateFormatSymbols t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -51,22 +58,26 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getAvailableLocales() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getAvailableLocales()"/> 
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
             get { return SExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Text.DateFormatSymbols"/></returns>
         public static Java.Text.DateFormatSymbols GetInstance()
         {
             return SExecute<Java.Text.DateFormatSymbols>("getInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.DateFormatSymbols"/></returns>
         public static Java.Text.DateFormatSymbols GetInstance(Java.Util.Locale arg0)
         {
             return SExecute<Java.Text.DateFormatSymbols>("getInstance", arg0);
@@ -76,56 +87,56 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getAmPmStrings() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setAmPmStrings(java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getAmPmStrings()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setAmPmStrings(java.lang.String[])"/>
         /// </summary>
         public string[] AmPmStrings
         {
             get { return IExecuteArray<string>("getAmPmStrings"); } set { IExecute("setAmPmStrings", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getEras() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setEras(java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getEras()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setEras(java.lang.String[])"/>
         /// </summary>
         public string[] Eras
         {
             get { return IExecuteArray<string>("getEras"); } set { IExecute("setEras", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getLocalPatternChars() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setLocalPatternChars(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getLocalPatternChars()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setLocalPatternChars(java.lang.String)"/>
         /// </summary>
         public string LocalPatternChars
         {
             get { return IExecute<string>("getLocalPatternChars"); } set { IExecute("setLocalPatternChars", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getMonths() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setMonths(java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getMonths()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setMonths(java.lang.String[])"/>
         /// </summary>
         public string[] Months
         {
             get { return IExecuteArray<string>("getMonths"); } set { IExecute("setMonths", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getShortMonths() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setShortMonths(java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getShortMonths()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setShortMonths(java.lang.String[])"/>
         /// </summary>
         public string[] ShortMonths
         {
             get { return IExecuteArray<string>("getShortMonths"); } set { IExecute("setShortMonths", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getShortWeekdays() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setShortWeekdays(java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getShortWeekdays()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setShortWeekdays(java.lang.String[])"/>
         /// </summary>
         public string[] ShortWeekdays
         {
             get { return IExecuteArray<string>("getShortWeekdays"); } set { IExecute("setShortWeekdays", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getWeekdays() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setWeekdays(java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getWeekdays()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setWeekdays(java.lang.String[])"/>
         /// </summary>
         public string[] Weekdays
         {
             get { return IExecuteArray<string>("getWeekdays"); } set { IExecute("setWeekdays", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getZoneStrings() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setZoneStrings(java.lang.String[][])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#getZoneStrings()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormatSymbols.html#setZoneStrings(java.lang.String[][])"/>
         /// </summary>
         public string[] ZoneStrings
         {

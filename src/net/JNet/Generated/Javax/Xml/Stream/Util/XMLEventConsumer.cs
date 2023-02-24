@@ -46,8 +46,10 @@ namespace Javax.Xml.Stream.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventConsumer.html#add(javax.xml.stream.events.XMLEvent) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventConsumer.html#add(javax.xml.stream.events.XMLEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Stream.Events.XMLEvent"/></param>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Add(Javax.Xml.Stream.Events.XMLEvent arg0)
         {
             IExecute("add", arg0);

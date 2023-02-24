@@ -33,7 +33,13 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.ByteChannel"/> to <see cref="Java.Nio.Channels.ReadableByteChannel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.ReadableByteChannel(Java.Nio.Channels.ByteChannel t) => t.Cast<Java.Nio.Channels.ReadableByteChannel>();
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.ByteChannel"/> to <see cref="Java.Nio.Channels.WritableByteChannel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.WritableByteChannel(Java.Nio.Channels.ByteChannel t) => t.Cast<Java.Nio.Channels.WritableByteChannel>();
         
         #endregion

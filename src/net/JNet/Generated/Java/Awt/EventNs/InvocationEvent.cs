@@ -30,22 +30,32 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#<init>(java.lang.Object,java.lang.Runnable,java.lang.Object,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#%3Cinit%3E(java.lang.Object,java.lang.Runnable,java.lang.Object,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
         public InvocationEvent(object arg0, Java.Lang.Runnable arg1, object arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#<init>(java.lang.Object,java.lang.Runnable,java.lang.Runnable,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#%3Cinit%3E(java.lang.Object,java.lang.Runnable,java.lang.Runnable,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
         public InvocationEvent(object arg0, Java.Lang.Runnable arg1, Java.Lang.Runnable arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#<init>(java.lang.Object,java.lang.Runnable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#%3Cinit%3E(java.lang.Object,java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         public InvocationEvent(object arg0, Java.Lang.Runnable arg1)
             : base(arg0, arg1)
         {
@@ -54,21 +64,24 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.EventNs.InvocationEvent"/> to <see cref="Java.Awt.ActiveEvent"/>
+        /// </summary>
         public static implicit operator Java.Awt.ActiveEvent(Java.Awt.EventNs.InvocationEvent t) => t.Cast<Java.Awt.ActiveEvent>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_DEFAULT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_DEFAULT"/>
         /// </summary>
         public static int INVOCATION_DEFAULT => Clazz.GetField<int>("INVOCATION_DEFAULT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_FIRST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_FIRST"/>
         /// </summary>
         public static int INVOCATION_FIRST => Clazz.GetField<int>("INVOCATION_FIRST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_LAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_LAST"/>
         /// </summary>
         public static int INVOCATION_LAST => Clazz.GetField<int>("INVOCATION_LAST");
         
@@ -80,35 +93,37 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#getException() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#getException()"/> 
         /// </summary>
         public Java.Lang.Exception Exception
         {
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Exception>(obj); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#getThrowable() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#getThrowable()"/> 
         /// </summary>
         public Java.Lang.Throwable Throwable
         {
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getThrowable"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#getWhen() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#getWhen()"/> 
         /// </summary>
         public long When
         {
             get { return IExecute<long>("getWhen"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#isDispatched()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#isDispatched()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDispatched()
         {
             return IExecute<bool>("isDispatched");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#dispatch()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#dispatch()"/>
         /// </summary>
         public void Dispatch()
         {

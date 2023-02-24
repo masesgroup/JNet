@@ -38,15 +38,15 @@ namespace Java.Net
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#ACCEPT_ALL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#ACCEPT_ALL"/>
         /// </summary>
         public static Java.Net.CookiePolicy ACCEPT_ALL => Clazz.GetField<Java.Net.CookiePolicy>("ACCEPT_ALL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#ACCEPT_NONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#ACCEPT_NONE"/>
         /// </summary>
         public static Java.Net.CookiePolicy ACCEPT_NONE => Clazz.GetField<Java.Net.CookiePolicy>("ACCEPT_NONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#ACCEPT_ORIGINAL_SERVER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#ACCEPT_ORIGINAL_SERVER"/>
         /// </summary>
         public static Java.Net.CookiePolicy ACCEPT_ORIGINAL_SERVER => Clazz.GetField<Java.Net.CookiePolicy>("ACCEPT_ORIGINAL_SERVER");
         
@@ -58,8 +58,11 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#shouldAccept(java.net.URI,java.net.HttpCookie)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#shouldAccept(java.net.URI,java.net.HttpCookie)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ShouldAccept(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
             return IExecute<bool>("shouldAccept", arg0, arg1);

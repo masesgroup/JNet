@@ -30,29 +30,37 @@ namespace Javax.Naming.Ldap
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#<init>(java.lang.String,java.lang.Object) throws javax.naming.InvalidNameException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#%3Cinit%3E(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Javax.Naming.InvalidNameException"/>
         public Rdn(string arg0, object arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#<init>(java.lang.String) throws javax.naming.InvalidNameException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Javax.Naming.InvalidNameException"/>
         public Rdn(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#<init>(javax.naming.directory.Attributes) throws javax.naming.InvalidNameException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#%3Cinit%3E(javax.naming.directory.Attributes)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Directory.Attributes"/></param>
+        /// <exception cref="Javax.Naming.InvalidNameException"/>
         public Rdn(Javax.Naming.Directory.Attributes arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#<init>(javax.naming.ldap.Rdn)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#%3Cinit%3E(javax.naming.ldap.Rdn)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Ldap.Rdn"/></param>
         public Rdn(Javax.Naming.Ldap.Rdn arg0)
             : base(arg0)
         {
@@ -61,6 +69,9 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Ldap.Rdn"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.Ldap.Rdn t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -71,15 +82,19 @@ namespace Javax.Naming.Ldap
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#unescapeValue(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#unescapeValue(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public static object UnescapeValue(string arg0)
         {
             return SExecute("unescapeValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#escapeValue(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#escapeValue(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string EscapeValue(object arg0)
         {
             return SExecute<string>("escapeValue", arg0);
@@ -89,36 +104,42 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#getValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#getValue()"/> 
         /// </summary>
         public object Value
         {
             get { return IExecute("getValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#size()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#toAttributes()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#toAttributes()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Naming.Directory.Attributes"/></returns>
         public Javax.Naming.Directory.Attributes ToAttributes()
         {
             return IExecute<Javax.Naming.Directory.Attributes>("toAttributes");

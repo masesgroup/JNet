@@ -38,15 +38,15 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#BITMASK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#BITMASK"/>
         /// </summary>
         public static int BITMASK => Clazz.GetField<int>("BITMASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#OPAQUE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#OPAQUE"/>
         /// </summary>
         public static int OPAQUE => Clazz.GetField<int>("OPAQUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#TRANSLUCENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#TRANSLUCENT"/>
         /// </summary>
         public static int TRANSLUCENT => Clazz.GetField<int>("TRANSLUCENT");
         
@@ -58,8 +58,10 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#getTransparency()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#getTransparency()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int GetTransparency()
         {
             return IExecute<int>("getTransparency");

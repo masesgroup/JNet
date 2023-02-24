@@ -46,8 +46,10 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Stroke.html#createStrokedShape(java.awt.Shape)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Stroke.html#createStrokedShape(java.awt.Shape)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape CreateStrokedShape(Java.Awt.Shape arg0)
         {
             return IExecute<Java.Awt.Shape>("createStrokedShape", arg0);

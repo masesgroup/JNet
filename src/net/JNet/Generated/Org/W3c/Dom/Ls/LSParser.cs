@@ -38,23 +38,23 @@ namespace Org.W3c.Dom.Ls
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_APPEND_AS_CHILDREN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_APPEND_AS_CHILDREN"/>
         /// </summary>
         public static short ACTION_APPEND_AS_CHILDREN => Clazz.GetField<short>("ACTION_APPEND_AS_CHILDREN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_INSERT_AFTER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_INSERT_AFTER"/>
         /// </summary>
         public static short ACTION_INSERT_AFTER => Clazz.GetField<short>("ACTION_INSERT_AFTER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_INSERT_BEFORE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_INSERT_BEFORE"/>
         /// </summary>
         public static short ACTION_INSERT_BEFORE => Clazz.GetField<short>("ACTION_INSERT_BEFORE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_REPLACE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_REPLACE"/>
         /// </summary>
         public static short ACTION_REPLACE => Clazz.GetField<short>("ACTION_REPLACE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_REPLACE_CHILDREN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_REPLACE_CHILDREN"/>
         /// </summary>
         public static short ACTION_REPLACE_CHILDREN => Clazz.GetField<short>("ACTION_REPLACE_CHILDREN");
         
@@ -66,56 +66,70 @@ namespace Org.W3c.Dom.Ls
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#getAsync() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#getAsync()"/> 
         /// </summary>
         public bool Async
         {
             get { return IExecute<bool>("getAsync"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#getBusy() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#getBusy()"/> 
         /// </summary>
         public bool Busy
         {
             get { return IExecute<bool>("getBusy"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#getDomConfig() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#getDomConfig()"/> 
         /// </summary>
         public Org.W3c.Dom.DOMConfiguration DomConfig
         {
             get { return IExecute<Org.W3c.Dom.DOMConfiguration>("getDomConfig"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#getFilter() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#setFilter(org.w3c.dom.ls.LSParserFilter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#getFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#setFilter(org.w3c.dom.ls.LSParserFilter)"/>
         /// </summary>
         public Org.W3c.Dom.Ls.LSParserFilter Filter
         {
             get { return IExecute<Org.W3c.Dom.Ls.LSParserFilter>("getFilter"); } set { IExecute("setFilter", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parse(org.w3c.dom.ls.LSInput) throws org.w3c.dom.DOMException,org.w3c.dom.ls.LSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parse(org.w3c.dom.ls.LSInput)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSInput"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public Org.W3c.Dom.Document Parse(Org.W3c.Dom.Ls.LSInput arg0)
         {
             return IExecute<Org.W3c.Dom.Document>("parse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseURI(java.lang.String) throws org.w3c.dom.DOMException,org.w3c.dom.ls.LSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseURI(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public Org.W3c.Dom.Document ParseURI(string arg0)
         {
             return IExecute<Org.W3c.Dom.Document>("parseURI", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseWithContext(org.w3c.dom.ls.LSInput,org.w3c.dom.Node,short) throws org.w3c.dom.DOMException,org.w3c.dom.ls.LSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseWithContext(org.w3c.dom.ls.LSInput,org.w3c.dom.Node,short)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSInput"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg2"><see langword="short"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public Org.W3c.Dom.Node ParseWithContext(Org.W3c.Dom.Ls.LSInput arg0, Org.W3c.Dom.Node arg1, short arg2)
         {
             return IExecute<Org.W3c.Dom.Node>("parseWithContext", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#abort()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#abort()"/>
         /// </summary>
         public void Abort()
         {

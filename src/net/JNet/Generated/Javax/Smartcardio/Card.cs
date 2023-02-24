@@ -46,57 +46,70 @@ namespace Javax.Smartcardio
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#getATR() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#getATR()"/> 
         /// </summary>
         public Javax.Smartcardio.ATR ATR
         {
             get { return IExecute<Javax.Smartcardio.ATR>("getATR"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#getBasicChannel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#getBasicChannel()"/> 
         /// </summary>
         public Javax.Smartcardio.CardChannel BasicChannel
         {
             get { return IExecute<Javax.Smartcardio.CardChannel>("getBasicChannel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#getProtocol() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#getProtocol()"/> 
         /// </summary>
         public string Protocol
         {
             get { return IExecute<string>("getProtocol"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#transmitControlCommand(int,byte[]) throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#transmitControlCommand(int,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public byte[] TransmitControlCommand(int arg0, byte[] arg1)
         {
             return IExecuteArray<byte>("transmitControlCommand", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#openLogicalChannel() throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#openLogicalChannel()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Smartcardio.CardChannel"/></returns>
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public Javax.Smartcardio.CardChannel OpenLogicalChannel()
         {
             return IExecute<Javax.Smartcardio.CardChannel>("openLogicalChannel");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#beginExclusive() throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#beginExclusive()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public void BeginExclusive()
         {
             IExecute("beginExclusive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#disconnect(boolean) throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#disconnect(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public void Disconnect(bool arg0)
         {
             IExecute("disconnect", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#endExclusive() throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#endExclusive()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public void EndExclusive()
         {
             IExecute("endExclusive");

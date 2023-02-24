@@ -30,15 +30,22 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanNotificationInfo.html#<init>(java.lang.String[],java.lang.String,java.lang.String,javax.management.Descriptor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanNotificationInfo.html#%3Cinit%3E(java.lang.String[],java.lang.String,java.lang.String,javax.management.Descriptor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see cref="Javax.Management.Descriptor"/></param>
         public MBeanNotificationInfo(string[] arg0, string arg1, string arg2, Javax.Management.Descriptor arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanNotificationInfo.html#<init>(java.lang.String[],java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanNotificationInfo.html#%3Cinit%3E(java.lang.String[],java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
         public MBeanNotificationInfo(string[] arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
@@ -47,6 +54,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.MBeanNotificationInfo"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Management.MBeanNotificationInfo t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -61,7 +71,7 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanNotificationInfo.html#getNotifTypes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanNotificationInfo.html#getNotifTypes()"/> 
         /// </summary>
         public string[] NotifTypes
         {

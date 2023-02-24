@@ -46,15 +46,24 @@ namespace Javax.Swing.Plaf.Nimbus
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusLookAndFeel.html#getDerivedColor(java.lang.String,float,float,float,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusLookAndFeel.html#getDerivedColor(java.lang.String,float,float,float,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetDerivedColor(string arg0, float arg1, float arg2, float arg3, int arg4, bool arg5)
         {
             return IExecute<Java.Awt.Color>("getDerivedColor", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusLookAndFeel.html#register(javax.swing.plaf.synth.Region,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusLookAndFeel.html#register(javax.swing.plaf.synth.Region,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.Region"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public void Register(Javax.Swing.Plaf.Synth.Region arg0, string arg1)
         {
             IExecute("register", arg0, arg1);

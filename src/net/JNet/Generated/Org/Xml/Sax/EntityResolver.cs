@@ -46,8 +46,13 @@ namespace Org.Xml.Sax
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/EntityResolver.html#resolveEntity(java.lang.String,java.lang.String) throws org.xml.sax.SAXException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/EntityResolver.html#resolveEntity(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Org.Xml.Sax.InputSource ResolveEntity(string arg0, string arg1)
         {
             return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1);

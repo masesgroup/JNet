@@ -30,8 +30,9 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public HMACParameterSpec(int arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Spec.HMACParameterSpec"/> to <see cref="Javax.Xml.Crypto.Dsig.Spec.SignatureMethodParameterSpec"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.Dsig.Spec.SignatureMethodParameterSpec(Javax.Xml.Crypto.Dsig.Spec.HMACParameterSpec t) => t.Cast<Javax.Xml.Crypto.Dsig.Spec.SignatureMethodParameterSpec>();
         
         #endregion
@@ -54,7 +58,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#getOutputLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/HMACParameterSpec.html#getOutputLength()"/> 
         /// </summary>
         public int OutputLength
         {

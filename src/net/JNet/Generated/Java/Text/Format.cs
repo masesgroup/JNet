@@ -33,7 +33,13 @@ namespace Java.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Text.Format"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Text.Format t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Text.Format"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.Format t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -48,36 +54,50 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#parseObject(java.lang.String,java.text.ParsePosition)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#parseObject(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Text.ParsePosition"/></param>
+        /// <returns><see langword="object"/></returns>
         public object ParseObject(string arg0, Java.Text.ParsePosition arg1)
         {
             return IExecute("parseObject", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.StringBuffer"/></param>
+        /// <param name="arg2"><see cref="Java.Text.FieldPosition"/></param>
+        /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
         public Java.Lang.StringBuffer FormatMethod(object arg0, Java.Lang.StringBuffer arg1, Java.Text.FieldPosition arg2)
         {
             return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#format(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#format(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="string"/></returns>
         public string FormatMethod(object arg0)
         {
             return IExecute<string>("format", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#parseObject(java.lang.String) throws java.text.ParseException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#parseObject(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Text.ParseException"/>
         public object ParseObject(string arg0)
         {
             return IExecute("parseObject", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#formatToCharacterIterator(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html#formatToCharacterIterator(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
         public Java.Text.AttributedCharacterIterator FormatToCharacterIterator(object arg0)
         {
             return IExecute<Java.Text.AttributedCharacterIterator>("formatToCharacterIterator", arg0);

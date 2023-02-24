@@ -46,8 +46,10 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Apply(double arg0)
         {
             return IExecute("apply", arg0);

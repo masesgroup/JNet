@@ -33,6 +33,9 @@ namespace Javax.Accessibility
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Accessibility.AccessibleEditableText"/> to <see cref="Javax.Accessibility.AccessibleText"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.AccessibleText(Javax.Accessibility.AccessibleEditableText t) => t.Cast<Javax.Accessibility.AccessibleText>();
         
         #endregion
@@ -47,64 +50,83 @@ namespace Javax.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#getTextRange(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#getTextRange(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetTextRange(int arg0, int arg1)
         {
             return IExecute<string>("getTextRange", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#cut(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#cut(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Cut(int arg0, int arg1)
         {
             IExecute("cut", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#delete(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#delete(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Delete(int arg0, int arg1)
         {
             IExecute("delete", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#insertTextAtIndex(int,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#insertTextAtIndex(int,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public void InsertTextAtIndex(int arg0, string arg1)
         {
             IExecute("insertTextAtIndex", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#paste(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#paste(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Paste(int arg0)
         {
             IExecute("paste", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#replaceText(int,int,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#replaceText(int,int,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
         public void ReplaceText(int arg0, int arg1, string arg2)
         {
             IExecute("replaceText", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#selectText(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#selectText(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SelectText(int arg0, int arg1)
         {
             IExecute("selectText", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#setAttributes(int,int,javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#setAttributes(int,int,javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         public void SetAttributes(int arg0, int arg1, Javax.Swing.Text.AttributeSet arg2)
         {
             IExecute("setAttributes", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#setTextContents(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleEditableText.html#setTextContents(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void SetTextContents(string arg0)
         {
             IExecute("setTextContents", arg0);

@@ -33,6 +33,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.MenuComponent"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.MenuComponent t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,42 +50,43 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#getAccessibleContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#getAccessibleContext()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleContext AccessibleContext
         {
             get { return IExecute<Javax.Accessibility.AccessibleContext>("getAccessibleContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#getFont() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#setFont(java.awt.Font)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#getFont()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#setFont(java.awt.Font)"/>
         /// </summary>
         public Java.Awt.Font Font
         {
             get { return IExecute<Java.Awt.Font>("getFont"); } set { IExecute("setFont", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#getName() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#setName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#setName(java.lang.String)"/>
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#getParent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#getParent()"/> 
         /// </summary>
         public Java.Awt.MenuContainer Parent
         {
             get { return IExecute<Java.Awt.MenuContainer>("getParent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#dispatchEvent(java.awt.AWTEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#dispatchEvent(java.awt.AWTEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
         public void DispatchEvent(Java.Awt.AWTEvent arg0)
         {
             IExecute("dispatchEvent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#removeNotify()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html#removeNotify()"/>
         /// </summary>
         public void RemoveNotify()
         {

@@ -46,22 +46,24 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html#getReadUnknownTags() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html#setReadUnknownTags(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html#getReadUnknownTags()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html#setReadUnknownTags(boolean)"/>
         /// </summary>
         public bool ReadUnknownTags
         {
             get { return IExecute<bool>("getReadUnknownTags"); } set { IExecute("setReadUnknownTags", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html#addAllowedTagSet(javax.imageio.plugins.tiff.TIFFTagSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html#addAllowedTagSet(javax.imageio.plugins.tiff.TIFFTagSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTagSet"/></param>
         public void AddAllowedTagSet(Javax.Imageio.Plugins.Tiff.TIFFTagSet arg0)
         {
             IExecute("addAllowedTagSet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html#removeAllowedTagSet(javax.imageio.plugins.tiff.TIFFTagSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFImageReadParam.html#removeAllowedTagSet(javax.imageio.plugins.tiff.TIFFTagSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTagSet"/></param>
         public void RemoveAllowedTagSet(Javax.Imageio.Plugins.Tiff.TIFFTagSet arg0)
         {
             IExecute("removeAllowedTagSet", arg0);

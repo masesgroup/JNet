@@ -30,8 +30,11 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitorInputStream.html#<init>(java.awt.Component,java.lang.Object,java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitorInputStream.html#%3Cinit%3E(java.awt.Component,java.lang.Object,java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see cref="Java.Io.InputStream"/></param>
         public ProgressMonitorInputStream(Java.Awt.Component arg0, object arg1, Java.Io.InputStream arg2)
             : base(arg0, arg1, arg2)
         {
@@ -53,7 +56,7 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitorInputStream.html#getProgressMonitor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitorInputStream.html#getProgressMonitor()"/> 
         /// </summary>
         public Javax.Swing.ProgressMonitor ProgressMonitor
         {

@@ -46,43 +46,67 @@ namespace Javax.Sound.Midi.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getMidiFileFormat(java.io.File) throws javax.sound.midi.InvalidMidiDataException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getMidiFileFormat(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Javax.Sound.Midi.MidiFileFormat"/></returns>
+        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.MidiFileFormat GetMidiFileFormat(Java.Io.File arg0)
         {
             return IExecute<Javax.Sound.Midi.MidiFileFormat>("getMidiFileFormat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getMidiFileFormat(java.io.InputStream) throws javax.sound.midi.InvalidMidiDataException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getMidiFileFormat(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Javax.Sound.Midi.MidiFileFormat"/></returns>
+        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.MidiFileFormat GetMidiFileFormat(Java.Io.InputStream arg0)
         {
             return IExecute<Javax.Sound.Midi.MidiFileFormat>("getMidiFileFormat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getMidiFileFormat(java.net.URL) throws javax.sound.midi.InvalidMidiDataException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getMidiFileFormat(java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <returns><see cref="Javax.Sound.Midi.MidiFileFormat"/></returns>
+        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.MidiFileFormat GetMidiFileFormat(Java.Net.URL arg0)
         {
             return IExecute<Javax.Sound.Midi.MidiFileFormat>("getMidiFileFormat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getSequence(java.io.File) throws javax.sound.midi.InvalidMidiDataException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getSequence(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Javax.Sound.Midi.Sequence"/></returns>
+        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.Sequence GetSequence(Java.Io.File arg0)
         {
             return IExecute<Javax.Sound.Midi.Sequence>("getSequence", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getSequence(java.io.InputStream) throws javax.sound.midi.InvalidMidiDataException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getSequence(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Javax.Sound.Midi.Sequence"/></returns>
+        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.Sequence GetSequence(Java.Io.InputStream arg0)
         {
             return IExecute<Javax.Sound.Midi.Sequence>("getSequence", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getSequence(java.net.URL) throws javax.sound.midi.InvalidMidiDataException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html#getSequence(java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <returns><see cref="Javax.Sound.Midi.Sequence"/></returns>
+        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Sound.Midi.Sequence GetSequence(Java.Net.URL arg0)
         {
             return IExecute<Javax.Sound.Midi.Sequence>("getSequence", arg0);

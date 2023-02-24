@@ -30,15 +30,21 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#<init>(java.lang.String,java.lang.String,java.lang.String) throws javax.management.MalformedObjectNameException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <exception cref="Javax.Management.MalformedObjectNameException"/>
         public ObjectName(string arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#<init>(java.lang.String) throws javax.management.MalformedObjectNameException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Javax.Management.MalformedObjectNameException"/>
         public ObjectName(string arg0)
             : base(arg0)
         {
@@ -47,13 +53,16 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.ObjectName"/> to <see cref="Javax.Management.QueryExp"/>
+        /// </summary>
         public static implicit operator Javax.Management.QueryExp(Javax.Management.ObjectName t) => t.Cast<Javax.Management.QueryExp>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#WILDCARD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#WILDCARD"/>
         /// </summary>
         public static Javax.Management.ObjectName WILDCARD => Clazz.GetField<Javax.Management.ObjectName>("WILDCARD");
         
@@ -61,36 +70,51 @@ namespace Javax.Management
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#quote(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#quote(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string Quote(string arg0)
         {
             return SExecute<string>("quote", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#unquote(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#unquote(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string Unquote(string arg0)
         {
             return SExecute<string>("unquote", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String,java.lang.String,java.lang.String) throws javax.management.MalformedObjectNameException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
+        /// <exception cref="Javax.Management.MalformedObjectNameException"/>
         public static Javax.Management.ObjectName GetInstance(string arg0, string arg1, string arg2)
         {
             return SExecute<Javax.Management.ObjectName>("getInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String) throws javax.management.MalformedObjectNameException,java.lang.NullPointerException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
+        /// <exception cref="Javax.Management.MalformedObjectNameException"/>
+        /// <exception cref="Java.Lang.NullPointerException"/>
         public static Javax.Management.ObjectName GetInstance(string arg0)
         {
             return SExecute<Javax.Management.ObjectName>("getInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(javax.management.ObjectName)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
         public static Javax.Management.ObjectName GetInstance(Javax.Management.ObjectName arg0)
         {
             return SExecute<Javax.Management.ObjectName>("getInstance", arg0);
@@ -100,106 +124,127 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getCanonicalKeyPropertyListString() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getCanonicalKeyPropertyListString()"/> 
         /// </summary>
         public string CanonicalKeyPropertyListString
         {
             get { return IExecute<string>("getCanonicalKeyPropertyListString"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getCanonicalName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getCanonicalName()"/> 
         /// </summary>
         public string CanonicalName
         {
             get { return IExecute<string>("getCanonicalName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getDomain() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getDomain()"/> 
         /// </summary>
         public string Domain
         {
             get { return IExecute<string>("getDomain"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyPropertyListString() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyPropertyListString()"/> 
         /// </summary>
         public string KeyPropertyListString
         {
             get { return IExecute<string>("getKeyPropertyListString"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#apply(javax.management.ObjectName)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#apply(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Apply(Javax.Management.ObjectName arg0)
         {
             return IExecute<bool>("apply", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isDomainPattern()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isDomainPattern()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDomainPattern()
         {
             return IExecute<bool>("isDomainPattern");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPattern()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPattern()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPattern()
         {
             return IExecute<bool>("isPattern");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyListPattern()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyListPattern()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPropertyListPattern()
         {
             return IExecute<bool>("isPropertyListPattern");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyPattern()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyPattern()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPropertyPattern()
         {
             return IExecute<bool>("isPropertyPattern");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyValuePattern()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyValuePattern()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPropertyValuePattern()
         {
             return IExecute<bool>("isPropertyValuePattern");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyValuePattern(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyValuePattern(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsPropertyValuePattern(string arg0)
         {
             return IExecute<bool>("isPropertyValuePattern", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#compareTo(javax.management.ObjectName)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#compareTo(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Javax.Management.ObjectName arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyProperty(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyProperty(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetKeyProperty(string arg0)
         {
             return IExecute<string>("getKeyProperty", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#setMBeanServer(javax.management.MBeanServer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#setMBeanServer(javax.management.MBeanServer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
         public void SetMBeanServer(Javax.Management.MBeanServer arg0)
         {
             IExecute("setMBeanServer", arg0);

@@ -30,36 +30,42 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#<init>(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public JFormattedTextField(object arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#<init>(java.text.Format)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#%3Cinit%3E(java.text.Format)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.Format"/></param>
         public JFormattedTextField(Java.Text.Format arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#<init>(javax.swing.JFormattedTextField$AbstractFormatter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#%3Cinit%3E(javax.swing.JFormattedTextField$AbstractFormatter)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></param>
         public JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatter arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#<init>(javax.swing.JFormattedTextField$AbstractFormatterFactory,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#%3Cinit%3E(javax.swing.JFormattedTextField$AbstractFormatterFactory,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatterFactory"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatterFactory arg0, object arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#<init>(javax.swing.JFormattedTextField$AbstractFormatterFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#%3Cinit%3E(javax.swing.JFormattedTextField$AbstractFormatterFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField.AbstractFormatterFactory"/></param>
         public JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatterFactory arg0)
             : base(arg0)
         {
@@ -73,19 +79,19 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#COMMIT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#COMMIT"/>
         /// </summary>
         public static int COMMIT => Clazz.GetField<int>("COMMIT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#COMMIT_OR_REVERT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#COMMIT_OR_REVERT"/>
         /// </summary>
         public static int COMMIT_OR_REVERT => Clazz.GetField<int>("COMMIT_OR_REVERT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#PERSIST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#PERSIST"/>
         /// </summary>
         public static int PERSIST => Clazz.GetField<int>("PERSIST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#REVERT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#REVERT"/>
         /// </summary>
         public static int REVERT => Clazz.GetField<int>("REVERT");
         
@@ -97,43 +103,47 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#getFocusLostBehavior() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#setFocusLostBehavior(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#getFocusLostBehavior()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#setFocusLostBehavior(int)"/>
         /// </summary>
         public int FocusLostBehavior
         {
             get { return IExecute<int>("getFocusLostBehavior"); } set { IExecute("setFocusLostBehavior", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#getFormatter() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#getFormatter()"/> 
         /// </summary>
         public Javax.Swing.JFormattedTextField.AbstractFormatter Formatter
         {
             get { return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatter>("getFormatter"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#getFormatterFactory() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#setFormatterFactory(javax.swing.JFormattedTextField$AbstractFormatterFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#getFormatterFactory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#setFormatterFactory(javax.swing.JFormattedTextField$AbstractFormatterFactory)"/>
         /// </summary>
         public Javax.Swing.JFormattedTextField.AbstractFormatterFactory FormatterFactory
         {
             get { return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatterFactory>("getFormatterFactory"); } set { IExecute("setFormatterFactory", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#getValue() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#setValue(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#setValue(java.lang.Object)"/>
         /// </summary>
         public object Value
         {
             get { return IExecute("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#isEditValid()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#isEditValid()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEditValid()
         {
             return IExecute<bool>("isEditValid");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#commitEdit() throws java.text.ParseException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#commitEdit()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Text.ParseException"/>
         public void CommitEdit()
         {
             IExecute("commitEdit");
@@ -150,6 +160,9 @@ namespace Javax.Swing
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.JFormattedTextField.AbstractFormatter t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
@@ -164,28 +177,35 @@ namespace Javax.Swing
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#stringToValue(java.lang.String) throws java.text.ParseException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#stringToValue(java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <returns><see langword="object"/></returns>
+            /// <exception cref="Java.Text.ParseException"/>
             public object StringToValue(string arg0)
             {
                 return IExecute("stringToValue", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#valueToString(java.lang.Object) throws java.text.ParseException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#valueToString(java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
+            /// <returns><see langword="string"/></returns>
+            /// <exception cref="Java.Text.ParseException"/>
             public string ValueToString(object arg0)
             {
                 return IExecute<string>("valueToString", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#install(javax.swing.JFormattedTextField)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#install(javax.swing.JFormattedTextField)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField"/></param>
             public void Install(Javax.Swing.JFormattedTextField arg0)
             {
                 IExecute("install", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#uninstall()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html#uninstall()"/>
             /// </summary>
             public void Uninstall()
             {
@@ -219,8 +239,10 @@ namespace Javax.Swing
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html#getFormatter(javax.swing.JFormattedTextField)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html#getFormatter(javax.swing.JFormattedTextField)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.JFormattedTextField"/></param>
+            /// <returns><see cref="Javax.Swing.JFormattedTextField.AbstractFormatter"/></returns>
             public Javax.Swing.JFormattedTextField.AbstractFormatter GetFormatter(Javax.Swing.JFormattedTextField arg0)
             {
                 return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatter>("getFormatter", arg0);

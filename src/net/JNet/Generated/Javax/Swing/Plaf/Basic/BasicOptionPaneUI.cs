@@ -38,11 +38,11 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.html#MinimumHeight
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.html#MinimumHeight"/>
         /// </summary>
         public static int MinimumHeight => Clazz.GetField<int>("MinimumHeight");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.html#MinimumWidth
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.html#MinimumWidth"/>
         /// </summary>
         public static int MinimumWidth => Clazz.GetField<int>("MinimumWidth");
         
@@ -54,7 +54,7 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.html#getMinimumOptionPaneSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.html#getMinimumOptionPaneSize()"/> 
         /// </summary>
         public Java.Awt.Dimension MinimumOptionPaneSize
         {
@@ -69,8 +69,10 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#<init>(boolean,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#%3Cinit%3E(boolean,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="bool"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
             public ButtonAreaLayout(bool arg0, int arg1)
                 : base(arg0, arg1)
             {
@@ -79,6 +81,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicOptionPaneUI.ButtonAreaLayout"/> to <see cref="Java.Awt.LayoutManager"/>
+            /// </summary>
             public static implicit operator Java.Awt.LayoutManager(Javax.Swing.Plaf.Basic.BasicOptionPaneUI.ButtonAreaLayout t) => t.Cast<Java.Awt.LayoutManager>();
             
             #endregion
@@ -93,57 +98,65 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#getCentersChildren() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#setCentersChildren(boolean)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#getCentersChildren()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#setCentersChildren(boolean)"/>
             /// </summary>
             public bool CentersChildren
             {
                 get { return IExecute<bool>("getCentersChildren"); } set { IExecute("setCentersChildren", value); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#getPadding() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#setPadding(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#getPadding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#setPadding(int)"/>
             /// </summary>
             public int Padding
             {
                 get { return IExecute<int>("getPadding"); } set { IExecute("setPadding", value); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#getSyncAllWidths() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#setSyncAllWidths(boolean)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#getSyncAllWidths()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#setSyncAllWidths(boolean)"/>
             /// </summary>
             public bool SyncAllWidths
             {
                 get { return IExecute<bool>("getSyncAllWidths"); } set { IExecute("setSyncAllWidths", value); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#minimumLayoutSize(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#minimumLayoutSize(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <returns><see cref="Java.Awt.Dimension"/></returns>
             public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#preferredLayoutSize(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#preferredLayoutSize(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <returns><see cref="Java.Awt.Dimension"/></returns>
             public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
             public void AddLayoutComponent(string arg0, Java.Awt.Component arg1)
             {
                 IExecute("addLayoutComponent", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#layoutContainer(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#layoutContainer(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
             public void LayoutContainer(Java.Awt.Container arg0)
             {
                 IExecute("layoutContainer", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#removeLayoutComponent(java.awt.Component)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html#removeLayoutComponent(java.awt.Component)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
                 IExecute("removeLayoutComponent", arg0);
@@ -160,8 +173,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.PropertyChangeHandler.html#<init>(javax.swing.plaf.basic.BasicOptionPaneUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.PropertyChangeHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicOptionPaneUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicOptionPaneUI"/></param>
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicOptionPaneUI arg0)
                 : base(arg0)
             {
@@ -170,6 +184,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicOptionPaneUI.PropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+            /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicOptionPaneUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
             
             #endregion
@@ -184,8 +201,9 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
                 IExecute("propertyChange", arg0);

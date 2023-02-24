@@ -30,8 +30,24 @@ namespace Javax.Imageio.Spi
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#<init>(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg5"><see langword="string"/></param>
+        /// <param name="arg6"><see langword="bool"/></param>
+        /// <param name="arg7"><see langword="string"/></param>
+        /// <param name="arg8"><see langword="string"/></param>
+        /// <param name="arg9"><see cref="string"/></param>
+        /// <param name="arg10"><see cref="string"/></param>
+        /// <param name="arg11"><see langword="bool"/></param>
+        /// <param name="arg12"><see langword="string"/></param>
+        /// <param name="arg13"><see langword="string"/></param>
+        /// <param name="arg14"><see cref="string"/></param>
+        /// <param name="arg15"><see cref="string"/></param>
         public ImageReaderWriterSpi(string arg0, string arg1, string[] arg2, string[] arg3, string[] arg4, string arg5, bool arg6, string arg7, string arg8, string[] arg9, string[] arg10, bool arg11, string arg12, string arg13, string[] arg14, string[] arg15)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15)
         {
@@ -53,85 +69,93 @@ namespace Javax.Imageio.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getExtraImageMetadataFormatNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getExtraImageMetadataFormatNames()"/> 
         /// </summary>
         public string[] ExtraImageMetadataFormatNames
         {
             get { return IExecuteArray<string>("getExtraImageMetadataFormatNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getExtraStreamMetadataFormatNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getExtraStreamMetadataFormatNames()"/> 
         /// </summary>
         public string[] ExtraStreamMetadataFormatNames
         {
             get { return IExecuteArray<string>("getExtraStreamMetadataFormatNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getFileSuffixes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getFileSuffixes()"/> 
         /// </summary>
         public string[] FileSuffixes
         {
             get { return IExecuteArray<string>("getFileSuffixes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getFormatNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getFormatNames()"/> 
         /// </summary>
         public string[] FormatNames
         {
             get { return IExecuteArray<string>("getFormatNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getMIMETypes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getMIMETypes()"/> 
         /// </summary>
         public string[] MIMETypes
         {
             get { return IExecuteArray<string>("getMIMETypes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getNativeImageMetadataFormatName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getNativeImageMetadataFormatName()"/> 
         /// </summary>
         public string NativeImageMetadataFormatName
         {
             get { return IExecute<string>("getNativeImageMetadataFormatName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getNativeStreamMetadataFormatName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getNativeStreamMetadataFormatName()"/> 
         /// </summary>
         public string NativeStreamMetadataFormatName
         {
             get { return IExecute<string>("getNativeStreamMetadataFormatName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getPluginClassName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getPluginClassName()"/> 
         /// </summary>
         public string PluginClassName
         {
             get { return IExecute<string>("getPluginClassName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#isStandardImageMetadataFormatSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#isStandardImageMetadataFormatSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsStandardImageMetadataFormatSupported()
         {
             return IExecute<bool>("isStandardImageMetadataFormatSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#isStandardStreamMetadataFormatSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#isStandardStreamMetadataFormatSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsStandardStreamMetadataFormatSupported()
         {
             return IExecute<bool>("isStandardStreamMetadataFormatSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getImageMetadataFormat(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getImageMetadataFormat(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/></returns>
         public Javax.Imageio.Metadata.IIOMetadataFormat GetImageMetadataFormat(string arg0)
         {
             return IExecute<Javax.Imageio.Metadata.IIOMetadataFormat>("getImageMetadataFormat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getStreamMetadataFormat(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getStreamMetadataFormat(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/></returns>
         public Javax.Imageio.Metadata.IIOMetadataFormat GetStreamMetadataFormat(string arg0)
         {
             return IExecute<Javax.Imageio.Metadata.IIOMetadataFormat>("getStreamMetadataFormat", arg0);

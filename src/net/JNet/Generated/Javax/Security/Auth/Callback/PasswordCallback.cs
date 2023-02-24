@@ -30,8 +30,10 @@ namespace Javax.Security.Auth.Callback
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#<init>(java.lang.String,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public PasswordCallback(string arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -40,7 +42,13 @@ namespace Javax.Security.Auth.Callback
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.Callback.PasswordCallback"/> to <see cref="Javax.Security.Auth.Callback.Callback"/>
+        /// </summary>
         public static implicit operator Javax.Security.Auth.Callback.Callback(Javax.Security.Auth.Callback.PasswordCallback t) => t.Cast<Javax.Security.Auth.Callback.Callback>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.Callback.PasswordCallback"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.PasswordCallback t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -55,28 +63,30 @@ namespace Javax.Security.Auth.Callback
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#getPassword() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#setPassword(char[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#getPassword()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#setPassword(char[])"/>
         /// </summary>
         public char[] Password
         {
             get { return IExecuteArray<char>("getPassword"); } set { IExecute("setPassword", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#getPrompt() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#getPrompt()"/> 
         /// </summary>
         public string Prompt
         {
             get { return IExecute<string>("getPrompt"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#isEchoOn()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#isEchoOn()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEchoOn()
         {
             return IExecute<bool>("isEchoOn");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#clearPassword()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#clearPassword()"/>
         /// </summary>
         public void ClearPassword()
         {

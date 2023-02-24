@@ -46,71 +46,77 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getAttributes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getAttributes()"/> 
         /// </summary>
         public Javax.Swing.Text.AttributeSet Attributes
         {
             get { return IExecute<Javax.Swing.Text.AttributeSet>("getAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getDocument() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getDocument()"/> 
         /// </summary>
         public Javax.Swing.Text.Document Document
         {
             get { return IExecute<Javax.Swing.Text.Document>("getDocument"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getElementCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getElementCount()"/> 
         /// </summary>
         public int ElementCount
         {
             get { return IExecute<int>("getElementCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getEndOffset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getEndOffset()"/> 
         /// </summary>
         public int EndOffset
         {
             get { return IExecute<int>("getEndOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getParentElement() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getParentElement()"/> 
         /// </summary>
         public Javax.Swing.Text.Element ParentElement
         {
             get { return IExecute<Javax.Swing.Text.Element>("getParentElement"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getStartOffset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getStartOffset()"/> 
         /// </summary>
         public int StartOffset
         {
             get { return IExecute<int>("getStartOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#isLeaf()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#isLeaf()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsLeaf()
         {
             return IExecute<bool>("isLeaf");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getElementIndex(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getElementIndex(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetElementIndex(int arg0)
         {
             return IExecute<int>("getElementIndex", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getElement(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getElement(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetElement(int arg0)
         {
             return IExecute<Javax.Swing.Text.Element>("getElement", arg0);

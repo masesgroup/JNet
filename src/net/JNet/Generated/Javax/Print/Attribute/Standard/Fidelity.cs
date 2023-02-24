@@ -33,18 +33,24 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.Fidelity"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.Fidelity t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.Fidelity"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.Fidelity t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Fidelity.html#FIDELITY_FALSE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Fidelity.html#FIDELITY_FALSE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Fidelity FIDELITY_FALSE => Clazz.GetField<Javax.Print.Attribute.Standard.Fidelity>("FIDELITY_FALSE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Fidelity.html#FIDELITY_TRUE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Fidelity.html#FIDELITY_TRUE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Fidelity FIDELITY_TRUE => Clazz.GetField<Javax.Print.Attribute.Standard.Fidelity>("FIDELITY_TRUE");
         
@@ -56,7 +62,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Fidelity.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Fidelity.html#getName()"/> 
         /// </summary>
         public string Name
         {

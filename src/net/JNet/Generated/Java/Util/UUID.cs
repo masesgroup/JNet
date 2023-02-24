@@ -30,8 +30,10 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#<init>(long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#%3Cinit%3E(long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
         public UUID(long arg0, long arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.UUID"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.UUID t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -50,22 +55,28 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#fromString(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#fromString(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Util.UUID"/></returns>
         public static Java.Util.UUID FromString(string arg0)
         {
             return SExecute<Java.Util.UUID>("fromString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#nameUUIDFromBytes(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#nameUUIDFromBytes(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see cref="Java.Util.UUID"/></returns>
         public static Java.Util.UUID NameUUIDFromBytes(byte[] arg0)
         {
             return SExecute<Java.Util.UUID>("nameUUIDFromBytes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#randomUUID()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#randomUUID()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.UUID"/></returns>
         public static Java.Util.UUID RandomUUID()
         {
             return SExecute<Java.Util.UUID>("randomUUID");
@@ -75,64 +86,78 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#getLeastSignificantBits() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#getLeastSignificantBits()"/> 
         /// </summary>
         public long LeastSignificantBits
         {
             get { return IExecute<long>("getLeastSignificantBits"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#getMostSignificantBits() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#getMostSignificantBits()"/> 
         /// </summary>
         public long MostSignificantBits
         {
             get { return IExecute<long>("getMostSignificantBits"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#clockSequence()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#clockSequence()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int ClockSequence()
         {
             return IExecute<int>("clockSequence");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#compareTo(java.util.UUID)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#compareTo(java.util.UUID)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.UUID"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Java.Util.UUID arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#variant()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#variant()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Variant()
         {
             return IExecute<int>("variant");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#version()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#version()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Version()
         {
             return IExecute<int>("version");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#node()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#node()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long Node()
         {
             return IExecute<long>("node");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#timestamp()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#timestamp()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long Timestamp()
         {
             return IExecute<long>("timestamp");

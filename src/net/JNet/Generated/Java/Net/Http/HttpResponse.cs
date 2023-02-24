@@ -46,36 +46,46 @@ namespace Java.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#statusCode()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#statusCode()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int StatusCode()
         {
             return IExecute<int>("statusCode");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#headers()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#headers()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.Http.HttpHeaders"/></returns>
         public Java.Net.Http.HttpHeaders Headers()
         {
             return IExecute<Java.Net.Http.HttpHeaders>("headers");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#request()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#request()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.Http.HttpRequest"/></returns>
         public Java.Net.Http.HttpRequest Request()
         {
             return IExecute<Java.Net.Http.HttpRequest>("request");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#uri()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#uri()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI Uri()
         {
             return IExecute<Java.Net.URI>("uri");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#body()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#body()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Body()
         {
             return IExecute("body");
@@ -240,15 +250,19 @@ namespace Java.Net.Http
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#statusCode()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#statusCode()"/>
             /// </summary>
+            
+            /// <returns><see langword="int"/></returns>
             public int StatusCode()
             {
                 return IExecute<int>("statusCode");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#headers()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#headers()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpHeaders"/></returns>
             public Java.Net.Http.HttpHeaders Headers()
             {
                 return IExecute<Java.Net.Http.HttpHeaders>("headers");

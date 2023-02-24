@@ -46,22 +46,28 @@ namespace Java.Lang.ModuleNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#configuration()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#configuration()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
         public Java.Lang.ModuleNs.Configuration Configuration()
         {
             return IExecute<Java.Lang.ModuleNs.Configuration>("configuration");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#reference()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#reference()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.ModuleNs.ModuleReference"/></returns>
         public Java.Lang.ModuleNs.ModuleReference Reference()
         {
             return IExecute<Java.Lang.ModuleNs.ModuleReference>("reference");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#name()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#name()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Name()
         {
             return IExecute<string>("name");

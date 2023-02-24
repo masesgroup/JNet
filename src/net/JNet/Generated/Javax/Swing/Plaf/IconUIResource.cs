@@ -30,8 +30,9 @@ namespace Javax.Swing.Plaf
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/IconUIResource.html#<init>(javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/IconUIResource.html#%3Cinit%3E(javax.swing.Icon)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
         public IconUIResource(Javax.Swing.Icon arg0)
             : base(arg0)
         {
@@ -40,8 +41,17 @@ namespace Javax.Swing.Plaf
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Plaf.IconUIResource"/> to <see cref="Javax.Swing.Icon"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.IconUIResource t) => t.Cast<Javax.Swing.Icon>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Plaf.IconUIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.IconUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Plaf.IconUIResource"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.IconUIResource t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -56,22 +66,26 @@ namespace Javax.Swing.Plaf
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/IconUIResource.html#getIconHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/IconUIResource.html#getIconHeight()"/> 
         /// </summary>
         public int IconHeight
         {
             get { return IExecute<int>("getIconHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/IconUIResource.html#getIconWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/IconUIResource.html#getIconWidth()"/> 
         /// </summary>
         public int IconWidth
         {
             get { return IExecute<int>("getIconWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/IconUIResource.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/IconUIResource.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
         {
             IExecute("paintIcon", arg0, arg1, arg2, arg3);

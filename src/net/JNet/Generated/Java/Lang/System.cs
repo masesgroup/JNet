@@ -38,15 +38,15 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#in
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#in"/>
         /// </summary>
         public static Java.Io.InputStream inField => Clazz.GetField<Java.Io.InputStream>("in");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#err
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#err"/>
         /// </summary>
         public static Java.Io.PrintStream err => Clazz.GetField<Java.Io.PrintStream>("err");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#out
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#out"/>
         /// </summary>
         public static Java.Io.PrintStream outField => Clazz.GetField<Java.Io.PrintStream>("out");
         
@@ -54,169 +54,212 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getSecurityManager() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setSecurityManager(java.lang.SecurityManager)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getSecurityManager()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setSecurityManager(java.lang.SecurityManager)"/>
         /// </summary>
         public static Java.Lang.SecurityManager SecurityManager
         {
             get { return SExecute<Java.Lang.SecurityManager>("getSecurityManager"); } set { SExecute("setSecurityManager", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#console()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#console()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Io.Console"/></returns>
         public static Java.Io.Console Console()
         {
             return SExecute<Java.Io.Console>("console");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#clearProperty(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#clearProperty(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ClearProperty(string arg0)
         {
             return SExecute<string>("clearProperty", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getenv(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getenv(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string Getenv(string arg0)
         {
             return SExecute<string>("getenv", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getProperty(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string GetProperty(string arg0, string arg1)
         {
             return SExecute<string>("getProperty", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getProperty(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getProperty(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string GetProperty(string arg0)
         {
             return SExecute<string>("getProperty", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#lineSeparator()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#lineSeparator()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public static string LineSeparator()
         {
             return SExecute<string>("lineSeparator");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setProperty(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string SetProperty(string arg0, string arg1)
         {
             return SExecute<string>("setProperty", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getLogger(java.lang.String,java.util.ResourceBundle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getLogger(java.lang.String,java.util.ResourceBundle)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
+        /// <returns><see cref="Java.Lang.System.Logger"/></returns>
         public static Java.Lang.System.Logger GetLogger(string arg0, Java.Util.ResourceBundle arg1)
         {
             return SExecute<Java.Lang.System.Logger>("getLogger", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getLogger(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getLogger(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Lang.System.Logger"/></returns>
         public static Java.Lang.System.Logger GetLogger(string arg0)
         {
             return SExecute<Java.Lang.System.Logger>("getLogger", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#inheritedChannel() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#inheritedChannel()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.Channel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.Channel InheritedChannel()
         {
             return SExecute<Java.Nio.Channels.Channel>("inheritedChannel");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#identityHashCode(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#identityHashCode(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int IdentityHashCode(object arg0)
         {
             return SExecute<int>("identityHashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#mapLibraryName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#mapLibraryName(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string MapLibraryName(string arg0)
         {
             return SExecute<string>("mapLibraryName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#currentTimeMillis()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#currentTimeMillis()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public static long CurrentTimeMillis()
         {
             return SExecute<long>("currentTimeMillis");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#nanoTime()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#nanoTime()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public static long NanoTime()
         {
             return SExecute<long>("nanoTime");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#arraycopy(java.lang.Object,int,java.lang.Object,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#arraycopy(java.lang.Object,int,java.lang.Object,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public static void Arraycopy(object arg0, int arg1, object arg2, int arg3, int arg4)
         {
             SExecute("arraycopy", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#exit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#exit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public static void Exit(int arg0)
         {
             SExecute("exit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#gc()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#gc()"/>
         /// </summary>
         public static void Gc()
         {
             SExecute("gc");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#load(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#load(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public static void Load(string arg0)
         {
             SExecute("load", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#loadLibrary(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#loadLibrary(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public static void LoadLibrary(string arg0)
         {
             SExecute("loadLibrary", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#runFinalization()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#runFinalization()"/>
         /// </summary>
         public static void RunFinalization()
         {
             SExecute("runFinalization");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setErr(java.io.PrintStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setErr(java.io.PrintStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public static void SetErr(Java.Io.PrintStream arg0)
         {
             SExecute("setErr", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setIn(java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setIn(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public static void SetIn(Java.Io.InputStream arg0)
         {
             SExecute("setIn", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setOut(java.io.PrintStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setOut(java.io.PrintStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public static void SetOut(Java.Io.PrintStream arg0)
         {
             SExecute("setOut", arg0);
@@ -250,7 +293,7 @@ namespace Java.Lang
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#getName() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#getName()"/> 
             /// </summary>
             public string Name
             {
@@ -280,8 +323,10 @@ namespace Java.Lang
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.LoggerFinder.html#getLoggerFinder()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.LoggerFinder.html#getLoggerFinder()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Lang.System.LoggerFinder"/></returns>
             public static Java.Lang.System.LoggerFinder GetLoggerFinder()
             {
                 return SExecute<Java.Lang.System.LoggerFinder>("getLoggerFinder");
@@ -291,15 +336,22 @@ namespace Java.Lang
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.LoggerFinder.html#getLogger(java.lang.String,java.lang.Module)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.LoggerFinder.html#getLogger(java.lang.String,java.lang.Module)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
+            /// <returns><see cref="Java.Lang.System.Logger"/></returns>
             public Java.Lang.System.Logger GetLogger(string arg0, Java.Lang.Module arg1)
             {
                 return IExecute<Java.Lang.System.Logger>("getLogger", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.LoggerFinder.html#getLocalizedLogger(java.lang.String,java.util.ResourceBundle,java.lang.Module)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.LoggerFinder.html#getLocalizedLogger(java.lang.String,java.util.ResourceBundle,java.lang.Module)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.Module"/></param>
+            /// <returns><see cref="Java.Lang.System.Logger"/></returns>
             public Java.Lang.System.Logger GetLocalizedLogger(string arg0, Java.Util.ResourceBundle arg1, Java.Lang.Module arg2)
             {
                 return IExecute<Java.Lang.System.Logger>("getLocalizedLogger", arg0, arg1, arg2);

@@ -30,8 +30,9 @@ namespace Javax.Swing.Plaf.Metal
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalInternalFrameUI.html#<init>(javax.swing.JInternalFrame)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalInternalFrameUI.html#%3Cinit%3E(javax.swing.JInternalFrame)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
         public MetalInternalFrameUI(Javax.Swing.JInternalFrame arg0)
             : base(arg0)
         {
@@ -53,8 +54,9 @@ namespace Javax.Swing.Plaf.Metal
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalInternalFrameUI.html#setPalette(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalInternalFrameUI.html#setPalette(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetPalette(bool arg0)
         {
             IExecute("setPalette", arg0);

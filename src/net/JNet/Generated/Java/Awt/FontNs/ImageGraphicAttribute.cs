@@ -30,15 +30,21 @@ namespace Java.Awt.FontNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ImageGraphicAttribute.html#<init>(java.awt.Image,int,float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ImageGraphicAttribute.html#%3Cinit%3E(java.awt.Image,int,float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
         public ImageGraphicAttribute(Java.Awt.Image arg0, int arg1, float arg2, float arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ImageGraphicAttribute.html#<init>(java.awt.Image,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ImageGraphicAttribute.html#%3Cinit%3E(java.awt.Image,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public ImageGraphicAttribute(Java.Awt.Image arg0, int arg1)
             : base(arg0, arg1)
         {

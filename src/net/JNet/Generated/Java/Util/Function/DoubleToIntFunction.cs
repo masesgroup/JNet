@@ -46,8 +46,10 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToIntFunction.html#applyAsInt(double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToIntFunction.html#applyAsInt(double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <returns><see langword="int"/></returns>
         public int ApplyAsInt(double arg0)
         {
             return IExecute<int>("applyAsInt", arg0);

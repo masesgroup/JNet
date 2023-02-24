@@ -38,7 +38,7 @@ namespace Org.W3c.Dom.Bootstrap
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#PROPERTY"/>
         /// </summary>
         public static string PROPERTY => Clazz.GetField<string>("PROPERTY");
         
@@ -46,8 +46,14 @@ namespace Org.W3c.Dom.Bootstrap
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#newInstance() throws java.lang.ClassNotFoundException,java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.ClassCastException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#newInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Org.W3c.Dom.Bootstrap.DOMImplementationRegistry"/></returns>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Java.Lang.InstantiationException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
+        /// <exception cref="Java.Lang.ClassCastException"/>
         public static Org.W3c.Dom.Bootstrap.DOMImplementationRegistry NewInstance()
         {
             return SExecute<Org.W3c.Dom.Bootstrap.DOMImplementationRegistry>("newInstance");
@@ -57,22 +63,27 @@ namespace Org.W3c.Dom.Bootstrap
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#getDOMImplementation(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#getDOMImplementation(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.DOMImplementation"/></returns>
         public Org.W3c.Dom.DOMImplementation GetDOMImplementation(string arg0)
         {
             return IExecute<Org.W3c.Dom.DOMImplementation>("getDOMImplementation", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#getDOMImplementationList(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#getDOMImplementationList(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.DOMImplementationList"/></returns>
         public Org.W3c.Dom.DOMImplementationList GetDOMImplementationList(string arg0)
         {
             return IExecute<Org.W3c.Dom.DOMImplementationList>("getDOMImplementationList", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#addSource(org.w3c.dom.DOMImplementationSource)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/bootstrap/DOMImplementationRegistry.html#addSource(org.w3c.dom.DOMImplementationSource)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.DOMImplementationSource"/></param>
         public void AddSource(Org.W3c.Dom.DOMImplementationSource arg0)
         {
             IExecute("addSource", arg0);

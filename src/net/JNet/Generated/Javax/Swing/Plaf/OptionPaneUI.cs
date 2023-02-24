@@ -46,15 +46,18 @@ namespace Javax.Swing.Plaf
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/OptionPaneUI.html#containsCustomComponents(javax.swing.JOptionPane)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/OptionPaneUI.html#containsCustomComponents(javax.swing.JOptionPane)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JOptionPane"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsCustomComponents(Javax.Swing.JOptionPane arg0)
         {
             return IExecute<bool>("containsCustomComponents", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/OptionPaneUI.html#selectInitialValue(javax.swing.JOptionPane)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/OptionPaneUI.html#selectInitialValue(javax.swing.JOptionPane)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JOptionPane"/></param>
         public void SelectInitialValue(Javax.Swing.JOptionPane arg0)
         {
             IExecute("selectInitialValue", arg0);

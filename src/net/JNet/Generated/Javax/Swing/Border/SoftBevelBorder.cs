@@ -30,22 +30,31 @@ namespace Javax.Swing.Border
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/SoftBevelBorder.html#<init>(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/SoftBevelBorder.html#%3Cinit%3E(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Color"/></param>
         public SoftBevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/SoftBevelBorder.html#<init>(int,java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/SoftBevelBorder.html#%3Cinit%3E(int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
         public SoftBevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/SoftBevelBorder.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/SoftBevelBorder.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public SoftBevelBorder(int arg0)
             : base(arg0)
         {

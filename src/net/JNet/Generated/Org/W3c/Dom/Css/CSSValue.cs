@@ -38,19 +38,19 @@ namespace Org.W3c.Dom.Css
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_CUSTOM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_CUSTOM"/>
         /// </summary>
         public static short CSS_CUSTOM => Clazz.GetField<short>("CSS_CUSTOM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_INHERIT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_INHERIT"/>
         /// </summary>
         public static short CSS_INHERIT => Clazz.GetField<short>("CSS_INHERIT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_PRIMITIVE_VALUE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_PRIMITIVE_VALUE"/>
         /// </summary>
         public static short CSS_PRIMITIVE_VALUE => Clazz.GetField<short>("CSS_PRIMITIVE_VALUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_VALUE_LIST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_VALUE_LIST"/>
         /// </summary>
         public static short CSS_VALUE_LIST => Clazz.GetField<short>("CSS_VALUE_LIST");
         
@@ -62,14 +62,14 @@ namespace Org.W3c.Dom.Css
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#getCssText() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#setCssText(java.lang.String) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#getCssText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#setCssText(java.lang.String)"/>
         /// </summary>
         public string CssText
         {
             get { return IExecute<string>("getCssText"); } set { IExecute("setCssText", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#getCssValueType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#getCssValueType()"/> 
         /// </summary>
         public short CssValueType
         {

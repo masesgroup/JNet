@@ -30,8 +30,10 @@ namespace Java.Rmi
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html#<init>(T) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html#%3Cinit%3E(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public MarshalledObject(object arg0)
             : base(arg0)
         {
@@ -40,6 +42,9 @@ namespace Java.Rmi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.MarshalledObject"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.MarshalledObject t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,8 +59,12 @@ namespace Java.Rmi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html#get() throws java.io.IOException,java.lang.ClassNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html#get()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public object Get()
         {
             return IExecute("get");

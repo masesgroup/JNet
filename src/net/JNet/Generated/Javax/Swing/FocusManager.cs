@@ -38,7 +38,7 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/FocusManager.html#FOCUS_MANAGER_CLASS_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/FocusManager.html#FOCUS_MANAGER_CLASS_PROPERTY"/>
         /// </summary>
         public static string FOCUS_MANAGER_CLASS_PROPERTY => Clazz.GetField<string>("FOCUS_MANAGER_CLASS_PROPERTY");
         
@@ -46,7 +46,7 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/FocusManager.html#getCurrentManager() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/FocusManager.html#setCurrentManager(javax.swing.FocusManager) throws java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/FocusManager.html#getCurrentManager()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/FocusManager.html#setCurrentManager(javax.swing.FocusManager)"/>
         /// </summary>
         public static Javax.Swing.FocusManager CurrentManager
         {

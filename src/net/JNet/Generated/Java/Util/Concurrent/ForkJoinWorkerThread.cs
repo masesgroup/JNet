@@ -46,14 +46,14 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#getPool() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#getPool()"/> 
         /// </summary>
         public Java.Util.Concurrent.ForkJoinPool Pool
         {
             get { return IExecute<Java.Util.Concurrent.ForkJoinPool>("getPool"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#getPoolIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinWorkerThread.html#getPoolIndex()"/> 
         /// </summary>
         public int PoolIndex
         {

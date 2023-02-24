@@ -38,23 +38,23 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#MAX_VALUE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#MAX_VALUE"/>
         /// </summary>
         public static byte MAX_VALUE => Clazz.GetField<byte>("MAX_VALUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#MIN_VALUE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#MIN_VALUE"/>
         /// </summary>
         public static byte MIN_VALUE => Clazz.GetField<byte>("MIN_VALUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#BYTES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#BYTES"/>
         /// </summary>
         public static int BYTES => Clazz.GetField<int>("BYTES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#SIZE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#SIZE"/>
         /// </summary>
         public static int SIZE => Clazz.GetField<int>("SIZE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
         
@@ -62,85 +62,118 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#parseByte(java.lang.String,int) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#parseByte(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="byte"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte ParseByte(string arg0, int arg1)
         {
             return SExecute<byte>("parseByte", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#parseByte(java.lang.String) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#parseByte(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="byte"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte ParseByte(string arg0)
         {
             return SExecute<byte>("parseByte", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compare(byte,byte)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compare(byte,byte)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="byte"/></param>
+        /// <param name="arg1"><see langword="byte"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(byte arg0, byte arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareUnsigned(byte,byte)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareUnsigned(byte,byte)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="byte"/></param>
+        /// <param name="arg1"><see langword="byte"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int CompareUnsigned(byte arg0, byte arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#hashCode(byte)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#hashCode(byte)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="byte"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int HashCode(byte arg0)
         {
             return SExecute<int>("hashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toUnsignedInt(byte)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toUnsignedInt(byte)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="byte"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int ToUnsignedInt(byte arg0)
         {
             return SExecute<int>("toUnsignedInt", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#decode(java.lang.String) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#decode(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="byte?"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte? Decode(string arg0)
         {
             return SExecute<byte?>("decode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(byte)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(byte)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="byte"/></param>
+        /// <returns><see langword="byte?"/></returns>
         public static byte? ValueOf(byte arg0)
         {
             return SExecute<byte?>("valueOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String,int) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="byte?"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte? ValueOf(string arg0, int arg1)
         {
             return SExecute<byte?>("valueOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="byte?"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte? ValueOf(string arg0)
         {
             return SExecute<byte?>("valueOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toString(byte)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toString(byte)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="byte"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(byte arg0)
         {
             return SExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toUnsignedLong(byte)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toUnsignedLong(byte)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="byte"/></param>
+        /// <returns><see langword="long"/></returns>
         public static long ToUnsignedLong(byte arg0)
         {
             return SExecute<long>("toUnsignedLong", arg0);
@@ -150,15 +183,19 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Byte)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Byte)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="byte?"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(byte? arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);

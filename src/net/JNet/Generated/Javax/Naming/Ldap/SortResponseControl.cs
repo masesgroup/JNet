@@ -30,8 +30,12 @@ namespace Javax.Naming.Ldap
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#<init>(java.lang.String,boolean,byte[]) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#%3Cinit%3E(java.lang.String,boolean,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="byte"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public SortResponseControl(string arg0, bool arg1, byte[] arg2)
             : base(arg0, arg1, arg2)
         {
@@ -45,7 +49,7 @@ namespace Javax.Naming.Ldap
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#OID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#OID"/>
         /// </summary>
         public static string OID => Clazz.GetField<string>("OID");
         
@@ -57,29 +61,31 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#getAttributeID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#getAttributeID()"/> 
         /// </summary>
         public string AttributeID
         {
             get { return IExecute<string>("getAttributeID"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#getException() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#getException()"/> 
         /// </summary>
         public Javax.Naming.NamingException Exception
         {
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Javax.Naming.NamingException>(obj); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#getResultCode() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#getResultCode()"/> 
         /// </summary>
         public int ResultCode
         {
             get { return IExecute<int>("getResultCode"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#isSorted()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortResponseControl.html#isSorted()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSorted()
         {
             return IExecute<bool>("isSorted");

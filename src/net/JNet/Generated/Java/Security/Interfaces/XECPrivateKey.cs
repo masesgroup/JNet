@@ -33,7 +33,13 @@ namespace Java.Security.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.XECPrivateKey"/> to <see cref="Java.Security.Interfaces.XECKey"/>
+        /// </summary>
         public static implicit operator Java.Security.Interfaces.XECKey(Java.Security.Interfaces.XECPrivateKey t) => t.Cast<Java.Security.Interfaces.XECKey>();
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.XECPrivateKey"/> to <see cref="Java.Security.PrivateKey"/>
+        /// </summary>
         public static implicit operator Java.Security.PrivateKey(Java.Security.Interfaces.XECPrivateKey t) => t.Cast<Java.Security.PrivateKey>();
         
         #endregion

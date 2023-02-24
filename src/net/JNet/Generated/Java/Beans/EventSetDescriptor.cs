@@ -46,64 +46,70 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#getAddListenerMethod() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#getAddListenerMethod()"/> 
         /// </summary>
         public Java.Lang.Reflect.Method AddListenerMethod
         {
             get { return IExecute<Java.Lang.Reflect.Method>("getAddListenerMethod"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#getGetListenerMethod() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#getGetListenerMethod()"/> 
         /// </summary>
         public Java.Lang.Reflect.Method GetListenerMethod
         {
             get { return IExecute<Java.Lang.Reflect.Method>("getGetListenerMethod"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#getListenerMethodDescriptors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#getListenerMethodDescriptors()"/> 
         /// </summary>
         public Java.Beans.MethodDescriptor[] ListenerMethodDescriptors
         {
             get { return IExecuteArray<Java.Beans.MethodDescriptor>("getListenerMethodDescriptors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#getListenerMethods() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#getListenerMethods()"/> 
         /// </summary>
         public Java.Lang.Reflect.Method[] ListenerMethods
         {
             get { return IExecuteArray<Java.Lang.Reflect.Method>("getListenerMethods"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#getRemoveListenerMethod() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#getRemoveListenerMethod()"/> 
         /// </summary>
         public Java.Lang.Reflect.Method RemoveListenerMethod
         {
             get { return IExecute<Java.Lang.Reflect.Method>("getRemoveListenerMethod"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#isInDefaultEventSet()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#isInDefaultEventSet()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsInDefaultEventSet()
         {
             return IExecute<bool>("isInDefaultEventSet");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#isUnicast()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#isUnicast()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsUnicast()
         {
             return IExecute<bool>("isUnicast");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#setInDefaultEventSet(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#setInDefaultEventSet(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetInDefaultEventSet(bool arg0)
         {
             IExecute("setInDefaultEventSet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#setUnicast(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#setUnicast(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetUnicast(bool arg0)
         {
             IExecute("setUnicast", arg0);

@@ -38,7 +38,7 @@ namespace Java.Nio.File
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitOption.html#FOLLOW_LINKS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitOption.html#FOLLOW_LINKS"/>
         /// </summary>
         public static Java.Nio.File.FileVisitOption FOLLOW_LINKS => Clazz.GetField<Java.Nio.File.FileVisitOption>("FOLLOW_LINKS");
         
@@ -46,8 +46,10 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitOption.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitOption.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.FileVisitOption"/></returns>
         public static Java.Nio.File.FileVisitOption[] Values()
         {
             return SExecuteArray<Java.Nio.File.FileVisitOption>("values");

@@ -46,77 +46,92 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#getProgress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#getProgress()"/> 
         /// </summary>
         public int Progress
         {
             get { return IExecute<int>("getProgress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#getPropertyChangeSupport() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#getPropertyChangeSupport()"/> 
         /// </summary>
         public Java.Beans.PropertyChangeSupport PropertyChangeSupport
         {
             get { return IExecute<Java.Beans.PropertyChangeSupport>("getPropertyChangeSupport"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#cancel(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#cancel(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Cancel(bool arg0)
         {
             return IExecute<bool>("cancel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isCancelled()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isCancelled()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCancelled()
         {
             return IExecute<bool>("isCancelled");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isDone()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isDone()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDone()
         {
             return IExecute<bool>("isDone");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get() throws java.lang.InterruptedException,java.util.concurrent.ExecutionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
         public object Get()
         {
             return IExecute("get");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#addPropertyChangeListener(java.beans.PropertyChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecute("addPropertyChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#execute()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#execute()"/>
         /// </summary>
         public void Execute()
         {
             IExecute("execute");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
         public void FirePropertyChange(string arg0, object arg1, object arg2)
         {
             IExecute("firePropertyChange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#removePropertyChangeListener(java.beans.PropertyChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
         {
             IExecute("removePropertyChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#run()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#run()"/>
         /// </summary>
         public void Run()
         {
@@ -139,15 +154,15 @@ namespace Javax.Swing
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#DONE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#DONE"/>
             /// </summary>
             public static Javax.Swing.SwingWorker.StateValue DONE => Clazz.GetField<Javax.Swing.SwingWorker.StateValue>("DONE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#PENDING
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#PENDING"/>
             /// </summary>
             public static Javax.Swing.SwingWorker.StateValue PENDING => Clazz.GetField<Javax.Swing.SwingWorker.StateValue>("PENDING");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#STARTED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#STARTED"/>
             /// </summary>
             public static Javax.Swing.SwingWorker.StateValue STARTED => Clazz.GetField<Javax.Swing.SwingWorker.StateValue>("STARTED");
             
@@ -155,8 +170,10 @@ namespace Javax.Swing
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Swing.SwingWorker.StateValue"/></returns>
             public static Javax.Swing.SwingWorker.StateValue[] Values()
             {
                 return SExecuteArray<Javax.Swing.SwingWorker.StateValue>("values");

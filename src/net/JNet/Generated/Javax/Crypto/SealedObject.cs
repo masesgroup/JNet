@@ -30,8 +30,12 @@ namespace Javax.Crypto
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#<init>(java.io.Serializable,javax.crypto.Cipher) throws java.io.IOException,javax.crypto.IllegalBlockSizeException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#%3Cinit%3E(java.io.Serializable,javax.crypto.Cipher)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Serializable"/></param>
+        /// <param name="arg1"><see cref="Javax.Crypto.Cipher"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
         public SealedObject(Java.Io.Serializable arg0, Javax.Crypto.Cipher arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +44,9 @@ namespace Javax.Crypto
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Crypto.SealedObject"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Crypto.SealedObject t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,29 +61,49 @@ namespace Javax.Crypto
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getObject(java.security.Key,java.lang.String) throws java.io.IOException,java.lang.ClassNotFoundException,java.security.NoSuchAlgorithmException,java.security.NoSuchProviderException,java.security.InvalidKeyException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getObject(java.security.Key,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
         public object GetObject(Java.Security.Key arg0, string arg1)
         {
             return IExecute("getObject", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getObject(java.security.Key) throws java.io.IOException,java.lang.ClassNotFoundException,java.security.NoSuchAlgorithmException,java.security.InvalidKeyException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getObject(java.security.Key)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
         public object GetObject(Java.Security.Key arg0)
         {
             return IExecute("getObject", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getObject(javax.crypto.Cipher) throws java.io.IOException,java.lang.ClassNotFoundException,javax.crypto.IllegalBlockSizeException,javax.crypto.BadPaddingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html#getObject(javax.crypto.Cipher)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Crypto.Cipher"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
+        /// <exception cref="Javax.Crypto.BadPaddingException"/>
         public object GetObject(Javax.Crypto.Cipher arg0)
         {
             return IExecute("getObject", arg0);

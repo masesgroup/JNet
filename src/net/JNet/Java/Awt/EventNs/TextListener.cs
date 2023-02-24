@@ -21,18 +21,24 @@ using System;
 
 namespace Java.Awt.EventNs
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html"/>
+    /// </summary>
     public interface ITextListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent)"/>
+        /// </summary>
         void TextValueChanged(TextEvent e);
     }
 
     /// <summary>
-    /// Listener for TextListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="ITextListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="ITextListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class TextListener : ITextListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.awt.event.JNetTextListener";
 
         readonly Action<TextEvent> textValueChangedFunction = null;
@@ -60,7 +66,7 @@ namespace Java.Awt.EventNs
         {
             OnTextValueChanged(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="ITextListener.TextValueChanged(TextEvent)"/>
         public virtual void TextValueChanged(TextEvent e)
         {
 

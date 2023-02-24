@@ -30,8 +30,9 @@ namespace Java.Beans.Beancontext
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#<init>(java.beans.beancontext.BeanContextChild)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
         public BeanContextChildSupport(Java.Beans.Beancontext.BeanContextChild arg0)
             : base(arg0)
         {
@@ -40,15 +41,24 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.Beancontext.BeanContextChildSupport"/> to <see cref="Java.Beans.Beancontext.BeanContextChild"/>
+        /// </summary>
         public static implicit operator Java.Beans.Beancontext.BeanContextChild(Java.Beans.Beancontext.BeanContextChildSupport t) => t.Cast<Java.Beans.Beancontext.BeanContextChild>();
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.Beancontext.BeanContextChildSupport"/> to <see cref="Java.Beans.Beancontext.BeanContextServicesListener"/>
+        /// </summary>
         public static implicit operator Java.Beans.Beancontext.BeanContextServicesListener(Java.Beans.Beancontext.BeanContextChildSupport t) => t.Cast<Java.Beans.Beancontext.BeanContextServicesListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.Beancontext.BeanContextChildSupport"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Beans.Beancontext.BeanContextChildSupport t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#beanContextChildPeer
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#beanContextChildPeer"/>
         /// </summary>
         public Java.Beans.Beancontext.BeanContextChild beanContextChildPeer => Instance.GetField<Java.Beans.Beancontext.BeanContextChild>("beanContextChildPeer");
         
@@ -60,85 +70,106 @@ namespace Java.Beans.Beancontext
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#getBeanContext() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#setBeanContext(java.beans.beancontext.BeanContext) throws java.beans.PropertyVetoException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#getBeanContext()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#setBeanContext(java.beans.beancontext.BeanContext)"/>
         /// </summary>
         public Java.Beans.Beancontext.BeanContext BeanContext
         {
             get { return IExecute<Java.Beans.Beancontext.BeanContext>("getBeanContext"); } set { IExecute("setBeanContext", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#getBeanContextChildPeer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#getBeanContextChildPeer()"/> 
         /// </summary>
         public Java.Beans.Beancontext.BeanContextChild BeanContextChildPeer
         {
             get { return IExecute<Java.Beans.Beancontext.BeanContextChild>("getBeanContextChildPeer"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#isDelegated()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#isDelegated()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDelegated()
         {
             return IExecute<bool>("isDelegated");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#validatePendingSetBeanContext(java.beans.beancontext.BeanContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#validatePendingSetBeanContext(java.beans.beancontext.BeanContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ValidatePendingSetBeanContext(Java.Beans.Beancontext.BeanContext arg0)
         {
             return IExecute<bool>("validatePendingSetBeanContext", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1)
         {
             IExecute("addPropertyChangeListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#addVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#addVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
         public void AddVetoableChangeListener(string arg0, Java.Beans.VetoableChangeListener arg1)
         {
             IExecute("addVetoableChangeListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
         public void FirePropertyChange(string arg0, object arg1, object arg2)
         {
             IExecute("firePropertyChange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#fireVetoableChange(java.lang.String,java.lang.Object,java.lang.Object) throws java.beans.PropertyVetoException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#fireVetoableChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <exception cref="Java.Beans.PropertyVetoException"/>
         public void FireVetoableChange(string arg0, object arg1, object arg2)
         {
             IExecute("fireVetoableChange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1)
         {
             IExecute("removePropertyChangeListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#removeVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#removeVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
         public void RemoveVetoableChangeListener(string arg0, Java.Beans.VetoableChangeListener arg1)
         {
             IExecute("removeVetoableChangeListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceAvailableEvent"/></param>
         public void ServiceAvailable(Java.Beans.Beancontext.BeanContextServiceAvailableEvent arg0)
         {
             IExecute("serviceAvailable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
         public void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0)
         {
             IExecute("serviceRevoked", arg0);

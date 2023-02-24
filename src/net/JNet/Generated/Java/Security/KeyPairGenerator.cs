@@ -42,15 +42,23 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#getInstance(java.lang.String,java.lang.String) throws java.security.NoSuchAlgorithmException,java.security.NoSuchProviderException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.KeyPairGenerator"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.KeyPairGenerator GetInstance(string arg0, string arg1)
         {
             return SExecute<Java.Security.KeyPairGenerator>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#getInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.KeyPairGenerator"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.KeyPairGenerator GetInstance(string arg0)
         {
             return SExecute<Java.Security.KeyPairGenerator>("getInstance", arg0);
@@ -60,29 +68,34 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#genKeyPair()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#genKeyPair()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Security.KeyPair"/></returns>
         public Java.Security.KeyPair GenKeyPair()
         {
             return IExecute<Java.Security.KeyPair>("genKeyPair");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#initialize(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#initialize(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Initialize(int arg0)
         {
             IExecute("initialize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#initialize(java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#initialize(java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Initialize(Java.Security.Spec.AlgorithmParameterSpec arg0)
         {
             IExecute("initialize", arg0);

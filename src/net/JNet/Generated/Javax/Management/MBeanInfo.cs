@@ -30,15 +30,30 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#<init>(java.lang.String,java.lang.String,javax.management.MBeanAttributeInfo[],javax.management.MBeanConstructorInfo[],javax.management.MBeanOperationInfo[],javax.management.MBeanNotificationInfo[],javax.management.Descriptor) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.MBeanAttributeInfo[],javax.management.MBeanConstructorInfo[],javax.management.MBeanOperationInfo[],javax.management.MBeanNotificationInfo[],javax.management.Descriptor)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.MBeanAttributeInfo"/></param>
+        /// <param name="arg3"><see cref="Javax.Management.MBeanConstructorInfo"/></param>
+        /// <param name="arg4"><see cref="Javax.Management.MBeanOperationInfo"/></param>
+        /// <param name="arg5"><see cref="Javax.Management.MBeanNotificationInfo"/></param>
+        /// <param name="arg6"><see cref="Javax.Management.Descriptor"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public MBeanInfo(string arg0, string arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#<init>(java.lang.String,java.lang.String,javax.management.MBeanAttributeInfo[],javax.management.MBeanConstructorInfo[],javax.management.MBeanOperationInfo[],javax.management.MBeanNotificationInfo[]) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.MBeanAttributeInfo[],javax.management.MBeanConstructorInfo[],javax.management.MBeanOperationInfo[],javax.management.MBeanNotificationInfo[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.MBeanAttributeInfo"/></param>
+        /// <param name="arg3"><see cref="Javax.Management.MBeanConstructorInfo"/></param>
+        /// <param name="arg4"><see cref="Javax.Management.MBeanOperationInfo"/></param>
+        /// <param name="arg5"><see cref="Javax.Management.MBeanNotificationInfo"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public MBeanInfo(string arg0, string arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -47,8 +62,17 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.MBeanInfo"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Management.MBeanInfo t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.MBeanInfo"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.MBeanInfo t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.MBeanInfo"/> to <see cref="Javax.Management.DescriptorRead"/>
+        /// </summary>
         public static implicit operator Javax.Management.DescriptorRead(Javax.Management.MBeanInfo t) => t.Cast<Javax.Management.DescriptorRead>();
         
         #endregion
@@ -63,50 +87,52 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getAttributes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getAttributes()"/> 
         /// </summary>
         public Javax.Management.MBeanAttributeInfo[] Attributes
         {
             get { return IExecuteArray<Javax.Management.MBeanAttributeInfo>("getAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getConstructors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getConstructors()"/> 
         /// </summary>
         public Javax.Management.MBeanConstructorInfo[] Constructors
         {
             get { return IExecuteArray<Javax.Management.MBeanConstructorInfo>("getConstructors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getDescription() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getDescription()"/> 
         /// </summary>
         public string Description
         {
             get { return IExecute<string>("getDescription"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getDescriptor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getDescriptor()"/> 
         /// </summary>
         public Javax.Management.Descriptor Descriptor
         {
             get { return IExecute<Javax.Management.Descriptor>("getDescriptor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getNotifications() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getNotifications()"/> 
         /// </summary>
         public Javax.Management.MBeanNotificationInfo[] Notifications
         {
             get { return IExecuteArray<Javax.Management.MBeanNotificationInfo>("getNotifications"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getOperations() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getOperations()"/> 
         /// </summary>
         public Javax.Management.MBeanOperationInfo[] Operations
         {
             get { return IExecuteArray<Javax.Management.MBeanOperationInfo>("getOperations"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getClassName()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#getClassName()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string GetClassName()
         {
             return IExecute<string>("getClassName");

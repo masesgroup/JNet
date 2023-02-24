@@ -33,6 +33,9 @@ namespace Javax.Accessibility
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Accessibility.AccessibleExtendedComponent"/> to <see cref="Javax.Accessibility.AccessibleComponent"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.AccessibleComponent(Javax.Accessibility.AccessibleExtendedComponent t) => t.Cast<Javax.Accessibility.AccessibleComponent>();
         
         #endregion
@@ -47,21 +50,21 @@ namespace Javax.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html#getAccessibleKeyBinding() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html#getAccessibleKeyBinding()"/> 
         /// </summary>
         public Javax.Accessibility.AccessibleKeyBinding AccessibleKeyBinding
         {
             get { return IExecute<Javax.Accessibility.AccessibleKeyBinding>("getAccessibleKeyBinding"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html#getTitledBorderText() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html#getTitledBorderText()"/> 
         /// </summary>
         public string TitledBorderText
         {
             get { return IExecute<string>("getTitledBorderText"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html#getToolTipText() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html#getToolTipText()"/> 
         /// </summary>
         public string ToolTipText
         {

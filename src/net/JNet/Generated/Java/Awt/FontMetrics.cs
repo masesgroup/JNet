@@ -33,6 +33,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.FontMetrics"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.FontMetrics t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,176 +50,230 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getAscent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getAscent()"/> 
         /// </summary>
         public int Ascent
         {
             get { return IExecute<int>("getAscent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getDescent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getDescent()"/> 
         /// </summary>
         public int Descent
         {
             get { return IExecute<int>("getDescent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getFont() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getFont()"/> 
         /// </summary>
         public Java.Awt.Font Font
         {
             get { return IExecute<Java.Awt.Font>("getFont"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getFontRenderContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getFontRenderContext()"/> 
         /// </summary>
         public Java.Awt.FontNs.FontRenderContext FontRenderContext
         {
             get { return IExecute<Java.Awt.FontNs.FontRenderContext>("getFontRenderContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
             get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLeading() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLeading()"/> 
         /// </summary>
         public int Leading
         {
             get { return IExecute<int>("getLeading"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getMaxAdvance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getMaxAdvance()"/> 
         /// </summary>
         public int MaxAdvance
         {
             get { return IExecute<int>("getMaxAdvance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getMaxAscent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getMaxAscent()"/> 
         /// </summary>
         public int MaxAscent
         {
             get { return IExecute<int>("getMaxAscent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getMaxDescent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getMaxDescent()"/> 
         /// </summary>
         public int MaxDescent
         {
             get { return IExecute<int>("getMaxDescent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getWidths() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getWidths()"/> 
         /// </summary>
         public int[] Widths
         {
             get { return IExecuteArray<int>("getWidths"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#hasUniformLineMetrics()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#hasUniformLineMetrics()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasUniformLineMetrics()
         {
             return IExecute<bool>("hasUniformLineMetrics");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#bytesWidth(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#bytesWidth(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int BytesWidth(byte[] arg0, int arg1, int arg2)
         {
             return IExecute<int>("bytesWidth", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charsWidth(char[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charsWidth(char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CharsWidth(char[] arg0, int arg1, int arg2)
         {
             return IExecute<int>("charsWidth", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charWidth(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charWidth(char)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="char"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CharWidth(char arg0)
         {
             return IExecute<int>("charWidth", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charWidth(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#charWidth(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CharWidth(int arg0)
         {
             return IExecute<int>("charWidth", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#stringWidth(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#stringWidth(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int StringWidth(string arg0)
         {
             return IExecute<int>("stringWidth", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(char[],int,int,java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(char[],int,int,java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(char[] arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.lang.String,int,int,java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.lang.String,int,int,java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(string arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.lang.String,java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.lang.String,java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(string arg0, Java.Awt.Graphics arg1)
         {
             return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.text.CharacterIterator,int,int,java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getLineMetrics(java.text.CharacterIterator,int,int,java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Text.CharacterIterator arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getMaxCharBounds(java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getMaxCharBounds(java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetMaxCharBounds(Java.Awt.Graphics arg0)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getMaxCharBounds", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(char[],int,int,java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(char[],int,int,java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(char[] arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.lang.String,int,int,java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.lang.String,int,int,java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(string arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.lang.String,java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.lang.String,java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(string arg0, Java.Awt.Graphics arg1)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.text.CharacterIterator,int,int,java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getStringBounds(java.text.CharacterIterator,int,int,java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Graphics"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Text.CharacterIterator arg0, int arg1, int arg2, Java.Awt.Graphics arg3)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);

@@ -30,15 +30,19 @@ namespace Javax.Naming.Ldap
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#<init>(java.lang.String,boolean,byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#%3Cinit%3E(java.lang.String,boolean,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="byte"/></param>
         public BasicControl(string arg0, bool arg1, byte[] arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public BasicControl(string arg0)
             : base(arg0)
         {
@@ -47,6 +51,9 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Ldap.BasicControl"/> to <see cref="Javax.Naming.Ldap.Control"/>
+        /// </summary>
         public static implicit operator Javax.Naming.Ldap.Control(Javax.Naming.Ldap.BasicControl t) => t.Cast<Javax.Naming.Ldap.Control>();
         
         #endregion
@@ -61,22 +68,24 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#getEncodedValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#getEncodedValue()"/> 
         /// </summary>
         public byte[] EncodedValue
         {
             get { return IExecuteArray<byte>("getEncodedValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#getID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#getID()"/> 
         /// </summary>
         public string ID
         {
             get { return IExecute<string>("getID"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#isCritical()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#isCritical()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCritical()
         {
             return IExecute<bool>("isCritical");

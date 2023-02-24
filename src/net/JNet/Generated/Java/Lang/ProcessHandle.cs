@@ -42,8 +42,10 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#current()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#current()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.ProcessHandle"/></returns>
         public static Java.Lang.ProcessHandle Current()
         {
             return SExecute<Java.Lang.ProcessHandle>("current");
@@ -53,57 +55,73 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#destroy()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#destroy()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Destroy()
         {
             return IExecute<bool>("destroy");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#destroyForcibly()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#destroyForcibly()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool DestroyForcibly()
         {
             return IExecute<bool>("destroyForcibly");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#isAlive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#isAlive()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAlive()
         {
             return IExecute<bool>("isAlive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#supportsNormalTermination()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#supportsNormalTermination()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool SupportsNormalTermination()
         {
             return IExecute<bool>("supportsNormalTermination");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#compareTo(java.lang.ProcessHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#compareTo(java.lang.ProcessHandle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ProcessHandle"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Java.Lang.ProcessHandle arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#info()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#info()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.ProcessHandle.Info"/></returns>
         public Java.Lang.ProcessHandle.Info InfoMethod()
         {
             return IExecute<Java.Lang.ProcessHandle.Info>("info");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#pid()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#pid()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long Pid()
         {
             return IExecute<long>("pid");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);

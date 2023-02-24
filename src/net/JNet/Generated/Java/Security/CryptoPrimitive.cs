@@ -38,43 +38,43 @@ namespace Java.Security
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#BLOCK_CIPHER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#BLOCK_CIPHER"/>
         /// </summary>
         public static Java.Security.CryptoPrimitive BLOCK_CIPHER => Clazz.GetField<Java.Security.CryptoPrimitive>("BLOCK_CIPHER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#KEY_AGREEMENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#KEY_AGREEMENT"/>
         /// </summary>
         public static Java.Security.CryptoPrimitive KEY_AGREEMENT => Clazz.GetField<Java.Security.CryptoPrimitive>("KEY_AGREEMENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#KEY_ENCAPSULATION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#KEY_ENCAPSULATION"/>
         /// </summary>
         public static Java.Security.CryptoPrimitive KEY_ENCAPSULATION => Clazz.GetField<Java.Security.CryptoPrimitive>("KEY_ENCAPSULATION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#KEY_WRAP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#KEY_WRAP"/>
         /// </summary>
         public static Java.Security.CryptoPrimitive KEY_WRAP => Clazz.GetField<Java.Security.CryptoPrimitive>("KEY_WRAP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#MAC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#MAC"/>
         /// </summary>
         public static Java.Security.CryptoPrimitive MAC => Clazz.GetField<Java.Security.CryptoPrimitive>("MAC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#MESSAGE_DIGEST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#MESSAGE_DIGEST"/>
         /// </summary>
         public static Java.Security.CryptoPrimitive MESSAGE_DIGEST => Clazz.GetField<Java.Security.CryptoPrimitive>("MESSAGE_DIGEST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#PUBLIC_KEY_ENCRYPTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#PUBLIC_KEY_ENCRYPTION"/>
         /// </summary>
         public static Java.Security.CryptoPrimitive PUBLIC_KEY_ENCRYPTION => Clazz.GetField<Java.Security.CryptoPrimitive>("PUBLIC_KEY_ENCRYPTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#SECURE_RANDOM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#SECURE_RANDOM"/>
         /// </summary>
         public static Java.Security.CryptoPrimitive SECURE_RANDOM => Clazz.GetField<Java.Security.CryptoPrimitive>("SECURE_RANDOM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#SIGNATURE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#SIGNATURE"/>
         /// </summary>
         public static Java.Security.CryptoPrimitive SIGNATURE => Clazz.GetField<Java.Security.CryptoPrimitive>("SIGNATURE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#STREAM_CIPHER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#STREAM_CIPHER"/>
         /// </summary>
         public static Java.Security.CryptoPrimitive STREAM_CIPHER => Clazz.GetField<Java.Security.CryptoPrimitive>("STREAM_CIPHER");
         
@@ -82,8 +82,10 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Security.CryptoPrimitive"/></returns>
         public static Java.Security.CryptoPrimitive[] Values()
         {
             return SExecuteArray<Java.Security.CryptoPrimitive>("values");

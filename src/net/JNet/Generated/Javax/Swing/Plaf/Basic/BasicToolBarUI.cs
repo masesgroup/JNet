@@ -33,6 +33,9 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicToolBarUI"/> to <see cref="Javax.Swing.SwingConstants"/>
+        /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Plaf.Basic.BasicToolBarUI t) => t.Cast<Javax.Swing.SwingConstants>();
         
         #endregion
@@ -47,64 +50,77 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#getDockingColor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setDockingColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#getDockingColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setDockingColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color DockingColor
         {
             get { return IExecute<Java.Awt.Color>("getDockingColor"); } set { IExecute("setDockingColor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#getFloatingColor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setFloatingColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#getFloatingColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setFloatingColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color FloatingColor
         {
             get { return IExecute<Java.Awt.Color>("getFloatingColor"); } set { IExecute("setFloatingColor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#canDock(java.awt.Component,java.awt.Point)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#canDock(java.awt.Component,java.awt.Point)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CanDock(Java.Awt.Component arg0, Java.Awt.Point arg1)
         {
             return IExecute<bool>("canDock", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isFloating()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isFloating()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsFloating()
         {
             return IExecute<bool>("isFloating");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isRolloverBorders()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isRolloverBorders()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsRolloverBorders()
         {
             return IExecute<bool>("isRolloverBorders");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setFloating(boolean,java.awt.Point)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setFloating(boolean,java.awt.Point)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
         public void SetFloating(bool arg0, Java.Awt.Point arg1)
         {
             IExecute("setFloating", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setFloatingLocation(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setFloatingLocation(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetFloatingLocation(int arg0, int arg1)
         {
             IExecute("setFloatingLocation", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setOrientation(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setOrientation(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetOrientation(int arg0)
         {
             IExecute("setOrientation", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setRolloverBorders(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setRolloverBorders(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetRolloverBorders(bool arg0)
         {
             IExecute("setRolloverBorders", arg0);

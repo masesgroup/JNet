@@ -30,8 +30,9 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainView.html#<init>(javax.swing.text.Element)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainView.html#%3Cinit%3E(javax.swing.text.Element)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
         public PlainView(Javax.Swing.Text.Element arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.PlainView"/> to <see cref="Javax.Swing.Text.TabExpander"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Text.TabExpander(Javax.Swing.Text.PlainView t) => t.Cast<Javax.Swing.Text.TabExpander>();
         
         #endregion
@@ -54,8 +58,11 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainView.html#nextTabStop(float,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainView.html#nextTabStop(float,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="float"/></returns>
         public float NextTabStop(float arg0, int arg1)
         {
             return IExecute<float>("nextTabStop", arg0, arg1);

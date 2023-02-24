@@ -33,6 +33,9 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.Attribute.DosFileAttributes"/> to <see cref="Java.Nio.File.Attribute.BasicFileAttributes"/>
+        /// </summary>
         public static implicit operator Java.Nio.File.Attribute.BasicFileAttributes(Java.Nio.File.Attribute.DosFileAttributes t) => t.Cast<Java.Nio.File.Attribute.BasicFileAttributes>();
         
         #endregion
@@ -47,29 +50,37 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isArchive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isArchive()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsArchive()
         {
             return IExecute<bool>("isArchive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isHidden()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isHidden()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsHidden()
         {
             return IExecute<bool>("isHidden");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isReadOnly()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isReadOnly()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsReadOnly()
         {
             return IExecute<bool>("isReadOnly");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isSystem()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isSystem()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSystem()
         {
             return IExecute<bool>("isSystem");

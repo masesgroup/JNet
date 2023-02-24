@@ -25,12 +25,12 @@ namespace Java.Lang
     /// </summary>
     public class Iterable : JVMBridgeBase<Iterable>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.lang.Iterable";
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
         /// <summary>
-        /// Returns an iterator over elements of type <typeparamref name="T"/>.
+        /// Returns an iterator over elements of type <see langref="object"/>
         /// </summary>
         /// <returns>An <see cref="Util.Iterator{T}"/></returns>
         public Util.Iterator Iterator => IExecute<Util.Iterator>("iterator");
@@ -42,9 +42,9 @@ namespace Java.Lang
     /// <typeparam name="T"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html"/></typeparam>
     public class Iterable<T> : JVMBridgeBase<Iterable<T>>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.lang.Iterable";
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
         /// <summary>
         /// Returns an iterator over elements of type <typeparamref name="T"/>.

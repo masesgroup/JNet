@@ -23,10 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html"/>
     /// </summary>
-    /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html"/></typeparam>
     public class Enum : JVMBridgeBase<Enum>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.lang.Enum";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

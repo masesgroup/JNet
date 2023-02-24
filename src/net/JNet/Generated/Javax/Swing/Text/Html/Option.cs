@@ -30,8 +30,9 @@ namespace Javax.Swing.Text.Html
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#<init>(javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#%3Cinit%3E(javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         public Option(Javax.Swing.Text.AttributeSet arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.Html.Option"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.Option t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,29 +58,31 @@ namespace Javax.Swing.Text.Html
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#getAttributes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#getAttributes()"/> 
         /// </summary>
         public Javax.Swing.Text.AttributeSet Attributes
         {
             get { return IExecute<Javax.Swing.Text.AttributeSet>("getAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#getLabel() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#setLabel(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#getLabel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#setLabel(java.lang.String)"/>
         /// </summary>
         public string Label
         {
             get { return IExecute<string>("getLabel"); } set { IExecute("setLabel", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#getValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#getValue()"/> 
         /// </summary>
         public string Value
         {
             get { return IExecute<string>("getValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#isSelected()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html#isSelected()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSelected()
         {
             return IExecute<bool>("isSelected");

@@ -38,7 +38,7 @@ namespace Javax.Swing.Text
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultHighlighter.html#DefaultPainter
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultHighlighter.html#DefaultPainter"/>
         /// </summary>
         public static Javax.Swing.Text.LayeredHighlighter.LayerPainter DefaultPainter => Clazz.GetField<Javax.Swing.Text.LayeredHighlighter.LayerPainter>("DefaultPainter");
         
@@ -50,7 +50,7 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultHighlighter.html#getDrawsLayeredHighlights() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultHighlighter.html#setDrawsLayeredHighlights(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultHighlighter.html#getDrawsLayeredHighlights()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultHighlighter.html#setDrawsLayeredHighlights(boolean)"/>
         /// </summary>
         public bool DrawsLayeredHighlights
         {
@@ -65,8 +65,9 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultHighlighter.DefaultHighlightPainter.html#<init>(java.awt.Color)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultHighlighter.DefaultHighlightPainter.html#%3Cinit%3E(java.awt.Color)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
             public DefaultHighlightPainter(Java.Awt.Color arg0)
                 : base(arg0)
             {
@@ -88,7 +89,7 @@ namespace Javax.Swing.Text
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultHighlighter.DefaultHighlightPainter.html#getColor() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultHighlighter.DefaultHighlightPainter.html#getColor()"/> 
             /// </summary>
             public Java.Awt.Color Color
             {

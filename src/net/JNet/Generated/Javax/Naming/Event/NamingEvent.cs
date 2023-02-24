@@ -30,8 +30,13 @@ namespace Javax.Naming.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#<init>(javax.naming.event.EventContext,int,javax.naming.Binding,javax.naming.Binding,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#%3Cinit%3E(javax.naming.event.EventContext,int,javax.naming.Binding,javax.naming.Binding,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.EventContext"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Binding"/></param>
+        /// <param name="arg3"><see cref="Javax.Naming.Binding"/></param>
+        /// <param name="arg4"><see langword="object"/></param>
         public NamingEvent(Javax.Naming.Event.EventContext arg0, int arg1, Javax.Naming.Binding arg2, Javax.Naming.Binding arg3, object arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -45,19 +50,19 @@ namespace Javax.Naming.Event
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_ADDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_ADDED"/>
         /// </summary>
         public static int OBJECT_ADDED => Clazz.GetField<int>("OBJECT_ADDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_CHANGED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_CHANGED"/>
         /// </summary>
         public static int OBJECT_CHANGED => Clazz.GetField<int>("OBJECT_CHANGED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_REMOVED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_REMOVED"/>
         /// </summary>
         public static int OBJECT_REMOVED => Clazz.GetField<int>("OBJECT_REMOVED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_RENAMED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_RENAMED"/>
         /// </summary>
         public static int OBJECT_RENAMED => Clazz.GetField<int>("OBJECT_RENAMED");
         
@@ -69,43 +74,44 @@ namespace Javax.Naming.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getChangeInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getChangeInfo()"/> 
         /// </summary>
         public object ChangeInfo
         {
             get { return IExecute("getChangeInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getEventContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getEventContext()"/> 
         /// </summary>
         public Javax.Naming.Event.EventContext EventContext
         {
             get { return IExecute<Javax.Naming.Event.EventContext>("getEventContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getNewBinding() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getNewBinding()"/> 
         /// </summary>
         public Javax.Naming.Binding NewBinding
         {
             get { return IExecute<Javax.Naming.Binding>("getNewBinding"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getOldBinding() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getOldBinding()"/> 
         /// </summary>
         public Javax.Naming.Binding OldBinding
         {
             get { return IExecute<Javax.Naming.Binding>("getOldBinding"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#getType()"/> 
         /// </summary>
         public int Type
         {
             get { return IExecute<int>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#dispatch(javax.naming.event.NamingListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#dispatch(javax.naming.event.NamingListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingListener"/></param>
         public void Dispatch(Javax.Naming.Event.NamingListener arg0)
         {
             IExecute("dispatch", arg0);

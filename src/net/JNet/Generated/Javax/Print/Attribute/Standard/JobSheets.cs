@@ -33,18 +33,24 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.JobSheets"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.JobSheets t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.JobSheets"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.JobSheets t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobSheets.html#NONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobSheets.html#NONE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.JobSheets NONE => Clazz.GetField<Javax.Print.Attribute.Standard.JobSheets>("NONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobSheets.html#STANDARD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobSheets.html#STANDARD"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.JobSheets STANDARD => Clazz.GetField<Javax.Print.Attribute.Standard.JobSheets>("STANDARD");
         
@@ -56,7 +62,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobSheets.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobSheets.html#getName()"/> 
         /// </summary>
         public string Name
         {

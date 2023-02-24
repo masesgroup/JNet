@@ -30,8 +30,10 @@ namespace Javax.Swing.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionEvent.html#<init>(java.lang.Object,javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public TreeExpansionEvent(object arg0, Javax.Swing.Tree.TreePath arg1)
             : base(arg0, arg1)
         {
@@ -53,7 +55,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionEvent.html#getPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionEvent.html#getPath()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath Path
         {

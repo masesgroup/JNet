@@ -42,22 +42,29 @@ namespace Javax.Xml.Parsers
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newDefaultInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newDefaultInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilderFactory"/></returns>
         public static Javax.Xml.Parsers.DocumentBuilderFactory NewDefaultInstance()
         {
             return SExecute<Javax.Xml.Parsers.DocumentBuilderFactory>("newDefaultInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilderFactory"/></returns>
         public static Javax.Xml.Parsers.DocumentBuilderFactory NewInstance()
         {
             return SExecute<Javax.Xml.Parsers.DocumentBuilderFactory>("newInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newInstance(java.lang.String,java.lang.ClassLoader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newInstance(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilderFactory"/></returns>
         public static Javax.Xml.Parsers.DocumentBuilderFactory NewInstance(string arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecute<Javax.Xml.Parsers.DocumentBuilderFactory>("newInstance", arg0, arg1);
@@ -67,141 +74,177 @@ namespace Javax.Xml.Parsers
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#getSchema() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setSchema(javax.xml.validation.Schema)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#getSchema()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setSchema(javax.xml.validation.Schema)"/>
         /// </summary>
         public Javax.Xml.Validation.Schema Schema
         {
             get { return IExecute<Javax.Xml.Validation.Schema>("getSchema"); } set { IExecute("setSchema", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#getFeature(java.lang.String) throws javax.xml.parsers.ParserConfigurationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#getFeature(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
         public bool GetFeature(string arg0)
         {
             return IExecute<bool>("getFeature", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#getAttribute(java.lang.String) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#getAttribute(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public object GetAttribute(string arg0)
         {
             return IExecute("getAttribute", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newDocumentBuilder() throws javax.xml.parsers.ParserConfigurationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#newDocumentBuilder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilder"/></returns>
+        /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
         public Javax.Xml.Parsers.DocumentBuilder NewDocumentBuilder()
         {
             return IExecute<Javax.Xml.Parsers.DocumentBuilder>("newDocumentBuilder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setAttribute(java.lang.String,java.lang.Object) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setAttribute(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetAttribute(string arg0, object arg1)
         {
             IExecute("setAttribute", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setFeature(java.lang.String,boolean) throws javax.xml.parsers.ParserConfigurationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
         public void SetFeature(string arg0, bool arg1)
         {
             IExecute("setFeature", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isCoalescing()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isCoalescing()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCoalescing()
         {
             return IExecute<bool>("isCoalescing");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isExpandEntityReferences()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isExpandEntityReferences()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsExpandEntityReferences()
         {
             return IExecute<bool>("isExpandEntityReferences");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringComments()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringComments()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsIgnoringComments()
         {
             return IExecute<bool>("isIgnoringComments");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringElementContentWhitespace()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isIgnoringElementContentWhitespace()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsIgnoringElementContentWhitespace()
         {
             return IExecute<bool>("isIgnoringElementContentWhitespace");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isNamespaceAware()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isNamespaceAware()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsNamespaceAware()
         {
             return IExecute<bool>("isNamespaceAware");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isValidating()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isValidating()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsValidating()
         {
             return IExecute<bool>("isValidating");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isXIncludeAware()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isXIncludeAware()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsXIncludeAware()
         {
             return IExecute<bool>("isXIncludeAware");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setCoalescing(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setCoalescing(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetCoalescing(bool arg0)
         {
             IExecute("setCoalescing", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setExpandEntityReferences(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setExpandEntityReferences(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetExpandEntityReferences(bool arg0)
         {
             IExecute("setExpandEntityReferences", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setIgnoringComments(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setIgnoringComments(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetIgnoringComments(bool arg0)
         {
             IExecute("setIgnoringComments", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setIgnoringElementContentWhitespace(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setIgnoringElementContentWhitespace(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetIgnoringElementContentWhitespace(bool arg0)
         {
             IExecute("setIgnoringElementContentWhitespace", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setNamespaceAware(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setNamespaceAware(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetNamespaceAware(bool arg0)
         {
             IExecute("setNamespaceAware", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setValidating(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setValidating(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetValidating(bool arg0)
         {
             IExecute("setValidating", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setXIncludeAware(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setXIncludeAware(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetXIncludeAware(bool arg0)
         {
             IExecute("setXIncludeAware", arg0);

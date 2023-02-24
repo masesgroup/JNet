@@ -46,7 +46,7 @@ namespace Javax.Naming
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Referenceable.html#getReference() throws javax.naming.NamingException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Referenceable.html#getReference()"/> 
         /// </summary>
         public Javax.Naming.Reference Reference
         {

@@ -33,6 +33,9 @@ namespace Java.Net.Spi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Net.Spi.URLStreamHandlerProvider"/> to <see cref="Java.Net.URLStreamHandlerFactory"/>
+        /// </summary>
         public static implicit operator Java.Net.URLStreamHandlerFactory(Java.Net.Spi.URLStreamHandlerProvider t) => t.Cast<Java.Net.URLStreamHandlerFactory>();
         
         #endregion

@@ -21,8 +21,14 @@ using System;
 
 namespace Java.Awt.EventNs
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html"/>
+    /// </summary>
     public interface IAdjustmentListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
+        /// </summary>
         void AdjustmentValueChanged(AdjustmentEvent e);
     }
 
@@ -32,7 +38,7 @@ namespace Java.Awt.EventNs
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class AdjustmentListener : IAdjustmentListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.awt.event.JNetAdjustmentListener";
 
         readonly Action<AdjustmentEvent> adjustmentValueChangedFunction = null;
@@ -60,7 +66,7 @@ namespace Java.Awt.EventNs
         {
             OnAdjustmentValueChanged(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IAdjustmentListener.AdjustmentValueChanged(AdjustmentEvent)"/>
         public virtual void AdjustmentValueChanged(AdjustmentEvent e)
         {
 

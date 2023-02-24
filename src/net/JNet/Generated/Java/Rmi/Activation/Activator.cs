@@ -33,6 +33,9 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Activation.Activator"/> to <see cref="Java.Rmi.Remote"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Remote(Java.Rmi.Activation.Activator t) => t.Cast<Java.Rmi.Remote>();
         
         #endregion

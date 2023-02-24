@@ -30,8 +30,9 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public ArrayDeque(int arg0)
             : base(arg0)
         {
@@ -40,7 +41,13 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.ArrayDeque"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.ArrayDeque t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.ArrayDeque"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.ArrayDeque t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -55,148 +62,183 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#getFirst() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#getFirst()"/> 
         /// </summary>
         public object First
         {
             get { return IExecute("getFirst"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#getLast() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#getLast()"/> 
         /// </summary>
         public object Last
         {
             get { return IExecute("getLast"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#offer(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#offer(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Offer(object arg0)
         {
             return IExecute<bool>("offer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#offerFirst(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#offerFirst(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool OfferFirst(object arg0)
         {
             return IExecute<bool>("offerFirst", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#offerLast(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#offerLast(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool OfferLast(object arg0)
         {
             return IExecute<bool>("offerLast", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeFirstOccurrence(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeFirstOccurrence(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool RemoveFirstOccurrence(object arg0)
         {
             return IExecute<bool>("removeFirstOccurrence", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeLastOccurrence(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeLastOccurrence(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool RemoveLastOccurrence(object arg0)
         {
             return IExecute<bool>("removeLastOccurrence", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#element()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#element()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Element()
         {
             return IExecute("element");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peek()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peek()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Peek()
         {
             return IExecute("peek");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peekFirst()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peekFirst()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object PeekFirst()
         {
             return IExecute("peekFirst");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peekLast()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#peekLast()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object PeekLast()
         {
             return IExecute("peekLast");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#poll()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#poll()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Poll()
         {
             return IExecute("poll");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pollFirst()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pollFirst()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object PollFirst()
         {
             return IExecute("pollFirst");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pollLast()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pollLast()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object PollLast()
         {
             return IExecute("pollLast");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pop()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#pop()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Pop()
         {
             return IExecute("pop");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#remove()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#remove()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Remove()
         {
             return IExecute("remove");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeFirst()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeFirst()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object RemoveFirst()
         {
             return IExecute("removeFirst");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeLast()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#removeLast()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object RemoveLast()
         {
             return IExecute("removeLast");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#addFirst(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#addFirst(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void AddFirst(object arg0)
         {
             IExecute("addFirst", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#addLast(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#addLast(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void AddLast(object arg0)
         {
             IExecute("addLast", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#push(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#push(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void Push(object arg0)
         {
             IExecute("push", arg0);

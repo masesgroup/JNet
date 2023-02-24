@@ -46,36 +46,42 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#getExceptionListener() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#setExceptionListener(java.beans.ExceptionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#getExceptionListener()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#setExceptionListener(java.beans.ExceptionListener)"/>
         /// </summary>
         public Java.Beans.ExceptionListener ExceptionListener
         {
             get { return IExecute<Java.Beans.ExceptionListener>("getExceptionListener"); } set { IExecute("setExceptionListener", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#get(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#get(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Get(object arg0)
         {
             return IExecute("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#remove(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#remove(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Remove(object arg0)
         {
             return IExecute("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#writeExpression(java.beans.Expression)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#writeExpression(java.beans.Expression)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Expression"/></param>
         public void WriteExpression(Java.Beans.Expression arg0)
         {
             IExecute("writeExpression", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#writeStatement(java.beans.Statement)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#writeStatement(java.beans.Statement)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Statement"/></param>
         public void WriteStatement(Java.Beans.Statement arg0)
         {
             IExecute("writeStatement", arg0);

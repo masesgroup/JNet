@@ -30,8 +30,10 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHGenParameterSpec.html#<init>(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHGenParameterSpec.html#%3Cinit%3E(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public DHGenParameterSpec(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Javax.Crypto.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Crypto.Spec.DHGenParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Javax.Crypto.Spec.DHGenParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
         
         #endregion
@@ -54,14 +59,14 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHGenParameterSpec.html#getExponentSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHGenParameterSpec.html#getExponentSize()"/> 
         /// </summary>
         public int ExponentSize
         {
             get { return IExecute<int>("getExponentSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHGenParameterSpec.html#getPrimeSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHGenParameterSpec.html#getPrimeSize()"/> 
         /// </summary>
         public int PrimeSize
         {

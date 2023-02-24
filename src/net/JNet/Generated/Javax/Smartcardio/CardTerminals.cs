@@ -46,22 +46,29 @@ namespace Javax.Smartcardio
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#waitForChange(long) throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#waitForChange(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public bool WaitForChange(long arg0)
         {
             return IExecute<bool>("waitForChange", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#getTerminal(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#getTerminal(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Smartcardio.CardTerminal"/></returns>
         public Javax.Smartcardio.CardTerminal GetTerminal(string arg0)
         {
             return IExecute<Javax.Smartcardio.CardTerminal>("getTerminal", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#waitForChange() throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#waitForChange()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public void WaitForChange()
         {
             IExecute("waitForChange");
@@ -83,23 +90,23 @@ namespace Javax.Smartcardio
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#ALL
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#ALL"/>
             /// </summary>
             public static Javax.Smartcardio.CardTerminals.State ALL => Clazz.GetField<Javax.Smartcardio.CardTerminals.State>("ALL");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_ABSENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_ABSENT"/>
             /// </summary>
             public static Javax.Smartcardio.CardTerminals.State CARD_ABSENT => Clazz.GetField<Javax.Smartcardio.CardTerminals.State>("CARD_ABSENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_INSERTION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_INSERTION"/>
             /// </summary>
             public static Javax.Smartcardio.CardTerminals.State CARD_INSERTION => Clazz.GetField<Javax.Smartcardio.CardTerminals.State>("CARD_INSERTION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_PRESENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_PRESENT"/>
             /// </summary>
             public static Javax.Smartcardio.CardTerminals.State CARD_PRESENT => Clazz.GetField<Javax.Smartcardio.CardTerminals.State>("CARD_PRESENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_REMOVAL
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_REMOVAL"/>
             /// </summary>
             public static Javax.Smartcardio.CardTerminals.State CARD_REMOVAL => Clazz.GetField<Javax.Smartcardio.CardTerminals.State>("CARD_REMOVAL");
             
@@ -107,8 +114,10 @@ namespace Javax.Smartcardio
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Smartcardio.CardTerminals.State"/></returns>
             public static Javax.Smartcardio.CardTerminals.State[] Values()
             {
                 return SExecuteArray<Javax.Smartcardio.CardTerminals.State>("values");

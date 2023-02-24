@@ -33,6 +33,9 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.Style"/> to <see cref="Javax.Swing.Text.MutableAttributeSet"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Text.MutableAttributeSet(Javax.Swing.Text.Style t) => t.Cast<Javax.Swing.Text.MutableAttributeSet>();
         
         #endregion
@@ -47,22 +50,24 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Style.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Style.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Style.html#addChangeListener(javax.swing.event.ChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Style.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecute("addChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Style.html#removeChangeListener(javax.swing.event.ChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Style.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecute("removeChangeListener", arg0);

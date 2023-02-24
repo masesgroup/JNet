@@ -46,8 +46,11 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html#newTransformer() throws javax.xml.transform.TransformerConfigurationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html#newTransformer()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Transform.Transformer"/></returns>
+        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Transformer NewTransformer()
         {
             return IExecute<Javax.Xml.Transform.Transformer>("newTransformer");

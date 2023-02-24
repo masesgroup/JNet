@@ -30,8 +30,10 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketPermission.html#<init>(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketPermission.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public SocketPermission(string arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Net.SocketPermission"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Net.SocketPermission t) => t.Cast<Java.Io.Serializable>();
         
         #endregion

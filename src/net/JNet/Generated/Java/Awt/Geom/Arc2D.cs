@@ -38,15 +38,15 @@ namespace Java.Awt.Geom
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#CHORD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#CHORD"/>
         /// </summary>
         public static int CHORD => Clazz.GetField<int>("CHORD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#OPEN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#OPEN"/>
         /// </summary>
         public static int OPEN => Clazz.GetField<int>("OPEN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#PIE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#PIE"/>
         /// </summary>
         public static int PIE => Clazz.GetField<int>("PIE");
         
@@ -58,113 +58,150 @@ namespace Java.Awt.Geom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getAngleExtent() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngleExtent(double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getAngleExtent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngleExtent(double)"/>
         /// </summary>
         public double AngleExtent
         {
             get { return IExecute<double>("getAngleExtent"); } set { IExecute("setAngleExtent", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getAngleStart() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getAngleStart()"/> 
         /// </summary>
         public double AngleStart
         {
             get { return IExecute<double>("getAngleStart"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getArcType() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArcType(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getArcType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArcType(int)"/>
         /// </summary>
         public int ArcType
         {
             get { return IExecute<int>("getArcType"); } set { IExecute("setArcType", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getEndPoint() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getEndPoint()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D EndPoint
         {
             get { return IExecute<Java.Awt.Geom.Point2D>("getEndPoint"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getStartPoint() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#getStartPoint()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D StartPoint
         {
             get { return IExecute<Java.Awt.Geom.Point2D>("getStartPoint"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngleStart(double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngleStart(double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
         public void SetAngleStart(double arg0)
         {
             IExecute("setAngleStart", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(double,double,double,double,double,double,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(double,double,double,double,double,double,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg4"><see langword="double"/></param>
+        /// <param name="arg5"><see langword="double"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
         public void SetArc(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, int arg6)
         {
             IExecute("setArc", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#containsAngle(double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#containsAngle(double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsAngle(double arg0)
         {
             return IExecute<bool>("containsAngle", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngles(double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngles(double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
         public void SetAngles(double arg0, double arg1, double arg2, double arg3)
         {
             IExecute("setAngles", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngles(java.awt.geom.Point2D,java.awt.geom.Point2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngles(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
         public void SetAngles(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
             IExecute("setAngles", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngleStart(java.awt.geom.Point2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setAngleStart(java.awt.geom.Point2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
         public void SetAngleStart(Java.Awt.Geom.Point2D arg0)
         {
             IExecute("setAngleStart", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Arc2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Arc2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Arc2D"/></param>
         public void SetArc(Java.Awt.Geom.Arc2D arg0)
         {
             IExecute("setArc", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Point2D,java.awt.geom.Dimension2D,double,double,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Point2D,java.awt.geom.Dimension2D,double,double,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Dimension2D"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public void SetArc(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Dimension2D arg1, double arg2, double arg3, int arg4)
         {
             IExecute("setArc", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Rectangle2D,double,double,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArc(java.awt.geom.Rectangle2D,double,double,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public void SetArc(Java.Awt.Geom.Rectangle2D arg0, double arg1, double arg2, int arg3)
         {
             IExecute("setArc", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArcByCenter(double,double,double,double,double,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArcByCenter(double,double,double,double,double,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg4"><see langword="double"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
         public void SetArcByCenter(double arg0, double arg1, double arg2, double arg3, double arg4, int arg5)
         {
             IExecute("setArcByCenter", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArcByTangent(java.awt.geom.Point2D,java.awt.geom.Point2D,java.awt.geom.Point2D,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#setArcByTangent(java.awt.geom.Point2D,java.awt.geom.Point2D,java.awt.geom.Point2D,double)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
         public void SetArcByTangent(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, Java.Awt.Geom.Point2D arg2, double arg3)
         {
             IExecute("setArcByTangent", arg0, arg1, arg2, arg3);
@@ -178,22 +215,34 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#<init>(double,double,double,double,double,double,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#%3Cinit%3E(double,double,double,double,double,double,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="double"/></param>
+            /// <param name="arg1"><see langword="double"/></param>
+            /// <param name="arg2"><see langword="double"/></param>
+            /// <param name="arg3"><see langword="double"/></param>
+            /// <param name="arg4"><see langword="double"/></param>
+            /// <param name="arg5"><see langword="double"/></param>
+            /// <param name="arg6"><see langword="int"/></param>
             public Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, int arg6)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#<init>(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#%3Cinit%3E(int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
             public Double(int arg0)
                 : base(arg0)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#<init>(java.awt.geom.Rectangle2D,double,double,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#%3Cinit%3E(java.awt.geom.Rectangle2D,double,double,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+            /// <param name="arg1"><see langword="double"/></param>
+            /// <param name="arg2"><see langword="double"/></param>
+            /// <param name="arg3"><see langword="int"/></param>
             public Double(Java.Awt.Geom.Rectangle2D arg0, double arg1, double arg2, int arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -202,33 +251,36 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Awt.Geom.Arc2D.Double"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Arc2D.Double t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#extent
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#extent"/>
             /// </summary>
             public double extent => Instance.GetField<double>("extent");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#height
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#height"/>
             /// </summary>
             public double height => Instance.GetField<double>("height");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#start
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#start"/>
             /// </summary>
             public double start => Instance.GetField<double>("start");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#width
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#width"/>
             /// </summary>
             public double width => Instance.GetField<double>("width");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#x
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#x"/>
             /// </summary>
             public double x => Instance.GetField<double>("x");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#y
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#y"/>
             /// </summary>
             public double y => Instance.GetField<double>("y");
             
@@ -251,22 +303,34 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#<init>(float,float,float,float,float,float,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#%3Cinit%3E(float,float,float,float,float,float,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="float"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg2"><see langword="float"/></param>
+            /// <param name="arg3"><see langword="float"/></param>
+            /// <param name="arg4"><see langword="float"/></param>
+            /// <param name="arg5"><see langword="float"/></param>
+            /// <param name="arg6"><see langword="int"/></param>
             public Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, int arg6)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#<init>(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#%3Cinit%3E(int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
             public Float(int arg0)
                 : base(arg0)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#<init>(java.awt.geom.Rectangle2D,float,float,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#%3Cinit%3E(java.awt.geom.Rectangle2D,float,float,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg2"><see langword="float"/></param>
+            /// <param name="arg3"><see langword="int"/></param>
             public Float(Java.Awt.Geom.Rectangle2D arg0, float arg1, float arg2, int arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -275,33 +339,36 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Awt.Geom.Arc2D.Float"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Arc2D.Float t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#extent
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#extent"/>
             /// </summary>
             public float extent => Instance.GetField<float>("extent");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#height
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#height"/>
             /// </summary>
             public float height => Instance.GetField<float>("height");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#start
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#start"/>
             /// </summary>
             public float start => Instance.GetField<float>("start");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#width
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#width"/>
             /// </summary>
             public float width => Instance.GetField<float>("width");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#x
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#x"/>
             /// </summary>
             public float x => Instance.GetField<float>("x");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#y
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#y"/>
             /// </summary>
             public float y => Instance.GetField<float>("y");
             

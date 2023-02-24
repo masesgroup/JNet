@@ -46,15 +46,17 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRL.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRL.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRL.html#isRevoked(java.security.cert.Certificate)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRL.html#isRevoked(java.security.cert.Certificate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsRevoked(Java.Security.Cert.Certificate arg0)
         {
             return IExecute<bool>("isRevoked", arg0);

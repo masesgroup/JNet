@@ -21,18 +21,24 @@ using System;
 
 namespace Javax.Swing.Event
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html"/>
+    /// </summary>
     public interface IChangeListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html#stateChanged(javax.swing.event.ChangeEvent)"/>
+        /// </summary>
         void StateChanged(ChangeEvent e);
     }
 
     /// <summary>
-    /// Listener for ChangeListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IChangeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IChangeListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ChangeListener : IChangeListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.swing.event.JNetChangeListener";
 
         readonly Action<ChangeEvent> StateChangedFunction = null;
@@ -60,7 +66,7 @@ namespace Javax.Swing.Event
         {
             OnStateChanged(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IChangeListener.StateChanged(ChangeEvent)"/>
         public virtual void StateChanged(ChangeEvent e)
         {
 

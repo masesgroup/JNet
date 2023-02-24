@@ -30,15 +30,17 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public Attributes(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#<init>(java.util.jar.Attributes)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#%3Cinit%3E(java.util.jar.Attributes)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Jar.Attributes"/></param>
         public Attributes(Java.Util.Jar.Attributes arg0)
             : base(arg0)
         {
@@ -47,6 +49,9 @@ namespace Java.Util.Jar
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Jar.Attributes"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Jar.Attributes t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -61,77 +66,99 @@ namespace Java.Util.Jar
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#containsKey(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#containsKey(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsKey(object arg0)
         {
             return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#containsValue(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#containsValue(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsValue(object arg0)
         {
             return IExecute<bool>("containsValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#isEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#isEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#size()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#get(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#get(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Get(object arg0)
         {
             return IExecute("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#put(java.lang.Object,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Put(object arg0, object arg1)
         {
             return IExecute("put", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#remove(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#remove(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Remove(object arg0)
         {
             return IExecute("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#getValue(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#getValue(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetValue(string arg0)
         {
             return IExecute<string>("getValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#getValue(java.util.jar.Attributes$Name)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#getValue(java.util.jar.Attributes$Name)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Jar.Attributes.Name"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetValue(Java.Util.Jar.Attributes.Name arg0)
         {
             return IExecute<string>("getValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#putValue(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#putValue(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string PutValue(string arg0, string arg1)
         {
             return IExecute<string>("putValue", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#clear()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#clear()"/>
         /// </summary>
         public void Clear()
         {
@@ -146,8 +173,9 @@ namespace Java.Util.Jar
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#<init>(java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
             public Name(string arg0)
                 : base(arg0)
             {
@@ -161,63 +189,63 @@ namespace Java.Util.Jar
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#CLASS_PATH
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#CLASS_PATH"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name CLASS_PATH => Clazz.GetField<Java.Util.Jar.Attributes.Name>("CLASS_PATH");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#CONTENT_TYPE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#CONTENT_TYPE"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name CONTENT_TYPE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("CONTENT_TYPE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#EXTENSION_LIST
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#EXTENSION_LIST"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name EXTENSION_LIST => Clazz.GetField<Java.Util.Jar.Attributes.Name>("EXTENSION_LIST");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#EXTENSION_NAME
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#EXTENSION_NAME"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name EXTENSION_NAME => Clazz.GetField<Java.Util.Jar.Attributes.Name>("EXTENSION_NAME");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_TITLE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_TITLE"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_TITLE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("IMPLEMENTATION_TITLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VENDOR => Clazz.GetField<Java.Util.Jar.Attributes.Name>("IMPLEMENTATION_VENDOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VERSION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VERSION"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("IMPLEMENTATION_VERSION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MAIN_CLASS
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MAIN_CLASS"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name MAIN_CLASS => Clazz.GetField<Java.Util.Jar.Attributes.Name>("MAIN_CLASS");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MANIFEST_VERSION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MANIFEST_VERSION"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name MANIFEST_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("MANIFEST_VERSION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MULTI_RELEASE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MULTI_RELEASE"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name MULTI_RELEASE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("MULTI_RELEASE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SEALED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SEALED"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name SEALED => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SEALED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SIGNATURE_VERSION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SIGNATURE_VERSION"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name SIGNATURE_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SIGNATURE_VERSION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_TITLE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_TITLE"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name SPECIFICATION_TITLE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_TITLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_VENDOR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_VENDOR"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name SPECIFICATION_VENDOR => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_VENDOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_VERSION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_VERSION"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name SPECIFICATION_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_VERSION");
             

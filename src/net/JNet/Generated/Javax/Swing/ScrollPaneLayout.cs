@@ -33,8 +33,17 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.ScrollPaneLayout"/> to <see cref="Java.Awt.LayoutManager"/>
+        /// </summary>
         public static implicit operator Java.Awt.LayoutManager(Javax.Swing.ScrollPaneLayout t) => t.Cast<Java.Awt.LayoutManager>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.ScrollPaneLayout"/> to <see cref="Javax.Swing.ScrollPaneConstants"/>
+        /// </summary>
         public static implicit operator Javax.Swing.ScrollPaneConstants(Javax.Swing.ScrollPaneLayout t) => t.Cast<Javax.Swing.ScrollPaneConstants>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.ScrollPaneLayout"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.ScrollPaneLayout t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -49,99 +58,110 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getColumnHeader() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getColumnHeader()"/> 
         /// </summary>
         public Javax.Swing.JViewport ColumnHeader
         {
             get { return IExecute<Javax.Swing.JViewport>("getColumnHeader"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getHorizontalScrollBar() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getHorizontalScrollBar()"/> 
         /// </summary>
         public Javax.Swing.JScrollBar HorizontalScrollBar
         {
             get { return IExecute<Javax.Swing.JScrollBar>("getHorizontalScrollBar"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getHorizontalScrollBarPolicy() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#setHorizontalScrollBarPolicy(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getHorizontalScrollBarPolicy()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#setHorizontalScrollBarPolicy(int)"/>
         /// </summary>
         public int HorizontalScrollBarPolicy
         {
             get { return IExecute<int>("getHorizontalScrollBarPolicy"); } set { IExecute("setHorizontalScrollBarPolicy", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getRowHeader() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getRowHeader()"/> 
         /// </summary>
         public Javax.Swing.JViewport RowHeader
         {
             get { return IExecute<Javax.Swing.JViewport>("getRowHeader"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getVerticalScrollBar() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getVerticalScrollBar()"/> 
         /// </summary>
         public Javax.Swing.JScrollBar VerticalScrollBar
         {
             get { return IExecute<Javax.Swing.JScrollBar>("getVerticalScrollBar"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getVerticalScrollBarPolicy() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#setVerticalScrollBarPolicy(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getVerticalScrollBarPolicy()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#setVerticalScrollBarPolicy(int)"/>
         /// </summary>
         public int VerticalScrollBarPolicy
         {
             get { return IExecute<int>("getVerticalScrollBarPolicy"); } set { IExecute("setVerticalScrollBarPolicy", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getViewport() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getViewport()"/> 
         /// </summary>
         public Javax.Swing.JViewport Viewport
         {
             get { return IExecute<Javax.Swing.JViewport>("getViewport"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getCorner(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#getCorner(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetCorner(string arg0)
         {
             return IExecute<Java.Awt.Component>("getCorner", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#minimumLayoutSize(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#minimumLayoutSize(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
         {
             return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#preferredLayoutSize(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#preferredLayoutSize(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
         {
             return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public void AddLayoutComponent(string arg0, Java.Awt.Component arg1)
         {
             IExecute("addLayoutComponent", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#layoutContainer(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#layoutContainer(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void LayoutContainer(Java.Awt.Container arg0)
         {
             IExecute("layoutContainer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#removeLayoutComponent(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#removeLayoutComponent(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void RemoveLayoutComponent(Java.Awt.Component arg0)
         {
             IExecute("removeLayoutComponent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#syncWithScrollPane(javax.swing.JScrollPane)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneLayout.html#syncWithScrollPane(javax.swing.JScrollPane)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JScrollPane"/></param>
         public void SyncWithScrollPane(Javax.Swing.JScrollPane arg0)
         {
             IExecute("syncWithScrollPane", arg0);
@@ -158,6 +178,9 @@ namespace Javax.Swing
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.ScrollPaneLayout.UIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.ScrollPaneLayout.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion

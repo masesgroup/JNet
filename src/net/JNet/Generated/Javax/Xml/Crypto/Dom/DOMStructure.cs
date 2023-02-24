@@ -30,8 +30,9 @@ namespace Javax.Xml.Crypto.Dom
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMStructure.html#<init>(org.w3c.dom.Node)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMStructure.html#%3Cinit%3E(org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         public DOMStructure(Org.W3c.Dom.Node arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Xml.Crypto.Dom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dom.DOMStructure"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dom.DOMStructure t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
         
         #endregion
@@ -54,15 +58,17 @@ namespace Javax.Xml.Crypto.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMStructure.html#getNode() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMStructure.html#getNode()"/> 
         /// </summary>
         public Org.W3c.Dom.Node Node
         {
             get { return IExecute<Org.W3c.Dom.Node>("getNode"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMStructure.html#isFeatureSupported(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMStructure.html#isFeatureSupported(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsFeatureSupported(string arg0)
         {
             return IExecute<bool>("isFeatureSupported", arg0);

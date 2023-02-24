@@ -33,7 +33,13 @@ namespace Java.Rmi.Server
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Server.RemoteObject"/> to <see cref="Java.Rmi.Remote"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Remote(Java.Rmi.Server.RemoteObject t) => t.Cast<Java.Rmi.Remote>();
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Server.RemoteObject"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Server.RemoteObject t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -44,8 +50,11 @@ namespace Java.Rmi.Server
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteObject.html#toStub(java.rmi.Remote) throws java.rmi.NoSuchObjectException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteObject.html#toStub(java.rmi.Remote)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
+        /// <returns><see cref="Java.Rmi.Remote"/></returns>
+        /// <exception cref="Java.Rmi.NoSuchObjectException"/>
         public static Java.Rmi.Remote ToStub(Java.Rmi.Remote arg0)
         {
             return SExecute<Java.Rmi.Remote>("toStub", arg0);
@@ -55,7 +64,7 @@ namespace Java.Rmi.Server
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteObject.html#getRef() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteObject.html#getRef()"/> 
         /// </summary>
         public Java.Rmi.Server.RemoteRef Ref
         {

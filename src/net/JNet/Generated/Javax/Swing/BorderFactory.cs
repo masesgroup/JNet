@@ -42,239 +42,357 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createBevelBorder(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createBevelBorder(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Color"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateBevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
         {
             return SExecute<Javax.Swing.Border.Border>("createBevelBorder", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createBevelBorder(int,java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createBevelBorder(int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateBevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
         {
             return SExecute<Javax.Swing.Border.Border>("createBevelBorder", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createBevelBorder(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createBevelBorder(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateBevelBorder(int arg0)
         {
             return SExecute<Javax.Swing.Border.Border>("createBevelBorder", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createDashedBorder(java.awt.Paint,float,float,float,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createDashedBorder(java.awt.Paint,float,float,float,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Paint"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg4"><see langword="bool"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateDashedBorder(Java.Awt.Paint arg0, float arg1, float arg2, float arg3, bool arg4)
         {
             return SExecute<Javax.Swing.Border.Border>("createDashedBorder", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createDashedBorder(java.awt.Paint,float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createDashedBorder(java.awt.Paint,float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Paint"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateDashedBorder(Java.Awt.Paint arg0, float arg1, float arg2)
         {
             return SExecute<Javax.Swing.Border.Border>("createDashedBorder", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createDashedBorder(java.awt.Paint)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createDashedBorder(java.awt.Paint)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Paint"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateDashedBorder(Java.Awt.Paint arg0)
         {
             return SExecute<Javax.Swing.Border.Border>("createDashedBorder", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEmptyBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEmptyBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateEmptyBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("createEmptyBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEmptyBorder(int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEmptyBorder(int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateEmptyBorder(int arg0, int arg1, int arg2, int arg3)
         {
             return SExecute<Javax.Swing.Border.Border>("createEmptyBorder", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEtchedBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEtchedBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateEtchedBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("createEtchedBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEtchedBorder(int,java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEtchedBorder(int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateEtchedBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
         {
             return SExecute<Javax.Swing.Border.Border>("createEtchedBorder", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEtchedBorder(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEtchedBorder(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateEtchedBorder(int arg0)
         {
             return SExecute<Javax.Swing.Border.Border>("createEtchedBorder", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEtchedBorder(java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createEtchedBorder(java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateEtchedBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
         {
             return SExecute<Javax.Swing.Border.Border>("createEtchedBorder", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLineBorder(java.awt.Color,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLineBorder(java.awt.Color,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateLineBorder(Java.Awt.Color arg0, int arg1, bool arg2)
         {
             return SExecute<Javax.Swing.Border.Border>("createLineBorder", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLineBorder(java.awt.Color,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLineBorder(java.awt.Color,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateLineBorder(Java.Awt.Color arg0, int arg1)
         {
             return SExecute<Javax.Swing.Border.Border>("createLineBorder", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLineBorder(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLineBorder(java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateLineBorder(Java.Awt.Color arg0)
         {
             return SExecute<Javax.Swing.Border.Border>("createLineBorder", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLoweredBevelBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLoweredBevelBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateLoweredBevelBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("createLoweredBevelBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLoweredSoftBevelBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLoweredSoftBevelBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateLoweredSoftBevelBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("createLoweredSoftBevelBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createRaisedBevelBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createRaisedBevelBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateRaisedBevelBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("createRaisedBevelBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createRaisedSoftBevelBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createRaisedSoftBevelBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateRaisedSoftBevelBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("createRaisedSoftBevelBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createSoftBevelBorder(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createSoftBevelBorder(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Color"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateSoftBevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
         {
             return SExecute<Javax.Swing.Border.Border>("createSoftBevelBorder", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createSoftBevelBorder(int,java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createSoftBevelBorder(int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateSoftBevelBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
         {
             return SExecute<Javax.Swing.Border.Border>("createSoftBevelBorder", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createSoftBevelBorder(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createSoftBevelBorder(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateSoftBevelBorder(int arg0)
         {
             return SExecute<Javax.Swing.Border.Border>("createSoftBevelBorder", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createStrokeBorder(java.awt.BasicStroke,java.awt.Paint)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createStrokeBorder(java.awt.BasicStroke,java.awt.Paint)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.BasicStroke"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Paint"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateStrokeBorder(Java.Awt.BasicStroke arg0, Java.Awt.Paint arg1)
         {
             return SExecute<Javax.Swing.Border.Border>("createStrokeBorder", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createStrokeBorder(java.awt.BasicStroke)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createStrokeBorder(java.awt.BasicStroke)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.BasicStroke"/></param>
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border CreateStrokeBorder(Java.Awt.BasicStroke arg0)
         {
             return SExecute<Javax.Swing.Border.Border>("createStrokeBorder", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createCompoundBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createCompoundBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.CompoundBorder"/></returns>
         public static Javax.Swing.Border.CompoundBorder CreateCompoundBorder()
         {
             return SExecute<Javax.Swing.Border.CompoundBorder>("createCompoundBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createCompoundBorder(javax.swing.border.Border,javax.swing.border.Border)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createCompoundBorder(javax.swing.border.Border,javax.swing.border.Border)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Border.Border"/></param>
+        /// <returns><see cref="Javax.Swing.Border.CompoundBorder"/></returns>
         public static Javax.Swing.Border.CompoundBorder CreateCompoundBorder(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
         {
             return SExecute<Javax.Swing.Border.CompoundBorder>("createCompoundBorder", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createMatteBorder(int,int,int,int,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createMatteBorder(int,int,int,int,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Color"/></param>
+        /// <returns><see cref="Javax.Swing.Border.MatteBorder"/></returns>
         public static Javax.Swing.Border.MatteBorder CreateMatteBorder(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
         {
             return SExecute<Javax.Swing.Border.MatteBorder>("createMatteBorder", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createMatteBorder(int,int,int,int,javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createMatteBorder(int,int,int,int,javax.swing.Icon)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
+        /// <returns><see cref="Javax.Swing.Border.MatteBorder"/></returns>
         public static Javax.Swing.Border.MatteBorder CreateMatteBorder(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
         {
             return SExecute<Javax.Swing.Border.MatteBorder>("createMatteBorder", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
         public static Javax.Swing.Border.TitledBorder CreateTitledBorder(string arg0)
         {
             return SExecute<Javax.Swing.Border.TitledBorder>("createTitledBorder", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Font"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
+        /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
         public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
         {
             return SExecute<Javax.Swing.Border.TitledBorder>("createTitledBorder", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Font"/></param>
+        /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
         public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3, Java.Awt.Font arg4)
         {
             return SExecute<Javax.Swing.Border.TitledBorder>("createTitledBorder", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
         public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3)
         {
             return SExecute<Javax.Swing.Border.TitledBorder>("createTitledBorder", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
         public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0, string arg1)
         {
             return SExecute<Javax.Swing.Border.TitledBorder>("createTitledBorder", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createTitledBorder(javax.swing.border.Border)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
+        /// <returns><see cref="Javax.Swing.Border.TitledBorder"/></returns>
         public static Javax.Swing.Border.TitledBorder CreateTitledBorder(Javax.Swing.Border.Border arg0)
         {
             return SExecute<Javax.Swing.Border.TitledBorder>("createTitledBorder", arg0);

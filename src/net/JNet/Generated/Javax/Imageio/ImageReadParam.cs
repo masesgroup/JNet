@@ -46,57 +46,61 @@ namespace Javax.Imageio
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getDestination() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#setDestination(java.awt.image.BufferedImage)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getDestination()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#setDestination(java.awt.image.BufferedImage)"/>
         /// </summary>
         public Java.Awt.ImageNs.BufferedImage Destination
         {
             get { return IExecute<Java.Awt.ImageNs.BufferedImage>("getDestination"); } set { IExecute("setDestination", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getDestinationBands() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#setDestinationBands(int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getDestinationBands()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#setDestinationBands(int[])"/>
         /// </summary>
         public int[] DestinationBands
         {
             get { return IExecuteArray<int>("getDestinationBands"); } set { IExecute("setDestinationBands", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getSourceMaxProgressivePass() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getSourceMaxProgressivePass()"/> 
         /// </summary>
         public int SourceMaxProgressivePass
         {
             get { return IExecute<int>("getSourceMaxProgressivePass"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getSourceMinProgressivePass() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getSourceMinProgressivePass()"/> 
         /// </summary>
         public int SourceMinProgressivePass
         {
             get { return IExecute<int>("getSourceMinProgressivePass"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getSourceNumProgressivePasses() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getSourceNumProgressivePasses()"/> 
         /// </summary>
         public int SourceNumProgressivePasses
         {
             get { return IExecute<int>("getSourceNumProgressivePasses"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getSourceRenderSize() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#setSourceRenderSize(java.awt.Dimension) throws java.lang.UnsupportedOperationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getSourceRenderSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#setSourceRenderSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension SourceRenderSize
         {
             get { return IExecute<Java.Awt.Dimension>("getSourceRenderSize"); } set { IExecute("setSourceRenderSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#canSetSourceRenderSize()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#canSetSourceRenderSize()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool CanSetSourceRenderSize()
         {
             return IExecute<bool>("canSetSourceRenderSize");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#setSourceProgressivePasses(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#setSourceProgressivePasses(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetSourceProgressivePasses(int arg0, int arg1)
         {
             IExecute("setSourceProgressivePasses", arg0, arg1);

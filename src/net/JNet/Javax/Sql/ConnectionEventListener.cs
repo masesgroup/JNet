@@ -21,20 +21,28 @@ using System;
 
 namespace Javax.Sql
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html"/>
+    /// </summary>
     public interface IConnectionEventListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
+        /// </summary>
         void ConnectionClosed(ConnectionEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
+        /// </summary>
         void ConnectionErrorOccurred(ConnectionEvent e);
     }
 
     /// <summary>
-    /// Listener for ConnectionEventListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IConnectionEventListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IConnectionEventListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ConnectionEventListener : IConnectionEventListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.sql.JNetConnectionEventListener";
 
         readonly Action<ConnectionEvent> ConnectionClosedFunction = null;
@@ -76,12 +84,12 @@ namespace Javax.Sql
         {
             OnConnectionErrorOccurred(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IConnectionEventListener.ConnectionClosed(ConnectionEvent)"/>
         public virtual void ConnectionClosed(ConnectionEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IConnectionEventListener.ConnectionErrorOccurred(ConnectionEvent)"/>
         public virtual void ConnectionErrorOccurred(ConnectionEvent e)
         {
 

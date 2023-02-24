@@ -42,43 +42,59 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(char)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="char"/></param>
+        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStroke(char arg0)
         {
             return SExecute<Javax.Swing.KeyStroke>("getKeyStroke", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(int,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(int,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStroke(int arg0, int arg1, bool arg2)
         {
             return SExecute<Javax.Swing.KeyStroke>("getKeyStroke", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStroke(int arg0, int arg1)
         {
             return SExecute<Javax.Swing.KeyStroke>("getKeyStroke", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(java.lang.Character,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(java.lang.Character,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="char?"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStroke(char? arg0, int arg1)
         {
             return SExecute<Javax.Swing.KeyStroke>("getKeyStroke", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStroke(string arg0)
         {
             return SExecute<Javax.Swing.KeyStroke>("getKeyStroke", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStrokeForEvent(java.awt.event.KeyEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStrokeForEvent(java.awt.event.KeyEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public static Javax.Swing.KeyStroke GetKeyStrokeForEvent(Java.Awt.EventNs.KeyEvent arg0)
         {
             return SExecute<Javax.Swing.KeyStroke>("getKeyStrokeForEvent", arg0);

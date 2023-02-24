@@ -62,19 +62,19 @@ namespace Javax.Swing
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#AFTER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#AFTER"/>
             /// </summary>
             public static Javax.Swing.RowFilter.ComparisonType AFTER => Clazz.GetField<Javax.Swing.RowFilter.ComparisonType>("AFTER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#BEFORE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#BEFORE"/>
             /// </summary>
             public static Javax.Swing.RowFilter.ComparisonType BEFORE => Clazz.GetField<Javax.Swing.RowFilter.ComparisonType>("BEFORE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#EQUAL
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#EQUAL"/>
             /// </summary>
             public static Javax.Swing.RowFilter.ComparisonType EQUAL => Clazz.GetField<Javax.Swing.RowFilter.ComparisonType>("EQUAL");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#NOT_EQUAL
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#NOT_EQUAL"/>
             /// </summary>
             public static Javax.Swing.RowFilter.ComparisonType NOT_EQUAL => Clazz.GetField<Javax.Swing.RowFilter.ComparisonType>("NOT_EQUAL");
             
@@ -82,8 +82,10 @@ namespace Javax.Swing
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Swing.RowFilter.ComparisonType"/></returns>
             public static Javax.Swing.RowFilter.ComparisonType[] Values()
             {
                 return SExecuteArray<Javax.Swing.RowFilter.ComparisonType>("values");
@@ -120,36 +122,40 @@ namespace Javax.Swing
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getIdentifier() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getIdentifier()"/> 
             /// </summary>
             public object Identifier
             {
                 get { return IExecute("getIdentifier"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getModel() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getModel()"/> 
             /// </summary>
             public object Model
             {
                 get { return IExecute("getModel"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValueCount() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValueCount()"/> 
             /// </summary>
             public int ValueCount
             {
                 get { return IExecute<int>("getValueCount"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValue(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getValue(int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <returns><see langword="object"/></returns>
             public object GetValue(int arg0)
             {
                 return IExecute("getValue", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getStringValue(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.Entry.html#getStringValue(int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <returns><see langword="string"/></returns>
             public string GetStringValue(int arg0)
             {
                 return IExecute<string>("getStringValue", arg0);

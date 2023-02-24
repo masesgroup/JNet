@@ -30,8 +30,11 @@ namespace Javax.Security.Auth.Kerberos
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#<init>(javax.security.auth.kerberos.KerberosPrincipal,javax.security.auth.kerberos.KerberosPrincipal,byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#%3Cinit%3E(javax.security.auth.kerberos.KerberosPrincipal,javax.security.auth.kerberos.KerberosPrincipal,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
+        /// <param name="arg2"><see cref="byte"/></param>
         public KerberosCredMessage(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, Javax.Security.Auth.Kerberos.KerberosPrincipal arg1, byte[] arg2)
             : base(arg0, arg1, arg2)
         {
@@ -40,6 +43,9 @@ namespace Javax.Security.Auth.Kerberos
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosCredMessage"/> to <see cref="Javax.Security.Auth.Destroyable"/>
+        /// </summary>
         public static implicit operator Javax.Security.Auth.Destroyable(Javax.Security.Auth.Kerberos.KerberosCredMessage t) => t.Cast<Javax.Security.Auth.Destroyable>();
         
         #endregion
@@ -54,35 +60,37 @@ namespace Javax.Security.Auth.Kerberos
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#getEncoded() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
             get { return IExecuteArray<byte>("getEncoded"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#getRecipient() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#getRecipient()"/> 
         /// </summary>
         public Javax.Security.Auth.Kerberos.KerberosPrincipal Recipient
         {
             get { return IExecute<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getRecipient"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#getSender() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#getSender()"/> 
         /// </summary>
         public Javax.Security.Auth.Kerberos.KerberosPrincipal Sender
         {
             get { return IExecute<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getSender"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#isDestroyed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#isDestroyed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDestroyed()
         {
             return IExecute<bool>("isDestroyed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#destroy()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html#destroy()"/>
         /// </summary>
         public void Destroy()
         {

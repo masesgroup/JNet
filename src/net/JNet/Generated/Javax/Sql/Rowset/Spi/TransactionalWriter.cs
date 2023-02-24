@@ -33,6 +33,9 @@ namespace Javax.Sql.Rowset.Spi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Spi.TransactionalWriter"/> to <see cref="Javax.Sql.RowSetWriter"/>
+        /// </summary>
         public static implicit operator Javax.Sql.RowSetWriter(Javax.Sql.Rowset.Spi.TransactionalWriter t) => t.Cast<Javax.Sql.RowSetWriter>();
         
         #endregion
@@ -47,22 +50,28 @@ namespace Javax.Sql.Rowset.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#commit() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#commit()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void Commit()
         {
             IExecute("commit");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#rollback() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#rollback()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void Rollback()
         {
             IExecute("rollback");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#rollback(java.sql.Savepoint) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#rollback(java.sql.Savepoint)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void Rollback(Java.Sql.Savepoint arg0)
         {
             IExecute("rollback", arg0);

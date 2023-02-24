@@ -38,27 +38,27 @@ namespace Org.Ietf.Jgss
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_ANONYMOUS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_ANONYMOUS"/>
         /// </summary>
         public static Org.Ietf.Jgss.Oid NT_ANONYMOUS => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_ANONYMOUS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_EXPORT_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_EXPORT_NAME"/>
         /// </summary>
         public static Org.Ietf.Jgss.Oid NT_EXPORT_NAME => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_EXPORT_NAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_HOSTBASED_SERVICE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_HOSTBASED_SERVICE"/>
         /// </summary>
         public static Org.Ietf.Jgss.Oid NT_HOSTBASED_SERVICE => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_HOSTBASED_SERVICE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_MACHINE_UID_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_MACHINE_UID_NAME"/>
         /// </summary>
         public static Org.Ietf.Jgss.Oid NT_MACHINE_UID_NAME => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_MACHINE_UID_NAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_STRING_UID_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_STRING_UID_NAME"/>
         /// </summary>
         public static Org.Ietf.Jgss.Oid NT_STRING_UID_NAME => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_STRING_UID_NAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_USER_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_USER_NAME"/>
         /// </summary>
         public static Org.Ietf.Jgss.Oid NT_USER_NAME => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_USER_NAME");
         
@@ -70,36 +70,46 @@ namespace Org.Ietf.Jgss
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#getStringNameType() throws org.ietf.jgss.GSSException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#getStringNameType()"/> 
         /// </summary>
         public Org.Ietf.Jgss.Oid StringNameType
         {
             get { return IExecute<Org.Ietf.Jgss.Oid>("getStringNameType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isAnonymous()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isAnonymous()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAnonymous()
         {
             return IExecute<bool>("isAnonymous");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isMN()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isMN()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMN()
         {
             return IExecute<bool>("isMN");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#export() throws org.ietf.jgss.GSSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#export()"/>
         /// </summary>
+        
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public byte[] Export()
         {
             return IExecuteArray<byte>("export");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#canonicalize(org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#canonicalize(org.ietf.jgss.Oid)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <returns><see cref="Org.Ietf.Jgss.GSSName"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public Org.Ietf.Jgss.GSSName Canonicalize(Org.Ietf.Jgss.Oid arg0)
         {
             return IExecute<Org.Ietf.Jgss.GSSName>("canonicalize", arg0);

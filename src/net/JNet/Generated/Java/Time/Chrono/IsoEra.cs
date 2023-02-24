@@ -33,17 +33,20 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.IsoEra"/> to <see cref="Java.Time.Chrono.Era"/>
+        /// </summary>
         public static implicit operator Java.Time.Chrono.Era(Java.Time.Chrono.IsoEra t) => t.Cast<Java.Time.Chrono.Era>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#BCE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#BCE"/>
         /// </summary>
         public static Java.Time.Chrono.IsoEra BCE => Clazz.GetField<Java.Time.Chrono.IsoEra>("BCE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#CE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#CE"/>
         /// </summary>
         public static Java.Time.Chrono.IsoEra CE => Clazz.GetField<Java.Time.Chrono.IsoEra>("CE");
         
@@ -51,8 +54,10 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.IsoEra"/></returns>
         public static Java.Time.Chrono.IsoEra[] Values()
         {
             return SExecuteArray<Java.Time.Chrono.IsoEra>("values");
@@ -62,7 +67,7 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#getValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#getValue()"/> 
         /// </summary>
         public int Value
         {

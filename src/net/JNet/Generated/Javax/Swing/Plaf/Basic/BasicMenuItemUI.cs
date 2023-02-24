@@ -46,7 +46,7 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuItemUI.html#getPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuItemUI.html#getPath()"/> 
         /// </summary>
         public Javax.Swing.MenuElement[] Path
         {

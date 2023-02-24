@@ -30,8 +30,10 @@ namespace Javax.Net.Ssl
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingEvent.html#<init>(javax.net.ssl.SSLSession,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingEvent.html#%3Cinit%3E(javax.net.ssl.SSLSession,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSession"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public SSLSessionBindingEvent(Javax.Net.Ssl.SSLSession arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -53,14 +55,14 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingEvent.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingEvent.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingEvent.html#getSession() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingEvent.html#getSession()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSession Session
         {

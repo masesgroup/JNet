@@ -33,8 +33,17 @@ namespace Javax.Sql.Rowset.Serial
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialStruct"/> to <see cref="Java.Sql.Struct"/>
+        /// </summary>
         public static implicit operator Java.Sql.Struct(Javax.Sql.Rowset.Serial.SerialStruct t) => t.Cast<Java.Sql.Struct>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialStruct"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Sql.Rowset.Serial.SerialStruct t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialStruct"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.Serial.SerialStruct t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -49,14 +58,14 @@ namespace Javax.Sql.Rowset.Serial
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#getAttributes() throws javax.sql.rowset.serial.SerialException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#getAttributes()"/> 
         /// </summary>
         public object[] Attributes
         {
             get { return IExecuteArray<object>("getAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#getSQLTypeName() throws javax.sql.rowset.serial.SerialException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#getSQLTypeName()"/> 
         /// </summary>
         public string SQLTypeName
         {

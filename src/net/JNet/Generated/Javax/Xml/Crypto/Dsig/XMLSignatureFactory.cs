@@ -42,22 +42,30 @@ namespace Javax.Xml.Crypto.Dsig
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignatureFactory"/></returns>
         public static Javax.Xml.Crypto.Dsig.XMLSignatureFactory GetInstance()
         {
             return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>("getInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance(java.lang.String,java.lang.String) throws java.security.NoSuchProviderException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignatureFactory"/></returns>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Xml.Crypto.Dsig.XMLSignatureFactory GetInstance(string arg0, string arg1)
         {
             return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignatureFactory"/></returns>
         public static Javax.Xml.Crypto.Dsig.XMLSignatureFactory GetInstance(string arg0)
         {
             return SExecute<Javax.Xml.Crypto.Dsig.XMLSignatureFactory>("getInstance", arg0);
@@ -67,99 +75,143 @@ namespace Javax.Xml.Crypto.Dsig
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getKeyInfoFactory() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getKeyInfoFactory()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory KeyInfoFactory
         {
             get { return IExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory>("getKeyInfoFactory"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getMechanismType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getMechanismType()"/> 
         /// </summary>
         public string MechanismType
         {
             get { return IExecute<string>("getMechanismType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getURIDereferencer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#getURIDereferencer()"/> 
         /// </summary>
         public Javax.Xml.Crypto.URIDereferencer URIDereferencer
         {
             get { return IExecute<Javax.Xml.Crypto.URIDereferencer>("getURIDereferencer"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#isFeatureSupported(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#isFeatureSupported(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsFeatureSupported(string arg0)
         {
             return IExecute<bool>("isFeatureSupported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newCanonicalizationMethod(java.lang.String,javax.xml.crypto.dsig.spec.C14NMethodParameterSpec) throws java.security.NoSuchAlgorithmException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newCanonicalizationMethod(java.lang.String,javax.xml.crypto.dsig.spec.C14NMethodParameterSpec)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.CanonicalizationMethod"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public Javax.Xml.Crypto.Dsig.CanonicalizationMethod NewCanonicalizationMethod(string arg0, Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec arg1)
         {
             return IExecute<Javax.Xml.Crypto.Dsig.CanonicalizationMethod>("newCanonicalizationMethod", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newCanonicalizationMethod(java.lang.String,javax.xml.crypto.XMLStructure) throws java.security.NoSuchAlgorithmException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newCanonicalizationMethod(java.lang.String,javax.xml.crypto.XMLStructure)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.CanonicalizationMethod"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public Javax.Xml.Crypto.Dsig.CanonicalizationMethod NewCanonicalizationMethod(string arg0, Javax.Xml.Crypto.XMLStructure arg1)
         {
             return IExecute<Javax.Xml.Crypto.Dsig.CanonicalizationMethod>("newCanonicalizationMethod", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newDigestMethod(java.lang.String,javax.xml.crypto.dsig.spec.DigestMethodParameterSpec) throws java.security.NoSuchAlgorithmException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newDigestMethod(java.lang.String,javax.xml.crypto.dsig.spec.DigestMethodParameterSpec)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Spec.DigestMethodParameterSpec"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.DigestMethod"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public Javax.Xml.Crypto.Dsig.DigestMethod NewDigestMethod(string arg0, Javax.Xml.Crypto.Dsig.Spec.DigestMethodParameterSpec arg1)
         {
             return IExecute<Javax.Xml.Crypto.Dsig.DigestMethod>("newDigestMethod", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newReference(java.lang.String,javax.xml.crypto.dsig.DigestMethod)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newReference(java.lang.String,javax.xml.crypto.dsig.DigestMethod)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.DigestMethod"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Reference"/></returns>
         public Javax.Xml.Crypto.Dsig.Reference NewReference(string arg0, Javax.Xml.Crypto.Dsig.DigestMethod arg1)
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Reference>("newReference", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newSignatureMethod(java.lang.String,javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec) throws java.security.NoSuchAlgorithmException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newSignatureMethod(java.lang.String,javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Spec.SignatureMethodParameterSpec"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.SignatureMethod"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public Javax.Xml.Crypto.Dsig.SignatureMethod NewSignatureMethod(string arg0, Javax.Xml.Crypto.Dsig.Spec.SignatureMethodParameterSpec arg1)
         {
             return IExecute<Javax.Xml.Crypto.Dsig.SignatureMethod>("newSignatureMethod", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newTransform(java.lang.String,javax.xml.crypto.dsig.spec.TransformParameterSpec) throws java.security.NoSuchAlgorithmException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newTransform(java.lang.String,javax.xml.crypto.dsig.spec.TransformParameterSpec)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Transform"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public Javax.Xml.Crypto.Dsig.Transform NewTransform(string arg0, Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec arg1)
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Transform>("newTransform", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newTransform(java.lang.String,javax.xml.crypto.XMLStructure) throws java.security.NoSuchAlgorithmException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newTransform(java.lang.String,javax.xml.crypto.XMLStructure)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Transform"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public Javax.Xml.Crypto.Dsig.Transform NewTransform(string arg0, Javax.Xml.Crypto.XMLStructure arg1)
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Transform>("newTransform", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newXMLSignature(javax.xml.crypto.dsig.SignedInfo,javax.xml.crypto.dsig.keyinfo.KeyInfo)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#newXMLSignature(javax.xml.crypto.dsig.SignedInfo,javax.xml.crypto.dsig.keyinfo.KeyInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.SignedInfo"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignature"/></returns>
         public Javax.Xml.Crypto.Dsig.XMLSignature NewXMLSignature(Javax.Xml.Crypto.Dsig.SignedInfo arg0, Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo arg1)
         {
             return IExecute<Javax.Xml.Crypto.Dsig.XMLSignature>("newXMLSignature", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#unmarshalXMLSignature(javax.xml.crypto.dsig.XMLValidateContext) throws javax.xml.crypto.MarshalException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#unmarshalXMLSignature(javax.xml.crypto.dsig.XMLValidateContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.XMLValidateContext"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignature"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
         public Javax.Xml.Crypto.Dsig.XMLSignature UnmarshalXMLSignature(Javax.Xml.Crypto.Dsig.XMLValidateContext arg0)
         {
             return IExecute<Javax.Xml.Crypto.Dsig.XMLSignature>("unmarshalXMLSignature", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#unmarshalXMLSignature(javax.xml.crypto.XMLStructure) throws javax.xml.crypto.MarshalException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignatureFactory.html#unmarshalXMLSignature(javax.xml.crypto.XMLStructure)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignature"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
         public Javax.Xml.Crypto.Dsig.XMLSignature UnmarshalXMLSignature(Javax.Xml.Crypto.XMLStructure arg0)
         {
             return IExecute<Javax.Xml.Crypto.Dsig.XMLSignature>("unmarshalXMLSignature", arg0);

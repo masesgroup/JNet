@@ -33,7 +33,13 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Cert.PKIXCertPathChecker"/> to <see cref="Java.Security.Cert.CertPathChecker"/>
+        /// </summary>
         public static implicit operator Java.Security.Cert.CertPathChecker(Java.Security.Cert.PKIXCertPathChecker t) => t.Cast<Java.Security.Cert.CertPathChecker>();
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Cert.PKIXCertPathChecker"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Security.Cert.PKIXCertPathChecker t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -48,22 +54,28 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#isForwardCheckingSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#isForwardCheckingSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsForwardCheckingSupported()
         {
             return IExecute<bool>("isForwardCheckingSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#init(boolean) throws java.security.cert.CertPathValidatorException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#init(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
         public void Init(bool arg0)
         {
             IExecute("init", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#check(java.security.cert.Certificate) throws java.security.cert.CertPathValidatorException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#check(java.security.cert.Certificate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
+        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
         public void Check(Java.Security.Cert.Certificate arg0)
         {
             IExecute("check", arg0);

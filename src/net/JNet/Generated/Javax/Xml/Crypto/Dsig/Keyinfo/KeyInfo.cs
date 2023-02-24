@@ -33,6 +33,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
         
         #endregion
@@ -47,15 +50,18 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#getId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#getId()"/> 
         /// </summary>
         public string Id
         {
             get { return IExecute<string>("getId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#marshal(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.MarshalException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#marshal(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
+        /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
         public void Marshal(Javax.Xml.Crypto.XMLStructure arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
             IExecute("marshal", arg0, arg1);

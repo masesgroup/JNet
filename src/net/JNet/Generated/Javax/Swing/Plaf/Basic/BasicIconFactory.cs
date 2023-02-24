@@ -33,6 +33,9 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicIconFactory"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Basic.BasicIconFactory t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -43,57 +46,73 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#createEmptyFrameIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#createEmptyFrameIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon CreateEmptyFrameIcon()
         {
             return SExecute<Javax.Swing.Icon>("createEmptyFrameIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getCheckBoxIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getCheckBoxIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetCheckBoxIcon()
         {
             return SExecute<Javax.Swing.Icon>("getCheckBoxIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getCheckBoxMenuItemIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getCheckBoxMenuItemIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetCheckBoxMenuItemIcon()
         {
             return SExecute<Javax.Swing.Icon>("getCheckBoxMenuItemIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getMenuArrowIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getMenuArrowIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetMenuArrowIcon()
         {
             return SExecute<Javax.Swing.Icon>("getMenuArrowIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getMenuItemArrowIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getMenuItemArrowIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetMenuItemArrowIcon()
         {
             return SExecute<Javax.Swing.Icon>("getMenuItemArrowIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getMenuItemCheckIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getMenuItemCheckIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetMenuItemCheckIcon()
         {
             return SExecute<Javax.Swing.Icon>("getMenuItemCheckIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getRadioButtonIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getRadioButtonIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetRadioButtonIcon()
         {
             return SExecute<Javax.Swing.Icon>("getRadioButtonIcon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getRadioButtonMenuItemIcon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getRadioButtonMenuItemIcon()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetRadioButtonMenuItemIcon()
         {
             return SExecute<Javax.Swing.Icon>("getRadioButtonMenuItemIcon");

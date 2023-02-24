@@ -33,6 +33,9 @@ namespace Javax.Xml.Crypto.Dsig
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.TransformService"/> to <see cref="Javax.Xml.Crypto.Dsig.Transform"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.Dsig.Transform(Javax.Xml.Crypto.Dsig.TransformService t) => t.Cast<Javax.Xml.Crypto.Dsig.Transform>();
         
         #endregion
@@ -43,15 +46,25 @@ namespace Javax.Xml.Crypto.Dsig
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getInstance(java.lang.String,java.lang.String,java.lang.String) throws java.security.NoSuchAlgorithmException,java.security.NoSuchProviderException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getInstance(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.TransformService"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(string arg0, string arg1, string arg2)
         {
             return SExecute<Javax.Xml.Crypto.Dsig.TransformService>("getInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getInstance(java.lang.String,java.lang.String) throws java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.TransformService"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(string arg0, string arg1)
         {
             return SExecute<Javax.Xml.Crypto.Dsig.TransformService>("getInstance", arg0, arg1);
@@ -61,36 +74,44 @@ namespace Javax.Xml.Crypto.Dsig
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getMechanismType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getMechanismType()"/> 
         /// </summary>
         public string MechanismType
         {
             get { return IExecute<string>("getMechanismType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#init(javax.xml.crypto.dsig.spec.TransformParameterSpec) throws java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#init(javax.xml.crypto.dsig.spec.TransformParameterSpec)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec"/></param>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec arg0)
         {
             IExecute("init", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#init(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext) throws java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#init(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(Javax.Xml.Crypto.XMLStructure arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#marshalParams(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.MarshalException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#marshalParams(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
+        /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
         public void MarshalParams(Javax.Xml.Crypto.XMLStructure arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
             IExecute("marshalParams", arg0, arg1);

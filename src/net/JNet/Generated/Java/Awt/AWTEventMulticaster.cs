@@ -33,22 +33,73 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.ComponentListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.ComponentListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.ComponentListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.ContainerListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.ContainerListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.ContainerListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.FocusListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.FocusListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.KeyListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.KeyListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.KeyListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.MouseListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.MouseListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.MouseMotionListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseMotionListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.MouseMotionListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.WindowListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.WindowListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.WindowListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.WindowFocusListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.WindowFocusListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.WindowFocusListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.WindowStateListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.WindowStateListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.WindowStateListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.ActionListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.ActionListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.ItemListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.ItemListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.ItemListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.AdjustmentListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.AdjustmentListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.AdjustmentListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.TextListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.TextListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.TextListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.InputMethodListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.InputMethodListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.InputMethodListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.HierarchyListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.HierarchyListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.HierarchyListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.HierarchyBoundsListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.HierarchyBoundsListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.HierarchyBoundsListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AWTEventMulticaster"/> to <see cref="Java.Awt.EventNs.MouseWheelListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseWheelListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.MouseWheelListener>();
         
         #endregion
@@ -59,239 +110,341 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ActionListener,java.awt.event.ActionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ActionListener,java.awt.event.ActionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.ActionListener"/></returns>
         public static Java.Awt.EventNs.ActionListener Add(Java.Awt.EventNs.ActionListener arg0, Java.Awt.EventNs.ActionListener arg1)
         {
             return SExecute<Java.Awt.EventNs.ActionListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ActionListener,java.awt.event.ActionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ActionListener,java.awt.event.ActionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.ActionListener"/></returns>
         public static Java.Awt.EventNs.ActionListener Remove(Java.Awt.EventNs.ActionListener arg0, Java.Awt.EventNs.ActionListener arg1)
         {
             return SExecute<Java.Awt.EventNs.ActionListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.AdjustmentListener,java.awt.event.AdjustmentListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.AdjustmentListener,java.awt.event.AdjustmentListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.AdjustmentListener"/></returns>
         public static Java.Awt.EventNs.AdjustmentListener Add(Java.Awt.EventNs.AdjustmentListener arg0, Java.Awt.EventNs.AdjustmentListener arg1)
         {
             return SExecute<Java.Awt.EventNs.AdjustmentListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.AdjustmentListener,java.awt.event.AdjustmentListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.AdjustmentListener,java.awt.event.AdjustmentListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.AdjustmentListener"/></returns>
         public static Java.Awt.EventNs.AdjustmentListener Remove(Java.Awt.EventNs.AdjustmentListener arg0, Java.Awt.EventNs.AdjustmentListener arg1)
         {
             return SExecute<Java.Awt.EventNs.AdjustmentListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ComponentListener,java.awt.event.ComponentListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ComponentListener,java.awt.event.ComponentListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.ComponentListener"/></returns>
         public static Java.Awt.EventNs.ComponentListener Add(Java.Awt.EventNs.ComponentListener arg0, Java.Awt.EventNs.ComponentListener arg1)
         {
             return SExecute<Java.Awt.EventNs.ComponentListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ComponentListener,java.awt.event.ComponentListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ComponentListener,java.awt.event.ComponentListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.ComponentListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.ComponentListener"/></returns>
         public static Java.Awt.EventNs.ComponentListener Remove(Java.Awt.EventNs.ComponentListener arg0, Java.Awt.EventNs.ComponentListener arg1)
         {
             return SExecute<Java.Awt.EventNs.ComponentListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ContainerListener,java.awt.event.ContainerListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ContainerListener,java.awt.event.ContainerListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.ContainerListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.ContainerListener"/></returns>
         public static Java.Awt.EventNs.ContainerListener Add(Java.Awt.EventNs.ContainerListener arg0, Java.Awt.EventNs.ContainerListener arg1)
         {
             return SExecute<Java.Awt.EventNs.ContainerListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ContainerListener,java.awt.event.ContainerListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ContainerListener,java.awt.event.ContainerListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.ContainerListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.ContainerListener"/></returns>
         public static Java.Awt.EventNs.ContainerListener Remove(Java.Awt.EventNs.ContainerListener arg0, Java.Awt.EventNs.ContainerListener arg1)
         {
             return SExecute<Java.Awt.EventNs.ContainerListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.FocusListener,java.awt.event.FocusListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.FocusListener,java.awt.event.FocusListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.FocusListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.FocusListener"/></returns>
         public static Java.Awt.EventNs.FocusListener Add(Java.Awt.EventNs.FocusListener arg0, Java.Awt.EventNs.FocusListener arg1)
         {
             return SExecute<Java.Awt.EventNs.FocusListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.FocusListener,java.awt.event.FocusListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.FocusListener,java.awt.event.FocusListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.FocusListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.FocusListener"/></returns>
         public static Java.Awt.EventNs.FocusListener Remove(Java.Awt.EventNs.FocusListener arg0, Java.Awt.EventNs.FocusListener arg1)
         {
             return SExecute<Java.Awt.EventNs.FocusListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.HierarchyBoundsListener,java.awt.event.HierarchyBoundsListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.HierarchyBoundsListener,java.awt.event.HierarchyBoundsListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></returns>
         public static Java.Awt.EventNs.HierarchyBoundsListener Add(Java.Awt.EventNs.HierarchyBoundsListener arg0, Java.Awt.EventNs.HierarchyBoundsListener arg1)
         {
             return SExecute<Java.Awt.EventNs.HierarchyBoundsListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.HierarchyBoundsListener,java.awt.event.HierarchyBoundsListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.HierarchyBoundsListener,java.awt.event.HierarchyBoundsListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.HierarchyBoundsListener"/></returns>
         public static Java.Awt.EventNs.HierarchyBoundsListener Remove(Java.Awt.EventNs.HierarchyBoundsListener arg0, Java.Awt.EventNs.HierarchyBoundsListener arg1)
         {
             return SExecute<Java.Awt.EventNs.HierarchyBoundsListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.HierarchyListener,java.awt.event.HierarchyListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.HierarchyListener,java.awt.event.HierarchyListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.HierarchyListener"/></returns>
         public static Java.Awt.EventNs.HierarchyListener Add(Java.Awt.EventNs.HierarchyListener arg0, Java.Awt.EventNs.HierarchyListener arg1)
         {
             return SExecute<Java.Awt.EventNs.HierarchyListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.HierarchyListener,java.awt.event.HierarchyListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.HierarchyListener,java.awt.event.HierarchyListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.HierarchyListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.HierarchyListener"/></returns>
         public static Java.Awt.EventNs.HierarchyListener Remove(Java.Awt.EventNs.HierarchyListener arg0, Java.Awt.EventNs.HierarchyListener arg1)
         {
             return SExecute<Java.Awt.EventNs.HierarchyListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.InputMethodListener,java.awt.event.InputMethodListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.InputMethodListener,java.awt.event.InputMethodListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.InputMethodListener"/></returns>
         public static Java.Awt.EventNs.InputMethodListener Add(Java.Awt.EventNs.InputMethodListener arg0, Java.Awt.EventNs.InputMethodListener arg1)
         {
             return SExecute<Java.Awt.EventNs.InputMethodListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.InputMethodListener,java.awt.event.InputMethodListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.InputMethodListener,java.awt.event.InputMethodListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.InputMethodListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.InputMethodListener"/></returns>
         public static Java.Awt.EventNs.InputMethodListener Remove(Java.Awt.EventNs.InputMethodListener arg0, Java.Awt.EventNs.InputMethodListener arg1)
         {
             return SExecute<Java.Awt.EventNs.InputMethodListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ItemListener,java.awt.event.ItemListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ItemListener,java.awt.event.ItemListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.ItemListener"/></returns>
         public static Java.Awt.EventNs.ItemListener Add(Java.Awt.EventNs.ItemListener arg0, Java.Awt.EventNs.ItemListener arg1)
         {
             return SExecute<Java.Awt.EventNs.ItemListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ItemListener,java.awt.event.ItemListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.ItemListener,java.awt.event.ItemListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.ItemListener"/></returns>
         public static Java.Awt.EventNs.ItemListener Remove(Java.Awt.EventNs.ItemListener arg0, Java.Awt.EventNs.ItemListener arg1)
         {
             return SExecute<Java.Awt.EventNs.ItemListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.KeyListener,java.awt.event.KeyListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.KeyListener,java.awt.event.KeyListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.KeyListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.KeyListener"/></returns>
         public static Java.Awt.EventNs.KeyListener Add(Java.Awt.EventNs.KeyListener arg0, Java.Awt.EventNs.KeyListener arg1)
         {
             return SExecute<Java.Awt.EventNs.KeyListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.KeyListener,java.awt.event.KeyListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.KeyListener,java.awt.event.KeyListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.KeyListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.KeyListener"/></returns>
         public static Java.Awt.EventNs.KeyListener Remove(Java.Awt.EventNs.KeyListener arg0, Java.Awt.EventNs.KeyListener arg1)
         {
             return SExecute<Java.Awt.EventNs.KeyListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.MouseListener,java.awt.event.MouseListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.MouseListener,java.awt.event.MouseListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.MouseListener"/></returns>
         public static Java.Awt.EventNs.MouseListener Add(Java.Awt.EventNs.MouseListener arg0, Java.Awt.EventNs.MouseListener arg1)
         {
             return SExecute<Java.Awt.EventNs.MouseListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.MouseListener,java.awt.event.MouseListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.MouseListener,java.awt.event.MouseListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.MouseListener"/></returns>
         public static Java.Awt.EventNs.MouseListener Remove(Java.Awt.EventNs.MouseListener arg0, Java.Awt.EventNs.MouseListener arg1)
         {
             return SExecute<Java.Awt.EventNs.MouseListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.MouseMotionListener,java.awt.event.MouseMotionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.MouseMotionListener,java.awt.event.MouseMotionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.MouseMotionListener"/></returns>
         public static Java.Awt.EventNs.MouseMotionListener Add(Java.Awt.EventNs.MouseMotionListener arg0, Java.Awt.EventNs.MouseMotionListener arg1)
         {
             return SExecute<Java.Awt.EventNs.MouseMotionListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.MouseMotionListener,java.awt.event.MouseMotionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.MouseMotionListener,java.awt.event.MouseMotionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseMotionListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.MouseMotionListener"/></returns>
         public static Java.Awt.EventNs.MouseMotionListener Remove(Java.Awt.EventNs.MouseMotionListener arg0, Java.Awt.EventNs.MouseMotionListener arg1)
         {
             return SExecute<Java.Awt.EventNs.MouseMotionListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.MouseWheelListener,java.awt.event.MouseWheelListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.MouseWheelListener,java.awt.event.MouseWheelListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.MouseWheelListener"/></returns>
         public static Java.Awt.EventNs.MouseWheelListener Add(Java.Awt.EventNs.MouseWheelListener arg0, Java.Awt.EventNs.MouseWheelListener arg1)
         {
             return SExecute<Java.Awt.EventNs.MouseWheelListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.MouseWheelListener,java.awt.event.MouseWheelListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.MouseWheelListener,java.awt.event.MouseWheelListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseWheelListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.MouseWheelListener"/></returns>
         public static Java.Awt.EventNs.MouseWheelListener Remove(Java.Awt.EventNs.MouseWheelListener arg0, Java.Awt.EventNs.MouseWheelListener arg1)
         {
             return SExecute<Java.Awt.EventNs.MouseWheelListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.TextListener,java.awt.event.TextListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.TextListener,java.awt.event.TextListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.TextListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.TextListener"/></returns>
         public static Java.Awt.EventNs.TextListener Add(Java.Awt.EventNs.TextListener arg0, Java.Awt.EventNs.TextListener arg1)
         {
             return SExecute<Java.Awt.EventNs.TextListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.TextListener,java.awt.event.TextListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.TextListener,java.awt.event.TextListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.TextListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.TextListener"/></returns>
         public static Java.Awt.EventNs.TextListener Remove(Java.Awt.EventNs.TextListener arg0, Java.Awt.EventNs.TextListener arg1)
         {
             return SExecute<Java.Awt.EventNs.TextListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.WindowFocusListener,java.awt.event.WindowFocusListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.WindowFocusListener,java.awt.event.WindowFocusListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.WindowFocusListener"/></returns>
         public static Java.Awt.EventNs.WindowFocusListener Add(Java.Awt.EventNs.WindowFocusListener arg0, Java.Awt.EventNs.WindowFocusListener arg1)
         {
             return SExecute<Java.Awt.EventNs.WindowFocusListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.WindowFocusListener,java.awt.event.WindowFocusListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.WindowFocusListener,java.awt.event.WindowFocusListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.WindowFocusListener"/></returns>
         public static Java.Awt.EventNs.WindowFocusListener Remove(Java.Awt.EventNs.WindowFocusListener arg0, Java.Awt.EventNs.WindowFocusListener arg1)
         {
             return SExecute<Java.Awt.EventNs.WindowFocusListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.WindowListener,java.awt.event.WindowListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.WindowListener,java.awt.event.WindowListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.WindowListener"/></returns>
         public static Java.Awt.EventNs.WindowListener Add(Java.Awt.EventNs.WindowListener arg0, Java.Awt.EventNs.WindowListener arg1)
         {
             return SExecute<Java.Awt.EventNs.WindowListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.WindowListener,java.awt.event.WindowListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.WindowListener,java.awt.event.WindowListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.WindowListener"/></returns>
         public static Java.Awt.EventNs.WindowListener Remove(Java.Awt.EventNs.WindowListener arg0, Java.Awt.EventNs.WindowListener arg1)
         {
             return SExecute<Java.Awt.EventNs.WindowListener>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.WindowStateListener,java.awt.event.WindowStateListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.WindowStateListener,java.awt.event.WindowStateListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.WindowStateListener"/></returns>
         public static Java.Awt.EventNs.WindowStateListener Add(Java.Awt.EventNs.WindowStateListener arg0, Java.Awt.EventNs.WindowStateListener arg1)
         {
             return SExecute<Java.Awt.EventNs.WindowStateListener>("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.WindowStateListener,java.awt.event.WindowStateListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#remove(java.awt.event.WindowStateListener,java.awt.event.WindowStateListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.WindowStateListener"/></returns>
         public static Java.Awt.EventNs.WindowStateListener Remove(Java.Awt.EventNs.WindowStateListener arg0, Java.Awt.EventNs.WindowStateListener arg1)
         {
             return SExecute<Java.Awt.EventNs.WindowStateListener>("remove", arg0, arg1);
@@ -301,267 +454,305 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#actionPerformed(java.awt.event.ActionEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#actionPerformed(java.awt.event.ActionEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
         public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
         {
             IExecute("actionPerformed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentEvent"/></param>
         public void AdjustmentValueChanged(Java.Awt.EventNs.AdjustmentEvent arg0)
         {
             IExecute("adjustmentValueChanged", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#ancestorMoved(java.awt.event.HierarchyEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#ancestorMoved(java.awt.event.HierarchyEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
         public void AncestorMoved(Java.Awt.EventNs.HierarchyEvent arg0)
         {
             IExecute("ancestorMoved", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#ancestorResized(java.awt.event.HierarchyEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#ancestorResized(java.awt.event.HierarchyEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
         public void AncestorResized(Java.Awt.EventNs.HierarchyEvent arg0)
         {
             IExecute("ancestorResized", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#caretPositionChanged(java.awt.event.InputMethodEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
         public void CaretPositionChanged(Java.Awt.EventNs.InputMethodEvent arg0)
         {
             IExecute("caretPositionChanged", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentAdded(java.awt.event.ContainerEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentAdded(java.awt.event.ContainerEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerEvent"/></param>
         public void ComponentAdded(Java.Awt.EventNs.ContainerEvent arg0)
         {
             IExecute("componentAdded", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentHidden(java.awt.event.ComponentEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentHidden(java.awt.event.ComponentEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public void ComponentHidden(Java.Awt.EventNs.ComponentEvent arg0)
         {
             IExecute("componentHidden", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentMoved(java.awt.event.ComponentEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentMoved(java.awt.event.ComponentEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public void ComponentMoved(Java.Awt.EventNs.ComponentEvent arg0)
         {
             IExecute("componentMoved", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentRemoved(java.awt.event.ContainerEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentRemoved(java.awt.event.ContainerEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerEvent"/></param>
         public void ComponentRemoved(Java.Awt.EventNs.ContainerEvent arg0)
         {
             IExecute("componentRemoved", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentResized(java.awt.event.ComponentEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentResized(java.awt.event.ComponentEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public void ComponentResized(Java.Awt.EventNs.ComponentEvent arg0)
         {
             IExecute("componentResized", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentShown(java.awt.event.ComponentEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#componentShown(java.awt.event.ComponentEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
         public void ComponentShown(Java.Awt.EventNs.ComponentEvent arg0)
         {
             IExecute("componentShown", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#focusGained(java.awt.event.FocusEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#focusGained(java.awt.event.FocusEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
         public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
         {
             IExecute("focusGained", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#focusLost(java.awt.event.FocusEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#focusLost(java.awt.event.FocusEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
         public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
         {
             IExecute("focusLost", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#hierarchyChanged(java.awt.event.HierarchyEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#hierarchyChanged(java.awt.event.HierarchyEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
         public void HierarchyChanged(Java.Awt.EventNs.HierarchyEvent arg0)
         {
             IExecute("hierarchyChanged", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
         public void InputMethodTextChanged(Java.Awt.EventNs.InputMethodEvent arg0)
         {
             IExecute("inputMethodTextChanged", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#itemStateChanged(java.awt.event.ItemEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#itemStateChanged(java.awt.event.ItemEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemEvent"/></param>
         public void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0)
         {
             IExecute("itemStateChanged", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#keyPressed(java.awt.event.KeyEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#keyPressed(java.awt.event.KeyEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public void KeyPressed(Java.Awt.EventNs.KeyEvent arg0)
         {
             IExecute("keyPressed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#keyReleased(java.awt.event.KeyEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#keyReleased(java.awt.event.KeyEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public void KeyReleased(Java.Awt.EventNs.KeyEvent arg0)
         {
             IExecute("keyReleased", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#keyTyped(java.awt.event.KeyEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#keyTyped(java.awt.event.KeyEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public void KeyTyped(Java.Awt.EventNs.KeyEvent arg0)
         {
             IExecute("keyTyped", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseClicked(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseClicked(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseClicked", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseDragged(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseDragged(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseDragged", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseEntered(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseEntered(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseEntered", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseExited(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseExited(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseExited", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseMoved(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseMoved(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseMoved", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mousePressed(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mousePressed(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mousePressed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseReleased(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseReleased(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseReleased", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelEvent"/></param>
         public void MouseWheelMoved(Java.Awt.EventNs.MouseWheelEvent arg0)
         {
             IExecute("mouseWheelMoved", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#textValueChanged(java.awt.event.TextEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#textValueChanged(java.awt.event.TextEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextEvent"/></param>
         public void TextValueChanged(Java.Awt.EventNs.TextEvent arg0)
         {
             IExecute("textValueChanged", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowActivated(java.awt.event.WindowEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowActivated(java.awt.event.WindowEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowActivated(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecute("windowActivated", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowClosed(java.awt.event.WindowEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowClosed(java.awt.event.WindowEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowClosed(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecute("windowClosed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowClosing(java.awt.event.WindowEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowClosing(java.awt.event.WindowEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowClosing(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecute("windowClosing", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowDeactivated(java.awt.event.WindowEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowDeactivated(java.awt.event.WindowEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowDeactivated(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecute("windowDeactivated", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowDeiconified(java.awt.event.WindowEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowDeiconified(java.awt.event.WindowEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowDeiconified(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecute("windowDeiconified", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowGainedFocus(java.awt.event.WindowEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowGainedFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecute("windowGainedFocus", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowIconified(java.awt.event.WindowEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowIconified(java.awt.event.WindowEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowIconified(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecute("windowIconified", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowLostFocus(java.awt.event.WindowEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowLostFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowLostFocus(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecute("windowLostFocus", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowOpened(java.awt.event.WindowEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowOpened(java.awt.event.WindowEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowOpened(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecute("windowOpened", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowStateChanged(java.awt.event.WindowEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#windowStateChanged(java.awt.event.WindowEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
         public void WindowStateChanged(Java.Awt.EventNs.WindowEvent arg0)
         {
             IExecute("windowStateChanged", arg0);

@@ -46,43 +46,49 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#getConnection() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#getConnection()"/> 
         /// </summary>
         public Java.Sql.Connection Connection
         {
             get { return IExecute<Java.Sql.Connection>("getConnection"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#addConnectionEventListener(javax.sql.ConnectionEventListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#addConnectionEventListener(javax.sql.ConnectionEventListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEventListener"/></param>
         public void AddConnectionEventListener(Javax.Sql.ConnectionEventListener arg0)
         {
             IExecute("addConnectionEventListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#addStatementEventListener(javax.sql.StatementEventListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#addStatementEventListener(javax.sql.StatementEventListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.StatementEventListener"/></param>
         public void AddStatementEventListener(Javax.Sql.StatementEventListener arg0)
         {
             IExecute("addStatementEventListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#close() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#removeConnectionEventListener(javax.sql.ConnectionEventListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#removeConnectionEventListener(javax.sql.ConnectionEventListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEventListener"/></param>
         public void RemoveConnectionEventListener(Javax.Sql.ConnectionEventListener arg0)
         {
             IExecute("removeConnectionEventListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#removeStatementEventListener(javax.sql.StatementEventListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html#removeStatementEventListener(javax.sql.StatementEventListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.StatementEventListener"/></param>
         public void RemoveStatementEventListener(Javax.Sql.StatementEventListener arg0)
         {
             IExecute("removeStatementEventListener", arg0);

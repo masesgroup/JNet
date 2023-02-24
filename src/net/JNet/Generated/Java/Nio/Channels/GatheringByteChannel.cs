@@ -33,6 +33,9 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.GatheringByteChannel"/> to <see cref="Java.Nio.Channels.WritableByteChannel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.WritableByteChannel(Java.Nio.Channels.GatheringByteChannel t) => t.Cast<Java.Nio.Channels.WritableByteChannel>();
         
         #endregion
@@ -47,15 +50,23 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/GatheringByteChannel.html#write(java.nio.ByteBuffer[],int,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/GatheringByteChannel.html#write(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public long Write(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2)
         {
             return IExecute<long>("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/GatheringByteChannel.html#write(java.nio.ByteBuffer[]) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/GatheringByteChannel.html#write(java.nio.ByteBuffer[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public long Write(Java.Nio.ByteBuffer[] arg0)
         {
             return IExecute<long>("write", arg0);

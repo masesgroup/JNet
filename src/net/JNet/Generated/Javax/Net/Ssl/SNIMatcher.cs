@@ -46,15 +46,17 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIMatcher.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIMatcher.html#getType()"/> 
         /// </summary>
         public int Type
         {
             get { return IExecute<int>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIMatcher.html#matches(javax.net.ssl.SNIServerName)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIMatcher.html#matches(javax.net.ssl.SNIServerName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.SNIServerName"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Matches(Javax.Net.Ssl.SNIServerName arg0)
         {
             return IExecute<bool>("matches", arg0);

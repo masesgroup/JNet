@@ -30,8 +30,9 @@ namespace Javax.Swing.Text.Html.Parser
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#<init>(javax.swing.text.html.parser.DTD)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#%3Cinit%3E(javax.swing.text.html.parser.DTD)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.Parser.DTD"/></param>
         public Parser(Javax.Swing.Text.Html.Parser.DTD arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Swing.Text.Html.Parser
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.Html.Parser.Parser"/> to <see cref="Javax.Swing.Text.Html.Parser.DTDConstants"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Text.Html.Parser.DTDConstants(Javax.Swing.Text.Html.Parser.Parser t) => t.Cast<Javax.Swing.Text.Html.Parser.DTDConstants>();
         
         #endregion
@@ -54,15 +58,20 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#parseDTDMarkup() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#parseDTDMarkup()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public string ParseDTDMarkup()
         {
             return IExecute<string>("parseDTDMarkup");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#parser.Parser.parse(java.io.Reader) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#parser.Parser.parse(java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.Reader arg0)
         {
             IExecute("parse", arg0);

@@ -33,13 +33,16 @@ namespace Javax.Xml.Crypto.Dsig
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.XMLSignature"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.XMLSignature t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#XMLNS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#XMLNS"/>
         /// </summary>
         public static string XMLNS => Clazz.GetField<string>("XMLNS");
         
@@ -51,50 +54,58 @@ namespace Javax.Xml.Crypto.Dsig
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getId()"/> 
         /// </summary>
         public string Id
         {
             get { return IExecute<string>("getId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getKeyInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getKeyInfo()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo KeyInfo
         {
             get { return IExecute<Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo>("getKeyInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getKeySelectorResult() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getKeySelectorResult()"/> 
         /// </summary>
         public Javax.Xml.Crypto.KeySelectorResult KeySelectorResult
         {
             get { return IExecute<Javax.Xml.Crypto.KeySelectorResult>("getKeySelectorResult"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getSignedInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getSignedInfo()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Dsig.SignedInfo SignedInfo
         {
             get { return IExecute<Javax.Xml.Crypto.Dsig.SignedInfo>("getSignedInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#validate(javax.xml.crypto.dsig.XMLValidateContext) throws javax.xml.crypto.dsig.XMLSignatureException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#validate(javax.xml.crypto.dsig.XMLValidateContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.XMLValidateContext"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.Dsig.XMLSignatureException"/>
         public bool Validate(Javax.Xml.Crypto.Dsig.XMLValidateContext arg0)
         {
             return IExecute<bool>("validate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getSignatureValue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getSignatureValue()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue"/></returns>
         public Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue GetSignatureValue()
         {
             return IExecute<Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue>("getSignatureValue");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#sign(javax.xml.crypto.dsig.XMLSignContext) throws javax.xml.crypto.MarshalException,javax.xml.crypto.dsig.XMLSignatureException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#sign(javax.xml.crypto.dsig.XMLSignContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.XMLSignContext"/></param>
+        /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
+        /// <exception cref="Javax.Xml.Crypto.Dsig.XMLSignatureException"/>
         public void Sign(Javax.Xml.Crypto.Dsig.XMLSignContext arg0)
         {
             IExecute("sign", arg0);
@@ -111,6 +122,9 @@ namespace Javax.Xml.Crypto.Dsig
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+            /// </summary>
             public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
             
             #endregion
@@ -125,22 +139,25 @@ namespace Javax.Xml.Crypto.Dsig
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.SignatureValue.html#getId() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.SignatureValue.html#getId()"/> 
             /// </summary>
             public string Id
             {
                 get { return IExecute<string>("getId"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.SignatureValue.html#getValue() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.SignatureValue.html#getValue()"/> 
             /// </summary>
             public byte[] Value
             {
                 get { return IExecuteArray<byte>("getValue"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.SignatureValue.html#validate(javax.xml.crypto.dsig.XMLValidateContext) throws javax.xml.crypto.dsig.XMLSignatureException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.SignatureValue.html#validate(javax.xml.crypto.dsig.XMLValidateContext)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.XMLValidateContext"/></param>
+            /// <returns><see langword="bool"/></returns>
+            /// <exception cref="Javax.Xml.Crypto.Dsig.XMLSignatureException"/>
             public bool Validate(Javax.Xml.Crypto.Dsig.XMLValidateContext arg0)
             {
                 return IExecute<bool>("validate", arg0);

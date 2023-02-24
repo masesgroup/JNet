@@ -33,25 +33,28 @@ namespace Javax.Sql.Rowset.Spi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Spi.SyncResolver"/> to <see cref="Javax.Sql.RowSet"/>
+        /// </summary>
         public static implicit operator Javax.Sql.RowSet(Javax.Sql.Rowset.Spi.SyncResolver t) => t.Cast<Javax.Sql.RowSet>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#DELETE_ROW_CONFLICT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#DELETE_ROW_CONFLICT"/>
         /// </summary>
         public static int DELETE_ROW_CONFLICT => Clazz.GetField<int>("DELETE_ROW_CONFLICT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#INSERT_ROW_CONFLICT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#INSERT_ROW_CONFLICT"/>
         /// </summary>
         public static int INSERT_ROW_CONFLICT => Clazz.GetField<int>("INSERT_ROW_CONFLICT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#NO_ROW_CONFLICT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#NO_ROW_CONFLICT"/>
         /// </summary>
         public static int NO_ROW_CONFLICT => Clazz.GetField<int>("NO_ROW_CONFLICT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#UPDATE_ROW_CONFLICT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#UPDATE_ROW_CONFLICT"/>
         /// </summary>
         public static int UPDATE_ROW_CONFLICT => Clazz.GetField<int>("UPDATE_ROW_CONFLICT");
         
@@ -63,50 +66,68 @@ namespace Javax.Sql.Rowset.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#getStatus() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#getStatus()"/> 
         /// </summary>
         public int Status
         {
             get { return IExecute<int>("getStatus"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#nextConflict() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#nextConflict()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool NextConflict()
         {
             return IExecute<bool>("nextConflict");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#previousConflict() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#previousConflict()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool PreviousConflict()
         {
             return IExecute<bool>("previousConflict");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#getConflictValue(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#getConflictValue(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public object GetConflictValue(int arg0)
         {
             return IExecute("getConflictValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#getConflictValue(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#getConflictValue(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public object GetConflictValue(string arg0)
         {
             return IExecute("getConflictValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#setResolvedValue(int,java.lang.Object) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#setResolvedValue(int,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void SetResolvedValue(int arg0, object arg1)
         {
             IExecute("setResolvedValue", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#setResolvedValue(java.lang.String,java.lang.Object) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#setResolvedValue(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void SetResolvedValue(string arg0, object arg1)
         {
             IExecute("setResolvedValue", arg0, arg1);

@@ -30,22 +30,26 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#<init>(javax.swing.tree.TreeModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(javax.swing.tree.TreeModel)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeModel"/></param>
         public JTree(Javax.Swing.Tree.TreeModel arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#<init>(javax.swing.tree.TreeNode,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(javax.swing.tree.TreeNode,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public JTree(Javax.Swing.Tree.TreeNode arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#<init>(javax.swing.tree.TreeNode)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(javax.swing.tree.TreeNode)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
         public JTree(Javax.Swing.Tree.TreeNode arg0)
             : base(arg0)
         {
@@ -54,74 +58,80 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JTree"/> to <see cref="Javax.Swing.Scrollable"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Scrollable(Javax.Swing.JTree t) => t.Cast<Javax.Swing.Scrollable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JTree"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JTree t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ANCHOR_SELECTION_PATH_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ANCHOR_SELECTION_PATH_PROPERTY"/>
         /// </summary>
         public static string ANCHOR_SELECTION_PATH_PROPERTY => Clazz.GetField<string>("ANCHOR_SELECTION_PATH_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#CELL_EDITOR_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#CELL_EDITOR_PROPERTY"/>
         /// </summary>
         public static string CELL_EDITOR_PROPERTY => Clazz.GetField<string>("CELL_EDITOR_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#CELL_RENDERER_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#CELL_RENDERER_PROPERTY"/>
         /// </summary>
         public static string CELL_RENDERER_PROPERTY => Clazz.GetField<string>("CELL_RENDERER_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#EDITABLE_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#EDITABLE_PROPERTY"/>
         /// </summary>
         public static string EDITABLE_PROPERTY => Clazz.GetField<string>("EDITABLE_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#EXPANDS_SELECTED_PATHS_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#EXPANDS_SELECTED_PATHS_PROPERTY"/>
         /// </summary>
         public static string EXPANDS_SELECTED_PATHS_PROPERTY => Clazz.GetField<string>("EXPANDS_SELECTED_PATHS_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#INVOKES_STOP_CELL_EDITING_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#INVOKES_STOP_CELL_EDITING_PROPERTY"/>
         /// </summary>
         public static string INVOKES_STOP_CELL_EDITING_PROPERTY => Clazz.GetField<string>("INVOKES_STOP_CELL_EDITING_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#LARGE_MODEL_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#LARGE_MODEL_PROPERTY"/>
         /// </summary>
         public static string LARGE_MODEL_PROPERTY => Clazz.GetField<string>("LARGE_MODEL_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#LEAD_SELECTION_PATH_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#LEAD_SELECTION_PATH_PROPERTY"/>
         /// </summary>
         public static string LEAD_SELECTION_PATH_PROPERTY => Clazz.GetField<string>("LEAD_SELECTION_PATH_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ROOT_VISIBLE_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ROOT_VISIBLE_PROPERTY"/>
         /// </summary>
         public static string ROOT_VISIBLE_PROPERTY => Clazz.GetField<string>("ROOT_VISIBLE_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ROW_HEIGHT_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ROW_HEIGHT_PROPERTY"/>
         /// </summary>
         public static string ROW_HEIGHT_PROPERTY => Clazz.GetField<string>("ROW_HEIGHT_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SCROLLS_ON_EXPAND_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SCROLLS_ON_EXPAND_PROPERTY"/>
         /// </summary>
         public static string SCROLLS_ON_EXPAND_PROPERTY => Clazz.GetField<string>("SCROLLS_ON_EXPAND_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SELECTION_MODEL_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SELECTION_MODEL_PROPERTY"/>
         /// </summary>
         public static string SELECTION_MODEL_PROPERTY => Clazz.GetField<string>("SELECTION_MODEL_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SHOWS_ROOT_HANDLES_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SHOWS_ROOT_HANDLES_PROPERTY"/>
         /// </summary>
         public static string SHOWS_ROOT_HANDLES_PROPERTY => Clazz.GetField<string>("SHOWS_ROOT_HANDLES_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#TOGGLE_CLICK_COUNT_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#TOGGLE_CLICK_COUNT_PROPERTY"/>
         /// </summary>
         public static string TOGGLE_CLICK_COUNT_PROPERTY => Clazz.GetField<string>("TOGGLE_CLICK_COUNT_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#TREE_MODEL_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#TREE_MODEL_PROPERTY"/>
         /// </summary>
         public static string TREE_MODEL_PROPERTY => Clazz.GetField<string>("TREE_MODEL_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#VISIBLE_ROW_COUNT_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#VISIBLE_ROW_COUNT_PROPERTY"/>
         /// </summary>
         public static string VISIBLE_ROW_COUNT_PROPERTY => Clazz.GetField<string>("VISIBLE_ROW_COUNT_PROPERTY");
         
@@ -133,672 +143,784 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getAnchorSelectionPath() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setAnchorSelectionPath(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getAnchorSelectionPath()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setAnchorSelectionPath(javax.swing.tree.TreePath)"/>
         /// </summary>
         public Javax.Swing.Tree.TreePath AnchorSelectionPath
         {
             get { return IExecute<Javax.Swing.Tree.TreePath>("getAnchorSelectionPath"); } set { IExecute("setAnchorSelectionPath", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getCellEditor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setCellEditor(javax.swing.tree.TreeCellEditor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getCellEditor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setCellEditor(javax.swing.tree.TreeCellEditor)"/>
         /// </summary>
         public Javax.Swing.Tree.TreeCellEditor CellEditor
         {
             get { return IExecute<Javax.Swing.Tree.TreeCellEditor>("getCellEditor"); } set { IExecute("setCellEditor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getCellRenderer() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setCellRenderer(javax.swing.tree.TreeCellRenderer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getCellRenderer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setCellRenderer(javax.swing.tree.TreeCellRenderer)"/>
         /// </summary>
         public Javax.Swing.Tree.TreeCellRenderer CellRenderer
         {
             get { return IExecute<Javax.Swing.Tree.TreeCellRenderer>("getCellRenderer"); } set { IExecute("setCellRenderer", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getDragEnabled() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setDragEnabled(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getDragEnabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setDragEnabled(boolean)"/>
         /// </summary>
         public bool DragEnabled
         {
             get { return IExecute<bool>("getDragEnabled"); } set { IExecute("setDragEnabled", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getEditingPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getEditingPath()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath EditingPath
         {
             get { return IExecute<Javax.Swing.Tree.TreePath>("getEditingPath"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getExpandsSelectedPaths() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setExpandsSelectedPaths(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getExpandsSelectedPaths()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setExpandsSelectedPaths(boolean)"/>
         /// </summary>
         public bool ExpandsSelectedPaths
         {
             get { return IExecute<bool>("getExpandsSelectedPaths"); } set { IExecute("setExpandsSelectedPaths", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getInvokesStopCellEditing() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setInvokesStopCellEditing(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getInvokesStopCellEditing()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setInvokesStopCellEditing(boolean)"/>
         /// </summary>
         public bool InvokesStopCellEditing
         {
             get { return IExecute<bool>("getInvokesStopCellEditing"); } set { IExecute("setInvokesStopCellEditing", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getLastSelectedPathComponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getLastSelectedPathComponent()"/> 
         /// </summary>
         public object LastSelectedPathComponent
         {
             get { return IExecute("getLastSelectedPathComponent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getLeadSelectionPath() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setLeadSelectionPath(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getLeadSelectionPath()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setLeadSelectionPath(javax.swing.tree.TreePath)"/>
         /// </summary>
         public Javax.Swing.Tree.TreePath LeadSelectionPath
         {
             get { return IExecute<Javax.Swing.Tree.TreePath>("getLeadSelectionPath"); } set { IExecute("setLeadSelectionPath", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getLeadSelectionRow() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getLeadSelectionRow()"/> 
         /// </summary>
         public int LeadSelectionRow
         {
             get { return IExecute<int>("getLeadSelectionRow"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getMaxSelectionRow() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getMaxSelectionRow()"/> 
         /// </summary>
         public int MaxSelectionRow
         {
             get { return IExecute<int>("getMaxSelectionRow"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getMinSelectionRow() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getMinSelectionRow()"/> 
         /// </summary>
         public int MinSelectionRow
         {
             get { return IExecute<int>("getMinSelectionRow"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getModel() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setModel(javax.swing.tree.TreeModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setModel(javax.swing.tree.TreeModel)"/>
         /// </summary>
         public Javax.Swing.Tree.TreeModel Model
         {
             get { return IExecute<Javax.Swing.Tree.TreeModel>("getModel"); } set { IExecute("setModel", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPreferredScrollableViewportSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPreferredScrollableViewportSize()"/> 
         /// </summary>
         public Java.Awt.Dimension PreferredScrollableViewportSize
         {
             get { return IExecute<Java.Awt.Dimension>("getPreferredScrollableViewportSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowCount()"/> 
         /// </summary>
         public int RowCount
         {
             get { return IExecute<int>("getRowCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowHeight() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setRowHeight(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setRowHeight(int)"/>
         /// </summary>
         public int RowHeight
         {
             get { return IExecute<int>("getRowHeight"); } set { IExecute("setRowHeight", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableTracksViewportHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableTracksViewportHeight()"/> 
         /// </summary>
         public bool ScrollableTracksViewportHeight
         {
             get { return IExecute<bool>("getScrollableTracksViewportHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableTracksViewportWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableTracksViewportWidth()"/> 
         /// </summary>
         public bool ScrollableTracksViewportWidth
         {
             get { return IExecute<bool>("getScrollableTracksViewportWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollsOnExpand() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setScrollsOnExpand(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollsOnExpand()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setScrollsOnExpand(boolean)"/>
         /// </summary>
         public bool ScrollsOnExpand
         {
             get { return IExecute<bool>("getScrollsOnExpand"); } set { IExecute("setScrollsOnExpand", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionCount()"/> 
         /// </summary>
         public int SelectionCount
         {
             get { return IExecute<int>("getSelectionCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionModel() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionModel(javax.swing.tree.TreeSelectionModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionModel(javax.swing.tree.TreeSelectionModel)"/>
         /// </summary>
         public Javax.Swing.Tree.TreeSelectionModel SelectionModel
         {
             get { return IExecute<Javax.Swing.Tree.TreeSelectionModel>("getSelectionModel"); } set { IExecute("setSelectionModel", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionPath() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionPath(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionPath()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionPath(javax.swing.tree.TreePath)"/>
         /// </summary>
         public Javax.Swing.Tree.TreePath SelectionPath
         {
             get { return IExecute<Javax.Swing.Tree.TreePath>("getSelectionPath"); } set { IExecute("setSelectionPath", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionPaths() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionPaths(javax.swing.tree.TreePath[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionPaths()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionPaths(javax.swing.tree.TreePath[])"/>
         /// </summary>
         public Javax.Swing.Tree.TreePath[] SelectionPaths
         {
             get { return IExecuteArray<Javax.Swing.Tree.TreePath>("getSelectionPaths"); } set { IExecute("setSelectionPaths", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionRows() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionRows(int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getSelectionRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionRows(int[])"/>
         /// </summary>
         public int[] SelectionRows
         {
             get { return IExecuteArray<int>("getSelectionRows"); } set { IExecute("setSelectionRows", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getShowsRootHandles() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setShowsRootHandles(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getShowsRootHandles()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setShowsRootHandles(boolean)"/>
         /// </summary>
         public bool ShowsRootHandles
         {
             get { return IExecute<bool>("getShowsRootHandles"); } set { IExecute("setShowsRootHandles", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getToggleClickCount() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setToggleClickCount(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getToggleClickCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setToggleClickCount(int)"/>
         /// </summary>
         public int ToggleClickCount
         {
             get { return IExecute<int>("getToggleClickCount"); } set { IExecute("setToggleClickCount", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getTreeExpansionListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getTreeExpansionListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.TreeExpansionListener[] TreeExpansionListeners
         {
             get { return IExecuteArray<Javax.Swing.Event.TreeExpansionListener>("getTreeExpansionListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getTreeSelectionListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getTreeSelectionListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.TreeSelectionListener[] TreeSelectionListeners
         {
             get { return IExecuteArray<Javax.Swing.Event.TreeSelectionListener>("getTreeSelectionListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getTreeWillExpandListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getTreeWillExpandListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.TreeWillExpandListener[] TreeWillExpandListeners
         {
             get { return IExecuteArray<Javax.Swing.Event.TreeWillExpandListener>("getTreeWillExpandListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getVisibleRowCount() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setVisibleRowCount(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getVisibleRowCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setVisibleRowCount(int)"/>
         /// </summary>
         public int VisibleRowCount
         {
             get { return IExecute<int>("getVisibleRowCount"); } set { IExecute("setVisibleRowCount", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#hasBeenExpanded(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#hasBeenExpanded(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool HasBeenExpanded(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<bool>("hasBeenExpanded", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isCollapsed(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isCollapsed(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsCollapsed(int arg0)
         {
             return IExecute<bool>("isCollapsed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isCollapsed(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isCollapsed(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsCollapsed(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<bool>("isCollapsed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEditable()
         {
             return IExecute<bool>("isEditable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditing()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditing()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEditing()
         {
             return IExecute<bool>("isEditing");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isExpanded(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isExpanded(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsExpanded(int arg0)
         {
             return IExecute<bool>("isExpanded", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isExpanded(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isExpanded(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsExpanded(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<bool>("isExpanded", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isFixedRowHeight()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isFixedRowHeight()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsFixedRowHeight()
         {
             return IExecute<bool>("isFixedRowHeight");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isLargeModel()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isLargeModel()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsLargeModel()
         {
             return IExecute<bool>("isLargeModel");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isPathEditable(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isPathEditable(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsPathEditable(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<bool>("isPathEditable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isPathSelected(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isPathSelected(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsPathSelected(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<bool>("isPathSelected", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isRootVisible()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isRootVisible()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsRootVisible()
         {
             return IExecute<bool>("isRootVisible");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isRowSelected(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isRowSelected(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsRowSelected(int arg0)
         {
             return IExecute<bool>("isRowSelected", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isSelectionEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isSelectionEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSelectionEmpty()
         {
             return IExecute<bool>("isSelectionEmpty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isVisible(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isVisible(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsVisible(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<bool>("isVisible", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#stopEditing()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#stopEditing()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool StopEditing()
         {
             return IExecute<bool>("stopEditing");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getDropLocation()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getDropLocation()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.JTree.DropLocation"/></returns>
         public Javax.Swing.JTree.DropLocation GetDropLocation()
         {
             return IExecute<Javax.Swing.JTree.DropLocation>("getDropLocation");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getClosestRowForLocation(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getClosestRowForLocation(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetClosestRowForLocation(int arg0, int arg1)
         {
             return IExecute<int>("getClosestRowForLocation", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowForLocation(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowForLocation(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRowForLocation(int arg0, int arg1)
         {
             return IExecute<int>("getRowForLocation", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowForPath(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowForPath(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRowForPath(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<int>("getRowForPath", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableBlockIncrement", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathBounds(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathBounds(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetPathBounds(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<Java.Awt.Rectangle>("getPathBounds", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowBounds(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowBounds(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetRowBounds(int arg0)
         {
             return IExecute<Java.Awt.Rectangle>("getRowBounds", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#convertValueToText(java.lang.Object,boolean,boolean,boolean,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#convertValueToText(java.lang.Object,boolean,boolean,boolean,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="bool"/></param>
+        /// <returns><see langword="string"/></returns>
         public string ConvertValueToText(object arg0, bool arg1, bool arg2, bool arg3, int arg4, bool arg5)
         {
             return IExecute<string>("convertValueToText", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getClosestPathForLocation(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getClosestPathForLocation(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetClosestPathForLocation(int arg0, int arg1)
         {
             return IExecute<Javax.Swing.Tree.TreePath>("getClosestPathForLocation", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getNextMatch(java.lang.String,int,javax.swing.text.Position$Bias)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getNextMatch(java.lang.String,int,javax.swing.text.Position$Bias)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
+        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetNextMatch(string arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
             return IExecute<Javax.Swing.Tree.TreePath>("getNextMatch", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathForLocation(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathForLocation(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetPathForLocation(int arg0, int arg1)
         {
             return IExecute<Javax.Swing.Tree.TreePath>("getPathForLocation", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathForRow(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathForRow(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetPathForRow(int arg0)
         {
             return IExecute<Javax.Swing.Tree.TreePath>("getPathForRow", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionInterval(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionInterval(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void AddSelectionInterval(int arg0, int arg1)
         {
             IExecute("addSelectionInterval", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionPath(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionPath(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void AddSelectionPath(Javax.Swing.Tree.TreePath arg0)
         {
             IExecute("addSelectionPath", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionPaths(javax.swing.tree.TreePath[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionPaths(javax.swing.tree.TreePath[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void AddSelectionPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
             IExecute("addSelectionPaths", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionRow(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionRow(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void AddSelectionRow(int arg0)
         {
             IExecute("addSelectionRow", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionRows(int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionRows(int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
         public void AddSelectionRows(int[] arg0)
         {
             IExecute("addSelectionRows", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addTreeExpansionListener(javax.swing.event.TreeExpansionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addTreeExpansionListener(javax.swing.event.TreeExpansionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionListener"/></param>
         public void AddTreeExpansionListener(Javax.Swing.Event.TreeExpansionListener arg0)
         {
             IExecute("addTreeExpansionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addTreeSelectionListener(javax.swing.event.TreeSelectionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addTreeSelectionListener(javax.swing.event.TreeSelectionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionListener"/></param>
         public void AddTreeSelectionListener(Javax.Swing.Event.TreeSelectionListener arg0)
         {
             IExecute("addTreeSelectionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addTreeWillExpandListener(javax.swing.event.TreeWillExpandListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addTreeWillExpandListener(javax.swing.event.TreeWillExpandListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeWillExpandListener"/></param>
         public void AddTreeWillExpandListener(Javax.Swing.Event.TreeWillExpandListener arg0)
         {
             IExecute("addTreeWillExpandListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#cancelEditing()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#cancelEditing()"/>
         /// </summary>
         public void CancelEditing()
         {
             IExecute("cancelEditing");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#clearSelection()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#clearSelection()"/>
         /// </summary>
         public void ClearSelection()
         {
             IExecute("clearSelection");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#collapsePath(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#collapsePath(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void CollapsePath(Javax.Swing.Tree.TreePath arg0)
         {
             IExecute("collapsePath", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#collapseRow(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#collapseRow(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void CollapseRow(int arg0)
         {
             IExecute("collapseRow", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#expandPath(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#expandPath(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void ExpandPath(Javax.Swing.Tree.TreePath arg0)
         {
             IExecute("expandPath", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#expandRow(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#expandRow(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void ExpandRow(int arg0)
         {
             IExecute("expandRow", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeCollapsed(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeCollapsed(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void FireTreeCollapsed(Javax.Swing.Tree.TreePath arg0)
         {
             IExecute("fireTreeCollapsed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeExpanded(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeExpanded(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void FireTreeExpanded(Javax.Swing.Tree.TreePath arg0)
         {
             IExecute("fireTreeExpanded", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeWillCollapse(javax.swing.tree.TreePath) throws javax.swing.tree.ExpandVetoException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeWillCollapse(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
         public void FireTreeWillCollapse(Javax.Swing.Tree.TreePath arg0)
         {
             IExecute("fireTreeWillCollapse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeWillExpand(javax.swing.tree.TreePath) throws javax.swing.tree.ExpandVetoException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#fireTreeWillExpand(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
         public void FireTreeWillExpand(Javax.Swing.Tree.TreePath arg0)
         {
             IExecute("fireTreeWillExpand", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#makeVisible(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#makeVisible(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void MakeVisible(Javax.Swing.Tree.TreePath arg0)
         {
             IExecute("makeVisible", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionInterval(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionInterval(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void RemoveSelectionInterval(int arg0, int arg1)
         {
             IExecute("removeSelectionInterval", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionPath(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionPath(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void RemoveSelectionPath(Javax.Swing.Tree.TreePath arg0)
         {
             IExecute("removeSelectionPath", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionPaths(javax.swing.tree.TreePath[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionPaths(javax.swing.tree.TreePath[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void RemoveSelectionPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
             IExecute("removeSelectionPaths", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionRow(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionRow(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void RemoveSelectionRow(int arg0)
         {
             IExecute("removeSelectionRow", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionRows(int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionRows(int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
         public void RemoveSelectionRows(int[] arg0)
         {
             IExecute("removeSelectionRows", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeTreeExpansionListener(javax.swing.event.TreeExpansionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeTreeExpansionListener(javax.swing.event.TreeExpansionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionListener"/></param>
         public void RemoveTreeExpansionListener(Javax.Swing.Event.TreeExpansionListener arg0)
         {
             IExecute("removeTreeExpansionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeTreeSelectionListener(javax.swing.event.TreeSelectionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeTreeSelectionListener(javax.swing.event.TreeSelectionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionListener"/></param>
         public void RemoveTreeSelectionListener(Javax.Swing.Event.TreeSelectionListener arg0)
         {
             IExecute("removeTreeSelectionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeTreeWillExpandListener(javax.swing.event.TreeWillExpandListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeTreeWillExpandListener(javax.swing.event.TreeWillExpandListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeWillExpandListener"/></param>
         public void RemoveTreeWillExpandListener(Javax.Swing.Event.TreeWillExpandListener arg0)
         {
             IExecute("removeTreeWillExpandListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#scrollPathToVisible(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#scrollPathToVisible(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void ScrollPathToVisible(Javax.Swing.Tree.TreePath arg0)
         {
             IExecute("scrollPathToVisible", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#scrollRowToVisible(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#scrollRowToVisible(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void ScrollRowToVisible(int arg0)
         {
             IExecute("scrollRowToVisible", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setEditable(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setEditable(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetEditable(bool arg0)
         {
             IExecute("setEditable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setLargeModel(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setLargeModel(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetLargeModel(bool arg0)
         {
             IExecute("setLargeModel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setRootVisible(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setRootVisible(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetRootVisible(bool arg0)
         {
             IExecute("setRootVisible", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionInterval(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionInterval(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetSelectionInterval(int arg0, int arg1)
         {
             IExecute("setSelectionInterval", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionRow(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionRow(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetSelectionRow(int arg0)
         {
             IExecute("setSelectionRow", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setUI(javax.swing.plaf.TreeUI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setUI(javax.swing.plaf.TreeUI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.TreeUI"/></param>
         public void SetUI(Javax.Swing.Plaf.TreeUI arg0)
         {
             IExecute("setUI", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#startEditingAtPath(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#startEditingAtPath(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void StartEditingAtPath(Javax.Swing.Tree.TreePath arg0)
         {
             IExecute("startEditingAtPath", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#treeDidChange()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#treeDidChange()"/>
         /// </summary>
         public void TreeDidChange()
         {
@@ -829,14 +951,14 @@ namespace Javax.Swing
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DropLocation.html#getChildIndex() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DropLocation.html#getChildIndex()"/> 
             /// </summary>
             public int ChildIndex
             {
                 get { return IExecute<int>("getChildIndex"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DropLocation.html#getPath() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DropLocation.html#getPath()"/> 
             /// </summary>
             public Javax.Swing.Tree.TreePath Path
             {
@@ -854,8 +976,10 @@ namespace Javax.Swing
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DynamicUtilTreeNode.html#<init>(java.lang.Object,java.lang.Object)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DynamicUtilTreeNode.html#%3Cinit%3E(java.lang.Object,java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg1"><see langword="object"/></param>
             public DynamicUtilTreeNode(object arg0, object arg1)
                 : base(arg0, arg1)
             {
@@ -873,8 +997,10 @@ namespace Javax.Swing
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DynamicUtilTreeNode.html#createChildren(javax.swing.tree.DefaultMutableTreeNode,java.lang.Object)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DynamicUtilTreeNode.html#createChildren(javax.swing.tree.DefaultMutableTreeNode,java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Tree.DefaultMutableTreeNode"/></param>
+            /// <param name="arg1"><see langword="object"/></param>
             public static void CreateChildren(Javax.Swing.Tree.DefaultMutableTreeNode arg0, object arg1)
             {
                 SExecute("createChildren", arg0, arg1);

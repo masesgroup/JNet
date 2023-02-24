@@ -42,15 +42,25 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#getByAddress(java.lang.String,byte[],int) throws java.net.UnknownHostException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#getByAddress(java.lang.String,byte[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Net.Inet6Address"/></returns>
+        /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.Inet6Address GetByAddress(string arg0, byte[] arg1, int arg2)
         {
             return SExecute<Java.Net.Inet6Address>("getByAddress", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#getByAddress(java.lang.String,byte[],java.net.NetworkInterface) throws java.net.UnknownHostException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#getByAddress(java.lang.String,byte[],java.net.NetworkInterface)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see cref="Java.Net.NetworkInterface"/></param>
+        /// <returns><see cref="Java.Net.Inet6Address"/></returns>
+        /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.Inet6Address GetByAddress(string arg0, byte[] arg1, Java.Net.NetworkInterface arg2)
         {
             return SExecute<Java.Net.Inet6Address>("getByAddress", arg0, arg1, arg2);
@@ -60,22 +70,24 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#getScopedInterface() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#getScopedInterface()"/> 
         /// </summary>
         public Java.Net.NetworkInterface ScopedInterface
         {
             get { return IExecute<Java.Net.NetworkInterface>("getScopedInterface"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#getScopeId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#getScopeId()"/> 
         /// </summary>
         public int ScopeId
         {
             get { return IExecute<int>("getScopeId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#isIPv4CompatibleAddress()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#isIPv4CompatibleAddress()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsIPv4CompatibleAddress()
         {
             return IExecute<bool>("isIPv4CompatibleAddress");

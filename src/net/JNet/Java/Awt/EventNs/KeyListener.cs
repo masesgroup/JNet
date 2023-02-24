@@ -21,22 +21,32 @@ using System;
 
 namespace Java.Awt.EventNs
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html"/>
+    /// </summary>
     public interface IKeyListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyTyped(java.awt.event.KeyEvent)"/>
+        /// </summary>
         void KeyTyped(KeyEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyPressed(java.awt.event.KeyEvent)"/>
+        /// </summary>
         void KeyPressed(KeyEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyReleased(java.awt.event.KeyEvent)"/>
+        /// </summary>
         void KeyReleased(KeyEvent e);
     }
 
     /// <summary>
-    /// Listener for KeyListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IKeyListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IKeyListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class KeyListener : IKeyListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.awt.event.JNetKeyListener";
 
         readonly Action<KeyEvent> KeyTypedFunction = null;
@@ -95,17 +105,17 @@ namespace Java.Awt.EventNs
         {
             OnKeyReleased(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IKeyListener.KeyTyped(KeyEvent)"/>
         public virtual void KeyTyped(KeyEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IKeyListener.KeyPressed(KeyEvent)"/>
         public virtual void KeyPressed(KeyEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IKeyListener.KeyReleased(KeyEvent)"/>
         public virtual void KeyReleased(KeyEvent e)
         {
             

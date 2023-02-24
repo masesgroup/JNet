@@ -46,8 +46,14 @@ namespace Org.W3c.Dom.Xpath
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathExpression.html#evaluate(org.w3c.dom.Node,short,java.lang.Object) throws org.w3c.dom.xpath.XPathException,org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathExpression.html#evaluate(org.w3c.dom.Node,short,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg1"><see langword="short"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public object Evaluate(Org.W3c.Dom.Node arg0, short arg1, object arg2)
         {
             return IExecute("evaluate", arg0, arg1, arg2);

@@ -33,6 +33,9 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.AbstractChronology"/> to <see cref="Java.Time.Chrono.Chronology"/>
+        /// </summary>
         public static implicit operator Java.Time.Chrono.Chronology(Java.Time.Chrono.AbstractChronology t) => t.Cast<Java.Time.Chrono.Chronology>();
         
         #endregion
@@ -47,15 +50,19 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/AbstractChronology.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/AbstractChronology.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/AbstractChronology.html#compareTo(java.time.chrono.Chronology)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/AbstractChronology.html#compareTo(java.time.chrono.Chronology)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.Chronology"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Java.Time.Chrono.Chronology arg0)
         {
             return IExecute<int>("compareTo", arg0);

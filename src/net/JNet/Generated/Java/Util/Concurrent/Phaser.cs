@@ -30,22 +30,26 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public Phaser(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#<init>(java.util.concurrent.Phaser,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#%3Cinit%3E(java.util.concurrent.Phaser,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Phaser"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public Phaser(Java.Util.Concurrent.Phaser arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#<init>(java.util.concurrent.Phaser)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#%3Cinit%3E(java.util.concurrent.Phaser)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Phaser"/></param>
         public Phaser(Java.Util.Concurrent.Phaser arg0)
             : base(arg0)
         {
@@ -67,105 +71,122 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getArrivedParties() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getArrivedParties()"/> 
         /// </summary>
         public int ArrivedParties
         {
             get { return IExecute<int>("getArrivedParties"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getParent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getParent()"/> 
         /// </summary>
         public Java.Util.Concurrent.Phaser Parent
         {
             get { return IExecute<Java.Util.Concurrent.Phaser>("getParent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getPhase() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getPhase()"/> 
         /// </summary>
         public int Phase
         {
             get { return IExecute<int>("getPhase"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getRegisteredParties() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getRegisteredParties()"/> 
         /// </summary>
         public int RegisteredParties
         {
             get { return IExecute<int>("getRegisteredParties"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getRoot() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getRoot()"/> 
         /// </summary>
         public Java.Util.Concurrent.Phaser Root
         {
             get { return IExecute<Java.Util.Concurrent.Phaser>("getRoot"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getUnarrivedParties() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getUnarrivedParties()"/> 
         /// </summary>
         public int UnarrivedParties
         {
             get { return IExecute<int>("getUnarrivedParties"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#isTerminated()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#isTerminated()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsTerminated()
         {
             return IExecute<bool>("isTerminated");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arrive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arrive()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Arrive()
         {
             return IExecute<int>("arrive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndAwaitAdvance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndAwaitAdvance()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int ArriveAndAwaitAdvance()
         {
             return IExecute<int>("arriveAndAwaitAdvance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndDeregister()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndDeregister()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int ArriveAndDeregister()
         {
             return IExecute<int>("arriveAndDeregister");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvance(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvance(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int AwaitAdvance(int arg0)
         {
             return IExecute<int>("awaitAdvance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public int AwaitAdvanceInterruptibly(int arg0)
         {
             return IExecute<int>("awaitAdvanceInterruptibly", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#bulkRegister(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#bulkRegister(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int BulkRegister(int arg0)
         {
             return IExecute<int>("bulkRegister", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#register()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#register()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Register()
         {
             return IExecute<int>("register");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#forceTermination()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#forceTermination()"/>
         /// </summary>
         public void ForceTermination()
         {

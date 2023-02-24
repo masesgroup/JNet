@@ -33,6 +33,9 @@ namespace Java.Lang.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Management.ThreadMXBean"/> to <see cref="Java.Lang.Management.PlatformManagedObject"/>
+        /// </summary>
         public static implicit operator Java.Lang.Management.PlatformManagedObject(Java.Lang.Management.ThreadMXBean t) => t.Cast<Java.Lang.Management.PlatformManagedObject>();
         
         #endregion
@@ -47,204 +50,254 @@ namespace Java.Lang.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getAllThreadIds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getAllThreadIds()"/> 
         /// </summary>
         public long[] AllThreadIds
         {
             get { return IExecuteArray<long>("getAllThreadIds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getCurrentThreadCpuTime() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getCurrentThreadCpuTime()"/> 
         /// </summary>
         public long CurrentThreadCpuTime
         {
             get { return IExecute<long>("getCurrentThreadCpuTime"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getCurrentThreadUserTime() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getCurrentThreadUserTime()"/> 
         /// </summary>
         public long CurrentThreadUserTime
         {
             get { return IExecute<long>("getCurrentThreadUserTime"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getDaemonThreadCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getDaemonThreadCount()"/> 
         /// </summary>
         public int DaemonThreadCount
         {
             get { return IExecute<int>("getDaemonThreadCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getPeakThreadCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getPeakThreadCount()"/> 
         /// </summary>
         public int PeakThreadCount
         {
             get { return IExecute<int>("getPeakThreadCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadCount()"/> 
         /// </summary>
         public int ThreadCount
         {
             get { return IExecute<int>("getThreadCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getTotalStartedThreadCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getTotalStartedThreadCount()"/> 
         /// </summary>
         public long TotalStartedThreadCount
         {
             get { return IExecute<long>("getTotalStartedThreadCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isCurrentThreadCpuTimeSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isCurrentThreadCpuTimeSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCurrentThreadCpuTimeSupported()
         {
             return IExecute<bool>("isCurrentThreadCpuTimeSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isObjectMonitorUsageSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isObjectMonitorUsageSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsObjectMonitorUsageSupported()
         {
             return IExecute<bool>("isObjectMonitorUsageSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isSynchronizerUsageSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isSynchronizerUsageSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSynchronizerUsageSupported()
         {
             return IExecute<bool>("isSynchronizerUsageSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadContentionMonitoringEnabled()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadContentionMonitoringEnabled()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsThreadContentionMonitoringEnabled()
         {
             return IExecute<bool>("isThreadContentionMonitoringEnabled");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadContentionMonitoringSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadContentionMonitoringSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsThreadContentionMonitoringSupported()
         {
             return IExecute<bool>("isThreadContentionMonitoringSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadCpuTimeEnabled()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadCpuTimeEnabled()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsThreadCpuTimeEnabled()
         {
             return IExecute<bool>("isThreadCpuTimeEnabled");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadCpuTimeSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadCpuTimeSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsThreadCpuTimeSupported()
         {
             return IExecute<bool>("isThreadCpuTimeSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo GetThreadInfo(long arg0, int arg1)
         {
             return IExecute<Java.Lang.Management.ThreadInfo>("getThreadInfo", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo GetThreadInfo(long arg0)
         {
             return IExecute<Java.Lang.Management.ThreadInfo>("getThreadInfo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#dumpAllThreads(boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#dumpAllThreads(boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo[] DumpAllThreads(bool arg0, bool arg1)
         {
             return IExecuteArray<Java.Lang.Management.ThreadInfo>("dumpAllThreads", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[],boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[],boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo[] GetThreadInfo(long[] arg0, bool arg1, bool arg2)
         {
             return IExecuteArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo[] GetThreadInfo(long[] arg0, int arg1)
         {
             return IExecuteArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo[] GetThreadInfo(long[] arg0)
         {
             return IExecuteArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadCpuTime(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadCpuTime(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public long GetThreadCpuTime(long arg0)
         {
             return IExecute<long>("getThreadCpuTime", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadUserTime(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadUserTime(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public long GetThreadUserTime(long arg0)
         {
             return IExecute<long>("getThreadUserTime", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#findDeadlockedThreads()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#findDeadlockedThreads()"/>
         /// </summary>
+        
+        /// <returns><see cref="long"/></returns>
         public long[] FindDeadlockedThreads()
         {
             return IExecuteArray<long>("findDeadlockedThreads");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#findMonitorDeadlockedThreads()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#findMonitorDeadlockedThreads()"/>
         /// </summary>
+        
+        /// <returns><see cref="long"/></returns>
         public long[] FindMonitorDeadlockedThreads()
         {
             return IExecuteArray<long>("findMonitorDeadlockedThreads");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#resetPeakThreadCount()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#resetPeakThreadCount()"/>
         /// </summary>
         public void ResetPeakThreadCount()
         {
             IExecute("resetPeakThreadCount");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#setThreadContentionMonitoringEnabled(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#setThreadContentionMonitoringEnabled(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetThreadContentionMonitoringEnabled(bool arg0)
         {
             IExecute("setThreadContentionMonitoringEnabled", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#setThreadCpuTimeEnabled(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#setThreadCpuTimeEnabled(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetThreadCpuTimeEnabled(bool arg0)
         {
             IExecute("setThreadCpuTimeEnabled", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#dumpAllThreads(boolean,boolean,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#dumpAllThreads(boolean,boolean,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo[] DumpAllThreads(bool arg0, bool arg1, int arg2)
         {
             return IExecuteArray<Java.Lang.Management.ThreadInfo>("dumpAllThreads", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[],boolean,boolean,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[],boolean,boolean,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo[] GetThreadInfo(long[] arg0, bool arg1, bool arg2, int arg3)
         {
             return IExecuteArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", arg0, arg1, arg2, arg3);

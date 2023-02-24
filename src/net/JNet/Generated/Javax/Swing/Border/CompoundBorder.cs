@@ -30,8 +30,10 @@ namespace Javax.Swing.Border
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/CompoundBorder.html#<init>(javax.swing.border.Border,javax.swing.border.Border)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/CompoundBorder.html#%3Cinit%3E(javax.swing.border.Border,javax.swing.border.Border)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Border.Border"/></param>
         public CompoundBorder(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
             : base(arg0, arg1)
         {
@@ -53,14 +55,14 @@ namespace Javax.Swing.Border
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/CompoundBorder.html#getInsideBorder() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/CompoundBorder.html#getInsideBorder()"/> 
         /// </summary>
         public Javax.Swing.Border.Border InsideBorder
         {
             get { return IExecute<Javax.Swing.Border.Border>("getInsideBorder"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/CompoundBorder.html#getOutsideBorder() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/CompoundBorder.html#getOutsideBorder()"/> 
         /// </summary>
         public Javax.Swing.Border.Border OutsideBorder
         {

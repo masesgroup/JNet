@@ -33,49 +33,52 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.StandardOpenOption"/> to <see cref="Java.Nio.File.OpenOption"/>
+        /// </summary>
         public static implicit operator Java.Nio.File.OpenOption(Java.Nio.File.StandardOpenOption t) => t.Cast<Java.Nio.File.OpenOption>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#APPEND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#APPEND"/>
         /// </summary>
         public static Java.Nio.File.StandardOpenOption APPEND => Clazz.GetField<Java.Nio.File.StandardOpenOption>("APPEND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#CREATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#CREATE"/>
         /// </summary>
         public static Java.Nio.File.StandardOpenOption CREATE => Clazz.GetField<Java.Nio.File.StandardOpenOption>("CREATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#CREATE_NEW
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#CREATE_NEW"/>
         /// </summary>
         public static Java.Nio.File.StandardOpenOption CREATE_NEW => Clazz.GetField<Java.Nio.File.StandardOpenOption>("CREATE_NEW");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#DELETE_ON_CLOSE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#DELETE_ON_CLOSE"/>
         /// </summary>
         public static Java.Nio.File.StandardOpenOption DELETE_ON_CLOSE => Clazz.GetField<Java.Nio.File.StandardOpenOption>("DELETE_ON_CLOSE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#DSYNC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#DSYNC"/>
         /// </summary>
         public static Java.Nio.File.StandardOpenOption DSYNC => Clazz.GetField<Java.Nio.File.StandardOpenOption>("DSYNC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#READ
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#READ"/>
         /// </summary>
         public static Java.Nio.File.StandardOpenOption READ => Clazz.GetField<Java.Nio.File.StandardOpenOption>("READ");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#SPARSE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#SPARSE"/>
         /// </summary>
         public static Java.Nio.File.StandardOpenOption SPARSE => Clazz.GetField<Java.Nio.File.StandardOpenOption>("SPARSE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#SYNC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#SYNC"/>
         /// </summary>
         public static Java.Nio.File.StandardOpenOption SYNC => Clazz.GetField<Java.Nio.File.StandardOpenOption>("SYNC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#TRUNCATE_EXISTING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#TRUNCATE_EXISTING"/>
         /// </summary>
         public static Java.Nio.File.StandardOpenOption TRUNCATE_EXISTING => Clazz.GetField<Java.Nio.File.StandardOpenOption>("TRUNCATE_EXISTING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#WRITE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#WRITE"/>
         /// </summary>
         public static Java.Nio.File.StandardOpenOption WRITE => Clazz.GetField<Java.Nio.File.StandardOpenOption>("WRITE");
         
@@ -83,8 +86,10 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.StandardOpenOption"/></returns>
         public static Java.Nio.File.StandardOpenOption[] Values()
         {
             return SExecuteArray<Java.Nio.File.StandardOpenOption>("values");

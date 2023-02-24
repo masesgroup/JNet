@@ -30,15 +30,21 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public PSSParameterSpec(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#<init>(java.lang.String,java.lang.String,java.security.spec.AlgorithmParameterSpec,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#%3Cinit%3E(java.lang.String,java.lang.String,java.security.spec.AlgorithmParameterSpec,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public PSSParameterSpec(string arg0, string arg1, Java.Security.Spec.AlgorithmParameterSpec arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -47,17 +53,20 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Spec.PSSParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Java.Security.Spec.PSSParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#TRAILER_FIELD_BC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#TRAILER_FIELD_BC"/>
         /// </summary>
         public static int TRAILER_FIELD_BC => Clazz.GetField<int>("TRAILER_FIELD_BC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#DEFAULT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#DEFAULT"/>
         /// </summary>
         public static Java.Security.Spec.PSSParameterSpec DEFAULT => Clazz.GetField<Java.Security.Spec.PSSParameterSpec>("DEFAULT");
         
@@ -69,35 +78,35 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getDigestAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getDigestAlgorithm()"/> 
         /// </summary>
         public string DigestAlgorithm
         {
             get { return IExecute<string>("getDigestAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getMGFAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getMGFAlgorithm()"/> 
         /// </summary>
         public string MGFAlgorithm
         {
             get { return IExecute<string>("getMGFAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getMGFParameters() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getMGFParameters()"/> 
         /// </summary>
         public Java.Security.Spec.AlgorithmParameterSpec MGFParameters
         {
             get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getMGFParameters"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getSaltLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getSaltLength()"/> 
         /// </summary>
         public int SaltLength
         {
             get { return IExecute<int>("getSaltLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getTrailerField() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#getTrailerField()"/> 
         /// </summary>
         public int TrailerField
         {

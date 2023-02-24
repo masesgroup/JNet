@@ -30,22 +30,26 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public FieldPosition(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#<init>(java.text.Format$Field,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#%3Cinit%3E(java.text.Format$Field,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.Format.Field"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public FieldPosition(Java.Text.Format.Field arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#<init>(java.text.Format$Field)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#%3Cinit%3E(java.text.Format$Field)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.Format.Field"/></param>
         public FieldPosition(Java.Text.Format.Field arg0)
             : base(arg0)
         {
@@ -67,28 +71,28 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#getBeginIndex() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#setBeginIndex(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#getBeginIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#setBeginIndex(int)"/>
         /// </summary>
         public int BeginIndex
         {
             get { return IExecute<int>("getBeginIndex"); } set { IExecute("setBeginIndex", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#getEndIndex() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#setEndIndex(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#getEndIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#setEndIndex(int)"/>
         /// </summary>
         public int EndIndex
         {
             get { return IExecute<int>("getEndIndex"); } set { IExecute("setEndIndex", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#getField() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#getField()"/> 
         /// </summary>
         public int Field
         {
             get { return IExecute<int>("getField"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#getFieldAttribute() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#getFieldAttribute()"/> 
         /// </summary>
         public Java.Text.Format.Field FieldAttribute
         {

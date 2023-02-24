@@ -30,43 +30,64 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#<init>(byte[],int,int,java.net.InetAddress,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,int,java.net.InetAddress,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public DatagramPacket(byte[] arg0, int arg1, int arg2, Java.Net.InetAddress arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#<init>(byte[],int,int,java.net.SocketAddress)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,int,java.net.SocketAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Net.SocketAddress"/></param>
         public DatagramPacket(byte[] arg0, int arg1, int arg2, Java.Net.SocketAddress arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#<init>(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public DatagramPacket(byte[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#<init>(byte[],int,java.net.InetAddress,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,java.net.InetAddress,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public DatagramPacket(byte[] arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#<init>(byte[],int,java.net.SocketAddress)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,java.net.SocketAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Net.SocketAddress"/></param>
         public DatagramPacket(byte[] arg0, int arg1, Java.Net.SocketAddress arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#<init>(byte[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public DatagramPacket(byte[] arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -88,50 +109,53 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getAddress() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setAddress(java.net.InetAddress)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getAddress()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setAddress(java.net.InetAddress)"/>
         /// </summary>
         public Java.Net.InetAddress Address
         {
             get { return IExecute<Java.Net.InetAddress>("getAddress"); } set { IExecute("setAddress", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getData() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setData(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setData(byte[])"/>
         /// </summary>
         public byte[] Data
         {
             get { return IExecuteArray<byte>("getData"); } set { IExecute("setData", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getLength() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setLength(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getLength()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setLength(int)"/>
         /// </summary>
         public int Length
         {
             get { return IExecute<int>("getLength"); } set { IExecute("setLength", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getOffset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getOffset()"/> 
         /// </summary>
         public int Offset
         {
             get { return IExecute<int>("getOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getPort() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setPort(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getPort()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setPort(int)"/>
         /// </summary>
         public int Port
         {
             get { return IExecute<int>("getPort"); } set { IExecute("setPort", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getSocketAddress() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setSocketAddress(java.net.SocketAddress)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#getSocketAddress()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setSocketAddress(java.net.SocketAddress)"/>
         /// </summary>
         public Java.Net.SocketAddress SocketAddress
         {
             get { return IExecute<Java.Net.SocketAddress>("getSocketAddress"); } set { IExecute("setSocketAddress", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setData(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setData(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void SetData(byte[] arg0, int arg1, int arg2)
         {
             IExecute("setData", arg0, arg1, arg2);

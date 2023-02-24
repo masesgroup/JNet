@@ -30,8 +30,10 @@ namespace Java.Util.Prefs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeEvent.html#<init>(java.util.prefs.Preferences,java.util.prefs.Preferences)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeEvent.html#%3Cinit%3E(java.util.prefs.Preferences,java.util.prefs.Preferences)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.Preferences"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Prefs.Preferences"/></param>
         public NodeChangeEvent(Java.Util.Prefs.Preferences arg0, Java.Util.Prefs.Preferences arg1)
             : base(arg0, arg1)
         {
@@ -53,14 +55,14 @@ namespace Java.Util.Prefs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeEvent.html#getChild() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeEvent.html#getChild()"/> 
         /// </summary>
         public Java.Util.Prefs.Preferences Child
         {
             get { return IExecute<Java.Util.Prefs.Preferences>("getChild"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeEvent.html#getParent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeEvent.html#getParent()"/> 
         /// </summary>
         public Java.Util.Prefs.Preferences Parent
         {

@@ -33,7 +33,13 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Openmbean.CompositeDataSupport"/> to <see cref="Javax.Management.Openmbean.CompositeData"/>
+        /// </summary>
         public static implicit operator Javax.Management.Openmbean.CompositeData(Javax.Management.Openmbean.CompositeDataSupport t) => t.Cast<Javax.Management.Openmbean.CompositeData>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Openmbean.CompositeDataSupport"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Openmbean.CompositeDataSupport t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -48,29 +54,37 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#containsKey(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#containsKey(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsKey(string arg0)
         {
             return IExecute<bool>("containsKey", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#containsValue(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#containsValue(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsValue(object arg0)
         {
             return IExecute<bool>("containsValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#get(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#get(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Get(string arg0)
         {
             return IExecute("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#getAll(java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#getAll(java.lang.String[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
         public object[] GetAll(string[] arg0)
         {
             return IExecuteArray<object>("getAll", arg0);

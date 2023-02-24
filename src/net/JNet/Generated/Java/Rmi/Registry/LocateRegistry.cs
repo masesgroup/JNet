@@ -42,50 +42,73 @@ namespace Java.Rmi.Registry
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry() throws java.rmi.RemoteException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry()"/> 
         /// </summary>
         public static Java.Rmi.Registry.Registry Registry
         {
             get { return SExecute<Java.Rmi.Registry.Registry>("getRegistry"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#createRegistry(int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory) throws java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#createRegistry(int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
+        /// <param name="arg2"><see cref="Java.Rmi.Server.RMIServerSocketFactory"/></param>
+        /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Registry.Registry CreateRegistry(int arg0, Java.Rmi.Server.RMIClientSocketFactory arg1, Java.Rmi.Server.RMIServerSocketFactory arg2)
         {
             return SExecute<Java.Rmi.Registry.Registry>("createRegistry", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#createRegistry(int) throws java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#createRegistry(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Registry.Registry CreateRegistry(int arg0)
         {
             return SExecute<Java.Rmi.Registry.Registry>("createRegistry", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(int) throws java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Registry.Registry GetRegistry(int arg0)
         {
             return SExecute<Java.Rmi.Registry.Registry>("getRegistry", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String,int,java.rmi.server.RMIClientSocketFactory) throws java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String,int,java.rmi.server.RMIClientSocketFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
+        /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Registry.Registry GetRegistry(string arg0, int arg1, Java.Rmi.Server.RMIClientSocketFactory arg2)
         {
             return SExecute<Java.Rmi.Registry.Registry>("getRegistry", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String,int) throws java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Registry.Registry GetRegistry(string arg0, int arg1)
         {
             return SExecute<Java.Rmi.Registry.Registry>("getRegistry", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String) throws java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Registry.Registry GetRegistry(string arg0)
         {
             return SExecute<Java.Rmi.Registry.Registry>("getRegistry", arg0);

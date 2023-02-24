@@ -21,18 +21,24 @@ using System;
 
 namespace Java.Awt.Dnd
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html"/>
+    /// </summary>
     public interface IDragGestureListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html#dragGestureRecognized(java.awt.dnd.DragGestureEvent)"/>
+        /// </summary>
         void DragGestureRecognized(DragGestureEvent dge);
     }
 
     /// <summary>
-    /// Listener for DragGestureListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IDragGestureListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IDragGestureListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class DragGestureListener : IDragGestureListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.awt.dnd.JNetDragGestureListener";
 
         readonly Action<DragGestureEvent> DragGestureRecognizedFunction = null;
@@ -60,7 +66,7 @@ namespace Java.Awt.Dnd
         {
             OnDragGestureRecognized(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IDragGestureListener.DragGestureRecognized(DragGestureEvent)"/>
         public virtual void DragGestureRecognized(DragGestureEvent dge)
         {
 

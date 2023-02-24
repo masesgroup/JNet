@@ -33,7 +33,13 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Dnd.MouseDragGestureRecognizer"/> to <see cref="Java.Awt.EventNs.MouseListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseListener(Java.Awt.Dnd.MouseDragGestureRecognizer t) => t.Cast<Java.Awt.EventNs.MouseListener>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Dnd.MouseDragGestureRecognizer"/> to <see cref="Java.Awt.EventNs.MouseMotionListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseMotionListener(Java.Awt.Dnd.MouseDragGestureRecognizer t) => t.Cast<Java.Awt.EventNs.MouseMotionListener>();
         
         #endregion
@@ -48,50 +54,57 @@ namespace Java.Awt.Dnd
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mouseClicked(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mouseClicked(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseClicked", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mouseDragged(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mouseDragged(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseDragged", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mouseEntered(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mouseEntered(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseEntered", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mouseExited(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mouseExited(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseExited", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mouseMoved(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mouseMoved(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseMoved", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mousePressed(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mousePressed(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mousePressed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mouseReleased(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html#mouseReleased(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseReleased", arg0);

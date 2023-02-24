@@ -33,13 +33,16 @@ namespace Java.Rmi.Registry
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Registry.Registry"/> to <see cref="Java.Rmi.Remote"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Remote(Java.Rmi.Registry.Registry t) => t.Cast<Java.Rmi.Remote>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#REGISTRY_PORT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#REGISTRY_PORT"/>
         /// </summary>
         public static int REGISTRY_PORT => Clazz.GetField<int>("REGISTRY_PORT");
         
@@ -51,36 +54,58 @@ namespace Java.Rmi.Registry
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#list() throws java.rmi.RemoteException,java.rmi.AccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#list()"/>
         /// </summary>
+        
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Rmi.AccessException"/>
         public string[] List()
         {
             return IExecuteArray<string>("list");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#lookup(java.lang.String) throws java.rmi.RemoteException,java.rmi.NotBoundException,java.rmi.AccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#lookup(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Rmi.Remote"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Rmi.NotBoundException"/>
+        /// <exception cref="Java.Rmi.AccessException"/>
         public Java.Rmi.Remote Lookup(string arg0)
         {
             return IExecute<Java.Rmi.Remote>("lookup", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#bind(java.lang.String,java.rmi.Remote) throws java.rmi.RemoteException,java.rmi.AlreadyBoundException,java.rmi.AccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#bind(java.lang.String,java.rmi.Remote)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Rmi.AlreadyBoundException"/>
+        /// <exception cref="Java.Rmi.AccessException"/>
         public void Bind(string arg0, Java.Rmi.Remote arg1)
         {
             IExecute("bind", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#rebind(java.lang.String,java.rmi.Remote) throws java.rmi.RemoteException,java.rmi.AccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#rebind(java.lang.String,java.rmi.Remote)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Rmi.AccessException"/>
         public void Rebind(string arg0, Java.Rmi.Remote arg1)
         {
             IExecute("rebind", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#unbind(java.lang.String) throws java.rmi.RemoteException,java.rmi.NotBoundException,java.rmi.AccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#unbind(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Rmi.NotBoundException"/>
+        /// <exception cref="Java.Rmi.AccessException"/>
         public void Unbind(string arg0)
         {
             IExecute("unbind", arg0);

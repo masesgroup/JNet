@@ -30,8 +30,9 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Canvas.html#<init>(java.awt.GraphicsConfiguration)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Canvas.html#%3Cinit%3E(java.awt.GraphicsConfiguration)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
         public Canvas(Java.Awt.GraphicsConfiguration arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Canvas"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.Canvas t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
@@ -54,22 +58,26 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Canvas.html#getBufferStrategy() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Canvas.html#getBufferStrategy()"/> 
         /// </summary>
         public Java.Awt.ImageNs.BufferStrategy BufferStrategy
         {
             get { return IExecute<Java.Awt.ImageNs.BufferStrategy>("getBufferStrategy"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Canvas.html#createBufferStrategy(int,java.awt.BufferCapabilities) throws java.awt.AWTException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Canvas.html#createBufferStrategy(int,java.awt.BufferCapabilities)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.BufferCapabilities"/></param>
+        /// <exception cref="Java.Awt.AWTException"/>
         public void CreateBufferStrategy(int arg0, Java.Awt.BufferCapabilities arg1)
         {
             IExecute("createBufferStrategy", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Canvas.html#createBufferStrategy(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Canvas.html#createBufferStrategy(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void CreateBufferStrategy(int arg0)
         {
             IExecute("createBufferStrategy", arg0);

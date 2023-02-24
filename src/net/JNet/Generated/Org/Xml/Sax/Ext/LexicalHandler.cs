@@ -46,50 +46,68 @@ namespace Org.Xml.Sax.Ext
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#comment(char[],int,int) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#comment(char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Comment(char[] arg0, int arg1, int arg2)
         {
             IExecute("comment", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endCDATA() throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endCDATA()"/>
         /// </summary>
+        
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndCDATA()
         {
             IExecute("endCDATA");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endDTD() throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endDTD()"/>
         /// </summary>
+        
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDTD()
         {
             IExecute("endDTD");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endEntity(java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endEntity(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndEntity(string arg0)
         {
             IExecute("endEntity", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#startCDATA() throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#startCDATA()"/>
         /// </summary>
+        
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartCDATA()
         {
             IExecute("startCDATA");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#startDTD(java.lang.String,java.lang.String,java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#startDTD(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartDTD(string arg0, string arg1, string arg2)
         {
             IExecute("startDTD", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#startEntity(java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#startEntity(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartEntity(string arg0)
         {
             IExecute("startEntity", arg0);

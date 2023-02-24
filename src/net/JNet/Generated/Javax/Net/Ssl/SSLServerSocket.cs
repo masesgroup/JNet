@@ -46,63 +46,63 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getEnabledCipherSuites() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setEnabledCipherSuites(java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getEnabledCipherSuites()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setEnabledCipherSuites(java.lang.String[])"/>
         /// </summary>
         public string[] EnabledCipherSuites
         {
             get { return IExecuteArray<string>("getEnabledCipherSuites"); } set { IExecute("setEnabledCipherSuites", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getEnabledProtocols() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setEnabledProtocols(java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getEnabledProtocols()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setEnabledProtocols(java.lang.String[])"/>
         /// </summary>
         public string[] EnabledProtocols
         {
             get { return IExecuteArray<string>("getEnabledProtocols"); } set { IExecute("setEnabledProtocols", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getEnableSessionCreation() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setEnableSessionCreation(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getEnableSessionCreation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setEnableSessionCreation(boolean)"/>
         /// </summary>
         public bool EnableSessionCreation
         {
             get { return IExecute<bool>("getEnableSessionCreation"); } set { IExecute("setEnableSessionCreation", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getNeedClientAuth() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setNeedClientAuth(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getNeedClientAuth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setNeedClientAuth(boolean)"/>
         /// </summary>
         public bool NeedClientAuth
         {
             get { return IExecute<bool>("getNeedClientAuth"); } set { IExecute("setNeedClientAuth", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getSSLParameters() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setSSLParameters(javax.net.ssl.SSLParameters)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getSSLParameters()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setSSLParameters(javax.net.ssl.SSLParameters)"/>
         /// </summary>
         public Javax.Net.Ssl.SSLParameters SSLParameters
         {
             get { return IExecute<Javax.Net.Ssl.SSLParameters>("getSSLParameters"); } set { IExecute("setSSLParameters", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getSupportedCipherSuites() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getSupportedCipherSuites()"/> 
         /// </summary>
         public string[] SupportedCipherSuites
         {
             get { return IExecuteArray<string>("getSupportedCipherSuites"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getSupportedProtocols() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getSupportedProtocols()"/> 
         /// </summary>
         public string[] SupportedProtocols
         {
             get { return IExecuteArray<string>("getSupportedProtocols"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getUseClientMode() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setUseClientMode(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getUseClientMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setUseClientMode(boolean)"/>
         /// </summary>
         public bool UseClientMode
         {
             get { return IExecute<bool>("getUseClientMode"); } set { IExecute("setUseClientMode", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getWantClientAuth() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setWantClientAuth(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#getWantClientAuth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html#setWantClientAuth(boolean)"/>
         /// </summary>
         public bool WantClientAuth
         {

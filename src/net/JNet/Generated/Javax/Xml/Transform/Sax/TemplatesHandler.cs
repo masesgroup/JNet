@@ -33,6 +33,9 @@ namespace Javax.Xml.Transform.Sax
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Transform.Sax.TemplatesHandler"/> to <see cref="Org.Xml.Sax.ContentHandler"/>
+        /// </summary>
         public static implicit operator Org.Xml.Sax.ContentHandler(Javax.Xml.Transform.Sax.TemplatesHandler t) => t.Cast<Org.Xml.Sax.ContentHandler>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Javax.Xml.Transform.Sax
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getSystemId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#setSystemId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public string SystemId
         {
             get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getTemplates() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getTemplates()"/> 
         /// </summary>
         public Javax.Xml.Transform.Templates Templates
         {

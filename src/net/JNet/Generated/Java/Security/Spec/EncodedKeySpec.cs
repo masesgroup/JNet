@@ -30,8 +30,9 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html#<init>(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html#%3Cinit%3E(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
         public EncodedKeySpec(byte[] arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Spec.EncodedKeySpec"/> to <see cref="Java.Security.Spec.KeySpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.KeySpec(Java.Security.Spec.EncodedKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
         
         #endregion
@@ -54,21 +58,21 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html#getEncoded() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
             get { return IExecuteArray<byte>("getEncoded"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html#getFormat() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html#getFormat()"/> 
         /// </summary>
         public string Format
         {

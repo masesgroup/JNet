@@ -30,8 +30,9 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#<init>(javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#%3Cinit%3E(javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         public SimpleAttributeSet(Javax.Swing.Text.AttributeSet arg0)
             : base(arg0)
         {
@@ -40,15 +41,24 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.SimpleAttributeSet"/> to <see cref="Javax.Swing.Text.MutableAttributeSet"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Text.MutableAttributeSet(Javax.Swing.Text.SimpleAttributeSet t) => t.Cast<Javax.Swing.Text.MutableAttributeSet>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.SimpleAttributeSet"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.SimpleAttributeSet t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.SimpleAttributeSet"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Swing.Text.SimpleAttributeSet t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#EMPTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#EMPTY"/>
         /// </summary>
         public static Javax.Swing.Text.AttributeSet EMPTY => Clazz.GetField<Javax.Swing.Text.AttributeSet>("EMPTY");
         
@@ -60,92 +70,112 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#getAttributeCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#getAttributeCount()"/> 
         /// </summary>
         public int AttributeCount
         {
             get { return IExecute<int>("getAttributeCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#getResolveParent() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#setResolveParent(javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#getResolveParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#setResolveParent(javax.swing.text.AttributeSet)"/>
         /// </summary>
         public Javax.Swing.Text.AttributeSet ResolveParent
         {
             get { return IExecute<Javax.Swing.Text.AttributeSet>("getResolveParent"); } set { IExecute("setResolveParent", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#containsAttribute(java.lang.Object,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#containsAttribute(java.lang.Object,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsAttribute(object arg0, object arg1)
         {
             return IExecute<bool>("containsAttribute", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#containsAttributes(javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#containsAttributes(javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContainsAttributes(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecute<bool>("containsAttributes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#isDefined(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#isDefined(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsDefined(object arg0)
         {
             return IExecute<bool>("isDefined", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#isEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#isEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#isEqual(javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#isEqual(javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsEqual(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecute<bool>("isEqual", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#getAttribute(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#getAttribute(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAttribute(object arg0)
         {
             return IExecute("getAttribute", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#copyAttributes()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#copyAttributes()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet CopyAttributes()
         {
             return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#addAttribute(java.lang.Object,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#addAttribute(java.lang.Object,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void AddAttribute(object arg0, object arg1)
         {
             IExecute("addAttribute", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#addAttributes(javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#addAttributes(javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         public void AddAttributes(Javax.Swing.Text.AttributeSet arg0)
         {
             IExecute("addAttributes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#removeAttribute(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#removeAttribute(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void RemoveAttribute(object arg0)
         {
             IExecute("removeAttribute", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#removeAttributes(javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#removeAttributes(javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         public void RemoveAttributes(Javax.Swing.Text.AttributeSet arg0)
         {
             IExecute("removeAttributes", arg0);

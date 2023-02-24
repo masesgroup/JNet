@@ -42,43 +42,73 @@ namespace Java.Rmi.Activation
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#inactive(java.rmi.activation.ActivationID) throws java.rmi.activation.UnknownObjectException,java.rmi.activation.ActivationException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#inactive(java.rmi.activation.ActivationID)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public static bool Inactive(Java.Rmi.Activation.ActivationID arg0)
         {
             return SExecute<bool>("inactive", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#unexportObject(java.rmi.Remote,boolean) throws java.rmi.NoSuchObjectException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#unexportObject(java.rmi.Remote,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Rmi.NoSuchObjectException"/>
         public static bool UnexportObject(Java.Rmi.Remote arg0, bool arg1)
         {
             return SExecute<bool>("unexportObject", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#exportObject(java.rmi.Remote,java.rmi.activation.ActivationID,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory) throws java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#exportObject(java.rmi.Remote,java.rmi.activation.ActivationID,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
+        /// <param name="arg4"><see cref="Java.Rmi.Server.RMIServerSocketFactory"/></param>
+        /// <returns><see cref="Java.Rmi.Remote"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote ExportObject(Java.Rmi.Remote arg0, Java.Rmi.Activation.ActivationID arg1, int arg2, Java.Rmi.Server.RMIClientSocketFactory arg3, Java.Rmi.Server.RMIServerSocketFactory arg4)
         {
             return SExecute<Java.Rmi.Remote>("exportObject", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#exportObject(java.rmi.Remote,java.rmi.activation.ActivationID,int) throws java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#exportObject(java.rmi.Remote,java.rmi.activation.ActivationID,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Rmi.Remote"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote ExportObject(Java.Rmi.Remote arg0, Java.Rmi.Activation.ActivationID arg1, int arg2)
         {
             return SExecute<Java.Rmi.Remote>("exportObject", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#register(java.rmi.activation.ActivationDesc) throws java.rmi.activation.UnknownGroupException,java.rmi.activation.ActivationException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#register(java.rmi.activation.ActivationDesc)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationDesc"/></param>
+        /// <returns><see cref="Java.Rmi.Remote"/></returns>
+        /// <exception cref="Java.Rmi.Activation.UnknownGroupException"/>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote Register(Java.Rmi.Activation.ActivationDesc arg0)
         {
             return SExecute<Java.Rmi.Remote>("register", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#unregister(java.rmi.activation.ActivationID) throws java.rmi.activation.UnknownObjectException,java.rmi.activation.ActivationException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#unregister(java.rmi.activation.ActivationID)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public static void Unregister(Java.Rmi.Activation.ActivationID arg0)
         {
             SExecute("unregister", arg0);

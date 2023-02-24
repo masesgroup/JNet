@@ -38,19 +38,19 @@ namespace Javax.Management.Remote
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#DEFAULT_CLASS_LOADER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#DEFAULT_CLASS_LOADER"/>
         /// </summary>
         public static string DEFAULT_CLASS_LOADER => Clazz.GetField<string>("DEFAULT_CLASS_LOADER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#DEFAULT_CLASS_LOADER_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#DEFAULT_CLASS_LOADER_NAME"/>
         /// </summary>
         public static string DEFAULT_CLASS_LOADER_NAME => Clazz.GetField<string>("DEFAULT_CLASS_LOADER_NAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#PROTOCOL_PROVIDER_CLASS_LOADER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#PROTOCOL_PROVIDER_CLASS_LOADER"/>
         /// </summary>
         public static string PROTOCOL_PROVIDER_CLASS_LOADER => Clazz.GetField<string>("PROTOCOL_PROVIDER_CLASS_LOADER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#PROTOCOL_PROVIDER_PACKAGES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#PROTOCOL_PROVIDER_PACKAGES"/>
         /// </summary>
         public static string PROTOCOL_PROVIDER_PACKAGES => Clazz.GetField<string>("PROTOCOL_PROVIDER_PACKAGES");
         

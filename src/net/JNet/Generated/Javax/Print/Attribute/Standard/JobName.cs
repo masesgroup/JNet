@@ -30,8 +30,10 @@ namespace Javax.Print.Attribute.Standard
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobName.html#<init>(java.lang.String,java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobName.html#%3Cinit%3E(java.lang.String,java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         public JobName(string arg0, Java.Util.Locale arg1)
             : base(arg0, arg1)
         {
@@ -40,7 +42,13 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.JobName"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.JobName t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.JobName"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.JobName t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
         
         #endregion
@@ -55,7 +63,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobName.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobName.html#getName()"/> 
         /// </summary>
         public string Name
         {

@@ -33,7 +33,13 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.StandardMBean"/> to <see cref="Javax.Management.DynamicMBean"/>
+        /// </summary>
         public static implicit operator Javax.Management.DynamicMBean(Javax.Management.StandardMBean t) => t.Cast<Javax.Management.DynamicMBean>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.StandardMBean"/> to <see cref="Javax.Management.MBeanRegistration"/>
+        /// </summary>
         public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.StandardMBean t) => t.Cast<Javax.Management.MBeanRegistration>();
         
         #endregion
@@ -48,64 +54,87 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getImplementation() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#setImplementation(java.lang.Object) throws javax.management.NotCompliantMBeanException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getImplementation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#setImplementation(java.lang.Object)"/>
         /// </summary>
         public object Implementation
         {
             get { return IExecute("getImplementation"); } set { IExecute("setImplementation", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getMBeanInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getMBeanInfo()"/> 
         /// </summary>
         public Javax.Management.MBeanInfo MBeanInfo
         {
             get { return IExecute<Javax.Management.MBeanInfo>("getMBeanInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getAttribute(java.lang.String) throws javax.management.AttributeNotFoundException,javax.management.MBeanException,javax.management.ReflectionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getAttribute(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Management.AttributeNotFoundException"/>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
         public object GetAttribute(string arg0)
         {
             return IExecute("getAttribute", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#invoke(java.lang.String,java.lang.Object[],java.lang.String[]) throws javax.management.MBeanException,javax.management.ReflectionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#invoke(java.lang.String,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
         public object Invoke(string arg0, object[] arg1, string[] arg2)
         {
             return IExecute("invoke", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName) throws java.lang.Exception
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
             return IExecute<Javax.Management.ObjectName>("preRegister", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#postDeregister()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#postDeregister()"/>
         /// </summary>
         public void PostDeregister()
         {
             IExecute("postDeregister");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#postRegister(java.lang.Boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#postRegister(java.lang.Boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool?"/></param>
         public void PostRegister(bool? arg0)
         {
             IExecute("postRegister", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#preDeregister() throws java.lang.Exception
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#preDeregister()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
             IExecute("preDeregister");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#setAttribute(javax.management.Attribute) throws javax.management.AttributeNotFoundException,javax.management.InvalidAttributeValueException,javax.management.MBeanException,javax.management.ReflectionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#setAttribute(javax.management.Attribute)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Attribute"/></param>
+        /// <exception cref="Javax.Management.AttributeNotFoundException"/>
+        /// <exception cref="Javax.Management.InvalidAttributeValueException"/>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
         public void SetAttribute(Javax.Management.Attribute arg0)
         {
             IExecute("setAttribute", arg0);

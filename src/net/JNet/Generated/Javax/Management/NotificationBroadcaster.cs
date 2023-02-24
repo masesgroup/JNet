@@ -46,22 +46,28 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcaster.html#getNotificationInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcaster.html#getNotificationInfo()"/> 
         /// </summary>
         public Javax.Management.MBeanNotificationInfo[] NotificationInfo
         {
             get { return IExecuteArray<Javax.Management.MBeanNotificationInfo>("getNotificationInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcaster.html#addNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcaster.html#addNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void AddNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
             IExecute("addNotificationListener", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcaster.html#removeNotificationListener(javax.management.NotificationListener) throws javax.management.ListenerNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcaster.html#removeNotificationListener(javax.management.NotificationListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0)
         {
             IExecute("removeNotificationListener", arg0);

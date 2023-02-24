@@ -30,15 +30,20 @@ namespace Javax.Swing.Tree
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#<init>(javax.swing.JTree,javax.swing.tree.DefaultTreeCellRenderer,javax.swing.tree.TreeCellEditor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#%3Cinit%3E(javax.swing.JTree,javax.swing.tree.DefaultTreeCellRenderer,javax.swing.tree.TreeCellEditor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Tree.DefaultTreeCellRenderer"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Tree.TreeCellEditor"/></param>
         public DefaultTreeCellEditor(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1, Javax.Swing.Tree.TreeCellEditor arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#<init>(javax.swing.JTree,javax.swing.tree.DefaultTreeCellRenderer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#%3Cinit%3E(javax.swing.JTree,javax.swing.tree.DefaultTreeCellRenderer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Tree.DefaultTreeCellRenderer"/></param>
         public DefaultTreeCellEditor(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1)
             : base(arg0, arg1)
         {
@@ -47,8 +52,17 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Tree.DefaultTreeCellEditor"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Tree.DefaultTreeCellEditor t) => t.Cast<Java.Awt.EventNs.ActionListener>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Tree.DefaultTreeCellEditor"/> to <see cref="Javax.Swing.Tree.TreeCellEditor"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Tree.TreeCellEditor(Javax.Swing.Tree.DefaultTreeCellEditor t) => t.Cast<Javax.Swing.Tree.TreeCellEditor>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Tree.DefaultTreeCellEditor"/> to <see cref="Javax.Swing.Event.TreeSelectionListener"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Event.TreeSelectionListener(Javax.Swing.Tree.DefaultTreeCellEditor t) => t.Cast<Javax.Swing.Event.TreeSelectionListener>();
         
         #endregion
@@ -63,92 +77,109 @@ namespace Javax.Swing.Tree
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getBorderSelectionColor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#setBorderSelectionColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getBorderSelectionColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#setBorderSelectionColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color BorderSelectionColor
         {
             get { return IExecute<Java.Awt.Color>("getBorderSelectionColor"); } set { IExecute("setBorderSelectionColor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getCellEditorListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getCellEditorListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.CellEditorListener[] CellEditorListeners
         {
             get { return IExecuteArray<Javax.Swing.Event.CellEditorListener>("getCellEditorListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getCellEditorValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getCellEditorValue()"/> 
         /// </summary>
         public object CellEditorValue
         {
             get { return IExecute("getCellEditorValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getFont() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#setFont(java.awt.Font)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getFont()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#setFont(java.awt.Font)"/>
         /// </summary>
         public Java.Awt.Font Font
         {
             get { return IExecute<Java.Awt.Font>("getFont"); } set { IExecute("setFont", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#isCellEditable(java.util.EventObject)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#isCellEditable(java.util.EventObject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.EventObject"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsCellEditable(Java.Util.EventObject arg0)
         {
             return IExecute<bool>("isCellEditable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#shouldSelectCell(java.util.EventObject)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#shouldSelectCell(java.util.EventObject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.EventObject"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ShouldSelectCell(Java.Util.EventObject arg0)
         {
             return IExecute<bool>("shouldSelectCell", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#stopCellEditing()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#stopCellEditing()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool StopCellEditing()
         {
             return IExecute<bool>("stopCellEditing");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getTreeCellEditorComponent(javax.swing.JTree,java.lang.Object,boolean,boolean,boolean,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#getTreeCellEditorComponent(javax.swing.JTree,java.lang.Object,boolean,boolean,boolean,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg4"><see langword="bool"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetTreeCellEditorComponent(Javax.Swing.JTree arg0, object arg1, bool arg2, bool arg3, bool arg4, int arg5)
         {
             return IExecute<Java.Awt.Component>("getTreeCellEditorComponent", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#actionPerformed(java.awt.event.ActionEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#actionPerformed(java.awt.event.ActionEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
         public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
         {
             IExecute("actionPerformed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#addCellEditorListener(javax.swing.event.CellEditorListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#addCellEditorListener(javax.swing.event.CellEditorListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.CellEditorListener"/></param>
         public void AddCellEditorListener(Javax.Swing.Event.CellEditorListener arg0)
         {
             IExecute("addCellEditorListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#cancelCellEditing()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#cancelCellEditing()"/>
         /// </summary>
         public void CancelCellEditing()
         {
             IExecute("cancelCellEditing");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#removeCellEditorListener(javax.swing.event.CellEditorListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#removeCellEditorListener(javax.swing.event.CellEditorListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.CellEditorListener"/></param>
         public void RemoveCellEditorListener(Javax.Swing.Event.CellEditorListener arg0)
         {
             IExecute("removeCellEditorListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#valueChanged(javax.swing.event.TreeSelectionEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#valueChanged(javax.swing.event.TreeSelectionEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionEvent"/></param>
         public void ValueChanged(Javax.Swing.Event.TreeSelectionEvent arg0)
         {
             IExecute("valueChanged", arg0);
@@ -162,8 +193,10 @@ namespace Javax.Swing.Tree
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.DefaultTextField.html#<init>(javax.swing.tree.DefaultTreeCellEditor,javax.swing.border.Border)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.DefaultTextField.html#%3Cinit%3E(javax.swing.tree.DefaultTreeCellEditor,javax.swing.border.Border)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Tree.DefaultTreeCellEditor"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.Border.Border"/></param>
             public DefaultTextField(Javax.Swing.Tree.DefaultTreeCellEditor arg0, Javax.Swing.Border.Border arg1)
                 : base(arg0, arg1)
             {
@@ -196,8 +229,9 @@ namespace Javax.Swing.Tree
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.EditorContainer.html#<init>(javax.swing.tree.DefaultTreeCellEditor)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.EditorContainer.html#%3Cinit%3E(javax.swing.tree.DefaultTreeCellEditor)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Tree.DefaultTreeCellEditor"/></param>
             public EditorContainer(Javax.Swing.Tree.DefaultTreeCellEditor arg0)
                 : base(arg0)
             {
@@ -219,7 +253,7 @@ namespace Javax.Swing.Tree
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.EditorContainer.html#EditorContainer.EditorContainer()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.EditorContainer.html#EditorContainer.EditorContainer()"/>
             /// </summary>
             public void EditorContainerMethod()
             {

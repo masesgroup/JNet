@@ -46,14 +46,14 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedElement.html#getAnnotations() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedElement.html#getAnnotations()"/> 
         /// </summary>
         public Java.Lang.Annotation.Annotation[] Annotations
         {
             get { return IExecuteArray<Java.Lang.Annotation.Annotation>("getAnnotations"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedElement.html#getDeclaredAnnotations() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedElement.html#getDeclaredAnnotations()"/> 
         /// </summary>
         public Java.Lang.Annotation.Annotation[] DeclaredAnnotations
         {

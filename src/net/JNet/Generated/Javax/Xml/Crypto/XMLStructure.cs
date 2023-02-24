@@ -46,8 +46,10 @@ namespace Javax.Xml.Crypto
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLStructure.html#isFeatureSupported(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLStructure.html#isFeatureSupported(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsFeatureSupported(string arg0)
         {
             return IExecute<bool>("isFeatureSupported", arg0);

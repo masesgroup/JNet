@@ -33,6 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.ButtonGroup"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.ButtonGroup t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,50 +50,56 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#getButtonCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#getButtonCount()"/> 
         /// </summary>
         public int ButtonCount
         {
             get { return IExecute<int>("getButtonCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#getSelection() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#getSelection()"/> 
         /// </summary>
         public Javax.Swing.ButtonModel Selection
         {
             get { return IExecute<Javax.Swing.ButtonModel>("getSelection"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#isSelected(javax.swing.ButtonModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#isSelected(javax.swing.ButtonModel)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.ButtonModel"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsSelected(Javax.Swing.ButtonModel arg0)
         {
             return IExecute<bool>("isSelected", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#add(javax.swing.AbstractButton)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#add(javax.swing.AbstractButton)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.AbstractButton"/></param>
         public void Add(Javax.Swing.AbstractButton arg0)
         {
             IExecute("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#clearSelection()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#clearSelection()"/>
         /// </summary>
         public void ClearSelection()
         {
             IExecute("clearSelection");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#remove(javax.swing.AbstractButton)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#remove(javax.swing.AbstractButton)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.AbstractButton"/></param>
         public void Remove(Javax.Swing.AbstractButton arg0)
         {
             IExecute("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#setSelected(javax.swing.ButtonModel,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#setSelected(javax.swing.ButtonModel,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.ButtonModel"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public void SetSelected(Javax.Swing.ButtonModel arg0, bool arg1)
         {
             IExecute("setSelected", arg0, arg1);

@@ -33,6 +33,9 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Module"/> to <see cref="Java.Lang.Reflect.AnnotatedElement"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Module t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
         
         #endregion
@@ -47,113 +50,138 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getAnnotations() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getAnnotations()"/> 
         /// </summary>
         public Java.Lang.Annotation.Annotation[] Annotations
         {
             get { return IExecuteArray<Java.Lang.Annotation.Annotation>("getAnnotations"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getClassLoader() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getClassLoader()"/> 
         /// </summary>
         public Java.Lang.ClassLoader ClassLoader
         {
             get { return IExecute<Java.Lang.ClassLoader>("getClassLoader"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getDeclaredAnnotations() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getDeclaredAnnotations()"/> 
         /// </summary>
         public Java.Lang.Annotation.Annotation[] DeclaredAnnotations
         {
             get { return IExecuteArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getDescriptor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getDescriptor()"/> 
         /// </summary>
         public Java.Lang.ModuleNs.ModuleDescriptor Descriptor
         {
             get { return IExecute<Java.Lang.ModuleNs.ModuleDescriptor>("getDescriptor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getLayer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getLayer()"/> 
         /// </summary>
         public Java.Lang.ModuleLayer Layer
         {
             get { return IExecute<Java.Lang.ModuleLayer>("getLayer"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#canRead(java.lang.Module)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#canRead(java.lang.Module)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CanRead(Java.Lang.Module arg0)
         {
             return IExecute<bool>("canRead", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isExported(java.lang.String,java.lang.Module)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isExported(java.lang.String,java.lang.Module)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsExported(string arg0, Java.Lang.Module arg1)
         {
             return IExecute<bool>("isExported", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isExported(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isExported(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsExported(string arg0)
         {
             return IExecute<bool>("isExported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isNamed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isNamed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsNamed()
         {
             return IExecute<bool>("isNamed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isOpen(java.lang.String,java.lang.Module)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isOpen(java.lang.String,java.lang.Module)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsOpen(string arg0, Java.Lang.Module arg1)
         {
             return IExecute<bool>("isOpen", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isOpen(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isOpen(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsOpen(string arg0)
         {
             return IExecute<bool>("isOpen", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getResourceAsStream(java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getResourceAsStream(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Io.InputStream GetResourceAsStream(string arg0)
         {
             return IExecute<Java.Io.InputStream>("getResourceAsStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addExports(java.lang.String,java.lang.Module)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addExports(java.lang.String,java.lang.Module)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
+        /// <returns><see cref="Java.Lang.Module"/></returns>
         public Java.Lang.Module AddExports(string arg0, Java.Lang.Module arg1)
         {
             return IExecute<Java.Lang.Module>("addExports", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addOpens(java.lang.String,java.lang.Module)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addOpens(java.lang.String,java.lang.Module)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
+        /// <returns><see cref="Java.Lang.Module"/></returns>
         public Java.Lang.Module AddOpens(string arg0, Java.Lang.Module arg1)
         {
             return IExecute<Java.Lang.Module>("addOpens", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addReads(java.lang.Module)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addReads(java.lang.Module)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
+        /// <returns><see cref="Java.Lang.Module"/></returns>
         public Java.Lang.Module AddReads(Java.Lang.Module arg0)
         {
             return IExecute<Java.Lang.Module>("addReads", arg0);

@@ -30,8 +30,12 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathBuilderResult.html#<init>(java.security.cert.CertPath,java.security.cert.TrustAnchor,java.security.cert.PolicyNode,java.security.PublicKey)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathBuilderResult.html#%3Cinit%3E(java.security.cert.CertPath,java.security.cert.TrustAnchor,java.security.cert.PolicyNode,java.security.PublicKey)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.CertPath"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.TrustAnchor"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Cert.PolicyNode"/></param>
+        /// <param name="arg3"><see cref="Java.Security.PublicKey"/></param>
         public PKIXCertPathBuilderResult(Java.Security.Cert.CertPath arg0, Java.Security.Cert.TrustAnchor arg1, Java.Security.Cert.PolicyNode arg2, Java.Security.PublicKey arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -40,6 +44,9 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Cert.PKIXCertPathBuilderResult"/> to <see cref="Java.Security.Cert.CertPathBuilderResult"/>
+        /// </summary>
         public static implicit operator Java.Security.Cert.CertPathBuilderResult(Java.Security.Cert.PKIXCertPathBuilderResult t) => t.Cast<Java.Security.Cert.CertPathBuilderResult>();
         
         #endregion
@@ -54,7 +61,7 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathBuilderResult.html#getCertPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathBuilderResult.html#getCertPath()"/> 
         /// </summary>
         public Java.Security.Cert.CertPath CertPath
         {

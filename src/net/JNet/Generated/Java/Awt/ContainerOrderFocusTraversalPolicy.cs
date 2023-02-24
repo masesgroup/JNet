@@ -33,6 +33,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ContainerOrderFocusTraversalPolicy"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.ContainerOrderFocusTraversalPolicy t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ContainerOrderFocusTraversalPolicy.html#getImplicitDownCycleTraversal() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ContainerOrderFocusTraversalPolicy.html#setImplicitDownCycleTraversal(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ContainerOrderFocusTraversalPolicy.html#getImplicitDownCycleTraversal()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ContainerOrderFocusTraversalPolicy.html#setImplicitDownCycleTraversal(boolean)"/>
         /// </summary>
         public bool ImplicitDownCycleTraversal
         {

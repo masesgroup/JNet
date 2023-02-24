@@ -33,13 +33,16 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sound.Midi.Sequencer"/> to <see cref="Javax.Sound.Midi.MidiDevice"/>
+        /// </summary>
         public static implicit operator Javax.Sound.Midi.MidiDevice(Javax.Sound.Midi.Sequencer t) => t.Cast<Javax.Sound.Midi.MidiDevice>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#LOOP_CONTINUOUSLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#LOOP_CONTINUOUSLY"/>
         /// </summary>
         public static int LOOP_CONTINUOUSLY => Clazz.GetField<int>("LOOP_CONTINUOUSLY");
         
@@ -51,231 +54,260 @@ namespace Javax.Sound.Midi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getLoopCount() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setLoopCount(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getLoopCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setLoopCount(int)"/>
         /// </summary>
         public int LoopCount
         {
             get { return IExecute<int>("getLoopCount"); } set { IExecute("setLoopCount", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getLoopEndPoint() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setLoopEndPoint(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getLoopEndPoint()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setLoopEndPoint(long)"/>
         /// </summary>
         public long LoopEndPoint
         {
             get { return IExecute<long>("getLoopEndPoint"); } set { IExecute("setLoopEndPoint", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getLoopStartPoint() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setLoopStartPoint(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getLoopStartPoint()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setLoopStartPoint(long)"/>
         /// </summary>
         public long LoopStartPoint
         {
             get { return IExecute<long>("getLoopStartPoint"); } set { IExecute("setLoopStartPoint", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getMasterSyncMode() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setMasterSyncMode(javax.sound.midi.Sequencer$SyncMode)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getMasterSyncMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setMasterSyncMode(javax.sound.midi.Sequencer$SyncMode)"/>
         /// </summary>
         public Javax.Sound.Midi.Sequencer.SyncMode MasterSyncMode
         {
             get { return IExecute<Javax.Sound.Midi.Sequencer.SyncMode>("getMasterSyncMode"); } set { IExecute("setMasterSyncMode", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getMasterSyncModes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getMasterSyncModes()"/> 
         /// </summary>
         public Javax.Sound.Midi.Sequencer.SyncMode[] MasterSyncModes
         {
             get { return IExecuteArray<Javax.Sound.Midi.Sequencer.SyncMode>("getMasterSyncModes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getMicrosecondLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getMicrosecondLength()"/> 
         /// </summary>
         public long MicrosecondLength
         {
             get { return IExecute<long>("getMicrosecondLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getMicrosecondPosition() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setMicrosecondPosition(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getMicrosecondPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setMicrosecondPosition(long)"/>
         /// </summary>
         public long MicrosecondPosition
         {
             get { return IExecute<long>("getMicrosecondPosition"); } set { IExecute("setMicrosecondPosition", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getSequence() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getSequence()"/> 
         /// </summary>
         public Javax.Sound.Midi.Sequence Sequence
         {
             get { return IExecute<Javax.Sound.Midi.Sequence>("getSequence"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getSlaveSyncMode() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setSlaveSyncMode(javax.sound.midi.Sequencer$SyncMode)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getSlaveSyncMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setSlaveSyncMode(javax.sound.midi.Sequencer$SyncMode)"/>
         /// </summary>
         public Javax.Sound.Midi.Sequencer.SyncMode SlaveSyncMode
         {
             get { return IExecute<Javax.Sound.Midi.Sequencer.SyncMode>("getSlaveSyncMode"); } set { IExecute("setSlaveSyncMode", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getSlaveSyncModes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getSlaveSyncModes()"/> 
         /// </summary>
         public Javax.Sound.Midi.Sequencer.SyncMode[] SlaveSyncModes
         {
             get { return IExecuteArray<Javax.Sound.Midi.Sequencer.SyncMode>("getSlaveSyncModes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTempoFactor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTempoFactor(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTempoFactor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTempoFactor(float)"/>
         /// </summary>
         public float TempoFactor
         {
             get { return IExecute<float>("getTempoFactor"); } set { IExecute("setTempoFactor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTempoInBPM() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTempoInBPM(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTempoInBPM()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTempoInBPM(float)"/>
         /// </summary>
         public float TempoInBPM
         {
             get { return IExecute<float>("getTempoInBPM"); } set { IExecute("setTempoInBPM", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTempoInMPQ() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTempoInMPQ(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTempoInMPQ()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTempoInMPQ(float)"/>
         /// </summary>
         public float TempoInMPQ
         {
             get { return IExecute<float>("getTempoInMPQ"); } set { IExecute("setTempoInMPQ", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTickLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTickLength()"/> 
         /// </summary>
         public long TickLength
         {
             get { return IExecute<long>("getTickLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTickPosition() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTickPosition(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTickPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTickPosition(long)"/>
         /// </summary>
         public long TickPosition
         {
             get { return IExecute<long>("getTickPosition"); } set { IExecute("setTickPosition", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#addMetaEventListener(javax.sound.midi.MetaEventListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#addMetaEventListener(javax.sound.midi.MetaEventListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaEventListener"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool AddMetaEventListener(Javax.Sound.Midi.MetaEventListener arg0)
         {
             return IExecute<bool>("addMetaEventListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTrackMute(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTrackMute(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool GetTrackMute(int arg0)
         {
             return IExecute<bool>("getTrackMute", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTrackSolo(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getTrackSolo(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool GetTrackSolo(int arg0)
         {
             return IExecute<bool>("getTrackSolo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRecording()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRecording()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsRecording()
         {
             return IExecute<bool>("isRecording");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRunning()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRunning()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsRunning()
         {
             return IExecute<bool>("isRunning");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#addControllerEventListener(javax.sound.midi.ControllerEventListener,int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#addControllerEventListener(javax.sound.midi.ControllerEventListener,int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.ControllerEventListener"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
         public int[] AddControllerEventListener(Javax.Sound.Midi.ControllerEventListener arg0, int[] arg1)
         {
             return IExecuteArray<int>("addControllerEventListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#removeControllerEventListener(javax.sound.midi.ControllerEventListener,int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#removeControllerEventListener(javax.sound.midi.ControllerEventListener,int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.ControllerEventListener"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
         public int[] RemoveControllerEventListener(Javax.Sound.Midi.ControllerEventListener arg0, int[] arg1)
         {
             return IExecuteArray<int>("removeControllerEventListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#recordDisable(javax.sound.midi.Track)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#recordDisable(javax.sound.midi.Track)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.Track"/></param>
         public void RecordDisable(Javax.Sound.Midi.Track arg0)
         {
             IExecute("recordDisable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#recordEnable(javax.sound.midi.Track,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#recordEnable(javax.sound.midi.Track,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.Track"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void RecordEnable(Javax.Sound.Midi.Track arg0, int arg1)
         {
             IExecute("recordEnable", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#removeMetaEventListener(javax.sound.midi.MetaEventListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#removeMetaEventListener(javax.sound.midi.MetaEventListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaEventListener"/></param>
         public void RemoveMetaEventListener(Javax.Sound.Midi.MetaEventListener arg0)
         {
             IExecute("removeMetaEventListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setSequence(java.io.InputStream) throws java.io.IOException,javax.sound.midi.InvalidMidiDataException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setSequence(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public void SetSequence(Java.Io.InputStream arg0)
         {
             IExecute("setSequence", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setSequence(javax.sound.midi.Sequence) throws javax.sound.midi.InvalidMidiDataException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setSequence(javax.sound.midi.Sequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
+        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public void SetSequence(Javax.Sound.Midi.Sequence arg0)
         {
             IExecute("setSequence", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTrackMute(int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTrackMute(int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public void SetTrackMute(int arg0, bool arg1)
         {
             IExecute("setTrackMute", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTrackSolo(int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTrackSolo(int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public void SetTrackSolo(int arg0, bool arg1)
         {
             IExecute("setTrackSolo", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#start()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#start()"/>
         /// </summary>
         public void Start()
         {
             IExecute("start");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#startRecording()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#startRecording()"/>
         /// </summary>
         public void StartRecording()
         {
             IExecute("startRecording");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#stop()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#stop()"/>
         /// </summary>
         public void Stop()
         {
             IExecute("stop");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#stopRecording()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#stopRecording()"/>
         /// </summary>
         public void StopRecording()
         {
@@ -298,19 +330,19 @@ namespace Javax.Sound.Midi
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html#INTERNAL_CLOCK
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html#INTERNAL_CLOCK"/>
             /// </summary>
             public static Javax.Sound.Midi.Sequencer.SyncMode INTERNAL_CLOCK => Clazz.GetField<Javax.Sound.Midi.Sequencer.SyncMode>("INTERNAL_CLOCK");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html#MIDI_SYNC
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html#MIDI_SYNC"/>
             /// </summary>
             public static Javax.Sound.Midi.Sequencer.SyncMode MIDI_SYNC => Clazz.GetField<Javax.Sound.Midi.Sequencer.SyncMode>("MIDI_SYNC");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html#MIDI_TIME_CODE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html#MIDI_TIME_CODE"/>
             /// </summary>
             public static Javax.Sound.Midi.Sequencer.SyncMode MIDI_TIME_CODE => Clazz.GetField<Javax.Sound.Midi.Sequencer.SyncMode>("MIDI_TIME_CODE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html#NO_SYNC
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.SyncMode.html#NO_SYNC"/>
             /// </summary>
             public static Javax.Sound.Midi.Sequencer.SyncMode NO_SYNC => Clazz.GetField<Javax.Sound.Midi.Sequencer.SyncMode>("NO_SYNC");
             

@@ -42,64 +42,83 @@ namespace Java.Sql
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getLoginTimeout() https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#setLoginTimeout(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getLoginTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#setLoginTimeout(int)"/>
         /// </summary>
         public static int LoginTimeout
         {
             get { return SExecute<int>("getLoginTimeout"); } set { SExecute("setLoginTimeout", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getLogWriter() https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#setLogWriter(java.io.PrintWriter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getLogWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#setLogWriter(java.io.PrintWriter)"/>
         /// </summary>
         public static Java.Io.PrintWriter LogWriter
         {
             get { return SExecute<Java.Io.PrintWriter>("getLogWriter"); } set { SExecute("setLogWriter", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String,java.lang.String,java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.Connection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Connection GetConnection(string arg0, string arg1, string arg2)
         {
             return SExecute<Java.Sql.Connection>("getConnection", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.Connection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Connection GetConnection(string arg0)
         {
             return SExecute<Java.Sql.Connection>("getConnection", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getDriver(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getDriver(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.Driver"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Driver GetDriver(string arg0)
         {
             return SExecute<Java.Sql.Driver>("getDriver", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#deregisterDriver(java.sql.Driver) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#deregisterDriver(java.sql.Driver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.Driver"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public static void DeregisterDriver(Java.Sql.Driver arg0)
         {
             SExecute("deregisterDriver", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#println(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#println(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public static void Println(string arg0)
         {
             SExecute("println", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#registerDriver(java.sql.Driver,java.sql.DriverAction) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#registerDriver(java.sql.Driver,java.sql.DriverAction)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.Driver"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.DriverAction"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public static void RegisterDriver(Java.Sql.Driver arg0, Java.Sql.DriverAction arg1)
         {
             SExecute("registerDriver", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#registerDriver(java.sql.Driver) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#registerDriver(java.sql.Driver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.Driver"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public static void RegisterDriver(Java.Sql.Driver arg0)
         {
             SExecute("registerDriver", arg0);

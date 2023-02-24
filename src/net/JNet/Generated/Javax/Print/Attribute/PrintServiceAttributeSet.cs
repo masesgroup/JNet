@@ -33,6 +33,9 @@ namespace Javax.Print.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.PrintServiceAttributeSet"/> to <see cref="Javax.Print.Attribute.AttributeSet"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.AttributeSet(Javax.Print.Attribute.PrintServiceAttributeSet t) => t.Cast<Javax.Print.Attribute.AttributeSet>();
         
         #endregion
@@ -47,15 +50,19 @@ namespace Javax.Print.Attribute
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintServiceAttributeSet.html#add(javax.print.attribute.Attribute)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintServiceAttributeSet.html#add(javax.print.attribute.Attribute)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Add(Javax.Print.Attribute.Attribute arg0)
         {
             return IExecute<bool>("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintServiceAttributeSet.html#addAll(javax.print.attribute.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintServiceAttributeSet.html#addAll(javax.print.attribute.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool AddAll(Javax.Print.Attribute.AttributeSet arg0)
         {
             return IExecute<bool>("addAll", arg0);

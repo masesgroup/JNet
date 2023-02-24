@@ -30,8 +30,14 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html#<init>(java.io.Serializable,java.security.PrivateKey,java.security.Signature) throws java.io.IOException,java.security.InvalidKeyException,java.security.SignatureException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html#%3Cinit%3E(java.io.Serializable,java.security.PrivateKey,java.security.Signature)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Serializable"/></param>
+        /// <param name="arg1"><see cref="Java.Security.PrivateKey"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Signature"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <exception cref="Java.Security.SignatureException"/>
         public SignedObject(Java.Io.Serializable arg0, Java.Security.PrivateKey arg1, Java.Security.Signature arg2)
             : base(arg0, arg1, arg2)
         {
@@ -40,6 +46,9 @@ namespace Java.Security
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.SignedObject"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.SignedObject t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,29 +63,34 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html#getObject() throws java.io.IOException,java.lang.ClassNotFoundException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html#getObject()"/> 
         /// </summary>
         public object Object
         {
             get { return IExecute("getObject"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html#getSignature() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html#getSignature()"/> 
         /// </summary>
         public byte[] Signature
         {
             get { return IExecuteArray<byte>("getSignature"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html#verify(java.security.PublicKey,java.security.Signature) throws java.security.InvalidKeyException,java.security.SignatureException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html#verify(java.security.PublicKey,java.security.Signature)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Signature"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <exception cref="Java.Security.SignatureException"/>
         public bool Verify(Java.Security.PublicKey arg0, Java.Security.Signature arg1)
         {
             return IExecute<bool>("verify", arg0, arg1);

@@ -46,43 +46,55 @@ namespace Org.W3c.Dom.Ls
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#getDomConfig() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#getDomConfig()"/> 
         /// </summary>
         public Org.W3c.Dom.DOMConfiguration DomConfig
         {
             get { return IExecute<Org.W3c.Dom.DOMConfiguration>("getDomConfig"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#getFilter() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#setFilter(org.w3c.dom.ls.LSSerializerFilter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#getFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#setFilter(org.w3c.dom.ls.LSSerializerFilter)"/>
         /// </summary>
         public Org.W3c.Dom.Ls.LSSerializerFilter Filter
         {
             get { return IExecute<Org.W3c.Dom.Ls.LSSerializerFilter>("getFilter"); } set { IExecute("setFilter", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#getNewLine() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#setNewLine(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#getNewLine()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#setNewLine(java.lang.String)"/>
         /// </summary>
         public string NewLine
         {
             get { return IExecute<string>("getNewLine"); } set { IExecute("setNewLine", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#write(org.w3c.dom.Node,org.w3c.dom.ls.LSOutput) throws org.w3c.dom.ls.LSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#write(org.w3c.dom.Node,org.w3c.dom.ls.LSOutput)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Ls.LSOutput"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public bool Write(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Ls.LSOutput arg1)
         {
             return IExecute<bool>("write", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#writeToURI(org.w3c.dom.Node,java.lang.String) throws org.w3c.dom.ls.LSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#writeToURI(org.w3c.dom.Node,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public bool WriteToURI(Org.W3c.Dom.Node arg0, string arg1)
         {
             return IExecute<bool>("writeToURI", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#writeToString(org.w3c.dom.Node) throws org.w3c.dom.DOMException,org.w3c.dom.ls.LSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#writeToString(org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public string WriteToString(Org.W3c.Dom.Node arg0)
         {
             return IExecute<string>("writeToString", arg0);

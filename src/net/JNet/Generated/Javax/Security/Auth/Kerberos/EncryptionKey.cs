@@ -30,8 +30,10 @@ namespace Javax.Security.Auth.Kerberos
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#<init>(byte[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#%3Cinit%3E(byte[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public EncryptionKey(byte[] arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Javax.Security.Auth.Kerberos
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.Kerberos.EncryptionKey"/> to <see cref="Javax.Crypto.SecretKey"/>
+        /// </summary>
         public static implicit operator Javax.Crypto.SecretKey(Javax.Security.Auth.Kerberos.EncryptionKey t) => t.Cast<Javax.Crypto.SecretKey>();
         
         #endregion
@@ -54,43 +59,47 @@ namespace Javax.Security.Auth.Kerberos
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#getEncoded() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
             get { return IExecuteArray<byte>("getEncoded"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#getFormat() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#getFormat()"/> 
         /// </summary>
         public string Format
         {
             get { return IExecute<string>("getFormat"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#getKeyType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#getKeyType()"/> 
         /// </summary>
         public int KeyType
         {
             get { return IExecute<int>("getKeyType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#isDestroyed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#isDestroyed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDestroyed()
         {
             return IExecute<bool>("isDestroyed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#destroy() throws javax.security.auth.DestroyFailedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#destroy()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
         public void Destroy()
         {
             IExecute("destroy");

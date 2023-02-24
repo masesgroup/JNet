@@ -30,15 +30,19 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#<init>(java.net.URL,java.security.cert.Certificate[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#%3Cinit%3E(java.net.URL,java.security.cert.Certificate[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
         public CodeSource(Java.Net.URL arg0, Java.Security.Cert.Certificate[] arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#<init>(java.net.URL,java.security.CodeSigner[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#%3Cinit%3E(java.net.URL,java.security.CodeSigner[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg1"><see cref="Java.Security.CodeSigner"/></param>
         public CodeSource(Java.Net.URL arg0, Java.Security.CodeSigner[] arg1)
             : base(arg0, arg1)
         {
@@ -47,6 +51,9 @@ namespace Java.Security
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.CodeSource"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.CodeSource t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -61,29 +68,31 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#getCertificates() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#getCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] Certificates
         {
             get { return IExecuteArray<Java.Security.Cert.Certificate>("getCertificates"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#getCodeSigners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#getCodeSigners()"/> 
         /// </summary>
         public Java.Security.CodeSigner[] CodeSigners
         {
             get { return IExecuteArray<Java.Security.CodeSigner>("getCodeSigners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#getLocation() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#getLocation()"/> 
         /// </summary>
         public Java.Net.URL Location
         {
             get { return IExecute<Java.Net.URL>("getLocation"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#implies(java.security.CodeSource)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html#implies(java.security.CodeSource)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.CodeSource"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Implies(Java.Security.CodeSource arg0)
         {
             return IExecute<bool>("implies", arg0);

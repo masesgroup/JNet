@@ -30,15 +30,19 @@ namespace Javax.Naming.Spi
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#<init>(java.lang.Object,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#%3Cinit%3E(java.lang.Object,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public ResolveResult(object arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#<init>(java.lang.Object,javax.naming.Name)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#%3Cinit%3E(java.lang.Object,javax.naming.Name)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
         public ResolveResult(object arg0, Javax.Naming.Name arg1)
             : base(arg0, arg1)
         {
@@ -47,6 +51,9 @@ namespace Javax.Naming.Spi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Spi.ResolveResult"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.Spi.ResolveResult t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -61,29 +68,31 @@ namespace Javax.Naming.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#getRemainingName() https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#setRemainingName(javax.naming.Name)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#getRemainingName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#setRemainingName(javax.naming.Name)"/>
         /// </summary>
         public Javax.Naming.Name RemainingName
         {
             get { return IExecute<Javax.Naming.Name>("getRemainingName"); } set { IExecute("setRemainingName", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#getResolvedObj() https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#setResolvedObj(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#getResolvedObj()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#setResolvedObj(java.lang.Object)"/>
         /// </summary>
         public object ResolvedObj
         {
             get { return IExecute("getResolvedObj"); } set { IExecute("setResolvedObj", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#appendRemainingComponent(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#appendRemainingComponent(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void AppendRemainingComponent(string arg0)
         {
             IExecute("appendRemainingComponent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#appendRemainingName(javax.naming.Name)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#appendRemainingName(javax.naming.Name)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
         public void AppendRemainingName(Javax.Naming.Name arg0)
         {
             IExecute("appendRemainingName", arg0);

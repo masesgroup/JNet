@@ -33,41 +33,44 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.JobState"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.JobState t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#ABORTED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#ABORTED"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.JobState ABORTED => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("ABORTED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#CANCELED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#CANCELED"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.JobState CANCELED => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("CANCELED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#COMPLETED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#COMPLETED"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.JobState COMPLETED => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("COMPLETED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PENDING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PENDING"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.JobState PENDING => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("PENDING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PENDING_HELD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PENDING_HELD"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.JobState PENDING_HELD => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("PENDING_HELD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PROCESSING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PROCESSING"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.JobState PROCESSING => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("PROCESSING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PROCESSING_STOPPED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PROCESSING_STOPPED"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.JobState PROCESSING_STOPPED => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("PROCESSING_STOPPED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#UNKNOWN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#UNKNOWN"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.JobState UNKNOWN => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("UNKNOWN");
         
@@ -79,7 +82,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#getName()"/> 
         /// </summary>
         public string Name
         {

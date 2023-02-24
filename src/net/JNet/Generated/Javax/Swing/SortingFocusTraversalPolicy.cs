@@ -46,7 +46,7 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortingFocusTraversalPolicy.html#getImplicitDownCycleTraversal() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortingFocusTraversalPolicy.html#setImplicitDownCycleTraversal(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortingFocusTraversalPolicy.html#getImplicitDownCycleTraversal()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortingFocusTraversalPolicy.html#setImplicitDownCycleTraversal(boolean)"/>
         /// </summary>
         public bool ImplicitDownCycleTraversal
         {

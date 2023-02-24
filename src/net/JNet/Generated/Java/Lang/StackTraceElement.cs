@@ -30,15 +30,26 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#<init>(java.lang.String,java.lang.String,java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public StackTraceElement(string arg0, string arg1, string arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#<init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
+        /// <param name="arg4"><see langword="string"/></param>
+        /// <param name="arg5"><see langword="string"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
         public StackTraceElement(string arg0, string arg1, string arg2, string arg3, string arg4, string arg5, int arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -47,6 +58,9 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.StackTraceElement"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.StackTraceElement t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -61,57 +75,61 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getClassLoaderName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getClassLoaderName()"/> 
         /// </summary>
         public string ClassLoaderName
         {
             get { return IExecute<string>("getClassLoaderName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getFileName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getFileName()"/> 
         /// </summary>
         public string FileName
         {
             get { return IExecute<string>("getFileName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getLineNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getLineNumber()"/> 
         /// </summary>
         public int LineNumber
         {
             get { return IExecute<int>("getLineNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getMethodName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getMethodName()"/> 
         /// </summary>
         public string MethodName
         {
             get { return IExecute<string>("getMethodName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getModuleName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getModuleName()"/> 
         /// </summary>
         public string ModuleName
         {
             get { return IExecute<string>("getModuleName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getModuleVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getModuleVersion()"/> 
         /// </summary>
         public string ModuleVersion
         {
             get { return IExecute<string>("getModuleVersion"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#isNativeMethod()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#isNativeMethod()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsNativeMethod()
         {
             return IExecute<bool>("isNativeMethod");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getClassName()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getClassName()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string GetClassName()
         {
             return IExecute<string>("getClassName");

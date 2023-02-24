@@ -30,8 +30,9 @@ namespace Javax.Print.Attribute.Standard
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DateTimeAtProcessing.html#<init>(java.util.Date)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DateTimeAtProcessing.html#%3Cinit%3E(java.util.Date)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
         public DateTimeAtProcessing(Java.Util.Date arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.DateTimeAtProcessing"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.DateTimeAtProcessing t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
         
         #endregion
@@ -54,7 +58,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DateTimeAtProcessing.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DateTimeAtProcessing.html#getName()"/> 
         /// </summary>
         public string Name
         {

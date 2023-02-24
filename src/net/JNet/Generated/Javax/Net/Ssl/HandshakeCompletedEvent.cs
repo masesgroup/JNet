@@ -30,8 +30,10 @@ namespace Javax.Net.Ssl
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#<init>(javax.net.ssl.SSLSocket,javax.net.ssl.SSLSession)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#%3Cinit%3E(javax.net.ssl.SSLSocket,javax.net.ssl.SSLSession)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSocket"/></param>
+        /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLSession"/></param>
         public HandshakeCompletedEvent(Javax.Net.Ssl.SSLSocket arg0, Javax.Net.Ssl.SSLSession arg1)
             : base(arg0, arg1)
         {
@@ -53,49 +55,49 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getCipherSuite() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getCipherSuite()"/> 
         /// </summary>
         public string CipherSuite
         {
             get { return IExecute<string>("getCipherSuite"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getLocalCertificates() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getLocalCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] LocalCertificates
         {
             get { return IExecuteArray<Java.Security.Cert.Certificate>("getLocalCertificates"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getLocalPrincipal() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getLocalPrincipal()"/> 
         /// </summary>
         public Java.Security.Principal LocalPrincipal
         {
             get { return IExecute<Java.Security.Principal>("getLocalPrincipal"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getPeerCertificates() throws javax.net.ssl.SSLPeerUnverifiedException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getPeerCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] PeerCertificates
         {
             get { return IExecuteArray<Java.Security.Cert.Certificate>("getPeerCertificates"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getPeerPrincipal() throws javax.net.ssl.SSLPeerUnverifiedException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getPeerPrincipal()"/> 
         /// </summary>
         public Java.Security.Principal PeerPrincipal
         {
             get { return IExecute<Java.Security.Principal>("getPeerPrincipal"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getSession() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getSession()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSession Session
         {
             get { return IExecute<Javax.Net.Ssl.SSLSession>("getSession"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getSocket() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getSocket()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSocket Socket
         {

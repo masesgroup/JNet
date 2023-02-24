@@ -46,29 +46,37 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#test(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#test(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Test(long arg0)
         {
             return IExecute<bool>("test", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
         public Java.Util.Function.LongPredicate And(Java.Util.Function.LongPredicate arg0)
         {
             return IExecute<Java.Util.Function.LongPredicate>("and", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#negate()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#negate()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
         public Java.Util.Function.LongPredicate Negate()
         {
             return IExecute<Java.Util.Function.LongPredicate>("negate");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
         public Java.Util.Function.LongPredicate Or(Java.Util.Function.LongPredicate arg0)
         {
             return IExecute<Java.Util.Function.LongPredicate>("or", arg0);

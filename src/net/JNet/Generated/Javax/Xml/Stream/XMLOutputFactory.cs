@@ -38,7 +38,7 @@ namespace Javax.Xml.Stream
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#IS_REPAIRING_NAMESPACES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#IS_REPAIRING_NAMESPACES"/>
         /// </summary>
         public static string IS_REPAIRING_NAMESPACES => Clazz.GetField<string>("IS_REPAIRING_NAMESPACES");
         
@@ -46,29 +46,41 @@ namespace Javax.Xml.Stream
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newDefaultFactory()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newDefaultFactory()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Stream.XMLOutputFactory"/></returns>
         public static Javax.Xml.Stream.XMLOutputFactory NewDefaultFactory()
         {
             return SExecute<Javax.Xml.Stream.XMLOutputFactory>("newDefaultFactory");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newFactory() throws javax.xml.stream.FactoryConfigurationError
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newFactory()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Stream.XMLOutputFactory"/></returns>
+        /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLOutputFactory NewFactory()
         {
             return SExecute<Javax.Xml.Stream.XMLOutputFactory>("newFactory");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newFactory(java.lang.String,java.lang.ClassLoader) throws javax.xml.stream.FactoryConfigurationError
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newFactory(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.XMLOutputFactory"/></returns>
+        /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLOutputFactory NewFactory(string arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecute<Javax.Xml.Stream.XMLOutputFactory>("newFactory", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newInstance() throws javax.xml.stream.FactoryConfigurationError
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Stream.XMLOutputFactory"/></returns>
+        /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLOutputFactory NewInstance()
         {
             return SExecute<Javax.Xml.Stream.XMLOutputFactory>("newInstance");
@@ -78,78 +90,112 @@ namespace Javax.Xml.Stream
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#isPropertySupported(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#isPropertySupported(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsPropertySupported(string arg0)
         {
             return IExecute<bool>("isPropertySupported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#getProperty(java.lang.String) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#getProperty(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public object GetProperty(string arg0)
         {
             return IExecute("getProperty", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLEventWriter(java.io.OutputStream,java.lang.String) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLEventWriter(java.io.OutputStream,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.XMLEventWriter"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLEventWriter CreateXMLEventWriter(Java.Io.OutputStream arg0, string arg1)
         {
             return IExecute<Javax.Xml.Stream.XMLEventWriter>("createXMLEventWriter", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLEventWriter(java.io.OutputStream) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLEventWriter(java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.XMLEventWriter"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLEventWriter CreateXMLEventWriter(Java.Io.OutputStream arg0)
         {
             return IExecute<Javax.Xml.Stream.XMLEventWriter>("createXMLEventWriter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLEventWriter(java.io.Writer) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLEventWriter(java.io.Writer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.XMLEventWriter"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLEventWriter CreateXMLEventWriter(Java.Io.Writer arg0)
         {
             return IExecute<Javax.Xml.Stream.XMLEventWriter>("createXMLEventWriter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLEventWriter(javax.xml.transform.Result) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLEventWriter(javax.xml.transform.Result)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.Result"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.XMLEventWriter"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLEventWriter CreateXMLEventWriter(Javax.Xml.Transform.Result arg0)
         {
             return IExecute<Javax.Xml.Stream.XMLEventWriter>("createXMLEventWriter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLStreamWriter(java.io.OutputStream,java.lang.String) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLStreamWriter(java.io.OutputStream,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.XMLStreamWriter"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLStreamWriter CreateXMLStreamWriter(Java.Io.OutputStream arg0, string arg1)
         {
             return IExecute<Javax.Xml.Stream.XMLStreamWriter>("createXMLStreamWriter", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLStreamWriter(java.io.OutputStream) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLStreamWriter(java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.XMLStreamWriter"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLStreamWriter CreateXMLStreamWriter(Java.Io.OutputStream arg0)
         {
             return IExecute<Javax.Xml.Stream.XMLStreamWriter>("createXMLStreamWriter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLStreamWriter(java.io.Writer) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLStreamWriter(java.io.Writer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.XMLStreamWriter"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLStreamWriter CreateXMLStreamWriter(Java.Io.Writer arg0)
         {
             return IExecute<Javax.Xml.Stream.XMLStreamWriter>("createXMLStreamWriter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLStreamWriter(javax.xml.transform.Result) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLStreamWriter(javax.xml.transform.Result)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.Result"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.XMLStreamWriter"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLStreamWriter CreateXMLStreamWriter(Javax.Xml.Transform.Result arg0)
         {
             return IExecute<Javax.Xml.Stream.XMLStreamWriter>("createXMLStreamWriter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#setProperty(java.lang.String,java.lang.Object) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetProperty(string arg0, object arg1)
         {
             IExecute("setProperty", arg0, arg1);

@@ -30,29 +30,39 @@ namespace Java.Beans.Beancontext
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#<init>(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
         public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#<init>(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#<init>(java.beans.beancontext.BeanContextServices,java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#<init>(java.beans.beancontext.BeanContextServices)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
         public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0)
             : base(arg0)
         {
@@ -61,6 +71,9 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.Beancontext.BeanContextServicesSupport"/> to <see cref="Java.Beans.Beancontext.BeanContextServices"/>
+        /// </summary>
         public static implicit operator Java.Beans.Beancontext.BeanContextServices(Java.Beans.Beancontext.BeanContextServicesSupport t) => t.Cast<Java.Beans.Beancontext.BeanContextServices>();
         
         #endregion
@@ -75,36 +88,41 @@ namespace Java.Beans.Beancontext
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getBeanContextServicesPeer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getBeanContextServicesPeer()"/> 
         /// </summary>
         public Java.Beans.Beancontext.BeanContextServices BeanContextServicesPeer
         {
             get { return IExecute<Java.Beans.Beancontext.BeanContextServices>("getBeanContextServicesPeer"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServicesListener"/></param>
         public void AddBeanContextServicesListener(Java.Beans.Beancontext.BeanContextServicesListener arg0)
         {
             IExecute("addBeanContextServicesListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#initialize()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#initialize()"/>
         /// </summary>
         public void Initialize()
         {
             IExecute("initialize");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#releaseService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#releaseService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
         public void ReleaseService(Java.Beans.Beancontext.BeanContextChild arg0, object arg1, object arg2)
         {
             IExecute("releaseService", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServicesListener"/></param>
         public void RemoveBeanContextServicesListener(Java.Beans.Beancontext.BeanContextServicesListener arg0)
         {
             IExecute("removeBeanContextServicesListener", arg0);

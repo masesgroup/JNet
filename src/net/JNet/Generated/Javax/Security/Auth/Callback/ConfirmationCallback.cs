@@ -30,29 +30,43 @@ namespace Javax.Security.Auth.Callback
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#<init>(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public ConfirmationCallback(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#<init>(int,java.lang.String[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#%3Cinit%3E(int,java.lang.String[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public ConfirmationCallback(int arg0, string[] arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#<init>(java.lang.String,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#%3Cinit%3E(java.lang.String,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public ConfirmationCallback(string arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#<init>(java.lang.String,int,java.lang.String[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#%3Cinit%3E(java.lang.String,int,java.lang.String[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public ConfirmationCallback(string arg0, int arg1, string[] arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -61,54 +75,60 @@ namespace Javax.Security.Auth.Callback
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.Callback.ConfirmationCallback"/> to <see cref="Javax.Security.Auth.Callback.Callback"/>
+        /// </summary>
         public static implicit operator Javax.Security.Auth.Callback.Callback(Javax.Security.Auth.Callback.ConfirmationCallback t) => t.Cast<Javax.Security.Auth.Callback.Callback>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.Callback.ConfirmationCallback"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.ConfirmationCallback t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#CANCEL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#CANCEL"/>
         /// </summary>
         public static int CANCEL => Clazz.GetField<int>("CANCEL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#ERROR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#ERROR"/>
         /// </summary>
         public static int ERROR => Clazz.GetField<int>("ERROR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#INFORMATION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#INFORMATION"/>
         /// </summary>
         public static int INFORMATION => Clazz.GetField<int>("INFORMATION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#NO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#NO"/>
         /// </summary>
         public static int NO => Clazz.GetField<int>("NO");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#OK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#OK"/>
         /// </summary>
         public static int OK => Clazz.GetField<int>("OK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#OK_CANCEL_OPTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#OK_CANCEL_OPTION"/>
         /// </summary>
         public static int OK_CANCEL_OPTION => Clazz.GetField<int>("OK_CANCEL_OPTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#UNSPECIFIED_OPTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#UNSPECIFIED_OPTION"/>
         /// </summary>
         public static int UNSPECIFIED_OPTION => Clazz.GetField<int>("UNSPECIFIED_OPTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#WARNING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#WARNING"/>
         /// </summary>
         public static int WARNING => Clazz.GetField<int>("WARNING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES"/>
         /// </summary>
         public static int YES => Clazz.GetField<int>("YES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES_NO_CANCEL_OPTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES_NO_CANCEL_OPTION"/>
         /// </summary>
         public static int YES_NO_CANCEL_OPTION => Clazz.GetField<int>("YES_NO_CANCEL_OPTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES_NO_OPTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES_NO_OPTION"/>
         /// </summary>
         public static int YES_NO_OPTION => Clazz.GetField<int>("YES_NO_OPTION");
         
@@ -120,42 +140,42 @@ namespace Javax.Security.Auth.Callback
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getDefaultOption() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getDefaultOption()"/> 
         /// </summary>
         public int DefaultOption
         {
             get { return IExecute<int>("getDefaultOption"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getMessageType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getMessageType()"/> 
         /// </summary>
         public int MessageType
         {
             get { return IExecute<int>("getMessageType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getOptions() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getOptions()"/> 
         /// </summary>
         public string[] Options
         {
             get { return IExecuteArray<string>("getOptions"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getOptionType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getOptionType()"/> 
         /// </summary>
         public int OptionType
         {
             get { return IExecute<int>("getOptionType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getPrompt() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getPrompt()"/> 
         /// </summary>
         public string Prompt
         {
             get { return IExecute<string>("getPrompt"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getSelectedIndex() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#setSelectedIndex(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#getSelectedIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#setSelectedIndex(int)"/>
         /// </summary>
         public int SelectedIndex
         {

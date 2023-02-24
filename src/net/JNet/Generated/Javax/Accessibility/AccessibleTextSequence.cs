@@ -30,8 +30,11 @@ namespace Javax.Accessibility
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#<init>(int,int,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#%3Cinit%3E(int,int,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
         public AccessibleTextSequence(int arg0, int arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
@@ -45,15 +48,15 @@ namespace Javax.Accessibility
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#endIndex
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#endIndex"/>
         /// </summary>
         public int endIndex => Instance.GetField<int>("endIndex");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#startIndex
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#startIndex"/>
         /// </summary>
         public int startIndex => Instance.GetField<int>("startIndex");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#text
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#text"/>
         /// </summary>
         public string text => Instance.GetField<string>("text");
         

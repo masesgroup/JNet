@@ -33,6 +33,9 @@ namespace Java.Security
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.KeyRep"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.KeyRep t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -63,15 +66,15 @@ namespace Java.Security
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#PRIVATE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#PRIVATE"/>
             /// </summary>
             public static Java.Security.KeyRep.Type PRIVATE => Clazz.GetField<Java.Security.KeyRep.Type>("PRIVATE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#PUBLIC
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#PUBLIC"/>
             /// </summary>
             public static Java.Security.KeyRep.Type PUBLIC => Clazz.GetField<Java.Security.KeyRep.Type>("PUBLIC");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#SECRET
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#SECRET"/>
             /// </summary>
             public static Java.Security.KeyRep.Type SECRET => Clazz.GetField<Java.Security.KeyRep.Type>("SECRET");
             
@@ -79,8 +82,10 @@ namespace Java.Security
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Security.KeyRep.Type"/></returns>
             public static Java.Security.KeyRep.Type[] Values()
             {
                 return SExecuteArray<Java.Security.KeyRep.Type>("values");

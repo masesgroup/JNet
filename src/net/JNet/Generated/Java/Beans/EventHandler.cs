@@ -30,8 +30,12 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#<init>(java.lang.Object,java.lang.String,java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#%3Cinit%3E(java.lang.Object,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
         public EventHandler(object arg0, string arg1, string arg2, string arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -40,6 +44,9 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.EventHandler"/> to <see cref="Java.Lang.Reflect.InvocationHandler"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.InvocationHandler(Java.Beans.EventHandler t) => t.Cast<Java.Lang.Reflect.InvocationHandler>();
         
         #endregion
@@ -54,36 +61,40 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getAction() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getAction()"/> 
         /// </summary>
         public string Action
         {
             get { return IExecute<string>("getAction"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getEventPropertyName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getEventPropertyName()"/> 
         /// </summary>
         public string EventPropertyName
         {
             get { return IExecute<string>("getEventPropertyName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getListenerMethodName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getListenerMethodName()"/> 
         /// </summary>
         public string ListenerMethodName
         {
             get { return IExecute<string>("getListenerMethodName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getTarget() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#getTarget()"/> 
         /// </summary>
         public object Target
         {
             get { return IExecute("getTarget"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Invoke(object arg0, Java.Lang.Reflect.Method arg1, object[] arg2)
         {
             return IExecute("invoke", arg0, arg1, arg2);

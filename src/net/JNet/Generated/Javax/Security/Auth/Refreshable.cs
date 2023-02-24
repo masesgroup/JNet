@@ -46,15 +46,19 @@ namespace Javax.Security.Auth
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#isCurrent()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#isCurrent()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCurrent()
         {
             return IExecute<bool>("isCurrent");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#refresh() throws javax.security.auth.RefreshFailedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#refresh()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Security.Auth.RefreshFailedException"/>
         public void Refresh()
         {
             IExecute("refresh");

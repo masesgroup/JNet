@@ -33,6 +33,9 @@ namespace Java.Security
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Permissions"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.Permissions t) => t.Cast<Java.Io.Serializable>();
         
         #endregion

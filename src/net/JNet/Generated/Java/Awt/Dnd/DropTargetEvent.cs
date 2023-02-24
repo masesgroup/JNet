@@ -30,8 +30,9 @@ namespace Java.Awt.Dnd
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetEvent.html#<init>(java.awt.dnd.DropTargetContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetEvent.html#%3Cinit%3E(java.awt.dnd.DropTargetContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetContext"/></param>
         public DropTargetEvent(Java.Awt.Dnd.DropTargetContext arg0)
             : base(arg0)
         {
@@ -53,7 +54,7 @@ namespace Java.Awt.Dnd
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetEvent.html#getDropTargetContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetEvent.html#getDropTargetContext()"/> 
         /// </summary>
         public Java.Awt.Dnd.DropTargetContext DropTargetContext
         {

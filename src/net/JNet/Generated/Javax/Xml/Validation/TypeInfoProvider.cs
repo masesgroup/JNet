@@ -46,29 +46,35 @@ namespace Javax.Xml.Validation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html#getElementTypeInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html#getElementTypeInfo()"/> 
         /// </summary>
         public Org.W3c.Dom.TypeInfo ElementTypeInfo
         {
             get { return IExecute<Org.W3c.Dom.TypeInfo>("getElementTypeInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html#isIdAttribute(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html#isIdAttribute(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsIdAttribute(int arg0)
         {
             return IExecute<bool>("isIdAttribute", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html#isSpecified(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html#isSpecified(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsSpecified(int arg0)
         {
             return IExecute<bool>("isSpecified", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html#getAttributeTypeInfo(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html#getAttributeTypeInfo(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Org.W3c.Dom.TypeInfo"/></returns>
         public Org.W3c.Dom.TypeInfo GetAttributeTypeInfo(int arg0)
         {
             return IExecute<Org.W3c.Dom.TypeInfo>("getAttributeTypeInfo", arg0);

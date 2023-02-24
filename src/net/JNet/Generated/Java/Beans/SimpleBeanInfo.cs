@@ -33,6 +33,9 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.SimpleBeanInfo"/> to <see cref="Java.Beans.BeanInfo"/>
+        /// </summary>
         public static implicit operator Java.Beans.BeanInfo(Java.Beans.SimpleBeanInfo t) => t.Cast<Java.Beans.BeanInfo>();
         
         #endregion
@@ -47,64 +50,68 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getAdditionalBeanInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getAdditionalBeanInfo()"/> 
         /// </summary>
         public Java.Beans.BeanInfo[] AdditionalBeanInfo
         {
             get { return IExecuteArray<Java.Beans.BeanInfo>("getAdditionalBeanInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getBeanDescriptor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getBeanDescriptor()"/> 
         /// </summary>
         public Java.Beans.BeanDescriptor BeanDescriptor
         {
             get { return IExecute<Java.Beans.BeanDescriptor>("getBeanDescriptor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getDefaultEventIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getDefaultEventIndex()"/> 
         /// </summary>
         public int DefaultEventIndex
         {
             get { return IExecute<int>("getDefaultEventIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getDefaultPropertyIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getDefaultPropertyIndex()"/> 
         /// </summary>
         public int DefaultPropertyIndex
         {
             get { return IExecute<int>("getDefaultPropertyIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getEventSetDescriptors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getEventSetDescriptors()"/> 
         /// </summary>
         public Java.Beans.EventSetDescriptor[] EventSetDescriptors
         {
             get { return IExecuteArray<Java.Beans.EventSetDescriptor>("getEventSetDescriptors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getMethodDescriptors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getMethodDescriptors()"/> 
         /// </summary>
         public Java.Beans.MethodDescriptor[] MethodDescriptors
         {
             get { return IExecuteArray<Java.Beans.MethodDescriptor>("getMethodDescriptors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getPropertyDescriptors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getPropertyDescriptors()"/> 
         /// </summary>
         public Java.Beans.PropertyDescriptor[] PropertyDescriptors
         {
             get { return IExecuteArray<Java.Beans.PropertyDescriptor>("getPropertyDescriptors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getIcon(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#getIcon(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image GetIcon(int arg0)
         {
             return IExecute<Java.Awt.Image>("getIcon", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#loadImage(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html#loadImage(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image LoadImage(string arg0)
         {
             return IExecute<Java.Awt.Image>("loadImage", arg0);

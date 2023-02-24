@@ -46,8 +46,10 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicButtonUI.html#getDefaultTextIconGap(javax.swing.AbstractButton)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicButtonUI.html#getDefaultTextIconGap(javax.swing.AbstractButton)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.AbstractButton"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetDefaultTextIconGap(Javax.Swing.AbstractButton arg0)
         {
             return IExecute<int>("getDefaultTextIconGap", arg0);

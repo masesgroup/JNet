@@ -42,8 +42,10 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#getSplashScreen()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#getSplashScreen()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.SplashScreen"/></returns>
         public static Java.Awt.SplashScreen GetSplashScreen()
         {
             return SExecute<Java.Awt.SplashScreen>("getSplashScreen");
@@ -53,50 +55,59 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#getBounds() throws java.lang.IllegalStateException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#getBounds()"/> 
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
             get { return IExecute<Java.Awt.Rectangle>("getBounds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#getImageURL() throws java.lang.IllegalStateException https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#setImageURL(java.net.URL) throws java.lang.NullPointerException,java.io.IOException,java.lang.IllegalStateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#getImageURL()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#setImageURL(java.net.URL)"/>
         /// </summary>
         public Java.Net.URL ImageURL
         {
             get { return IExecute<Java.Net.URL>("getImageURL"); } set { IExecute("setImageURL", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#getSize() throws java.lang.IllegalStateException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#getSize()"/> 
         /// </summary>
         public Java.Awt.Dimension Size
         {
             get { return IExecute<Java.Awt.Dimension>("getSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#isVisible()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#isVisible()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsVisible()
         {
             return IExecute<bool>("isVisible");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#createGraphics() throws java.lang.IllegalStateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#createGraphics()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.Graphics2D"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
         public Java.Awt.Graphics2D CreateGraphics()
         {
             return IExecute<Java.Awt.Graphics2D>("createGraphics");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#close() throws java.lang.IllegalStateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Lang.IllegalStateException"/>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#update() throws java.lang.IllegalStateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#update()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Lang.IllegalStateException"/>
         public void Update()
         {
             IExecute("update");

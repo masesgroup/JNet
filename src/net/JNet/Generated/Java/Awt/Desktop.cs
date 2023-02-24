@@ -42,15 +42,19 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#isDesktopSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#isDesktopSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public static bool IsDesktopSupported()
         {
             return SExecute<bool>("isDesktopSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#getDesktop()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#getDesktop()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.Desktop"/></returns>
         public static Java.Awt.Desktop GetDesktop()
         {
             return SExecute<Java.Awt.Desktop>("getDesktop");
@@ -60,148 +64,173 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#moveToTrash(java.io.File)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#moveToTrash(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool MoveToTrash(Java.Io.File arg0)
         {
             return IExecute<bool>("moveToTrash", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#addAppEventListener(java.awt.desktop.SystemEventListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#addAppEventListener(java.awt.desktop.SystemEventListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemEventListener"/></param>
         public void AddAppEventListener(Java.Awt.DesktopNs.SystemEventListener arg0)
         {
             IExecute("addAppEventListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#browse(java.net.URI) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#browse(java.net.URI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Browse(Java.Net.URI arg0)
         {
             IExecute("browse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#browseFileDirectory(java.io.File)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#browseFileDirectory(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
         public void BrowseFileDirectory(Java.Io.File arg0)
         {
             IExecute("browseFileDirectory", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#disableSuddenTermination()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#disableSuddenTermination()"/>
         /// </summary>
         public void DisableSuddenTermination()
         {
             IExecute("disableSuddenTermination");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#edit(java.io.File) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#edit(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Edit(Java.Io.File arg0)
         {
             IExecute("edit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#enableSuddenTermination()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#enableSuddenTermination()"/>
         /// </summary>
         public void EnableSuddenTermination()
         {
             IExecute("enableSuddenTermination");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#mail() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#mail()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Mail()
         {
             IExecute("mail");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#mail(java.net.URI) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#mail(java.net.URI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Mail(Java.Net.URI arg0)
         {
             IExecute("mail", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#open(java.io.File) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#open(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Open(Java.Io.File arg0)
         {
             IExecute("open", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#openHelpViewer()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#openHelpViewer()"/>
         /// </summary>
         public void OpenHelpViewer()
         {
             IExecute("openHelpViewer");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#print(java.io.File) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#print(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Print(Java.Io.File arg0)
         {
             IExecute("print", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#removeAppEventListener(java.awt.desktop.SystemEventListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#removeAppEventListener(java.awt.desktop.SystemEventListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemEventListener"/></param>
         public void RemoveAppEventListener(Java.Awt.DesktopNs.SystemEventListener arg0)
         {
             IExecute("removeAppEventListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#requestForeground(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#requestForeground(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void RequestForeground(bool arg0)
         {
             IExecute("requestForeground", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setAboutHandler(java.awt.desktop.AboutHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setAboutHandler(java.awt.desktop.AboutHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AboutHandler"/></param>
         public void SetAboutHandler(Java.Awt.DesktopNs.AboutHandler arg0)
         {
             IExecute("setAboutHandler", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setDefaultMenuBar(javax.swing.JMenuBar)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setDefaultMenuBar(javax.swing.JMenuBar)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JMenuBar"/></param>
         public void SetDefaultMenuBar(Javax.Swing.JMenuBar arg0)
         {
             IExecute("setDefaultMenuBar", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setOpenFileHandler(java.awt.desktop.OpenFilesHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setOpenFileHandler(java.awt.desktop.OpenFilesHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.OpenFilesHandler"/></param>
         public void SetOpenFileHandler(Java.Awt.DesktopNs.OpenFilesHandler arg0)
         {
             IExecute("setOpenFileHandler", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setOpenURIHandler(java.awt.desktop.OpenURIHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setOpenURIHandler(java.awt.desktop.OpenURIHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.OpenURIHandler"/></param>
         public void SetOpenURIHandler(Java.Awt.DesktopNs.OpenURIHandler arg0)
         {
             IExecute("setOpenURIHandler", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setPreferencesHandler(java.awt.desktop.PreferencesHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setPreferencesHandler(java.awt.desktop.PreferencesHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PreferencesHandler"/></param>
         public void SetPreferencesHandler(Java.Awt.DesktopNs.PreferencesHandler arg0)
         {
             IExecute("setPreferencesHandler", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setPrintFileHandler(java.awt.desktop.PrintFilesHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setPrintFileHandler(java.awt.desktop.PrintFilesHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PrintFilesHandler"/></param>
         public void SetPrintFileHandler(Java.Awt.DesktopNs.PrintFilesHandler arg0)
         {
             IExecute("setPrintFileHandler", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setQuitHandler(java.awt.desktop.QuitHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setQuitHandler(java.awt.desktop.QuitHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.QuitHandler"/></param>
         public void SetQuitHandler(Java.Awt.DesktopNs.QuitHandler arg0)
         {
             IExecute("setQuitHandler", arg0);
@@ -223,99 +252,99 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_ABOUT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_ABOUT"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_ABOUT => Clazz.GetField<Java.Awt.Desktop.Action>("APP_ABOUT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_FOREGROUND
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_FOREGROUND"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_EVENT_FOREGROUND => Clazz.GetField<Java.Awt.Desktop.Action>("APP_EVENT_FOREGROUND");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_HIDDEN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_HIDDEN"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_EVENT_HIDDEN => Clazz.GetField<Java.Awt.Desktop.Action>("APP_EVENT_HIDDEN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_REOPENED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_REOPENED"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_EVENT_REOPENED => Clazz.GetField<Java.Awt.Desktop.Action>("APP_EVENT_REOPENED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_SCREEN_SLEEP
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_SCREEN_SLEEP"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_EVENT_SCREEN_SLEEP => Clazz.GetField<Java.Awt.Desktop.Action>("APP_EVENT_SCREEN_SLEEP");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_SYSTEM_SLEEP
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_SYSTEM_SLEEP"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_EVENT_SYSTEM_SLEEP => Clazz.GetField<Java.Awt.Desktop.Action>("APP_EVENT_SYSTEM_SLEEP");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_USER_SESSION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_USER_SESSION"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_EVENT_USER_SESSION => Clazz.GetField<Java.Awt.Desktop.Action>("APP_EVENT_USER_SESSION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_HELP_VIEWER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_HELP_VIEWER"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_HELP_VIEWER => Clazz.GetField<Java.Awt.Desktop.Action>("APP_HELP_VIEWER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_MENU_BAR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_MENU_BAR"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_MENU_BAR => Clazz.GetField<Java.Awt.Desktop.Action>("APP_MENU_BAR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_OPEN_FILE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_OPEN_FILE"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_OPEN_FILE => Clazz.GetField<Java.Awt.Desktop.Action>("APP_OPEN_FILE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_OPEN_URI
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_OPEN_URI"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_OPEN_URI => Clazz.GetField<Java.Awt.Desktop.Action>("APP_OPEN_URI");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_PREFERENCES
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_PREFERENCES"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_PREFERENCES => Clazz.GetField<Java.Awt.Desktop.Action>("APP_PREFERENCES");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_PRINT_FILE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_PRINT_FILE"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_PRINT_FILE => Clazz.GetField<Java.Awt.Desktop.Action>("APP_PRINT_FILE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_QUIT_HANDLER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_QUIT_HANDLER"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_QUIT_HANDLER => Clazz.GetField<Java.Awt.Desktop.Action>("APP_QUIT_HANDLER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_QUIT_STRATEGY
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_QUIT_STRATEGY"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_QUIT_STRATEGY => Clazz.GetField<Java.Awt.Desktop.Action>("APP_QUIT_STRATEGY");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_REQUEST_FOREGROUND
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_REQUEST_FOREGROUND"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_REQUEST_FOREGROUND => Clazz.GetField<Java.Awt.Desktop.Action>("APP_REQUEST_FOREGROUND");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_SUDDEN_TERMINATION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_SUDDEN_TERMINATION"/>
             /// </summary>
             public static Java.Awt.Desktop.Action APP_SUDDEN_TERMINATION => Clazz.GetField<Java.Awt.Desktop.Action>("APP_SUDDEN_TERMINATION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#BROWSE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#BROWSE"/>
             /// </summary>
             public static Java.Awt.Desktop.Action BROWSE => Clazz.GetField<Java.Awt.Desktop.Action>("BROWSE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#BROWSE_FILE_DIR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#BROWSE_FILE_DIR"/>
             /// </summary>
             public static Java.Awt.Desktop.Action BROWSE_FILE_DIR => Clazz.GetField<Java.Awt.Desktop.Action>("BROWSE_FILE_DIR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#EDIT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#EDIT"/>
             /// </summary>
             public static Java.Awt.Desktop.Action EDIT => Clazz.GetField<Java.Awt.Desktop.Action>("EDIT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#MAIL
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#MAIL"/>
             /// </summary>
             public static Java.Awt.Desktop.Action MAIL => Clazz.GetField<Java.Awt.Desktop.Action>("MAIL");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#MOVE_TO_TRASH
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#MOVE_TO_TRASH"/>
             /// </summary>
             public static Java.Awt.Desktop.Action MOVE_TO_TRASH => Clazz.GetField<Java.Awt.Desktop.Action>("MOVE_TO_TRASH");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#OPEN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#OPEN"/>
             /// </summary>
             public static Java.Awt.Desktop.Action OPEN => Clazz.GetField<Java.Awt.Desktop.Action>("OPEN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#PRINT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#PRINT"/>
             /// </summary>
             public static Java.Awt.Desktop.Action PRINT => Clazz.GetField<Java.Awt.Desktop.Action>("PRINT");
             
@@ -323,8 +352,10 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Awt.Desktop.Action"/></returns>
             public static Java.Awt.Desktop.Action[] Values()
             {
                 return SExecuteArray<Java.Awt.Desktop.Action>("values");

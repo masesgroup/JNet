@@ -46,8 +46,9 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PreferencesHandler.html#handlePreferences(java.awt.desktop.PreferencesEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PreferencesHandler.html#handlePreferences(java.awt.desktop.PreferencesEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PreferencesEvent"/></param>
         public void HandlePreferences(Java.Awt.DesktopNs.PreferencesEvent arg0)
         {
             IExecute("handlePreferences", arg0);

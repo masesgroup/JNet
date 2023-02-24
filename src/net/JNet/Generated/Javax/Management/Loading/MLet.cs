@@ -30,43 +30,58 @@ namespace Javax.Management.Loading
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#<init>(java.net.URL[],boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#%3Cinit%3E(java.net.URL[],boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public MLet(Java.Net.URL[] arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#<init>(java.net.URL[],java.lang.ClassLoader,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#<init>(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg2"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
         public MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#<init>(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg2"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
         public MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#<init>(java.net.URL[],java.lang.ClassLoader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
         public MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#<init>(java.net.URL[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#%3Cinit%3E(java.net.URL[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         public MLet(Java.Net.URL[] arg0)
             : base(arg0)
         {
@@ -75,8 +90,17 @@ namespace Javax.Management.Loading
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Loading.MLet"/> to <see cref="Javax.Management.Loading.MLetMBean"/>
+        /// </summary>
         public static implicit operator Javax.Management.Loading.MLetMBean(Javax.Management.Loading.MLet t) => t.Cast<Javax.Management.Loading.MLetMBean>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Loading.MLet"/> to <see cref="Javax.Management.MBeanRegistration"/>
+        /// </summary>
         public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Loading.MLet t) => t.Cast<Javax.Management.MBeanRegistration>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Loading.MLet"/> to <see cref="Java.Io.Externalizable"/>
+        /// </summary>
         public static implicit operator Java.Io.Externalizable(Javax.Management.Loading.MLet t) => t.Cast<Java.Io.Externalizable>();
         
         #endregion
@@ -91,64 +115,81 @@ namespace Javax.Management.Loading
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#getLibraryDirectory() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#setLibraryDirectory(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#getLibraryDirectory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#setLibraryDirectory(java.lang.String)"/>
         /// </summary>
         public string LibraryDirectory
         {
             get { return IExecute<string>("getLibraryDirectory"); } set { IExecute("setLibraryDirectory", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName) throws java.lang.Exception
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
             return IExecute<Javax.Management.ObjectName>("preRegister", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#addURL(java.lang.String) throws javax.management.ServiceNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#addURL(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Javax.Management.ServiceNotFoundException"/>
         public void AddURL(string arg0)
         {
             IExecute("addURL", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#addURL(java.net.URL)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#addURL(java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         public void AddURL(Java.Net.URL arg0)
         {
             IExecute("addURL", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#postDeregister()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#postDeregister()"/>
         /// </summary>
         public void PostDeregister()
         {
             IExecute("postDeregister");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#postRegister(java.lang.Boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#postRegister(java.lang.Boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool?"/></param>
         public void PostRegister(bool? arg0)
         {
             IExecute("postRegister", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#preDeregister() throws java.lang.Exception
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#preDeregister()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Lang.Exception"/>
         public void PreDeregister()
         {
             IExecute("preDeregister");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#readExternal(java.io.ObjectInput) throws java.io.IOException,java.lang.ClassNotFoundException,java.lang.UnsupportedOperationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#readExternal(java.io.ObjectInput)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.ObjectInput"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
         public void ReadExternal(Java.Io.ObjectInput arg0)
         {
             IExecute("readExternal", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#writeExternal(java.io.ObjectOutput) throws java.io.IOException,java.lang.UnsupportedOperationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#writeExternal(java.io.ObjectOutput)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
         public void WriteExternal(Java.Io.ObjectOutput arg0)
         {
             IExecute("writeExternal", arg0);

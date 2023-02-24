@@ -38,7 +38,7 @@ namespace Java.Awt.Print
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#UNKNOWN_NUMBER_OF_PAGES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#UNKNOWN_NUMBER_OF_PAGES"/>
         /// </summary>
         public static int UNKNOWN_NUMBER_OF_PAGES => Clazz.GetField<int>("UNKNOWN_NUMBER_OF_PAGES");
         
@@ -50,22 +50,28 @@ namespace Java.Awt.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getNumberOfPages() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getNumberOfPages()"/> 
         /// </summary>
         public int NumberOfPages
         {
             get { return IExecute<int>("getNumberOfPages"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getPageFormat(int) throws java.lang.IndexOutOfBoundsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getPageFormat(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
+        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public Java.Awt.Print.PageFormat GetPageFormat(int arg0)
         {
             return IExecute<Java.Awt.Print.PageFormat>("getPageFormat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getPrintable(int) throws java.lang.IndexOutOfBoundsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getPrintable(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Print.Printable"/></returns>
+        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public Java.Awt.Print.Printable GetPrintable(int arg0)
         {
             return IExecute<Java.Awt.Print.Printable>("getPrintable", arg0);

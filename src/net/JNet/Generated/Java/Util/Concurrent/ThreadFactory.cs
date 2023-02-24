@@ -46,8 +46,10 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadFactory.html#newThread(java.lang.Runnable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadFactory.html#newThread(java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <returns><see cref="Java.Lang.Thread"/></returns>
         public Java.Lang.Thread NewThread(Java.Lang.Runnable arg0)
         {
             return IExecute<Java.Lang.Thread>("newThread", arg0);

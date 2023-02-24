@@ -33,17 +33,20 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Net.StandardProtocolFamily"/> to <see cref="Java.Net.ProtocolFamily"/>
+        /// </summary>
         public static implicit operator Java.Net.ProtocolFamily(Java.Net.StandardProtocolFamily t) => t.Cast<Java.Net.ProtocolFamily>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#INET
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#INET"/>
         /// </summary>
         public static Java.Net.StandardProtocolFamily INET => Clazz.GetField<Java.Net.StandardProtocolFamily>("INET");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#INET6
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#INET6"/>
         /// </summary>
         public static Java.Net.StandardProtocolFamily INET6 => Clazz.GetField<Java.Net.StandardProtocolFamily>("INET6");
         
@@ -51,8 +54,10 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.StandardProtocolFamily"/></returns>
         public static Java.Net.StandardProtocolFamily[] Values()
         {
             return SExecuteArray<Java.Net.StandardProtocolFamily>("values");

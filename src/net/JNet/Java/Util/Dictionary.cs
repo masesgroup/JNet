@@ -25,8 +25,9 @@ namespace Java.Util
     /// </summary>
     public class Dictionary<K, V> : JVMBridgeBase<Dictionary<K, V>>
     {
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => true;
-
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.util.Dictionary";
     }
 }

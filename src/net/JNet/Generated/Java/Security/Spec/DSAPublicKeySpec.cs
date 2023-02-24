@@ -30,8 +30,12 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html#<init>(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg2"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg3"><see cref="Java.Math.BigInteger"/></param>
         public DSAPublicKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -40,6 +44,9 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Spec.DSAPublicKeySpec"/> to <see cref="Java.Security.Spec.KeySpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.KeySpec(Java.Security.Spec.DSAPublicKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
         
         #endregion
@@ -54,28 +61,28 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html#getG() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html#getG()"/> 
         /// </summary>
         public Java.Math.BigInteger G
         {
             get { return IExecute<Java.Math.BigInteger>("getG"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html#getP() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html#getP()"/> 
         /// </summary>
         public Java.Math.BigInteger P
         {
             get { return IExecute<Java.Math.BigInteger>("getP"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html#getQ() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html#getQ()"/> 
         /// </summary>
         public Java.Math.BigInteger Q
         {
             get { return IExecute<Java.Math.BigInteger>("getQ"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html#getY() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html#getY()"/> 
         /// </summary>
         public Java.Math.BigInteger Y
         {

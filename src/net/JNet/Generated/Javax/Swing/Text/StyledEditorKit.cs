@@ -46,14 +46,14 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.html#getCharacterAttributeRun() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.html#getCharacterAttributeRun()"/> 
         /// </summary>
         public Javax.Swing.Text.Element CharacterAttributeRun
         {
             get { return IExecute<Javax.Swing.Text.Element>("getCharacterAttributeRun"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.html#getInputAttributes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.html#getInputAttributes()"/> 
         /// </summary>
         public Javax.Swing.Text.MutableAttributeSet InputAttributes
         {
@@ -68,8 +68,10 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.AlignmentAction.html#<init>(java.lang.String,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.AlignmentAction.html#%3Cinit%3E(java.lang.String,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
             public AlignmentAction(string arg0, int arg1)
                 : base(arg0, arg1)
             {
@@ -129,8 +131,10 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.FontFamilyAction.html#<init>(java.lang.String,java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.FontFamilyAction.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="string"/></param>
             public FontFamilyAction(string arg0, string arg1)
                 : base(arg0, arg1)
             {
@@ -163,8 +167,10 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.FontSizeAction.html#<init>(java.lang.String,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.FontSizeAction.html#%3Cinit%3E(java.lang.String,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
             public FontSizeAction(string arg0, int arg1)
                 : base(arg0, arg1)
             {
@@ -197,8 +203,10 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.ForegroundAction.html#<init>(java.lang.String,java.awt.Color)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.ForegroundAction.html#%3Cinit%3E(java.lang.String,java.awt.Color)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
             public ForegroundAction(string arg0, Java.Awt.Color arg1)
                 : base(arg0, arg1)
             {
@@ -258,8 +266,9 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.StyledTextAction.html#<init>(java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.StyledTextAction.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
             public StyledTextAction(string arg0)
                 : base(arg0)
             {

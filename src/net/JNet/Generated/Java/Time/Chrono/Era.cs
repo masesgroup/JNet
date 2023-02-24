@@ -33,7 +33,13 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.Era"/> to <see cref="Java.Time.Temporal.TemporalAccessor"/>
+        /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAccessor(Java.Time.Chrono.Era t) => t.Cast<Java.Time.Temporal.TemporalAccessor>();
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.Era"/> to <see cref="Java.Time.Temporal.TemporalAdjuster"/>
+        /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.Chrono.Era t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
         
         #endregion
@@ -48,43 +54,53 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html#getValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html#getValue()"/> 
         /// </summary>
         public int Value
         {
             get { return IExecute<int>("getValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html#isSupported(java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html#isSupported(java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<bool>("isSupported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html#get(java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html#get(java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Get(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<int>("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html#adjustInto(java.time.temporal.Temporal)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html#adjustInto(java.time.temporal.Temporal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0)
         {
             return IExecute<Java.Time.Temporal.Temporal>("adjustInto", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html#range(java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html#range(java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html#getLong(java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Era.html#getLong(java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see langword="long"/></returns>
         public long GetLong(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<long>("getLong", arg0);

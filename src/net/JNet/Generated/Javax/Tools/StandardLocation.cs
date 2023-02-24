@@ -38,55 +38,55 @@ namespace Javax.Tools
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#ANNOTATION_PROCESSOR_MODULE_PATH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#ANNOTATION_PROCESSOR_MODULE_PATH"/>
         /// </summary>
         public static Javax.Tools.StandardLocation ANNOTATION_PROCESSOR_MODULE_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("ANNOTATION_PROCESSOR_MODULE_PATH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#ANNOTATION_PROCESSOR_PATH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#ANNOTATION_PROCESSOR_PATH"/>
         /// </summary>
         public static Javax.Tools.StandardLocation ANNOTATION_PROCESSOR_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("ANNOTATION_PROCESSOR_PATH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#CLASS_OUTPUT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#CLASS_OUTPUT"/>
         /// </summary>
         public static Javax.Tools.StandardLocation CLASS_OUTPUT => Clazz.GetField<Javax.Tools.StandardLocation>("CLASS_OUTPUT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#CLASS_PATH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#CLASS_PATH"/>
         /// </summary>
         public static Javax.Tools.StandardLocation CLASS_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("CLASS_PATH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#MODULE_PATH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#MODULE_PATH"/>
         /// </summary>
         public static Javax.Tools.StandardLocation MODULE_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("MODULE_PATH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#MODULE_SOURCE_PATH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#MODULE_SOURCE_PATH"/>
         /// </summary>
         public static Javax.Tools.StandardLocation MODULE_SOURCE_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("MODULE_SOURCE_PATH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#NATIVE_HEADER_OUTPUT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#NATIVE_HEADER_OUTPUT"/>
         /// </summary>
         public static Javax.Tools.StandardLocation NATIVE_HEADER_OUTPUT => Clazz.GetField<Javax.Tools.StandardLocation>("NATIVE_HEADER_OUTPUT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#PATCH_MODULE_PATH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#PATCH_MODULE_PATH"/>
         /// </summary>
         public static Javax.Tools.StandardLocation PATCH_MODULE_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("PATCH_MODULE_PATH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#PLATFORM_CLASS_PATH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#PLATFORM_CLASS_PATH"/>
         /// </summary>
         public static Javax.Tools.StandardLocation PLATFORM_CLASS_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("PLATFORM_CLASS_PATH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#SOURCE_OUTPUT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#SOURCE_OUTPUT"/>
         /// </summary>
         public static Javax.Tools.StandardLocation SOURCE_OUTPUT => Clazz.GetField<Javax.Tools.StandardLocation>("SOURCE_OUTPUT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#SOURCE_PATH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#SOURCE_PATH"/>
         /// </summary>
         public static Javax.Tools.StandardLocation SOURCE_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("SOURCE_PATH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#SYSTEM_MODULES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#SYSTEM_MODULES"/>
         /// </summary>
         public static Javax.Tools.StandardLocation SYSTEM_MODULES => Clazz.GetField<Javax.Tools.StandardLocation>("SYSTEM_MODULES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#UPGRADE_MODULE_PATH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#UPGRADE_MODULE_PATH"/>
         /// </summary>
         public static Javax.Tools.StandardLocation UPGRADE_MODULE_PATH => Clazz.GetField<Javax.Tools.StandardLocation>("UPGRADE_MODULE_PATH");
         
@@ -94,15 +94,19 @@ namespace Javax.Tools
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#locationFor(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#locationFor(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Tools.JavaFileManager.Location"/></returns>
         public static Javax.Tools.JavaFileManager.Location LocationFor(string arg0)
         {
             return SExecute<Javax.Tools.JavaFileManager.Location>("locationFor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Tools.StandardLocation"/></returns>
         public static Javax.Tools.StandardLocation[] Values()
         {
             return SExecuteArray<Javax.Tools.StandardLocation>("values");
@@ -112,22 +116,26 @@ namespace Javax.Tools
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isModuleOrientedLocation()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isModuleOrientedLocation()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsModuleOrientedLocation()
         {
             return IExecute<bool>("isModuleOrientedLocation");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isOutputLocation()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isOutputLocation()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsOutputLocation()
         {
             return IExecute<bool>("isOutputLocation");

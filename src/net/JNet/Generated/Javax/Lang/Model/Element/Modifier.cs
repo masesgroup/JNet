@@ -38,51 +38,51 @@ namespace Javax.Lang.Model.Element
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#ABSTRACT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#ABSTRACT"/>
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier ABSTRACT => Clazz.GetField<Javax.Lang.Model.Element.Modifier>("ABSTRACT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#DEFAULT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#DEFAULT"/>
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier DEFAULT => Clazz.GetField<Javax.Lang.Model.Element.Modifier>("DEFAULT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#FINAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#FINAL"/>
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier FINAL => Clazz.GetField<Javax.Lang.Model.Element.Modifier>("FINAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#NATIVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#NATIVE"/>
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier NATIVE => Clazz.GetField<Javax.Lang.Model.Element.Modifier>("NATIVE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#PRIVATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#PRIVATE"/>
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier PRIVATE => Clazz.GetField<Javax.Lang.Model.Element.Modifier>("PRIVATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#PROTECTED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#PROTECTED"/>
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier PROTECTED => Clazz.GetField<Javax.Lang.Model.Element.Modifier>("PROTECTED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#PUBLIC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#PUBLIC"/>
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier PUBLIC => Clazz.GetField<Javax.Lang.Model.Element.Modifier>("PUBLIC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#STATIC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#STATIC"/>
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier STATIC => Clazz.GetField<Javax.Lang.Model.Element.Modifier>("STATIC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#STRICTFP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#STRICTFP"/>
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier STRICTFP => Clazz.GetField<Javax.Lang.Model.Element.Modifier>("STRICTFP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#SYNCHRONIZED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#SYNCHRONIZED"/>
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier SYNCHRONIZED => Clazz.GetField<Javax.Lang.Model.Element.Modifier>("SYNCHRONIZED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#TRANSIENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#TRANSIENT"/>
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier TRANSIENT => Clazz.GetField<Javax.Lang.Model.Element.Modifier>("TRANSIENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#VOLATILE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#VOLATILE"/>
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier VOLATILE => Clazz.GetField<Javax.Lang.Model.Element.Modifier>("VOLATILE");
         
@@ -90,8 +90,10 @@ namespace Javax.Lang.Model.Element
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Lang.Model.Element.Modifier"/></returns>
         public static Javax.Lang.Model.Element.Modifier[] Values()
         {
             return SExecuteArray<Javax.Lang.Model.Element.Modifier>("values");

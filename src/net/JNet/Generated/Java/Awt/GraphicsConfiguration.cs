@@ -46,106 +46,135 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getBounds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getBounds()"/> 
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
             get { return IExecute<Java.Awt.Rectangle>("getBounds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getBufferCapabilities() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getBufferCapabilities()"/> 
         /// </summary>
         public Java.Awt.BufferCapabilities BufferCapabilities
         {
             get { return IExecute<Java.Awt.BufferCapabilities>("getBufferCapabilities"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getColorModel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getColorModel()"/> 
         /// </summary>
         public Java.Awt.ImageNs.ColorModel ColorModel
         {
             get { return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getDefaultTransform() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getDefaultTransform()"/> 
         /// </summary>
         public Java.Awt.Geom.AffineTransform DefaultTransform
         {
             get { return IExecute<Java.Awt.Geom.AffineTransform>("getDefaultTransform"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getDevice() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getDevice()"/> 
         /// </summary>
         public Java.Awt.GraphicsDevice Device
         {
             get { return IExecute<Java.Awt.GraphicsDevice>("getDevice"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getImageCapabilities() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getImageCapabilities()"/> 
         /// </summary>
         public Java.Awt.ImageCapabilities ImageCapabilities
         {
             get { return IExecute<Java.Awt.ImageCapabilities>("getImageCapabilities"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getNormalizingTransform() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getNormalizingTransform()"/> 
         /// </summary>
         public Java.Awt.Geom.AffineTransform NormalizingTransform
         {
             get { return IExecute<Java.Awt.Geom.AffineTransform>("getNormalizingTransform"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getColorModel(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getColorModel(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.ColorModel"/></returns>
         public Java.Awt.ImageNs.ColorModel GetColorModel(int arg0)
         {
             return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#isTranslucencyCapable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#isTranslucencyCapable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsTranslucencyCapable()
         {
             return IExecute<bool>("isTranslucencyCapable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleImage(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleImage(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage CreateCompatibleImage(int arg0, int arg1, int arg2)
         {
             return IExecute<Java.Awt.ImageNs.BufferedImage>("createCompatibleImage", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleImage(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleImage(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage CreateCompatibleImage(int arg0, int arg1)
         {
             return IExecute<Java.Awt.ImageNs.BufferedImage>("createCompatibleImage", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.VolatileImage"/></returns>
         public Java.Awt.ImageNs.VolatileImage CreateCompatibleVolatileImage(int arg0, int arg1, int arg2)
         {
             return IExecute<Java.Awt.ImageNs.VolatileImage>("createCompatibleVolatileImage", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int,java.awt.ImageCapabilities,int) throws java.awt.AWTException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int,java.awt.ImageCapabilities,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.ImageCapabilities"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.VolatileImage"/></returns>
+        /// <exception cref="Java.Awt.AWTException"/>
         public Java.Awt.ImageNs.VolatileImage CreateCompatibleVolatileImage(int arg0, int arg1, Java.Awt.ImageCapabilities arg2, int arg3)
         {
             return IExecute<Java.Awt.ImageNs.VolatileImage>("createCompatibleVolatileImage", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int,java.awt.ImageCapabilities) throws java.awt.AWTException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int,java.awt.ImageCapabilities)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.ImageCapabilities"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.VolatileImage"/></returns>
+        /// <exception cref="Java.Awt.AWTException"/>
         public Java.Awt.ImageNs.VolatileImage CreateCompatibleVolatileImage(int arg0, int arg1, Java.Awt.ImageCapabilities arg2)
         {
             return IExecute<Java.Awt.ImageNs.VolatileImage>("createCompatibleVolatileImage", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.VolatileImage"/></returns>
         public Java.Awt.ImageNs.VolatileImage CreateCompatibleVolatileImage(int arg0, int arg1)
         {
             return IExecute<Java.Awt.ImageNs.VolatileImage>("createCompatibleVolatileImage", arg0, arg1);

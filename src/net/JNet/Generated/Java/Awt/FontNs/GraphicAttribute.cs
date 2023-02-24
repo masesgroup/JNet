@@ -38,23 +38,23 @@ namespace Java.Awt.FontNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#BOTTOM_ALIGNMENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#BOTTOM_ALIGNMENT"/>
         /// </summary>
         public static int BOTTOM_ALIGNMENT => Clazz.GetField<int>("BOTTOM_ALIGNMENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#CENTER_BASELINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#CENTER_BASELINE"/>
         /// </summary>
         public static int CENTER_BASELINE => Clazz.GetField<int>("CENTER_BASELINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#HANGING_BASELINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#HANGING_BASELINE"/>
         /// </summary>
         public static int HANGING_BASELINE => Clazz.GetField<int>("HANGING_BASELINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#ROMAN_BASELINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#ROMAN_BASELINE"/>
         /// </summary>
         public static int ROMAN_BASELINE => Clazz.GetField<int>("ROMAN_BASELINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#TOP_ALIGNMENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#TOP_ALIGNMENT"/>
         /// </summary>
         public static int TOP_ALIGNMENT => Clazz.GetField<int>("TOP_ALIGNMENT");
         
@@ -66,57 +66,62 @@ namespace Java.Awt.FontNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getAdvance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getAdvance()"/> 
         /// </summary>
         public float Advance
         {
             get { return IExecute<float>("getAdvance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getAlignment() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getAlignment()"/> 
         /// </summary>
         public int Alignment
         {
             get { return IExecute<int>("getAlignment"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getAscent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getAscent()"/> 
         /// </summary>
         public float Ascent
         {
             get { return IExecute<float>("getAscent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getBounds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getBounds()"/> 
         /// </summary>
         public Java.Awt.Geom.Rectangle2D Bounds
         {
             get { return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getDescent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getDescent()"/> 
         /// </summary>
         public float Descent
         {
             get { return IExecute<float>("getDescent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getJustificationInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getJustificationInfo()"/> 
         /// </summary>
         public Java.Awt.FontNs.GlyphJustificationInfo JustificationInfo
         {
             get { return IExecute<Java.Awt.FontNs.GlyphJustificationInfo>("getJustificationInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#draw(java.awt.Graphics2D,float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#draw(java.awt.Graphics2D,float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics2D"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
         public void Draw(Java.Awt.Graphics2D arg0, float arg1, float arg2)
         {
             IExecute("draw", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getOutline(java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getOutline(java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetOutline(Java.Awt.Geom.AffineTransform arg0)
         {
             return IExecute<Java.Awt.Shape>("getOutline", arg0);

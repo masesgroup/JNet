@@ -38,7 +38,7 @@ namespace Javax.Swing.Plaf.Metal
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalScrollBarUI.html#FREE_STANDING_PROP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalScrollBarUI.html#FREE_STANDING_PROP"/>
         /// </summary>
         public static string FREE_STANDING_PROP => Clazz.GetField<string>("FREE_STANDING_PROP");
         

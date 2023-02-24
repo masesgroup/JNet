@@ -30,15 +30,20 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarOutputStream.html#<init>(java.io.OutputStream,java.util.jar.Manifest) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.jar.Manifest)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Jar.Manifest"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public JarOutputStream(Java.Io.OutputStream arg0, Java.Util.Jar.Manifest arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarOutputStream.html#<init>(java.io.OutputStream) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public JarOutputStream(Java.Io.OutputStream arg0)
             : base(arg0)
         {

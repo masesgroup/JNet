@@ -30,8 +30,10 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#<init>(java.lang.String,javax.xml.crypto.dsig.spec.XPathType$Filter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#%3Cinit%3E(java.lang.String,javax.xml.crypto.dsig.spec.XPathType$Filter)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter"/></param>
         public XPathType(string arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1)
             : base(arg0, arg1)
         {
@@ -53,15 +55,17 @@ namespace Javax.Xml.Crypto.Dsig.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#getExpression() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#getExpression()"/> 
         /// </summary>
         public string Expression
         {
             get { return IExecute<string>("getExpression"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#getFilter()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#getFilter()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter"/></returns>
         public Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter GetFilter()
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>("getFilter");
@@ -83,15 +87,15 @@ namespace Javax.Xml.Crypto.Dsig.Spec
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.Filter.html#INTERSECT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.Filter.html#INTERSECT"/>
             /// </summary>
             public static Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter INTERSECT => Clazz.GetField<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>("INTERSECT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.Filter.html#SUBTRACT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.Filter.html#SUBTRACT"/>
             /// </summary>
             public static Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter SUBTRACT => Clazz.GetField<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>("SUBTRACT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.Filter.html#UNION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.Filter.html#UNION"/>
             /// </summary>
             public static Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter UNION => Clazz.GetField<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>("UNION");
             

@@ -38,15 +38,15 @@ namespace Java.Util.Prefs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#MAX_KEY_LENGTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#MAX_KEY_LENGTH"/>
         /// </summary>
         public static int MAX_KEY_LENGTH => Clazz.GetField<int>("MAX_KEY_LENGTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#MAX_NAME_LENGTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#MAX_NAME_LENGTH"/>
         /// </summary>
         public static int MAX_NAME_LENGTH => Clazz.GetField<int>("MAX_NAME_LENGTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#MAX_VALUE_LENGTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#MAX_VALUE_LENGTH"/>
         /// </summary>
         public static int MAX_VALUE_LENGTH => Clazz.GetField<int>("MAX_VALUE_LENGTH");
         
@@ -54,22 +54,29 @@ namespace Java.Util.Prefs
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#systemRoot()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#systemRoot()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public static Java.Util.Prefs.Preferences SystemRoot()
         {
             return SExecute<Java.Util.Prefs.Preferences>("systemRoot");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#userRoot()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#userRoot()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public static Java.Util.Prefs.Preferences UserRoot()
         {
             return SExecute<Java.Util.Prefs.Preferences>("userRoot");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#importPreferences(java.io.InputStream) throws java.io.IOException,java.util.prefs.InvalidPreferencesFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#importPreferences(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Util.Prefs.InvalidPreferencesFormatException"/>
         public static void ImportPreferences(Java.Io.InputStream arg0)
         {
             SExecute("importPreferences", arg0);
@@ -79,232 +86,305 @@ namespace Java.Util.Prefs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getBoolean(java.lang.String,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getBoolean(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool GetBoolean(string arg0, bool arg1)
         {
             return IExecute<bool>("getBoolean", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#isUserNode()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#isUserNode()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsUserNode()
         {
             return IExecute<bool>("isUserNode");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#nodeExists(java.lang.String) throws java.util.prefs.BackingStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#nodeExists(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public bool NodeExists(string arg0)
         {
             return IExecute<bool>("nodeExists", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getByteArray(java.lang.String,byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getByteArray(java.lang.String,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <returns><see cref="byte"/></returns>
         public byte[] GetByteArray(string arg0, byte[] arg1)
         {
             return IExecuteArray<byte>("getByteArray", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getDouble(java.lang.String,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getDouble(java.lang.String,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <returns><see langword="double"/></returns>
         public double GetDouble(string arg0, double arg1)
         {
             return IExecute<double>("getDouble", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getFloat(java.lang.String,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getFloat(java.lang.String,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <returns><see langword="float"/></returns>
         public float GetFloat(string arg0, float arg1)
         {
             return IExecute<float>("getFloat", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getInt(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getInt(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetInt(string arg0, int arg1)
         {
             return IExecute<int>("getInt", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#absolutePath()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#absolutePath()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string AbsolutePath()
         {
             return IExecute<string>("absolutePath");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#get(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#get(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string Get(string arg0, string arg1)
         {
             return IExecute<string>("get", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#name()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#name()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Name()
         {
             return IExecute<string>("name");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#childrenNames() throws java.util.prefs.BackingStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#childrenNames()"/>
         /// </summary>
+        
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public string[] ChildrenNames()
         {
             return IExecuteArray<string>("childrenNames");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#keys() throws java.util.prefs.BackingStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#keys()"/>
         /// </summary>
+        
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public string[] Keys()
         {
             return IExecuteArray<string>("keys");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#node(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#node(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public Java.Util.Prefs.Preferences Node(string arg0)
         {
             return IExecute<Java.Util.Prefs.Preferences>("node", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#parent()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#parent()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public Java.Util.Prefs.Preferences Parent()
         {
             return IExecute<Java.Util.Prefs.Preferences>("parent");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getLong(java.lang.String,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getLong(java.lang.String,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public long GetLong(string arg0, long arg1)
         {
             return IExecute<long>("getLong", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#addNodeChangeListener(java.util.prefs.NodeChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#addNodeChangeListener(java.util.prefs.NodeChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeListener"/></param>
         public void AddNodeChangeListener(Java.Util.Prefs.NodeChangeListener arg0)
         {
             IExecute("addNodeChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#addPreferenceChangeListener(java.util.prefs.PreferenceChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#addPreferenceChangeListener(java.util.prefs.PreferenceChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeListener"/></param>
         public void AddPreferenceChangeListener(Java.Util.Prefs.PreferenceChangeListener arg0)
         {
             IExecute("addPreferenceChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#clear() throws java.util.prefs.BackingStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#clear()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void Clear()
         {
             IExecute("clear");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#exportNode(java.io.OutputStream) throws java.io.IOException,java.util.prefs.BackingStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#exportNode(java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void ExportNode(Java.Io.OutputStream arg0)
         {
             IExecute("exportNode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#exportSubtree(java.io.OutputStream) throws java.io.IOException,java.util.prefs.BackingStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#exportSubtree(java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void ExportSubtree(Java.Io.OutputStream arg0)
         {
             IExecute("exportSubtree", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#flush() throws java.util.prefs.BackingStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#flush()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void Flush()
         {
             IExecute("flush");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#put(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#put(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public void Put(string arg0, string arg1)
         {
             IExecute("put", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putBoolean(java.lang.String,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putBoolean(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public void PutBoolean(string arg0, bool arg1)
         {
             IExecute("putBoolean", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putByteArray(java.lang.String,byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putByteArray(java.lang.String,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
         public void PutByteArray(string arg0, byte[] arg1)
         {
             IExecute("putByteArray", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putDouble(java.lang.String,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putDouble(java.lang.String,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
         public void PutDouble(string arg0, double arg1)
         {
             IExecute("putDouble", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putFloat(java.lang.String,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putFloat(java.lang.String,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
         public void PutFloat(string arg0, float arg1)
         {
             IExecute("putFloat", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putInt(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putInt(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void PutInt(string arg0, int arg1)
         {
             IExecute("putInt", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putLong(java.lang.String,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putLong(java.lang.String,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
         public void PutLong(string arg0, long arg1)
         {
             IExecute("putLong", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#remove(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#remove(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void Remove(string arg0)
         {
             IExecute("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#removeNode() throws java.util.prefs.BackingStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#removeNode()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void RemoveNode()
         {
             IExecute("removeNode");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#removeNodeChangeListener(java.util.prefs.NodeChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#removeNodeChangeListener(java.util.prefs.NodeChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeListener"/></param>
         public void RemoveNodeChangeListener(Java.Util.Prefs.NodeChangeListener arg0)
         {
             IExecute("removeNodeChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#removePreferenceChangeListener(java.util.prefs.PreferenceChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#removePreferenceChangeListener(java.util.prefs.PreferenceChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeListener"/></param>
         public void RemovePreferenceChangeListener(Java.Util.Prefs.PreferenceChangeListener arg0)
         {
             IExecute("removePreferenceChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#sync() throws java.util.prefs.BackingStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#sync()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void Sync()
         {
             IExecute("sync");

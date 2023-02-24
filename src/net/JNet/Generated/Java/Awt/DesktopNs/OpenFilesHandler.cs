@@ -46,8 +46,9 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenFilesHandler.html#openFiles(java.awt.desktop.OpenFilesEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenFilesHandler.html#openFiles(java.awt.desktop.OpenFilesEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.OpenFilesEvent"/></param>
         public void OpenFiles(Java.Awt.DesktopNs.OpenFilesEvent arg0)
         {
             IExecute("openFiles", arg0);

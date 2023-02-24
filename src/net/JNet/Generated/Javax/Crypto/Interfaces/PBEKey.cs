@@ -33,13 +33,16 @@ namespace Javax.Crypto.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Crypto.Interfaces.PBEKey"/> to <see cref="Javax.Crypto.SecretKey"/>
+        /// </summary>
         public static implicit operator Javax.Crypto.SecretKey(Javax.Crypto.Interfaces.PBEKey t) => t.Cast<Javax.Crypto.SecretKey>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#serialVersionUID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         
@@ -51,21 +54,21 @@ namespace Javax.Crypto.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#getIterationCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#getIterationCount()"/> 
         /// </summary>
         public int IterationCount
         {
             get { return IExecute<int>("getIterationCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#getPassword() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#getPassword()"/> 
         /// </summary>
         public char[] Password
         {
             get { return IExecuteArray<char>("getPassword"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#getSalt() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#getSalt()"/> 
         /// </summary>
         public byte[] Salt
         {

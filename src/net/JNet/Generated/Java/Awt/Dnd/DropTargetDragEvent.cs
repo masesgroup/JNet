@@ -30,8 +30,12 @@ namespace Java.Awt.Dnd
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#<init>(java.awt.dnd.DropTargetContext,java.awt.Point,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#%3Cinit%3E(java.awt.dnd.DropTargetContext,java.awt.Point,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetContext"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public DropTargetDragEvent(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -53,56 +57,59 @@ namespace Java.Awt.Dnd
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getCurrentDataFlavors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getCurrentDataFlavors()"/> 
         /// </summary>
         public Java.Awt.Datatransfer.DataFlavor[] CurrentDataFlavors
         {
             get { return IExecuteArray<Java.Awt.Datatransfer.DataFlavor>("getCurrentDataFlavors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getDropAction() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getDropAction()"/> 
         /// </summary>
         public int DropAction
         {
             get { return IExecute<int>("getDropAction"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getLocation() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getLocation()"/> 
         /// </summary>
         public Java.Awt.Point Location
         {
             get { return IExecute<Java.Awt.Point>("getLocation"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getSourceActions() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getSourceActions()"/> 
         /// </summary>
         public int SourceActions
         {
             get { return IExecute<int>("getSourceActions"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getTransferable() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#getTransferable()"/> 
         /// </summary>
         public Java.Awt.Datatransfer.Transferable Transferable
         {
             get { return IExecute<Java.Awt.Datatransfer.Transferable>("getTransferable"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsDataFlavorSupported(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecute<bool>("isDataFlavorSupported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#acceptDrag(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#acceptDrag(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void AcceptDrag(int arg0)
         {
             IExecute("acceptDrag", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#rejectDrag()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html#rejectDrag()"/>
         /// </summary>
         public void RejectDrag()
         {

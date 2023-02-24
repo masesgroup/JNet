@@ -33,6 +33,9 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.Transient"/> to <see cref="Java.Lang.Annotation.Annotation"/>
+        /// </summary>
         public static implicit operator Java.Lang.Annotation.Annotation(Java.Beans.Transient t) => t.Cast<Java.Lang.Annotation.Annotation>();
         
         #endregion
@@ -47,8 +50,10 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Transient.html#value()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Transient.html#value()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Value()
         {
             return IExecute<bool>("value");

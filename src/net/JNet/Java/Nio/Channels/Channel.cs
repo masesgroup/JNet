@@ -18,6 +18,9 @@
 
 namespace Java.Nio
 {
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channel.html"/>
+    /// </summary>
     public partial class Channel 
     {
         // can be extended with methods not reflected or not available in Java;

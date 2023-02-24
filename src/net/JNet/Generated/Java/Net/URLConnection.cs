@@ -42,50 +42,60 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDefaultAllowUserInteraction() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDefaultAllowUserInteraction(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDefaultAllowUserInteraction()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDefaultAllowUserInteraction(boolean)"/>
         /// </summary>
         public static bool DefaultAllowUserInteraction
         {
             get { return SExecute<bool>("getDefaultAllowUserInteraction"); } set { SExecute("setDefaultAllowUserInteraction", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getFileNameMap() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setFileNameMap(java.net.FileNameMap)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getFileNameMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setFileNameMap(java.net.FileNameMap)"/>
         /// </summary>
         public static Java.Net.FileNameMap FileNameMap
         {
             get { return SExecute<Java.Net.FileNameMap>("getFileNameMap"); } set { SExecute("setFileNameMap", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDefaultUseCaches(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDefaultUseCaches(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool GetDefaultUseCaches(string arg0)
         {
             return SExecute<bool>("getDefaultUseCaches", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#guessContentTypeFromName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#guessContentTypeFromName(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string GuessContentTypeFromName(string arg0)
         {
             return SExecute<string>("guessContentTypeFromName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#guessContentTypeFromStream(java.io.InputStream) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#guessContentTypeFromStream(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static string GuessContentTypeFromStream(Java.Io.InputStream arg0)
         {
             return SExecute<string>("guessContentTypeFromStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setContentHandlerFactory(java.net.ContentHandlerFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setContentHandlerFactory(java.net.ContentHandlerFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.ContentHandlerFactory"/></param>
         public static void SetContentHandlerFactory(Java.Net.ContentHandlerFactory arg0)
         {
             SExecute("setContentHandlerFactory", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDefaultUseCaches(java.lang.String,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDefaultUseCaches(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public static void SetDefaultUseCaches(string arg0, bool arg1)
         {
             SExecute("setDefaultUseCaches", arg0, arg1);
@@ -95,218 +105,244 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getAllowUserInteraction() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setAllowUserInteraction(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getAllowUserInteraction()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setAllowUserInteraction(boolean)"/>
         /// </summary>
         public bool AllowUserInteraction
         {
             get { return IExecute<bool>("getAllowUserInteraction"); } set { IExecute("setAllowUserInteraction", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getConnectTimeout() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setConnectTimeout(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getConnectTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setConnectTimeout(int)"/>
         /// </summary>
         public int ConnectTimeout
         {
             get { return IExecute<int>("getConnectTimeout"); } set { IExecute("setConnectTimeout", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContent() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContent()"/> 
         /// </summary>
         public object Content
         {
             get { return IExecute("getContent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentEncoding() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentEncoding()"/> 
         /// </summary>
         public string ContentEncoding
         {
             get { return IExecute<string>("getContentEncoding"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentLength()"/> 
         /// </summary>
         public int ContentLength
         {
             get { return IExecute<int>("getContentLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentLengthLong() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentLengthLong()"/> 
         /// </summary>
         public long ContentLengthLong
         {
             get { return IExecute<long>("getContentLengthLong"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContentType()"/> 
         /// </summary>
         public string ContentType
         {
             get { return IExecute<string>("getContentType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDate() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDate()"/> 
         /// </summary>
         public long Date
         {
             get { return IExecute<long>("getDate"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDefaultUseCaches() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDefaultUseCaches(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDefaultUseCaches()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDefaultUseCaches(boolean)"/>
         /// </summary>
         public bool DefaultUseCaches
         {
             get { return IExecute<bool>("getDefaultUseCaches"); } set { IExecute("setDefaultUseCaches", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDoInput() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDoInput(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDoInput()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDoInput(boolean)"/>
         /// </summary>
         public bool DoInput
         {
             get { return IExecute<bool>("getDoInput"); } set { IExecute("setDoInput", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDoOutput() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDoOutput(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getDoOutput()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setDoOutput(boolean)"/>
         /// </summary>
         public bool DoOutput
         {
             get { return IExecute<bool>("getDoOutput"); } set { IExecute("setDoOutput", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getExpiration() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getExpiration()"/> 
         /// </summary>
         public long Expiration
         {
             get { return IExecute<long>("getExpiration"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getIfModifiedSince() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setIfModifiedSince(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getIfModifiedSince()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setIfModifiedSince(long)"/>
         /// </summary>
         public long IfModifiedSince
         {
             get { return IExecute<long>("getIfModifiedSince"); } set { IExecute("setIfModifiedSince", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getInputStream() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getInputStream()"/> 
         /// </summary>
         public Java.Io.InputStream InputStream
         {
             get { return IExecute<Java.Io.InputStream>("getInputStream"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getLastModified() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getLastModified()"/> 
         /// </summary>
         public long LastModified
         {
             get { return IExecute<long>("getLastModified"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getOutputStream() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getOutputStream()"/> 
         /// </summary>
         public Java.Io.OutputStream OutputStream
         {
             get { return IExecute<Java.Io.OutputStream>("getOutputStream"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getPermission() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getPermission()"/> 
         /// </summary>
         public Java.Security.Permission Permission
         {
             get { return IExecute<Java.Security.Permission>("getPermission"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getReadTimeout() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setReadTimeout(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getReadTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setReadTimeout(int)"/>
         /// </summary>
         public int ReadTimeout
         {
             get { return IExecute<int>("getReadTimeout"); } set { IExecute("setReadTimeout", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getURL() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getURL()"/> 
         /// </summary>
         public Java.Net.URL URL
         {
             get { return IExecute<Java.Net.URL>("getURL"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getUseCaches() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setUseCaches(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getUseCaches()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setUseCaches(boolean)"/>
         /// </summary>
         public bool UseCaches
         {
             get { return IExecute<bool>("getUseCaches"); } set { IExecute("setUseCaches", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#connect() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#connect()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Connect()
         {
             IExecute("connect");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldInt(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldInt(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetHeaderFieldInt(string arg0, int arg1)
         {
             return IExecute<int>("getHeaderFieldInt", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContent(java.lang.Class<?>[]) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContent(java.lang.Class%3C?%3E[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public object GetContent(Java.Lang.Class[] arg0)
         {
             return IExecute("getContent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderField(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderField(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetHeaderField(int arg0)
         {
             return IExecute<string>("getHeaderField", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderField(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderField(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetHeaderField(string arg0)
         {
             return IExecute<string>("getHeaderField", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldKey(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldKey(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetHeaderFieldKey(int arg0)
         {
             return IExecute<string>("getHeaderFieldKey", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getRequestProperty(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getRequestProperty(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetRequestProperty(string arg0)
         {
             return IExecute<string>("getRequestProperty", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldDate(java.lang.String,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldDate(java.lang.String,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public long GetHeaderFieldDate(string arg0, long arg1)
         {
             return IExecute<long>("getHeaderFieldDate", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldLong(java.lang.String,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldLong(java.lang.String,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public long GetHeaderFieldLong(string arg0, long arg1)
         {
             return IExecute<long>("getHeaderFieldLong", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#addRequestProperty(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#addRequestProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public void AddRequestProperty(string arg0, string arg1)
         {
             IExecute("addRequestProperty", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setRequestProperty(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setRequestProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public void SetRequestProperty(string arg0, string arg1)
         {
             IExecute("setRequestProperty", arg0, arg1);

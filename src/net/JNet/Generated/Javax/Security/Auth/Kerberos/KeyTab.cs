@@ -42,43 +42,54 @@ namespace Javax.Security.Auth.Kerberos
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getUnboundInstance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getUnboundInstance()"/> 
         /// </summary>
         public static Javax.Security.Auth.Kerberos.KeyTab UnboundInstance
         {
             get { return SExecute<Javax.Security.Auth.Kerberos.KeyTab>("getUnboundInstance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Security.Auth.Kerberos.KeyTab"/></returns>
         public static Javax.Security.Auth.Kerberos.KeyTab GetInstance()
         {
             return SExecute<Javax.Security.Auth.Kerberos.KeyTab>("getInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance(java.io.File)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Javax.Security.Auth.Kerberos.KeyTab"/></returns>
         public static Javax.Security.Auth.Kerberos.KeyTab GetInstance(Java.Io.File arg0)
         {
             return SExecute<Javax.Security.Auth.Kerberos.KeyTab>("getInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance(javax.security.auth.kerberos.KerberosPrincipal,java.io.File)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance(javax.security.auth.kerberos.KerberosPrincipal,java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
+        /// <param name="arg1"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Javax.Security.Auth.Kerberos.KeyTab"/></returns>
         public static Javax.Security.Auth.Kerberos.KeyTab GetInstance(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, Java.Io.File arg1)
         {
             return SExecute<Javax.Security.Auth.Kerberos.KeyTab>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance(javax.security.auth.kerberos.KerberosPrincipal)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance(javax.security.auth.kerberos.KerberosPrincipal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
+        /// <returns><see cref="Javax.Security.Auth.Kerberos.KeyTab"/></returns>
         public static Javax.Security.Auth.Kerberos.KeyTab GetInstance(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0)
         {
             return SExecute<Javax.Security.Auth.Kerberos.KeyTab>("getInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getUnboundInstance(java.io.File)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getUnboundInstance(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Javax.Security.Auth.Kerberos.KeyTab"/></returns>
         public static Javax.Security.Auth.Kerberos.KeyTab GetUnboundInstance(Java.Io.File arg0)
         {
             return SExecute<Javax.Security.Auth.Kerberos.KeyTab>("getUnboundInstance", arg0);
@@ -88,29 +99,35 @@ namespace Javax.Security.Auth.Kerberos
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getPrincipal() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getPrincipal()"/> 
         /// </summary>
         public Javax.Security.Auth.Kerberos.KerberosPrincipal Principal
         {
             get { return IExecute<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getPrincipal"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#exists()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#exists()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Exists()
         {
             return IExecute<bool>("exists");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#isBound()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#isBound()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsBound()
         {
             return IExecute<bool>("isBound");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getKeys(javax.security.auth.kerberos.KerberosPrincipal)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getKeys(javax.security.auth.kerberos.KerberosPrincipal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
+        /// <returns><see cref="Javax.Security.Auth.Kerberos.KerberosKey"/></returns>
         public Javax.Security.Auth.Kerberos.KerberosKey[] GetKeys(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0)
         {
             return IExecuteArray<Javax.Security.Auth.Kerberos.KerberosKey>("getKeys", arg0);

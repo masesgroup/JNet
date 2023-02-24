@@ -33,7 +33,13 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.ImageFilter"/> to <see cref="Java.Awt.ImageNs.ImageConsumer"/>
+        /// </summary>
         public static implicit operator Java.Awt.ImageNs.ImageConsumer(Java.Awt.ImageNs.ImageFilter t) => t.Cast<Java.Awt.ImageNs.ImageConsumer>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.ImageFilter"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.ImageFilter t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -48,57 +54,81 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#getFilterInstance(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#getFilterInstance(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.ImageFilter"/></returns>
         public Java.Awt.ImageNs.ImageFilter GetFilterInstance(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             return IExecute<Java.Awt.ImageNs.ImageFilter>("getFilterInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#imageComplete(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#imageComplete(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void ImageComplete(int arg0)
         {
             IExecute("imageComplete", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#resendTopDownLeftRight(java.awt.image.ImageProducer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#resendTopDownLeftRight(java.awt.image.ImageProducer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageProducer"/></param>
         public void ResendTopDownLeftRight(Java.Awt.ImageNs.ImageProducer arg0)
         {
             IExecute("resendTopDownLeftRight", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setColorModel(java.awt.image.ColorModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setColorModel(java.awt.image.ColorModel)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
         public void SetColorModel(Java.Awt.ImageNs.ColorModel arg0)
         {
             IExecute("setColorModel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setDimensions(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setDimensions(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetDimensions(int arg0, int arg1)
         {
             IExecute("setDimensions", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setHints(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setHints(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetHints(int arg0)
         {
             IExecute("setHints", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setPixels(int,int,int,int,java.awt.image.ColorModel,byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setPixels(int,int,int,int,java.awt.image.ColorModel,byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg5"><see cref="byte"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg7"><see langword="int"/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, Java.Awt.ImageNs.ColorModel arg4, byte[] arg5, int arg6, int arg7)
         {
             IExecute("setPixels", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setPixels(int,int,int,int,java.awt.image.ColorModel,int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageFilter.html#setPixels(int,int,int,int,java.awt.image.ColorModel,int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg7"><see langword="int"/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, Java.Awt.ImageNs.ColorModel arg4, int[] arg5, int arg6, int arg7)
         {
             IExecute("setPixels", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);

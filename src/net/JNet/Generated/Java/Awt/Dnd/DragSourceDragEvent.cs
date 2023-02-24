@@ -30,15 +30,25 @@ namespace Java.Awt.Dnd
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#<init>(java.awt.dnd.DragSourceContext,int,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#%3Cinit%3E(java.awt.dnd.DragSourceContext,int,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
         public DragSourceDragEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#<init>(java.awt.dnd.DragSourceContext,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#%3Cinit%3E(java.awt.dnd.DragSourceContext,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public DragSourceDragEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -60,35 +70,35 @@ namespace Java.Awt.Dnd
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#getDropAction() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#getDropAction()"/> 
         /// </summary>
         public int DropAction
         {
             get { return IExecute<int>("getDropAction"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#getGestureModifiers() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#getGestureModifiers()"/> 
         /// </summary>
         public int GestureModifiers
         {
             get { return IExecute<int>("getGestureModifiers"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#getGestureModifiersEx() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#getGestureModifiersEx()"/> 
         /// </summary>
         public int GestureModifiersEx
         {
             get { return IExecute<int>("getGestureModifiersEx"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#getTargetActions() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#getTargetActions()"/> 
         /// </summary>
         public int TargetActions
         {
             get { return IExecute<int>("getTargetActions"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#getUserAction() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html#getUserAction()"/> 
         /// </summary>
         public int UserAction
         {

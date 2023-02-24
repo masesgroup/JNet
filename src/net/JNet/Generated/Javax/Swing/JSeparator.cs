@@ -30,8 +30,9 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSeparator.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSeparator.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public JSeparator(int arg0)
             : base(arg0)
         {
@@ -40,7 +41,13 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JSeparator"/> to <see cref="Javax.Swing.SwingConstants"/>
+        /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.JSeparator t) => t.Cast<Javax.Swing.SwingConstants>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JSeparator"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JSeparator t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
@@ -55,15 +62,16 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSeparator.html#getOrientation() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSeparator.html#setOrientation(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSeparator.html#getOrientation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSeparator.html#setOrientation(int)"/>
         /// </summary>
         public int Orientation
         {
             get { return IExecute<int>("getOrientation"); } set { IExecute("setOrientation", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSeparator.html#setUI(javax.swing.plaf.SeparatorUI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSeparator.html#setUI(javax.swing.plaf.SeparatorUI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.SeparatorUI"/></param>
         public void SetUI(Javax.Swing.Plaf.SeparatorUI arg0)
         {
             IExecute("setUI", arg0);

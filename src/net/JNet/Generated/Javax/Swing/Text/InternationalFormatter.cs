@@ -30,8 +30,9 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#<init>(java.text.Format)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#%3Cinit%3E(java.text.Format)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.Format"/></param>
         public InternationalFormatter(Java.Text.Format arg0)
             : base(arg0)
         {
@@ -53,15 +54,17 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getFormat() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#setFormat(java.text.Format)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getFormat()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#setFormat(java.text.Format)"/>
         /// </summary>
         public Java.Text.Format Format
         {
             get { return IExecute<Java.Text.Format>("getFormat"); } set { IExecute("setFormat", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getFields(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getFields(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Text.Format.Field"/></returns>
         public Java.Text.Format.Field[] GetFields(int arg0)
         {
             return IExecuteArray<Java.Text.Format.Field>("getFields", arg0);

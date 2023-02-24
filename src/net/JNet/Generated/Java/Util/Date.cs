@@ -30,8 +30,9 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#<init>(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#%3Cinit%3E(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
         public Date(long arg0)
             : base(arg0)
         {
@@ -40,7 +41,13 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Date"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Date t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Date"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Date t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -51,8 +58,10 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#from(java.time.Instant)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#from(java.time.Instant)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
+        /// <returns><see cref="Java.Util.Date"/></returns>
         public static Java.Util.Date From(Java.Time.Instant arg0)
         {
             return SExecute<Java.Util.Date>("from", arg0);
@@ -62,43 +71,53 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#getTime() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#setTime(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#getTime()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#setTime(long)"/>
         /// </summary>
         public long Time
         {
             get { return IExecute<long>("getTime"); } set { IExecute("setTime", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#after(java.util.Date)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#after(java.util.Date)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool After(Java.Util.Date arg0)
         {
             return IExecute<bool>("after", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#before(java.util.Date)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#before(java.util.Date)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Before(Java.Util.Date arg0)
         {
             return IExecute<bool>("before", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#compareTo(java.util.Date)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#compareTo(java.util.Date)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Java.Util.Date arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#toInstant()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#toInstant()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant ToInstant()
         {
             return IExecute<Java.Time.Instant>("toInstant");

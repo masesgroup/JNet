@@ -46,7 +46,7 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowId.html#getBytes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowId.html#getBytes()"/> 
         /// </summary>
         public byte[] Bytes
         {

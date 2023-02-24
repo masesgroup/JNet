@@ -46,21 +46,21 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InterfaceAddress.html#getAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InterfaceAddress.html#getAddress()"/> 
         /// </summary>
         public Java.Net.InetAddress Address
         {
             get { return IExecute<Java.Net.InetAddress>("getAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InterfaceAddress.html#getBroadcast() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InterfaceAddress.html#getBroadcast()"/> 
         /// </summary>
         public Java.Net.InetAddress Broadcast
         {
             get { return IExecute<Java.Net.InetAddress>("getBroadcast"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InterfaceAddress.html#getNetworkPrefixLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InterfaceAddress.html#getNetworkPrefixLength()"/> 
         /// </summary>
         public short NetworkPrefixLength
         {

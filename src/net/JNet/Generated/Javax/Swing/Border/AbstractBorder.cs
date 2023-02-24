@@ -33,7 +33,13 @@ namespace Javax.Swing.Border
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Border.AbstractBorder"/> to <see cref="Javax.Swing.Border.Border"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Border.Border(Javax.Swing.Border.AbstractBorder t) => t.Cast<Javax.Swing.Border.Border>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Border.AbstractBorder"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Border.AbstractBorder t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -44,8 +50,15 @@ namespace Javax.Swing.Border
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getInteriorRectangle(java.awt.Component,javax.swing.border.Border,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getInteriorRectangle(java.awt.Component,javax.swing.border.Border,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Border.Border"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle GetInteriorRectangle(Java.Awt.Component arg0, Javax.Swing.Border.Border arg1, int arg2, int arg3, int arg4, int arg5)
         {
             return SExecute<Java.Awt.Rectangle>("getInteriorRectangle", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -55,43 +68,66 @@ namespace Javax.Swing.Border
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#isBorderOpaque()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#isBorderOpaque()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsBorderOpaque()
         {
             return IExecute<bool>("isBorderOpaque");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getBaseline(java.awt.Component,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getBaseline(java.awt.Component,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetBaseline(Java.Awt.Component arg0, int arg1, int arg2)
         {
             return IExecute<int>("getBaseline", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getBorderInsets(java.awt.Component,java.awt.Insets)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getBorderInsets(java.awt.Component,java.awt.Insets)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Insets"/></param>
+        /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetBorderInsets(Java.Awt.Component arg0, Java.Awt.Insets arg1)
         {
             return IExecute<Java.Awt.Insets>("getBorderInsets", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getBorderInsets(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getBorderInsets(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetBorderInsets(Java.Awt.Component arg0)
         {
             return IExecute<Java.Awt.Insets>("getBorderInsets", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getInteriorRectangle(java.awt.Component,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getInteriorRectangle(java.awt.Component,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetInteriorRectangle(Java.Awt.Component arg0, int arg1, int arg2, int arg3, int arg4)
         {
             return IExecute<Java.Awt.Rectangle>("getInteriorRectangle", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
         public void PaintBorder(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);

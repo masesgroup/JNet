@@ -46,28 +46,32 @@ namespace Javax.Swing.Plaf.Metal
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#createPropertyChangeListener()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#createPropertyChangeListener()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener CreatePropertyChangeListener()
         {
             return IExecute<Java.Beans.PropertyChangeListener>("createPropertyChangeListener");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#configureEditor()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#configureEditor()"/>
         /// </summary>
         public void ConfigureEditor()
         {
             IExecute("configureEditor");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#layoutComboBox(java.awt.Container,javax.swing.plaf.metal.MetalComboBoxUI$MetalComboBoxLayoutManager)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#layoutComboBox(java.awt.Container,javax.swing.plaf.metal.MetalComboBoxUI$MetalComboBoxLayoutManager)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Plaf.Metal.MetalComboBoxUI.MetalComboBoxLayoutManager"/></param>
         public void LayoutComboBox(Java.Awt.Container arg0, Javax.Swing.Plaf.Metal.MetalComboBoxUI.MetalComboBoxLayoutManager arg1)
         {
             IExecute("layoutComboBox", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#unconfigureEditor()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#unconfigureEditor()"/>
         /// </summary>
         public void UnconfigureEditor()
         {
@@ -82,8 +86,9 @@ namespace Javax.Swing.Plaf.Metal
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboBoxLayoutManager.html#<init>(javax.swing.plaf.metal.MetalComboBoxUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboBoxLayoutManager.html#%3Cinit%3E(javax.swing.plaf.metal.MetalComboBoxUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Metal.MetalComboBoxUI"/></param>
             public MetalComboBoxLayoutManager(Javax.Swing.Plaf.Metal.MetalComboBoxUI arg0)
                 : base(arg0)
             {
@@ -105,8 +110,9 @@ namespace Javax.Swing.Plaf.Metal
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboBoxLayoutManager.html#superLayout(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.MetalComboBoxLayoutManager.html#superLayout(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
             public void SuperLayout(Java.Awt.Container arg0)
             {
                 IExecute("superLayout", arg0);

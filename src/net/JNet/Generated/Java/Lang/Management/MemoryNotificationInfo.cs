@@ -30,8 +30,11 @@ namespace Java.Lang.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#<init>(java.lang.String,java.lang.management.MemoryUsage,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#%3Cinit%3E(java.lang.String,java.lang.management.MemoryUsage,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Management.MemoryUsage"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
         public MemoryNotificationInfo(string arg0, Java.Lang.Management.MemoryUsage arg1, long arg2)
             : base(arg0, arg1, arg2)
         {
@@ -45,11 +48,11 @@ namespace Java.Lang.Management
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#MEMORY_COLLECTION_THRESHOLD_EXCEEDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#MEMORY_COLLECTION_THRESHOLD_EXCEEDED"/>
         /// </summary>
         public static string MEMORY_COLLECTION_THRESHOLD_EXCEEDED => Clazz.GetField<string>("MEMORY_COLLECTION_THRESHOLD_EXCEEDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#MEMORY_THRESHOLD_EXCEEDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#MEMORY_THRESHOLD_EXCEEDED"/>
         /// </summary>
         public static string MEMORY_THRESHOLD_EXCEEDED => Clazz.GetField<string>("MEMORY_THRESHOLD_EXCEEDED");
         
@@ -57,8 +60,10 @@ namespace Java.Lang.Management
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#from(javax.management.openmbean.CompositeData)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#from(javax.management.openmbean.CompositeData)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
+        /// <returns><see cref="Java.Lang.Management.MemoryNotificationInfo"/></returns>
         public static Java.Lang.Management.MemoryNotificationInfo From(Javax.Management.Openmbean.CompositeData arg0)
         {
             return SExecute<Java.Lang.Management.MemoryNotificationInfo>("from", arg0);
@@ -68,21 +73,21 @@ namespace Java.Lang.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#getCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#getCount()"/> 
         /// </summary>
         public long Count
         {
             get { return IExecute<long>("getCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#getPoolName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#getPoolName()"/> 
         /// </summary>
         public string PoolName
         {
             get { return IExecute<string>("getPoolName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#getUsage() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#getUsage()"/> 
         /// </summary>
         public Java.Lang.Management.MemoryUsage Usage
         {

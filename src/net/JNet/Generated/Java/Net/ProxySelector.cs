@@ -42,15 +42,17 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html#getDefault() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html#setDefault(java.net.ProxySelector)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html#getDefault()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html#setDefault(java.net.ProxySelector)"/>
         /// </summary>
         public static Java.Net.ProxySelector Default
         {
             get { return SExecute<Java.Net.ProxySelector>("getDefault"); } set { SExecute("setDefault", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html#of(java.net.InetSocketAddress)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html#of(java.net.InetSocketAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetSocketAddress"/></param>
+        /// <returns><see cref="Java.Net.ProxySelector"/></returns>
         public static Java.Net.ProxySelector Of(Java.Net.InetSocketAddress arg0)
         {
             return SExecute<Java.Net.ProxySelector>("of", arg0);
@@ -60,8 +62,11 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html#connectFailed(java.net.URI,java.net.SocketAddress,java.io.IOException)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html#connectFailed(java.net.URI,java.net.SocketAddress,java.io.IOException)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg1"><see cref="Java.Net.SocketAddress"/></param>
+        /// <param name="arg2"><see cref="Java.Io.IOException"/></param>
         public void ConnectFailed(Java.Net.URI arg0, Java.Net.SocketAddress arg1, Java.Io.IOException arg2)
         {
             IExecute("connectFailed", arg0, arg1, arg2);

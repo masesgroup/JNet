@@ -46,63 +46,70 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#getPendingCount() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#setPendingCount(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#getPendingCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#setPendingCount(int)"/>
         /// </summary>
         public int PendingCount
         {
             get { return IExecute<int>("getPendingCount"); } set { IExecute("setPendingCount", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#compute()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#compute()"/>
         /// </summary>
         public void Compute()
         {
             IExecute("compute");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#compareAndSetPendingCount(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#compareAndSetPendingCount(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CompareAndSetPendingCount(int arg0, int arg1)
         {
             return IExecute<bool>("compareAndSetPendingCount", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int DecrementPendingCountUnlessZero()
         {
             return IExecute<int>("decrementPendingCountUnlessZero");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#addToPendingCount(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#addToPendingCount(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void AddToPendingCount(int arg0)
         {
             IExecute("addToPendingCount", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#helpComplete(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#helpComplete(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void HelpComplete(int arg0)
         {
             IExecute("helpComplete", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#propagateCompletion()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#propagateCompletion()"/>
         /// </summary>
         public void PropagateCompletion()
         {
             IExecute("propagateCompletion");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#quietlyCompleteRoot()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#quietlyCompleteRoot()"/>
         /// </summary>
         public void QuietlyCompleteRoot()
         {
             IExecute("quietlyCompleteRoot");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#tryComplete()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#tryComplete()"/>
         /// </summary>
         public void TryComplete()
         {

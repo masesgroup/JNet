@@ -33,37 +33,40 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JLayeredPane"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JLayeredPane t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#DEFAULT_LAYER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#DEFAULT_LAYER"/>
         /// </summary>
         public static int? DEFAULT_LAYER => Clazz.GetField<int?>("DEFAULT_LAYER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#DRAG_LAYER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#DRAG_LAYER"/>
         /// </summary>
         public static int? DRAG_LAYER => Clazz.GetField<int?>("DRAG_LAYER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#FRAME_CONTENT_LAYER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#FRAME_CONTENT_LAYER"/>
         /// </summary>
         public static int? FRAME_CONTENT_LAYER => Clazz.GetField<int?>("FRAME_CONTENT_LAYER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#MODAL_LAYER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#MODAL_LAYER"/>
         /// </summary>
         public static int? MODAL_LAYER => Clazz.GetField<int?>("MODAL_LAYER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#PALETTE_LAYER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#PALETTE_LAYER"/>
         /// </summary>
         public static int? PALETTE_LAYER => Clazz.GetField<int?>("PALETTE_LAYER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#POPUP_LAYER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#POPUP_LAYER"/>
         /// </summary>
         public static int? POPUP_LAYER => Clazz.GetField<int?>("POPUP_LAYER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#LAYER_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#LAYER_PROPERTY"/>
         /// </summary>
         public static string LAYER_PROPERTY => Clazz.GetField<string>("LAYER_PROPERTY");
         
@@ -71,22 +74,28 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getLayer(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getLayer(javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int GetLayer(Javax.Swing.JComponent arg0)
         {
             return SExecute<int>("getLayer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getLayeredPaneAbove(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getLayeredPaneAbove(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Javax.Swing.JLayeredPane"/></returns>
         public static Javax.Swing.JLayeredPane GetLayeredPaneAbove(Java.Awt.Component arg0)
         {
             return SExecute<Javax.Swing.JLayeredPane>("getLayeredPaneAbove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#putLayer(javax.swing.JComponent,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#putLayer(javax.swing.JComponent,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public static void PutLayer(Javax.Swing.JComponent arg0, int arg1)
         {
             SExecute("putLayer", arg0, arg1);
@@ -96,85 +105,108 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getComponentCountInLayer(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getComponentCountInLayer(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetComponentCountInLayer(int arg0)
         {
             return IExecute<int>("getComponentCountInLayer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getIndexOf(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getIndexOf(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetIndexOf(Java.Awt.Component arg0)
         {
             return IExecute<int>("getIndexOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getLayer(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getLayer(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetLayer(Java.Awt.Component arg0)
         {
             return IExecute<int>("getLayer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getPosition(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getPosition(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetPosition(Java.Awt.Component arg0)
         {
             return IExecute<int>("getPosition", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#highestLayer()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#highestLayer()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int HighestLayer()
         {
             return IExecute<int>("highestLayer");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#lowestLayer()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#lowestLayer()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int LowestLayer()
         {
             return IExecute<int>("lowestLayer");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getComponentsInLayer(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getComponentsInLayer(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component[] GetComponentsInLayer(int arg0)
         {
             return IExecuteArray<Java.Awt.Component>("getComponentsInLayer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#moveToBack(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#moveToBack(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void MoveToBack(Java.Awt.Component arg0)
         {
             IExecute("moveToBack", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#moveToFront(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#moveToFront(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void MoveToFront(Java.Awt.Component arg0)
         {
             IExecute("moveToFront", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#setLayer(java.awt.Component,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#setLayer(java.awt.Component,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void SetLayer(Java.Awt.Component arg0, int arg1, int arg2)
         {
             IExecute("setLayer", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#setLayer(java.awt.Component,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#setLayer(java.awt.Component,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetLayer(Java.Awt.Component arg0, int arg1)
         {
             IExecute("setLayer", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#setPosition(java.awt.Component,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#setPosition(java.awt.Component,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetPosition(Java.Awt.Component arg0, int arg1)
         {
             IExecute("setPosition", arg0, arg1);

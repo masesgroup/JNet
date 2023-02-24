@@ -46,8 +46,9 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AboutHandler.html#handleAbout(java.awt.desktop.AboutEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AboutHandler.html#handleAbout(java.awt.desktop.AboutEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AboutEvent"/></param>
         public void HandleAbout(Java.Awt.DesktopNs.AboutEvent arg0)
         {
             IExecute("handleAbout", arg0);

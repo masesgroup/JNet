@@ -46,8 +46,10 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitHandler.html#handleQuitRequestWith(java.awt.desktop.QuitEvent,java.awt.desktop.QuitResponse)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitHandler.html#handleQuitRequestWith(java.awt.desktop.QuitEvent,java.awt.desktop.QuitResponse)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.QuitEvent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.DesktopNs.QuitResponse"/></param>
         public void HandleQuitRequestWith(Java.Awt.DesktopNs.QuitEvent arg0, Java.Awt.DesktopNs.QuitResponse arg1)
         {
             IExecute("handleQuitRequestWith", arg0, arg1);

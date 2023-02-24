@@ -38,31 +38,31 @@ namespace Java.Awt.Geom
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_CLOSE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_CLOSE"/>
         /// </summary>
         public static int SEG_CLOSE => Clazz.GetField<int>("SEG_CLOSE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_CUBICTO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_CUBICTO"/>
         /// </summary>
         public static int SEG_CUBICTO => Clazz.GetField<int>("SEG_CUBICTO");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_LINETO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_LINETO"/>
         /// </summary>
         public static int SEG_LINETO => Clazz.GetField<int>("SEG_LINETO");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_MOVETO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_MOVETO"/>
         /// </summary>
         public static int SEG_MOVETO => Clazz.GetField<int>("SEG_MOVETO");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_QUADTO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#SEG_QUADTO"/>
         /// </summary>
         public static int SEG_QUADTO => Clazz.GetField<int>("SEG_QUADTO");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#WIND_EVEN_ODD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#WIND_EVEN_ODD"/>
         /// </summary>
         public static int WIND_EVEN_ODD => Clazz.GetField<int>("WIND_EVEN_ODD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#WIND_NON_ZERO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#WIND_NON_ZERO"/>
         /// </summary>
         public static int WIND_NON_ZERO => Clazz.GetField<int>("WIND_NON_ZERO");
         
@@ -74,35 +74,41 @@ namespace Java.Awt.Geom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#getWindingRule() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#getWindingRule()"/> 
         /// </summary>
         public int WindingRule
         {
             get { return IExecute<int>("getWindingRule"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#isDone()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#isDone()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDone()
         {
             return IExecute<bool>("isDone");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#currentSegment(double[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#currentSegment(double[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CurrentSegment(double[] arg0)
         {
             return IExecute<int>("currentSegment", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#currentSegment(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#currentSegment(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CurrentSegment(float[] arg0)
         {
             return IExecute<int>("currentSegment", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#next()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#next()"/>
         /// </summary>
         public void Next()
         {

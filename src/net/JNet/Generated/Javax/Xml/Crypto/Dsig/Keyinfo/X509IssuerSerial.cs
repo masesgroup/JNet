@@ -33,6 +33,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Keyinfo.X509IssuerSerial"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.Keyinfo.X509IssuerSerial t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html#getIssuerName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html#getIssuerName()"/> 
         /// </summary>
         public string IssuerName
         {
             get { return IExecute<string>("getIssuerName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html#getSerialNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html#getSerialNumber()"/> 
         /// </summary>
         public Java.Math.BigInteger SerialNumber
         {

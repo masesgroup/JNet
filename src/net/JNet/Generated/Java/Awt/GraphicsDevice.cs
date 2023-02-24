@@ -38,15 +38,15 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#TYPE_IMAGE_BUFFER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#TYPE_IMAGE_BUFFER"/>
         /// </summary>
         public static int TYPE_IMAGE_BUFFER => Clazz.GetField<int>("TYPE_IMAGE_BUFFER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#TYPE_PRINTER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#TYPE_PRINTER"/>
         /// </summary>
         public static int TYPE_PRINTER => Clazz.GetField<int>("TYPE_PRINTER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#TYPE_RASTER_SCREEN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#TYPE_RASTER_SCREEN"/>
         /// </summary>
         public static int TYPE_RASTER_SCREEN => Clazz.GetField<int>("TYPE_RASTER_SCREEN");
         
@@ -58,78 +58,84 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getAvailableAcceleratedMemory() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getAvailableAcceleratedMemory()"/> 
         /// </summary>
         public int AvailableAcceleratedMemory
         {
             get { return IExecute<int>("getAvailableAcceleratedMemory"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getConfigurations() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getConfigurations()"/> 
         /// </summary>
         public Java.Awt.GraphicsConfiguration[] Configurations
         {
             get { return IExecuteArray<Java.Awt.GraphicsConfiguration>("getConfigurations"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getDefaultConfiguration() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getDefaultConfiguration()"/> 
         /// </summary>
         public Java.Awt.GraphicsConfiguration DefaultConfiguration
         {
             get { return IExecute<Java.Awt.GraphicsConfiguration>("getDefaultConfiguration"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getDisplayMode() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#setDisplayMode(java.awt.DisplayMode)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getDisplayMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#setDisplayMode(java.awt.DisplayMode)"/>
         /// </summary>
         public Java.Awt.DisplayMode DisplayMode
         {
             get { return IExecute<Java.Awt.DisplayMode>("getDisplayMode"); } set { IExecute("setDisplayMode", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getDisplayModes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getDisplayModes()"/> 
         /// </summary>
         public Java.Awt.DisplayMode[] DisplayModes
         {
             get { return IExecuteArray<Java.Awt.DisplayMode>("getDisplayModes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getFullScreenWindow() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#setFullScreenWindow(java.awt.Window)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getFullScreenWindow()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#setFullScreenWindow(java.awt.Window)"/>
         /// </summary>
         public Java.Awt.Window FullScreenWindow
         {
             get { return IExecute<Java.Awt.Window>("getFullScreenWindow"); } set { IExecute("setFullScreenWindow", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getIDstring() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getIDstring()"/> 
         /// </summary>
         public string IDstring
         {
             get { return IExecute<string>("getIDstring"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getType()"/> 
         /// </summary>
         public int Type
         {
             get { return IExecute<int>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isDisplayChangeSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isDisplayChangeSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDisplayChangeSupported()
         {
             return IExecute<bool>("isDisplayChangeSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isFullScreenSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#isFullScreenSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsFullScreenSupported()
         {
             return IExecute<bool>("isFullScreenSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getBestConfiguration(java.awt.GraphicsConfigTemplate)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.html#getBestConfiguration(java.awt.GraphicsConfigTemplate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfigTemplate"/></param>
+        /// <returns><see cref="Java.Awt.GraphicsConfiguration"/></returns>
         public Java.Awt.GraphicsConfiguration GetBestConfiguration(Java.Awt.GraphicsConfigTemplate arg0)
         {
             return IExecute<Java.Awt.GraphicsConfiguration>("getBestConfiguration", arg0);
@@ -151,15 +157,15 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#PERPIXEL_TRANSLUCENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#PERPIXEL_TRANSLUCENT"/>
             /// </summary>
             public static Java.Awt.GraphicsDevice.WindowTranslucency PERPIXEL_TRANSLUCENT => Clazz.GetField<Java.Awt.GraphicsDevice.WindowTranslucency>("PERPIXEL_TRANSLUCENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#PERPIXEL_TRANSPARENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#PERPIXEL_TRANSPARENT"/>
             /// </summary>
             public static Java.Awt.GraphicsDevice.WindowTranslucency PERPIXEL_TRANSPARENT => Clazz.GetField<Java.Awt.GraphicsDevice.WindowTranslucency>("PERPIXEL_TRANSPARENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#TRANSLUCENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#TRANSLUCENT"/>
             /// </summary>
             public static Java.Awt.GraphicsDevice.WindowTranslucency TRANSLUCENT => Clazz.GetField<Java.Awt.GraphicsDevice.WindowTranslucency>("TRANSLUCENT");
             
@@ -167,8 +173,10 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Awt.GraphicsDevice.WindowTranslucency"/></returns>
             public static Java.Awt.GraphicsDevice.WindowTranslucency[] Values()
             {
                 return SExecuteArray<Java.Awt.GraphicsDevice.WindowTranslucency>("values");

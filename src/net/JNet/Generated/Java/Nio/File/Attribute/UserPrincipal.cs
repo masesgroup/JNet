@@ -33,6 +33,9 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.Attribute.UserPrincipal"/> to <see cref="Java.Security.Principal"/>
+        /// </summary>
         public static implicit operator Java.Security.Principal(Java.Nio.File.Attribute.UserPrincipal t) => t.Cast<Java.Security.Principal>();
         
         #endregion

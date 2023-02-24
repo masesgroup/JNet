@@ -30,8 +30,17 @@ namespace Java.Awt.FontNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#<init>(float,boolean,int,float,float,boolean,int,float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#%3Cinit%3E(float,boolean,int,float,float,boolean,int,float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg4"><see langword="float"/></param>
+        /// <param name="arg5"><see langword="bool"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg7"><see langword="float"/></param>
+        /// <param name="arg8"><see langword="float"/></param>
         public GlyphJustificationInfo(float arg0, bool arg1, int arg2, float arg3, float arg4, bool arg5, int arg6, float arg7, float arg8)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
         {
@@ -45,55 +54,55 @@ namespace Java.Awt.FontNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#growAbsorb
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#growAbsorb"/>
         /// </summary>
         public bool growAbsorb => Instance.GetField<bool>("growAbsorb");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#shrinkAbsorb
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#shrinkAbsorb"/>
         /// </summary>
         public bool shrinkAbsorb => Instance.GetField<bool>("shrinkAbsorb");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#growLeftLimit
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#growLeftLimit"/>
         /// </summary>
         public float growLeftLimit => Instance.GetField<float>("growLeftLimit");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#growRightLimit
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#growRightLimit"/>
         /// </summary>
         public float growRightLimit => Instance.GetField<float>("growRightLimit");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#shrinkLeftLimit
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#shrinkLeftLimit"/>
         /// </summary>
         public float shrinkLeftLimit => Instance.GetField<float>("shrinkLeftLimit");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#shrinkRightLimit
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#shrinkRightLimit"/>
         /// </summary>
         public float shrinkRightLimit => Instance.GetField<float>("shrinkRightLimit");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#weight
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#weight"/>
         /// </summary>
         public float weight => Instance.GetField<float>("weight");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#growPriority
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#growPriority"/>
         /// </summary>
         public int growPriority => Instance.GetField<int>("growPriority");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#shrinkPriority
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#shrinkPriority"/>
         /// </summary>
         public int shrinkPriority => Instance.GetField<int>("shrinkPriority");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_INTERCHAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_INTERCHAR"/>
         /// </summary>
         public static int PRIORITY_INTERCHAR => Clazz.GetField<int>("PRIORITY_INTERCHAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_KASHIDA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_KASHIDA"/>
         /// </summary>
         public static int PRIORITY_KASHIDA => Clazz.GetField<int>("PRIORITY_KASHIDA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_NONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_NONE"/>
         /// </summary>
         public static int PRIORITY_NONE => Clazz.GetField<int>("PRIORITY_NONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_WHITESPACE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_WHITESPACE"/>
         /// </summary>
         public static int PRIORITY_WHITESPACE => Clazz.GetField<int>("PRIORITY_WHITESPACE");
         

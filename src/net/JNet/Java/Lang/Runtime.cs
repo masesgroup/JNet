@@ -26,7 +26,7 @@ namespace Java.Lang
     /// </summary>
     public sealed class Runtime : JVMBridgeBase<Runtime>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.lang.Runtime";
         /// <summary>
         /// Registers a new virtual-machine shutdown hook.
@@ -108,11 +108,13 @@ namespace Java.Lang
         /// Returns the version of the Java Runtime Environment as a Runtime.Version.
         /// </summary>
         public static Runtime.Version CurrentVersion => SExecute<Runtime.Version>("version");
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html"/>
+        /// </summary>
         public sealed class Version : JVMBridgeBase<Version>
         {
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.lang.Runtime.Version";
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            public override string ClassName => "java.lang.Runtime$Version";
         }
     }
 }

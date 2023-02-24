@@ -30,22 +30,39 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#<init>(int,int,int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#%3Cinit%3E(int,int,int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public MemoryImageSource(int arg0, int arg1, int[] arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#<init>(int,int,java.awt.image.ColorModel,byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#%3Cinit%3E(int,int,java.awt.image.ColorModel,byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
         public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#<init>(int,int,java.awt.image.ColorModel,int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#%3Cinit%3E(int,int,java.awt.image.ColorModel,int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
         public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -54,6 +71,9 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.MemoryImageSource"/> to <see cref="Java.Awt.ImageNs.ImageProducer"/>
+        /// </summary>
         public static implicit operator Java.Awt.ImageNs.ImageProducer(Java.Awt.ImageNs.MemoryImageSource t) => t.Cast<Java.Awt.ImageNs.ImageProducer>();
         
         #endregion
@@ -68,85 +88,110 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#isConsumer(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#isConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             return IExecute<bool>("isConsumer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#addConsumer(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#addConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void AddConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecute("addConsumer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels(byte[],java.awt.image.ColorModel,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels(byte[],java.awt.image.ColorModel,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public void NewPixels(byte[] arg0, Java.Awt.ImageNs.ColorModel arg1, int arg2, int arg3)
         {
             IExecute("newPixels", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels(int,int,int,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels(int,int,int,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="bool"/></param>
         public void NewPixels(int arg0, int arg1, int arg2, int arg3, bool arg4)
         {
             IExecute("newPixels", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels(int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels(int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public void NewPixels(int arg0, int arg1, int arg2, int arg3)
         {
             IExecute("newPixels", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels(int[],java.awt.image.ColorModel,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels(int[],java.awt.image.ColorModel,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public void NewPixels(int[] arg0, Java.Awt.ImageNs.ColorModel arg1, int arg2, int arg3)
         {
             IExecute("newPixels", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#removeConsumer(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#removeConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void RemoveConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecute("removeConsumer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#setAnimated(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#setAnimated(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetAnimated(bool arg0)
         {
             IExecute("setAnimated", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#setFullBufferUpdates(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#setFullBufferUpdates(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetFullBufferUpdates(bool arg0)
         {
             IExecute("setFullBufferUpdates", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#newPixels()"/>
         /// </summary>
         public void NewPixels()
         {
             IExecute("newPixels");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void RequestTopDownLeftRightResend(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecute("requestTopDownLeftRightResend", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#startProduction(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html#startProduction(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void StartProduction(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecute("startProduction", arg0);

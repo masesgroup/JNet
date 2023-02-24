@@ -30,8 +30,9 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TextAction.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TextAction.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public TextAction(string arg0)
             : base(arg0)
         {
@@ -49,8 +50,11 @@ namespace Javax.Swing.Text
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TextAction.html#augmentList(javax.swing.Action[],javax.swing.Action[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TextAction.html#augmentList(javax.swing.Action[],javax.swing.Action[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Action"/></param>
+        /// <returns><see cref="Javax.Swing.Action"/></returns>
         public static Javax.Swing.Action[] AugmentList(Javax.Swing.Action[] arg0, Javax.Swing.Action[] arg1)
         {
             return SExecuteArray<Javax.Swing.Action>("augmentList", arg0, arg1);

@@ -33,6 +33,9 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboPopup"/> to <see cref="Javax.Swing.Plaf.Basic.ComboPopup"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Plaf.Basic.ComboPopup(Javax.Swing.Plaf.Basic.BasicComboPopup t) => t.Cast<Javax.Swing.Plaf.Basic.ComboPopup>();
         
         #endregion
@@ -47,28 +50,28 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#getKeyListener() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#getKeyListener()"/> 
         /// </summary>
         public Java.Awt.EventNs.KeyListener KeyListener
         {
             get { return IExecute<Java.Awt.EventNs.KeyListener>("getKeyListener"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#getMouseListener() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#getMouseListener()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseListener MouseListener
         {
             get { return IExecute<Java.Awt.EventNs.MouseListener>("getMouseListener"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#getMouseMotionListener() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#getMouseMotionListener()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseMotionListener MouseMotionListener
         {
             get { return IExecute<Java.Awt.EventNs.MouseMotionListener>("getMouseMotionListener"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#uninstallingUI()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#uninstallingUI()"/>
         /// </summary>
         public void UninstallingUI()
         {
@@ -83,8 +86,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html#<init>(javax.swing.plaf.basic.BasicComboPopup)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicComboPopup)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicComboPopup"/></param>
             public ListDataHandler(Javax.Swing.Plaf.Basic.BasicComboPopup arg0)
                 : base(arg0)
             {
@@ -93,6 +97,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicComboPopup.ListDataHandler"/> to <see cref="Javax.Swing.Event.ListDataListener"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Event.ListDataListener(Javax.Swing.Plaf.Basic.BasicComboPopup.ListDataHandler t) => t.Cast<Javax.Swing.Event.ListDataListener>();
             
             #endregion
@@ -107,22 +114,25 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html#contentsChanged(javax.swing.event.ListDataEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
             public void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecute("contentsChanged", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html#intervalAdded(javax.swing.event.ListDataEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
             public void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecute("intervalAdded", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html#intervalRemoved(javax.swing.event.ListDataEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
             public void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecute("intervalRemoved", arg0);

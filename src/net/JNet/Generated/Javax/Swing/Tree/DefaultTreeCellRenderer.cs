@@ -33,6 +33,9 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Tree.DefaultTreeCellRenderer"/> to <see cref="Javax.Swing.Tree.TreeCellRenderer"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Tree.TreeCellRenderer(Javax.Swing.Tree.DefaultTreeCellRenderer t) => t.Cast<Javax.Swing.Tree.TreeCellRenderer>();
         
         #endregion
@@ -47,85 +50,93 @@ namespace Javax.Swing.Tree
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getBackgroundNonSelectionColor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setBackgroundNonSelectionColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getBackgroundNonSelectionColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setBackgroundNonSelectionColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color BackgroundNonSelectionColor
         {
             get { return IExecute<Java.Awt.Color>("getBackgroundNonSelectionColor"); } set { IExecute("setBackgroundNonSelectionColor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getBackgroundSelectionColor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setBackgroundSelectionColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getBackgroundSelectionColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setBackgroundSelectionColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color BackgroundSelectionColor
         {
             get { return IExecute<Java.Awt.Color>("getBackgroundSelectionColor"); } set { IExecute("setBackgroundSelectionColor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getBorderSelectionColor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setBorderSelectionColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getBorderSelectionColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setBorderSelectionColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color BorderSelectionColor
         {
             get { return IExecute<Java.Awt.Color>("getBorderSelectionColor"); } set { IExecute("setBorderSelectionColor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getClosedIcon() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setClosedIcon(javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getClosedIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setClosedIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon ClosedIcon
         {
             get { return IExecute<Javax.Swing.Icon>("getClosedIcon"); } set { IExecute("setClosedIcon", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultClosedIcon() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultClosedIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon DefaultClosedIcon
         {
             get { return IExecute<Javax.Swing.Icon>("getDefaultClosedIcon"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultLeafIcon() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultLeafIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon DefaultLeafIcon
         {
             get { return IExecute<Javax.Swing.Icon>("getDefaultLeafIcon"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultOpenIcon() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getDefaultOpenIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon DefaultOpenIcon
         {
             get { return IExecute<Javax.Swing.Icon>("getDefaultOpenIcon"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getLeafIcon() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setLeafIcon(javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getLeafIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setLeafIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon LeafIcon
         {
             get { return IExecute<Javax.Swing.Icon>("getLeafIcon"); } set { IExecute("setLeafIcon", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getOpenIcon() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setOpenIcon(javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getOpenIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setOpenIcon(javax.swing.Icon)"/>
         /// </summary>
         public Javax.Swing.Icon OpenIcon
         {
             get { return IExecute<Javax.Swing.Icon>("getOpenIcon"); } set { IExecute("setOpenIcon", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getTextNonSelectionColor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setTextNonSelectionColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getTextNonSelectionColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setTextNonSelectionColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color TextNonSelectionColor
         {
             get { return IExecute<Java.Awt.Color>("getTextNonSelectionColor"); } set { IExecute("setTextNonSelectionColor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getTextSelectionColor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setTextSelectionColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getTextSelectionColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#setTextSelectionColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color TextSelectionColor
         {
             get { return IExecute<Java.Awt.Color>("getTextSelectionColor"); } set { IExecute("setTextSelectionColor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getTreeCellRendererComponent(javax.swing.JTree,java.lang.Object,boolean,boolean,boolean,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html#getTreeCellRendererComponent(javax.swing.JTree,java.lang.Object,boolean,boolean,boolean,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg4"><see langword="bool"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg6"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetTreeCellRendererComponent(Javax.Swing.JTree arg0, object arg1, bool arg2, bool arg3, bool arg4, int arg5, bool arg6)
         {
             return IExecute<Java.Awt.Component>("getTreeCellRendererComponent", arg0, arg1, arg2, arg3, arg4, arg5, arg6);

@@ -54,8 +54,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicListUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicListUI"/></param>
             public FocusHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
@@ -64,6 +65,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicListUI.FocusHandler"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
+            /// </summary>
             public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicListUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
             
             #endregion
@@ -78,15 +82,17 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#focusGained(java.awt.event.FocusEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#focusGained(java.awt.event.FocusEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
             public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
             {
                 IExecute("focusGained", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
             public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
             {
                 IExecute("focusLost", arg0);
@@ -103,8 +109,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicListUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicListUI"/></param>
             public ListDataHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
@@ -113,6 +120,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicListUI.ListDataHandler"/> to <see cref="Javax.Swing.Event.ListDataListener"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Event.ListDataListener(Javax.Swing.Plaf.Basic.BasicListUI.ListDataHandler t) => t.Cast<Javax.Swing.Event.ListDataListener>();
             
             #endregion
@@ -127,22 +137,25 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#contentsChanged(javax.swing.event.ListDataEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
             public void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecute("contentsChanged", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalAdded(javax.swing.event.ListDataEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
             public void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecute("intervalAdded", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalRemoved(javax.swing.event.ListDataEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
             public void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
             {
                 IExecute("intervalRemoved", arg0);
@@ -159,8 +172,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListSelectionHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListSelectionHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicListUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicListUI"/></param>
             public ListSelectionHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
@@ -169,6 +183,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicListUI.ListSelectionHandler"/> to <see cref="Javax.Swing.Event.ListSelectionListener"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Event.ListSelectionListener(Javax.Swing.Plaf.Basic.BasicListUI.ListSelectionHandler t) => t.Cast<Javax.Swing.Event.ListSelectionListener>();
             
             #endregion
@@ -183,8 +200,9 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListSelectionHandler.html#valueChanged(javax.swing.event.ListSelectionEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListSelectionHandler.html#valueChanged(javax.swing.event.ListSelectionEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
             public void ValueChanged(Javax.Swing.Event.ListSelectionEvent arg0)
             {
                 IExecute("valueChanged", arg0);
@@ -201,8 +219,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicListUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicListUI"/></param>
             public MouseInputHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
@@ -211,6 +230,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicListUI.MouseInputHandler"/> to <see cref="Javax.Swing.Event.MouseInputListener"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Event.MouseInputListener(Javax.Swing.Plaf.Basic.BasicListUI.MouseInputHandler t) => t.Cast<Javax.Swing.Event.MouseInputListener>();
             
             #endregion
@@ -225,50 +247,57 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseClicked(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseClicked(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseClicked", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseDragged(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseDragged(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseDragged", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseEntered(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseEntered(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseEntered", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseExited(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseExited(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseExited", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseMoved(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseMoved(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseMoved", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mousePressed(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mousePressed(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mousePressed", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseReleased(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html#mouseReleased(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseReleased", arg0);
@@ -285,8 +314,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.PropertyChangeHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.PropertyChangeHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicListUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicListUI"/></param>
             public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
@@ -295,6 +325,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicListUI.PropertyChangeHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+            /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicListUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
             
             #endregion
@@ -309,8 +342,9 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
                 IExecute("propertyChange", arg0);

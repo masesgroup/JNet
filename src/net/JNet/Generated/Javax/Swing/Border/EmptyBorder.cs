@@ -30,15 +30,20 @@ namespace Javax.Swing.Border
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EmptyBorder.html#<init>(int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EmptyBorder.html#%3Cinit%3E(int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public EmptyBorder(int arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EmptyBorder.html#<init>(java.awt.Insets)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EmptyBorder.html#%3Cinit%3E(java.awt.Insets)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Insets"/></param>
         public EmptyBorder(Java.Awt.Insets arg0)
             : base(arg0)
         {
@@ -47,6 +52,9 @@ namespace Javax.Swing.Border
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Border.EmptyBorder"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Border.EmptyBorder t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -61,7 +69,7 @@ namespace Javax.Swing.Border
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EmptyBorder.html#getBorderInsets() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EmptyBorder.html#getBorderInsets()"/> 
         /// </summary>
         public Java.Awt.Insets BorderInsets
         {

@@ -30,29 +30,38 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public AttributedString(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#<init>(java.text.AttributedCharacterIterator,int,int,java.text.AttributedCharacterIterator$Attribute[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#%3Cinit%3E(java.text.AttributedCharacterIterator,int,int,java.text.AttributedCharacterIterator$Attribute[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
         public AttributedString(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2, Java.Text.AttributedCharacterIterator.Attribute[] arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#<init>(java.text.AttributedCharacterIterator,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#%3Cinit%3E(java.text.AttributedCharacterIterator,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public AttributedString(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#<init>(java.text.AttributedCharacterIterator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#%3Cinit%3E(java.text.AttributedCharacterIterator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
         public AttributedString(Java.Text.AttributedCharacterIterator arg0)
             : base(arg0)
         {
@@ -74,36 +83,48 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#getIterator() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#getIterator()"/> 
         /// </summary>
         public Java.Text.AttributedCharacterIterator Iterator
         {
             get { return IExecute<Java.Text.AttributedCharacterIterator>("getIterator"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#getIterator(java.text.AttributedCharacterIterator$Attribute[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#getIterator(java.text.AttributedCharacterIterator$Attribute[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
         public Java.Text.AttributedCharacterIterator GetIterator(Java.Text.AttributedCharacterIterator.Attribute[] arg0, int arg1, int arg2)
         {
             return IExecute<Java.Text.AttributedCharacterIterator>("getIterator", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#getIterator(java.text.AttributedCharacterIterator$Attribute[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#getIterator(java.text.AttributedCharacterIterator$Attribute[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
+        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
         public Java.Text.AttributedCharacterIterator GetIterator(Java.Text.AttributedCharacterIterator.Attribute[] arg0)
         {
             return IExecute<Java.Text.AttributedCharacterIterator>("getIterator", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#addAttribute(java.text.AttributedCharacterIterator$Attribute,java.lang.Object,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#addAttribute(java.text.AttributedCharacterIterator$Attribute,java.lang.Object,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public void AddAttribute(Java.Text.AttributedCharacterIterator.Attribute arg0, object arg1, int arg2, int arg3)
         {
             IExecute("addAttribute", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#addAttribute(java.text.AttributedCharacterIterator$Attribute,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#addAttribute(java.text.AttributedCharacterIterator$Attribute,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void AddAttribute(Java.Text.AttributedCharacterIterator.Attribute arg0, object arg1)
         {
             IExecute("addAttribute", arg0, arg1);

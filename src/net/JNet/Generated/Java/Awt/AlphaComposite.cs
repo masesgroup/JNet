@@ -33,105 +33,108 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.AlphaComposite"/> to <see cref="Java.Awt.Composite"/>
+        /// </summary>
         public static implicit operator Java.Awt.Composite(Java.Awt.AlphaComposite t) => t.Cast<Java.Awt.Composite>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#CLEAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#CLEAR"/>
         /// </summary>
         public static int CLEAR => Clazz.GetField<int>("CLEAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST"/>
         /// </summary>
         public static int DST => Clazz.GetField<int>("DST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_ATOP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_ATOP"/>
         /// </summary>
         public static int DST_ATOP => Clazz.GetField<int>("DST_ATOP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_IN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_IN"/>
         /// </summary>
         public static int DST_IN => Clazz.GetField<int>("DST_IN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_OUT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_OUT"/>
         /// </summary>
         public static int DST_OUT => Clazz.GetField<int>("DST_OUT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_OVER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_OVER"/>
         /// </summary>
         public static int DST_OVER => Clazz.GetField<int>("DST_OVER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC"/>
         /// </summary>
         public static int SRC => Clazz.GetField<int>("SRC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_ATOP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_ATOP"/>
         /// </summary>
         public static int SRC_ATOP => Clazz.GetField<int>("SRC_ATOP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_IN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_IN"/>
         /// </summary>
         public static int SRC_IN => Clazz.GetField<int>("SRC_IN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_OUT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_OUT"/>
         /// </summary>
         public static int SRC_OUT => Clazz.GetField<int>("SRC_OUT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_OVER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_OVER"/>
         /// </summary>
         public static int SRC_OVER => Clazz.GetField<int>("SRC_OVER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#XOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#XOR"/>
         /// </summary>
         public static int XOR => Clazz.GetField<int>("XOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Clear
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Clear"/>
         /// </summary>
         public static Java.Awt.AlphaComposite Clear => Clazz.GetField<Java.Awt.AlphaComposite>("Clear");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Dst
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Dst"/>
         /// </summary>
         public static Java.Awt.AlphaComposite Dst => Clazz.GetField<Java.Awt.AlphaComposite>("Dst");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstAtop
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstAtop"/>
         /// </summary>
         public static Java.Awt.AlphaComposite DstAtop => Clazz.GetField<Java.Awt.AlphaComposite>("DstAtop");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstIn
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstIn"/>
         /// </summary>
         public static Java.Awt.AlphaComposite DstIn => Clazz.GetField<Java.Awt.AlphaComposite>("DstIn");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstOut
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstOut"/>
         /// </summary>
         public static Java.Awt.AlphaComposite DstOut => Clazz.GetField<Java.Awt.AlphaComposite>("DstOut");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstOver
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstOver"/>
         /// </summary>
         public static Java.Awt.AlphaComposite DstOver => Clazz.GetField<Java.Awt.AlphaComposite>("DstOver");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Src
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Src"/>
         /// </summary>
         public static Java.Awt.AlphaComposite Src => Clazz.GetField<Java.Awt.AlphaComposite>("Src");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcAtop
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcAtop"/>
         /// </summary>
         public static Java.Awt.AlphaComposite SrcAtop => Clazz.GetField<Java.Awt.AlphaComposite>("SrcAtop");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcIn
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcIn"/>
         /// </summary>
         public static Java.Awt.AlphaComposite SrcIn => Clazz.GetField<Java.Awt.AlphaComposite>("SrcIn");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcOut
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcOut"/>
         /// </summary>
         public static Java.Awt.AlphaComposite SrcOut => Clazz.GetField<Java.Awt.AlphaComposite>("SrcOut");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcOver
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcOver"/>
         /// </summary>
         public static Java.Awt.AlphaComposite SrcOver => Clazz.GetField<Java.Awt.AlphaComposite>("SrcOver");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Xor
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Xor"/>
         /// </summary>
         public static Java.Awt.AlphaComposite Xor => Clazz.GetField<Java.Awt.AlphaComposite>("Xor");
         
@@ -139,15 +142,20 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#getInstance(int,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#getInstance(int,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <returns><see cref="Java.Awt.AlphaComposite"/></returns>
         public static Java.Awt.AlphaComposite GetInstance(int arg0, float arg1)
         {
             return SExecute<Java.Awt.AlphaComposite>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#getInstance(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#getInstance(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.AlphaComposite"/></returns>
         public static Java.Awt.AlphaComposite GetInstance(int arg0)
         {
             return SExecute<Java.Awt.AlphaComposite>("getInstance", arg0);
@@ -157,36 +165,44 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#getAlpha() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#getAlpha()"/> 
         /// </summary>
         public float Alpha
         {
             get { return IExecute<float>("getAlpha"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#getRule() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#getRule()"/> 
         /// </summary>
         public int Rule
         {
             get { return IExecute<int>("getRule"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#derive(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#derive(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see cref="Java.Awt.AlphaComposite"/></returns>
         public Java.Awt.AlphaComposite Derive(float arg0)
         {
             return IExecute<Java.Awt.AlphaComposite>("derive", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#derive(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#derive(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.AlphaComposite"/></returns>
         public Java.Awt.AlphaComposite Derive(int arg0)
         {
             return IExecute<Java.Awt.AlphaComposite>("derive", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#createContext(java.awt.image.ColorModel,java.awt.image.ColorModel,java.awt.RenderingHints)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#createContext(java.awt.image.ColorModel,java.awt.image.ColorModel,java.awt.RenderingHints)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.RenderingHints"/></param>
+        /// <returns><see cref="Java.Awt.CompositeContext"/></returns>
         public Java.Awt.CompositeContext CreateContext(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.ColorModel arg1, Java.Awt.RenderingHints arg2)
         {
             return IExecute<Java.Awt.CompositeContext>("createContext", arg0, arg1, arg2);

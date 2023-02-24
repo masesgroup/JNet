@@ -38,11 +38,11 @@ namespace Javax.Transaction.Xa
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#MAXBQUALSIZE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#MAXBQUALSIZE"/>
         /// </summary>
         public static int MAXBQUALSIZE => Clazz.GetField<int>("MAXBQUALSIZE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#MAXGTRIDSIZE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#MAXGTRIDSIZE"/>
         /// </summary>
         public static int MAXGTRIDSIZE => Clazz.GetField<int>("MAXGTRIDSIZE");
         
@@ -54,21 +54,21 @@ namespace Javax.Transaction.Xa
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#getBranchQualifier() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#getBranchQualifier()"/> 
         /// </summary>
         public byte[] BranchQualifier
         {
             get { return IExecuteArray<byte>("getBranchQualifier"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#getFormatId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#getFormatId()"/> 
         /// </summary>
         public int FormatId
         {
             get { return IExecute<int>("getFormatId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#getGlobalTransactionId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#getGlobalTransactionId()"/> 
         /// </summary>
         public byte[] GlobalTransactionId
         {

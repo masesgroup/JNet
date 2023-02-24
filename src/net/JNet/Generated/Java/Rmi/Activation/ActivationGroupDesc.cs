@@ -33,6 +33,9 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Activation.ActivationGroupDesc"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Activation.ActivationGroupDesc t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,22 +50,26 @@ namespace Java.Rmi.Activation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getLocation() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getLocation()"/> 
         /// </summary>
         public string Location
         {
             get { return IExecute<string>("getLocation"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getClassName()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getClassName()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string GetClassName()
         {
             return IExecute<string>("getClassName");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getCommandEnvironment()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getCommandEnvironment()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment"/></returns>
         public Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment GetCommandEnvironment()
         {
             return IExecute<Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment>("getCommandEnvironment");
@@ -76,8 +83,10 @@ namespace Java.Rmi.Activation
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.CommandEnvironment.html#<init>(java.lang.String,java.lang.String[])
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.CommandEnvironment.html#%3Cinit%3E(java.lang.String,java.lang.String[])"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             public CommandEnvironment(string arg0, string[] arg1)
                 : base(arg0, arg1)
             {
@@ -86,6 +95,9 @@ namespace Java.Rmi.Activation
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
@@ -100,14 +112,14 @@ namespace Java.Rmi.Activation
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.CommandEnvironment.html#getCommandOptions() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.CommandEnvironment.html#getCommandOptions()"/> 
             /// </summary>
             public string[] CommandOptions
             {
                 get { return IExecuteArray<string>("getCommandOptions"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.CommandEnvironment.html#getCommandPath() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.CommandEnvironment.html#getCommandPath()"/> 
             /// </summary>
             public string CommandPath
             {

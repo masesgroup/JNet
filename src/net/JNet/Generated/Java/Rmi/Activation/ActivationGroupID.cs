@@ -30,8 +30,9 @@ namespace Java.Rmi.Activation
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupID.html#<init>(java.rmi.activation.ActivationSystem)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupID.html#%3Cinit%3E(java.rmi.activation.ActivationSystem)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationSystem"/></param>
         public ActivationGroupID(Java.Rmi.Activation.ActivationSystem arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Activation.ActivationGroupID"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Activation.ActivationGroupID t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,7 +58,7 @@ namespace Java.Rmi.Activation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupID.html#getSystem() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupID.html#getSystem()"/> 
         /// </summary>
         public Java.Rmi.Activation.ActivationSystem System
         {

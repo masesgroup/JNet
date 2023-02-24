@@ -46,14 +46,14 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/AttributeException.html#getUnsupportedAttributes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/AttributeException.html#getUnsupportedAttributes()"/> 
         /// </summary>
         public Java.Lang.Class[] UnsupportedAttributes
         {
             get { return IExecuteArray<Java.Lang.Class>("getUnsupportedAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/AttributeException.html#getUnsupportedValues() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/AttributeException.html#getUnsupportedValues()"/> 
         /// </summary>
         public Javax.Print.Attribute.Attribute[] UnsupportedValues
         {

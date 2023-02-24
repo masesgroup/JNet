@@ -54,8 +54,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.FocusHandler.html#<init>(javax.swing.plaf.basic.BasicTableUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.FocusHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicTableUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicTableUI"/></param>
             public FocusHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
                 : base(arg0)
             {
@@ -64,6 +65,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTableUI.FocusHandler"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
+            /// </summary>
             public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicTableUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
             
             #endregion
@@ -78,15 +82,17 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.FocusHandler.html#focusGained(java.awt.event.FocusEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.FocusHandler.html#focusGained(java.awt.event.FocusEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
             public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
             {
                 IExecute("focusGained", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
             public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
             {
                 IExecute("focusLost", arg0);
@@ -103,8 +109,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#<init>(javax.swing.plaf.basic.BasicTableUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicTableUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicTableUI"/></param>
             public KeyHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
                 : base(arg0)
             {
@@ -113,6 +120,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTableUI.KeyHandler"/> to <see cref="Java.Awt.EventNs.KeyListener"/>
+            /// </summary>
             public static implicit operator Java.Awt.EventNs.KeyListener(Javax.Swing.Plaf.Basic.BasicTableUI.KeyHandler t) => t.Cast<Java.Awt.EventNs.KeyListener>();
             
             #endregion
@@ -127,22 +137,25 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#keyPressed(java.awt.event.KeyEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#keyPressed(java.awt.event.KeyEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
             public void KeyPressed(Java.Awt.EventNs.KeyEvent arg0)
             {
                 IExecute("keyPressed", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#keyReleased(java.awt.event.KeyEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#keyReleased(java.awt.event.KeyEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
             public void KeyReleased(Java.Awt.EventNs.KeyEvent arg0)
             {
                 IExecute("keyReleased", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#keyTyped(java.awt.event.KeyEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#keyTyped(java.awt.event.KeyEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
             public void KeyTyped(Java.Awt.EventNs.KeyEvent arg0)
             {
                 IExecute("keyTyped", arg0);
@@ -159,8 +172,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#<init>(javax.swing.plaf.basic.BasicTableUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicTableUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicTableUI"/></param>
             public MouseInputHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
                 : base(arg0)
             {
@@ -169,6 +183,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTableUI.MouseInputHandler"/> to <see cref="Javax.Swing.Event.MouseInputListener"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Event.MouseInputListener(Javax.Swing.Plaf.Basic.BasicTableUI.MouseInputHandler t) => t.Cast<Javax.Swing.Event.MouseInputListener>();
             
             #endregion
@@ -183,50 +200,57 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseClicked(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseClicked(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseClicked", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseDragged(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseDragged(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseDragged", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseEntered(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseEntered(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseEntered", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseExited(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseExited(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseExited", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseMoved(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseMoved(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseMoved", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mousePressed(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mousePressed(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mousePressed", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseReleased(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseReleased(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseReleased", arg0);

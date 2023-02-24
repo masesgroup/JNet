@@ -46,56 +46,56 @@ namespace Org.W3c.Dom.Ls
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getBaseURI() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setBaseURI(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getBaseURI()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setBaseURI(java.lang.String)"/>
         /// </summary>
         public string BaseURI
         {
             get { return IExecute<string>("getBaseURI"); } set { IExecute("setBaseURI", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getByteStream() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setByteStream(java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getByteStream()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setByteStream(java.io.InputStream)"/>
         /// </summary>
         public Java.Io.InputStream ByteStream
         {
             get { return IExecute<Java.Io.InputStream>("getByteStream"); } set { IExecute("setByteStream", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getCertifiedText() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setCertifiedText(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getCertifiedText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setCertifiedText(boolean)"/>
         /// </summary>
         public bool CertifiedText
         {
             get { return IExecute<bool>("getCertifiedText"); } set { IExecute("setCertifiedText", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getCharacterStream() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setCharacterStream(java.io.Reader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getCharacterStream()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setCharacterStream(java.io.Reader)"/>
         /// </summary>
         public Java.Io.Reader CharacterStream
         {
             get { return IExecute<Java.Io.Reader>("getCharacterStream"); } set { IExecute("setCharacterStream", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getEncoding() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setEncoding(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getEncoding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setEncoding(java.lang.String)"/>
         /// </summary>
         public string Encoding
         {
             get { return IExecute<string>("getEncoding"); } set { IExecute("setEncoding", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getPublicId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setPublicId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getPublicId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setPublicId(java.lang.String)"/>
         /// </summary>
         public string PublicId
         {
             get { return IExecute<string>("getPublicId"); } set { IExecute("setPublicId", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getStringData() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setStringData(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getStringData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setStringData(java.lang.String)"/>
         /// </summary>
         public string StringData
         {
             get { return IExecute<string>("getStringData"); } set { IExecute("setStringData", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getSystemId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setSystemId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public string SystemId
         {

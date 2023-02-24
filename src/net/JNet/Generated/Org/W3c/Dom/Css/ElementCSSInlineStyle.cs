@@ -46,7 +46,7 @@ namespace Org.W3c.Dom.Css
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/ElementCSSInlineStyle.html#getStyle() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/ElementCSSInlineStyle.html#getStyle()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSStyleDeclaration Style
         {

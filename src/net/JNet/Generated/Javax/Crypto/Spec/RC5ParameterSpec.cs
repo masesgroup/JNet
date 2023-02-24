@@ -30,22 +30,34 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#<init>(int,int,int,byte[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#%3Cinit%3E(int,int,int,byte[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public RC5ParameterSpec(int arg0, int arg1, int arg2, byte[] arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#<init>(int,int,int,byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#%3Cinit%3E(int,int,int,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
         public RC5ParameterSpec(int arg0, int arg1, int arg2, byte[] arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#<init>(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public RC5ParameterSpec(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -54,6 +66,9 @@ namespace Javax.Crypto.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Crypto.Spec.RC5ParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Javax.Crypto.Spec.RC5ParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
         
         #endregion
@@ -68,28 +83,28 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#getIV() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#getIV()"/> 
         /// </summary>
         public byte[] IV
         {
             get { return IExecuteArray<byte>("getIV"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#getRounds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#getRounds()"/> 
         /// </summary>
         public int Rounds
         {
             get { return IExecute<int>("getRounds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#getVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#getVersion()"/> 
         /// </summary>
         public int Version
         {
             get { return IExecute<int>("getVersion"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#getWordSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html#getWordSize()"/> 
         /// </summary>
         public int WordSize
         {

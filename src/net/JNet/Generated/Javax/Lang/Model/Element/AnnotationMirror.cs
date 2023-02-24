@@ -46,7 +46,7 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationMirror.html#getAnnotationType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationMirror.html#getAnnotationType()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.DeclaredType AnnotationType
         {

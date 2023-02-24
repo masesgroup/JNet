@@ -30,8 +30,11 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#<init>(java.awt.Component,int,java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#%3Cinit%3E(java.awt.Component,int,java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Rectangle"/></param>
         public PaintEvent(Java.Awt.Component arg0, int arg1, Java.Awt.Rectangle arg2)
             : base(arg0, arg1, arg2)
         {
@@ -45,19 +48,19 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT"/>
         /// </summary>
         public static int PAINT => Clazz.GetField<int>("PAINT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT_FIRST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT_FIRST"/>
         /// </summary>
         public static int PAINT_FIRST => Clazz.GetField<int>("PAINT_FIRST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT_LAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT_LAST"/>
         /// </summary>
         public static int PAINT_LAST => Clazz.GetField<int>("PAINT_LAST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#UPDATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#UPDATE"/>
         /// </summary>
         public static int UPDATE => Clazz.GetField<int>("UPDATE");
         
@@ -69,7 +72,7 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#getUpdateRect() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#setUpdateRect(java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#getUpdateRect()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#setUpdateRect(java.awt.Rectangle)"/>
         /// </summary>
         public Java.Awt.Rectangle UpdateRect
         {

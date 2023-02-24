@@ -30,8 +30,10 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#<init>(float[][],java.awt.RenderingHints)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#%3Cinit%3E(float[][],java.awt.RenderingHints)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.RenderingHints"/></param>
         public BandCombineOp(float[][] arg0, Java.Awt.RenderingHints arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.BandCombineOp"/> to <see cref="Java.Awt.ImageNs.RasterOp"/>
+        /// </summary>
         public static implicit operator Java.Awt.ImageNs.RasterOp(Java.Awt.ImageNs.BandCombineOp t) => t.Cast<Java.Awt.ImageNs.RasterOp>();
         
         #endregion
@@ -54,43 +59,53 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#getMatrix() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#getMatrix()"/> 
         /// </summary>
         public float[] Matrix
         {
             get { return IExecuteArray<float>("getMatrix"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#getRenderingHints() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#getRenderingHints()"/> 
         /// </summary>
         public Java.Awt.RenderingHints RenderingHints
         {
             get { return IExecute<Java.Awt.RenderingHints>("getRenderingHints"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#getPoint2D(java.awt.geom.Point2D,java.awt.geom.Point2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#getPoint2D(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Point2D"/></returns>
         public Java.Awt.Geom.Point2D GetPoint2D(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
             return IExecute<Java.Awt.Geom.Point2D>("getPoint2D", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#getBounds2D(java.awt.image.Raster)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#getBounds2D(java.awt.image.Raster)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetBounds2D(Java.Awt.ImageNs.Raster arg0)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds2D", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#createCompatibleDestRaster(java.awt.image.Raster)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#createCompatibleDestRaster(java.awt.image.Raster)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleDestRaster(Java.Awt.ImageNs.Raster arg0)
         {
             return IExecute<Java.Awt.ImageNs.WritableRaster>("createCompatibleDestRaster", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#filter(java.awt.image.Raster,java.awt.image.WritableRaster)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html#filter(java.awt.image.Raster,java.awt.image.WritableRaster)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster Filter(Java.Awt.ImageNs.Raster arg0, Java.Awt.ImageNs.WritableRaster arg1)
         {
             return IExecute<Java.Awt.ImageNs.WritableRaster>("filter", arg0, arg1);

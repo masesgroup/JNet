@@ -30,15 +30,19 @@ namespace Javax.Xml.Crypto
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#<init>(java.io.InputStream,java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#%3Cinit%3E(java.io.InputStream,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
         public OctetStreamData(Java.Io.InputStream arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#<init>(java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public OctetStreamData(Java.Io.InputStream arg0)
             : base(arg0)
         {
@@ -47,6 +51,9 @@ namespace Javax.Xml.Crypto
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.OctetStreamData"/> to <see cref="Javax.Xml.Crypto.Data"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.Data(Javax.Xml.Crypto.OctetStreamData t) => t.Cast<Javax.Xml.Crypto.Data>();
         
         #endregion
@@ -61,21 +68,21 @@ namespace Javax.Xml.Crypto
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#getMimeType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#getMimeType()"/> 
         /// </summary>
         public string MimeType
         {
             get { return IExecute<string>("getMimeType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#getOctetStream() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#getOctetStream()"/> 
         /// </summary>
         public Java.Io.InputStream OctetStream
         {
             get { return IExecute<Java.Io.InputStream>("getOctetStream"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#getURI() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#getURI()"/> 
         /// </summary>
         public string URI
         {

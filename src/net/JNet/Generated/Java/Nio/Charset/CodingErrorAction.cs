@@ -38,15 +38,15 @@ namespace Java.Nio.Charset
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CodingErrorAction.html#IGNORE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CodingErrorAction.html#IGNORE"/>
         /// </summary>
         public static Java.Nio.Charset.CodingErrorAction IGNORE => Clazz.GetField<Java.Nio.Charset.CodingErrorAction>("IGNORE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CodingErrorAction.html#REPLACE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CodingErrorAction.html#REPLACE"/>
         /// </summary>
         public static Java.Nio.Charset.CodingErrorAction REPLACE => Clazz.GetField<Java.Nio.Charset.CodingErrorAction>("REPLACE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CodingErrorAction.html#REPORT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CodingErrorAction.html#REPORT"/>
         /// </summary>
         public static Java.Nio.Charset.CodingErrorAction REPORT => Clazz.GetField<Java.Nio.Charset.CodingErrorAction>("REPORT");
         

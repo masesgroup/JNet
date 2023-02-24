@@ -33,6 +33,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.QueryEval"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.QueryEval t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -43,7 +46,7 @@ namespace Javax.Management
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryEval.html#getMBeanServer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryEval.html#getMBeanServer()"/> 
         /// </summary>
         public static Javax.Management.MBeanServer MBeanServer
         {
@@ -54,8 +57,9 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryEval.html#setMBeanServer(javax.management.MBeanServer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryEval.html#setMBeanServer(javax.management.MBeanServer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
         public void SetMBeanServer(Javax.Management.MBeanServer arg0)
         {
             IExecute("setMBeanServer", arg0);

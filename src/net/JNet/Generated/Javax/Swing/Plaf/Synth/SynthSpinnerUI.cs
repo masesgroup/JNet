@@ -33,7 +33,13 @@ namespace Javax.Swing.Plaf.Synth
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Plaf.Synth.SynthSpinnerUI"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+        /// </summary>
         public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Synth.SynthSpinnerUI t) => t.Cast<Java.Beans.PropertyChangeListener>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Plaf.Synth.SynthSpinnerUI"/> to <see cref="Javax.Swing.Plaf.Synth.SynthUI"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Plaf.Synth.SynthUI(Javax.Swing.Plaf.Synth.SynthSpinnerUI t) => t.Cast<Javax.Swing.Plaf.Synth.SynthUI>();
         
         #endregion
@@ -48,22 +54,31 @@ namespace Javax.Swing.Plaf.Synth
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthSpinnerUI.html#getContext(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthSpinnerUI.html#getContext(javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></returns>
         public Javax.Swing.Plaf.Synth.SynthContext GetContext(Javax.Swing.JComponent arg0)
         {
             return IExecute<Javax.Swing.Plaf.Synth.SynthContext>("getContext", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthSpinnerUI.html#paintBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthSpinnerUI.html#paintBorder(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
         public void PaintBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthSpinnerUI.html#propertyChange(java.beans.PropertyChangeEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthSpinnerUI.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecute("propertyChange", arg0);

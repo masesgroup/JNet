@@ -46,8 +46,10 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Flushable.html#flush() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Flushable.html#flush()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
             IExecute("flush");

@@ -38,15 +38,15 @@ namespace Java.Nio.File
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#EXECUTE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#EXECUTE"/>
         /// </summary>
         public static Java.Nio.File.AccessMode EXECUTE => Clazz.GetField<Java.Nio.File.AccessMode>("EXECUTE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#READ
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#READ"/>
         /// </summary>
         public static Java.Nio.File.AccessMode READ => Clazz.GetField<Java.Nio.File.AccessMode>("READ");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#WRITE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#WRITE"/>
         /// </summary>
         public static Java.Nio.File.AccessMode WRITE => Clazz.GetField<Java.Nio.File.AccessMode>("WRITE");
         
@@ -54,8 +54,10 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.AccessMode"/></returns>
         public static Java.Nio.File.AccessMode[] Values()
         {
             return SExecuteArray<Java.Nio.File.AccessMode>("values");

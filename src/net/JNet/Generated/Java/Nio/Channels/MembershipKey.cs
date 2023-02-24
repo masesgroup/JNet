@@ -46,56 +46,71 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#isValid()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#isValid()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsValid()
         {
             return IExecute<bool>("isValid");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#group()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#group()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
         public Java.Net.InetAddress Group()
         {
             return IExecute<Java.Net.InetAddress>("group");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#sourceAddress()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#sourceAddress()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
         public Java.Net.InetAddress SourceAddress()
         {
             return IExecute<Java.Net.InetAddress>("sourceAddress");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#networkInterface()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#networkInterface()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
         public Java.Net.NetworkInterface NetworkInterface()
         {
             return IExecute<Java.Net.NetworkInterface>("networkInterface");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#block(java.net.InetAddress) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#block(java.net.InetAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <returns><see cref="Java.Nio.Channels.MembershipKey"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.MembershipKey Block(Java.Net.InetAddress arg0)
         {
             return IExecute<Java.Nio.Channels.MembershipKey>("block", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#unblock(java.net.InetAddress)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#unblock(java.net.InetAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <returns><see cref="Java.Nio.Channels.MembershipKey"/></returns>
         public Java.Nio.Channels.MembershipKey Unblock(Java.Net.InetAddress arg0)
         {
             return IExecute<Java.Nio.Channels.MembershipKey>("unblock", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#channels.MulticastChannel java.nio.channels.MembershipKey.channel()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#channels.MulticastChannel java.nio.channels.MembershipKey.channel()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.MulticastChannel"/></returns>
         public Java.Nio.Channels.MulticastChannel Channel()
         {
             return IExecute<Java.Nio.Channels.MulticastChannel>("channel");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#drop()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html#drop()"/>
         /// </summary>
         public void Drop()
         {

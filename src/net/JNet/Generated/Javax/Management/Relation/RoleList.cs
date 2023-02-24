@@ -30,8 +30,9 @@ namespace Javax.Management.Relation
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public RoleList(int arg0)
             : base(arg0)
         {
@@ -53,22 +54,32 @@ namespace Javax.Management.Relation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html#add(int,javax.management.relation.Role) throws java.lang.IllegalArgumentException,java.lang.IndexOutOfBoundsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html#add(int,javax.management.relation.Role)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.Relation.Role"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public void Add(int arg0, Javax.Management.Relation.Role arg1)
         {
             IExecute("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html#add(javax.management.relation.Role) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html#add(javax.management.relation.Role)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Relation.Role"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void Add(Javax.Management.Relation.Role arg0)
         {
             IExecute("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html#set(int,javax.management.relation.Role) throws java.lang.IllegalArgumentException,java.lang.IndexOutOfBoundsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html#set(int,javax.management.relation.Role)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.Relation.Role"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public void Set(int arg0, Javax.Management.Relation.Role arg1)
         {
             IExecute("set", arg0, arg1);

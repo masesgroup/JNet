@@ -30,22 +30,26 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#<init>(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#%3Cinit%3E(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public Timer(bool arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#<init>(java.lang.String,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public Timer(string arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public Timer(string arg0)
             : base(arg0)
         {
@@ -67,57 +71,75 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#purge()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#purge()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Purge()
         {
             return IExecute<int>("purge");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#cancel()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#cancel()"/>
         /// </summary>
         public void Cancel()
         {
             IExecute("cancel");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#schedule(java.util.TimerTask,java.util.Date,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#schedule(java.util.TimerTask,java.util.Date,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.TimerTask"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
         public void Schedule(Java.Util.TimerTask arg0, Java.Util.Date arg1, long arg2)
         {
             IExecute("schedule", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#schedule(java.util.TimerTask,java.util.Date)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#schedule(java.util.TimerTask,java.util.Date)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.TimerTask"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Date"/></param>
         public void Schedule(Java.Util.TimerTask arg0, Java.Util.Date arg1)
         {
             IExecute("schedule", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#schedule(java.util.TimerTask,long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#schedule(java.util.TimerTask,long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.TimerTask"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
         public void Schedule(Java.Util.TimerTask arg0, long arg1, long arg2)
         {
             IExecute("schedule", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#schedule(java.util.TimerTask,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#schedule(java.util.TimerTask,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.TimerTask"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
         public void Schedule(Java.Util.TimerTask arg0, long arg1)
         {
             IExecute("schedule", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#scheduleAtFixedRate(java.util.TimerTask,java.util.Date,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#scheduleAtFixedRate(java.util.TimerTask,java.util.Date,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.TimerTask"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
         public void ScheduleAtFixedRate(Java.Util.TimerTask arg0, Java.Util.Date arg1, long arg2)
         {
             IExecute("scheduleAtFixedRate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#scheduleAtFixedRate(java.util.TimerTask,long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#scheduleAtFixedRate(java.util.TimerTask,long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.TimerTask"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
         public void ScheduleAtFixedRate(Java.Util.TimerTask arg0, long arg1, long arg2)
         {
             IExecute("scheduleAtFixedRate", arg0, arg1, arg2);

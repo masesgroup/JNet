@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Css
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Css.DOMImplementationCSS"/> to <see cref="Org.W3c.Dom.DOMImplementation"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.DOMImplementation(Org.W3c.Dom.Css.DOMImplementationCSS t) => t.Cast<Org.W3c.Dom.DOMImplementation>();
         
         #endregion
@@ -47,8 +50,12 @@ namespace Org.W3c.Dom.Css
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/DOMImplementationCSS.html#createCSSStyleSheet(java.lang.String,java.lang.String) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/DOMImplementationCSS.html#createCSSStyleSheet(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Css.CSSStyleSheet"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Css.CSSStyleSheet CreateCSSStyleSheet(string arg0, string arg1)
         {
             return IExecute<Org.W3c.Dom.Css.CSSStyleSheet>("createCSSStyleSheet", arg0, arg1);

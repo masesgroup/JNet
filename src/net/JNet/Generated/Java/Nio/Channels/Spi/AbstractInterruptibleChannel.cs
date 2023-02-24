@@ -33,7 +33,13 @@ namespace Java.Nio.Channels.Spi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.Spi.AbstractInterruptibleChannel"/> to <see cref="Java.Nio.Channels.Channel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.Channel(Java.Nio.Channels.Spi.AbstractInterruptibleChannel t) => t.Cast<Java.Nio.Channels.Channel>();
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.Spi.AbstractInterruptibleChannel"/> to <see cref="Java.Nio.Channels.InterruptibleChannel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.InterruptibleChannel(Java.Nio.Channels.Spi.AbstractInterruptibleChannel t) => t.Cast<Java.Nio.Channels.InterruptibleChannel>();
         
         #endregion
@@ -48,15 +54,19 @@ namespace Java.Nio.Channels.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.html#isOpen()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.html#isOpen()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsOpen()
         {
             return IExecute<bool>("isOpen");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.html#close() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");

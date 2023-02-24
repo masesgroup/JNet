@@ -33,6 +33,9 @@ namespace Javax.Security.Auth
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.Subject"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Subject t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -43,8 +46,10 @@ namespace Javax.Security.Auth
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getSubject(java.security.AccessControlContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getSubject(java.security.AccessControlContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <returns><see cref="Javax.Security.Auth.Subject"/></returns>
         public static Javax.Security.Auth.Subject GetSubject(Java.Security.AccessControlContext arg0)
         {
             return SExecute<Javax.Security.Auth.Subject>("getSubject", arg0);
@@ -54,14 +59,16 @@ namespace Javax.Security.Auth
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#isReadOnly()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#isReadOnly()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsReadOnly()
         {
             return IExecute<bool>("isReadOnly");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#setReadOnly()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#setReadOnly()"/>
         /// </summary>
         public void SetReadOnly()
         {

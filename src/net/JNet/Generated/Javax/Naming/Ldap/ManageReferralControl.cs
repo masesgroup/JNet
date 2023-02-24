@@ -30,8 +30,9 @@ namespace Javax.Naming.Ldap
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ManageReferralControl.html#<init>(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ManageReferralControl.html#%3Cinit%3E(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public ManageReferralControl(bool arg0)
             : base(arg0)
         {
@@ -45,7 +46,7 @@ namespace Javax.Naming.Ldap
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ManageReferralControl.html#OID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ManageReferralControl.html#OID"/>
         /// </summary>
         public static string OID => Clazz.GetField<string>("OID");
         

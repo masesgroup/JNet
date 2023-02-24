@@ -33,6 +33,9 @@ namespace Java.Time.Zone
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Zone.ZoneRules"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Zone.ZoneRules t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -43,8 +46,10 @@ namespace Java.Time.Zone
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#of(java.time.ZoneOffset)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#of(java.time.ZoneOffset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <returns><see cref="Java.Time.Zone.ZoneRules"/></returns>
         public static Java.Time.Zone.ZoneRules Of(Java.Time.ZoneOffset arg0)
         {
             return SExecute<Java.Time.Zone.ZoneRules>("of", arg0);
@@ -54,71 +59,92 @@ namespace Java.Time.Zone
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isDaylightSavings(java.time.Instant)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isDaylightSavings(java.time.Instant)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsDaylightSavings(Java.Time.Instant arg0)
         {
             return IExecute<bool>("isDaylightSavings", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isFixedOffset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isFixedOffset()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsFixedOffset()
         {
             return IExecute<bool>("isFixedOffset");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isValidOffset(java.time.LocalDateTime,java.time.ZoneOffset)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isValidOffset(java.time.LocalDateTime,java.time.ZoneOffset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
+        /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsValidOffset(Java.Time.LocalDateTime arg0, Java.Time.ZoneOffset arg1)
         {
             return IExecute<bool>("isValidOffset", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getDaylightSavings(java.time.Instant)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getDaylightSavings(java.time.Instant)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
+        /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration GetDaylightSavings(Java.Time.Instant arg0)
         {
             return IExecute<Java.Time.Duration>("getDaylightSavings", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getTransition(java.time.LocalDateTime)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getTransition(java.time.LocalDateTime)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
+        /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransition"/></returns>
         public Java.Time.Zone.ZoneOffsetTransition GetTransition(Java.Time.LocalDateTime arg0)
         {
             return IExecute<Java.Time.Zone.ZoneOffsetTransition>("getTransition", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#nextTransition(java.time.Instant)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#nextTransition(java.time.Instant)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
+        /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransition"/></returns>
         public Java.Time.Zone.ZoneOffsetTransition NextTransition(Java.Time.Instant arg0)
         {
             return IExecute<Java.Time.Zone.ZoneOffsetTransition>("nextTransition", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#previousTransition(java.time.Instant)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#previousTransition(java.time.Instant)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
+        /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransition"/></returns>
         public Java.Time.Zone.ZoneOffsetTransition PreviousTransition(Java.Time.Instant arg0)
         {
             return IExecute<Java.Time.Zone.ZoneOffsetTransition>("previousTransition", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getOffset(java.time.Instant)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getOffset(java.time.Instant)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public Java.Time.ZoneOffset GetOffset(Java.Time.Instant arg0)
         {
             return IExecute<Java.Time.ZoneOffset>("getOffset", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getOffset(java.time.LocalDateTime)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getOffset(java.time.LocalDateTime)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public Java.Time.ZoneOffset GetOffset(Java.Time.LocalDateTime arg0)
         {
             return IExecute<Java.Time.ZoneOffset>("getOffset", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getStandardOffset(java.time.Instant)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getStandardOffset(java.time.Instant)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public Java.Time.ZoneOffset GetStandardOffset(Java.Time.Instant arg0)
         {
             return IExecute<Java.Time.ZoneOffset>("getStandardOffset", arg0);

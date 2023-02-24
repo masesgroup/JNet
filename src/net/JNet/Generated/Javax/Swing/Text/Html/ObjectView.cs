@@ -30,8 +30,9 @@ namespace Javax.Swing.Text.Html
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ObjectView.html#<init>(javax.swing.text.Element)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ObjectView.html#%3Cinit%3E(javax.swing.text.Element)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
         public ObjectView(Javax.Swing.Text.Element arg0)
             : base(arg0)
         {

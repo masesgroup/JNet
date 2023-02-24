@@ -33,6 +33,9 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sound.Sampled.TargetDataLine"/> to <see cref="Javax.Sound.Sampled.DataLine"/>
+        /// </summary>
         public static implicit operator Javax.Sound.Sampled.DataLine(Javax.Sound.Sampled.TargetDataLine t) => t.Cast<Javax.Sound.Sampled.DataLine>();
         
         #endregion
@@ -47,22 +50,31 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/TargetDataLine.html#read(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/TargetDataLine.html#read(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Read(byte[] arg0, int arg1, int arg2)
         {
             return IExecute<int>("read", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/TargetDataLine.html#open(javax.sound.sampled.AudioFormat,int) throws javax.sound.sampled.LineUnavailableException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/TargetDataLine.html#open(javax.sound.sampled.AudioFormat,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public void Open(Javax.Sound.Sampled.AudioFormat arg0, int arg1)
         {
             IExecute("open", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/TargetDataLine.html#open(javax.sound.sampled.AudioFormat) throws javax.sound.sampled.LineUnavailableException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/TargetDataLine.html#open(javax.sound.sampled.AudioFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public void Open(Javax.Sound.Sampled.AudioFormat arg0)
         {
             IExecute("open", arg0);

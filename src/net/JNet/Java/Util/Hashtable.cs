@@ -19,18 +19,25 @@
 namespace Java.Util
 {
     /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html"/>
+    /// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html"/>
     /// </summary>
     public class Hashtable<K, V> : Dictionary<K, V>
     {
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
-
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.util.Hashtable";
-
+        /// <summary>
+        /// Converter from <see cref="Hashtable{K, V}"/> to <see cref="Map{K, V}"/>
+        /// </summary>
         public static implicit operator Map<K, V>(Hashtable<K, V> table) { return Wraps<Map<K, V>>(table.Instance); }
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#get(java.lang.Object)"/>
+        /// </summary>
         public V Get(object key) => IExecute<V>("get", key);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#put(K,V)"/>
+        /// </summary>
         public void Put(K key, V value) => IExecute("put", key, value);
     }
 }

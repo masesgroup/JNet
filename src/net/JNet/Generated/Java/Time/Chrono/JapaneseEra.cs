@@ -33,26 +33,32 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.JapaneseEra"/> to <see cref="Java.Time.Chrono.Era"/>
+        /// </summary>
         public static implicit operator Java.Time.Chrono.Era(Java.Time.Chrono.JapaneseEra t) => t.Cast<Java.Time.Chrono.Era>();
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.JapaneseEra"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Chrono.JapaneseEra t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#HEISEI
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#HEISEI"/>
         /// </summary>
         public static Java.Time.Chrono.JapaneseEra HEISEI => Clazz.GetField<Java.Time.Chrono.JapaneseEra>("HEISEI");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#MEIJI
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#MEIJI"/>
         /// </summary>
         public static Java.Time.Chrono.JapaneseEra MEIJI => Clazz.GetField<Java.Time.Chrono.JapaneseEra>("MEIJI");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#SHOWA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#SHOWA"/>
         /// </summary>
         public static Java.Time.Chrono.JapaneseEra SHOWA => Clazz.GetField<Java.Time.Chrono.JapaneseEra>("SHOWA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#TAISHO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#TAISHO"/>
         /// </summary>
         public static Java.Time.Chrono.JapaneseEra TAISHO => Clazz.GetField<Java.Time.Chrono.JapaneseEra>("TAISHO");
         
@@ -60,22 +66,28 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#of(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#of(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.JapaneseEra"/></returns>
         public static Java.Time.Chrono.JapaneseEra Of(int arg0)
         {
             return SExecute<Java.Time.Chrono.JapaneseEra>("of", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#valueOf(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#valueOf(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Time.Chrono.JapaneseEra"/></returns>
         public static Java.Time.Chrono.JapaneseEra ValueOf(string arg0)
         {
             return SExecute<Java.Time.Chrono.JapaneseEra>("valueOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.JapaneseEra"/></returns>
         public static Java.Time.Chrono.JapaneseEra[] Values()
         {
             return SExecuteArray<Java.Time.Chrono.JapaneseEra>("values");
@@ -85,15 +97,17 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#getValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#getValue()"/> 
         /// </summary>
         public int Value
         {
             get { return IExecute<int>("getValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#range(java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#range(java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);

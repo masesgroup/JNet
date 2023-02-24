@@ -30,15 +30,18 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#<init>(int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#%3Cinit%3E(int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public MenuShortcut(int arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public MenuShortcut(int arg0)
             : base(arg0)
         {
@@ -47,6 +50,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.MenuShortcut"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.MenuShortcut t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -61,15 +67,17 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#getKey() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#getKey()"/> 
         /// </summary>
         public int Key
         {
             get { return IExecute<int>("getKey"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#usesShiftModifier()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#usesShiftModifier()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool UsesShiftModifier()
         {
             return IExecute<bool>("usesShiftModifier");

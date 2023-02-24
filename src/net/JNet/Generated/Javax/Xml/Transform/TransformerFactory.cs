@@ -42,22 +42,31 @@ namespace Javax.Xml.Transform
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newDefaultInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newDefaultInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Transform.TransformerFactory"/></returns>
         public static Javax.Xml.Transform.TransformerFactory NewDefaultInstance()
         {
             return SExecute<Javax.Xml.Transform.TransformerFactory>("newDefaultInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newInstance() throws javax.xml.transform.TransformerFactoryConfigurationError
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Transform.TransformerFactory"/></returns>
+        /// <exception cref="Javax.Xml.Transform.TransformerFactoryConfigurationError"/>
         public static Javax.Xml.Transform.TransformerFactory NewInstance()
         {
             return SExecute<Javax.Xml.Transform.TransformerFactory>("newInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newInstance(java.lang.String,java.lang.ClassLoader) throws javax.xml.transform.TransformerFactoryConfigurationError
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newInstance(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Javax.Xml.Transform.TransformerFactory"/></returns>
+        /// <exception cref="Javax.Xml.Transform.TransformerFactoryConfigurationError"/>
         public static Javax.Xml.Transform.TransformerFactory NewInstance(string arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecute<Javax.Xml.Transform.TransformerFactory>("newInstance", arg0, arg1);
@@ -67,71 +76,95 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getErrorListener() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#setErrorListener(javax.xml.transform.ErrorListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getErrorListener()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#setErrorListener(javax.xml.transform.ErrorListener)"/>
         /// </summary>
         public Javax.Xml.Transform.ErrorListener ErrorListener
         {
             get { return IExecute<Javax.Xml.Transform.ErrorListener>("getErrorListener"); } set { IExecute("setErrorListener", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getURIResolver() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#setURIResolver(javax.xml.transform.URIResolver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getURIResolver()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#setURIResolver(javax.xml.transform.URIResolver)"/>
         /// </summary>
         public Javax.Xml.Transform.URIResolver URIResolver
         {
             get { return IExecute<Javax.Xml.Transform.URIResolver>("getURIResolver"); } set { IExecute("setURIResolver", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getFeature(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getFeature(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool GetFeature(string arg0)
         {
             return IExecute<bool>("getFeature", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getAttribute(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getAttribute(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAttribute(string arg0)
         {
             return IExecute("getAttribute", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getAssociatedStylesheet(javax.xml.transform.Source,java.lang.String,java.lang.String,java.lang.String) throws javax.xml.transform.TransformerConfigurationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#getAssociatedStylesheet(javax.xml.transform.Source,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Xml.Transform.Source"/></returns>
+        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Source GetAssociatedStylesheet(Javax.Xml.Transform.Source arg0, string arg1, string arg2, string arg3)
         {
             return IExecute<Javax.Xml.Transform.Source>("getAssociatedStylesheet", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newTemplates(javax.xml.transform.Source) throws javax.xml.transform.TransformerConfigurationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newTemplates(javax.xml.transform.Source)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
+        /// <returns><see cref="Javax.Xml.Transform.Templates"/></returns>
+        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Templates NewTemplates(Javax.Xml.Transform.Source arg0)
         {
             return IExecute<Javax.Xml.Transform.Templates>("newTemplates", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newTransformer() throws javax.xml.transform.TransformerConfigurationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newTransformer()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Transform.Transformer"/></returns>
+        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Transformer NewTransformer()
         {
             return IExecute<Javax.Xml.Transform.Transformer>("newTransformer");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newTransformer(javax.xml.transform.Source) throws javax.xml.transform.TransformerConfigurationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newTransformer(javax.xml.transform.Source)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
+        /// <returns><see cref="Javax.Xml.Transform.Transformer"/></returns>
+        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Transformer NewTransformer(Javax.Xml.Transform.Source arg0)
         {
             return IExecute<Javax.Xml.Transform.Transformer>("newTransformer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#setAttribute(java.lang.String,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#setAttribute(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void SetAttribute(string arg0, object arg1)
         {
             IExecute("setAttribute", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#setFeature(java.lang.String,boolean) throws javax.xml.transform.TransformerConfigurationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public void SetFeature(string arg0, bool arg1)
         {
             IExecute("setFeature", arg0, arg1);

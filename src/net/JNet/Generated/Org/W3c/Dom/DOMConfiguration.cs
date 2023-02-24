@@ -46,29 +46,38 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html#getParameterNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html#getParameterNames()"/> 
         /// </summary>
         public Org.W3c.Dom.DOMStringList ParameterNames
         {
             get { return IExecute<Org.W3c.Dom.DOMStringList>("getParameterNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html#canSetParameter(java.lang.String,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html#canSetParameter(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CanSetParameter(string arg0, object arg1)
         {
             return IExecute<bool>("canSetParameter", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html#getParameter(java.lang.String) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html#getParameter(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public object GetParameter(string arg0)
         {
             return IExecute("getParameter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html#setParameter(java.lang.String,java.lang.Object) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html#setParameter(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetParameter(string arg0, object arg1)
         {
             IExecute("setParameter", arg0, arg1);

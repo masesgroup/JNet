@@ -33,6 +33,9 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Tools.JavaFileObject"/> to <see cref="Javax.Tools.FileObject"/>
+        /// </summary>
         public static implicit operator Javax.Tools.FileObject(Javax.Tools.JavaFileObject t) => t.Cast<Javax.Tools.FileObject>();
         
         #endregion
@@ -63,23 +66,23 @@ namespace Javax.Tools
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#extension
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#extension"/>
             /// </summary>
             public string extension => Instance.GetField<string>("extension");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#CLASS
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#CLASS"/>
             /// </summary>
             public static Javax.Tools.JavaFileObject.Kind CLASS => Clazz.GetField<Javax.Tools.JavaFileObject.Kind>("CLASS");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#HTML
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#HTML"/>
             /// </summary>
             public static Javax.Tools.JavaFileObject.Kind HTML => Clazz.GetField<Javax.Tools.JavaFileObject.Kind>("HTML");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#OTHER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#OTHER"/>
             /// </summary>
             public static Javax.Tools.JavaFileObject.Kind OTHER => Clazz.GetField<Javax.Tools.JavaFileObject.Kind>("OTHER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#SOURCE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#SOURCE"/>
             /// </summary>
             public static Javax.Tools.JavaFileObject.Kind SOURCE => Clazz.GetField<Javax.Tools.JavaFileObject.Kind>("SOURCE");
             
@@ -87,8 +90,10 @@ namespace Javax.Tools
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Tools.JavaFileObject.Kind"/></returns>
             public static Javax.Tools.JavaFileObject.Kind[] Values()
             {
                 return SExecuteArray<Javax.Tools.JavaFileObject.Kind>("values");

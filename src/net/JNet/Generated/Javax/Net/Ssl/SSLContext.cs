@@ -42,22 +42,30 @@ namespace Javax.Net.Ssl
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getDefault() throws java.security.NoSuchAlgorithmException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#setDefault(javax.net.ssl.SSLContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getDefault()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#setDefault(javax.net.ssl.SSLContext)"/>
         /// </summary>
         public static Javax.Net.Ssl.SSLContext Default
         {
             get { return SExecute<Javax.Net.Ssl.SSLContext>("getDefault"); } set { SExecute("setDefault", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getInstance(java.lang.String,java.lang.String) throws java.security.NoSuchAlgorithmException,java.security.NoSuchProviderException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Net.Ssl.SSLContext"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Net.Ssl.SSLContext GetInstance(string arg0, string arg1)
         {
             return SExecute<Javax.Net.Ssl.SSLContext>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Net.Ssl.SSLContext"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Net.Ssl.SSLContext GetInstance(string arg0)
         {
             return SExecute<Javax.Net.Ssl.SSLContext>("getInstance", arg0);
@@ -67,71 +75,80 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getClientSessionContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getClientSessionContext()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSessionContext ClientSessionContext
         {
             get { return IExecute<Javax.Net.Ssl.SSLSessionContext>("getClientSessionContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getDefaultSSLParameters() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getDefaultSSLParameters()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLParameters DefaultSSLParameters
         {
             get { return IExecute<Javax.Net.Ssl.SSLParameters>("getDefaultSSLParameters"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getProtocol() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getProtocol()"/> 
         /// </summary>
         public string Protocol
         {
             get { return IExecute<string>("getProtocol"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getServerSessionContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getServerSessionContext()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSessionContext ServerSessionContext
         {
             get { return IExecute<Javax.Net.Ssl.SSLSessionContext>("getServerSessionContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getServerSocketFactory() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getServerSocketFactory()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLServerSocketFactory ServerSocketFactory
         {
             get { return IExecute<Javax.Net.Ssl.SSLServerSocketFactory>("getServerSocketFactory"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getSocketFactory() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getSocketFactory()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSocketFactory SocketFactory
         {
             get { return IExecute<Javax.Net.Ssl.SSLSocketFactory>("getSocketFactory"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getSupportedSSLParameters() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getSupportedSSLParameters()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLParameters SupportedSSLParameters
         {
             get { return IExecute<Javax.Net.Ssl.SSLParameters>("getSupportedSSLParameters"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#createSSLEngine()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#createSSLEngine()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Net.Ssl.SSLEngine"/></returns>
         public Javax.Net.Ssl.SSLEngine CreateSSLEngine()
         {
             return IExecute<Javax.Net.Ssl.SSLEngine>("createSSLEngine");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#createSSLEngine(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#createSSLEngine(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Net.Ssl.SSLEngine"/></returns>
         public Javax.Net.Ssl.SSLEngine CreateSSLEngine(string arg0, int arg1)
         {
             return IExecute<Javax.Net.Ssl.SSLEngine>("createSSLEngine", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom) throws java.security.KeyManagementException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.KeyManager"/></param>
+        /// <param name="arg1"><see cref="Javax.Net.Ssl.TrustManager"/></param>
+        /// <param name="arg2"><see cref="Java.Security.SecureRandom"/></param>
+        /// <exception cref="Java.Security.KeyManagementException"/>
         public void Init(Javax.Net.Ssl.KeyManager[] arg0, Javax.Net.Ssl.TrustManager[] arg1, Java.Security.SecureRandom arg2)
         {
             IExecute("init", arg0, arg1, arg2);

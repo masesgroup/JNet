@@ -33,45 +33,48 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.SpringLayout"/> to <see cref="Java.Awt.LayoutManager2"/>
+        /// </summary>
         public static implicit operator Java.Awt.LayoutManager2(Javax.Swing.SpringLayout t) => t.Cast<Java.Awt.LayoutManager2>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#BASELINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#BASELINE"/>
         /// </summary>
         public static string BASELINE => Clazz.GetField<string>("BASELINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#EAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#EAST"/>
         /// </summary>
         public static string EAST => Clazz.GetField<string>("EAST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#HEIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#HEIGHT"/>
         /// </summary>
         public static string HEIGHT => Clazz.GetField<string>("HEIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#HORIZONTAL_CENTER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#HORIZONTAL_CENTER"/>
         /// </summary>
         public static string HORIZONTAL_CENTER => Clazz.GetField<string>("HORIZONTAL_CENTER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#NORTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#NORTH"/>
         /// </summary>
         public static string NORTH => Clazz.GetField<string>("NORTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#SOUTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#SOUTH"/>
         /// </summary>
         public static string SOUTH => Clazz.GetField<string>("SOUTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#VERTICAL_CENTER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#VERTICAL_CENTER"/>
         /// </summary>
         public static string VERTICAL_CENTER => Clazz.GetField<string>("VERTICAL_CENTER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#WEST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#WEST"/>
         /// </summary>
         public static string WEST => Clazz.GetField<string>("WEST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#WIDTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#WIDTH"/>
         /// </summary>
         public static string WIDTH => Clazz.GetField<string>("WIDTH");
         
@@ -83,99 +86,131 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#getLayoutAlignmentX(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#getLayoutAlignmentX(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see langword="float"/></returns>
         public float GetLayoutAlignmentX(Java.Awt.Container arg0)
         {
             return IExecute<float>("getLayoutAlignmentX", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#getLayoutAlignmentY(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#getLayoutAlignmentY(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see langword="float"/></returns>
         public float GetLayoutAlignmentY(Java.Awt.Container arg0)
         {
             return IExecute<float>("getLayoutAlignmentY", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#maximumLayoutSize(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#maximumLayoutSize(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MaximumLayoutSize(Java.Awt.Container arg0)
         {
             return IExecute<Java.Awt.Dimension>("maximumLayoutSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#minimumLayoutSize(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#minimumLayoutSize(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
         {
             return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#preferredLayoutSize(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#preferredLayoutSize(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
         {
             return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#getConstraint(java.lang.String,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#getConstraint(java.lang.String,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public Javax.Swing.Spring GetConstraint(string arg0, Java.Awt.Component arg1)
         {
             return IExecute<Javax.Swing.Spring>("getConstraint", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#getConstraints(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#getConstraints(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Javax.Swing.SpringLayout.Constraints"/></returns>
         public Javax.Swing.SpringLayout.Constraints GetConstraints(Java.Awt.Component arg0)
         {
             return IExecute<Javax.Swing.SpringLayout.Constraints>("getConstraints", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#addLayoutComponent(java.awt.Component,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#addLayoutComponent(java.awt.Component,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void AddLayoutComponent(Java.Awt.Component arg0, object arg1)
         {
             IExecute("addLayoutComponent", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public void AddLayoutComponent(string arg0, Java.Awt.Component arg1)
         {
             IExecute("addLayoutComponent", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#invalidateLayout(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#invalidateLayout(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void InvalidateLayout(Java.Awt.Container arg0)
         {
             IExecute("invalidateLayout", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#layoutContainer(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#layoutContainer(java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
         public void LayoutContainer(Java.Awt.Container arg0)
         {
             IExecute("layoutContainer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#putConstraint(java.lang.String,java.awt.Component,int,java.lang.String,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#putConstraint(java.lang.String,java.awt.Component,int,java.lang.String,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Component"/></param>
         public void PutConstraint(string arg0, Java.Awt.Component arg1, int arg2, string arg3, Java.Awt.Component arg4)
         {
             IExecute("putConstraint", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#putConstraint(java.lang.String,java.awt.Component,javax.swing.Spring,java.lang.String,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#putConstraint(java.lang.String,java.awt.Component,javax.swing.Spring,java.lang.String,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Spring"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Component"/></param>
         public void PutConstraint(string arg0, Java.Awt.Component arg1, Javax.Swing.Spring arg2, string arg3, Java.Awt.Component arg4)
         {
             IExecute("putConstraint", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#removeLayoutComponent(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#removeLayoutComponent(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void RemoveLayoutComponent(Java.Awt.Component arg0)
         {
             IExecute("removeLayoutComponent", arg0);
@@ -189,22 +224,29 @@ namespace Javax.Swing
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#<init>(java.awt.Component)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#%3Cinit%3E(java.awt.Component)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
             public Constraints(Java.Awt.Component arg0)
                 : base(arg0)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#<init>(javax.swing.Spring,javax.swing.Spring,javax.swing.Spring,javax.swing.Spring)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#%3Cinit%3E(javax.swing.Spring,javax.swing.Spring,javax.swing.Spring,javax.swing.Spring)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Spring"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.Spring"/></param>
+            /// <param name="arg2"><see cref="Javax.Swing.Spring"/></param>
+            /// <param name="arg3"><see cref="Javax.Swing.Spring"/></param>
             public Constraints(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1, Javax.Swing.Spring arg2, Javax.Swing.Spring arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#<init>(javax.swing.Spring,javax.swing.Spring)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#%3Cinit%3E(javax.swing.Spring,javax.swing.Spring)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Spring"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.Spring"/></param>
             public Constraints(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1)
                 : base(arg0, arg1)
             {
@@ -226,43 +268,47 @@ namespace Javax.Swing
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#getHeight() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#setHeight(javax.swing.Spring)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#getHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#setHeight(javax.swing.Spring)"/>
             /// </summary>
             public Javax.Swing.Spring Height
             {
                 get { return IExecute<Javax.Swing.Spring>("getHeight"); } set { IExecute("setHeight", value); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#getWidth() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#setWidth(javax.swing.Spring)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#setWidth(javax.swing.Spring)"/>
             /// </summary>
             public Javax.Swing.Spring Width
             {
                 get { return IExecute<Javax.Swing.Spring>("getWidth"); } set { IExecute("setWidth", value); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#getX() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#setX(javax.swing.Spring)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#getX()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#setX(javax.swing.Spring)"/>
             /// </summary>
             public Javax.Swing.Spring X
             {
                 get { return IExecute<Javax.Swing.Spring>("getX"); } set { IExecute("setX", value); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#getY() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#setY(javax.swing.Spring)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#getY()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#setY(javax.swing.Spring)"/>
             /// </summary>
             public Javax.Swing.Spring Y
             {
                 get { return IExecute<Javax.Swing.Spring>("getY"); } set { IExecute("setY", value); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#getConstraint(java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#getConstraint(java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <returns><see cref="Javax.Swing.Spring"/></returns>
             public Javax.Swing.Spring GetConstraint(string arg0)
             {
                 return IExecute<Javax.Swing.Spring>("getConstraint", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#setConstraint(java.lang.String,javax.swing.Spring)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.Constraints.html#setConstraint(java.lang.String,javax.swing.Spring)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.Spring"/></param>
             public void SetConstraint(string arg0, Javax.Swing.Spring arg1)
             {
                 IExecute("setConstraint", arg0, arg1);

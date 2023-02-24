@@ -30,8 +30,9 @@ namespace Javax.Swing.Plaf.Metal
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.html#<init>(javax.swing.JFileChooser)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.html#%3Cinit%3E(javax.swing.JFileChooser)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
         public MetalFileChooserUI(Javax.Swing.JFileChooser arg0)
             : base(arg0)
         {
@@ -53,8 +54,9 @@ namespace Javax.Swing.Plaf.Metal
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.html#valueChanged(javax.swing.event.ListSelectionEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.html#valueChanged(javax.swing.event.ListSelectionEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
         public void ValueChanged(Javax.Swing.Event.ListSelectionEvent arg0)
         {
             IExecute("valueChanged", arg0);
@@ -68,8 +70,9 @@ namespace Javax.Swing.Plaf.Metal
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.FilterComboBoxRenderer.html#<init>(javax.swing.plaf.metal.MetalFileChooserUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalFileChooserUI.FilterComboBoxRenderer.html#%3Cinit%3E(javax.swing.plaf.metal.MetalFileChooserUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Metal.MetalFileChooserUI"/></param>
             public FilterComboBoxRenderer(Javax.Swing.Plaf.Metal.MetalFileChooserUI arg0)
                 : base(arg0)
             {

@@ -46,35 +46,37 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#getGraphics() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#getGraphics()"/> 
         /// </summary>
         public Java.Awt.Graphics Graphics
         {
             get { return IExecute<Java.Awt.Graphics>("getGraphics"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#getPageDimension() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#getPageDimension()"/> 
         /// </summary>
         public Java.Awt.Dimension PageDimension
         {
             get { return IExecute<Java.Awt.Dimension>("getPageDimension"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#getPageResolution() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#getPageResolution()"/> 
         /// </summary>
         public int PageResolution
         {
             get { return IExecute<int>("getPageResolution"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#lastPageFirst()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#lastPageFirst()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool LastPageFirst()
         {
             return IExecute<bool>("lastPageFirst");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#end()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#end()"/>
         /// </summary>
         public void End()
         {

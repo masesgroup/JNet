@@ -38,35 +38,35 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#ALT_DOWN_MASK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#ALT_DOWN_MASK"/>
         /// </summary>
         public static int ALT_DOWN_MASK => Clazz.GetField<int>("ALT_DOWN_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#ALT_GRAPH_DOWN_MASK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#ALT_GRAPH_DOWN_MASK"/>
         /// </summary>
         public static int ALT_GRAPH_DOWN_MASK => Clazz.GetField<int>("ALT_GRAPH_DOWN_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#BUTTON1_DOWN_MASK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#BUTTON1_DOWN_MASK"/>
         /// </summary>
         public static int BUTTON1_DOWN_MASK => Clazz.GetField<int>("BUTTON1_DOWN_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#BUTTON2_DOWN_MASK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#BUTTON2_DOWN_MASK"/>
         /// </summary>
         public static int BUTTON2_DOWN_MASK => Clazz.GetField<int>("BUTTON2_DOWN_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#BUTTON3_DOWN_MASK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#BUTTON3_DOWN_MASK"/>
         /// </summary>
         public static int BUTTON3_DOWN_MASK => Clazz.GetField<int>("BUTTON3_DOWN_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#CTRL_DOWN_MASK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#CTRL_DOWN_MASK"/>
         /// </summary>
         public static int CTRL_DOWN_MASK => Clazz.GetField<int>("CTRL_DOWN_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#META_DOWN_MASK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#META_DOWN_MASK"/>
         /// </summary>
         public static int META_DOWN_MASK => Clazz.GetField<int>("META_DOWN_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#SHIFT_DOWN_MASK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#SHIFT_DOWN_MASK"/>
         /// </summary>
         public static int SHIFT_DOWN_MASK => Clazz.GetField<int>("SHIFT_DOWN_MASK");
         
@@ -74,15 +74,19 @@ namespace Java.Awt.EventNs
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#getMaskForButton(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#getMaskForButton(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int GetMaskForButton(int arg0)
         {
             return SExecute<int>("getMaskForButton", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#getModifiersExText(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#getModifiersExText(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string GetModifiersExText(int arg0)
         {
             return SExecute<string>("getModifiersExText", arg0);
@@ -92,63 +96,75 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#getModifiersEx() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#getModifiersEx()"/> 
         /// </summary>
         public int ModifiersEx
         {
             get { return IExecute<int>("getModifiersEx"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#getWhen() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#getWhen()"/> 
         /// </summary>
         public long When
         {
             get { return IExecute<long>("getWhen"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isAltDown()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isAltDown()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAltDown()
         {
             return IExecute<bool>("isAltDown");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isAltGraphDown()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isAltGraphDown()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAltGraphDown()
         {
             return IExecute<bool>("isAltGraphDown");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isConsumed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isConsumed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsConsumed()
         {
             return IExecute<bool>("isConsumed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isControlDown()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isControlDown()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsControlDown()
         {
             return IExecute<bool>("isControlDown");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isMetaDown()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isMetaDown()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMetaDown()
         {
             return IExecute<bool>("isMetaDown");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isShiftDown()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#isShiftDown()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsShiftDown()
         {
             return IExecute<bool>("isShiftDown");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#consume()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#consume()"/>
         /// </summary>
         public void Consume()
         {

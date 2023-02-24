@@ -30,8 +30,9 @@ namespace Javax.Accessibility
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#<init>(javax.accessibility.AccessibleRelation[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#%3Cinit%3E(javax.accessibility.AccessibleRelation[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleRelation"/></param>
         public AccessibleRelationSet(Javax.Accessibility.AccessibleRelation[] arg0)
             : base(arg0)
         {
@@ -53,56 +54,69 @@ namespace Javax.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#add(javax.accessibility.AccessibleRelation)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#add(javax.accessibility.AccessibleRelation)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleRelation"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Add(Javax.Accessibility.AccessibleRelation arg0)
         {
             return IExecute<bool>("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#contains(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#contains(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(string arg0)
         {
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#remove(javax.accessibility.AccessibleRelation)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#remove(javax.accessibility.AccessibleRelation)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleRelation"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Remove(Javax.Accessibility.AccessibleRelation arg0)
         {
             return IExecute<bool>("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#size()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#get(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#get(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Accessibility.AccessibleRelation"/></returns>
         public Javax.Accessibility.AccessibleRelation Get(string arg0)
         {
             return IExecute<Javax.Accessibility.AccessibleRelation>("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#toArray()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#toArray()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Accessibility.AccessibleRelation"/></returns>
         public Javax.Accessibility.AccessibleRelation[] ToArray()
         {
             return IExecuteArray<Javax.Accessibility.AccessibleRelation>("toArray");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#addAll(javax.accessibility.AccessibleRelation[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#addAll(javax.accessibility.AccessibleRelation[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleRelation"/></param>
         public void AddAll(Javax.Accessibility.AccessibleRelation[] arg0)
         {
             IExecute("addAll", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#clear()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRelationSet.html#clear()"/>
         /// </summary>
         public void Clear()
         {

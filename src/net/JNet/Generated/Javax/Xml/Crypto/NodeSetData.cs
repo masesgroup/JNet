@@ -33,6 +33,9 @@ namespace Javax.Xml.Crypto
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.NodeSetData"/> to <see cref="Javax.Xml.Crypto.Data"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.Data(Javax.Xml.Crypto.NodeSetData t) => t.Cast<Javax.Xml.Crypto.Data>();
         
         #endregion

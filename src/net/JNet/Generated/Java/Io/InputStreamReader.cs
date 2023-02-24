@@ -30,29 +30,37 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#<init>(java.io.InputStream,java.lang.String) throws java.io.UnsupportedEncodingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#%3Cinit%3E(java.io.InputStream,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Java.Io.UnsupportedEncodingException"/>
         public InputStreamReader(Java.Io.InputStream arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#<init>(java.io.InputStream,java.nio.charset.Charset)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#%3Cinit%3E(java.io.InputStream,java.nio.charset.Charset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
         public InputStreamReader(Java.Io.InputStream arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#<init>(java.io.InputStream,java.nio.charset.CharsetDecoder)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#%3Cinit%3E(java.io.InputStream,java.nio.charset.CharsetDecoder)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.CharsetDecoder"/></param>
         public InputStreamReader(Java.Io.InputStream arg0, Java.Nio.Charset.CharsetDecoder arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#<init>(java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public InputStreamReader(Java.Io.InputStream arg0)
             : base(arg0)
         {
@@ -74,7 +82,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#getEncoding() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#getEncoding()"/> 
         /// </summary>
         public string Encoding
         {

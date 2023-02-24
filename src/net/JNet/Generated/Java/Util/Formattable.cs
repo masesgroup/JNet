@@ -46,8 +46,12 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formattable.html#formatTo(java.util.Formatter,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formattable.html#formatTo(java.util.Formatter,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Formatter"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public void FormatTo(Java.Util.Formatter arg0, int arg1, int arg2, int arg3)
         {
             IExecute("formatTo", arg0, arg1, arg2, arg3);

@@ -46,8 +46,12 @@ namespace Java.Rmi.Server
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClientSocketFactory.html#createSocket(java.lang.String,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClientSocketFactory.html#createSocket(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(string arg0, int arg1)
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);

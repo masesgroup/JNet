@@ -30,50 +30,62 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(java.lang.String,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public JToggleButton(string arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(java.lang.String,javax.swing.Icon,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#%3Cinit%3E(java.lang.String,javax.swing.Icon,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public JToggleButton(string arg0, Javax.Swing.Icon arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(java.lang.String,javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#%3Cinit%3E(java.lang.String,javax.swing.Icon)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
         public JToggleButton(string arg0, Javax.Swing.Icon arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public JToggleButton(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(javax.swing.Action)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#%3Cinit%3E(javax.swing.Action)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
         public JToggleButton(Javax.Swing.Action arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(javax.swing.Icon,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#%3Cinit%3E(javax.swing.Icon,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public JToggleButton(Javax.Swing.Icon arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(javax.swing.Icon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#%3Cinit%3E(javax.swing.Icon)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Icon"/></param>
         public JToggleButton(Javax.Swing.Icon arg0)
             : base(arg0)
         {
@@ -82,6 +94,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JToggleButton"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JToggleButton t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion

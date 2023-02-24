@@ -30,8 +30,12 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#<init>(int,int,int,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#%3Cinit%3E(int,int,int,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
         public SizeRequirements(int arg0, int arg1, int arg2, float arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -40,25 +44,28 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.SizeRequirements"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.SizeRequirements t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#alignment
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#alignment"/>
         /// </summary>
         public float alignment => Instance.GetField<float>("alignment");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#maximum
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#maximum"/>
         /// </summary>
         public int maximum => Instance.GetField<int>("maximum");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#minimum
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#minimum"/>
         /// </summary>
         public int minimum => Instance.GetField<int>("minimum");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#preferred
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#preferred"/>
         /// </summary>
         public int preferred => Instance.GetField<int>("preferred");
         
@@ -66,50 +73,79 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#adjustSizes(int,javax.swing.SizeRequirements[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#adjustSizes(int,javax.swing.SizeRequirements[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
+        /// <returns><see cref="int"/></returns>
         public static int[] AdjustSizes(int arg0, Javax.Swing.SizeRequirements[] arg1)
         {
             return SExecuteArray<int>("adjustSizes", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#getAlignedSizeRequirements(javax.swing.SizeRequirements[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#getAlignedSizeRequirements(javax.swing.SizeRequirements[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.SizeRequirements"/></param>
+        /// <returns><see cref="Javax.Swing.SizeRequirements"/></returns>
         public static Javax.Swing.SizeRequirements GetAlignedSizeRequirements(Javax.Swing.SizeRequirements[] arg0)
         {
             return SExecute<Javax.Swing.SizeRequirements>("getAlignedSizeRequirements", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#getTiledSizeRequirements(javax.swing.SizeRequirements[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#getTiledSizeRequirements(javax.swing.SizeRequirements[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.SizeRequirements"/></param>
+        /// <returns><see cref="Javax.Swing.SizeRequirements"/></returns>
         public static Javax.Swing.SizeRequirements GetTiledSizeRequirements(Javax.Swing.SizeRequirements[] arg0)
         {
             return SExecute<Javax.Swing.SizeRequirements>("getTiledSizeRequirements", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateAlignedPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[],boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateAlignedPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[],boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.SizeRequirements"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see langword="bool"/></param>
         public static void CalculateAlignedPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4, bool arg5)
         {
             SExecute("calculateAlignedPositions", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateAlignedPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateAlignedPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.SizeRequirements"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         public static void CalculateAlignedPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4)
         {
             SExecute("calculateAlignedPositions", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateTiledPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[],boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateTiledPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[],boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.SizeRequirements"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see langword="bool"/></param>
         public static void CalculateTiledPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4, bool arg5)
         {
             SExecute("calculateTiledPositions", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateTiledPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateTiledPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.SizeRequirements"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         public static void CalculateTiledPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4)
         {
             SExecute("calculateTiledPositions", arg0, arg1, arg2, arg3, arg4);

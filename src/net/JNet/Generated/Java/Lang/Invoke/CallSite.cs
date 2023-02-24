@@ -46,22 +46,26 @@ namespace Java.Lang.Invoke
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/CallSite.html#getTarget() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/CallSite.html#setTarget(java.lang.invoke.MethodHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/CallSite.html#getTarget()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/CallSite.html#setTarget(java.lang.invoke.MethodHandle)"/>
         /// </summary>
         public Java.Lang.Invoke.MethodHandle Target
         {
             get { return IExecute<Java.Lang.Invoke.MethodHandle>("getTarget"); } set { IExecute("setTarget", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/CallSite.html#dynamicInvoker()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/CallSite.html#dynamicInvoker()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle DynamicInvoker()
         {
             return IExecute<Java.Lang.Invoke.MethodHandle>("dynamicInvoker");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/CallSite.html#type()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/CallSite.html#type()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType Type()
         {
             return IExecute<Java.Lang.Invoke.MethodType>("type");

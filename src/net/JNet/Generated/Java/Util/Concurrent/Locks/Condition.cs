@@ -46,42 +46,50 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#awaitUntil(java.util.Date) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#awaitUntil(java.util.Date)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public bool AwaitUntil(Java.Util.Date arg0)
         {
             return IExecute<bool>("awaitUntil", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#awaitNanos(long) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#awaitNanos(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public long AwaitNanos(long arg0)
         {
             return IExecute<long>("awaitNanos", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#await() throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#await()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public void Await()
         {
             IExecute("await");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#awaitUninterruptibly()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#awaitUninterruptibly()"/>
         /// </summary>
         public void AwaitUninterruptibly()
         {
             IExecute("awaitUninterruptibly");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#signal()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#signal()"/>
         /// </summary>
         public void Signal()
         {
             IExecute("signal");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#signalAll()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#signalAll()"/>
         /// </summary>
         public void SignalAll()
         {

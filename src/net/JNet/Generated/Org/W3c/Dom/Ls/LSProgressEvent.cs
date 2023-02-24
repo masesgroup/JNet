@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Ls
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Ls.LSProgressEvent"/> to <see cref="Org.W3c.Dom.Events.Event"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Events.Event(Org.W3c.Dom.Ls.LSProgressEvent t) => t.Cast<Org.W3c.Dom.Events.Event>();
         
         #endregion
@@ -47,21 +50,21 @@ namespace Org.W3c.Dom.Ls
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSProgressEvent.html#getInput() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSProgressEvent.html#getInput()"/> 
         /// </summary>
         public Org.W3c.Dom.Ls.LSInput Input
         {
             get { return IExecute<Org.W3c.Dom.Ls.LSInput>("getInput"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSProgressEvent.html#getPosition() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSProgressEvent.html#getPosition()"/> 
         /// </summary>
         public int Position
         {
             get { return IExecute<int>("getPosition"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSProgressEvent.html#getTotalSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSProgressEvent.html#getTotalSize()"/> 
         /// </summary>
         public int TotalSize
         {

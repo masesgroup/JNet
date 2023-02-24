@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Css
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Css.CSSCharsetRule"/> to <see cref="Org.W3c.Dom.Css.CSSRule"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Css.CSSRule(Org.W3c.Dom.Css.CSSCharsetRule t) => t.Cast<Org.W3c.Dom.Css.CSSRule>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Org.W3c.Dom.Css
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSCharsetRule.html#getEncoding() https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSCharsetRule.html#setEncoding(java.lang.String) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSCharsetRule.html#getEncoding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSCharsetRule.html#setEncoding(java.lang.String)"/>
         /// </summary>
         public string Encoding
         {

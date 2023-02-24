@@ -46,36 +46,38 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getDocument() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getDocument()"/> 
         /// </summary>
         public Javax.Swing.Text.Document Document
         {
             get { return IExecute<Javax.Swing.Text.Document>("getDocument"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getLength()"/> 
         /// </summary>
         public int Length
         {
             get { return IExecute<int>("getLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getOffset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getOffset()"/> 
         /// </summary>
         public int Offset
         {
             get { return IExecute<int>("getOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getType()"/> 
         /// </summary>
         public Javax.Swing.Event.DocumentEvent.EventType Type
         {
             get { return IExecute<Javax.Swing.Event.DocumentEvent.EventType>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getChange(javax.swing.text.Element)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getChange(javax.swing.text.Element)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <returns><see cref="Javax.Swing.Event.DocumentEvent.ElementChange"/></returns>
         public Javax.Swing.Event.DocumentEvent.ElementChange GetChange(Javax.Swing.Text.Element arg0)
         {
             return IExecute<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", arg0);
@@ -105,28 +107,28 @@ namespace Javax.Swing.Event
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.ElementChange.html#getChildrenAdded() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.ElementChange.html#getChildrenAdded()"/> 
             /// </summary>
             public Javax.Swing.Text.Element[] ChildrenAdded
             {
                 get { return IExecuteArray<Javax.Swing.Text.Element>("getChildrenAdded"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.ElementChange.html#getChildrenRemoved() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.ElementChange.html#getChildrenRemoved()"/> 
             /// </summary>
             public Javax.Swing.Text.Element[] ChildrenRemoved
             {
                 get { return IExecuteArray<Javax.Swing.Text.Element>("getChildrenRemoved"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.ElementChange.html#getElement() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.ElementChange.html#getElement()"/> 
             /// </summary>
             public Javax.Swing.Text.Element Element
             {
                 get { return IExecute<Javax.Swing.Text.Element>("getElement"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.ElementChange.html#getIndex() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.ElementChange.html#getIndex()"/> 
             /// </summary>
             public int Index
             {
@@ -152,15 +154,15 @@ namespace Javax.Swing.Event
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html#CHANGE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html#CHANGE"/>
             /// </summary>
             public static Javax.Swing.Event.DocumentEvent.EventType CHANGE => Clazz.GetField<Javax.Swing.Event.DocumentEvent.EventType>("CHANGE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html#INSERT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html#INSERT"/>
             /// </summary>
             public static Javax.Swing.Event.DocumentEvent.EventType INSERT => Clazz.GetField<Javax.Swing.Event.DocumentEvent.EventType>("INSERT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html#REMOVE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html#REMOVE"/>
             /// </summary>
             public static Javax.Swing.Event.DocumentEvent.EventType REMOVE => Clazz.GetField<Javax.Swing.Event.DocumentEvent.EventType>("REMOVE");
             

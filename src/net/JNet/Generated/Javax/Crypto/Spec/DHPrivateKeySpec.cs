@@ -30,8 +30,11 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHPrivateKeySpec.html#<init>(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHPrivateKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg2"><see cref="Java.Math.BigInteger"/></param>
         public DHPrivateKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2)
             : base(arg0, arg1, arg2)
         {
@@ -40,6 +43,9 @@ namespace Javax.Crypto.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Crypto.Spec.DHPrivateKeySpec"/> to <see cref="Java.Security.Spec.KeySpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.KeySpec(Javax.Crypto.Spec.DHPrivateKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
         
         #endregion
@@ -54,21 +60,21 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHPrivateKeySpec.html#getG() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHPrivateKeySpec.html#getG()"/> 
         /// </summary>
         public Java.Math.BigInteger G
         {
             get { return IExecute<Java.Math.BigInteger>("getG"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHPrivateKeySpec.html#getP() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHPrivateKeySpec.html#getP()"/> 
         /// </summary>
         public Java.Math.BigInteger P
         {
             get { return IExecute<Java.Math.BigInteger>("getP"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHPrivateKeySpec.html#getX() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHPrivateKeySpec.html#getX()"/> 
         /// </summary>
         public Java.Math.BigInteger X
         {

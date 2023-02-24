@@ -46,15 +46,19 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#completed(V,A)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#completed(V,A)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void Completed(object arg0, object arg1)
         {
             IExecute("completed", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,A)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,A)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void Failed(Java.Lang.Throwable arg0, object arg1)
         {
             IExecute("failed", arg0, arg1);

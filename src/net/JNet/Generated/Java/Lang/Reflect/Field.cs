@@ -33,6 +33,9 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Reflect.Field"/> to <see cref="Java.Lang.Reflect.Member"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.Member(Java.Lang.Reflect.Field t) => t.Cast<Java.Lang.Reflect.Member>();
         
         #endregion
@@ -47,176 +50,254 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getAnnotatedType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getAnnotatedType()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType AnnotatedType
         {
             get { return IExecute<Java.Lang.Reflect.AnnotatedType>("getAnnotatedType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getGenericType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getGenericType()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type GenericType
         {
             get { return IExecute<Java.Lang.Reflect.Type>("getGenericType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getModifiers() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getModifiers()"/> 
         /// </summary>
         public int Modifiers
         {
             get { return IExecute<int>("getModifiers"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getBoolean(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getBoolean(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public bool GetBoolean(object arg0)
         {
             return IExecute<bool>("getBoolean", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#isEnumConstant()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#isEnumConstant()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEnumConstant()
         {
             return IExecute<bool>("isEnumConstant");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#isSynthetic()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#isSynthetic()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSynthetic()
         {
             return IExecute<bool>("isSynthetic");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getByte(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getByte(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="byte"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public byte GetByte(object arg0)
         {
             return IExecute<byte>("getByte", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getChar(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getChar(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="char"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public char GetChar(object arg0)
         {
             return IExecute<char>("getChar", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getDouble(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getDouble(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="double"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public double GetDouble(object arg0)
         {
             return IExecute<double>("getDouble", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getFloat(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getFloat(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="float"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public float GetFloat(object arg0)
         {
             return IExecute<float>("getFloat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getInt(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getInt(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public int GetInt(object arg0)
         {
             return IExecute<int>("getInt", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#get(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#get(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public object Get(object arg0)
         {
             return IExecute("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#toGenericString()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#toGenericString()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string ToGenericString()
         {
             return IExecute<string>("toGenericString");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getLong(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getLong(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public long GetLong(object arg0)
         {
             return IExecute<long>("getLong", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getShort(java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getShort(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public short GetShort(object arg0)
         {
             return IExecute<short>("getShort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#set(java.lang.Object,java.lang.Object) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#set(java.lang.Object,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void Set(object arg0, object arg1)
         {
             IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setBoolean(java.lang.Object,boolean) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setBoolean(java.lang.Object,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetBoolean(object arg0, bool arg1)
         {
             IExecute("setBoolean", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setByte(java.lang.Object,byte) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setByte(java.lang.Object,byte)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="byte"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetByte(object arg0, byte arg1)
         {
             IExecute("setByte", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setChar(java.lang.Object,char) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setChar(java.lang.Object,char)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="char"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetChar(object arg0, char arg1)
         {
             IExecute("setChar", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setDouble(java.lang.Object,double) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setDouble(java.lang.Object,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetDouble(object arg0, double arg1)
         {
             IExecute("setDouble", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setFloat(java.lang.Object,float) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setFloat(java.lang.Object,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetFloat(object arg0, float arg1)
         {
             IExecute("setFloat", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setInt(java.lang.Object,int) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setInt(java.lang.Object,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetInt(object arg0, int arg1)
         {
             IExecute("setInt", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setLong(java.lang.Object,long) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setLong(java.lang.Object,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetLong(object arg0, long arg1)
         {
             IExecute("setLong", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setShort(java.lang.Object,short) throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#setShort(java.lang.Object,short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="short"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
         public void SetShort(object arg0, short arg1)
         {
             IExecute("setShort", arg0, arg1);

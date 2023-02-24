@@ -30,29 +30,43 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#<init>(float,int,int,float,float[],float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#%3Cinit%3E(float,int,int,float,float[],float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg4"><see cref="float"/></param>
+        /// <param name="arg5"><see langword="float"/></param>
         public BasicStroke(float arg0, int arg1, int arg2, float arg3, float[] arg4, float arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#<init>(float,int,int,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#%3Cinit%3E(float,int,int,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
         public BasicStroke(float arg0, int arg1, int arg2, float arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#<init>(float,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#%3Cinit%3E(float,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public BasicStroke(float arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#<init>(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#%3Cinit%3E(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
         public BasicStroke(float arg0)
             : base(arg0)
         {
@@ -61,33 +75,36 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.BasicStroke"/> to <see cref="Java.Awt.Stroke"/>
+        /// </summary>
         public static implicit operator Java.Awt.Stroke(Java.Awt.BasicStroke t) => t.Cast<Java.Awt.Stroke>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_BUTT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_BUTT"/>
         /// </summary>
         public static int CAP_BUTT => Clazz.GetField<int>("CAP_BUTT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_ROUND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_ROUND"/>
         /// </summary>
         public static int CAP_ROUND => Clazz.GetField<int>("CAP_ROUND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_SQUARE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_SQUARE"/>
         /// </summary>
         public static int CAP_SQUARE => Clazz.GetField<int>("CAP_SQUARE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_BEVEL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_BEVEL"/>
         /// </summary>
         public static int JOIN_BEVEL => Clazz.GetField<int>("JOIN_BEVEL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_MITER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_MITER"/>
         /// </summary>
         public static int JOIN_MITER => Clazz.GetField<int>("JOIN_MITER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_ROUND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_ROUND"/>
         /// </summary>
         public static int JOIN_ROUND => Clazz.GetField<int>("JOIN_ROUND");
         
@@ -99,50 +116,52 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getDashArray() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getDashArray()"/> 
         /// </summary>
         public float[] DashArray
         {
             get { return IExecuteArray<float>("getDashArray"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getDashPhase() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getDashPhase()"/> 
         /// </summary>
         public float DashPhase
         {
             get { return IExecute<float>("getDashPhase"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getEndCap() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getEndCap()"/> 
         /// </summary>
         public int EndCap
         {
             get { return IExecute<int>("getEndCap"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getLineJoin() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getLineJoin()"/> 
         /// </summary>
         public int LineJoin
         {
             get { return IExecute<int>("getLineJoin"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getLineWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getLineWidth()"/> 
         /// </summary>
         public float LineWidth
         {
             get { return IExecute<float>("getLineWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getMiterLimit() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#getMiterLimit()"/> 
         /// </summary>
         public float MiterLimit
         {
             get { return IExecute<float>("getMiterLimit"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#createStrokedShape(java.awt.Shape)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#createStrokedShape(java.awt.Shape)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape CreateStrokedShape(Java.Awt.Shape arg0)
         {
             return IExecute<Java.Awt.Shape>("createStrokedShape", arg0);

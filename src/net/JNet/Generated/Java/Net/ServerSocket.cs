@@ -30,22 +30,31 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#<init>(int,int,java.net.InetAddress) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#%3Cinit%3E(int,int,java.net.InetAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public ServerSocket(int arg0, int arg1, Java.Net.InetAddress arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#<init>(int,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#%3Cinit%3E(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public ServerSocket(int arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#<init>(int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public ServerSocket(int arg0)
             : base(arg0)
         {
@@ -54,6 +63,9 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Net.ServerSocket"/> to <see cref="Java.Io.Closeable"/>
+        /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Net.ServerSocket t) => t.Cast<Java.Io.Closeable>();
         
         #endregion
@@ -64,8 +76,10 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#setSocketFactory(java.net.SocketImplFactory) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#setSocketFactory(java.net.SocketImplFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketImplFactory"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public static void SetSocketFactory(Java.Net.SocketImplFactory arg0)
         {
             SExecute("setSocketFactory", arg0);
@@ -75,99 +89,116 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getChannel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getChannel()"/> 
         /// </summary>
         public Java.Nio.Channels.ServerSocketChannel Channel
         {
             get { return IExecute<Java.Nio.Channels.ServerSocketChannel>("getChannel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getInetAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getInetAddress()"/> 
         /// </summary>
         public Java.Net.InetAddress InetAddress
         {
             get { return IExecute<Java.Net.InetAddress>("getInetAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getLocalPort() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getLocalPort()"/> 
         /// </summary>
         public int LocalPort
         {
             get { return IExecute<int>("getLocalPort"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getLocalSocketAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getLocalSocketAddress()"/> 
         /// </summary>
         public Java.Net.SocketAddress LocalSocketAddress
         {
             get { return IExecute<Java.Net.SocketAddress>("getLocalSocketAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getReceiveBufferSize() throws java.net.SocketException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#setReceiveBufferSize(int) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getReceiveBufferSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#setReceiveBufferSize(int)"/>
         /// </summary>
         public int ReceiveBufferSize
         {
             get { return IExecute<int>("getReceiveBufferSize"); } set { IExecute("setReceiveBufferSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getReuseAddress() throws java.net.SocketException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#setReuseAddress(boolean) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getReuseAddress()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#setReuseAddress(boolean)"/>
         /// </summary>
         public bool ReuseAddress
         {
             get { return IExecute<bool>("getReuseAddress"); } set { IExecute("setReuseAddress", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getSoTimeout() throws java.io.IOException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#setSoTimeout(int) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getSoTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#setSoTimeout(int)"/>
         /// </summary>
         public int SoTimeout
         {
             get { return IExecute<int>("getSoTimeout"); } set { IExecute("setSoTimeout", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#isBound()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#isBound()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsBound()
         {
             return IExecute<bool>("isBound");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#isClosed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#isClosed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsClosed()
         {
             return IExecute<bool>("isClosed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#accept() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#accept()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket Accept()
         {
             return IExecute<Java.Net.Socket>("accept");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#bind(java.net.SocketAddress,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#bind(java.net.SocketAddress,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Bind(Java.Net.SocketAddress arg0, int arg1)
         {
             IExecute("bind", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#bind(java.net.SocketAddress) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#bind(java.net.SocketAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Bind(Java.Net.SocketAddress arg0)
         {
             IExecute("bind", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#close() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#setPerformancePreferences(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#setPerformancePreferences(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void SetPerformancePreferences(int arg0, int arg1, int arg2)
         {
             IExecute("setPerformancePreferences", arg0, arg1, arg2);

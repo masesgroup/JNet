@@ -46,14 +46,14 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAKey.html#getModulus() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAKey.html#getModulus()"/> 
         /// </summary>
         public Java.Math.BigInteger Modulus
         {
             get { return IExecute<Java.Math.BigInteger>("getModulus"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAKey.html#getParams() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAKey.html#getParams()"/> 
         /// </summary>
         public Java.Security.Spec.AlgorithmParameterSpec Params
         {

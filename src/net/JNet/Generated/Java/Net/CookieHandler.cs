@@ -42,7 +42,7 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieHandler.html#getDefault() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieHandler.html#setDefault(java.net.CookieHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieHandler.html#getDefault()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieHandler.html#setDefault(java.net.CookieHandler)"/>
         /// </summary>
         public static Java.Net.CookieHandler Default
         {

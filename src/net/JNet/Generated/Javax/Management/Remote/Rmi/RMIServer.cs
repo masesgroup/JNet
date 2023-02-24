@@ -33,6 +33,9 @@ namespace Javax.Management.Remote.Rmi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIServer"/> to <see cref="Java.Rmi.Remote"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Remote(Javax.Management.Remote.Rmi.RMIServer t) => t.Cast<Java.Rmi.Remote>();
         
         #endregion
@@ -47,15 +50,18 @@ namespace Javax.Management.Remote.Rmi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServer.html#getVersion() throws java.rmi.RemoteException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServer.html#getVersion()"/> 
         /// </summary>
         public string Version
         {
             get { return IExecute<string>("getVersion"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServer.html#newClient(java.lang.Object) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServer.html#newClient(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see cref="Javax.Management.Remote.Rmi.RMIConnection"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.Remote.Rmi.RMIConnection NewClient(object arg0)
         {
             return IExecute<Javax.Management.Remote.Rmi.RMIConnection>("newClient", arg0);

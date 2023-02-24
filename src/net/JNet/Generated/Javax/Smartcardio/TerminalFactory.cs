@@ -42,29 +42,39 @@ namespace Javax.Smartcardio
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getDefault() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getDefault()"/> 
         /// </summary>
         public static Javax.Smartcardio.TerminalFactory Default
         {
             get { return SExecute<Javax.Smartcardio.TerminalFactory>("getDefault"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getDefaultType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getDefaultType()"/> 
         /// </summary>
         public static string DefaultType
         {
             get { return SExecute<string>("getDefaultType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object,java.lang.String) throws java.security.NoSuchAlgorithmException,java.security.NoSuchProviderException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Smartcardio.TerminalFactory"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Smartcardio.TerminalFactory GetInstance(string arg0, object arg1, string arg2)
         {
             return SExecute<Javax.Smartcardio.TerminalFactory>("getInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object) throws java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see cref="Javax.Smartcardio.TerminalFactory"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Smartcardio.TerminalFactory GetInstance(string arg0, object arg1)
         {
             return SExecute<Javax.Smartcardio.TerminalFactory>("getInstance", arg0, arg1);
@@ -74,15 +84,17 @@ namespace Javax.Smartcardio
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#terminals()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#terminals()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Smartcardio.CardTerminals"/></returns>
         public Javax.Smartcardio.CardTerminals Terminals()
         {
             return IExecute<Javax.Smartcardio.CardTerminals>("terminals");

@@ -25,6 +25,9 @@ namespace Javax.Management
     {
         // can be extended with methods not reflected or not available in Java;
 
+        /// <summary>
+        /// Converter from <see cref="ObjectName"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
         public static explicit operator Java.Lang.Comparable<ObjectName>(ObjectName o) => o.Cast<Java.Lang.Comparable<ObjectName>>();
 
         /// <summary>

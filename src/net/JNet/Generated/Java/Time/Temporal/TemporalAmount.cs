@@ -46,22 +46,28 @@ namespace Java.Time.Temporal
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html#addTo(java.time.temporal.Temporal)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html#addTo(java.time.temporal.Temporal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AddTo(Java.Time.Temporal.Temporal arg0)
         {
             return IExecute<Java.Time.Temporal.Temporal>("addTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html#subtractFrom(java.time.temporal.Temporal)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html#subtractFrom(java.time.temporal.Temporal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal SubtractFrom(Java.Time.Temporal.Temporal arg0)
         {
             return IExecute<Java.Time.Temporal.Temporal>("subtractFrom", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html#get(java.time.temporal.TemporalUnit)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html#get(java.time.temporal.TemporalUnit)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
+        /// <returns><see langword="long"/></returns>
         public long Get(Java.Time.Temporal.TemporalUnit arg0)
         {
             return IExecute<long>("get", arg0);

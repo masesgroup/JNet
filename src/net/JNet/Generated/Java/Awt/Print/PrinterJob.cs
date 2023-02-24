@@ -42,22 +42,28 @@ namespace Java.Awt.Print
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getPrinterJob()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getPrinterJob()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.Print.PrinterJob"/></returns>
         public static Java.Awt.Print.PrinterJob GetPrinterJob()
         {
             return SExecute<Java.Awt.Print.PrinterJob>("getPrinterJob");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#lookupPrintServices()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#lookupPrintServices()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Print.PrintService"/></returns>
         public static Javax.Print.PrintService[] LookupPrintServices()
         {
             return SExecuteArray<Javax.Print.PrintService>("lookupPrintServices");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#lookupStreamPrintServices(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#lookupStreamPrintServices(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Print.StreamPrintServiceFactory"/></returns>
         public static Javax.Print.StreamPrintServiceFactory[] LookupStreamPrintServices(string arg0)
         {
             return SExecuteArray<Javax.Print.StreamPrintServiceFactory>("lookupStreamPrintServices", arg0);
@@ -67,134 +73,165 @@ namespace Java.Awt.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getCopies() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setCopies(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getCopies()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setCopies(int)"/>
         /// </summary>
         public int Copies
         {
             get { return IExecute<int>("getCopies"); } set { IExecute("setCopies", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getJobName() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setJobName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getJobName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setJobName(java.lang.String)"/>
         /// </summary>
         public string JobName
         {
             get { return IExecute<string>("getJobName"); } set { IExecute("setJobName", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getPrintService() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setPrintService(javax.print.PrintService) throws java.awt.print.PrinterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getPrintService()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setPrintService(javax.print.PrintService)"/>
         /// </summary>
         public Javax.Print.PrintService PrintService
         {
             get { return IExecute<Javax.Print.PrintService>("getPrintService"); } set { IExecute("setPrintService", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getUserName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getUserName()"/> 
         /// </summary>
         public string UserName
         {
             get { return IExecute<string>("getUserName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#isCancelled()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#isCancelled()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCancelled()
         {
             return IExecute<bool>("isCancelled");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#printDialog() throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#printDialog()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public bool PrintDialog()
         {
             return IExecute<bool>("printDialog");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#defaultPage(java.awt.print.PageFormat)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#defaultPage(java.awt.print.PageFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Print.PageFormat"/></param>
+        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
         public Java.Awt.Print.PageFormat DefaultPage(Java.Awt.Print.PageFormat arg0)
         {
             return IExecute<Java.Awt.Print.PageFormat>("defaultPage", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#pageDialog(java.awt.print.PageFormat) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#pageDialog(java.awt.print.PageFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Print.PageFormat"/></param>
+        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public Java.Awt.Print.PageFormat PageDialog(Java.Awt.Print.PageFormat arg0)
         {
             return IExecute<Java.Awt.Print.PageFormat>("pageDialog", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#validatePage(java.awt.print.PageFormat)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#validatePage(java.awt.print.PageFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Print.PageFormat"/></param>
+        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
         public Java.Awt.Print.PageFormat ValidatePage(Java.Awt.Print.PageFormat arg0)
         {
             return IExecute<Java.Awt.Print.PageFormat>("validatePage", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#cancel()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#cancel()"/>
         /// </summary>
         public void Cancel()
         {
             IExecute("cancel");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#print.PrinterJob.print() throws java.awt.print.PrinterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#print.PrinterJob.print()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Awt.Print.PrinterException"/>
         public void Print()
         {
             IExecute("print");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setPageable(java.awt.print.Pageable) throws java.lang.NullPointerException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setPageable(java.awt.print.Pageable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Print.Pageable"/></param>
+        /// <exception cref="Java.Lang.NullPointerException"/>
         public void SetPageable(Java.Awt.Print.Pageable arg0)
         {
             IExecute("setPageable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setPrintable(java.awt.print.Printable,java.awt.print.PageFormat)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setPrintable(java.awt.print.Printable,java.awt.print.PageFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Print.Printable"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Print.PageFormat"/></param>
         public void SetPrintable(Java.Awt.Print.Printable arg0, Java.Awt.Print.PageFormat arg1)
         {
             IExecute("setPrintable", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setPrintable(java.awt.print.Printable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setPrintable(java.awt.print.Printable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Print.Printable"/></param>
         public void SetPrintable(Java.Awt.Print.Printable arg0)
         {
             IExecute("setPrintable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#printDialog(javax.print.attribute.PrintRequestAttributeSet) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#printDialog(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public bool PrintDialog(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {
             return IExecute<bool>("printDialog", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#defaultPage()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#defaultPage()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
         public Java.Awt.Print.PageFormat DefaultPage()
         {
             return IExecute<Java.Awt.Print.PageFormat>("defaultPage");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getPageFormat(javax.print.attribute.PrintRequestAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getPageFormat(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
         public Java.Awt.Print.PageFormat GetPageFormat(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {
             return IExecute<Java.Awt.Print.PageFormat>("getPageFormat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#pageDialog(javax.print.attribute.PrintRequestAttributeSet) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#pageDialog(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public Java.Awt.Print.PageFormat PageDialog(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {
             return IExecute<Java.Awt.Print.PageFormat>("pageDialog", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#print.PrinterJob.print(javax.print.attribute.PrintRequestAttributeSet) throws java.awt.print.PrinterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#print.PrinterJob.print(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <exception cref="Java.Awt.Print.PrinterException"/>
         public void Print(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {
             IExecute("print", arg0);

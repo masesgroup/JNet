@@ -33,6 +33,9 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Net.Ssl.ExtendedSSLSession"/> to <see cref="Javax.Net.Ssl.SSLSession"/>
+        /// </summary>
         public static implicit operator Javax.Net.Ssl.SSLSession(Javax.Net.Ssl.ExtendedSSLSession t) => t.Cast<Javax.Net.Ssl.SSLSession>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getLocalSupportedSignatureAlgorithms() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getLocalSupportedSignatureAlgorithms()"/> 
         /// </summary>
         public string[] LocalSupportedSignatureAlgorithms
         {
             get { return IExecuteArray<string>("getLocalSupportedSignatureAlgorithms"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getPeerSupportedSignatureAlgorithms() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getPeerSupportedSignatureAlgorithms()"/> 
         /// </summary>
         public string[] PeerSupportedSignatureAlgorithms
         {

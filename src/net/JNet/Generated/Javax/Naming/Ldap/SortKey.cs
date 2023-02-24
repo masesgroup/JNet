@@ -30,15 +30,19 @@ namespace Javax.Naming.Ldap
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#<init>(java.lang.String,boolean,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#%3Cinit%3E(java.lang.String,boolean,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
         public SortKey(string arg0, bool arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public SortKey(string arg0)
             : base(arg0)
         {
@@ -60,22 +64,24 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#getAttributeID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#getAttributeID()"/> 
         /// </summary>
         public string AttributeID
         {
             get { return IExecute<string>("getAttributeID"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#getMatchingRuleID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#getMatchingRuleID()"/> 
         /// </summary>
         public string MatchingRuleID
         {
             get { return IExecute<string>("getMatchingRuleID"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#isAscending()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html#isAscending()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAscending()
         {
             return IExecute<bool>("isAscending");

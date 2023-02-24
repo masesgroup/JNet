@@ -42,22 +42,33 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#withCachedThreadPool(java.util.concurrent.ExecutorService,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#withCachedThreadPool(java.util.concurrent.ExecutorService,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.ExecutorService"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousChannelGroup WithCachedThreadPool(Java.Util.Concurrent.ExecutorService arg0, int arg1)
         {
             return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>("withCachedThreadPool", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#withFixedThreadPool(int,java.util.concurrent.ThreadFactory) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#withFixedThreadPool(int,java.util.concurrent.ThreadFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
+        /// <returns><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousChannelGroup WithFixedThreadPool(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
         {
             return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>("withFixedThreadPool", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#withThreadPool(java.util.concurrent.ExecutorService) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#withThreadPool(java.util.concurrent.ExecutorService)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.ExecutorService"/></param>
+        /// <returns><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousChannelGroup WithThreadPool(Java.Util.Concurrent.ExecutorService arg0)
         {
             return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>("withThreadPool", arg0);
@@ -67,36 +78,44 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#isShutdown()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#isShutdown()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsShutdown()
         {
             return IExecute<bool>("isShutdown");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#isTerminated()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#isTerminated()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsTerminated()
         {
             return IExecute<bool>("isTerminated");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#shutdown()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#shutdown()"/>
         /// </summary>
         public void Shutdown()
         {
             IExecute("shutdown");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#shutdownNow() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#shutdownNow()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void ShutdownNow()
         {
             IExecute("shutdownNow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#provider()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#provider()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.Spi.AsynchronousChannelProvider"/></returns>
         public Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider()
         {
             return IExecute<Java.Nio.Channels.Spi.AsynchronousChannelProvider>("provider");

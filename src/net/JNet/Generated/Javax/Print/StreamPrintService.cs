@@ -33,6 +33,9 @@ namespace Javax.Print
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.StreamPrintService"/> to <see cref="Javax.Print.PrintService"/>
+        /// </summary>
         public static implicit operator Javax.Print.PrintService(Javax.Print.StreamPrintService t) => t.Cast<Javax.Print.PrintService>();
         
         #endregion
@@ -47,30 +50,32 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#getOutputFormat() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#getOutputFormat()"/> 
         /// </summary>
         public string OutputFormat
         {
             get { return IExecute<string>("getOutputFormat"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#getOutputStream() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#getOutputStream()"/> 
         /// </summary>
         public Java.Io.OutputStream OutputStream
         {
             get { return IExecute<Java.Io.OutputStream>("getOutputStream"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#isDisposed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#isDisposed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDisposed()
         {
             return IExecute<bool>("isDisposed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#dispose()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#dispose()"/>
         /// </summary>
-        public void Dispose()
+        public new void Dispose()
         {
             IExecute("dispose");
         }

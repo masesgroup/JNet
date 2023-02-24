@@ -30,8 +30,10 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListenerProxy.html#<init>(java.lang.String,java.beans.PropertyChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListenerProxy.html#%3Cinit%3E(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public PropertyChangeListenerProxy(string arg0, Java.Beans.PropertyChangeListener arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.PropertyChangeListenerProxy"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+        /// </summary>
         public static implicit operator Java.Beans.PropertyChangeListener(Java.Beans.PropertyChangeListenerProxy t) => t.Cast<Java.Beans.PropertyChangeListener>();
         
         #endregion
@@ -54,15 +59,16 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListenerProxy.html#getPropertyName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListenerProxy.html#getPropertyName()"/> 
         /// </summary>
         public string PropertyName
         {
             get { return IExecute<string>("getPropertyName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListenerProxy.html#propertyChange(java.beans.PropertyChangeEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListenerProxy.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecute("propertyChange", arg0);

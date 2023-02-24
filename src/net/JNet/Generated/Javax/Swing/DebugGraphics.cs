@@ -30,15 +30,18 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#<init>(java.awt.Graphics,javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#%3Cinit%3E(java.awt.Graphics,javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
         public DebugGraphics(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#<init>(java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#%3Cinit%3E(java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public DebugGraphics(Java.Awt.Graphics arg0)
             : base(arg0)
         {
@@ -52,19 +55,19 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#BUFFERED_OPTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#BUFFERED_OPTION"/>
         /// </summary>
         public static int BUFFERED_OPTION => Clazz.GetField<int>("BUFFERED_OPTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#FLASH_OPTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#FLASH_OPTION"/>
         /// </summary>
         public static int FLASH_OPTION => Clazz.GetField<int>("FLASH_OPTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#LOG_OPTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#LOG_OPTION"/>
         /// </summary>
         public static int LOG_OPTION => Clazz.GetField<int>("LOG_OPTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#NONE_OPTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#NONE_OPTION"/>
         /// </summary>
         public static int NONE_OPTION => Clazz.GetField<int>("NONE_OPTION");
         
@@ -72,57 +75,69 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashCount()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashCount()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public static int FlashCount()
         {
             return SExecute<int>("flashCount");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashTime()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashTime()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public static int FlashTime()
         {
             return SExecute<int>("flashTime");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashColor()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashColor()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color FlashColor()
         {
             return SExecute<Java.Awt.Color>("flashColor");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#logStream()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#logStream()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Io.PrintStream"/></returns>
         public static Java.Io.PrintStream LogStream()
         {
             return SExecute<Java.Io.PrintStream>("logStream");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashColor(java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
         public static void SetFlashColor(Java.Awt.Color arg0)
         {
             SExecute("setFlashColor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashCount(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashCount(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public static void SetFlashCount(int arg0)
         {
             SExecute("setFlashCount", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashTime(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashTime(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public static void SetFlashTime(int arg0)
         {
             SExecute("setFlashTime", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setLogStream(java.io.PrintStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setLogStream(java.io.PrintStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public static void SetLogStream(Java.Io.PrintStream arg0)
         {
             SExecute("setLogStream", arg0);
@@ -132,15 +147,17 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#getDebugOptions() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setDebugOptions(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#getDebugOptions()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setDebugOptions(int)"/>
         /// </summary>
         public int DebugOptions
         {
             get { return IExecute<int>("getDebugOptions"); } set { IExecute("setDebugOptions", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#isDrawingBuffer()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#isDrawingBuffer()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDrawingBuffer()
         {
             return IExecute<bool>("isDrawingBuffer");

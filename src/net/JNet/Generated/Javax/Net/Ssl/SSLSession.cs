@@ -46,141 +46,148 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getApplicationBufferSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getApplicationBufferSize()"/> 
         /// </summary>
         public int ApplicationBufferSize
         {
             get { return IExecute<int>("getApplicationBufferSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getCipherSuite() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getCipherSuite()"/> 
         /// </summary>
         public string CipherSuite
         {
             get { return IExecute<string>("getCipherSuite"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getCreationTime() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getCreationTime()"/> 
         /// </summary>
         public long CreationTime
         {
             get { return IExecute<long>("getCreationTime"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getId()"/> 
         /// </summary>
         public byte[] Id
         {
             get { return IExecuteArray<byte>("getId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getLastAccessedTime() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getLastAccessedTime()"/> 
         /// </summary>
         public long LastAccessedTime
         {
             get { return IExecute<long>("getLastAccessedTime"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getLocalCertificates() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getLocalCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] LocalCertificates
         {
             get { return IExecuteArray<Java.Security.Cert.Certificate>("getLocalCertificates"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getLocalPrincipal() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getLocalPrincipal()"/> 
         /// </summary>
         public Java.Security.Principal LocalPrincipal
         {
             get { return IExecute<Java.Security.Principal>("getLocalPrincipal"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getPacketBufferSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getPacketBufferSize()"/> 
         /// </summary>
         public int PacketBufferSize
         {
             get { return IExecute<int>("getPacketBufferSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getPeerCertificates() throws javax.net.ssl.SSLPeerUnverifiedException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getPeerCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] PeerCertificates
         {
             get { return IExecuteArray<Java.Security.Cert.Certificate>("getPeerCertificates"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getPeerHost() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getPeerHost()"/> 
         /// </summary>
         public string PeerHost
         {
             get { return IExecute<string>("getPeerHost"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getPeerPort() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getPeerPort()"/> 
         /// </summary>
         public int PeerPort
         {
             get { return IExecute<int>("getPeerPort"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getPeerPrincipal() throws javax.net.ssl.SSLPeerUnverifiedException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getPeerPrincipal()"/> 
         /// </summary>
         public Java.Security.Principal PeerPrincipal
         {
             get { return IExecute<Java.Security.Principal>("getPeerPrincipal"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getProtocol() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getProtocol()"/> 
         /// </summary>
         public string Protocol
         {
             get { return IExecute<string>("getProtocol"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getSessionContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getSessionContext()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSessionContext SessionContext
         {
             get { return IExecute<Javax.Net.Ssl.SSLSessionContext>("getSessionContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getValueNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getValueNames()"/> 
         /// </summary>
         public string[] ValueNames
         {
             get { return IExecuteArray<string>("getValueNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#isValid()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#isValid()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsValid()
         {
             return IExecute<bool>("isValid");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getValue(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getValue(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetValue(string arg0)
         {
             return IExecute("getValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#invalidate()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#invalidate()"/>
         /// </summary>
         public void Invalidate()
         {
             IExecute("invalidate");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#putValue(java.lang.String,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#putValue(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void PutValue(string arg0, object arg1)
         {
             IExecute("putValue", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#removeValue(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#removeValue(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void RemoveValue(string arg0)
         {
             IExecute("removeValue", arg0);

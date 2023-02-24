@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Element.TypeParameterElement"/> to <see cref="Javax.Lang.Model.Element.Element"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Element(Javax.Lang.Model.Element.TypeParameterElement t) => t.Cast<Javax.Lang.Model.Element.Element>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html#getEnclosingElement() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement
         {
             get { return IExecute<Javax.Lang.Model.Element.Element>("getEnclosingElement"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html#getGenericElement() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html#getGenericElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element GenericElement
         {

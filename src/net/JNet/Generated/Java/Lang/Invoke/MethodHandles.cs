@@ -42,162 +42,238 @@ namespace Java.Lang.Invoke
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#collectArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#collectArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle CollectArguments(Java.Lang.Invoke.MethodHandle arg0, int arg1, Java.Lang.Invoke.MethodHandle arg2)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("collectArguments", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#countedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#countedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle CountedLoop(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodHandle arg1, Java.Lang.Invoke.MethodHandle arg2, Java.Lang.Invoke.MethodHandle arg3)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("countedLoop", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#countedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#countedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle CountedLoop(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodHandle arg1, Java.Lang.Invoke.MethodHandle arg2)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("countedLoop", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#doWhileLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#doWhileLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle DoWhileLoop(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodHandle arg1, Java.Lang.Invoke.MethodHandle arg2)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("doWhileLoop", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropArguments(java.lang.invoke.MethodHandle,int,java.lang.Class<?>...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropArguments(java.lang.invoke.MethodHandle,int,java.lang.Class%3C?%3E...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle DropArguments(Java.Lang.Invoke.MethodHandle arg0, int arg1, params Java.Lang.Class[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>("dropArguments", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodHandle>("dropArguments", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#empty(java.lang.invoke.MethodType)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#empty(java.lang.invoke.MethodType)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodType"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle Empty(Java.Lang.Invoke.MethodType arg0)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("empty", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#exactInvoker(java.lang.invoke.MethodType)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#exactInvoker(java.lang.invoke.MethodType)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodType"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle ExactInvoker(Java.Lang.Invoke.MethodType arg0)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("exactInvoker", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#explicitCastArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#explicitCastArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodType"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle ExplicitCastArguments(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodType arg1)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("explicitCastArguments", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle FilterArguments(Java.Lang.Invoke.MethodHandle arg0, int arg1, params Java.Lang.Invoke.MethodHandle[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>("filterArguments", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodHandle>("filterArguments", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterReturnValue(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterReturnValue(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle FilterReturnValue(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodHandle arg1)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("filterReturnValue", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#foldArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#foldArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle FoldArguments(Java.Lang.Invoke.MethodHandle arg0, int arg1, Java.Lang.Invoke.MethodHandle arg2)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("foldArguments", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#foldArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#foldArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle FoldArguments(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodHandle arg1)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("foldArguments", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#guardWithTest(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#guardWithTest(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle GuardWithTest(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodHandle arg1, Java.Lang.Invoke.MethodHandle arg2)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("guardWithTest", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#insertArguments(java.lang.invoke.MethodHandle,int,java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#insertArguments(java.lang.invoke.MethodHandle,int,java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle InsertArguments(Java.Lang.Invoke.MethodHandle arg0, int arg1, params object[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>("insertArguments", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodHandle>("insertArguments", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#invoker(java.lang.invoke.MethodType)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#invoker(java.lang.invoke.MethodType)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodType"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle Invoker(Java.Lang.Invoke.MethodType arg0)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("invoker", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#iteratedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#iteratedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle IteratedLoop(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodHandle arg1, Java.Lang.Invoke.MethodHandle arg2)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("iteratedLoop", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#loop(java.lang.invoke.MethodHandle[]...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#loop(java.lang.invoke.MethodHandle[]...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle Loop(params Java.Lang.Invoke.MethodHandle[][] arg0)
         {
             if (arg0.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>("loop"); else return SExecute<Java.Lang.Invoke.MethodHandle>("loop", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#permuteArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType,int...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#permuteArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType,int...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodType"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle PermuteArguments(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodType arg1, params int[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>("permuteArguments", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodHandle>("permuteArguments", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#spreadInvoker(java.lang.invoke.MethodType,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#spreadInvoker(java.lang.invoke.MethodType,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodType"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle SpreadInvoker(Java.Lang.Invoke.MethodType arg0, int arg1)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("spreadInvoker", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#tryFinally(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#tryFinally(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle TryFinally(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodHandle arg1)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("tryFinally", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#whileLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#whileLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle WhileLoop(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodHandle arg1, Java.Lang.Invoke.MethodHandle arg2)
         {
             return SExecute<Java.Lang.Invoke.MethodHandle>("whileLoop", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#lookup()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#lookup()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
         public static Java.Lang.Invoke.MethodHandles.Lookup LookupMethod()
         {
             return SExecute<Java.Lang.Invoke.MethodHandles.Lookup>("lookup");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#publicLookup()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#publicLookup()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
         public static Java.Lang.Invoke.MethodHandles.Lookup PublicLookup()
         {
             return SExecute<Java.Lang.Invoke.MethodHandles.Lookup>("publicLookup");
@@ -223,27 +299,27 @@ namespace Java.Lang.Invoke
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#MODULE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#MODULE"/>
             /// </summary>
             public static int MODULE => Clazz.GetField<int>("MODULE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PACKAGE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PACKAGE"/>
             /// </summary>
             public static int PACKAGE => Clazz.GetField<int>("PACKAGE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PRIVATE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PRIVATE"/>
             /// </summary>
             public static int PRIVATE => Clazz.GetField<int>("PRIVATE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PROTECTED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PROTECTED"/>
             /// </summary>
             public static int PROTECTED => Clazz.GetField<int>("PROTECTED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PUBLIC
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PUBLIC"/>
             /// </summary>
             public static int PUBLIC => Clazz.GetField<int>("PUBLIC");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#UNCONDITIONAL
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#UNCONDITIONAL"/>
             /// </summary>
             public static int UNCONDITIONAL => Clazz.GetField<int>("UNCONDITIONAL");
             
@@ -255,64 +331,90 @@ namespace Java.Lang.Invoke
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool HasPrivateAccess()
             {
                 return IExecute<bool>("hasPrivateAccess");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupModes()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupModes()"/>
             /// </summary>
+            
+            /// <returns><see langword="int"/></returns>
             public int LookupModes()
             {
                 return IExecute<int>("lookupModes");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#bind(java.lang.Object,java.lang.String,java.lang.invoke.MethodType) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#bind(java.lang.Object,java.lang.String,java.lang.invoke.MethodType)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodType"/></param>
+            /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+            /// <exception cref="Java.Lang.NoSuchMethodException"/>
+            /// <exception cref="Java.Lang.IllegalAccessException"/>
             public Java.Lang.Invoke.MethodHandle Bind(object arg0, string arg1, Java.Lang.Invoke.MethodType arg2)
             {
                 return IExecute<Java.Lang.Invoke.MethodHandle>("bind", arg0, arg1, arg2);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflect(java.lang.reflect.Method) throws java.lang.IllegalAccessException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflect(java.lang.reflect.Method)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Reflect.Method"/></param>
+            /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+            /// <exception cref="Java.Lang.IllegalAccessException"/>
             public Java.Lang.Invoke.MethodHandle Unreflect(Java.Lang.Reflect.Method arg0)
             {
                 return IExecute<Java.Lang.Invoke.MethodHandle>("unreflect", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectGetter(java.lang.reflect.Field) throws java.lang.IllegalAccessException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectGetter(java.lang.reflect.Field)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Reflect.Field"/></param>
+            /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+            /// <exception cref="Java.Lang.IllegalAccessException"/>
             public Java.Lang.Invoke.MethodHandle UnreflectGetter(Java.Lang.Reflect.Field arg0)
             {
                 return IExecute<Java.Lang.Invoke.MethodHandle>("unreflectGetter", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectSetter(java.lang.reflect.Field) throws java.lang.IllegalAccessException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectSetter(java.lang.reflect.Field)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Reflect.Field"/></param>
+            /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+            /// <exception cref="Java.Lang.IllegalAccessException"/>
             public Java.Lang.Invoke.MethodHandle UnreflectSetter(Java.Lang.Reflect.Field arg0)
             {
                 return IExecute<Java.Lang.Invoke.MethodHandle>("unreflectSetter", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#revealDirect(java.lang.invoke.MethodHandle)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#revealDirect(java.lang.invoke.MethodHandle)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+            /// <returns><see cref="Java.Lang.Invoke.MethodHandleInfo"/></returns>
             public Java.Lang.Invoke.MethodHandleInfo RevealDirect(Java.Lang.Invoke.MethodHandle arg0)
             {
                 return IExecute<Java.Lang.Invoke.MethodHandleInfo>("revealDirect", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#dropLookupMode(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#dropLookupMode(int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
             public Java.Lang.Invoke.MethodHandles.Lookup DropLookupMode(int arg0)
             {
                 return IExecute<Java.Lang.Invoke.MethodHandles.Lookup>("dropLookupMode", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectVarHandle(java.lang.reflect.Field) throws java.lang.IllegalAccessException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectVarHandle(java.lang.reflect.Field)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Reflect.Field"/></param>
+            /// <returns><see cref="Java.Lang.Invoke.VarHandle"/></returns>
+            /// <exception cref="Java.Lang.IllegalAccessException"/>
             public Java.Lang.Invoke.VarHandle UnreflectVarHandle(Java.Lang.Reflect.Field arg0)
             {
                 return IExecute<Java.Lang.Invoke.VarHandle>("unreflectVarHandle", arg0);

@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Type
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Type.DeclaredType"/> to <see cref="Javax.Lang.Model.Type.ReferenceType"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Type.ReferenceType(Javax.Lang.Model.Type.DeclaredType t) => t.Cast<Javax.Lang.Model.Type.ReferenceType>();
         
         #endregion
@@ -47,15 +50,17 @@ namespace Javax.Lang.Model.Type
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#getEnclosingType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#getEnclosingType()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror EnclosingType
         {
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getEnclosingType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#asElement()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#asElement()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Lang.Model.Element.Element"/></returns>
         public Javax.Lang.Model.Element.Element AsElement()
         {
             return IExecute<Javax.Lang.Model.Element.Element>("asElement");

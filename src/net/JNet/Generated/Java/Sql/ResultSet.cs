@@ -33,50 +33,56 @@ namespace Java.Sql
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Sql.ResultSet"/> to <see cref="Java.Sql.Wrapper"/>
+        /// </summary>
         public static implicit operator Java.Sql.Wrapper(Java.Sql.ResultSet t) => t.Cast<Java.Sql.Wrapper>();
+        /// <summary>
+        /// Converter from <see cref="Java.Sql.ResultSet"/> to <see cref="Java.Lang.AutoCloseable"/>
+        /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Sql.ResultSet t) => t.Cast<Java.Lang.AutoCloseable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CLOSE_CURSORS_AT_COMMIT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CLOSE_CURSORS_AT_COMMIT"/>
         /// </summary>
         public static int CLOSE_CURSORS_AT_COMMIT => Clazz.GetField<int>("CLOSE_CURSORS_AT_COMMIT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CONCUR_READ_ONLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CONCUR_READ_ONLY"/>
         /// </summary>
         public static int CONCUR_READ_ONLY => Clazz.GetField<int>("CONCUR_READ_ONLY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CONCUR_UPDATABLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CONCUR_UPDATABLE"/>
         /// </summary>
         public static int CONCUR_UPDATABLE => Clazz.GetField<int>("CONCUR_UPDATABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#FETCH_FORWARD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#FETCH_FORWARD"/>
         /// </summary>
         public static int FETCH_FORWARD => Clazz.GetField<int>("FETCH_FORWARD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#FETCH_REVERSE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#FETCH_REVERSE"/>
         /// </summary>
         public static int FETCH_REVERSE => Clazz.GetField<int>("FETCH_REVERSE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#FETCH_UNKNOWN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#FETCH_UNKNOWN"/>
         /// </summary>
         public static int FETCH_UNKNOWN => Clazz.GetField<int>("FETCH_UNKNOWN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#HOLD_CURSORS_OVER_COMMIT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#HOLD_CURSORS_OVER_COMMIT"/>
         /// </summary>
         public static int HOLD_CURSORS_OVER_COMMIT => Clazz.GetField<int>("HOLD_CURSORS_OVER_COMMIT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#TYPE_FORWARD_ONLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#TYPE_FORWARD_ONLY"/>
         /// </summary>
         public static int TYPE_FORWARD_ONLY => Clazz.GetField<int>("TYPE_FORWARD_ONLY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#TYPE_SCROLL_INSENSITIVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#TYPE_SCROLL_INSENSITIVE"/>
         /// </summary>
         public static int TYPE_SCROLL_INSENSITIVE => Clazz.GetField<int>("TYPE_SCROLL_INSENSITIVE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#TYPE_SCROLL_SENSITIVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#TYPE_SCROLL_SENSITIVE"/>
         /// </summary>
         public static int TYPE_SCROLL_SENSITIVE => Clazz.GetField<int>("TYPE_SCROLL_SENSITIVE");
         
@@ -88,1282 +94,1822 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getConcurrency() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getConcurrency()"/> 
         /// </summary>
         public int Concurrency
         {
             get { return IExecute<int>("getConcurrency"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCursorName() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCursorName()"/> 
         /// </summary>
         public string CursorName
         {
             get { return IExecute<string>("getCursorName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFetchDirection() throws java.sql.SQLException https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#setFetchDirection(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFetchDirection()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#setFetchDirection(int)"/>
         /// </summary>
         public int FetchDirection
         {
             get { return IExecute<int>("getFetchDirection"); } set { IExecute("setFetchDirection", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFetchSize() throws java.sql.SQLException https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#setFetchSize(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFetchSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#setFetchSize(int)"/>
         /// </summary>
         public int FetchSize
         {
             get { return IExecute<int>("getFetchSize"); } set { IExecute("setFetchSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getHoldability() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getHoldability()"/> 
         /// </summary>
         public int Holdability
         {
             get { return IExecute<int>("getHoldability"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getMetaData() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getMetaData()"/> 
         /// </summary>
         public Java.Sql.ResultSetMetaData MetaData
         {
             get { return IExecute<Java.Sql.ResultSetMetaData>("getMetaData"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRow() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRow()"/> 
         /// </summary>
         public int Row
         {
             get { return IExecute<int>("getRow"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getStatement() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getStatement()"/> 
         /// </summary>
         public Java.Sql.Statement Statement
         {
             get { return IExecute<Java.Sql.Statement>("getStatement"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getType() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getType()"/> 
         /// </summary>
         public int Type
         {
             get { return IExecute<int>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getWarnings() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getWarnings()"/> 
         /// </summary>
         public Java.Sql.SQLWarning Warnings
         {
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getWarnings"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLWarning>(obj); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#absolute(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#absolute(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool Absolute(int arg0)
         {
             return IExecute<bool>("absolute", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#first() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#first()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool First()
         {
             return IExecute<bool>("first");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBoolean(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBoolean(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool GetBoolean(int arg0)
         {
             return IExecute<bool>("getBoolean", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBoolean(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBoolean(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool GetBoolean(string arg0)
         {
             return IExecute<bool>("getBoolean", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isAfterLast() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isAfterLast()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool IsAfterLast()
         {
             return IExecute<bool>("isAfterLast");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isBeforeFirst() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isBeforeFirst()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool IsBeforeFirst()
         {
             return IExecute<bool>("isBeforeFirst");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isClosed() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isClosed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool IsClosed()
         {
             return IExecute<bool>("isClosed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isFirst() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isFirst()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool IsFirst()
         {
             return IExecute<bool>("isFirst");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isLast() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isLast()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool IsLast()
         {
             return IExecute<bool>("isLast");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#last() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#last()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool Last()
         {
             return IExecute<bool>("last");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#next() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#next()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool Next()
         {
             return IExecute<bool>("next");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#previous() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#previous()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool Previous()
         {
             return IExecute<bool>("previous");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#relative(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#relative(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool Relative(int arg0)
         {
             return IExecute<bool>("relative", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowDeleted() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowDeleted()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool RowDeleted()
         {
             return IExecute<bool>("rowDeleted");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowInserted() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowInserted()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool RowInserted()
         {
             return IExecute<bool>("rowInserted");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowUpdated() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowUpdated()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool RowUpdated()
         {
             return IExecute<bool>("rowUpdated");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#wasNull() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#wasNull()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool WasNull()
         {
             return IExecute<bool>("wasNull");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getByte(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getByte(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="byte"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public byte GetByte(int arg0)
         {
             return IExecute<byte>("getByte", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getByte(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getByte(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="byte"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public byte GetByte(string arg0)
         {
             return IExecute<byte>("getByte", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBytes(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBytes(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public byte[] GetBytes(int arg0)
         {
             return IExecuteArray<byte>("getBytes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBytes(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBytes(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public byte[] GetBytes(string arg0)
         {
             return IExecuteArray<byte>("getBytes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDouble(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDouble(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="double"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public double GetDouble(int arg0)
         {
             return IExecute<double>("getDouble", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDouble(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDouble(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="double"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public double GetDouble(string arg0)
         {
             return IExecute<double>("getDouble", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFloat(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFloat(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="float"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public float GetFloat(int arg0)
         {
             return IExecute<float>("getFloat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFloat(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getFloat(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="float"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public float GetFloat(string arg0)
         {
             return IExecute<float>("getFloat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#findColumn(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#findColumn(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public int FindColumn(string arg0)
         {
             return IExecute<int>("findColumn", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getInt(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getInt(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public int GetInt(int arg0)
         {
             return IExecute<int>("getInt", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getInt(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getInt(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public int GetInt(string arg0)
         {
             return IExecute<int>("getInt", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getAsciiStream(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getAsciiStream(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream GetAsciiStream(int arg0)
         {
             return IExecute<Java.Io.InputStream>("getAsciiStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getAsciiStream(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getAsciiStream(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream GetAsciiStream(string arg0)
         {
             return IExecute<Java.Io.InputStream>("getAsciiStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBinaryStream(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBinaryStream(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream GetBinaryStream(int arg0)
         {
             return IExecute<Java.Io.InputStream>("getBinaryStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBinaryStream(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBinaryStream(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream GetBinaryStream(string arg0)
         {
             return IExecute<Java.Io.InputStream>("getBinaryStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCharacterStream(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCharacterStream(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Io.Reader"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetCharacterStream(int arg0)
         {
             return IExecute<Java.Io.Reader>("getCharacterStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCharacterStream(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getCharacterStream(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Io.Reader"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetCharacterStream(string arg0)
         {
             return IExecute<Java.Io.Reader>("getCharacterStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNCharacterStream(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNCharacterStream(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Io.Reader"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetNCharacterStream(int arg0)
         {
             return IExecute<Java.Io.Reader>("getNCharacterStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNCharacterStream(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNCharacterStream(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Io.Reader"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetNCharacterStream(string arg0)
         {
             return IExecute<Java.Io.Reader>("getNCharacterStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public object GetObject(int arg0)
         {
             return IExecute("getObject", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public object GetObject(string arg0)
         {
             return IExecute("getObject", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNString(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNString(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public string GetNString(int arg0)
         {
             return IExecute<string>("getNString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNString(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNString(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public string GetNString(string arg0)
         {
             return IExecute<string>("getNString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getString(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getString(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public string GetString(int arg0)
         {
             return IExecute<string>("getString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getString(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getString(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public string GetString(string arg0)
         {
             return IExecute<string>("getString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBigDecimal(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBigDecimal(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Math.BigDecimal GetBigDecimal(int arg0)
         {
             return IExecute<Java.Math.BigDecimal>("getBigDecimal", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBigDecimal(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBigDecimal(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Math.BigDecimal GetBigDecimal(string arg0)
         {
             return IExecute<Java.Math.BigDecimal>("getBigDecimal", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getURL(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getURL(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Net.URL"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Net.URL GetURL(int arg0)
         {
             return IExecute<Java.Net.URL>("getURL", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getURL(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getURL(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Net.URL"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Net.URL GetURL(string arg0)
         {
             return IExecute<Java.Net.URL>("getURL", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getArray(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getArray(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Sql.Array"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Array GetArray(int arg0)
         {
             return IExecute<Java.Sql.Array>("getArray", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getArray(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getArray(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.Array"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Array GetArray(string arg0)
         {
             return IExecute<Java.Sql.Array>("getArray", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBlob(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBlob(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Sql.Blob"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Blob GetBlob(int arg0)
         {
             return IExecute<Java.Sql.Blob>("getBlob", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBlob(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBlob(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.Blob"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Blob GetBlob(string arg0)
         {
             return IExecute<Java.Sql.Blob>("getBlob", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getClob(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getClob(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Sql.Clob"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Clob GetClob(int arg0)
         {
             return IExecute<Java.Sql.Clob>("getClob", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getClob(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getClob(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.Clob"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Clob GetClob(string arg0)
         {
             return IExecute<Java.Sql.Clob>("getClob", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(int,java.util.Calendar) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(int,java.util.Calendar)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
+        /// <returns><see cref="Java.Sql.Date"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Date GetDate(int arg0, Java.Util.Calendar arg1)
         {
             return IExecute<Java.Sql.Date>("getDate", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Sql.Date"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Date GetDate(int arg0)
         {
             return IExecute<Java.Sql.Date>("getDate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(java.lang.String,java.util.Calendar) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(java.lang.String,java.util.Calendar)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
+        /// <returns><see cref="Java.Sql.Date"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Date GetDate(string arg0, Java.Util.Calendar arg1)
         {
             return IExecute<Java.Sql.Date>("getDate", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.Date"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Date GetDate(string arg0)
         {
             return IExecute<Java.Sql.Date>("getDate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNClob(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNClob(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Sql.NClob"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.NClob GetNClob(int arg0)
         {
             return IExecute<Java.Sql.NClob>("getNClob", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNClob(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getNClob(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.NClob"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.NClob GetNClob(string arg0)
         {
             return IExecute<Java.Sql.NClob>("getNClob", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRef(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRef(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Sql.Ref"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Ref GetRef(int arg0)
         {
             return IExecute<Java.Sql.Ref>("getRef", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRef(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRef(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.Ref"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Ref GetRef(string arg0)
         {
             return IExecute<Java.Sql.Ref>("getRef", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRowId(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRowId(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Sql.RowId"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.RowId GetRowId(int arg0)
         {
             return IExecute<Java.Sql.RowId>("getRowId", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRowId(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRowId(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.RowId"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.RowId GetRowId(string arg0)
         {
             return IExecute<Java.Sql.RowId>("getRowId", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getSQLXML(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getSQLXML(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Sql.SQLXML"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.SQLXML GetSQLXML(int arg0)
         {
             return IExecute<Java.Sql.SQLXML>("getSQLXML", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getSQLXML(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getSQLXML(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.SQLXML"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.SQLXML GetSQLXML(string arg0)
         {
             return IExecute<Java.Sql.SQLXML>("getSQLXML", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(int,java.util.Calendar) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(int,java.util.Calendar)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
+        /// <returns><see cref="Java.Sql.Time"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Time GetTime(int arg0, Java.Util.Calendar arg1)
         {
             return IExecute<Java.Sql.Time>("getTime", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Sql.Time"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Time GetTime(int arg0)
         {
             return IExecute<Java.Sql.Time>("getTime", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(java.lang.String,java.util.Calendar) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(java.lang.String,java.util.Calendar)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
+        /// <returns><see cref="Java.Sql.Time"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Time GetTime(string arg0, Java.Util.Calendar arg1)
         {
             return IExecute<Java.Sql.Time>("getTime", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.Time"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Time GetTime(string arg0)
         {
             return IExecute<Java.Sql.Time>("getTime", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(int,java.util.Calendar) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(int,java.util.Calendar)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
+        /// <returns><see cref="Java.Sql.Timestamp"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Timestamp GetTimestamp(int arg0, Java.Util.Calendar arg1)
         {
             return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Sql.Timestamp"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Timestamp GetTimestamp(int arg0)
         {
             return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(java.lang.String,java.util.Calendar) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(java.lang.String,java.util.Calendar)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
+        /// <returns><see cref="Java.Sql.Timestamp"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Timestamp GetTimestamp(string arg0, Java.Util.Calendar arg1)
         {
             return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.Timestamp"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Timestamp GetTimestamp(string arg0)
         {
             return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getLong(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getLong(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public long GetLong(int arg0)
         {
             return IExecute<long>("getLong", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getLong(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getLong(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public long GetLong(string arg0)
         {
             return IExecute<long>("getLong", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getShort(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getShort(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="short"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public short GetShort(int arg0)
         {
             return IExecute<short>("getShort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getShort(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getShort(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="short"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public short GetShort(string arg0)
         {
             return IExecute<short>("getShort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#afterLast() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#afterLast()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void AfterLast()
         {
             IExecute("afterLast");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#beforeFirst() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#beforeFirst()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void BeforeFirst()
         {
             IExecute("beforeFirst");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#cancelRowUpdates() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#cancelRowUpdates()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void CancelRowUpdates()
         {
             IExecute("cancelRowUpdates");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#clearWarnings() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#clearWarnings()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void ClearWarnings()
         {
             IExecute("clearWarnings");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#close() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#deleteRow() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#deleteRow()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void DeleteRow()
         {
             IExecute("deleteRow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#insertRow() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#insertRow()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void InsertRow()
         {
             IExecute("insertRow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#moveToCurrentRow() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#moveToCurrentRow()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void MoveToCurrentRow()
         {
             IExecute("moveToCurrentRow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#moveToInsertRow() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#moveToInsertRow()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void MoveToInsertRow()
         {
             IExecute("moveToInsertRow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#refreshRow() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#refreshRow()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void RefreshRow()
         {
             IExecute("refreshRow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateArray(int,java.sql.Array) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateArray(int,java.sql.Array)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Array"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateArray(int arg0, Java.Sql.Array arg1)
         {
             IExecute("updateArray", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateArray(java.lang.String,java.sql.Array) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateArray(java.lang.String,java.sql.Array)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Array"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateArray(string arg0, Java.Sql.Array arg1)
         {
             IExecute("updateArray", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(int,java.io.InputStream,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(int,java.io.InputStream,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateAsciiStream(int arg0, Java.Io.InputStream arg1, int arg2)
         {
             IExecute("updateAsciiStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(int,java.io.InputStream,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(int,java.io.InputStream,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateAsciiStream(int arg0, Java.Io.InputStream arg1, long arg2)
         {
             IExecute("updateAsciiStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(int,java.io.InputStream) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(int,java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateAsciiStream(int arg0, Java.Io.InputStream arg1)
         {
             IExecute("updateAsciiStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateAsciiStream(string arg0, Java.Io.InputStream arg1, int arg2)
         {
             IExecute("updateAsciiStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateAsciiStream(string arg0, Java.Io.InputStream arg1, long arg2)
         {
             IExecute("updateAsciiStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateAsciiStream(string arg0, Java.Io.InputStream arg1)
         {
             IExecute("updateAsciiStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBigDecimal(int,java.math.BigDecimal) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBigDecimal(int,java.math.BigDecimal)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigDecimal"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBigDecimal(int arg0, Java.Math.BigDecimal arg1)
         {
             IExecute("updateBigDecimal", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBigDecimal(java.lang.String,java.math.BigDecimal) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBigDecimal(java.lang.String,java.math.BigDecimal)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigDecimal"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBigDecimal(string arg0, Java.Math.BigDecimal arg1)
         {
             IExecute("updateBigDecimal", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(int,java.io.InputStream,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(int,java.io.InputStream,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBinaryStream(int arg0, Java.Io.InputStream arg1, int arg2)
         {
             IExecute("updateBinaryStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(int,java.io.InputStream,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(int,java.io.InputStream,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBinaryStream(int arg0, Java.Io.InputStream arg1, long arg2)
         {
             IExecute("updateBinaryStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(int,java.io.InputStream) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(int,java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBinaryStream(int arg0, Java.Io.InputStream arg1)
         {
             IExecute("updateBinaryStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBinaryStream(string arg0, Java.Io.InputStream arg1, int arg2)
         {
             IExecute("updateBinaryStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBinaryStream(string arg0, Java.Io.InputStream arg1, long arg2)
         {
             IExecute("updateBinaryStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBinaryStream(string arg0, Java.Io.InputStream arg1)
         {
             IExecute("updateBinaryStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(int,java.io.InputStream,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(int,java.io.InputStream,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBlob(int arg0, Java.Io.InputStream arg1, long arg2)
         {
             IExecute("updateBlob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(int,java.io.InputStream) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(int,java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBlob(int arg0, Java.Io.InputStream arg1)
         {
             IExecute("updateBlob", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(int,java.sql.Blob) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(int,java.sql.Blob)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Blob"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBlob(int arg0, Java.Sql.Blob arg1)
         {
             IExecute("updateBlob", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.io.InputStream,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBlob(string arg0, Java.Io.InputStream arg1, long arg2)
         {
             IExecute("updateBlob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.io.InputStream) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBlob(string arg0, Java.Io.InputStream arg1)
         {
             IExecute("updateBlob", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.sql.Blob) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.sql.Blob)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Blob"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBlob(string arg0, Java.Sql.Blob arg1)
         {
             IExecute("updateBlob", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBoolean(int,boolean) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBoolean(int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBoolean(int arg0, bool arg1)
         {
             IExecute("updateBoolean", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBoolean(java.lang.String,boolean) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBoolean(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBoolean(string arg0, bool arg1)
         {
             IExecute("updateBoolean", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateByte(int,byte) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateByte(int,byte)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="byte"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateByte(int arg0, byte arg1)
         {
             IExecute("updateByte", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateByte(java.lang.String,byte) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateByte(java.lang.String,byte)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="byte"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateByte(string arg0, byte arg1)
         {
             IExecute("updateByte", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBytes(int,byte[]) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBytes(int,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBytes(int arg0, byte[] arg1)
         {
             IExecute("updateBytes", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBytes(java.lang.String,byte[]) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBytes(java.lang.String,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBytes(string arg0, byte[] arg1)
         {
             IExecute("updateBytes", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(int,java.io.Reader,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(int,java.io.Reader,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateCharacterStream(int arg0, Java.Io.Reader arg1, int arg2)
         {
             IExecute("updateCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(int,java.io.Reader,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(int,java.io.Reader,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateCharacterStream(int arg0, Java.Io.Reader arg1, long arg2)
         {
             IExecute("updateCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(int,java.io.Reader) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(int,java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateCharacterStream(int arg0, Java.Io.Reader arg1)
         {
             IExecute("updateCharacterStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateCharacterStream(string arg0, Java.Io.Reader arg1, int arg2)
         {
             IExecute("updateCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateCharacterStream(string arg0, Java.Io.Reader arg1, long arg2)
         {
             IExecute("updateCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateCharacterStream(string arg0, Java.Io.Reader arg1)
         {
             IExecute("updateCharacterStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(int,java.io.Reader,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(int,java.io.Reader,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateClob(int arg0, Java.Io.Reader arg1, long arg2)
         {
             IExecute("updateClob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(int,java.io.Reader) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(int,java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateClob(int arg0, Java.Io.Reader arg1)
         {
             IExecute("updateClob", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(int,java.sql.Clob) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(int,java.sql.Clob)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Clob"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateClob(int arg0, Java.Sql.Clob arg1)
         {
             IExecute("updateClob", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.io.Reader,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateClob(string arg0, Java.Io.Reader arg1, long arg2)
         {
             IExecute("updateClob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.io.Reader) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateClob(string arg0, Java.Io.Reader arg1)
         {
             IExecute("updateClob", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.sql.Clob) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.sql.Clob)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Clob"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateClob(string arg0, Java.Sql.Clob arg1)
         {
             IExecute("updateClob", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDate(int,java.sql.Date) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDate(int,java.sql.Date)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateDate(int arg0, Java.Sql.Date arg1)
         {
             IExecute("updateDate", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDate(java.lang.String,java.sql.Date) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDate(java.lang.String,java.sql.Date)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateDate(string arg0, Java.Sql.Date arg1)
         {
             IExecute("updateDate", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDouble(int,double) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDouble(int,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateDouble(int arg0, double arg1)
         {
             IExecute("updateDouble", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDouble(java.lang.String,double) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDouble(java.lang.String,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateDouble(string arg0, double arg1)
         {
             IExecute("updateDouble", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateFloat(int,float) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateFloat(int,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateFloat(int arg0, float arg1)
         {
             IExecute("updateFloat", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateFloat(java.lang.String,float) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateFloat(java.lang.String,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateFloat(string arg0, float arg1)
         {
             IExecute("updateFloat", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateInt(int,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateInt(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateInt(int arg0, int arg1)
         {
             IExecute("updateInt", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateInt(java.lang.String,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateInt(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateInt(string arg0, int arg1)
         {
             IExecute("updateInt", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateLong(int,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateLong(int,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateLong(int arg0, long arg1)
         {
             IExecute("updateLong", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateLong(java.lang.String,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateLong(java.lang.String,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateLong(string arg0, long arg1)
         {
             IExecute("updateLong", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(int,java.io.Reader,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(int,java.io.Reader,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNCharacterStream(int arg0, Java.Io.Reader arg1, long arg2)
         {
             IExecute("updateNCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(int,java.io.Reader) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(int,java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNCharacterStream(int arg0, Java.Io.Reader arg1)
         {
             IExecute("updateNCharacterStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(java.lang.String,java.io.Reader,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNCharacterStream(string arg0, Java.Io.Reader arg1, long arg2)
         {
             IExecute("updateNCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(java.lang.String,java.io.Reader) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(java.lang.String,java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNCharacterStream(string arg0, Java.Io.Reader arg1)
         {
             IExecute("updateNCharacterStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(int,java.io.Reader,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(int,java.io.Reader,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNClob(int arg0, Java.Io.Reader arg1, long arg2)
         {
             IExecute("updateNClob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(int,java.io.Reader) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(int,java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNClob(int arg0, Java.Io.Reader arg1)
         {
             IExecute("updateNClob", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(int,java.sql.NClob) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(int,java.sql.NClob)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.NClob"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNClob(int arg0, Java.Sql.NClob arg1)
         {
             IExecute("updateNClob", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.io.Reader,long) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNClob(string arg0, Java.Io.Reader arg1, long arg2)
         {
             IExecute("updateNClob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.io.Reader) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNClob(string arg0, Java.Io.Reader arg1)
         {
             IExecute("updateNClob", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.sql.NClob) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.sql.NClob)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.NClob"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNClob(string arg0, Java.Sql.NClob arg1)
         {
             IExecute("updateNClob", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNString(int,java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNString(int,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNString(int arg0, string arg1)
         {
             IExecute("updateNString", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNString(java.lang.String,java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNString(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNString(string arg0, string arg1)
         {
             IExecute("updateNString", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNull(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNull(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNull(int arg0)
         {
             IExecute("updateNull", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNull(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNull(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNull(string arg0)
         {
             IExecute("updateNull", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(int arg0, object arg1, int arg2)
         {
             IExecute("updateObject", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(int arg0, object arg1)
         {
             IExecute("updateObject", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(string arg0, object arg1, int arg2)
         {
             IExecute("updateObject", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(string arg0, object arg1)
         {
             IExecute("updateObject", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRef(int,java.sql.Ref) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRef(int,java.sql.Ref)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Ref"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateRef(int arg0, Java.Sql.Ref arg1)
         {
             IExecute("updateRef", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRef(java.lang.String,java.sql.Ref) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRef(java.lang.String,java.sql.Ref)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Ref"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateRef(string arg0, Java.Sql.Ref arg1)
         {
             IExecute("updateRef", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRow() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRow()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateRow()
         {
             IExecute("updateRow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRowId(int,java.sql.RowId) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRowId(int,java.sql.RowId)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.RowId"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateRowId(int arg0, Java.Sql.RowId arg1)
         {
             IExecute("updateRowId", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRowId(java.lang.String,java.sql.RowId) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRowId(java.lang.String,java.sql.RowId)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.RowId"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateRowId(string arg0, Java.Sql.RowId arg1)
         {
             IExecute("updateRowId", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateShort(int,short) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateShort(int,short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="short"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateShort(int arg0, short arg1)
         {
             IExecute("updateShort", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateShort(java.lang.String,short) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateShort(java.lang.String,short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="short"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateShort(string arg0, short arg1)
         {
             IExecute("updateShort", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateSQLXML(int,java.sql.SQLXML) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateSQLXML(int,java.sql.SQLXML)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.SQLXML"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateSQLXML(int arg0, Java.Sql.SQLXML arg1)
         {
             IExecute("updateSQLXML", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateSQLXML(java.lang.String,java.sql.SQLXML) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateSQLXML(java.lang.String,java.sql.SQLXML)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.SQLXML"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateSQLXML(string arg0, Java.Sql.SQLXML arg1)
         {
             IExecute("updateSQLXML", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateString(int,java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateString(int,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateString(int arg0, string arg1)
         {
             IExecute("updateString", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateString(java.lang.String,java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateString(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateString(string arg0, string arg1)
         {
             IExecute("updateString", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTime(int,java.sql.Time) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTime(int,java.sql.Time)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateTime(int arg0, Java.Sql.Time arg1)
         {
             IExecute("updateTime", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTime(java.lang.String,java.sql.Time) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTime(java.lang.String,java.sql.Time)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateTime(string arg0, Java.Sql.Time arg1)
         {
             IExecute("updateTime", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTimestamp(int,java.sql.Timestamp) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTimestamp(int,java.sql.Timestamp)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateTimestamp(int arg0, Java.Sql.Timestamp arg1)
         {
             IExecute("updateTimestamp", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTimestamp(java.lang.String,java.sql.Timestamp) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTimestamp(java.lang.String,java.sql.Timestamp)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateTimestamp(string arg0, Java.Sql.Timestamp arg1)
         {
             IExecute("updateTimestamp", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object,java.sql.SQLType,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object,java.sql.SQLType,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(int arg0, object arg1, Java.Sql.SQLType arg2, int arg3)
         {
             IExecute("updateObject", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object,java.sql.SQLType) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object,java.sql.SQLType)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(int arg0, object arg1, Java.Sql.SQLType arg2)
         {
             IExecute("updateObject", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,java.sql.SQLType,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,java.sql.SQLType,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(string arg0, object arg1, Java.Sql.SQLType arg2, int arg3)
         {
             IExecute("updateObject", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,java.sql.SQLType) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,java.sql.SQLType)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(string arg0, object arg1, Java.Sql.SQLType arg2)
         {
             IExecute("updateObject", arg0, arg1, arg2);

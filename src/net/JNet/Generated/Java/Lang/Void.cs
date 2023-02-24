@@ -38,7 +38,7 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Void.html#TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Void.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
         

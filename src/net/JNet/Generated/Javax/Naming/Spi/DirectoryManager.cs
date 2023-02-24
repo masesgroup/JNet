@@ -42,8 +42,11 @@ namespace Javax.Naming.Spi
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirectoryManager.html#getContinuationDirContext(javax.naming.CannotProceedException) throws javax.naming.NamingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirectoryManager.html#getContinuationDirContext(javax.naming.CannotProceedException)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.CannotProceedException"/></param>
+        /// <returns><see cref="Javax.Naming.Directory.DirContext"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
         public static Javax.Naming.Directory.DirContext GetContinuationDirContext(Javax.Naming.CannotProceedException arg0)
         {
             return SExecute<Javax.Naming.Directory.DirContext>("getContinuationDirContext", arg0);

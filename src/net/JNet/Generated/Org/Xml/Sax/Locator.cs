@@ -46,28 +46,28 @@ namespace Org.Xml.Sax
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getColumnNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getColumnNumber()"/> 
         /// </summary>
         public int ColumnNumber
         {
             get { return IExecute<int>("getColumnNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getLineNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getLineNumber()"/> 
         /// </summary>
         public int LineNumber
         {
             get { return IExecute<int>("getLineNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getPublicId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getPublicId()"/> 
         /// </summary>
         public string PublicId
         {
             get { return IExecute<string>("getPublicId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getSystemId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getSystemId()"/> 
         /// </summary>
         public string SystemId
         {

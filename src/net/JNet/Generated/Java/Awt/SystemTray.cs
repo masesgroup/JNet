@@ -42,15 +42,19 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#isSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#isSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public static bool IsSupported()
         {
             return SExecute<bool>("isSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#getSystemTray()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#getSystemTray()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.SystemTray"/></returns>
         public static Java.Awt.SystemTray GetSystemTray()
         {
             return SExecute<Java.Awt.SystemTray>("getSystemTray");
@@ -60,50 +64,59 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#getTrayIcons() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#getTrayIcons()"/> 
         /// </summary>
         public Java.Awt.TrayIcon[] TrayIcons
         {
             get { return IExecuteArray<Java.Awt.TrayIcon>("getTrayIcons"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#getTrayIconSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#getTrayIconSize()"/> 
         /// </summary>
         public Java.Awt.Dimension TrayIconSize
         {
             get { return IExecute<Java.Awt.Dimension>("getTrayIconSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#getPropertyChangeListeners(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#getPropertyChangeListeners(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners(string arg0)
         {
             return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1)
         {
             IExecute("addPropertyChangeListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1)
         {
             IExecute("removePropertyChangeListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#add(java.awt.TrayIcon) throws java.awt.AWTException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#add(java.awt.TrayIcon)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.TrayIcon"/></param>
+        /// <exception cref="Java.Awt.AWTException"/>
         public void Add(Java.Awt.TrayIcon arg0)
         {
             IExecute("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#remove(java.awt.TrayIcon)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SystemTray.html#remove(java.awt.TrayIcon)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.TrayIcon"/></param>
         public void Remove(Java.Awt.TrayIcon arg0)
         {
             IExecute("remove", arg0);

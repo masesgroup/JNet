@@ -30,8 +30,9 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#<init>(java.io.Reader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public StreamTokenizer(Java.Io.Reader arg0)
             : base(arg0)
         {
@@ -45,31 +46,31 @@ namespace Java.Io
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#nval
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#nval"/>
         /// </summary>
         public double nval => Instance.GetField<double>("nval");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ttype
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ttype"/>
         /// </summary>
         public int ttype => Instance.GetField<int>("ttype");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#sval
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#sval"/>
         /// </summary>
         public string sval => Instance.GetField<string>("sval");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_EOF
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_EOF"/>
         /// </summary>
         public static int TT_EOF => Clazz.GetField<int>("TT_EOF");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_EOL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_EOL"/>
         /// </summary>
         public static int TT_EOL => Clazz.GetField<int>("TT_EOL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_NUMBER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_NUMBER"/>
         /// </summary>
         public static int TT_NUMBER => Clazz.GetField<int>("TT_NUMBER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_WORD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_WORD"/>
         /// </summary>
         public static int TT_WORD => Clazz.GetField<int>("TT_WORD");
         
@@ -81,106 +82,124 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#lineno()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#lineno()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Lineno()
         {
             return IExecute<int>("lineno");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#nextToken() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#nextToken()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public int NextToken()
         {
             return IExecute<int>("nextToken");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#commentChar(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#commentChar(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void CommentChar(int arg0)
         {
             IExecute("commentChar", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#eolIsSignificant(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#eolIsSignificant(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void EolIsSignificant(bool arg0)
         {
             IExecute("eolIsSignificant", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#lowerCaseMode(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#lowerCaseMode(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void LowerCaseMode(bool arg0)
         {
             IExecute("lowerCaseMode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ordinaryChar(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ordinaryChar(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void OrdinaryChar(int arg0)
         {
             IExecute("ordinaryChar", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ordinaryChars(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ordinaryChars(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void OrdinaryChars(int arg0, int arg1)
         {
             IExecute("ordinaryChars", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#parseNumbers()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#parseNumbers()"/>
         /// </summary>
         public void ParseNumbers()
         {
             IExecute("parseNumbers");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#pushBack()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#pushBack()"/>
         /// </summary>
         public void PushBack()
         {
             IExecute("pushBack");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#quoteChar(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#quoteChar(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void QuoteChar(int arg0)
         {
             IExecute("quoteChar", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#resetSyntax()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#resetSyntax()"/>
         /// </summary>
         public void ResetSyntax()
         {
             IExecute("resetSyntax");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#slashSlashComments(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#slashSlashComments(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SlashSlashComments(bool arg0)
         {
             IExecute("slashSlashComments", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#slashStarComments(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#slashStarComments(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SlashStarComments(bool arg0)
         {
             IExecute("slashStarComments", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#whitespaceChars(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#whitespaceChars(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void WhitespaceChars(int arg0, int arg1)
         {
             IExecute("whitespaceChars", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#wordChars(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#wordChars(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void WordChars(int arg0, int arg1)
         {
             IExecute("wordChars", arg0, arg1);

@@ -30,8 +30,11 @@ namespace Javax.Sql.Rowset.Serial
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#<init>(java.sql.Array) throws javax.sql.rowset.serial.SerialException,java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#%3Cinit%3E(java.sql.Array)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.Array"/></param>
+        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        /// <exception cref="Java.Sql.SQLException"/>
         public SerialArray(Java.Sql.Array arg0)
             : base(arg0)
         {
@@ -40,8 +43,17 @@ namespace Javax.Sql.Rowset.Serial
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialArray"/> to <see cref="Java.Sql.Array"/>
+        /// </summary>
         public static implicit operator Java.Sql.Array(Javax.Sql.Rowset.Serial.SerialArray t) => t.Cast<Java.Sql.Array>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialArray"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Sql.Rowset.Serial.SerialArray t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialArray"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.Serial.SerialArray t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -56,50 +68,60 @@ namespace Javax.Sql.Rowset.Serial
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getArray() throws javax.sql.rowset.serial.SerialException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getArray()"/> 
         /// </summary>
         public object Array
         {
             get { return IExecute("getArray"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getBaseType() throws javax.sql.rowset.serial.SerialException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getBaseType()"/> 
         /// </summary>
         public int BaseType
         {
             get { return IExecute<int>("getBaseType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getBaseTypeName() throws javax.sql.rowset.serial.SerialException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getBaseTypeName()"/> 
         /// </summary>
         public string BaseTypeName
         {
             get { return IExecute<string>("getBaseTypeName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet() throws javax.sql.rowset.serial.SerialException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet()"/> 
         /// </summary>
         public Java.Sql.ResultSet ResultSet
         {
             get { return IExecute<Java.Sql.ResultSet>("getResultSet"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getArray(long,int) throws javax.sql.rowset.serial.SerialException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getArray(long,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public object GetArray(long arg0, int arg1)
         {
             return IExecute("getArray", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet(long,int) throws javax.sql.rowset.serial.SerialException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet(long,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public Java.Sql.ResultSet GetResultSet(long arg0, int arg1)
         {
             return IExecute<Java.Sql.ResultSet>("getResultSet", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#free() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#free()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void Free()
         {
             IExecute("free");

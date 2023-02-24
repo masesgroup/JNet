@@ -30,8 +30,9 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StringValueExp.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StringValueExp.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public StringValueExp(string arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.StringValueExp"/> to <see cref="Javax.Management.ValueExp"/>
+        /// </summary>
         public static implicit operator Javax.Management.ValueExp(Javax.Management.StringValueExp t) => t.Cast<Javax.Management.ValueExp>();
         
         #endregion
@@ -54,15 +58,21 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StringValueExp.html#getValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StringValueExp.html#getValue()"/> 
         /// </summary>
         public string Value
         {
             get { return IExecute<string>("getValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StringValueExp.html#apply(javax.management.ObjectName) throws javax.management.BadStringOperationException,javax.management.BadBinaryOpValueExpException,javax.management.BadAttributeValueExpException,javax.management.InvalidApplicationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StringValueExp.html#apply(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
+        /// <exception cref="Javax.Management.BadStringOperationException"/>
+        /// <exception cref="Javax.Management.BadBinaryOpValueExpException"/>
+        /// <exception cref="Javax.Management.BadAttributeValueExpException"/>
+        /// <exception cref="Javax.Management.InvalidApplicationException"/>
         public Javax.Management.ValueExp Apply(Javax.Management.ObjectName arg0)
         {
             return IExecute<Javax.Management.ValueExp>("apply", arg0);

@@ -46,35 +46,35 @@ namespace Javax.Annotation.Processing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getElementUtils() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getElementUtils()"/> 
         /// </summary>
         public Javax.Lang.Model.Util.Elements ElementUtils
         {
             get { return IExecute<Javax.Lang.Model.Util.Elements>("getElementUtils"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getFiler() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getFiler()"/> 
         /// </summary>
         public Javax.Annotation.Processing.Filer Filer
         {
             get { return IExecute<Javax.Annotation.Processing.Filer>("getFiler"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getLocale() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getLocale()"/> 
         /// </summary>
         public Java.Util.Locale Locale
         {
             get { return IExecute<Java.Util.Locale>("getLocale"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getMessager() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getMessager()"/> 
         /// </summary>
         public Javax.Annotation.Processing.Messager Messager
         {
             get { return IExecute<Javax.Annotation.Processing.Messager>("getMessager"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getTypeUtils() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getTypeUtils()"/> 
         /// </summary>
         public Javax.Lang.Model.Util.Types TypeUtils
         {

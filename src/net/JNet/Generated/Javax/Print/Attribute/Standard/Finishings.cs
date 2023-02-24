@@ -33,83 +33,92 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.Finishings"/> to <see cref="Javax.Print.Attribute.DocAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.DocAttribute(Javax.Print.Attribute.Standard.Finishings t) => t.Cast<Javax.Print.Attribute.DocAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.Finishings"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.Finishings t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.Finishings"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.Finishings t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#BIND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#BIND"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings BIND => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("BIND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#COVER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#COVER"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings COVER => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("COVER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("EDGE_STITCH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH_BOTTOM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH_BOTTOM"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH_BOTTOM => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("EDGE_STITCH_BOTTOM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH_LEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH_LEFT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH_LEFT => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("EDGE_STITCH_LEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH_RIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH_RIGHT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH_RIGHT => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("EDGE_STITCH_RIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH_TOP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH_TOP"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH_TOP => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("EDGE_STITCH_TOP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#NONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#NONE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings NONE => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("NONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#SADDLE_STITCH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#SADDLE_STITCH"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings SADDLE_STITCH => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("SADDLE_STITCH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings STAPLE => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("STAPLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_BOTTOM_LEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_BOTTOM_LEFT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings STAPLE_BOTTOM_LEFT => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("STAPLE_BOTTOM_LEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_BOTTOM_RIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_BOTTOM_RIGHT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings STAPLE_BOTTOM_RIGHT => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("STAPLE_BOTTOM_RIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_DUAL_BOTTOM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_DUAL_BOTTOM"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings STAPLE_DUAL_BOTTOM => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("STAPLE_DUAL_BOTTOM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_DUAL_LEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_DUAL_LEFT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings STAPLE_DUAL_LEFT => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("STAPLE_DUAL_LEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_DUAL_RIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_DUAL_RIGHT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings STAPLE_DUAL_RIGHT => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("STAPLE_DUAL_RIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_DUAL_TOP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_DUAL_TOP"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings STAPLE_DUAL_TOP => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("STAPLE_DUAL_TOP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_TOP_LEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_TOP_LEFT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings STAPLE_TOP_LEFT => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("STAPLE_TOP_LEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_TOP_RIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_TOP_RIGHT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Finishings STAPLE_TOP_RIGHT => Clazz.GetField<Javax.Print.Attribute.Standard.Finishings>("STAPLE_TOP_RIGHT");
         
@@ -121,7 +130,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#getName()"/> 
         /// </summary>
         public string Name
         {

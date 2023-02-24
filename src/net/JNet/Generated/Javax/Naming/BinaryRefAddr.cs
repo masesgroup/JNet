@@ -30,15 +30,21 @@ namespace Javax.Naming
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/BinaryRefAddr.html#<init>(java.lang.String,byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/BinaryRefAddr.html#%3Cinit%3E(java.lang.String,byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public BinaryRefAddr(string arg0, byte[] arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/BinaryRefAddr.html#<init>(java.lang.String,byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/BinaryRefAddr.html#%3Cinit%3E(java.lang.String,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
         public BinaryRefAddr(string arg0, byte[] arg1)
             : base(arg0, arg1)
         {

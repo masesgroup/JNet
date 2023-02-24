@@ -30,8 +30,9 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#<init>(java.io.OutputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public DataOutputStream(Java.Io.OutputStream arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Io.DataOutputStream"/> to <see cref="Java.Io.DataOutput"/>
+        /// </summary>
         public static implicit operator Java.Io.DataOutput(Java.Io.DataOutputStream t) => t.Cast<Java.Io.DataOutput>();
         
         #endregion
@@ -54,85 +58,109 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#size()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeBoolean(boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeBoolean(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteBoolean(bool arg0)
         {
             IExecute("writeBoolean", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeByte(int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeByte(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteByte(int arg0)
         {
             IExecute("writeByte", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeBytes(java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeBytes(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteBytes(string arg0)
         {
             IExecute("writeBytes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeChar(int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeChar(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteChar(int arg0)
         {
             IExecute("writeChar", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeChars(java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeChars(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteChars(string arg0)
         {
             IExecute("writeChars", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeDouble(double) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeDouble(double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteDouble(double arg0)
         {
             IExecute("writeDouble", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeFloat(float) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeFloat(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteFloat(float arg0)
         {
             IExecute("writeFloat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeInt(int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeInt(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteInt(int arg0)
         {
             IExecute("writeInt", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeLong(long) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeLong(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteLong(long arg0)
         {
             IExecute("writeLong", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeShort(int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeShort(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteShort(int arg0)
         {
             IExecute("writeShort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeUTF(java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeUTF(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteUTF(string arg0)
         {
             IExecute("writeUTF", arg0);

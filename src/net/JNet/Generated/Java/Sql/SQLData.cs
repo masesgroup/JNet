@@ -46,22 +46,27 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#getSQLTypeName() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#getSQLTypeName()"/> 
         /// </summary>
         public string SQLTypeName
         {
             get { return IExecute<string>("getSQLTypeName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#readSQL(java.sql.SQLInput,java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#readSQL(java.sql.SQLInput,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.SQLInput"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void ReadSQL(Java.Sql.SQLInput arg0, string arg1)
         {
             IExecute("readSQL", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#writeSQL(java.sql.SQLOutput) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#writeSQL(java.sql.SQLOutput)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.SQLOutput"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void WriteSQL(Java.Sql.SQLOutput arg0)
         {
             IExecute("writeSQL", arg0);

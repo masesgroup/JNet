@@ -30,8 +30,10 @@ namespace Javax.Swing.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html#<init>(java.lang.Object,javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public TreeModelEvent(object arg0, Javax.Swing.Tree.TreePath arg1)
             : base(arg0, arg1)
         {
@@ -53,28 +55,28 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html#getChildIndices() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html#getChildIndices()"/> 
         /// </summary>
         public int[] ChildIndices
         {
             get { return IExecuteArray<int>("getChildIndices"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html#getChildren() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html#getChildren()"/> 
         /// </summary>
         public object[] Children
         {
             get { return IExecuteArray<object>("getChildren"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html#getPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html#getPath()"/> 
         /// </summary>
         public object[] Path
         {
             get { return IExecuteArray<object>("getPath"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html#getTreePath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelEvent.html#getTreePath()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath TreePath
         {

@@ -46,22 +46,24 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSessionCacheSize() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSessionCacheSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int)"/>
         /// </summary>
         public int SessionCacheSize
         {
             get { return IExecute<int>("getSessionCacheSize"); } set { IExecute("setSessionCacheSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSessionTimeout() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionTimeout(int) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSessionTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionTimeout(int)"/>
         /// </summary>
         public int SessionTimeout
         {
             get { return IExecute<int>("getSessionTimeout"); } set { IExecute("setSessionTimeout", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSession(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSession(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
         public Javax.Net.Ssl.SSLSession GetSession(byte[] arg0)
         {
             return IExecute<Javax.Net.Ssl.SSLSession>("getSession", arg0);

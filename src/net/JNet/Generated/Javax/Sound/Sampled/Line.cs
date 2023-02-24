@@ -33,6 +33,9 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sound.Sampled.Line"/> to <see cref="Java.Lang.AutoCloseable"/>
+        /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Javax.Sound.Sampled.Line t) => t.Cast<Java.Lang.AutoCloseable>();
         
         #endregion
@@ -47,64 +50,74 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getControls() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getControls()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Control[] Controls
         {
             get { return IExecuteArray<Javax.Sound.Sampled.Control>("getControls"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getLineInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getLineInfo()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Line.Info LineInfo
         {
             get { return IExecute<Javax.Sound.Sampled.Line.Info>("getLineInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isControlSupported(javax.sound.sampled.Control$Type)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isControlSupported(javax.sound.sampled.Control$Type)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Control.Type"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsControlSupported(Javax.Sound.Sampled.Control.Type arg0)
         {
             return IExecute<bool>("isControlSupported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isOpen()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isOpen()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsOpen()
         {
             return IExecute<bool>("isOpen");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getControl(javax.sound.sampled.Control$Type)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getControl(javax.sound.sampled.Control$Type)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Control.Type"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.Control"/></returns>
         public Javax.Sound.Sampled.Control GetControl(Javax.Sound.Sampled.Control.Type arg0)
         {
             return IExecute<Javax.Sound.Sampled.Control>("getControl", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#addLineListener(javax.sound.sampled.LineListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#addLineListener(javax.sound.sampled.LineListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineListener"/></param>
         public void AddLineListener(Javax.Sound.Sampled.LineListener arg0)
         {
             IExecute("addLineListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#close()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#close()"/>
         /// </summary>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#open() throws javax.sound.sampled.LineUnavailableException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#open()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public void Open()
         {
             IExecute("open");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#removeLineListener(javax.sound.sampled.LineListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#removeLineListener(javax.sound.sampled.LineListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineListener"/></param>
         public void RemoveLineListener(Javax.Sound.Sampled.LineListener arg0)
         {
             IExecute("removeLineListener", arg0);
@@ -134,8 +147,10 @@ namespace Javax.Sound.Sampled
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.Info.html#matches(javax.sound.sampled.Line$Info)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.Info.html#matches(javax.sound.sampled.Line$Info)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
+            /// <returns><see langword="bool"/></returns>
             public bool Matches(Javax.Sound.Sampled.Line.Info arg0)
             {
                 return IExecute<bool>("matches", arg0);

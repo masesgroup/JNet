@@ -42,43 +42,54 @@ namespace Javax.Management
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#getClassLoaderRepository(javax.management.MBeanServer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#getClassLoaderRepository(javax.management.MBeanServer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
+        /// <returns><see cref="Javax.Management.Loading.ClassLoaderRepository"/></returns>
         public static Javax.Management.Loading.ClassLoaderRepository GetClassLoaderRepository(Javax.Management.MBeanServer arg0)
         {
             return SExecute<Javax.Management.Loading.ClassLoaderRepository>("getClassLoaderRepository", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#createMBeanServer()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#createMBeanServer()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
         public static Javax.Management.MBeanServer CreateMBeanServer()
         {
             return SExecute<Javax.Management.MBeanServer>("createMBeanServer");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#createMBeanServer(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#createMBeanServer(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
         public static Javax.Management.MBeanServer CreateMBeanServer(string arg0)
         {
             return SExecute<Javax.Management.MBeanServer>("createMBeanServer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#newMBeanServer()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#newMBeanServer()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
         public static Javax.Management.MBeanServer NewMBeanServer()
         {
             return SExecute<Javax.Management.MBeanServer>("newMBeanServer");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#newMBeanServer(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#newMBeanServer(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
         public static Javax.Management.MBeanServer NewMBeanServer(string arg0)
         {
             return SExecute<Javax.Management.MBeanServer>("newMBeanServer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#releaseMBeanServer(javax.management.MBeanServer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#releaseMBeanServer(javax.management.MBeanServer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
         public static void ReleaseMBeanServer(Javax.Management.MBeanServer arg0)
         {
             SExecute("releaseMBeanServer", arg0);

@@ -25,6 +25,9 @@ namespace Java.Nio
     {
         // can be extended with methods not reflected or not available in Java;
 
+        /// <summary>
+        /// Converter from <see cref="IntBuffer"/> to <see cref="Comparable{IntBuffer}"/>
+        /// </summary>
         public static implicit operator Comparable<IntBuffer>(IntBuffer buffer) => buffer.Cast<Comparable<IntBuffer>>();
     }
 }

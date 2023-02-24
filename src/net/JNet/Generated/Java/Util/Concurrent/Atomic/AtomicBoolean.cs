@@ -30,8 +30,9 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#<init>(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#%3Cinit%3E(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public AtomicBoolean(bool arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Util.Concurrent.Atomic
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicBoolean"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Atomic.AtomicBoolean t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,113 +58,144 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getAcquire() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getAcquire()"/> 
         /// </summary>
         public bool Acquire
         {
             get { return IExecute<bool>("getAcquire"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getOpaque() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#setOpaque(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getOpaque()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#setOpaque(boolean)"/>
         /// </summary>
         public bool Opaque
         {
             get { return IExecute<bool>("getOpaque"); } set { IExecute("setOpaque", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getPlain() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#setPlain(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getPlain()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#setPlain(boolean)"/>
         /// </summary>
         public bool Plain
         {
             get { return IExecute<bool>("getPlain"); } set { IExecute("setPlain", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetPlain(boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetPlain(boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSetPlain(bool arg0, bool arg1)
         {
             return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchange(boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchange(boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CompareAndExchange(bool arg0, bool arg1)
         {
             return IExecute<bool>("compareAndExchange", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchangeAcquire(boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchangeAcquire(boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CompareAndExchangeAcquire(bool arg0, bool arg1)
         {
             return IExecute<bool>("compareAndExchangeAcquire", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchangeRelease(boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchangeRelease(boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CompareAndExchangeRelease(bool arg0, bool arg1)
         {
             return IExecute<bool>("compareAndExchangeRelease", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndSet(boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndSet(boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CompareAndSet(bool arg0, bool arg1)
         {
             return IExecute<bool>("compareAndSet", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#get()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#get()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Get()
         {
             return IExecute<bool>("get");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getAndSet(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getAndSet(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool GetAndSet(bool arg0)
         {
             return IExecute<bool>("getAndSet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetAcquire(boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetAcquire(boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSetAcquire(bool arg0, bool arg1)
         {
             return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetRelease(boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetRelease(boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSetRelease(bool arg0, bool arg1)
         {
             return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetVolatile(boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetVolatile(boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSetVolatile(bool arg0, bool arg1)
         {
             return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#lazySet(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#lazySet(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void LazySet(bool arg0)
         {
             IExecute("lazySet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#set(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#set(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void Set(bool arg0)
         {
             IExecute("set", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#setRelease(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#setRelease(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetRelease(bool arg0)
         {
             IExecute("setRelease", arg0);

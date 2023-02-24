@@ -46,15 +46,19 @@ namespace Javax.Swing.Plaf.Metal
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalProgressBarUI.html#paintDeterminate(java.awt.Graphics,javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalProgressBarUI.html#paintDeterminate(java.awt.Graphics,javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
         public void PaintDeterminate(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
         {
             IExecute("paintDeterminate", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalProgressBarUI.html#paintIndeterminate(java.awt.Graphics,javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalProgressBarUI.html#paintIndeterminate(java.awt.Graphics,javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
         public void PaintIndeterminate(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
         {
             IExecute("paintIndeterminate", arg0, arg1);

@@ -46,64 +46,78 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasNext()
         {
             return IExecute<bool>("hasNext");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasPrevious()
         {
             return IExecute<bool>("hasPrevious");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Next()
         {
             return IExecute("next");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Previous()
         {
             return IExecute("previous");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int NextIndex()
         {
             return IExecute<int>("nextIndex");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int PreviousIndex()
         {
             return IExecute<int>("previousIndex");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#add(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#add(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void Add(object arg0)
         {
             IExecute("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#remove()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#remove()"/>
         /// </summary>
         public void Remove()
         {
             IExecute("remove");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#set(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#set(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void Set(object arg0)
         {
             IExecute("set", arg0);

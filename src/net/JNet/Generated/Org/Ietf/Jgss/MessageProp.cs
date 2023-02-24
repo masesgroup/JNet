@@ -30,15 +30,18 @@ namespace Org.Ietf.Jgss
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#<init>(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#%3Cinit%3E(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public MessageProp(bool arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#<init>(int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#%3Cinit%3E(int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public MessageProp(int arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -60,64 +63,78 @@ namespace Org.Ietf.Jgss
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getMinorStatus() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getMinorStatus()"/> 
         /// </summary>
         public int MinorStatus
         {
             get { return IExecute<int>("getMinorStatus"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getMinorString() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getMinorString()"/> 
         /// </summary>
         public string MinorString
         {
             get { return IExecute<string>("getMinorString"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getPrivacy() https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#setPrivacy(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getPrivacy()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#setPrivacy(boolean)"/>
         /// </summary>
         public bool Privacy
         {
             get { return IExecute<bool>("getPrivacy"); } set { IExecute("setPrivacy", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getQOP() https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#setQOP(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#getQOP()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#setQOP(int)"/>
         /// </summary>
         public int QOP
         {
             get { return IExecute<int>("getQOP"); } set { IExecute("setQOP", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isDuplicateToken()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isDuplicateToken()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDuplicateToken()
         {
             return IExecute<bool>("isDuplicateToken");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isGapToken()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isGapToken()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsGapToken()
         {
             return IExecute<bool>("isGapToken");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isOldToken()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isOldToken()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsOldToken()
         {
             return IExecute<bool>("isOldToken");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isUnseqToken()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#isUnseqToken()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsUnseqToken()
         {
             return IExecute<bool>("isUnseqToken");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#setSupplementaryStates(boolean,boolean,boolean,boolean,int,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html#setSupplementaryStates(boolean,boolean,boolean,boolean,int,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="string"/></param>
         public void SetSupplementaryStates(bool arg0, bool arg1, bool arg2, bool arg3, int arg4, string arg5)
         {
             IExecute("setSupplementaryStates", arg0, arg1, arg2, arg3, arg4, arg5);

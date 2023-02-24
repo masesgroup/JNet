@@ -30,8 +30,9 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#<init>(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#%3Cinit%3E(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public DecimalFormatSymbols(Java.Util.Locale arg0)
             : base(arg0)
         {
@@ -40,7 +41,13 @@ namespace Java.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Text.DecimalFormatSymbols"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.DecimalFormatSymbols t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Text.DecimalFormatSymbols"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Text.DecimalFormatSymbols t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -51,22 +58,26 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getAvailableLocales() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getAvailableLocales()"/> 
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
             get { return SExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Text.DecimalFormatSymbols"/></returns>
         public static Java.Text.DecimalFormatSymbols GetInstance()
         {
             return SExecute<Java.Text.DecimalFormatSymbols>("getInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.DecimalFormatSymbols"/></returns>
         public static Java.Text.DecimalFormatSymbols GetInstance(Java.Util.Locale arg0)
         {
             return SExecute<Java.Text.DecimalFormatSymbols>("getInstance", arg0);
@@ -76,105 +87,105 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getCurrency() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setCurrency(java.util.Currency)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getCurrency()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setCurrency(java.util.Currency)"/>
         /// </summary>
         public Java.Util.Currency Currency
         {
             get { return IExecute<Java.Util.Currency>("getCurrency"); } set { IExecute("setCurrency", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getCurrencySymbol() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setCurrencySymbol(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getCurrencySymbol()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setCurrencySymbol(java.lang.String)"/>
         /// </summary>
         public string CurrencySymbol
         {
             get { return IExecute<string>("getCurrencySymbol"); } set { IExecute("setCurrencySymbol", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getDecimalSeparator() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setDecimalSeparator(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getDecimalSeparator()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setDecimalSeparator(char)"/>
         /// </summary>
         public char DecimalSeparator
         {
             get { return IExecute<char>("getDecimalSeparator"); } set { IExecute("setDecimalSeparator", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getDigit() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setDigit(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getDigit()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setDigit(char)"/>
         /// </summary>
         public char Digit
         {
             get { return IExecute<char>("getDigit"); } set { IExecute("setDigit", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getExponentSeparator() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setExponentSeparator(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getExponentSeparator()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setExponentSeparator(java.lang.String)"/>
         /// </summary>
         public string ExponentSeparator
         {
             get { return IExecute<string>("getExponentSeparator"); } set { IExecute("setExponentSeparator", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getGroupingSeparator() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setGroupingSeparator(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getGroupingSeparator()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setGroupingSeparator(char)"/>
         /// </summary>
         public char GroupingSeparator
         {
             get { return IExecute<char>("getGroupingSeparator"); } set { IExecute("setGroupingSeparator", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInfinity() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setInfinity(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInfinity()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setInfinity(java.lang.String)"/>
         /// </summary>
         public string Infinity
         {
             get { return IExecute<string>("getInfinity"); } set { IExecute("setInfinity", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInternationalCurrencySymbol() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setInternationalCurrencySymbol(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInternationalCurrencySymbol()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setInternationalCurrencySymbol(java.lang.String)"/>
         /// </summary>
         public string InternationalCurrencySymbol
         {
             get { return IExecute<string>("getInternationalCurrencySymbol"); } set { IExecute("setInternationalCurrencySymbol", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMinusSign() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMinusSign(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMinusSign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMinusSign(char)"/>
         /// </summary>
         public char MinusSign
         {
             get { return IExecute<char>("getMinusSign"); } set { IExecute("setMinusSign", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMonetaryDecimalSeparator() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMonetaryDecimalSeparator(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getMonetaryDecimalSeparator()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setMonetaryDecimalSeparator(char)"/>
         /// </summary>
         public char MonetaryDecimalSeparator
         {
             get { return IExecute<char>("getMonetaryDecimalSeparator"); } set { IExecute("setMonetaryDecimalSeparator", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getNaN() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setNaN(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getNaN()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setNaN(java.lang.String)"/>
         /// </summary>
         public string NaN
         {
             get { return IExecute<string>("getNaN"); } set { IExecute("setNaN", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPatternSeparator() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPatternSeparator(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPatternSeparator()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPatternSeparator(char)"/>
         /// </summary>
         public char PatternSeparator
         {
             get { return IExecute<char>("getPatternSeparator"); } set { IExecute("setPatternSeparator", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPercent() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPercent(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPercent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPercent(char)"/>
         /// </summary>
         public char Percent
         {
             get { return IExecute<char>("getPercent"); } set { IExecute("setPercent", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPerMill() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPerMill(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getPerMill()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setPerMill(char)"/>
         /// </summary>
         public char PerMill
         {
             get { return IExecute<char>("getPerMill"); } set { IExecute("setPerMill", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getZeroDigit() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setZeroDigit(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getZeroDigit()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#setZeroDigit(char)"/>
         /// </summary>
         public char ZeroDigit
         {

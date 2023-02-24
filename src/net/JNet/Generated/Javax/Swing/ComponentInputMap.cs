@@ -30,8 +30,9 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComponentInputMap.html#<init>(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComponentInputMap.html#%3Cinit%3E(javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         public ComponentInputMap(Javax.Swing.JComponent arg0)
             : base(arg0)
         {
@@ -53,7 +54,7 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComponentInputMap.html#getComponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComponentInputMap.html#getComponent()"/> 
         /// </summary>
         public Javax.Swing.JComponent Component
         {

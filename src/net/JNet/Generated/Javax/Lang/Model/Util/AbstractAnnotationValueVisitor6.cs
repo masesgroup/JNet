@@ -46,22 +46,30 @@ namespace Javax.Lang.Model.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visit(javax.lang.model.element.AnnotationValue,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visit(javax.lang.model.element.AnnotationValue,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Visit(Javax.Lang.Model.Element.AnnotationValue arg0, object arg1)
         {
             return IExecute("visit", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visit(javax.lang.model.element.AnnotationValue)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visit(javax.lang.model.element.AnnotationValue)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Visit(Javax.Lang.Model.Element.AnnotationValue arg0)
         {
             return IExecute("visit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visitUnknown(javax.lang.model.element.AnnotationValue,P)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visitUnknown(javax.lang.model.element.AnnotationValue,P)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object VisitUnknown(Javax.Lang.Model.Element.AnnotationValue arg0, object arg1)
         {
             return IExecute("visitUnknown", arg0, arg1);

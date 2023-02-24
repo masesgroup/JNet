@@ -30,8 +30,12 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#<init>(java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method) throws java.beans.IntrospectionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <exception cref="Java.Beans.IntrospectionException"/>
         public PropertyDescriptor(string arg0, Java.Lang.Reflect.Method arg1, Java.Lang.Reflect.Method arg2)
             : base(arg0, arg1, arg2)
         {
@@ -53,50 +57,58 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#getReadMethod() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setReadMethod(java.lang.reflect.Method) throws java.beans.IntrospectionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#getReadMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setReadMethod(java.lang.reflect.Method)"/>
         /// </summary>
         public Java.Lang.Reflect.Method ReadMethod
         {
             get { return IExecute<Java.Lang.Reflect.Method>("getReadMethod"); } set { IExecute("setReadMethod", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#getWriteMethod() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setWriteMethod(java.lang.reflect.Method) throws java.beans.IntrospectionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#getWriteMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setWriteMethod(java.lang.reflect.Method)"/>
         /// </summary>
         public Java.Lang.Reflect.Method WriteMethod
         {
             get { return IExecute<Java.Lang.Reflect.Method>("getWriteMethod"); } set { IExecute("setWriteMethod", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#isBound()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#isBound()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsBound()
         {
             return IExecute<bool>("isBound");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#isConstrained()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#isConstrained()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsConstrained()
         {
             return IExecute<bool>("isConstrained");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#createPropertyEditor(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#createPropertyEditor(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see cref="Java.Beans.PropertyEditor"/></returns>
         public Java.Beans.PropertyEditor CreatePropertyEditor(object arg0)
         {
             return IExecute<Java.Beans.PropertyEditor>("createPropertyEditor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setBound(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setBound(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetBound(bool arg0)
         {
             IExecute("setBound", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setConstrained(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setConstrained(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetConstrained(bool arg0)
         {
             IExecute("setConstrained", arg0);

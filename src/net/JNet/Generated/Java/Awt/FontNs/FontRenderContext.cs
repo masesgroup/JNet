@@ -30,15 +30,21 @@ namespace Java.Awt.FontNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#<init>(java.awt.geom.AffineTransform,boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#%3Cinit%3E(java.awt.geom.AffineTransform,boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public FontRenderContext(Java.Awt.Geom.AffineTransform arg0, bool arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#<init>(java.awt.geom.AffineTransform,java.lang.Object,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#%3Cinit%3E(java.awt.geom.AffineTransform,java.lang.Object,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
         public FontRenderContext(Java.Awt.Geom.AffineTransform arg0, object arg1, object arg2)
             : base(arg0, arg1, arg2)
         {
@@ -60,50 +66,56 @@ namespace Java.Awt.FontNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#getAntiAliasingHint() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#getAntiAliasingHint()"/> 
         /// </summary>
         public object AntiAliasingHint
         {
             get { return IExecute("getAntiAliasingHint"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#getFractionalMetricsHint() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#getFractionalMetricsHint()"/> 
         /// </summary>
         public object FractionalMetricsHint
         {
             get { return IExecute("getFractionalMetricsHint"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#getTransform() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#getTransform()"/> 
         /// </summary>
         public Java.Awt.Geom.AffineTransform Transform
         {
             get { return IExecute<Java.Awt.Geom.AffineTransform>("getTransform"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#getTransformType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#getTransformType()"/> 
         /// </summary>
         public int TransformType
         {
             get { return IExecute<int>("getTransformType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#isAntiAliased()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#isAntiAliased()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAntiAliased()
         {
             return IExecute<bool>("isAntiAliased");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#isTransformed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#isTransformed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsTransformed()
         {
             return IExecute<bool>("isTransformed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#usesFractionalMetrics()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#usesFractionalMetrics()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool UsesFractionalMetrics()
         {
             return IExecute<bool>("usesFractionalMetrics");

@@ -30,22 +30,31 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#<init>(java.awt.Component,int,boolean,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#%3Cinit%3E(java.awt.Component,int,boolean,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Component"/></param>
         public FocusEvent(Java.Awt.Component arg0, int arg1, bool arg2, Java.Awt.Component arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#<init>(java.awt.Component,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#%3Cinit%3E(java.awt.Component,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public FocusEvent(Java.Awt.Component arg0, int arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#<init>(java.awt.Component,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#%3Cinit%3E(java.awt.Component,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public FocusEvent(Java.Awt.Component arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -59,19 +68,19 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_FIRST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_FIRST"/>
         /// </summary>
         public static int FOCUS_FIRST => Clazz.GetField<int>("FOCUS_FIRST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_GAINED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_GAINED"/>
         /// </summary>
         public static int FOCUS_GAINED => Clazz.GetField<int>("FOCUS_GAINED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_LAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_LAST"/>
         /// </summary>
         public static int FOCUS_LAST => Clazz.GetField<int>("FOCUS_LAST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_LOST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_LOST"/>
         /// </summary>
         public static int FOCUS_LOST => Clazz.GetField<int>("FOCUS_LOST");
         
@@ -83,15 +92,17 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#getOppositeComponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#getOppositeComponent()"/> 
         /// </summary>
         public Java.Awt.Component OppositeComponent
         {
             get { return IExecute<Java.Awt.Component>("getOppositeComponent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#isTemporary()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#isTemporary()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsTemporary()
         {
             return IExecute<bool>("isTemporary");
@@ -113,47 +124,47 @@ namespace Java.Awt.EventNs
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#ACTIVATION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#ACTIVATION"/>
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause ACTIVATION => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("ACTIVATION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#CLEAR_GLOBAL_FOCUS_OWNER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#CLEAR_GLOBAL_FOCUS_OWNER"/>
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause CLEAR_GLOBAL_FOCUS_OWNER => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("CLEAR_GLOBAL_FOCUS_OWNER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#MOUSE_EVENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#MOUSE_EVENT"/>
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause MOUSE_EVENT => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("MOUSE_EVENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#ROLLBACK
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#ROLLBACK"/>
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause ROLLBACK => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("ROLLBACK");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL"/>
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_BACKWARD
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_BACKWARD"/>
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_BACKWARD => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL_BACKWARD");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_DOWN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_DOWN"/>
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_DOWN => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL_DOWN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_FORWARD
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_FORWARD"/>
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_FORWARD => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL_FORWARD");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_UP
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_UP"/>
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_UP => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("TRAVERSAL_UP");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#UNEXPECTED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#UNEXPECTED"/>
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause UNEXPECTED => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("UNEXPECTED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#UNKNOWN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#UNKNOWN"/>
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause UNKNOWN => Clazz.GetField<Java.Awt.EventNs.FocusEvent.Cause>("UNKNOWN");
             
@@ -161,8 +172,10 @@ namespace Java.Awt.EventNs
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Awt.EventNs.FocusEvent.Cause"/></returns>
             public static Java.Awt.EventNs.FocusEvent.Cause[] Values()
             {
                 return SExecuteArray<Java.Awt.EventNs.FocusEvent.Cause>("values");

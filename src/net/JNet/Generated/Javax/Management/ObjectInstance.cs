@@ -30,15 +30,20 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectInstance.html#<init>(java.lang.String,java.lang.String) throws javax.management.MalformedObjectNameException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectInstance.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Javax.Management.MalformedObjectNameException"/>
         public ObjectInstance(string arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectInstance.html#<init>(javax.management.ObjectName,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectInstance.html#%3Cinit%3E(javax.management.ObjectName,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public ObjectInstance(Javax.Management.ObjectName arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -47,6 +52,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.ObjectInstance"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.ObjectInstance t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -61,15 +69,17 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectInstance.html#getObjectName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectInstance.html#getObjectName()"/> 
         /// </summary>
         public Javax.Management.ObjectName ObjectName
         {
             get { return IExecute<Javax.Management.ObjectName>("getObjectName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectInstance.html#getClassName()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectInstance.html#getClassName()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string GetClassName()
         {
             return IExecute<string>("getClassName");

@@ -38,19 +38,19 @@ namespace Java.Nio.File.Attribute
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#DIRECTORY_INHERIT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#DIRECTORY_INHERIT"/>
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryFlag DIRECTORY_INHERIT => Clazz.GetField<Java.Nio.File.Attribute.AclEntryFlag>("DIRECTORY_INHERIT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#FILE_INHERIT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#FILE_INHERIT"/>
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryFlag FILE_INHERIT => Clazz.GetField<Java.Nio.File.Attribute.AclEntryFlag>("FILE_INHERIT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#INHERIT_ONLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#INHERIT_ONLY"/>
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryFlag INHERIT_ONLY => Clazz.GetField<Java.Nio.File.Attribute.AclEntryFlag>("INHERIT_ONLY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#NO_PROPAGATE_INHERIT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#NO_PROPAGATE_INHERIT"/>
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryFlag NO_PROPAGATE_INHERIT => Clazz.GetField<Java.Nio.File.Attribute.AclEntryFlag>("NO_PROPAGATE_INHERIT");
         
@@ -58,8 +58,10 @@ namespace Java.Nio.File.Attribute
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.Attribute.AclEntryFlag"/></returns>
         public static Java.Nio.File.Attribute.AclEntryFlag[] Values()
         {
             return SExecuteArray<Java.Nio.File.Attribute.AclEntryFlag>("values");

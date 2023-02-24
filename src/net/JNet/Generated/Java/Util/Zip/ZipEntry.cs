@@ -30,15 +30,17 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public ZipEntry(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#<init>(java.util.zip.ZipEntry)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#%3Cinit%3E(java.util.zip.ZipEntry)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Zip.ZipEntry"/></param>
         public ZipEntry(Java.Util.Zip.ZipEntry arg0)
             : base(arg0)
         {
@@ -47,17 +49,20 @@ namespace Java.Util.Zip
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Zip.ZipEntry"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Zip.ZipEntry t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#DEFLATED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#DEFLATED"/>
         /// </summary>
         public static int DEFLATED => Clazz.GetField<int>("DEFLATED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#STORED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#STORED"/>
         /// </summary>
         public static int STORED => Clazz.GetField<int>("STORED");
         
@@ -69,113 +74,121 @@ namespace Java.Util.Zip
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getComment() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setComment(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getComment()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setComment(java.lang.String)"/>
         /// </summary>
         public string Comment
         {
             get { return IExecute<string>("getComment"); } set { IExecute("setComment", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getCompressedSize() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setCompressedSize(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getCompressedSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setCompressedSize(long)"/>
         /// </summary>
         public long CompressedSize
         {
             get { return IExecute<long>("getCompressedSize"); } set { IExecute("setCompressedSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getCrc() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setCrc(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getCrc()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setCrc(long)"/>
         /// </summary>
         public long Crc
         {
             get { return IExecute<long>("getCrc"); } set { IExecute("setCrc", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getCreationTime() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getCreationTime()"/> 
         /// </summary>
         public Java.Nio.File.Attribute.FileTime CreationTime
         {
             get { return IExecute<Java.Nio.File.Attribute.FileTime>("getCreationTime"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getExtra() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setExtra(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getExtra()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setExtra(byte[])"/>
         /// </summary>
         public byte[] Extra
         {
             get { return IExecuteArray<byte>("getExtra"); } set { IExecute("setExtra", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getLastAccessTime() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getLastAccessTime()"/> 
         /// </summary>
         public Java.Nio.File.Attribute.FileTime LastAccessTime
         {
             get { return IExecute<Java.Nio.File.Attribute.FileTime>("getLastAccessTime"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getLastModifiedTime() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getLastModifiedTime()"/> 
         /// </summary>
         public Java.Nio.File.Attribute.FileTime LastModifiedTime
         {
             get { return IExecute<Java.Nio.File.Attribute.FileTime>("getLastModifiedTime"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getMethod() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setMethod(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setMethod(int)"/>
         /// </summary>
         public int Method
         {
             get { return IExecute<int>("getMethod"); } set { IExecute("setMethod", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getSize() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setSize(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setSize(long)"/>
         /// </summary>
         public long Size
         {
             get { return IExecute<long>("getSize"); } set { IExecute("setSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getTime() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setTime(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getTime()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setTime(long)"/>
         /// </summary>
         public long Time
         {
             get { return IExecute<long>("getTime"); } set { IExecute("setTime", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getTimeLocal() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setTimeLocal(java.time.LocalDateTime)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#getTimeLocal()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setTimeLocal(java.time.LocalDateTime)"/>
         /// </summary>
         public Java.Time.LocalDateTime TimeLocal
         {
             get { return IExecute<Java.Time.LocalDateTime>("getTimeLocal"); } set { IExecute("setTimeLocal", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#isDirectory()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#isDirectory()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDirectory()
         {
             return IExecute<bool>("isDirectory");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setCreationTime(java.nio.file.attribute.FileTime)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setCreationTime(java.nio.file.attribute.FileTime)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
+        /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
         public Java.Util.Zip.ZipEntry SetCreationTime(Java.Nio.File.Attribute.FileTime arg0)
         {
             return IExecute<Java.Util.Zip.ZipEntry>("setCreationTime", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setLastAccessTime(java.nio.file.attribute.FileTime)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setLastAccessTime(java.nio.file.attribute.FileTime)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
+        /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
         public Java.Util.Zip.ZipEntry SetLastAccessTime(Java.Nio.File.Attribute.FileTime arg0)
         {
             return IExecute<Java.Util.Zip.ZipEntry>("setLastAccessTime", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setLastModifiedTime(java.nio.file.attribute.FileTime)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#setLastModifiedTime(java.nio.file.attribute.FileTime)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
+        /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
         public Java.Util.Zip.ZipEntry SetLastModifiedTime(Java.Nio.File.Attribute.FileTime arg0)
         {
             return IExecute<Java.Util.Zip.ZipEntry>("setLastModifiedTime", arg0);

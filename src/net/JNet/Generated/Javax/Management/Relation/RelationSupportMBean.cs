@@ -33,6 +33,9 @@ namespace Javax.Management.Relation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Relation.RelationSupportMBean"/> to <see cref="Javax.Management.Relation.Relation"/>
+        /// </summary>
         public static implicit operator Javax.Management.Relation.Relation(Javax.Management.Relation.RelationSupportMBean t) => t.Cast<Javax.Management.Relation.Relation>();
         
         #endregion
@@ -47,15 +50,19 @@ namespace Javax.Management.Relation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool?"/></returns>
         public bool? IsInRelationService()
         {
             return IExecute<bool?>("isInRelationService");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool?"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetRelationServiceManagementFlag(bool? arg0)
         {
             IExecute("setRelationServiceManagementFlag", arg0);

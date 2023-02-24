@@ -42,15 +42,22 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html#nextBytes(int,boolean,byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html#nextBytes(int,boolean,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="byte"/></param>
+        /// <returns><see cref="Java.Security.DrbgParameters.NextBytes"/></returns>
         public static Java.Security.DrbgParameters.NextBytes NextBytesMethod(int arg0, bool arg1, byte[] arg2)
         {
             return SExecute<Java.Security.DrbgParameters.NextBytes>("nextBytes", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html#reseed(boolean,byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html#reseed(boolean,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <returns><see cref="Java.Security.DrbgParameters.Reseed"/></returns>
         public static Java.Security.DrbgParameters.Reseed ReseedMethod(bool arg0, byte[] arg1)
         {
             return SExecute<Java.Security.DrbgParameters.Reseed>("reseed", arg0, arg1);
@@ -76,15 +83,15 @@ namespace Java.Security
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#NONE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#NONE"/>
             /// </summary>
             public static Java.Security.DrbgParameters.Capability NONE => Clazz.GetField<Java.Security.DrbgParameters.Capability>("NONE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#PR_AND_RESEED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#PR_AND_RESEED"/>
             /// </summary>
             public static Java.Security.DrbgParameters.Capability PR_AND_RESEED => Clazz.GetField<Java.Security.DrbgParameters.Capability>("PR_AND_RESEED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#RESEED_ONLY
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#RESEED_ONLY"/>
             /// </summary>
             public static Java.Security.DrbgParameters.Capability RESEED_ONLY => Clazz.GetField<Java.Security.DrbgParameters.Capability>("RESEED_ONLY");
             
@@ -92,8 +99,10 @@ namespace Java.Security
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Security.DrbgParameters.Capability"/></returns>
             public static Java.Security.DrbgParameters.Capability[] Values()
             {
                 return SExecuteArray<Java.Security.DrbgParameters.Capability>("values");
@@ -103,15 +112,19 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsPredictionResistance()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsPredictionResistance()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool SupportsPredictionResistance()
             {
                 return IExecute<bool>("supportsPredictionResistance");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsReseeding()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsReseeding()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool SupportsReseeding()
             {
                 return IExecute<bool>("supportsReseeding");
@@ -131,6 +144,9 @@ namespace Java.Security
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Security.DrbgParameters.Instantiation"/> to <see cref="Java.Security.SecureRandomParameters"/>
+            /// </summary>
             public static implicit operator Java.Security.SecureRandomParameters(Java.Security.DrbgParameters.Instantiation t) => t.Cast<Java.Security.SecureRandomParameters>();
             
             #endregion
@@ -145,14 +161,14 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html#getPersonalizationString() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html#getPersonalizationString()"/> 
             /// </summary>
             public byte[] PersonalizationString
             {
                 get { return IExecuteArray<byte>("getPersonalizationString"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html#getStrength() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html#getStrength()"/> 
             /// </summary>
             public int Strength
             {
@@ -173,6 +189,9 @@ namespace Java.Security
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Security.DrbgParameters.NextBytes"/> to <see cref="Java.Security.SecureRandomParameters"/>
+            /// </summary>
             public static implicit operator Java.Security.SecureRandomParameters(Java.Security.DrbgParameters.NextBytes t) => t.Cast<Java.Security.SecureRandomParameters>();
             
             #endregion
@@ -187,21 +206,21 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.NextBytes.html#getAdditionalInput() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.NextBytes.html#getAdditionalInput()"/> 
             /// </summary>
             public byte[] AdditionalInput
             {
                 get { return IExecuteArray<byte>("getAdditionalInput"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.NextBytes.html#getPredictionResistance() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.NextBytes.html#getPredictionResistance()"/> 
             /// </summary>
             public bool PredictionResistance
             {
                 get { return IExecute<bool>("getPredictionResistance"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.NextBytes.html#getStrength() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.NextBytes.html#getStrength()"/> 
             /// </summary>
             public int Strength
             {
@@ -222,6 +241,9 @@ namespace Java.Security
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Security.DrbgParameters.Reseed"/> to <see cref="Java.Security.SecureRandomParameters"/>
+            /// </summary>
             public static implicit operator Java.Security.SecureRandomParameters(Java.Security.DrbgParameters.Reseed t) => t.Cast<Java.Security.SecureRandomParameters>();
             
             #endregion
@@ -236,14 +258,14 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html#getAdditionalInput() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html#getAdditionalInput()"/> 
             /// </summary>
             public byte[] AdditionalInput
             {
                 get { return IExecuteArray<byte>("getAdditionalInput"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html#getPredictionResistance() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html#getPredictionResistance()"/> 
             /// </summary>
             public bool PredictionResistance
             {

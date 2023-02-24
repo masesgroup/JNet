@@ -30,22 +30,28 @@ namespace Javax.Swing.Border
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#<init>(int,java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#%3Cinit%3E(int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
         public EtchedBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public EtchedBorder(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#<init>(java.awt.Color,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#%3Cinit%3E(java.awt.Color,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
         public EtchedBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
             : base(arg0, arg1)
         {
@@ -59,11 +65,11 @@ namespace Javax.Swing.Border
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#LOWERED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#LOWERED"/>
         /// </summary>
         public static int LOWERED => Clazz.GetField<int>("LOWERED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#RAISED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#RAISED"/>
         /// </summary>
         public static int RAISED => Clazz.GetField<int>("RAISED");
         
@@ -75,36 +81,40 @@ namespace Javax.Swing.Border
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getEtchType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getEtchType()"/> 
         /// </summary>
         public int EtchType
         {
             get { return IExecute<int>("getEtchType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getHighlightColor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getHighlightColor()"/> 
         /// </summary>
         public Java.Awt.Color HighlightColor
         {
             get { return IExecute<Java.Awt.Color>("getHighlightColor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getShadowColor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getShadowColor()"/> 
         /// </summary>
         public Java.Awt.Color ShadowColor
         {
             get { return IExecute<Java.Awt.Color>("getShadowColor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getHighlightColor(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getHighlightColor(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetHighlightColor(Java.Awt.Component arg0)
         {
             return IExecute<Java.Awt.Color>("getHighlightColor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getShadowColor(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#getShadowColor(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetShadowColor(Java.Awt.Component arg0)
         {
             return IExecute<Java.Awt.Color>("getShadowColor", arg0);

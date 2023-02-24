@@ -30,29 +30,51 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#<init>(float,float,java.awt.Color,float,float,java.awt.Color,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#%3Cinit%3E(float,float,java.awt.Color,float,float,java.awt.Color,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg4"><see langword="float"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg6"><see langword="bool"/></param>
         public GradientPaint(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5, bool arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#<init>(float,float,java.awt.Color,float,float,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#%3Cinit%3E(float,float,java.awt.Color,float,float,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg4"><see langword="float"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
         public GradientPaint(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#<init>(java.awt.geom.Point2D,java.awt.Color,java.awt.geom.Point2D,java.awt.Color,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#%3Cinit%3E(java.awt.geom.Point2D,java.awt.Color,java.awt.geom.Point2D,java.awt.Color,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg4"><see langword="bool"/></param>
         public GradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#<init>(java.awt.geom.Point2D,java.awt.Color,java.awt.geom.Point2D,java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#%3Cinit%3E(java.awt.geom.Point2D,java.awt.Color,java.awt.geom.Point2D,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
         public GradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -61,6 +83,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.GradientPaint"/> to <see cref="Java.Awt.Paint"/>
+        /// </summary>
         public static implicit operator Java.Awt.Paint(Java.Awt.GradientPaint t) => t.Cast<Java.Awt.Paint>();
         
         #endregion
@@ -75,50 +100,58 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getColor1() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getColor1()"/> 
         /// </summary>
         public Java.Awt.Color Color1
         {
             get { return IExecute<Java.Awt.Color>("getColor1"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getColor2() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getColor2()"/> 
         /// </summary>
         public Java.Awt.Color Color2
         {
             get { return IExecute<Java.Awt.Color>("getColor2"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getPoint1() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getPoint1()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D Point1
         {
             get { return IExecute<Java.Awt.Geom.Point2D>("getPoint1"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getPoint2() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getPoint2()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D Point2
         {
             get { return IExecute<Java.Awt.Geom.Point2D>("getPoint2"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getTransparency() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getTransparency()"/> 
         /// </summary>
         public int Transparency
         {
             get { return IExecute<int>("getTransparency"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#isCyclic()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#isCyclic()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCyclic()
         {
             return IExecute<bool>("isCyclic");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#createContext(java.awt.image.ColorModel,java.awt.Rectangle,java.awt.geom.Rectangle2D,java.awt.geom.AffineTransform,java.awt.RenderingHints)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#createContext(java.awt.image.ColorModel,java.awt.Rectangle,java.awt.geom.Rectangle2D,java.awt.geom.AffineTransform,java.awt.RenderingHints)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.RenderingHints"/></param>
+        /// <returns><see cref="Java.Awt.PaintContext"/></returns>
         public Java.Awt.PaintContext CreateContext(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.Rectangle arg1, Java.Awt.Geom.Rectangle2D arg2, Java.Awt.Geom.AffineTransform arg3, Java.Awt.RenderingHints arg4)
         {
             return IExecute<Java.Awt.PaintContext>("createContext", arg0, arg1, arg2, arg3, arg4);

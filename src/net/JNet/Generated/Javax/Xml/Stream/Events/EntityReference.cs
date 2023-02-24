@@ -33,6 +33,9 @@ namespace Javax.Xml.Stream.Events
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Stream.Events.EntityReference"/> to <see cref="Javax.Xml.Stream.Events.XMLEvent"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Stream.Events.XMLEvent(Javax.Xml.Stream.Events.EntityReference t) => t.Cast<Javax.Xml.Stream.Events.XMLEvent>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Javax.Xml.Stream.Events
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityReference.html#getDeclaration() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityReference.html#getDeclaration()"/> 
         /// </summary>
         public Javax.Xml.Stream.Events.EntityDeclaration Declaration
         {
             get { return IExecute<Javax.Xml.Stream.Events.EntityDeclaration>("getDeclaration"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityReference.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityReference.html#getName()"/> 
         /// </summary>
         public string Name
         {

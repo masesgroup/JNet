@@ -30,15 +30,17 @@ namespace Java.Math
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public MathContext(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public MathContext(string arg0)
             : base(arg0)
         {
@@ -47,25 +49,28 @@ namespace Java.Math
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Math.MathContext"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Math.MathContext t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#DECIMAL128
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#DECIMAL128"/>
         /// </summary>
         public static Java.Math.MathContext DECIMAL128 => Clazz.GetField<Java.Math.MathContext>("DECIMAL128");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#DECIMAL32
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#DECIMAL32"/>
         /// </summary>
         public static Java.Math.MathContext DECIMAL32 => Clazz.GetField<Java.Math.MathContext>("DECIMAL32");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#DECIMAL64
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#DECIMAL64"/>
         /// </summary>
         public static Java.Math.MathContext DECIMAL64 => Clazz.GetField<Java.Math.MathContext>("DECIMAL64");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#UNLIMITED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#UNLIMITED"/>
         /// </summary>
         public static Java.Math.MathContext UNLIMITED => Clazz.GetField<Java.Math.MathContext>("UNLIMITED");
         
@@ -77,7 +82,7 @@ namespace Java.Math
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#getPrecision() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html#getPrecision()"/> 
         /// </summary>
         public int Precision
         {

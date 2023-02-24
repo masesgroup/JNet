@@ -30,8 +30,10 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#<init>(javax.swing.text.Element,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#%3Cinit%3E(javax.swing.text.Element,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public AsyncBoxView(Javax.Swing.Text.Element arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -53,42 +55,42 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getBottomInset() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#setBottomInset(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getBottomInset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#setBottomInset(float)"/>
         /// </summary>
         public float BottomInset
         {
             get { return IExecute<float>("getBottomInset"); } set { IExecute("setBottomInset", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getLeftInset() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#setLeftInset(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getLeftInset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#setLeftInset(float)"/>
         /// </summary>
         public float LeftInset
         {
             get { return IExecute<float>("getLeftInset"); } set { IExecute("setLeftInset", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getMajorAxis() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getMajorAxis()"/> 
         /// </summary>
         public int MajorAxis
         {
             get { return IExecute<int>("getMajorAxis"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getMinorAxis() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getMinorAxis()"/> 
         /// </summary>
         public int MinorAxis
         {
             get { return IExecute<int>("getMinorAxis"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getRightInset() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#setRightInset(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getRightInset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#setRightInset(float)"/>
         /// </summary>
         public float RightInset
         {
             get { return IExecute<float>("getRightInset"); } set { IExecute("setRightInset", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getTopInset() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#setTopInset(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#getTopInset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#setTopInset(float)"/>
         /// </summary>
         public float TopInset
         {
@@ -103,8 +105,9 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#<init>(javax.swing.text.AsyncBoxView)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#%3Cinit%3E(javax.swing.text.AsyncBoxView)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.AsyncBoxView"/></param>
             public ChildLocator(Javax.Swing.Text.AsyncBoxView arg0)
                 : base(arg0)
             {
@@ -126,29 +129,38 @@ namespace Javax.Swing.Text
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#getViewIndexAtPoint(float,float,java.awt.Shape)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#getViewIndexAtPoint(float,float,java.awt.Shape)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="float"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
+            /// <returns><see langword="int"/></returns>
             public int GetViewIndexAtPoint(float arg0, float arg1, Java.Awt.Shape arg2)
             {
                 return IExecute<int>("getViewIndexAtPoint", arg0, arg1, arg2);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#getChildAllocation(int,java.awt.Shape)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#getChildAllocation(int,java.awt.Shape)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
+            /// <returns><see cref="Java.Awt.Shape"/></returns>
             public Java.Awt.Shape GetChildAllocation(int arg0, Java.Awt.Shape arg1)
             {
                 return IExecute<Java.Awt.Shape>("getChildAllocation", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#childChanged(javax.swing.text.AsyncBoxView$ChildState)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#childChanged(javax.swing.text.AsyncBoxView$ChildState)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.AsyncBoxView.ChildState"/></param>
             public void ChildChanged(Javax.Swing.Text.AsyncBoxView.ChildState arg0)
             {
                 IExecute("childChanged", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#paintChildren(java.awt.Graphics)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#paintChildren(java.awt.Graphics)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
             public void PaintChildren(Java.Awt.Graphics arg0)
             {
                 IExecute("paintChildren", arg0);
@@ -165,8 +177,10 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#<init>(javax.swing.text.AsyncBoxView,javax.swing.text.View)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#%3Cinit%3E(javax.swing.text.AsyncBoxView,javax.swing.text.View)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.AsyncBoxView"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.Text.View"/></param>
             public ChildState(Javax.Swing.Text.AsyncBoxView arg0, Javax.Swing.Text.View arg1)
                 : base(arg0, arg1)
             {
@@ -175,6 +189,9 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Text.AsyncBoxView.ChildState"/> to <see cref="Java.Lang.Runnable"/>
+            /// </summary>
             public static implicit operator Java.Lang.Runnable(Javax.Swing.Text.AsyncBoxView.ChildState t) => t.Cast<Java.Lang.Runnable>();
             
             #endregion
@@ -189,56 +206,60 @@ namespace Javax.Swing.Text
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getChildView() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getChildView()"/> 
             /// </summary>
             public Javax.Swing.Text.View ChildView
             {
                 get { return IExecute<Javax.Swing.Text.View>("getChildView"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getMajorOffset() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#setMajorOffset(float)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getMajorOffset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#setMajorOffset(float)"/>
             /// </summary>
             public float MajorOffset
             {
                 get { return IExecute<float>("getMajorOffset"); } set { IExecute("setMajorOffset", value); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getMajorSpan() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getMajorSpan()"/> 
             /// </summary>
             public float MajorSpan
             {
                 get { return IExecute<float>("getMajorSpan"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getMinorOffset() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getMinorOffset()"/> 
             /// </summary>
             public float MinorOffset
             {
                 get { return IExecute<float>("getMinorOffset"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getMinorSpan() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getMinorSpan()"/> 
             /// </summary>
             public float MinorSpan
             {
                 get { return IExecute<float>("getMinorSpan"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#isLayoutValid()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#isLayoutValid()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool IsLayoutValid()
             {
                 return IExecute<bool>("isLayoutValid");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#preferenceChanged(boolean,boolean)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#preferenceChanged(boolean,boolean)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="bool"/></param>
+            /// <param name="arg1"><see langword="bool"/></param>
             public void PreferenceChanged(bool arg0, bool arg1)
             {
                 IExecute("preferenceChanged", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#run()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#run()"/>
             /// </summary>
             public void Run()
             {

@@ -33,18 +33,24 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.JTextComponent"/> to <see cref="Javax.Swing.Scrollable"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Scrollable(Javax.Swing.Text.JTextComponent t) => t.Cast<Javax.Swing.Scrollable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.JTextComponent"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.Text.JTextComponent t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#DEFAULT_KEYMAP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#DEFAULT_KEYMAP"/>
         /// </summary>
         public static string DEFAULT_KEYMAP => Clazz.GetField<string>("DEFAULT_KEYMAP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#FOCUS_ACCELERATOR_KEY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#FOCUS_ACCELERATOR_KEY"/>
         /// </summary>
         public static string FOCUS_ACCELERATOR_KEY => Clazz.GetField<string>("FOCUS_ACCELERATOR_KEY");
         
@@ -52,29 +58,39 @@ namespace Javax.Swing.Text
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#addKeymap(java.lang.String,javax.swing.text.Keymap)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#addKeymap(java.lang.String,javax.swing.text.Keymap)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Keymap"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Keymap"/></returns>
         public static Javax.Swing.Text.Keymap AddKeymap(string arg0, Javax.Swing.Text.Keymap arg1)
         {
             return SExecute<Javax.Swing.Text.Keymap>("addKeymap", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getKeymap(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getKeymap(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Keymap"/></returns>
         public static Javax.Swing.Text.Keymap GetKeymap(string arg0)
         {
             return SExecute<Javax.Swing.Text.Keymap>("getKeymap", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#removeKeymap(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#removeKeymap(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Keymap"/></returns>
         public static Javax.Swing.Text.Keymap RemoveKeymap(string arg0)
         {
             return SExecute<Javax.Swing.Text.Keymap>("removeKeymap", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#loadKeymap(javax.swing.text.Keymap,javax.swing.text.JTextComponent$KeyBinding[],javax.swing.Action[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#loadKeymap(javax.swing.text.Keymap,javax.swing.text.JTextComponent$KeyBinding[],javax.swing.Action[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Keymap"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.JTextComponent.KeyBinding"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Action"/></param>
         public static void LoadKeymap(Javax.Swing.Text.Keymap arg0, Javax.Swing.Text.JTextComponent.KeyBinding[] arg1, Javax.Swing.Action[] arg2)
         {
             SExecute("loadKeymap", arg0, arg1, arg2);
@@ -84,323 +100,375 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getActions() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getActions()"/> 
         /// </summary>
         public Javax.Swing.Action[] Actions
         {
             get { return IExecuteArray<Javax.Swing.Action>("getActions"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getCaret() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setCaret(javax.swing.text.Caret)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getCaret()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setCaret(javax.swing.text.Caret)"/>
         /// </summary>
         public Javax.Swing.Text.Caret Caret
         {
             get { return IExecute<Javax.Swing.Text.Caret>("getCaret"); } set { IExecute("setCaret", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getCaretColor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setCaretColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getCaretColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setCaretColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color CaretColor
         {
             get { return IExecute<Java.Awt.Color>("getCaretColor"); } set { IExecute("setCaretColor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getCaretListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getCaretListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.CaretListener[] CaretListeners
         {
             get { return IExecuteArray<Javax.Swing.Event.CaretListener>("getCaretListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getCaretPosition() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setCaretPosition(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getCaretPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setCaretPosition(int)"/>
         /// </summary>
         public int CaretPosition
         {
             get { return IExecute<int>("getCaretPosition"); } set { IExecute("setCaretPosition", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDisabledTextColor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setDisabledTextColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDisabledTextColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setDisabledTextColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color DisabledTextColor
         {
             get { return IExecute<Java.Awt.Color>("getDisabledTextColor"); } set { IExecute("setDisabledTextColor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDocument() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setDocument(javax.swing.text.Document)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDocument()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setDocument(javax.swing.text.Document)"/>
         /// </summary>
         public Javax.Swing.Text.Document Document
         {
             get { return IExecute<Javax.Swing.Text.Document>("getDocument"); } set { IExecute("setDocument", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDragEnabled() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setDragEnabled(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDragEnabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setDragEnabled(boolean)"/>
         /// </summary>
         public bool DragEnabled
         {
             get { return IExecute<bool>("getDragEnabled"); } set { IExecute("setDragEnabled", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getFocusAccelerator() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setFocusAccelerator(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getFocusAccelerator()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setFocusAccelerator(char)"/>
         /// </summary>
         public char FocusAccelerator
         {
             get { return IExecute<char>("getFocusAccelerator"); } set { IExecute("setFocusAccelerator", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getHighlighter() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setHighlighter(javax.swing.text.Highlighter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getHighlighter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setHighlighter(javax.swing.text.Highlighter)"/>
         /// </summary>
         public Javax.Swing.Text.Highlighter Highlighter
         {
             get { return IExecute<Javax.Swing.Text.Highlighter>("getHighlighter"); } set { IExecute("setHighlighter", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getKeymap() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setKeymap(javax.swing.text.Keymap)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getKeymap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setKeymap(javax.swing.text.Keymap)"/>
         /// </summary>
         public Javax.Swing.Text.Keymap Keymap
         {
             get { return IExecute<Javax.Swing.Text.Keymap>("getKeymap"); } set { IExecute("setKeymap", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getMargin() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setMargin(java.awt.Insets)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getMargin()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setMargin(java.awt.Insets)"/>
         /// </summary>
         public Java.Awt.Insets Margin
         {
             get { return IExecute<Java.Awt.Insets>("getMargin"); } set { IExecute("setMargin", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getNavigationFilter() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setNavigationFilter(javax.swing.text.NavigationFilter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getNavigationFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setNavigationFilter(javax.swing.text.NavigationFilter)"/>
         /// </summary>
         public Javax.Swing.Text.NavigationFilter NavigationFilter
         {
             get { return IExecute<Javax.Swing.Text.NavigationFilter>("getNavigationFilter"); } set { IExecute("setNavigationFilter", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getPreferredScrollableViewportSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getPreferredScrollableViewportSize()"/> 
         /// </summary>
         public Java.Awt.Dimension PreferredScrollableViewportSize
         {
             get { return IExecute<Java.Awt.Dimension>("getPreferredScrollableViewportSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getScrollableTracksViewportHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getScrollableTracksViewportHeight()"/> 
         /// </summary>
         public bool ScrollableTracksViewportHeight
         {
             get { return IExecute<bool>("getScrollableTracksViewportHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getScrollableTracksViewportWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getScrollableTracksViewportWidth()"/> 
         /// </summary>
         public bool ScrollableTracksViewportWidth
         {
             get { return IExecute<bool>("getScrollableTracksViewportWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectedText() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectedText()"/> 
         /// </summary>
         public string SelectedText
         {
             get { return IExecute<string>("getSelectedText"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectedTextColor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setSelectedTextColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectedTextColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setSelectedTextColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color SelectedTextColor
         {
             get { return IExecute<Java.Awt.Color>("getSelectedTextColor"); } set { IExecute("setSelectedTextColor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectionColor() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setSelectionColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectionColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setSelectionColor(java.awt.Color)"/>
         /// </summary>
         public Java.Awt.Color SelectionColor
         {
             get { return IExecute<Java.Awt.Color>("getSelectionColor"); } set { IExecute("setSelectionColor", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectionEnd() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setSelectionEnd(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectionEnd()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setSelectionEnd(int)"/>
         /// </summary>
         public int SelectionEnd
         {
             get { return IExecute<int>("getSelectionEnd"); } set { IExecute("setSelectionEnd", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectionStart() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setSelectionStart(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getSelectionStart()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setSelectionStart(int)"/>
         /// </summary>
         public int SelectionStart
         {
             get { return IExecute<int>("getSelectionStart"); } set { IExecute("setSelectionStart", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getText() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setText(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setText(java.lang.String)"/>
         /// </summary>
         public string Text
         {
             get { return IExecute<string>("getText"); } set { IExecute("setText", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#isEditable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#isEditable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEditable()
         {
             return IExecute<bool>("isEditable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#print() throws java.awt.print.PrinterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#print()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print()
         {
             return IExecute<bool>("print");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#print(java.text.MessageFormat,java.text.MessageFormat,boolean,javax.print.PrintService,javax.print.attribute.PrintRequestAttributeSet,boolean) throws java.awt.print.PrinterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#print(java.text.MessageFormat,java.text.MessageFormat,boolean,javax.print.PrintService,javax.print.attribute.PrintRequestAttributeSet,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.MessageFormat"/></param>
+        /// <param name="arg1"><see cref="Java.Text.MessageFormat"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="Javax.Print.PrintService"/></param>
+        /// <param name="arg4"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <param name="arg5"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print(Java.Text.MessageFormat arg0, Java.Text.MessageFormat arg1, bool arg2, Javax.Print.PrintService arg3, Javax.Print.Attribute.PrintRequestAttributeSet arg4, bool arg5)
         {
             return IExecute<bool>("print", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#print(java.text.MessageFormat,java.text.MessageFormat) throws java.awt.print.PrinterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#print(java.text.MessageFormat,java.text.MessageFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.MessageFormat"/></param>
+        /// <param name="arg1"><see cref="Java.Text.MessageFormat"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print(Java.Text.MessageFormat arg0, Java.Text.MessageFormat arg1)
         {
             return IExecute<bool>("print", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDropLocation()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getDropLocation()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Text.JTextComponent.DropLocation"/></returns>
         public Javax.Swing.Text.JTextComponent.DropLocation GetDropLocation()
         {
             return IExecute<Javax.Swing.Text.JTextComponent.DropLocation>("getDropLocation");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableBlockIncrement", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#viewToModel2D(java.awt.geom.Point2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#viewToModel2D(java.awt.geom.Point2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <returns><see langword="int"/></returns>
         public int ViewToModel2D(Java.Awt.Geom.Point2D arg0)
         {
             return IExecute<int>("viewToModel2D", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#modelToView2D(int) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#modelToView2D(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Java.Awt.Geom.Rectangle2D ModelToView2D(int arg0)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("modelToView2D", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getPrintable(java.text.MessageFormat,java.text.MessageFormat)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getPrintable(java.text.MessageFormat,java.text.MessageFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.MessageFormat"/></param>
+        /// <param name="arg1"><see cref="Java.Text.MessageFormat"/></param>
+        /// <returns><see cref="Java.Awt.Print.Printable"/></returns>
         public Java.Awt.Print.Printable GetPrintable(Java.Text.MessageFormat arg0, Java.Text.MessageFormat arg1)
         {
             return IExecute<Java.Awt.Print.Printable>("getPrintable", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getText(int,int) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getText(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public string GetText(int arg0, int arg1)
         {
             return IExecute<string>("getText", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#addCaretListener(javax.swing.event.CaretListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#addCaretListener(javax.swing.event.CaretListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.CaretListener"/></param>
         public void AddCaretListener(Javax.Swing.Event.CaretListener arg0)
         {
             IExecute("addCaretListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#copy()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#copy()"/>
         /// </summary>
         public void Copy()
         {
             IExecute("copy");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#cut()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#cut()"/>
         /// </summary>
         public void Cut()
         {
             IExecute("cut");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#moveCaretPosition(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#moveCaretPosition(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void MoveCaretPosition(int arg0)
         {
             IExecute("moveCaretPosition", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#paste()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#paste()"/>
         /// </summary>
         public void Paste()
         {
             IExecute("paste");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#read(java.io.Reader,java.lang.Object) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#read(java.io.Reader,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Read(Java.Io.Reader arg0, object arg1)
         {
             IExecute("read", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#removeCaretListener(javax.swing.event.CaretListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#removeCaretListener(javax.swing.event.CaretListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.CaretListener"/></param>
         public void RemoveCaretListener(Javax.Swing.Event.CaretListener arg0)
         {
             IExecute("removeCaretListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#replaceSelection(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#replaceSelection(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void ReplaceSelection(string arg0)
         {
             IExecute("replaceSelection", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#select(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#select(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Select(int arg0, int arg1)
         {
             IExecute("select", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#selectAll()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#selectAll()"/>
         /// </summary>
         public void SelectAll()
         {
             IExecute("selectAll");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setEditable(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setEditable(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetEditable(bool arg0)
         {
             IExecute("setEditable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setUI(javax.swing.plaf.TextUI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setUI(javax.swing.plaf.TextUI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.TextUI"/></param>
         public void SetUI(Javax.Swing.Plaf.TextUI arg0)
         {
             IExecute("setUI", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#write(java.io.Writer) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#write(java.io.Writer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Write(Java.Io.Writer arg0)
         {
             IExecute("write", arg0);
@@ -414,8 +482,9 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#<init>(javax.swing.text.JTextComponent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#%3Cinit%3E(javax.swing.text.JTextComponent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
             public AccessibleJTextComponent(Javax.Swing.Text.JTextComponent arg0)
                 : base(arg0)
             {
@@ -424,11 +493,29 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Text.JTextComponent.AccessibleJTextComponent"/> to <see cref="Javax.Accessibility.AccessibleText"/>
+            /// </summary>
             public static implicit operator Javax.Accessibility.AccessibleText(Javax.Swing.Text.JTextComponent.AccessibleJTextComponent t) => t.Cast<Javax.Accessibility.AccessibleText>();
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Text.JTextComponent.AccessibleJTextComponent"/> to <see cref="Javax.Swing.Event.CaretListener"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Event.CaretListener(Javax.Swing.Text.JTextComponent.AccessibleJTextComponent t) => t.Cast<Javax.Swing.Event.CaretListener>();
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Text.JTextComponent.AccessibleJTextComponent"/> to <see cref="Javax.Swing.Event.DocumentListener"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Event.DocumentListener(Javax.Swing.Text.JTextComponent.AccessibleJTextComponent t) => t.Cast<Javax.Swing.Event.DocumentListener>();
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Text.JTextComponent.AccessibleJTextComponent"/> to <see cref="Javax.Accessibility.AccessibleAction"/>
+            /// </summary>
             public static implicit operator Javax.Accessibility.AccessibleAction(Javax.Swing.Text.JTextComponent.AccessibleJTextComponent t) => t.Cast<Javax.Accessibility.AccessibleAction>();
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Text.JTextComponent.AccessibleJTextComponent"/> to <see cref="Javax.Accessibility.AccessibleEditableText"/>
+            /// </summary>
             public static implicit operator Javax.Accessibility.AccessibleEditableText(Javax.Swing.Text.JTextComponent.AccessibleJTextComponent t) => t.Cast<Javax.Accessibility.AccessibleEditableText>();
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Text.JTextComponent.AccessibleJTextComponent"/> to <see cref="Javax.Accessibility.AccessibleExtendedText"/>
+            /// </summary>
             public static implicit operator Javax.Accessibility.AccessibleExtendedText(Javax.Swing.Text.JTextComponent.AccessibleJTextComponent t) => t.Cast<Javax.Accessibility.AccessibleExtendedText>();
             
             #endregion
@@ -443,218 +530,272 @@ namespace Javax.Swing.Text
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getAccessibleActionCount() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getAccessibleActionCount()"/> 
             /// </summary>
             public int AccessibleActionCount
             {
                 get { return IExecute<int>("getAccessibleActionCount"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getCaretPosition() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getCaretPosition()"/> 
             /// </summary>
             public int CaretPosition
             {
                 get { return IExecute<int>("getCaretPosition"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getCharCount() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getCharCount()"/> 
             /// </summary>
             public int CharCount
             {
                 get { return IExecute<int>("getCharCount"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getSelectedText() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getSelectedText()"/> 
             /// </summary>
             public string SelectedText
             {
                 get { return IExecute<string>("getSelectedText"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getSelectionEnd() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getSelectionEnd()"/> 
             /// </summary>
             public int SelectionEnd
             {
                 get { return IExecute<int>("getSelectionEnd"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getSelectionStart() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getSelectionStart()"/> 
             /// </summary>
             public int SelectionStart
             {
                 get { return IExecute<int>("getSelectionStart"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#doAccessibleAction(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#doAccessibleAction(int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <returns><see langword="bool"/></returns>
             public bool DoAccessibleAction(int arg0)
             {
                 return IExecute<bool>("doAccessibleAction", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getIndexAtPoint(java.awt.Point)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getIndexAtPoint(java.awt.Point)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
+            /// <returns><see langword="int"/></returns>
             public int GetIndexAtPoint(Java.Awt.Point arg0)
             {
                 return IExecute<int>("getIndexAtPoint", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getCharacterBounds(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getCharacterBounds(int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <returns><see cref="Java.Awt.Rectangle"/></returns>
             public Java.Awt.Rectangle GetCharacterBounds(int arg0)
             {
                 return IExecute<Java.Awt.Rectangle>("getCharacterBounds", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextBounds(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextBounds(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <returns><see cref="Java.Awt.Rectangle"/></returns>
             public Java.Awt.Rectangle GetTextBounds(int arg0, int arg1)
             {
                 return IExecute<Java.Awt.Rectangle>("getTextBounds", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getAccessibleActionDescription(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getAccessibleActionDescription(int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <returns><see langword="string"/></returns>
             public string GetAccessibleActionDescription(int arg0)
             {
                 return IExecute<string>("getAccessibleActionDescription", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getAfterIndex(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getAfterIndex(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <returns><see langword="string"/></returns>
             public string GetAfterIndex(int arg0, int arg1)
             {
                 return IExecute<string>("getAfterIndex", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getAtIndex(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getAtIndex(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <returns><see langword="string"/></returns>
             public string GetAtIndex(int arg0, int arg1)
             {
                 return IExecute<string>("getAtIndex", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getBeforeIndex(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getBeforeIndex(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <returns><see langword="string"/></returns>
             public string GetBeforeIndex(int arg0, int arg1)
             {
                 return IExecute<string>("getBeforeIndex", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextRange(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextRange(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <returns><see langword="string"/></returns>
             public string GetTextRange(int arg0, int arg1)
             {
                 return IExecute<string>("getTextRange", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextSequenceAfter(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextSequenceAfter(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <returns><see cref="Javax.Accessibility.AccessibleTextSequence"/></returns>
             public Javax.Accessibility.AccessibleTextSequence GetTextSequenceAfter(int arg0, int arg1)
             {
                 return IExecute<Javax.Accessibility.AccessibleTextSequence>("getTextSequenceAfter", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextSequenceAt(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextSequenceAt(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <returns><see cref="Javax.Accessibility.AccessibleTextSequence"/></returns>
             public Javax.Accessibility.AccessibleTextSequence GetTextSequenceAt(int arg0, int arg1)
             {
                 return IExecute<Javax.Accessibility.AccessibleTextSequence>("getTextSequenceAt", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextSequenceBefore(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextSequenceBefore(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <returns><see cref="Javax.Accessibility.AccessibleTextSequence"/></returns>
             public Javax.Accessibility.AccessibleTextSequence GetTextSequenceBefore(int arg0, int arg1)
             {
                 return IExecute<Javax.Accessibility.AccessibleTextSequence>("getTextSequenceBefore", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getCharacterAttribute(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getCharacterAttribute(int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
             public Javax.Swing.Text.AttributeSet GetCharacterAttribute(int arg0)
             {
                 return IExecute<Javax.Swing.Text.AttributeSet>("getCharacterAttribute", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#caretUpdate(javax.swing.event.CaretEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#caretUpdate(javax.swing.event.CaretEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.CaretEvent"/></param>
             public void CaretUpdate(Javax.Swing.Event.CaretEvent arg0)
             {
                 IExecute("caretUpdate", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#changedUpdate(javax.swing.event.DocumentEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#changedUpdate(javax.swing.event.DocumentEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
             public void ChangedUpdate(Javax.Swing.Event.DocumentEvent arg0)
             {
                 IExecute("changedUpdate", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#cut(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#cut(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
             public void Cut(int arg0, int arg1)
             {
                 IExecute("cut", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#delete(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#delete(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
             public void Delete(int arg0, int arg1)
             {
                 IExecute("delete", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#insertTextAtIndex(int,java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#insertTextAtIndex(int,java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="string"/></param>
             public void InsertTextAtIndex(int arg0, string arg1)
             {
                 IExecute("insertTextAtIndex", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#insertUpdate(javax.swing.event.DocumentEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#insertUpdate(javax.swing.event.DocumentEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
             public void InsertUpdate(Javax.Swing.Event.DocumentEvent arg0)
             {
                 IExecute("insertUpdate", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#paste(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#paste(int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
             public void Paste(int arg0)
             {
                 IExecute("paste", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#removeUpdate(javax.swing.event.DocumentEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#removeUpdate(javax.swing.event.DocumentEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
             public void RemoveUpdate(Javax.Swing.Event.DocumentEvent arg0)
             {
                 IExecute("removeUpdate", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#replaceText(int,int,java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#replaceText(int,int,java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see langword="string"/></param>
             public void ReplaceText(int arg0, int arg1, string arg2)
             {
                 IExecute("replaceText", arg0, arg1, arg2);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#selectText(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#selectText(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
             public void SelectText(int arg0, int arg1)
             {
                 IExecute("selectText", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#setAttributes(int,int,javax.swing.text.AttributeSet)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#setAttributes(int,int,javax.swing.text.AttributeSet)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
             public void SetAttributes(int arg0, int arg1, Javax.Swing.Text.AttributeSet arg2)
             {
                 IExecute("setAttributes", arg0, arg1, arg2);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#setTextContents(java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#setTextContents(java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
             public void SetTextContents(string arg0)
             {
                 IExecute("setTextContents", arg0);
@@ -687,14 +828,14 @@ namespace Javax.Swing.Text
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.DropLocation.html#getBias() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.DropLocation.html#getBias()"/> 
             /// </summary>
             public Javax.Swing.Text.Position.Bias Bias
             {
                 get { return IExecute<Javax.Swing.Text.Position.Bias>("getBias"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.DropLocation.html#getIndex() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.DropLocation.html#getIndex()"/> 
             /// </summary>
             public int Index
             {
@@ -712,8 +853,10 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html#<init>(javax.swing.KeyStroke,java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html#%3Cinit%3E(javax.swing.KeyStroke,java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+            /// <param name="arg1"><see langword="string"/></param>
             public KeyBinding(Javax.Swing.KeyStroke arg0, string arg1)
                 : base(arg0, arg1)
             {
@@ -727,11 +870,11 @@ namespace Javax.Swing.Text
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html#actionName
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html#actionName"/>
             /// </summary>
             public string actionName => Instance.GetField<string>("actionName");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html#key
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html#key"/>
             /// </summary>
             public Javax.Swing.KeyStroke key => Instance.GetField<Javax.Swing.KeyStroke>("key");
             

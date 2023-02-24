@@ -46,7 +46,7 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicRadioButtonUI.html#getDefaultIcon() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicRadioButtonUI.html#getDefaultIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon DefaultIcon
         {

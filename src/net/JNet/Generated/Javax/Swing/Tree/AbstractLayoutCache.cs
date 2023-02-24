@@ -33,6 +33,9 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Tree.AbstractLayoutCache"/> to <see cref="Javax.Swing.Tree.RowMapper"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Tree.RowMapper(Javax.Swing.Tree.AbstractLayoutCache t) => t.Cast<Javax.Swing.Tree.RowMapper>();
         
         #endregion
@@ -47,176 +50,209 @@ namespace Javax.Swing.Tree
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getModel() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setModel(javax.swing.tree.TreeModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setModel(javax.swing.tree.TreeModel)"/>
         /// </summary>
         public Javax.Swing.Tree.TreeModel Model
         {
             get { return IExecute<Javax.Swing.Tree.TreeModel>("getModel"); } set { IExecute("setModel", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPreferredHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPreferredHeight()"/> 
         /// </summary>
         public int PreferredHeight
         {
             get { return IExecute<int>("getPreferredHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getRowCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getRowCount()"/> 
         /// </summary>
         public int RowCount
         {
             get { return IExecute<int>("getRowCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getRowHeight() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setRowHeight(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getRowHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setRowHeight(int)"/>
         /// </summary>
         public int RowHeight
         {
             get { return IExecute<int>("getRowHeight"); } set { IExecute("setRowHeight", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getSelectionModel() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setSelectionModel(javax.swing.tree.TreeSelectionModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getSelectionModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setSelectionModel(javax.swing.tree.TreeSelectionModel)"/>
         /// </summary>
         public Javax.Swing.Tree.TreeSelectionModel SelectionModel
         {
             get { return IExecute<Javax.Swing.Tree.TreeSelectionModel>("getSelectionModel"); } set { IExecute("setSelectionModel", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getExpandedState(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getExpandedState(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool GetExpandedState(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<bool>("getExpandedState", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#isExpanded(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#isExpanded(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsExpanded(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<bool>("isExpanded", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getRowForPath(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getRowForPath(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRowForPath(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<int>("getRowForPath", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getVisibleChildCount(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getVisibleChildCount(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetVisibleChildCount(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<int>("getVisibleChildCount", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getBounds(javax.swing.tree.TreePath,java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getBounds(javax.swing.tree.TreePath,java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetBounds(Javax.Swing.Tree.TreePath arg0, Java.Awt.Rectangle arg1)
         {
             return IExecute<Java.Awt.Rectangle>("getBounds", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPathClosestTo(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPathClosestTo(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetPathClosestTo(int arg0, int arg1)
         {
             return IExecute<Javax.Swing.Tree.TreePath>("getPathClosestTo", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPathForRow(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPathForRow(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetPathForRow(int arg0)
         {
             return IExecute<Javax.Swing.Tree.TreePath>("getPathForRow", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#invalidatePathBounds(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#invalidatePathBounds(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public void InvalidatePathBounds(Javax.Swing.Tree.TreePath arg0)
         {
             IExecute("invalidatePathBounds", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#invalidateSizes()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#invalidateSizes()"/>
         /// </summary>
         public void InvalidateSizes()
         {
             IExecute("invalidateSizes");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setExpandedState(javax.swing.tree.TreePath,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setExpandedState(javax.swing.tree.TreePath,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public void SetExpandedState(Javax.Swing.Tree.TreePath arg0, bool arg1)
         {
             IExecute("setExpandedState", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#treeNodesChanged(javax.swing.event.TreeModelEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#treeNodesChanged(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
         public void TreeNodesChanged(Javax.Swing.Event.TreeModelEvent arg0)
         {
             IExecute("treeNodesChanged", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#treeNodesInserted(javax.swing.event.TreeModelEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#treeNodesInserted(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
         public void TreeNodesInserted(Javax.Swing.Event.TreeModelEvent arg0)
         {
             IExecute("treeNodesInserted", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#treeNodesRemoved(javax.swing.event.TreeModelEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#treeNodesRemoved(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
         public void TreeNodesRemoved(Javax.Swing.Event.TreeModelEvent arg0)
         {
             IExecute("treeNodesRemoved", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#treeStructureChanged(javax.swing.event.TreeModelEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#treeStructureChanged(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
         public void TreeStructureChanged(Javax.Swing.Event.TreeModelEvent arg0)
         {
             IExecute("treeStructureChanged", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#isRootVisible()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#isRootVisible()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsRootVisible()
         {
             return IExecute<bool>("isRootVisible");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPreferredWidth(java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPreferredWidth(java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetPreferredWidth(Java.Awt.Rectangle arg0)
         {
             return IExecute<int>("getPreferredWidth", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getRowsForPaths(javax.swing.tree.TreePath[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getRowsForPaths(javax.swing.tree.TreePath[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see cref="int"/></returns>
         public int[] GetRowsForPaths(Javax.Swing.Tree.TreePath[] arg0)
         {
             return IExecuteArray<int>("getRowsForPaths", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getNodeDimensions()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getNodeDimensions()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Tree.AbstractLayoutCache.NodeDimensions"/></returns>
         public Javax.Swing.Tree.AbstractLayoutCache.NodeDimensions GetNodeDimensions()
         {
             return IExecute<Javax.Swing.Tree.AbstractLayoutCache.NodeDimensions>("getNodeDimensions");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setNodeDimensions(javax.swing.tree.AbstractLayoutCache$NodeDimensions)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setNodeDimensions(javax.swing.tree.AbstractLayoutCache$NodeDimensions)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.AbstractLayoutCache.NodeDimensions"/></param>
         public void SetNodeDimensions(Javax.Swing.Tree.AbstractLayoutCache.NodeDimensions arg0)
         {
             IExecute("setNodeDimensions", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setRootVisible(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setRootVisible(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetRootVisible(bool arg0)
         {
             IExecute("setRootVisible", arg0);
@@ -246,8 +282,14 @@ namespace Javax.Swing.Tree
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.NodeDimensions.html#getNodeDimensions(java.lang.Object,int,int,boolean,java.awt.Rectangle)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.NodeDimensions.html#getNodeDimensions(java.lang.Object,int,int,boolean,java.awt.Rectangle)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg3"><see langword="bool"/></param>
+            /// <param name="arg4"><see cref="Java.Awt.Rectangle"/></param>
+            /// <returns><see cref="Java.Awt.Rectangle"/></returns>
             public Java.Awt.Rectangle GetNodeDimensions(object arg0, int arg1, int arg2, bool arg3, Java.Awt.Rectangle arg4)
             {
                 return IExecute<Java.Awt.Rectangle>("getNodeDimensions", arg0, arg1, arg2, arg3, arg4);

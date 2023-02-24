@@ -30,57 +30,75 @@ namespace Java.Math
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public BigInteger(byte[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
         public BigInteger(byte[] arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(int,byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(int,byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public BigInteger(int arg0, byte[] arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(int,byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(int,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
         public BigInteger(int arg0, byte[] arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(int,int,java.util.Random)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(int,int,java.util.Random)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Random"/></param>
         public BigInteger(int arg0, int arg1, Java.Util.Random arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(int,java.util.Random)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(int,java.util.Random)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Random"/></param>
         public BigInteger(int arg0, Java.Util.Random arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public BigInteger(string arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public BigInteger(string arg0)
             : base(arg0)
         {
@@ -94,19 +112,19 @@ namespace Java.Math
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#ONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#ONE"/>
         /// </summary>
         public static Java.Math.BigInteger ONE => Clazz.GetField<Java.Math.BigInteger>("ONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#TEN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#TEN"/>
         /// </summary>
         public static Java.Math.BigInteger TEN => Clazz.GetField<Java.Math.BigInteger>("TEN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#TWO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#TWO"/>
         /// </summary>
         public static Java.Math.BigInteger TWO => Clazz.GetField<Java.Math.BigInteger>("TWO");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#ZERO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#ZERO"/>
         /// </summary>
         public static Java.Math.BigInteger ZERO => Clazz.GetField<Java.Math.BigInteger>("ZERO");
         
@@ -114,15 +132,20 @@ namespace Java.Math
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#probablePrime(int,java.util.Random)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#probablePrime(int,java.util.Random)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Random"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public static Java.Math.BigInteger ProbablePrime(int arg0, Java.Util.Random arg1)
         {
             return SExecute<Java.Math.BigInteger>("probablePrime", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#valueOf(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#valueOf(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public static Java.Math.BigInteger ValueOf(long arg0)
         {
             return SExecute<Java.Math.BigInteger>("valueOf", arg0);
@@ -132,295 +155,378 @@ namespace Java.Math
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#getLowestSetBit() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#getLowestSetBit()"/> 
         /// </summary>
         public int LowestSetBit
         {
             get { return IExecute<int>("getLowestSetBit"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#isProbablePrime(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#isProbablePrime(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsProbablePrime(int arg0)
         {
             return IExecute<bool>("isProbablePrime", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#testBit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#testBit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool TestBit(int arg0)
         {
             return IExecute<bool>("testBit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#byteValueExact()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#byteValueExact()"/>
         /// </summary>
+        
+        /// <returns><see langword="byte"/></returns>
         public byte ByteValueExact()
         {
             return IExecute<byte>("byteValueExact");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#toByteArray()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#toByteArray()"/>
         /// </summary>
+        
+        /// <returns><see cref="byte"/></returns>
         public byte[] ToByteArray()
         {
             return IExecuteArray<byte>("toByteArray");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#bitCount()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#bitCount()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int BitCount()
         {
             return IExecute<int>("bitCount");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#bitLength()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#bitLength()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int BitLength()
         {
             return IExecute<int>("bitLength");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#compareTo(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#compareTo(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Java.Math.BigInteger arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#intValueExact()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#intValueExact()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int IntValueExact()
         {
             return IExecute<int>("intValueExact");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#signum()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#signum()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Signum()
         {
             return IExecute<int>("signum");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#toString(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#toString(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public string ToString(int arg0)
         {
             return IExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#abs()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#abs()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Abs()
         {
             return IExecute<Java.Math.BigInteger>("abs");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#add(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#add(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Add(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#and(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#and(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger And(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("and", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#andNot(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#andNot(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger AndNot(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("andNot", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#clearBit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#clearBit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ClearBit(int arg0)
         {
             return IExecute<Java.Math.BigInteger>("clearBit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#divide(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#divide(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Divide(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("divide", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#flipBit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#flipBit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger FlipBit(int arg0)
         {
             return IExecute<Java.Math.BigInteger>("flipBit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#gcd(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#gcd(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Gcd(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("gcd", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#max(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#max(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Max(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("max", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#min(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#min(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Min(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("min", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#mod(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#mod(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Mod(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("mod", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#modInverse(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#modInverse(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ModInverse(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("modInverse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#modPow(java.math.BigInteger,java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#modPow(java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ModPow(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1)
         {
             return IExecute<Java.Math.BigInteger>("modPow", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#multiply(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#multiply(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Multiply(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("multiply", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#negate()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#negate()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Negate()
         {
             return IExecute<Java.Math.BigInteger>("negate");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#nextProbablePrime()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#nextProbablePrime()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger NextProbablePrime()
         {
             return IExecute<Java.Math.BigInteger>("nextProbablePrime");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#not()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#not()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Not()
         {
             return IExecute<Java.Math.BigInteger>("not");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#or(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#or(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Or(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("or", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#pow(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#pow(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Pow(int arg0)
         {
             return IExecute<Java.Math.BigInteger>("pow", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#remainder(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#remainder(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Remainder(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("remainder", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#setBit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#setBit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger SetBit(int arg0)
         {
             return IExecute<Java.Math.BigInteger>("setBit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#shiftLeft(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#shiftLeft(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ShiftLeft(int arg0)
         {
             return IExecute<Java.Math.BigInteger>("shiftLeft", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#shiftRight(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#shiftRight(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ShiftRight(int arg0)
         {
             return IExecute<Java.Math.BigInteger>("shiftRight", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#sqrt()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#sqrt()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Sqrt()
         {
             return IExecute<Java.Math.BigInteger>("sqrt");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#subtract(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#subtract(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Subtract(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("subtract", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#xor(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#xor(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Xor(Java.Math.BigInteger arg0)
         {
             return IExecute<Java.Math.BigInteger>("xor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#divideAndRemainder(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#divideAndRemainder(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger[] DivideAndRemainder(Java.Math.BigInteger arg0)
         {
             return IExecuteArray<Java.Math.BigInteger>("divideAndRemainder", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#sqrtAndRemainder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#sqrtAndRemainder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger[] SqrtAndRemainder()
         {
             return IExecuteArray<Java.Math.BigInteger>("sqrtAndRemainder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#longValueExact()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#longValueExact()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long LongValueExact()
         {
             return IExecute<long>("longValueExact");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#shortValueExact()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#shortValueExact()"/>
         /// </summary>
+        
+        /// <returns><see langword="short"/></returns>
         public short ShortValueExact()
         {
             return IExecute<short>("shortValueExact");

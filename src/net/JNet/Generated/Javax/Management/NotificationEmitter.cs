@@ -33,6 +33,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.NotificationEmitter"/> to <see cref="Javax.Management.NotificationBroadcaster"/>
+        /// </summary>
         public static implicit operator Javax.Management.NotificationBroadcaster(Javax.Management.NotificationEmitter t) => t.Cast<Javax.Management.NotificationBroadcaster>();
         
         #endregion
@@ -47,8 +50,12 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationEmitter.html#removeNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object) throws javax.management.ListenerNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationEmitter.html#removeNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
             IExecute("removeNotificationListener", arg0, arg1, arg2);

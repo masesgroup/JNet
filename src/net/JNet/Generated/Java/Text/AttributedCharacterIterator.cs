@@ -33,6 +33,9 @@ namespace Java.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Text.AttributedCharacterIterator"/> to <see cref="Java.Text.CharacterIterator"/>
+        /// </summary>
         public static implicit operator Java.Text.CharacterIterator(Java.Text.AttributedCharacterIterator t) => t.Cast<Java.Text.CharacterIterator>();
         
         #endregion
@@ -47,36 +50,42 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit()"/> 
         /// </summary>
         public int RunLimit
         {
             get { return IExecute<int>("getRunLimit"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart()"/> 
         /// </summary>
         public int RunStart
         {
             get { return IExecute<int>("getRunStart"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.text.AttributedCharacterIterator$Attribute)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.text.AttributedCharacterIterator$Attribute)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRunLimit(Java.Text.AttributedCharacterIterator.Attribute arg0)
         {
             return IExecute<int>("getRunLimit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.text.AttributedCharacterIterator$Attribute)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.text.AttributedCharacterIterator$Attribute)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRunStart(Java.Text.AttributedCharacterIterator.Attribute arg0)
         {
             return IExecute<int>("getRunStart", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAttribute(java.text.AttributedCharacterIterator$Attribute)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAttribute(java.text.AttributedCharacterIterator$Attribute)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAttribute(Java.Text.AttributedCharacterIterator.Attribute arg0)
         {
             return IExecute("getAttribute", arg0);
@@ -93,21 +102,24 @@ namespace Java.Text
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Text.AttributedCharacterIterator.Attribute"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Text.AttributedCharacterIterator.Attribute t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#INPUT_METHOD_SEGMENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#INPUT_METHOD_SEGMENT"/>
             /// </summary>
             public static Java.Text.AttributedCharacterIterator.Attribute INPUT_METHOD_SEGMENT => Clazz.GetField<Java.Text.AttributedCharacterIterator.Attribute>("INPUT_METHOD_SEGMENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#LANGUAGE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#LANGUAGE"/>
             /// </summary>
             public static Java.Text.AttributedCharacterIterator.Attribute LANGUAGE => Clazz.GetField<Java.Text.AttributedCharacterIterator.Attribute>("LANGUAGE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#READING
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#READING"/>
             /// </summary>
             public static Java.Text.AttributedCharacterIterator.Attribute READING => Clazz.GetField<Java.Text.AttributedCharacterIterator.Attribute>("READING");
             

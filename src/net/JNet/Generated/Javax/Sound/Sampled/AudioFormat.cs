@@ -30,15 +30,27 @@ namespace Javax.Sound.Sampled
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#<init>(float,int,int,boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#%3Cinit%3E(float,int,int,boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg4"><see langword="bool"/></param>
         public AudioFormat(float arg0, int arg1, int arg2, bool arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#<init>(javax.sound.sampled.AudioFormat$Encoding,float,int,int,int,float,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#%3Cinit%3E(javax.sound.sampled.AudioFormat$Encoding,float,int,int,int,float,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="float"/></param>
+        /// <param name="arg6"><see langword="bool"/></param>
         public AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -60,64 +72,72 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getChannels() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getChannels()"/> 
         /// </summary>
         public int Channels
         {
             get { return IExecute<int>("getChannels"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getFrameRate() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getFrameRate()"/> 
         /// </summary>
         public float FrameRate
         {
             get { return IExecute<float>("getFrameRate"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getFrameSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getFrameSize()"/> 
         /// </summary>
         public int FrameSize
         {
             get { return IExecute<int>("getFrameSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getSampleRate() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getSampleRate()"/> 
         /// </summary>
         public float SampleRate
         {
             get { return IExecute<float>("getSampleRate"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getSampleSizeInBits() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getSampleSizeInBits()"/> 
         /// </summary>
         public int SampleSizeInBits
         {
             get { return IExecute<int>("getSampleSizeInBits"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#isBigEndian()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#isBigEndian()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsBigEndian()
         {
             return IExecute<bool>("isBigEndian");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#matches(javax.sound.sampled.AudioFormat)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#matches(javax.sound.sampled.AudioFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Matches(Javax.Sound.Sampled.AudioFormat arg0)
         {
             return IExecute<bool>("matches", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getProperty(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getProperty(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetProperty(string arg0)
         {
             return IExecute("getProperty", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getEncoding()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getEncoding()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></returns>
         public Javax.Sound.Sampled.AudioFormat.Encoding GetEncoding()
         {
             return IExecute<Javax.Sound.Sampled.AudioFormat.Encoding>("getEncoding");
@@ -131,8 +151,9 @@ namespace Javax.Sound.Sampled
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#<init>(java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
             public Encoding(string arg0)
                 : base(arg0)
             {
@@ -146,23 +167,23 @@ namespace Javax.Sound.Sampled
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#ALAW
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#ALAW"/>
             /// </summary>
             public static Javax.Sound.Sampled.AudioFormat.Encoding ALAW => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("ALAW");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_FLOAT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_FLOAT"/>
             /// </summary>
             public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_FLOAT => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("PCM_FLOAT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_SIGNED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_SIGNED"/>
             /// </summary>
             public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_SIGNED => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("PCM_SIGNED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_UNSIGNED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_UNSIGNED"/>
             /// </summary>
             public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_UNSIGNED => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("PCM_UNSIGNED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#ULAW
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#ULAW"/>
             /// </summary>
             public static Javax.Sound.Sampled.AudioFormat.Encoding ULAW => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("ULAW");
             

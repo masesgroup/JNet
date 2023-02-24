@@ -30,43 +30,61 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.io.File,int,java.nio.charset.Charset) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File,int,java.nio.charset.Charset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public ZipFile(Java.Io.File arg0, int arg1, Java.Nio.Charset.Charset arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.io.File,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public ZipFile(Java.Io.File arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.io.File,java.nio.charset.Charset) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public ZipFile(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.io.File) throws java.util.zip.ZipException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <exception cref="Java.Util.Zip.ZipException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public ZipFile(Java.Io.File arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.lang.String,java.nio.charset.Charset) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public ZipFile(string arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public ZipFile(string arg0)
             : base(arg0)
         {
@@ -75,17 +93,20 @@ namespace Java.Util.Zip
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Zip.ZipFile"/> to <see cref="Java.Io.Closeable"/>
+        /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Util.Zip.ZipFile t) => t.Cast<Java.Io.Closeable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#OPEN_DELETE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#OPEN_DELETE"/>
         /// </summary>
         public static int OPEN_DELETE => Clazz.GetField<int>("OPEN_DELETE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#OPEN_READ
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#OPEN_READ"/>
         /// </summary>
         public static int OPEN_READ => Clazz.GetField<int>("OPEN_READ");
         
@@ -97,43 +118,52 @@ namespace Java.Util.Zip
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getComment() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getComment()"/> 
         /// </summary>
         public string Comment
         {
             get { return IExecute<string>("getComment"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#size()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getInputStream(java.util.zip.ZipEntry) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getInputStream(java.util.zip.ZipEntry)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Zip.ZipEntry"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Io.InputStream GetInputStream(Java.Util.Zip.ZipEntry arg0)
         {
             return IExecute<Java.Io.InputStream>("getInputStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getEntry(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getEntry(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
         public Java.Util.Zip.ZipEntry GetEntry(string arg0)
         {
             return IExecute<Java.Util.Zip.ZipEntry>("getEntry", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#close() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");

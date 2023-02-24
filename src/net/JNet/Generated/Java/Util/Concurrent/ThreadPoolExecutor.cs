@@ -46,112 +46,123 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getActiveCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getActiveCount()"/> 
         /// </summary>
         public int ActiveCount
         {
             get { return IExecute<int>("getActiveCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getCompletedTaskCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getCompletedTaskCount()"/> 
         /// </summary>
         public long CompletedTaskCount
         {
             get { return IExecute<long>("getCompletedTaskCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getCorePoolSize() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setCorePoolSize(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getCorePoolSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setCorePoolSize(int)"/>
         /// </summary>
         public int CorePoolSize
         {
             get { return IExecute<int>("getCorePoolSize"); } set { IExecute("setCorePoolSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getLargestPoolSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getLargestPoolSize()"/> 
         /// </summary>
         public int LargestPoolSize
         {
             get { return IExecute<int>("getLargestPoolSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getMaximumPoolSize() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setMaximumPoolSize(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getMaximumPoolSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setMaximumPoolSize(int)"/>
         /// </summary>
         public int MaximumPoolSize
         {
             get { return IExecute<int>("getMaximumPoolSize"); } set { IExecute("setMaximumPoolSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getPoolSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getPoolSize()"/> 
         /// </summary>
         public int PoolSize
         {
             get { return IExecute<int>("getPoolSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getRejectedExecutionHandler() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getRejectedExecutionHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
         public Java.Util.Concurrent.RejectedExecutionHandler RejectedExecutionHandler
         {
             get { return IExecute<Java.Util.Concurrent.RejectedExecutionHandler>("getRejectedExecutionHandler"); } set { IExecute("setRejectedExecutionHandler", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getTaskCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getTaskCount()"/> 
         /// </summary>
         public long TaskCount
         {
             get { return IExecute<long>("getTaskCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getThreadFactory() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setThreadFactory(java.util.concurrent.ThreadFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getThreadFactory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setThreadFactory(java.util.concurrent.ThreadFactory)"/>
         /// </summary>
         public Java.Util.Concurrent.ThreadFactory ThreadFactory
         {
             get { return IExecute<Java.Util.Concurrent.ThreadFactory>("getThreadFactory"); } set { IExecute("setThreadFactory", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowsCoreThreadTimeOut()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowsCoreThreadTimeOut()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool AllowsCoreThreadTimeOut()
         {
             return IExecute<bool>("allowsCoreThreadTimeOut");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#isTerminating()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#isTerminating()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsTerminating()
         {
             return IExecute<bool>("isTerminating");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartCoreThread()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartCoreThread()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool PrestartCoreThread()
         {
             return IExecute<bool>("prestartCoreThread");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#remove(java.lang.Runnable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#remove(java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Remove(Java.Lang.Runnable arg0)
         {
             return IExecute<bool>("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartAllCoreThreads()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#prestartAllCoreThreads()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int PrestartAllCoreThreads()
         {
             return IExecute<int>("prestartAllCoreThreads");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowCoreThreadTimeOut(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowCoreThreadTimeOut(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void AllowCoreThreadTimeOut(bool arg0)
         {
             IExecute("allowCoreThreadTimeOut", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#purge()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#purge()"/>
         /// </summary>
         public void Purge()
         {
@@ -169,6 +180,9 @@ namespace Java.Util.Concurrent
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Util.Concurrent.ThreadPoolExecutor.AbortPolicy"/> to <see cref="Java.Util.Concurrent.RejectedExecutionHandler"/>
+            /// </summary>
             public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.AbortPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
             
             #endregion
@@ -183,8 +197,10 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.AbortPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.AbortPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
             public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
             {
                 IExecute("rejectedExecution", arg0, arg1);
@@ -204,6 +220,9 @@ namespace Java.Util.Concurrent
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Util.Concurrent.ThreadPoolExecutor.CallerRunsPolicy"/> to <see cref="Java.Util.Concurrent.RejectedExecutionHandler"/>
+            /// </summary>
             public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.CallerRunsPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
             
             #endregion
@@ -218,8 +237,10 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
             public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
             {
                 IExecute("rejectedExecution", arg0, arg1);
@@ -239,6 +260,9 @@ namespace Java.Util.Concurrent
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Util.Concurrent.ThreadPoolExecutor.DiscardOldestPolicy"/> to <see cref="Java.Util.Concurrent.RejectedExecutionHandler"/>
+            /// </summary>
             public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.DiscardOldestPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
             
             #endregion
@@ -253,8 +277,10 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardOldestPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardOldestPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
             public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
             {
                 IExecute("rejectedExecution", arg0, arg1);
@@ -274,6 +300,9 @@ namespace Java.Util.Concurrent
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Util.Concurrent.ThreadPoolExecutor.DiscardPolicy"/> to <see cref="Java.Util.Concurrent.RejectedExecutionHandler"/>
+            /// </summary>
             public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.DiscardPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
             
             #endregion
@@ -288,8 +317,10 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
             public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
             {
                 IExecute("rejectedExecution", arg0, arg1);

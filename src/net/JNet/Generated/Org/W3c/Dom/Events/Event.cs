@@ -38,15 +38,15 @@ namespace Org.W3c.Dom.Events
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#AT_TARGET
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#AT_TARGET"/>
         /// </summary>
         public static short AT_TARGET => Clazz.GetField<short>("AT_TARGET");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#BUBBLING_PHASE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#BUBBLING_PHASE"/>
         /// </summary>
         public static short BUBBLING_PHASE => Clazz.GetField<short>("BUBBLING_PHASE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#CAPTURING_PHASE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#CAPTURING_PHASE"/>
         /// </summary>
         public static short CAPTURING_PHASE => Clazz.GetField<short>("CAPTURING_PHASE");
         
@@ -58,70 +58,73 @@ namespace Org.W3c.Dom.Events
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getBubbles() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getBubbles()"/> 
         /// </summary>
         public bool Bubbles
         {
             get { return IExecute<bool>("getBubbles"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getCancelable() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getCancelable()"/> 
         /// </summary>
         public bool Cancelable
         {
             get { return IExecute<bool>("getCancelable"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getCurrentTarget() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getCurrentTarget()"/> 
         /// </summary>
         public Org.W3c.Dom.Events.EventTarget CurrentTarget
         {
             get { return IExecute<Org.W3c.Dom.Events.EventTarget>("getCurrentTarget"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getEventPhase() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getEventPhase()"/> 
         /// </summary>
         public short EventPhase
         {
             get { return IExecute<short>("getEventPhase"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getTarget() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getTarget()"/> 
         /// </summary>
         public Org.W3c.Dom.Events.EventTarget Target
         {
             get { return IExecute<Org.W3c.Dom.Events.EventTarget>("getTarget"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getTimeStamp() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getTimeStamp()"/> 
         /// </summary>
         public long TimeStamp
         {
             get { return IExecute<long>("getTimeStamp"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#initEvent(java.lang.String,boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#initEvent(java.lang.String,boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public void InitEvent(string arg0, bool arg1, bool arg2)
         {
             IExecute("initEvent", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#preventDefault()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#preventDefault()"/>
         /// </summary>
         public void PreventDefault()
         {
             IExecute("preventDefault");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#stopPropagation()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#stopPropagation()"/>
         /// </summary>
         public void StopPropagation()
         {

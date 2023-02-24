@@ -33,129 +33,132 @@ namespace Java.Awt.ColorNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ColorNs.ColorSpace"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.ColorNs.ColorSpace t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_CIEXYZ
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_CIEXYZ"/>
         /// </summary>
         public static int CS_CIEXYZ => Clazz.GetField<int>("CS_CIEXYZ");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_GRAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_GRAY"/>
         /// </summary>
         public static int CS_GRAY => Clazz.GetField<int>("CS_GRAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_LINEAR_RGB
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_LINEAR_RGB"/>
         /// </summary>
         public static int CS_LINEAR_RGB => Clazz.GetField<int>("CS_LINEAR_RGB");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_PYCC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_PYCC"/>
         /// </summary>
         public static int CS_PYCC => Clazz.GetField<int>("CS_PYCC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_sRGB
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#CS_sRGB"/>
         /// </summary>
         public static int CS_sRGB => Clazz.GetField<int>("CS_sRGB");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_2CLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_2CLR"/>
         /// </summary>
         public static int TYPE_2CLR => Clazz.GetField<int>("TYPE_2CLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_3CLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_3CLR"/>
         /// </summary>
         public static int TYPE_3CLR => Clazz.GetField<int>("TYPE_3CLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_4CLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_4CLR"/>
         /// </summary>
         public static int TYPE_4CLR => Clazz.GetField<int>("TYPE_4CLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_5CLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_5CLR"/>
         /// </summary>
         public static int TYPE_5CLR => Clazz.GetField<int>("TYPE_5CLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_6CLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_6CLR"/>
         /// </summary>
         public static int TYPE_6CLR => Clazz.GetField<int>("TYPE_6CLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_7CLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_7CLR"/>
         /// </summary>
         public static int TYPE_7CLR => Clazz.GetField<int>("TYPE_7CLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_8CLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_8CLR"/>
         /// </summary>
         public static int TYPE_8CLR => Clazz.GetField<int>("TYPE_8CLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_9CLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_9CLR"/>
         /// </summary>
         public static int TYPE_9CLR => Clazz.GetField<int>("TYPE_9CLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_ACLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_ACLR"/>
         /// </summary>
         public static int TYPE_ACLR => Clazz.GetField<int>("TYPE_ACLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_BCLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_BCLR"/>
         /// </summary>
         public static int TYPE_BCLR => Clazz.GetField<int>("TYPE_BCLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_CCLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_CCLR"/>
         /// </summary>
         public static int TYPE_CCLR => Clazz.GetField<int>("TYPE_CCLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_CMY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_CMY"/>
         /// </summary>
         public static int TYPE_CMY => Clazz.GetField<int>("TYPE_CMY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_CMYK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_CMYK"/>
         /// </summary>
         public static int TYPE_CMYK => Clazz.GetField<int>("TYPE_CMYK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_DCLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_DCLR"/>
         /// </summary>
         public static int TYPE_DCLR => Clazz.GetField<int>("TYPE_DCLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_ECLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_ECLR"/>
         /// </summary>
         public static int TYPE_ECLR => Clazz.GetField<int>("TYPE_ECLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_FCLR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_FCLR"/>
         /// </summary>
         public static int TYPE_FCLR => Clazz.GetField<int>("TYPE_FCLR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_GRAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_GRAY"/>
         /// </summary>
         public static int TYPE_GRAY => Clazz.GetField<int>("TYPE_GRAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_HLS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_HLS"/>
         /// </summary>
         public static int TYPE_HLS => Clazz.GetField<int>("TYPE_HLS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_HSV
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_HSV"/>
         /// </summary>
         public static int TYPE_HSV => Clazz.GetField<int>("TYPE_HSV");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_Lab
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_Lab"/>
         /// </summary>
         public static int TYPE_Lab => Clazz.GetField<int>("TYPE_Lab");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_Luv
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_Luv"/>
         /// </summary>
         public static int TYPE_Luv => Clazz.GetField<int>("TYPE_Luv");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_RGB
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_RGB"/>
         /// </summary>
         public static int TYPE_RGB => Clazz.GetField<int>("TYPE_RGB");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_XYZ
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_XYZ"/>
         /// </summary>
         public static int TYPE_XYZ => Clazz.GetField<int>("TYPE_XYZ");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_YCbCr
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_YCbCr"/>
         /// </summary>
         public static int TYPE_YCbCr => Clazz.GetField<int>("TYPE_YCbCr");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_Yxy
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#TYPE_Yxy"/>
         /// </summary>
         public static int TYPE_Yxy => Clazz.GetField<int>("TYPE_Yxy");
         
@@ -163,8 +166,10 @@ namespace Java.Awt.ColorNs
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getInstance(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getInstance(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ColorNs.ColorSpace"/></returns>
         public static Java.Awt.ColorNs.ColorSpace GetInstance(int arg0)
         {
             return SExecute<Java.Awt.ColorNs.ColorSpace>("getInstance", arg0);
@@ -174,71 +179,87 @@ namespace Java.Awt.ColorNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getNumComponents() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getNumComponents()"/> 
         /// </summary>
         public int NumComponents
         {
             get { return IExecute<int>("getNumComponents"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getType()"/> 
         /// </summary>
         public int Type
         {
             get { return IExecute<int>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#fromCIEXYZ(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#fromCIEXYZ(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] FromCIEXYZ(float[] arg0)
         {
             return IExecuteArray<float>("fromCIEXYZ", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#fromRGB(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#fromRGB(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] FromRGB(float[] arg0)
         {
             return IExecuteArray<float>("fromRGB", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#toCIEXYZ(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#toCIEXYZ(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] ToCIEXYZ(float[] arg0)
         {
             return IExecuteArray<float>("toCIEXYZ", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#toRGB(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#toRGB(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] ToRGB(float[] arg0)
         {
             return IExecuteArray<float>("toRGB", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#isCS_sRGB()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#isCS_sRGB()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCS_sRGB()
         {
             return IExecute<bool>("isCS_sRGB");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getMaxValue(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getMaxValue(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="float"/></returns>
         public float GetMaxValue(int arg0)
         {
             return IExecute<float>("getMaxValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getMinValue(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getMinValue(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="float"/></returns>
         public float GetMinValue(int arg0)
         {
             return IExecute<float>("getMinValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getName(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getName(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetName(int arg0)
         {
             return IExecute<string>("getName", arg0);

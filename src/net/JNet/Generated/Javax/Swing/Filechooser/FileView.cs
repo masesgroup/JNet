@@ -46,36 +46,46 @@ namespace Javax.Swing.Filechooser
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#isTraversable(java.io.File)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#isTraversable(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see langword="bool?"/></returns>
         public bool? IsTraversable(Java.Io.File arg0)
         {
             return IExecute<bool?>("isTraversable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getDescription(java.io.File)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getDescription(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetDescription(Java.Io.File arg0)
         {
             return IExecute<string>("getDescription", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getName(java.io.File)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getName(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetName(Java.Io.File arg0)
         {
             return IExecute<string>("getName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getTypeDescription(java.io.File)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getTypeDescription(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetTypeDescription(Java.Io.File arg0)
         {
             return IExecute<string>("getTypeDescription", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getIcon(java.io.File)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getIcon(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetIcon(Java.Io.File arg0)
         {
             return IExecute<Javax.Swing.Icon>("getIcon", arg0);

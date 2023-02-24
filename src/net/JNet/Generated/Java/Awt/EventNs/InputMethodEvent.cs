@@ -30,22 +30,39 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#<init>(java.awt.Component,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#%3Cinit%3E(java.awt.Component,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
         public InputMethodEvent(Java.Awt.Component arg0, int arg1, Java.Awt.FontNs.TextHitInfo arg2, Java.Awt.FontNs.TextHitInfo arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#<init>(java.awt.Component,int,java.text.AttributedCharacterIterator,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#%3Cinit%3E(java.awt.Component,int,java.text.AttributedCharacterIterator,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Text.AttributedCharacterIterator"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
         public InputMethodEvent(Java.Awt.Component arg0, int arg1, Java.Text.AttributedCharacterIterator arg2, int arg3, Java.Awt.FontNs.TextHitInfo arg4, Java.Awt.FontNs.TextHitInfo arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#<init>(java.awt.Component,int,long,java.text.AttributedCharacterIterator,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#%3Cinit%3E(java.awt.Component,int,long,java.text.AttributedCharacterIterator,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg3"><see cref="Java.Text.AttributedCharacterIterator"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg6"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
         public InputMethodEvent(Java.Awt.Component arg0, int arg1, long arg2, Java.Text.AttributedCharacterIterator arg3, int arg4, Java.Awt.FontNs.TextHitInfo arg5, Java.Awt.FontNs.TextHitInfo arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -59,19 +76,19 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#CARET_POSITION_CHANGED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#CARET_POSITION_CHANGED"/>
         /// </summary>
         public static int CARET_POSITION_CHANGED => Clazz.GetField<int>("CARET_POSITION_CHANGED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_FIRST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_FIRST"/>
         /// </summary>
         public static int INPUT_METHOD_FIRST => Clazz.GetField<int>("INPUT_METHOD_FIRST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_LAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_LAST"/>
         /// </summary>
         public static int INPUT_METHOD_LAST => Clazz.GetField<int>("INPUT_METHOD_LAST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_TEXT_CHANGED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_TEXT_CHANGED"/>
         /// </summary>
         public static int INPUT_METHOD_TEXT_CHANGED => Clazz.GetField<int>("INPUT_METHOD_TEXT_CHANGED");
         
@@ -83,49 +100,51 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getCaret() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getCaret()"/> 
         /// </summary>
         public Java.Awt.FontNs.TextHitInfo Caret
         {
             get { return IExecute<Java.Awt.FontNs.TextHitInfo>("getCaret"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getCommittedCharacterCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getCommittedCharacterCount()"/> 
         /// </summary>
         public int CommittedCharacterCount
         {
             get { return IExecute<int>("getCommittedCharacterCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getText() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getText()"/> 
         /// </summary>
         public Java.Text.AttributedCharacterIterator Text
         {
             get { return IExecute<Java.Text.AttributedCharacterIterator>("getText"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getVisiblePosition() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getVisiblePosition()"/> 
         /// </summary>
         public Java.Awt.FontNs.TextHitInfo VisiblePosition
         {
             get { return IExecute<Java.Awt.FontNs.TextHitInfo>("getVisiblePosition"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getWhen() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#getWhen()"/> 
         /// </summary>
         public long When
         {
             get { return IExecute<long>("getWhen"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#isConsumed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#isConsumed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsConsumed()
         {
             return IExecute<bool>("isConsumed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#consume()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#consume()"/>
         /// </summary>
         public void Consume()
         {

@@ -30,22 +30,31 @@ namespace Javax.Naming.Ldap
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#<init>(java.lang.String,boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public SortControl(string arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#<init>(java.lang.String[],boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#%3Cinit%3E(java.lang.String[],boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public SortControl(string[] arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#<init>(javax.naming.ldap.SortKey[],boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#%3Cinit%3E(javax.naming.ldap.SortKey[],boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Ldap.SortKey"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public SortControl(Javax.Naming.Ldap.SortKey[] arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -59,7 +68,7 @@ namespace Javax.Naming.Ldap
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#OID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#OID"/>
         /// </summary>
         public static string OID => Clazz.GetField<string>("OID");
         

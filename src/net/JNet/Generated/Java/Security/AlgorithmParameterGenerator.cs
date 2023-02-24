@@ -42,15 +42,23 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#getInstance(java.lang.String,java.lang.String) throws java.security.NoSuchAlgorithmException,java.security.NoSuchProviderException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.AlgorithmParameterGenerator"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.AlgorithmParameterGenerator GetInstance(string arg0, string arg1)
         {
             return SExecute<Java.Security.AlgorithmParameterGenerator>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#getInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.AlgorithmParameterGenerator"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.AlgorithmParameterGenerator GetInstance(string arg0)
         {
             return SExecute<Java.Security.AlgorithmParameterGenerator>("getInstance", arg0);
@@ -60,43 +68,53 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#generateParameters()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#generateParameters()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Security.AlgorithmParameters"/></returns>
         public Java.Security.AlgorithmParameters GenerateParameters()
         {
             return IExecute<Java.Security.AlgorithmParameters>("generateParameters");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#init(int,java.security.SecureRandom)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#init(int,java.security.SecureRandom)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
         public void Init(int arg0, Java.Security.SecureRandom arg1)
         {
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#init(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#init(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Init(int arg0)
         {
             IExecute("init", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#init(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#init(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
+        /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(Java.Security.Spec.AlgorithmParameterSpec arg0, Java.Security.SecureRandom arg1)
         {
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#init(java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameterGenerator.html#init(java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(Java.Security.Spec.AlgorithmParameterSpec arg0)
         {
             IExecute("init", arg0);

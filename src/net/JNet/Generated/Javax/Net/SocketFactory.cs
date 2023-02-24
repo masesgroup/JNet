@@ -42,7 +42,7 @@ namespace Javax.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#getDefault() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#getDefault()"/> 
         /// </summary>
         public static Javax.Net.SocketFactory Default
         {
@@ -53,36 +53,61 @@ namespace Javax.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket(java.lang.String,int,java.net.InetAddress,int) throws java.io.IOException,java.net.UnknownHostException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket(java.lang.String,int,java.net.InetAddress,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Net.UnknownHostException"/>
         public Java.Net.Socket CreateSocket(string arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket(java.lang.String,int) throws java.io.IOException,java.net.UnknownHostException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Net.UnknownHostException"/>
         public Java.Net.Socket CreateSocket(string arg0, int arg1)
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,int,java.net.InetAddress,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,int,java.net.InetAddress,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(Java.Net.InetAddress arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(Java.Net.InetAddress arg0, int arg1)
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket()
         {
             return IExecute<Java.Net.Socket>("createSocket");

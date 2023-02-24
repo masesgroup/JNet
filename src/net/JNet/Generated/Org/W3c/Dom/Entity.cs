@@ -33,6 +33,9 @@ namespace Org.W3c.Dom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Entity"/> to <see cref="Org.W3c.Dom.Node"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Node(Org.W3c.Dom.Entity t) => t.Cast<Org.W3c.Dom.Node>();
         
         #endregion
@@ -47,42 +50,42 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getInputEncoding() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getInputEncoding()"/> 
         /// </summary>
         public string InputEncoding
         {
             get { return IExecute<string>("getInputEncoding"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getNotationName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getNotationName()"/> 
         /// </summary>
         public string NotationName
         {
             get { return IExecute<string>("getNotationName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getPublicId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getPublicId()"/> 
         /// </summary>
         public string PublicId
         {
             get { return IExecute<string>("getPublicId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getSystemId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getSystemId()"/> 
         /// </summary>
         public string SystemId
         {
             get { return IExecute<string>("getSystemId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getXmlEncoding() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getXmlEncoding()"/> 
         /// </summary>
         public string XmlEncoding
         {
             get { return IExecute<string>("getXmlEncoding"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getXmlVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html#getXmlVersion()"/> 
         /// </summary>
         public string XmlVersion
         {

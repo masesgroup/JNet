@@ -38,27 +38,27 @@ namespace Java.Util.Logging
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#CLOSE_FAILURE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#CLOSE_FAILURE"/>
         /// </summary>
         public static int CLOSE_FAILURE => Clazz.GetField<int>("CLOSE_FAILURE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#FLUSH_FAILURE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#FLUSH_FAILURE"/>
         /// </summary>
         public static int FLUSH_FAILURE => Clazz.GetField<int>("FLUSH_FAILURE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#FORMAT_FAILURE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#FORMAT_FAILURE"/>
         /// </summary>
         public static int FORMAT_FAILURE => Clazz.GetField<int>("FORMAT_FAILURE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#GENERIC_FAILURE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#GENERIC_FAILURE"/>
         /// </summary>
         public static int GENERIC_FAILURE => Clazz.GetField<int>("GENERIC_FAILURE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#OPEN_FAILURE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#OPEN_FAILURE"/>
         /// </summary>
         public static int OPEN_FAILURE => Clazz.GetField<int>("OPEN_FAILURE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#WRITE_FAILURE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#WRITE_FAILURE"/>
         /// </summary>
         public static int WRITE_FAILURE => Clazz.GetField<int>("WRITE_FAILURE");
         
@@ -70,8 +70,11 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#error(java.lang.String,java.lang.Exception,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#error(java.lang.String,java.lang.Exception,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Exception"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void Error(string arg0, Java.Lang.Exception arg1, int arg2)
         {
             IExecute("error", arg0, arg1, arg2);

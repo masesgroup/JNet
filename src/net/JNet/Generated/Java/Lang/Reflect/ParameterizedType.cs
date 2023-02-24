@@ -33,6 +33,9 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Reflect.ParameterizedType"/> to <see cref="Java.Lang.Reflect.Type"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.Type(Java.Lang.Reflect.ParameterizedType t) => t.Cast<Java.Lang.Reflect.Type>();
         
         #endregion
@@ -47,21 +50,21 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html#getActualTypeArguments() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html#getActualTypeArguments()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type[] ActualTypeArguments
         {
             get { return IExecuteArray<Java.Lang.Reflect.Type>("getActualTypeArguments"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html#getOwnerType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html#getOwnerType()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type OwnerType
         {
             get { return IExecute<Java.Lang.Reflect.Type>("getOwnerType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html#getRawType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html#getRawType()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type RawType
         {

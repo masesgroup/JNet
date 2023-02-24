@@ -42,15 +42,19 @@ namespace Java.Net.Http
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#newBuilder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#newBuilder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
         public static Java.Net.Http.HttpRequest.Builder NewBuilder()
         {
             return SExecute<Java.Net.Http.HttpRequest.Builder>("newBuilder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#newBuilder(java.net.URI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#newBuilder(java.net.URI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
         public static Java.Net.Http.HttpRequest.Builder NewBuilder(Java.Net.URI arg0)
         {
             return SExecute<Java.Net.Http.HttpRequest.Builder>("newBuilder", arg0);
@@ -60,29 +64,37 @@ namespace Java.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#expectContinue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#expectContinue()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool ExpectContinue()
         {
             return IExecute<bool>("expectContinue");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#method()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#method()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Method()
         {
             return IExecute<string>("method");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#headers()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#headers()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.Http.HttpHeaders"/></returns>
         public Java.Net.Http.HttpHeaders Headers()
         {
             return IExecute<Java.Net.Http.HttpHeaders>("headers");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#uri()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#uri()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI Uri()
         {
             return IExecute<Java.Net.URI>("uri");
@@ -112,8 +124,10 @@ namespace Java.Net.Http
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublisher.html#contentLength()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublisher.html#contentLength()"/>
             /// </summary>
+            
+            /// <returns><see langword="long"/></returns>
             public long ContentLength()
             {
                 return IExecute<long>("contentLength");
@@ -142,43 +156,59 @@ namespace Java.Net.Http
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#noBody()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#noBody()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher NoBody()
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("noBody");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArray(byte[],int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArray(byte[],int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="byte"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArray(byte[] arg0, int arg1, int arg2)
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArray", arg0, arg1, arg2);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArray(byte[])
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArray(byte[])"/>
             /// </summary>
+            /// <param name="arg0"><see cref="byte"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArray(byte[] arg0)
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArray", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofFile(java.nio.file.Path) throws java.io.FileNotFoundException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofFile(java.nio.file.Path)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
+            /// <exception cref="Java.Io.FileNotFoundException"/>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfFile(Java.Nio.File.Path arg0)
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofFile", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String,java.nio.charset.Charset)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String,java.nio.charset.Charset)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfString(string arg0, Java.Nio.Charset.Charset arg1)
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofString", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfString(string arg0)
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofString", arg0);
@@ -215,92 +245,121 @@ namespace Java.Net.Http
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#build()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#build()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpRequest"/></returns>
             public Java.Net.Http.HttpRequest Build()
             {
                 return IExecute<Java.Net.Http.HttpRequest>("build");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#copy()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#copy()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder Copy()
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("copy");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#DELETE()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#DELETE()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder DELETE()
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("DELETE");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#expectContinue(boolean)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#expectContinue(boolean)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="bool"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder ExpectContinue(bool arg0)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("expectContinue", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#GET()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#GET()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder GET()
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("GET");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#header(java.lang.String,java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#header(java.lang.String,java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="string"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder Header(string arg0, string arg1)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("header", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#headers(java.lang.String...)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#headers(java.lang.String...)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder Headers(params string[] arg0)
             {
                 if (arg0.Length == 0) return IExecute<Java.Net.Http.HttpRequest.Builder>("headers"); else return IExecute<Java.Net.Http.HttpRequest.Builder>("headers", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#method(java.lang.String,java.net.http.HttpRequest$BodyPublisher)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#method(java.lang.String,java.net.http.HttpRequest$BodyPublisher)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder Method(string arg0, Java.Net.Http.HttpRequest.BodyPublisher arg1)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("method", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#POST(java.net.http.HttpRequest$BodyPublisher)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#POST(java.net.http.HttpRequest$BodyPublisher)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder POST(Java.Net.Http.HttpRequest.BodyPublisher arg0)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("POST", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#PUT(java.net.http.HttpRequest$BodyPublisher)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#PUT(java.net.http.HttpRequest$BodyPublisher)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder PUT(Java.Net.Http.HttpRequest.BodyPublisher arg0)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("PUT", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#setHeader(java.lang.String,java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#setHeader(java.lang.String,java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see langword="string"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder SetHeader(string arg0, string arg1)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("setHeader", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#timeout(java.time.Duration)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#timeout(java.time.Duration)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Time.Duration"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder Timeout(Java.Time.Duration arg0)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("timeout", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#uri(java.net.URI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#uri(java.net.URI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder Uri(Java.Net.URI arg0)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("uri", arg0);

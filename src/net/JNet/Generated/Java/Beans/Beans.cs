@@ -42,43 +42,62 @@ namespace Java.Beans
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isDesignTime()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isDesignTime()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public static bool IsDesignTime()
         {
             return SExecute<bool>("isDesignTime");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isGuiAvailable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isGuiAvailable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public static bool IsGuiAvailable()
         {
             return SExecute<bool>("isGuiAvailable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext) throws java.io.IOException,java.lang.ClassNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static object Instantiate(Java.Lang.ClassLoader arg0, string arg1, Java.Beans.Beancontext.BeanContext arg2)
         {
             return SExecute("instantiate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String) throws java.io.IOException,java.lang.ClassNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static object Instantiate(Java.Lang.ClassLoader arg0, string arg1)
         {
             return SExecute("instantiate", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#setDesignTime(boolean) throws java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#setDesignTime(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <exception cref="Java.Lang.SecurityException"/>
         public static void SetDesignTime(bool arg0)
         {
             SExecute("setDesignTime", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#setGuiAvailable(boolean) throws java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#setGuiAvailable(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <exception cref="Java.Lang.SecurityException"/>
         public static void SetGuiAvailable(bool arg0)
         {
             SExecute("setGuiAvailable", arg0);

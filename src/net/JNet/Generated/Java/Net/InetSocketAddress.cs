@@ -30,22 +30,27 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public InetSocketAddress(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#<init>(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public InetSocketAddress(string arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#<init>(java.net.InetAddress,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#%3Cinit%3E(java.net.InetAddress,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public InetSocketAddress(Java.Net.InetAddress arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -63,8 +68,11 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#createUnresolved(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#createUnresolved(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Net.InetSocketAddress"/></returns>
         public static Java.Net.InetSocketAddress CreateUnresolved(string arg0, int arg1)
         {
             return SExecute<Java.Net.InetSocketAddress>("createUnresolved", arg0, arg1);
@@ -74,36 +82,38 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#getAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#getAddress()"/> 
         /// </summary>
         public Java.Net.InetAddress Address
         {
             get { return IExecute<Java.Net.InetAddress>("getAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#getHostName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#getHostName()"/> 
         /// </summary>
         public string HostName
         {
             get { return IExecute<string>("getHostName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#getHostString() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#getHostString()"/> 
         /// </summary>
         public string HostString
         {
             get { return IExecute<string>("getHostString"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#getPort() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#getPort()"/> 
         /// </summary>
         public int Port
         {
             get { return IExecute<int>("getPort"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#isUnresolved()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#isUnresolved()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsUnresolved()
         {
             return IExecute<bool>("isUnresolved");

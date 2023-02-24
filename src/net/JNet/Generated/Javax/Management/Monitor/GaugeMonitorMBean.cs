@@ -33,6 +33,9 @@ namespace Javax.Management.Monitor
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Monitor.GaugeMonitorMBean"/> to <see cref="Javax.Management.Monitor.MonitorMBean"/>
+        /// </summary>
         public static implicit operator Javax.Management.Monitor.MonitorMBean(Javax.Management.Monitor.GaugeMonitorMBean t) => t.Cast<Javax.Management.Monitor.MonitorMBean>();
         
         #endregion
@@ -47,57 +50,64 @@ namespace Javax.Management.Monitor
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getDifferenceMode() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setDifferenceMode(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getDifferenceMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setDifferenceMode(boolean)"/>
         /// </summary>
         public bool DifferenceMode
         {
             get { return IExecute<bool>("getDifferenceMode"); } set { IExecute("setDifferenceMode", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getHighThreshold() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getHighThreshold()"/> 
         /// </summary>
         public Java.Lang.Number HighThreshold
         {
             get { return IExecute<Java.Lang.Number>("getHighThreshold"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getLowThreshold() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getLowThreshold()"/> 
         /// </summary>
         public Java.Lang.Number LowThreshold
         {
             get { return IExecute<Java.Lang.Number>("getLowThreshold"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyHigh() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyHigh(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyHigh()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyHigh(boolean)"/>
         /// </summary>
         public bool NotifyHigh
         {
             get { return IExecute<bool>("getNotifyHigh"); } set { IExecute("setNotifyHigh", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyLow() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyLow(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getNotifyLow()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setNotifyLow(boolean)"/>
         /// </summary>
         public bool NotifyLow
         {
             get { return IExecute<bool>("getNotifyLow"); } set { IExecute("setNotifyLow", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGauge(javax.management.ObjectName)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGauge(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Java.Lang.Number"/></returns>
         public Java.Lang.Number GetDerivedGauge(Javax.Management.ObjectName arg0)
         {
             return IExecute<Java.Lang.Number>("getDerivedGauge", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGaugeTimeStamp(javax.management.ObjectName)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#getDerivedGaugeTimeStamp(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see langword="long"/></returns>
         public long GetDerivedGaugeTimeStamp(Javax.Management.ObjectName arg0)
         {
             return IExecute<long>("getDerivedGaugeTimeStamp", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setThresholds(java.lang.Number,java.lang.Number) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html#setThresholds(java.lang.Number,java.lang.Number)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Number"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Number"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetThresholds(Java.Lang.Number arg0, Java.Lang.Number arg1)
         {
             IExecute("setThresholds", arg0, arg1);

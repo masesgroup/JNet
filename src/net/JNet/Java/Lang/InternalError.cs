@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public class InternalError : VirtualMachineError
     {
-        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
         public override string ClassName => "java.lang.InternalError";
     }
 }

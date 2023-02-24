@@ -46,15 +46,21 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserPrincipalLookupService.html#lookupPrincipalByGroupName(java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserPrincipalLookupService.html#lookupPrincipalByGroupName(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.GroupPrincipal"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.Attribute.GroupPrincipal LookupPrincipalByGroupName(string arg0)
         {
             return IExecute<Java.Nio.File.Attribute.GroupPrincipal>("lookupPrincipalByGroupName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserPrincipalLookupService.html#lookupPrincipalByName(java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserPrincipalLookupService.html#lookupPrincipalByName(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.UserPrincipal"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.Attribute.UserPrincipal LookupPrincipalByName(string arg0)
         {
             return IExecute<Java.Nio.File.Attribute.UserPrincipal>("lookupPrincipalByName", arg0);

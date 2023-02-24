@@ -33,37 +33,40 @@ namespace Java.Sql
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Sql.ParameterMetaData"/> to <see cref="Java.Sql.Wrapper"/>
+        /// </summary>
         public static implicit operator Java.Sql.Wrapper(Java.Sql.ParameterMetaData t) => t.Cast<Java.Sql.Wrapper>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeIn
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeIn"/>
         /// </summary>
         public static int parameterModeIn => Clazz.GetField<int>("parameterModeIn");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeInOut
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeInOut"/>
         /// </summary>
         public static int parameterModeInOut => Clazz.GetField<int>("parameterModeInOut");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeOut
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeOut"/>
         /// </summary>
         public static int parameterModeOut => Clazz.GetField<int>("parameterModeOut");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeUnknown
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeUnknown"/>
         /// </summary>
         public static int parameterModeUnknown => Clazz.GetField<int>("parameterModeUnknown");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNoNulls
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNoNulls"/>
         /// </summary>
         public static int parameterNoNulls => Clazz.GetField<int>("parameterNoNulls");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNullable
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNullable"/>
         /// </summary>
         public static int parameterNullable => Clazz.GetField<int>("parameterNullable");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNullableUnknown
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNullableUnknown"/>
         /// </summary>
         public static int parameterNullableUnknown => Clazz.GetField<int>("parameterNullableUnknown");
         
@@ -75,64 +78,88 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterCount() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterCount()"/> 
         /// </summary>
         public int ParameterCount
         {
             get { return IExecute<int>("getParameterCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#isSigned(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#isSigned(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool IsSigned(int arg0)
         {
             return IExecute<bool>("isSigned", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterMode(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterMode(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public int GetParameterMode(int arg0)
         {
             return IExecute<int>("getParameterMode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterType(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterType(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public int GetParameterType(int arg0)
         {
             return IExecute<int>("getParameterType", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getPrecision(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getPrecision(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public int GetPrecision(int arg0)
         {
             return IExecute<int>("getPrecision", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getScale(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getScale(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public int GetScale(int arg0)
         {
             return IExecute<int>("getScale", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#isNullable(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#isNullable(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public int IsNullable(int arg0)
         {
             return IExecute<int>("isNullable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterClassName(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterClassName(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public string GetParameterClassName(int arg0)
         {
             return IExecute<string>("getParameterClassName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterTypeName(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterTypeName(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public string GetParameterTypeName(int arg0)
         {
             return IExecute<string>("getParameterTypeName", arg0);

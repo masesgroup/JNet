@@ -46,7 +46,7 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECField.html#getFieldSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECField.html#getFieldSize()"/> 
         /// </summary>
         public int FieldSize
         {

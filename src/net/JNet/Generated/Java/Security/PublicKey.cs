@@ -33,13 +33,16 @@ namespace Java.Security
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.PublicKey"/> to <see cref="Java.Security.Key"/>
+        /// </summary>
         public static implicit operator Java.Security.Key(Java.Security.PublicKey t) => t.Cast<Java.Security.Key>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PublicKey.html#serialVersionUID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PublicKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         

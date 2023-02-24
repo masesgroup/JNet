@@ -30,8 +30,10 @@ namespace Javax.Swing.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#<init>(javax.swing.JInternalFrame,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#%3Cinit%3E(javax.swing.JInternalFrame,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public InternalFrameEvent(Javax.Swing.JInternalFrame arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -45,39 +47,39 @@ namespace Javax.Swing.Event
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_ACTIVATED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_ACTIVATED"/>
         /// </summary>
         public static int INTERNAL_FRAME_ACTIVATED => Clazz.GetField<int>("INTERNAL_FRAME_ACTIVATED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_CLOSED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_CLOSED"/>
         /// </summary>
         public static int INTERNAL_FRAME_CLOSED => Clazz.GetField<int>("INTERNAL_FRAME_CLOSED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_CLOSING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_CLOSING"/>
         /// </summary>
         public static int INTERNAL_FRAME_CLOSING => Clazz.GetField<int>("INTERNAL_FRAME_CLOSING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_DEACTIVATED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_DEACTIVATED"/>
         /// </summary>
         public static int INTERNAL_FRAME_DEACTIVATED => Clazz.GetField<int>("INTERNAL_FRAME_DEACTIVATED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_DEICONIFIED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_DEICONIFIED"/>
         /// </summary>
         public static int INTERNAL_FRAME_DEICONIFIED => Clazz.GetField<int>("INTERNAL_FRAME_DEICONIFIED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_FIRST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_FIRST"/>
         /// </summary>
         public static int INTERNAL_FRAME_FIRST => Clazz.GetField<int>("INTERNAL_FRAME_FIRST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_ICONIFIED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_ICONIFIED"/>
         /// </summary>
         public static int INTERNAL_FRAME_ICONIFIED => Clazz.GetField<int>("INTERNAL_FRAME_ICONIFIED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_LAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_LAST"/>
         /// </summary>
         public static int INTERNAL_FRAME_LAST => Clazz.GetField<int>("INTERNAL_FRAME_LAST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_OPENED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_OPENED"/>
         /// </summary>
         public static int INTERNAL_FRAME_OPENED => Clazz.GetField<int>("INTERNAL_FRAME_OPENED");
         
@@ -89,7 +91,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#getInternalFrame() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#getInternalFrame()"/> 
         /// </summary>
         public Javax.Swing.JInternalFrame InternalFrame
         {

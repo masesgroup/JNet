@@ -33,6 +33,9 @@ namespace Javax.Xml.Stream.Events
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Stream.Events.EndDocument"/> to <see cref="Javax.Xml.Stream.Events.XMLEvent"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Stream.Events.XMLEvent(Javax.Xml.Stream.Events.EndDocument t) => t.Cast<Javax.Xml.Stream.Events.XMLEvent>();
         
         #endregion

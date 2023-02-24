@@ -33,6 +33,9 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.DirectoryStream"/> to <see cref="Java.Io.Closeable"/>
+        /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Nio.File.DirectoryStream t) => t.Cast<Java.Io.Closeable>();
         
         #endregion
@@ -71,8 +74,11 @@ namespace Java.Nio.File
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.Filter.html#accept(T) throws java.io.IOException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.Filter.html#accept(T)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
+            /// <returns><see langword="bool"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
             public bool Accept(object arg0)
             {
                 return IExecute<bool>("accept", arg0);

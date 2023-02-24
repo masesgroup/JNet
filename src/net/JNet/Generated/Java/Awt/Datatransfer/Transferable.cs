@@ -46,22 +46,28 @@ namespace Java.Awt.Datatransfer
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Transferable.html#getTransferDataFlavors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Transferable.html#getTransferDataFlavors()"/> 
         /// </summary>
         public Java.Awt.Datatransfer.DataFlavor[] TransferDataFlavors
         {
             get { return IExecuteArray<Java.Awt.Datatransfer.DataFlavor>("getTransferDataFlavors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Transferable.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Transferable.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsDataFlavorSupported(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecute<bool>("isDataFlavorSupported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Transferable.html#getTransferData(java.awt.datatransfer.DataFlavor) throws java.awt.datatransfer.UnsupportedFlavorException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Transferable.html#getTransferData(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Awt.Datatransfer.UnsupportedFlavorException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public object GetTransferData(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecute("getTransferData", arg0);

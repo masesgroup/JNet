@@ -30,8 +30,10 @@ namespace Javax.Crypto
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/CipherInputStream.html#<init>(java.io.InputStream,javax.crypto.Cipher)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/CipherInputStream.html#%3Cinit%3E(java.io.InputStream,javax.crypto.Cipher)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="Javax.Crypto.Cipher"/></param>
         public CipherInputStream(Java.Io.InputStream arg0, Javax.Crypto.Cipher arg1)
             : base(arg0, arg1)
         {

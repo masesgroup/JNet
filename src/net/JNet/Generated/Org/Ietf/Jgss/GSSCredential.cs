@@ -33,29 +33,32 @@ namespace Org.Ietf.Jgss
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.Ietf.Jgss.GSSCredential"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Org.Ietf.Jgss.GSSCredential t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#ACCEPT_ONLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#ACCEPT_ONLY"/>
         /// </summary>
         public static int ACCEPT_ONLY => Clazz.GetField<int>("ACCEPT_ONLY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#DEFAULT_LIFETIME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#DEFAULT_LIFETIME"/>
         /// </summary>
         public static int DEFAULT_LIFETIME => Clazz.GetField<int>("DEFAULT_LIFETIME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#INDEFINITE_LIFETIME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#INDEFINITE_LIFETIME"/>
         /// </summary>
         public static int INDEFINITE_LIFETIME => Clazz.GetField<int>("INDEFINITE_LIFETIME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#INITIATE_AND_ACCEPT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#INITIATE_AND_ACCEPT"/>
         /// </summary>
         public static int INITIATE_AND_ACCEPT => Clazz.GetField<int>("INITIATE_AND_ACCEPT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#INITIATE_ONLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#INITIATE_ONLY"/>
         /// </summary>
         public static int INITIATE_ONLY => Clazz.GetField<int>("INITIATE_ONLY");
         
@@ -67,72 +70,92 @@ namespace Org.Ietf.Jgss
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getMechs() throws org.ietf.jgss.GSSException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getMechs()"/> 
         /// </summary>
         public Org.Ietf.Jgss.Oid[] Mechs
         {
             get { return IExecuteArray<Org.Ietf.Jgss.Oid>("getMechs"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getName() throws org.ietf.jgss.GSSException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getName()"/> 
         /// </summary>
         public Org.Ietf.Jgss.GSSName Name
         {
             get { return IExecute<Org.Ietf.Jgss.GSSName>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingLifetime() throws org.ietf.jgss.GSSException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingLifetime()"/> 
         /// </summary>
         public int RemainingLifetime
         {
             get { return IExecute<int>("getRemainingLifetime"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getUsage() throws org.ietf.jgss.GSSException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getUsage()"/> 
         /// </summary>
         public int Usage
         {
             get { return IExecute<int>("getUsage"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingAcceptLifetime(org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingAcceptLifetime(org.ietf.jgss.Oid)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public int GetRemainingAcceptLifetime(Org.Ietf.Jgss.Oid arg0)
         {
             return IExecute<int>("getRemainingAcceptLifetime", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingInitLifetime(org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingInitLifetime(org.ietf.jgss.Oid)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public int GetRemainingInitLifetime(Org.Ietf.Jgss.Oid arg0)
         {
             return IExecute<int>("getRemainingInitLifetime", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getUsage(org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getUsage(org.ietf.jgss.Oid)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public int GetUsage(Org.Ietf.Jgss.Oid arg0)
         {
             return IExecute<int>("getUsage", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getName(org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getName(org.ietf.jgss.Oid)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <returns><see cref="Org.Ietf.Jgss.GSSName"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public Org.Ietf.Jgss.GSSName GetName(Org.Ietf.Jgss.Oid arg0)
         {
             return IExecute<Org.Ietf.Jgss.GSSName>("getName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#add(org.ietf.jgss.GSSName,int,int,org.ietf.jgss.Oid,int) throws org.ietf.jgss.GSSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#add(org.ietf.jgss.GSSName,int,int,org.ietf.jgss.Oid,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Ietf.Jgss.GSSName"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public void Add(Org.Ietf.Jgss.GSSName arg0, int arg1, int arg2, Org.Ietf.Jgss.Oid arg3, int arg4)
         {
             IExecute("add", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#dispose() throws org.ietf.jgss.GSSException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#dispose()"/>
         /// </summary>
-        public void Dispose()
+        
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        public new void Dispose()
         {
             IExecute("dispose");
         }

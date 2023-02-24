@@ -33,6 +33,9 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.AbstractExecutorService"/> to <see cref="Java.Util.Concurrent.ExecutorService"/>
+        /// </summary>
         public static implicit operator Java.Util.Concurrent.ExecutorService(Java.Util.Concurrent.AbstractExecutorService t) => t.Cast<Java.Util.Concurrent.ExecutorService>();
         
         #endregion

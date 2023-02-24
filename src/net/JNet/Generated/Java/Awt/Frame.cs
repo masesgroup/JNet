@@ -30,22 +30,27 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#<init>(java.awt.GraphicsConfiguration)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#%3Cinit%3E(java.awt.GraphicsConfiguration)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
         public Frame(Java.Awt.GraphicsConfiguration arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#<init>(java.lang.String,java.awt.GraphicsConfiguration)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#%3Cinit%3E(java.lang.String,java.awt.GraphicsConfiguration)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.GraphicsConfiguration"/></param>
         public Frame(string arg0, Java.Awt.GraphicsConfiguration arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#<init>(java.lang.String) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public Frame(string arg0)
             : base(arg0)
         {
@@ -54,29 +59,32 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Frame"/> to <see cref="Java.Awt.MenuContainer"/>
+        /// </summary>
         public static implicit operator Java.Awt.MenuContainer(Java.Awt.Frame t) => t.Cast<Java.Awt.MenuContainer>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#ICONIFIED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#ICONIFIED"/>
         /// </summary>
         public static int ICONIFIED => Clazz.GetField<int>("ICONIFIED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_BOTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_BOTH"/>
         /// </summary>
         public static int MAXIMIZED_BOTH => Clazz.GetField<int>("MAXIMIZED_BOTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_HORIZ
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_HORIZ"/>
         /// </summary>
         public static int MAXIMIZED_HORIZ => Clazz.GetField<int>("MAXIMIZED_HORIZ");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_VERT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_VERT"/>
         /// </summary>
         public static int MAXIMIZED_VERT => Clazz.GetField<int>("MAXIMIZED_VERT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#NORMAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#NORMAL"/>
         /// </summary>
         public static int NORMAL => Clazz.GetField<int>("NORMAL");
         
@@ -84,7 +92,7 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getFrames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getFrames()"/> 
         /// </summary>
         public static Java.Awt.Frame[] Frames
         {
@@ -95,71 +103,77 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getExtendedState() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setExtendedState(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getExtendedState()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setExtendedState(int)"/>
         /// </summary>
         public int ExtendedState
         {
             get { return IExecute<int>("getExtendedState"); } set { IExecute("setExtendedState", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getIconImage() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getIconImage()"/> 
         /// </summary>
         public Java.Awt.Image IconImage
         {
             get { return IExecute<Java.Awt.Image>("getIconImage"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMaximizedBounds() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMaximizedBounds(java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMaximizedBounds()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMaximizedBounds(java.awt.Rectangle)"/>
         /// </summary>
         public Java.Awt.Rectangle MaximizedBounds
         {
             get { return IExecute<Java.Awt.Rectangle>("getMaximizedBounds"); } set { IExecute("setMaximizedBounds", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMenuBar() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMenuBar(java.awt.MenuBar)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getMenuBar()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setMenuBar(java.awt.MenuBar)"/>
         /// </summary>
         public Java.Awt.MenuBar MenuBar
         {
             get { return IExecute<Java.Awt.MenuBar>("getMenuBar"); } set { IExecute("setMenuBar", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getState() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setState(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getState()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setState(int)"/>
         /// </summary>
         public int State
         {
             get { return IExecute<int>("getState"); } set { IExecute("setState", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getTitle() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setTitle(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#getTitle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setTitle(java.lang.String)"/>
         /// </summary>
         public string Title
         {
             get { return IExecute<string>("getTitle"); } set { IExecute("setTitle", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isResizable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isResizable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsResizable()
         {
             return IExecute<bool>("isResizable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isUndecorated()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#isUndecorated()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsUndecorated()
         {
             return IExecute<bool>("isUndecorated");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setResizable(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setResizable(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetResizable(bool arg0)
         {
             IExecute("setResizable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setUndecorated(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#setUndecorated(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetUndecorated(bool arg0)
         {
             IExecute("setUndecorated", arg0);

@@ -38,31 +38,31 @@ namespace Java.Util.Concurrent
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#DAYS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#DAYS"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit DAYS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("DAYS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#HOURS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#HOURS"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit HOURS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("HOURS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MICROSECONDS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MICROSECONDS"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit MICROSECONDS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("MICROSECONDS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MILLISECONDS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MILLISECONDS"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit MILLISECONDS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("MILLISECONDS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MINUTES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MINUTES"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit MINUTES => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("MINUTES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#NANOSECONDS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#NANOSECONDS"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit NANOSECONDS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("NANOSECONDS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#SECONDS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#SECONDS"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit SECONDS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("SECONDS");
         
@@ -70,8 +70,10 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
         public static Java.Util.Concurrent.TimeUnit[] Values()
         {
             return SExecuteArray<Java.Util.Concurrent.TimeUnit>("values");
@@ -81,78 +83,102 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#convert(java.time.Duration)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#convert(java.time.Duration)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Duration"/></param>
+        /// <returns><see langword="long"/></returns>
         public long Convert(Java.Time.Duration arg0)
         {
             return IExecute<long>("convert", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toDays(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toDays(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public long ToDays(long arg0)
         {
             return IExecute<long>("toDays", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toHours(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toHours(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public long ToHours(long arg0)
         {
             return IExecute<long>("toHours", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMicros(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMicros(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public long ToMicros(long arg0)
         {
             return IExecute<long>("toMicros", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMillis(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMillis(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public long ToMillis(long arg0)
         {
             return IExecute<long>("toMillis", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMinutes(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toMinutes(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public long ToMinutes(long arg0)
         {
             return IExecute<long>("toMinutes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toNanos(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toNanos(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public long ToNanos(long arg0)
         {
             return IExecute<long>("toNanos", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toSeconds(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toSeconds(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="long"/></returns>
         public long ToSeconds(long arg0)
         {
             return IExecute<long>("toSeconds", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#sleep(long) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#sleep(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public void Sleep(long arg0)
         {
             IExecute("sleep", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#timedJoin(java.lang.Thread,long) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#timedJoin(java.lang.Thread,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public void TimedJoin(Java.Lang.Thread arg0, long arg1)
         {
             IExecute("timedJoin", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#timedWait(java.lang.Object,long) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#timedWait(java.lang.Object,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public void TimedWait(object arg0, long arg1)
         {
             IExecute("timedWait", arg0, arg1);

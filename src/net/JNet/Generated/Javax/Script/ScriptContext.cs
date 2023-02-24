@@ -38,11 +38,11 @@ namespace Javax.Script
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#ENGINE_SCOPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#ENGINE_SCOPE"/>
         /// </summary>
         public static int ENGINE_SCOPE => Clazz.GetField<int>("ENGINE_SCOPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#GLOBAL_SCOPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#GLOBAL_SCOPE"/>
         /// </summary>
         public static int GLOBAL_SCOPE => Clazz.GetField<int>("GLOBAL_SCOPE");
         
@@ -54,71 +54,88 @@ namespace Javax.Script
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getErrorWriter() https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setErrorWriter(java.io.Writer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getErrorWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setErrorWriter(java.io.Writer)"/>
         /// </summary>
         public Java.Io.Writer ErrorWriter
         {
             get { return IExecute<Java.Io.Writer>("getErrorWriter"); } set { IExecute("setErrorWriter", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getReader() https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setReader(java.io.Reader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getReader()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setReader(java.io.Reader)"/>
         /// </summary>
         public Java.Io.Reader Reader
         {
             get { return IExecute<Java.Io.Reader>("getReader"); } set { IExecute("setReader", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getWriter() https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setWriter(java.io.Writer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setWriter(java.io.Writer)"/>
         /// </summary>
         public Java.Io.Writer Writer
         {
             get { return IExecute<Java.Io.Writer>("getWriter"); } set { IExecute("setWriter", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getAttributesScope(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getAttributesScope(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAttributesScope(string arg0)
         {
             return IExecute<int>("getAttributesScope", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getAttribute(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getAttribute(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAttribute(string arg0, int arg1)
         {
             return IExecute("getAttribute", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getAttribute(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getAttribute(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetAttribute(string arg0)
         {
             return IExecute("getAttribute", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#removeAttribute(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#removeAttribute(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="object"/></returns>
         public object RemoveAttribute(string arg0, int arg1)
         {
             return IExecute("removeAttribute", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getBindings(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getBindings(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Script.Bindings"/></returns>
         public Javax.Script.Bindings GetBindings(int arg0)
         {
             return IExecute<Javax.Script.Bindings>("getBindings", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setAttribute(java.lang.String,java.lang.Object,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setAttribute(java.lang.String,java.lang.Object,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void SetAttribute(string arg0, object arg1, int arg2)
         {
             IExecute("setAttribute", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setBindings(javax.script.Bindings,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setBindings(javax.script.Bindings,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Script.Bindings"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetBindings(Javax.Script.Bindings arg0, int arg1)
         {
             IExecute("setBindings", arg0, arg1);

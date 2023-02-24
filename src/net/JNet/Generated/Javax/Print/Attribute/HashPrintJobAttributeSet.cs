@@ -30,22 +30,25 @@ namespace Javax.Print.Attribute
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintJobAttributeSet.html#<init>(javax.print.attribute.PrintJobAttribute)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintJobAttributeSet.html#%3Cinit%3E(javax.print.attribute.PrintJobAttribute)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintJobAttribute"/></param>
         public HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttribute arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintJobAttributeSet.html#<init>(javax.print.attribute.PrintJobAttribute[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintJobAttributeSet.html#%3Cinit%3E(javax.print.attribute.PrintJobAttribute[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintJobAttribute"/></param>
         public HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttribute[] arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintJobAttributeSet.html#<init>(javax.print.attribute.PrintJobAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintJobAttributeSet.html#%3Cinit%3E(javax.print.attribute.PrintJobAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintJobAttributeSet"/></param>
         public HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttributeSet arg0)
             : base(arg0)
         {
@@ -54,7 +57,13 @@ namespace Javax.Print.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.HashPrintJobAttributeSet"/> to <see cref="Javax.Print.Attribute.PrintJobAttributeSet"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttributeSet(Javax.Print.Attribute.HashPrintJobAttributeSet t) => t.Cast<Javax.Print.Attribute.PrintJobAttributeSet>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.HashPrintJobAttributeSet"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Print.Attribute.HashPrintJobAttributeSet t) => t.Cast<Java.Io.Serializable>();
         
         #endregion

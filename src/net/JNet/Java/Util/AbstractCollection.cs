@@ -22,14 +22,22 @@ using MASES.JCOBridge.C2JBridge.JVMInterop;
 
 namespace Java.Util
 {
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html"/>
+    /// </summary>
     public class AbstractCollection<E> : JVMBridgeBase<AbstractCollection<E>>
     {
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.util.AbstractCollection";
-
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
         public AbstractCollection()
         {
         }
-
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
         protected AbstractCollection(params object[] args)
             : base(args)
         {

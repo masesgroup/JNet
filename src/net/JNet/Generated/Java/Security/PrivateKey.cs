@@ -33,14 +33,20 @@ namespace Java.Security
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.PrivateKey"/> to <see cref="Java.Security.Key"/>
+        /// </summary>
         public static implicit operator Java.Security.Key(Java.Security.PrivateKey t) => t.Cast<Java.Security.Key>();
+        /// <summary>
+        /// Converter from <see cref="Java.Security.PrivateKey"/> to <see cref="Javax.Security.Auth.Destroyable"/>
+        /// </summary>
         public static implicit operator Javax.Security.Auth.Destroyable(Java.Security.PrivateKey t) => t.Cast<Javax.Security.Auth.Destroyable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivateKey.html#serialVersionUID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivateKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         

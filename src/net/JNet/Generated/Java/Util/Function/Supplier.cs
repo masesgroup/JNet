@@ -46,8 +46,10 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Get()
         {
             return IExecute("get");

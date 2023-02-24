@@ -42,29 +42,42 @@ namespace Javax.Security.Auth.Login
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getConfiguration()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getConfiguration()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Security.Auth.Login.Configuration"/></returns>
         public static Javax.Security.Auth.Login.Configuration GetConfiguration()
         {
             return SExecute<Javax.Security.Auth.Login.Configuration>("getConfiguration");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration$Parameters,java.lang.String) throws java.security.NoSuchProviderException,java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration$Parameters,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Login.Configuration.Parameters"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Security.Auth.Login.Configuration"/></returns>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Security.Auth.Login.Configuration GetInstance(string arg0, Javax.Security.Auth.Login.Configuration.Parameters arg1, string arg2)
         {
             return SExecute<Javax.Security.Auth.Login.Configuration>("getInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration$Parameters) throws java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration$Parameters)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Login.Configuration.Parameters"/></param>
+        /// <returns><see cref="Javax.Security.Auth.Login.Configuration"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Security.Auth.Login.Configuration GetInstance(string arg0, Javax.Security.Auth.Login.Configuration.Parameters arg1)
         {
             return SExecute<Javax.Security.Auth.Login.Configuration>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#setConfiguration(javax.security.auth.login.Configuration)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#setConfiguration(javax.security.auth.login.Configuration)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Login.Configuration"/></param>
         public static void SetConfiguration(Javax.Security.Auth.Login.Configuration arg0)
         {
             SExecute("setConfiguration", arg0);
@@ -74,28 +87,32 @@ namespace Javax.Security.Auth.Login
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getAppConfigurationEntry(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getAppConfigurationEntry(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Security.Auth.Login.AppConfigurationEntry"/></returns>
         public Javax.Security.Auth.Login.AppConfigurationEntry[] GetAppConfigurationEntry(string arg0)
         {
             return IExecuteArray<Javax.Security.Auth.Login.AppConfigurationEntry>("getAppConfigurationEntry", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getParameters()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getParameters()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Security.Auth.Login.Configuration.Parameters"/></returns>
         public Javax.Security.Auth.Login.Configuration.Parameters GetParameters()
         {
             return IExecute<Javax.Security.Auth.Login.Configuration.Parameters>("getParameters");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#refresh()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#refresh()"/>
         /// </summary>
         public void Refresh()
         {

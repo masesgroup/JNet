@@ -33,24 +33,36 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.DefaultCaret"/> to <see cref="Javax.Swing.Text.Caret"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Text.Caret(Javax.Swing.Text.DefaultCaret t) => t.Cast<Javax.Swing.Text.Caret>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.DefaultCaret"/> to <see cref="Java.Awt.EventNs.FocusListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Text.DefaultCaret t) => t.Cast<Java.Awt.EventNs.FocusListener>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.DefaultCaret"/> to <see cref="Java.Awt.EventNs.MouseListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseListener(Javax.Swing.Text.DefaultCaret t) => t.Cast<Java.Awt.EventNs.MouseListener>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.DefaultCaret"/> to <see cref="Java.Awt.EventNs.MouseMotionListener"/>
+        /// </summary>
         public static implicit operator Java.Awt.EventNs.MouseMotionListener(Javax.Swing.Text.DefaultCaret t) => t.Cast<Java.Awt.EventNs.MouseMotionListener>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#ALWAYS_UPDATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#ALWAYS_UPDATE"/>
         /// </summary>
         public static int ALWAYS_UPDATE => Clazz.GetField<int>("ALWAYS_UPDATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#NEVER_UPDATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#NEVER_UPDATE"/>
         /// </summary>
         public static int NEVER_UPDATE => Clazz.GetField<int>("NEVER_UPDATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#UPDATE_WHEN_ON_EDT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#UPDATE_WHEN_ON_EDT"/>
         /// </summary>
         public static int UPDATE_WHEN_ON_EDT => Clazz.GetField<int>("UPDATE_WHEN_ON_EDT");
         
@@ -62,211 +74,238 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getBlinkRate() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setBlinkRate(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getBlinkRate()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setBlinkRate(int)"/>
         /// </summary>
         public int BlinkRate
         {
             get { return IExecute<int>("getBlinkRate"); } set { IExecute("setBlinkRate", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getChangeListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getChangeListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.ChangeListener[] ChangeListeners
         {
             get { return IExecuteArray<Javax.Swing.Event.ChangeListener>("getChangeListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getDot() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setDot(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getDot()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setDot(int)"/>
         /// </summary>
         public int Dot
         {
             get { return IExecute<int>("getDot"); } set { IExecute("setDot", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getDotBias() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getDotBias()"/> 
         /// </summary>
         public Javax.Swing.Text.Position.Bias DotBias
         {
             get { return IExecute<Javax.Swing.Text.Position.Bias>("getDotBias"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getMagicCaretPosition() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setMagicCaretPosition(java.awt.Point)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getMagicCaretPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setMagicCaretPosition(java.awt.Point)"/>
         /// </summary>
         public Java.Awt.Point MagicCaretPosition
         {
             get { return IExecute<Java.Awt.Point>("getMagicCaretPosition"); } set { IExecute("setMagicCaretPosition", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getMark() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getMark()"/> 
         /// </summary>
         public int Mark
         {
             get { return IExecute<int>("getMark"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getMarkBias() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getMarkBias()"/> 
         /// </summary>
         public Javax.Swing.Text.Position.Bias MarkBias
         {
             get { return IExecute<Javax.Swing.Text.Position.Bias>("getMarkBias"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getUpdatePolicy() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setUpdatePolicy(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getUpdatePolicy()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setUpdatePolicy(int)"/>
         /// </summary>
         public int UpdatePolicy
         {
             get { return IExecute<int>("getUpdatePolicy"); } set { IExecute("setUpdatePolicy", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isActive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isActive()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsActive()
         {
             return IExecute<bool>("isActive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isSelectionVisible()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isSelectionVisible()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSelectionVisible()
         {
             return IExecute<bool>("isSelectionVisible");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isVisible()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isVisible()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsVisible()
         {
             return IExecute<bool>("isVisible");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#addChangeListener(javax.swing.event.ChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void AddChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecute("addChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#deinstall(javax.swing.text.JTextComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#deinstall(javax.swing.text.JTextComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
         public void Deinstall(Javax.Swing.Text.JTextComponent arg0)
         {
             IExecute("deinstall", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#focusGained(java.awt.event.FocusEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#focusGained(java.awt.event.FocusEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
         public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
         {
             IExecute("focusGained", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#focusLost(java.awt.event.FocusEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#focusLost(java.awt.event.FocusEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
         public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
         {
             IExecute("focusLost", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#install(javax.swing.text.JTextComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#install(javax.swing.text.JTextComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
         public void Install(Javax.Swing.Text.JTextComponent arg0)
         {
             IExecute("install", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseClicked(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseClicked(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseClicked", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseDragged(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseDragged(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseDragged", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseEntered(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseEntered(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseEntered", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseExited(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseExited(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseExited", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseMoved(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseMoved(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseMoved", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mousePressed(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mousePressed(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mousePressed", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseReleased(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseReleased(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
         public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
         {
             IExecute("mouseReleased", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#moveDot(int,javax.swing.text.Position$Bias)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#moveDot(int,javax.swing.text.Position$Bias)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         public void MoveDot(int arg0, Javax.Swing.Text.Position.Bias arg1)
         {
             IExecute("moveDot", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#moveDot(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#moveDot(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void MoveDot(int arg0)
         {
             IExecute("moveDot", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#paint(java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#paint(java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void Paint(Java.Awt.Graphics arg0)
         {
             IExecute("paint", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#removeChangeListener(javax.swing.event.ChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
         public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
         {
             IExecute("removeChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setDot(int,javax.swing.text.Position$Bias)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setDot(int,javax.swing.text.Position$Bias)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         public void SetDot(int arg0, Javax.Swing.Text.Position.Bias arg1)
         {
             IExecute("setDot", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setSelectionVisible(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setSelectionVisible(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetSelectionVisible(bool arg0)
         {
             IExecute("setSelectionVisible", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setVisible(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setVisible(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetVisible(bool arg0)
         {
             IExecute("setVisible", arg0);

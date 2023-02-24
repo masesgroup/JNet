@@ -30,8 +30,9 @@ namespace Java.Awt.Datatransfer
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public Clipboard(string arg0)
             : base(arg0)
         {
@@ -53,64 +54,76 @@ namespace Java.Awt.Datatransfer
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#getAvailableDataFlavors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#getAvailableDataFlavors()"/> 
         /// </summary>
         public Java.Awt.Datatransfer.DataFlavor[] AvailableDataFlavors
         {
             get { return IExecuteArray<Java.Awt.Datatransfer.DataFlavor>("getAvailableDataFlavors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#getFlavorListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#getFlavorListeners()"/> 
         /// </summary>
         public Java.Awt.Datatransfer.FlavorListener[] FlavorListeners
         {
             get { return IExecuteArray<Java.Awt.Datatransfer.FlavorListener>("getFlavorListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#isDataFlavorAvailable(java.awt.datatransfer.DataFlavor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#isDataFlavorAvailable(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsDataFlavorAvailable(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecute<bool>("isDataFlavorAvailable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#getData(java.awt.datatransfer.DataFlavor) throws java.awt.datatransfer.UnsupportedFlavorException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#getData(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Awt.Datatransfer.UnsupportedFlavorException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public object GetData(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecute("getData", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#getContents(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#getContents(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see cref="Java.Awt.Datatransfer.Transferable"/></returns>
         public Java.Awt.Datatransfer.Transferable GetContents(object arg0)
         {
             return IExecute<Java.Awt.Datatransfer.Transferable>("getContents", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#addFlavorListener(java.awt.datatransfer.FlavorListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#addFlavorListener(java.awt.datatransfer.FlavorListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.FlavorListener"/></param>
         public void AddFlavorListener(Java.Awt.Datatransfer.FlavorListener arg0)
         {
             IExecute("addFlavorListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#removeFlavorListener(java.awt.datatransfer.FlavorListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#removeFlavorListener(java.awt.datatransfer.FlavorListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.FlavorListener"/></param>
         public void RemoveFlavorListener(Java.Awt.Datatransfer.FlavorListener arg0)
         {
             IExecute("removeFlavorListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#setContents(java.awt.datatransfer.Transferable,java.awt.datatransfer.ClipboardOwner)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#setContents(java.awt.datatransfer.Transferable,java.awt.datatransfer.ClipboardOwner)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.ClipboardOwner"/></param>
         public void SetContents(Java.Awt.Datatransfer.Transferable arg0, Java.Awt.Datatransfer.ClipboardOwner arg1)
         {
             IExecute("setContents", arg0, arg1);

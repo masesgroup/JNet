@@ -38,43 +38,43 @@ namespace Javax.Xml.Transform
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#CDATA_SECTION_ELEMENTS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#CDATA_SECTION_ELEMENTS"/>
         /// </summary>
         public static string CDATA_SECTION_ELEMENTS => Clazz.GetField<string>("CDATA_SECTION_ELEMENTS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#DOCTYPE_PUBLIC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#DOCTYPE_PUBLIC"/>
         /// </summary>
         public static string DOCTYPE_PUBLIC => Clazz.GetField<string>("DOCTYPE_PUBLIC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#DOCTYPE_SYSTEM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#DOCTYPE_SYSTEM"/>
         /// </summary>
         public static string DOCTYPE_SYSTEM => Clazz.GetField<string>("DOCTYPE_SYSTEM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#ENCODING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#ENCODING"/>
         /// </summary>
         public static string ENCODING => Clazz.GetField<string>("ENCODING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#INDENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#INDENT"/>
         /// </summary>
         public static string INDENT => Clazz.GetField<string>("INDENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#MEDIA_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#MEDIA_TYPE"/>
         /// </summary>
         public static string MEDIA_TYPE => Clazz.GetField<string>("MEDIA_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#METHOD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#METHOD"/>
         /// </summary>
         public static string METHOD => Clazz.GetField<string>("METHOD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#OMIT_XML_DECLARATION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#OMIT_XML_DECLARATION"/>
         /// </summary>
         public static string OMIT_XML_DECLARATION => Clazz.GetField<string>("OMIT_XML_DECLARATION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#STANDALONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#STANDALONE"/>
         /// </summary>
         public static string STANDALONE => Clazz.GetField<string>("STANDALONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#VERSION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#VERSION"/>
         /// </summary>
         public static string VERSION => Clazz.GetField<string>("VERSION");
         

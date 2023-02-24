@@ -33,7 +33,13 @@ namespace Javax.Management.Remote.Rmi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIConnectionImpl"/> to <see cref="Javax.Management.Remote.Rmi.RMIConnection"/>
+        /// </summary>
         public static implicit operator Javax.Management.Remote.Rmi.RMIConnection(Javax.Management.Remote.Rmi.RMIConnectionImpl t) => t.Cast<Javax.Management.Remote.Rmi.RMIConnection>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIConnectionImpl"/> to <see cref="Java.Rmi.Server.Unreferenced"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Server.Unreferenced(Javax.Management.Remote.Rmi.RMIConnectionImpl t) => t.Cast<Java.Rmi.Server.Unreferenced>();
         
         #endregion
@@ -48,127 +54,219 @@ namespace Javax.Management.Remote.Rmi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getConnectionId() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getConnectionId()"/> 
         /// </summary>
         public string ConnectionId
         {
             get { return IExecute<string>("getConnectionId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#isInstanceOf(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject) throws javax.management.InstanceNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#isInstanceOf(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public bool IsInstanceOf(Javax.Management.ObjectName arg0, string arg1, Javax.Security.Auth.Subject arg2)
         {
             return IExecute<bool>("isInstanceOf", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#isRegistered(javax.management.ObjectName,javax.security.auth.Subject) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#isRegistered(javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public bool IsRegistered(Javax.Management.ObjectName arg0, Javax.Security.Auth.Subject arg1)
         {
             return IExecute<bool>("isRegistered", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getMBeanCount(javax.security.auth.Subject) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getMBeanCount(javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see langword="int?"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public int? GetMBeanCount(Javax.Security.Auth.Subject arg0)
         {
             return IExecute<int?>("getMBeanCount", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[]) throws javax.management.InstanceNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
+        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public int[] AddNotificationListeners(Javax.Management.ObjectName[] arg0, Java.Rmi.MarshalledObject[] arg1, Javax.Security.Auth.Subject[] arg2)
         {
             return IExecuteArray<int>("addNotificationListeners", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject) throws javax.management.MBeanException,javax.management.AttributeNotFoundException,javax.management.InstanceNotFoundException,javax.management.ReflectionException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.AttributeNotFoundException"/>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public object GetAttribute(Javax.Management.ObjectName arg0, string arg1, Javax.Security.Auth.Subject arg2)
         {
             return IExecute("getAttribute", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getDefaultDomain(javax.security.auth.Subject) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getDefaultDomain(javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public string GetDefaultDomain(Javax.Security.Auth.Subject arg0)
         {
             return IExecute<string>("getDefaultDomain", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getDomains(javax.security.auth.Subject) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getDomains(javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public string[] GetDomains(Javax.Security.Auth.Subject arg0)
         {
             return IExecuteArray<string>("getDomains", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getMBeanInfo(javax.management.ObjectName,javax.security.auth.Subject) throws javax.management.InstanceNotFoundException,javax.management.IntrospectionException,javax.management.ReflectionException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getMBeanInfo(javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see cref="Javax.Management.MBeanInfo"/></returns>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.IntrospectionException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.MBeanInfo GetMBeanInfo(Javax.Management.ObjectName arg0, Javax.Security.Auth.Subject arg1)
         {
             return IExecute<Javax.Management.MBeanInfo>("getMBeanInfo", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject) throws javax.management.ReflectionException,javax.management.InstanceAlreadyExistsException,javax.management.MBeanRegistrationException,javax.management.MBeanException,javax.management.NotCompliantMBeanException,javax.management.InstanceNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg3"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
+        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2, Javax.Security.Auth.Subject arg3)
         {
             return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#createMBean(java.lang.String,javax.management.ObjectName,javax.security.auth.Subject) throws javax.management.ReflectionException,javax.management.InstanceAlreadyExistsException,javax.management.MBeanRegistrationException,javax.management.MBeanException,javax.management.NotCompliantMBeanException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#createMBean(java.lang.String,javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
+        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1, Javax.Security.Auth.Subject arg2)
         {
             return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getObjectInstance(javax.management.ObjectName,javax.security.auth.Subject) throws javax.management.InstanceNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#getObjectInstance(javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.ObjectInstance GetObjectInstance(Javax.Management.ObjectName arg0, Javax.Security.Auth.Subject arg1)
         {
             return IExecute<Javax.Management.ObjectInstance>("getObjectInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#fetchNotifications(long,int,long) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#fetchNotifications(long,int,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <returns><see cref="Javax.Management.Remote.NotificationResult"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.Remote.NotificationResult FetchNotifications(long arg0, int arg1, long arg2)
         {
             return IExecute<Javax.Management.Remote.NotificationResult>("fetchNotifications", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#close() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject) throws javax.management.InstanceNotFoundException,javax.management.ListenerNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1, Javax.Security.Auth.Subject arg2)
         {
             IExecute("removeNotificationListener", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#removeNotificationListeners(javax.management.ObjectName,java.lang.Integer[],javax.security.auth.Subject) throws javax.management.InstanceNotFoundException,javax.management.ListenerNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#removeNotificationListeners(javax.management.ObjectName,java.lang.Integer[],javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void RemoveNotificationListeners(Javax.Management.ObjectName arg0, int[] arg1, Javax.Security.Auth.Subject arg2)
         {
             IExecute("removeNotificationListeners", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#unreferenced()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#unreferenced()"/>
         /// </summary>
         public void Unreferenced()
         {
             IExecute("unreferenced");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#unregisterMBean(javax.management.ObjectName,javax.security.auth.Subject) throws javax.management.InstanceNotFoundException,javax.management.MBeanRegistrationException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl.html#unregisterMBean(javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void UnregisterMBean(Javax.Management.ObjectName arg0, Javax.Security.Auth.Subject arg1)
         {
             IExecute("unregisterMBean", arg0, arg1);

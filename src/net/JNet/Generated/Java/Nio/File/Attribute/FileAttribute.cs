@@ -46,15 +46,19 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Name()
         {
             return IExecute<string>("name");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Value()
         {
             return IExecute("value");

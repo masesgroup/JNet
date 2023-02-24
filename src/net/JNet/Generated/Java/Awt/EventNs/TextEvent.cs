@@ -30,8 +30,10 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextEvent.html#<init>(java.lang.Object,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextEvent.html#%3Cinit%3E(java.lang.Object,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public TextEvent(object arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -45,15 +47,15 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextEvent.html#TEXT_FIRST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextEvent.html#TEXT_FIRST"/>
         /// </summary>
         public static int TEXT_FIRST => Clazz.GetField<int>("TEXT_FIRST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextEvent.html#TEXT_LAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextEvent.html#TEXT_LAST"/>
         /// </summary>
         public static int TEXT_LAST => Clazz.GetField<int>("TEXT_LAST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextEvent.html#TEXT_VALUE_CHANGED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextEvent.html#TEXT_VALUE_CHANGED"/>
         /// </summary>
         public static int TEXT_VALUE_CHANGED => Clazz.GetField<int>("TEXT_VALUE_CHANGED");
         

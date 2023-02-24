@@ -30,15 +30,21 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#<init>(java.security.CodeSource,java.security.PermissionCollection,java.lang.ClassLoader,java.security.Principal[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#%3Cinit%3E(java.security.CodeSource,java.security.PermissionCollection,java.lang.ClassLoader,java.security.Principal[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.CodeSource"/></param>
+        /// <param name="arg1"><see cref="Java.Security.PermissionCollection"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg3"><see cref="Java.Security.Principal"/></param>
         public ProtectionDomain(Java.Security.CodeSource arg0, Java.Security.PermissionCollection arg1, Java.Lang.ClassLoader arg2, Java.Security.Principal[] arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#<init>(java.security.CodeSource,java.security.PermissionCollection)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#%3Cinit%3E(java.security.CodeSource,java.security.PermissionCollection)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.CodeSource"/></param>
+        /// <param name="arg1"><see cref="Java.Security.PermissionCollection"/></param>
         public ProtectionDomain(Java.Security.CodeSource arg0, Java.Security.PermissionCollection arg1)
             : base(arg0, arg1)
         {
@@ -60,43 +66,47 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#getClassLoader() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#getClassLoader()"/> 
         /// </summary>
         public Java.Lang.ClassLoader ClassLoader
         {
             get { return IExecute<Java.Lang.ClassLoader>("getClassLoader"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#getCodeSource() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#getCodeSource()"/> 
         /// </summary>
         public Java.Security.CodeSource CodeSource
         {
             get { return IExecute<Java.Security.CodeSource>("getCodeSource"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#getPermissions() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#getPermissions()"/> 
         /// </summary>
         public Java.Security.PermissionCollection Permissions
         {
             get { return IExecute<Java.Security.PermissionCollection>("getPermissions"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#getPrincipals() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#getPrincipals()"/> 
         /// </summary>
         public Java.Security.Principal[] Principals
         {
             get { return IExecuteArray<Java.Security.Principal>("getPrincipals"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#implies(java.security.Permission)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#implies(java.security.Permission)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Implies(Java.Security.Permission arg0)
         {
             return IExecute<bool>("implies", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#staticPermissionsOnly()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#staticPermissionsOnly()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool StaticPermissionsOnly()
         {
             return IExecute<bool>("staticPermissionsOnly");

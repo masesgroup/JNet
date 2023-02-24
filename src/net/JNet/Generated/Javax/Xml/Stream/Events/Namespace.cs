@@ -33,6 +33,9 @@ namespace Javax.Xml.Stream.Events
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Stream.Events.Namespace"/> to <see cref="Javax.Xml.Stream.Events.Attribute"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Stream.Events.Attribute(Javax.Xml.Stream.Events.Namespace t) => t.Cast<Javax.Xml.Stream.Events.Attribute>();
         
         #endregion
@@ -47,22 +50,24 @@ namespace Javax.Xml.Stream.Events
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#getNamespaceURI() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#getNamespaceURI()"/> 
         /// </summary>
         public string NamespaceURI
         {
             get { return IExecute<string>("getNamespaceURI"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#getPrefix() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#getPrefix()"/> 
         /// </summary>
         public string Prefix
         {
             get { return IExecute<string>("getPrefix"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#isDefaultNamespaceDeclaration()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Namespace.html#isDefaultNamespaceDeclaration()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDefaultNamespaceDeclaration()
         {
             return IExecute<bool>("isDefaultNamespaceDeclaration");

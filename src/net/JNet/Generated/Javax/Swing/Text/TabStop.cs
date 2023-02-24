@@ -30,15 +30,19 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#<init>(float,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#%3Cinit%3E(float,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public TabStop(float arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#<init>(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#%3Cinit%3E(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
         public TabStop(float arg0)
             : base(arg0)
         {
@@ -47,53 +51,56 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.TabStop"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.TabStop t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_BAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_BAR"/>
         /// </summary>
         public static int ALIGN_BAR => Clazz.GetField<int>("ALIGN_BAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_CENTER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_CENTER"/>
         /// </summary>
         public static int ALIGN_CENTER => Clazz.GetField<int>("ALIGN_CENTER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_DECIMAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_DECIMAL"/>
         /// </summary>
         public static int ALIGN_DECIMAL => Clazz.GetField<int>("ALIGN_DECIMAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_LEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_LEFT"/>
         /// </summary>
         public static int ALIGN_LEFT => Clazz.GetField<int>("ALIGN_LEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_RIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#ALIGN_RIGHT"/>
         /// </summary>
         public static int ALIGN_RIGHT => Clazz.GetField<int>("ALIGN_RIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_DOTS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_DOTS"/>
         /// </summary>
         public static int LEAD_DOTS => Clazz.GetField<int>("LEAD_DOTS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_EQUALS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_EQUALS"/>
         /// </summary>
         public static int LEAD_EQUALS => Clazz.GetField<int>("LEAD_EQUALS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_HYPHENS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_HYPHENS"/>
         /// </summary>
         public static int LEAD_HYPHENS => Clazz.GetField<int>("LEAD_HYPHENS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_NONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_NONE"/>
         /// </summary>
         public static int LEAD_NONE => Clazz.GetField<int>("LEAD_NONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_THICKLINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_THICKLINE"/>
         /// </summary>
         public static int LEAD_THICKLINE => Clazz.GetField<int>("LEAD_THICKLINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_UNDERLINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#LEAD_UNDERLINE"/>
         /// </summary>
         public static int LEAD_UNDERLINE => Clazz.GetField<int>("LEAD_UNDERLINE");
         
@@ -105,21 +112,21 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#getAlignment() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#getAlignment()"/> 
         /// </summary>
         public int Alignment
         {
             get { return IExecute<int>("getAlignment"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#getLeader() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#getLeader()"/> 
         /// </summary>
         public int Leader
         {
             get { return IExecute<int>("getLeader"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#getPosition() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html#getPosition()"/> 
         /// </summary>
         public float Position
         {

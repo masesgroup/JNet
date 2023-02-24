@@ -30,22 +30,25 @@ namespace Org.Xml.Sax
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#<init>(java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public InputSource(Java.Io.InputStream arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#<init>(java.io.Reader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public InputSource(Java.Io.Reader arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public InputSource(string arg0)
             : base(arg0)
         {
@@ -67,43 +70,45 @@ namespace Org.Xml.Sax
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#getByteStream() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#setByteStream(java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#getByteStream()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#setByteStream(java.io.InputStream)"/>
         /// </summary>
         public Java.Io.InputStream ByteStream
         {
             get { return IExecute<Java.Io.InputStream>("getByteStream"); } set { IExecute("setByteStream", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#getCharacterStream() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#setCharacterStream(java.io.Reader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#getCharacterStream()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#setCharacterStream(java.io.Reader)"/>
         /// </summary>
         public Java.Io.Reader CharacterStream
         {
             get { return IExecute<Java.Io.Reader>("getCharacterStream"); } set { IExecute("setCharacterStream", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#getEncoding() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#setEncoding(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#getEncoding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#setEncoding(java.lang.String)"/>
         /// </summary>
         public string Encoding
         {
             get { return IExecute<string>("getEncoding"); } set { IExecute("setEncoding", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#getPublicId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#setPublicId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#getPublicId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#setPublicId(java.lang.String)"/>
         /// </summary>
         public string PublicId
         {
             get { return IExecute<string>("getPublicId"); } set { IExecute("setPublicId", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#getSystemId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#setSystemId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public string SystemId
         {
             get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#isEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#isEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");

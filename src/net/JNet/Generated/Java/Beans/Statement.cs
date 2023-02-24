@@ -46,29 +46,31 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html#getArguments() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html#getArguments()"/> 
         /// </summary>
         public object[] Arguments
         {
             get { return IExecuteArray<object>("getArguments"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html#getMethodName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html#getMethodName()"/> 
         /// </summary>
         public string MethodName
         {
             get { return IExecute<string>("getMethodName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html#getTarget() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html#getTarget()"/> 
         /// </summary>
         public object Target
         {
             get { return IExecute("getTarget"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html#execute() throws java.lang.Exception
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html#execute()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Lang.Exception"/>
         public void Execute()
         {
             IExecute("execute");

@@ -42,36 +42,42 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#getCurrentEvent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#getCurrentEvent()"/> 
         /// </summary>
         public static Java.Awt.AWTEvent CurrentEvent
         {
             get { return SExecute<Java.Awt.AWTEvent>("getCurrentEvent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#getMostRecentEventTime() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#getMostRecentEventTime()"/> 
         /// </summary>
         public static long MostRecentEventTime
         {
             get { return SExecute<long>("getMostRecentEventTime"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#isDispatchThread()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#isDispatchThread()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public static bool IsDispatchThread()
         {
             return SExecute<bool>("isDispatchThread");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#invokeAndWait(java.lang.Runnable) throws java.lang.InterruptedException,java.lang.reflect.InvocationTargetException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#invokeAndWait(java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref="Java.Lang.Reflect.InvocationTargetException"/>
         public static void InvokeAndWait(Java.Lang.Runnable arg0)
         {
             SExecute("invokeAndWait", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#invokeLater(java.lang.Runnable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#invokeLater(java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         public static void InvokeLater(Java.Lang.Runnable arg0)
         {
             SExecute("invokeLater", arg0);
@@ -81,43 +87,51 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#getNextEvent() throws java.lang.InterruptedException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#getNextEvent()"/> 
         /// </summary>
         public Java.Awt.AWTEvent NextEvent
         {
             get { return IExecute<Java.Awt.AWTEvent>("getNextEvent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#peekEvent()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#peekEvent()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.AWTEvent"/></returns>
         public Java.Awt.AWTEvent PeekEvent()
         {
             return IExecute<Java.Awt.AWTEvent>("peekEvent");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#peekEvent(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#peekEvent(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.AWTEvent"/></returns>
         public Java.Awt.AWTEvent PeekEvent(int arg0)
         {
             return IExecute<Java.Awt.AWTEvent>("peekEvent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#createSecondaryLoop()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#createSecondaryLoop()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.SecondaryLoop"/></returns>
         public Java.Awt.SecondaryLoop CreateSecondaryLoop()
         {
             return IExecute<Java.Awt.SecondaryLoop>("createSecondaryLoop");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#postEvent(java.awt.AWTEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#postEvent(java.awt.AWTEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
         public void PostEvent(Java.Awt.AWTEvent arg0)
         {
             IExecute("postEvent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#push(java.awt.EventQueue)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/EventQueue.html#push(java.awt.EventQueue)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventQueue"/></param>
         public void Push(Java.Awt.EventQueue arg0)
         {
             IExecute("push", arg0);

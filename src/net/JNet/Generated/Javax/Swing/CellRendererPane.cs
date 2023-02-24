@@ -33,6 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.CellRendererPane"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.CellRendererPane t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
@@ -47,22 +50,41 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/CellRendererPane.html#paintComponent(java.awt.Graphics,java.awt.Component,java.awt.Container,int,int,int,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/CellRendererPane.html#paintComponent(java.awt.Graphics,java.awt.Component,java.awt.Container,int,int,int,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Container"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg7"><see langword="bool"/></param>
         public void PaintComponent(Java.Awt.Graphics arg0, Java.Awt.Component arg1, Java.Awt.Container arg2, int arg3, int arg4, int arg5, int arg6, bool arg7)
         {
             IExecute("paintComponent", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/CellRendererPane.html#paintComponent(java.awt.Graphics,java.awt.Component,java.awt.Container,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/CellRendererPane.html#paintComponent(java.awt.Graphics,java.awt.Component,java.awt.Container,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Container"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
         public void PaintComponent(Java.Awt.Graphics arg0, Java.Awt.Component arg1, Java.Awt.Container arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintComponent", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/CellRendererPane.html#paintComponent(java.awt.Graphics,java.awt.Component,java.awt.Container,java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/CellRendererPane.html#paintComponent(java.awt.Graphics,java.awt.Component,java.awt.Container,java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Container"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Rectangle"/></param>
         public void PaintComponent(Java.Awt.Graphics arg0, Java.Awt.Component arg1, Java.Awt.Container arg2, Java.Awt.Rectangle arg3)
         {
             IExecute("paintComponent", arg0, arg1, arg2, arg3);

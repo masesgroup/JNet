@@ -46,98 +46,129 @@ namespace Javax.Xml.Parsers
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#getDOMImplementation() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#getDOMImplementation()"/> 
         /// </summary>
         public Org.W3c.Dom.DOMImplementation DOMImplementation
         {
             get { return IExecute<Org.W3c.Dom.DOMImplementation>("getDOMImplementation"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#getSchema() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#getSchema()"/> 
         /// </summary>
         public Javax.Xml.Validation.Schema Schema
         {
             get { return IExecute<Javax.Xml.Validation.Schema>("getSchema"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isNamespaceAware()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isNamespaceAware()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsNamespaceAware()
         {
             return IExecute<bool>("isNamespaceAware");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isValidating()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isValidating()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsValidating()
         {
             return IExecute<bool>("isValidating");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#newDocument()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#newDocument()"/>
         /// </summary>
+        
+        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
         public Org.W3c.Dom.Document NewDocument()
         {
             return IExecute<Org.W3c.Dom.Document>("newDocument");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(org.xml.sax.InputSource) throws org.xml.sax.SAXException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(org.xml.sax.InputSource)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Org.W3c.Dom.Document Parse(Org.Xml.Sax.InputSource arg0)
         {
             return IExecute<Org.W3c.Dom.Document>("parse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#setEntityResolver(org.xml.sax.EntityResolver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.EntityResolver"/></param>
         public void SetEntityResolver(Org.Xml.Sax.EntityResolver arg0)
         {
             IExecute("setEntityResolver", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#setErrorHandler(org.xml.sax.ErrorHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
         public void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
         {
             IExecute("setErrorHandler", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isXIncludeAware()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isXIncludeAware()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsXIncludeAware()
         {
             return IExecute<bool>("isXIncludeAware");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(java.io.File) throws org.xml.sax.SAXException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Org.W3c.Dom.Document Parse(Java.Io.File arg0)
         {
             return IExecute<Org.W3c.Dom.Document>("parse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(java.io.InputStream,java.lang.String) throws org.xml.sax.SAXException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(java.io.InputStream,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Org.W3c.Dom.Document Parse(Java.Io.InputStream arg0, string arg1)
         {
             return IExecute<Org.W3c.Dom.Document>("parse", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(java.io.InputStream) throws org.xml.sax.SAXException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Org.W3c.Dom.Document Parse(Java.Io.InputStream arg0)
         {
             return IExecute<Org.W3c.Dom.Document>("parse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(java.lang.String) throws org.xml.sax.SAXException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parsers.DocumentBuilder.parse(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Org.W3c.Dom.Document Parse(string arg0)
         {
             return IExecute<Org.W3c.Dom.Document>("parse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#reset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#reset()"/>
         /// </summary>
         public void Reset()
         {

@@ -46,15 +46,21 @@ namespace Javax.Script
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Compilable.html#compile(java.io.Reader) throws javax.script.ScriptException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Compilable.html#compile(java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <returns><see cref="Javax.Script.CompiledScript"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
         public Javax.Script.CompiledScript Compile(Java.Io.Reader arg0)
         {
             return IExecute<Javax.Script.CompiledScript>("compile", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Compilable.html#compile(java.lang.String) throws javax.script.ScriptException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Compilable.html#compile(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Script.CompiledScript"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
         public Javax.Script.CompiledScript Compile(string arg0)
         {
             return IExecute<Javax.Script.CompiledScript>("compile", arg0);

@@ -33,6 +33,9 @@ namespace Javax.Annotation.Processing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Annotation.Processing.SupportedAnnotationTypes"/> to <see cref="Java.Lang.Annotation.Annotation"/>
+        /// </summary>
         public static implicit operator Java.Lang.Annotation.Annotation(Javax.Annotation.Processing.SupportedAnnotationTypes t) => t.Cast<Java.Lang.Annotation.Annotation>();
         
         #endregion
@@ -47,8 +50,10 @@ namespace Javax.Annotation.Processing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedAnnotationTypes.html#value()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedAnnotationTypes.html#value()"/>
         /// </summary>
+        
+        /// <returns><see cref="string"/></returns>
         public string[] Value()
         {
             return IExecuteArray<string>("value");

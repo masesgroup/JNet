@@ -33,6 +33,9 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sound.Midi.MidiDeviceTransmitter"/> to <see cref="Javax.Sound.Midi.Transmitter"/>
+        /// </summary>
         public static implicit operator Javax.Sound.Midi.Transmitter(Javax.Sound.Midi.MidiDeviceTransmitter t) => t.Cast<Javax.Sound.Midi.Transmitter>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Javax.Sound.Midi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDeviceTransmitter.html#getMidiDevice() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDeviceTransmitter.html#getMidiDevice()"/> 
         /// </summary>
         public Javax.Sound.Midi.MidiDevice MidiDevice
         {

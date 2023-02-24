@@ -24,6 +24,7 @@ using System.Collections.Generic;
 using Java.Lang;
 using Java.Lang.Reflect;
 using System.Text;
+using MASES.JNetReflector.Templates;
 
 namespace MASES.JNetReflector
 {
@@ -393,6 +394,16 @@ namespace MASES.JNetReflector
             return Modifier.IsStatic(entry.Modifiers);
         }
 
+        public static bool IsCloseable(this Class entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            foreach (var interfaceToCheck in entry.Interfaces)
+            {
+                if (interfaceToCheck.TypeName == "java.lang.Closeable") return true;
+            }
+            return false;
+        }
+
         public static bool IsJavaLangException(this Class entry)
         {
             if (entry == null) return false;
@@ -579,6 +590,11 @@ namespace MASES.JNetReflector
             return entry.TypeName;
         }
 
+        public static string JavadocHrefUrl(this Class entry)
+        {
+            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E"));
+        }
+
         #endregion
 
         #region Constructor extension
@@ -640,7 +656,7 @@ namespace MASES.JNetReflector
             if (JNetReflectorCore.OriginJavadocUrl != null)
             {
                 var genString = entry.GenericString;
-
+                if (genString.Contains("throws")) genString = genString.Substring(0, genString.IndexOf("throws") - 1);
                 if (JNetReflectorCore.JavadocVersion > 9)
                 {
                     genString = genString.Substring(genString.IndexOf(entry.Name) + entry.Name.Length);
@@ -661,6 +677,11 @@ namespace MASES.JNetReflector
             }
 
             return entry.Name;
+        }
+
+        public static string JavadocHrefUrl(this Constructor entry)
+        {
+            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E")); 
         }
 
         #endregion
@@ -850,6 +871,7 @@ namespace MASES.JNetReflector
             {
                 var genString = entry.GenericString;
                 genString = genString.Substring(genString.IndexOf(entry.Name));
+                if (genString.Contains("throws")) genString = genString.Substring(0, genString.IndexOf("throws") - 1);
                 if (JNetReflectorCore.JavadocVersion < 7)
                 {
                     genString = genString.Replace(",", ", ");
@@ -864,6 +886,11 @@ namespace MASES.JNetReflector
             }
 
             return entry.Name;
+        }
+
+        public static string JavadocHrefUrl(this Method entry)
+        {
+            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E"));
         }
 
         #endregion
@@ -950,6 +977,11 @@ namespace MASES.JNetReflector
             return entry.Name;
         }
 
+        public static string JavadocHrefUrl(this Field entry)
+        {
+            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E"));
+        }
+
         #endregion
 
         #region Parameter extension
@@ -1003,6 +1035,12 @@ namespace MASES.JNetReflector
             return entry.Type.ToNetType(camel);
         }
 
+        public static string TypeWithoutArray(this Parameter entry, bool camel = true)
+        {
+            var result = entry.Type(camel);
+            return result.Contains(SpecialNames.ArrayTypeTrailer) ? result.Substring(0, result.IndexOf(SpecialNames.ArrayTypeTrailer)) : result;
+        }
+
         public static bool IsObjectType(this Parameter entry, bool camel = true)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
@@ -1010,33 +1048,5 @@ namespace MASES.JNetReflector
         }
 
         #endregion
-
-        public static string ToFolderName(this System.Reflection.AssemblyName assName)
-        {
-            var name = string.Concat(assName.FullName.Split(' '));
-
-            name = name.Replace(',', '_')
-                       .Replace('=', '_').ToLowerInvariant();
-
-            return name;
-        }
-
-        public static readonly string ReflectorVersion = typeof(JNetReflectorExtensions).Assembly.GetName().Version.ToString();
-
-        public static string[] KeyWords = new string[]
-        {
-            "import",
-            "final",
-            "package",
-            "implements",
-            "extends",
-            "break",
-            "finally",
-            "continue",
-            "Class",
-            "classType",
-            "classInstance",
-            "native"
-        };
     }
 }

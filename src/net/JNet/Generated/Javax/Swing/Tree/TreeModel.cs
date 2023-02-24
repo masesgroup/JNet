@@ -46,57 +46,71 @@ namespace Javax.Swing.Tree
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#getRoot() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#getRoot()"/> 
         /// </summary>
         public object Root
         {
             get { return IExecute("getRoot"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#isLeaf(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#isLeaf(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsLeaf(object arg0)
         {
             return IExecute<bool>("isLeaf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#getChildCount(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#getChildCount(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetChildCount(object arg0)
         {
             return IExecute<int>("getChildCount", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#getIndexOfChild(java.lang.Object,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#getIndexOfChild(java.lang.Object,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetIndexOfChild(object arg0, object arg1)
         {
             return IExecute<int>("getIndexOfChild", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#getChild(java.lang.Object,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#getChild(java.lang.Object,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetChild(object arg0, int arg1)
         {
             return IExecute("getChild", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#addTreeModelListener(javax.swing.event.TreeModelListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#addTreeModelListener(javax.swing.event.TreeModelListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelListener"/></param>
         public void AddTreeModelListener(Javax.Swing.Event.TreeModelListener arg0)
         {
             IExecute("addTreeModelListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#removeTreeModelListener(javax.swing.event.TreeModelListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#removeTreeModelListener(javax.swing.event.TreeModelListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelListener"/></param>
         public void RemoveTreeModelListener(Javax.Swing.Event.TreeModelListener arg0)
         {
             IExecute("removeTreeModelListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#valueForPathChanged(javax.swing.tree.TreePath,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html#valueForPathChanged(javax.swing.tree.TreePath,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void ValueForPathChanged(Javax.Swing.Tree.TreePath arg0, object arg1)
         {
             IExecute("valueForPathChanged", arg0, arg1);

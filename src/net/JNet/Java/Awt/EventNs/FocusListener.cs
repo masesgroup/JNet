@@ -21,20 +21,28 @@ using System;
 
 namespace Java.Awt.EventNs
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html"/>
+    /// </summary>
     public interface IFocusListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html#focusGained(java.awt.event.FocusEvent)"/>
+        /// </summary>
         void FocusGained(FocusEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html#focusLost(java.awt.event.FocusEvent)"/>
+        /// </summary>
         void FocusLost(FocusEvent e);
     }
 
     /// <summary>
-    /// Listener for FocusListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IFocusListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IFocusListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class FocusListener : IFocusListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.awt.event.JNetFocusListener";
 
         readonly Action<FocusEvent> focusGainedFunction = null;
@@ -78,12 +86,12 @@ namespace Java.Awt.EventNs
         {
             OnFocusLost(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IFocusListener.FocusGained(FocusEvent)"/>
         public virtual void FocusGained(FocusEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IFocusListener.FocusLost(FocusEvent)"/>
         public virtual void FocusLost(FocusEvent e)
         {
 

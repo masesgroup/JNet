@@ -30,8 +30,13 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#<init>(long,long,long,long) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#%3Cinit%3E(long,long,long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg3"><see langword="long"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public LongSummaryStatistics(long arg0, long arg1, long arg2, long arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -40,7 +45,13 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.LongSummaryStatistics"/> to <see cref="Java.Util.Function.LongConsumer"/>
+        /// </summary>
         public static implicit operator Java.Util.Function.LongConsumer(Java.Util.LongSummaryStatistics t) => t.Cast<Java.Util.Function.LongConsumer>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.LongSummaryStatistics"/> to <see cref="Java.Util.Function.IntConsumer"/>
+        /// </summary>
         public static implicit operator Java.Util.Function.IntConsumer(Java.Util.LongSummaryStatistics t) => t.Cast<Java.Util.Function.IntConsumer>();
         
         #endregion
@@ -55,57 +66,60 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getAverage() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getAverage()"/> 
         /// </summary>
         public double Average
         {
             get { return IExecute<double>("getAverage"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getCount()"/> 
         /// </summary>
         public long Count
         {
             get { return IExecute<long>("getCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getMax() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getMax()"/> 
         /// </summary>
         public long Max
         {
             get { return IExecute<long>("getMax"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getMin() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getMin()"/> 
         /// </summary>
         public long Min
         {
             get { return IExecute<long>("getMin"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getSum() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#getSum()"/> 
         /// </summary>
         public long Sum
         {
             get { return IExecute<long>("getSum"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#accept(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#accept(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Accept(int arg0)
         {
             IExecute("accept", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#accept(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#accept(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
         public void Accept(long arg0)
         {
             IExecute("accept", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#combine(java.util.LongSummaryStatistics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LongSummaryStatistics.html#combine(java.util.LongSummaryStatistics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.LongSummaryStatistics"/></param>
         public void Combine(Java.Util.LongSummaryStatistics arg0)
         {
             IExecute("combine", arg0);

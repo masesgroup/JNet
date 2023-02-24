@@ -30,8 +30,10 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPrivateKeySpec.html#<init>(java.math.BigInteger,java.security.spec.ECParameterSpec)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPrivateKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.security.spec.ECParameterSpec)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Spec.ECParameterSpec"/></param>
         public ECPrivateKeySpec(Java.Math.BigInteger arg0, Java.Security.Spec.ECParameterSpec arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Spec.ECPrivateKeySpec"/> to <see cref="Java.Security.Spec.KeySpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.KeySpec(Java.Security.Spec.ECPrivateKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
         
         #endregion
@@ -54,14 +59,14 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPrivateKeySpec.html#getParams() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPrivateKeySpec.html#getParams()"/> 
         /// </summary>
         public Java.Security.Spec.ECParameterSpec Params
         {
             get { return IExecute<Java.Security.Spec.ECParameterSpec>("getParams"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPrivateKeySpec.html#getS() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPrivateKeySpec.html#getS()"/> 
         /// </summary>
         public Java.Math.BigInteger S
         {

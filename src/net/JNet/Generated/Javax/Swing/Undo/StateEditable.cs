@@ -38,7 +38,7 @@ namespace Javax.Swing.Undo
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html#RCSID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html#RCSID"/>
         /// </summary>
         public static string RCSID => Clazz.GetField<string>("RCSID");
         

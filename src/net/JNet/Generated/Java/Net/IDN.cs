@@ -38,11 +38,11 @@ namespace Java.Net
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#ALLOW_UNASSIGNED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#ALLOW_UNASSIGNED"/>
         /// </summary>
         public static int ALLOW_UNASSIGNED => Clazz.GetField<int>("ALLOW_UNASSIGNED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#USE_STD3_ASCII_RULES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#USE_STD3_ASCII_RULES"/>
         /// </summary>
         public static int USE_STD3_ASCII_RULES => Clazz.GetField<int>("USE_STD3_ASCII_RULES");
         
@@ -50,29 +50,39 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toASCII(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toASCII(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToASCII(string arg0, int arg1)
         {
             return SExecute<string>("toASCII", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toASCII(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toASCII(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToASCII(string arg0)
         {
             return SExecute<string>("toASCII", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toUnicode(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toUnicode(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToUnicode(string arg0, int arg1)
         {
             return SExecute<string>("toUnicode", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toUnicode(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toUnicode(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToUnicode(string arg0)
         {
             return SExecute<string>("toUnicode", arg0);

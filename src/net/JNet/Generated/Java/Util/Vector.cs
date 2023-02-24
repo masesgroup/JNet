@@ -30,15 +30,18 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#<init>(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#%3Cinit%3E(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public Vector(int arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public Vector(int arg0)
             : base(arg0)
         {
@@ -47,8 +50,17 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Vector"/> to <see cref="Java.Util.RandomAccess"/>
+        /// </summary>
         public static implicit operator Java.Util.RandomAccess(Java.Util.Vector t) => t.Cast<Java.Util.RandomAccess>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Vector"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Vector t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Vector"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Vector t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -63,112 +75,137 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElement(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElement(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool RemoveElement(object arg0)
         {
             return IExecute<bool>("removeElement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elementAt(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#elementAt(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="object"/></returns>
         public object ElementAt(int arg0)
         {
             return IExecute("elementAt", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#firstElement()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#firstElement()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object FirstElement()
         {
             return IExecute("firstElement");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastElement()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastElement()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object LastElement()
         {
             return IExecute("lastElement");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#capacity()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#capacity()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Capacity()
         {
             return IExecute<int>("capacity");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#indexOf(java.lang.Object,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#indexOf(java.lang.Object,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int IndexOf(object arg0, int arg1)
         {
             return IExecute<int>("indexOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastIndexOf(java.lang.Object,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#lastIndexOf(java.lang.Object,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int LastIndexOf(object arg0, int arg1)
         {
             return IExecute<int>("lastIndexOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#addElement(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#addElement(E)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void AddElement(object arg0)
         {
             IExecute("addElement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#copyInto(java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#copyInto(java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
         public void CopyInto(object[] arg0)
         {
             IExecute("copyInto", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#ensureCapacity(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#ensureCapacity(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void EnsureCapacity(int arg0)
         {
             IExecute("ensureCapacity", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#insertElementAt(E,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#insertElementAt(E,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void InsertElementAt(object arg0, int arg1)
         {
             IExecute("insertElementAt", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeAllElements()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeAllElements()"/>
         /// </summary>
         public void RemoveAllElements()
         {
             IExecute("removeAllElements");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElementAt(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#removeElementAt(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void RemoveElementAt(int arg0)
         {
             IExecute("removeElementAt", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#setElementAt(E,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#setElementAt(E,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetElementAt(object arg0, int arg1)
         {
             IExecute("setElementAt", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#setSize(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#setSize(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetSize(int arg0)
         {
             IExecute("setSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#trimToSize()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html#trimToSize()"/>
         /// </summary>
         public void TrimToSize()
         {

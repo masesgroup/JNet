@@ -33,21 +33,24 @@ namespace Java.Awt.Print
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Print.PageFormat"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Print.PageFormat t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#LANDSCAPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#LANDSCAPE"/>
         /// </summary>
         public static int LANDSCAPE => Clazz.GetField<int>("LANDSCAPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#PORTRAIT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#PORTRAIT"/>
         /// </summary>
         public static int PORTRAIT => Clazz.GetField<int>("PORTRAIT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#REVERSE_LANDSCAPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#REVERSE_LANDSCAPE"/>
         /// </summary>
         public static int REVERSE_LANDSCAPE => Clazz.GetField<int>("REVERSE_LANDSCAPE");
         
@@ -59,63 +62,63 @@ namespace Java.Awt.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getHeight()"/> 
         /// </summary>
         public double Height
         {
             get { return IExecute<double>("getHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getImageableHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getImageableHeight()"/> 
         /// </summary>
         public double ImageableHeight
         {
             get { return IExecute<double>("getImageableHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getImageableWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getImageableWidth()"/> 
         /// </summary>
         public double ImageableWidth
         {
             get { return IExecute<double>("getImageableWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getImageableX() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getImageableX()"/> 
         /// </summary>
         public double ImageableX
         {
             get { return IExecute<double>("getImageableX"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getImageableY() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getImageableY()"/> 
         /// </summary>
         public double ImageableY
         {
             get { return IExecute<double>("getImageableY"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getMatrix() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getMatrix()"/> 
         /// </summary>
         public double[] Matrix
         {
             get { return IExecuteArray<double>("getMatrix"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getOrientation() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#setOrientation(int) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getOrientation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#setOrientation(int)"/>
         /// </summary>
         public int Orientation
         {
             get { return IExecute<int>("getOrientation"); } set { IExecute("setOrientation", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getPaper() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#setPaper(java.awt.print.Paper)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getPaper()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#setPaper(java.awt.print.Paper)"/>
         /// </summary>
         public Java.Awt.Print.Paper Paper
         {
             get { return IExecute<Java.Awt.Print.Paper>("getPaper"); } set { IExecute("setPaper", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html#getWidth()"/> 
         /// </summary>
         public double Width
         {

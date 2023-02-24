@@ -30,8 +30,9 @@ namespace Javax.Management.Remote
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXPrincipal.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXPrincipal.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public JMXPrincipal(string arg0)
             : base(arg0)
         {
@@ -40,7 +41,13 @@ namespace Javax.Management.Remote
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Remote.JMXPrincipal"/> to <see cref="Java.Security.Principal"/>
+        /// </summary>
         public static implicit operator Java.Security.Principal(Javax.Management.Remote.JMXPrincipal t) => t.Cast<Java.Security.Principal>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Remote.JMXPrincipal"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Remote.JMXPrincipal t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -55,7 +62,7 @@ namespace Javax.Management.Remote
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXPrincipal.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXPrincipal.html#getName()"/> 
         /// </summary>
         public string Name
         {

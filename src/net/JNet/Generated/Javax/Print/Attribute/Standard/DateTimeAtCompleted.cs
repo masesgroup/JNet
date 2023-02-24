@@ -30,8 +30,9 @@ namespace Javax.Print.Attribute.Standard
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DateTimeAtCompleted.html#<init>(java.util.Date)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DateTimeAtCompleted.html#%3Cinit%3E(java.util.Date)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
         public DateTimeAtCompleted(Java.Util.Date arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.DateTimeAtCompleted"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.DateTimeAtCompleted t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
         
         #endregion
@@ -54,7 +58,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DateTimeAtCompleted.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DateTimeAtCompleted.html#getName()"/> 
         /// </summary>
         public string Name
         {

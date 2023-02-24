@@ -38,31 +38,31 @@ namespace Javax.Crypto
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#DECRYPT_MODE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#DECRYPT_MODE"/>
         /// </summary>
         public static int DECRYPT_MODE => Clazz.GetField<int>("DECRYPT_MODE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#ENCRYPT_MODE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#ENCRYPT_MODE"/>
         /// </summary>
         public static int ENCRYPT_MODE => Clazz.GetField<int>("ENCRYPT_MODE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#PRIVATE_KEY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#PRIVATE_KEY"/>
         /// </summary>
         public static int PRIVATE_KEY => Clazz.GetField<int>("PRIVATE_KEY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#PUBLIC_KEY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#PUBLIC_KEY"/>
         /// </summary>
         public static int PUBLIC_KEY => Clazz.GetField<int>("PUBLIC_KEY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#SECRET_KEY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#SECRET_KEY"/>
         /// </summary>
         public static int SECRET_KEY => Clazz.GetField<int>("SECRET_KEY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#UNWRAP_MODE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#UNWRAP_MODE"/>
         /// </summary>
         public static int UNWRAP_MODE => Clazz.GetField<int>("UNWRAP_MODE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#WRAP_MODE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#WRAP_MODE"/>
         /// </summary>
         public static int WRAP_MODE => Clazz.GetField<int>("WRAP_MODE");
         
@@ -70,29 +70,45 @@ namespace Javax.Crypto
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getMaxAllowedKeyLength(java.lang.String) throws java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getMaxAllowedKeyLength(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static int GetMaxAllowedKeyLength(string arg0)
         {
             return SExecute<int>("getMaxAllowedKeyLength", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getMaxAllowedParameterSpec(java.lang.String) throws java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getMaxAllowedParameterSpec(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Spec.AlgorithmParameterSpec GetMaxAllowedParameterSpec(string arg0)
         {
             return SExecute<Java.Security.Spec.AlgorithmParameterSpec>("getMaxAllowedParameterSpec", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String,java.lang.String) throws java.security.NoSuchAlgorithmException,java.security.NoSuchProviderException,javax.crypto.NoSuchPaddingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Crypto.Cipher"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
         public static Javax.Crypto.Cipher GetInstance(string arg0, string arg1)
         {
             return SExecute<Javax.Crypto.Cipher>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException,javax.crypto.NoSuchPaddingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Crypto.Cipher"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
         public static Javax.Crypto.Cipher GetInstance(string arg0)
         {
             return SExecute<Javax.Crypto.Cipher>("getInstance", arg0);
@@ -102,218 +118,337 @@ namespace Javax.Crypto
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getBlockSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getBlockSize()"/> 
         /// </summary>
         public int BlockSize
         {
             get { return IExecute<int>("getBlockSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getExemptionMechanism() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getExemptionMechanism()"/> 
         /// </summary>
         public Javax.Crypto.ExemptionMechanism ExemptionMechanism
         {
             get { return IExecute<Javax.Crypto.ExemptionMechanism>("getExemptionMechanism"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getIV() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getIV()"/> 
         /// </summary>
         public byte[] IV
         {
             get { return IExecuteArray<byte>("getIV"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getParameters() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getParameters()"/> 
         /// </summary>
         public Java.Security.AlgorithmParameters Parameters
         {
             get { return IExecute<Java.Security.AlgorithmParameters>("getParameters"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal() throws javax.crypto.IllegalBlockSizeException,javax.crypto.BadPaddingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal()"/>
         /// </summary>
+        
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
+        /// <exception cref="Javax.Crypto.BadPaddingException"/>
         public byte[] DoFinal()
         {
             return IExecuteArray<byte>("doFinal");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int,int) throws javax.crypto.IllegalBlockSizeException,javax.crypto.BadPaddingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
+        /// <exception cref="Javax.Crypto.BadPaddingException"/>
         public byte[] DoFinal(byte[] arg0, int arg1, int arg2)
         {
             return IExecuteArray<byte>("doFinal", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[]) throws javax.crypto.IllegalBlockSizeException,javax.crypto.BadPaddingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
+        /// <exception cref="Javax.Crypto.BadPaddingException"/>
         public byte[] DoFinal(byte[] arg0)
         {
             return IExecuteArray<byte>("doFinal", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="byte"/></returns>
         public byte[] Update(byte[] arg0, int arg1, int arg2)
         {
             return IExecuteArray<byte>("update", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see cref="byte"/></returns>
         public byte[] Update(byte[] arg0)
         {
             return IExecuteArray<byte>("update", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#wrap(java.security.Key) throws javax.crypto.IllegalBlockSizeException,java.security.InvalidKeyException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#wrap(java.security.Key)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
         public byte[] Wrap(Java.Security.Key arg0)
         {
             return IExecuteArray<byte>("wrap", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int,int,byte[],int) throws javax.crypto.ShortBufferException,javax.crypto.IllegalBlockSizeException,javax.crypto.BadPaddingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int,int,byte[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Crypto.ShortBufferException"/>
+        /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
+        /// <exception cref="Javax.Crypto.BadPaddingException"/>
         public int DoFinal(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4)
         {
             return IExecute<int>("doFinal", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int,int,byte[]) throws javax.crypto.ShortBufferException,javax.crypto.IllegalBlockSizeException,javax.crypto.BadPaddingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int,int,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Crypto.ShortBufferException"/>
+        /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
+        /// <exception cref="Javax.Crypto.BadPaddingException"/>
         public int DoFinal(byte[] arg0, int arg1, int arg2, byte[] arg3)
         {
             return IExecute<int>("doFinal", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int) throws javax.crypto.IllegalBlockSizeException,javax.crypto.ShortBufferException,javax.crypto.BadPaddingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
+        /// <exception cref="Javax.Crypto.ShortBufferException"/>
+        /// <exception cref="Javax.Crypto.BadPaddingException"/>
         public int DoFinal(byte[] arg0, int arg1)
         {
             return IExecute<int>("doFinal", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(java.nio.ByteBuffer,java.nio.ByteBuffer) throws javax.crypto.ShortBufferException,javax.crypto.IllegalBlockSizeException,javax.crypto.BadPaddingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(java.nio.ByteBuffer,java.nio.ByteBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Crypto.ShortBufferException"/>
+        /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
+        /// <exception cref="Javax.Crypto.BadPaddingException"/>
         public int DoFinal(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer arg1)
         {
             return IExecute<int>("doFinal", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getOutputSize(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getOutputSize(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetOutputSize(int arg0)
         {
             return IExecute<int>("getOutputSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[],int,int,byte[],int) throws javax.crypto.ShortBufferException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[],int,int,byte[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Crypto.ShortBufferException"/>
         public int Update(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4)
         {
             return IExecute<int>("update", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[],int,int,byte[]) throws javax.crypto.ShortBufferException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[],int,int,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Crypto.ShortBufferException"/>
         public int Update(byte[] arg0, int arg1, int arg2, byte[] arg3)
         {
             return IExecute<int>("update", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(java.nio.ByteBuffer,java.nio.ByteBuffer) throws javax.crypto.ShortBufferException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(java.nio.ByteBuffer,java.nio.ByteBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Crypto.ShortBufferException"/>
         public int Update(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer arg1)
         {
             return IExecute<int>("update", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#unwrap(byte[],java.lang.String,int) throws java.security.InvalidKeyException,java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#unwrap(byte[],java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Security.Key"/></returns>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public Java.Security.Key Unwrap(byte[] arg0, string arg1, int arg2)
         {
             return IExecute<Java.Security.Key>("unwrap", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.cert.Certificate,java.security.SecureRandom) throws java.security.InvalidKeyException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.cert.Certificate,java.security.SecureRandom)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
+        /// <param name="arg2"><see cref="Java.Security.SecureRandom"/></param>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
         public void Init(int arg0, Java.Security.Cert.Certificate arg1, Java.Security.SecureRandom arg2)
         {
             IExecute("init", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.cert.Certificate) throws java.security.InvalidKeyException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.cert.Certificate)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
         public void Init(int arg0, Java.Security.Cert.Certificate arg1)
         {
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.AlgorithmParameters,java.security.SecureRandom) throws java.security.InvalidKeyException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.AlgorithmParameters,java.security.SecureRandom)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg2"><see cref="Java.Security.AlgorithmParameters"/></param>
+        /// <param name="arg3"><see cref="Java.Security.SecureRandom"/></param>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(int arg0, Java.Security.Key arg1, Java.Security.AlgorithmParameters arg2, Java.Security.SecureRandom arg3)
         {
             IExecute("init", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.AlgorithmParameters) throws java.security.InvalidKeyException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.AlgorithmParameters)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg2"><see cref="Java.Security.AlgorithmParameters"/></param>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(int arg0, Java.Security.Key arg1, Java.Security.AlgorithmParameters arg2)
         {
             IExecute("init", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.SecureRandom) throws java.security.InvalidKeyException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.SecureRandom)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg2"><see cref="Java.Security.SecureRandom"/></param>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
         public void Init(int arg0, Java.Security.Key arg1, Java.Security.SecureRandom arg2)
         {
             IExecute("init", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom) throws java.security.InvalidKeyException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
+        /// <param name="arg3"><see cref="Java.Security.SecureRandom"/></param>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(int arg0, Java.Security.Key arg1, Java.Security.Spec.AlgorithmParameterSpec arg2, Java.Security.SecureRandom arg3)
         {
             IExecute("init", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidKeyException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(int arg0, Java.Security.Key arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
         {
             IExecute("init", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key) throws java.security.InvalidKeyException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Key"/></param>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
         public void Init(int arg0, Java.Security.Key arg1)
         {
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#updateAAD(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#updateAAD(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void UpdateAAD(byte[] arg0, int arg1, int arg2)
         {
             IExecute("updateAAD", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#updateAAD(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#updateAAD(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
         public void UpdateAAD(byte[] arg0)
         {
             IExecute("updateAAD", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#updateAAD(java.nio.ByteBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#updateAAD(java.nio.ByteBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void UpdateAAD(Java.Nio.ByteBuffer arg0)
         {
             IExecute("updateAAD", arg0);

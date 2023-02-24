@@ -46,113 +46,158 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#compareAndSet(T,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#compareAndSet(T,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CompareAndSet(object arg0, int arg1, int arg2)
         {
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#weakCompareAndSet(T,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#weakCompareAndSet(T,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSet(object arg0, int arg1, int arg2)
         {
             return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#get(T)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#get(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Get(object arg0)
         {
             return IExecute<int>("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#lazySet(T,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#lazySet(T,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void LazySet(object arg0, int arg1)
         {
             IExecute("lazySet", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#set(T,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#set(T,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Set(object arg0, int arg1)
         {
             IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#accumulateAndGet(T,int,java.util.function.IntBinaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#accumulateAndGet(T,int,java.util.function.IntBinaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
+        /// <returns><see langword="int"/></returns>
         public int AccumulateAndGet(object arg0, int arg1, Java.Util.Function.IntBinaryOperator arg2)
         {
             return IExecute<int>("accumulateAndGet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndAccumulate(T,int,java.util.function.IntBinaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndAccumulate(T,int,java.util.function.IntBinaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAndAccumulate(object arg0, int arg1, Java.Util.Function.IntBinaryOperator arg2)
         {
             return IExecute<int>("getAndAccumulate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndUpdate(T,java.util.function.IntUnaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndUpdate(T,java.util.function.IntUnaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAndUpdate(object arg0, Java.Util.Function.IntUnaryOperator arg1)
         {
             return IExecute<int>("getAndUpdate", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#updateAndGet(T,java.util.function.IntUnaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#updateAndGet(T,java.util.function.IntUnaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
+        /// <returns><see langword="int"/></returns>
         public int UpdateAndGet(object arg0, Java.Util.Function.IntUnaryOperator arg1)
         {
             return IExecute<int>("updateAndGet", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#addAndGet(T,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#addAndGet(T,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int AddAndGet(object arg0, int arg1)
         {
             return IExecute<int>("addAndGet", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#decrementAndGet(T)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#decrementAndGet(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int DecrementAndGet(object arg0)
         {
             return IExecute<int>("decrementAndGet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndAdd(T,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndAdd(T,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAndAdd(object arg0, int arg1)
         {
             return IExecute<int>("getAndAdd", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndDecrement(T)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndDecrement(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAndDecrement(object arg0)
         {
             return IExecute<int>("getAndDecrement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndIncrement(T)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndIncrement(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAndIncrement(object arg0)
         {
             return IExecute<int>("getAndIncrement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndSet(T,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#getAndSet(T,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetAndSet(object arg0, int arg1)
         {
             return IExecute<int>("getAndSet", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#incrementAndGet(T)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html#incrementAndGet(T)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int IncrementAndGet(object arg0)
         {
             return IExecute<int>("incrementAndGet", arg0);

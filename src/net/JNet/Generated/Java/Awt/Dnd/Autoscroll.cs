@@ -46,15 +46,16 @@ namespace Java.Awt.Dnd
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/Autoscroll.html#getAutoscrollInsets() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/Autoscroll.html#getAutoscrollInsets()"/> 
         /// </summary>
         public Java.Awt.Insets AutoscrollInsets
         {
             get { return IExecute<Java.Awt.Insets>("getAutoscrollInsets"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/Autoscroll.html#autoscroll(java.awt.Point)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/Autoscroll.html#autoscroll(java.awt.Point)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
         public void AutoscrollMethod(Java.Awt.Point arg0)
         {
             IExecute("autoscroll", arg0);

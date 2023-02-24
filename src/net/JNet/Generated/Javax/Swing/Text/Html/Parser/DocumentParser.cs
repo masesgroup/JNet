@@ -30,8 +30,9 @@ namespace Javax.Swing.Text.Html.Parser
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DocumentParser.html#<init>(javax.swing.text.html.parser.DTD)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DocumentParser.html#%3Cinit%3E(javax.swing.text.html.parser.DTD)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.Parser.DTD"/></param>
         public DocumentParser(Javax.Swing.Text.Html.Parser.DTD arg0)
             : base(arg0)
         {
@@ -53,8 +54,12 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DocumentParser.html#parser.DocumentParser.parse(java.io.Reader,javax.swing.text.html.HTMLEditorKit$ParserCallback,boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DocumentParser.html#parser.DocumentParser.parse(java.io.Reader,javax.swing.text.html.HTMLEditorKit$ParserCallback,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.Reader arg0, Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback arg1, bool arg2)
         {
             IExecute("parse", arg0, arg1, arg2);

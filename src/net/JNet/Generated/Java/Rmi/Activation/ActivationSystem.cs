@@ -33,13 +33,16 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Activation.ActivationSystem"/> to <see cref="Java.Rmi.Remote"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Remote(Java.Rmi.Activation.ActivationSystem t) => t.Cast<Java.Rmi.Remote>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#SYSTEM_PORT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#SYSTEM_PORT"/>
         /// </summary>
         public static int SYSTEM_PORT => Clazz.GetField<int>("SYSTEM_PORT");
         
@@ -51,71 +54,120 @@ namespace Java.Rmi.Activation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#getActivationDesc(java.rmi.activation.ActivationID) throws java.rmi.activation.ActivationException,java.rmi.activation.UnknownObjectException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#getActivationDesc(java.rmi.activation.ActivationID)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <returns><see cref="Java.Rmi.Activation.ActivationDesc"/></returns>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public Java.Rmi.Activation.ActivationDesc GetActivationDesc(Java.Rmi.Activation.ActivationID arg0)
         {
             return IExecute<Java.Rmi.Activation.ActivationDesc>("getActivationDesc", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#setActivationDesc(java.rmi.activation.ActivationID,java.rmi.activation.ActivationDesc) throws java.rmi.activation.ActivationException,java.rmi.activation.UnknownObjectException,java.rmi.activation.UnknownGroupException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#setActivationDesc(java.rmi.activation.ActivationID,java.rmi.activation.ActivationDesc)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationDesc"/></param>
+        /// <returns><see cref="Java.Rmi.Activation.ActivationDesc"/></returns>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
+        /// <exception cref="Java.Rmi.Activation.UnknownGroupException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public Java.Rmi.Activation.ActivationDesc SetActivationDesc(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.Activation.ActivationDesc arg1)
         {
             return IExecute<Java.Rmi.Activation.ActivationDesc>("setActivationDesc", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#getActivationGroupDesc(java.rmi.activation.ActivationGroupID) throws java.rmi.activation.ActivationException,java.rmi.activation.UnknownGroupException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#getActivationGroupDesc(java.rmi.activation.ActivationGroupID)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
+        /// <returns><see cref="Java.Rmi.Activation.ActivationGroupDesc"/></returns>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.Activation.UnknownGroupException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public Java.Rmi.Activation.ActivationGroupDesc GetActivationGroupDesc(Java.Rmi.Activation.ActivationGroupID arg0)
         {
             return IExecute<Java.Rmi.Activation.ActivationGroupDesc>("getActivationGroupDesc", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#setActivationGroupDesc(java.rmi.activation.ActivationGroupID,java.rmi.activation.ActivationGroupDesc) throws java.rmi.activation.ActivationException,java.rmi.activation.UnknownGroupException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#setActivationGroupDesc(java.rmi.activation.ActivationGroupID,java.rmi.activation.ActivationGroupDesc)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationGroupDesc"/></param>
+        /// <returns><see cref="Java.Rmi.Activation.ActivationGroupDesc"/></returns>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.Activation.UnknownGroupException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public Java.Rmi.Activation.ActivationGroupDesc SetActivationGroupDesc(Java.Rmi.Activation.ActivationGroupID arg0, Java.Rmi.Activation.ActivationGroupDesc arg1)
         {
             return IExecute<Java.Rmi.Activation.ActivationGroupDesc>("setActivationGroupDesc", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#registerGroup(java.rmi.activation.ActivationGroupDesc) throws java.rmi.activation.ActivationException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#registerGroup(java.rmi.activation.ActivationGroupDesc)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupDesc"/></param>
+        /// <returns><see cref="Java.Rmi.Activation.ActivationGroupID"/></returns>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public Java.Rmi.Activation.ActivationGroupID RegisterGroup(Java.Rmi.Activation.ActivationGroupDesc arg0)
         {
             return IExecute<Java.Rmi.Activation.ActivationGroupID>("registerGroup", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#registerObject(java.rmi.activation.ActivationDesc) throws java.rmi.activation.ActivationException,java.rmi.activation.UnknownGroupException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#registerObject(java.rmi.activation.ActivationDesc)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationDesc"/></param>
+        /// <returns><see cref="Java.Rmi.Activation.ActivationID"/></returns>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.Activation.UnknownGroupException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public Java.Rmi.Activation.ActivationID RegisterObject(Java.Rmi.Activation.ActivationDesc arg0)
         {
             return IExecute<Java.Rmi.Activation.ActivationID>("registerObject", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#activeGroup(java.rmi.activation.ActivationGroupID,java.rmi.activation.ActivationInstantiator,long) throws java.rmi.activation.UnknownGroupException,java.rmi.activation.ActivationException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#activeGroup(java.rmi.activation.ActivationGroupID,java.rmi.activation.ActivationInstantiator,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationInstantiator"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <returns><see cref="Java.Rmi.Activation.ActivationMonitor"/></returns>
+        /// <exception cref="Java.Rmi.Activation.UnknownGroupException"/>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public Java.Rmi.Activation.ActivationMonitor ActiveGroup(Java.Rmi.Activation.ActivationGroupID arg0, Java.Rmi.Activation.ActivationInstantiator arg1, long arg2)
         {
             return IExecute<Java.Rmi.Activation.ActivationMonitor>("activeGroup", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#shutdown() throws java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#shutdown()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public void Shutdown()
         {
             IExecute("shutdown");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#unregisterGroup(java.rmi.activation.ActivationGroupID) throws java.rmi.activation.ActivationException,java.rmi.activation.UnknownGroupException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#unregisterGroup(java.rmi.activation.ActivationGroupID)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.Activation.UnknownGroupException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public void UnregisterGroup(Java.Rmi.Activation.ActivationGroupID arg0)
         {
             IExecute("unregisterGroup", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#unregisterObject(java.rmi.activation.ActivationID) throws java.rmi.activation.ActivationException,java.rmi.activation.UnknownObjectException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationSystem.html#unregisterObject(java.rmi.activation.ActivationID)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public void UnregisterObject(Java.Rmi.Activation.ActivationID arg0)
         {
             IExecute("unregisterObject", arg0);

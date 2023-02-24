@@ -46,35 +46,35 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getAttributes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getAttributes()"/> 
         /// </summary>
         public Javax.Print.Attribute.DocAttributeSet Attributes
         {
             get { return IExecute<Javax.Print.Attribute.DocAttributeSet>("getAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getDocFlavor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getDocFlavor()"/> 
         /// </summary>
         public Javax.Print.DocFlavor DocFlavor
         {
             get { return IExecute<Javax.Print.DocFlavor>("getDocFlavor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getPrintData() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getPrintData()"/> 
         /// </summary>
         public object PrintData
         {
             get { return IExecute("getPrintData"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getReaderForText() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getReaderForText()"/> 
         /// </summary>
         public Java.Io.Reader ReaderForText
         {
             get { return IExecute<Java.Io.Reader>("getReaderForText"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getStreamForBytes() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getStreamForBytes()"/> 
         /// </summary>
         public Java.Io.InputStream StreamForBytes
         {

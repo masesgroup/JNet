@@ -42,15 +42,23 @@ namespace Java.Security.Cert
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getInstance(java.lang.String,java.lang.String) throws java.security.cert.CertificateException,java.security.NoSuchProviderException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertificateFactory"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.Cert.CertificateFactory GetInstance(string arg0, string arg1)
         {
             return SExecute<Java.Security.Cert.CertificateFactory>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getInstance(java.lang.String) throws java.security.cert.CertificateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertificateFactory"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
         public static Java.Security.Cert.CertificateFactory GetInstance(string arg0)
         {
             return SExecute<Java.Security.Cert.CertificateFactory>("getInstance", arg0);
@@ -60,36 +68,49 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertificate(java.io.InputStream) throws java.security.cert.CertificateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertificate(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
         public Java.Security.Cert.Certificate GenerateCertificate(Java.Io.InputStream arg0)
         {
             return IExecute<Java.Security.Cert.Certificate>("generateCertificate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertPath(java.io.InputStream,java.lang.String) throws java.security.cert.CertificateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertPath(java.io.InputStream,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertPath"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
         public Java.Security.Cert.CertPath GenerateCertPath(Java.Io.InputStream arg0, string arg1)
         {
             return IExecute<Java.Security.Cert.CertPath>("generateCertPath", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertPath(java.io.InputStream) throws java.security.cert.CertificateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertPath(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertPath"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
         public Java.Security.Cert.CertPath GenerateCertPath(Java.Io.InputStream arg0)
         {
             return IExecute<Java.Security.Cert.CertPath>("generateCertPath", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCRL(java.io.InputStream) throws java.security.cert.CRLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCRL(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Java.Security.Cert.CRL"/></returns>
+        /// <exception cref="Java.Security.Cert.CRLException"/>
         public Java.Security.Cert.CRL GenerateCRL(Java.Io.InputStream arg0)
         {
             return IExecute<Java.Security.Cert.CRL>("generateCRL", arg0);

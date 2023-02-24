@@ -33,7 +33,13 @@ namespace Javax.Security.Auth.Callback
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.Callback.LanguageCallback"/> to <see cref="Javax.Security.Auth.Callback.Callback"/>
+        /// </summary>
         public static implicit operator Javax.Security.Auth.Callback.Callback(Javax.Security.Auth.Callback.LanguageCallback t) => t.Cast<Javax.Security.Auth.Callback.Callback>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.Callback.LanguageCallback"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.LanguageCallback t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -48,7 +54,7 @@ namespace Javax.Security.Auth.Callback
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/LanguageCallback.html#getLocale() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/LanguageCallback.html#setLocale(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/LanguageCallback.html#getLocale()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/LanguageCallback.html#setLocale(java.util.Locale)"/>
         /// </summary>
         public Java.Util.Locale Locale
         {

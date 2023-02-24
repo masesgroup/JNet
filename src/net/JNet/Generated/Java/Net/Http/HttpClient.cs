@@ -42,15 +42,19 @@ namespace Java.Net.Http
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newHttpClient()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newHttpClient()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.Http.HttpClient"/></returns>
         public static Java.Net.Http.HttpClient NewHttpClient()
         {
             return SExecute<Java.Net.Http.HttpClient>("newHttpClient");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newBuilder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newBuilder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
         public static Java.Net.Http.HttpClient.Builder NewBuilder()
         {
             return SExecute<Java.Net.Http.HttpClient.Builder>("newBuilder");
@@ -60,22 +64,28 @@ namespace Java.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslContext()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslContext()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Net.Ssl.SSLContext"/></returns>
         public Javax.Net.Ssl.SSLContext SslContext()
         {
             return IExecute<Javax.Net.Ssl.SSLContext>("sslContext");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslParameters()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslParameters()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Net.Ssl.SSLParameters"/></returns>
         public Javax.Net.Ssl.SSLParameters SslParameters()
         {
             return IExecute<Javax.Net.Ssl.SSLParameters>("sslParameters");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newWebSocketBuilder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#newWebSocketBuilder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
         public Java.Net.Http.WebSocket.Builder NewWebSocketBuilder()
         {
             return IExecute<Java.Net.Http.WebSocket.Builder>("newWebSocketBuilder");
@@ -97,7 +107,7 @@ namespace Java.Net.Http
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#NO_PROXY
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#NO_PROXY"/>
             /// </summary>
             public static Java.Net.ProxySelector NO_PROXY => Clazz.GetField<Java.Net.ProxySelector>("NO_PROXY");
             
@@ -109,64 +119,82 @@ namespace Java.Net.Http
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#build()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#build()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpClient"/></returns>
             public Java.Net.Http.HttpClient Build()
             {
                 return IExecute<Java.Net.Http.HttpClient>("build");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#authenticator(java.net.Authenticator)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#authenticator(java.net.Authenticator)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Authenticator"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
             public Java.Net.Http.HttpClient.Builder Authenticator(Java.Net.Authenticator arg0)
             {
                 return IExecute<Java.Net.Http.HttpClient.Builder>("authenticator", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#connectTimeout(java.time.Duration)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#connectTimeout(java.time.Duration)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Time.Duration"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
             public Java.Net.Http.HttpClient.Builder ConnectTimeout(Java.Time.Duration arg0)
             {
                 return IExecute<Java.Net.Http.HttpClient.Builder>("connectTimeout", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#cookieHandler(java.net.CookieHandler)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#cookieHandler(java.net.CookieHandler)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.CookieHandler"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
             public Java.Net.Http.HttpClient.Builder CookieHandler(Java.Net.CookieHandler arg0)
             {
                 return IExecute<Java.Net.Http.HttpClient.Builder>("cookieHandler", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#executor(java.util.concurrent.Executor)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#executor(java.util.concurrent.Executor)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
             public Java.Net.Http.HttpClient.Builder Executor(Java.Util.Concurrent.Executor arg0)
             {
                 return IExecute<Java.Net.Http.HttpClient.Builder>("executor", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#priority(int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#priority(int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
             public Java.Net.Http.HttpClient.Builder Priority(int arg0)
             {
                 return IExecute<Java.Net.Http.HttpClient.Builder>("priority", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#proxy(java.net.ProxySelector)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#proxy(java.net.ProxySelector)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.ProxySelector"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
             public Java.Net.Http.HttpClient.Builder Proxy(Java.Net.ProxySelector arg0)
             {
                 return IExecute<Java.Net.Http.HttpClient.Builder>("proxy", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#sslContext(javax.net.ssl.SSLContext)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#sslContext(javax.net.ssl.SSLContext)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLContext"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
             public Java.Net.Http.HttpClient.Builder SslContext(Javax.Net.Ssl.SSLContext arg0)
             {
                 return IExecute<Java.Net.Http.HttpClient.Builder>("sslContext", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#sslParameters(javax.net.ssl.SSLParameters)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#sslParameters(javax.net.ssl.SSLParameters)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLParameters"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
             public Java.Net.Http.HttpClient.Builder SslParameters(Javax.Net.Ssl.SSLParameters arg0)
             {
                 return IExecute<Java.Net.Http.HttpClient.Builder>("sslParameters", arg0);
@@ -191,15 +219,15 @@ namespace Java.Net.Http
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#ALWAYS
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#ALWAYS"/>
             /// </summary>
             public static Java.Net.Http.HttpClient.Redirect ALWAYS => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("ALWAYS");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NEVER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NEVER"/>
             /// </summary>
             public static Java.Net.Http.HttpClient.Redirect NEVER => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("NEVER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NORMAL
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NORMAL"/>
             /// </summary>
             public static Java.Net.Http.HttpClient.Redirect NORMAL => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("NORMAL");
             
@@ -207,8 +235,10 @@ namespace Java.Net.Http
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpClient.Redirect"/></returns>
             public static Java.Net.Http.HttpClient.Redirect[] Values()
             {
                 return SExecuteArray<Java.Net.Http.HttpClient.Redirect>("values");
@@ -237,11 +267,11 @@ namespace Java.Net.Http
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#HTTP_1_1
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#HTTP_1_1"/>
             /// </summary>
             public static Java.Net.Http.HttpClient.Version HTTP_1_1 => Clazz.GetField<Java.Net.Http.HttpClient.Version>("HTTP_1_1");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#HTTP_2
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#HTTP_2"/>
             /// </summary>
             public static Java.Net.Http.HttpClient.Version HTTP_2 => Clazz.GetField<Java.Net.Http.HttpClient.Version>("HTTP_2");
             
@@ -249,8 +279,10 @@ namespace Java.Net.Http
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
             public static Java.Net.Http.HttpClient.Version[] Values()
             {
                 return SExecuteArray<Java.Net.Http.HttpClient.Version>("values");

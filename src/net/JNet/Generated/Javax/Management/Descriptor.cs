@@ -33,7 +33,13 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Descriptor"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Descriptor t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Descriptor"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Management.Descriptor t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -48,57 +54,72 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldNames()"/> 
         /// </summary>
         public string[] FieldNames
         {
             get { return IExecuteArray<string>("getFieldNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFields() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFields()"/> 
         /// </summary>
         public string[] Fields
         {
             get { return IExecuteArray<string>("getFields"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#isValid() throws javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#isValid()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public bool IsValid()
         {
             return IExecute<bool>("isValid");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValue(java.lang.String) throws javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValue(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public object GetFieldValue(string arg0)
         {
             return IExecute("getFieldValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValues(java.lang.String...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValues(java.lang.String...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
         public object[] GetFieldValues(params string[] arg0)
         {
             if (arg0.Length == 0) return IExecuteArray<object>("getFieldValues"); else return IExecuteArray<object>("getFieldValues", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#removeField(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#removeField(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void RemoveField(string arg0)
         {
             IExecute("removeField", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#setField(java.lang.String,java.lang.Object) throws javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#setField(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SetField(string arg0, object arg1)
         {
             IExecute("setField", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#setFields(java.lang.String[],java.lang.Object[]) throws javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#setFields(java.lang.String[],java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SetFields(string[] arg0, object[] arg1)
         {
             IExecute("setFields", arg0, arg1);
