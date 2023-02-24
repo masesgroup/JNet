@@ -26,10 +26,14 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class AnnotatedType : AnnotatedElement
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.lang.reflect.AnnotatedType";
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
 #else
     public partial class AnnotatedType

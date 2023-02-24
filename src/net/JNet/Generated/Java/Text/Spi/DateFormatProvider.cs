@@ -48,7 +48,7 @@ namespace Java.Text.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/DateFormatProvider.html#getDateInstance(int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public Java.Text.DateFormat GetDateInstance(int arg0, Java.Util.Locale arg1)
@@ -58,8 +58,8 @@ namespace Java.Text.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/DateFormatProvider.html#getDateTimeInstance(int,int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public Java.Text.DateFormat GetDateTimeInstance(int arg0, int arg1, Java.Util.Locale arg2)
@@ -69,7 +69,7 @@ namespace Java.Text.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/DateFormatProvider.html#getTimeInstance(int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public Java.Text.DateFormat GetTimeInstance(int arg0, Java.Util.Locale arg1)

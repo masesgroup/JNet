@@ -90,7 +90,7 @@ namespace Java.Util.Stream
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#accept(T)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             public void Accept(object arg0)
             {
                 IExecute("accept", arg0);

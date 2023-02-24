@@ -48,7 +48,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PersistenceDelegate.html#writeObject(java.lang.Object,java.beans.Encoder)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Beans.Encoder"/></param>
         public void WriteObject(object arg0, Java.Beans.Encoder arg1)
         {

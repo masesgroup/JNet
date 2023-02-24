@@ -33,7 +33,7 @@ namespace Javax.Management.Loading
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#%3Cinit%3E(java.net.URL[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public MLet(Java.Net.URL[] arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -43,7 +43,7 @@ namespace Javax.Management.Loading
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         public MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -54,7 +54,7 @@ namespace Javax.Management.Loading
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
         /// <param name="arg2"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         public MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -135,7 +135,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#addURL(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Javax.Management.ServiceNotFoundException"/>
         public void AddURL(string arg0)
         {
@@ -159,7 +159,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#postRegister(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool?"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void PostRegister(bool? arg0)
         {
             IExecute("postRegister", arg0);

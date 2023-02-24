@@ -44,8 +44,8 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Security.Cert.CertificateFactory"/></returns>
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
@@ -56,7 +56,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Security.Cert.CertificateFactory"/></returns>
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public static Java.Security.Cert.CertificateFactory GetInstance(string arg0)
@@ -88,7 +88,7 @@ namespace Java.Security.Cert
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertPath(java.io.InputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Security.Cert.CertPath"/></returns>
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public Java.Security.Cert.CertPath GenerateCertPath(Java.Io.InputStream arg0, string arg1)

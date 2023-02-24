@@ -97,8 +97,8 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.KeyStroke"/></param>
         /// <param name="arg2"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
-        /// <param name="arg3"><see langword="object"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool NotifyAction(Javax.Swing.Action arg0, Javax.Swing.KeyStroke arg1, Java.Awt.EventNs.KeyEvent arg2, object arg3, int arg4)
         {
@@ -127,7 +127,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeStringWidth(java.awt.FontMetrics,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.FontMetrics"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="int"/></returns>
         public static int ComputeStringWidth(Java.Awt.FontMetrics arg0, string arg1)
         {
@@ -155,8 +155,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getDeepestComponentAt(java.awt.Component,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component GetDeepestComponentAt(Java.Awt.Component arg0, int arg1, int arg2)
         {
@@ -183,7 +183,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAncestorNamed(java.lang.String,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         /// <returns><see cref="Java.Awt.Container"/></returns>
         public static Java.Awt.Container GetAncestorNamed(string arg0, Java.Awt.Component arg1)
@@ -214,8 +214,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertPoint(java.awt.Component,int,int,java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.Component"/></param>
         /// <returns><see cref="Java.Awt.Point"/></returns>
         public static Java.Awt.Point ConvertPoint(Java.Awt.Component arg0, int arg1, int arg2, Java.Awt.Component arg3)
@@ -246,10 +246,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeIntersection(int,int,int,int,java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Java.Awt.Rectangle"/></param>
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle ComputeIntersection(int arg0, int arg1, int arg2, int arg3, Java.Awt.Rectangle arg4)
@@ -259,10 +259,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeUnion(int,int,int,int,java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Java.Awt.Rectangle"/></param>
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle ComputeUnion(int arg0, int arg1, int arg2, int arg3, Java.Awt.Rectangle arg4)
@@ -321,16 +321,16 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#layoutCompoundLabel(java.awt.FontMetrics,java.lang.String,javax.swing.Icon,int,int,int,int,java.awt.Rectangle,java.awt.Rectangle,java.awt.Rectangle,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.FontMetrics"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         /// <param name="arg7"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg8"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg9"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg10"><see langword="int"/></param>
+        /// <param name="arg10"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public static string LayoutCompoundLabel(Java.Awt.FontMetrics arg0, string arg1, Javax.Swing.Icon arg2, int arg3, int arg4, int arg5, int arg6, Java.Awt.Rectangle arg7, Java.Awt.Rectangle arg8, Java.Awt.Rectangle arg9, int arg10)
         {
@@ -341,16 +341,16 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         /// <param name="arg1"><see cref="Java.Awt.FontMetrics"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Javax.Swing.Icon"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
-        /// <param name="arg7"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg7"><see cref="int"/></param>
         /// <param name="arg8"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg9"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg10"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg11"><see langword="int"/></param>
+        /// <param name="arg11"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public static string LayoutCompoundLabel(Javax.Swing.JComponent arg0, Java.Awt.FontMetrics arg1, string arg2, Javax.Swing.Icon arg3, int arg4, int arg5, int arg6, int arg7, Java.Awt.Rectangle arg8, Java.Awt.Rectangle arg9, Java.Awt.Rectangle arg10, int arg11)
         {
@@ -370,7 +370,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleChild(java.awt.Component,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
         public static Javax.Accessibility.Accessible GetAccessibleChild(Java.Awt.Component arg0, int arg1)
         {
@@ -398,7 +398,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getUIInputMap(javax.swing.JComponent,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.InputMap"/></returns>
         public static Javax.Swing.InputMap GetUIInputMap(Javax.Swing.JComponent arg0, int arg1)
         {
@@ -455,10 +455,10 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Container"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public static void PaintComponent(Java.Awt.Graphics arg0, Java.Awt.Component arg1, Java.Awt.Container arg2, int arg3, int arg4, int arg5, int arg6)
         {
             SExecute("paintComponent", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -487,7 +487,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#replaceUIInputMap(javax.swing.JComponent,int,javax.swing.InputMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.InputMap"/></param>
         public static void ReplaceUIInputMap(Javax.Swing.JComponent arg0, int arg1, Javax.Swing.InputMap arg2)
         {

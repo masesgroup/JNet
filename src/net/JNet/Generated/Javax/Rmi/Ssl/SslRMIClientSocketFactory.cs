@@ -56,8 +56,8 @@ namespace Javax.Rmi.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIClientSocketFactory.html#createSocket(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Net.Socket"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(string arg0, int arg1)

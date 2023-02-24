@@ -45,7 +45,7 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#lookupStreamPrintServiceFactories(javax.print.DocFlavor,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.DocFlavor"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Javax.Print.StreamPrintServiceFactory"/></returns>
         public static Javax.Print.StreamPrintServiceFactory[] LookupStreamPrintServiceFactories(Javax.Print.DocFlavor arg0, string arg1)
         {

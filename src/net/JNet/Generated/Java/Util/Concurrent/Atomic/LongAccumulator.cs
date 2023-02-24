@@ -33,7 +33,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#%3Cinit%3E(java.util.function.LongBinaryOperator,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         public LongAccumulator(Java.Util.Function.LongBinaryOperator arg0, long arg1)
             : base(arg0, arg1)
         {
@@ -77,7 +77,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#accumulate(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         public void Accumulate(long arg0)
         {
             IExecute("accumulate", arg0);

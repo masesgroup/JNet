@@ -84,7 +84,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Logging.Level"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Util.Logging.Level Parse(string arg0)

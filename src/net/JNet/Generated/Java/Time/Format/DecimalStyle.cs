@@ -98,7 +98,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#withDecimalSeparator(char)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="char"/></param>
+        /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
         public Java.Time.Format.DecimalStyle WithDecimalSeparator(char arg0)
         {
@@ -107,7 +107,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#withNegativeSign(char)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="char"/></param>
+        /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
         public Java.Time.Format.DecimalStyle WithNegativeSign(char arg0)
         {
@@ -116,7 +116,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#withPositiveSign(char)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="char"/></param>
+        /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
         public Java.Time.Format.DecimalStyle WithPositiveSign(char arg0)
         {
@@ -125,7 +125,7 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#withZeroDigit(char)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="char"/></param>
+        /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
         public Java.Time.Format.DecimalStyle WithZeroDigit(char arg0)
         {

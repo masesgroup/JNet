@@ -33,8 +33,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public FileDialog(Java.Awt.Dialog arg0, string arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -43,7 +43,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public FileDialog(Java.Awt.Dialog arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -60,8 +60,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public FileDialog(Java.Awt.Frame arg0, string arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -70,7 +70,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public FileDialog(Java.Awt.Frame arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -154,7 +154,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#setMultipleMode(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetMultipleMode(bool arg0)
         {
             IExecute("setMultipleMode", arg0);

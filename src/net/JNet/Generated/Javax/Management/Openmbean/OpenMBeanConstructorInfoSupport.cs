@@ -32,8 +32,8 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[],javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenMBeanParameterInfo"/></param>
         /// <param name="arg3"><see cref="Javax.Management.Descriptor"/></param>
         public OpenMBeanConstructorInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Descriptor arg3)
@@ -43,8 +43,8 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenMBeanParameterInfo"/></param>
         public OpenMBeanConstructorInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2)
             : base(arg0, arg1, arg2)

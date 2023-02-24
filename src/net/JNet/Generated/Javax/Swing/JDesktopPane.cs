@@ -88,7 +88,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#selectFrame(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Javax.Swing.JInternalFrame"/></returns>
         public Javax.Swing.JInternalFrame SelectFrame(bool arg0)
         {
@@ -97,7 +97,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getAllFramesInLayer(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.JInternalFrame"/></returns>
         public Javax.Swing.JInternalFrame[] GetAllFramesInLayer(int arg0)
         {

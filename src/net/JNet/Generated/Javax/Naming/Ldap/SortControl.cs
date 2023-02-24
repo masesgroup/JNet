@@ -32,8 +32,8 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public SortControl(string arg0, bool arg1)
             : base(arg0, arg1)
@@ -43,7 +43,7 @@ namespace Javax.Naming.Ldap
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#%3Cinit%3E(java.lang.String[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public SortControl(string[] arg0, bool arg1)
             : base(arg0, arg1)
@@ -53,7 +53,7 @@ namespace Javax.Naming.Ldap
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#%3Cinit%3E(javax.naming.ldap.SortKey[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Ldap.SortKey"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public SortControl(Javax.Naming.Ldap.SortKey[] arg0, bool arg1)
             : base(arg0, arg1)

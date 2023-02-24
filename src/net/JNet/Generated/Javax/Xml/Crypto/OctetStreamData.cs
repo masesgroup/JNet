@@ -33,8 +33,8 @@ namespace Javax.Xml.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#%3Cinit%3E(java.io.InputStream,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         public OctetStreamData(Java.Io.InputStream arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
         {

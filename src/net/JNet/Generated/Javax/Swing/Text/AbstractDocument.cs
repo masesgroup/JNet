@@ -139,7 +139,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getParagraphElement(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetParagraphElement(int arg0)
         {
@@ -148,7 +148,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getProperty(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetProperty(object arg0)
         {
@@ -171,8 +171,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#putProperty(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void PutProperty(object arg0, object arg1)
         {
             IExecute("putProperty", arg0, arg1);
@@ -180,8 +180,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getText(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public string GetText(int arg0, int arg1)
@@ -200,7 +200,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#createPosition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Text.Position"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Javax.Swing.Text.Position CreatePosition(int arg0)
@@ -234,8 +234,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getText(int,int,javax.swing.text.Segment)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.Segment"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void GetText(int arg0, int arg1, Javax.Swing.Text.Segment arg2)
@@ -245,8 +245,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#insertString(int,java.lang.String,javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void InsertString(int arg0, string arg1, Javax.Swing.Text.AttributeSet arg2)
@@ -256,8 +256,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#remove(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Remove(int arg0, int arg1)
         {
@@ -290,9 +290,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#replace(int,int,java.lang.String,javax.swing.text.AttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Replace(int arg0, int arg1, string arg2, Javax.Swing.Text.AttributeSet arg3)
@@ -445,7 +445,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getElementIndex(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see langword="int"/></returns>
             public int GetElementIndex(int arg0)
             {
@@ -454,7 +454,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getElement(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
             public Javax.Swing.Text.Element GetElement(int arg0)
             {
@@ -463,8 +463,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#containsAttribute(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool ContainsAttribute(object arg0, object arg1)
             {
@@ -482,7 +482,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#isDefined(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool IsDefined(object arg0)
             {
@@ -509,7 +509,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getAttribute(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see langword="object"/></returns>
             public object GetAttribute(object arg0)
             {
@@ -527,7 +527,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getChildAt(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Javax.Swing.Tree.TreeNode"/></returns>
             public Javax.Swing.Tree.TreeNode GetChildAt(int arg0)
             {
@@ -536,8 +536,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#addAttribute(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             public void AddAttribute(object arg0, object arg1)
             {
                 IExecute("addAttribute", arg0, arg1);
@@ -554,7 +554,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#dump(java.io.PrintStream,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             public void Dump(Java.Io.PrintStream arg0, int arg1)
             {
                 IExecute("dump", arg0, arg1);
@@ -562,7 +562,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#removeAttribute(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             public void RemoveAttribute(object arg0)
             {
                 IExecute("removeAttribute", arg0);
@@ -613,8 +613,8 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#addAttribute(javax.swing.text.AttributeSet,java.lang.Object,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
-            /// <param name="arg2"><see langword="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
+            /// <param name="arg2"><see cref="object"/></param>
             /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
             public Javax.Swing.Text.AttributeSet AddAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1, object arg2)
             {
@@ -634,7 +634,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttribute(javax.swing.text.AttributeSet,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
             public Javax.Swing.Text.AttributeSet RemoveAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1)
             {
@@ -698,7 +698,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.BranchElement.html#positionToElement(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
             public Javax.Swing.Text.Element PositionToElement(int arg0)
             {
@@ -707,8 +707,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.BranchElement.html#replace(int,int,javax.swing.text.Element[])"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.Element"/></param>
             public void Replace(int arg0, int arg1, Javax.Swing.Text.Element[] arg2)
             {
@@ -753,8 +753,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#getString(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see langword="string"/></returns>
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public string GetString(int arg0, int arg1)
@@ -764,7 +764,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#createPosition(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Javax.Swing.Text.Position"/></returns>
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public Javax.Swing.Text.Position CreatePosition(int arg0)
@@ -774,8 +774,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#insertString(int,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <returns><see cref="Javax.Swing.Undo.UndoableEdit"/></returns>
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public Javax.Swing.Undo.UndoableEdit InsertString(int arg0, string arg1)
@@ -785,8 +785,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#remove(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see cref="Javax.Swing.Undo.UndoableEdit"/></returns>
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public Javax.Swing.Undo.UndoableEdit Remove(int arg0, int arg1)
@@ -796,8 +796,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#getChars(int,int,javax.swing.text.Segment)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.Segment"/></param>
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public void GetChars(int arg0, int arg1, Javax.Swing.Text.Segment arg2)
@@ -819,8 +819,8 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#%3Cinit%3E(javax.swing.text.AbstractDocument,int,int,javax.swing.event.DocumentEvent$EventType)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
             /// <param name="arg3"><see cref="Javax.Swing.Event.DocumentEvent.EventType"/></param>
             public DefaultDocumentEvent(Javax.Swing.Text.AbstractDocument arg0, int arg1, int arg2, Javax.Swing.Event.DocumentEvent.EventType arg3)
                 : base(arg0, arg1, arg2, arg3)
@@ -898,7 +898,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#%3Cinit%3E(javax.swing.text.Element,int,javax.swing.text.Element[],javax.swing.text.Element[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.Element"/></param>
             /// <param name="arg3"><see cref="Javax.Swing.Text.Element"/></param>
             public ElementEdit(Javax.Swing.Text.Element arg0, int arg1, Javax.Swing.Text.Element[] arg2, Javax.Swing.Text.Element[] arg3)
@@ -966,8 +966,8 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument"/></param>
             /// <param name="arg1"><see cref="Javax.Swing.Text.Element"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
-            /// <param name="arg4"><see langword="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg4"><see cref="int"/></param>
             public LeafElement(Javax.Swing.Text.AbstractDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2, int arg3, int arg4)
                 : base(arg0, arg1, arg2, arg3, arg4)
             {

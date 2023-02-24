@@ -54,7 +54,7 @@ namespace Javax.Management
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
         /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {

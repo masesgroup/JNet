@@ -62,12 +62,12 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.html#setRoundRect(double,double,double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
-        /// <param name="arg4"><see langword="double"/></param>
-        /// <param name="arg5"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg4"><see cref="double"/></param>
+        /// <param name="arg5"><see cref="double"/></param>
         public void SetRoundRect(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
             IExecute("setRoundRect", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -91,12 +91,12 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#%3Cinit%3E(double,double,double,double,double,double)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="double"/></param>
-            /// <param name="arg1"><see langword="double"/></param>
-            /// <param name="arg2"><see langword="double"/></param>
-            /// <param name="arg3"><see langword="double"/></param>
-            /// <param name="arg4"><see langword="double"/></param>
-            /// <param name="arg5"><see langword="double"/></param>
+            /// <param name="arg0"><see cref="double"/></param>
+            /// <param name="arg1"><see cref="double"/></param>
+            /// <param name="arg2"><see cref="double"/></param>
+            /// <param name="arg3"><see cref="double"/></param>
+            /// <param name="arg4"><see cref="double"/></param>
+            /// <param name="arg5"><see cref="double"/></param>
             public Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
@@ -159,12 +159,12 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#%3Cinit%3E(float,float,float,float,float,float)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="float"/></param>
-            /// <param name="arg1"><see langword="float"/></param>
-            /// <param name="arg2"><see langword="float"/></param>
-            /// <param name="arg3"><see langword="float"/></param>
-            /// <param name="arg4"><see langword="float"/></param>
-            /// <param name="arg5"><see langword="float"/></param>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="float"/></param>
+            /// <param name="arg3"><see cref="float"/></param>
+            /// <param name="arg4"><see cref="float"/></param>
+            /// <param name="arg5"><see cref="float"/></param>
             public Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
@@ -216,12 +216,12 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#setRoundRect(float,float,float,float,float,float)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="float"/></param>
-            /// <param name="arg1"><see langword="float"/></param>
-            /// <param name="arg2"><see langword="float"/></param>
-            /// <param name="arg3"><see langword="float"/></param>
-            /// <param name="arg4"><see langword="float"/></param>
-            /// <param name="arg5"><see langword="float"/></param>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="float"/></param>
+            /// <param name="arg3"><see cref="float"/></param>
+            /// <param name="arg4"><see cref="float"/></param>
+            /// <param name="arg5"><see cref="float"/></param>
             public void SetRoundRect(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
             {
                 IExecute("setRoundRect", arg0, arg1, arg2, arg3, arg4, arg5);

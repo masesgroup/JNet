@@ -75,7 +75,7 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Config.html#createFilter(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="Java.Io.ObjectInputFilter"/></returns>
             public static Java.Io.ObjectInputFilter CreateFilter(string arg0)
             {

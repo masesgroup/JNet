@@ -57,7 +57,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathException"/>
         public Org.W3c.Dom.Node Get(int arg0)

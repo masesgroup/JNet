@@ -52,7 +52,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#malformedForLength(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
         public static Java.Nio.Charset.CoderResult MalformedForLength(int arg0)
         {
@@ -61,7 +61,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#unmappableForLength(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
         public static Java.Nio.Charset.CoderResult UnmappableForLength(int arg0)
         {

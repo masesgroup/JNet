@@ -50,10 +50,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintArrowButtonBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintArrowButtonBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -63,10 +63,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintArrowButtonBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintArrowButtonBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -76,11 +76,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintArrowButtonForeground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintArrowButtonForeground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -90,10 +90,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintButtonBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintButtonBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -103,10 +103,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintButtonBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintButtonBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -116,10 +116,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintCheckBoxBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintCheckBoxBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -129,10 +129,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintCheckBoxBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintCheckBoxBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -142,10 +142,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintCheckBoxMenuItemBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintCheckBoxMenuItemBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -155,10 +155,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintCheckBoxMenuItemBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintCheckBoxMenuItemBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -168,10 +168,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintColorChooserBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintColorChooserBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -181,10 +181,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintColorChooserBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintColorChooserBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -194,10 +194,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintComboBoxBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintComboBoxBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -207,10 +207,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintComboBoxBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintComboBoxBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -220,10 +220,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintDesktopIconBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintDesktopIconBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -233,10 +233,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintDesktopIconBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintDesktopIconBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -246,10 +246,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintDesktopPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintDesktopPaneBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -259,10 +259,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintDesktopPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintDesktopPaneBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -272,10 +272,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintEditorPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintEditorPaneBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -285,10 +285,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintEditorPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintEditorPaneBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -298,10 +298,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintFileChooserBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintFileChooserBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -311,10 +311,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintFileChooserBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintFileChooserBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -324,10 +324,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintFormattedTextFieldBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintFormattedTextFieldBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -337,10 +337,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintFormattedTextFieldBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintFormattedTextFieldBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -350,10 +350,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintInternalFrameBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintInternalFrameBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -363,10 +363,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintInternalFrameBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintInternalFrameBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -376,10 +376,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintInternalFrameTitlePaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintInternalFrameTitlePaneBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -389,10 +389,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintInternalFrameTitlePaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintInternalFrameTitlePaneBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -402,10 +402,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintLabelBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintLabelBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -415,10 +415,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintLabelBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintLabelBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -428,10 +428,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintListBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintListBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -441,10 +441,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintListBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintListBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -454,10 +454,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintMenuBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintMenuBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -467,10 +467,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintMenuBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintMenuBarBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -480,10 +480,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintMenuBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintMenuBarBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -493,10 +493,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintMenuBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintMenuBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -506,10 +506,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintMenuItemBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintMenuItemBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -519,10 +519,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintMenuItemBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintMenuItemBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -532,10 +532,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintOptionPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintOptionPaneBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -545,10 +545,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintOptionPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintOptionPaneBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -558,10 +558,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintPanelBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintPanelBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -571,10 +571,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintPanelBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintPanelBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -584,10 +584,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintPasswordFieldBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintPasswordFieldBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -597,10 +597,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintPasswordFieldBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintPasswordFieldBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -610,10 +610,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintPopupMenuBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintPopupMenuBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -623,10 +623,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintPopupMenuBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintPopupMenuBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -636,11 +636,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintProgressBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintProgressBarBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -650,10 +650,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintProgressBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintProgressBarBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -663,11 +663,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintProgressBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintProgressBarBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -677,10 +677,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintProgressBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintProgressBarBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -690,11 +690,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintProgressBarForeground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintProgressBarForeground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -704,10 +704,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintRadioButtonBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintRadioButtonBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -717,10 +717,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintRadioButtonBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintRadioButtonBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -730,10 +730,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintRadioButtonMenuItemBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintRadioButtonMenuItemBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -743,10 +743,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintRadioButtonMenuItemBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintRadioButtonMenuItemBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -756,10 +756,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintRootPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintRootPaneBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -769,10 +769,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintRootPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintRootPaneBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -782,11 +782,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintScrollBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintScrollBarBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -796,10 +796,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintScrollBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintScrollBarBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -809,11 +809,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintScrollBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintScrollBarBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -823,10 +823,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintScrollBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintScrollBarBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -836,11 +836,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintScrollBarThumbBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintScrollBarThumbBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -850,11 +850,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintScrollBarThumbBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintScrollBarThumbBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -864,11 +864,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintScrollBarTrackBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintScrollBarTrackBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -878,10 +878,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintScrollBarTrackBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintScrollBarTrackBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -891,11 +891,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintScrollBarTrackBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintScrollBarTrackBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -905,10 +905,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintScrollBarTrackBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintScrollBarTrackBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -918,10 +918,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintScrollPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintScrollPaneBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -931,10 +931,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintScrollPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintScrollPaneBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -944,11 +944,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintSeparatorBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintSeparatorBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -958,10 +958,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintSeparatorBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintSeparatorBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -971,11 +971,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintSeparatorBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintSeparatorBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -985,10 +985,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintSeparatorBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintSeparatorBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -998,11 +998,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintSeparatorForeground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintSeparatorForeground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1012,11 +1012,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintSliderBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintSliderBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1026,10 +1026,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintSliderBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintSliderBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1039,11 +1039,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintSliderBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintSliderBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1053,10 +1053,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintSliderBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintSliderBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1066,11 +1066,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintSliderThumbBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintSliderThumbBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1080,11 +1080,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintSliderThumbBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintSliderThumbBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1094,11 +1094,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintSliderTrackBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintSliderTrackBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1108,10 +1108,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintSliderTrackBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintSliderTrackBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1121,11 +1121,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintSliderTrackBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintSliderTrackBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1135,10 +1135,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintSliderTrackBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintSliderTrackBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1148,10 +1148,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintSpinnerBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintSpinnerBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1161,10 +1161,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintSpinnerBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintSpinnerBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1174,10 +1174,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintSplitPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintSplitPaneBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1187,10 +1187,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintSplitPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintSplitPaneBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1200,11 +1200,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintSplitPaneDividerBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintSplitPaneDividerBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1214,10 +1214,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintSplitPaneDividerBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintSplitPaneDividerBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1227,11 +1227,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintSplitPaneDividerForeground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintSplitPaneDividerForeground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1241,11 +1241,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintSplitPaneDragDivider(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintSplitPaneDragDivider", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1255,10 +1255,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTabbedPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTabbedPaneBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1268,10 +1268,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTabbedPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTabbedPaneBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1281,10 +1281,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTabbedPaneContentBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTabbedPaneContentBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1294,10 +1294,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTabbedPaneContentBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTabbedPaneContentBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1307,11 +1307,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintTabbedPaneTabAreaBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintTabbedPaneTabAreaBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1321,10 +1321,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTabbedPaneTabAreaBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTabbedPaneTabAreaBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1334,11 +1334,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintTabbedPaneTabAreaBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintTabbedPaneTabAreaBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1348,10 +1348,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTabbedPaneTabAreaBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTabbedPaneTabAreaBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1361,12 +1361,12 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
-        /// <param name="arg7"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg7"><see cref="int"/></param>
         public void PaintTabbedPaneTabBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)
         {
             IExecute("paintTabbedPaneTabBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -1376,11 +1376,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintTabbedPaneTabBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintTabbedPaneTabBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1390,12 +1390,12 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
-        /// <param name="arg7"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg7"><see cref="int"/></param>
         public void PaintTabbedPaneTabBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)
         {
             IExecute("paintTabbedPaneTabBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -1405,11 +1405,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintTabbedPaneTabBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintTabbedPaneTabBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1419,10 +1419,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTableBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTableBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1432,10 +1432,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTableBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTableBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1445,10 +1445,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTableHeaderBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTableHeaderBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1458,10 +1458,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTableHeaderBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTableHeaderBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1471,10 +1471,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTextAreaBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTextAreaBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1484,10 +1484,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTextAreaBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTextAreaBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1497,10 +1497,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTextFieldBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTextFieldBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1510,10 +1510,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTextFieldBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTextFieldBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1523,10 +1523,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTextPaneBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTextPaneBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1536,10 +1536,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTextPaneBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTextPaneBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1549,10 +1549,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintToggleButtonBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintToggleButtonBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1562,10 +1562,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintToggleButtonBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintToggleButtonBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1575,11 +1575,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintToolBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintToolBarBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1589,10 +1589,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintToolBarBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintToolBarBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1602,11 +1602,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintToolBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintToolBarBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1616,10 +1616,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintToolBarBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintToolBarBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1629,11 +1629,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintToolBarContentBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintToolBarContentBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1643,10 +1643,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintToolBarContentBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintToolBarContentBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1656,11 +1656,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintToolBarContentBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintToolBarContentBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1670,10 +1670,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintToolBarContentBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintToolBarContentBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1683,11 +1683,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintToolBarDragWindowBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintToolBarDragWindowBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1697,10 +1697,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintToolBarDragWindowBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintToolBarDragWindowBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1710,11 +1710,11 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void PaintToolBarDragWindowBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
             IExecute("paintToolBarDragWindowBorder", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -1724,10 +1724,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintToolBarDragWindowBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintToolBarDragWindowBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1737,10 +1737,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintToolTipBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintToolTipBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1750,10 +1750,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintToolTipBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintToolTipBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1763,10 +1763,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTreeBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTreeBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1776,10 +1776,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTreeBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTreeBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1789,10 +1789,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTreeCellBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTreeCellBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1802,10 +1802,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTreeCellBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTreeCellBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1815,10 +1815,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintTreeCellFocus(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintTreeCellFocus", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1828,10 +1828,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintViewportBackground(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintViewportBackground", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1841,10 +1841,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintViewportBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintViewportBorder", arg0, arg1, arg2, arg3, arg4, arg5);

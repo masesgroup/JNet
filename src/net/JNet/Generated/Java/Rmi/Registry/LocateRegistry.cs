@@ -51,7 +51,7 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#createRegistry(int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
         /// <param name="arg2"><see cref="Java.Rmi.Server.RMIServerSocketFactory"/></param>
         /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
@@ -63,7 +63,7 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#createRegistry(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Registry.Registry CreateRegistry(int arg0)
@@ -73,7 +73,7 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Registry.Registry GetRegistry(int arg0)
@@ -83,8 +83,8 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String,int,java.rmi.server.RMIClientSocketFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
         /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
@@ -95,8 +95,8 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Registry.Registry GetRegistry(string arg0, int arg1)
@@ -106,7 +106,7 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Rmi.Registry.Registry"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Registry.Registry GetRegistry(string arg0)

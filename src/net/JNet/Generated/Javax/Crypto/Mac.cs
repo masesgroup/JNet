@@ -48,8 +48,8 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Javax.Crypto.Mac"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
@@ -60,7 +60,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Crypto.Mac"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Crypto.Mac GetInstance(string arg0)
@@ -109,7 +109,7 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#doFinal(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void DoFinal(byte[] arg0, int arg1)
@@ -146,7 +146,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#update(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="byte"/></param>
+        /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void Update(byte arg0)
         {
@@ -156,8 +156,8 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html#update(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void Update(byte[] arg0, int arg1, int arg2)
         {

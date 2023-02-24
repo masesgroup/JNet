@@ -49,7 +49,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#%3Cinit%3E(java.lang.String,javax.swing.filechooser.FileSystemView)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Filechooser.FileSystemView"/></param>
         public JFileChooser(string arg0, Javax.Swing.Filechooser.FileSystemView arg1)
             : base(arg0, arg1)
@@ -58,7 +58,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public JFileChooser(string arg0)
             : base(arg0)
         {
@@ -409,7 +409,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#showDialog(java.awt.Component,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public int ShowDialog(Java.Awt.Component arg0, string arg1)
@@ -542,7 +542,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#setAcceptAllFileFilterUsed(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetAcceptAllFileFilterUsed(bool arg0)
         {
             IExecute("setAcceptAllFileFilterUsed", arg0);
@@ -550,7 +550,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#setApproveButtonMnemonic(char)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="char"/></param>
+        /// <param name="arg0"><see cref="char"/></param>
         public void SetApproveButtonMnemonic(char arg0)
         {
             IExecute("setApproveButtonMnemonic", arg0);
@@ -558,7 +558,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#setApproveButtonMnemonic(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void SetApproveButtonMnemonic(int arg0)
         {
             IExecute("setApproveButtonMnemonic", arg0);
@@ -566,7 +566,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#setFileHidingEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetFileHidingEnabled(bool arg0)
         {
             IExecute("setFileHidingEnabled", arg0);
@@ -574,7 +574,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#setMultiSelectionEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetMultiSelectionEnabled(bool arg0)
         {
             IExecute("setMultiSelectionEnabled", arg0);

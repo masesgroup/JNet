@@ -34,7 +34,7 @@ namespace Javax.Sound.Sampled
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
         /// <param name="arg1"><see cref="Javax.Sound.Sampled.LineEvent.Type"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         public LineEvent(Javax.Sound.Sampled.Line arg0, Javax.Sound.Sampled.LineEvent.Type arg1, long arg2)
             : base(arg0, arg1, arg2)
         {

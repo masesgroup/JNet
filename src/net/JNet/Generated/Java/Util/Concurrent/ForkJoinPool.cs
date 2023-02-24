@@ -32,10 +32,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#%3Cinit%3E(int,java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory,java.lang.Thread$UncaughtExceptionHandler,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Thread.UncaughtExceptionHandler"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         public ForkJoinPool(int arg0, Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory arg1, Java.Lang.Thread.UncaughtExceptionHandler arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -43,7 +43,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public ForkJoinPool(int arg0)
             : base(arg0)
         {

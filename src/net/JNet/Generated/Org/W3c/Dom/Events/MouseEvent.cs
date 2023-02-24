@@ -122,20 +122,20 @@ namespace Org.W3c.Dom.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#initMouseEvent(java.lang.String,boolean,boolean,org.w3c.dom.views.AbstractView,int,int,int,int,int,boolean,boolean,boolean,boolean,short,org.w3c.dom.events.EventTarget)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="Org.W3c.Dom.Views.AbstractView"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
-        /// <param name="arg7"><see langword="int"/></param>
-        /// <param name="arg8"><see langword="int"/></param>
-        /// <param name="arg9"><see langword="bool"/></param>
-        /// <param name="arg10"><see langword="bool"/></param>
-        /// <param name="arg11"><see langword="bool"/></param>
-        /// <param name="arg12"><see langword="bool"/></param>
-        /// <param name="arg13"><see langword="short"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg7"><see cref="int"/></param>
+        /// <param name="arg8"><see cref="int"/></param>
+        /// <param name="arg9"><see cref="bool"/></param>
+        /// <param name="arg10"><see cref="bool"/></param>
+        /// <param name="arg11"><see cref="bool"/></param>
+        /// <param name="arg12"><see cref="bool"/></param>
+        /// <param name="arg13"><see cref="short"/></param>
         /// <param name="arg14"><see cref="Org.W3c.Dom.Events.EventTarget"/></param>
         public void InitMouseEvent(string arg0, bool arg1, bool arg2, Org.W3c.Dom.Views.AbstractView arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, bool arg10, bool arg11, bool arg12, short arg13, Org.W3c.Dom.Events.EventTarget arg14)
         {

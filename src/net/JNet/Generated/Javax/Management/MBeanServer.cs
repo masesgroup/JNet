@@ -81,7 +81,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#isInstanceOf(javax.management.ObjectName,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public bool IsInstanceOf(Javax.Management.ObjectName arg0, string arg1)
@@ -121,7 +121,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#getAttribute(javax.management.ObjectName,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.AttributeNotFoundException"/>
@@ -134,7 +134,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#instantiate(java.lang.String,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
@@ -147,7 +147,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#instantiate(java.lang.String,javax.management.ObjectName,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="string"/></param>
@@ -162,7 +162,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#instantiate(java.lang.String,javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Management.ReflectionException"/>
@@ -175,7 +175,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#instantiate(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Management.ReflectionException"/>
         /// <exception cref="Javax.Management.MBeanException"/>
@@ -187,7 +187,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#invoke(javax.management.ObjectName,java.lang.String,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
@@ -213,7 +213,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#createMBean(java.lang.String,javax.management.ObjectName,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="string"/></param>
@@ -230,7 +230,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg3"><see cref="object"/></param>
@@ -249,7 +249,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
         /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
@@ -266,7 +266,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#createMBean(java.lang.String,javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
         /// <exception cref="Javax.Management.ReflectionException"/>
@@ -291,7 +291,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#registerMBean(java.lang.Object,javax.management.ObjectName)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
         /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
@@ -307,7 +307,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg1"><see cref="Javax.Management.NotificationListener"/></param>
         /// <param name="arg2"><see cref="Javax.Management.NotificationFilter"/></param>
-        /// <param name="arg3"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void AddNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.NotificationListener arg1, Javax.Management.NotificationFilter arg2, object arg3)
         {
@@ -319,7 +319,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Javax.Management.NotificationFilter"/></param>
-        /// <param name="arg3"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void AddNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1, Javax.Management.NotificationFilter arg2, object arg3)
         {
@@ -331,7 +331,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg1"><see cref="Javax.Management.NotificationListener"/></param>
         /// <param name="arg2"><see cref="Javax.Management.NotificationFilter"/></param>
-        /// <param name="arg3"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.NotificationListener arg1, Javax.Management.NotificationFilter arg2, object arg3)
@@ -355,7 +355,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Javax.Management.NotificationFilter"/></param>
-        /// <param name="arg3"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1, Javax.Management.NotificationFilter arg2, object arg3)

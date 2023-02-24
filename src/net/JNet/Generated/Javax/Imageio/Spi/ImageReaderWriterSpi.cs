@@ -32,20 +32,20 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="string"/></param>
-        /// <param name="arg5"><see langword="string"/></param>
-        /// <param name="arg6"><see langword="bool"/></param>
-        /// <param name="arg7"><see langword="string"/></param>
-        /// <param name="arg8"><see langword="string"/></param>
+        /// <param name="arg5"><see cref="string"/></param>
+        /// <param name="arg6"><see cref="bool"/></param>
+        /// <param name="arg7"><see cref="string"/></param>
+        /// <param name="arg8"><see cref="string"/></param>
         /// <param name="arg9"><see cref="string"/></param>
         /// <param name="arg10"><see cref="string"/></param>
-        /// <param name="arg11"><see langword="bool"/></param>
-        /// <param name="arg12"><see langword="string"/></param>
-        /// <param name="arg13"><see langword="string"/></param>
+        /// <param name="arg11"><see cref="bool"/></param>
+        /// <param name="arg12"><see cref="string"/></param>
+        /// <param name="arg13"><see cref="string"/></param>
         /// <param name="arg14"><see cref="string"/></param>
         /// <param name="arg15"><see cref="string"/></param>
         public ImageReaderWriterSpi(string arg0, string arg1, string[] arg2, string[] arg3, string[] arg4, string arg5, bool arg6, string arg7, string arg8, string[] arg9, string[] arg10, bool arg11, string arg12, string arg13, string[] arg14, string[] arg15)
@@ -145,7 +145,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getImageMetadataFormat(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/></returns>
         public Javax.Imageio.Metadata.IIOMetadataFormat GetImageMetadataFormat(string arg0)
         {
@@ -154,7 +154,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderWriterSpi.html#getStreamMetadataFormat(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/></returns>
         public Javax.Imageio.Metadata.IIOMetadataFormat GetStreamMetadataFormat(string arg0)
         {

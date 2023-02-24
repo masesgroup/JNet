@@ -33,7 +33,7 @@ namespace Java.Rmi.Dgc
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/Lease.html#%3Cinit%3E(java.rmi.dgc.VMID,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Dgc.VMID"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         public Lease(Java.Rmi.Dgc.VMID arg0, long arg1)
             : base(arg0, arg1)
         {

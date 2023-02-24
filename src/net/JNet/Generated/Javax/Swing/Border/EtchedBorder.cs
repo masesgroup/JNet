@@ -32,7 +32,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#%3Cinit%3E(int,java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
         public EtchedBorder(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
@@ -42,7 +42,7 @@ namespace Javax.Swing.Border
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public EtchedBorder(int arg0)
             : base(arg0)
         {

@@ -64,7 +64,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#getAttributes(java.lang.String,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Javax.Naming.Directory.Attributes"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
@@ -75,7 +75,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#getAttributes(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Naming.Directory.Attributes"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Directory.Attributes GetAttributes(string arg0)
@@ -106,7 +106,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#createSubcontext(java.lang.String,javax.naming.directory.Attributes)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Naming.Directory.Attributes"/></param>
         /// <returns><see cref="Javax.Naming.Directory.DirContext"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
@@ -128,7 +128,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#getSchema(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Naming.Directory.DirContext"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Directory.DirContext GetSchema(string arg0)
@@ -148,7 +148,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#getSchemaClassDefinition(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Naming.Directory.DirContext"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Directory.DirContext GetSchemaClassDefinition(string arg0)
@@ -168,8 +168,8 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#bind(java.lang.String,java.lang.Object,javax.naming.directory.Attributes)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Directory.Attributes"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Bind(string arg0, object arg1, Javax.Naming.Directory.Attributes arg2)
@@ -180,7 +180,7 @@ namespace Javax.Naming.Directory
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#bind(javax.naming.Name,java.lang.Object,javax.naming.directory.Attributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Directory.Attributes"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Bind(Javax.Naming.Name arg0, object arg1, Javax.Naming.Directory.Attributes arg2)
@@ -190,8 +190,8 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#modifyAttributes(java.lang.String,int,javax.naming.directory.Attributes)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Directory.Attributes"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void ModifyAttributes(string arg0, int arg1, Javax.Naming.Directory.Attributes arg2)
@@ -201,7 +201,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#modifyAttributes(java.lang.String,javax.naming.directory.ModificationItem[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Naming.Directory.ModificationItem"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void ModifyAttributes(string arg0, Javax.Naming.Directory.ModificationItem[] arg1)
@@ -212,7 +212,7 @@ namespace Javax.Naming.Directory
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#modifyAttributes(javax.naming.Name,int,javax.naming.directory.Attributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Directory.Attributes"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void ModifyAttributes(Javax.Naming.Name arg0, int arg1, Javax.Naming.Directory.Attributes arg2)
@@ -232,8 +232,8 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#rebind(java.lang.String,java.lang.Object,javax.naming.directory.Attributes)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Directory.Attributes"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Rebind(string arg0, object arg1, Javax.Naming.Directory.Attributes arg2)
@@ -244,7 +244,7 @@ namespace Javax.Naming.Directory
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#rebind(javax.naming.Name,java.lang.Object,javax.naming.directory.Attributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Directory.Attributes"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Rebind(Javax.Naming.Name arg0, object arg1, Javax.Naming.Directory.Attributes arg2)

@@ -34,7 +34,7 @@ namespace Java.Util.Zip
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Zip.Inflater"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public InflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1, int arg2)
             : base(arg0, arg1, arg2)
         {

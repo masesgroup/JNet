@@ -86,7 +86,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#isFileTypeSupported(int,javax.sound.midi.Sequence)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Sound.Midi.Sequence"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool IsFileTypeSupported(int arg0, Javax.Sound.Midi.Sequence arg1)
@@ -96,7 +96,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#isFileTypeSupported(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool IsFileTypeSupported(int arg0)
         {
@@ -106,7 +106,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#write(javax.sound.midi.Sequence,int,java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Io.File"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -118,7 +118,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#write(javax.sound.midi.Sequence,int,java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -214,7 +214,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getSequencer(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Javax.Sound.Midi.Sequencer"/></returns>
         /// <exception cref="Javax.Sound.Midi.MidiUnavailableException"/>
         public static Javax.Sound.Midi.Sequencer GetSequencer(bool arg0)

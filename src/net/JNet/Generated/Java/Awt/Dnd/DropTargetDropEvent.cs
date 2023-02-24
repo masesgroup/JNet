@@ -34,9 +34,9 @@ namespace Java.Awt.Dnd
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
         public DropTargetDropEvent(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -46,8 +46,8 @@ namespace Java.Awt.Dnd
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public DropTargetDropEvent(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -124,7 +124,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html#acceptDrop(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void AcceptDrop(int arg0)
         {
             IExecute("acceptDrop", arg0);
@@ -132,7 +132,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html#dropComplete(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void DropComplete(bool arg0)
         {
             IExecute("dropComplete", arg0);

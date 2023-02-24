@@ -53,8 +53,8 @@ namespace Javax.Management.Modelmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#addAttributeChangeNotificationListener(javax.management.NotificationListener,java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
@@ -66,7 +66,7 @@ namespace Javax.Management.Modelmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#removeAttributeChangeNotificationListener(javax.management.NotificationListener,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
@@ -98,7 +98,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendNotification(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SendNotification(string arg0)

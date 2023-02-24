@@ -60,7 +60,7 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationID.html#activate(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Rmi.Remote"/></returns>
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
         /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>

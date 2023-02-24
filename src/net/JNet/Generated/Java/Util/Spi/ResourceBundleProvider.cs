@@ -48,7 +48,7 @@ namespace Java.Util.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ResourceBundleProvider.html#getBundle(java.lang.String,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.Locale arg1)

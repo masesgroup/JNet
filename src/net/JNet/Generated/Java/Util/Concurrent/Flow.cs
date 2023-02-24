@@ -150,7 +150,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onNext(T)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             public void OnNext(object arg0)
             {
                 IExecute("onNext", arg0);
@@ -200,7 +200,7 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscription.html#request(long)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="long"/></param>
+            /// <param name="arg0"><see cref="long"/></param>
             public void Request(long arg0)
             {
                 IExecute("request", arg0);

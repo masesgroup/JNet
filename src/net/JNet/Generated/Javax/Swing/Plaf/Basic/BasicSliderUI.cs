@@ -100,7 +100,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#valueForXPosition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int ValueForXPosition(int arg0)
         {
@@ -109,7 +109,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#valueForYPosition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int ValueForYPosition(int arg0)
         {
@@ -158,7 +158,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#scrollByBlock(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void ScrollByBlock(int arg0)
         {
             IExecute("scrollByBlock", arg0);
@@ -166,7 +166,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#scrollByUnit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void ScrollByUnit(int arg0)
         {
             IExecute("scrollByUnit", arg0);
@@ -174,8 +174,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#setThumbLocation(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void SetThumbLocation(int arg0, int arg1)
         {
             IExecute("setThumbLocation", arg0, arg1);
@@ -193,8 +193,8 @@ namespace Javax.Swing.Plaf.Basic
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicSliderUI"/></param>
             /// <param name="arg1"><see cref="Javax.Swing.JSlider"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="bool"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="bool"/></param>
             public ActionScroller(Javax.Swing.Plaf.Basic.BasicSliderUI arg0, Javax.Swing.JSlider arg1, int arg2, bool arg3)
                 : base(arg0, arg1, arg2, arg3)
             {

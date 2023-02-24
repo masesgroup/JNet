@@ -40,7 +40,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#%3Cinit%3E(java.lang.String,java.awt.GraphicsConfiguration)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Awt.GraphicsConfiguration"/></param>
         public JFrame(string arg0, Java.Awt.GraphicsConfiguration arg1)
             : base(arg0, arg1)
@@ -49,7 +49,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public JFrame(string arg0)
             : base(arg0)
@@ -91,7 +91,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setDefaultLookAndFeelDecorated(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public static void SetDefaultLookAndFeelDecorated(bool arg0)
         {
             SExecute("setDefaultLookAndFeelDecorated", arg0);

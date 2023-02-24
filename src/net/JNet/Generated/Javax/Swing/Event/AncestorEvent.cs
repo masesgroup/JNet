@@ -33,7 +33,7 @@ namespace Javax.Swing.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#%3Cinit%3E(javax.swing.JComponent,int,java.awt.Container,java.awt.Container)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Container"/></param>
         /// <param name="arg3"><see cref="Java.Awt.Container"/></param>
         public AncestorEvent(Javax.Swing.JComponent arg0, int arg1, Java.Awt.Container arg2, Java.Awt.Container arg3)

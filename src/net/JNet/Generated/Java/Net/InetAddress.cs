@@ -72,7 +72,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByAddress(java.lang.String,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <returns><see cref="Java.Net.InetAddress"/></returns>
         /// <exception cref="Java.Net.UnknownHostException"/>
@@ -83,7 +83,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Net.InetAddress"/></returns>
         /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.InetAddress GetByName(string arg0)
@@ -93,7 +93,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getAllByName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Net.InetAddress"/></returns>
         /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.InetAddress[] GetAllByName(string arg0)
@@ -216,7 +216,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isReachable(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool IsReachable(int arg0)
@@ -227,8 +227,8 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isReachable(java.net.NetworkInterface,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.NetworkInterface"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool IsReachable(Java.Net.NetworkInterface arg0, int arg1, int arg2)

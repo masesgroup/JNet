@@ -48,8 +48,8 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#createInputStreamInstance(java.lang.Object,boolean,java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <param name="arg2"><see cref="Java.Io.File"/></param>
         /// <returns><see cref="Javax.Imageio.Stream.ImageInputStream"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -78,7 +78,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageInputStreamSpi.html#createInputStreamInstance(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Javax.Imageio.Stream.ImageInputStream"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.Stream.ImageInputStream CreateInputStreamInstance(object arg0)

@@ -32,7 +32,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public FieldPosition(int arg0)
             : base(arg0)
         {
@@ -41,7 +41,7 @@ namespace Java.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/FieldPosition.html#%3Cinit%3E(java.text.Format$Field,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.Format.Field"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public FieldPosition(Java.Text.Format.Field arg0, int arg1)
             : base(arg0, arg1)
         {

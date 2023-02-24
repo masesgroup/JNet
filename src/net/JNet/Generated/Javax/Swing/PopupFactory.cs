@@ -57,8 +57,8 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Popup"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public Javax.Swing.Popup GetPopup(Java.Awt.Component arg0, Java.Awt.Component arg1, int arg2, int arg3)

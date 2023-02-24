@@ -32,7 +32,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedReader.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public PipedReader(int arg0)
             : base(arg0)
         {
@@ -41,7 +41,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedReader.html#%3Cinit%3E(java.io.PipedWriter,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PipedWriter"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public PipedReader(Java.Io.PipedWriter arg0, int arg1)
             : base(arg0, arg1)

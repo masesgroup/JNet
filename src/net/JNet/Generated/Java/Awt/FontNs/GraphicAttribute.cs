@@ -111,8 +111,8 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#draw(java.awt.Graphics2D,float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Graphics2D"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
-        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
         public void Draw(Java.Awt.Graphics2D arg0, float arg1, float arg2)
         {
             IExecute("draw", arg0, arg1, arg2);

@@ -33,10 +33,10 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,int,java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         public DatagramPacket(byte[] arg0, int arg1, int arg2, Java.Net.InetAddress arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -45,8 +45,8 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,int,java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Net.SocketAddress"/></param>
         public DatagramPacket(byte[] arg0, int arg1, int arg2, Java.Net.SocketAddress arg3)
             : base(arg0, arg1, arg2, arg3)
@@ -56,8 +56,8 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public DatagramPacket(byte[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -66,9 +66,9 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public DatagramPacket(byte[] arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -77,7 +77,7 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Net.SocketAddress"/></param>
         public DatagramPacket(byte[] arg0, int arg1, Java.Net.SocketAddress arg2)
             : base(arg0, arg1, arg2)
@@ -87,7 +87,7 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public DatagramPacket(byte[] arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -154,8 +154,8 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#setData(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public void SetData(byte[] arg0, int arg1, int arg2)
         {
             IExecute("setData", arg0, arg1, arg2);

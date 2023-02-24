@@ -45,7 +45,7 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#withCachedThreadPool(java.util.concurrent.ExecutorService,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ExecutorService"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousChannelGroup WithCachedThreadPool(Java.Util.Concurrent.ExecutorService arg0, int arg1)
@@ -55,7 +55,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#withFixedThreadPool(int,java.util.concurrent.ThreadFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></returns>
         /// <exception cref="Java.Io.IOException"/>

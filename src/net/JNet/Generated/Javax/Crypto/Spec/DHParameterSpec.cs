@@ -34,7 +34,7 @@ namespace Javax.Crypto.Spec
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public DHParameterSpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, int arg2)
             : base(arg0, arg1, arg2)
         {

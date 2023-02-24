@@ -48,7 +48,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HostnameVerifier.html#verify(java.lang.String,javax.net.ssl.SSLSession)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLSession"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Verify(string arg0, Javax.Net.Ssl.SSLSession arg1)

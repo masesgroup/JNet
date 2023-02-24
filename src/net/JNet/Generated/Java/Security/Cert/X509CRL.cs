@@ -139,7 +139,7 @@ namespace Java.Security.Cert
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRL.html#verify(java.security.PublicKey,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Security.Cert.CRLException"/>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Java.Security.InvalidKeyException"/>

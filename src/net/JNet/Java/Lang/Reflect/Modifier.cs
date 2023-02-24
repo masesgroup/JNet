@@ -27,7 +27,9 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class Modifier : JVMBridgeBase<Modifier>
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.lang.reflect.Modifier";
         /// <summary>
         /// Return an <see cref="int"/> value OR-ing together the source language modifiers that can be applied to a class.

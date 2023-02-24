@@ -35,7 +35,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Plaf.Synth.Region"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Plaf.Synth.SynthStyle"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public SynthContext(Javax.Swing.JComponent arg0, Javax.Swing.Plaf.Synth.Region arg1, Javax.Swing.Plaf.Synth.SynthStyle arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {

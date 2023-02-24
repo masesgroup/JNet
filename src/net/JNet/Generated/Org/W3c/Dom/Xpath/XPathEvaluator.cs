@@ -48,11 +48,11 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#evaluate(java.lang.String,org.w3c.dom.Node,org.w3c.dom.xpath.XPathNSResolver,short,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
         /// <param name="arg2"><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></param>
-        /// <param name="arg3"><see langword="short"/></param>
-        /// <param name="arg4"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="short"/></param>
+        /// <param name="arg4"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
@@ -63,7 +63,7 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#createExpression(java.lang.String,org.w3c.dom.xpath.XPathNSResolver)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></param>
         /// <returns><see cref="Org.W3c.Dom.Xpath.XPathExpression"/></returns>
         /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>

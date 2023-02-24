@@ -32,7 +32,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicArrowButton.html#%3Cinit%3E(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
         /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
@@ -44,7 +44,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicArrowButton.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public BasicArrowButton(int arg0)
             : base(arg0)
         {
@@ -80,11 +80,11 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicArrowButton.html#paintTriangle(java.awt.Graphics,int,int,int,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
         public void PaintTriangle(Java.Awt.Graphics arg0, int arg1, int arg2, int arg3, int arg4, bool arg5)
         {
             IExecute("paintTriangle", arg0, arg1, arg2, arg3, arg4, arg5);

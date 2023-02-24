@@ -66,7 +66,7 @@ namespace Java.Lang.Ref
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.html#register(java.lang.Object,java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="Java.Lang.Ref.Cleaner.Cleanable"/></returns>
         public Java.Lang.Ref.Cleaner.Cleanable Register(object arg0, Java.Lang.Runnable arg1)

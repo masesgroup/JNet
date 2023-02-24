@@ -32,16 +32,16 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html#%3Cinit%3E(int,java.awt.JobAttributes$DefaultSelectionType,java.awt.JobAttributes$DestinationType,java.awt.JobAttributes$DialogType,java.lang.String,int,int,java.awt.JobAttributes$MultipleDocumentHandlingType,int[][],java.lang.String,java.awt.JobAttributes$SidesType)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.JobAttributes.DefaultSelectionType"/></param>
         /// <param name="arg2"><see cref="Java.Awt.JobAttributes.DestinationType"/></param>
         /// <param name="arg3"><see cref="Java.Awt.JobAttributes.DialogType"/></param>
-        /// <param name="arg4"><see langword="string"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         /// <param name="arg7"><see cref="Java.Awt.JobAttributes.MultipleDocumentHandlingType"/></param>
         /// <param name="arg8"><see cref="int"/></param>
-        /// <param name="arg9"><see langword="string"/></param>
+        /// <param name="arg9"><see cref="string"/></param>
         /// <param name="arg10"><see cref="Java.Awt.JobAttributes.SidesType"/></param>
         public JobAttributes(int arg0, Java.Awt.JobAttributes.DefaultSelectionType arg1, Java.Awt.JobAttributes.DestinationType arg2, Java.Awt.JobAttributes.DialogType arg3, string arg4, int arg5, int arg6, Java.Awt.JobAttributes.MultipleDocumentHandlingType arg7, int[][] arg8, string arg9, Java.Awt.JobAttributes.SidesType arg10)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10)

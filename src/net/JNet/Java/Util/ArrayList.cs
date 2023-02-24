@@ -27,7 +27,9 @@ namespace Java.Util
     /// <typeparam name="E"><see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html"/></typeparam>
     public class ArrayList<E> : JVMBridgeBase<ArrayList<E>>
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.util.ArrayList";
         /// <summary>
         /// Converter from <see cref="ArrayList{E}"/> to <see cref="Iterable{E}"/>

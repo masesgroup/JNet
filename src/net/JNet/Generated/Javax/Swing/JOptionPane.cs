@@ -32,9 +32,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#%3Cinit%3E(java.lang.Object,int,int,javax.swing.Icon)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Javax.Swing.Icon"/></param>
         public JOptionPane(object arg0, int arg1, int arg2, Javax.Swing.Icon arg3)
             : base(arg0, arg1, arg2, arg3)
@@ -43,9 +43,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#%3Cinit%3E(java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public JOptionPane(object arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -53,8 +53,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#%3Cinit%3E(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public JOptionPane(object arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -62,7 +62,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public JOptionPane(object arg0)
             : base(arg0)
         {
@@ -198,10 +198,10 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int,javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Javax.Swing.Icon"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
@@ -213,10 +213,10 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4)
@@ -227,9 +227,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
@@ -240,7 +240,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showConfirmDialog(java.awt.Component,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowConfirmDialog(Java.Awt.Component arg0, object arg1)
@@ -251,10 +251,10 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int,javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Javax.Swing.Icon"/></param>
         /// <returns><see langword="int"/></returns>
         public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4, Javax.Swing.Icon arg5)
@@ -265,10 +265,10 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4)
         {
@@ -278,9 +278,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
         {
@@ -290,7 +290,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalConfirmDialog(java.awt.Component,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public static int ShowInternalConfirmDialog(Java.Awt.Component arg0, object arg1)
         {
@@ -300,13 +300,13 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalOptionDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int,javax.swing.Icon,java.lang.Object[],java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see langword="object"/></param>
+        /// <param name="arg7"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public static int ShowInternalOptionDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4, Javax.Swing.Icon arg5, object[] arg6, object arg7)
         {
@@ -316,13 +316,13 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showOptionDialog(java.awt.Component,java.lang.Object,java.lang.String,int,int,javax.swing.Icon,java.lang.Object[],java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg6"><see cref="object"/></param>
-        /// <param name="arg7"><see langword="object"/></param>
+        /// <param name="arg7"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static int ShowOptionDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, int arg4, Javax.Swing.Icon arg5, object[] arg6, object arg7)
@@ -343,12 +343,12 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int,javax.swing.Icon,java.lang.Object[],java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg5"><see cref="object"/></param>
-        /// <param name="arg6"><see langword="object"/></param>
+        /// <param name="arg6"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static object ShowInputDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, Javax.Swing.Icon arg4, object[] arg5, object arg6)
@@ -359,12 +359,12 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int,javax.swing.Icon,java.lang.Object[],java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg5"><see cref="object"/></param>
-        /// <param name="arg6"><see langword="object"/></param>
+        /// <param name="arg6"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public static object ShowInternalInputDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, Javax.Swing.Icon arg4, object[] arg5, object arg6)
         {
@@ -374,8 +374,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ShowInputDialog(Java.Awt.Component arg0, object arg1, object arg2)
         {
@@ -385,9 +385,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static string ShowInputDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
@@ -398,7 +398,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.awt.Component,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static string ShowInputDialog(Java.Awt.Component arg0, object arg1)
@@ -408,8 +408,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ShowInputDialog(object arg0, object arg1)
         {
@@ -418,7 +418,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInputDialog(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static string ShowInputDialog(object arg0)
@@ -429,9 +429,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalInputDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ShowInternalInputDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
         {
@@ -441,7 +441,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalInputDialog(java.awt.Component,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ShowInternalInputDialog(Java.Awt.Component arg0, object arg1)
         {
@@ -460,9 +460,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int,javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
         public static void ShowInternalMessageDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, Javax.Swing.Icon arg4)
         {
@@ -472,9 +472,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public static void ShowInternalMessageDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
         {
             SExecute("showInternalMessageDialog", arg0, arg1, arg2, arg3);
@@ -483,7 +483,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showInternalMessageDialog(java.awt.Component,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public static void ShowInternalMessageDialog(Java.Awt.Component arg0, object arg1)
         {
             SExecute("showInternalMessageDialog", arg0, arg1);
@@ -492,9 +492,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int,javax.swing.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static void ShowMessageDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3, Javax.Swing.Icon arg4)
@@ -505,9 +505,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static void ShowMessageDialog(Java.Awt.Component arg0, object arg1, string arg2, int arg3)
         {
@@ -517,7 +517,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#showMessageDialog(java.awt.Component,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static void ShowMessageDialog(Java.Awt.Component arg0, object arg1)
         {
@@ -615,7 +615,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#createDialog(java.awt.Component,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.JDialog"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public Javax.Swing.JDialog CreateDialog(Java.Awt.Component arg0, string arg1)
@@ -625,7 +625,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#createDialog(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.JDialog"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public Javax.Swing.JDialog CreateDialog(string arg0)
@@ -636,7 +636,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#createInternalFrame(java.awt.Component,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.JInternalFrame"/></returns>
         public Javax.Swing.JInternalFrame CreateInternalFrame(Java.Awt.Component arg0, string arg1)
         {

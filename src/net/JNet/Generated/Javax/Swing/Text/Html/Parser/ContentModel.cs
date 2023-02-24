@@ -32,8 +32,8 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#%3Cinit%3E(int,java.lang.Object,javax.swing.text.html.parser.ContentModel)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.Html.Parser.ContentModel"/></param>
         public ContentModel(int arg0, object arg1, Javax.Swing.Text.Html.Parser.ContentModel arg2)
             : base(arg0, arg1, arg2)
@@ -42,7 +42,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#%3Cinit%3E(int,javax.swing.text.html.parser.ContentModel)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Html.Parser.ContentModel"/></param>
         public ContentModel(int arg0, Javax.Swing.Text.Html.Parser.ContentModel arg1)
             : base(arg0, arg1)
@@ -100,7 +100,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html#first(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool First(object arg0)
         {

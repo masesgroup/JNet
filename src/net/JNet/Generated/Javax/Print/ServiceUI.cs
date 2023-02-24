@@ -45,8 +45,8 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUI.html#printDialog(java.awt.GraphicsConfiguration,int,int,javax.print.PrintService[],javax.print.PrintService,javax.print.DocFlavor,javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Javax.Print.PrintService"/></param>
         /// <param name="arg4"><see cref="Javax.Print.PrintService"/></param>
         /// <param name="arg5"><see cref="Javax.Print.DocFlavor"/></param>

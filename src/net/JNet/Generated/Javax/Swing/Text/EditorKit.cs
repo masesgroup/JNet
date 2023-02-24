@@ -97,7 +97,7 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Document"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Read(Java.Io.InputStream arg0, Javax.Swing.Text.Document arg1, int arg2)
@@ -109,7 +109,7 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Document"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Read(Java.Io.Reader arg0, Javax.Swing.Text.Document arg1, int arg2)
@@ -121,8 +121,8 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Document"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Write(Java.Io.OutputStream arg0, Javax.Swing.Text.Document arg1, int arg2, int arg3)
@@ -134,8 +134,8 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Document"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Write(Java.Io.Writer arg0, Javax.Swing.Text.Document arg1, int arg2, int arg3)

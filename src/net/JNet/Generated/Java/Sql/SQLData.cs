@@ -56,7 +56,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#readSQL(java.sql.SQLInput,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.SQLInput"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void ReadSQL(Java.Sql.SQLInput arg0, string arg1)
         {

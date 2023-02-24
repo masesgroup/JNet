@@ -45,7 +45,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#unexportObject(java.rmi.Remote,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Rmi.NoSuchObjectException"/>
         public static bool UnexportObject(Java.Rmi.Remote arg0, bool arg1)
@@ -56,7 +56,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.io.ObjectInputFilter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Io.ObjectInputFilter"/></param>
         /// <returns><see cref="Java.Rmi.Remote"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
@@ -68,7 +68,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory,java.io.ObjectInputFilter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
         /// <param name="arg3"><see cref="Java.Rmi.Server.RMIServerSocketFactory"/></param>
         /// <param name="arg4"><see cref="Java.Io.ObjectInputFilter"/></param>
@@ -82,7 +82,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
         /// <param name="arg3"><see cref="Java.Rmi.Server.RMIServerSocketFactory"/></param>
         /// <returns><see cref="Java.Rmi.Remote"/></returns>
@@ -95,7 +95,7 @@ namespace Java.Rmi.Server
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UnicastRemoteObject.html#exportObject(java.rmi.Remote,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Rmi.Remote"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote ExportObject(Java.Rmi.Remote arg0, int arg1)

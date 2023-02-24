@@ -26,7 +26,9 @@ namespace Java.Lang
     /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/InheritableThreadLocal.html"/></typeparam>
     public class InheritableThreadLocal<E> : ThreadLocal<E>
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.lang.InheritableThreadLocal";
     }
 }

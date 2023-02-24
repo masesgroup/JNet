@@ -51,9 +51,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <returns><see cref="Java.Security.Cert.CertStore"/></returns>
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
@@ -65,7 +65,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
         /// <returns><see cref="Java.Security.Cert.CertStore"/></returns>
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>

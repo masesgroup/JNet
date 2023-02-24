@@ -75,7 +75,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Sound.Midi.MidiEvent"/></returns>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public Javax.Sound.Midi.MidiEvent Get(int arg0)

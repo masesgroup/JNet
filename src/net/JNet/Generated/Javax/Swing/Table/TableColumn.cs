@@ -32,8 +32,8 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#%3Cinit%3E(int,int,javax.swing.table.TableCellRenderer,javax.swing.table.TableCellEditor)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Table.TableCellRenderer"/></param>
         /// <param name="arg3"><see cref="Javax.Swing.Table.TableCellEditor"/></param>
         public TableColumn(int arg0, int arg1, Javax.Swing.Table.TableCellRenderer arg2, Javax.Swing.Table.TableCellEditor arg3)
@@ -43,8 +43,8 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#%3Cinit%3E(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public TableColumn(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -52,7 +52,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public TableColumn(int arg0)
             : base(arg0)
         {

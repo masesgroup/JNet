@@ -33,10 +33,10 @@ namespace Javax.Naming.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#%3Cinit%3E(javax.naming.event.EventContext,int,javax.naming.Binding,javax.naming.Binding,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Event.EventContext"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Binding"/></param>
         /// <param name="arg3"><see cref="Javax.Naming.Binding"/></param>
-        /// <param name="arg4"><see langword="object"/></param>
+        /// <param name="arg4"><see cref="object"/></param>
         public NamingEvent(Javax.Naming.Event.EventContext arg0, int arg1, Javax.Naming.Binding arg2, Javax.Naming.Binding arg3, object arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {

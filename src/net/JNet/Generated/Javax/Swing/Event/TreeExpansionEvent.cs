@@ -32,7 +32,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.tree.TreePath)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public TreeExpansionEvent(object arg0, Javax.Swing.Tree.TreePath arg1)
             : base(arg0, arg1)

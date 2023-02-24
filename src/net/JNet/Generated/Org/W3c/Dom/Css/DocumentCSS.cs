@@ -53,7 +53,7 @@ namespace Org.W3c.Dom.Css
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/DocumentCSS.html#getOverrideStyle(org.w3c.dom.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Element"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Org.W3c.Dom.Css.CSSStyleDeclaration"/></returns>
         public Org.W3c.Dom.Css.CSSStyleDeclaration GetOverrideStyle(Org.W3c.Dom.Element arg0, string arg1)
         {

@@ -121,7 +121,7 @@ namespace Java.Awt.Dnd
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#createDefaultDragGestureRecognizer(java.awt.Component,int,java.awt.dnd.DragGestureListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Dnd.DragGestureListener"/></param>
         /// <returns><see cref="Java.Awt.Dnd.DragGestureRecognizer"/></returns>
         public Java.Awt.Dnd.DragGestureRecognizer CreateDefaultDragGestureRecognizer(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DragGestureListener arg2)

@@ -87,8 +87,8 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#getBytes(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public byte[] GetBytes(long arg0, int arg1)
@@ -98,10 +98,10 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#setBytes(long,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -112,7 +112,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#setBytes(long,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
@@ -124,8 +124,8 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#getBinaryStream(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream GetBinaryStream(long arg0, long arg1)
@@ -135,7 +135,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#setBinaryStream(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -157,7 +157,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#position(byte[],long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -169,7 +169,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#position(java.sql.Blob,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Blob"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -189,7 +189,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#truncate(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public void Truncate(long arg0)
         {

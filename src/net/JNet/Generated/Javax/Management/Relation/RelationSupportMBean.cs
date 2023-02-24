@@ -61,7 +61,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool?"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetRelationServiceManagementFlag(bool? arg0)
         {

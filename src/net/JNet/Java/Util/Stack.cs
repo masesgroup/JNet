@@ -23,7 +23,9 @@ namespace Java.Util
     /// </summary>
     public class Stack<E> : Vector<E>
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.util.Stack";
         /// <summary>
         /// Constructs an empty vector so that its internal data array has size 10 and its standard capacity increment is zero.

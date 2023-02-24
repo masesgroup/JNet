@@ -33,7 +33,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html#%3Cinit%3E(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public EncryptionKey(byte[] arg0, int arg1)
             : base(arg0, arg1)
         {

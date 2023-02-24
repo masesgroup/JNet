@@ -49,7 +49,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html#visit(javax.lang.model.element.Element,P)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object Visit(Javax.Lang.Model.Element.Element arg0, object arg1)
         {
@@ -68,7 +68,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html#visitModule(javax.lang.model.element.ModuleElement,P)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object VisitModule(Javax.Lang.Model.Element.ModuleElement arg0, object arg1)
         {
@@ -78,7 +78,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html#visitUnknown(javax.lang.model.element.Element,P)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object VisitUnknown(Javax.Lang.Model.Element.Element arg0, object arg1)
         {

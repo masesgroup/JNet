@@ -32,7 +32,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListenerProxy.html#%3Cinit%3E(long,java.awt.event.AWTEventListener)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Awt.EventNs.AWTEventListener"/></param>
         public AWTEventListenerProxy(long arg0, Java.Awt.EventNs.AWTEventListener arg1)
             : base(arg0, arg1)

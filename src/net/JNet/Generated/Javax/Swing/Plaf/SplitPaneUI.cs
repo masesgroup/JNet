@@ -93,7 +93,7 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#setDividerLocation(javax.swing.JSplitPane,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JSplitPane"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void SetDividerLocation(Javax.Swing.JSplitPane arg0, int arg1)
         {
             IExecute("setDividerLocation", arg0, arg1);

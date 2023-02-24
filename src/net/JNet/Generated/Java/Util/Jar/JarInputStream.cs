@@ -33,7 +33,7 @@ namespace Java.Util.Jar
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarInputStream.html#%3Cinit%3E(java.io.InputStream,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public JarInputStream(Java.Io.InputStream arg0, bool arg1)
             : base(arg0, arg1)

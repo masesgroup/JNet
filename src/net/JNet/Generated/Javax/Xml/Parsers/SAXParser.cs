@@ -80,7 +80,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
@@ -91,8 +91,8 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetProperty(string arg0, object arg1)
@@ -124,7 +124,7 @@ namespace Javax.Xml.Parsers
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.Helpers.DefaultHandler"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.InputStream arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1, string arg2)
@@ -145,7 +145,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#parsers.SAXParser.parse(java.lang.String,org.xml.sax.helpers.DefaultHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.Helpers.DefaultHandler"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         /// <exception cref="Java.Io.IOException"/>

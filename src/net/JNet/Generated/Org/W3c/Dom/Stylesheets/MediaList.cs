@@ -62,7 +62,7 @@ namespace Org.W3c.Dom.Stylesheets
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/MediaList.html#item(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string Item(int arg0)
         {
@@ -71,7 +71,7 @@ namespace Org.W3c.Dom.Stylesheets
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/MediaList.html#appendMedium(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void AppendMedium(string arg0)
         {
@@ -80,7 +80,7 @@ namespace Org.W3c.Dom.Stylesheets
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/MediaList.html#deleteMedium(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void DeleteMedium(string arg0)
         {
