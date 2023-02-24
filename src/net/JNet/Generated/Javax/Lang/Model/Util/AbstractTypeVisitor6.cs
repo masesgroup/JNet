@@ -49,7 +49,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visit(javax.lang.model.type.TypeMirror,P)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object Visit(Javax.Lang.Model.Type.TypeMirror arg0, object arg1)
         {
@@ -68,7 +68,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visitIntersection(javax.lang.model.type.IntersectionType,P)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.IntersectionType"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object VisitIntersection(Javax.Lang.Model.Type.IntersectionType arg0, object arg1)
         {
@@ -78,7 +78,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visitUnion(javax.lang.model.type.UnionType,P)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.UnionType"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object VisitUnion(Javax.Lang.Model.Type.UnionType arg0, object arg1)
         {
@@ -88,7 +88,7 @@ namespace Javax.Lang.Model.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html#visitUnknown(javax.lang.model.type.TypeMirror,P)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object VisitUnknown(Javax.Lang.Model.Type.TypeMirror arg0, object arg1)
         {

@@ -32,9 +32,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#%3Cinit%3E(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public Font(string arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -127,8 +127,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#textRequiresLayout(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool TextRequiresLayout(char[] arg0, int arg1, int arg2)
         {
@@ -137,7 +137,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFont(int,java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.File"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         /// <exception cref="Java.Awt.FontFormatException"/>
@@ -149,7 +149,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFont(int,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         /// <exception cref="Java.Awt.FontFormatException"/>
@@ -161,7 +161,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#decode(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font Decode(string arg0)
         {
@@ -170,7 +170,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFont(java.lang.String,java.awt.Font)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Font"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font GetFont(string arg0, Java.Awt.Font arg1)
@@ -180,7 +180,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFont(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font GetFont(string arg0)
         {
@@ -299,7 +299,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplay(char)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="char"/></param>
+        /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool CanDisplay(char arg0)
         {
@@ -308,7 +308,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplay(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool CanDisplay(int arg0)
         {
@@ -371,7 +371,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getBaselineFor(char)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="char"/></param>
+        /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see langword="byte"/></returns>
         public byte GetBaselineFor(char arg0)
         {
@@ -381,8 +381,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplayUpTo(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int CanDisplayUpTo(char[] arg0, int arg1, int arg2)
         {
@@ -391,7 +391,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplayUpTo(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="int"/></returns>
         public int CanDisplayUpTo(string arg0)
         {
@@ -401,8 +401,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplayUpTo(java.text.CharacterIterator,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int CanDisplayUpTo(Java.Text.CharacterIterator arg0, int arg1, int arg2)
         {
@@ -411,7 +411,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveFont(float arg0)
         {
@@ -420,8 +420,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveFont(int arg0, float arg1)
         {
@@ -430,7 +430,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(int,java.awt.geom.AffineTransform)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveFont(int arg0, Java.Awt.Geom.AffineTransform arg1)
@@ -440,7 +440,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveFont(int arg0)
         {
@@ -479,7 +479,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createGlyphVector(java.awt.font.FontRenderContext,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Awt.FontNs.GlyphVector"/></returns>
         public Java.Awt.FontNs.GlyphVector CreateGlyphVector(Java.Awt.FontNs.FontRenderContext arg0, string arg1)
         {
@@ -500,9 +500,9 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
         /// <param name="arg1"><see cref="char"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.FontNs.GlyphVector"/></returns>
         public Java.Awt.FontNs.GlyphVector LayoutGlyphVector(Java.Awt.FontNs.FontRenderContext arg0, char[] arg1, int arg2, int arg3, int arg4)
         {
@@ -512,8 +512,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(char[],int,int,java.awt.font.FontRenderContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(char[] arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
@@ -523,9 +523,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(java.lang.String,int,int,java.awt.font.FontRenderContext)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(string arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
@@ -535,7 +535,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(java.lang.String,java.awt.font.FontRenderContext)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(string arg0, Java.Awt.FontNs.FontRenderContext arg1)
@@ -546,8 +546,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(java.text.CharacterIterator,int,int,java.awt.font.FontRenderContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Text.CharacterIterator arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
@@ -567,8 +567,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(char[],int,int,java.awt.font.FontRenderContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(char[] arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
@@ -578,9 +578,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(java.lang.String,int,int,java.awt.font.FontRenderContext)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(string arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
@@ -590,7 +590,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(java.lang.String,java.awt.font.FontRenderContext)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(string arg0, Java.Awt.FontNs.FontRenderContext arg1)
@@ -601,8 +601,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(java.text.CharacterIterator,int,int,java.awt.font.FontRenderContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Text.CharacterIterator arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)

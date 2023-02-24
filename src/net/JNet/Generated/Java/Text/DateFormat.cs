@@ -164,7 +164,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateInstance(int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateInstance(int arg0, Java.Util.Locale arg1)
@@ -174,7 +174,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateInstance(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateInstance(int arg0)
         {
@@ -183,8 +183,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateTimeInstance(int,int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateTimeInstance(int arg0, int arg1, Java.Util.Locale arg2)
@@ -194,8 +194,8 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getDateTimeInstance(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetDateTimeInstance(int arg0, int arg1)
         {
@@ -213,7 +213,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getTimeInstance(int,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetTimeInstance(int arg0, Java.Util.Locale arg1)
@@ -223,7 +223,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getTimeInstance(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Text.DateFormat"/></returns>
         public static Java.Text.DateFormat GetTimeInstance(int arg0)
         {
@@ -268,7 +268,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Text.ParsePosition"/></param>
         /// <returns><see cref="Java.Util.Date"/></returns>
         public Java.Util.Date Parse(string arg0, Java.Text.ParsePosition arg1)
@@ -296,7 +296,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Date"/></returns>
         /// <exception cref="Java.Text.ParseException"/>
         public Java.Util.Date Parse(string arg0)
@@ -306,7 +306,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#setLenient(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetLenient(bool arg0)
         {
             IExecute("setLenient", arg0);
@@ -406,7 +406,7 @@ namespace Java.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.Field.html#ofCalendarField(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Java.Text.DateFormat.Field"/></returns>
             public static Java.Text.DateFormat.Field OfCalendarField(int arg0)
             {

@@ -33,7 +33,7 @@ namespace Javax.Crypto.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/ChaCha20ParameterSpec.html#%3Cinit%3E(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public ChaCha20ParameterSpec(byte[] arg0, int arg1)
             : base(arg0, arg1)
         {

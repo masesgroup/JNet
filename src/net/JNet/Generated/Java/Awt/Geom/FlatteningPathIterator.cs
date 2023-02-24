@@ -33,8 +33,8 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#%3Cinit%3E(java.awt.geom.PathIterator,double,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -43,7 +43,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#%3Cinit%3E(java.awt.geom.PathIterator,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         public FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1)
             : base(arg0, arg1)
         {

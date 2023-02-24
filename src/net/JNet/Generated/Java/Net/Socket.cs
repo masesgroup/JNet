@@ -32,10 +32,10 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.lang.String,int,java.net.InetAddress,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public Socket(string arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
@@ -44,8 +44,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Net.UnknownHostException"/>
         /// <exception cref="Java.Io.IOException"/>
         public Socket(string arg0, int arg1)
@@ -56,9 +56,9 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.net.InetAddress,int,java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public Socket(Java.Net.InetAddress arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
@@ -68,7 +68,7 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#%3Cinit%3E(java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public Socket(Java.Net.InetAddress arg0, int arg1)
             : base(arg0, arg1)
@@ -304,7 +304,7 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#connect(java.net.SocketAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void Connect(Java.Net.SocketAddress arg0, int arg1)
         {
@@ -322,7 +322,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#sendUrgentData(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void SendUrgentData(int arg0)
         {
@@ -331,9 +331,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setPerformancePreferences(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public void SetPerformancePreferences(int arg0, int arg1, int arg2)
         {
             IExecute("setPerformancePreferences", arg0, arg1, arg2);
@@ -341,8 +341,8 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSoLinger(boolean,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Net.SocketException"/>
         public void SetSoLinger(bool arg0, int arg1)
         {

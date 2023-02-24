@@ -49,8 +49,8 @@ namespace Javax.Swing.Plaf.Synth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getBoolean(javax.swing.plaf.synth.SynthContext,java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool GetBoolean(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, bool arg2)
         {
@@ -69,8 +69,8 @@ namespace Javax.Swing.Plaf.Synth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getInt(javax.swing.plaf.synth.SynthContext,java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetInt(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, int arg2)
         {
@@ -109,7 +109,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#get(javax.swing.plaf.synth.SynthContext,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object Get(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1)
         {
@@ -119,8 +119,8 @@ namespace Javax.Swing.Plaf.Synth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getString(javax.swing.plaf.synth.SynthContext,java.lang.Object,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetString(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, string arg2)
         {
@@ -130,7 +130,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getIcon(javax.swing.plaf.synth.SynthContext,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetIcon(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1)
         {

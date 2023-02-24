@@ -165,7 +165,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setArray(int,java.sql.Array)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Array"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetArray(int arg0, Java.Sql.Array arg1)
@@ -175,9 +175,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setAsciiStream(int,java.io.InputStream,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetAsciiStream(int arg0, Java.Io.InputStream arg1, int arg2)
         {
@@ -186,7 +186,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setAsciiStream(int,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetAsciiStream(int arg0, Java.Io.InputStream arg1)
@@ -196,9 +196,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setAsciiStream(java.lang.String,java.io.InputStream,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetAsciiStream(string arg0, Java.Io.InputStream arg1, int arg2)
         {
@@ -207,7 +207,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setAsciiStream(java.lang.String,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetAsciiStream(string arg0, Java.Io.InputStream arg1)
@@ -217,7 +217,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBigDecimal(int,java.math.BigDecimal)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigDecimal"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBigDecimal(int arg0, Java.Math.BigDecimal arg1)
@@ -227,7 +227,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBigDecimal(java.lang.String,java.math.BigDecimal)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigDecimal"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBigDecimal(string arg0, Java.Math.BigDecimal arg1)
@@ -237,9 +237,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBinaryStream(int,java.io.InputStream,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBinaryStream(int arg0, Java.Io.InputStream arg1, int arg2)
         {
@@ -248,7 +248,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBinaryStream(int,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBinaryStream(int arg0, Java.Io.InputStream arg1)
@@ -258,9 +258,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBinaryStream(java.lang.String,java.io.InputStream,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBinaryStream(string arg0, Java.Io.InputStream arg1, int arg2)
         {
@@ -269,7 +269,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBinaryStream(java.lang.String,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBinaryStream(string arg0, Java.Io.InputStream arg1)
@@ -279,9 +279,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBlob(int,java.io.InputStream,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBlob(int arg0, Java.Io.InputStream arg1, long arg2)
         {
@@ -290,7 +290,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBlob(int,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBlob(int arg0, Java.Io.InputStream arg1)
@@ -300,7 +300,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBlob(int,java.sql.Blob)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Blob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBlob(int arg0, Java.Sql.Blob arg1)
@@ -310,9 +310,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBlob(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBlob(string arg0, Java.Io.InputStream arg1, long arg2)
         {
@@ -321,7 +321,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBlob(java.lang.String,java.io.InputStream)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBlob(string arg0, Java.Io.InputStream arg1)
@@ -331,7 +331,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBlob(java.lang.String,java.sql.Blob)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Blob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBlob(string arg0, Java.Sql.Blob arg1)
@@ -341,8 +341,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBoolean(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBoolean(int arg0, bool arg1)
         {
@@ -351,8 +351,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBoolean(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBoolean(string arg0, bool arg1)
         {
@@ -361,8 +361,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setByte(int,byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="byte"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetByte(int arg0, byte arg1)
         {
@@ -371,8 +371,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setByte(java.lang.String,byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="byte"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetByte(string arg0, byte arg1)
         {
@@ -381,7 +381,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBytes(int,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBytes(int arg0, byte[] arg1)
@@ -391,7 +391,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setBytes(java.lang.String,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBytes(string arg0, byte[] arg1)
@@ -401,9 +401,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setCharacterStream(int,java.io.Reader,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCharacterStream(int arg0, Java.Io.Reader arg1, int arg2)
         {
@@ -412,7 +412,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setCharacterStream(int,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCharacterStream(int arg0, Java.Io.Reader arg1)
@@ -422,9 +422,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setCharacterStream(java.lang.String,java.io.Reader,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCharacterStream(string arg0, Java.Io.Reader arg1, int arg2)
         {
@@ -433,7 +433,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setCharacterStream(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCharacterStream(string arg0, Java.Io.Reader arg1)
@@ -443,9 +443,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setClob(int,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetClob(int arg0, Java.Io.Reader arg1, long arg2)
         {
@@ -454,7 +454,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setClob(int,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetClob(int arg0, Java.Io.Reader arg1)
@@ -464,7 +464,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setClob(int,java.sql.Clob)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Clob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetClob(int arg0, Java.Sql.Clob arg1)
@@ -474,9 +474,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setClob(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetClob(string arg0, Java.Io.Reader arg1, long arg2)
         {
@@ -485,7 +485,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setClob(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetClob(string arg0, Java.Io.Reader arg1)
@@ -495,7 +495,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setClob(java.lang.String,java.sql.Clob)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Clob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetClob(string arg0, Java.Sql.Clob arg1)
@@ -505,7 +505,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setConcurrency(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetConcurrency(int arg0)
         {
@@ -514,7 +514,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setDate(int,java.sql.Date,java.util.Calendar)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
         /// <param name="arg2"><see cref="Java.Util.Calendar"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -525,7 +525,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setDate(int,java.sql.Date)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetDate(int arg0, Java.Sql.Date arg1)
@@ -535,7 +535,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setDate(java.lang.String,java.sql.Date,java.util.Calendar)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
         /// <param name="arg2"><see cref="Java.Util.Calendar"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -546,7 +546,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setDate(java.lang.String,java.sql.Date)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetDate(string arg0, Java.Sql.Date arg1)
@@ -556,8 +556,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setDouble(int,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetDouble(int arg0, double arg1)
         {
@@ -566,8 +566,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setDouble(java.lang.String,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetDouble(string arg0, double arg1)
         {
@@ -576,8 +576,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setFloat(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetFloat(int arg0, float arg1)
         {
@@ -586,8 +586,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setFloat(java.lang.String,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetFloat(string arg0, float arg1)
         {
@@ -596,8 +596,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setInt(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetInt(int arg0, int arg1)
         {
@@ -606,8 +606,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setInt(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetInt(string arg0, int arg1)
         {
@@ -616,8 +616,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setLong(int,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetLong(int arg0, long arg1)
         {
@@ -626,8 +626,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setLong(java.lang.String,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetLong(string arg0, long arg1)
         {
@@ -636,9 +636,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNCharacterStream(int,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNCharacterStream(int arg0, Java.Io.Reader arg1, long arg2)
         {
@@ -647,7 +647,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNCharacterStream(int,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNCharacterStream(int arg0, Java.Io.Reader arg1)
@@ -657,9 +657,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNCharacterStream(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNCharacterStream(string arg0, Java.Io.Reader arg1, long arg2)
         {
@@ -668,7 +668,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNCharacterStream(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNCharacterStream(string arg0, Java.Io.Reader arg1)
@@ -678,9 +678,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNClob(int,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNClob(int arg0, Java.Io.Reader arg1, long arg2)
         {
@@ -689,7 +689,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNClob(int,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNClob(int arg0, Java.Io.Reader arg1)
@@ -699,7 +699,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNClob(int,java.sql.NClob)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.NClob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNClob(int arg0, Java.Sql.NClob arg1)
@@ -709,9 +709,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNClob(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNClob(string arg0, Java.Io.Reader arg1, long arg2)
         {
@@ -720,7 +720,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNClob(java.lang.String,java.io.Reader)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNClob(string arg0, Java.Io.Reader arg1)
@@ -730,7 +730,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNClob(java.lang.String,java.sql.NClob)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Sql.NClob"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNClob(string arg0, Java.Sql.NClob arg1)
@@ -740,8 +740,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNString(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNString(int arg0, string arg1)
         {
@@ -750,8 +750,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNString(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNString(string arg0, string arg1)
         {
@@ -760,9 +760,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNull(int,int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNull(int arg0, int arg1, string arg2)
         {
@@ -771,8 +771,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNull(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNull(int arg0, int arg1)
         {
@@ -781,9 +781,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNull(java.lang.String,int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNull(string arg0, int arg1, string arg2)
         {
@@ -792,8 +792,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setNull(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNull(string arg0, int arg1)
         {
@@ -802,10 +802,10 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setObject(int,java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetObject(int arg0, object arg1, int arg2, int arg3)
         {
@@ -814,9 +814,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setObject(int,java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetObject(int arg0, object arg1, int arg2)
         {
@@ -825,8 +825,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setObject(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetObject(int arg0, object arg1)
         {
@@ -835,10 +835,10 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setObject(java.lang.String,java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetObject(string arg0, object arg1, int arg2, int arg3)
         {
@@ -847,9 +847,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setObject(java.lang.String,java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetObject(string arg0, object arg1, int arg2)
         {
@@ -858,8 +858,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setObject(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetObject(string arg0, object arg1)
         {
@@ -868,7 +868,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setReadOnly(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetReadOnly(bool arg0)
         {
@@ -877,7 +877,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setRef(int,java.sql.Ref)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Ref"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetRef(int arg0, Java.Sql.Ref arg1)
@@ -887,7 +887,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setRowId(int,java.sql.RowId)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.RowId"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetRowId(int arg0, Java.Sql.RowId arg1)
@@ -897,7 +897,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setRowId(java.lang.String,java.sql.RowId)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Sql.RowId"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetRowId(string arg0, Java.Sql.RowId arg1)
@@ -907,8 +907,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setShort(int,short)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="short"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="short"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetShort(int arg0, short arg1)
         {
@@ -917,8 +917,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setShort(java.lang.String,short)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="short"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="short"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetShort(string arg0, short arg1)
         {
@@ -927,7 +927,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setSQLXML(int,java.sql.SQLXML)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.SQLXML"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetSQLXML(int arg0, Java.Sql.SQLXML arg1)
@@ -937,7 +937,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setSQLXML(java.lang.String,java.sql.SQLXML)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Sql.SQLXML"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetSQLXML(string arg0, Java.Sql.SQLXML arg1)
@@ -947,8 +947,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setString(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetString(int arg0, string arg1)
         {
@@ -957,8 +957,8 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setString(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetString(string arg0, string arg1)
         {
@@ -967,7 +967,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setTime(int,java.sql.Time,java.util.Calendar)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
         /// <param name="arg2"><see cref="Java.Util.Calendar"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -978,7 +978,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setTime(int,java.sql.Time)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTime(int arg0, Java.Sql.Time arg1)
@@ -988,7 +988,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setTime(java.lang.String,java.sql.Time,java.util.Calendar)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
         /// <param name="arg2"><see cref="Java.Util.Calendar"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -999,7 +999,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setTime(java.lang.String,java.sql.Time)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTime(string arg0, Java.Sql.Time arg1)
@@ -1009,7 +1009,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setTimestamp(int,java.sql.Timestamp,java.util.Calendar)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
         /// <param name="arg2"><see cref="Java.Util.Calendar"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -1020,7 +1020,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setTimestamp(int,java.sql.Timestamp)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTimestamp(int arg0, Java.Sql.Timestamp arg1)
@@ -1030,7 +1030,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setTimestamp(java.lang.String,java.sql.Timestamp,java.util.Calendar)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
         /// <param name="arg2"><see cref="Java.Util.Calendar"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -1041,7 +1041,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setTimestamp(java.lang.String,java.sql.Timestamp)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTimestamp(string arg0, Java.Sql.Timestamp arg1)
@@ -1051,7 +1051,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setType(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetType(int arg0)
         {
@@ -1060,7 +1060,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setURL(int,java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Net.URL"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetURL(int arg0, Java.Net.URL arg1)

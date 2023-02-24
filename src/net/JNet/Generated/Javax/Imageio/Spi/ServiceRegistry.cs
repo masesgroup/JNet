@@ -48,7 +48,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#contains(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Contains(object arg0)
         {
@@ -64,7 +64,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#deregisterServiceProvider(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public void DeregisterServiceProvider(object arg0)
         {
             IExecute("deregisterServiceProvider", arg0);
@@ -72,7 +72,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#registerServiceProvider(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public void RegisterServiceProvider(object arg0)
         {
             IExecute("registerServiceProvider", arg0);
@@ -104,7 +104,7 @@ namespace Javax.Imageio.Spi
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.Filter.html#filter(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool FilterMethod(object arg0)
             {

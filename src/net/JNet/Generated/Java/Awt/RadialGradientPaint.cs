@@ -32,9 +32,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#%3Cinit%3E(float,float,float,float[],java.awt.Color[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
-        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="float"/></param>
         /// <param name="arg4"><see cref="Java.Awt.Color"/></param>
         public RadialGradientPaint(float arg0, float arg1, float arg2, float[] arg3, Java.Awt.Color[] arg4)
@@ -45,7 +45,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#%3Cinit%3E(java.awt.geom.Point2D,float,float[],java.awt.Color[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
         public RadialGradientPaint(Java.Awt.Geom.Point2D arg0, float arg1, float[] arg2, Java.Awt.Color[] arg3)

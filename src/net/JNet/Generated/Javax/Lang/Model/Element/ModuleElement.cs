@@ -203,7 +203,7 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitExports(javax.lang.model.element.ModuleElement$ExportsDirective,P)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.ExportsDirective"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see langword="object"/></returns>
             public object VisitExports(Javax.Lang.Model.Element.ModuleElement.ExportsDirective arg0, object arg1)
             {
@@ -213,7 +213,7 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitOpens(javax.lang.model.element.ModuleElement$OpensDirective,P)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.OpensDirective"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see langword="object"/></returns>
             public object VisitOpens(Javax.Lang.Model.Element.ModuleElement.OpensDirective arg0, object arg1)
             {
@@ -223,7 +223,7 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitProvides(javax.lang.model.element.ModuleElement$ProvidesDirective,P)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.ProvidesDirective"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see langword="object"/></returns>
             public object VisitProvides(Javax.Lang.Model.Element.ModuleElement.ProvidesDirective arg0, object arg1)
             {
@@ -233,7 +233,7 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitRequires(javax.lang.model.element.ModuleElement$RequiresDirective,P)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.RequiresDirective"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see langword="object"/></returns>
             public object VisitRequires(Javax.Lang.Model.Element.ModuleElement.RequiresDirective arg0, object arg1)
             {
@@ -243,7 +243,7 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUses(javax.lang.model.element.ModuleElement$UsesDirective,P)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.UsesDirective"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see langword="object"/></returns>
             public object VisitUses(Javax.Lang.Model.Element.ModuleElement.UsesDirective arg0, object arg1)
             {
@@ -253,7 +253,7 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visit(javax.lang.model.element.ModuleElement$Directive,P)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see langword="object"/></returns>
             public object Visit(Javax.Lang.Model.Element.ModuleElement.Directive arg0, object arg1)
             {
@@ -272,7 +272,7 @@ namespace Javax.Lang.Model.Element
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUnknown(javax.lang.model.element.ModuleElement$Directive,P)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see langword="object"/></returns>
             public object VisitUnknown(Javax.Lang.Model.Element.ModuleElement.Directive arg0, object arg1)
             {

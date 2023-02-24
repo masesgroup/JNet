@@ -34,7 +34,7 @@ namespace Javax.Security.Auth.X500
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivateKey"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         public X500PrivateCredential(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1, string arg2)
             : base(arg0, arg1, arg2)
         {

@@ -134,7 +134,7 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#setCompositionEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetCompositionEnabled(bool arg0)
         {
             IExecute("setCompositionEnabled", arg0);

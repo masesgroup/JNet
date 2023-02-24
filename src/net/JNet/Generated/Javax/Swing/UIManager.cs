@@ -90,7 +90,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getBoolean(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool GetBoolean(object arg0, Java.Util.Locale arg1)
@@ -100,7 +100,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getBoolean(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool GetBoolean(object arg0)
         {
@@ -118,7 +118,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getInt(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see langword="int"/></returns>
         public static int GetInt(object arg0, Java.Util.Locale arg1)
@@ -128,7 +128,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getInt(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public static int GetInt(object arg0)
         {
@@ -137,7 +137,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getColor(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetColor(object arg0, Java.Util.Locale arg1)
@@ -147,7 +147,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getColor(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetColor(object arg0)
         {
@@ -156,7 +156,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getDimension(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public static Java.Awt.Dimension GetDimension(object arg0, Java.Util.Locale arg1)
@@ -166,7 +166,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getDimension(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public static Java.Awt.Dimension GetDimension(object arg0)
         {
@@ -175,7 +175,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getFont(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font GetFont(object arg0, Java.Util.Locale arg1)
@@ -185,7 +185,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getFont(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font GetFont(object arg0)
         {
@@ -194,7 +194,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getInsets(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Awt.Insets"/></returns>
         public static Java.Awt.Insets GetInsets(object arg0, Java.Util.Locale arg1)
@@ -204,7 +204,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getInsets(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Awt.Insets"/></returns>
         public static Java.Awt.Insets GetInsets(object arg0)
         {
@@ -213,7 +213,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#get(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see langword="object"/></returns>
         public static object Get(object arg0, Java.Util.Locale arg1)
@@ -223,7 +223,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#get(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public static object Get(object arg0)
         {
@@ -232,8 +232,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public static object Put(object arg0, object arg1)
         {
@@ -242,7 +242,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getString(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see langword="string"/></returns>
         public static string GetString(object arg0, Java.Util.Locale arg1)
@@ -252,7 +252,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getString(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="string"/></returns>
         public static string GetString(object arg0)
         {
@@ -261,7 +261,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getBorder(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border GetBorder(object arg0, Java.Util.Locale arg1)
@@ -271,7 +271,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getBorder(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border GetBorder(object arg0)
         {
@@ -280,7 +280,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getIcon(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetIcon(object arg0, Java.Util.Locale arg1)
@@ -290,7 +290,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getIcon(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetIcon(object arg0)
         {
@@ -299,7 +299,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#createLookAndFeel(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.LookAndFeel"/></returns>
         /// <exception cref="Javax.Swing.UnsupportedLookAndFeelException"/>
         public static Javax.Swing.LookAndFeel CreateLookAndFeel(string arg0)
@@ -334,8 +334,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#installLookAndFeel(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public static void InstallLookAndFeel(string arg0, string arg1)
         {
             SExecute("installLookAndFeel", arg0, arg1);
@@ -359,7 +359,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#setLookAndFeel(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         /// <exception cref="Java.Lang.InstantiationException"/>
         /// <exception cref="Java.Lang.IllegalAccessException"/>
@@ -392,8 +392,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.LookAndFeelInfo.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             public LookAndFeelInfo(string arg0, string arg1)
                 : base(arg0, arg1)
             {

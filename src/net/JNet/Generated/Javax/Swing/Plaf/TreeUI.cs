@@ -96,8 +96,8 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getClosestPathForLocation(javax.swing.JTree,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetClosestPathForLocation(Javax.Swing.JTree arg0, int arg1, int arg2)
         {
@@ -116,7 +116,7 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html#getPathForRow(javax.swing.JTree,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JTree"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetPathForRow(Javax.Swing.JTree arg0, int arg1)
         {

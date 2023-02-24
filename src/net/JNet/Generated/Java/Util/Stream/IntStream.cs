@@ -72,7 +72,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#iterate(int,java.util.function.IntPredicate,java.util.function.IntUnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -83,7 +83,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#iterate(int,java.util.function.IntUnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Iterate(int arg0, Java.Util.Function.IntUnaryOperator arg1)
@@ -102,7 +102,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#of(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Of(int arg0)
         {
@@ -111,8 +111,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#range(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Range(int arg0, int arg1)
         {
@@ -121,8 +121,8 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#rangeClosed(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream RangeClosed(int arg0, int arg1)
         {
@@ -171,7 +171,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#reduce(int,java.util.function.IntBinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
         /// <returns><see langword="int"/></returns>
         public int Reduce(int arg0, Java.Util.Function.IntBinaryOperator arg1)
@@ -298,7 +298,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#limit(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Limit(long arg0)
         {
@@ -325,7 +325,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#skip(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Skip(long arg0)
         {
@@ -441,7 +441,7 @@ namespace Java.Util.Stream
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#accept(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             public void Accept(int arg0)
             {
                 IExecute("accept", arg0);
@@ -449,7 +449,7 @@ namespace Java.Util.Stream
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#add(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Java.Util.Stream.IntStream.Builder"/></returns>
             public Java.Util.Stream.IntStream.Builder Add(int arg0)
             {

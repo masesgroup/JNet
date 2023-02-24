@@ -57,7 +57,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#altMetafactory(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodType"/></param>
         /// <param name="arg3"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.Invoke.CallSite"/></returns>
@@ -70,7 +70,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#metafactory(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.invoke.MethodType,java.lang.invoke.MethodHandle,java.lang.invoke.MethodType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodType"/></param>
         /// <param name="arg3"><see cref="Java.Lang.Invoke.MethodType"/></param>
         /// <param name="arg4"><see cref="Java.Lang.Invoke.MethodHandle"/></param>

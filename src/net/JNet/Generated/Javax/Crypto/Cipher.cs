@@ -72,7 +72,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getMaxAllowedKeyLength(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static int GetMaxAllowedKeyLength(string arg0)
@@ -82,7 +82,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getMaxAllowedParameterSpec(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Spec.AlgorithmParameterSpec GetMaxAllowedParameterSpec(string arg0)
@@ -92,8 +92,8 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Javax.Crypto.Cipher"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
@@ -105,7 +105,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Crypto.Cipher"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
@@ -167,8 +167,8 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
         /// <exception cref="Javax.Crypto.BadPaddingException"/>
@@ -191,8 +191,8 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="byte"/></returns>
         public byte[] Update(byte[] arg0, int arg1, int arg2)
         {
@@ -222,10 +222,10 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int,int,byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="byte"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
         /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
@@ -238,8 +238,8 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int,int,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="byte"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
@@ -253,7 +253,7 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Javax.Crypto.IllegalBlockSizeException"/>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
@@ -278,7 +278,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getOutputSize(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetOutputSize(int arg0)
         {
@@ -288,10 +288,10 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[],int,int,byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="byte"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
         public int Update(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4)
@@ -302,8 +302,8 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#update(byte[],int,int,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="byte"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Javax.Crypto.ShortBufferException"/>
@@ -326,8 +326,8 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#unwrap(byte[],java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Security.Key"/></returns>
         /// <exception cref="Java.Security.InvalidKeyException"/>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
@@ -338,7 +338,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.cert.Certificate,java.security.SecureRandom)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <param name="arg2"><see cref="Java.Security.SecureRandom"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>
@@ -349,7 +349,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.cert.Certificate)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public void Init(int arg0, Java.Security.Cert.Certificate arg1)
@@ -359,7 +359,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.AlgorithmParameters,java.security.SecureRandom)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Security.Key"/></param>
         /// <param name="arg2"><see cref="Java.Security.AlgorithmParameters"/></param>
         /// <param name="arg3"><see cref="Java.Security.SecureRandom"/></param>
@@ -372,7 +372,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.AlgorithmParameters)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Security.Key"/></param>
         /// <param name="arg2"><see cref="Java.Security.AlgorithmParameters"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>
@@ -384,7 +384,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.SecureRandom)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Security.Key"/></param>
         /// <param name="arg2"><see cref="Java.Security.SecureRandom"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>
@@ -395,7 +395,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Security.Key"/></param>
         /// <param name="arg2"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
         /// <param name="arg3"><see cref="Java.Security.SecureRandom"/></param>
@@ -408,7 +408,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Security.Key"/></param>
         /// <param name="arg2"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>
@@ -420,7 +420,7 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#init(int,java.security.Key)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Security.Key"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public void Init(int arg0, Java.Security.Key arg1)
@@ -431,8 +431,8 @@ namespace Javax.Crypto
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#updateAAD(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public void UpdateAAD(byte[] arg0, int arg1, int arg2)
         {
             IExecute("updateAAD", arg0, arg1, arg2);

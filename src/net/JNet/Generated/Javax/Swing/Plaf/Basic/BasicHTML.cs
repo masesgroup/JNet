@@ -52,7 +52,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#isHTMLString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool IsHTMLString(string arg0)
         {
@@ -62,8 +62,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#getHTMLBaseline(javax.swing.text.View,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.View"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public static int GetHTMLBaseline(Javax.Swing.Text.View arg0, int arg1, int arg2)
         {
@@ -73,7 +73,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#createHTMLView(javax.swing.JComponent,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public static Javax.Swing.Text.View CreateHTMLView(Javax.Swing.JComponent arg0, string arg1)
         {
@@ -83,7 +83,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#updateRenderer(javax.swing.JComponent,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public static void UpdateRenderer(Javax.Swing.JComponent arg0, string arg1)
         {
             SExecute("updateRenderer", arg0, arg1);

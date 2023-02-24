@@ -44,7 +44,7 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#list(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="string"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
         /// <exception cref="Java.Net.MalformedURLException"/>
@@ -55,7 +55,7 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#lookup(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Rmi.Remote"/></returns>
         /// <exception cref="Java.Rmi.NotBoundException"/>
         /// <exception cref="Java.Net.MalformedURLException"/>
@@ -67,7 +67,7 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#bind(java.lang.String,java.rmi.Remote)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
         /// <exception cref="Java.Rmi.AlreadyBoundException"/>
         /// <exception cref="Java.Net.MalformedURLException"/>
@@ -79,7 +79,7 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#rebind(java.lang.String,java.rmi.Remote)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
         /// <exception cref="Java.Rmi.RemoteException"/>
         /// <exception cref="Java.Net.MalformedURLException"/>
@@ -90,7 +90,7 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#unbind(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Rmi.RemoteException"/>
         /// <exception cref="Java.Rmi.NotBoundException"/>
         /// <exception cref="Java.Net.MalformedURLException"/>

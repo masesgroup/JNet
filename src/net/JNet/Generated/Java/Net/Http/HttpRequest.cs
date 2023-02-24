@@ -168,8 +168,8 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArray(byte[],int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="byte"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArray(byte[] arg0, int arg1, int arg2)
             {
@@ -197,7 +197,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String,java.nio.charset.Charset)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfString(string arg0, Java.Nio.Charset.Charset arg1)
@@ -207,7 +207,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfString(string arg0)
             {
@@ -274,7 +274,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#expectContinue(boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="bool"/></param>
+            /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder ExpectContinue(bool arg0)
             {
@@ -292,8 +292,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#header(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder Header(string arg0, string arg1)
             {
@@ -311,7 +311,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#method(java.lang.String,java.net.http.HttpRequest$BodyPublisher)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder Method(string arg0, Java.Net.Http.HttpRequest.BodyPublisher arg1)
@@ -339,8 +339,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#setHeader(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder SetHeader(string arg0, string arg1)
             {

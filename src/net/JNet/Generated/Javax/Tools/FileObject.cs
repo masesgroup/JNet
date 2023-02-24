@@ -91,7 +91,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openReader(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Io.Reader"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.Reader OpenReader(bool arg0)
@@ -111,7 +111,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#getCharContent(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.CharSequence GetCharContent(bool arg0)

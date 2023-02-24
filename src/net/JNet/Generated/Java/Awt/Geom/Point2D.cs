@@ -48,10 +48,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#distance(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
         /// <returns><see langword="double"/></returns>
         public static double Distance(double arg0, double arg1, double arg2, double arg3)
         {
@@ -60,10 +60,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#distanceSq(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
         /// <returns><see langword="double"/></returns>
         public static double DistanceSq(double arg0, double arg1, double arg2, double arg3)
         {
@@ -90,8 +90,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#setLocation(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         public void SetLocation(double arg0, double arg1)
         {
             IExecute("setLocation", arg0, arg1);
@@ -99,8 +99,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#distance(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see langword="double"/></returns>
         public double Distance(double arg0, double arg1)
         {
@@ -118,8 +118,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#distanceSq(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see langword="double"/></returns>
         public double DistanceSq(double arg0, double arg1)
         {
@@ -153,8 +153,8 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.Double.html#%3Cinit%3E(double,double)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="double"/></param>
-            /// <param name="arg1"><see langword="double"/></param>
+            /// <param name="arg0"><see cref="double"/></param>
+            /// <param name="arg1"><see cref="double"/></param>
             public Double(double arg0, double arg1)
                 : base(arg0, arg1)
             {
@@ -201,8 +201,8 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.Float.html#%3Cinit%3E(float,float)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="float"/></param>
-            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
             public Float(float arg0, float arg1)
                 : base(arg0, arg1)
             {
@@ -238,8 +238,8 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.Float.html#setLocation(float,float)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="float"/></param>
-            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
             public void SetLocation(float arg0, float arg1)
             {
                 IExecute("setLocation", arg0, arg1);

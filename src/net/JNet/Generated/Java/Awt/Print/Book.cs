@@ -59,7 +59,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#getPageFormat(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public Java.Awt.Print.PageFormat GetPageFormat(int arg0)
@@ -69,7 +69,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#getPrintable(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Print.Printable"/></returns>
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public Java.Awt.Print.Printable GetPrintable(int arg0)
@@ -81,7 +81,7 @@ namespace Java.Awt.Print
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Print.Printable"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Print.PageFormat"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public void Append(Java.Awt.Print.Printable arg0, Java.Awt.Print.PageFormat arg1, int arg2)
         {
             IExecute("append", arg0, arg1, arg2);
@@ -98,7 +98,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#setPage(int,java.awt.print.Printable,java.awt.print.PageFormat)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Print.Printable"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Print.PageFormat"/></param>
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>

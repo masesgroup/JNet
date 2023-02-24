@@ -33,7 +33,7 @@ namespace Javax.Crypto.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DESKeySpec.html#%3Cinit%3E(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public DESKeySpec(byte[] arg0, int arg1)
             : base(arg0, arg1)
@@ -72,7 +72,7 @@ namespace Javax.Crypto.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DESKeySpec.html#isParityAdjusted(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public static bool IsParityAdjusted(byte[] arg0, int arg1)
@@ -83,7 +83,7 @@ namespace Javax.Crypto.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DESKeySpec.html#isWeak(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public static bool IsWeak(byte[] arg0, int arg1)

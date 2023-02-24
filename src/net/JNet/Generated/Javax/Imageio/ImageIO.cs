@@ -101,7 +101,7 @@ namespace Javax.Imageio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#write(java.awt.image.RenderedImage,java.lang.String,java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Io.File"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -113,7 +113,7 @@ namespace Javax.Imageio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#write(java.awt.image.RenderedImage,java.lang.String,java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -125,7 +125,7 @@ namespace Javax.Imageio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#write(java.awt.image.RenderedImage,java.lang.String,javax.imageio.stream.ImageOutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Javax.Imageio.Stream.ImageOutputStream"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -194,7 +194,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#createImageInputStream(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Javax.Imageio.Stream.ImageInputStream"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Imageio.Stream.ImageInputStream CreateImageInputStream(object arg0)
@@ -204,7 +204,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#createImageOutputStream(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Javax.Imageio.Stream.ImageOutputStream"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Imageio.Stream.ImageOutputStream CreateImageOutputStream(object arg0)

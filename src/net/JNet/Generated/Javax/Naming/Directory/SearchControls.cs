@@ -32,12 +32,12 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchControls.html#%3Cinit%3E(int,long,int,java.lang.String[],boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="string"/></param>
-        /// <param name="arg4"><see langword="bool"/></param>
-        /// <param name="arg5"><see langword="bool"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
         public SearchControls(int arg0, long arg1, int arg2, string[] arg3, bool arg4, bool arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {

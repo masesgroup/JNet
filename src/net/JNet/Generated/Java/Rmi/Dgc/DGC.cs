@@ -53,7 +53,7 @@ namespace Java.Rmi.Dgc
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/DGC.html#dirty(java.rmi.server.ObjID[],long,java.rmi.dgc.Lease)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Server.ObjID"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Rmi.Dgc.Lease"/></param>
         /// <returns><see cref="Java.Rmi.Dgc.Lease"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
@@ -65,9 +65,9 @@ namespace Java.Rmi.Dgc
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/DGC.html#clean(java.rmi.server.ObjID[],long,java.rmi.dgc.VMID,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Server.ObjID"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Rmi.Dgc.VMID"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         /// <exception cref="Java.Rmi.RemoteException"/>
         public void Clean(Java.Rmi.Server.ObjID[] arg0, long arg1, Java.Rmi.Dgc.VMID arg2, bool arg3)
         {

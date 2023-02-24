@@ -57,7 +57,7 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousChannelGroup(int,java.util.concurrent.ThreadFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -69,7 +69,7 @@ namespace Java.Nio.Channels.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousChannelGroup(java.util.concurrent.ExecutorService,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ExecutorService"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.AsynchronousChannelGroup OpenAsynchronousChannelGroup(Java.Util.Concurrent.ExecutorService arg0, int arg1)

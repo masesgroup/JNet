@@ -154,7 +154,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getPreferredSpan(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="float"/></returns>
         public float GetPreferredSpan(int arg0)
         {
@@ -163,8 +163,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#viewToModel(float,float,java.awt.Shape,javax.swing.text.Position$Bias[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
         /// <param name="arg3"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         /// <returns><see langword="int"/></returns>
@@ -175,7 +175,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#modelToView(int,java.awt.Shape,javax.swing.text.Position$Bias)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         /// <returns><see cref="Java.Awt.Shape"/></returns>
@@ -205,7 +205,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getAlignment(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="float"/></returns>
         public float GetAlignment(int arg0)
         {
@@ -214,7 +214,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getMaximumSpan(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="float"/></returns>
         public float GetMaximumSpan(int arg0)
         {
@@ -223,7 +223,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getMinimumSpan(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="float"/></returns>
         public float GetMinimumSpan(int arg0)
         {
@@ -232,9 +232,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getBreakWeight(int,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
-        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetBreakWeight(int arg0, float arg1, float arg2)
         {
@@ -243,10 +243,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getNextVisualPositionFrom(int,javax.swing.text.Position$Bias,java.awt.Shape,int,javax.swing.text.Position$Bias[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
@@ -257,7 +257,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getResizeWeight(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetResizeWeight(int arg0)
         {
@@ -266,8 +266,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getViewIndex(float,float,java.awt.Shape)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetViewIndex(float arg0, float arg1, Java.Awt.Shape arg2)
@@ -277,7 +277,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getViewIndex(int,javax.swing.text.Position$Bias)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetViewIndex(int arg0, Javax.Swing.Text.Position.Bias arg1)
@@ -287,7 +287,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getChildAllocation(int,java.awt.Shape)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetChildAllocation(int arg0, Java.Awt.Shape arg1)
@@ -297,9 +297,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#modelToView(int,javax.swing.text.Position$Bias,int,javax.swing.text.Position$Bias,java.awt.Shape)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Position.Bias"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         /// <param name="arg4"><see cref="Java.Awt.Shape"/></param>
         /// <returns><see cref="Java.Awt.Shape"/></returns>
@@ -311,8 +311,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getToolTipText(float,float,java.awt.Shape)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetToolTipText(float arg0, float arg1, Java.Awt.Shape arg2)
@@ -322,10 +322,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#breakView(int,int,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="float"/></param>
-        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
         /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public Javax.Swing.Text.View BreakView(int arg0, int arg1, float arg2, float arg3)
         {
@@ -334,8 +334,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#createFragment(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public Javax.Swing.Text.View CreateFragment(int arg0, int arg1)
         {
@@ -344,7 +344,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getView(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public Javax.Swing.Text.View GetView(int arg0)
         {
@@ -371,7 +371,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#insert(int,javax.swing.text.View)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.View"/></param>
         public void Insert(int arg0, Javax.Swing.Text.View arg1)
         {
@@ -391,8 +391,8 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#preferenceChanged(javax.swing.text.View,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.View"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         public void PreferenceChanged(Javax.Swing.Text.View arg0, bool arg1, bool arg2)
         {
             IExecute("preferenceChanged", arg0, arg1, arg2);
@@ -400,7 +400,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void Remove(int arg0)
         {
             IExecute("remove", arg0);
@@ -425,8 +425,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#replace(int,int,javax.swing.text.View[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.View"/></param>
         public void Replace(int arg0, int arg1, Javax.Swing.Text.View[] arg2)
         {
@@ -435,8 +435,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#setSize(float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         public void SetSize(float arg0, float arg1)
         {
             IExecute("setSize", arg0, arg1);

@@ -107,7 +107,7 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#parseURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
@@ -120,7 +120,7 @@ namespace Org.W3c.Dom.Ls
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSInput"/></param>
         /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg2"><see langword="short"/></param>
+        /// <param name="arg2"><see cref="short"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>

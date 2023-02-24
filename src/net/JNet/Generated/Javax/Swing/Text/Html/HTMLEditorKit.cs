@@ -142,10 +142,10 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#insertHTML(javax.swing.text.html.HTMLDocument,int,java.lang.String,int,int,javax.swing.text.html.HTML$Tag)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         /// <exception cref="Java.Io.IOException"/>
@@ -156,7 +156,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#setAutoFormSubmission(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetAutoFormSubmission(bool arg0)
         {
             IExecute("setAutoFormSubmission", arg0);
@@ -212,7 +212,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLTextAction.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public HTMLTextAction(string arg0)
                 : base(arg0)
             {
@@ -247,8 +247,8 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
             /// <param name="arg3"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
             /// <param name="arg4"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
@@ -260,8 +260,8 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
             /// <param name="arg3"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
             public InsertHTMLTextAction(string arg0, string arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
@@ -316,7 +316,7 @@ namespace Javax.Swing.Text.Html
             /// </summary>
             /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
             /// <param name="arg1"><see cref="Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback"/></param>
-            /// <param name="arg2"><see langword="bool"/></param>
+            /// <param name="arg2"><see cref="bool"/></param>
             /// <exception cref="Java.Io.IOException"/>
             public void Parse(Java.Io.Reader arg0, Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback arg1, bool arg2)
             {
@@ -366,7 +366,7 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleComment(char[],int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="char"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             public void HandleComment(char[] arg0, int arg1)
             {
                 IExecute("handleComment", arg0, arg1);
@@ -374,7 +374,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleEndOfLineString(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public void HandleEndOfLineString(string arg0)
             {
                 IExecute("handleEndOfLineString", arg0);
@@ -383,7 +383,7 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleEndTag(javax.swing.text.html.HTML$Tag,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             public void HandleEndTag(Javax.Swing.Text.Html.HTML.Tag arg0, int arg1)
             {
                 IExecute("handleEndTag", arg0, arg1);
@@ -391,8 +391,8 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleError(java.lang.String,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             public void HandleError(string arg0, int arg1)
             {
                 IExecute("handleError", arg0, arg1);
@@ -402,7 +402,7 @@ namespace Javax.Swing.Text.Html
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
             /// <param name="arg1"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
             public void HandleSimpleTag(Javax.Swing.Text.Html.HTML.Tag arg0, Javax.Swing.Text.MutableAttributeSet arg1, int arg2)
             {
                 IExecute("handleSimpleTag", arg0, arg1, arg2);
@@ -412,7 +412,7 @@ namespace Javax.Swing.Text.Html
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
             /// <param name="arg1"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
             public void HandleStartTag(Javax.Swing.Text.Html.HTML.Tag arg0, Javax.Swing.Text.MutableAttributeSet arg1, int arg2)
             {
                 IExecute("handleStartTag", arg0, arg1, arg2);
@@ -421,7 +421,7 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleText(char[],int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="char"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             public void HandleText(char[] arg0, int arg1)
             {
                 IExecute("handleText", arg0, arg1);

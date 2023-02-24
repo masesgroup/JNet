@@ -65,7 +65,7 @@ namespace Javax.Imageio.Plugins.Bmp
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#setTopDown(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetTopDown(bool arg0)
         {
             IExecute("setTopDown", arg0);

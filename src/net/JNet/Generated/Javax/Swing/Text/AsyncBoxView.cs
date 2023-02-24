@@ -33,7 +33,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.html#%3Cinit%3E(javax.swing.text.Element,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public AsyncBoxView(Javax.Swing.Text.Element arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -131,8 +131,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#getViewIndexAtPoint(float,float,java.awt.Shape)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="float"/></param>
-            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
             /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
             /// <returns><see langword="int"/></returns>
             public int GetViewIndexAtPoint(float arg0, float arg1, Java.Awt.Shape arg2)
@@ -142,7 +142,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#getChildAllocation(int,java.awt.Shape)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
             /// <returns><see cref="Java.Awt.Shape"/></returns>
             public Java.Awt.Shape GetChildAllocation(int arg0, Java.Awt.Shape arg1)
@@ -252,8 +252,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#preferenceChanged(boolean,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="bool"/></param>
-            /// <param name="arg1"><see langword="bool"/></param>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <param name="arg1"><see cref="bool"/></param>
             public void PreferenceChanged(bool arg0, bool arg1)
             {
                 IExecute("preferenceChanged", arg0, arg1);

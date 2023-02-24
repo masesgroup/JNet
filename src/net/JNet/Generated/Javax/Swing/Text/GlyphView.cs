@@ -128,8 +128,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getPartialSpan(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="float"/></returns>
         public float GetPartialSpan(int arg0, int arg1)
         {
@@ -138,7 +138,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getTabbedSpan(float,javax.swing.text.TabExpander)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.TabExpander"/></param>
         /// <returns><see langword="float"/></returns>
         public float GetTabbedSpan(float arg0, Javax.Swing.Text.TabExpander arg1)
@@ -157,8 +157,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getText(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Text.Segment"/></returns>
         public Javax.Swing.Text.Segment GetText(int arg0, int arg1)
         {
@@ -227,10 +227,10 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#getSpan(javax.swing.text.GlyphView,int,int,javax.swing.text.TabExpander,float)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.GlyphView"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
             /// <param name="arg3"><see cref="Javax.Swing.Text.TabExpander"/></param>
-            /// <param name="arg4"><see langword="float"/></param>
+            /// <param name="arg4"><see cref="float"/></param>
             /// <returns><see langword="float"/></returns>
             public float GetSpan(Javax.Swing.Text.GlyphView arg0, int arg1, int arg2, Javax.Swing.Text.TabExpander arg3, float arg4)
             {
@@ -240,9 +240,9 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#getBoundedPosition(javax.swing.text.GlyphView,int,float,float)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.GlyphView"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="float"/></param>
-            /// <param name="arg3"><see langword="float"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="float"/></param>
+            /// <param name="arg3"><see cref="float"/></param>
             /// <returns><see langword="int"/></returns>
             public int GetBoundedPosition(Javax.Swing.Text.GlyphView arg0, int arg1, float arg2, float arg3)
             {
@@ -252,8 +252,8 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#viewToModel(javax.swing.text.GlyphView,float,float,java.awt.Shape,javax.swing.text.Position$Bias[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.GlyphView"/></param>
-            /// <param name="arg1"><see langword="float"/></param>
-            /// <param name="arg2"><see langword="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="float"/></param>
             /// <param name="arg3"><see cref="Java.Awt.Shape"/></param>
             /// <param name="arg4"><see cref="Javax.Swing.Text.Position.Bias"/></param>
             /// <returns><see langword="int"/></returns>
@@ -265,7 +265,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#modelToView(javax.swing.text.GlyphView,int,javax.swing.text.Position$Bias,java.awt.Shape)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.GlyphView"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
             /// <param name="arg3"><see cref="Java.Awt.Shape"/></param>
             /// <returns><see cref="Java.Awt.Shape"/></returns>
@@ -280,8 +280,8 @@ namespace Javax.Swing.Text
             /// <param name="arg0"><see cref="Javax.Swing.Text.GlyphView"/></param>
             /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
             /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
-            /// <param name="arg4"><see langword="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg4"><see cref="int"/></param>
             public void Paint(Javax.Swing.Text.GlyphView arg0, Java.Awt.Graphics arg1, Java.Awt.Shape arg2, int arg3, int arg4)
             {
                 IExecute("paint", arg0, arg1, arg2, arg3, arg4);
@@ -290,10 +290,10 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#getNextVisualPositionFrom(javax.swing.text.GlyphView,int,javax.swing.text.Position$Bias,java.awt.Shape,int,javax.swing.text.Position$Bias[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.GlyphView"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
             /// <param name="arg3"><see cref="Java.Awt.Shape"/></param>
-            /// <param name="arg4"><see langword="int"/></param>
+            /// <param name="arg4"><see cref="int"/></param>
             /// <param name="arg5"><see cref="Javax.Swing.Text.Position.Bias"/></param>
             /// <returns><see langword="int"/></returns>
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
@@ -305,8 +305,8 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.GlyphPainter.html#getPainter(javax.swing.text.GlyphView,int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.GlyphView"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
             /// <returns><see cref="Javax.Swing.Text.GlyphView.GlyphPainter"/></returns>
             public Javax.Swing.Text.GlyphView.GlyphPainter GetPainter(Javax.Swing.Text.GlyphView arg0, int arg1, int arg2)
             {

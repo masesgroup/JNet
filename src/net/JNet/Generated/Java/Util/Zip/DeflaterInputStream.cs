@@ -34,7 +34,7 @@ namespace Java.Util.Zip
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Zip.Deflater"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public DeflaterInputStream(Java.Io.InputStream arg0, Java.Util.Zip.Deflater arg1, int arg2)
             : base(arg0, arg1, arg2)
         {

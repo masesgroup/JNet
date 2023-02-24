@@ -32,8 +32,8 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.modelmbean.ModelMBeanAttributeInfo[],javax.management.modelmbean.ModelMBeanConstructorInfo[],javax.management.modelmbean.ModelMBeanOperationInfo[],javax.management.modelmbean.ModelMBeanNotificationInfo[],javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Javax.Management.Modelmbean.ModelMBeanAttributeInfo"/></param>
         /// <param name="arg3"><see cref="Javax.Management.Modelmbean.ModelMBeanConstructorInfo"/></param>
         /// <param name="arg4"><see cref="Javax.Management.Modelmbean.ModelMBeanOperationInfo"/></param>
@@ -46,8 +46,8 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.modelmbean.ModelMBeanAttributeInfo[],javax.management.modelmbean.ModelMBeanConstructorInfo[],javax.management.modelmbean.ModelMBeanOperationInfo[],javax.management.modelmbean.ModelMBeanNotificationInfo[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Javax.Management.Modelmbean.ModelMBeanAttributeInfo"/></param>
         /// <param name="arg3"><see cref="Javax.Management.Modelmbean.ModelMBeanConstructorInfo"/></param>
         /// <param name="arg4"><see cref="Javax.Management.Modelmbean.ModelMBeanOperationInfo"/></param>
@@ -94,8 +94,8 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfoSupport.html#getDescriptor(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Javax.Management.Descriptor"/></returns>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
@@ -106,7 +106,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfoSupport.html#getDescriptor(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Management.Descriptor"/></returns>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
@@ -117,7 +117,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfoSupport.html#getDescriptors(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Management.Descriptor"/></returns>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
@@ -128,7 +128,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfoSupport.html#getAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Management.Modelmbean.ModelMBeanAttributeInfo"/></returns>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
@@ -139,7 +139,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfoSupport.html#getConstructor(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Management.Modelmbean.ModelMBeanConstructorInfo"/></returns>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
@@ -150,7 +150,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfoSupport.html#getNotification(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Management.Modelmbean.ModelMBeanNotificationInfo"/></returns>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
@@ -161,7 +161,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfoSupport.html#getOperation(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Management.Modelmbean.ModelMBeanOperationInfo"/></returns>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
@@ -173,7 +173,7 @@ namespace Javax.Management.Modelmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfoSupport.html#setDescriptor(javax.management.Descriptor,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SetDescriptor(Javax.Management.Descriptor arg0, string arg1)

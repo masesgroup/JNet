@@ -59,7 +59,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getPageFormat(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public Java.Awt.Print.PageFormat GetPageFormat(int arg0)
@@ -69,7 +69,7 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getPrintable(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Print.Printable"/></returns>
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public Java.Awt.Print.Printable GetPrintable(int arg0)

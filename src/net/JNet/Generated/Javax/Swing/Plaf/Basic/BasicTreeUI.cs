@@ -84,7 +84,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.html#getPreferredSize(javax.swing.JComponent,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetPreferredSize(Javax.Swing.JComponent arg0, bool arg1)
         {
@@ -439,7 +439,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeCancelEditingAction.html#%3Cinit%3E(javax.swing.plaf.basic.BasicTreeUI,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicTreeUI"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             public TreeCancelEditingAction(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, string arg1)
                 : base(arg0, arg1)
             {
@@ -530,8 +530,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeHomeAction.html#%3Cinit%3E(javax.swing.plaf.basic.BasicTreeUI,int,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicTreeUI"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="string"/></param>
             public TreeHomeAction(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, int arg1, string arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -567,8 +567,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeIncrementAction.html#%3Cinit%3E(javax.swing.plaf.basic.BasicTreeUI,int,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicTreeUI"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="string"/></param>
             public TreeIncrementAction(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, int arg1, string arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -675,8 +675,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreePageAction.html#%3Cinit%3E(javax.swing.plaf.basic.BasicTreeUI,int,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicTreeUI"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="string"/></param>
             public TreePageAction(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, int arg1, string arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -759,7 +759,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeToggleAction.html#%3Cinit%3E(javax.swing.plaf.basic.BasicTreeUI,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicTreeUI"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             public TreeToggleAction(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, string arg1)
                 : base(arg0, arg1)
             {
@@ -795,8 +795,8 @@ namespace Javax.Swing.Plaf.Basic
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeTraverseAction.html#%3Cinit%3E(javax.swing.plaf.basic.BasicTreeUI,int,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicTreeUI"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="string"/></param>
             public TreeTraverseAction(Javax.Swing.Plaf.Basic.BasicTreeUI arg0, int arg1, string arg2)
                 : base(arg0, arg1, arg2)
             {

@@ -105,7 +105,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#hasCharacteristics(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool HasCharacteristics(int arg0)
         {
@@ -147,7 +147,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool TryAdvance(object arg0)
             {
@@ -156,7 +156,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -208,7 +208,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool TryAdvance(object arg0)
             {
@@ -217,7 +217,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -269,7 +269,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool TryAdvance(object arg0)
             {
@@ -278,7 +278,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -321,7 +321,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#tryAdvance(T_CONS)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool TryAdvance(object arg0)
             {
@@ -330,7 +330,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#forEachRemaining(T_CONS)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);

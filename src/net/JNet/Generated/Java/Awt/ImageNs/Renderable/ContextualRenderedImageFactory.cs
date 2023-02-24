@@ -77,7 +77,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#mapRenderContext(int,java.awt.image.renderable.RenderContext,java.awt.image.renderable.ParameterBlock,java.awt.image.renderable.RenderableImage)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
         /// <param name="arg2"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
         /// <param name="arg3"><see cref="Java.Awt.ImageNs.Renderable.RenderableImage"/></param>
@@ -100,7 +100,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#getProperty(java.awt.image.renderable.ParameterBlock,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetProperty(Java.Awt.ImageNs.Renderable.ParameterBlock arg0, string arg1)
         {

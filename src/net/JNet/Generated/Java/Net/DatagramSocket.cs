@@ -32,7 +32,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#%3Cinit%3E(int,java.net.InetAddress)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
         /// <exception cref="Java.Net.SocketException"/>
         public DatagramSocket(int arg0, Java.Net.InetAddress arg1)
@@ -42,7 +42,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Net.SocketException"/>
         public DatagramSocket(int arg0)
             : base(arg0)
@@ -233,7 +233,7 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#connect(java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void Connect(Java.Net.InetAddress arg0, int arg1)
         {
             IExecute("connect", arg0, arg1);

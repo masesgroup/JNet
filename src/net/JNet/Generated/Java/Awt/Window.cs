@@ -238,7 +238,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setAlwaysOnTop(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Lang.SecurityException"/>
         public void SetAlwaysOnTop(bool arg0)
         {
@@ -295,7 +295,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#createBufferStrategy(int,java.awt.BufferCapabilities)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.BufferCapabilities"/></param>
         /// <exception cref="Java.Awt.AWTException"/>
         public void CreateBufferStrategy(int arg0, Java.Awt.BufferCapabilities arg1)
@@ -305,7 +305,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#createBufferStrategy(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void CreateBufferStrategy(int arg0)
         {
             IExecute("createBufferStrategy", arg0);
@@ -327,7 +327,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setAutoRequestFocus(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetAutoRequestFocus(bool arg0)
         {
             IExecute("setAutoRequestFocus", arg0);
@@ -343,7 +343,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setLocationByPlatform(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetLocationByPlatform(bool arg0)
         {
             IExecute("setLocationByPlatform", arg0);

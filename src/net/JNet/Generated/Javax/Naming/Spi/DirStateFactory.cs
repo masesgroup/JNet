@@ -60,7 +60,7 @@ namespace Javax.Naming.Spi
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.Result.html#%3Cinit%3E(java.lang.Object,javax.naming.directory.Attributes)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <param name="arg1"><see cref="Javax.Naming.Directory.Attributes"/></param>
             public Result(object arg0, Javax.Naming.Directory.Attributes arg1)
                 : base(arg0, arg1)

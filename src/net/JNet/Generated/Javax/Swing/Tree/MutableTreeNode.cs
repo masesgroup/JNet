@@ -53,7 +53,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#insert(javax.swing.tree.MutableTreeNode,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void Insert(Javax.Swing.Tree.MutableTreeNode arg0, int arg1)
         {
             IExecute("insert", arg0, arg1);
@@ -61,7 +61,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void Remove(int arg0)
         {
             IExecute("remove", arg0);
@@ -92,7 +92,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#setUserObject(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public void SetUserObject(object arg0)
         {
             IExecute("setUserObject", arg0);

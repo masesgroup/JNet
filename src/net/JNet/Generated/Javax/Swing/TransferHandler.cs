@@ -32,7 +32,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public TransferHandler(string arg0)
             : base(arg0)
         {
@@ -173,7 +173,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         /// <param name="arg1"><see cref="Java.Awt.EventNs.InputEvent"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public void ExportAsDrag(Javax.Swing.JComponent arg0, Java.Awt.EventNs.InputEvent arg1, int arg2)
         {
             IExecute("exportAsDrag", arg0, arg1, arg2);
@@ -183,7 +183,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Clipboard"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void ExportToClipboard(Javax.Swing.JComponent arg0, Java.Awt.Datatransfer.Clipboard arg1, int arg2)
         {
@@ -328,7 +328,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html#setShowDropLocation(boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="bool"/></param>
+            /// <param name="arg0"><see cref="bool"/></param>
             public void SetShowDropLocation(bool arg0)
             {
                 IExecute("setShowDropLocation", arg0);

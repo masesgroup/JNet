@@ -58,8 +58,8 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#contains(javax.swing.JComponent,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Contains(Javax.Swing.JComponent arg0, int arg1, int arg2)
         {
@@ -78,8 +78,8 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#getBaseline(javax.swing.JComponent,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetBaseline(Javax.Swing.JComponent arg0, int arg1, int arg2)
         {
@@ -116,7 +116,7 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#getAccessibleChild(javax.swing.JComponent,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
         public Javax.Accessibility.Accessible GetAccessibleChild(Javax.Swing.JComponent arg0, int arg1)
         {

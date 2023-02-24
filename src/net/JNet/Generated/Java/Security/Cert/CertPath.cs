@@ -66,7 +66,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getEncoded(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Security.Cert.CertificateEncodingException"/>
         public byte[] GetEncoded(string arg0)

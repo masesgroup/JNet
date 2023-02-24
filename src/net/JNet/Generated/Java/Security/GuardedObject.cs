@@ -32,7 +32,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/GuardedObject.html#%3Cinit%3E(java.lang.Object,java.security.Guard)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Security.Guard"/></param>
         public GuardedObject(object arg0, Java.Security.Guard arg1)
             : base(arg0, arg1)

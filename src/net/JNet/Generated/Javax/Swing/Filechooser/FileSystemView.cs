@@ -178,7 +178,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#createFileObject(java.io.File,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File CreateFileObject(Java.Io.File arg0, string arg1)
         {
@@ -187,7 +187,7 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#createFileObject(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File CreateFileObject(string arg0)
         {
@@ -197,7 +197,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getChild(java.io.File,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File GetChild(Java.Io.File arg0, string arg1)
         {
@@ -226,7 +226,7 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getFiles(java.io.File,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File[] GetFiles(Java.Io.File arg0, bool arg1)
         {

@@ -370,7 +370,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setAlignment(javax.swing.text.MutableAttributeSet,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public static void SetAlignment(Javax.Swing.Text.MutableAttributeSet arg0, int arg1)
         {
             SExecute("setAlignment", arg0, arg1);
@@ -388,7 +388,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setBidiLevel(javax.swing.text.MutableAttributeSet,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public static void SetBidiLevel(Javax.Swing.Text.MutableAttributeSet arg0, int arg1)
         {
             SExecute("setBidiLevel", arg0, arg1);
@@ -397,7 +397,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setBold(javax.swing.text.MutableAttributeSet,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public static void SetBold(Javax.Swing.Text.MutableAttributeSet arg0, bool arg1)
         {
             SExecute("setBold", arg0, arg1);
@@ -415,7 +415,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setFirstLineIndent(javax.swing.text.MutableAttributeSet,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         public static void SetFirstLineIndent(Javax.Swing.Text.MutableAttributeSet arg0, float arg1)
         {
             SExecute("setFirstLineIndent", arg0, arg1);
@@ -424,7 +424,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setFontFamily(javax.swing.text.MutableAttributeSet,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public static void SetFontFamily(Javax.Swing.Text.MutableAttributeSet arg0, string arg1)
         {
             SExecute("setFontFamily", arg0, arg1);
@@ -433,7 +433,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setFontSize(javax.swing.text.MutableAttributeSet,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public static void SetFontSize(Javax.Swing.Text.MutableAttributeSet arg0, int arg1)
         {
             SExecute("setFontSize", arg0, arg1);
@@ -460,7 +460,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setItalic(javax.swing.text.MutableAttributeSet,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public static void SetItalic(Javax.Swing.Text.MutableAttributeSet arg0, bool arg1)
         {
             SExecute("setItalic", arg0, arg1);
@@ -469,7 +469,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setLeftIndent(javax.swing.text.MutableAttributeSet,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         public static void SetLeftIndent(Javax.Swing.Text.MutableAttributeSet arg0, float arg1)
         {
             SExecute("setLeftIndent", arg0, arg1);
@@ -478,7 +478,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setLineSpacing(javax.swing.text.MutableAttributeSet,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         public static void SetLineSpacing(Javax.Swing.Text.MutableAttributeSet arg0, float arg1)
         {
             SExecute("setLineSpacing", arg0, arg1);
@@ -487,7 +487,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setRightIndent(javax.swing.text.MutableAttributeSet,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         public static void SetRightIndent(Javax.Swing.Text.MutableAttributeSet arg0, float arg1)
         {
             SExecute("setRightIndent", arg0, arg1);
@@ -496,7 +496,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setSpaceAbove(javax.swing.text.MutableAttributeSet,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         public static void SetSpaceAbove(Javax.Swing.Text.MutableAttributeSet arg0, float arg1)
         {
             SExecute("setSpaceAbove", arg0, arg1);
@@ -505,7 +505,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setSpaceBelow(javax.swing.text.MutableAttributeSet,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         public static void SetSpaceBelow(Javax.Swing.Text.MutableAttributeSet arg0, float arg1)
         {
             SExecute("setSpaceBelow", arg0, arg1);
@@ -514,7 +514,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setStrikeThrough(javax.swing.text.MutableAttributeSet,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public static void SetStrikeThrough(Javax.Swing.Text.MutableAttributeSet arg0, bool arg1)
         {
             SExecute("setStrikeThrough", arg0, arg1);
@@ -523,7 +523,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setSubscript(javax.swing.text.MutableAttributeSet,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public static void SetSubscript(Javax.Swing.Text.MutableAttributeSet arg0, bool arg1)
         {
             SExecute("setSubscript", arg0, arg1);
@@ -532,7 +532,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setSuperscript(javax.swing.text.MutableAttributeSet,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public static void SetSuperscript(Javax.Swing.Text.MutableAttributeSet arg0, bool arg1)
         {
             SExecute("setSuperscript", arg0, arg1);
@@ -550,7 +550,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setUnderline(javax.swing.text.MutableAttributeSet,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public static void SetUnderline(Javax.Swing.Text.MutableAttributeSet arg0, bool arg1)
         {
             SExecute("setUnderline", arg0, arg1);

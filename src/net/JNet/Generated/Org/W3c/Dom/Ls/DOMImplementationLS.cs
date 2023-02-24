@@ -74,8 +74,8 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSParser(short,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="short"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Org.W3c.Dom.Ls.LSParser"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Ls.LSParser CreateLSParser(short arg0, string arg1)

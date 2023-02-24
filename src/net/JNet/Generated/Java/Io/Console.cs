@@ -61,7 +61,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readPassword(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="char"/></returns>
         public char[] ReadPassword(string arg0, params object[] arg1)
@@ -71,7 +71,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#format(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Java.Io.Console"/></returns>
         public Java.Io.Console Format(string arg0, params object[] arg1)
@@ -81,7 +81,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#printf(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Java.Io.Console"/></returns>
         public Java.Io.Console Printf(string arg0, params object[] arg1)
@@ -118,7 +118,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readLine(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="string"/></returns>
         public string ReadLine(string arg0, params object[] arg1)

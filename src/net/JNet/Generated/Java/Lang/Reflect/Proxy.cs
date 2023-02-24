@@ -59,7 +59,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#getInvocationHandler(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.Reflect.InvocationHandler"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Lang.Reflect.InvocationHandler GetInvocationHandler(object arg0)

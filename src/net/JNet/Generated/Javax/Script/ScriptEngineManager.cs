@@ -63,7 +63,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#get(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         public object Get(string arg0)
         {
@@ -72,7 +72,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#getEngineByExtension(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Script.ScriptEngine"/></returns>
         public Javax.Script.ScriptEngine GetEngineByExtension(string arg0)
         {
@@ -81,7 +81,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#getEngineByMimeType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Script.ScriptEngine"/></returns>
         public Javax.Script.ScriptEngine GetEngineByMimeType(string arg0)
         {
@@ -90,7 +90,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#getEngineByName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Script.ScriptEngine"/></returns>
         public Javax.Script.ScriptEngine GetEngineByName(string arg0)
         {
@@ -99,8 +99,8 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#put(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void Put(string arg0, object arg1)
         {
             IExecute("put", arg0, arg1);
@@ -108,7 +108,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#registerEngineExtension(java.lang.String,javax.script.ScriptEngineFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Script.ScriptEngineFactory"/></param>
         public void RegisterEngineExtension(string arg0, Javax.Script.ScriptEngineFactory arg1)
         {
@@ -117,7 +117,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#registerEngineMimeType(java.lang.String,javax.script.ScriptEngineFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Script.ScriptEngineFactory"/></param>
         public void RegisterEngineMimeType(string arg0, Javax.Script.ScriptEngineFactory arg1)
         {
@@ -126,7 +126,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html#registerEngineName(java.lang.String,javax.script.ScriptEngineFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Script.ScriptEngineFactory"/></param>
         public void RegisterEngineName(string arg0, Javax.Script.ScriptEngineFactory arg1)
         {

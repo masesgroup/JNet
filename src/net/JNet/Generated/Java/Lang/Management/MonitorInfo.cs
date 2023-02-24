@@ -32,9 +32,9 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MonitorInfo.html#%3Cinit%3E(java.lang.String,int,int,java.lang.StackTraceElement)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Lang.StackTraceElement"/></param>
         public MonitorInfo(string arg0, int arg1, int arg2, Java.Lang.StackTraceElement arg3)
             : base(arg0, arg1, arg2, arg3)

@@ -79,8 +79,8 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Security.KeyStore"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
@@ -91,7 +91,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Security.KeyStore"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
         public static Java.Security.KeyStore GetInstance(string arg0)
@@ -112,7 +112,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#containsAlias(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
         public bool ContainsAlias(string arg0)
@@ -122,7 +122,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#isCertificateEntry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
         public bool IsCertificateEntry(string arg0)
@@ -132,7 +132,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#isKeyEntry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
         public bool IsKeyEntry(string arg0)
@@ -162,7 +162,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificate(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Security.Cert.Certificate GetCertificate(string arg0)
@@ -172,7 +172,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificateChain(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Security.Cert.Certificate[] GetCertificateChain(string arg0)
@@ -182,7 +182,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getKey(java.lang.String,char[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="char"/></param>
         /// <returns><see cref="Java.Security.Key"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
@@ -195,7 +195,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getEntry(java.lang.String,java.security.KeyStore$ProtectionParameter)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
         /// <returns><see cref="Java.Security.KeyStore.Entry"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
@@ -208,7 +208,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCreationDate(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Date"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Util.Date GetCreationDate(string arg0)
@@ -218,7 +218,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#deleteEntry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void DeleteEntry(string arg0)
         {
@@ -250,7 +250,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setCertificateEntry(java.lang.String,java.security.cert.Certificate)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void SetCertificateEntry(string arg0, Java.Security.Cert.Certificate arg1)
@@ -260,7 +260,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setEntry(java.lang.String,java.security.KeyStore$Entry,java.security.KeyStore$ProtectionParameter)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.KeyStore.Entry"/></param>
         /// <param name="arg2"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
@@ -271,7 +271,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setKeyEntry(java.lang.String,byte[],java.security.cert.Certificate[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <param name="arg2"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
@@ -282,7 +282,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setKeyEntry(java.lang.String,java.security.Key,char[],java.security.cert.Certificate[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.Key"/></param>
         /// <param name="arg2"><see cref="char"/></param>
         /// <param name="arg3"><see cref="Java.Security.Cert.Certificate"/></param>
@@ -373,7 +373,7 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#getProtectionParameter(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="Java.Security.KeyStore.ProtectionParameter"/></returns>
             /// <exception cref="Java.Security.KeyStoreException"/>
             public Java.Security.KeyStore.ProtectionParameter GetProtectionParameter(string arg0)
@@ -500,7 +500,7 @@ namespace Java.Security
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#%3Cinit%3E(char[],java.lang.String,java.security.spec.AlgorithmParameterSpec)"/>
             /// </summary>
             /// <param name="arg0"><see cref="char"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <param name="arg2"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
             public PasswordProtection(char[] arg0, string arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
                 : base(arg0, arg1, arg2)

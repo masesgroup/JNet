@@ -45,7 +45,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#collectArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle CollectArguments(Java.Lang.Invoke.MethodHandle arg0, int arg1, Java.Lang.Invoke.MethodHandle arg2)
@@ -90,7 +90,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropArguments(java.lang.invoke.MethodHandle,int,java.lang.Class%3C?%3E...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle DropArguments(Java.Lang.Invoke.MethodHandle arg0, int arg1, params Java.Lang.Class[] arg2)
@@ -129,7 +129,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle FilterArguments(Java.Lang.Invoke.MethodHandle arg0, int arg1, params Java.Lang.Invoke.MethodHandle[] arg2)
@@ -150,7 +150,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#foldArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle FoldArguments(Java.Lang.Invoke.MethodHandle arg0, int arg1, Java.Lang.Invoke.MethodHandle arg2)
@@ -182,7 +182,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#insertArguments(java.lang.invoke.MethodHandle,int,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle InsertArguments(Java.Lang.Invoke.MethodHandle arg0, int arg1, params object[] arg2)
@@ -233,7 +233,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#spreadInvoker(java.lang.invoke.MethodType,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodType"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle SpreadInvoker(Java.Lang.Invoke.MethodType arg0, int arg1)
         {
@@ -351,8 +351,8 @@ namespace Java.Lang.Invoke
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#bind(java.lang.Object,java.lang.String,java.lang.invoke.MethodType)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodType"/></param>
             /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
             /// <exception cref="Java.Lang.NoSuchMethodException"/>
@@ -403,7 +403,7 @@ namespace Java.Lang.Invoke
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#dropLookupMode(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
             public Java.Lang.Invoke.MethodHandles.Lookup DropLookupMode(int arg0)
             {

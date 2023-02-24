@@ -72,7 +72,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoublePredicate,java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -83,7 +83,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Iterate(double arg0, Java.Util.Function.DoubleUnaryOperator arg1)
@@ -102,7 +102,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#of(double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Of(double arg0)
         {
@@ -151,7 +151,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#reduce(double,java.util.function.DoubleBinaryOperator)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
         /// <returns><see langword="double"/></returns>
         public double Reduce(double arg0, Java.Util.Function.DoubleBinaryOperator arg1)
@@ -260,7 +260,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#limit(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Limit(long arg0)
         {
@@ -287,7 +287,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#skip(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Skip(long arg0)
         {
@@ -403,7 +403,7 @@ namespace Java.Util.Stream
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.Builder.html#accept(double)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="double"/></param>
+            /// <param name="arg0"><see cref="double"/></param>
             public void Accept(double arg0)
             {
                 IExecute("accept", arg0);
@@ -411,7 +411,7 @@ namespace Java.Util.Stream
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.Builder.html#add(double)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="double"/></param>
+            /// <param name="arg0"><see cref="double"/></param>
             /// <returns><see cref="Java.Util.Stream.DoubleStream.Builder"/></returns>
             public Java.Util.Stream.DoubleStream.Builder Add(double arg0)
             {

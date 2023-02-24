@@ -33,9 +33,9 @@ namespace Java.Awt.Dnd
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#%3Cinit%3E(java.awt.Component,int,java.awt.dnd.DropTargetListener,boolean,java.awt.datatransfer.FlavorMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Dnd.DropTargetListener"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         /// <param name="arg4"><see cref="Java.Awt.Datatransfer.FlavorMap"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3, Java.Awt.Datatransfer.FlavorMap arg4)
@@ -46,9 +46,9 @@ namespace Java.Awt.Dnd
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#%3Cinit%3E(java.awt.Component,int,java.awt.dnd.DropTargetListener,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Dnd.DropTargetListener"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
@@ -58,7 +58,7 @@ namespace Java.Awt.Dnd
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#%3Cinit%3E(java.awt.Component,int,java.awt.dnd.DropTargetListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Dnd.DropTargetListener"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2)
@@ -196,7 +196,7 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#setActive(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetActive(bool arg0)
         {
             IExecute("setActive", arg0);

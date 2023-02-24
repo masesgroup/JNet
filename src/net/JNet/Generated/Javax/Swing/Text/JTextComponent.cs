@@ -60,7 +60,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#addKeymap(java.lang.String,javax.swing.text.Keymap)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Keymap"/></param>
         /// <returns><see cref="Javax.Swing.Text.Keymap"/></returns>
         public static Javax.Swing.Text.Keymap AddKeymap(string arg0, Javax.Swing.Text.Keymap arg1)
@@ -70,7 +70,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getKeymap(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.Text.Keymap"/></returns>
         public static Javax.Swing.Text.Keymap GetKeymap(string arg0)
         {
@@ -79,7 +79,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#removeKeymap(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.Text.Keymap"/></returns>
         public static Javax.Swing.Text.Keymap RemoveKeymap(string arg0)
         {
@@ -277,10 +277,10 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.MessageFormat"/></param>
         /// <param name="arg1"><see cref="Java.Text.MessageFormat"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="Javax.Print.PrintService"/></param>
         /// <param name="arg4"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
-        /// <param name="arg5"><see langword="bool"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print(Java.Text.MessageFormat arg0, Java.Text.MessageFormat arg1, bool arg2, Javax.Print.PrintService arg3, Javax.Print.Attribute.PrintRequestAttributeSet arg4, bool arg5)
@@ -311,8 +311,8 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
@@ -322,8 +322,8 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
@@ -341,7 +341,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#modelToView2D(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Java.Awt.Geom.Rectangle2D ModelToView2D(int arg0)
@@ -361,8 +361,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getText(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public string GetText(int arg0, int arg1)
@@ -394,7 +394,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#moveCaretPosition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void MoveCaretPosition(int arg0)
         {
             IExecute("moveCaretPosition", arg0);
@@ -410,7 +410,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#read(java.io.Reader,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void Read(Java.Io.Reader arg0, object arg1)
         {
@@ -427,7 +427,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#replaceSelection(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void ReplaceSelection(string arg0)
         {
             IExecute("replaceSelection", arg0);
@@ -435,8 +435,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#select(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void Select(int arg0, int arg1)
         {
             IExecute("select", arg0, arg1);
@@ -451,7 +451,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setEditable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetEditable(bool arg0)
         {
             IExecute("setEditable", arg0);
@@ -574,7 +574,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#doAccessibleAction(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool DoAccessibleAction(int arg0)
             {
@@ -592,7 +592,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getCharacterBounds(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Java.Awt.Rectangle"/></returns>
             public Java.Awt.Rectangle GetCharacterBounds(int arg0)
             {
@@ -601,8 +601,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextBounds(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see cref="Java.Awt.Rectangle"/></returns>
             public Java.Awt.Rectangle GetTextBounds(int arg0, int arg1)
             {
@@ -611,7 +611,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getAccessibleActionDescription(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see langword="string"/></returns>
             public string GetAccessibleActionDescription(int arg0)
             {
@@ -620,8 +620,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getAfterIndex(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see langword="string"/></returns>
             public string GetAfterIndex(int arg0, int arg1)
             {
@@ -630,8 +630,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getAtIndex(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see langword="string"/></returns>
             public string GetAtIndex(int arg0, int arg1)
             {
@@ -640,8 +640,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getBeforeIndex(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see langword="string"/></returns>
             public string GetBeforeIndex(int arg0, int arg1)
             {
@@ -650,8 +650,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextRange(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see langword="string"/></returns>
             public string GetTextRange(int arg0, int arg1)
             {
@@ -660,8 +660,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextSequenceAfter(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see cref="Javax.Accessibility.AccessibleTextSequence"/></returns>
             public Javax.Accessibility.AccessibleTextSequence GetTextSequenceAfter(int arg0, int arg1)
             {
@@ -670,8 +670,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextSequenceAt(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see cref="Javax.Accessibility.AccessibleTextSequence"/></returns>
             public Javax.Accessibility.AccessibleTextSequence GetTextSequenceAt(int arg0, int arg1)
             {
@@ -680,8 +680,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getTextSequenceBefore(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see cref="Javax.Accessibility.AccessibleTextSequence"/></returns>
             public Javax.Accessibility.AccessibleTextSequence GetTextSequenceBefore(int arg0, int arg1)
             {
@@ -690,7 +690,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#getCharacterAttribute(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
             public Javax.Swing.Text.AttributeSet GetCharacterAttribute(int arg0)
             {
@@ -715,8 +715,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#cut(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             public void Cut(int arg0, int arg1)
             {
                 IExecute("cut", arg0, arg1);
@@ -724,8 +724,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#delete(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             public void Delete(int arg0, int arg1)
             {
                 IExecute("delete", arg0, arg1);
@@ -733,8 +733,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#insertTextAtIndex(int,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             public void InsertTextAtIndex(int arg0, string arg1)
             {
                 IExecute("insertTextAtIndex", arg0, arg1);
@@ -750,7 +750,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#paste(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             public void Paste(int arg0)
             {
                 IExecute("paste", arg0);
@@ -766,9 +766,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#replaceText(int,int,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="string"/></param>
             public void ReplaceText(int arg0, int arg1, string arg2)
             {
                 IExecute("replaceText", arg0, arg1, arg2);
@@ -776,8 +776,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#selectText(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             public void SelectText(int arg0, int arg1)
             {
                 IExecute("selectText", arg0, arg1);
@@ -785,8 +785,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#setAttributes(int,int,javax.swing.text.AttributeSet)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
             public void SetAttributes(int arg0, int arg1, Javax.Swing.Text.AttributeSet arg2)
             {
@@ -795,7 +795,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html#setTextContents(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public void SetTextContents(string arg0)
             {
                 IExecute("setTextContents", arg0);
@@ -856,7 +856,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html#%3Cinit%3E(javax.swing.KeyStroke,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             public KeyBinding(Javax.Swing.KeyStroke arg0, string arg1)
                 : base(arg0, arg1)
             {

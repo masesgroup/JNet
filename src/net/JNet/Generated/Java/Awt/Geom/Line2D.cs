@@ -52,14 +52,14 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#linesIntersect(double,double,double,double,double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
-        /// <param name="arg4"><see langword="double"/></param>
-        /// <param name="arg5"><see langword="double"/></param>
-        /// <param name="arg6"><see langword="double"/></param>
-        /// <param name="arg7"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg4"><see cref="double"/></param>
+        /// <param name="arg5"><see cref="double"/></param>
+        /// <param name="arg6"><see cref="double"/></param>
+        /// <param name="arg7"><see cref="double"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool LinesIntersect(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
         {
@@ -68,12 +68,12 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptLineDist(double,double,double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
-        /// <param name="arg4"><see langword="double"/></param>
-        /// <param name="arg5"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg4"><see cref="double"/></param>
+        /// <param name="arg5"><see cref="double"/></param>
         /// <returns><see langword="double"/></returns>
         public static double PtLineDist(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
@@ -82,12 +82,12 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptLineDistSq(double,double,double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
-        /// <param name="arg4"><see langword="double"/></param>
-        /// <param name="arg5"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg4"><see cref="double"/></param>
+        /// <param name="arg5"><see cref="double"/></param>
         /// <returns><see langword="double"/></returns>
         public static double PtLineDistSq(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
@@ -96,12 +96,12 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptSegDist(double,double,double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
-        /// <param name="arg4"><see langword="double"/></param>
-        /// <param name="arg5"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg4"><see cref="double"/></param>
+        /// <param name="arg5"><see cref="double"/></param>
         /// <returns><see langword="double"/></returns>
         public static double PtSegDist(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
@@ -110,12 +110,12 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptSegDistSq(double,double,double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
-        /// <param name="arg4"><see langword="double"/></param>
-        /// <param name="arg5"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg4"><see cref="double"/></param>
+        /// <param name="arg5"><see cref="double"/></param>
         /// <returns><see langword="double"/></returns>
         public static double PtSegDistSq(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
@@ -124,12 +124,12 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#relativeCCW(double,double,double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
-        /// <param name="arg4"><see langword="double"/></param>
-        /// <param name="arg5"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg4"><see cref="double"/></param>
+        /// <param name="arg5"><see cref="double"/></param>
         /// <returns><see langword="int"/></returns>
         public static int RelativeCCW(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
@@ -191,10 +191,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#setLine(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
         public void SetLine(double arg0, double arg1, double arg2, double arg3)
         {
             IExecute("setLine", arg0, arg1, arg2, arg3);
@@ -202,10 +202,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#contains(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Contains(double arg0, double arg1, double arg2, double arg3)
         {
@@ -214,8 +214,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#contains(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Contains(double arg0, double arg1)
         {
@@ -242,10 +242,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#intersects(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Intersects(double arg0, double arg1, double arg2, double arg3)
         {
@@ -263,10 +263,10 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#intersectsLine(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IntersectsLine(double arg0, double arg1, double arg2, double arg3)
         {
@@ -284,8 +284,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptLineDist(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see langword="double"/></returns>
         public double PtLineDist(double arg0, double arg1)
         {
@@ -303,8 +303,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptLineDistSq(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see langword="double"/></returns>
         public double PtLineDistSq(double arg0, double arg1)
         {
@@ -322,8 +322,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptSegDist(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see langword="double"/></returns>
         public double PtSegDist(double arg0, double arg1)
         {
@@ -341,8 +341,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptSegDistSq(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see langword="double"/></returns>
         public double PtSegDistSq(double arg0, double arg1)
         {
@@ -360,8 +360,8 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#relativeCCW(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see langword="int"/></returns>
         public int RelativeCCW(double arg0, double arg1)
         {
@@ -380,7 +380,7 @@ namespace Java.Awt.Geom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#getPathIterator(java.awt.geom.AffineTransform,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0, double arg1)
         {
@@ -423,10 +423,10 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Double.html#%3Cinit%3E(double,double,double,double)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="double"/></param>
-            /// <param name="arg1"><see langword="double"/></param>
-            /// <param name="arg2"><see langword="double"/></param>
-            /// <param name="arg3"><see langword="double"/></param>
+            /// <param name="arg0"><see cref="double"/></param>
+            /// <param name="arg1"><see cref="double"/></param>
+            /// <param name="arg2"><see cref="double"/></param>
+            /// <param name="arg3"><see cref="double"/></param>
             public Double(double arg0, double arg1, double arg2, double arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -490,10 +490,10 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Float.html#%3Cinit%3E(float,float,float,float)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="float"/></param>
-            /// <param name="arg1"><see langword="float"/></param>
-            /// <param name="arg2"><see langword="float"/></param>
-            /// <param name="arg3"><see langword="float"/></param>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="float"/></param>
+            /// <param name="arg3"><see cref="float"/></param>
             public Float(float arg0, float arg1, float arg2, float arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -546,10 +546,10 @@ namespace Java.Awt.Geom
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Float.html#setLine(float,float,float,float)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="float"/></param>
-            /// <param name="arg1"><see langword="float"/></param>
-            /// <param name="arg2"><see langword="float"/></param>
-            /// <param name="arg3"><see langword="float"/></param>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="float"/></param>
+            /// <param name="arg3"><see cref="float"/></param>
             public void SetLine(float arg0, float arg1, float arg2, float arg3)
             {
                 IExecute("setLine", arg0, arg1, arg2, arg3);

@@ -64,7 +64,7 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Html.HTML.Attribute"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public static int GetIntegerAttributeValue(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.Html.HTML.Attribute arg1, int arg2)
         {
@@ -73,7 +73,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#getAttributeKey(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.Text.Html.HTML.Attribute"/></returns>
         public static Javax.Swing.Text.Html.HTML.Attribute GetAttributeKey(string arg0)
         {
@@ -82,7 +82,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.html#getTag(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.Text.Html.HTML.Tag"/></returns>
         public static Javax.Swing.Text.Html.HTML.Tag GetTag(string arg0)
         {
@@ -808,7 +808,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTML.UnknownTag.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public UnknownTag(string arg0)
                 : base(arg0)
             {

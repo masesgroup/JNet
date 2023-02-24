@@ -90,7 +90,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getMimeEncoder(int,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <returns><see cref="Java.Util.Base64.Encoder"/></returns>
         public static Java.Util.Base64.Encoder GetMimeEncoder(int arg0, byte[] arg1)
@@ -137,7 +137,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="byte"/></returns>
             public byte[] Decode(string arg0)
             {

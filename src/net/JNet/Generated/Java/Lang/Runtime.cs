@@ -75,7 +75,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String,java.lang.String[],java.io.File)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Io.File"/></param>
         /// <returns><see cref="Java.Lang.Process"/></returns>
@@ -87,7 +87,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Lang.Process"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -98,7 +98,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Lang.Process"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Process Exec(string arg0)
@@ -192,7 +192,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void Exit(int arg0)
         {
             IExecute("exit", arg0);
@@ -200,7 +200,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#halt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void Halt(int arg0)
         {
             IExecute("halt", arg0);
@@ -208,7 +208,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#load(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void Load(string arg0)
         {
             IExecute("load", arg0);
@@ -216,7 +216,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#loadLibrary(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void LoadLibrary(string arg0)
         {
             IExecute("loadLibrary", arg0);
@@ -251,7 +251,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#parse(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
             public static Java.Lang.Runtime.Version Parse(string arg0)
             {
@@ -264,7 +264,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#equalsIgnoreOptional(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool EqualsIgnoreOptional(object arg0)
             {
@@ -273,7 +273,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#compareTo(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see langword="int"/></returns>
             public int CompareTo(object arg0)
             {

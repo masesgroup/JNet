@@ -81,7 +81,7 @@ namespace Java.Rmi.Server
         /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see langword="long"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
         public object Invoke(Java.Rmi.Remote arg0, Java.Lang.Reflect.Method arg1, object[] arg2, long arg3)

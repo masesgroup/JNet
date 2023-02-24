@@ -33,8 +33,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String,boolean,java.awt.GraphicsConfiguration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="Java.Awt.GraphicsConfiguration"/></param>
         public Dialog(Java.Awt.Dialog arg0, string arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
             : base(arg0, arg1, arg2, arg3)
@@ -44,8 +44,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         public Dialog(Java.Awt.Dialog arg0, string arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -54,7 +54,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Dialog,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dialog"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public Dialog(Java.Awt.Dialog arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -71,7 +71,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Frame,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public Dialog(Java.Awt.Frame arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -80,8 +80,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String,boolean,java.awt.GraphicsConfiguration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="Java.Awt.GraphicsConfiguration"/></param>
         public Dialog(Java.Awt.Frame arg0, string arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
             : base(arg0, arg1, arg2, arg3)
@@ -91,8 +91,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         public Dialog(Java.Awt.Frame arg0, string arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -101,7 +101,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Frame,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public Dialog(Java.Awt.Frame arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -118,7 +118,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#%3Cinit%3E(java.awt.Window,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public Dialog(Java.Awt.Window arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -188,7 +188,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setModal(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetModal(bool arg0)
         {
             IExecute("setModal", arg0);
@@ -196,7 +196,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setResizable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetResizable(bool arg0)
         {
             IExecute("setResizable", arg0);
@@ -204,7 +204,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setUndecorated(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetUndecorated(bool arg0)
         {
             IExecute("setUndecorated", arg0);

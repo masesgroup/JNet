@@ -33,7 +33,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.lang.String,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
@@ -45,7 +45,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
         public Formatter(Java.Io.File arg0, string arg1)
@@ -76,7 +76,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
         public Formatter(Java.Io.OutputStream arg0, string arg1, Java.Util.Locale arg2)
@@ -87,7 +87,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
         public Formatter(Java.Io.OutputStream arg0, string arg1)
             : base(arg0, arg1)
@@ -139,8 +139,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.lang.String,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
@@ -151,8 +151,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
         public Formatter(string arg0, string arg1)
@@ -162,7 +162,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -173,7 +173,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Formatter(string arg0)
             : base(arg0)
@@ -232,7 +232,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#format(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Formatter"/></returns>
         public Java.Util.Formatter Format(string arg0, params object[] arg1)
@@ -243,7 +243,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#format(java.util.Locale,java.lang.String,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Formatter"/></returns>
         public Java.Util.Formatter Format(Java.Util.Locale arg0, string arg1, params object[] arg2)

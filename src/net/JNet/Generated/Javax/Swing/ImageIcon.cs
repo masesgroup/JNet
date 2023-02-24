@@ -33,7 +33,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#%3Cinit%3E(byte[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public ImageIcon(byte[] arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -50,7 +50,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#%3Cinit%3E(java.awt.Image,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public ImageIcon(Java.Awt.Image arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -66,8 +66,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public ImageIcon(string arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -75,7 +75,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public ImageIcon(string arg0)
             : base(arg0)
         {
@@ -84,7 +84,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#%3Cinit%3E(java.net.URL,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public ImageIcon(Java.Net.URL arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -179,8 +179,8 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
         {
             IExecute("paintIcon", arg0, arg1, arg2, arg3);

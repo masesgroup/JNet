@@ -44,9 +44,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#getByAddress(java.lang.String,byte[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Net.Inet6Address"/></returns>
         /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.Inet6Address GetByAddress(string arg0, byte[] arg1, int arg2)
@@ -56,7 +56,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#getByAddress(java.lang.String,byte[],java.net.NetworkInterface)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <param name="arg2"><see cref="Java.Net.NetworkInterface"/></param>
         /// <returns><see cref="Java.Net.Inet6Address"/></returns>

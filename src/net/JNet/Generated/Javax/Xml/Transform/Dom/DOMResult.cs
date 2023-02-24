@@ -33,7 +33,7 @@ namespace Javax.Xml.Transform.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMResult.html#%3Cinit%3E(org.w3c.dom.Node,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public DOMResult(Org.W3c.Dom.Node arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -43,7 +43,7 @@ namespace Javax.Xml.Transform.Dom
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         public DOMResult(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1, string arg2)
             : base(arg0, arg1, arg2)
         {

@@ -99,8 +99,8 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForInput(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <returns><see cref="Javax.Tools.FileObject"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.FileObject GetFileForInput(Javax.Tools.JavaFileManager.Location arg0, string arg1, string arg2)
@@ -111,8 +111,8 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForOutput(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String,javax.tools.FileObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Javax.Tools.FileObject"/></param>
         /// <returns><see cref="Javax.Tools.FileObject"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -163,7 +163,7 @@ namespace Javax.Tools
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager$Location,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Javax.Tools.JavaFileManager.Location"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.JavaFileManager.Location GetLocationForModule(Javax.Tools.JavaFileManager.Location arg0, string arg1)

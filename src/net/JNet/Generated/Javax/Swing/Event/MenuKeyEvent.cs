@@ -33,11 +33,11 @@ namespace Javax.Swing.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyEvent.html#%3Cinit%3E(java.awt.Component,int,long,int,int,char,javax.swing.MenuElement[],javax.swing.MenuSelectionManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="char"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="char"/></param>
         /// <param name="arg6"><see cref="Javax.Swing.MenuElement"/></param>
         /// <param name="arg7"><see cref="Javax.Swing.MenuSelectionManager"/></param>
         public MenuKeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5, Javax.Swing.MenuElement[] arg6, Javax.Swing.MenuSelectionManager arg7)

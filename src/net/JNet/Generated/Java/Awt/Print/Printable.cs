@@ -58,7 +58,7 @@ namespace Java.Awt.Print
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Print.PageFormat"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public int Print(Java.Awt.Graphics arg0, Java.Awt.Print.PageFormat arg1, int arg2)

@@ -72,8 +72,8 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
         {
             IExecute("paintIcon", arg0, arg1, arg2, arg3);

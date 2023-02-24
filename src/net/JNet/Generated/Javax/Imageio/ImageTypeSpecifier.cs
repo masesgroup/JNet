@@ -64,9 +64,9 @@ namespace Javax.Imageio
         /// <param name="arg0"><see cref="Java.Awt.ColorNs.ColorSpace"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="bool"/></param>
-        /// <param name="arg5"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreateBanded(Java.Awt.ColorNs.ColorSpace arg0, int[] arg1, int[] arg2, int arg3, bool arg4, bool arg5)
         {
@@ -75,7 +75,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#createFromBufferedImageType(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreateFromBufferedImageType(int arg0)
         {
@@ -93,10 +93,10 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#createGrayscale(int,int,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreateGrayscale(int arg0, int arg1, bool arg2, bool arg3)
         {
@@ -105,9 +105,9 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#createGrayscale(int,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreateGrayscale(int arg0, int arg1, bool arg2)
         {
@@ -120,8 +120,8 @@ namespace Javax.Imageio
         /// <param name="arg1"><see cref="byte"/></param>
         /// <param name="arg2"><see cref="byte"/></param>
         /// <param name="arg3"><see cref="byte"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreateIndexed(byte[] arg0, byte[] arg1, byte[] arg2, byte[] arg3, int arg4, int arg5)
         {
@@ -132,9 +132,9 @@ namespace Javax.Imageio
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ColorNs.ColorSpace"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
-        /// <param name="arg4"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreateInterleaved(Java.Awt.ColorNs.ColorSpace arg0, int[] arg1, int arg2, bool arg3, bool arg4)
         {
@@ -144,12 +144,12 @@ namespace Javax.Imageio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#createPacked(java.awt.color.ColorSpace,int,int,int,int,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ColorNs.ColorSpace"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="bool"/></param>
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreatePacked(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6)
         {
@@ -197,7 +197,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#getBitsPerBand(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetBitsPerBand(int arg0)
         {
@@ -206,8 +206,8 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#createBufferedImage(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage CreateBufferedImage(int arg0, int arg1)
         {
@@ -216,8 +216,8 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#getSampleModel(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.SampleModel"/></returns>
         public Java.Awt.ImageNs.SampleModel GetSampleModel(int arg0, int arg1)
         {

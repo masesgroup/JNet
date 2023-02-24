@@ -66,7 +66,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#findLoader(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
         public Java.Lang.ClassLoader FindLoader(string arg0)
         {
@@ -138,7 +138,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#addExports(java.lang.Module,java.lang.String,java.lang.Module)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <param name="arg2"><see cref="Java.Lang.Module"/></param>
             /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
             public Java.Lang.ModuleLayer.Controller AddExports(Java.Lang.Module arg0, string arg1, Java.Lang.Module arg2)
@@ -149,7 +149,7 @@ namespace Java.Lang
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#addOpens(java.lang.Module,java.lang.String,java.lang.Module)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <param name="arg2"><see cref="Java.Lang.Module"/></param>
             /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
             public Java.Lang.ModuleLayer.Controller AddOpens(Java.Lang.Module arg0, string arg1, Java.Lang.Module arg2)

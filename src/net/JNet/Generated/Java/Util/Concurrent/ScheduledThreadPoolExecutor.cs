@@ -32,7 +32,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int,java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.RejectedExecutionHandler"/></param>
         public ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.RejectedExecutionHandler arg1)
             : base(arg0, arg1)
@@ -41,7 +41,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int,java.util.concurrent.ThreadFactory,java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.RejectedExecutionHandler"/></param>
         public ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.ThreadFactory arg1, Java.Util.Concurrent.RejectedExecutionHandler arg2)
@@ -51,7 +51,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int,java.util.concurrent.ThreadFactory)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
         public ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
             : base(arg0, arg1)
@@ -60,7 +60,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public ScheduledThreadPoolExecutor(int arg0)
             : base(arg0)
         {

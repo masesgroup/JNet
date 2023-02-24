@@ -88,7 +88,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#configureBlocking(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Nio.Channels.SelectableChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SelectableChannel ConfigureBlocking(bool arg0)
@@ -108,8 +108,8 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector,int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.Selector"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         /// <returns><see cref="Java.Nio.Channels.SelectionKey"/></returns>
         /// <exception cref="Java.Nio.Channels.ClosedChannelException"/>
         public Java.Nio.Channels.SelectionKey Register(Java.Nio.Channels.Selector arg0, int arg1, object arg2)
@@ -129,7 +129,7 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.Selector"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.Channels.SelectionKey"/></returns>
         /// <exception cref="Java.Nio.Channels.ClosedChannelException"/>
         public Java.Nio.Channels.SelectionKey Register(Java.Nio.Channels.Selector arg0, int arg1)

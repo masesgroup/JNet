@@ -72,7 +72,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Sql.Rowset.Spi.SyncProvider"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Spi.SyncFactoryException"/>
         public static Javax.Sql.Rowset.Spi.SyncProvider GetInstance(string arg0)
@@ -82,7 +82,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#registerProvider(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Javax.Sql.Rowset.Spi.SyncFactoryException"/>
         public static void RegisterProvider(string arg0)
         {
@@ -100,7 +100,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#unregisterProvider(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Javax.Sql.Rowset.Spi.SyncFactoryException"/>
         public static void UnregisterProvider(string arg0)
         {

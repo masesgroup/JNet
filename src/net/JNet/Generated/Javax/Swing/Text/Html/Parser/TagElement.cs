@@ -33,7 +33,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#%3Cinit%3E(javax.swing.text.html.parser.Element,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Html.Parser.Element"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public TagElement(Javax.Swing.Text.Html.Parser.Element arg0, bool arg1)
             : base(arg0, arg1)
         {

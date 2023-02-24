@@ -79,8 +79,8 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#getScaledInstance(float,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Javax.Imageio.Plugins.Jpeg.JPEGQTable"/></returns>
         public Javax.Imageio.Plugins.Jpeg.JPEGQTable GetScaledInstance(float arg0, bool arg1)
         {

@@ -48,7 +48,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.html#forEachRemaining(T_CONS)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public void ForEachRemaining(object arg0)
         {
             IExecute("forEachRemaining", arg0);
@@ -98,7 +98,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -159,7 +159,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -220,7 +220,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);
