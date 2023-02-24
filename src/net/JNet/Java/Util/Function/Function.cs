@@ -43,7 +43,7 @@ namespace Java.Util.Function
     /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
     public class Function<TObject, TReturn> : JVMBridgeListener, IFunction<TObject, TReturn>
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "org.mases.jnet.util.function.JNetFunction";
 
         Func<TObject, TReturn> executionFunction = null;

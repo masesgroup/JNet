@@ -27,10 +27,10 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class TypeVariable : AnnotatedElement
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.lang.reflect.TypeVariable";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
         /// <summary>
         /// Returns an array of <see cref="AnnotatedType"/> objects that represent the use of types to denote the upper bounds of the type parameter represented by this <see cref="TypeVariable"/>.

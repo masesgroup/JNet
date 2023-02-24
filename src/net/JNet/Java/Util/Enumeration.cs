@@ -28,9 +28,9 @@ namespace Java.Util
     /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Enumeration.html"/></typeparam>
     public class Enumeration<E> : JVMBridgeBase<Enumeration<E>>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.util.Enumeration";
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
         /// <summary>
         /// Tests if this enumeration contains more elements.

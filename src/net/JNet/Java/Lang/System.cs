@@ -28,9 +28,9 @@ namespace Java.Lang
     /// </summary>
     public sealed class System : JVMBridgeBase<System>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.lang.System";
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
         public override bool IsStatic => true;
         /// <summary>
         /// Copies an array from the specified source array, beginning at the specified position, to the specified position of the destination array.
@@ -145,11 +145,15 @@ namespace Java.Lang
         /// </summary>
         public static void SetSecurityManager​(SecurityManager sm) => SExecute("setSecurityManager​​​​​​​​​​​​", sm);
 
+        /// <summary>
+        /// .NET implementations of https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html
+        /// </summary>
         public sealed class Logger : JVMBridgeBase<Logger>
         {
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
             public override bool IsInterface => true;
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.lang.System.Logger";
+            /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            public override string ClassName => "java.lang.System$Logger";
         }
     }
 }

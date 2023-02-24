@@ -26,7 +26,7 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class Constructor : Executable
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.lang.reflect.Constructor";
 #else
     public partial class Constructor

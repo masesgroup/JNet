@@ -21,24 +21,36 @@ using System;
 
 namespace Java.Awt.EventNs
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html"/>
+    /// </summary>
     public interface IComponentListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentResized(java.awt.event.ComponentEvent)"/>
+        /// </summary>
         void ComponentResized(ComponentEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentMoved(java.awt.event.ComponentEvent)"/>
+        /// </summary>
         void ComponentMoved(ComponentEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentShown(java.awt.event.ComponentEvent)"/>
+        /// </summary>
         void ComponentShown(ComponentEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentHidden(java.awt.event.ComponentEvent)"/>
+        /// </summary>
         void ComponentHidden(ComponentEvent e);
     }
 
     /// <summary>
-    /// Listener for ComponentListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IComponentListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IComponentListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ComponentListener : IComponentListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.awt.event.JNetComponentListener";
 
         readonly Action<ComponentEvent> componentResizedFunction = null;
@@ -112,22 +124,22 @@ namespace Java.Awt.EventNs
         {
             OnComponentHidden(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IComponentListener.ComponentResized(ComponentEvent)"/>
         public virtual void ComponentResized(ComponentEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IComponentListener.ComponentMoved(ComponentEvent)"/>
         public virtual void ComponentMoved(ComponentEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IComponentListener.ComponentShown(ComponentEvent)"/>
         public virtual void ComponentShown(ComponentEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IComponentListener.ComponentHidden(ComponentEvent)"/>
         public virtual void ComponentHidden(ComponentEvent e)
         {
 

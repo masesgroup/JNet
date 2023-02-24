@@ -27,76 +27,145 @@ namespace Java.Util
         // can be extended with methods not reflected or not available in Java;
     }
     /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html"/>
+    /// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html"/>
     /// </summary>
     public class List<E> : List
     {
+        /// <summary>
+        /// Converter from <see cref="List{E}"/> to <see cref="Collection{E}"/>
+        /// </summary>
         public static implicit operator Collection<E>(List<E> instance) => instance.Cast<Collection<E>>();
-
+        /// <summary>
+        /// Converter from <see cref="List{E}"/> to <see cref="Iterable{E}"/>
+        /// </summary>
         public static implicit operator Iterable<E>(List<E> instance) => instance.Cast<Iterable<E>>();
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#add(int,E)"/>
+        /// </summary>
         public void Add​(int index, E element) => IExecute("add", index, element);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#add(E)"/>
+        /// </summary>
         public bool Add​(E e) => IExecute<bool>("add", e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#addAll(int,java.util.Collection)"/>
+        /// </summary>
         public bool AddAll​<ExtendsE>(int index, Collection<ExtendsE> c) where ExtendsE : E => IExecute<bool>("addAll​", index, c);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#addAll(java.util.Collection)"/>
+        /// </summary>
         public bool AddAll​<ExtendsE>(Collection<ExtendsE> c) where ExtendsE : E => IExecute<bool>("addAll​", c);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#containsAll(java.util.Collection)"/>
+        /// </summary>
         public bool ContainsAll<T>(Collection<T> c) => IExecute<bool>("containsAll", c);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#copyOf(java.util.Collection)"/>
+        /// </summary>
         public static List<E> CopyOf​<ExtendsE>(Collection<ExtendsE> coll) => SExecute<List<E>>("copyOf​", coll);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#get(int)"/>
+        /// </summary>
         public new E Get​(int index) => IExecute<E>("get", index);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#isEmpty()"/>
+        /// </summary>
         public new bool IsEmpty => IExecute<bool>("isEmpty");
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#iterator()"/>
+        /// </summary>
         public Iterator<E> Iterator => IExecute<Iterator<E>>("iterator");
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#get(int)"/>
+        /// </summary>
         public ListIterator<E> ListIterator() => IExecute<ListIterator<E>>("listIterator");
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#listIterator()"/>
+        /// </summary>
         public ListIterator<E> ListIterator(int index) => IExecute<ListIterator<E>>("listIterator", index);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of()"/>
+        /// </summary>
         public static List<E> Of() => SExecute<List<E>>("of");
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(E)"/>
+        /// </summary>
         public static List<E> Of(E e1) => SExecute<List<E>>("of", e1);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(E...)"/>
+        /// </summary>
         public static List<E> Of(params E[] elements) => elements.Length == 0 ? SExecute<List<E>>("of") : SExecute<List<E>>("of", elements);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(E,E)"/>
+        /// </summary>
         public static List<E> Of(E e1, E e2) => SExecute<List<E>>("of", e1, e2);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(E,E,E)"/>
+        /// </summary>
         public static List<E> Of(E e1, E e2, E e3) => SExecute<List<E>>("of", e1, e2, e3);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(E,E,E,E)"/>
+        /// </summary>
         public static List<E> Of(E e1, E e2, E e3, E e4) => SExecute<List<E>>("of", e1, e2, e3, e4);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(E,E,E,E,E)"/>
+        /// </summary>
         public static List<E> Of(E e1, E e2, E e3, E e4, E e5) => SExecute<List<E>>("of", e1, e2, e3, e4, e5);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(E,E,E,E,E,E)"/>
+        /// </summary>
         public static List<E> Of(E e1, E e2, E e3, E e4, E e5, E e6) => SExecute<List<E>>("of", e1, e2, e3, e4, e5, e6);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(E,E,E,E,E,E,E)"/>
+        /// </summary>
         public static List<E> Of(E e1, E e2, E e3, E e4, E e5, E e6, E e7) => SExecute<List<E>>("of", e1, e2, e3, e4, e5, e6, e7);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(E,E,E,E,E,E,E,E)"/>
+        /// </summary>
         public static List<E> Of(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8) => SExecute<List<E>>("of", e1, e2, e3, e4, e5, e6, e7, e8);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(E,E,E,E,E,E,E,E,E)"/>
+        /// </summary>
         public static List<E> Of(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8, E e9) => SExecute<List<E>>("of", e1, e2, e3, e4, e5, e6, e7, e8, e9);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(E,E,E,E,E,E,E,E,E,E)"/>
+        /// </summary>
         public static List<E> Of(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8, E e9, E e10) => SExecute<List<E>>("of", e1, e2, e3, e4, e5, e6, e7, e8, e9, e10);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#remove(int)"/>
+        /// </summary>
         public new E Remove​(int index) => IExecute<E>("remove​", index);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#removeAll(java.util.Collection)"/>
+        /// </summary>
         public bool RemoveAll​<T>(Collection<T> c) => IExecute<bool>("removeAll​", c);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#replaceAll(java.util.function.UnaryOperator)"/>
+        /// </summary>
         public void ReplaceAll​(UnaryOperator<E> op) => IExecute("replaceAll​", op);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#retainAll(java.util.Collection)"/>
+        /// </summary>
         public bool RetainAll​<T>(Collection<T> c) => IExecute<bool>("retainAll​​", c);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#set(int,E)"/>
+        /// </summary>
         public E Set​(int index, E element) => IExecute<E>("set", index, element);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#size()"/>
+        /// </summary>
         public new int Size => IExecute<int>("size");
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#sort(java.util.Comparator)"/>
+        /// </summary>
         public void Sort<SuperE>(Comparator<SuperE> c) where SuperE : E => IExecute("sort", c);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#spliterator()"/>
+        /// </summary>
         public Spliterator<E> Spliterator() => IExecute<Spliterator<E>>("spliterator");
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#subList(int,int)"/>
+        /// </summary>
         public List<E> SubList​(int fromIndex, int toIndex) => IExecute<List<E>>("subList​", fromIndex, toIndex);
     }
 }

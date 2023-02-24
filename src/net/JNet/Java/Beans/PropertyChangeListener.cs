@@ -21,8 +21,15 @@ using System;
 
 namespace Java.Beans
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html"/>
+    /// </summary>
     public interface IPropertyChangeListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)
+        /// </summary>
+        /// <param name="evt"><see cref="PropertyChangeEvent"/></param>
         void PropertyChange(PropertyChangeEvent evt);
     }
 
@@ -32,7 +39,7 @@ namespace Java.Beans
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class PropertyChangeListener : IPropertyChangeListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.beans.JNetPropertyChangeListener";
 
         readonly Action<PropertyChangeEvent> PropertyChangeFunction = null;
@@ -60,7 +67,7 @@ namespace Java.Beans
         {
             OnPropertyChange(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IPropertyChangeListener.PropertyChange(PropertyChangeEvent)"/>
         public virtual void PropertyChange(PropertyChangeEvent evt)
         {
 

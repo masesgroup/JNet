@@ -31,7 +31,7 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class Executable : AccessibleObject
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.lang.reflect.Executable";
         /// <summary>
         /// Returns an <see cref="AnnotatedType"/> object that represents the use of a type to specify the return type of the method/constructor represented by this <see cref="Executable"/>.

@@ -21,29 +21,40 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Concurrent
 {
     /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Future.html"/>
+    /// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html"/>
     /// </summary>
     public class Future<E> : JVMBridgeBase<Future<E>>
     {
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.util.concurrent.Future";
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#cancel(boolean)"/>
+        /// </summary>
         public bool Cancel(bool mayInterruptIfRunning)
         {
             return IExecute<bool>("cancel", mayInterruptIfRunning);
         }
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#get()"/>
+        /// </summary>
         public E Get()
         {
             return IExecute<E>("get");
         }
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#get(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
         public E Get(long timeout, TimeUnit unit)
         {
             return IExecute<E>("get", timeout, unit);
         }
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isCancelled()"/>
+        /// </summary>
         public bool IsCancelled => IExecute<bool>("isCancelled");
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html#isDone()"/>
+        /// </summary>
         public bool IsDone => IExecute<bool>("isDone");
     }
 }

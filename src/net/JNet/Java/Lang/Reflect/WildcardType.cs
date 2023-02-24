@@ -27,7 +27,7 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class WildcardType : Type
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.lang.reflect.WildcardType";
         /// <summary>
         /// Returns an array of <see cref="Type"/> objects representing the lower bound(s) of this type variable.

@@ -21,18 +21,24 @@ using System;
 
 namespace Java.Awt.EventNs
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html"/>
+    /// </summary>
     public interface IItemListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html#itemStateChanged(java.awt.event.ItemEvent)"/>
+        /// </summary>
         void ItemStateChanged(ItemEvent e);
     }
 
     /// <summary>
-    /// Listener for ItemListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IItemListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IItemListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ItemListener : IItemListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.awt.event.JNetItemListener";
 
         readonly Action<ItemEvent> itemStateChangedFunction = null;
@@ -60,7 +66,7 @@ namespace Java.Awt.EventNs
         {
             OnItemStateChanged(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IItemListener.ItemStateChanged(ItemEvent)"/>
         public void ItemStateChanged(ItemEvent e)
         {
             throw new NotImplementedException();

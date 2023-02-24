@@ -22,16 +22,23 @@ namespace Java.Util
 {
     public partial class Collections
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singleton(T)"/>
+        /// </summary>
         public static Set<E> Singleton<E>(E element)
         {
             return SExecute<Set<E>>("singleton", element);
         }
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonList(T)"/>
+        /// </summary>
         public static List<E> SingletonList<E>(E element)
         {
             return SExecute<List<E>>("singleton", element);
         }
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonMap(K,V)"/>
+        /// </summary>
         public static Map<K, V> SingletonMap<K, V>(K key, V value)
         {
             return SExecute<Map<K, V>>("singletonMap", key, value);

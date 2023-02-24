@@ -25,7 +25,6 @@ namespace Java.Util
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html"/>
     /// </summary>
-    /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html"/></typeparam>
     public partial class Comparator
     {
         /// <summary>
@@ -77,30 +76,36 @@ namespace Java.Util
         /// <returns></returns>
         public static Comparator ReverseOrder() => SExecute<Comparator>("reverseOrder");
     }
-
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html"/>
+    /// </summary>
+    /// <typeparam name="T">The comparator type</typeparam>
     public interface IComparator<T> : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(T,T)"/>
+        /// </summary>
         int Compare(T o1, T o2);
     }
 
     /// <summary>
-    /// Listener for Comparator. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IComparator{T}"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IComparator{T}"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public class Comparator<T> : JVMBridgeListener, IComparator<T>
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.util.JNetComparator";
 
         readonly Func<T, T, int> CompareFunction = null;
         /// <summary>
-        /// The <see cref="Func{T, T, int}"/> to be executed on Compare
+        /// The <see cref="Func{T1, T2, TResult}"/> to be executed on Compare
         /// </summary>
         public virtual Func<T, T, int> OnCompare { get { return CompareFunction; } }
         /// <summary>
         /// Initialize a new instance of <see cref="Comparator{T}"/>
         /// </summary>
-        /// <param name="compare">The <see cref="Func{T, T, int}"/> to be executed on Compare</param>
+        /// <param name="compare">The <see cref="Func{T1, T2, TResult}"/> to be executed on Compare</param>
         /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
         public Comparator(Func<T, T, int> compare = null, bool attachEventHandler = true)
         {
@@ -118,7 +123,7 @@ namespace Java.Util
             var retVal = OnCompare(data.EventData.TypedEventData, data.EventData.GetAt<T>(0));
             data.SetReturnValue(retVal);
         }
-
+        /// <inheritdoc cref="IComparator{T}.Compare(T, T)"/>
         public virtual int Compare(T o1, T o2)
         {
             return default;

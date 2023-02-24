@@ -21,18 +21,24 @@ using System;
 
 namespace Java.Awt.EventNs
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html"/>
+    /// </summary>
     public interface IAWTEventListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent)"/>
+        /// </summary>
         void EventDispatched(AWTEvent e);
     }
 
     /// <summary>
-    /// Listener for AWTEventListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IAWTEventListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IAWTEventListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class AWTEventListener : IAWTEventListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.awt.event.JNetAWTEventListener";
 
         readonly Action<AWTEvent> eventDispatchedFunction = null;
@@ -60,7 +66,7 @@ namespace Java.Awt.EventNs
         {
             OnEventDispatched(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IAWTEventListener.EventDispatched(AWTEvent)"/>
         public virtual void EventDispatched(AWTEvent e)
         {
 

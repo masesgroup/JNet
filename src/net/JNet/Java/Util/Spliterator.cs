@@ -24,12 +24,12 @@ namespace Java.Util
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html"/>
     /// </summary>
-    /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html"/></typeparam>
+    /// <typeparam name="T"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html"/></typeparam>
     public class Spliterator<T> : JVMBridgeBase<Spliterator<T>>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.util.Spliterator";
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         public override bool IsInterface => true;
         /// <summary>
         /// Returns a set of characteristics of this <see cref="Spliterator{T}"/> and its elements.

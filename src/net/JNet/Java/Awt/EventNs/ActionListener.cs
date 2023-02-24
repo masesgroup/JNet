@@ -21,18 +21,24 @@ using System;
 
 namespace Java.Awt.EventNs
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html"/>
+    /// </summary>
     public interface IActionListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
+        /// </summary>
         void ActionPerformed(ActionEvent e);
     }
 
     /// <summary>
-    /// Listener for ActionListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IActionListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IActionListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ActionListener : IActionListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.awt.event.JNetActionListener";
 
         readonly Action<ActionEvent> actionPerformedFunction = null;
@@ -60,7 +66,7 @@ namespace Java.Awt.EventNs
         {
             OnActionPerformed(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IActionListener.ActionPerformed(ActionEvent)"/>
         public virtual void ActionPerformed(ActionEvent e)
         {
 

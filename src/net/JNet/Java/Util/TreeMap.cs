@@ -23,12 +23,9 @@ namespace Java.Util
     /// </summary>
     public class TreeMap<K, V> : AbstractMap<K, V>
     {
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
         public override bool IsAbstract => false;
-
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.util.TreeMap";
-
-        public TreeMap()
-        {
-        }
     }
 }

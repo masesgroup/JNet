@@ -21,20 +21,28 @@ using System;
 
 namespace Java.Awt.EventNs
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html"/>
+    /// </summary>
     public interface IInputMethodListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
+        /// </summary>
         void InputMethodTextChanged(InputMethodEvent e);
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
+        /// </summary>
         void CaretPositionChanged(InputMethodEvent e);
     }
 
     /// <summary>
-    /// Listener for InputMethodListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IInputMethodListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IInputMethodListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class InputMethodListener : IInputMethodListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.awt.event.JNetInputMethodListener";
 
         readonly Action<InputMethodEvent> inputMethodTextChangedFunction = null;
@@ -78,12 +86,12 @@ namespace Java.Awt.EventNs
         {
             OnCaretPositionChanged(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IInputMethodListener.InputMethodTextChanged(InputMethodEvent)"/>
         public void InputMethodTextChanged(InputMethodEvent e)
         {
 
         }
-
+        /// <inheritdoc cref="IInputMethodListener.CaretPositionChanged(InputMethodEvent)"/>
         public void CaretPositionChanged(InputMethodEvent e)
         {
 

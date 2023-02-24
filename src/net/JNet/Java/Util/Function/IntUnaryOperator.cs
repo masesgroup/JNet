@@ -39,7 +39,7 @@ namespace Java.Util.Function
     /// </summary>
     public class IntUnaryOperator : JVMBridgeListener, IIntUnaryOperator
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetIntUnaryOperator";
 
         Func<int, int> executionFunction = null;

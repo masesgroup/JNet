@@ -21,8 +21,14 @@ using System;
 
 namespace Javax.Naming.Event
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html"/>
+    /// </summary>
     public interface IObjectChangeListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html#objectChanged(javax.naming.event.NamingEvent)"/>
+        /// </summary>
         void ObjectChanged(NamingEvent evt);
     }
 
@@ -32,7 +38,7 @@ namespace Javax.Naming.Event
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ObjectChangeListener : IObjectChangeListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.naming.event.JNetObjectChangeListener";
 
         readonly Action<NamingEvent> ObjectChangedFunction = null;
@@ -60,7 +66,7 @@ namespace Javax.Naming.Event
         {
             OnObjectChanged(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="IObjectChangeListener.ObjectChanged(NamingEvent)"/>
         public virtual void ObjectChanged(NamingEvent evt)
         {
 

@@ -22,6 +22,9 @@ namespace Java.Time
     {
         // can be extended with methods not reflected or not available in Java; add a single method related to TimeSpan of .NET: Duration and Timespan are similar
 
+        /// <summary>
+        /// Converter from <see cref="System.TimeSpan"/> to <see cref="Duration"/>
+        /// </summary>
         public static implicit operator Duration(System.TimeSpan timespan)
         {
             var milli = timespan.TotalMilliseconds;

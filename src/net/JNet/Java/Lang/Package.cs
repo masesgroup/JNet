@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public sealed class Package : JVMBridgeBase<Package>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public override string ClassName => "java.lang.Package";
         /// <summary>
         /// Returns this element's annotation for the specified type if such an annotation is present, else null.
@@ -71,9 +71,9 @@ namespace Java.Lang
         /// Find a package by name in the callers ClassLoader instance.
         /// </summary>
         public static Package GetPackage(string name) => SExecute<Package>("getPackage", name);
-        ///// <summary>
-        ///// Get all the packages currently known for the caller's ClassLoader instance.
-        ///// </summary>
+        /// <summary>
+        /// Get all the packages currently known for the caller's ClassLoader instance.
+        /// </summary>
         public static Package[] Packages => SExecuteArray<Package>("getPackages");
         /// <summary>
         /// Return the title of the specification that this package implements.

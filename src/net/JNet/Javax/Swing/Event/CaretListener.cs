@@ -21,18 +21,24 @@ using System;
 
 namespace Javax.Swing.Event
 {
+    /// <summary>
+    /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html"/>
+    /// </summary>
     public interface ICaretListener : IJVMBridgeBase
     {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html#caretUpdate(javax.swing.event.CaretEvent)"/>
+        /// </summary>
         void CaretUpdate(CaretEvent e);
     }
 
     /// <summary>
-    /// Listener for CaretListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="ICaretListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="ICaretListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class CaretListener : ICaretListener
     {
-        /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
         public sealed override string ClassName => "org.mases.jnet.swing.event.JNetCaretListener";
 
         readonly Action<CaretEvent> CaretUpdateFunction = null;
@@ -60,7 +66,7 @@ namespace Javax.Swing.Event
         {
             OnCaretUpdate(data.EventData.TypedEventData);
         }
-
+        /// <inheritdoc cref="ICaretListener.CaretUpdate(CaretEvent)"/>
         public virtual void CaretUpdate(CaretEvent e)
         {
 

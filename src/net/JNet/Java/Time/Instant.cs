@@ -22,6 +22,9 @@ namespace Java.Time
     {
         // can be extended with methods not reflected or not available in Java; add a single method related to DateTime of .NET: Instant and DateTime are similar
 
+        /// <summary>
+        /// Converter from <see cref="System.DateTime"/> to <see cref="Instant"/>
+        /// </summary>
         public static implicit operator Instant(System.DateTime dt)
         {
             var milli = new System.DateTimeOffset(dt).ToUnixTimeMilliseconds();
