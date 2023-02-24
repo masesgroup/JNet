@@ -33,6 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.SwingUtilities"/> to <see cref="Javax.Swing.SwingConstants"/>
+        /// </summary>
         public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.SwingUtilities t) => t.Cast<Javax.Swing.SwingConstants>();
         
         #endregion
@@ -43,309 +46,457 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isDescendingFrom(java.awt.Component,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isDescendingFrom(java.awt.Component,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsDescendingFrom(Java.Awt.Component arg0, Java.Awt.Component arg1)
         {
             return SExecute<bool>("isDescendingFrom", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isEventDispatchThread()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isEventDispatchThread()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public static bool IsEventDispatchThread()
         {
             return SExecute<bool>("isEventDispatchThread");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isLeftMouseButton(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isLeftMouseButton(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsLeftMouseButton(Java.Awt.EventNs.MouseEvent arg0)
         {
             return SExecute<bool>("isLeftMouseButton", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isMiddleMouseButton(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isMiddleMouseButton(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsMiddleMouseButton(Java.Awt.EventNs.MouseEvent arg0)
         {
             return SExecute<bool>("isMiddleMouseButton", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isRightMouseButton(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isRightMouseButton(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsRightMouseButton(Java.Awt.EventNs.MouseEvent arg0)
         {
             return SExecute<bool>("isRightMouseButton", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#notifyAction(javax.swing.Action,javax.swing.KeyStroke,java.awt.event.KeyEvent,java.lang.Object,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#notifyAction(javax.swing.Action,javax.swing.KeyStroke,java.awt.event.KeyEvent,java.lang.Object,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        /// <param name="arg3"><see langword="object"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool NotifyAction(Javax.Swing.Action arg0, Javax.Swing.KeyStroke arg1, Java.Awt.EventNs.KeyEvent arg2, object arg3, int arg4)
         {
             return SExecute<bool>("notifyAction", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#processKeyBindings(java.awt.event.KeyEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#processKeyBindings(java.awt.event.KeyEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool ProcessKeyBindings(Java.Awt.EventNs.KeyEvent arg0)
         {
             return SExecute<bool>("processKeyBindings", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isRectangleContainingRectangle(java.awt.Rectangle,java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isRectangleContainingRectangle(java.awt.Rectangle,java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsRectangleContainingRectangle(Java.Awt.Rectangle arg0, Java.Awt.Rectangle arg1)
         {
             return SExecute<bool>("isRectangleContainingRectangle", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeStringWidth(java.awt.FontMetrics,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeStringWidth(java.awt.FontMetrics,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontMetrics"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int ComputeStringWidth(Java.Awt.FontMetrics arg0, string arg1)
         {
             return SExecute<int>("computeStringWidth", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleChildrenCount(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleChildrenCount(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int GetAccessibleChildrenCount(Java.Awt.Component arg0)
         {
             return SExecute<int>("getAccessibleChildrenCount", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleIndexInParent(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleIndexInParent(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int GetAccessibleIndexInParent(Java.Awt.Component arg0)
         {
             return SExecute<int>("getAccessibleIndexInParent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getDeepestComponentAt(java.awt.Component,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getDeepestComponentAt(java.awt.Component,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component GetDeepestComponentAt(Java.Awt.Component arg0, int arg1, int arg2)
         {
             return SExecute<Java.Awt.Component>("getDeepestComponentAt", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getRoot(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getRoot(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component GetRoot(Java.Awt.Component arg0)
         {
             return SExecute<Java.Awt.Component>("getRoot", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getUnwrappedView(javax.swing.JViewport)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getUnwrappedView(javax.swing.JViewport)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JViewport"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component GetUnwrappedView(Javax.Swing.JViewport arg0)
         {
             return SExecute<Java.Awt.Component>("getUnwrappedView", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAncestorNamed(java.lang.String,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAncestorNamed(java.lang.String,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Container"/></returns>
         public static Java.Awt.Container GetAncestorNamed(string arg0, Java.Awt.Component arg1)
         {
             return SExecute<Java.Awt.Container>("getAncestorNamed", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getUnwrappedParent(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getUnwrappedParent(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Container"/></returns>
         public static Java.Awt.Container GetUnwrappedParent(Java.Awt.Component arg0)
         {
             return SExecute<Java.Awt.Container>("getUnwrappedParent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertMouseEvent(java.awt.Component,java.awt.event.MouseEvent,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertMouseEvent(java.awt.Component,java.awt.event.MouseEvent,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.EventNs.MouseEvent"/></returns>
         public static Java.Awt.EventNs.MouseEvent ConvertMouseEvent(Java.Awt.Component arg0, Java.Awt.EventNs.MouseEvent arg1, Java.Awt.Component arg2)
         {
             return SExecute<Java.Awt.EventNs.MouseEvent>("convertMouseEvent", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertPoint(java.awt.Component,int,int,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertPoint(java.awt.Component,int,int,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Point"/></returns>
         public static Java.Awt.Point ConvertPoint(Java.Awt.Component arg0, int arg1, int arg2, Java.Awt.Component arg3)
         {
             return SExecute<Java.Awt.Point>("convertPoint", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertPoint(java.awt.Component,java.awt.Point,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertPoint(java.awt.Component,java.awt.Point,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Point"/></returns>
         public static Java.Awt.Point ConvertPoint(Java.Awt.Component arg0, Java.Awt.Point arg1, Java.Awt.Component arg2)
         {
             return SExecute<Java.Awt.Point>("convertPoint", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#calculateInnerArea(javax.swing.JComponent,java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#calculateInnerArea(javax.swing.JComponent,java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle CalculateInnerArea(Javax.Swing.JComponent arg0, Java.Awt.Rectangle arg1)
         {
             return SExecute<Java.Awt.Rectangle>("calculateInnerArea", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeIntersection(int,int,int,int,java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeIntersection(int,int,int,int,java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Rectangle"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle ComputeIntersection(int arg0, int arg1, int arg2, int arg3, Java.Awt.Rectangle arg4)
         {
             return SExecute<Java.Awt.Rectangle>("computeIntersection", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeUnion(int,int,int,int,java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeUnion(int,int,int,int,java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Rectangle"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle ComputeUnion(int arg0, int arg1, int arg2, int arg3, Java.Awt.Rectangle arg4)
         {
             return SExecute<Java.Awt.Rectangle>("computeUnion", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertRectangle(java.awt.Component,java.awt.Rectangle,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertRectangle(java.awt.Component,java.awt.Rectangle,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle ConvertRectangle(Java.Awt.Component arg0, Java.Awt.Rectangle arg1, Java.Awt.Component arg2)
         {
             return SExecute<Java.Awt.Rectangle>("convertRectangle", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getLocalBounds(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getLocalBounds(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle GetLocalBounds(Java.Awt.Component arg0)
         {
             return SExecute<Java.Awt.Rectangle>("getLocalBounds", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeDifference(java.awt.Rectangle,java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeDifference(java.awt.Rectangle,java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle[] ComputeDifference(Java.Awt.Rectangle arg0, Java.Awt.Rectangle arg1)
         {
             return SExecuteArray<Java.Awt.Rectangle>("computeDifference", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getWindowAncestor(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getWindowAncestor(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Window"/></returns>
         public static Java.Awt.Window GetWindowAncestor(Java.Awt.Component arg0)
         {
             return SExecute<Java.Awt.Window>("getWindowAncestor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#windowForComponent(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#windowForComponent(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Window"/></returns>
         public static Java.Awt.Window WindowForComponent(Java.Awt.Component arg0)
         {
             return SExecute<Java.Awt.Window>("windowForComponent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#layoutCompoundLabel(java.awt.FontMetrics,java.lang.String,javax.swing.Icon,int,int,int,int,java.awt.Rectangle,java.awt.Rectangle,java.awt.Rectangle,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#layoutCompoundLabel(java.awt.FontMetrics,java.lang.String,javax.swing.Icon,int,int,int,int,java.awt.Rectangle,java.awt.Rectangle,java.awt.Rectangle,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontMetrics"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg7"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg8"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg9"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg10"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string LayoutCompoundLabel(Java.Awt.FontMetrics arg0, string arg1, Javax.Swing.Icon arg2, int arg3, int arg4, int arg5, int arg6, Java.Awt.Rectangle arg7, Java.Awt.Rectangle arg8, Java.Awt.Rectangle arg9, int arg10)
         {
             return SExecute<string>("layoutCompoundLabel", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#layoutCompoundLabel(javax.swing.JComponent,java.awt.FontMetrics,java.lang.String,javax.swing.Icon,int,int,int,int,java.awt.Rectangle,java.awt.Rectangle,java.awt.Rectangle,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#layoutCompoundLabel(javax.swing.JComponent,java.awt.FontMetrics,java.lang.String,javax.swing.Icon,int,int,int,int,java.awt.Rectangle,java.awt.Rectangle,java.awt.Rectangle,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontMetrics"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg7"><see langword="int"/></param>
+        /// <param name="arg8"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg9"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg10"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg11"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string LayoutCompoundLabel(Javax.Swing.JComponent arg0, Java.Awt.FontMetrics arg1, string arg2, Javax.Swing.Icon arg3, int arg4, int arg5, int arg6, int arg7, Java.Awt.Rectangle arg8, Java.Awt.Rectangle arg9, Java.Awt.Rectangle arg10, int arg11)
         {
             return SExecute<string>("layoutCompoundLabel", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleAt(java.awt.Component,java.awt.Point)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleAt(java.awt.Component,java.awt.Point)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
+        /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
         public static Javax.Accessibility.Accessible GetAccessibleAt(Java.Awt.Component arg0, Java.Awt.Point arg1)
         {
             return SExecute<Javax.Accessibility.Accessible>("getAccessibleAt", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleChild(java.awt.Component,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleChild(java.awt.Component,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
         public static Javax.Accessibility.Accessible GetAccessibleChild(Java.Awt.Component arg0, int arg1)
         {
             return SExecute<Javax.Accessibility.Accessible>("getAccessibleChild", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleStateSet(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleStateSet(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Javax.Accessibility.AccessibleStateSet"/></returns>
         public static Javax.Accessibility.AccessibleStateSet GetAccessibleStateSet(Java.Awt.Component arg0)
         {
             return SExecute<Javax.Accessibility.AccessibleStateSet>("getAccessibleStateSet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getUIActionMap(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getUIActionMap(javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <returns><see cref="Javax.Swing.ActionMap"/></returns>
         public static Javax.Swing.ActionMap GetUIActionMap(Javax.Swing.JComponent arg0)
         {
             return SExecute<Javax.Swing.ActionMap>("getUIActionMap", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getUIInputMap(javax.swing.JComponent,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getUIInputMap(javax.swing.JComponent,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.InputMap"/></returns>
         public static Javax.Swing.InputMap GetUIInputMap(Javax.Swing.JComponent arg0, int arg1)
         {
             return SExecute<Javax.Swing.InputMap>("getUIInputMap", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getRootPane(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getRootPane(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Javax.Swing.JRootPane"/></returns>
         public static Javax.Swing.JRootPane GetRootPane(Java.Awt.Component arg0)
         {
             return SExecute<Javax.Swing.JRootPane>("getRootPane", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertPointFromScreen(java.awt.Point,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertPointFromScreen(java.awt.Point,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public static void ConvertPointFromScreen(Java.Awt.Point arg0, Java.Awt.Component arg1)
         {
             SExecute("convertPointFromScreen", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertPointToScreen(java.awt.Point,java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertPointToScreen(java.awt.Point,java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public static void ConvertPointToScreen(Java.Awt.Point arg0, Java.Awt.Component arg1)
         {
             SExecute("convertPointToScreen", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#invokeAndWait(java.lang.Runnable) throws java.lang.InterruptedException,java.lang.reflect.InvocationTargetException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#invokeAndWait(java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref="Java.Lang.Reflect.InvocationTargetException"/>
         public static void InvokeAndWait(Java.Lang.Runnable arg0)
         {
             SExecute("invokeAndWait", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#invokeLater(java.lang.Runnable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#invokeLater(java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         public static void InvokeLater(Java.Lang.Runnable arg0)
         {
             SExecute("invokeLater", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#paintComponent(java.awt.Graphics,java.awt.Component,java.awt.Container,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#paintComponent(java.awt.Graphics,java.awt.Component,java.awt.Container,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Container"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
         public static void PaintComponent(Java.Awt.Graphics arg0, Java.Awt.Component arg1, Java.Awt.Container arg2, int arg3, int arg4, int arg5, int arg6)
         {
             SExecute("paintComponent", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#paintComponent(java.awt.Graphics,java.awt.Component,java.awt.Container,java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#paintComponent(java.awt.Graphics,java.awt.Component,java.awt.Container,java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Container"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Rectangle"/></param>
         public static void PaintComponent(Java.Awt.Graphics arg0, Java.Awt.Component arg1, Java.Awt.Container arg2, Java.Awt.Rectangle arg3)
         {
             SExecute("paintComponent", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#replaceUIActionMap(javax.swing.JComponent,javax.swing.ActionMap)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#replaceUIActionMap(javax.swing.JComponent,javax.swing.ActionMap)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.ActionMap"/></param>
         public static void ReplaceUIActionMap(Javax.Swing.JComponent arg0, Javax.Swing.ActionMap arg1)
         {
             SExecute("replaceUIActionMap", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#replaceUIInputMap(javax.swing.JComponent,int,javax.swing.InputMap)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#replaceUIInputMap(javax.swing.JComponent,int,javax.swing.InputMap)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.InputMap"/></param>
         public static void ReplaceUIInputMap(Javax.Swing.JComponent arg0, int arg1, Javax.Swing.InputMap arg2)
         {
             SExecute("replaceUIInputMap", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#updateComponentTreeUI(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#updateComponentTreeUI(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public static void UpdateComponentTreeUI(Java.Awt.Component arg0)
         {
             SExecute("updateComponentTreeUI", arg0);

@@ -30,36 +30,51 @@ namespace Javax.Swing.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#<init>(javax.swing.table.TableModel,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#%3Cinit%3E(javax.swing.table.TableModel,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public TableModelEvent(Javax.Swing.Table.TableModel arg0, int arg1, int arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#<init>(javax.swing.table.TableModel,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#%3Cinit%3E(javax.swing.table.TableModel,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public TableModelEvent(Javax.Swing.Table.TableModel arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#<init>(javax.swing.table.TableModel,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#%3Cinit%3E(javax.swing.table.TableModel,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public TableModelEvent(Javax.Swing.Table.TableModel arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#<init>(javax.swing.table.TableModel,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#%3Cinit%3E(javax.swing.table.TableModel,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public TableModelEvent(Javax.Swing.Table.TableModel arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#<init>(javax.swing.table.TableModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#%3Cinit%3E(javax.swing.table.TableModel)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
         public TableModelEvent(Javax.Swing.Table.TableModel arg0)
             : base(arg0)
         {
@@ -73,23 +88,23 @@ namespace Javax.Swing.Event
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#ALL_COLUMNS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#ALL_COLUMNS"/>
         /// </summary>
         public static int ALL_COLUMNS => Clazz.GetField<int>("ALL_COLUMNS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#DELETE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#DELETE"/>
         /// </summary>
         public static int DELETE => Clazz.GetField<int>("DELETE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#HEADER_ROW
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#HEADER_ROW"/>
         /// </summary>
         public static int HEADER_ROW => Clazz.GetField<int>("HEADER_ROW");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#INSERT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#INSERT"/>
         /// </summary>
         public static int INSERT => Clazz.GetField<int>("INSERT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#UPDATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#UPDATE"/>
         /// </summary>
         public static int UPDATE => Clazz.GetField<int>("UPDATE");
         
@@ -101,28 +116,28 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#getColumn() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#getColumn()"/> 
         /// </summary>
         public int Column
         {
             get { return IExecute<int>("getColumn"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#getFirstRow() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#getFirstRow()"/> 
         /// </summary>
         public int FirstRow
         {
             get { return IExecute<int>("getFirstRow"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#getLastRow() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#getLastRow()"/> 
         /// </summary>
         public int LastRow
         {
             get { return IExecute<int>("getLastRow"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#getType()"/> 
         /// </summary>
         public int Type
         {

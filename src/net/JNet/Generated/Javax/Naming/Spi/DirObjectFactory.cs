@@ -33,6 +33,9 @@ namespace Javax.Naming.Spi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Spi.DirObjectFactory"/> to <see cref="Javax.Naming.Spi.ObjectFactory"/>
+        /// </summary>
         public static implicit operator Javax.Naming.Spi.ObjectFactory(Javax.Naming.Spi.DirObjectFactory t) => t.Cast<Javax.Naming.Spi.ObjectFactory>();
         
         #endregion

@@ -30,8 +30,9 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Panel.html#<init>(java.awt.LayoutManager)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Panel.html#%3Cinit%3E(java.awt.LayoutManager)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.LayoutManager"/></param>
         public Panel(Java.Awt.LayoutManager arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Panel"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.Panel t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion

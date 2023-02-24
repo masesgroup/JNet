@@ -46,35 +46,35 @@ namespace Javax.Xml.Stream
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getCharacterOffset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getCharacterOffset()"/> 
         /// </summary>
         public int CharacterOffset
         {
             get { return IExecute<int>("getCharacterOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getColumnNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getColumnNumber()"/> 
         /// </summary>
         public int ColumnNumber
         {
             get { return IExecute<int>("getColumnNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getLineNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getLineNumber()"/> 
         /// </summary>
         public int LineNumber
         {
             get { return IExecute<int>("getLineNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getPublicId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getPublicId()"/> 
         /// </summary>
         public string PublicId
         {
             get { return IExecute<string>("getPublicId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getSystemId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html#getSystemId()"/> 
         /// </summary>
         public string SystemId
         {

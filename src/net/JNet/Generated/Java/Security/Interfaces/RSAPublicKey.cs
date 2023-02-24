@@ -33,14 +33,20 @@ namespace Java.Security.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.RSAPublicKey"/> to <see cref="Java.Security.PublicKey"/>
+        /// </summary>
         public static implicit operator Java.Security.PublicKey(Java.Security.Interfaces.RSAPublicKey t) => t.Cast<Java.Security.PublicKey>();
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.RSAPublicKey"/> to <see cref="Java.Security.Interfaces.RSAKey"/>
+        /// </summary>
         public static implicit operator Java.Security.Interfaces.RSAKey(Java.Security.Interfaces.RSAPublicKey t) => t.Cast<Java.Security.Interfaces.RSAKey>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html#serialVersionUID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         
@@ -52,7 +58,7 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html#getPublicExponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html#getPublicExponent()"/> 
         /// </summary>
         public Java.Math.BigInteger PublicExponent
         {

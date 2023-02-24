@@ -38,19 +38,19 @@ namespace Org.W3c.Dom.Ls
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_ACCEPT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_ACCEPT"/>
         /// </summary>
         public static short FILTER_ACCEPT => Clazz.GetField<short>("FILTER_ACCEPT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_INTERRUPT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_INTERRUPT"/>
         /// </summary>
         public static short FILTER_INTERRUPT => Clazz.GetField<short>("FILTER_INTERRUPT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_REJECT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_REJECT"/>
         /// </summary>
         public static short FILTER_REJECT => Clazz.GetField<short>("FILTER_REJECT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_SKIP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_SKIP"/>
         /// </summary>
         public static short FILTER_SKIP => Clazz.GetField<short>("FILTER_SKIP");
         
@@ -62,22 +62,26 @@ namespace Org.W3c.Dom.Ls
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#getWhatToShow() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#getWhatToShow()"/> 
         /// </summary>
         public int WhatToShow
         {
             get { return IExecute<int>("getWhatToShow"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#acceptNode(org.w3c.dom.Node)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#acceptNode(org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <returns><see langword="short"/></returns>
         public short AcceptNode(Org.W3c.Dom.Node arg0)
         {
             return IExecute<short>("acceptNode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#startElement(org.w3c.dom.Element)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#startElement(org.w3c.dom.Element)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Element"/></param>
+        /// <returns><see langword="short"/></returns>
         public short StartElement(Org.W3c.Dom.Element arg0)
         {
             return IExecute<short>("startElement", arg0);

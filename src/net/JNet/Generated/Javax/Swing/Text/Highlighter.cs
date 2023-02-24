@@ -46,57 +46,70 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#getHighlights() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#getHighlights()"/> 
         /// </summary>
         public Javax.Swing.Text.Highlighter.Highlight[] Highlights
         {
             get { return IExecuteArray<Javax.Swing.Text.Highlighter.Highlight>("getHighlights"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#addHighlight(int,int,javax.swing.text.Highlighter$HighlightPainter) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#addHighlight(int,int,javax.swing.text.Highlighter$HighlightPainter)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Text.Highlighter.HighlightPainter"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public object AddHighlight(int arg0, int arg1, Javax.Swing.Text.Highlighter.HighlightPainter arg2)
         {
             return IExecute("addHighlight", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#changeHighlight(java.lang.Object,int,int) throws javax.swing.text.BadLocationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#changeHighlight(java.lang.Object,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void ChangeHighlight(object arg0, int arg1, int arg2)
         {
             IExecute("changeHighlight", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#deinstall(javax.swing.text.JTextComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#deinstall(javax.swing.text.JTextComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
         public void Deinstall(Javax.Swing.Text.JTextComponent arg0)
         {
             IExecute("deinstall", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#install(javax.swing.text.JTextComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#install(javax.swing.text.JTextComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
         public void Install(Javax.Swing.Text.JTextComponent arg0)
         {
             IExecute("install", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#paint(java.awt.Graphics)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#paint(java.awt.Graphics)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
         public void Paint(Java.Awt.Graphics arg0)
         {
             IExecute("paint", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#removeAllHighlights()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#removeAllHighlights()"/>
         /// </summary>
         public void RemoveAllHighlights()
         {
             IExecute("removeAllHighlights");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#removeHighlight(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#removeHighlight(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void RemoveHighlight(object arg0)
         {
             IExecute("removeHighlight", arg0);
@@ -126,21 +139,21 @@ namespace Javax.Swing.Text
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.Highlight.html#getEndOffset() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.Highlight.html#getEndOffset()"/> 
             /// </summary>
             public int EndOffset
             {
                 get { return IExecute<int>("getEndOffset"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.Highlight.html#getPainter() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.Highlight.html#getPainter()"/> 
             /// </summary>
             public Javax.Swing.Text.Highlighter.HighlightPainter Painter
             {
                 get { return IExecute<Javax.Swing.Text.Highlighter.HighlightPainter>("getPainter"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.Highlight.html#getStartOffset() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.Highlight.html#getStartOffset()"/> 
             /// </summary>
             public int StartOffset
             {
@@ -174,8 +187,13 @@ namespace Javax.Swing.Text
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.HighlightPainter.html#paint(java.awt.Graphics,int,int,java.awt.Shape,javax.swing.text.JTextComponent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.HighlightPainter.html#paint(java.awt.Graphics,int,int,java.awt.Shape,javax.swing.text.JTextComponent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg3"><see cref="Java.Awt.Shape"/></param>
+            /// <param name="arg4"><see cref="Javax.Swing.Text.JTextComponent"/></param>
             public void Paint(Java.Awt.Graphics arg0, int arg1, int arg2, Java.Awt.Shape arg3, Javax.Swing.Text.JTextComponent arg4)
             {
                 IExecute("paint", arg0, arg1, arg2, arg3, arg4);

@@ -46,8 +46,10 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Control.html#getType()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Control.html#getType()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Sound.Sampled.Control.Type"/></returns>
         public Javax.Sound.Sampled.Control.Type GetType()
         {
             return IExecute<Javax.Sound.Sampled.Control.Type>("getType");

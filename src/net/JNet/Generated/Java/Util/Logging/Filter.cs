@@ -46,8 +46,10 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Filter.html#isLoggable(java.util.logging.LogRecord)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Filter.html#isLoggable(java.util.logging.LogRecord)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsLoggable(Java.Util.Logging.LogRecord arg0)
         {
             return IExecute<bool>("isLoggable", arg0);

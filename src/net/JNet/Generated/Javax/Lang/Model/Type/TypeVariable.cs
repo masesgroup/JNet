@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Type
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Type.TypeVariable"/> to <see cref="Javax.Lang.Model.Type.ReferenceType"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Type.ReferenceType(Javax.Lang.Model.Type.TypeVariable t) => t.Cast<Javax.Lang.Model.Type.ReferenceType>();
         
         #endregion
@@ -47,22 +50,24 @@ namespace Javax.Lang.Model.Type
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#getLowerBound() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#getLowerBound()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror LowerBound
         {
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getLowerBound"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#getUpperBound() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#getUpperBound()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror UpperBound
         {
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getUpperBound"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#asElement()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#asElement()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Lang.Model.Element.Element"/></returns>
         public Javax.Lang.Model.Element.Element AsElement()
         {
             return IExecute<Javax.Lang.Model.Element.Element>("asElement");

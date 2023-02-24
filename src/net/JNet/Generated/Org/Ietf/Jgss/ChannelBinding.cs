@@ -30,15 +30,19 @@ namespace Org.Ietf.Jgss
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html#<init>(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html#%3Cinit%3E(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
         public ChannelBinding(byte[] arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html#<init>(java.net.InetAddress,java.net.InetAddress,byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html#%3Cinit%3E(java.net.InetAddress,java.net.InetAddress,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg2"><see cref="byte"/></param>
         public ChannelBinding(Java.Net.InetAddress arg0, Java.Net.InetAddress arg1, byte[] arg2)
             : base(arg0, arg1, arg2)
         {
@@ -60,21 +64,21 @@ namespace Org.Ietf.Jgss
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html#getAcceptorAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html#getAcceptorAddress()"/> 
         /// </summary>
         public Java.Net.InetAddress AcceptorAddress
         {
             get { return IExecute<Java.Net.InetAddress>("getAcceptorAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html#getApplicationData() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html#getApplicationData()"/> 
         /// </summary>
         public byte[] ApplicationData
         {
             get { return IExecuteArray<byte>("getApplicationData"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html#getInitiatorAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html#getInitiatorAddress()"/> 
         /// </summary>
         public Java.Net.InetAddress InitiatorAddress
         {

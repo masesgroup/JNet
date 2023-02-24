@@ -33,13 +33,16 @@ namespace Org.W3c.Dom.Xpath
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Xpath.XPathNamespace"/> to <see cref="Org.W3c.Dom.Node"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Node(Org.W3c.Dom.Xpath.XPathNamespace t) => t.Cast<Org.W3c.Dom.Node>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathNamespace.html#XPATH_NAMESPACE_NODE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathNamespace.html#XPATH_NAMESPACE_NODE"/>
         /// </summary>
         public static short XPATH_NAMESPACE_NODE => Clazz.GetField<short>("XPATH_NAMESPACE_NODE");
         
@@ -51,7 +54,7 @@ namespace Org.W3c.Dom.Xpath
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathNamespace.html#getOwnerElement() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathNamespace.html#getOwnerElement()"/> 
         /// </summary>
         public Org.W3c.Dom.Element OwnerElement
         {

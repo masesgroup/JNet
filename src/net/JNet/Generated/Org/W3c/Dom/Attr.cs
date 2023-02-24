@@ -33,6 +33,9 @@ namespace Org.W3c.Dom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Attr"/> to <see cref="Org.W3c.Dom.Node"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Node(Org.W3c.Dom.Attr t) => t.Cast<Org.W3c.Dom.Node>();
         
         #endregion
@@ -47,43 +50,45 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getOwnerElement() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getOwnerElement()"/> 
         /// </summary>
         public Org.W3c.Dom.Element OwnerElement
         {
             get { return IExecute<Org.W3c.Dom.Element>("getOwnerElement"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getSchemaTypeInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getSchemaTypeInfo()"/> 
         /// </summary>
         public Org.W3c.Dom.TypeInfo SchemaTypeInfo
         {
             get { return IExecute<Org.W3c.Dom.TypeInfo>("getSchemaTypeInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getSpecified() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getSpecified()"/> 
         /// </summary>
         public bool Specified
         {
             get { return IExecute<bool>("getSpecified"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getValue() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#setValue(java.lang.String) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#setValue(java.lang.String)"/>
         /// </summary>
         public string Value
         {
             get { return IExecute<string>("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#isId()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#isId()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsId()
         {
             return IExecute<bool>("isId");

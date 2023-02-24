@@ -30,8 +30,9 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#<init>(java.util.concurrent.Executor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#%3Cinit%3E(java.util.concurrent.Executor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         public ExecutorCompletionService(Java.Util.Concurrent.Executor arg0)
             : base(arg0)
         {

@@ -30,8 +30,9 @@ namespace Javax.Imageio.Plugins.Jpeg
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#<init>(int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#%3Cinit%3E(int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
         public JPEGQTable(int[] arg0)
             : base(arg0)
         {
@@ -45,19 +46,19 @@ namespace Javax.Imageio.Plugins.Jpeg
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K1Div2Luminance
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K1Div2Luminance"/>
         /// </summary>
         public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K1Div2Luminance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K1Div2Luminance");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K1Luminance
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K1Luminance"/>
         /// </summary>
         public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K1Luminance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K1Luminance");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K2Chrominance
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K2Chrominance"/>
         /// </summary>
         public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K2Chrominance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K2Chrominance");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K2Div2Chrominance
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K2Div2Chrominance"/>
         /// </summary>
         public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K2Div2Chrominance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K2Div2Chrominance");
         
@@ -69,15 +70,18 @@ namespace Javax.Imageio.Plugins.Jpeg
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#getTable() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#getTable()"/> 
         /// </summary>
         public int[] Table
         {
             get { return IExecuteArray<int>("getTable"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#getScaledInstance(float,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#getScaledInstance(float,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see cref="Javax.Imageio.Plugins.Jpeg.JPEGQTable"/></returns>
         public Javax.Imageio.Plugins.Jpeg.JPEGQTable GetScaledInstance(float arg0, bool arg1)
         {
             return IExecute<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("getScaledInstance", arg0, arg1);

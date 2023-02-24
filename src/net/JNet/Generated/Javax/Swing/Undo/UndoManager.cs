@@ -33,6 +33,9 @@ namespace Javax.Swing.Undo
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Undo.UndoManager"/> to <see cref="Javax.Swing.Event.UndoableEditListener"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Event.UndoableEditListener(Javax.Swing.Undo.UndoManager t) => t.Cast<Javax.Swing.Event.UndoableEditListener>();
         
         #endregion
@@ -47,43 +50,49 @@ namespace Javax.Swing.Undo
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#getLimit() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#setLimit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#getLimit()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#setLimit(int)"/>
         /// </summary>
         public int Limit
         {
             get { return IExecute<int>("getLimit"); } set { IExecute("setLimit", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#getUndoOrRedoPresentationName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#getUndoOrRedoPresentationName()"/> 
         /// </summary>
         public string UndoOrRedoPresentationName
         {
             get { return IExecute<string>("getUndoOrRedoPresentationName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#canUndoOrRedo()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#canUndoOrRedo()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool CanUndoOrRedo()
         {
             return IExecute<bool>("canUndoOrRedo");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#discardAllEdits()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#discardAllEdits()"/>
         /// </summary>
         public void DiscardAllEdits()
         {
             IExecute("discardAllEdits");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#undoableEditHappened(javax.swing.event.UndoableEditEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#undoableEditHappened(javax.swing.event.UndoableEditEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditEvent"/></param>
         public void UndoableEditHappened(Javax.Swing.Event.UndoableEditEvent arg0)
         {
             IExecute("undoableEditHappened", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#undoOrRedo() throws javax.swing.undo.CannotRedoException,javax.swing.undo.CannotUndoException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#undoOrRedo()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Swing.Undo.CannotRedoException"/>
+        /// <exception cref="Javax.Swing.Undo.CannotUndoException"/>
         public void UndoOrRedo()
         {
             IExecute("undoOrRedo");

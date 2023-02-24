@@ -46,8 +46,11 @@ namespace Javax.Security.Auth.Callback
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/CallbackHandler.html#handle(javax.security.auth.callback.Callback[]) throws java.io.IOException,javax.security.auth.callback.UnsupportedCallbackException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/CallbackHandler.html#handle(javax.security.auth.callback.Callback[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Callback.Callback"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Javax.Security.Auth.Callback.UnsupportedCallbackException"/>
         public void Handle(Javax.Security.Auth.Callback.Callback[] arg0)
         {
             IExecute("handle", arg0);

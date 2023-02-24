@@ -38,19 +38,19 @@ namespace Java.Nio.File
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html#OVERFLOW
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html#OVERFLOW"/>
         /// </summary>
         public static Java.Nio.File.WatchEvent.Kind OVERFLOW => Clazz.GetField<Java.Nio.File.WatchEvent.Kind>("OVERFLOW");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html#ENTRY_CREATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html#ENTRY_CREATE"/>
         /// </summary>
         public static Java.Nio.File.WatchEvent.Kind ENTRY_CREATE => Clazz.GetField<Java.Nio.File.WatchEvent.Kind>("ENTRY_CREATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html#ENTRY_DELETE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html#ENTRY_DELETE"/>
         /// </summary>
         public static Java.Nio.File.WatchEvent.Kind ENTRY_DELETE => Clazz.GetField<Java.Nio.File.WatchEvent.Kind>("ENTRY_DELETE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html#ENTRY_MODIFY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html#ENTRY_MODIFY"/>
         /// </summary>
         public static Java.Nio.File.WatchEvent.Kind ENTRY_MODIFY => Clazz.GetField<Java.Nio.File.WatchEvent.Kind>("ENTRY_MODIFY");
         

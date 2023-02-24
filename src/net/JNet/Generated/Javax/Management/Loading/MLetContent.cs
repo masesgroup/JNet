@@ -46,49 +46,49 @@ namespace Javax.Management.Loading
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getCode() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getCode()"/> 
         /// </summary>
         public string Code
         {
             get { return IExecute<string>("getCode"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getCodeBase() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getCodeBase()"/> 
         /// </summary>
         public Java.Net.URL CodeBase
         {
             get { return IExecute<Java.Net.URL>("getCodeBase"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getDocumentBase() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getDocumentBase()"/> 
         /// </summary>
         public Java.Net.URL DocumentBase
         {
             get { return IExecute<Java.Net.URL>("getDocumentBase"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getJarFiles() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getJarFiles()"/> 
         /// </summary>
         public string JarFiles
         {
             get { return IExecute<string>("getJarFiles"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getSerializedObject() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getSerializedObject()"/> 
         /// </summary>
         public string SerializedObject
         {
             get { return IExecute<string>("getSerializedObject"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetContent.html#getVersion()"/> 
         /// </summary>
         public string Version
         {

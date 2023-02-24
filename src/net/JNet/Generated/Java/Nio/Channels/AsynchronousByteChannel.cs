@@ -33,6 +33,9 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.AsynchronousByteChannel"/> to <see cref="Java.Nio.Channels.AsynchronousChannel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.AsynchronousChannel(Java.Nio.Channels.AsynchronousByteChannel t) => t.Cast<Java.Nio.Channels.AsynchronousChannel>();
         
         #endregion

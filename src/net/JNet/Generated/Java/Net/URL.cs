@@ -30,43 +30,67 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.lang.String,java.lang.String,int,java.lang.String,java.net.URLStreamHandler) throws java.net.MalformedURLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.String,java.net.URLStreamHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
+        /// <param name="arg4"><see cref="Java.Net.URLStreamHandler"/></param>
+        /// <exception cref="Java.Net.MalformedURLException"/>
         public URL(string arg0, string arg1, int arg2, string arg3, Java.Net.URLStreamHandler arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.lang.String,java.lang.String,int,java.lang.String) throws java.net.MalformedURLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
+        /// <exception cref="Java.Net.MalformedURLException"/>
         public URL(string arg0, string arg1, int arg2, string arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.lang.String,java.lang.String,java.lang.String) throws java.net.MalformedURLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <exception cref="Java.Net.MalformedURLException"/>
         public URL(string arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.lang.String) throws java.net.MalformedURLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Net.MalformedURLException"/>
         public URL(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.net.URL,java.lang.String,java.net.URLStreamHandler) throws java.net.MalformedURLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.net.URL,java.lang.String,java.net.URLStreamHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Net.URLStreamHandler"/></param>
+        /// <exception cref="Java.Net.MalformedURLException"/>
         public URL(Java.Net.URL arg0, string arg1, Java.Net.URLStreamHandler arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.net.URL,java.lang.String) throws java.net.MalformedURLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#%3Cinit%3E(java.net.URL,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Java.Net.MalformedURLException"/>
         public URL(Java.Net.URL arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -75,6 +99,9 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Net.URL"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Net.URL t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -85,8 +112,9 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#setURLStreamHandlerFactory(java.net.URLStreamHandlerFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#setURLStreamHandlerFactory(java.net.URLStreamHandlerFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
         public static void SetURLStreamHandlerFactory(Java.Net.URLStreamHandlerFactory arg0)
         {
             SExecute("setURLStreamHandlerFactory", arg0);
@@ -96,127 +124,146 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getAuthority() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getAuthority()"/> 
         /// </summary>
         public string Authority
         {
             get { return IExecute<string>("getAuthority"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getContent() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getContent()"/> 
         /// </summary>
         public object Content
         {
             get { return IExecute("getContent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getDefaultPort() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getDefaultPort()"/> 
         /// </summary>
         public int DefaultPort
         {
             get { return IExecute<int>("getDefaultPort"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getFile() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getFile()"/> 
         /// </summary>
         public string File
         {
             get { return IExecute<string>("getFile"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getHost() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getHost()"/> 
         /// </summary>
         public string Host
         {
             get { return IExecute<string>("getHost"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getPath()"/> 
         /// </summary>
         public string Path
         {
             get { return IExecute<string>("getPath"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getPort() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getPort()"/> 
         /// </summary>
         public int Port
         {
             get { return IExecute<int>("getPort"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getProtocol() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getProtocol()"/> 
         /// </summary>
         public string Protocol
         {
             get { return IExecute<string>("getProtocol"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getQuery() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getQuery()"/> 
         /// </summary>
         public string Query
         {
             get { return IExecute<string>("getQuery"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getRef() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getRef()"/> 
         /// </summary>
         public string Ref
         {
             get { return IExecute<string>("getRef"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getUserInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getUserInfo()"/> 
         /// </summary>
         public string UserInfo
         {
             get { return IExecute<string>("getUserInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#sameFile(java.net.URL)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#sameFile(java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool SameFile(Java.Net.URL arg0)
         {
             return IExecute<bool>("sameFile", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openStream() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openStream()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Io.InputStream OpenStream()
         {
             return IExecute<Java.Io.InputStream>("openStream");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getContent(java.lang.Class<?>[]) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#getContent(java.lang.Class%3C?%3E[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public object GetContent(Java.Lang.Class[] arg0)
         {
             return IExecute("getContent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#toExternalForm()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#toExternalForm()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string ToExternalForm()
         {
             return IExecute<string>("toExternalForm");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#toURI() throws java.net.URISyntaxException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#toURI()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.URI"/></returns>
+        /// <exception cref="Java.Net.URISyntaxException"/>
         public Java.Net.URI ToURI()
         {
             return IExecute<Java.Net.URI>("toURI");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openConnection() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openConnection()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.URLConnection"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.URLConnection OpenConnection()
         {
             return IExecute<Java.Net.URLConnection>("openConnection");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openConnection(java.net.Proxy) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#openConnection(java.net.Proxy)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.Proxy"/></param>
+        /// <returns><see cref="Java.Net.URLConnection"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.URLConnection OpenConnection(Java.Net.Proxy arg0)
         {
             return IExecute<Java.Net.URLConnection>("openConnection", arg0);

@@ -42,22 +42,35 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#getDefault() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#setDefault(java.net.Authenticator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#getDefault()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#setDefault(java.net.Authenticator)"/>
         /// </summary>
         public static Java.Net.Authenticator Default
         {
             get { return SExecute<Java.Net.Authenticator>("getDefault"); } set { SExecute("setDefault", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
+        /// <param name="arg4"><see langword="string"/></param>
+        /// <param name="arg5"><see langword="string"/></param>
+        /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(string arg0, Java.Net.InetAddress arg1, int arg2, string arg3, string arg4, string arg5)
         {
             return SExecute<Java.Net.PasswordAuthentication>("requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
+        /// <param name="arg4"><see langword="string"/></param>
+        /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Net.InetAddress arg0, int arg1, string arg2, string arg3, string arg4)
         {
             return SExecute<Java.Net.PasswordAuthentication>("requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4);
@@ -83,11 +96,11 @@ namespace Java.Net
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#PROXY
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#PROXY"/>
             /// </summary>
             public static Java.Net.Authenticator.RequestorType PROXY => Clazz.GetField<Java.Net.Authenticator.RequestorType>("PROXY");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#SERVER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#SERVER"/>
             /// </summary>
             public static Java.Net.Authenticator.RequestorType SERVER => Clazz.GetField<Java.Net.Authenticator.RequestorType>("SERVER");
             
@@ -95,8 +108,10 @@ namespace Java.Net
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Net.Authenticator.RequestorType"/></returns>
             public static Java.Net.Authenticator.RequestorType[] Values()
             {
                 return SExecuteArray<Java.Net.Authenticator.RequestorType>("values");

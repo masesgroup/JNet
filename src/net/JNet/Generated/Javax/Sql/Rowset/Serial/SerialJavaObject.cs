@@ -30,8 +30,10 @@ namespace Javax.Sql.Rowset.Serial
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialJavaObject.html#<init>(java.lang.Object) throws javax.sql.rowset.serial.SerialException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialJavaObject.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public SerialJavaObject(object arg0)
             : base(arg0)
         {
@@ -40,7 +42,13 @@ namespace Javax.Sql.Rowset.Serial
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialJavaObject"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Sql.Rowset.Serial.SerialJavaObject t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialJavaObject"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.Serial.SerialJavaObject t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -55,14 +63,14 @@ namespace Javax.Sql.Rowset.Serial
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialJavaObject.html#getFields() throws javax.sql.rowset.serial.SerialException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialJavaObject.html#getFields()"/> 
         /// </summary>
         public Java.Lang.Reflect.Field[] Fields
         {
             get { return IExecuteArray<Java.Lang.Reflect.Field>("getFields"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialJavaObject.html#getObject() throws javax.sql.rowset.serial.SerialException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialJavaObject.html#getObject()"/> 
         /// </summary>
         public object Object
         {

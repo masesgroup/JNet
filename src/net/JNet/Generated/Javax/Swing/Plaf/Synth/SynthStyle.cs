@@ -46,92 +46,126 @@ namespace Javax.Swing.Plaf.Synth
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getBoolean(javax.swing.plaf.synth.SynthContext,java.lang.Object,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getBoolean(javax.swing.plaf.synth.SynthContext,java.lang.Object,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool GetBoolean(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, bool arg2)
         {
             return IExecute<bool>("getBoolean", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#isOpaque(javax.swing.plaf.synth.SynthContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#isOpaque(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsOpaque(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecute<bool>("isOpaque", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getInt(javax.swing.plaf.synth.SynthContext,java.lang.Object,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getInt(javax.swing.plaf.synth.SynthContext,java.lang.Object,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetInt(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, int arg2)
         {
             return IExecute<int>("getInt", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getColor(javax.swing.plaf.synth.SynthContext,javax.swing.plaf.synth.ColorType)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getColor(javax.swing.plaf.synth.SynthContext,javax.swing.plaf.synth.ColorType)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Plaf.Synth.ColorType"/></param>
+        /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetColor(Javax.Swing.Plaf.Synth.SynthContext arg0, Javax.Swing.Plaf.Synth.ColorType arg1)
         {
             return IExecute<Java.Awt.Color>("getColor", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getFont(javax.swing.plaf.synth.SynthContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getFont(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font GetFont(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecute<Java.Awt.Font>("getFont", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getInsets(javax.swing.plaf.synth.SynthContext,java.awt.Insets)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getInsets(javax.swing.plaf.synth.SynthContext,java.awt.Insets)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Insets"/></param>
+        /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetInsets(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Insets arg1)
         {
             return IExecute<Java.Awt.Insets>("getInsets", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#get(javax.swing.plaf.synth.SynthContext,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#get(javax.swing.plaf.synth.SynthContext,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Get(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1)
         {
             return IExecute("get", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getString(javax.swing.plaf.synth.SynthContext,java.lang.Object,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getString(javax.swing.plaf.synth.SynthContext,java.lang.Object,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetString(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1, string arg2)
         {
             return IExecute<string>("getString", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getIcon(javax.swing.plaf.synth.SynthContext,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getIcon(javax.swing.plaf.synth.SynthContext,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetIcon(Javax.Swing.Plaf.Synth.SynthContext arg0, object arg1)
         {
             return IExecute<Javax.Swing.Icon>("getIcon", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getGraphicsUtils(javax.swing.plaf.synth.SynthContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getGraphicsUtils(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthGraphicsUtils"/></returns>
         public Javax.Swing.Plaf.Synth.SynthGraphicsUtils GetGraphicsUtils(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecute<Javax.Swing.Plaf.Synth.SynthGraphicsUtils>("getGraphicsUtils", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getPainter(javax.swing.plaf.synth.SynthContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#getPainter(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthPainter"/></returns>
         public Javax.Swing.Plaf.Synth.SynthPainter GetPainter(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecute<Javax.Swing.Plaf.Synth.SynthPainter>("getPainter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#installDefaults(javax.swing.plaf.synth.SynthContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#installDefaults(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         public void InstallDefaults(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             IExecute("installDefaults", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#uninstallDefaults(javax.swing.plaf.synth.SynthContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyle.html#uninstallDefaults(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         public void UninstallDefaults(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             IExecute("uninstallDefaults", arg0);

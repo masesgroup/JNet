@@ -30,8 +30,10 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedWriter.html#<init>(java.io.PipedReader) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedWriter.html#%3Cinit%3E(java.io.PipedReader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PipedReader"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public PipedWriter(Java.Io.PipedReader arg0)
             : base(arg0)
         {
@@ -53,8 +55,10 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedWriter.html#connect(java.io.PipedReader) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PipedWriter.html#connect(java.io.PipedReader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PipedReader"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Connect(Java.Io.PipedReader arg0)
         {
             IExecute("connect", arg0);

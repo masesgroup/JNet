@@ -33,6 +33,9 @@ namespace Javax.Sql.Rowset.Spi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Spi.XmlWriter"/> to <see cref="Javax.Sql.RowSetWriter"/>
+        /// </summary>
         public static implicit operator Javax.Sql.RowSetWriter(Javax.Sql.Rowset.Spi.XmlWriter t) => t.Cast<Javax.Sql.RowSetWriter>();
         
         #endregion
@@ -47,8 +50,11 @@ namespace Javax.Sql.Rowset.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/XmlWriter.html#writeXML(javax.sql.rowset.WebRowSet,java.io.Writer) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/XmlWriter.html#writeXML(javax.sql.rowset.WebRowSet,java.io.Writer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.Rowset.WebRowSet"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Writer"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void WriteXML(Javax.Sql.Rowset.WebRowSet arg0, Java.Io.Writer arg1)
         {
             IExecute("writeXML", arg0, arg1);

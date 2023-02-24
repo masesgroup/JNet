@@ -46,43 +46,55 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#add(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#add(E)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Delayed"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Add(Java.Util.Concurrent.Delayed arg0)
         {
             return IExecute<bool>("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#offer(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#offer(E)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Delayed"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Offer(Java.Util.Concurrent.Delayed arg0)
         {
             return IExecute<bool>("offer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#remainingCapacity()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#remainingCapacity()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int RemainingCapacity()
         {
             return IExecute<int>("remainingCapacity");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#take() throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#take()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public object Take()
         {
             return IExecute("take");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#put(E)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#put(E)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Delayed"/></param>
         public void Put(Java.Util.Concurrent.Delayed arg0)
         {
             IExecute("put", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#put(java.lang.Object) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#put(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public void Put(object arg0)
         {
             IExecute("put", arg0);

@@ -46,15 +46,21 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderSpi.html#engineBuild(java.security.cert.CertPathParameters) throws java.security.cert.CertPathBuilderException,java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderSpi.html#engineBuild(java.security.cert.CertPathParameters)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.CertPathParameters"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertPathBuilderResult"/></returns>
+        /// <exception cref="Java.Security.Cert.CertPathBuilderException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public Java.Security.Cert.CertPathBuilderResult EngineBuild(Java.Security.Cert.CertPathParameters arg0)
         {
             return IExecute<Java.Security.Cert.CertPathBuilderResult>("engineBuild", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderSpi.html#engineGetRevocationChecker()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderSpi.html#engineGetRevocationChecker()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Security.Cert.CertPathChecker"/></returns>
         public Java.Security.Cert.CertPathChecker EngineGetRevocationChecker()
         {
             return IExecute<Java.Security.Cert.CertPathChecker>("engineGetRevocationChecker");

@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Type
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Type.IntersectionType"/> to <see cref="Javax.Lang.Model.Type.TypeMirror"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Type.TypeMirror(Javax.Lang.Model.Type.IntersectionType t) => t.Cast<Javax.Lang.Model.Type.TypeMirror>();
         
         #endregion

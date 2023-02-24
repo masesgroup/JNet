@@ -30,8 +30,9 @@ namespace Java.Rmi.Server
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public ObjID(int arg0)
             : base(arg0)
         {
@@ -40,21 +41,24 @@ namespace Java.Rmi.Server
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Server.ObjID"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Server.ObjID t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#ACTIVATOR_ID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#ACTIVATOR_ID"/>
         /// </summary>
         public static int ACTIVATOR_ID => Clazz.GetField<int>("ACTIVATOR_ID");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#DGC_ID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#DGC_ID"/>
         /// </summary>
         public static int DGC_ID => Clazz.GetField<int>("DGC_ID");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#REGISTRY_ID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#REGISTRY_ID"/>
         /// </summary>
         public static int REGISTRY_ID => Clazz.GetField<int>("REGISTRY_ID");
         
@@ -62,8 +66,11 @@ namespace Java.Rmi.Server
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#read(java.io.ObjectInput) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#read(java.io.ObjectInput)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.ObjectInput"/></param>
+        /// <returns><see cref="Java.Rmi.Server.ObjID"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Rmi.Server.ObjID Read(Java.Io.ObjectInput arg0)
         {
             return SExecute<Java.Rmi.Server.ObjID>("read", arg0);
@@ -73,8 +80,10 @@ namespace Java.Rmi.Server
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#write(java.io.ObjectOutput) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#write(java.io.ObjectOutput)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Write(Java.Io.ObjectOutput arg0)
         {
             IExecute("write", arg0);

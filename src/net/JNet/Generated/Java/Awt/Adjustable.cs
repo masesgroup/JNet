@@ -38,15 +38,15 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#HORIZONTAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#HORIZONTAL"/>
         /// </summary>
         public static int HORIZONTAL => Clazz.GetField<int>("HORIZONTAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#NO_ORIENTATION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#NO_ORIENTATION"/>
         /// </summary>
         public static int NO_ORIENTATION => Clazz.GetField<int>("NO_ORIENTATION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#VERTICAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#VERTICAL"/>
         /// </summary>
         public static int VERTICAL => Clazz.GetField<int>("VERTICAL");
         
@@ -58,64 +58,66 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getBlockIncrement() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setBlockIncrement(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getBlockIncrement()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setBlockIncrement(int)"/>
         /// </summary>
         public int BlockIncrement
         {
             get { return IExecute<int>("getBlockIncrement"); } set { IExecute("setBlockIncrement", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getMaximum() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setMaximum(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setMaximum(int)"/>
         /// </summary>
         public int Maximum
         {
             get { return IExecute<int>("getMaximum"); } set { IExecute("setMaximum", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getMinimum() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setMinimum(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setMinimum(int)"/>
         /// </summary>
         public int Minimum
         {
             get { return IExecute<int>("getMinimum"); } set { IExecute("setMinimum", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getOrientation() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getOrientation()"/> 
         /// </summary>
         public int Orientation
         {
             get { return IExecute<int>("getOrientation"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getUnitIncrement() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setUnitIncrement(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getUnitIncrement()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setUnitIncrement(int)"/>
         /// </summary>
         public int UnitIncrement
         {
             get { return IExecute<int>("getUnitIncrement"); } set { IExecute("setUnitIncrement", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getValue() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setValue(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setValue(int)"/>
         /// </summary>
         public int Value
         {
             get { return IExecute<int>("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getVisibleAmount() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setVisibleAmount(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#getVisibleAmount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#setVisibleAmount(int)"/>
         /// </summary>
         public int VisibleAmount
         {
             get { return IExecute<int>("getVisibleAmount"); } set { IExecute("setVisibleAmount", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#addAdjustmentListener(java.awt.event.AdjustmentListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#addAdjustmentListener(java.awt.event.AdjustmentListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
         public void AddAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0)
         {
             IExecute("addAdjustmentListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#removeAdjustmentListener(java.awt.event.AdjustmentListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#removeAdjustmentListener(java.awt.event.AdjustmentListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentListener"/></param>
         public void RemoveAdjustmentListener(Java.Awt.EventNs.AdjustmentListener arg0)
         {
             IExecute("removeAdjustmentListener", arg0);

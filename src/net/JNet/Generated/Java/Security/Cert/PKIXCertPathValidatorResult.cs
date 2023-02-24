@@ -30,8 +30,11 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html#<init>(java.security.cert.TrustAnchor,java.security.cert.PolicyNode,java.security.PublicKey)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html#%3Cinit%3E(java.security.cert.TrustAnchor,java.security.cert.PolicyNode,java.security.PublicKey)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.TrustAnchor"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.PolicyNode"/></param>
+        /// <param name="arg2"><see cref="Java.Security.PublicKey"/></param>
         public PKIXCertPathValidatorResult(Java.Security.Cert.TrustAnchor arg0, Java.Security.Cert.PolicyNode arg1, Java.Security.PublicKey arg2)
             : base(arg0, arg1, arg2)
         {
@@ -40,6 +43,9 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Cert.PKIXCertPathValidatorResult"/> to <see cref="Java.Security.Cert.CertPathValidatorResult"/>
+        /// </summary>
         public static implicit operator Java.Security.Cert.CertPathValidatorResult(Java.Security.Cert.PKIXCertPathValidatorResult t) => t.Cast<Java.Security.Cert.CertPathValidatorResult>();
         
         #endregion
@@ -54,21 +60,21 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html#getPolicyTree() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html#getPolicyTree()"/> 
         /// </summary>
         public Java.Security.Cert.PolicyNode PolicyTree
         {
             get { return IExecute<Java.Security.Cert.PolicyNode>("getPolicyTree"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html#getPublicKey() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html#getPublicKey()"/> 
         /// </summary>
         public Java.Security.PublicKey PublicKey
         {
             get { return IExecute<Java.Security.PublicKey>("getPublicKey"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html#getTrustAnchor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html#getTrustAnchor()"/> 
         /// </summary>
         public Java.Security.Cert.TrustAnchor TrustAnchor
         {

@@ -30,8 +30,9 @@ namespace Java.Awt.DesktopNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIEvent.html#<init>(java.net.URI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIEvent.html#%3Cinit%3E(java.net.URI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         public OpenURIEvent(Java.Net.URI arg0)
             : base(arg0)
         {
@@ -53,7 +54,7 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIEvent.html#getURI() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIEvent.html#getURI()"/> 
         /// </summary>
         public Java.Net.URI URI
         {

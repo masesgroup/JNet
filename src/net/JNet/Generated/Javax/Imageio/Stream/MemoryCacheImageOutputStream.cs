@@ -30,8 +30,9 @@ namespace Javax.Imageio.Stream
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/MemoryCacheImageOutputStream.html#<init>(java.io.OutputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/MemoryCacheImageOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public MemoryCacheImageOutputStream(Java.Io.OutputStream arg0)
             : base(arg0)
         {

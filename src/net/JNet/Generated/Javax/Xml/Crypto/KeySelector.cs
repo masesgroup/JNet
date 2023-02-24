@@ -42,8 +42,10 @@ namespace Javax.Xml.Crypto
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.html#singletonKeySelector(java.security.Key)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.html#singletonKeySelector(java.security.Key)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.KeySelector"/></returns>
         public static Javax.Xml.Crypto.KeySelector SingletonKeySelectorMethod(Java.Security.Key arg0)
         {
             return SExecute<Javax.Xml.Crypto.KeySelector>("singletonKeySelector", arg0);
@@ -53,8 +55,14 @@ namespace Javax.Xml.Crypto
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.html#select(javax.xml.crypto.dsig.keyinfo.KeyInfo,javax.xml.crypto.KeySelector$Purpose,javax.xml.crypto.AlgorithmMethod,javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.KeySelectorException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.html#select(javax.xml.crypto.dsig.keyinfo.KeyInfo,javax.xml.crypto.KeySelector$Purpose,javax.xml.crypto.AlgorithmMethod,javax.xml.crypto.XMLCryptoContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.KeySelector.Purpose"/></param>
+        /// <param name="arg2"><see cref="Javax.Xml.Crypto.AlgorithmMethod"/></param>
+        /// <param name="arg3"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.KeySelectorResult"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.KeySelectorException"/>
         public Javax.Xml.Crypto.KeySelectorResult Select(Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo arg0, Javax.Xml.Crypto.KeySelector.Purpose arg1, Javax.Xml.Crypto.AlgorithmMethod arg2, Javax.Xml.Crypto.XMLCryptoContext arg3)
         {
             return IExecute<Javax.Xml.Crypto.KeySelectorResult>("select", arg0, arg1, arg2, arg3);
@@ -76,19 +84,19 @@ namespace Javax.Xml.Crypto
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#DECRYPT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#DECRYPT"/>
             /// </summary>
             public static Javax.Xml.Crypto.KeySelector.Purpose DECRYPT => Clazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("DECRYPT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#ENCRYPT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#ENCRYPT"/>
             /// </summary>
             public static Javax.Xml.Crypto.KeySelector.Purpose ENCRYPT => Clazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("ENCRYPT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#SIGN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#SIGN"/>
             /// </summary>
             public static Javax.Xml.Crypto.KeySelector.Purpose SIGN => Clazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("SIGN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#VERIFY
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#VERIFY"/>
             /// </summary>
             public static Javax.Xml.Crypto.KeySelector.Purpose VERIFY => Clazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("VERIFY");
             

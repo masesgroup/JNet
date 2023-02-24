@@ -30,8 +30,10 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html#<init>(java.awt.image.BufferedImage,java.awt.geom.Rectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html#%3Cinit%3E(java.awt.image.BufferedImage,java.awt.geom.Rectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
         public TexturePaint(Java.Awt.ImageNs.BufferedImage arg0, Java.Awt.Geom.Rectangle2D arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.TexturePaint"/> to <see cref="Java.Awt.Paint"/>
+        /// </summary>
         public static implicit operator Java.Awt.Paint(Java.Awt.TexturePaint t) => t.Cast<Java.Awt.Paint>();
         
         #endregion
@@ -54,29 +59,35 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html#getAnchorRect() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html#getAnchorRect()"/> 
         /// </summary>
         public Java.Awt.Geom.Rectangle2D AnchorRect
         {
             get { return IExecute<Java.Awt.Geom.Rectangle2D>("getAnchorRect"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html#getImage() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html#getImage()"/> 
         /// </summary>
         public Java.Awt.ImageNs.BufferedImage Image
         {
             get { return IExecute<Java.Awt.ImageNs.BufferedImage>("getImage"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html#getTransparency() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html#getTransparency()"/> 
         /// </summary>
         public int Transparency
         {
             get { return IExecute<int>("getTransparency"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html#createContext(java.awt.image.ColorModel,java.awt.Rectangle,java.awt.geom.Rectangle2D,java.awt.geom.AffineTransform,java.awt.RenderingHints)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html#createContext(java.awt.image.ColorModel,java.awt.Rectangle,java.awt.geom.Rectangle2D,java.awt.geom.AffineTransform,java.awt.RenderingHints)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.RenderingHints"/></param>
+        /// <returns><see cref="Java.Awt.PaintContext"/></returns>
         public Java.Awt.PaintContext CreateContext(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.Rectangle arg1, Java.Awt.Geom.Rectangle2D arg2, Java.Awt.Geom.AffineTransform arg3, Java.Awt.RenderingHints arg4)
         {
             return IExecute<Java.Awt.PaintContext>("createContext", arg0, arg1, arg2, arg3, arg4);

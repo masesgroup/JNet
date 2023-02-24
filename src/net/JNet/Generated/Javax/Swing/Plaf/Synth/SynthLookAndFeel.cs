@@ -42,36 +42,44 @@ namespace Javax.Swing.Plaf.Synth
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#getStyleFactory() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#setStyleFactory(javax.swing.plaf.synth.SynthStyleFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#getStyleFactory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#setStyleFactory(javax.swing.plaf.synth.SynthStyleFactory)"/>
         /// </summary>
         public static Javax.Swing.Plaf.Synth.SynthStyleFactory StyleFactory
         {
             get { return SExecute<Javax.Swing.Plaf.Synth.SynthStyleFactory>("getStyleFactory"); } set { SExecute("setStyleFactory", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#createUI(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#createUI(javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <returns><see cref="Javax.Swing.Plaf.ComponentUI"/></returns>
         public static Javax.Swing.Plaf.ComponentUI CreateUI(Javax.Swing.JComponent arg0)
         {
             return SExecute<Javax.Swing.Plaf.ComponentUI>("createUI", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#getRegion(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#getRegion(javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <returns><see cref="Javax.Swing.Plaf.Synth.Region"/></returns>
         public static Javax.Swing.Plaf.Synth.Region GetRegion(Javax.Swing.JComponent arg0)
         {
             return SExecute<Javax.Swing.Plaf.Synth.Region>("getRegion", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#getStyle(javax.swing.JComponent,javax.swing.plaf.synth.Region)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#getStyle(javax.swing.JComponent,javax.swing.plaf.synth.Region)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Plaf.Synth.Region"/></param>
+        /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthStyle"/></returns>
         public static Javax.Swing.Plaf.Synth.SynthStyle GetStyle(Javax.Swing.JComponent arg0, Javax.Swing.Plaf.Synth.Region arg1)
         {
             return SExecute<Javax.Swing.Plaf.Synth.SynthStyle>("getStyle", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#updateStyles(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#updateStyles(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public static void UpdateStyles(Java.Awt.Component arg0)
         {
             SExecute("updateStyles", arg0);
@@ -81,15 +89,20 @@ namespace Javax.Swing.Plaf.Synth
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#shouldUpdateStyleOnAncestorChanged()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#shouldUpdateStyleOnAncestorChanged()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool ShouldUpdateStyleOnAncestorChanged()
         {
             return IExecute<bool>("shouldUpdateStyleOnAncestorChanged");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#load(java.net.URL) throws java.text.ParseException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#load(java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <exception cref="Java.Text.ParseException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void Load(Java.Net.URL arg0)
         {
             IExecute("load", arg0);

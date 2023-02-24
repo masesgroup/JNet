@@ -33,6 +33,9 @@ namespace Java.Time.Temporal
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Temporal.ValueRange"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Temporal.ValueRange t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -43,22 +46,34 @@ namespace Java.Time.Temporal
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#of(long,long,long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#of(long,long,long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg3"><see langword="long"/></param>
+        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1, long arg2, long arg3)
         {
             return SExecute<Java.Time.Temporal.ValueRange>("of", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#of(long,long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#of(long,long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1, long arg2)
         {
             return SExecute<Java.Time.Temporal.ValueRange>("of", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#of(long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#of(long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public static Java.Time.Temporal.ValueRange Of(long arg0, long arg1)
         {
             return SExecute<Java.Time.Temporal.ValueRange>("of", arg0, arg1);
@@ -68,71 +83,85 @@ namespace Java.Time.Temporal
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#getLargestMinimum() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#getLargestMinimum()"/> 
         /// </summary>
         public long LargestMinimum
         {
             get { return IExecute<long>("getLargestMinimum"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#getMaximum() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#getMaximum()"/> 
         /// </summary>
         public long Maximum
         {
             get { return IExecute<long>("getMaximum"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#getMinimum() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#getMinimum()"/> 
         /// </summary>
         public long Minimum
         {
             get { return IExecute<long>("getMinimum"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#getSmallestMaximum() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#getSmallestMaximum()"/> 
         /// </summary>
         public long SmallestMaximum
         {
             get { return IExecute<long>("getSmallestMaximum"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isFixed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isFixed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsFixed()
         {
             return IExecute<bool>("isFixed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isIntValue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isIntValue()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsIntValue()
         {
             return IExecute<bool>("isIntValue");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isValidIntValue(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isValidIntValue(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsValidIntValue(long arg0)
         {
             return IExecute<bool>("isValidIntValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isValidValue(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#isValidValue(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsValidValue(long arg0)
         {
             return IExecute<bool>("isValidValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#checkValidIntValue(long,java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#checkValidIntValue(long,java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CheckValidIntValue(long arg0, Java.Time.Temporal.TemporalField arg1)
         {
             return IExecute<int>("checkValidIntValue", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#checkValidValue(long,java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html#checkValidValue(long,java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see langword="long"/></returns>
         public long CheckValidValue(long arg0, Java.Time.Temporal.TemporalField arg1)
         {
             return IExecute<long>("checkValidValue", arg0, arg1);

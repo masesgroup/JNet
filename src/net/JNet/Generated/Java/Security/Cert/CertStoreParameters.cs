@@ -33,6 +33,9 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Cert.CertStoreParameters"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Security.Cert.CertStoreParameters t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion

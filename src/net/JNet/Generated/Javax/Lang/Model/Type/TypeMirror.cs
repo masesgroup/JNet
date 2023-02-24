@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Type
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Type.TypeMirror"/> to <see cref="Javax.Lang.Model.AnnotatedConstruct"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.AnnotatedConstruct(Javax.Lang.Model.Type.TypeMirror t) => t.Cast<Javax.Lang.Model.AnnotatedConstruct>();
         
         #endregion

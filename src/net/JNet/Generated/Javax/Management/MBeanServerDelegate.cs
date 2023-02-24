@@ -33,14 +33,20 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.MBeanServerDelegate"/> to <see cref="Javax.Management.MBeanServerDelegateMBean"/>
+        /// </summary>
         public static implicit operator Javax.Management.MBeanServerDelegateMBean(Javax.Management.MBeanServerDelegate t) => t.Cast<Javax.Management.MBeanServerDelegateMBean>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.MBeanServerDelegate"/> to <see cref="Javax.Management.NotificationEmitter"/>
+        /// </summary>
         public static implicit operator Javax.Management.NotificationEmitter(Javax.Management.MBeanServerDelegate t) => t.Cast<Javax.Management.NotificationEmitter>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#DELEGATE_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#DELEGATE_NAME"/>
         /// </summary>
         public static Javax.Management.ObjectName DELEGATE_NAME => Clazz.GetField<Javax.Management.ObjectName>("DELEGATE_NAME");
         
@@ -52,85 +58,96 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getImplementationName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getImplementationName()"/> 
         /// </summary>
         public string ImplementationName
         {
             get { return IExecute<string>("getImplementationName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getImplementationVendor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getImplementationVendor()"/> 
         /// </summary>
         public string ImplementationVendor
         {
             get { return IExecute<string>("getImplementationVendor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getImplementationVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getImplementationVersion()"/> 
         /// </summary>
         public string ImplementationVersion
         {
             get { return IExecute<string>("getImplementationVersion"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getMBeanServerId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getMBeanServerId()"/> 
         /// </summary>
         public string MBeanServerId
         {
             get { return IExecute<string>("getMBeanServerId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getNotificationInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getNotificationInfo()"/> 
         /// </summary>
         public Javax.Management.MBeanNotificationInfo[] NotificationInfo
         {
             get { return IExecuteArray<Javax.Management.MBeanNotificationInfo>("getNotificationInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getSpecificationName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getSpecificationName()"/> 
         /// </summary>
         public string SpecificationName
         {
             get { return IExecute<string>("getSpecificationName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getSpecificationVendor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getSpecificationVendor()"/> 
         /// </summary>
         public string SpecificationVendor
         {
             get { return IExecute<string>("getSpecificationVendor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getSpecificationVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#getSpecificationVersion()"/> 
         /// </summary>
         public string SpecificationVersion
         {
             get { return IExecute<string>("getSpecificationVersion"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#addNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#addNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void AddNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
             IExecute("addNotificationListener", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#removeNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object) throws javax.management.ListenerNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#removeNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
             IExecute("removeNotificationListener", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#removeNotificationListener(javax.management.NotificationListener) throws javax.management.ListenerNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#removeNotificationListener(javax.management.NotificationListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0)
         {
             IExecute("removeNotificationListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#sendNotification(javax.management.Notification)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegate.html#sendNotification(javax.management.Notification)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
         public void SendNotification(Javax.Management.Notification arg0)
         {
             IExecute("sendNotification", arg0);

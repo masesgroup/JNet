@@ -42,71 +42,91 @@ namespace Javax.Print.Attribute
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.AttributeSet"/></returns>
         public static Javax.Print.Attribute.AttributeSet SynchronizedView(Javax.Print.Attribute.AttributeSet arg0)
         {
             return SExecute<Javax.Print.Attribute.AttributeSet>("synchronizedView", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.AttributeSet"/></returns>
         public static Javax.Print.Attribute.AttributeSet UnmodifiableView(Javax.Print.Attribute.AttributeSet arg0)
         {
             return SExecute<Javax.Print.Attribute.AttributeSet>("unmodifiableView", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.DocAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.DocAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.DocAttributeSet"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.DocAttributeSet"/></returns>
         public static Javax.Print.Attribute.DocAttributeSet SynchronizedView(Javax.Print.Attribute.DocAttributeSet arg0)
         {
             return SExecute<Javax.Print.Attribute.DocAttributeSet>("synchronizedView", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.DocAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.DocAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.DocAttributeSet"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.DocAttributeSet"/></returns>
         public static Javax.Print.Attribute.DocAttributeSet UnmodifiableView(Javax.Print.Attribute.DocAttributeSet arg0)
         {
             return SExecute<Javax.Print.Attribute.DocAttributeSet>("unmodifiableView", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.PrintJobAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.PrintJobAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintJobAttributeSet"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.PrintJobAttributeSet"/></returns>
         public static Javax.Print.Attribute.PrintJobAttributeSet SynchronizedView(Javax.Print.Attribute.PrintJobAttributeSet arg0)
         {
             return SExecute<Javax.Print.Attribute.PrintJobAttributeSet>("synchronizedView", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.PrintJobAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.PrintJobAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintJobAttributeSet"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.PrintJobAttributeSet"/></returns>
         public static Javax.Print.Attribute.PrintJobAttributeSet UnmodifiableView(Javax.Print.Attribute.PrintJobAttributeSet arg0)
         {
             return SExecute<Javax.Print.Attribute.PrintJobAttributeSet>("unmodifiableView", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.PrintRequestAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></returns>
         public static Javax.Print.Attribute.PrintRequestAttributeSet SynchronizedView(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {
             return SExecute<Javax.Print.Attribute.PrintRequestAttributeSet>("synchronizedView", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.PrintRequestAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></returns>
         public static Javax.Print.Attribute.PrintRequestAttributeSet UnmodifiableView(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
         {
             return SExecute<Javax.Print.Attribute.PrintRequestAttributeSet>("unmodifiableView", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.PrintServiceAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.PrintServiceAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintServiceAttributeSet"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.PrintServiceAttributeSet"/></returns>
         public static Javax.Print.Attribute.PrintServiceAttributeSet SynchronizedView(Javax.Print.Attribute.PrintServiceAttributeSet arg0)
         {
             return SExecute<Javax.Print.Attribute.PrintServiceAttributeSet>("synchronizedView", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.PrintServiceAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#unmodifiableView(javax.print.attribute.PrintServiceAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintServiceAttributeSet"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.PrintServiceAttributeSet"/></returns>
         public static Javax.Print.Attribute.PrintServiceAttributeSet UnmodifiableView(Javax.Print.Attribute.PrintServiceAttributeSet arg0)
         {
             return SExecute<Javax.Print.Attribute.PrintServiceAttributeSet>("unmodifiableView", arg0);

@@ -30,15 +30,22 @@ namespace Javax.Security.Auth.Kerberos
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#<init>(javax.security.auth.kerberos.KerberosPrincipal,byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#%3Cinit%3E(javax.security.auth.kerberos.KerberosPrincipal,byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public KerberosKey(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, byte[] arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#<init>(javax.security.auth.kerberos.KerberosPrincipal,char[],java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#%3Cinit%3E(javax.security.auth.kerberos.KerberosPrincipal,char[],java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
         public KerberosKey(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, char[] arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
@@ -47,6 +54,9 @@ namespace Javax.Security.Auth.Kerberos
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosKey"/> to <see cref="Javax.Crypto.SecretKey"/>
+        /// </summary>
         public static implicit operator Javax.Crypto.SecretKey(Javax.Security.Auth.Kerberos.KerberosKey t) => t.Cast<Javax.Crypto.SecretKey>();
         
         #endregion
@@ -61,57 +71,61 @@ namespace Javax.Security.Auth.Kerberos
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getEncoded() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
             get { return IExecuteArray<byte>("getEncoded"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getFormat() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getFormat()"/> 
         /// </summary>
         public string Format
         {
             get { return IExecute<string>("getFormat"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getKeyType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getKeyType()"/> 
         /// </summary>
         public int KeyType
         {
             get { return IExecute<int>("getKeyType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getPrincipal() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getPrincipal()"/> 
         /// </summary>
         public Javax.Security.Auth.Kerberos.KerberosPrincipal Principal
         {
             get { return IExecute<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getPrincipal"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getVersionNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#getVersionNumber()"/> 
         /// </summary>
         public int VersionNumber
         {
             get { return IExecute<int>("getVersionNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#isDestroyed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#isDestroyed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDestroyed()
         {
             return IExecute<bool>("isDestroyed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#destroy() throws javax.security.auth.DestroyFailedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html#destroy()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
         public void Destroy()
         {
             IExecute("destroy");

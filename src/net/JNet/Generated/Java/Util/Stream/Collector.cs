@@ -62,15 +62,15 @@ namespace Java.Util.Stream
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#CONCURRENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#CONCURRENT"/>
             /// </summary>
             public static Java.Util.Stream.Collector.Characteristics CONCURRENT => Clazz.GetField<Java.Util.Stream.Collector.Characteristics>("CONCURRENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#IDENTITY_FINISH
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#IDENTITY_FINISH"/>
             /// </summary>
             public static Java.Util.Stream.Collector.Characteristics IDENTITY_FINISH => Clazz.GetField<Java.Util.Stream.Collector.Characteristics>("IDENTITY_FINISH");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#UNORDERED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#UNORDERED"/>
             /// </summary>
             public static Java.Util.Stream.Collector.Characteristics UNORDERED => Clazz.GetField<Java.Util.Stream.Collector.Characteristics>("UNORDERED");
             
@@ -78,8 +78,10 @@ namespace Java.Util.Stream
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Util.Stream.Collector.Characteristics"/></returns>
             public static Java.Util.Stream.Collector.Characteristics[] Values()
             {
                 return SExecuteArray<Java.Util.Stream.Collector.Characteristics>("values");

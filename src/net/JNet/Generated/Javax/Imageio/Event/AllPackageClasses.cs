@@ -25,7 +25,7 @@ namespace Javax.Imageio.Event
 {
     #region IIOReadProgressListener
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html"/>
     /// </summary>
     public partial class IIOReadProgressListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -38,7 +38,7 @@ namespace Javax.Imageio.Event
 
     #region IIOReadUpdateListener
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html"/>
     /// </summary>
     public partial class IIOReadUpdateListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -51,7 +51,7 @@ namespace Javax.Imageio.Event
 
     #region IIOReadWarningListener
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html"/>
     /// </summary>
     public partial class IIOReadWarningListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -64,7 +64,7 @@ namespace Javax.Imageio.Event
 
     #region IIOWriteProgressListener
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html"/>
     /// </summary>
     public partial class IIOWriteProgressListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
@@ -77,7 +77,7 @@ namespace Javax.Imageio.Event
 
     #region IIOWriteWarningListener
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteWarningListener.html
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteWarningListener.html"/>
     /// </summary>
     public partial class IIOWriteWarningListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {

@@ -33,9 +33,21 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.SocketChannel"/> to <see cref="Java.Nio.Channels.ByteChannel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.ByteChannel(Java.Nio.Channels.SocketChannel t) => t.Cast<Java.Nio.Channels.ByteChannel>();
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.SocketChannel"/> to <see cref="Java.Nio.Channels.ScatteringByteChannel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.ScatteringByteChannel(Java.Nio.Channels.SocketChannel t) => t.Cast<Java.Nio.Channels.ScatteringByteChannel>();
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.SocketChannel"/> to <see cref="Java.Nio.Channels.GatheringByteChannel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.GatheringByteChannel(Java.Nio.Channels.SocketChannel t) => t.Cast<Java.Nio.Channels.GatheringByteChannel>();
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.SocketChannel"/> to <see cref="Java.Nio.Channels.NetworkChannel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.NetworkChannel(Java.Nio.Channels.SocketChannel t) => t.Cast<Java.Nio.Channels.NetworkChannel>();
         
         #endregion
@@ -46,15 +58,21 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#open() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#open()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.SocketChannel Open()
         {
             return SExecute<Java.Nio.Channels.SocketChannel>("open");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#open(java.net.SocketAddress) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#open(java.net.SocketAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.SocketChannel Open(Java.Net.SocketAddress arg0)
         {
             return SExecute<Java.Nio.Channels.SocketChannel>("open", arg0);
@@ -64,113 +82,156 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#getLocalAddress() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#getLocalAddress()"/> 
         /// </summary>
         public Java.Net.SocketAddress LocalAddress
         {
             get { return IExecute<Java.Net.SocketAddress>("getLocalAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#getRemoteAddress() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#getRemoteAddress()"/> 
         /// </summary>
         public Java.Net.SocketAddress RemoteAddress
         {
             get { return IExecute<Java.Net.SocketAddress>("getRemoteAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#connect(java.net.SocketAddress) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#connect(java.net.SocketAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public bool Connect(Java.Net.SocketAddress arg0)
         {
             return IExecute<bool>("connect", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#finishConnect() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#finishConnect()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public bool FinishConnect()
         {
             return IExecute<bool>("finishConnect");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#isConnected()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#isConnected()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsConnected()
         {
             return IExecute<bool>("isConnected");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#isConnectionPending()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#isConnectionPending()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsConnectionPending()
         {
             return IExecute<bool>("isConnectionPending");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public int Read(Java.Nio.ByteBuffer arg0)
         {
             return IExecute<int>("read", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public int Write(Java.Nio.ByteBuffer arg0)
         {
             return IExecute<int>("write", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#socket()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#socket()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.Socket"/></returns>
         public Java.Net.Socket Socket()
         {
             return IExecute<Java.Net.Socket>("socket");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#shutdownInput() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#shutdownInput()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SocketChannel ShutdownInput()
         {
             return IExecute<Java.Nio.Channels.SocketChannel>("shutdownInput");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#shutdownOutput() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#shutdownOutput()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SocketChannel ShutdownOutput()
         {
             return IExecute<Java.Nio.Channels.SocketChannel>("shutdownOutput");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer[],int,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public long Read(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2)
         {
             return IExecute<long>("read", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer[],int,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public long Write(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2)
         {
             return IExecute<long>("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer[]) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#read(java.nio.ByteBuffer[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public long Read(Java.Nio.ByteBuffer[] arg0)
         {
             return IExecute<long>("read", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer[]) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#write(java.nio.ByteBuffer[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public long Write(Java.Nio.ByteBuffer[] arg0)
         {
             return IExecute<long>("write", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#bind(java.net.SocketAddress) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#bind(java.net.SocketAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.NetworkChannel Bind(Java.Net.SocketAddress arg0)
         {
             return IExecute<Java.Nio.Channels.NetworkChannel>("bind", arg0);

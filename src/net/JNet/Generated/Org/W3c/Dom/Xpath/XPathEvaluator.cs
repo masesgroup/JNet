@@ -46,22 +46,37 @@ namespace Org.W3c.Dom.Xpath
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#evaluate(java.lang.String,org.w3c.dom.Node,org.w3c.dom.xpath.XPathNSResolver,short,java.lang.Object) throws org.w3c.dom.xpath.XPathException,org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#evaluate(java.lang.String,org.w3c.dom.Node,org.w3c.dom.xpath.XPathNSResolver,short,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg2"><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></param>
+        /// <param name="arg3"><see langword="short"/></param>
+        /// <param name="arg4"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public object Evaluate(string arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Xpath.XPathNSResolver arg2, short arg3, object arg4)
         {
             return IExecute("evaluate", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#createExpression(java.lang.String,org.w3c.dom.xpath.XPathNSResolver) throws org.w3c.dom.xpath.XPathException,org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#createExpression(java.lang.String,org.w3c.dom.xpath.XPathNSResolver)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Xpath.XPathExpression"/></returns>
+        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Xpath.XPathExpression CreateExpression(string arg0, Org.W3c.Dom.Xpath.XPathNSResolver arg1)
         {
             return IExecute<Org.W3c.Dom.Xpath.XPathExpression>("createExpression", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#createNSResolver(org.w3c.dom.Node)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#createNSResolver(org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></returns>
         public Org.W3c.Dom.Xpath.XPathNSResolver CreateNSResolver(Org.W3c.Dom.Node arg0)
         {
             return IExecute<Org.W3c.Dom.Xpath.XPathNSResolver>("createNSResolver", arg0);

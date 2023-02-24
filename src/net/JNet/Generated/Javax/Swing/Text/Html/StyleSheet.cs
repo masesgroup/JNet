@@ -42,8 +42,10 @@ namespace Javax.Swing.Text.Html
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getIndexOfSize(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getIndexOfSize(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int GetIndexOfSize(float arg0)
         {
             return SExecute<int>("getIndexOfSize", arg0);
@@ -53,141 +55,177 @@ namespace Javax.Swing.Text.Html
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getBase() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBase(java.net.URL)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getBase()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBase(java.net.URL)"/>
         /// </summary>
         public Java.Net.URL Base
         {
             get { return IExecute<Java.Net.URL>("getBase"); } set { IExecute("setBase", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getStyleSheets() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getStyleSheets()"/> 
         /// </summary>
         public Javax.Swing.Text.Html.StyleSheet[] StyleSheets
         {
             get { return IExecuteArray<Javax.Swing.Text.Html.StyleSheet>("getStyleSheets"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addCSSAttributeFromHTML(javax.swing.text.MutableAttributeSet,javax.swing.text.html.CSS$Attribute,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addCSSAttributeFromHTML(javax.swing.text.MutableAttributeSet,javax.swing.text.html.CSS$Attribute,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.CSS.Attribute"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool AddCSSAttributeFromHTML(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.Html.CSS.Attribute arg1, string arg2)
         {
             return IExecute<bool>("addCSSAttributeFromHTML", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getPointSize(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getPointSize(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="float"/></returns>
         public float GetPointSize(int arg0)
         {
             return IExecute<float>("getPointSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getPointSize(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getPointSize(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="float"/></returns>
         public float GetPointSize(string arg0)
         {
             return IExecute<float>("getPointSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#stringToColor(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#stringToColor(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color StringToColor(string arg0)
         {
             return IExecute<Java.Awt.Color>("stringToColor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getDeclaration(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getDeclaration(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet GetDeclaration(string arg0)
         {
             return IExecute<Javax.Swing.Text.AttributeSet>("getDeclaration", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getViewAttributes(javax.swing.text.View)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getViewAttributes(javax.swing.text.View)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.View"/></param>
+        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet GetViewAttributes(Javax.Swing.Text.View arg0)
         {
             return IExecute<Javax.Swing.Text.AttributeSet>("getViewAttributes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#translateHTMLToCSS(javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#translateHTMLToCSS(javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet TranslateHTMLToCSS(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecute<Javax.Swing.Text.AttributeSet>("translateHTMLToCSS", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getBoxPainter(javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getBoxPainter(javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.StyleSheet.BoxPainter"/></returns>
         public Javax.Swing.Text.Html.StyleSheet.BoxPainter GetBoxPainter(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecute<Javax.Swing.Text.Html.StyleSheet.BoxPainter>("getBoxPainter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getListPainter(javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getListPainter(javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.StyleSheet.ListPainter"/></returns>
         public Javax.Swing.Text.Html.StyleSheet.ListPainter GetListPainter(Javax.Swing.Text.AttributeSet arg0)
         {
             return IExecute<Javax.Swing.Text.Html.StyleSheet.ListPainter>("getListPainter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getRule(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getRule(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style GetRule(string arg0)
         {
             return IExecute<Javax.Swing.Text.Style>("getRule", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getRule(javax.swing.text.html.HTML$Tag,javax.swing.text.Element)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getRule(javax.swing.text.html.HTML$Tag,javax.swing.text.Element)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style GetRule(Javax.Swing.Text.Html.HTML.Tag arg0, Javax.Swing.Text.Element arg1)
         {
             return IExecute<Javax.Swing.Text.Style>("getRule", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addCSSAttribute(javax.swing.text.MutableAttributeSet,javax.swing.text.html.CSS$Attribute,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addCSSAttribute(javax.swing.text.MutableAttributeSet,javax.swing.text.html.CSS$Attribute,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.CSS.Attribute"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
         public void AddCSSAttribute(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.Html.CSS.Attribute arg1, string arg2)
         {
             IExecute("addCSSAttribute", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addRule(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addRule(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void AddRule(string arg0)
         {
             IExecute("addRule", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addStyleSheet(javax.swing.text.html.StyleSheet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addStyleSheet(javax.swing.text.html.StyleSheet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.StyleSheet"/></param>
         public void AddStyleSheet(Javax.Swing.Text.Html.StyleSheet arg0)
         {
             IExecute("addStyleSheet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#importStyleSheet(java.net.URL)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#importStyleSheet(java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         public void ImportStyleSheet(Java.Net.URL arg0)
         {
             IExecute("importStyleSheet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#loadRules(java.io.Reader,java.net.URL) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#loadRules(java.io.Reader,java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg1"><see cref="Java.Net.URL"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void LoadRules(Java.Io.Reader arg0, Java.Net.URL arg1)
         {
             IExecute("loadRules", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#removeStyleSheet(javax.swing.text.html.StyleSheet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#removeStyleSheet(javax.swing.text.html.StyleSheet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.StyleSheet"/></param>
         public void RemoveStyleSheet(Javax.Swing.Text.Html.StyleSheet arg0)
         {
             IExecute("removeStyleSheet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetBaseFontSize(int arg0)
         {
             IExecute("setBaseFontSize", arg0);
@@ -204,6 +242,9 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Text.Html.StyleSheet.BoxPainter"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.StyleSheet.BoxPainter t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
@@ -218,15 +259,24 @@ namespace Javax.Swing.Text.Html
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html#getInset(int,javax.swing.text.View)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html#getInset(int,javax.swing.text.View)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.Text.View"/></param>
+            /// <returns><see langword="float"/></returns>
             public float GetInset(int arg0, Javax.Swing.Text.View arg1)
             {
                 return IExecute<float>("getInset", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html#paint(java.awt.Graphics,float,float,float,float,javax.swing.text.View)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html#paint(java.awt.Graphics,float,float,float,float,javax.swing.text.View)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg2"><see langword="float"/></param>
+            /// <param name="arg3"><see langword="float"/></param>
+            /// <param name="arg4"><see langword="float"/></param>
+            /// <param name="arg5"><see cref="Javax.Swing.Text.View"/></param>
             public void Paint(Java.Awt.Graphics arg0, float arg1, float arg2, float arg3, float arg4, Javax.Swing.Text.View arg5)
             {
                 IExecute("paint", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -246,6 +296,9 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Text.Html.StyleSheet.ListPainter"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.StyleSheet.ListPainter t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
@@ -260,8 +313,15 @@ namespace Javax.Swing.Text.Html
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.ListPainter.html#paint(java.awt.Graphics,float,float,float,float,javax.swing.text.View,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.ListPainter.html#paint(java.awt.Graphics,float,float,float,float,javax.swing.text.View,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg2"><see langword="float"/></param>
+            /// <param name="arg3"><see langword="float"/></param>
+            /// <param name="arg4"><see langword="float"/></param>
+            /// <param name="arg5"><see cref="Javax.Swing.Text.View"/></param>
+            /// <param name="arg6"><see langword="int"/></param>
             public void Paint(Java.Awt.Graphics arg0, float arg1, float arg2, float arg3, float arg4, Javax.Swing.Text.View arg5, int arg6)
             {
                 IExecute("paint", arg0, arg1, arg2, arg3, arg4, arg5, arg6);

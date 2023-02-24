@@ -33,6 +33,9 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Reflect.AnnotatedArrayType"/> to <see cref="Java.Lang.Reflect.AnnotatedType"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedType(Java.Lang.Reflect.AnnotatedArrayType t) => t.Cast<Java.Lang.Reflect.AnnotatedType>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedArrayType.html#getAnnotatedGenericComponentType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedArrayType.html#getAnnotatedGenericComponentType()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType AnnotatedGenericComponentType
         {
             get { return IExecute<Java.Lang.Reflect.AnnotatedType>("getAnnotatedGenericComponentType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedArrayType.html#getAnnotatedOwnerType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedArrayType.html#getAnnotatedOwnerType()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType AnnotatedOwnerType
         {

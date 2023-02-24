@@ -46,8 +46,11 @@ namespace Javax.Swing.Plaf.Synth
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyleFactory.html#getStyle(javax.swing.JComponent,javax.swing.plaf.synth.Region)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthStyleFactory.html#getStyle(javax.swing.JComponent,javax.swing.plaf.synth.Region)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Plaf.Synth.Region"/></param>
+        /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthStyle"/></returns>
         public Javax.Swing.Plaf.Synth.SynthStyle GetStyle(Javax.Swing.JComponent arg0, Javax.Swing.Plaf.Synth.Region arg1)
         {
             return IExecute<Javax.Swing.Plaf.Synth.SynthStyle>("getStyle", arg0, arg1);

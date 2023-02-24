@@ -30,8 +30,10 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPair.html#<init>(java.security.PublicKey,java.security.PrivateKey)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPair.html#%3Cinit%3E(java.security.PublicKey,java.security.PrivateKey)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
+        /// <param name="arg1"><see cref="Java.Security.PrivateKey"/></param>
         public KeyPair(Java.Security.PublicKey arg0, Java.Security.PrivateKey arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Security
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.KeyPair"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.KeyPair t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,14 +59,14 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPair.html#getPrivate() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPair.html#getPrivate()"/> 
         /// </summary>
         public Java.Security.PrivateKey Private
         {
             get { return IExecute<Java.Security.PrivateKey>("getPrivate"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPair.html#getPublic() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPair.html#getPublic()"/> 
         /// </summary>
         public Java.Security.PublicKey Public
         {

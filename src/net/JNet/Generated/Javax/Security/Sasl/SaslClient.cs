@@ -46,58 +46,79 @@ namespace Javax.Security.Sasl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#getMechanismName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#getMechanismName()"/> 
         /// </summary>
         public string MechanismName
         {
             get { return IExecute<string>("getMechanismName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#hasInitialResponse()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#hasInitialResponse()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasInitialResponse()
         {
             return IExecute<bool>("hasInitialResponse");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#isComplete()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#isComplete()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsComplete()
         {
             return IExecute<bool>("isComplete");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#evaluateChallenge(byte[]) throws javax.security.sasl.SaslException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#evaluateChallenge(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Javax.Security.Sasl.SaslException"/>
         public byte[] EvaluateChallenge(byte[] arg0)
         {
             return IExecuteArray<byte>("evaluateChallenge", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#unwrap(byte[],int,int) throws javax.security.sasl.SaslException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#unwrap(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Javax.Security.Sasl.SaslException"/>
         public byte[] Unwrap(byte[] arg0, int arg1, int arg2)
         {
             return IExecuteArray<byte>("unwrap", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#wrap(byte[],int,int) throws javax.security.sasl.SaslException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#wrap(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Javax.Security.Sasl.SaslException"/>
         public byte[] Wrap(byte[] arg0, int arg1, int arg2)
         {
             return IExecuteArray<byte>("wrap", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#getNegotiatedProperty(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#getNegotiatedProperty(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetNegotiatedProperty(string arg0)
         {
             return IExecute("getNegotiatedProperty", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#dispose() throws javax.security.sasl.SaslException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#dispose()"/>
         /// </summary>
-        public void Dispose()
+        
+        /// <exception cref="Javax.Security.Sasl.SaslException"/>
+        public new void Dispose()
         {
             IExecute("dispose");
         }

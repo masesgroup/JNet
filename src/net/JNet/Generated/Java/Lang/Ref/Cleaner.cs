@@ -42,15 +42,19 @@ namespace Java.Lang.Ref
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.html#create()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.html#create()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Ref.Cleaner"/></returns>
         public static Java.Lang.Ref.Cleaner Create()
         {
             return SExecute<Java.Lang.Ref.Cleaner>("create");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.html#create(java.util.concurrent.ThreadFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.html#create(java.util.concurrent.ThreadFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
+        /// <returns><see cref="Java.Lang.Ref.Cleaner"/></returns>
         public static Java.Lang.Ref.Cleaner Create(Java.Util.Concurrent.ThreadFactory arg0)
         {
             return SExecute<Java.Lang.Ref.Cleaner>("create", arg0);
@@ -60,8 +64,11 @@ namespace Java.Lang.Ref
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.html#register(java.lang.Object,java.lang.Runnable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.html#register(java.lang.Object,java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <returns><see cref="Java.Lang.Ref.Cleaner.Cleanable"/></returns>
         public Java.Lang.Ref.Cleaner.Cleanable Register(object arg0, Java.Lang.Runnable arg1)
         {
             return IExecute<Java.Lang.Ref.Cleaner.Cleanable>("register", arg0, arg1);
@@ -91,7 +98,7 @@ namespace Java.Lang.Ref
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.Cleanable.html#clean()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.Cleanable.html#clean()"/>
             /// </summary>
             public void Clean()
             {

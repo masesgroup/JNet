@@ -46,36 +46,41 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#getMajorVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#getMajorVersion()"/> 
         /// </summary>
         public int MajorVersion
         {
             get { return IExecute<int>("getMajorVersion"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#getMinorVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#getMinorVersion()"/> 
         /// </summary>
         public int MinorVersion
         {
             get { return IExecute<int>("getMinorVersion"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#getParentLogger() throws java.sql.SQLFeatureNotSupportedException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#getParentLogger()"/> 
         /// </summary>
         public Java.Util.Logging.Logger ParentLogger
         {
             get { return IExecute<Java.Util.Logging.Logger>("getParentLogger"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#acceptsURL(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#acceptsURL(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool AcceptsURL(string arg0)
         {
             return IExecute<bool>("acceptsURL", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#jdbcCompliant()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#jdbcCompliant()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool JdbcCompliant()
         {
             return IExecute<bool>("jdbcCompliant");

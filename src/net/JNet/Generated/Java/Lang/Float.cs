@@ -38,47 +38,47 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MAX_VALUE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MAX_VALUE"/>
         /// </summary>
         public static float MAX_VALUE => Clazz.GetField<float>("MAX_VALUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MIN_NORMAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MIN_NORMAL"/>
         /// </summary>
         public static float MIN_NORMAL => Clazz.GetField<float>("MIN_NORMAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MIN_VALUE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MIN_VALUE"/>
         /// </summary>
         public static float MIN_VALUE => Clazz.GetField<float>("MIN_VALUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#NaN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#NaN"/>
         /// </summary>
         public static float NaN => Clazz.GetField<float>("NaN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#NEGATIVE_INFINITY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#NEGATIVE_INFINITY"/>
         /// </summary>
         public static float NEGATIVE_INFINITY => Clazz.GetField<float>("NEGATIVE_INFINITY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#POSITIVE_INFINITY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#POSITIVE_INFINITY"/>
         /// </summary>
         public static float POSITIVE_INFINITY => Clazz.GetField<float>("POSITIVE_INFINITY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#BYTES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#BYTES"/>
         /// </summary>
         public static int BYTES => Clazz.GetField<int>("BYTES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MAX_EXPONENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MAX_EXPONENT"/>
         /// </summary>
         public static int MAX_EXPONENT => Clazz.GetField<int>("MAX_EXPONENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MIN_EXPONENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MIN_EXPONENT"/>
         /// </summary>
         public static int MIN_EXPONENT => Clazz.GetField<int>("MIN_EXPONENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#SIZE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#SIZE"/>
         /// </summary>
         public static int SIZE => Clazz.GetField<int>("SIZE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
         
@@ -86,113 +86,151 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isFinite(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isFinite(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsFinite(float arg0)
         {
             return SExecute<bool>("isFinite", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isInfinite(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isInfinite(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsInfinite(float arg0)
         {
             return SExecute<bool>("isInfinite", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isNaN(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isNaN(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsNaN(float arg0)
         {
             return SExecute<bool>("isNaN", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#max(float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#max(float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <returns><see langword="float"/></returns>
         public static float Max(float arg0, float arg1)
         {
             return SExecute<float>("max", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#min(float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#min(float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <returns><see langword="float"/></returns>
         public static float Min(float arg0, float arg1)
         {
             return SExecute<float>("min", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#parseFloat(java.lang.String) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#parseFloat(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="float"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static float ParseFloat(string arg0)
         {
             return SExecute<float>("parseFloat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#sum(float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#sum(float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <returns><see langword="float"/></returns>
         public static float Sum(float arg0, float arg1)
         {
             return SExecute<float>("sum", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compare(float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compare(float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(float arg0, float arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#floatToIntBits(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#floatToIntBits(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int FloatToIntBits(float arg0)
         {
             return SExecute<int>("floatToIntBits", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#hashCode(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#hashCode(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int HashCode(float arg0)
         {
             return SExecute<int>("hashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see langword="float?"/></returns>
         public static float? ValueOf(float arg0)
         {
             return SExecute<float?>("valueOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(java.lang.String) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="float?"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static float? ValueOf(string arg0)
         {
             return SExecute<float?>("valueOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#toHexString(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#toHexString(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToHexString(float arg0)
         {
             return SExecute<string>("toHexString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#toString(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#toString(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(float arg0)
         {
             return SExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#intBitsToFloat(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#intBitsToFloat(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="float"/></returns>
         public static float IntBitsToFloat(int arg0)
         {
             return SExecute<float>("intBitsToFloat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#floatToRawIntBits(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#floatToRawIntBits(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int FloatToRawIntBits(float arg0)
         {
             return SExecute<int>("floatToRawIntBits", arg0);
@@ -202,29 +240,37 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isInfinite()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isInfinite()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsInfinite()
         {
             return IExecute<bool>("isInfinite");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isNaN()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isNaN()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsNaN()
         {
             return IExecute<bool>("isNaN");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compareTo(java.lang.Float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compareTo(java.lang.Float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float?"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(float? arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);

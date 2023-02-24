@@ -33,6 +33,9 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Reflect.WildcardType"/> to <see cref="Java.Lang.Reflect.Type"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.Type(Java.Lang.Reflect.WildcardType t) => t.Cast<Java.Lang.Reflect.Type>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/WildcardType.html#getLowerBounds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/WildcardType.html#getLowerBounds()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type[] LowerBounds
         {
             get { return IExecuteArray<Java.Lang.Reflect.Type>("getLowerBounds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/WildcardType.html#getUpperBounds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/WildcardType.html#getUpperBounds()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type[] UpperBounds
         {

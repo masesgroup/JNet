@@ -46,7 +46,7 @@ namespace Java.Beans.Beancontext
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextContainerProxy.html#getContainer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextContainerProxy.html#getContainer()"/> 
         /// </summary>
         public Java.Awt.Container Container
         {

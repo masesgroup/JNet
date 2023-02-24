@@ -33,45 +33,48 @@ namespace Java.Util.Logging
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Logging.Level"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Logging.Level t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#ALL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#ALL"/>
         /// </summary>
         public static Java.Util.Logging.Level ALL => Clazz.GetField<Java.Util.Logging.Level>("ALL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#CONFIG
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#CONFIG"/>
         /// </summary>
         public static Java.Util.Logging.Level CONFIG => Clazz.GetField<Java.Util.Logging.Level>("CONFIG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#FINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#FINE"/>
         /// </summary>
         public static Java.Util.Logging.Level FINE => Clazz.GetField<Java.Util.Logging.Level>("FINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#FINER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#FINER"/>
         /// </summary>
         public static Java.Util.Logging.Level FINER => Clazz.GetField<Java.Util.Logging.Level>("FINER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#FINEST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#FINEST"/>
         /// </summary>
         public static Java.Util.Logging.Level FINEST => Clazz.GetField<Java.Util.Logging.Level>("FINEST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#INFO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#INFO"/>
         /// </summary>
         public static Java.Util.Logging.Level INFO => Clazz.GetField<Java.Util.Logging.Level>("INFO");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#OFF
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#OFF"/>
         /// </summary>
         public static Java.Util.Logging.Level OFF => Clazz.GetField<Java.Util.Logging.Level>("OFF");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#SEVERE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#SEVERE"/>
         /// </summary>
         public static Java.Util.Logging.Level SEVERE => Clazz.GetField<Java.Util.Logging.Level>("SEVERE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#WARNING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#WARNING"/>
         /// </summary>
         public static Java.Util.Logging.Level WARNING => Clazz.GetField<Java.Util.Logging.Level>("WARNING");
         
@@ -79,8 +82,11 @@ namespace Java.Util.Logging
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#parse(java.lang.String) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#parse(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Util.Logging.Level"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Util.Logging.Level Parse(string arg0)
         {
             return SExecute<Java.Util.Logging.Level>("parse", arg0);
@@ -90,29 +96,31 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#getLocalizedName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#getLocalizedName()"/> 
         /// </summary>
         public string LocalizedName
         {
             get { return IExecute<string>("getLocalizedName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#getResourceBundleName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#getResourceBundleName()"/> 
         /// </summary>
         public string ResourceBundleName
         {
             get { return IExecute<string>("getResourceBundleName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#intValue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#intValue()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int IntValue()
         {
             return IExecute<int>("intValue");

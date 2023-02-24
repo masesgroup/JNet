@@ -46,15 +46,19 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#hasMoreElements()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#hasMoreElements()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasMoreElements()
         {
             return IExecute<bool>("hasMoreElements");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#nextElement()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#nextElement()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object NextElement()
         {
             return IExecute("nextElement");

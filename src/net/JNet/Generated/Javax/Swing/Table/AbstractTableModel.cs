@@ -33,7 +33,13 @@ namespace Javax.Swing.Table
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Table.AbstractTableModel"/> to <see cref="Javax.Swing.Table.TableModel"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Table.TableModel(Javax.Swing.Table.AbstractTableModel t) => t.Cast<Javax.Swing.Table.TableModel>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Table.AbstractTableModel"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Table.AbstractTableModel t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -48,99 +54,120 @@ namespace Javax.Swing.Table
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#getTableModelListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#getTableModelListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.TableModelListener[] TableModelListeners
         {
             get { return IExecuteArray<Javax.Swing.Event.TableModelListener>("getTableModelListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#isCellEditable(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#isCellEditable(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsCellEditable(int arg0, int arg1)
         {
             return IExecute<bool>("isCellEditable", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#findColumn(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#findColumn(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int FindColumn(string arg0)
         {
             return IExecute<int>("findColumn", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#getColumnName(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#getColumnName(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetColumnName(int arg0)
         {
             return IExecute<string>("getColumnName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#addTableModelListener(javax.swing.event.TableModelListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#addTableModelListener(javax.swing.event.TableModelListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelListener"/></param>
         public void AddTableModelListener(Javax.Swing.Event.TableModelListener arg0)
         {
             IExecute("addTableModelListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableCellUpdated(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableCellUpdated(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void FireTableCellUpdated(int arg0, int arg1)
         {
             IExecute("fireTableCellUpdated", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableChanged(javax.swing.event.TableModelEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableChanged(javax.swing.event.TableModelEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelEvent"/></param>
         public void FireTableChanged(Javax.Swing.Event.TableModelEvent arg0)
         {
             IExecute("fireTableChanged", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableDataChanged()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableDataChanged()"/>
         /// </summary>
         public void FireTableDataChanged()
         {
             IExecute("fireTableDataChanged");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableRowsDeleted(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableRowsDeleted(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void FireTableRowsDeleted(int arg0, int arg1)
         {
             IExecute("fireTableRowsDeleted", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableRowsInserted(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableRowsInserted(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void FireTableRowsInserted(int arg0, int arg1)
         {
             IExecute("fireTableRowsInserted", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableRowsUpdated(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableRowsUpdated(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void FireTableRowsUpdated(int arg0, int arg1)
         {
             IExecute("fireTableRowsUpdated", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableStructureChanged()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableStructureChanged()"/>
         /// </summary>
         public void FireTableStructureChanged()
         {
             IExecute("fireTableStructureChanged");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#removeTableModelListener(javax.swing.event.TableModelListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#removeTableModelListener(javax.swing.event.TableModelListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelListener"/></param>
         public void RemoveTableModelListener(Javax.Swing.Event.TableModelListener arg0)
         {
             IExecute("removeTableModelListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#setValueAt(java.lang.Object,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#setValueAt(java.lang.Object,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void SetValueAt(object arg0, int arg1, int arg2)
         {
             IExecute("setValueAt", arg0, arg1, arg2);

@@ -38,75 +38,75 @@ namespace Javax.Lang.Model.Element
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#ANNOTATION_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#ANNOTATION_TYPE"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind ANNOTATION_TYPE => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("ANNOTATION_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#CLASS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#CLASS"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind CLASS => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("CLASS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#CONSTRUCTOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#CONSTRUCTOR"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind CONSTRUCTOR => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("CONSTRUCTOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#ENUM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#ENUM"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind ENUM => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("ENUM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#ENUM_CONSTANT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#ENUM_CONSTANT"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind ENUM_CONSTANT => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("ENUM_CONSTANT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#EXCEPTION_PARAMETER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#EXCEPTION_PARAMETER"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind EXCEPTION_PARAMETER => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("EXCEPTION_PARAMETER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#FIELD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#FIELD"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind FIELD => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("FIELD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#INSTANCE_INIT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#INSTANCE_INIT"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind INSTANCE_INIT => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("INSTANCE_INIT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#INTERFACE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#INTERFACE"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind INTERFACE => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("INTERFACE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#LOCAL_VARIABLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#LOCAL_VARIABLE"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind LOCAL_VARIABLE => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("LOCAL_VARIABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#METHOD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#METHOD"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind METHOD => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("METHOD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#MODULE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#MODULE"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind MODULE => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("MODULE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#OTHER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#OTHER"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind OTHER => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("OTHER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#PACKAGE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#PACKAGE"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind PACKAGE => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("PACKAGE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#PARAMETER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#PARAMETER"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind PARAMETER => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("PARAMETER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#RESOURCE_VARIABLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#RESOURCE_VARIABLE"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind RESOURCE_VARIABLE => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("RESOURCE_VARIABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#STATIC_INIT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#STATIC_INIT"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind STATIC_INIT => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("STATIC_INIT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#TYPE_PARAMETER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#TYPE_PARAMETER"/>
         /// </summary>
         public static Javax.Lang.Model.Element.ElementKind TYPE_PARAMETER => Clazz.GetField<Javax.Lang.Model.Element.ElementKind>("TYPE_PARAMETER");
         
@@ -114,8 +114,10 @@ namespace Javax.Lang.Model.Element
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Lang.Model.Element.ElementKind"/></returns>
         public static Javax.Lang.Model.Element.ElementKind[] Values()
         {
             return SExecuteArray<Javax.Lang.Model.Element.ElementKind>("values");
@@ -125,22 +127,28 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isClass()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isClass()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsClass()
         {
             return IExecute<bool>("isClass");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isField()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isField()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsField()
         {
             return IExecute<bool>("isField");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isInterface()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isInterface()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsInterfaceMethod()
         {
             return IExecute<bool>("isInterface");

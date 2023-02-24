@@ -30,8 +30,11 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#<init>(int,int,float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#%3Cinit%3E(int,int,float[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
         public Kernel(int arg0, int arg1, float[] arg2)
             : base(arg0, arg1, arg2)
         {
@@ -40,6 +43,9 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.Kernel"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.Kernel t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -54,36 +60,38 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
             get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
             get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getXOrigin() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getXOrigin()"/> 
         /// </summary>
         public int XOrigin
         {
             get { return IExecute<int>("getXOrigin"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getYOrigin() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getYOrigin()"/> 
         /// </summary>
         public int YOrigin
         {
             get { return IExecute<int>("getYOrigin"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getKernelData(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html#getKernelData(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] GetKernelData(float[] arg0)
         {
             return IExecuteArray<float>("getKernelData", arg0);

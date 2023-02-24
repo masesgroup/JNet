@@ -33,6 +33,9 @@ namespace Javax.Annotation.Processing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Annotation.Processing.Generated"/> to <see cref="Java.Lang.Annotation.Annotation"/>
+        /// </summary>
         public static implicit operator Java.Lang.Annotation.Annotation(Javax.Annotation.Processing.Generated t) => t.Cast<Java.Lang.Annotation.Annotation>();
         
         #endregion
@@ -47,22 +50,28 @@ namespace Javax.Annotation.Processing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#comments()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#comments()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Comments()
         {
             return IExecute<string>("comments");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#date()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#date()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Date()
         {
             return IExecute<string>("date");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#value()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html#value()"/>
         /// </summary>
+        
+        /// <returns><see cref="string"/></returns>
         public string[] Value()
         {
             return IExecuteArray<string>("value");

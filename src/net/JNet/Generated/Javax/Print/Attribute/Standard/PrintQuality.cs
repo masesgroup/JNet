@@ -33,23 +33,32 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.PrintQuality"/> to <see cref="Javax.Print.Attribute.DocAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.DocAttribute(Javax.Print.Attribute.Standard.PrintQuality t) => t.Cast<Javax.Print.Attribute.DocAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.PrintQuality"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.PrintQuality t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.PrintQuality"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.PrintQuality t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrintQuality.html#DRAFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrintQuality.html#DRAFT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrintQuality DRAFT => Clazz.GetField<Javax.Print.Attribute.Standard.PrintQuality>("DRAFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrintQuality.html#HIGH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrintQuality.html#HIGH"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrintQuality HIGH => Clazz.GetField<Javax.Print.Attribute.Standard.PrintQuality>("HIGH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrintQuality.html#NORMAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrintQuality.html#NORMAL"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrintQuality NORMAL => Clazz.GetField<Javax.Print.Attribute.Standard.PrintQuality>("NORMAL");
         
@@ -61,7 +70,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrintQuality.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrintQuality.html#getName()"/> 
         /// </summary>
         public string Name
         {

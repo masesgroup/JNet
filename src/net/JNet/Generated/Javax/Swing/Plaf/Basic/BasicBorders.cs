@@ -42,64 +42,76 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getInternalFrameBorder() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getInternalFrameBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border InternalFrameBorder
         {
             get { return SExecute<Javax.Swing.Border.Border>("getInternalFrameBorder"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getProgressBarBorder() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getProgressBarBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border ProgressBarBorder
         {
             get { return SExecute<Javax.Swing.Border.Border>("getProgressBarBorder"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getTextFieldBorder() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getTextFieldBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border TextFieldBorder
         {
             get { return SExecute<Javax.Swing.Border.Border>("getTextFieldBorder"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getButtonBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getButtonBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border GetButtonBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("getButtonBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getMenuBarBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getMenuBarBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border GetMenuBarBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("getMenuBarBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getRadioButtonBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getRadioButtonBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border GetRadioButtonBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("getRadioButtonBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getSplitPaneBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getSplitPaneBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border GetSplitPaneBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("getSplitPaneBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getSplitPaneDividerBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getSplitPaneDividerBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border GetSplitPaneDividerBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("getSplitPaneDividerBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getToggleButtonBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.html#getToggleButtonBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border GetToggleButtonBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("getToggleButtonBorder");
@@ -117,8 +129,12 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.ButtonBorder.html#<init>(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.ButtonBorder.html#%3Cinit%3E(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
             public ButtonBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -127,6 +143,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicBorders.ButtonBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicBorders.ButtonBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -152,8 +171,12 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.FieldBorder.html#<init>(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.FieldBorder.html#%3Cinit%3E(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
             public FieldBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -162,6 +185,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicBorders.FieldBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicBorders.FieldBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -190,6 +216,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicBorders.MarginBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicBorders.MarginBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -215,8 +244,10 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.MenuBarBorder.html#<init>(java.awt.Color,java.awt.Color)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.MenuBarBorder.html#%3Cinit%3E(java.awt.Color,java.awt.Color)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
             public MenuBarBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
                 : base(arg0, arg1)
             {
@@ -225,6 +256,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicBorders.MenuBarBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicBorders.MenuBarBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -250,8 +284,12 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.RadioButtonBorder.html#<init>(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.RadioButtonBorder.html#%3Cinit%3E(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
             public RadioButtonBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -284,8 +322,12 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.RolloverButtonBorder.html#<init>(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.RolloverButtonBorder.html#%3Cinit%3E(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
             public RolloverButtonBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -318,8 +360,10 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#<init>(java.awt.Color,java.awt.Color)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#%3Cinit%3E(java.awt.Color,java.awt.Color)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
             public SplitPaneBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
                 : base(arg0, arg1)
             {
@@ -328,7 +372,13 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicBorders.SplitPaneBorder"/> to <see cref="Javax.Swing.Border.Border"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Border.Border(Javax.Swing.Plaf.Basic.BasicBorders.SplitPaneBorder t) => t.Cast<Javax.Swing.Border.Border>();
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicBorders.SplitPaneBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicBorders.SplitPaneBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -343,22 +393,32 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#isBorderOpaque()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#isBorderOpaque()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool IsBorderOpaque()
             {
                 return IExecute<bool>("isBorderOpaque");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#getBorderInsets(java.awt.Component)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#getBorderInsets(java.awt.Component)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <returns><see cref="Java.Awt.Insets"/></returns>
             public Java.Awt.Insets GetBorderInsets(Java.Awt.Component arg0)
             {
                 return IExecute<Java.Awt.Insets>("getBorderInsets", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg4"><see langword="int"/></param>
+            /// <param name="arg5"><see langword="int"/></param>
             public void PaintBorder(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
             {
                 IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -375,8 +435,12 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.ToggleButtonBorder.html#<init>(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.ToggleButtonBorder.html#%3Cinit%3E(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+            /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
             public ToggleButtonBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
                 : base(arg0, arg1, arg2, arg3)
             {

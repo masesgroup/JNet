@@ -33,14 +33,20 @@ namespace Java.Security.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.DSAPublicKey"/> to <see cref="Java.Security.Interfaces.DSAKey"/>
+        /// </summary>
         public static implicit operator Java.Security.Interfaces.DSAKey(Java.Security.Interfaces.DSAPublicKey t) => t.Cast<Java.Security.Interfaces.DSAKey>();
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.DSAPublicKey"/> to <see cref="Java.Security.PublicKey"/>
+        /// </summary>
         public static implicit operator Java.Security.PublicKey(Java.Security.Interfaces.DSAPublicKey t) => t.Cast<Java.Security.PublicKey>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAPublicKey.html#serialVersionUID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAPublicKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         
@@ -52,7 +58,7 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAPublicKey.html#getY() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAPublicKey.html#getY()"/> 
         /// </summary>
         public Java.Math.BigInteger Y
         {

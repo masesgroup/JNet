@@ -46,113 +46,148 @@ namespace Java.Nio.Charset
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#canEncode(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#canEncode(char)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="char"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CanEncode(char arg0)
         {
             return IExecute<bool>("canEncode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#canEncode(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#canEncode(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CanEncode(Java.Lang.CharSequence arg0)
         {
             return IExecute<bool>("canEncode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#isLegalReplacement(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#isLegalReplacement(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsLegalReplacement(byte[] arg0)
         {
             return IExecute<bool>("isLegalReplacement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#replacement()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#replacement()"/>
         /// </summary>
+        
+        /// <returns><see cref="byte"/></returns>
         public byte[] Replacement()
         {
             return IExecuteArray<byte>("replacement");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#averageBytesPerChar()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#averageBytesPerChar()"/>
         /// </summary>
+        
+        /// <returns><see langword="float"/></returns>
         public float AverageBytesPerChar()
         {
             return IExecute<float>("averageBytesPerChar");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#maxBytesPerChar()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#maxBytesPerChar()"/>
         /// </summary>
+        
+        /// <returns><see langword="float"/></returns>
         public float MaxBytesPerChar()
         {
             return IExecute<float>("maxBytesPerChar");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#encode(java.nio.CharBuffer) throws java.nio.charset.CharacterCodingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#encode(java.nio.CharBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+        /// <exception cref="Java.Nio.Charset.CharacterCodingException"/>
         public Java.Nio.ByteBuffer Encode(Java.Nio.CharBuffer arg0)
         {
             return IExecute<Java.Nio.ByteBuffer>("encode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#charset.Charset java.nio.charset.CharsetEncoder.charset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#charset.Charset java.nio.charset.CharsetEncoder.charset()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
         public Java.Nio.Charset.Charset Charset()
         {
             return IExecute<Java.Nio.Charset.Charset>("charset");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#onMalformedInput(java.nio.charset.CodingErrorAction)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#onMalformedInput(java.nio.charset.CodingErrorAction)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Charset.CodingErrorAction"/></param>
+        /// <returns><see cref="Java.Nio.Charset.CharsetEncoder"/></returns>
         public Java.Nio.Charset.CharsetEncoder OnMalformedInput(Java.Nio.Charset.CodingErrorAction arg0)
         {
             return IExecute<Java.Nio.Charset.CharsetEncoder>("onMalformedInput", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#onUnmappableCharacter(java.nio.charset.CodingErrorAction)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#onUnmappableCharacter(java.nio.charset.CodingErrorAction)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Charset.CodingErrorAction"/></param>
+        /// <returns><see cref="Java.Nio.Charset.CharsetEncoder"/></returns>
         public Java.Nio.Charset.CharsetEncoder OnUnmappableCharacter(Java.Nio.Charset.CodingErrorAction arg0)
         {
             return IExecute<Java.Nio.Charset.CharsetEncoder>("onUnmappableCharacter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#replaceWith(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#replaceWith(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see cref="Java.Nio.Charset.CharsetEncoder"/></returns>
         public Java.Nio.Charset.CharsetEncoder ReplaceWith(byte[] arg0)
         {
             return IExecute<Java.Nio.Charset.CharsetEncoder>("replaceWith", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#reset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#reset()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Charset.CharsetEncoder"/></returns>
         public Java.Nio.Charset.CharsetEncoder Reset()
         {
             return IExecute<Java.Nio.Charset.CharsetEncoder>("reset");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#encode(java.nio.CharBuffer,java.nio.ByteBuffer,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#encode(java.nio.CharBuffer,java.nio.ByteBuffer,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
         public Java.Nio.Charset.CoderResult Encode(Java.Nio.CharBuffer arg0, Java.Nio.ByteBuffer arg1, bool arg2)
         {
             return IExecute<Java.Nio.Charset.CoderResult>("encode", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#flush(java.nio.ByteBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#flush(java.nio.ByteBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
         public Java.Nio.Charset.CoderResult Flush(Java.Nio.ByteBuffer arg0)
         {
             return IExecute<Java.Nio.Charset.CoderResult>("flush", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#malformedInputAction()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#malformedInputAction()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Charset.CodingErrorAction"/></returns>
         public Java.Nio.Charset.CodingErrorAction MalformedInputAction()
         {
             return IExecute<Java.Nio.Charset.CodingErrorAction>("malformedInputAction");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#unmappableCharacterAction()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#unmappableCharacterAction()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Charset.CodingErrorAction"/></returns>
         public Java.Nio.Charset.CodingErrorAction UnmappableCharacterAction()
         {
             return IExecute<Java.Nio.Charset.CodingErrorAction>("unmappableCharacterAction");

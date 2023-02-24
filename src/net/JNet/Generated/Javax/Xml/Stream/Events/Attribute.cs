@@ -33,6 +33,9 @@ namespace Javax.Xml.Stream.Events
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Stream.Events.Attribute"/> to <see cref="Javax.Xml.Stream.Events.XMLEvent"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Stream.Events.XMLEvent(Javax.Xml.Stream.Events.Attribute t) => t.Cast<Javax.Xml.Stream.Events.XMLEvent>();
         
         #endregion
@@ -47,29 +50,31 @@ namespace Javax.Xml.Stream.Events
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#getDTDType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#getDTDType()"/> 
         /// </summary>
         public string DTDType
         {
             get { return IExecute<string>("getDTDType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#getName()"/> 
         /// </summary>
         public Javax.Xml.Namespace.QName Name
         {
             get { return IExecute<Javax.Xml.Namespace.QName>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#getValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#getValue()"/> 
         /// </summary>
         public string Value
         {
             get { return IExecute<string>("getValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#isSpecified()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Attribute.html#isSpecified()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSpecified()
         {
             return IExecute<bool>("isSpecified");

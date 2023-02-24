@@ -33,6 +33,9 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sound.Midi.Receiver"/> to <see cref="Java.Lang.AutoCloseable"/>
+        /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Javax.Sound.Midi.Receiver t) => t.Cast<Java.Lang.AutoCloseable>();
         
         #endregion
@@ -47,15 +50,17 @@ namespace Javax.Sound.Midi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Receiver.html#close()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Receiver.html#close()"/>
         /// </summary>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Receiver.html#send(javax.sound.midi.MidiMessage,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Receiver.html#send(javax.sound.midi.MidiMessage,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiMessage"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
         public void Send(Javax.Sound.Midi.MidiMessage arg0, long arg1)
         {
             IExecute("send", arg0, arg1);

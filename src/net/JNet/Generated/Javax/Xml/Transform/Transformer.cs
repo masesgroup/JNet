@@ -46,63 +46,76 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getErrorListener() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setErrorListener(javax.xml.transform.ErrorListener) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getErrorListener()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setErrorListener(javax.xml.transform.ErrorListener)"/>
         /// </summary>
         public Javax.Xml.Transform.ErrorListener ErrorListener
         {
             get { return IExecute<Javax.Xml.Transform.ErrorListener>("getErrorListener"); } set { IExecute("setErrorListener", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getURIResolver() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setURIResolver(javax.xml.transform.URIResolver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getURIResolver()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setURIResolver(javax.xml.transform.URIResolver)"/>
         /// </summary>
         public Javax.Xml.Transform.URIResolver URIResolver
         {
             get { return IExecute<Javax.Xml.Transform.URIResolver>("getURIResolver"); } set { IExecute("setURIResolver", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getParameter(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getParameter(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetParameter(string arg0)
         {
             return IExecute("getParameter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getOutputProperty(java.lang.String) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#getOutputProperty(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public string GetOutputProperty(string arg0)
         {
             return IExecute<string>("getOutputProperty", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#clearParameters()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#clearParameters()"/>
         /// </summary>
         public void ClearParameters()
         {
             IExecute("clearParameters");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setOutputProperty(java.lang.String,java.lang.String) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setOutputProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetOutputProperty(string arg0, string arg1)
         {
             IExecute("setOutputProperty", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setParameter(java.lang.String,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#setParameter(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void SetParameter(string arg0, object arg1)
         {
             IExecute("setParameter", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#transform.Transformer.transform(javax.xml.transform.Source,javax.xml.transform.Result) throws javax.xml.transform.TransformerException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#transform.Transformer.transform(javax.xml.transform.Source,javax.xml.transform.Result)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Transform.Result"/></param>
+        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
         public void Transform(Javax.Xml.Transform.Source arg0, Javax.Xml.Transform.Result arg1)
         {
             IExecute("transform", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#reset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html#reset()"/>
         /// </summary>
         public void Reset()
         {

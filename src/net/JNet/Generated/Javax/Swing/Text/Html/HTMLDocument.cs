@@ -30,15 +30,18 @@ namespace Javax.Swing.Text.Html
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#<init>(javax.swing.text.AbstractDocument$Content,javax.swing.text.html.StyleSheet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#%3Cinit%3E(javax.swing.text.AbstractDocument$Content,javax.swing.text.html.StyleSheet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AbstractDocument.Content"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.Html.StyleSheet"/></param>
         public HTMLDocument(Javax.Swing.Text.AbstractDocument.Content arg0, Javax.Swing.Text.Html.StyleSheet arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#<init>(javax.swing.text.html.StyleSheet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#%3Cinit%3E(javax.swing.text.html.StyleSheet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.StyleSheet"/></param>
         public HTMLDocument(Javax.Swing.Text.Html.StyleSheet arg0)
             : base(arg0)
         {
@@ -52,7 +55,7 @@ namespace Javax.Swing.Text.Html
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#AdditionalComments
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#AdditionalComments"/>
         /// </summary>
         public static string AdditionalComments => Clazz.GetField<string>("AdditionalComments");
         
@@ -64,120 +67,160 @@ namespace Javax.Swing.Text.Html
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getBase() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setBase(java.net.URL)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getBase()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setBase(java.net.URL)"/>
         /// </summary>
         public Java.Net.URL Base
         {
             get { return IExecute<Java.Net.URL>("getBase"); } set { IExecute("setBase", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getParser() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setParser(javax.swing.text.html.HTMLEditorKit$Parser)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getParser()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setParser(javax.swing.text.html.HTMLEditorKit$Parser)"/>
         /// </summary>
         public Javax.Swing.Text.Html.HTMLEditorKit.Parser Parser
         {
             get { return IExecute<Javax.Swing.Text.Html.HTMLEditorKit.Parser>("getParser"); } set { IExecute("setParser", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getPreservesUnknownTags() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setPreservesUnknownTags(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getPreservesUnknownTags()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setPreservesUnknownTags(boolean)"/>
         /// </summary>
         public bool PreservesUnknownTags
         {
             get { return IExecute<bool>("getPreservesUnknownTags"); } set { IExecute("setPreservesUnknownTags", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getStyleSheet() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getStyleSheet()"/> 
         /// </summary>
         public Javax.Swing.Text.Html.StyleSheet StyleSheet
         {
             get { return IExecute<Javax.Swing.Text.Html.StyleSheet>("getStyleSheet"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getTokenThreshold() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setTokenThreshold(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getTokenThreshold()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setTokenThreshold(int)"/>
         /// </summary>
         public int TokenThreshold
         {
             get { return IExecute<int>("getTokenThreshold"); } set { IExecute("setTokenThreshold", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getElement(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getElement(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetElement(string arg0)
         {
             return IExecute<Javax.Swing.Text.Element>("getElement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getElement(javax.swing.text.Element,java.lang.Object,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getElement(javax.swing.text.Element,java.lang.Object,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetElement(Javax.Swing.Text.Element arg0, object arg1, object arg2)
         {
             return IExecute<Javax.Swing.Text.Element>("getElement", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getIterator(javax.swing.text.html.HTML$Tag)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getIterator(javax.swing.text.html.HTML$Tag)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.HTMLDocument.Iterator"/></returns>
         public Javax.Swing.Text.Html.HTMLDocument.Iterator GetIterator(Javax.Swing.Text.Html.HTML.Tag arg0)
         {
             return IExecute<Javax.Swing.Text.Html.HTMLDocument.Iterator>("getIterator", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getReader(int,int,int,javax.swing.text.html.HTML$Tag)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getReader(int,int,int,javax.swing.text.html.HTML$Tag)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback"/></returns>
         public Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback GetReader(int arg0, int arg1, int arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
         {
             return IExecute<Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback>("getReader", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getReader(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getReader(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback"/></returns>
         public Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback GetReader(int arg0)
         {
             return IExecute<Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback>("getReader", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertAfterEnd(javax.swing.text.Element,java.lang.String) throws javax.swing.text.BadLocationException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertAfterEnd(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void InsertAfterEnd(Javax.Swing.Text.Element arg0, string arg1)
         {
             IExecute("insertAfterEnd", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertAfterStart(javax.swing.text.Element,java.lang.String) throws javax.swing.text.BadLocationException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertAfterStart(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void InsertAfterStart(Javax.Swing.Text.Element arg0, string arg1)
         {
             IExecute("insertAfterStart", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertBeforeEnd(javax.swing.text.Element,java.lang.String) throws javax.swing.text.BadLocationException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertBeforeEnd(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void InsertBeforeEnd(Javax.Swing.Text.Element arg0, string arg1)
         {
             IExecute("insertBeforeEnd", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertBeforeStart(javax.swing.text.Element,java.lang.String) throws javax.swing.text.BadLocationException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertBeforeStart(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void InsertBeforeStart(Javax.Swing.Text.Element arg0, string arg1)
         {
             IExecute("insertBeforeStart", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#processHTMLFrameHyperlinkEvent(javax.swing.text.html.HTMLFrameHyperlinkEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#processHTMLFrameHyperlinkEvent(javax.swing.text.html.HTMLFrameHyperlinkEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLFrameHyperlinkEvent"/></param>
         public void ProcessHTMLFrameHyperlinkEvent(Javax.Swing.Text.Html.HTMLFrameHyperlinkEvent arg0)
         {
             IExecute("processHTMLFrameHyperlinkEvent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setInnerHTML(javax.swing.text.Element,java.lang.String) throws javax.swing.text.BadLocationException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setInnerHTML(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void SetInnerHTML(Javax.Swing.Text.Element arg0, string arg1)
         {
             IExecute("setInnerHTML", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setOuterHTML(javax.swing.text.Element,java.lang.String) throws javax.swing.text.BadLocationException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setOuterHTML(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Javax.Swing.Text.BadLocationException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void SetOuterHTML(Javax.Swing.Text.Element arg0, string arg1)
         {
             IExecute("setOuterHTML", arg0, arg1);
@@ -191,8 +234,11 @@ namespace Javax.Swing.Text.Html
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.BlockElement.html#<init>(javax.swing.text.html.HTMLDocument,javax.swing.text.Element,javax.swing.text.AttributeSet)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.BlockElement.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument,javax.swing.text.Element,javax.swing.text.AttributeSet)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.Text.Element"/></param>
+            /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
             public BlockElement(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -225,15 +271,22 @@ namespace Javax.Swing.Text.Html
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.html#<init>(javax.swing.text.html.HTMLDocument,int,int,int,javax.swing.text.html.HTML$Tag)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument,int,int,int,javax.swing.text.html.HTML$Tag)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg4"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
             public HTMLReader(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1, int arg2, int arg3, Javax.Swing.Text.Html.HTML.Tag arg4)
                 : base(arg0, arg1, arg2, arg3, arg4)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.html#<init>(javax.swing.text.html.HTMLDocument,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
             public HTMLReader(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1)
                 : base(arg0, arg1)
             {
@@ -282,42 +335,44 @@ namespace Javax.Swing.Text.Html
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#getAttributes() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#getAttributes()"/> 
             /// </summary>
             public Javax.Swing.Text.AttributeSet Attributes
             {
                 get { return IExecute<Javax.Swing.Text.AttributeSet>("getAttributes"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#getEndOffset() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#getEndOffset()"/> 
             /// </summary>
             public int EndOffset
             {
                 get { return IExecute<int>("getEndOffset"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#getStartOffset() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#getStartOffset()"/> 
             /// </summary>
             public int StartOffset
             {
                 get { return IExecute<int>("getStartOffset"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#getTag() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#getTag()"/> 
             /// </summary>
             public Javax.Swing.Text.Html.HTML.Tag Tag
             {
                 get { return IExecute<Javax.Swing.Text.Html.HTML.Tag>("getTag"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#isValid()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#isValid()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool IsValid()
             {
                 return IExecute<bool>("isValid");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#next()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html#next()"/>
             /// </summary>
             public void Next()
             {
@@ -335,8 +390,13 @@ namespace Javax.Swing.Text.Html
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.RunElement.html#<init>(javax.swing.text.html.HTMLDocument,javax.swing.text.Element,javax.swing.text.AttributeSet,int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.RunElement.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument,javax.swing.text.Element,javax.swing.text.AttributeSet,int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.Text.Element"/></param>
+            /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg4"><see langword="int"/></param>
             public RunElement(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2, int arg3, int arg4)
                 : base(arg0, arg1, arg2, arg3, arg4)
             {

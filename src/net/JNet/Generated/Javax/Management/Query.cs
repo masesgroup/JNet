@@ -38,39 +38,39 @@ namespace Javax.Management
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#DIV
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#DIV"/>
         /// </summary>
         public static int DIV => Clazz.GetField<int>("DIV");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#EQ
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#EQ"/>
         /// </summary>
         public static int EQ => Clazz.GetField<int>("EQ");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#GE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#GE"/>
         /// </summary>
         public static int GE => Clazz.GetField<int>("GE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#GT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#GT"/>
         /// </summary>
         public static int GT => Clazz.GetField<int>("GT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#LE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#LE"/>
         /// </summary>
         public static int LE => Clazz.GetField<int>("LE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#LT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#LT"/>
         /// </summary>
         public static int LT => Clazz.GetField<int>("LT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#MINUS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#MINUS"/>
         /// </summary>
         public static int MINUS => Clazz.GetField<int>("MINUS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#PLUS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#PLUS"/>
         /// </summary>
         public static int PLUS => Clazz.GetField<int>("PLUS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#TIMES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#TIMES"/>
         /// </summary>
         public static int TIMES => Clazz.GetField<int>("TIMES");
         
@@ -78,204 +78,281 @@ namespace Javax.Management
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#attr(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#attr(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.AttributeValueExp"/></returns>
         public static Javax.Management.AttributeValueExp Attr(string arg0, string arg1)
         {
             return SExecute<Javax.Management.AttributeValueExp>("attr", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#attr(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#attr(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.AttributeValueExp"/></returns>
         public static Javax.Management.AttributeValueExp Attr(string arg0)
         {
             return SExecute<Javax.Management.AttributeValueExp>("attr", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#classattr()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#classattr()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Management.AttributeValueExp"/></returns>
         public static Javax.Management.AttributeValueExp Classattr()
         {
             return SExecute<Javax.Management.AttributeValueExp>("classattr");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#and(javax.management.QueryExp,javax.management.QueryExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#and(javax.management.QueryExp,javax.management.QueryExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.QueryExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.QueryExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp And(Javax.Management.QueryExp arg0, Javax.Management.QueryExp arg1)
         {
             return SExecute<Javax.Management.QueryExp>("and", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#anySubString(javax.management.AttributeValueExp,javax.management.StringValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#anySubString(javax.management.AttributeValueExp,javax.management.StringValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.AttributeValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.StringValueExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp AnySubString(Javax.Management.AttributeValueExp arg0, Javax.Management.StringValueExp arg1)
         {
             return SExecute<Javax.Management.QueryExp>("anySubString", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#between(javax.management.ValueExp,javax.management.ValueExp,javax.management.ValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#between(javax.management.ValueExp,javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.ValueExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp Between(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1, Javax.Management.ValueExp arg2)
         {
             return SExecute<Javax.Management.QueryExp>("between", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#eq(javax.management.ValueExp,javax.management.ValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#eq(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp Eq(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecute<Javax.Management.QueryExp>("eq", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#finalSubString(javax.management.AttributeValueExp,javax.management.StringValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#finalSubString(javax.management.AttributeValueExp,javax.management.StringValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.AttributeValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.StringValueExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp FinalSubString(Javax.Management.AttributeValueExp arg0, Javax.Management.StringValueExp arg1)
         {
             return SExecute<Javax.Management.QueryExp>("finalSubString", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#geq(javax.management.ValueExp,javax.management.ValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#geq(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp Geq(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecute<Javax.Management.QueryExp>("geq", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#gt(javax.management.ValueExp,javax.management.ValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#gt(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp Gt(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecute<Javax.Management.QueryExp>("gt", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#in(javax.management.ValueExp,javax.management.ValueExp[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#in(javax.management.ValueExp,javax.management.ValueExp[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp In(Javax.Management.ValueExp arg0, Javax.Management.ValueExp[] arg1)
         {
             return SExecute<Javax.Management.QueryExp>("in", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#initialSubString(javax.management.AttributeValueExp,javax.management.StringValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#initialSubString(javax.management.AttributeValueExp,javax.management.StringValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.AttributeValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.StringValueExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp InitialSubString(Javax.Management.AttributeValueExp arg0, Javax.Management.StringValueExp arg1)
         {
             return SExecute<Javax.Management.QueryExp>("initialSubString", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#isInstanceOf(javax.management.StringValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#isInstanceOf(javax.management.StringValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.StringValueExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp IsInstanceOf(Javax.Management.StringValueExp arg0)
         {
             return SExecute<Javax.Management.QueryExp>("isInstanceOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#leq(javax.management.ValueExp,javax.management.ValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#leq(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp Leq(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecute<Javax.Management.QueryExp>("leq", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#lt(javax.management.ValueExp,javax.management.ValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#lt(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp Lt(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecute<Javax.Management.QueryExp>("lt", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#match(javax.management.AttributeValueExp,javax.management.StringValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#match(javax.management.AttributeValueExp,javax.management.StringValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.AttributeValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.StringValueExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp Match(Javax.Management.AttributeValueExp arg0, Javax.Management.StringValueExp arg1)
         {
             return SExecute<Javax.Management.QueryExp>("match", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#not(javax.management.QueryExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#not(javax.management.QueryExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.QueryExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp Not(Javax.Management.QueryExp arg0)
         {
             return SExecute<Javax.Management.QueryExp>("not", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#or(javax.management.QueryExp,javax.management.QueryExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#or(javax.management.QueryExp,javax.management.QueryExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.QueryExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.QueryExp"/></param>
+        /// <returns><see cref="Javax.Management.QueryExp"/></returns>
         public static Javax.Management.QueryExp Or(Javax.Management.QueryExp arg0, Javax.Management.QueryExp arg1)
         {
             return SExecute<Javax.Management.QueryExp>("or", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.StringValueExp"/></returns>
         public static Javax.Management.StringValueExp Value(string arg0)
         {
             return SExecute<Javax.Management.StringValueExp>("value", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#div(javax.management.ValueExp,javax.management.ValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#div(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
+        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Div(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecute<Javax.Management.ValueExp>("div", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#minus(javax.management.ValueExp,javax.management.ValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#minus(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
+        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Minus(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecute<Javax.Management.ValueExp>("minus", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#plus(javax.management.ValueExp,javax.management.ValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#plus(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
+        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Plus(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecute<Javax.Management.ValueExp>("plus", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#times(javax.management.ValueExp,javax.management.ValueExp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#times(javax.management.ValueExp,javax.management.ValueExp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ValueExp"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ValueExp"/></param>
+        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Times(Javax.Management.ValueExp arg0, Javax.Management.ValueExp arg1)
         {
             return SExecute<Javax.Management.ValueExp>("times", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Value(bool arg0)
         {
             return SExecute<Javax.Management.ValueExp>("value", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Value(double arg0)
         {
             return SExecute<Javax.Management.ValueExp>("value", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Value(float arg0)
         {
             return SExecute<Javax.Management.ValueExp>("value", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Value(int arg0)
         {
             return SExecute<Javax.Management.ValueExp>("value", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(java.lang.Number)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(java.lang.Number)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Number"/></param>
+        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Value(Java.Lang.Number arg0)
         {
             return SExecute<Javax.Management.ValueExp>("value", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#value(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
         public static Javax.Management.ValueExp Value(long arg0)
         {
             return SExecute<Javax.Management.ValueExp>("value", arg0);

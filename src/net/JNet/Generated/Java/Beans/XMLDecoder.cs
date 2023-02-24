@@ -30,36 +30,47 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#<init>(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener,java.lang.ClassLoader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#%3Cinit%3E(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener,java.lang.ClassLoader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see cref="Java.Beans.ExceptionListener"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.ClassLoader"/></param>
         public XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2, Java.Lang.ClassLoader arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#<init>(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#%3Cinit%3E(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see cref="Java.Beans.ExceptionListener"/></param>
         public XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#<init>(java.io.InputStream,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#%3Cinit%3E(java.io.InputStream,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public XMLDecoder(Java.Io.InputStream arg0, object arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#<init>(java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public XMLDecoder(Java.Io.InputStream arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#<init>(org.xml.sax.InputSource)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#%3Cinit%3E(org.xml.sax.InputSource)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
         public XMLDecoder(Org.Xml.Sax.InputSource arg0)
             : base(arg0)
         {
@@ -68,6 +79,9 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.XMLDecoder"/> to <see cref="Java.Lang.AutoCloseable"/>
+        /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Beans.XMLDecoder t) => t.Cast<Java.Lang.AutoCloseable>();
         
         #endregion
@@ -78,8 +92,12 @@ namespace Java.Beans
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#createHandler(java.lang.Object,java.beans.ExceptionListener,java.lang.ClassLoader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#createHandler(java.lang.Object,java.beans.ExceptionListener,java.lang.ClassLoader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.ExceptionListener"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Org.Xml.Sax.Helpers.DefaultHandler"/></returns>
         public static Org.Xml.Sax.Helpers.DefaultHandler CreateHandler(object arg0, Java.Beans.ExceptionListener arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecute<Org.Xml.Sax.Helpers.DefaultHandler>("createHandler", arg0, arg1, arg2);
@@ -89,28 +107,30 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#getExceptionListener() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#setExceptionListener(java.beans.ExceptionListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#getExceptionListener()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#setExceptionListener(java.beans.ExceptionListener)"/>
         /// </summary>
         public Java.Beans.ExceptionListener ExceptionListener
         {
             get { return IExecute<Java.Beans.ExceptionListener>("getExceptionListener"); } set { IExecute("setExceptionListener", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#getOwner() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#setOwner(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#getOwner()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#setOwner(java.lang.Object)"/>
         /// </summary>
         public object Owner
         {
             get { return IExecute("getOwner"); } set { IExecute("setOwner", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#readObject()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#readObject()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object ReadObject()
         {
             return IExecute("readObject");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#close()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#close()"/>
         /// </summary>
         public void Close()
         {

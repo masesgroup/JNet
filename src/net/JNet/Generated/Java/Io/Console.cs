@@ -33,6 +33,9 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Io.Console"/> to <see cref="Java.Io.Flushable"/>
+        /// </summary>
         public static implicit operator Java.Io.Flushable(Java.Io.Console t) => t.Cast<Java.Io.Flushable>();
         
         #endregion
@@ -47,63 +50,83 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readPassword()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readPassword()"/>
         /// </summary>
+        
+        /// <returns><see cref="char"/></returns>
         public char[] ReadPassword()
         {
             return IExecuteArray<char>("readPassword");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readPassword(java.lang.String,java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readPassword(java.lang.String,java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="char"/></returns>
         public char[] ReadPassword(string arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return IExecuteArray<char>("readPassword", arg0); else return IExecuteArray<char>("readPassword", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#format(java.lang.String,java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#format(java.lang.String,java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Io.Console"/></returns>
         public Java.Io.Console Format(string arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Io.Console>("format", arg0); else return IExecute<Java.Io.Console>("format", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#printf(java.lang.String,java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#printf(java.lang.String,java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Io.Console"/></returns>
         public Java.Io.Console Printf(string arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Io.Console>("printf", arg0); else return IExecute<Java.Io.Console>("printf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#writer()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#writer()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Io.PrintWriter"/></returns>
         public Java.Io.PrintWriter Writer()
         {
             return IExecute<Java.Io.PrintWriter>("writer");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#reader()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#reader()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Io.Reader"/></returns>
         public Java.Io.Reader Reader()
         {
             return IExecute<Java.Io.Reader>("reader");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readLine()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readLine()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string ReadLine()
         {
             return IExecute<string>("readLine");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readLine(java.lang.String,java.lang.Object...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readLine(java.lang.String,java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="string"/></returns>
         public string ReadLine(string arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return IExecute<string>("readLine", arg0); else return IExecute<string>("readLine", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#flush()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#flush()"/>
         /// </summary>
         public void Flush()
         {

@@ -30,8 +30,10 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#<init>(java.util.function.LongBinaryOperator,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#%3Cinit%3E(java.util.function.LongBinaryOperator,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
         public LongAccumulator(Java.Util.Function.LongBinaryOperator arg0, long arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Util.Concurrent.Atomic
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.Atomic.LongAccumulator"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Atomic.LongAccumulator t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,28 +59,31 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#getThenReset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#getThenReset()"/> 
         /// </summary>
         public long ThenReset
         {
             get { return IExecute<long>("getThenReset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#get()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#get()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long Get()
         {
             return IExecute<long>("get");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#accumulate(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#accumulate(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
         public void Accumulate(long arg0)
         {
             IExecute("accumulate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#reset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html#reset()"/>
         /// </summary>
         public void Reset()
         {

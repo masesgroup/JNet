@@ -46,15 +46,21 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabableView.html#getPartialSpan(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabableView.html#getPartialSpan(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="float"/></returns>
         public float GetPartialSpan(int arg0, int arg1)
         {
             return IExecute<float>("getPartialSpan", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabableView.html#getTabbedSpan(float,javax.swing.text.TabExpander)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabableView.html#getTabbedSpan(float,javax.swing.text.TabExpander)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.TabExpander"/></param>
+        /// <returns><see langword="float"/></returns>
         public float GetTabbedSpan(float arg0, Javax.Swing.Text.TabExpander arg1)
         {
             return IExecute<float>("getTabbedSpan", arg0, arg1);

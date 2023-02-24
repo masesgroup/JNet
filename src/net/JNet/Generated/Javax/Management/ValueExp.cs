@@ -33,6 +33,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.ValueExp"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.ValueExp t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,8 +50,14 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ValueExp.html#apply(javax.management.ObjectName) throws javax.management.BadStringOperationException,javax.management.BadBinaryOpValueExpException,javax.management.BadAttributeValueExpException,javax.management.InvalidApplicationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ValueExp.html#apply(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
+        /// <exception cref="Javax.Management.BadStringOperationException"/>
+        /// <exception cref="Javax.Management.BadBinaryOpValueExpException"/>
+        /// <exception cref="Javax.Management.BadAttributeValueExpException"/>
+        /// <exception cref="Javax.Management.InvalidApplicationException"/>
         public Javax.Management.ValueExp Apply(Javax.Management.ObjectName arg0)
         {
             return IExecute<Javax.Management.ValueExp>("apply", arg0);

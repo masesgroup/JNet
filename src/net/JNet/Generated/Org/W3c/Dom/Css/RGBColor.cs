@@ -46,21 +46,21 @@ namespace Org.W3c.Dom.Css
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/RGBColor.html#getBlue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/RGBColor.html#getBlue()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSPrimitiveValue Blue
         {
             get { return IExecute<Org.W3c.Dom.Css.CSSPrimitiveValue>("getBlue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/RGBColor.html#getGreen() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/RGBColor.html#getGreen()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSPrimitiveValue Green
         {
             get { return IExecute<Org.W3c.Dom.Css.CSSPrimitiveValue>("getGreen"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/RGBColor.html#getRed() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/RGBColor.html#getRed()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSPrimitiveValue Red
         {

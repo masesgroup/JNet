@@ -38,39 +38,39 @@ namespace Java.Lang.Management
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#CLASS_LOADING_MXBEAN_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#CLASS_LOADING_MXBEAN_NAME"/>
         /// </summary>
         public static string CLASS_LOADING_MXBEAN_NAME => Clazz.GetField<string>("CLASS_LOADING_MXBEAN_NAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#COMPILATION_MXBEAN_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#COMPILATION_MXBEAN_NAME"/>
         /// </summary>
         public static string COMPILATION_MXBEAN_NAME => Clazz.GetField<string>("COMPILATION_MXBEAN_NAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE"/>
         /// </summary>
         public static string GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE => Clazz.GetField<string>("GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE"/>
         /// </summary>
         public static string MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE => Clazz.GetField<string>("MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#MEMORY_MXBEAN_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#MEMORY_MXBEAN_NAME"/>
         /// </summary>
         public static string MEMORY_MXBEAN_NAME => Clazz.GetField<string>("MEMORY_MXBEAN_NAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#MEMORY_POOL_MXBEAN_DOMAIN_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#MEMORY_POOL_MXBEAN_DOMAIN_TYPE"/>
         /// </summary>
         public static string MEMORY_POOL_MXBEAN_DOMAIN_TYPE => Clazz.GetField<string>("MEMORY_POOL_MXBEAN_DOMAIN_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#OPERATING_SYSTEM_MXBEAN_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#OPERATING_SYSTEM_MXBEAN_NAME"/>
         /// </summary>
         public static string OPERATING_SYSTEM_MXBEAN_NAME => Clazz.GetField<string>("OPERATING_SYSTEM_MXBEAN_NAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#RUNTIME_MXBEAN_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#RUNTIME_MXBEAN_NAME"/>
         /// </summary>
         public static string RUNTIME_MXBEAN_NAME => Clazz.GetField<string>("RUNTIME_MXBEAN_NAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#THREAD_MXBEAN_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#THREAD_MXBEAN_NAME"/>
         /// </summary>
         public static string THREAD_MXBEAN_NAME => Clazz.GetField<string>("THREAD_MXBEAN_NAME");
         
@@ -78,49 +78,49 @@ namespace Java.Lang.Management
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getClassLoadingMXBean() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getClassLoadingMXBean()"/> 
         /// </summary>
         public static Java.Lang.Management.ClassLoadingMXBean ClassLoadingMXBean
         {
             get { return SExecute<Java.Lang.Management.ClassLoadingMXBean>("getClassLoadingMXBean"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getCompilationMXBean() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getCompilationMXBean()"/> 
         /// </summary>
         public static Java.Lang.Management.CompilationMXBean CompilationMXBean
         {
             get { return SExecute<Java.Lang.Management.CompilationMXBean>("getCompilationMXBean"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getMemoryMXBean() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getMemoryMXBean()"/> 
         /// </summary>
         public static Java.Lang.Management.MemoryMXBean MemoryMXBean
         {
             get { return SExecute<Java.Lang.Management.MemoryMXBean>("getMemoryMXBean"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getOperatingSystemMXBean() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getOperatingSystemMXBean()"/> 
         /// </summary>
         public static Java.Lang.Management.OperatingSystemMXBean OperatingSystemMXBean
         {
             get { return SExecute<Java.Lang.Management.OperatingSystemMXBean>("getOperatingSystemMXBean"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformMBeanServer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformMBeanServer()"/> 
         /// </summary>
         public static Javax.Management.MBeanServer PlatformMBeanServer
         {
             get { return SExecute<Javax.Management.MBeanServer>("getPlatformMBeanServer"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getRuntimeMXBean() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getRuntimeMXBean()"/> 
         /// </summary>
         public static Java.Lang.Management.RuntimeMXBean RuntimeMXBean
         {
             get { return SExecute<Java.Lang.Management.RuntimeMXBean>("getRuntimeMXBean"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getThreadMXBean() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getThreadMXBean()"/> 
         /// </summary>
         public static Java.Lang.Management.ThreadMXBean ThreadMXBean
         {

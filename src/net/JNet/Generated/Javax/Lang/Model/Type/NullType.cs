@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Type
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Type.NullType"/> to <see cref="Javax.Lang.Model.Type.ReferenceType"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Type.ReferenceType(Javax.Lang.Model.Type.NullType t) => t.Cast<Javax.Lang.Model.Type.ReferenceType>();
         
         #endregion

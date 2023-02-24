@@ -30,8 +30,9 @@ namespace Javax.Security.Auth
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html#<init>(javax.security.auth.Subject)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html#%3Cinit%3E(javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         public SubjectDomainCombiner(Javax.Security.Auth.Subject arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Security.Auth
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.SubjectDomainCombiner"/> to <see cref="Java.Security.DomainCombiner"/>
+        /// </summary>
         public static implicit operator Java.Security.DomainCombiner(Javax.Security.Auth.SubjectDomainCombiner t) => t.Cast<Java.Security.DomainCombiner>();
         
         #endregion
@@ -54,15 +58,18 @@ namespace Javax.Security.Auth
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html#getSubject() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html#getSubject()"/> 
         /// </summary>
         public Javax.Security.Auth.Subject Subject
         {
             get { return IExecute<Javax.Security.Auth.Subject>("getSubject"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html#combine(java.security.ProtectionDomain[],java.security.ProtectionDomain[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/SubjectDomainCombiner.html#combine(java.security.ProtectionDomain[],java.security.ProtectionDomain[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
+        /// <param name="arg1"><see cref="Java.Security.ProtectionDomain"/></param>
+        /// <returns><see cref="Java.Security.ProtectionDomain"/></returns>
         public Java.Security.ProtectionDomain[] Combine(Java.Security.ProtectionDomain[] arg0, Java.Security.ProtectionDomain[] arg1)
         {
             return IExecuteArray<Java.Security.ProtectionDomain>("combine", arg0, arg1);

@@ -46,14 +46,14 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocketFactory.html#getDefaultCipherSuites() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocketFactory.html#getDefaultCipherSuites()"/> 
         /// </summary>
         public string[] DefaultCipherSuites
         {
             get { return IExecuteArray<string>("getDefaultCipherSuites"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocketFactory.html#getSupportedCipherSuites() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocketFactory.html#getSupportedCipherSuites()"/> 
         /// </summary>
         public string[] SupportedCipherSuites
         {

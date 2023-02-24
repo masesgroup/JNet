@@ -46,36 +46,45 @@ namespace Javax.Smartcardio
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#getCard() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#getCard()"/> 
         /// </summary>
         public Javax.Smartcardio.Card Card
         {
             get { return IExecute<Javax.Smartcardio.Card>("getCard"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#getChannelNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#getChannelNumber()"/> 
         /// </summary>
         public int ChannelNumber
         {
             get { return IExecute<int>("getChannelNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#transmit(java.nio.ByteBuffer,java.nio.ByteBuffer) throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#transmit(java.nio.ByteBuffer,java.nio.ByteBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public int Transmit(Java.Nio.ByteBuffer arg0, Java.Nio.ByteBuffer arg1)
         {
             return IExecute<int>("transmit", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#transmit(javax.smartcardio.CommandAPDU) throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#transmit(javax.smartcardio.CommandAPDU)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Smartcardio.CommandAPDU"/></param>
+        /// <returns><see cref="Javax.Smartcardio.ResponseAPDU"/></returns>
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public Javax.Smartcardio.ResponseAPDU Transmit(Javax.Smartcardio.CommandAPDU arg0)
         {
             return IExecute<Javax.Smartcardio.ResponseAPDU>("transmit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#close() throws javax.smartcardio.CardException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Smartcardio.CardException"/>
         public void Close()
         {
             IExecute("close");

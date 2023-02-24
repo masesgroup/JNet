@@ -33,29 +33,32 @@ namespace Javax.Sql.Rowset
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.JoinRowSet"/> to <see cref="Javax.Sql.Rowset.WebRowSet"/>
+        /// </summary>
         public static implicit operator Javax.Sql.Rowset.WebRowSet(Javax.Sql.Rowset.JoinRowSet t) => t.Cast<Javax.Sql.Rowset.WebRowSet>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#CROSS_JOIN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#CROSS_JOIN"/>
         /// </summary>
         public static int CROSS_JOIN => Clazz.GetField<int>("CROSS_JOIN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#FULL_JOIN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#FULL_JOIN"/>
         /// </summary>
         public static int FULL_JOIN => Clazz.GetField<int>("FULL_JOIN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#INNER_JOIN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#INNER_JOIN"/>
         /// </summary>
         public static int INNER_JOIN => Clazz.GetField<int>("INNER_JOIN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#LEFT_OUTER_JOIN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#LEFT_OUTER_JOIN"/>
         /// </summary>
         public static int LEFT_OUTER_JOIN => Clazz.GetField<int>("LEFT_OUTER_JOIN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#RIGHT_OUTER_JOIN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#RIGHT_OUTER_JOIN"/>
         /// </summary>
         public static int RIGHT_OUTER_JOIN => Clazz.GetField<int>("RIGHT_OUTER_JOIN");
         
@@ -67,99 +70,126 @@ namespace Javax.Sql.Rowset
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getJoinType() throws java.sql.SQLException https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#setJoinType(int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getJoinType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#setJoinType(int)"/>
         /// </summary>
         public int JoinType
         {
             get { return IExecute<int>("getJoinType"); } set { IExecute("setJoinType", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getRowSetNames() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getRowSetNames()"/> 
         /// </summary>
         public string[] RowSetNames
         {
             get { return IExecuteArray<string>("getRowSetNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getWhereClause() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getWhereClause()"/> 
         /// </summary>
         public string WhereClause
         {
             get { return IExecute<string>("getWhereClause"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsCrossJoin()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsCrossJoin()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool SupportsCrossJoin()
         {
             return IExecute<bool>("supportsCrossJoin");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsFullJoin()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsFullJoin()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool SupportsFullJoin()
         {
             return IExecute<bool>("supportsFullJoin");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsInnerJoin()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsInnerJoin()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool SupportsInnerJoin()
         {
             return IExecute<bool>("supportsInnerJoin");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsLeftOuterJoin()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsLeftOuterJoin()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool SupportsLeftOuterJoin()
         {
             return IExecute<bool>("supportsLeftOuterJoin");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsRightOuterJoin()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsRightOuterJoin()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool SupportsRightOuterJoin()
         {
             return IExecute<bool>("supportsRightOuterJoin");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#toCachedRowSet() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#toCachedRowSet()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Sql.Rowset.CachedRowSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Javax.Sql.Rowset.CachedRowSet ToCachedRowSet()
         {
             return IExecute<Javax.Sql.Rowset.CachedRowSet>("toCachedRowSet");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet,int) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void AddRowSet(Javax.Sql.RowSet arg0, int arg1)
         {
             IExecute("addRowSet", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet,java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void AddRowSet(Javax.Sql.RowSet arg0, string arg1)
         {
             IExecute("addRowSet", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.rowset.Joinable) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.rowset.Joinable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.Rowset.Joinable"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void AddRowSet(Javax.Sql.Rowset.Joinable arg0)
         {
             IExecute("addRowSet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet[],int[]) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet[],int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void AddRowSet(Javax.Sql.RowSet[] arg0, int[] arg1)
         {
             IExecute("addRowSet", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet[],java.lang.String[]) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet[],java.lang.String[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void AddRowSet(Javax.Sql.RowSet[] arg0, string[] arg1)
         {
             IExecute("addRowSet", arg0, arg1);

@@ -33,21 +33,24 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ComponentOrientation"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.ComponentOrientation t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#LEFT_TO_RIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#LEFT_TO_RIGHT"/>
         /// </summary>
         public static Java.Awt.ComponentOrientation LEFT_TO_RIGHT => Clazz.GetField<Java.Awt.ComponentOrientation>("LEFT_TO_RIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#RIGHT_TO_LEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#RIGHT_TO_LEFT"/>
         /// </summary>
         public static Java.Awt.ComponentOrientation RIGHT_TO_LEFT => Clazz.GetField<Java.Awt.ComponentOrientation>("RIGHT_TO_LEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#UNKNOWN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#UNKNOWN"/>
         /// </summary>
         public static Java.Awt.ComponentOrientation UNKNOWN => Clazz.GetField<Java.Awt.ComponentOrientation>("UNKNOWN");
         
@@ -55,8 +58,10 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#getOrientation(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#getOrientation(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Awt.ComponentOrientation"/></returns>
         public static Java.Awt.ComponentOrientation GetOrientation(Java.Util.Locale arg0)
         {
             return SExecute<Java.Awt.ComponentOrientation>("getOrientation", arg0);
@@ -66,15 +71,19 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#isHorizontal()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#isHorizontal()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsHorizontal()
         {
             return IExecute<bool>("isHorizontal");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#isLeftToRight()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#isLeftToRight()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsLeftToRight()
         {
             return IExecute<bool>("isLeftToRight");

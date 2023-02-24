@@ -46,7 +46,7 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ActiveEvent.html#dispatch()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ActiveEvent.html#dispatch()"/>
         /// </summary>
         public void Dispatch()
         {

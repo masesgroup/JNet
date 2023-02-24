@@ -46,7 +46,7 @@ namespace Javax.Swing.Text.Html
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.html#getData() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.html#getData()"/> 
         /// </summary>
         public string Data
         {
@@ -69,11 +69,11 @@ namespace Javax.Swing.Text.Html
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#GET
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#GET"/>
             /// </summary>
             public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType GET => Clazz.GetField<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>("GET");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#POST
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#POST"/>
             /// </summary>
             public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType POST => Clazz.GetField<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>("POST");
             
@@ -81,8 +81,10 @@ namespace Javax.Swing.Text.Html
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Swing.Text.Html.FormSubmitEvent.MethodType"/></returns>
             public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType[] Values()
             {
                 return SExecuteArray<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>("values");

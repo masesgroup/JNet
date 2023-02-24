@@ -46,7 +46,7 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Expression.html#getValue() throws java.lang.Exception https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Expression.html#setValue(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Expression.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Expression.html#setValue(java.lang.Object)"/>
         /// </summary>
         public object Value
         {

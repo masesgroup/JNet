@@ -30,8 +30,9 @@ namespace Javax.Swing.Text.Html
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#<init>(javax.swing.text.Element)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#%3Cinit%3E(javax.swing.text.Element)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
         public ImageView(Javax.Swing.Text.Element arg0)
             : base(arg0)
         {
@@ -53,42 +54,42 @@ namespace Javax.Swing.Text.Html
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getAltText() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getAltText()"/> 
         /// </summary>
         public string AltText
         {
             get { return IExecute<string>("getAltText"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getImage() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getImage()"/> 
         /// </summary>
         public Java.Awt.Image Image
         {
             get { return IExecute<Java.Awt.Image>("getImage"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getImageURL() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getImageURL()"/> 
         /// </summary>
         public Java.Net.URL ImageURL
         {
             get { return IExecute<Java.Net.URL>("getImageURL"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getLoadingImageIcon() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getLoadingImageIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon LoadingImageIcon
         {
             get { return IExecute<Javax.Swing.Icon>("getLoadingImageIcon"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getLoadsSynchronously() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#setLoadsSynchronously(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getLoadsSynchronously()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#setLoadsSynchronously(boolean)"/>
         /// </summary>
         public bool LoadsSynchronously
         {
             get { return IExecute<bool>("getLoadsSynchronously"); } set { IExecute("setLoadsSynchronously", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getNoImageIcon() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/ImageView.html#getNoImageIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon NoImageIcon
         {

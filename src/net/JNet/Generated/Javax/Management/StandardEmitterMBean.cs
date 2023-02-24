@@ -33,6 +33,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.StandardEmitterMBean"/> to <see cref="Javax.Management.NotificationEmitter"/>
+        /// </summary>
         public static implicit operator Javax.Management.NotificationEmitter(Javax.Management.StandardEmitterMBean t) => t.Cast<Javax.Management.NotificationEmitter>();
         
         #endregion
@@ -47,36 +50,46 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#getNotificationInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#getNotificationInfo()"/> 
         /// </summary>
         public Javax.Management.MBeanNotificationInfo[] NotificationInfo
         {
             get { return IExecuteArray<Javax.Management.MBeanNotificationInfo>("getNotificationInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#addNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#addNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
         public void AddNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
             IExecute("addNotificationListener", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#removeNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object) throws javax.management.ListenerNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#removeNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
             IExecute("removeNotificationListener", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#removeNotificationListener(javax.management.NotificationListener) throws javax.management.ListenerNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#removeNotificationListener(javax.management.NotificationListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0)
         {
             IExecute("removeNotificationListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#sendNotification(javax.management.Notification)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#sendNotification(javax.management.Notification)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
         public void SendNotification(Javax.Management.Notification arg0)
         {
             IExecute("sendNotification", arg0);

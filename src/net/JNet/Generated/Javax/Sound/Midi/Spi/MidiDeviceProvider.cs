@@ -46,22 +46,26 @@ namespace Javax.Sound.Midi.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html#getDeviceInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html#getDeviceInfo()"/> 
         /// </summary>
         public Javax.Sound.Midi.MidiDevice.Info[] DeviceInfo
         {
             get { return IExecuteArray<Javax.Sound.Midi.MidiDevice.Info>("getDeviceInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html#getDevice(javax.sound.midi.MidiDevice$Info)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html#getDevice(javax.sound.midi.MidiDevice$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiDevice.Info"/></param>
+        /// <returns><see cref="Javax.Sound.Midi.MidiDevice"/></returns>
         public Javax.Sound.Midi.MidiDevice GetDevice(Javax.Sound.Midi.MidiDevice.Info arg0)
         {
             return IExecute<Javax.Sound.Midi.MidiDevice>("getDevice", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html#isDeviceSupported(javax.sound.midi.MidiDevice$Info)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html#isDeviceSupported(javax.sound.midi.MidiDevice$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiDevice.Info"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsDeviceSupported(Javax.Sound.Midi.MidiDevice.Info arg0)
         {
             return IExecute<bool>("isDeviceSupported", arg0);

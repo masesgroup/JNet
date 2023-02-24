@@ -30,8 +30,10 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/FilteredImageSource.html#<init>(java.awt.image.ImageProducer,java.awt.image.ImageFilter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/FilteredImageSource.html#%3Cinit%3E(java.awt.image.ImageProducer,java.awt.image.ImageFilter)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageProducer"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ImageFilter"/></param>
         public FilteredImageSource(Java.Awt.ImageNs.ImageProducer arg0, Java.Awt.ImageNs.ImageFilter arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.FilteredImageSource"/> to <see cref="Java.Awt.ImageNs.ImageProducer"/>
+        /// </summary>
         public static implicit operator Java.Awt.ImageNs.ImageProducer(Java.Awt.ImageNs.FilteredImageSource t) => t.Cast<Java.Awt.ImageNs.ImageProducer>();
         
         #endregion
@@ -54,36 +59,42 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/FilteredImageSource.html#isConsumer(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/FilteredImageSource.html#isConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             return IExecute<bool>("isConsumer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/FilteredImageSource.html#addConsumer(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/FilteredImageSource.html#addConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void AddConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecute("addConsumer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/FilteredImageSource.html#removeConsumer(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/FilteredImageSource.html#removeConsumer(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void RemoveConsumer(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecute("removeConsumer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/FilteredImageSource.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/FilteredImageSource.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void RequestTopDownLeftRightResend(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecute("requestTopDownLeftRightResend", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/FilteredImageSource.html#startProduction(java.awt.image.ImageConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/FilteredImageSource.html#startProduction(java.awt.image.ImageConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
         public void StartProduction(Java.Awt.ImageNs.ImageConsumer arg0)
         {
             IExecute("startProduction", arg0);

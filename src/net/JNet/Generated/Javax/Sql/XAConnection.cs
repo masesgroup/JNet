@@ -33,6 +33,9 @@ namespace Javax.Sql
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.XAConnection"/> to <see cref="Javax.Sql.PooledConnection"/>
+        /// </summary>
         public static implicit operator Javax.Sql.PooledConnection(Javax.Sql.XAConnection t) => t.Cast<Javax.Sql.PooledConnection>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnection.html#getXAResource() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnection.html#getXAResource()"/> 
         /// </summary>
         public Javax.Transaction.Xa.XAResource XAResource
         {

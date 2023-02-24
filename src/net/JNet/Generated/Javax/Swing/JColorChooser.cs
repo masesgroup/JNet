@@ -30,15 +30,17 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#<init>(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#%3Cinit%3E(java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
         public JColorChooser(Java.Awt.Color arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#<init>(javax.swing.colorchooser.ColorSelectionModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#%3Cinit%3E(javax.swing.colorchooser.ColorSelectionModel)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Colorchooser.ColorSelectionModel"/></param>
         public JColorChooser(Javax.Swing.Colorchooser.ColorSelectionModel arg0)
             : base(arg0)
         {
@@ -47,21 +49,24 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JColorChooser"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JColorChooser t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#CHOOSER_PANELS_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#CHOOSER_PANELS_PROPERTY"/>
         /// </summary>
         public static string CHOOSER_PANELS_PROPERTY => Clazz.GetField<string>("CHOOSER_PANELS_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#PREVIEW_PANEL_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#PREVIEW_PANEL_PROPERTY"/>
         /// </summary>
         public static string PREVIEW_PANEL_PROPERTY => Clazz.GetField<string>("PREVIEW_PANEL_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#SELECTION_MODEL_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#SELECTION_MODEL_PROPERTY"/>
         /// </summary>
         public static string SELECTION_MODEL_PROPERTY => Clazz.GetField<string>("SELECTION_MODEL_PROPERTY");
         
@@ -69,22 +74,41 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#showDialog(java.awt.Component,java.lang.String,java.awt.Color,boolean) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#showDialog(java.awt.Component,java.lang.String,java.awt.Color,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Awt.Color ShowDialog(Java.Awt.Component arg0, string arg1, Java.Awt.Color arg2, bool arg3)
         {
             return SExecute<Java.Awt.Color>("showDialog", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#showDialog(java.awt.Component,java.lang.String,java.awt.Color) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#showDialog(java.awt.Component,java.lang.String,java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
+        /// <returns><see cref="Java.Awt.Color"/></returns>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Awt.Color ShowDialog(Java.Awt.Component arg0, string arg1, Java.Awt.Color arg2)
         {
             return SExecute<Java.Awt.Color>("showDialog", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#createDialog(java.awt.Component,java.lang.String,boolean,javax.swing.JColorChooser,java.awt.event.ActionListener,java.awt.event.ActionListener) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#createDialog(java.awt.Component,java.lang.String,boolean,javax.swing.JColorChooser,java.awt.event.ActionListener,java.awt.event.ActionListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="Javax.Swing.JColorChooser"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        /// <returns><see cref="Javax.Swing.JDialog"/></returns>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public static Javax.Swing.JDialog CreateDialog(Java.Awt.Component arg0, string arg1, bool arg2, Javax.Swing.JColorChooser arg3, Java.Awt.EventNs.ActionListener arg4, Java.Awt.EventNs.ActionListener arg5)
         {
             return SExecute<Javax.Swing.JDialog>("createDialog", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -94,78 +118,87 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getChooserPanels() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setChooserPanels(javax.swing.colorchooser.AbstractColorChooserPanel[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getChooserPanels()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setChooserPanels(javax.swing.colorchooser.AbstractColorChooserPanel[])"/>
         /// </summary>
         public Javax.Swing.Colorchooser.AbstractColorChooserPanel[] ChooserPanels
         {
             get { return IExecuteArray<Javax.Swing.Colorchooser.AbstractColorChooserPanel>("getChooserPanels"); } set { IExecute("setChooserPanels", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getColor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getColor()"/> 
         /// </summary>
         public Java.Awt.Color Color
         {
             get { return IExecute<Java.Awt.Color>("getColor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getDragEnabled() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setDragEnabled(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getDragEnabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setDragEnabled(boolean)"/>
         /// </summary>
         public bool DragEnabled
         {
             get { return IExecute<bool>("getDragEnabled"); } set { IExecute("setDragEnabled", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getPreviewPanel() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setPreviewPanel(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getPreviewPanel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setPreviewPanel(javax.swing.JComponent)"/>
         /// </summary>
         public Javax.Swing.JComponent PreviewPanel
         {
             get { return IExecute<Javax.Swing.JComponent>("getPreviewPanel"); } set { IExecute("setPreviewPanel", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getSelectionModel() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setSelectionModel(javax.swing.colorchooser.ColorSelectionModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#getSelectionModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setSelectionModel(javax.swing.colorchooser.ColorSelectionModel)"/>
         /// </summary>
         public Javax.Swing.Colorchooser.ColorSelectionModel SelectionModel
         {
             get { return IExecute<Javax.Swing.Colorchooser.ColorSelectionModel>("getSelectionModel"); } set { IExecute("setSelectionModel", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#removeChooserPanel(javax.swing.colorchooser.AbstractColorChooserPanel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#removeChooserPanel(javax.swing.colorchooser.AbstractColorChooserPanel)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Colorchooser.AbstractColorChooserPanel"/></param>
+        /// <returns><see cref="Javax.Swing.Colorchooser.AbstractColorChooserPanel"/></returns>
         public Javax.Swing.Colorchooser.AbstractColorChooserPanel RemoveChooserPanel(Javax.Swing.Colorchooser.AbstractColorChooserPanel arg0)
         {
             return IExecute<Javax.Swing.Colorchooser.AbstractColorChooserPanel>("removeChooserPanel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#addChooserPanel(javax.swing.colorchooser.AbstractColorChooserPanel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#addChooserPanel(javax.swing.colorchooser.AbstractColorChooserPanel)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Colorchooser.AbstractColorChooserPanel"/></param>
         public void AddChooserPanel(Javax.Swing.Colorchooser.AbstractColorChooserPanel arg0)
         {
             IExecute("addChooserPanel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setColor(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setColor(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void SetColor(int arg0, int arg1, int arg2)
         {
             IExecute("setColor", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setColor(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setColor(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetColor(int arg0)
         {
             IExecute("setColor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setColor(java.awt.Color)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setColor(java.awt.Color)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
         public void SetColor(Java.Awt.Color arg0)
         {
             IExecute("setColor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setUI(javax.swing.plaf.ColorChooserUI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#setUI(javax.swing.plaf.ColorChooserUI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.ColorChooserUI"/></param>
         public void SetUI(Javax.Swing.Plaf.ColorChooserUI arg0)
         {
             IExecute("setUI", arg0);

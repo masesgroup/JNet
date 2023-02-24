@@ -33,6 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JToolTip"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JToolTip t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolTip.html#getComponent() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolTip.html#setComponent(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolTip.html#getComponent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolTip.html#setComponent(javax.swing.JComponent)"/>
         /// </summary>
         public Javax.Swing.JComponent Component
         {
             get { return IExecute<Javax.Swing.JComponent>("getComponent"); } set { IExecute("setComponent", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolTip.html#getTipText() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolTip.html#setTipText(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolTip.html#getTipText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolTip.html#setTipText(java.lang.String)"/>
         /// </summary>
         public string TipText
         {

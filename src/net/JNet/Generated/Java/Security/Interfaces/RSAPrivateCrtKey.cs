@@ -33,13 +33,16 @@ namespace Java.Security.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.RSAPrivateCrtKey"/> to <see cref="Java.Security.Interfaces.RSAPrivateKey"/>
+        /// </summary>
         public static implicit operator Java.Security.Interfaces.RSAPrivateKey(Java.Security.Interfaces.RSAPrivateCrtKey t) => t.Cast<Java.Security.Interfaces.RSAPrivateKey>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#serialVersionUID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         
@@ -51,42 +54,42 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getCrtCoefficient() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getCrtCoefficient()"/> 
         /// </summary>
         public Java.Math.BigInteger CrtCoefficient
         {
             get { return IExecute<Java.Math.BigInteger>("getCrtCoefficient"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeExponentP() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeExponentP()"/> 
         /// </summary>
         public Java.Math.BigInteger PrimeExponentP
         {
             get { return IExecute<Java.Math.BigInteger>("getPrimeExponentP"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeExponentQ() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeExponentQ()"/> 
         /// </summary>
         public Java.Math.BigInteger PrimeExponentQ
         {
             get { return IExecute<Java.Math.BigInteger>("getPrimeExponentQ"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeP() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeP()"/> 
         /// </summary>
         public Java.Math.BigInteger PrimeP
         {
             get { return IExecute<Java.Math.BigInteger>("getPrimeP"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeQ() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeQ()"/> 
         /// </summary>
         public Java.Math.BigInteger PrimeQ
         {
             get { return IExecute<Java.Math.BigInteger>("getPrimeQ"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPublicExponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPublicExponent()"/> 
         /// </summary>
         public Java.Math.BigInteger PublicExponent
         {

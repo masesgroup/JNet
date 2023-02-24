@@ -33,7 +33,13 @@ namespace Javax.Xml.Crypto.Dsig
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Reference"/> to <see cref="Javax.Xml.Crypto.URIReference"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.URIReference(Javax.Xml.Crypto.Dsig.Reference t) => t.Cast<Javax.Xml.Crypto.URIReference>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Reference"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.Reference t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
         
         #endregion
@@ -48,50 +54,53 @@ namespace Javax.Xml.Crypto.Dsig
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getCalculatedDigestValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getCalculatedDigestValue()"/> 
         /// </summary>
         public byte[] CalculatedDigestValue
         {
             get { return IExecuteArray<byte>("getCalculatedDigestValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDereferencedData() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDereferencedData()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Data DereferencedData
         {
             get { return IExecute<Javax.Xml.Crypto.Data>("getDereferencedData"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDigestInputStream() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDigestInputStream()"/> 
         /// </summary>
         public Java.Io.InputStream DigestInputStream
         {
             get { return IExecute<Java.Io.InputStream>("getDigestInputStream"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDigestMethod() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDigestMethod()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Dsig.DigestMethod DigestMethod
         {
             get { return IExecute<Javax.Xml.Crypto.Dsig.DigestMethod>("getDigestMethod"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDigestValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDigestValue()"/> 
         /// </summary>
         public byte[] DigestValue
         {
             get { return IExecuteArray<byte>("getDigestValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getId()"/> 
         /// </summary>
         public string Id
         {
             get { return IExecute<string>("getId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#validate(javax.xml.crypto.dsig.XMLValidateContext) throws javax.xml.crypto.dsig.XMLSignatureException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#validate(javax.xml.crypto.dsig.XMLValidateContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.XMLValidateContext"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.Dsig.XMLSignatureException"/>
         public bool Validate(Javax.Xml.Crypto.Dsig.XMLValidateContext arg0)
         {
             return IExecute<bool>("validate", arg0);

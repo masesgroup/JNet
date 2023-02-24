@@ -46,29 +46,40 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html#getDefaultCipherSuites() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html#getDefaultCipherSuites()"/> 
         /// </summary>
         public string[] DefaultCipherSuites
         {
             get { return IExecuteArray<string>("getDefaultCipherSuites"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html#getSupportedCipherSuites() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html#getSupportedCipherSuites()"/> 
         /// </summary>
         public string[] SupportedCipherSuites
         {
             get { return IExecuteArray<string>("getSupportedCipherSuites"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html#createSocket(java.net.Socket,java.lang.String,int,boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html#createSocket(java.net.Socket,java.lang.String,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.Socket"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(Java.Net.Socket arg0, string arg1, int arg2, bool arg3)
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html#createSocket(java.net.Socket,java.io.InputStream,boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html#createSocket(java.net.Socket,java.io.InputStream,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.Socket"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(Java.Net.Socket arg0, Java.Io.InputStream arg1, bool arg2)
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2);

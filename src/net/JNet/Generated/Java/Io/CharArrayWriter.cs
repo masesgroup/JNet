@@ -30,8 +30,9 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public CharArrayWriter(int arg0)
             : base(arg0)
         {
@@ -53,29 +54,35 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#toCharArray()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#toCharArray()"/>
         /// </summary>
+        
+        /// <returns><see cref="char"/></returns>
         public char[] ToCharArray()
         {
             return IExecuteArray<char>("toCharArray");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#size()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#reset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecute("reset");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#writeTo(java.io.Writer) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#writeTo(java.io.Writer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteTo(Java.Io.Writer arg0)
         {
             IExecute("writeTo", arg0);

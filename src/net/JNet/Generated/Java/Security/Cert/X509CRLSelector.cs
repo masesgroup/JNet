@@ -33,6 +33,9 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Cert.X509CRLSelector"/> to <see cref="Java.Security.Cert.CRLSelector"/>
+        /// </summary>
         public static implicit operator Java.Security.Cert.CRLSelector(Java.Security.Cert.X509CRLSelector t) => t.Cast<Java.Security.Cert.CRLSelector>();
         
         #endregion
@@ -47,71 +50,80 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getCertificateChecking() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setCertificateChecking(java.security.cert.X509Certificate)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getCertificateChecking()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setCertificateChecking(java.security.cert.X509Certificate)"/>
         /// </summary>
         public Java.Security.Cert.X509Certificate CertificateChecking
         {
             get { return IExecute<Java.Security.Cert.X509Certificate>("getCertificateChecking"); } set { IExecute("setCertificateChecking", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getDateAndTime() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setDateAndTime(java.util.Date)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getDateAndTime()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setDateAndTime(java.util.Date)"/>
         /// </summary>
         public Java.Util.Date DateAndTime
         {
             get { return IExecute<Java.Util.Date>("getDateAndTime"); } set { IExecute("setDateAndTime", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getMaxCRL() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getMaxCRL()"/> 
         /// </summary>
         public Java.Math.BigInteger MaxCRL
         {
             get { return IExecute<Java.Math.BigInteger>("getMaxCRL"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getMinCRL() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#getMinCRL()"/> 
         /// </summary>
         public Java.Math.BigInteger MinCRL
         {
             get { return IExecute<Java.Math.BigInteger>("getMinCRL"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#match(java.security.cert.CRL)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#match(java.security.cert.CRL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.CRL"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Match(Java.Security.Cert.CRL arg0)
         {
             return IExecute<bool>("match", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#addIssuer(javax.security.auth.x500.X500Principal)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#addIssuer(javax.security.auth.x500.X500Principal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.X500.X500Principal"/></param>
         public void AddIssuer(Javax.Security.Auth.X500.X500Principal arg0)
         {
             IExecute("addIssuer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#addIssuerName(byte[]) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#addIssuerName(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void AddIssuerName(byte[] arg0)
         {
             IExecute("addIssuerName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#addIssuerName(java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#addIssuerName(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void AddIssuerName(string arg0)
         {
             IExecute("addIssuerName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setMaxCRLNumber(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setMaxCRLNumber(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         public void SetMaxCRLNumber(Java.Math.BigInteger arg0)
         {
             IExecute("setMaxCRLNumber", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setMinCRLNumber(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html#setMinCRLNumber(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         public void SetMinCRLNumber(Java.Math.BigInteger arg0)
         {
             IExecute("setMinCRLNumber", arg0);

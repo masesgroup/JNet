@@ -33,17 +33,20 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyValue"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.Keyinfo.KeyValue t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html#DSA_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html#DSA_TYPE"/>
         /// </summary>
         public static string DSA_TYPE => Clazz.GetField<string>("DSA_TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html#RSA_TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html#RSA_TYPE"/>
         /// </summary>
         public static string RSA_TYPE => Clazz.GetField<string>("RSA_TYPE");
         
@@ -55,7 +58,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html#getPublicKey() throws java.security.KeyException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html#getPublicKey()"/> 
         /// </summary>
         public Java.Security.PublicKey PublicKey
         {

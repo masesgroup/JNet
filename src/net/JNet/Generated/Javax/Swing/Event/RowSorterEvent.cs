@@ -46,15 +46,17 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html#getPreviousRowCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html#getPreviousRowCount()"/> 
         /// </summary>
         public int PreviousRowCount
         {
             get { return IExecute<int>("getPreviousRowCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html#convertPreviousRowIndexToModel(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html#convertPreviousRowIndexToModel(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int ConvertPreviousRowIndexToModel(int arg0)
         {
             return IExecute<int>("convertPreviousRowIndexToModel", arg0);
@@ -76,11 +78,11 @@ namespace Javax.Swing.Event
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#SORT_ORDER_CHANGED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#SORT_ORDER_CHANGED"/>
             /// </summary>
             public static Javax.Swing.Event.RowSorterEvent.Type SORT_ORDER_CHANGED => Clazz.GetField<Javax.Swing.Event.RowSorterEvent.Type>("SORT_ORDER_CHANGED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#SORTED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#SORTED"/>
             /// </summary>
             public static Javax.Swing.Event.RowSorterEvent.Type SORTED => Clazz.GetField<Javax.Swing.Event.RowSorterEvent.Type>("SORTED");
             
@@ -88,8 +90,10 @@ namespace Javax.Swing.Event
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Swing.Event.RowSorterEvent.Type"/></returns>
             public static Javax.Swing.Event.RowSorterEvent.Type[] Values()
             {
                 return SExecuteArray<Javax.Swing.Event.RowSorterEvent.Type>("values");

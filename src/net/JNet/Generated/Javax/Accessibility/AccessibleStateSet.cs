@@ -30,8 +30,9 @@ namespace Javax.Accessibility
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#<init>(javax.accessibility.AccessibleState[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#%3Cinit%3E(javax.accessibility.AccessibleState[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>
         public AccessibleStateSet(Javax.Accessibility.AccessibleState[] arg0)
             : base(arg0)
         {
@@ -53,42 +54,51 @@ namespace Javax.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#add(javax.accessibility.AccessibleState)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#add(javax.accessibility.AccessibleState)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Add(Javax.Accessibility.AccessibleState arg0)
         {
             return IExecute<bool>("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#contains(javax.accessibility.AccessibleState)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#contains(javax.accessibility.AccessibleState)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(Javax.Accessibility.AccessibleState arg0)
         {
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#remove(javax.accessibility.AccessibleState)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#remove(javax.accessibility.AccessibleState)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Remove(Javax.Accessibility.AccessibleState arg0)
         {
             return IExecute<bool>("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#toArray()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#toArray()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Accessibility.AccessibleState"/></returns>
         public Javax.Accessibility.AccessibleState[] ToArray()
         {
             return IExecuteArray<Javax.Accessibility.AccessibleState>("toArray");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#addAll(javax.accessibility.AccessibleState[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#addAll(javax.accessibility.AccessibleState[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>
         public void AddAll(Javax.Accessibility.AccessibleState[] arg0)
         {
             IExecute("addAll", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#clear()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#clear()"/>
         /// </summary>
         public void Clear()
         {

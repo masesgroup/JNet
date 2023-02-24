@@ -30,8 +30,10 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Timestamp.html#<init>(java.util.Date,java.security.cert.CertPath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Timestamp.html#%3Cinit%3E(java.util.Date,java.security.cert.CertPath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.CertPath"/></param>
         public Timestamp(Java.Util.Date arg0, Java.Security.Cert.CertPath arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Security
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Timestamp"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.Timestamp t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,15 +59,17 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Timestamp.html#getSignerCertPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Timestamp.html#getSignerCertPath()"/> 
         /// </summary>
         public Java.Security.Cert.CertPath SignerCertPath
         {
             get { return IExecute<Java.Security.Cert.CertPath>("getSignerCertPath"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Timestamp.html#getTimestamp()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Timestamp.html#getTimestamp()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Date"/></returns>
         public Java.Util.Date GetTimestamp()
         {
             return IExecute<Java.Util.Date>("getTimestamp");

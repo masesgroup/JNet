@@ -33,13 +33,16 @@ namespace Java.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Text.BreakIterator"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.BreakIterator t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#DONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#DONE"/>
         /// </summary>
         public static int DONE => Clazz.GetField<int>("DONE");
         
@@ -47,64 +50,72 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getAvailableLocales() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getAvailableLocales()"/> 
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
             get { return SExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getCharacterInstance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getCharacterInstance()"/> 
         /// </summary>
         public static Java.Text.BreakIterator CharacterInstance
         {
             get { return SExecute<Java.Text.BreakIterator>("getCharacterInstance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getLineInstance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getLineInstance()"/> 
         /// </summary>
         public static Java.Text.BreakIterator LineInstance
         {
             get { return SExecute<Java.Text.BreakIterator>("getLineInstance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getSentenceInstance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getSentenceInstance()"/> 
         /// </summary>
         public static Java.Text.BreakIterator SentenceInstance
         {
             get { return SExecute<Java.Text.BreakIterator>("getSentenceInstance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getWordInstance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getWordInstance()"/> 
         /// </summary>
         public static Java.Text.BreakIterator WordInstance
         {
             get { return SExecute<Java.Text.BreakIterator>("getWordInstance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getCharacterInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getCharacterInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
         public static Java.Text.BreakIterator GetCharacterInstance(Java.Util.Locale arg0)
         {
             return SExecute<Java.Text.BreakIterator>("getCharacterInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getLineInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getLineInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
         public static Java.Text.BreakIterator GetLineInstance(Java.Util.Locale arg0)
         {
             return SExecute<Java.Text.BreakIterator>("getLineInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getSentenceInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getSentenceInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
         public static Java.Text.BreakIterator GetSentenceInstance(Java.Util.Locale arg0)
         {
             return SExecute<Java.Text.BreakIterator>("getSentenceInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getWordInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getWordInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
         public static Java.Text.BreakIterator GetWordInstance(Java.Util.Locale arg0)
         {
             return SExecute<Java.Text.BreakIterator>("getWordInstance", arg0);
@@ -114,85 +125,105 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getText() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getText()"/> 
         /// </summary>
         public Java.Text.CharacterIterator Text
         {
             get { return IExecute<Java.Text.CharacterIterator>("getText"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#current()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#current()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Current()
         {
             return IExecute<int>("current");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#first()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#first()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int First()
         {
             return IExecute<int>("first");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#following(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#following(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Following(int arg0)
         {
             return IExecute<int>("following", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#last()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#last()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Last()
         {
             return IExecute<int>("last");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#next()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#next()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Next()
         {
             return IExecute<int>("next");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#next(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#next(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Next(int arg0)
         {
             return IExecute<int>("next", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#previous()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#previous()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Previous()
         {
             return IExecute<int>("previous");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#setText(java.text.CharacterIterator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#setText(java.text.CharacterIterator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
         public void SetText(Java.Text.CharacterIterator arg0)
         {
             IExecute("setText", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#isBoundary(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#isBoundary(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsBoundary(int arg0)
         {
             return IExecute<bool>("isBoundary", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#preceding(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#preceding(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Preceding(int arg0)
         {
             return IExecute<int>("preceding", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#setText(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#setText(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void SetText(string arg0)
         {
             IExecute("setText", arg0);

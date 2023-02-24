@@ -38,119 +38,119 @@ namespace Javax.Accessibility
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#ACTIVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#ACTIVE"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState ACTIVE => Clazz.GetField<Javax.Accessibility.AccessibleState>("ACTIVE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#ARMED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#ARMED"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState ARMED => Clazz.GetField<Javax.Accessibility.AccessibleState>("ARMED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#BUSY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#BUSY"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState BUSY => Clazz.GetField<Javax.Accessibility.AccessibleState>("BUSY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#CHECKED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#CHECKED"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState CHECKED => Clazz.GetField<Javax.Accessibility.AccessibleState>("CHECKED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#COLLAPSED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#COLLAPSED"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState COLLAPSED => Clazz.GetField<Javax.Accessibility.AccessibleState>("COLLAPSED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#EDITABLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#EDITABLE"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState EDITABLE => Clazz.GetField<Javax.Accessibility.AccessibleState>("EDITABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#ENABLED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#ENABLED"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState ENABLED => Clazz.GetField<Javax.Accessibility.AccessibleState>("ENABLED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#EXPANDABLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#EXPANDABLE"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState EXPANDABLE => Clazz.GetField<Javax.Accessibility.AccessibleState>("EXPANDABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#EXPANDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#EXPANDED"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState EXPANDED => Clazz.GetField<Javax.Accessibility.AccessibleState>("EXPANDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#FOCUSABLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#FOCUSABLE"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState FOCUSABLE => Clazz.GetField<Javax.Accessibility.AccessibleState>("FOCUSABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#FOCUSED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#FOCUSED"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState FOCUSED => Clazz.GetField<Javax.Accessibility.AccessibleState>("FOCUSED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#HORIZONTAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#HORIZONTAL"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState HORIZONTAL => Clazz.GetField<Javax.Accessibility.AccessibleState>("HORIZONTAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#ICONIFIED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#ICONIFIED"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState ICONIFIED => Clazz.GetField<Javax.Accessibility.AccessibleState>("ICONIFIED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#INDETERMINATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#INDETERMINATE"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState INDETERMINATE => Clazz.GetField<Javax.Accessibility.AccessibleState>("INDETERMINATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#MANAGES_DESCENDANTS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#MANAGES_DESCENDANTS"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState MANAGES_DESCENDANTS => Clazz.GetField<Javax.Accessibility.AccessibleState>("MANAGES_DESCENDANTS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#MODAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#MODAL"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState MODAL => Clazz.GetField<Javax.Accessibility.AccessibleState>("MODAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#MULTI_LINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#MULTI_LINE"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState MULTI_LINE => Clazz.GetField<Javax.Accessibility.AccessibleState>("MULTI_LINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#MULTISELECTABLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#MULTISELECTABLE"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState MULTISELECTABLE => Clazz.GetField<Javax.Accessibility.AccessibleState>("MULTISELECTABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#OPAQUE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#OPAQUE"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState OPAQUE => Clazz.GetField<Javax.Accessibility.AccessibleState>("OPAQUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#PRESSED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#PRESSED"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState PRESSED => Clazz.GetField<Javax.Accessibility.AccessibleState>("PRESSED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#RESIZABLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#RESIZABLE"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState RESIZABLE => Clazz.GetField<Javax.Accessibility.AccessibleState>("RESIZABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#SELECTABLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#SELECTABLE"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState SELECTABLE => Clazz.GetField<Javax.Accessibility.AccessibleState>("SELECTABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#SELECTED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#SELECTED"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState SELECTED => Clazz.GetField<Javax.Accessibility.AccessibleState>("SELECTED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#SHOWING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#SHOWING"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState SHOWING => Clazz.GetField<Javax.Accessibility.AccessibleState>("SHOWING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#SINGLE_LINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#SINGLE_LINE"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState SINGLE_LINE => Clazz.GetField<Javax.Accessibility.AccessibleState>("SINGLE_LINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#TRANSIENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#TRANSIENT"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState TRANSIENT => Clazz.GetField<Javax.Accessibility.AccessibleState>("TRANSIENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#TRUNCATED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#TRUNCATED"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState TRUNCATED => Clazz.GetField<Javax.Accessibility.AccessibleState>("TRUNCATED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#VERTICAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#VERTICAL"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState VERTICAL => Clazz.GetField<Javax.Accessibility.AccessibleState>("VERTICAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#VISIBLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleState.html#VISIBLE"/>
         /// </summary>
         public static Javax.Accessibility.AccessibleState VISIBLE => Clazz.GetField<Javax.Accessibility.AccessibleState>("VISIBLE");
         

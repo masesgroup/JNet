@@ -46,29 +46,45 @@ namespace Org.Xml.Sax.Ext
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#attributeDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#attributeDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
+        /// <param name="arg4"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void AttributeDecl(string arg0, string arg1, string arg2, string arg3, string arg4)
         {
             IExecute("attributeDecl", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#elementDecl(java.lang.String,java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#elementDecl(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void ElementDecl(string arg0, string arg1)
         {
             IExecute("elementDecl", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#externalEntityDecl(java.lang.String,java.lang.String,java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#externalEntityDecl(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void ExternalEntityDecl(string arg0, string arg1, string arg2)
         {
             IExecute("externalEntityDecl", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#internalEntityDecl(java.lang.String,java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#internalEntityDecl(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void InternalEntityDecl(string arg0, string arg1)
         {
             IExecute("internalEntityDecl", arg0, arg1);

@@ -38,11 +38,11 @@ namespace Java.Awt.DesktopNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#CLOSE_ALL_WINDOWS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#CLOSE_ALL_WINDOWS"/>
         /// </summary>
         public static Java.Awt.DesktopNs.QuitStrategy CLOSE_ALL_WINDOWS => Clazz.GetField<Java.Awt.DesktopNs.QuitStrategy>("CLOSE_ALL_WINDOWS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#NORMAL_EXIT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#NORMAL_EXIT"/>
         /// </summary>
         public static Java.Awt.DesktopNs.QuitStrategy NORMAL_EXIT => Clazz.GetField<Java.Awt.DesktopNs.QuitStrategy>("NORMAL_EXIT");
         
@@ -50,8 +50,10 @@ namespace Java.Awt.DesktopNs
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.DesktopNs.QuitStrategy"/></returns>
         public static Java.Awt.DesktopNs.QuitStrategy[] Values()
         {
             return SExecuteArray<Java.Awt.DesktopNs.QuitStrategy>("values");

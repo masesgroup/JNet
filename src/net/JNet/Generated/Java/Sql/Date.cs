@@ -30,8 +30,9 @@ namespace Java.Sql
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#<init>(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#%3Cinit%3E(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
         public Date(long arg0)
             : base(arg0)
         {
@@ -49,15 +50,19 @@ namespace Java.Sql
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#valueOf(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#valueOf(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Sql.Date"/></returns>
         public static Java.Sql.Date ValueOf(string arg0)
         {
             return SExecute<Java.Sql.Date>("valueOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#valueOf(java.time.LocalDate)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#valueOf(java.time.LocalDate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.LocalDate"/></param>
+        /// <returns><see cref="Java.Sql.Date"/></returns>
         public static Java.Sql.Date ValueOf(Java.Time.LocalDate arg0)
         {
             return SExecute<Java.Sql.Date>("valueOf", arg0);
@@ -67,8 +72,10 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#toLocalDate()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Date.html#toLocalDate()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate ToLocalDate()
         {
             return IExecute<Java.Time.LocalDate>("toLocalDate");

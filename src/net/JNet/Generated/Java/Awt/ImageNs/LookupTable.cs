@@ -46,22 +46,25 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/LookupTable.html#getNumComponents() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/LookupTable.html#getNumComponents()"/> 
         /// </summary>
         public int NumComponents
         {
             get { return IExecute<int>("getNumComponents"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/LookupTable.html#getOffset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/LookupTable.html#getOffset()"/> 
         /// </summary>
         public int Offset
         {
             get { return IExecute<int>("getOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/LookupTable.html#lookupPixel(int[],int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/LookupTable.html#lookupPixel(int[],int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
         public int[] LookupPixel(int[] arg0, int[] arg1)
         {
             return IExecuteArray<int>("lookupPixel", arg0, arg1);

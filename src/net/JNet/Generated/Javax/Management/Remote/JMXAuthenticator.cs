@@ -46,8 +46,10 @@ namespace Javax.Management.Remote
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAuthenticator.html#authenticate(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAuthenticator.html#authenticate(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see cref="Javax.Security.Auth.Subject"/></returns>
         public Javax.Security.Auth.Subject Authenticate(object arg0)
         {
             return IExecute<Javax.Security.Auth.Subject>("authenticate", arg0);

@@ -38,19 +38,19 @@ namespace Java.Beans
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#ICON_COLOR_16x16
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#ICON_COLOR_16x16"/>
         /// </summary>
         public static int ICON_COLOR_16x16 => Clazz.GetField<int>("ICON_COLOR_16x16");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#ICON_COLOR_32x32
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#ICON_COLOR_32x32"/>
         /// </summary>
         public static int ICON_COLOR_32x32 => Clazz.GetField<int>("ICON_COLOR_32x32");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#ICON_MONO_16x16
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#ICON_MONO_16x16"/>
         /// </summary>
         public static int ICON_MONO_16x16 => Clazz.GetField<int>("ICON_MONO_16x16");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#ICON_MONO_32x32
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#ICON_MONO_32x32"/>
         /// </summary>
         public static int ICON_MONO_32x32 => Clazz.GetField<int>("ICON_MONO_32x32");
         
@@ -62,57 +62,59 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getAdditionalBeanInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getAdditionalBeanInfo()"/> 
         /// </summary>
         public Java.Beans.BeanInfo[] AdditionalBeanInfo
         {
             get { return IExecuteArray<Java.Beans.BeanInfo>("getAdditionalBeanInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getBeanDescriptor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getBeanDescriptor()"/> 
         /// </summary>
         public Java.Beans.BeanDescriptor BeanDescriptor
         {
             get { return IExecute<Java.Beans.BeanDescriptor>("getBeanDescriptor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getDefaultEventIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getDefaultEventIndex()"/> 
         /// </summary>
         public int DefaultEventIndex
         {
             get { return IExecute<int>("getDefaultEventIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getDefaultPropertyIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getDefaultPropertyIndex()"/> 
         /// </summary>
         public int DefaultPropertyIndex
         {
             get { return IExecute<int>("getDefaultPropertyIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getEventSetDescriptors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getEventSetDescriptors()"/> 
         /// </summary>
         public Java.Beans.EventSetDescriptor[] EventSetDescriptors
         {
             get { return IExecuteArray<Java.Beans.EventSetDescriptor>("getEventSetDescriptors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getMethodDescriptors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getMethodDescriptors()"/> 
         /// </summary>
         public Java.Beans.MethodDescriptor[] MethodDescriptors
         {
             get { return IExecuteArray<Java.Beans.MethodDescriptor>("getMethodDescriptors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getPropertyDescriptors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getPropertyDescriptors()"/> 
         /// </summary>
         public Java.Beans.PropertyDescriptor[] PropertyDescriptors
         {
             get { return IExecuteArray<Java.Beans.PropertyDescriptor>("getPropertyDescriptors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getIcon(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getIcon(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image GetIcon(int arg0)
         {
             return IExecute<Java.Awt.Image>("getIcon", arg0);

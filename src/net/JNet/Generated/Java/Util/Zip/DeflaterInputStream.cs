@@ -30,22 +30,28 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterInputStream.html#<init>(java.io.InputStream,java.util.zip.Deflater,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterInputStream.html#%3Cinit%3E(java.io.InputStream,java.util.zip.Deflater,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Zip.Deflater"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public DeflaterInputStream(Java.Io.InputStream arg0, Java.Util.Zip.Deflater arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterInputStream.html#<init>(java.io.InputStream,java.util.zip.Deflater)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterInputStream.html#%3Cinit%3E(java.io.InputStream,java.util.zip.Deflater)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Zip.Deflater"/></param>
         public DeflaterInputStream(Java.Io.InputStream arg0, Java.Util.Zip.Deflater arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterInputStream.html#<init>(java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public DeflaterInputStream(Java.Io.InputStream arg0)
             : base(arg0)
         {

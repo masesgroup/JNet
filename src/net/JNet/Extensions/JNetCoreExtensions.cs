@@ -20,8 +20,16 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace MASES.JNet.Extensions
 {
+    /// <summary>
+    /// Extension class
+    /// </summary>
     public static class JNetCoreExtensions
     {
+        /// <summary>
+        /// Retrieve the <see cref="Java.Lang.Class{TClass}"/> from the <typeparamref name="TClass"/>
+        /// </summary>
+        /// <typeparam name="TClass">A class extending <see cref="IJVMBridgeBase"/></typeparam>
+        /// <returns>The <see cref="Java.Lang.Class{TClass}"/></returns>
         public static Java.Lang.Class<TClass> Class<TClass>(this TClass _) where TClass : IJVMBridgeBase, new()
         {
             return Java.Lang.Class.Of<TClass>();

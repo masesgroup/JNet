@@ -46,148 +46,275 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getDefaultDomain() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getDefaultDomain()"/> 
         /// </summary>
         public string DefaultDomain
         {
             get { return IExecute<string>("getDefaultDomain"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getDomains() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getDomains()"/> 
         /// </summary>
         public string[] Domains
         {
             get { return IExecuteArray<string>("getDomains"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getMBeanCount() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getMBeanCount()"/> 
         /// </summary>
         public int? MBeanCount
         {
             get { return IExecute<int?>("getMBeanCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String) throws javax.management.InstanceNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public bool IsInstanceOf(Javax.Management.ObjectName arg0, string arg1)
         {
             return IExecute<bool>("isInstanceOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#isRegistered(javax.management.ObjectName) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#isRegistered(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public bool IsRegistered(Javax.Management.ObjectName arg0)
         {
             return IExecute<bool>("isRegistered", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getAttribute(javax.management.ObjectName,java.lang.String) throws javax.management.MBeanException,javax.management.AttributeNotFoundException,javax.management.InstanceNotFoundException,javax.management.ReflectionException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getAttribute(javax.management.ObjectName,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.AttributeNotFoundException"/>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public object GetAttribute(Javax.Management.ObjectName arg0, string arg1)
         {
             return IExecute("getAttribute", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#invoke(javax.management.ObjectName,java.lang.String,java.lang.Object[],java.lang.String[]) throws javax.management.InstanceNotFoundException,javax.management.MBeanException,javax.management.ReflectionException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#invoke(javax.management.ObjectName,java.lang.String,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public object Invoke(Javax.Management.ObjectName arg0, string arg1, object[] arg2, string[] arg3)
         {
             return IExecute("invoke", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getMBeanInfo(javax.management.ObjectName) throws javax.management.InstanceNotFoundException,javax.management.IntrospectionException,javax.management.ReflectionException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getMBeanInfo(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Javax.Management.MBeanInfo"/></returns>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.IntrospectionException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.MBeanInfo GetMBeanInfo(Javax.Management.ObjectName arg0)
         {
             return IExecute<Javax.Management.MBeanInfo>("getMBeanInfo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName,java.lang.Object[],java.lang.String[]) throws javax.management.ReflectionException,javax.management.InstanceAlreadyExistsException,javax.management.MBeanRegistrationException,javax.management.MBeanException,javax.management.NotCompliantMBeanException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
+        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1, object[] arg2, string[] arg3)
         {
             return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.lang.Object[],java.lang.String[]) throws javax.management.ReflectionException,javax.management.InstanceAlreadyExistsException,javax.management.MBeanRegistrationException,javax.management.MBeanException,javax.management.NotCompliantMBeanException,javax.management.InstanceNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
+        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2, object[] arg3, string[] arg4)
         {
             return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName) throws javax.management.ReflectionException,javax.management.InstanceAlreadyExistsException,javax.management.MBeanRegistrationException,javax.management.MBeanException,javax.management.NotCompliantMBeanException,javax.management.InstanceNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
+        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2)
         {
             return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName) throws javax.management.ReflectionException,javax.management.InstanceAlreadyExistsException,javax.management.MBeanRegistrationException,javax.management.MBeanException,javax.management.NotCompliantMBeanException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#createMBean(java.lang.String,javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        /// <exception cref="Javax.Management.InstanceAlreadyExistsException"/>
+        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.ObjectInstance CreateMBean(string arg0, Javax.Management.ObjectName arg1)
         {
             return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getObjectInstance(javax.management.ObjectName) throws javax.management.InstanceNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getObjectInstance(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.ObjectInstance GetObjectInstance(Javax.Management.ObjectName arg0)
         {
             return IExecute<Javax.Management.ObjectInstance>("getObjectInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object) throws javax.management.InstanceNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.NotificationFilter"/></param>
+        /// <param name="arg3"><see langword="object"/></param>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void AddNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.NotificationListener arg1, Javax.Management.NotificationFilter arg2, object arg3)
         {
             IExecute("addNotificationListener", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#addNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.management.NotificationFilter,java.lang.Object) throws javax.management.InstanceNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#addNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.NotificationFilter"/></param>
+        /// <param name="arg3"><see langword="object"/></param>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void AddNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1, Javax.Management.NotificationFilter arg2, object arg3)
         {
             IExecute("addNotificationListener", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object) throws javax.management.InstanceNotFoundException,javax.management.ListenerNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.NotificationFilter"/></param>
+        /// <param name="arg3"><see langword="object"/></param>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.NotificationListener arg1, Javax.Management.NotificationFilter arg2, object arg3)
         {
             IExecute("removeNotificationListener", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.NotificationListener) throws javax.management.InstanceNotFoundException,javax.management.ListenerNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.NotificationListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.NotificationListener arg1)
         {
             IExecute("removeNotificationListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.management.NotificationFilter,java.lang.Object) throws javax.management.InstanceNotFoundException,javax.management.ListenerNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.NotificationFilter"/></param>
+        /// <param name="arg3"><see langword="object"/></param>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1, Javax.Management.NotificationFilter arg2, object arg3)
         {
             IExecute("removeNotificationListener", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName) throws javax.management.InstanceNotFoundException,javax.management.ListenerNotFoundException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1)
         {
             IExecute("removeNotificationListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#setAttribute(javax.management.ObjectName,javax.management.Attribute) throws javax.management.InstanceNotFoundException,javax.management.AttributeNotFoundException,javax.management.InvalidAttributeValueException,javax.management.MBeanException,javax.management.ReflectionException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#setAttribute(javax.management.ObjectName,javax.management.Attribute)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.Attribute"/></param>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.AttributeNotFoundException"/>
+        /// <exception cref="Javax.Management.InvalidAttributeValueException"/>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void SetAttribute(Javax.Management.ObjectName arg0, Javax.Management.Attribute arg1)
         {
             IExecute("setAttribute", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#unregisterMBean(javax.management.ObjectName) throws javax.management.InstanceNotFoundException,javax.management.MBeanRegistrationException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#unregisterMBean(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.MBeanRegistrationException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void UnregisterMBean(Javax.Management.ObjectName arg0)
         {
             IExecute("unregisterMBean", arg0);

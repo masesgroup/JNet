@@ -16,39 +16,8 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace MASES.JNet
 {
-    public abstract class JNetBase<TClass> : JVMBridgeBase<TClass>
-        where TClass : IJVMBridgeBase, new()
-    {
-        /// <summary>
-        /// Used to create instance of <see cref="IJVMBridgeDefinition.ClassName"/>
-        /// </summary>
-        /// <param name="args">The arguments of constructor</param>
-        public JNetBase() : base() { }
-        /// <summary>
-        /// Used to create instance of <see cref="IJVMBridgeDefinition.ClassName"/>
-        /// </summary>
-        /// <param name="args">The arguments of constructor</param>
-        protected JNetBase(params object[] args) : base(args) { }
-    }
-
-    public abstract class JNetBase<TClass, TInterface> : JVMBridgeBase<TClass, TInterface>
-        where TClass : TInterface, IJVMBridgeBase, new()
-    {
-        /// <summary>
-        /// Used to create instance of <see cref="IJVMBridgeDefinition.ClassName"/>
-        /// </summary>
-        public JNetBase() : base() { }
-        /// <summary>
-        /// Used to create instance of <see cref="IJVMBridgeDefinition.ClassName"/>
-        /// </summary>
-        /// <param name="args">The arguments of constructor</param>
-        protected JNetBase(params object[] args) : base(args) { }
-    }
-
     /// <summary>
     /// Generic class to launch a main method in a Java class
     /// </summary>

@@ -46,36 +46,38 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#getConnection() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#getConnection()"/> 
         /// </summary>
         public Java.Sql.Connection Connection
         {
             get { return IExecute<Java.Sql.Connection>("getConnection"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#getOriginal() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#getOriginal()"/> 
         /// </summary>
         public Java.Sql.ResultSet Original
         {
             get { return IExecute<Java.Sql.ResultSet>("getOriginal"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#getOriginalRow() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#getOriginalRow()"/> 
         /// </summary>
         public Java.Sql.ResultSet OriginalRow
         {
             get { return IExecute<Java.Sql.ResultSet>("getOriginalRow"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#getParams() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#getParams()"/> 
         /// </summary>
         public object[] Params
         {
             get { return IExecuteArray<object>("getParams"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#setMetaData(javax.sql.RowSetMetaData) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html#setMetaData(javax.sql.RowSetMetaData)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetMetaData"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void SetMetaData(Javax.Sql.RowSetMetaData arg0)
         {
             IExecute("setMetaData", arg0);

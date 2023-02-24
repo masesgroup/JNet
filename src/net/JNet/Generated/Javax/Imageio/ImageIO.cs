@@ -42,140 +42,177 @@ namespace Javax.Imageio
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getCacheDirectory() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#setCacheDirectory(java.io.File)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getCacheDirectory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#setCacheDirectory(java.io.File)"/>
         /// </summary>
         public static Java.Io.File CacheDirectory
         {
             get { return SExecute<Java.Io.File>("getCacheDirectory"); } set { SExecute("setCacheDirectory", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getReaderFileSuffixes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getReaderFileSuffixes()"/> 
         /// </summary>
         public static string[] ReaderFileSuffixes
         {
             get { return SExecuteArray<string>("getReaderFileSuffixes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getReaderFormatNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getReaderFormatNames()"/> 
         /// </summary>
         public static string[] ReaderFormatNames
         {
             get { return SExecuteArray<string>("getReaderFormatNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getReaderMIMETypes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getReaderMIMETypes()"/> 
         /// </summary>
         public static string[] ReaderMIMETypes
         {
             get { return SExecuteArray<string>("getReaderMIMETypes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getUseCache() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#setUseCache(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getUseCache()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#setUseCache(boolean)"/>
         /// </summary>
         public static bool UseCache
         {
             get { return SExecute<bool>("getUseCache"); } set { SExecute("setUseCache", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getWriterFileSuffixes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getWriterFileSuffixes()"/> 
         /// </summary>
         public static string[] WriterFileSuffixes
         {
             get { return SExecuteArray<string>("getWriterFileSuffixes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getWriterFormatNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getWriterFormatNames()"/> 
         /// </summary>
         public static string[] WriterFormatNames
         {
             get { return SExecuteArray<string>("getWriterFormatNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getWriterMIMETypes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getWriterMIMETypes()"/> 
         /// </summary>
         public static string[] WriterMIMETypes
         {
             get { return SExecuteArray<string>("getWriterMIMETypes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#write(java.awt.image.RenderedImage,java.lang.String,java.io.File) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#write(java.awt.image.RenderedImage,java.lang.String,java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Io.File"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static bool Write(Java.Awt.ImageNs.RenderedImage arg0, string arg1, Java.Io.File arg2)
         {
             return SExecute<bool>("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#write(java.awt.image.RenderedImage,java.lang.String,java.io.OutputStream) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#write(java.awt.image.RenderedImage,java.lang.String,java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static bool Write(Java.Awt.ImageNs.RenderedImage arg0, string arg1, Java.Io.OutputStream arg2)
         {
             return SExecute<bool>("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#write(java.awt.image.RenderedImage,java.lang.String,javax.imageio.stream.ImageOutputStream) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#write(java.awt.image.RenderedImage,java.lang.String,javax.imageio.stream.ImageOutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Imageio.Stream.ImageOutputStream"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static bool Write(Java.Awt.ImageNs.RenderedImage arg0, string arg1, Javax.Imageio.Stream.ImageOutputStream arg2)
         {
             return SExecute<bool>("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#read(java.io.File) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#read(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.ImageNs.BufferedImage Read(Java.Io.File arg0)
         {
             return SExecute<Java.Awt.ImageNs.BufferedImage>("read", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#read(java.io.InputStream) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#read(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.ImageNs.BufferedImage Read(Java.Io.InputStream arg0)
         {
             return SExecute<Java.Awt.ImageNs.BufferedImage>("read", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#read(java.net.URL) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#read(java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.ImageNs.BufferedImage Read(Java.Net.URL arg0)
         {
             return SExecute<Java.Awt.ImageNs.BufferedImage>("read", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#read(javax.imageio.stream.ImageInputStream) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#read(javax.imageio.stream.ImageInputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Stream.ImageInputStream"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.ImageNs.BufferedImage Read(Javax.Imageio.Stream.ImageInputStream arg0)
         {
             return SExecute<Java.Awt.ImageNs.BufferedImage>("read", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageReader(javax.imageio.ImageWriter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageReader(javax.imageio.ImageWriter)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
+        /// <returns><see cref="Javax.Imageio.ImageReader"/></returns>
         public static Javax.Imageio.ImageReader GetImageReader(Javax.Imageio.ImageWriter arg0)
         {
             return SExecute<Javax.Imageio.ImageReader>("getImageReader", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageWriter(javax.imageio.ImageReader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageWriter(javax.imageio.ImageReader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.ImageReader"/></param>
+        /// <returns><see cref="Javax.Imageio.ImageWriter"/></returns>
         public static Javax.Imageio.ImageWriter GetImageWriter(Javax.Imageio.ImageReader arg0)
         {
             return SExecute<Javax.Imageio.ImageWriter>("getImageWriter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#createImageInputStream(java.lang.Object) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#createImageInputStream(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see cref="Javax.Imageio.Stream.ImageInputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Javax.Imageio.Stream.ImageInputStream CreateImageInputStream(object arg0)
         {
             return SExecute<Javax.Imageio.Stream.ImageInputStream>("createImageInputStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#createImageOutputStream(java.lang.Object) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#createImageOutputStream(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see cref="Javax.Imageio.Stream.ImageOutputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Javax.Imageio.Stream.ImageOutputStream CreateImageOutputStream(object arg0)
         {
             return SExecute<Javax.Imageio.Stream.ImageOutputStream>("createImageOutputStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#scanForPlugins()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#scanForPlugins()"/>
         /// </summary>
         public static void ScanForPlugins()
         {

@@ -38,27 +38,27 @@ namespace Java.Time.Temporal
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#DAY_OF_QUARTER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#DAY_OF_QUARTER"/>
         /// </summary>
         public static Java.Time.Temporal.TemporalField DAY_OF_QUARTER => Clazz.GetField<Java.Time.Temporal.TemporalField>("DAY_OF_QUARTER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#QUARTER_OF_YEAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#QUARTER_OF_YEAR"/>
         /// </summary>
         public static Java.Time.Temporal.TemporalField QUARTER_OF_YEAR => Clazz.GetField<Java.Time.Temporal.TemporalField>("QUARTER_OF_YEAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#WEEK_BASED_YEAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#WEEK_BASED_YEAR"/>
         /// </summary>
         public static Java.Time.Temporal.TemporalField WEEK_BASED_YEAR => Clazz.GetField<Java.Time.Temporal.TemporalField>("WEEK_BASED_YEAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#WEEK_OF_WEEK_BASED_YEAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#WEEK_OF_WEEK_BASED_YEAR"/>
         /// </summary>
         public static Java.Time.Temporal.TemporalField WEEK_OF_WEEK_BASED_YEAR => Clazz.GetField<Java.Time.Temporal.TemporalField>("WEEK_OF_WEEK_BASED_YEAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#QUARTER_YEARS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#QUARTER_YEARS"/>
         /// </summary>
         public static Java.Time.Temporal.TemporalUnit QUARTER_YEARS => Clazz.GetField<Java.Time.Temporal.TemporalUnit>("QUARTER_YEARS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#WEEK_BASED_YEARS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#WEEK_BASED_YEARS"/>
         /// </summary>
         public static Java.Time.Temporal.TemporalUnit WEEK_BASED_YEARS => Clazz.GetField<Java.Time.Temporal.TemporalUnit>("WEEK_BASED_YEARS");
         

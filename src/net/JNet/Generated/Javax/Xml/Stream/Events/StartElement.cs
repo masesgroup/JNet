@@ -33,6 +33,9 @@ namespace Javax.Xml.Stream.Events
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Stream.Events.StartElement"/> to <see cref="Javax.Xml.Stream.Events.XMLEvent"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Stream.Events.XMLEvent(Javax.Xml.Stream.Events.StartElement t) => t.Cast<Javax.Xml.Stream.Events.XMLEvent>();
         
         #endregion
@@ -47,29 +50,33 @@ namespace Javax.Xml.Stream.Events
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getName()"/> 
         /// </summary>
         public Javax.Xml.Namespace.QName Name
         {
             get { return IExecute<Javax.Xml.Namespace.QName>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaceContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaceContext()"/> 
         /// </summary>
         public Javax.Xml.Namespace.NamespaceContext NamespaceContext
         {
             get { return IExecute<Javax.Xml.Namespace.NamespaceContext>("getNamespaceContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaceURI(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaceURI(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetNamespaceURI(string arg0)
         {
             return IExecute<string>("getNamespaceURI", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getAttributeByName(javax.xml.namespace.QName)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getAttributeByName(javax.xml.namespace.QName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.Events.Attribute"/></returns>
         public Javax.Xml.Stream.Events.Attribute GetAttributeByName(Javax.Xml.Namespace.QName arg0)
         {
             return IExecute<Javax.Xml.Stream.Events.Attribute>("getAttributeByName", arg0);

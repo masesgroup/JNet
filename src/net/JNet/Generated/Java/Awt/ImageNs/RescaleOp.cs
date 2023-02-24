@@ -30,15 +30,21 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#<init>(float,float,java.awt.RenderingHints)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#%3Cinit%3E(float,float,java.awt.RenderingHints)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.RenderingHints"/></param>
         public RescaleOp(float arg0, float arg1, Java.Awt.RenderingHints arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#<init>(float[],float[],java.awt.RenderingHints)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#%3Cinit%3E(float[],float[],java.awt.RenderingHints)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.RenderingHints"/></param>
         public RescaleOp(float[] arg0, float[] arg1, Java.Awt.RenderingHints arg2)
             : base(arg0, arg1, arg2)
         {
@@ -47,7 +53,13 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.RescaleOp"/> to <see cref="Java.Awt.ImageNs.BufferedImageOp"/>
+        /// </summary>
         public static implicit operator Java.Awt.ImageNs.BufferedImageOp(Java.Awt.ImageNs.RescaleOp t) => t.Cast<Java.Awt.ImageNs.BufferedImageOp>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.RescaleOp"/> to <see cref="Java.Awt.ImageNs.RasterOp"/>
+        /// </summary>
         public static implicit operator Java.Awt.ImageNs.RasterOp(Java.Awt.ImageNs.RescaleOp t) => t.Cast<Java.Awt.ImageNs.RasterOp>();
         
         #endregion
@@ -62,78 +74,100 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getNumFactors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getNumFactors()"/> 
         /// </summary>
         public int NumFactors
         {
             get { return IExecute<int>("getNumFactors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getRenderingHints() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getRenderingHints()"/> 
         /// </summary>
         public Java.Awt.RenderingHints RenderingHints
         {
             get { return IExecute<Java.Awt.RenderingHints>("getRenderingHints"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getOffsets(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getOffsets(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] GetOffsets(float[] arg0)
         {
             return IExecuteArray<float>("getOffsets", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getScaleFactors(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getScaleFactors(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] GetScaleFactors(float[] arg0)
         {
             return IExecuteArray<float>("getScaleFactors", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getPoint2D(java.awt.geom.Point2D,java.awt.geom.Point2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getPoint2D(java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Point2D"/></returns>
         public Java.Awt.Geom.Point2D GetPoint2D(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
             return IExecute<Java.Awt.Geom.Point2D>("getPoint2D", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getBounds2D(java.awt.image.BufferedImage)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getBounds2D(java.awt.image.BufferedImage)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetBounds2D(Java.Awt.ImageNs.BufferedImage arg0)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds2D", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getBounds2D(java.awt.image.Raster)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#getBounds2D(java.awt.image.Raster)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetBounds2D(Java.Awt.ImageNs.Raster arg0)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds2D", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#filter(java.awt.image.BufferedImage,java.awt.image.BufferedImage)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#filter(java.awt.image.BufferedImage,java.awt.image.BufferedImage)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage Filter(Java.Awt.ImageNs.BufferedImage arg0, Java.Awt.ImageNs.BufferedImage arg1)
         {
             return IExecute<Java.Awt.ImageNs.BufferedImage>("filter", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#filter(java.awt.image.Raster,java.awt.image.WritableRaster)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#filter(java.awt.image.Raster,java.awt.image.WritableRaster)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster Filter(Java.Awt.ImageNs.Raster arg0, Java.Awt.ImageNs.WritableRaster arg1)
         {
             return IExecute<Java.Awt.ImageNs.WritableRaster>("filter", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#createCompatibleDestImage(java.awt.image.BufferedImage,java.awt.image.ColorModel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#createCompatibleDestImage(java.awt.image.BufferedImage,java.awt.image.ColorModel)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage CreateCompatibleDestImage(Java.Awt.ImageNs.BufferedImage arg0, Java.Awt.ImageNs.ColorModel arg1)
         {
             return IExecute<Java.Awt.ImageNs.BufferedImage>("createCompatibleDestImage", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#createCompatibleDestRaster(java.awt.image.Raster)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#createCompatibleDestRaster(java.awt.image.Raster)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateCompatibleDestRaster(Java.Awt.ImageNs.Raster arg0)
         {
             return IExecute<Java.Awt.ImageNs.WritableRaster>("createCompatibleDestRaster", arg0);

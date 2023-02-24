@@ -33,13 +33,16 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Ldap.StartTlsRequest"/> to <see cref="Javax.Naming.Ldap.ExtendedRequest"/>
+        /// </summary>
         public static implicit operator Javax.Naming.Ldap.ExtendedRequest(Javax.Naming.Ldap.StartTlsRequest t) => t.Cast<Javax.Naming.Ldap.ExtendedRequest>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsRequest.html#OID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsRequest.html#OID"/>
         /// </summary>
         public static string OID => Clazz.GetField<string>("OID");
         
@@ -51,22 +54,28 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsRequest.html#getEncodedValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsRequest.html#getEncodedValue()"/> 
         /// </summary>
         public byte[] EncodedValue
         {
             get { return IExecuteArray<byte>("getEncodedValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsRequest.html#getID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsRequest.html#getID()"/> 
         /// </summary>
         public string ID
         {
             get { return IExecute<string>("getID"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsRequest.html#createExtendedResponse(java.lang.String,byte[],int,int) throws javax.naming.NamingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsRequest.html#createExtendedResponse(java.lang.String,byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Naming.Ldap.ExtendedResponse"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Ldap.ExtendedResponse CreateExtendedResponse(string arg0, byte[] arg1, int arg2, int arg3)
         {
             return IExecute<Javax.Naming.Ldap.ExtendedResponse>("createExtendedResponse", arg0, arg1, arg2, arg3);

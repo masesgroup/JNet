@@ -30,8 +30,11 @@ namespace Javax.Imageio.Stream
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#<init>(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#%3Cinit%3E(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public IIOByteBuffer(byte[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -53,21 +56,21 @@ namespace Javax.Imageio.Stream
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#getData() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#setData(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#getData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#setData(byte[])"/>
         /// </summary>
         public byte[] Data
         {
             get { return IExecuteArray<byte>("getData"); } set { IExecute("setData", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#getLength() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#setLength(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#getLength()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#setLength(int)"/>
         /// </summary>
         public int Length
         {
             get { return IExecute<int>("getLength"); } set { IExecute("setLength", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#getOffset() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#setOffset(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#getOffset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html#setOffset(int)"/>
         /// </summary>
         public int Offset
         {

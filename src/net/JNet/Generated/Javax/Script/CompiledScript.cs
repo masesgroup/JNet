@@ -46,29 +46,38 @@ namespace Javax.Script
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#getEngine() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#getEngine()"/> 
         /// </summary>
         public Javax.Script.ScriptEngine Engine
         {
             get { return IExecute<Javax.Script.ScriptEngine>("getEngine"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#eval(javax.script.ScriptContext) throws javax.script.ScriptException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#eval(javax.script.ScriptContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Script.ScriptContext"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Javax.Script.ScriptContext arg0)
         {
             return IExecute("eval", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#eval() throws javax.script.ScriptException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#eval()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval()
         {
             return IExecute("eval");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#eval(javax.script.Bindings) throws javax.script.ScriptException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/CompiledScript.html#eval(javax.script.Bindings)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Script.Bindings"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Javax.Script.Bindings arg0)
         {
             return IExecute("eval", arg0);

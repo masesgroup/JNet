@@ -30,8 +30,9 @@ namespace Java.Rmi.Server
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteObjectInvocationHandler.html#<init>(java.rmi.server.RemoteRef)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteObjectInvocationHandler.html#%3Cinit%3E(java.rmi.server.RemoteRef)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteRef"/></param>
         public RemoteObjectInvocationHandler(Java.Rmi.Server.RemoteRef arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Rmi.Server
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Server.RemoteObjectInvocationHandler"/> to <see cref="Java.Lang.Reflect.InvocationHandler"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.InvocationHandler(Java.Rmi.Server.RemoteObjectInvocationHandler t) => t.Cast<Java.Lang.Reflect.InvocationHandler>();
         
         #endregion
@@ -54,8 +58,13 @@ namespace Java.Rmi.Server
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteObjectInvocationHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[]) throws java.lang.Throwable
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteObjectInvocationHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.Throwable"/>
         public object Invoke(object arg0, Java.Lang.Reflect.Method arg1, object[] arg2)
         {
             return IExecute("invoke", arg0, arg1, arg2);

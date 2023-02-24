@@ -33,19 +33,28 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.Chromaticity"/> to <see cref="Javax.Print.Attribute.DocAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.DocAttribute(Javax.Print.Attribute.Standard.Chromaticity t) => t.Cast<Javax.Print.Attribute.DocAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.Chromaticity"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.Chromaticity t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.Chromaticity"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.Chromaticity t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Chromaticity.html#COLOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Chromaticity.html#COLOR"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Chromaticity COLOR => Clazz.GetField<Javax.Print.Attribute.Standard.Chromaticity>("COLOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Chromaticity.html#MONOCHROME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Chromaticity.html#MONOCHROME"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.Chromaticity MONOCHROME => Clazz.GetField<Javax.Print.Attribute.Standard.Chromaticity>("MONOCHROME");
         
@@ -57,7 +66,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Chromaticity.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Chromaticity.html#getName()"/> 
         /// </summary>
         public string Name
         {

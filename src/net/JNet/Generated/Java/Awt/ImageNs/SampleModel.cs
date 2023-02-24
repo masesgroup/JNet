@@ -30,8 +30,12 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#<init>(int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#%3Cinit%3E(int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public SampleModel(int arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -53,274 +57,446 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getDataType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getDataType()"/> 
         /// </summary>
         public int DataType
         {
             get { return IExecute<int>("getDataType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
             get { return IExecute<int>("getHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getNumBands() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getNumBands()"/> 
         /// </summary>
         public int NumBands
         {
             get { return IExecute<int>("getNumBands"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getNumDataElements() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getNumDataElements()"/> 
         /// </summary>
         public int NumDataElements
         {
             get { return IExecute<int>("getNumDataElements"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSampleSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSampleSize()"/> 
         /// </summary>
         public int[] SampleSize
         {
             get { return IExecuteArray<int>("getSampleSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getTransferType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getTransferType()"/> 
         /// </summary>
         public int TransferType
         {
             get { return IExecute<int>("getTransferType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getWidth()"/> 
         /// </summary>
         public int Width
         {
             get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSample(int,int,int,java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSample(int,int,int,java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetSample(int arg0, int arg1, int arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecute<int>("getSample", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSampleSize(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSampleSize(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetSampleSize(int arg0)
         {
             return IExecute<int>("getSampleSize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createDataBuffer()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createDataBuffer()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.ImageNs.DataBuffer"/></returns>
         public Java.Awt.ImageNs.DataBuffer CreateDataBuffer()
         {
             return IExecute<Java.Awt.ImageNs.DataBuffer>("createDataBuffer");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createCompatibleSampleModel(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createCompatibleSampleModel(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.SampleModel"/></returns>
         public Java.Awt.ImageNs.SampleModel CreateCompatibleSampleModel(int arg0, int arg1)
         {
             return IExecute<Java.Awt.ImageNs.SampleModel>("createCompatibleSampleModel", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createSubsetSampleModel(int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#createSubsetSampleModel(int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.SampleModel"/></returns>
         public Java.Awt.ImageNs.SampleModel CreateSubsetSampleModel(int[] arg0)
         {
             return IExecute<Java.Awt.ImageNs.SampleModel>("createSubsetSampleModel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getDataElements(int,int,java.lang.Object,java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getDataElements(int,int,java.lang.Object,java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetDataElements(int arg0, int arg1, object arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecute("getDataElements", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setDataElements(int,int,java.lang.Object,java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setDataElements(int,int,java.lang.Object,java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetDataElements(int arg0, int arg1, object arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             IExecute("setDataElements", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSample(int,int,int,int,java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSample(int,int,int,int,java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetSample(int arg0, int arg1, int arg2, int arg3, Java.Awt.ImageNs.DataBuffer arg4)
         {
             IExecute("setSample", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSampleDouble(int,int,int,java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSampleDouble(int,int,int,java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see langword="double"/></returns>
         public double GetSampleDouble(int arg0, int arg1, int arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecute<double>("getSampleDouble", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixel(int,int,double[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixel(int,int,double[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see cref="double"/></returns>
         public double[] GetPixel(int arg0, int arg1, double[] arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecuteArray<double>("getPixel", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixels(int,int,int,int,double[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixels(int,int,int,int,double[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="double"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see cref="double"/></returns>
         public double[] GetPixels(int arg0, int arg1, int arg2, int arg3, double[] arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             return IExecuteArray<double>("getPixels", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSamples(int,int,int,int,int,double[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSamples(int,int,int,int,int,double[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="double"/></param>
+        /// <param name="arg6"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see cref="double"/></returns>
         public double[] GetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, double[] arg5, Java.Awt.ImageNs.DataBuffer arg6)
         {
             return IExecuteArray<double>("getSamples", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSampleFloat(int,int,int,java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSampleFloat(int,int,int,java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see langword="float"/></returns>
         public float GetSampleFloat(int arg0, int arg1, int arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecute<float>("getSampleFloat", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixel(int,int,float[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixel(int,int,float[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] GetPixel(int arg0, int arg1, float[] arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecuteArray<float>("getPixel", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixels(int,int,int,int,float[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixels(int,int,int,int,float[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="float"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] GetPixels(int arg0, int arg1, int arg2, int arg3, float[] arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             return IExecuteArray<float>("getPixels", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSamples(int,int,int,int,int,float[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSamples(int,int,int,int,int,float[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="float"/></param>
+        /// <param name="arg6"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] GetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, float[] arg5, Java.Awt.ImageNs.DataBuffer arg6)
         {
             return IExecuteArray<float>("getSamples", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixel(int,int,int[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixel(int,int,int[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see cref="int"/></returns>
         public int[] GetPixel(int arg0, int arg1, int[] arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             return IExecuteArray<int>("getPixel", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixels(int,int,int,int,int[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getPixels(int,int,int,int,int[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see cref="int"/></returns>
         public int[] GetPixels(int arg0, int arg1, int arg2, int arg3, int[] arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             return IExecuteArray<int>("getPixels", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSamples(int,int,int,int,int,int[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getSamples(int,int,int,int,int,int[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see cref="int"/></returns>
         public int[] GetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, Java.Awt.ImageNs.DataBuffer arg6)
         {
             return IExecuteArray<int>("getSamples", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getDataElements(int,int,int,int,java.lang.Object,java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#getDataElements(int,int,int,int,java.lang.Object,java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="object"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetDataElements(int arg0, int arg1, int arg2, int arg3, object arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             return IExecute("getDataElements", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setDataElements(int,int,int,int,java.lang.Object,java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setDataElements(int,int,int,int,java.lang.Object,java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="object"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetDataElements(int arg0, int arg1, int arg2, int arg3, object arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             IExecute("setDataElements", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixel(int,int,double[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixel(int,int,double[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetPixel(int arg0, int arg1, double[] arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             IExecute("setPixel", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixel(int,int,float[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixel(int,int,float[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetPixel(int arg0, int arg1, float[] arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             IExecute("setPixel", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixel(int,int,int[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixel(int,int,int[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetPixel(int arg0, int arg1, int[] arg2, Java.Awt.ImageNs.DataBuffer arg3)
         {
             IExecute("setPixel", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixels(int,int,int,int,double[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixels(int,int,int,int,double[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="double"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, double[] arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             IExecute("setPixels", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixels(int,int,int,int,float[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixels(int,int,int,int,float[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="float"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, float[] arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             IExecute("setPixels", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixels(int,int,int,int,int[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setPixels(int,int,int,int,int[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, int[] arg4, Java.Awt.ImageNs.DataBuffer arg5)
         {
             IExecute("setPixels", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSample(int,int,int,double,java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSample(int,int,int,double,java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetSample(int arg0, int arg1, int arg2, double arg3, Java.Awt.ImageNs.DataBuffer arg4)
         {
             IExecute("setSample", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSample(int,int,int,float,java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSample(int,int,int,float,java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetSample(int arg0, int arg1, int arg2, float arg3, Java.Awt.ImageNs.DataBuffer arg4)
         {
             IExecute("setSample", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSamples(int,int,int,int,int,double[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSamples(int,int,int,int,int,double[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="double"/></param>
+        /// <param name="arg6"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, double[] arg5, Java.Awt.ImageNs.DataBuffer arg6)
         {
             IExecute("setSamples", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSamples(int,int,int,int,int,float[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSamples(int,int,int,int,int,float[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="float"/></param>
+        /// <param name="arg6"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, float[] arg5, Java.Awt.ImageNs.DataBuffer arg6)
         {
             IExecute("setSamples", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSamples(int,int,int,int,int,int[],java.awt.image.DataBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/SampleModel.html#setSamples(int,int,int,int,int,int[],java.awt.image.DataBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="Java.Awt.ImageNs.DataBuffer"/></param>
         public void SetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, Java.Awt.ImageNs.DataBuffer arg6)
         {
             IExecute("setSamples", arg0, arg1, arg2, arg3, arg4, arg5, arg6);

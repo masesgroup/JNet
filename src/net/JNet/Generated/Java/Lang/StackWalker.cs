@@ -42,8 +42,10 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.StackWalker"/></returns>
         public static Java.Lang.StackWalker GetInstance()
         {
             return SExecute<Java.Lang.StackWalker>("getInstance");
@@ -69,15 +71,15 @@ namespace Java.Lang
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#RETAIN_CLASS_REFERENCE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#RETAIN_CLASS_REFERENCE"/>
             /// </summary>
             public static Java.Lang.StackWalker.Option RETAIN_CLASS_REFERENCE => Clazz.GetField<Java.Lang.StackWalker.Option>("RETAIN_CLASS_REFERENCE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#SHOW_HIDDEN_FRAMES
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#SHOW_HIDDEN_FRAMES"/>
             /// </summary>
             public static Java.Lang.StackWalker.Option SHOW_HIDDEN_FRAMES => Clazz.GetField<Java.Lang.StackWalker.Option>("SHOW_HIDDEN_FRAMES");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#SHOW_REFLECT_FRAMES
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#SHOW_REFLECT_FRAMES"/>
             /// </summary>
             public static Java.Lang.StackWalker.Option SHOW_REFLECT_FRAMES => Clazz.GetField<Java.Lang.StackWalker.Option>("SHOW_REFLECT_FRAMES");
             
@@ -85,8 +87,10 @@ namespace Java.Lang
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Lang.StackWalker.Option"/></returns>
             public static Java.Lang.StackWalker.Option[] Values()
             {
                 return SExecuteArray<Java.Lang.StackWalker.Option>("values");
@@ -123,64 +127,70 @@ namespace Java.Lang
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getByteCodeIndex() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getByteCodeIndex()"/> 
             /// </summary>
             public int ByteCodeIndex
             {
                 get { return IExecute<int>("getByteCodeIndex"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getDescriptor() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getDescriptor()"/> 
             /// </summary>
             public string Descriptor
             {
                 get { return IExecute<string>("getDescriptor"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getFileName() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getFileName()"/> 
             /// </summary>
             public string FileName
             {
                 get { return IExecute<string>("getFileName"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getLineNumber() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getLineNumber()"/> 
             /// </summary>
             public int LineNumber
             {
                 get { return IExecute<int>("getLineNumber"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getMethodName() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getMethodName()"/> 
             /// </summary>
             public string MethodName
             {
                 get { return IExecute<string>("getMethodName"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getMethodType() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getMethodType()"/> 
             /// </summary>
             public Java.Lang.Invoke.MethodType MethodType
             {
                 get { return IExecute<Java.Lang.Invoke.MethodType>("getMethodType"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#isNativeMethod()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#isNativeMethod()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool IsNativeMethod()
             {
                 return IExecute<bool>("isNativeMethod");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#toStackTraceElement()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#toStackTraceElement()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Lang.StackTraceElement"/></returns>
             public Java.Lang.StackTraceElement ToStackTraceElement()
             {
                 return IExecute<Java.Lang.StackTraceElement>("toStackTraceElement");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getClassName()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getClassName()"/>
             /// </summary>
+            
+            /// <returns><see langword="string"/></returns>
             public string GetClassName()
             {
                 return IExecute<string>("getClassName");

@@ -30,15 +30,18 @@ namespace Javax.Xml.Transform.Sax
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#<init>(org.xml.sax.InputSource)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#%3Cinit%3E(org.xml.sax.InputSource)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
         public SAXSource(Org.Xml.Sax.InputSource arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#<init>(org.xml.sax.XMLReader,org.xml.sax.InputSource)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#%3Cinit%3E(org.xml.sax.XMLReader,org.xml.sax.InputSource)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.XMLReader"/></param>
+        /// <param name="arg1"><see cref="Org.Xml.Sax.InputSource"/></param>
         public SAXSource(Org.Xml.Sax.XMLReader arg0, Org.Xml.Sax.InputSource arg1)
             : base(arg0, arg1)
         {
@@ -47,13 +50,16 @@ namespace Javax.Xml.Transform.Sax
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Transform.Sax.SAXSource"/> to <see cref="Javax.Xml.Transform.Source"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Transform.Source(Javax.Xml.Transform.Sax.SAXSource t) => t.Cast<Javax.Xml.Transform.Source>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#FEATURE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#FEATURE"/>
         /// </summary>
         public static string FEATURE => Clazz.GetField<string>("FEATURE");
         
@@ -61,8 +67,10 @@ namespace Javax.Xml.Transform.Sax
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#sourceToInputSource(javax.xml.transform.Source)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#sourceToInputSource(javax.xml.transform.Source)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
+        /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
         public static Org.Xml.Sax.InputSource SourceToInputSource(Javax.Xml.Transform.Source arg0)
         {
             return SExecute<Org.Xml.Sax.InputSource>("sourceToInputSource", arg0);
@@ -72,29 +80,31 @@ namespace Javax.Xml.Transform.Sax
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#getInputSource() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#setInputSource(org.xml.sax.InputSource)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#getInputSource()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#setInputSource(org.xml.sax.InputSource)"/>
         /// </summary>
         public Org.Xml.Sax.InputSource InputSource
         {
             get { return IExecute<Org.Xml.Sax.InputSource>("getInputSource"); } set { IExecute("setInputSource", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#getSystemId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#setSystemId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public string SystemId
         {
             get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#getXMLReader() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#setXMLReader(org.xml.sax.XMLReader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#getXMLReader()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#setXMLReader(org.xml.sax.XMLReader)"/>
         /// </summary>
         public Org.Xml.Sax.XMLReader XMLReader
         {
             get { return IExecute<Org.Xml.Sax.XMLReader>("getXMLReader"); } set { IExecute("setXMLReader", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#isEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#isEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");

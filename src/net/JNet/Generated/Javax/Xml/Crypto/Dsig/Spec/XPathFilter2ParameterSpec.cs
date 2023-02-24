@@ -33,6 +33,9 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Spec.XPathFilter2ParameterSpec"/> to <see cref="Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec(Javax.Xml.Crypto.Dsig.Spec.XPathFilter2ParameterSpec t) => t.Cast<Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec>();
         
         #endregion

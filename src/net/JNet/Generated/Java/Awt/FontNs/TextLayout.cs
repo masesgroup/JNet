@@ -30,15 +30,20 @@ namespace Java.Awt.FontNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#<init>(java.lang.String,java.awt.Font,java.awt.font.FontRenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#%3Cinit%3E(java.lang.String,java.awt.Font,java.awt.font.FontRenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Font"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
         public TextLayout(string arg0, Java.Awt.Font arg1, Java.Awt.FontNs.FontRenderContext arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#<init>(java.text.AttributedCharacterIterator,java.awt.font.FontRenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#%3Cinit%3E(java.text.AttributedCharacterIterator,java.awt.font.FontRenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
         public TextLayout(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
             : base(arg0, arg1)
         {
@@ -47,13 +52,16 @@ namespace Java.Awt.FontNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.FontNs.TextLayout"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.FontNs.TextLayout t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#DEFAULT_CARET_POLICY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#DEFAULT_CARET_POLICY"/>
         /// </summary>
         public static Java.Awt.FontNs.TextLayout.CaretPolicy DEFAULT_CARET_POLICY => Clazz.GetField<Java.Awt.FontNs.TextLayout.CaretPolicy>("DEFAULT_CARET_POLICY");
         
@@ -65,281 +73,362 @@ namespace Java.Awt.FontNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getAdvance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getAdvance()"/> 
         /// </summary>
         public float Advance
         {
             get { return IExecute<float>("getAdvance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getAscent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getAscent()"/> 
         /// </summary>
         public float Ascent
         {
             get { return IExecute<float>("getAscent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getBaseline() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getBaseline()"/> 
         /// </summary>
         public byte Baseline
         {
             get { return IExecute<byte>("getBaseline"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getBaselineOffsets() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getBaselineOffsets()"/> 
         /// </summary>
         public float[] BaselineOffsets
         {
             get { return IExecuteArray<float>("getBaselineOffsets"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getBounds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getBounds()"/> 
         /// </summary>
         public Java.Awt.Geom.Rectangle2D Bounds
         {
             get { return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCharacterCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCharacterCount()"/> 
         /// </summary>
         public int CharacterCount
         {
             get { return IExecute<int>("getCharacterCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getDescent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getDescent()"/> 
         /// </summary>
         public float Descent
         {
             get { return IExecute<float>("getDescent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLayoutPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLayoutPath()"/> 
         /// </summary>
         public Java.Awt.FontNs.LayoutPath LayoutPath
         {
             get { return IExecute<Java.Awt.FontNs.LayoutPath>("getLayoutPath"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLeading() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLeading()"/> 
         /// </summary>
         public float Leading
         {
             get { return IExecute<float>("getLeading"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getVisibleAdvance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getVisibleAdvance()"/> 
         /// </summary>
         public float VisibleAdvance
         {
             get { return IExecute<float>("getVisibleAdvance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#isLeftToRight()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#isLeftToRight()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsLeftToRight()
         {
             return IExecute<bool>("isLeftToRight");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#isVertical()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#isVertical()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsVertical()
         {
             return IExecute<bool>("isVertical");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCharacterLevel(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCharacterLevel(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="byte"/></returns>
         public byte GetCharacterLevel(int arg0)
         {
             return IExecute<byte>("getCharacterLevel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretInfo(java.awt.font.TextHitInfo,java.awt.geom.Rectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretInfo(java.awt.font.TextHitInfo,java.awt.geom.Rectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] GetCaretInfo(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.Geom.Rectangle2D arg1)
         {
             return IExecuteArray<float>("getCaretInfo", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretInfo(java.awt.font.TextHitInfo)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretInfo(java.awt.font.TextHitInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <returns><see cref="float"/></returns>
         public float[] GetCaretInfo(Java.Awt.FontNs.TextHitInfo arg0)
         {
             return IExecuteArray<float>("getCaretInfo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLogicalRangesForVisualSelection(java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLogicalRangesForVisualSelection(java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <returns><see cref="int"/></returns>
         public int[] GetLogicalRangesForVisualSelection(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.FontNs.TextHitInfo arg1)
         {
             return IExecuteArray<int>("getLogicalRangesForVisualSelection", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextLeftHit(int,java.awt.font.TextLayout$CaretPolicy)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextLeftHit(int,java.awt.font.TextLayout$CaretPolicy)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontNs.TextLayout.CaretPolicy"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetNextLeftHit(int arg0, Java.Awt.FontNs.TextLayout.CaretPolicy arg1)
         {
             return IExecute<Java.Awt.FontNs.TextHitInfo>("getNextLeftHit", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextLeftHit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextLeftHit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetNextLeftHit(int arg0)
         {
             return IExecute<Java.Awt.FontNs.TextHitInfo>("getNextLeftHit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextLeftHit(java.awt.font.TextHitInfo)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextLeftHit(java.awt.font.TextHitInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetNextLeftHit(Java.Awt.FontNs.TextHitInfo arg0)
         {
             return IExecute<Java.Awt.FontNs.TextHitInfo>("getNextLeftHit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextRightHit(int,java.awt.font.TextLayout$CaretPolicy)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextRightHit(int,java.awt.font.TextLayout$CaretPolicy)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontNs.TextLayout.CaretPolicy"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetNextRightHit(int arg0, Java.Awt.FontNs.TextLayout.CaretPolicy arg1)
         {
             return IExecute<Java.Awt.FontNs.TextHitInfo>("getNextRightHit", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextRightHit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextRightHit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetNextRightHit(int arg0)
         {
             return IExecute<Java.Awt.FontNs.TextHitInfo>("getNextRightHit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextRightHit(java.awt.font.TextHitInfo)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextRightHit(java.awt.font.TextHitInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetNextRightHit(Java.Awt.FontNs.TextHitInfo arg0)
         {
             return IExecute<Java.Awt.FontNs.TextHitInfo>("getNextRightHit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getVisualOtherHit(java.awt.font.TextHitInfo)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getVisualOtherHit(java.awt.font.TextHitInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetVisualOtherHit(Java.Awt.FontNs.TextHitInfo arg0)
         {
             return IExecute<Java.Awt.FontNs.TextHitInfo>("getVisualOtherHit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#hitTestChar(float,float,java.awt.geom.Rectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#hitTestChar(float,float,java.awt.geom.Rectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo HitTestChar(float arg0, float arg1, Java.Awt.Geom.Rectangle2D arg2)
         {
             return IExecute<Java.Awt.FontNs.TextHitInfo>("hitTestChar", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#hitTestChar(float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#hitTestChar(float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo HitTestChar(float arg0, float arg1)
         {
             return IExecute<Java.Awt.FontNs.TextHitInfo>("hitTestChar", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getJustifiedLayout(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getJustifiedLayout(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.TextLayout"/></returns>
         public Java.Awt.FontNs.TextLayout GetJustifiedLayout(float arg0)
         {
             return IExecute<Java.Awt.FontNs.TextLayout>("getJustifiedLayout", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getPixelBounds(java.awt.font.FontRenderContext,float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getPixelBounds(java.awt.font.FontRenderContext,float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetPixelBounds(Java.Awt.FontNs.FontRenderContext arg0, float arg1, float arg2)
         {
             return IExecute<Java.Awt.Rectangle>("getPixelBounds", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getBlackBoxBounds(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getBlackBoxBounds(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetBlackBoxBounds(int arg0, int arg1)
         {
             return IExecute<Java.Awt.Shape>("getBlackBoxBounds", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShape(java.awt.font.TextHitInfo,java.awt.geom.Rectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShape(java.awt.font.TextHitInfo,java.awt.geom.Rectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetCaretShape(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.Geom.Rectangle2D arg1)
         {
             return IExecute<Java.Awt.Shape>("getCaretShape", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShape(java.awt.font.TextHitInfo)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShape(java.awt.font.TextHitInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetCaretShape(Java.Awt.FontNs.TextHitInfo arg0)
         {
             return IExecute<Java.Awt.Shape>("getCaretShape", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLogicalHighlightShape(int,int,java.awt.geom.Rectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLogicalHighlightShape(int,int,java.awt.geom.Rectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetLogicalHighlightShape(int arg0, int arg1, Java.Awt.Geom.Rectangle2D arg2)
         {
             return IExecute<Java.Awt.Shape>("getLogicalHighlightShape", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLogicalHighlightShape(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLogicalHighlightShape(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetLogicalHighlightShape(int arg0, int arg1)
         {
             return IExecute<Java.Awt.Shape>("getLogicalHighlightShape", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getOutline(java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getOutline(java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetOutline(Java.Awt.Geom.AffineTransform arg0)
         {
             return IExecute<Java.Awt.Shape>("getOutline", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getVisualHighlightShape(java.awt.font.TextHitInfo,java.awt.font.TextHitInfo,java.awt.geom.Rectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getVisualHighlightShape(java.awt.font.TextHitInfo,java.awt.font.TextHitInfo,java.awt.geom.Rectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetVisualHighlightShape(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.FontNs.TextHitInfo arg1, Java.Awt.Geom.Rectangle2D arg2)
         {
             return IExecute<Java.Awt.Shape>("getVisualHighlightShape", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getVisualHighlightShape(java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getVisualHighlightShape(java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetVisualHighlightShape(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.FontNs.TextHitInfo arg1)
         {
             return IExecute<Java.Awt.Shape>("getVisualHighlightShape", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShapes(int,java.awt.geom.Rectangle2D,java.awt.font.TextLayout$CaretPolicy)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShapes(int,java.awt.geom.Rectangle2D,java.awt.font.TextLayout$CaretPolicy)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.FontNs.TextLayout.CaretPolicy"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape[] GetCaretShapes(int arg0, Java.Awt.Geom.Rectangle2D arg1, Java.Awt.FontNs.TextLayout.CaretPolicy arg2)
         {
             return IExecuteArray<Java.Awt.Shape>("getCaretShapes", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShapes(int,java.awt.geom.Rectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShapes(int,java.awt.geom.Rectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape[] GetCaretShapes(int arg0, Java.Awt.Geom.Rectangle2D arg1)
         {
             return IExecuteArray<Java.Awt.Shape>("getCaretShapes", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShapes(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShapes(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape[] GetCaretShapes(int arg0)
         {
             return IExecuteArray<Java.Awt.Shape>("getCaretShapes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#draw(java.awt.Graphics2D,float,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#draw(java.awt.Graphics2D,float,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics2D"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
         public void Draw(Java.Awt.Graphics2D arg0, float arg1, float arg2)
         {
             IExecute("draw", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#hitToPoint(java.awt.font.TextHitInfo,java.awt.geom.Point2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#hitToPoint(java.awt.font.TextHitInfo,java.awt.geom.Point2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
         public void HitToPoint(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.Geom.Point2D arg1)
         {
             IExecute("hitToPoint", arg0, arg1);
@@ -369,8 +458,12 @@ namespace Java.Awt.FontNs
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.CaretPolicy.html#getStrongCaret(java.awt.font.TextHitInfo,java.awt.font.TextHitInfo,java.awt.font.TextLayout)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.CaretPolicy.html#getStrongCaret(java.awt.font.TextHitInfo,java.awt.font.TextHitInfo,java.awt.font.TextLayout)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+            /// <param name="arg2"><see cref="Java.Awt.FontNs.TextLayout"/></param>
+            /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
             public Java.Awt.FontNs.TextHitInfo GetStrongCaret(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.FontNs.TextHitInfo arg1, Java.Awt.FontNs.TextLayout arg2)
             {
                 return IExecute<Java.Awt.FontNs.TextHitInfo>("getStrongCaret", arg0, arg1, arg2);

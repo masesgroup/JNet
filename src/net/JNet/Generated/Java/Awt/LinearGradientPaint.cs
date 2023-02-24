@@ -30,15 +30,25 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LinearGradientPaint.html#<init>(float,float,float,float,float[],java.awt.Color[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LinearGradientPaint.html#%3Cinit%3E(float,float,float,float,float[],java.awt.Color[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg4"><see cref="float"/></param>
+        /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
         public LinearGradientPaint(float arg0, float arg1, float arg2, float arg3, float[] arg4, Java.Awt.Color[] arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LinearGradientPaint.html#<init>(java.awt.geom.Point2D,java.awt.geom.Point2D,float[],java.awt.Color[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LinearGradientPaint.html#%3Cinit%3E(java.awt.geom.Point2D,java.awt.geom.Point2D,float[],java.awt.Color[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
         public LinearGradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, float[] arg2, Java.Awt.Color[] arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -60,14 +70,14 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LinearGradientPaint.html#getEndPoint() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LinearGradientPaint.html#getEndPoint()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D EndPoint
         {
             get { return IExecute<Java.Awt.Geom.Point2D>("getEndPoint"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LinearGradientPaint.html#getStartPoint() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LinearGradientPaint.html#getStartPoint()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D StartPoint
         {

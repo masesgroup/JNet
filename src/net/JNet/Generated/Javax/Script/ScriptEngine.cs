@@ -38,31 +38,31 @@ namespace Javax.Script
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#ARGV
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#ARGV"/>
         /// </summary>
         public static string ARGV => Clazz.GetField<string>("ARGV");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#ENGINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#ENGINE"/>
         /// </summary>
         public static string ENGINE => Clazz.GetField<string>("ENGINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#ENGINE_VERSION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#ENGINE_VERSION"/>
         /// </summary>
         public static string ENGINE_VERSION => Clazz.GetField<string>("ENGINE_VERSION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#FILENAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#FILENAME"/>
         /// </summary>
         public static string FILENAME => Clazz.GetField<string>("FILENAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#LANGUAGE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#LANGUAGE"/>
         /// </summary>
         public static string LANGUAGE => Clazz.GetField<string>("LANGUAGE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#LANGUAGE_VERSION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#LANGUAGE_VERSION"/>
         /// </summary>
         public static string LANGUAGE_VERSION => Clazz.GetField<string>("LANGUAGE_VERSION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#NAME"/>
         /// </summary>
         public static string NAME => Clazz.GetField<string>("NAME");
         
@@ -74,92 +74,124 @@ namespace Javax.Script
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getContext() https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#setContext(javax.script.ScriptContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getContext()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#setContext(javax.script.ScriptContext)"/>
         /// </summary>
         public Javax.Script.ScriptContext Context
         {
             get { return IExecute<Javax.Script.ScriptContext>("getContext"); } set { IExecute("setContext", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getFactory() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getFactory()"/> 
         /// </summary>
         public Javax.Script.ScriptEngineFactory Factory
         {
             get { return IExecute<Javax.Script.ScriptEngineFactory>("getFactory"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.io.Reader,javax.script.Bindings) throws javax.script.ScriptException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.io.Reader,javax.script.Bindings)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg1"><see cref="Javax.Script.Bindings"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Java.Io.Reader arg0, Javax.Script.Bindings arg1)
         {
             return IExecute("eval", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.io.Reader,javax.script.ScriptContext) throws javax.script.ScriptException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.io.Reader,javax.script.ScriptContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg1"><see cref="Javax.Script.ScriptContext"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Java.Io.Reader arg0, Javax.Script.ScriptContext arg1)
         {
             return IExecute("eval", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.io.Reader) throws javax.script.ScriptException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Java.Io.Reader arg0)
         {
             return IExecute("eval", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String,javax.script.Bindings) throws javax.script.ScriptException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String,javax.script.Bindings)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Script.Bindings"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(string arg0, Javax.Script.Bindings arg1)
         {
             return IExecute("eval", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String,javax.script.ScriptContext) throws javax.script.ScriptException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String,javax.script.ScriptContext)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Script.ScriptContext"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(string arg0, Javax.Script.ScriptContext arg1)
         {
             return IExecute("eval", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String) throws javax.script.ScriptException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(string arg0)
         {
             return IExecute("eval", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#get(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#get(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Get(string arg0)
         {
             return IExecute("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Script.Bindings"/></returns>
         public Javax.Script.Bindings CreateBindings()
         {
             return IExecute<Javax.Script.Bindings>("createBindings");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getBindings(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getBindings(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Script.Bindings"/></returns>
         public Javax.Script.Bindings GetBindings(int arg0)
         {
             return IExecute<Javax.Script.Bindings>("getBindings", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#put(java.lang.String,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#put(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void Put(string arg0, object arg1)
         {
             IExecute("put", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#setBindings(javax.script.Bindings,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#setBindings(javax.script.Bindings,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Script.Bindings"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetBindings(Javax.Script.Bindings arg0, int arg1)
         {
             IExecute("setBindings", arg0, arg1);

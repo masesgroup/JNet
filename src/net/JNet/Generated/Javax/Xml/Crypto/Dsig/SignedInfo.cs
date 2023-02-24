@@ -33,6 +33,9 @@ namespace Javax.Xml.Crypto.Dsig
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.SignedInfo"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.SignedInfo t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
         
         #endregion
@@ -47,28 +50,28 @@ namespace Javax.Xml.Crypto.Dsig
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getCanonicalizationMethod() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getCanonicalizationMethod()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Dsig.CanonicalizationMethod CanonicalizationMethod
         {
             get { return IExecute<Javax.Xml.Crypto.Dsig.CanonicalizationMethod>("getCanonicalizationMethod"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getCanonicalizedData() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getCanonicalizedData()"/> 
         /// </summary>
         public Java.Io.InputStream CanonicalizedData
         {
             get { return IExecute<Java.Io.InputStream>("getCanonicalizedData"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getId()"/> 
         /// </summary>
         public string Id
         {
             get { return IExecute<string>("getId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getSignatureMethod() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getSignatureMethod()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Dsig.SignatureMethod SignatureMethod
         {

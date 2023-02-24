@@ -42,14 +42,14 @@ namespace Java.Rmi.Server
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteServer.html#getClientHost() throws java.rmi.server.ServerNotActiveException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteServer.html#getClientHost()"/> 
         /// </summary>
         public static string ClientHost
         {
             get { return SExecute<string>("getClientHost"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteServer.html#getLog() https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteServer.html#setLog(java.io.OutputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteServer.html#getLog()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteServer.html#setLog(java.io.OutputStream)"/>
         /// </summary>
         public static Java.Io.PrintStream Log
         {

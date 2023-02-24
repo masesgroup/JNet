@@ -30,8 +30,9 @@ namespace Javax.Imageio.Plugins.Bmp
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#<init>(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#%3Cinit%3E(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public BMPImageWriteParam(Java.Util.Locale arg0)
             : base(arg0)
         {
@@ -53,15 +54,18 @@ namespace Javax.Imageio.Plugins.Bmp
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#isTopDown()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#isTopDown()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsTopDown()
         {
             return IExecute<bool>("isTopDown");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#setTopDown(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#setTopDown(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetTopDown(bool arg0)
         {
             IExecute("setTopDown", arg0);

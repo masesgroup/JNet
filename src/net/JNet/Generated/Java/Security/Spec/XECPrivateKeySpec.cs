@@ -30,8 +30,10 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/XECPrivateKeySpec.html#<init>(java.security.spec.AlgorithmParameterSpec,byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/XECPrivateKeySpec.html#%3Cinit%3E(java.security.spec.AlgorithmParameterSpec,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
         public XECPrivateKeySpec(Java.Security.Spec.AlgorithmParameterSpec arg0, byte[] arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Spec.XECPrivateKeySpec"/> to <see cref="Java.Security.Spec.KeySpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.KeySpec(Java.Security.Spec.XECPrivateKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
         
         #endregion
@@ -54,14 +59,14 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/XECPrivateKeySpec.html#getParams() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/XECPrivateKeySpec.html#getParams()"/> 
         /// </summary>
         public Java.Security.Spec.AlgorithmParameterSpec Params
         {
             get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getParams"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/XECPrivateKeySpec.html#getScalar() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/XECPrivateKeySpec.html#getScalar()"/> 
         /// </summary>
         public byte[] Scalar
         {

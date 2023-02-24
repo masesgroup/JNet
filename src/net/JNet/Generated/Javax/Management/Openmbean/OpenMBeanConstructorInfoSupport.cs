@@ -30,15 +30,22 @@ namespace Javax.Management.Openmbean
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfoSupport.html#<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[],javax.management.Descriptor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[],javax.management.Descriptor)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenMBeanParameterInfo"/></param>
+        /// <param name="arg3"><see cref="Javax.Management.Descriptor"/></param>
         public OpenMBeanConstructorInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Descriptor arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfoSupport.html#<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenMBeanParameterInfo"/></param>
         public OpenMBeanConstructorInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2)
             : base(arg0, arg1, arg2)
         {
@@ -47,6 +54,9 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Openmbean.OpenMBeanConstructorInfoSupport"/> to <see cref="Javax.Management.Openmbean.OpenMBeanConstructorInfo"/>
+        /// </summary>
         public static implicit operator Javax.Management.Openmbean.OpenMBeanConstructorInfo(Javax.Management.Openmbean.OpenMBeanConstructorInfoSupport t) => t.Cast<Javax.Management.Openmbean.OpenMBeanConstructorInfo>();
         
         #endregion

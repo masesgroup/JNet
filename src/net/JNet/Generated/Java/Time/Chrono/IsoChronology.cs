@@ -33,13 +33,16 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.IsoChronology"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Chrono.IsoChronology t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoChronology.html#INSTANCE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoChronology.html#INSTANCE"/>
         /// </summary>
         public static Java.Time.Chrono.IsoChronology INSTANCE => Clazz.GetField<Java.Time.Chrono.IsoChronology>("INSTANCE");
         

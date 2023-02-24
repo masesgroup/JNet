@@ -33,6 +33,9 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.Beancontext.BeanContextServiceProviderBeanInfo"/> to <see cref="Java.Beans.BeanInfo"/>
+        /// </summary>
         public static implicit operator Java.Beans.BeanInfo(Java.Beans.Beancontext.BeanContextServiceProviderBeanInfo t) => t.Cast<Java.Beans.BeanInfo>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Java.Beans.Beancontext
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProviderBeanInfo.html#getServicesBeanInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProviderBeanInfo.html#getServicesBeanInfo()"/> 
         /// </summary>
         public Java.Beans.BeanInfo[] ServicesBeanInfo
         {

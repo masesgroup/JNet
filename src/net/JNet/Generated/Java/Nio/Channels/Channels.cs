@@ -42,85 +42,117 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newInputStream(java.nio.channels.AsynchronousByteChannel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newInputStream(java.nio.channels.AsynchronousByteChannel)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Channels.AsynchronousByteChannel"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
         public static Java.Io.InputStream NewInputStream(Java.Nio.Channels.AsynchronousByteChannel arg0)
         {
             return SExecute<Java.Io.InputStream>("newInputStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newInputStream(java.nio.channels.ReadableByteChannel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newInputStream(java.nio.channels.ReadableByteChannel)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
         public static Java.Io.InputStream NewInputStream(Java.Nio.Channels.ReadableByteChannel arg0)
         {
             return SExecute<Java.Io.InputStream>("newInputStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newOutputStream(java.nio.channels.AsynchronousByteChannel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newOutputStream(java.nio.channels.AsynchronousByteChannel)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Channels.AsynchronousByteChannel"/></param>
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
         public static Java.Io.OutputStream NewOutputStream(Java.Nio.Channels.AsynchronousByteChannel arg0)
         {
             return SExecute<Java.Io.OutputStream>("newOutputStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newOutputStream(java.nio.channels.WritableByteChannel)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newOutputStream(java.nio.channels.WritableByteChannel)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Channels.WritableByteChannel"/></param>
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
         public static Java.Io.OutputStream NewOutputStream(Java.Nio.Channels.WritableByteChannel arg0)
         {
             return SExecute<Java.Io.OutputStream>("newOutputStream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NewReader(Java.Nio.Channels.ReadableByteChannel arg0, string arg1)
         {
             return SExecute<Java.Io.Reader>("newReader", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.Charset)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.Charset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NewReader(Java.Nio.Channels.ReadableByteChannel arg0, Java.Nio.Charset.Charset arg1)
         {
             return SExecute<Java.Io.Reader>("newReader", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.CharsetDecoder,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.CharsetDecoder,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.CharsetDecoder"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NewReader(Java.Nio.Channels.ReadableByteChannel arg0, Java.Nio.Charset.CharsetDecoder arg1, int arg2)
         {
             return SExecute<Java.Io.Reader>("newReader", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Channels.WritableByteChannel"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Java.Io.Writer"/></returns>
         public static Java.Io.Writer NewWriter(Java.Nio.Channels.WritableByteChannel arg0, string arg1)
         {
             return SExecute<Java.Io.Writer>("newWriter", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.Charset)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.Charset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Channels.WritableByteChannel"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <returns><see cref="Java.Io.Writer"/></returns>
         public static Java.Io.Writer NewWriter(Java.Nio.Channels.WritableByteChannel arg0, Java.Nio.Charset.Charset arg1)
         {
             return SExecute<Java.Io.Writer>("newWriter", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.CharsetEncoder,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.CharsetEncoder,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Channels.WritableByteChannel"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.CharsetEncoder"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Io.Writer"/></returns>
         public static Java.Io.Writer NewWriter(Java.Nio.Channels.WritableByteChannel arg0, Java.Nio.Charset.CharsetEncoder arg1, int arg2)
         {
             return SExecute<Java.Io.Writer>("newWriter", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newChannel(java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newChannel(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Java.Nio.Channels.ReadableByteChannel"/></returns>
         public static Java.Nio.Channels.ReadableByteChannel NewChannel(Java.Io.InputStream arg0)
         {
             return SExecute<Java.Nio.Channels.ReadableByteChannel>("newChannel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newChannel(java.io.OutputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newChannel(java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <returns><see cref="Java.Nio.Channels.WritableByteChannel"/></returns>
         public static Java.Nio.Channels.WritableByteChannel NewChannel(Java.Io.OutputStream arg0)
         {
             return SExecute<Java.Nio.Channels.WritableByteChannel>("newChannel", arg0);

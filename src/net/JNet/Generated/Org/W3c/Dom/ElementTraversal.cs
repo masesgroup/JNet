@@ -46,35 +46,35 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getChildElementCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getChildElementCount()"/> 
         /// </summary>
         public int ChildElementCount
         {
             get { return IExecute<int>("getChildElementCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getFirstElementChild() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getFirstElementChild()"/> 
         /// </summary>
         public Org.W3c.Dom.Element FirstElementChild
         {
             get { return IExecute<Org.W3c.Dom.Element>("getFirstElementChild"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getLastElementChild() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getLastElementChild()"/> 
         /// </summary>
         public Org.W3c.Dom.Element LastElementChild
         {
             get { return IExecute<Org.W3c.Dom.Element>("getLastElementChild"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getNextElementSibling() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getNextElementSibling()"/> 
         /// </summary>
         public Org.W3c.Dom.Element NextElementSibling
         {
             get { return IExecute<Org.W3c.Dom.Element>("getNextElementSibling"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getPreviousElementSibling() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getPreviousElementSibling()"/> 
         /// </summary>
         public Org.W3c.Dom.Element PreviousElementSibling
         {

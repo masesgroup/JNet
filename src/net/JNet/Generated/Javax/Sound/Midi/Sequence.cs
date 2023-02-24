@@ -30,15 +30,22 @@ namespace Javax.Sound.Midi
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#<init>(float,int,int) throws javax.sound.midi.InvalidMidiDataException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#%3Cinit%3E(float,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public Sequence(float arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#<init>(float,int) throws javax.sound.midi.InvalidMidiDataException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#%3Cinit%3E(float,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public Sequence(float arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -52,23 +59,23 @@ namespace Javax.Sound.Midi
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#PPQ
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#PPQ"/>
         /// </summary>
         public static float PPQ => Clazz.GetField<float>("PPQ");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_24
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_24"/>
         /// </summary>
         public static float SMPTE_24 => Clazz.GetField<float>("SMPTE_24");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_25
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_25"/>
         /// </summary>
         public static float SMPTE_25 => Clazz.GetField<float>("SMPTE_25");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_30
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_30"/>
         /// </summary>
         public static float SMPTE_30 => Clazz.GetField<float>("SMPTE_30");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_30DROP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_30DROP"/>
         /// </summary>
         public static float SMPTE_30DROP => Clazz.GetField<float>("SMPTE_30DROP");
         
@@ -80,57 +87,61 @@ namespace Javax.Sound.Midi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getDivisionType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getDivisionType()"/> 
         /// </summary>
         public float DivisionType
         {
             get { return IExecute<float>("getDivisionType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getMicrosecondLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getMicrosecondLength()"/> 
         /// </summary>
         public long MicrosecondLength
         {
             get { return IExecute<long>("getMicrosecondLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getPatchList() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getPatchList()"/> 
         /// </summary>
         public Javax.Sound.Midi.Patch[] PatchList
         {
             get { return IExecuteArray<Javax.Sound.Midi.Patch>("getPatchList"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getResolution() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getResolution()"/> 
         /// </summary>
         public int Resolution
         {
             get { return IExecute<int>("getResolution"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getTickLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getTickLength()"/> 
         /// </summary>
         public long TickLength
         {
             get { return IExecute<long>("getTickLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getTracks() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#getTracks()"/> 
         /// </summary>
         public Javax.Sound.Midi.Track[] Tracks
         {
             get { return IExecuteArray<Javax.Sound.Midi.Track>("getTracks"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#deleteTrack(javax.sound.midi.Track)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#deleteTrack(javax.sound.midi.Track)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.Track"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool DeleteTrack(Javax.Sound.Midi.Track arg0)
         {
             return IExecute<bool>("deleteTrack", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#createTrack()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#createTrack()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Sound.Midi.Track"/></returns>
         public Javax.Sound.Midi.Track CreateTrack()
         {
             return IExecute<Javax.Sound.Midi.Track>("createTrack");

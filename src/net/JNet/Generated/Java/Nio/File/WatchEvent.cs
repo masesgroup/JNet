@@ -46,15 +46,19 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#count()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#count()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Count()
         {
             return IExecute<int>("count");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Context()
         {
             return IExecute("context");
@@ -84,8 +88,10 @@ namespace Java.Nio.File
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#name()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#name()"/>
             /// </summary>
+            
+            /// <returns><see langword="string"/></returns>
             public string Name()
             {
                 return IExecute<string>("name");
@@ -118,8 +124,10 @@ namespace Java.Nio.File
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Modifier.html#name()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Modifier.html#name()"/>
             /// </summary>
+            
+            /// <returns><see langword="string"/></returns>
             public string Name()
             {
                 return IExecute<string>("name");

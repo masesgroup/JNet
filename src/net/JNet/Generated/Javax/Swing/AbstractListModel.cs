@@ -33,6 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.AbstractListModel"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.AbstractListModel t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,22 +50,24 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#getListDataListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#getListDataListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.ListDataListener[] ListDataListeners
         {
             get { return IExecuteArray<Javax.Swing.Event.ListDataListener>("getListDataListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#addListDataListener(javax.swing.event.ListDataListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#addListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
         public void AddListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
             IExecute("addListDataListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#removeListDataListener(javax.swing.event.ListDataListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#removeListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
         public void RemoveListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
             IExecute("removeListDataListener", arg0);

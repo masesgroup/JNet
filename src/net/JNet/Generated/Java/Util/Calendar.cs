@@ -33,210 +33,216 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Calendar"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Calendar t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Calendar"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Calendar t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#ALL_STYLES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#ALL_STYLES"/>
         /// </summary>
         public static int ALL_STYLES => Clazz.GetField<int>("ALL_STYLES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#AM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#AM"/>
         /// </summary>
         public static int AM => Clazz.GetField<int>("AM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#AM_PM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#AM_PM"/>
         /// </summary>
         public static int AM_PM => Clazz.GetField<int>("AM_PM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#APRIL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#APRIL"/>
         /// </summary>
         public static int APRIL => Clazz.GetField<int>("APRIL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#AUGUST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#AUGUST"/>
         /// </summary>
         public static int AUGUST => Clazz.GetField<int>("AUGUST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DATE"/>
         /// </summary>
         public static int DATE => Clazz.GetField<int>("DATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_MONTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_MONTH"/>
         /// </summary>
         public static int DAY_OF_MONTH => Clazz.GetField<int>("DAY_OF_MONTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_WEEK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_WEEK"/>
         /// </summary>
         public static int DAY_OF_WEEK => Clazz.GetField<int>("DAY_OF_WEEK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_WEEK_IN_MONTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_WEEK_IN_MONTH"/>
         /// </summary>
         public static int DAY_OF_WEEK_IN_MONTH => Clazz.GetField<int>("DAY_OF_WEEK_IN_MONTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_YEAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_YEAR"/>
         /// </summary>
         public static int DAY_OF_YEAR => Clazz.GetField<int>("DAY_OF_YEAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DECEMBER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DECEMBER"/>
         /// </summary>
         public static int DECEMBER => Clazz.GetField<int>("DECEMBER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DST_OFFSET
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DST_OFFSET"/>
         /// </summary>
         public static int DST_OFFSET => Clazz.GetField<int>("DST_OFFSET");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#ERA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#ERA"/>
         /// </summary>
         public static int ERA => Clazz.GetField<int>("ERA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#FEBRUARY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#FEBRUARY"/>
         /// </summary>
         public static int FEBRUARY => Clazz.GetField<int>("FEBRUARY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#FIELD_COUNT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#FIELD_COUNT"/>
         /// </summary>
         public static int FIELD_COUNT => Clazz.GetField<int>("FIELD_COUNT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#FRIDAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#FRIDAY"/>
         /// </summary>
         public static int FRIDAY => Clazz.GetField<int>("FRIDAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#HOUR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#HOUR"/>
         /// </summary>
         public static int HOUR => Clazz.GetField<int>("HOUR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#HOUR_OF_DAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#HOUR_OF_DAY"/>
         /// </summary>
         public static int HOUR_OF_DAY => Clazz.GetField<int>("HOUR_OF_DAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#JANUARY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#JANUARY"/>
         /// </summary>
         public static int JANUARY => Clazz.GetField<int>("JANUARY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#JULY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#JULY"/>
         /// </summary>
         public static int JULY => Clazz.GetField<int>("JULY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#JUNE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#JUNE"/>
         /// </summary>
         public static int JUNE => Clazz.GetField<int>("JUNE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#LONG
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#LONG"/>
         /// </summary>
         public static int LONG => Clazz.GetField<int>("LONG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#LONG_FORMAT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#LONG_FORMAT"/>
         /// </summary>
         public static int LONG_FORMAT => Clazz.GetField<int>("LONG_FORMAT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#LONG_STANDALONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#LONG_STANDALONE"/>
         /// </summary>
         public static int LONG_STANDALONE => Clazz.GetField<int>("LONG_STANDALONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MARCH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MARCH"/>
         /// </summary>
         public static int MARCH => Clazz.GetField<int>("MARCH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MAY"/>
         /// </summary>
         public static int MAY => Clazz.GetField<int>("MAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MILLISECOND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MILLISECOND"/>
         /// </summary>
         public static int MILLISECOND => Clazz.GetField<int>("MILLISECOND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MINUTE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MINUTE"/>
         /// </summary>
         public static int MINUTE => Clazz.GetField<int>("MINUTE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MONDAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MONDAY"/>
         /// </summary>
         public static int MONDAY => Clazz.GetField<int>("MONDAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MONTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MONTH"/>
         /// </summary>
         public static int MONTH => Clazz.GetField<int>("MONTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#NARROW_FORMAT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#NARROW_FORMAT"/>
         /// </summary>
         public static int NARROW_FORMAT => Clazz.GetField<int>("NARROW_FORMAT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#NARROW_STANDALONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#NARROW_STANDALONE"/>
         /// </summary>
         public static int NARROW_STANDALONE => Clazz.GetField<int>("NARROW_STANDALONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#NOVEMBER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#NOVEMBER"/>
         /// </summary>
         public static int NOVEMBER => Clazz.GetField<int>("NOVEMBER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#OCTOBER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#OCTOBER"/>
         /// </summary>
         public static int OCTOBER => Clazz.GetField<int>("OCTOBER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#PM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#PM"/>
         /// </summary>
         public static int PM => Clazz.GetField<int>("PM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SATURDAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SATURDAY"/>
         /// </summary>
         public static int SATURDAY => Clazz.GetField<int>("SATURDAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SECOND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SECOND"/>
         /// </summary>
         public static int SECOND => Clazz.GetField<int>("SECOND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SEPTEMBER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SEPTEMBER"/>
         /// </summary>
         public static int SEPTEMBER => Clazz.GetField<int>("SEPTEMBER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SHORT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SHORT"/>
         /// </summary>
         public static int SHORT => Clazz.GetField<int>("SHORT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SHORT_FORMAT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SHORT_FORMAT"/>
         /// </summary>
         public static int SHORT_FORMAT => Clazz.GetField<int>("SHORT_FORMAT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SHORT_STANDALONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SHORT_STANDALONE"/>
         /// </summary>
         public static int SHORT_STANDALONE => Clazz.GetField<int>("SHORT_STANDALONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SUNDAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SUNDAY"/>
         /// </summary>
         public static int SUNDAY => Clazz.GetField<int>("SUNDAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#THURSDAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#THURSDAY"/>
         /// </summary>
         public static int THURSDAY => Clazz.GetField<int>("THURSDAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#TUESDAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#TUESDAY"/>
         /// </summary>
         public static int TUESDAY => Clazz.GetField<int>("TUESDAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#UNDECIMBER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#UNDECIMBER"/>
         /// </summary>
         public static int UNDECIMBER => Clazz.GetField<int>("UNDECIMBER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#WEDNESDAY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#WEDNESDAY"/>
         /// </summary>
         public static int WEDNESDAY => Clazz.GetField<int>("WEDNESDAY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#WEEK_OF_MONTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#WEEK_OF_MONTH"/>
         /// </summary>
         public static int WEEK_OF_MONTH => Clazz.GetField<int>("WEEK_OF_MONTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#WEEK_OF_YEAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#WEEK_OF_YEAR"/>
         /// </summary>
         public static int WEEK_OF_YEAR => Clazz.GetField<int>("WEEK_OF_YEAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#YEAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#YEAR"/>
         /// </summary>
         public static int YEAR => Clazz.GetField<int>("YEAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#ZONE_OFFSET
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#ZONE_OFFSET"/>
         /// </summary>
         public static int ZONE_OFFSET => Clazz.GetField<int>("ZONE_OFFSET");
         
@@ -244,36 +250,45 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getAvailableLocales() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getAvailableLocales()"/> 
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
             get { return SExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance()
         {
             return SExecute<Java.Util.Calendar>("getInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.Locale arg0)
         {
             return SExecute<Java.Util.Calendar>("getInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.TimeZone,java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.TimeZone,java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.TimeZone arg0, Java.Util.Locale arg1)
         {
             return SExecute<Java.Util.Calendar>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.TimeZone)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.TimeZone)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
+        /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.TimeZone arg0)
         {
             return SExecute<Java.Util.Calendar>("getInstance", arg0);
@@ -283,246 +298,307 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getCalendarType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getCalendarType()"/> 
         /// </summary>
         public string CalendarType
         {
             get { return IExecute<string>("getCalendarType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getFirstDayOfWeek() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setFirstDayOfWeek(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getFirstDayOfWeek()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setFirstDayOfWeek(int)"/>
         /// </summary>
         public int FirstDayOfWeek
         {
             get { return IExecute<int>("getFirstDayOfWeek"); } set { IExecute("setFirstDayOfWeek", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getMinimalDaysInFirstWeek() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setMinimalDaysInFirstWeek(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getMinimalDaysInFirstWeek()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setMinimalDaysInFirstWeek(int)"/>
         /// </summary>
         public int MinimalDaysInFirstWeek
         {
             get { return IExecute<int>("getMinimalDaysInFirstWeek"); } set { IExecute("setMinimalDaysInFirstWeek", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getTime() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setTime(java.util.Date)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getTime()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setTime(java.util.Date)"/>
         /// </summary>
         public Java.Util.Date Time
         {
             get { return IExecute<Java.Util.Date>("getTime"); } set { IExecute("setTime", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getTimeInMillis() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setTimeInMillis(long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getTimeInMillis()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setTimeInMillis(long)"/>
         /// </summary>
         public long TimeInMillis
         {
             get { return IExecute<long>("getTimeInMillis"); } set { IExecute("setTimeInMillis", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getTimeZone() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setTimeZone(java.util.TimeZone)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getTimeZone()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setTimeZone(java.util.TimeZone)"/>
         /// </summary>
         public Java.Util.TimeZone TimeZone
         {
             get { return IExecute<Java.Util.TimeZone>("getTimeZone"); } set { IExecute("setTimeZone", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getWeeksInWeekYear() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getWeeksInWeekYear()"/> 
         /// </summary>
         public int WeeksInWeekYear
         {
             get { return IExecute<int>("getWeeksInWeekYear"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getWeekYear() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getWeekYear()"/> 
         /// </summary>
         public int WeekYear
         {
             get { return IExecute<int>("getWeekYear"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getGreatestMinimum(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getGreatestMinimum(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetGreatestMinimum(int arg0)
         {
             return IExecute<int>("getGreatestMinimum", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getLeastMaximum(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getLeastMaximum(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetLeastMaximum(int arg0)
         {
             return IExecute<int>("getLeastMaximum", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getMaximum(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getMaximum(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetMaximum(int arg0)
         {
             return IExecute<int>("getMaximum", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getMinimum(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getMinimum(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetMinimum(int arg0)
         {
             return IExecute<int>("getMinimum", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#add(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#add(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Add(int arg0, int arg1)
         {
             IExecute("add", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#roll(int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#roll(int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public void Roll(int arg0, bool arg1)
         {
             IExecute("roll", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#after(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#after(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool After(object arg0)
         {
             return IExecute<bool>("after", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#before(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#before(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Before(object arg0)
         {
             return IExecute<bool>("before", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isLenient()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isLenient()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsLenient()
         {
             return IExecute<bool>("isLenient");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isWeekDateSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isWeekDateSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsWeekDateSupported()
         {
             return IExecute<bool>("isWeekDateSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isSet(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#isSet(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsSet(int arg0)
         {
             return IExecute<bool>("isSet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#toInstant()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#toInstant()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant ToInstant()
         {
             return IExecute<Java.Time.Instant>("toInstant");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#clear()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecute("clear");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#clear(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#clear(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Clear(int arg0)
         {
             IExecute("clear", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#set(int,int,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#set(int,int,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
         public void Set(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("set", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#set(int,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#set(int,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public void Set(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
             IExecute("set", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#set(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#set(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void Set(int arg0, int arg1, int arg2)
         {
             IExecute("set", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#compareTo(java.util.Calendar)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#compareTo(java.util.Calendar)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Calendar"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Java.Util.Calendar arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#get(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#get(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Get(int arg0)
         {
             return IExecute<int>("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getActualMaximum(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getActualMaximum(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetActualMaximum(int arg0)
         {
             return IExecute<int>("getActualMaximum", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getActualMinimum(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getActualMinimum(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetActualMinimum(int arg0)
         {
             return IExecute<int>("getActualMinimum", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getDisplayName(int,int,java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getDisplayName(int,int,java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetDisplayName(int arg0, int arg1, Java.Util.Locale arg2)
         {
             return IExecute<string>("getDisplayName", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#roll(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#roll(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Roll(int arg0, int arg1)
         {
             IExecute("roll", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#set(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#set(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Set(int arg0, int arg1)
         {
             IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setLenient(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setLenient(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetLenient(bool arg0)
         {
             IExecute("setLenient", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setWeekDate(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#setWeekDate(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void SetWeekDate(int arg0, int arg1, int arg2)
         {
             IExecute("setWeekDate", arg0, arg1, arg2);
@@ -552,99 +628,138 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#build()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#build()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Util.Calendar"/></returns>
             public Java.Util.Calendar Build()
             {
                 return IExecute<Java.Util.Calendar>("build");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#set(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#set(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder Set(int arg0, int arg1)
             {
                 return IExecute<Java.Util.Calendar.Builder>("set", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setCalendarType(java.lang.String)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setCalendarType(java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder SetCalendarType(string arg0)
             {
                 return IExecute<Java.Util.Calendar.Builder>("setCalendarType", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setDate(int,int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setDate(int,int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder SetDate(int arg0, int arg1, int arg2)
             {
                 return IExecute<Java.Util.Calendar.Builder>("setDate", arg0, arg1, arg2);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setFields(int...)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setFields(int...)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder SetFields(params int[] arg0)
             {
                 if (arg0.Length == 0) return IExecute<Java.Util.Calendar.Builder>("setFields"); else return IExecute<Java.Util.Calendar.Builder>("setFields", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setInstant(java.util.Date)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setInstant(java.util.Date)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Date"/></param>
+            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder SetInstant(Java.Util.Date arg0)
             {
                 return IExecute<Java.Util.Calendar.Builder>("setInstant", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setInstant(long)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setInstant(long)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="long"/></param>
+            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder SetInstant(long arg0)
             {
                 return IExecute<Java.Util.Calendar.Builder>("setInstant", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setLenient(boolean)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setLenient(boolean)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="bool"/></param>
+            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder SetLenient(bool arg0)
             {
                 return IExecute<Java.Util.Calendar.Builder>("setLenient", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setLocale(java.util.Locale)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setLocale(java.util.Locale)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder SetLocale(Java.Util.Locale arg0)
             {
                 return IExecute<Java.Util.Calendar.Builder>("setLocale", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setTimeOfDay(int,int,int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setTimeOfDay(int,int,int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg3"><see langword="int"/></param>
+            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder SetTimeOfDay(int arg0, int arg1, int arg2, int arg3)
             {
                 return IExecute<Java.Util.Calendar.Builder>("setTimeOfDay", arg0, arg1, arg2, arg3);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setTimeOfDay(int,int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setTimeOfDay(int,int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder SetTimeOfDay(int arg0, int arg1, int arg2)
             {
                 return IExecute<Java.Util.Calendar.Builder>("setTimeOfDay", arg0, arg1, arg2);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setTimeZone(java.util.TimeZone)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setTimeZone(java.util.TimeZone)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
+            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder SetTimeZone(Java.Util.TimeZone arg0)
             {
                 return IExecute<Java.Util.Calendar.Builder>("setTimeZone", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setWeekDate(int,int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setWeekDate(int,int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg2"><see langword="int"/></param>
+            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder SetWeekDate(int arg0, int arg1, int arg2)
             {
                 return IExecute<Java.Util.Calendar.Builder>("setWeekDate", arg0, arg1, arg2);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setWeekDefinition(int,int)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setWeekDefinition(int,int)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg1"><see langword="int"/></param>
+            /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>
             public Java.Util.Calendar.Builder SetWeekDefinition(int arg0, int arg1)
             {
                 return IExecute<Java.Util.Calendar.Builder>("setWeekDefinition", arg0, arg1);

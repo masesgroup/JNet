@@ -30,15 +30,24 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#<init>(float,float,float,float[],java.awt.Color[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#%3Cinit%3E(float,float,float,float[],java.awt.Color[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Color"/></param>
         public RadialGradientPaint(float arg0, float arg1, float arg2, float[] arg3, Java.Awt.Color[] arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#<init>(java.awt.geom.Point2D,float,float[],java.awt.Color[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#%3Cinit%3E(java.awt.geom.Point2D,float,float[],java.awt.Color[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
         public RadialGradientPaint(Java.Awt.Geom.Point2D arg0, float arg1, float[] arg2, Java.Awt.Color[] arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -60,21 +69,21 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#getCenterPoint() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#getCenterPoint()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D CenterPoint
         {
             get { return IExecute<Java.Awt.Geom.Point2D>("getCenterPoint"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#getFocusPoint() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#getFocusPoint()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D FocusPoint
         {
             get { return IExecute<Java.Awt.Geom.Point2D>("getFocusPoint"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#getRadius() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RadialGradientPaint.html#getRadius()"/> 
         /// </summary>
         public float Radius
         {

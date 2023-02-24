@@ -30,15 +30,18 @@ namespace Javax.Swing.Border
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#<init>(java.awt.BasicStroke,java.awt.Paint)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#%3Cinit%3E(java.awt.BasicStroke,java.awt.Paint)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.BasicStroke"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Paint"/></param>
         public StrokeBorder(Java.Awt.BasicStroke arg0, Java.Awt.Paint arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#<init>(java.awt.BasicStroke)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#%3Cinit%3E(java.awt.BasicStroke)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.BasicStroke"/></param>
         public StrokeBorder(Java.Awt.BasicStroke arg0)
             : base(arg0)
         {
@@ -60,14 +63,14 @@ namespace Javax.Swing.Border
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#getPaint() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#getPaint()"/> 
         /// </summary>
         public Java.Awt.Paint Paint
         {
             get { return IExecute<Java.Awt.Paint>("getPaint"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#getStroke() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#getStroke()"/> 
         /// </summary>
         public Java.Awt.BasicStroke Stroke
         {

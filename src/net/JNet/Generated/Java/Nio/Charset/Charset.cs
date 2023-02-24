@@ -42,22 +42,28 @@ namespace Java.Nio.Charset
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#isSupported(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#isSupported(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsSupported(string arg0)
         {
             return SExecute<bool>("isSupported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#defaultCharset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#defaultCharset()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
         public static Java.Nio.Charset.Charset DefaultCharset()
         {
             return SExecute<Java.Nio.Charset.Charset>("defaultCharset");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#forName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#forName(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
         public static Java.Nio.Charset.Charset ForName(string arg0)
         {
             return SExecute<Java.Nio.Charset.Charset>("forName", arg0);
@@ -67,92 +73,118 @@ namespace Java.Nio.Charset
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#contains(java.nio.charset.Charset)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#contains(java.nio.charset.Charset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(Java.Nio.Charset.Charset arg0)
         {
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#newDecoder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#newDecoder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Charset.CharsetDecoder"/></returns>
         public Java.Nio.Charset.CharsetDecoder NewDecoder()
         {
             return IExecute<Java.Nio.Charset.CharsetDecoder>("newDecoder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#newEncoder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#newEncoder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Charset.CharsetEncoder"/></returns>
         public Java.Nio.Charset.CharsetEncoder NewEncoder()
         {
             return IExecute<Java.Nio.Charset.CharsetEncoder>("newEncoder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#canEncode()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#canEncode()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool CanEncode()
         {
             return IExecute<bool>("canEncode");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#isRegistered()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#isRegistered()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsRegistered()
         {
             return IExecute<bool>("isRegistered");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#compareTo(java.nio.charset.Charset)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#compareTo(java.nio.charset.Charset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Java.Nio.Charset.Charset arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#name()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#name()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Name()
         {
             return IExecute<string>("name");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#encode(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#encode(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer Encode(string arg0)
         {
             return IExecute<Java.Nio.ByteBuffer>("encode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#encode(java.nio.CharBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#encode(java.nio.CharBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer Encode(Java.Nio.CharBuffer arg0)
         {
             return IExecute<Java.Nio.ByteBuffer>("encode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#decode(java.nio.ByteBuffer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#decode(java.nio.ByteBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Decode(Java.Nio.ByteBuffer arg0)
         {
             return IExecute<Java.Nio.CharBuffer>("decode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#displayName()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#displayName()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string DisplayName()
         {
             return IExecute<string>("displayName");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#displayName(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#displayName(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see langword="string"/></returns>
         public string DisplayName(Java.Util.Locale arg0)
         {
             return IExecute<string>("displayName", arg0);

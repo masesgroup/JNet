@@ -46,8 +46,10 @@ namespace Java.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#firstValueAsLong(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#firstValueAsLong(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public Java.Util.OptionalLong FirstValueAsLong(string arg0)
         {
             return IExecute<Java.Util.OptionalLong>("firstValueAsLong", arg0);

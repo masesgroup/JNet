@@ -46,7 +46,7 @@ namespace Java.Lang.Instrument
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassDefinition.html#getDefinitionClassFile() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassDefinition.html#getDefinitionClassFile()"/> 
         /// </summary>
         public byte[] DefinitionClassFile
         {

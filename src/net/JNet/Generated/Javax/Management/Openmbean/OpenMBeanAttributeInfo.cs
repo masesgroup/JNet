@@ -33,6 +33,9 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Openmbean.OpenMBeanAttributeInfo"/> to <see cref="Javax.Management.Openmbean.OpenMBeanParameterInfo"/>
+        /// </summary>
         public static implicit operator Javax.Management.Openmbean.OpenMBeanParameterInfo(Javax.Management.Openmbean.OpenMBeanAttributeInfo t) => t.Cast<Javax.Management.Openmbean.OpenMBeanParameterInfo>();
         
         #endregion
@@ -47,22 +50,28 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isIs()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isIs()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsIs()
         {
             return IExecute<bool>("isIs");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isReadable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isReadable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsReadable()
         {
             return IExecute<bool>("isReadable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isWritable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isWritable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsWritable()
         {
             return IExecute<bool>("isWritable");

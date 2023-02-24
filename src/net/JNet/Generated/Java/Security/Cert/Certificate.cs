@@ -33,6 +33,9 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Cert.Certificate"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.Cert.Certificate t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,36 +50,49 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#getEncoded() throws java.security.cert.CertificateEncodingException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
             get { return IExecuteArray<byte>("getEncoded"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#getPublicKey() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#getPublicKey()"/> 
         /// </summary>
         public Java.Security.PublicKey PublicKey
         {
             get { return IExecute<Java.Security.PublicKey>("getPublicKey"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.lang.String) throws java.security.cert.CertificateException,java.security.NoSuchAlgorithmException,java.security.InvalidKeyException,java.security.NoSuchProviderException,java.security.SignatureException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <exception cref="Java.Security.SignatureException"/>
         public void Verify(Java.Security.PublicKey arg0, string arg1)
         {
             IExecute("verify", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey) throws java.security.cert.CertificateException,java.security.NoSuchAlgorithmException,java.security.InvalidKeyException,java.security.NoSuchProviderException,java.security.SignatureException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <exception cref="Java.Security.SignatureException"/>
         public void Verify(Java.Security.PublicKey arg0)
         {
             IExecute("verify", arg0);

@@ -33,21 +33,24 @@ namespace Java.Time.Temporal
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Temporal.WeekFields"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Temporal.WeekFields t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#WEEK_BASED_YEARS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#WEEK_BASED_YEARS"/>
         /// </summary>
         public static Java.Time.Temporal.TemporalUnit WEEK_BASED_YEARS => Clazz.GetField<Java.Time.Temporal.TemporalUnit>("WEEK_BASED_YEARS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#ISO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#ISO"/>
         /// </summary>
         public static Java.Time.Temporal.WeekFields ISO => Clazz.GetField<Java.Time.Temporal.WeekFields>("ISO");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#SUNDAY_START
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#SUNDAY_START"/>
         /// </summary>
         public static Java.Time.Temporal.WeekFields SUNDAY_START => Clazz.GetField<Java.Time.Temporal.WeekFields>("SUNDAY_START");
         
@@ -55,8 +58,10 @@ namespace Java.Time.Temporal
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#of(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#of(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Time.Temporal.WeekFields"/></returns>
         public static Java.Time.Temporal.WeekFields Of(Java.Util.Locale arg0)
         {
             return SExecute<Java.Time.Temporal.WeekFields>("of", arg0);
@@ -66,43 +71,53 @@ namespace Java.Time.Temporal
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#getMinimalDaysInFirstWeek() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#getMinimalDaysInFirstWeek()"/> 
         /// </summary>
         public int MinimalDaysInFirstWeek
         {
             get { return IExecute<int>("getMinimalDaysInFirstWeek"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#dayOfWeek()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#dayOfWeek()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField DayOfWeek()
         {
             return IExecute<Java.Time.Temporal.TemporalField>("dayOfWeek");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekBasedYear()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekBasedYear()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekBasedYear()
         {
             return IExecute<Java.Time.Temporal.TemporalField>("weekBasedYear");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfMonth()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfMonth()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekOfMonth()
         {
             return IExecute<Java.Time.Temporal.TemporalField>("weekOfMonth");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfWeekBasedYear()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfWeekBasedYear()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekOfWeekBasedYear()
         {
             return IExecute<Java.Time.Temporal.TemporalField>("weekOfWeekBasedYear");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfYear()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfYear()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
         public Java.Time.Temporal.TemporalField WeekOfYear()
         {
             return IExecute<Java.Time.Temporal.TemporalField>("weekOfYear");

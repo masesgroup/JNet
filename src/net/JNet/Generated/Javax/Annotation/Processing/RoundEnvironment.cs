@@ -46,15 +46,19 @@ namespace Javax.Annotation.Processing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#errorRaised()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#errorRaised()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool ErrorRaised()
         {
             return IExecute<bool>("errorRaised");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#processingOver()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#processingOver()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool ProcessingOver()
         {
             return IExecute<bool>("processingOver");

@@ -38,7 +38,7 @@ namespace Javax.Swing.Plaf.Metal
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalToolTipUI.html#padSpaceBetweenStrings
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalToolTipUI.html#padSpaceBetweenStrings"/>
         /// </summary>
         public static int padSpaceBetweenStrings => Clazz.GetField<int>("padSpaceBetweenStrings");
         
@@ -50,7 +50,7 @@ namespace Javax.Swing.Plaf.Metal
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalToolTipUI.html#getAcceleratorString() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalToolTipUI.html#getAcceleratorString()"/> 
         /// </summary>
         public string AcceleratorString
         {

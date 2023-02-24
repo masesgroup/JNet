@@ -46,29 +46,45 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html#getMBeanInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html#getMBeanInfo()"/> 
         /// </summary>
         public Javax.Management.MBeanInfo MBeanInfo
         {
             get { return IExecute<Javax.Management.MBeanInfo>("getMBeanInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html#getAttribute(java.lang.String) throws javax.management.AttributeNotFoundException,javax.management.MBeanException,javax.management.ReflectionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html#getAttribute(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Management.AttributeNotFoundException"/>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
         public object GetAttribute(string arg0)
         {
             return IExecute("getAttribute", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html#invoke(java.lang.String,java.lang.Object[],java.lang.String[]) throws javax.management.MBeanException,javax.management.ReflectionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html#invoke(java.lang.String,java.lang.Object[],java.lang.String[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
         public object Invoke(string arg0, object[] arg1, string[] arg2)
         {
             return IExecute("invoke", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html#setAttribute(javax.management.Attribute) throws javax.management.AttributeNotFoundException,javax.management.InvalidAttributeValueException,javax.management.MBeanException,javax.management.ReflectionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html#setAttribute(javax.management.Attribute)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Attribute"/></param>
+        /// <exception cref="Javax.Management.AttributeNotFoundException"/>
+        /// <exception cref="Javax.Management.InvalidAttributeValueException"/>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
         public void SetAttribute(Javax.Management.Attribute arg0)
         {
             IExecute("setAttribute", arg0);

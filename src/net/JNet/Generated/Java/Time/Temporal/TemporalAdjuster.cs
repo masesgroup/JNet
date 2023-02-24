@@ -46,8 +46,10 @@ namespace Java.Time.Temporal
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjuster.html#adjustInto(java.time.temporal.Temporal)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjuster.html#adjustInto(java.time.temporal.Temporal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0)
         {
             return IExecute<Java.Time.Temporal.Temporal>("adjustInto", arg0);

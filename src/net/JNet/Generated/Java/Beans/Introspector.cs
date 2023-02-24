@@ -38,15 +38,15 @@ namespace Java.Beans
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#IGNORE_ALL_BEANINFO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#IGNORE_ALL_BEANINFO"/>
         /// </summary>
         public static int IGNORE_ALL_BEANINFO => Clazz.GetField<int>("IGNORE_ALL_BEANINFO");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#IGNORE_IMMEDIATE_BEANINFO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#IGNORE_IMMEDIATE_BEANINFO"/>
         /// </summary>
         public static int IGNORE_IMMEDIATE_BEANINFO => Clazz.GetField<int>("IGNORE_IMMEDIATE_BEANINFO");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#USE_ALL_BEANINFO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#USE_ALL_BEANINFO"/>
         /// </summary>
         public static int USE_ALL_BEANINFO => Clazz.GetField<int>("USE_ALL_BEANINFO");
         
@@ -54,21 +54,23 @@ namespace Java.Beans
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfoSearchPath() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#setBeanInfoSearchPath(java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfoSearchPath()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#setBeanInfoSearchPath(java.lang.String[])"/>
         /// </summary>
         public static string[] BeanInfoSearchPath
         {
             get { return SExecuteArray<string>("getBeanInfoSearchPath"); } set { SExecute("setBeanInfoSearchPath", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#decapitalize(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#decapitalize(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string Decapitalize(string arg0)
         {
             return SExecute<string>("decapitalize", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#flushCaches()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#flushCaches()"/>
         /// </summary>
         public static void FlushCaches()
         {

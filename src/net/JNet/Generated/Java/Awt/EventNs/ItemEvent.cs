@@ -30,8 +30,12 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#<init>(java.awt.ItemSelectable,int,java.lang.Object,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#%3Cinit%3E(java.awt.ItemSelectable,int,java.lang.Object,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ItemSelectable"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public ItemEvent(Java.Awt.ItemSelectable arg0, int arg1, object arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -45,23 +49,23 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#DESELECTED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#DESELECTED"/>
         /// </summary>
         public static int DESELECTED => Clazz.GetField<int>("DESELECTED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#ITEM_FIRST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#ITEM_FIRST"/>
         /// </summary>
         public static int ITEM_FIRST => Clazz.GetField<int>("ITEM_FIRST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#ITEM_LAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#ITEM_LAST"/>
         /// </summary>
         public static int ITEM_LAST => Clazz.GetField<int>("ITEM_LAST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#ITEM_STATE_CHANGED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#ITEM_STATE_CHANGED"/>
         /// </summary>
         public static int ITEM_STATE_CHANGED => Clazz.GetField<int>("ITEM_STATE_CHANGED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#SELECTED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#SELECTED"/>
         /// </summary>
         public static int SELECTED => Clazz.GetField<int>("SELECTED");
         
@@ -73,21 +77,21 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#getItem() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#getItem()"/> 
         /// </summary>
         public object Item
         {
             get { return IExecute("getItem"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#getItemSelectable() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#getItemSelectable()"/> 
         /// </summary>
         public Java.Awt.ItemSelectable ItemSelectable
         {
             get { return IExecute<Java.Awt.ItemSelectable>("getItemSelectable"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#getStateChange() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#getStateChange()"/> 
         /// </summary>
         public int StateChange
         {

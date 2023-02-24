@@ -33,8 +33,17 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Element.TypeElement"/> to <see cref="Javax.Lang.Model.Element.Element"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Element(Javax.Lang.Model.Element.TypeElement t) => t.Cast<Javax.Lang.Model.Element.Element>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Element.TypeElement"/> to <see cref="Javax.Lang.Model.Element.Parameterizable"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Parameterizable(Javax.Lang.Model.Element.TypeElement t) => t.Cast<Javax.Lang.Model.Element.Parameterizable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Element.TypeElement"/> to <see cref="Javax.Lang.Model.Element.QualifiedNameable"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Element.QualifiedNameable(Javax.Lang.Model.Element.TypeElement t) => t.Cast<Javax.Lang.Model.Element.QualifiedNameable>();
         
         #endregion
@@ -49,28 +58,28 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getEnclosingElement() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement
         {
             get { return IExecute<Javax.Lang.Model.Element.Element>("getEnclosingElement"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getQualifiedName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getQualifiedName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name QualifiedName
         {
             get { return IExecute<Javax.Lang.Model.Element.Name>("getQualifiedName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getSimpleName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getSimpleName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name SimpleName
         {
             get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getSuperclass() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getSuperclass()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror Superclass
         {

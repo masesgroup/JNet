@@ -46,7 +46,7 @@ namespace Javax.Management.Remote
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAddressable.html#getAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAddressable.html#getAddress()"/> 
         /// </summary>
         public Javax.Management.Remote.JMXServiceURL Address
         {

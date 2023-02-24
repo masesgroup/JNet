@@ -46,29 +46,33 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#getSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#getSize()"/> 
         /// </summary>
         public int Size
         {
             get { return IExecute<int>("getSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#getElementAt(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#getElementAt(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="object"/></returns>
         public object GetElementAt(int arg0)
         {
             return IExecute("getElementAt", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#addListDataListener(javax.swing.event.ListDataListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#addListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
         public void AddListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
             IExecute("addListDataListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#removeListDataListener(javax.swing.event.ListDataListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#removeListDataListener(javax.swing.event.ListDataListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
         public void RemoveListDataListener(Javax.Swing.Event.ListDataListener arg0)
         {
             IExecute("removeListDataListener", arg0);

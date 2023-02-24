@@ -30,8 +30,9 @@ namespace Org.Xml.Sax.Helpers
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#<init>(org.xml.sax.Locator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#%3Cinit%3E(org.xml.sax.Locator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
         public LocatorImpl(Org.Xml.Sax.Locator arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Org.Xml.Sax.Helpers
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.Xml.Sax.Helpers.LocatorImpl"/> to <see cref="Org.Xml.Sax.Locator"/>
+        /// </summary>
         public static implicit operator Org.Xml.Sax.Locator(Org.Xml.Sax.Helpers.LocatorImpl t) => t.Cast<Org.Xml.Sax.Locator>();
         
         #endregion
@@ -54,28 +58,28 @@ namespace Org.Xml.Sax.Helpers
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#getColumnNumber() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#setColumnNumber(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#getColumnNumber()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#setColumnNumber(int)"/>
         /// </summary>
         public int ColumnNumber
         {
             get { return IExecute<int>("getColumnNumber"); } set { IExecute("setColumnNumber", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#getLineNumber() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#setLineNumber(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#getLineNumber()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#setLineNumber(int)"/>
         /// </summary>
         public int LineNumber
         {
             get { return IExecute<int>("getLineNumber"); } set { IExecute("setLineNumber", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#getPublicId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#setPublicId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#getPublicId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#setPublicId(java.lang.String)"/>
         /// </summary>
         public string PublicId
         {
             get { return IExecute<string>("getPublicId"); } set { IExecute("setPublicId", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#getSystemId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#setSystemId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public string SystemId
         {

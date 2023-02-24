@@ -46,7 +46,7 @@ namespace Java.Beans.Beancontext
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html#getSourceAsBeanContextServices() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html#getSourceAsBeanContextServices()"/> 
         /// </summary>
         public Java.Beans.Beancontext.BeanContextServices SourceAsBeanContextServices
         {

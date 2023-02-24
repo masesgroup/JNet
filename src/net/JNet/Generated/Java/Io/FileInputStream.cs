@@ -30,22 +30,27 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileInputStream.html#<init>(java.io.File) throws java.io.FileNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileInputStream.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <exception cref="Java.Io.FileNotFoundException"/>
         public FileInputStream(Java.Io.File arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileInputStream.html#<init>(java.io.FileDescriptor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileInputStream.html#%3Cinit%3E(java.io.FileDescriptor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public FileInputStream(Java.Io.FileDescriptor arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileInputStream.html#<init>(java.lang.String) throws java.io.FileNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileInputStream.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Io.FileNotFoundException"/>
         public FileInputStream(string arg0)
             : base(arg0)
         {
@@ -67,14 +72,14 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileInputStream.html#getChannel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileInputStream.html#getChannel()"/> 
         /// </summary>
         public Java.Nio.Channels.FileChannel Channel
         {
             get { return IExecute<Java.Nio.Channels.FileChannel>("getChannel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileInputStream.html#getFD() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileInputStream.html#getFD()"/> 
         /// </summary>
         public Java.Io.FileDescriptor FD
         {

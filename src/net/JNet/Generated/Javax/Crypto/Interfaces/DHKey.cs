@@ -46,7 +46,7 @@ namespace Javax.Crypto.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHKey.html#getParams() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHKey.html#getParams()"/> 
         /// </summary>
         public Javax.Crypto.Spec.DHParameterSpec Params
         {

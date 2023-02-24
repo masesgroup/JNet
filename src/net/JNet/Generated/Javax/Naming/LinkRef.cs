@@ -30,15 +30,17 @@ namespace Javax.Naming
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public LinkRef(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html#<init>(javax.naming.Name)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html#%3Cinit%3E(javax.naming.Name)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
         public LinkRef(Javax.Naming.Name arg0)
             : base(arg0)
         {
@@ -60,7 +62,7 @@ namespace Javax.Naming
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html#getLinkName() throws javax.naming.NamingException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html#getLinkName()"/> 
         /// </summary>
         public string LinkName
         {

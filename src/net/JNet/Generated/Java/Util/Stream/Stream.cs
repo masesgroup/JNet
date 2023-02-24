@@ -46,15 +46,19 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#toArray()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#toArray()"/>
         /// </summary>
+        
+        /// <returns><see cref="object"/></returns>
         public object[] ToArray()
         {
             return IExecuteArray<object>("toArray");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long Count()
         {
             return IExecute<long>("count");
@@ -84,8 +88,9 @@ namespace Java.Util.Stream
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#accept(T)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#accept(T)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
             public void Accept(object arg0)
             {
                 IExecute("accept", arg0);

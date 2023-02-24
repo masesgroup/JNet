@@ -42,8 +42,10 @@ namespace Java.Util.Function
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#identity()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#identity()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
         public static Java.Util.Function.IntUnaryOperator Identity()
         {
             return SExecute<Java.Util.Function.IntUnaryOperator>("identity");
@@ -53,22 +55,28 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#applyAsInt(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#applyAsInt(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int ApplyAsInt(int arg0)
         {
             return IExecute<int>("applyAsInt", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
         public Java.Util.Function.IntUnaryOperator AndThen(Java.Util.Function.IntUnaryOperator arg0)
         {
             return IExecute<Java.Util.Function.IntUnaryOperator>("andThen", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
         public Java.Util.Function.IntUnaryOperator Compose(Java.Util.Function.IntUnaryOperator arg0)
         {
             return IExecute<Java.Util.Function.IntUnaryOperator>("compose", arg0);

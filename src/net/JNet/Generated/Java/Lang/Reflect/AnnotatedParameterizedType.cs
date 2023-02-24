@@ -33,6 +33,9 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Reflect.AnnotatedParameterizedType"/> to <see cref="Java.Lang.Reflect.AnnotatedType"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedType(Java.Lang.Reflect.AnnotatedParameterizedType t) => t.Cast<Java.Lang.Reflect.AnnotatedType>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedParameterizedType.html#getAnnotatedActualTypeArguments() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedParameterizedType.html#getAnnotatedActualTypeArguments()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType[] AnnotatedActualTypeArguments
         {
             get { return IExecuteArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedActualTypeArguments"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedParameterizedType.html#getAnnotatedOwnerType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedParameterizedType.html#getAnnotatedOwnerType()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType AnnotatedOwnerType
         {

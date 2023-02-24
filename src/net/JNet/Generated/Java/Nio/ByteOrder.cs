@@ -38,11 +38,11 @@ namespace Java.Nio
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html#BIG_ENDIAN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html#BIG_ENDIAN"/>
         /// </summary>
         public static Java.Nio.ByteOrder BIG_ENDIAN => Clazz.GetField<Java.Nio.ByteOrder>("BIG_ENDIAN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html#LITTLE_ENDIAN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html#LITTLE_ENDIAN"/>
         /// </summary>
         public static Java.Nio.ByteOrder LITTLE_ENDIAN => Clazz.GetField<Java.Nio.ByteOrder>("LITTLE_ENDIAN");
         
@@ -50,8 +50,10 @@ namespace Java.Nio
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html#nativeOrder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html#nativeOrder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
         public static Java.Nio.ByteOrder NativeOrder()
         {
             return SExecute<Java.Nio.ByteOrder>("nativeOrder");

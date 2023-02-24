@@ -46,8 +46,10 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPeriodic()
         {
             return IExecute<bool>("isPeriodic");

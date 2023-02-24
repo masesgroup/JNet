@@ -42,14 +42,14 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MouseInfo.html#getNumberOfButtons() throws java.awt.HeadlessException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MouseInfo.html#getNumberOfButtons()"/> 
         /// </summary>
         public static int NumberOfButtons
         {
             get { return SExecute<int>("getNumberOfButtons"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MouseInfo.html#getPointerInfo() throws java.awt.HeadlessException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MouseInfo.html#getPointerInfo()"/> 
         /// </summary>
         public static Java.Awt.PointerInfo PointerInfo
         {

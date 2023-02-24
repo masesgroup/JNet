@@ -46,8 +46,11 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ControlFactory.html#getControlInstance(javax.naming.ldap.Control) throws javax.naming.NamingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ControlFactory.html#getControlInstance(javax.naming.ldap.Control)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Ldap.Control"/></param>
+        /// <returns><see cref="Javax.Naming.Ldap.Control"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Ldap.Control GetControlInstance(Javax.Naming.Ldap.Control arg0)
         {
             return IExecute<Javax.Naming.Ldap.Control>("getControlInstance", arg0);

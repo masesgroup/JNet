@@ -42,337 +42,522 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#deleteIfExists(java.nio.file.Path) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#deleteIfExists(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static bool DeleteIfExists(Java.Nio.File.Path arg0)
         {
             return SExecute<bool>("deleteIfExists", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#exists(java.nio.file.Path,java.nio.file.LinkOption...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#exists(java.nio.file.Path,java.nio.file.LinkOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Exists(Java.Nio.File.Path arg0, params Java.Nio.File.LinkOption[] arg1)
         {
             if (arg1.Length == 0) return SExecute<bool>("exists", arg0); else return SExecute<bool>("exists", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isDirectory(java.nio.file.Path,java.nio.file.LinkOption...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isDirectory(java.nio.file.Path,java.nio.file.LinkOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsDirectory(Java.Nio.File.Path arg0, params Java.Nio.File.LinkOption[] arg1)
         {
             if (arg1.Length == 0) return SExecute<bool>("isDirectory", arg0); else return SExecute<bool>("isDirectory", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isExecutable(java.nio.file.Path)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isExecutable(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsExecutable(Java.Nio.File.Path arg0)
         {
             return SExecute<bool>("isExecutable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isHidden(java.nio.file.Path) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isHidden(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static bool IsHidden(Java.Nio.File.Path arg0)
         {
             return SExecute<bool>("isHidden", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isReadable(java.nio.file.Path)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isReadable(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsReadable(Java.Nio.File.Path arg0)
         {
             return SExecute<bool>("isReadable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isRegularFile(java.nio.file.Path,java.nio.file.LinkOption...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isRegularFile(java.nio.file.Path,java.nio.file.LinkOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsRegularFile(Java.Nio.File.Path arg0, params Java.Nio.File.LinkOption[] arg1)
         {
             if (arg1.Length == 0) return SExecute<bool>("isRegularFile", arg0); else return SExecute<bool>("isRegularFile", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isSameFile(java.nio.file.Path,java.nio.file.Path) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isSameFile(java.nio.file.Path,java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static bool IsSameFile(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1)
         {
             return SExecute<bool>("isSameFile", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isSymbolicLink(java.nio.file.Path)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isSymbolicLink(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsSymbolicLink(Java.Nio.File.Path arg0)
         {
             return SExecute<bool>("isSymbolicLink", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isWritable(java.nio.file.Path)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isWritable(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsWritable(Java.Nio.File.Path arg0)
         {
             return SExecute<bool>("isWritable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#notExists(java.nio.file.Path,java.nio.file.LinkOption...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#notExists(java.nio.file.Path,java.nio.file.LinkOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool NotExists(Java.Nio.File.Path arg0, params Java.Nio.File.LinkOption[] arg1)
         {
             if (arg1.Length == 0) return SExecute<bool>("notExists", arg0); else return SExecute<bool>("notExists", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readAllBytes(java.nio.file.Path) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readAllBytes(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static byte[] ReadAllBytes(Java.Nio.File.Path arg0)
         {
             return SExecuteArray<byte>("readAllBytes", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedReader(java.nio.file.Path,java.nio.charset.Charset) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedReader(java.nio.file.Path,java.nio.charset.Charset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <returns><see cref="Java.Io.BufferedReader"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.BufferedReader NewBufferedReader(Java.Nio.File.Path arg0, Java.Nio.Charset.Charset arg1)
         {
             return SExecute<Java.Io.BufferedReader>("newBufferedReader", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedReader(java.nio.file.Path) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedReader(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see cref="Java.Io.BufferedReader"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.BufferedReader NewBufferedReader(Java.Nio.File.Path arg0)
         {
             return SExecute<Java.Io.BufferedReader>("newBufferedReader", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,java.nio.charset.Charset,java.nio.file.OpenOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,java.nio.charset.Charset,java.nio.file.OpenOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.OpenOption"/></param>
+        /// <returns><see cref="Java.Io.BufferedWriter"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.BufferedWriter NewBufferedWriter(Java.Nio.File.Path arg0, Java.Nio.Charset.Charset arg1, params Java.Nio.File.OpenOption[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Io.BufferedWriter>("newBufferedWriter", arg0, arg1); else return SExecute<Java.Io.BufferedWriter>("newBufferedWriter", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,java.nio.file.OpenOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,java.nio.file.OpenOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
+        /// <returns><see cref="Java.Io.BufferedWriter"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.BufferedWriter NewBufferedWriter(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Io.BufferedWriter>("newBufferedWriter", arg0); else return SExecute<Java.Io.BufferedWriter>("newBufferedWriter", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newInputStream(java.nio.file.Path,java.nio.file.OpenOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newInputStream(java.nio.file.Path,java.nio.file.OpenOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.InputStream NewInputStream(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Io.InputStream>("newInputStream", arg0); else return SExecute<Java.Io.InputStream>("newInputStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newOutputStream(java.nio.file.Path,java.nio.file.OpenOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newOutputStream(java.nio.file.Path,java.nio.file.OpenOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.OutputStream NewOutputStream(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Io.OutputStream>("newOutputStream", arg0); else return SExecute<Java.Io.OutputStream>("newOutputStream", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getAttribute(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getAttribute(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static object GetAttribute(Java.Nio.File.Path arg0, string arg1, params Java.Nio.File.LinkOption[] arg2)
         {
             if (arg2.Length == 0) return SExecute("getAttribute", arg0, arg1); else return SExecute("getAttribute", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#probeContentType(java.nio.file.Path) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#probeContentType(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static string ProbeContentType(Java.Nio.File.Path arg0)
         {
             return SExecute<string>("probeContentType", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readString(java.nio.file.Path,java.nio.charset.Charset) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readString(java.nio.file.Path,java.nio.charset.Charset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static string ReadString(Java.Nio.File.Path arg0, Java.Nio.Charset.Charset arg1)
         {
             return SExecute<string>("readString", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readString(java.nio.file.Path) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readString(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static string ReadString(Java.Nio.File.Path arg0)
         {
             return SExecute<string>("readString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newByteChannel(java.nio.file.Path,java.nio.file.OpenOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newByteChannel(java.nio.file.Path,java.nio.file.OpenOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
+        /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.SeekableByteChannel NewByteChannel(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0); else return SExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getLastModifiedTime(java.nio.file.Path,java.nio.file.LinkOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getLastModifiedTime(java.nio.file.Path,java.nio.file.LinkOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Attribute.FileTime GetLastModifiedTime(Java.Nio.File.Path arg0, params Java.Nio.File.LinkOption[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Attribute.FileTime>("getLastModifiedTime", arg0); else return SExecute<Java.Nio.File.Attribute.FileTime>("getLastModifiedTime", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getOwner(java.nio.file.Path,java.nio.file.LinkOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getOwner(java.nio.file.Path,java.nio.file.LinkOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.UserPrincipal"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Attribute.UserPrincipal GetOwner(Java.Nio.File.Path arg0, params Java.Nio.File.LinkOption[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Attribute.UserPrincipal>("getOwner", arg0); else return SExecute<Java.Nio.File.Attribute.UserPrincipal>("getOwner", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getFileStore(java.nio.file.Path) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getFileStore(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see cref="Java.Nio.File.FileStore"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.FileStore GetFileStore(Java.Nio.File.Path arg0)
         {
             return SExecute<Java.Nio.File.FileStore>("getFileStore", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.CopyOption"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path Copy(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1, params Java.Nio.File.CopyOption[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>("copy", arg0, arg1); else return SExecute<Java.Nio.File.Path>("copy", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createDirectories(java.nio.file.Path,java.nio.file.attribute.FileAttribute<?>...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createDirectories(java.nio.file.Path,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateDirectories(Java.Nio.File.Path arg0, params Java.Nio.File.Attribute.FileAttribute[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>("createDirectories", arg0); else return SExecute<Java.Nio.File.Path>("createDirectories", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createDirectory(java.nio.file.Path,java.nio.file.attribute.FileAttribute<?>...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createDirectory(java.nio.file.Path,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateDirectory(Java.Nio.File.Path arg0, params Java.Nio.File.Attribute.FileAttribute[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>("createDirectory", arg0); else return SExecute<Java.Nio.File.Path>("createDirectory", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createFile(java.nio.file.Path,java.nio.file.attribute.FileAttribute<?>...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createFile(java.nio.file.Path,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateFile(Java.Nio.File.Path arg0, params Java.Nio.File.Attribute.FileAttribute[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>("createFile", arg0); else return SExecute<Java.Nio.File.Path>("createFile", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createLink(java.nio.file.Path,java.nio.file.Path) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createLink(java.nio.file.Path,java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateLink(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1)
         {
             return SExecute<Java.Nio.File.Path>("createLink", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createSymbolicLink(java.nio.file.Path,java.nio.file.Path,java.nio.file.attribute.FileAttribute<?>...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createSymbolicLink(java.nio.file.Path,java.nio.file.Path,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateSymbolicLink(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1, params Java.Nio.File.Attribute.FileAttribute[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>("createSymbolicLink", arg0, arg1); else return SExecute<Java.Nio.File.Path>("createSymbolicLink", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempDirectory(java.lang.String,java.nio.file.attribute.FileAttribute<?>...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempDirectory(java.lang.String,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateTempDirectory(string arg0, params Java.Nio.File.Attribute.FileAttribute[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>("createTempDirectory", arg0); else return SExecute<Java.Nio.File.Path>("createTempDirectory", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempDirectory(java.nio.file.Path,java.lang.String,java.nio.file.attribute.FileAttribute<?>...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempDirectory(java.nio.file.Path,java.lang.String,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateTempDirectory(Java.Nio.File.Path arg0, string arg1, params Java.Nio.File.Attribute.FileAttribute[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>("createTempDirectory", arg0, arg1); else return SExecute<Java.Nio.File.Path>("createTempDirectory", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempFile(java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute<?>...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempFile(java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateTempFile(string arg0, string arg1, params Java.Nio.File.Attribute.FileAttribute[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>("createTempFile", arg0, arg1); else return SExecute<Java.Nio.File.Path>("createTempFile", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempFile(java.nio.file.Path,java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute<?>...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempFile(java.nio.file.Path,java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateTempFile(Java.Nio.File.Path arg0, string arg1, string arg2, params Java.Nio.File.Attribute.FileAttribute[] arg3)
         {
             if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>("createTempFile", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>("createTempFile", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#move(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#move(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.CopyOption"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path Move(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1, params Java.Nio.File.CopyOption[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>("move", arg0, arg1); else return SExecute<Java.Nio.File.Path>("move", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readSymbolicLink(java.nio.file.Path) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readSymbolicLink(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path ReadSymbolicLink(Java.Nio.File.Path arg0)
         {
             return SExecute<Java.Nio.File.Path>("readSymbolicLink", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#setAttribute(java.nio.file.Path,java.lang.String,java.lang.Object,java.nio.file.LinkOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#setAttribute(java.nio.file.Path,java.lang.String,java.lang.Object,java.nio.file.LinkOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="Java.Nio.File.LinkOption"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path SetAttribute(Java.Nio.File.Path arg0, string arg1, object arg2, params Java.Nio.File.LinkOption[] arg3)
         {
             if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>("setAttribute", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>("setAttribute", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#setLastModifiedTime(java.nio.file.Path,java.nio.file.attribute.FileTime) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#setLastModifiedTime(java.nio.file.Path,java.nio.file.attribute.FileTime)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path SetLastModifiedTime(Java.Nio.File.Path arg0, Java.Nio.File.Attribute.FileTime arg1)
         {
             return SExecute<Java.Nio.File.Path>("setLastModifiedTime", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#setOwner(java.nio.file.Path,java.nio.file.attribute.UserPrincipal) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#setOwner(java.nio.file.Path,java.nio.file.attribute.UserPrincipal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.UserPrincipal"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path SetOwner(Java.Nio.File.Path arg0, Java.Nio.File.Attribute.UserPrincipal arg1)
         {
             return SExecute<Java.Nio.File.Path>("setOwner", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#write(java.nio.file.Path,byte[],java.nio.file.OpenOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#write(java.nio.file.Path,byte[],java.nio.file.OpenOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.OpenOption"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path Write(Java.Nio.File.Path arg0, byte[] arg1, params Java.Nio.File.OpenOption[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>("write", arg0, arg1); else return SExecute<Java.Nio.File.Path>("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.charset.Charset,java.nio.file.OpenOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.charset.Charset,java.nio.file.OpenOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <param name="arg3"><see cref="Java.Nio.File.OpenOption"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path WriteString(Java.Nio.File.Path arg0, Java.Lang.CharSequence arg1, Java.Nio.Charset.Charset arg2, params Java.Nio.File.OpenOption[] arg3)
         {
             if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>("writeString", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>("writeString", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.file.OpenOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.file.OpenOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.OpenOption"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path WriteString(Java.Nio.File.Path arg0, Java.Lang.CharSequence arg1, params Java.Nio.File.OpenOption[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>("writeString", arg0, arg1); else return SExecute<Java.Nio.File.Path>("writeString", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.CopyOption"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static long Copy(Java.Io.InputStream arg0, Java.Nio.File.Path arg1, params Java.Nio.File.CopyOption[] arg2)
         {
             if (arg2.Length == 0) return SExecute<long>("copy", arg0, arg1); else return SExecute<long>("copy", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#copy(java.nio.file.Path,java.io.OutputStream) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#copy(java.nio.file.Path,java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Io.OutputStream"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static long Copy(Java.Nio.File.Path arg0, Java.Io.OutputStream arg1)
         {
             return SExecute<long>("copy", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#size(java.nio.file.Path) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#size(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static long Size(Java.Nio.File.Path arg0)
         {
             return SExecute<long>("size", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#delete(java.nio.file.Path) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#delete(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public static void Delete(Java.Nio.File.Path arg0)
         {
             SExecute("delete", arg0);

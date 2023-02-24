@@ -46,8 +46,10 @@ namespace Org.W3c.Dom.Xpath
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathNSResolver.html#lookupNamespaceURI(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathNSResolver.html#lookupNamespaceURI(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string LookupNamespaceURI(string arg0)
         {
             return IExecute<string>("lookupNamespaceURI", arg0);

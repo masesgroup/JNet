@@ -33,6 +33,9 @@ namespace Java.Util.Stream
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Stream.BaseStream"/> to <see cref="Java.Lang.AutoCloseable"/>
+        /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Util.Stream.BaseStream t) => t.Cast<Java.Lang.AutoCloseable>();
         
         #endregion
@@ -47,14 +50,16 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsParallel()
         {
             return IExecute<bool>("isParallel");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#close()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#close()"/>
         /// </summary>
         public void Close()
         {

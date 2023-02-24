@@ -38,23 +38,23 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#BYTES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#BYTES"/>
         /// </summary>
         public static int BYTES => Clazz.GetField<int>("BYTES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#SIZE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#SIZE"/>
         /// </summary>
         public static int SIZE => Clazz.GetField<int>("SIZE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#TYPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#MAX_VALUE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#MAX_VALUE"/>
         /// </summary>
         public static short MAX_VALUE => Clazz.GetField<short>("MAX_VALUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#MIN_VALUE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#MIN_VALUE"/>
         /// </summary>
         public static short MIN_VALUE => Clazz.GetField<short>("MIN_VALUE");
         
@@ -62,92 +62,127 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compare(short,short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compare(short,short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="short"/></param>
+        /// <param name="arg1"><see langword="short"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(short arg0, short arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareUnsigned(short,short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareUnsigned(short,short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="short"/></param>
+        /// <param name="arg1"><see langword="short"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int CompareUnsigned(short arg0, short arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#hashCode(short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#hashCode(short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="short"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int HashCode(short arg0)
         {
             return SExecute<int>("hashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toUnsignedInt(short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toUnsignedInt(short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="short"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int ToUnsignedInt(short arg0)
         {
             return SExecute<int>("toUnsignedInt", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#decode(java.lang.String) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#decode(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="short?"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short? Decode(string arg0)
         {
             return SExecute<short?>("decode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(java.lang.String,int) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="short?"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short? ValueOf(string arg0, int arg1)
         {
             return SExecute<short?>("valueOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(java.lang.String) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="short?"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short? ValueOf(string arg0)
         {
             return SExecute<short?>("valueOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="short"/></param>
+        /// <returns><see langword="short?"/></returns>
         public static short? ValueOf(short arg0)
         {
             return SExecute<short?>("valueOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toString(short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toString(short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="short"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(short arg0)
         {
             return SExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toUnsignedLong(short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toUnsignedLong(short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="short"/></param>
+        /// <returns><see langword="long"/></returns>
         public static long ToUnsignedLong(short arg0)
         {
             return SExecute<long>("toUnsignedLong", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#parseShort(java.lang.String,int) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#parseShort(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="short"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short ParseShort(string arg0, int arg1)
         {
             return SExecute<short>("parseShort", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#parseShort(java.lang.String) throws java.lang.NumberFormatException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#parseShort(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="short"/></returns>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short ParseShort(string arg0)
         {
             return SExecute<short>("parseShort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#reverseBytes(short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#reverseBytes(short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="short"/></param>
+        /// <returns><see langword="short"/></returns>
         public static short ReverseBytes(short arg0)
         {
             return SExecute<short>("reverseBytes", arg0);
@@ -157,15 +192,19 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareTo(java.lang.Short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareTo(java.lang.Short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="short?"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(short? arg0)
         {
             return IExecute<int>("compareTo", arg0);

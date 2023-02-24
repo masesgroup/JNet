@@ -30,15 +30,18 @@ namespace Javax.Swing.Text.Html.Parser
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#<init>(javax.swing.text.html.parser.Element,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#%3Cinit%3E(javax.swing.text.html.parser.Element,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.Parser.Element"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public TagElement(Javax.Swing.Text.Html.Parser.Element arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#<init>(javax.swing.text.html.parser.Element)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#%3Cinit%3E(javax.swing.text.html.parser.Element)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Html.Parser.Element"/></param>
         public TagElement(Javax.Swing.Text.Html.Parser.Element arg0)
             : base(arg0)
         {
@@ -60,36 +63,42 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#getElement() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#getElement()"/> 
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element Element
         {
             get { return IExecute<Javax.Swing.Text.Html.Parser.Element>("getElement"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#getHTMLTag() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#getHTMLTag()"/> 
         /// </summary>
         public Javax.Swing.Text.Html.HTML.Tag HTMLTag
         {
             get { return IExecute<Javax.Swing.Text.Html.HTML.Tag>("getHTMLTag"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#breaksFlow()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#breaksFlow()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool BreaksFlow()
         {
             return IExecute<bool>("breaksFlow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#fictional()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#fictional()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Fictional()
         {
             return IExecute<bool>("fictional");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#isPreformatted()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#isPreformatted()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPreformatted()
         {
             return IExecute<bool>("isPreformatted");

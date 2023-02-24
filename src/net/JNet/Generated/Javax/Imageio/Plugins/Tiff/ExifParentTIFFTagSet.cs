@@ -38,11 +38,11 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#TAG_EXIF_IFD_POINTER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#TAG_EXIF_IFD_POINTER"/>
         /// </summary>
         public static int TAG_EXIF_IFD_POINTER => Clazz.GetField<int>("TAG_EXIF_IFD_POINTER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#TAG_GPS_INFO_IFD_POINTER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#TAG_GPS_INFO_IFD_POINTER"/>
         /// </summary>
         public static int TAG_GPS_INFO_IFD_POINTER => Clazz.GetField<int>("TAG_GPS_INFO_IFD_POINTER");
         
@@ -50,8 +50,10 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#getInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#getInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet"/></returns>
         public static Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet GetInstance()
         {
             return SExecute<Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet>("getInstance");

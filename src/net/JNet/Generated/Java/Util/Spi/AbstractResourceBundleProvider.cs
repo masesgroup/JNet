@@ -33,6 +33,9 @@ namespace Java.Util.Spi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Spi.AbstractResourceBundleProvider"/> to <see cref="Java.Util.Spi.ResourceBundleProvider"/>
+        /// </summary>
         public static implicit operator Java.Util.Spi.ResourceBundleProvider(Java.Util.Spi.AbstractResourceBundleProvider t) => t.Cast<Java.Util.Spi.ResourceBundleProvider>();
         
         #endregion
@@ -47,8 +50,11 @@ namespace Java.Util.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/AbstractResourceBundleProvider.html#getBundle(java.lang.String,java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/AbstractResourceBundleProvider.html#getBundle(java.lang.String,java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.Locale arg1)
         {
             return IExecute<Java.Util.ResourceBundle>("getBundle", arg0, arg1);

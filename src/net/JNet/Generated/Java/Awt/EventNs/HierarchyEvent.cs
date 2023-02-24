@@ -30,15 +30,24 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#<init>(java.awt.Component,int,java.awt.Component,java.awt.Container,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#%3Cinit%3E(java.awt.Component,int,java.awt.Component,java.awt.Container,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Container"/></param>
+        /// <param name="arg4"><see langword="long"/></param>
         public HierarchyEvent(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2, Java.Awt.Container arg3, long arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#<init>(java.awt.Component,int,java.awt.Component,java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#%3Cinit%3E(java.awt.Component,int,java.awt.Component,java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Container"/></param>
         public HierarchyEvent(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2, Java.Awt.Container arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -52,35 +61,35 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#ANCESTOR_MOVED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#ANCESTOR_MOVED"/>
         /// </summary>
         public static int ANCESTOR_MOVED => Clazz.GetField<int>("ANCESTOR_MOVED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#ANCESTOR_RESIZED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#ANCESTOR_RESIZED"/>
         /// </summary>
         public static int ANCESTOR_RESIZED => Clazz.GetField<int>("ANCESTOR_RESIZED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#DISPLAYABILITY_CHANGED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#DISPLAYABILITY_CHANGED"/>
         /// </summary>
         public static int DISPLAYABILITY_CHANGED => Clazz.GetField<int>("DISPLAYABILITY_CHANGED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_CHANGED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_CHANGED"/>
         /// </summary>
         public static int HIERARCHY_CHANGED => Clazz.GetField<int>("HIERARCHY_CHANGED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_FIRST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_FIRST"/>
         /// </summary>
         public static int HIERARCHY_FIRST => Clazz.GetField<int>("HIERARCHY_FIRST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_LAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_LAST"/>
         /// </summary>
         public static int HIERARCHY_LAST => Clazz.GetField<int>("HIERARCHY_LAST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#PARENT_CHANGED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#PARENT_CHANGED"/>
         /// </summary>
         public static int PARENT_CHANGED => Clazz.GetField<int>("PARENT_CHANGED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#SHOWING_CHANGED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#SHOWING_CHANGED"/>
         /// </summary>
         public static int SHOWING_CHANGED => Clazz.GetField<int>("SHOWING_CHANGED");
         
@@ -92,28 +101,28 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#getChanged() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#getChanged()"/> 
         /// </summary>
         public Java.Awt.Component Changed
         {
             get { return IExecute<Java.Awt.Component>("getChanged"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#getChangedParent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#getChangedParent()"/> 
         /// </summary>
         public Java.Awt.Container ChangedParent
         {
             get { return IExecute<Java.Awt.Container>("getChangedParent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#getChangeFlags() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#getChangeFlags()"/> 
         /// </summary>
         public long ChangeFlags
         {
             get { return IExecute<long>("getChangeFlags"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#getComponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#getComponent()"/> 
         /// </summary>
         public Java.Awt.Component Component
         {

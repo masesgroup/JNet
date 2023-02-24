@@ -33,17 +33,20 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JDesktopPane"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JDesktopPane t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#LIVE_DRAG_MODE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#LIVE_DRAG_MODE"/>
         /// </summary>
         public static int LIVE_DRAG_MODE => Clazz.GetField<int>("LIVE_DRAG_MODE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#OUTLINE_DRAG_MODE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#OUTLINE_DRAG_MODE"/>
         /// </summary>
         public static int OUTLINE_DRAG_MODE => Clazz.GetField<int>("OUTLINE_DRAG_MODE");
         
@@ -55,50 +58,55 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getAllFrames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getAllFrames()"/> 
         /// </summary>
         public Javax.Swing.JInternalFrame[] AllFrames
         {
             get { return IExecuteArray<Javax.Swing.JInternalFrame>("getAllFrames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getDesktopManager() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#setDesktopManager(javax.swing.DesktopManager)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getDesktopManager()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#setDesktopManager(javax.swing.DesktopManager)"/>
         /// </summary>
         public Javax.Swing.DesktopManager DesktopManager
         {
             get { return IExecute<Javax.Swing.DesktopManager>("getDesktopManager"); } set { IExecute("setDesktopManager", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getDragMode() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#setDragMode(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getDragMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#setDragMode(int)"/>
         /// </summary>
         public int DragMode
         {
             get { return IExecute<int>("getDragMode"); } set { IExecute("setDragMode", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getSelectedFrame() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#setSelectedFrame(javax.swing.JInternalFrame)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getSelectedFrame()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#setSelectedFrame(javax.swing.JInternalFrame)"/>
         /// </summary>
         public Javax.Swing.JInternalFrame SelectedFrame
         {
             get { return IExecute<Javax.Swing.JInternalFrame>("getSelectedFrame"); } set { IExecute("setSelectedFrame", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#selectFrame(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#selectFrame(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <returns><see cref="Javax.Swing.JInternalFrame"/></returns>
         public Javax.Swing.JInternalFrame SelectFrame(bool arg0)
         {
             return IExecute<Javax.Swing.JInternalFrame>("selectFrame", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getAllFramesInLayer(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#getAllFramesInLayer(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.JInternalFrame"/></returns>
         public Javax.Swing.JInternalFrame[] GetAllFramesInLayer(int arg0)
         {
             return IExecuteArray<Javax.Swing.JInternalFrame>("getAllFramesInLayer", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#setUI(javax.swing.plaf.DesktopPaneUI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDesktopPane.html#setUI(javax.swing.plaf.DesktopPaneUI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.DesktopPaneUI"/></param>
         public void SetUI(Javax.Swing.Plaf.DesktopPaneUI arg0)
         {
             IExecute("setUI", arg0);

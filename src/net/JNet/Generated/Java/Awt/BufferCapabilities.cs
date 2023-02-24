@@ -30,8 +30,11 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#<init>(java.awt.ImageCapabilities,java.awt.ImageCapabilities,java.awt.BufferCapabilities$FlipContents)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#%3Cinit%3E(java.awt.ImageCapabilities,java.awt.ImageCapabilities,java.awt.BufferCapabilities$FlipContents)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageCapabilities"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageCapabilities"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.BufferCapabilities.FlipContents"/></param>
         public BufferCapabilities(Java.Awt.ImageCapabilities arg0, Java.Awt.ImageCapabilities arg1, Java.Awt.BufferCapabilities.FlipContents arg2)
             : base(arg0, arg1, arg2)
         {
@@ -40,6 +43,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.BufferCapabilities"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.BufferCapabilities t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -54,43 +60,51 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#getBackBufferCapabilities() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#getBackBufferCapabilities()"/> 
         /// </summary>
         public Java.Awt.ImageCapabilities BackBufferCapabilities
         {
             get { return IExecute<Java.Awt.ImageCapabilities>("getBackBufferCapabilities"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#getFrontBufferCapabilities() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#getFrontBufferCapabilities()"/> 
         /// </summary>
         public Java.Awt.ImageCapabilities FrontBufferCapabilities
         {
             get { return IExecute<Java.Awt.ImageCapabilities>("getFrontBufferCapabilities"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isFullScreenRequired()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isFullScreenRequired()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsFullScreenRequired()
         {
             return IExecute<bool>("isFullScreenRequired");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isMultiBufferAvailable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isMultiBufferAvailable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMultiBufferAvailable()
         {
             return IExecute<bool>("isMultiBufferAvailable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isPageFlipping()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#isPageFlipping()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPageFlipping()
         {
             return IExecute<bool>("isPageFlipping");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#getFlipContents()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html#getFlipContents()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.BufferCapabilities.FlipContents"/></returns>
         public Java.Awt.BufferCapabilities.FlipContents GetFlipContents()
         {
             return IExecute<Java.Awt.BufferCapabilities.FlipContents>("getFlipContents");
@@ -112,19 +126,19 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#BACKGROUND
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#BACKGROUND"/>
             /// </summary>
             public static Java.Awt.BufferCapabilities.FlipContents BACKGROUND => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("BACKGROUND");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#COPIED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#COPIED"/>
             /// </summary>
             public static Java.Awt.BufferCapabilities.FlipContents COPIED => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("COPIED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#PRIOR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#PRIOR"/>
             /// </summary>
             public static Java.Awt.BufferCapabilities.FlipContents PRIOR => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("PRIOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#UNDEFINED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#UNDEFINED"/>
             /// </summary>
             public static Java.Awt.BufferCapabilities.FlipContents UNDEFINED => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("UNDEFINED");
             

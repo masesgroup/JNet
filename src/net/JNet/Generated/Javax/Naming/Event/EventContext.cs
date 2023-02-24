@@ -33,21 +33,24 @@ namespace Javax.Naming.Event
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Event.EventContext"/> to <see cref="Javax.Naming.Context"/>
+        /// </summary>
         public static implicit operator Javax.Naming.Context(Javax.Naming.Event.EventContext t) => t.Cast<Javax.Naming.Context>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#OBJECT_SCOPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#OBJECT_SCOPE"/>
         /// </summary>
         public static int OBJECT_SCOPE => Clazz.GetField<int>("OBJECT_SCOPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#ONELEVEL_SCOPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#ONELEVEL_SCOPE"/>
         /// </summary>
         public static int ONELEVEL_SCOPE => Clazz.GetField<int>("ONELEVEL_SCOPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#SUBTREE_SCOPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#SUBTREE_SCOPE"/>
         /// </summary>
         public static int SUBTREE_SCOPE => Clazz.GetField<int>("SUBTREE_SCOPE");
         
@@ -59,29 +62,42 @@ namespace Javax.Naming.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#targetMustExist() throws javax.naming.NamingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#targetMustExist()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
         public bool TargetMustExist()
         {
             return IExecute<bool>("targetMustExist");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(java.lang.String,int,javax.naming.event.NamingListener) throws javax.naming.NamingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(java.lang.String,int,javax.naming.event.NamingListener)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Event.NamingListener"/></param>
+        /// <exception cref="Javax.Naming.NamingException"/>
         public void AddNamingListener(string arg0, int arg1, Javax.Naming.Event.NamingListener arg2)
         {
             IExecute("addNamingListener", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(javax.naming.Name,int,javax.naming.event.NamingListener) throws javax.naming.NamingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(javax.naming.Name,int,javax.naming.event.NamingListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Event.NamingListener"/></param>
+        /// <exception cref="Javax.Naming.NamingException"/>
         public void AddNamingListener(Javax.Naming.Name arg0, int arg1, Javax.Naming.Event.NamingListener arg2)
         {
             IExecute("addNamingListener", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#removeNamingListener(javax.naming.event.NamingListener) throws javax.naming.NamingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#removeNamingListener(javax.naming.event.NamingListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingListener"/></param>
+        /// <exception cref="Javax.Naming.NamingException"/>
         public void RemoveNamingListener(Javax.Naming.Event.NamingListener arg0)
         {
             IExecute("removeNamingListener", arg0);

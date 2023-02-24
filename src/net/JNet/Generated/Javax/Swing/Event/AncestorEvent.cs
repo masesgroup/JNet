@@ -30,8 +30,12 @@ namespace Javax.Swing.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#<init>(javax.swing.JComponent,int,java.awt.Container,java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#%3Cinit%3E(javax.swing.JComponent,int,java.awt.Container,java.awt.Container)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Container"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Container"/></param>
         public AncestorEvent(Javax.Swing.JComponent arg0, int arg1, Java.Awt.Container arg2, Java.Awt.Container arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -45,15 +49,15 @@ namespace Javax.Swing.Event
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#ANCESTOR_ADDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#ANCESTOR_ADDED"/>
         /// </summary>
         public static int ANCESTOR_ADDED => Clazz.GetField<int>("ANCESTOR_ADDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#ANCESTOR_MOVED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#ANCESTOR_MOVED"/>
         /// </summary>
         public static int ANCESTOR_MOVED => Clazz.GetField<int>("ANCESTOR_MOVED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#ANCESTOR_REMOVED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#ANCESTOR_REMOVED"/>
         /// </summary>
         public static int ANCESTOR_REMOVED => Clazz.GetField<int>("ANCESTOR_REMOVED");
         
@@ -65,21 +69,21 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#getAncestor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#getAncestor()"/> 
         /// </summary>
         public Java.Awt.Container Ancestor
         {
             get { return IExecute<Java.Awt.Container>("getAncestor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#getAncestorParent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#getAncestorParent()"/> 
         /// </summary>
         public Java.Awt.Container AncestorParent
         {
             get { return IExecute<Java.Awt.Container>("getAncestorParent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#getComponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#getComponent()"/> 
         /// </summary>
         public Javax.Swing.JComponent Component
         {

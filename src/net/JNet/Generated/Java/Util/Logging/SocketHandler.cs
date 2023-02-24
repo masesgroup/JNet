@@ -30,8 +30,11 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/SocketHandler.html#<init>(java.lang.String,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/SocketHandler.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public SocketHandler(string arg0, int arg1)
             : base(arg0, arg1)
         {

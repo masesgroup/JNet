@@ -46,21 +46,21 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getCipherSuite() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getCipherSuite()"/> 
         /// </summary>
         public string CipherSuite
         {
             get { return IExecute<string>("getCipherSuite"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getLocalPrincipal() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getLocalPrincipal()"/> 
         /// </summary>
         public Java.Security.Principal LocalPrincipal
         {
             get { return IExecute<Java.Security.Principal>("getLocalPrincipal"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getPeerPrincipal() throws javax.net.ssl.SSLPeerUnverifiedException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getPeerPrincipal()"/> 
         /// </summary>
         public Java.Security.Principal PeerPrincipal
         {

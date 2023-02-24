@@ -38,7 +38,7 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#UNSET
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#UNSET"/>
         /// </summary>
         public static int UNSET => Clazz.GetField<int>("UNSET");
         
@@ -46,57 +46,78 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#constant(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#constant(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Constant(int arg0, int arg1, int arg2)
         {
             return SExecute<Javax.Swing.Spring>("constant", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#constant(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#constant(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Constant(int arg0)
         {
             return SExecute<Javax.Swing.Spring>("constant", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#height(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#height(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Height(Java.Awt.Component arg0)
         {
             return SExecute<Javax.Swing.Spring>("height", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#max(javax.swing.Spring,javax.swing.Spring)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#max(javax.swing.Spring,javax.swing.Spring)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Spring"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Spring"/></param>
+        /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Max(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1)
         {
             return SExecute<Javax.Swing.Spring>("max", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#minus(javax.swing.Spring)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#minus(javax.swing.Spring)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Spring"/></param>
+        /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Minus(Javax.Swing.Spring arg0)
         {
             return SExecute<Javax.Swing.Spring>("minus", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#scale(javax.swing.Spring,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#scale(javax.swing.Spring,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Spring"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Scale(Javax.Swing.Spring arg0, float arg1)
         {
             return SExecute<Javax.Swing.Spring>("scale", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#sum(javax.swing.Spring,javax.swing.Spring)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#sum(javax.swing.Spring,javax.swing.Spring)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Spring"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Spring"/></param>
+        /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Sum(Javax.Swing.Spring arg0, Javax.Swing.Spring arg1)
         {
             return SExecute<Javax.Swing.Spring>("sum", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#width(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#width(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public static Javax.Swing.Spring Width(Java.Awt.Component arg0)
         {
             return SExecute<Javax.Swing.Spring>("width", arg0);
@@ -106,28 +127,28 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#getMaximumValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#getMaximumValue()"/> 
         /// </summary>
         public int MaximumValue
         {
             get { return IExecute<int>("getMaximumValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#getMinimumValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#getMinimumValue()"/> 
         /// </summary>
         public int MinimumValue
         {
             get { return IExecute<int>("getMinimumValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#getPreferredValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#getPreferredValue()"/> 
         /// </summary>
         public int PreferredValue
         {
             get { return IExecute<int>("getPreferredValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#getValue() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#setValue(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Spring.html#setValue(int)"/>
         /// </summary>
         public int Value
         {

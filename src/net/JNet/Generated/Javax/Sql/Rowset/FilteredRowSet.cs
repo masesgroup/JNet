@@ -33,6 +33,9 @@ namespace Javax.Sql.Rowset
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.FilteredRowSet"/> to <see cref="Javax.Sql.Rowset.WebRowSet"/>
+        /// </summary>
         public static implicit operator Javax.Sql.Rowset.WebRowSet(Javax.Sql.Rowset.FilteredRowSet t) => t.Cast<Javax.Sql.Rowset.WebRowSet>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Javax.Sql.Rowset
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/FilteredRowSet.html#getFilter() https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/FilteredRowSet.html#setFilter(javax.sql.rowset.Predicate) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/FilteredRowSet.html#getFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/FilteredRowSet.html#setFilter(javax.sql.rowset.Predicate)"/>
         /// </summary>
         public Javax.Sql.Rowset.Predicate Filter
         {

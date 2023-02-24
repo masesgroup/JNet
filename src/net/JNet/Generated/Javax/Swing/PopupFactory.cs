@@ -42,7 +42,7 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/PopupFactory.html#getSharedInstance() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/PopupFactory.html#setSharedInstance(javax.swing.PopupFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/PopupFactory.html#getSharedInstance()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/PopupFactory.html#setSharedInstance(javax.swing.PopupFactory)"/>
         /// </summary>
         public static Javax.Swing.PopupFactory SharedInstance
         {
@@ -53,8 +53,14 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/PopupFactory.html#getPopup(java.awt.Component,java.awt.Component,int,int) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/PopupFactory.html#getPopup(java.awt.Component,java.awt.Component,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Popup"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public Javax.Swing.Popup GetPopup(Java.Awt.Component arg0, Java.Awt.Component arg1, int arg2, int arg3)
         {
             return IExecute<Javax.Swing.Popup>("getPopup", arg0, arg1, arg2, arg3);

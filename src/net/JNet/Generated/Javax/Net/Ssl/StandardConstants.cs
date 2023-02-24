@@ -38,7 +38,7 @@ namespace Javax.Net.Ssl
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/StandardConstants.html#SNI_HOST_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/StandardConstants.html#SNI_HOST_NAME"/>
         /// </summary>
         public static int SNI_HOST_NAME => Clazz.GetField<int>("SNI_HOST_NAME");
         

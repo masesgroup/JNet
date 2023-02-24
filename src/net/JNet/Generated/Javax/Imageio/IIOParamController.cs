@@ -46,8 +46,10 @@ namespace Javax.Imageio
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParamController.html#activate(javax.imageio.IIOParam)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParamController.html#activate(javax.imageio.IIOParam)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.IIOParam"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Activate(Javax.Imageio.IIOParam arg0)
         {
             return IExecute<bool>("activate", arg0);

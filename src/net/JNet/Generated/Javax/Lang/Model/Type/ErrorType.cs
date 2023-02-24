@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Type
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Type.ErrorType"/> to <see cref="Javax.Lang.Model.Type.DeclaredType"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Type.DeclaredType(Javax.Lang.Model.Type.ErrorType t) => t.Cast<Javax.Lang.Model.Type.DeclaredType>();
         
         #endregion

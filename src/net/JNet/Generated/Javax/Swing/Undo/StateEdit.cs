@@ -30,15 +30,18 @@ namespace Javax.Swing.Undo
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEdit.html#<init>(javax.swing.undo.StateEditable,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEdit.html#%3Cinit%3E(javax.swing.undo.StateEditable,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Undo.StateEditable"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public StateEdit(Javax.Swing.Undo.StateEditable arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEdit.html#<init>(javax.swing.undo.StateEditable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEdit.html#%3Cinit%3E(javax.swing.undo.StateEditable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Undo.StateEditable"/></param>
         public StateEdit(Javax.Swing.Undo.StateEditable arg0)
             : base(arg0)
         {
@@ -60,7 +63,7 @@ namespace Javax.Swing.Undo
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEdit.html#end()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEdit.html#end()"/>
         /// </summary>
         public void End()
         {

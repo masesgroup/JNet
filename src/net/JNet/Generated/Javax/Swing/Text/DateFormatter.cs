@@ -30,8 +30,9 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DateFormatter.html#<init>(java.text.DateFormat)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DateFormatter.html#%3Cinit%3E(java.text.DateFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.DateFormat"/></param>
         public DateFormatter(Java.Text.DateFormat arg0)
             : base(arg0)
         {
@@ -53,8 +54,9 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DateFormatter.html#setFormat(java.text.DateFormat)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DateFormatter.html#setFormat(java.text.DateFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.DateFormat"/></param>
         public void SetFormat(Java.Text.DateFormat arg0)
         {
             IExecute("setFormat", arg0);

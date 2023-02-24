@@ -42,7 +42,7 @@ namespace Java.Beans
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html#getEditorSearchPath() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html#setEditorSearchPath(java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html#getEditorSearchPath()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html#setEditorSearchPath(java.lang.String[])"/>
         /// </summary>
         public static string[] EditorSearchPath
         {

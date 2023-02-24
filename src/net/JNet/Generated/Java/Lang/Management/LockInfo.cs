@@ -30,8 +30,10 @@ namespace Java.Lang.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/LockInfo.html#<init>(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/LockInfo.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public LockInfo(string arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -49,8 +51,10 @@ namespace Java.Lang.Management
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/LockInfo.html#from(javax.management.openmbean.CompositeData)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/LockInfo.html#from(javax.management.openmbean.CompositeData)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
+        /// <returns><see cref="Java.Lang.Management.LockInfo"/></returns>
         public static Java.Lang.Management.LockInfo From(Javax.Management.Openmbean.CompositeData arg0)
         {
             return SExecute<Java.Lang.Management.LockInfo>("from", arg0);
@@ -60,15 +64,17 @@ namespace Java.Lang.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/LockInfo.html#getIdentityHashCode() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/LockInfo.html#getIdentityHashCode()"/> 
         /// </summary>
         public int IdentityHashCode
         {
             get { return IExecute<int>("getIdentityHashCode"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/LockInfo.html#getClassName()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/LockInfo.html#getClassName()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string GetClassName()
         {
             return IExecute<string>("getClassName");

@@ -46,7 +46,7 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECKey.html#getParams() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECKey.html#getParams()"/> 
         /// </summary>
         public Java.Security.Spec.ECParameterSpec Params
         {

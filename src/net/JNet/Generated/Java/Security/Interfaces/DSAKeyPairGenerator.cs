@@ -46,15 +46,22 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html#initialize(int,boolean,java.security.SecureRandom) throws java.security.InvalidParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html#initialize(int,boolean,java.security.SecureRandom)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="Java.Security.SecureRandom"/></param>
+        /// <exception cref="Java.Security.InvalidParameterException"/>
         public void Initialize(int arg0, bool arg1, Java.Security.SecureRandom arg2)
         {
             IExecute("initialize", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html#initialize(java.security.interfaces.DSAParams,java.security.SecureRandom) throws java.security.InvalidParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html#initialize(java.security.interfaces.DSAParams,java.security.SecureRandom)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Interfaces.DSAParams"/></param>
+        /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
+        /// <exception cref="Java.Security.InvalidParameterException"/>
         public void Initialize(Java.Security.Interfaces.DSAParams arg0, Java.Security.SecureRandom arg1)
         {
             IExecute("initialize", arg0, arg1);

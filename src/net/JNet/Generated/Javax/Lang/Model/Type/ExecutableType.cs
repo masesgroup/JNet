@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Type
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Type.ExecutableType"/> to <see cref="Javax.Lang.Model.Type.TypeMirror"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Type.TypeMirror(Javax.Lang.Model.Type.ExecutableType t) => t.Cast<Javax.Lang.Model.Type.TypeMirror>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Javax.Lang.Model.Type
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getReceiverType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getReceiverType()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror ReceiverType
         {
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getReceiverType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getReturnType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getReturnType()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror ReturnType
         {

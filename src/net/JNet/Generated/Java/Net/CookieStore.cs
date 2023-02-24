@@ -46,22 +46,29 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#remove(java.net.URI,java.net.HttpCookie)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#remove(java.net.URI,java.net.HttpCookie)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Remove(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
             return IExecute<bool>("remove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#removeAll()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#removeAll()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool RemoveAll()
         {
             return IExecute<bool>("removeAll");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#add(java.net.URI,java.net.HttpCookie)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#add(java.net.URI,java.net.HttpCookie)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
         public void Add(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
             IExecute("add", arg0, arg1);

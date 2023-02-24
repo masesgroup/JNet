@@ -30,8 +30,13 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyChangeEvent.html#<init>(java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyChangeEvent.html#%3Cinit%3E(java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see langword="object"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public IndexedPropertyChangeEvent(object arg0, string arg1, object arg2, object arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -53,7 +58,7 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyChangeEvent.html#getIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyChangeEvent.html#getIndex()"/> 
         /// </summary>
         public int Index
         {

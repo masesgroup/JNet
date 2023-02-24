@@ -46,8 +46,10 @@ namespace Javax.Xml.Validation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactoryLoader.html#newFactory(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactoryLoader.html#newFactory(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Xml.Validation.SchemaFactory"/></returns>
         public Javax.Xml.Validation.SchemaFactory NewFactory(string arg0)
         {
             return IExecute<Javax.Xml.Validation.SchemaFactory>("newFactory", arg0);

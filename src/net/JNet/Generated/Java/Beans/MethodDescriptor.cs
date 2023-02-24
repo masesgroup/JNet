@@ -30,15 +30,18 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/MethodDescriptor.html#<init>(java.lang.reflect.Method,java.beans.ParameterDescriptor[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/MethodDescriptor.html#%3Cinit%3E(java.lang.reflect.Method,java.beans.ParameterDescriptor[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.ParameterDescriptor"/></param>
         public MethodDescriptor(Java.Lang.Reflect.Method arg0, Java.Beans.ParameterDescriptor[] arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/MethodDescriptor.html#<init>(java.lang.reflect.Method)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/MethodDescriptor.html#%3Cinit%3E(java.lang.reflect.Method)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Reflect.Method"/></param>
         public MethodDescriptor(Java.Lang.Reflect.Method arg0)
             : base(arg0)
         {
@@ -60,14 +63,14 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/MethodDescriptor.html#getMethod() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/MethodDescriptor.html#getMethod()"/> 
         /// </summary>
         public Java.Lang.Reflect.Method Method
         {
             get { return IExecute<Java.Lang.Reflect.Method>("getMethod"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/MethodDescriptor.html#getParameterDescriptors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/MethodDescriptor.html#getParameterDescriptors()"/> 
         /// </summary>
         public Java.Beans.ParameterDescriptor[] ParameterDescriptors
         {

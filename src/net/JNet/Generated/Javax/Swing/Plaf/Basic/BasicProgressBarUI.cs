@@ -54,8 +54,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicProgressBarUI.ChangeHandler.html#<init>(javax.swing.plaf.basic.BasicProgressBarUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicProgressBarUI.ChangeHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicProgressBarUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicProgressBarUI"/></param>
             public ChangeHandler(Javax.Swing.Plaf.Basic.BasicProgressBarUI arg0)
                 : base(arg0)
             {
@@ -64,6 +65,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicProgressBarUI.ChangeHandler"/> to <see cref="Javax.Swing.Event.ChangeListener"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicProgressBarUI.ChangeHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
             
             #endregion
@@ -78,8 +82,9 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicProgressBarUI.ChangeHandler.html#stateChanged(javax.swing.event.ChangeEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicProgressBarUI.ChangeHandler.html#stateChanged(javax.swing.event.ChangeEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
             public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
             {
                 IExecute("stateChanged", arg0);

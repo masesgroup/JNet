@@ -46,42 +46,42 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/ReverbType.html#getDecayTime() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/ReverbType.html#getDecayTime()"/> 
         /// </summary>
         public int DecayTime
         {
             get { return IExecute<int>("getDecayTime"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/ReverbType.html#getEarlyReflectionDelay() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/ReverbType.html#getEarlyReflectionDelay()"/> 
         /// </summary>
         public int EarlyReflectionDelay
         {
             get { return IExecute<int>("getEarlyReflectionDelay"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/ReverbType.html#getEarlyReflectionIntensity() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/ReverbType.html#getEarlyReflectionIntensity()"/> 
         /// </summary>
         public float EarlyReflectionIntensity
         {
             get { return IExecute<float>("getEarlyReflectionIntensity"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/ReverbType.html#getLateReflectionDelay() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/ReverbType.html#getLateReflectionDelay()"/> 
         /// </summary>
         public int LateReflectionDelay
         {
             get { return IExecute<int>("getLateReflectionDelay"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/ReverbType.html#getLateReflectionIntensity() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/ReverbType.html#getLateReflectionIntensity()"/> 
         /// </summary>
         public float LateReflectionIntensity
         {
             get { return IExecute<float>("getLateReflectionIntensity"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/ReverbType.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/ReverbType.html#getName()"/> 
         /// </summary>
         public string Name
         {

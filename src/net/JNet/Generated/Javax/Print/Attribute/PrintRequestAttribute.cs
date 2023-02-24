@@ -33,6 +33,9 @@ namespace Javax.Print.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.PrintRequestAttribute"/> to <see cref="Javax.Print.Attribute.Attribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.Attribute(Javax.Print.Attribute.PrintRequestAttribute t) => t.Cast<Javax.Print.Attribute.Attribute>();
         
         #endregion

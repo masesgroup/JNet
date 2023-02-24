@@ -33,13 +33,16 @@ namespace Java.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Text.CharacterIterator"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.CharacterIterator t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#DONE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#DONE"/>
         /// </summary>
         public static char DONE => Clazz.GetField<char>("DONE");
         
@@ -51,64 +54,76 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#getBeginIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#getBeginIndex()"/> 
         /// </summary>
         public int BeginIndex
         {
             get { return IExecute<int>("getBeginIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#getEndIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#getEndIndex()"/> 
         /// </summary>
         public int EndIndex
         {
             get { return IExecute<int>("getEndIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#getIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#getIndex()"/> 
         /// </summary>
         public int Index
         {
             get { return IExecute<int>("getIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#current()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#current()"/>
         /// </summary>
+        
+        /// <returns><see langword="char"/></returns>
         public char Current()
         {
             return IExecute<char>("current");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#first()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#first()"/>
         /// </summary>
+        
+        /// <returns><see langword="char"/></returns>
         public char First()
         {
             return IExecute<char>("first");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#last()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#last()"/>
         /// </summary>
+        
+        /// <returns><see langword="char"/></returns>
         public char Last()
         {
             return IExecute<char>("last");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#next()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#next()"/>
         /// </summary>
+        
+        /// <returns><see langword="char"/></returns>
         public char Next()
         {
             return IExecute<char>("next");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#previous()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#previous()"/>
         /// </summary>
+        
+        /// <returns><see langword="char"/></returns>
         public char Previous()
         {
             return IExecute<char>("previous");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#setIndex(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CharacterIterator.html#setIndex(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="char"/></returns>
         public char SetIndex(int arg0)
         {
             return IExecute<char>("setIndex", arg0);

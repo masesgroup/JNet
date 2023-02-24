@@ -38,7 +38,7 @@ namespace Java.Security
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#UNSUPPORTED_EMPTY_COLLECTION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#UNSUPPORTED_EMPTY_COLLECTION"/>
         /// </summary>
         public static Java.Security.PermissionCollection UNSUPPORTED_EMPTY_COLLECTION => Clazz.GetField<Java.Security.PermissionCollection>("UNSUPPORTED_EMPTY_COLLECTION");
         
@@ -46,29 +46,42 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy$Parameters,java.lang.String) throws java.security.NoSuchProviderException,java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy$Parameters,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Policy.Parameters"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.Policy"/></returns>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Policy GetInstance(string arg0, Java.Security.Policy.Parameters arg1, string arg2)
         {
             return SExecute<Java.Security.Policy>("getInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy$Parameters) throws java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy$Parameters)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Policy.Parameters"/></param>
+        /// <returns><see cref="Java.Security.Policy"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Policy GetInstance(string arg0, Java.Security.Policy.Parameters arg1)
         {
             return SExecute<Java.Security.Policy>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getPolicy()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getPolicy()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Security.Policy"/></returns>
         public static Java.Security.Policy GetPolicy()
         {
             return SExecute<Java.Security.Policy>("getPolicy");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#setPolicy(java.security.Policy)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#setPolicy(java.security.Policy)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Policy"/></param>
         public static void SetPolicy(Java.Security.Policy arg0)
         {
             SExecute("setPolicy", arg0);
@@ -78,42 +91,51 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#implies(java.security.ProtectionDomain,java.security.Permission)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#implies(java.security.ProtectionDomain,java.security.Permission)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Permission"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Implies(Java.Security.ProtectionDomain arg0, Java.Security.Permission arg1)
         {
             return IExecute<bool>("implies", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getPermissions(java.security.CodeSource)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getPermissions(java.security.CodeSource)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.CodeSource"/></param>
+        /// <returns><see cref="Java.Security.PermissionCollection"/></returns>
         public Java.Security.PermissionCollection GetPermissions(Java.Security.CodeSource arg0)
         {
             return IExecute<Java.Security.PermissionCollection>("getPermissions", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getPermissions(java.security.ProtectionDomain)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getPermissions(java.security.ProtectionDomain)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
+        /// <returns><see cref="Java.Security.PermissionCollection"/></returns>
         public Java.Security.PermissionCollection GetPermissions(Java.Security.ProtectionDomain arg0)
         {
             return IExecute<Java.Security.PermissionCollection>("getPermissions", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getParameters()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getParameters()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Security.Policy.Parameters"/></returns>
         public Java.Security.Policy.Parameters GetParameters()
         {
             return IExecute<Java.Security.Policy.Parameters>("getParameters");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#refresh()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#refresh()"/>
         /// </summary>
         public void Refresh()
         {

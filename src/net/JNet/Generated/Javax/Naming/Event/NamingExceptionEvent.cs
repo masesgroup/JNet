@@ -30,8 +30,10 @@ namespace Javax.Naming.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html#<init>(javax.naming.event.EventContext,javax.naming.NamingException)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html#%3Cinit%3E(javax.naming.event.EventContext,javax.naming.NamingException)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.EventContext"/></param>
+        /// <param name="arg1"><see cref="Javax.Naming.NamingException"/></param>
         public NamingExceptionEvent(Javax.Naming.Event.EventContext arg0, Javax.Naming.NamingException arg1)
             : base(arg0, arg1)
         {
@@ -53,22 +55,23 @@ namespace Javax.Naming.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html#getEventContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html#getEventContext()"/> 
         /// </summary>
         public Javax.Naming.Event.EventContext EventContext
         {
             get { return IExecute<Javax.Naming.Event.EventContext>("getEventContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html#getException() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html#getException()"/> 
         /// </summary>
         public Javax.Naming.NamingException Exception
         {
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Javax.Naming.NamingException>(obj); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html#dispatch(javax.naming.event.NamingListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html#dispatch(javax.naming.event.NamingListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingListener"/></param>
         public void Dispatch(Javax.Naming.Event.NamingListener arg0)
         {
             IExecute("dispatch", arg0);

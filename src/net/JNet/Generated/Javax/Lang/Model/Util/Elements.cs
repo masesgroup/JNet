@@ -46,120 +46,159 @@ namespace Javax.Lang.Model.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#hides(javax.lang.model.element.Element,javax.lang.model.element.Element)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#hides(javax.lang.model.element.Element,javax.lang.model.element.Element)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Hides(Javax.Lang.Model.Element.Element arg0, Javax.Lang.Model.Element.Element arg1)
         {
             return IExecute<bool>("hides", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isDeprecated(javax.lang.model.element.Element)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isDeprecated(javax.lang.model.element.Element)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsDeprecated(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecute<bool>("isDeprecated", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isFunctionalInterface(javax.lang.model.element.TypeElement)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isFunctionalInterface(javax.lang.model.element.TypeElement)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsFunctionalInterface(Javax.Lang.Model.Element.TypeElement arg0)
         {
             return IExecute<bool>("isFunctionalInterface", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#overrides(javax.lang.model.element.ExecutableElement,javax.lang.model.element.ExecutableElement,javax.lang.model.element.TypeElement)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#overrides(javax.lang.model.element.ExecutableElement,javax.lang.model.element.ExecutableElement,javax.lang.model.element.TypeElement)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
+        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
+        /// <param name="arg2"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Overrides(Javax.Lang.Model.Element.ExecutableElement arg0, Javax.Lang.Model.Element.ExecutableElement arg1, Javax.Lang.Model.Element.TypeElement arg2)
         {
             return IExecute<bool>("overrides", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getConstantExpression(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getConstantExpression(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetConstantExpression(object arg0)
         {
             return IExecute<string>("getConstantExpression", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getDocComment(javax.lang.model.element.Element)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getDocComment(javax.lang.model.element.Element)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetDocComment(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecute<string>("getDocComment", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getBinaryName(javax.lang.model.element.TypeElement)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getBinaryName(javax.lang.model.element.TypeElement)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Element.Name"/></returns>
         public Javax.Lang.Model.Element.Name GetBinaryName(Javax.Lang.Model.Element.TypeElement arg0)
         {
             return IExecute<Javax.Lang.Model.Element.Name>("getBinaryName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getName(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getName(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Element.Name"/></returns>
         public Javax.Lang.Model.Element.Name GetName(Java.Lang.CharSequence arg0)
         {
             return IExecute<Javax.Lang.Model.Element.Name>("getName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageElement(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageElement(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Element.PackageElement"/></returns>
         public Javax.Lang.Model.Element.PackageElement GetPackageElement(Java.Lang.CharSequence arg0)
         {
             return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackageElement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageOf(javax.lang.model.element.Element)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageOf(javax.lang.model.element.Element)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Element.PackageElement"/></returns>
         public Javax.Lang.Model.Element.PackageElement GetPackageOf(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackageOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getTypeElement(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getTypeElement(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Element.TypeElement"/></returns>
         public Javax.Lang.Model.Element.TypeElement GetTypeElement(Java.Lang.CharSequence arg0)
         {
             return IExecute<Javax.Lang.Model.Element.TypeElement>("getTypeElement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#printElements(java.io.Writer,javax.lang.model.element.Element...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#printElements(java.io.Writer,javax.lang.model.element.Element...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
         public void PrintElements(Java.Io.Writer arg0, params Javax.Lang.Model.Element.Element[] arg1)
         {
             if (arg1.Length == 0) IExecute("printElements", arg0); else IExecute("printElements", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isBridge(javax.lang.model.element.ExecutableElement)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#isBridge(javax.lang.model.element.ExecutableElement)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsBridge(Javax.Lang.Model.Element.ExecutableElement arg0)
         {
             return IExecute<bool>("isBridge", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getModuleElement(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getModuleElement(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement"/></returns>
         public Javax.Lang.Model.Element.ModuleElement GetModuleElement(Java.Lang.CharSequence arg0)
         {
             return IExecute<Javax.Lang.Model.Element.ModuleElement>("getModuleElement", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getModuleOf(javax.lang.model.element.Element)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getModuleOf(javax.lang.model.element.Element)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement"/></returns>
         public Javax.Lang.Model.Element.ModuleElement GetModuleOf(Javax.Lang.Model.Element.Element arg0)
         {
             return IExecute<Javax.Lang.Model.Element.ModuleElement>("getModuleOf", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageElement(javax.lang.model.element.ModuleElement,java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getPackageElement(javax.lang.model.element.ModuleElement,java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Element.PackageElement"/></returns>
         public Javax.Lang.Model.Element.PackageElement GetPackageElement(Javax.Lang.Model.Element.ModuleElement arg0, Java.Lang.CharSequence arg1)
         {
             return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackageElement", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getTypeElement(javax.lang.model.element.ModuleElement,java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#getTypeElement(javax.lang.model.element.ModuleElement,java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Element.TypeElement"/></returns>
         public Javax.Lang.Model.Element.TypeElement GetTypeElement(Javax.Lang.Model.Element.ModuleElement arg0, Java.Lang.CharSequence arg1)
         {
             return IExecute<Javax.Lang.Model.Element.TypeElement>("getTypeElement", arg0, arg1);
@@ -181,15 +220,15 @@ namespace Javax.Lang.Model.Util
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#EXPLICIT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#EXPLICIT"/>
             /// </summary>
             public static Javax.Lang.Model.Util.Elements.Origin EXPLICIT => Clazz.GetField<Javax.Lang.Model.Util.Elements.Origin>("EXPLICIT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#MANDATED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#MANDATED"/>
             /// </summary>
             public static Javax.Lang.Model.Util.Elements.Origin MANDATED => Clazz.GetField<Javax.Lang.Model.Util.Elements.Origin>("MANDATED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#SYNTHETIC
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#SYNTHETIC"/>
             /// </summary>
             public static Javax.Lang.Model.Util.Elements.Origin SYNTHETIC => Clazz.GetField<Javax.Lang.Model.Util.Elements.Origin>("SYNTHETIC");
             
@@ -197,8 +236,10 @@ namespace Javax.Lang.Model.Util
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Lang.Model.Util.Elements.Origin"/></returns>
             public static Javax.Lang.Model.Util.Elements.Origin[] Values()
             {
                 return SExecuteArray<Javax.Lang.Model.Util.Elements.Origin>("values");
@@ -208,8 +249,10 @@ namespace Javax.Lang.Model.Util
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#isDeclared()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html#isDeclared()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool IsDeclared()
             {
                 return IExecute<bool>("isDeclared");

@@ -33,7 +33,13 @@ namespace Javax.Swing.Table
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Table.DefaultTableCellRenderer"/> to <see cref="Javax.Swing.Table.TableCellRenderer"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Table.TableCellRenderer(Javax.Swing.Table.DefaultTableCellRenderer t) => t.Cast<Javax.Swing.Table.TableCellRenderer>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Table.DefaultTableCellRenderer"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Table.DefaultTableCellRenderer t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -48,8 +54,15 @@ namespace Javax.Swing.Table
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableCellRenderer.html#getTableCellRendererComponent(javax.swing.JTable,java.lang.Object,boolean,boolean,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableCellRenderer.html#getTableCellRendererComponent(javax.swing.JTable,java.lang.Object,boolean,boolean,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTable"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetTableCellRendererComponent(Javax.Swing.JTable arg0, object arg1, bool arg2, bool arg3, int arg4, int arg5)
         {
             return IExecute<Java.Awt.Component>("getTableCellRendererComponent", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -66,6 +79,9 @@ namespace Javax.Swing.Table
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Table.DefaultTableCellRenderer.UIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Table.DefaultTableCellRenderer.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion

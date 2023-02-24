@@ -30,8 +30,12 @@ namespace Java.Lang.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#<init>(long,long,long,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#%3Cinit%3E(long,long,long,long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg3"><see langword="long"/></param>
         public MemoryUsage(long arg0, long arg1, long arg2, long arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -49,8 +53,10 @@ namespace Java.Lang.Management
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#from(javax.management.openmbean.CompositeData)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#from(javax.management.openmbean.CompositeData)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
+        /// <returns><see cref="Java.Lang.Management.MemoryUsage"/></returns>
         public static Java.Lang.Management.MemoryUsage From(Javax.Management.Openmbean.CompositeData arg0)
         {
             return SExecute<Java.Lang.Management.MemoryUsage>("from", arg0);
@@ -60,28 +66,28 @@ namespace Java.Lang.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#getCommitted() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#getCommitted()"/> 
         /// </summary>
         public long Committed
         {
             get { return IExecute<long>("getCommitted"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#getInit() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#getInit()"/> 
         /// </summary>
         public long Init
         {
             get { return IExecute<long>("getInit"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#getMax() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#getMax()"/> 
         /// </summary>
         public long Max
         {
             get { return IExecute<long>("getMax"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#getUsed() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryUsage.html#getUsed()"/> 
         /// </summary>
         public long Used
         {

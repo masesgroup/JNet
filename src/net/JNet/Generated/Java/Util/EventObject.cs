@@ -30,8 +30,9 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventObject.html#<init>(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventObject.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public EventObject(object arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.EventObject"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.EventObject t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,7 +58,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventObject.html#getSource() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventObject.html#getSource()"/> 
         /// </summary>
         public object Source
         {

@@ -30,8 +30,11 @@ namespace Javax.Management.Remote
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html#<init>(long,long,javax.management.remote.TargetedNotification[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html#%3Cinit%3E(long,long,javax.management.remote.TargetedNotification[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.Remote.TargetedNotification"/></param>
         public NotificationResult(long arg0, long arg1, Javax.Management.Remote.TargetedNotification[] arg2)
             : base(arg0, arg1, arg2)
         {
@@ -40,6 +43,9 @@ namespace Javax.Management.Remote
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Remote.NotificationResult"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Remote.NotificationResult t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,21 +60,21 @@ namespace Javax.Management.Remote
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html#getEarliestSequenceNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html#getEarliestSequenceNumber()"/> 
         /// </summary>
         public long EarliestSequenceNumber
         {
             get { return IExecute<long>("getEarliestSequenceNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html#getNextSequenceNumber() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html#getNextSequenceNumber()"/> 
         /// </summary>
         public long NextSequenceNumber
         {
             get { return IExecute<long>("getNextSequenceNumber"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html#getTargetedNotifications() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html#getTargetedNotifications()"/> 
         /// </summary>
         public Javax.Management.Remote.TargetedNotification[] TargetedNotifications
         {

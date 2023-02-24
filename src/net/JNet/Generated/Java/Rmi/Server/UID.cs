@@ -30,8 +30,9 @@ namespace Java.Rmi.Server
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UID.html#<init>(short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UID.html#%3Cinit%3E(short)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="short"/></param>
         public UID(short arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Rmi.Server
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Server.UID"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Server.UID t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -50,8 +54,11 @@ namespace Java.Rmi.Server
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UID.html#read(java.io.DataInput) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UID.html#read(java.io.DataInput)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.DataInput"/></param>
+        /// <returns><see cref="Java.Rmi.Server.UID"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Rmi.Server.UID Read(Java.Io.DataInput arg0)
         {
             return SExecute<Java.Rmi.Server.UID>("read", arg0);
@@ -61,8 +68,10 @@ namespace Java.Rmi.Server
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UID.html#write(java.io.DataOutput) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/UID.html#write(java.io.DataOutput)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.DataOutput"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Write(Java.Io.DataOutput arg0)
         {
             IExecute("write", arg0);

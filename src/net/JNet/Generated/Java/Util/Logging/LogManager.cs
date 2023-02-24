@@ -38,7 +38,7 @@ namespace Java.Util.Logging
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#LOGGING_MXBEAN_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#LOGGING_MXBEAN_NAME"/>
         /// </summary>
         public static string LOGGING_MXBEAN_NAME => Clazz.GetField<string>("LOGGING_MXBEAN_NAME");
         
@@ -46,8 +46,10 @@ namespace Java.Util.Logging
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getLogManager()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getLogManager()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Logging.LogManager"/></returns>
         public static Java.Util.Logging.LogManager GetLogManager()
         {
             return SExecute<Java.Util.Logging.LogManager>("getLogManager");
@@ -57,64 +59,83 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#addLogger(java.util.logging.Logger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#addLogger(java.util.logging.Logger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Logging.Logger"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool AddLogger(Java.Util.Logging.Logger arg0)
         {
             return IExecute<bool>("addLogger", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getProperty(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getProperty(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetProperty(string arg0)
         {
             return IExecute<string>("getProperty", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getLogger(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getLogger(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Util.Logging.Logger"/></returns>
         public Java.Util.Logging.Logger GetLogger(string arg0)
         {
             return IExecute<Java.Util.Logging.Logger>("getLogger", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#addConfigurationListener(java.lang.Runnable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#addConfigurationListener(java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <returns><see cref="Java.Util.Logging.LogManager"/></returns>
         public Java.Util.Logging.LogManager AddConfigurationListener(Java.Lang.Runnable arg0)
         {
             return IExecute<Java.Util.Logging.LogManager>("addConfigurationListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#checkAccess() throws java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#checkAccess()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Lang.SecurityException"/>
         public void CheckAccess()
         {
             IExecute("checkAccess");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#readConfiguration() throws java.io.IOException,java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#readConfiguration()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.SecurityException"/>
         public void ReadConfiguration()
         {
             IExecute("readConfiguration");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#readConfiguration(java.io.InputStream) throws java.io.IOException,java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#readConfiguration(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.SecurityException"/>
         public void ReadConfiguration(Java.Io.InputStream arg0)
         {
             IExecute("readConfiguration", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#removeConfigurationListener(java.lang.Runnable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#removeConfigurationListener(java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         public void RemoveConfigurationListener(Java.Lang.Runnable arg0)
         {
             IExecute("removeConfigurationListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#reset() throws java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#reset()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Lang.SecurityException"/>
         public void Reset()
         {
             IExecute("reset");

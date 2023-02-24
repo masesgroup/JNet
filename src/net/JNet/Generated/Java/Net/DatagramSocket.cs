@@ -30,22 +30,29 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#<init>(int,java.net.InetAddress) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#%3Cinit%3E(int,java.net.InetAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
         public DatagramSocket(int arg0, Java.Net.InetAddress arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#<init>(int) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
         public DatagramSocket(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#<init>(java.net.SocketAddress) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#%3Cinit%3E(java.net.SocketAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
         public DatagramSocket(Java.Net.SocketAddress arg0)
             : base(arg0)
         {
@@ -54,6 +61,9 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Net.DatagramSocket"/> to <see cref="Java.Io.Closeable"/>
+        /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Net.DatagramSocket t) => t.Cast<Java.Io.Closeable>();
         
         #endregion
@@ -64,8 +74,10 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setDatagramSocketImplFactory(java.net.DatagramSocketImplFactory) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setDatagramSocketImplFactory(java.net.DatagramSocketImplFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.DatagramSocketImplFactory"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public static void SetDatagramSocketImplFactory(Java.Net.DatagramSocketImplFactory arg0)
         {
             SExecute("setDatagramSocketImplFactory", arg0);
@@ -75,162 +87,178 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getBroadcast() throws java.net.SocketException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setBroadcast(boolean) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getBroadcast()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setBroadcast(boolean)"/>
         /// </summary>
         public bool Broadcast
         {
             get { return IExecute<bool>("getBroadcast"); } set { IExecute("setBroadcast", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getChannel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getChannel()"/> 
         /// </summary>
         public Java.Nio.Channels.DatagramChannel Channel
         {
             get { return IExecute<Java.Nio.Channels.DatagramChannel>("getChannel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getInetAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getInetAddress()"/> 
         /// </summary>
         public Java.Net.InetAddress InetAddress
         {
             get { return IExecute<Java.Net.InetAddress>("getInetAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getLocalAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getLocalAddress()"/> 
         /// </summary>
         public Java.Net.InetAddress LocalAddress
         {
             get { return IExecute<Java.Net.InetAddress>("getLocalAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getLocalPort() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getLocalPort()"/> 
         /// </summary>
         public int LocalPort
         {
             get { return IExecute<int>("getLocalPort"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getLocalSocketAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getLocalSocketAddress()"/> 
         /// </summary>
         public Java.Net.SocketAddress LocalSocketAddress
         {
             get { return IExecute<Java.Net.SocketAddress>("getLocalSocketAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getPort() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getPort()"/> 
         /// </summary>
         public int Port
         {
             get { return IExecute<int>("getPort"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getReceiveBufferSize() throws java.net.SocketException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setReceiveBufferSize(int) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getReceiveBufferSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setReceiveBufferSize(int)"/>
         /// </summary>
         public int ReceiveBufferSize
         {
             get { return IExecute<int>("getReceiveBufferSize"); } set { IExecute("setReceiveBufferSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getRemoteSocketAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getRemoteSocketAddress()"/> 
         /// </summary>
         public Java.Net.SocketAddress RemoteSocketAddress
         {
             get { return IExecute<Java.Net.SocketAddress>("getRemoteSocketAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getReuseAddress() throws java.net.SocketException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setReuseAddress(boolean) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getReuseAddress()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setReuseAddress(boolean)"/>
         /// </summary>
         public bool ReuseAddress
         {
             get { return IExecute<bool>("getReuseAddress"); } set { IExecute("setReuseAddress", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getSendBufferSize() throws java.net.SocketException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setSendBufferSize(int) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getSendBufferSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setSendBufferSize(int)"/>
         /// </summary>
         public int SendBufferSize
         {
             get { return IExecute<int>("getSendBufferSize"); } set { IExecute("setSendBufferSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getSoTimeout() throws java.net.SocketException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setSoTimeout(int) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getSoTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setSoTimeout(int)"/>
         /// </summary>
         public int SoTimeout
         {
             get { return IExecute<int>("getSoTimeout"); } set { IExecute("setSoTimeout", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getTrafficClass() throws java.net.SocketException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setTrafficClass(int) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getTrafficClass()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setTrafficClass(int)"/>
         /// </summary>
         public int TrafficClass
         {
             get { return IExecute<int>("getTrafficClass"); } set { IExecute("setTrafficClass", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isBound()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isBound()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsBound()
         {
             return IExecute<bool>("isBound");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isClosed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isClosed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsClosed()
         {
             return IExecute<bool>("isClosed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isConnected()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#isConnected()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsConnected()
         {
             return IExecute<bool>("isConnected");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#bind(java.net.SocketAddress) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#bind(java.net.SocketAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
         public void Bind(Java.Net.SocketAddress arg0)
         {
             IExecute("bind", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#receive(java.net.DatagramPacket) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#receive(java.net.DatagramPacket)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.DatagramPacket"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Receive(Java.Net.DatagramPacket arg0)
         {
             IExecute("receive", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#close()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#close()"/>
         /// </summary>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#connect(java.net.InetAddress,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#connect(java.net.InetAddress,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Connect(Java.Net.InetAddress arg0, int arg1)
         {
             IExecute("connect", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#connect(java.net.SocketAddress) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#connect(java.net.SocketAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
         public void Connect(Java.Net.SocketAddress arg0)
         {
             IExecute("connect", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#disconnect()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#disconnect()"/>
         /// </summary>
         public void Disconnect()
         {
             IExecute("disconnect");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#send(java.net.DatagramPacket) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#send(java.net.DatagramPacket)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.DatagramPacket"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Send(Java.Net.DatagramPacket arg0)
         {
             IExecute("send", arg0);

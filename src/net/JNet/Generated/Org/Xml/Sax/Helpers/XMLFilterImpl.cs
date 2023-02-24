@@ -30,8 +30,9 @@ namespace Org.Xml.Sax.Helpers
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#<init>(org.xml.sax.XMLReader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#%3Cinit%3E(org.xml.sax.XMLReader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.XMLReader"/></param>
         public XMLFilterImpl(Org.Xml.Sax.XMLReader arg0)
             : base(arg0)
         {
@@ -40,10 +41,25 @@ namespace Org.Xml.Sax.Helpers
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.Xml.Sax.Helpers.XMLFilterImpl"/> to <see cref="Org.Xml.Sax.XMLFilter"/>
+        /// </summary>
         public static implicit operator Org.Xml.Sax.XMLFilter(Org.Xml.Sax.Helpers.XMLFilterImpl t) => t.Cast<Org.Xml.Sax.XMLFilter>();
+        /// <summary>
+        /// Converter from <see cref="Org.Xml.Sax.Helpers.XMLFilterImpl"/> to <see cref="Org.Xml.Sax.EntityResolver"/>
+        /// </summary>
         public static implicit operator Org.Xml.Sax.EntityResolver(Org.Xml.Sax.Helpers.XMLFilterImpl t) => t.Cast<Org.Xml.Sax.EntityResolver>();
+        /// <summary>
+        /// Converter from <see cref="Org.Xml.Sax.Helpers.XMLFilterImpl"/> to <see cref="Org.Xml.Sax.DTDHandler"/>
+        /// </summary>
         public static implicit operator Org.Xml.Sax.DTDHandler(Org.Xml.Sax.Helpers.XMLFilterImpl t) => t.Cast<Org.Xml.Sax.DTDHandler>();
+        /// <summary>
+        /// Converter from <see cref="Org.Xml.Sax.Helpers.XMLFilterImpl"/> to <see cref="Org.Xml.Sax.ContentHandler"/>
+        /// </summary>
         public static implicit operator Org.Xml.Sax.ContentHandler(Org.Xml.Sax.Helpers.XMLFilterImpl t) => t.Cast<Org.Xml.Sax.ContentHandler>();
+        /// <summary>
+        /// Converter from <see cref="Org.Xml.Sax.Helpers.XMLFilterImpl"/> to <see cref="Org.Xml.Sax.ErrorHandler"/>
+        /// </summary>
         public static implicit operator Org.Xml.Sax.ErrorHandler(Org.Xml.Sax.Helpers.XMLFilterImpl t) => t.Cast<Org.Xml.Sax.ErrorHandler>();
         
         #endregion
@@ -58,197 +74,271 @@ namespace Org.Xml.Sax.Helpers
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getContentHandler() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setContentHandler(org.xml.sax.ContentHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getContentHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setContentHandler(org.xml.sax.ContentHandler)"/>
         /// </summary>
         public Org.Xml.Sax.ContentHandler ContentHandler
         {
             get { return IExecute<Org.Xml.Sax.ContentHandler>("getContentHandler"); } set { IExecute("setContentHandler", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getDTDHandler() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setDTDHandler(org.xml.sax.DTDHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getDTDHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
         /// </summary>
         public Org.Xml.Sax.DTDHandler DTDHandler
         {
             get { return IExecute<Org.Xml.Sax.DTDHandler>("getDTDHandler"); } set { IExecute("setDTDHandler", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getEntityResolver() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setEntityResolver(org.xml.sax.EntityResolver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getEntityResolver()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
         /// </summary>
         public Org.Xml.Sax.EntityResolver EntityResolver
         {
             get { return IExecute<Org.Xml.Sax.EntityResolver>("getEntityResolver"); } set { IExecute("setEntityResolver", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getErrorHandler() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setErrorHandler(org.xml.sax.ErrorHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getErrorHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
         public Org.Xml.Sax.ErrorHandler ErrorHandler
         {
             get { return IExecute<Org.Xml.Sax.ErrorHandler>("getErrorHandler"); } set { IExecute("setErrorHandler", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getParent() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setParent(org.xml.sax.XMLReader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setParent(org.xml.sax.XMLReader)"/>
         /// </summary>
         public Org.Xml.Sax.XMLReader Parent
         {
             get { return IExecute<Org.Xml.Sax.XMLReader>("getParent"); } set { IExecute("setParent", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getFeature(java.lang.String) throws org.xml.sax.SAXNotRecognizedException,org.xml.sax.SAXNotSupportedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getFeature(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
+        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public bool GetFeature(string arg0)
         {
             return IExecute<bool>("getFeature", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getProperty(java.lang.String) throws org.xml.sax.SAXNotRecognizedException,org.xml.sax.SAXNotSupportedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#getProperty(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
+        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public object GetProperty(string arg0)
         {
             return IExecute("getProperty", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#resolveEntity(java.lang.String,java.lang.String) throws org.xml.sax.SAXException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#resolveEntity(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Org.Xml.Sax.InputSource ResolveEntity(string arg0, string arg1)
         {
             return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#characters(char[],int,int) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#characters(char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Characters(char[] arg0, int arg1, int arg2)
         {
             IExecute("characters", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#endDocument() throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#endDocument()"/>
         /// </summary>
+        
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDocument()
         {
             IExecute("endDocument");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#endElement(java.lang.String,java.lang.String,java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndElement(string arg0, string arg1, string arg2)
         {
             IExecute("endElement", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#endPrefixMapping(java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#endPrefixMapping(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndPrefixMapping(string arg0)
         {
             IExecute("endPrefixMapping", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#error(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#error(org.xml.sax.SAXParseException)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Error(Org.Xml.Sax.SAXParseException arg0)
         {
             IExecute("error", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#fatalError(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#fatalError(org.xml.sax.SAXParseException)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void FatalError(Org.Xml.Sax.SAXParseException arg0)
         {
             IExecute("fatalError", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#ignorableWhitespace(char[],int,int) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#ignorableWhitespace(char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void IgnorableWhitespace(char[] arg0, int arg1, int arg2)
         {
             IExecute("ignorableWhitespace", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#notationDecl(java.lang.String,java.lang.String,java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#notationDecl(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void NotationDecl(string arg0, string arg1, string arg2)
         {
             IExecute("notationDecl", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#parse(java.lang.String) throws org.xml.sax.SAXException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#parse(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void Parse(string arg0)
         {
             IExecute("parse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#parse(org.xml.sax.InputSource) throws org.xml.sax.SAXException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public void Parse(Org.Xml.Sax.InputSource arg0)
         {
             IExecute("parse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#processingInstruction(java.lang.String,java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#processingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void ProcessingInstruction(string arg0, string arg1)
         {
             IExecute("processingInstruction", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setDocumentLocator(org.xml.sax.Locator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setDocumentLocator(org.xml.sax.Locator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
         public void SetDocumentLocator(Org.Xml.Sax.Locator arg0)
         {
             IExecute("setDocumentLocator", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setFeature(java.lang.String,boolean) throws org.xml.sax.SAXNotRecognizedException,org.xml.sax.SAXNotSupportedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
+        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetFeature(string arg0, bool arg1)
         {
             IExecute("setFeature", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setProperty(java.lang.String,java.lang.Object) throws org.xml.sax.SAXNotRecognizedException,org.xml.sax.SAXNotSupportedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
+        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetProperty(string arg0, object arg1)
         {
             IExecute("setProperty", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#skippedEntity(java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#skippedEntity(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void SkippedEntity(string arg0)
         {
             IExecute("skippedEntity", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#startDocument() throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#startDocument()"/>
         /// </summary>
+        
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartDocument()
         {
             IExecute("startDocument");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see cref="Org.Xml.Sax.Attributes"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartElement(string arg0, string arg1, string arg2, Org.Xml.Sax.Attributes arg3)
         {
             IExecute("startElement", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#startPrefixMapping(java.lang.String,java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartPrefixMapping(string arg0, string arg1)
         {
             IExecute("startPrefixMapping", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#unparsedEntityDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#unparsedEntityDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void UnparsedEntityDecl(string arg0, string arg1, string arg2, string arg3)
         {
             IExecute("unparsedEntityDecl", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#warning(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLFilterImpl.html#warning(org.xml.sax.SAXParseException)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Warning(Org.Xml.Sax.SAXParseException arg0)
         {
             IExecute("warning", arg0);

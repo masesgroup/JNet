@@ -46,15 +46,27 @@ namespace Org.W3c.Dom.Traversal
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/DocumentTraversal.html#createNodeIterator(org.w3c.dom.Node,int,org.w3c.dom.traversal.NodeFilter,boolean) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/DocumentTraversal.html#createNodeIterator(org.w3c.dom.Node,int,org.w3c.dom.traversal.NodeFilter,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Org.W3c.Dom.Traversal.NodeFilter"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Traversal.NodeIterator"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Traversal.NodeIterator CreateNodeIterator(Org.W3c.Dom.Node arg0, int arg1, Org.W3c.Dom.Traversal.NodeFilter arg2, bool arg3)
         {
             return IExecute<Org.W3c.Dom.Traversal.NodeIterator>("createNodeIterator", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/DocumentTraversal.html#createTreeWalker(org.w3c.dom.Node,int,org.w3c.dom.traversal.NodeFilter,boolean) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/DocumentTraversal.html#createTreeWalker(org.w3c.dom.Node,int,org.w3c.dom.traversal.NodeFilter,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Org.W3c.Dom.Traversal.NodeFilter"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Traversal.TreeWalker"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Traversal.TreeWalker CreateTreeWalker(Org.W3c.Dom.Node arg0, int arg1, Org.W3c.Dom.Traversal.NodeFilter arg2, bool arg3)
         {
             return IExecute<Org.W3c.Dom.Traversal.TreeWalker>("createTreeWalker", arg0, arg1, arg2, arg3);

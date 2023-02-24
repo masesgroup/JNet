@@ -33,6 +33,9 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Tools.StandardJavaFileManager"/> to <see cref="Javax.Tools.JavaFileManager"/>
+        /// </summary>
         public static implicit operator Javax.Tools.JavaFileManager(Javax.Tools.StandardJavaFileManager t) => t.Cast<Javax.Tools.JavaFileManager>();
         
         #endregion
@@ -47,22 +50,28 @@ namespace Javax.Tools
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#isSameFile(javax.tools.FileObject,javax.tools.FileObject)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#isSameFile(javax.tools.FileObject,javax.tools.FileObject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.FileObject"/></param>
+        /// <param name="arg1"><see cref="Javax.Tools.FileObject"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsSameFile(Javax.Tools.FileObject arg0, Javax.Tools.FileObject arg1)
         {
             return IExecute<bool>("isSameFile", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#asPath(javax.tools.FileObject)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#asPath(javax.tools.FileObject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.FileObject"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path AsPath(Javax.Tools.FileObject arg0)
         {
             return IExecute<Java.Nio.File.Path>("asPath", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#setPathFactory(javax.tools.StandardJavaFileManager$PathFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#setPathFactory(javax.tools.StandardJavaFileManager$PathFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.StandardJavaFileManager.PathFactory"/></param>
         public void SetPathFactory(Javax.Tools.StandardJavaFileManager.PathFactory arg0)
         {
             IExecute("setPathFactory", arg0);
@@ -92,8 +101,11 @@ namespace Javax.Tools
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.PathFactory.html#getPath(java.lang.String,java.lang.String...)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.PathFactory.html#getPath(java.lang.String,java.lang.String...)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
+            /// <returns><see cref="Java.Nio.File.Path"/></returns>
             public Java.Nio.File.Path GetPath(string arg0, params string[] arg1)
             {
                 if (arg1.Length == 0) return IExecute<Java.Nio.File.Path>("getPath", arg0); else return IExecute<Java.Nio.File.Path>("getPath", arg0, arg1);

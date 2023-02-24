@@ -30,8 +30,9 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public Cursor(int arg0)
             : base(arg0)
         {
@@ -40,69 +41,72 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Cursor"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Cursor t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#CROSSHAIR_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#CROSSHAIR_CURSOR"/>
         /// </summary>
         public static int CROSSHAIR_CURSOR => Clazz.GetField<int>("CROSSHAIR_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#CUSTOM_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#CUSTOM_CURSOR"/>
         /// </summary>
         public static int CUSTOM_CURSOR => Clazz.GetField<int>("CUSTOM_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#DEFAULT_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#DEFAULT_CURSOR"/>
         /// </summary>
         public static int DEFAULT_CURSOR => Clazz.GetField<int>("DEFAULT_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#E_RESIZE_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#E_RESIZE_CURSOR"/>
         /// </summary>
         public static int E_RESIZE_CURSOR => Clazz.GetField<int>("E_RESIZE_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#HAND_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#HAND_CURSOR"/>
         /// </summary>
         public static int HAND_CURSOR => Clazz.GetField<int>("HAND_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#MOVE_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#MOVE_CURSOR"/>
         /// </summary>
         public static int MOVE_CURSOR => Clazz.GetField<int>("MOVE_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#N_RESIZE_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#N_RESIZE_CURSOR"/>
         /// </summary>
         public static int N_RESIZE_CURSOR => Clazz.GetField<int>("N_RESIZE_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#NE_RESIZE_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#NE_RESIZE_CURSOR"/>
         /// </summary>
         public static int NE_RESIZE_CURSOR => Clazz.GetField<int>("NE_RESIZE_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#NW_RESIZE_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#NW_RESIZE_CURSOR"/>
         /// </summary>
         public static int NW_RESIZE_CURSOR => Clazz.GetField<int>("NW_RESIZE_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#S_RESIZE_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#S_RESIZE_CURSOR"/>
         /// </summary>
         public static int S_RESIZE_CURSOR => Clazz.GetField<int>("S_RESIZE_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#SE_RESIZE_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#SE_RESIZE_CURSOR"/>
         /// </summary>
         public static int SE_RESIZE_CURSOR => Clazz.GetField<int>("SE_RESIZE_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#SW_RESIZE_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#SW_RESIZE_CURSOR"/>
         /// </summary>
         public static int SW_RESIZE_CURSOR => Clazz.GetField<int>("SW_RESIZE_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#TEXT_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#TEXT_CURSOR"/>
         /// </summary>
         public static int TEXT_CURSOR => Clazz.GetField<int>("TEXT_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#W_RESIZE_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#W_RESIZE_CURSOR"/>
         /// </summary>
         public static int W_RESIZE_CURSOR => Clazz.GetField<int>("W_RESIZE_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#WAIT_CURSOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#WAIT_CURSOR"/>
         /// </summary>
         public static int WAIT_CURSOR => Clazz.GetField<int>("WAIT_CURSOR");
         
@@ -110,22 +114,28 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getDefaultCursor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getDefaultCursor()"/> 
         /// </summary>
         public static Java.Awt.Cursor DefaultCursor
         {
             get { return SExecute<Java.Awt.Cursor>("getDefaultCursor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getPredefinedCursor(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getPredefinedCursor(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Cursor"/></returns>
         public static Java.Awt.Cursor GetPredefinedCursor(int arg0)
         {
             return SExecute<Java.Awt.Cursor>("getPredefinedCursor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getSystemCustomCursor(java.lang.String) throws java.awt.AWTException,java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getSystemCustomCursor(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Awt.Cursor"/></returns>
+        /// <exception cref="Java.Awt.AWTException"/>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Awt.Cursor GetSystemCustomCursor(string arg0)
         {
             return SExecute<Java.Awt.Cursor>("getSystemCustomCursor", arg0);
@@ -135,14 +145,14 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getType()"/> 
         /// </summary>
         public int Type
         {

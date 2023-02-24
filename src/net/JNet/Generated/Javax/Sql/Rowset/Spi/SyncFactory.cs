@@ -38,15 +38,15 @@ namespace Javax.Sql.Rowset.Spi
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_PROVIDER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_PROVIDER"/>
         /// </summary>
         public static string ROWSET_SYNC_PROVIDER => Clazz.GetField<string>("ROWSET_SYNC_PROVIDER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_PROVIDER_VERSION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_PROVIDER_VERSION"/>
         /// </summary>
         public static string ROWSET_SYNC_PROVIDER_VERSION => Clazz.GetField<string>("ROWSET_SYNC_PROVIDER_VERSION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_VENDOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_VENDOR"/>
         /// </summary>
         public static string ROWSET_SYNC_VENDOR => Clazz.GetField<string>("ROWSET_SYNC_VENDOR");
         
@@ -54,50 +54,63 @@ namespace Javax.Sql.Rowset.Spi
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getLogger() throws javax.sql.rowset.spi.SyncFactoryException https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#setLogger(java.util.logging.Logger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getLogger()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#setLogger(java.util.logging.Logger)"/>
         /// </summary>
         public static Java.Util.Logging.Logger Logger
         {
             get { return SExecute<Java.Util.Logging.Logger>("getLogger"); } set { SExecute("setLogger", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getSyncFactory()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getSyncFactory()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Sql.Rowset.Spi.SyncFactory"/></returns>
         public static Javax.Sql.Rowset.Spi.SyncFactory GetSyncFactory()
         {
             return SExecute<Javax.Sql.Rowset.Spi.SyncFactory>("getSyncFactory");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getInstance(java.lang.String) throws javax.sql.rowset.spi.SyncFactoryException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Sql.Rowset.Spi.SyncProvider"/></returns>
+        /// <exception cref="Javax.Sql.Rowset.Spi.SyncFactoryException"/>
         public static Javax.Sql.Rowset.Spi.SyncProvider GetInstance(string arg0)
         {
             return SExecute<Javax.Sql.Rowset.Spi.SyncProvider>("getInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#registerProvider(java.lang.String) throws javax.sql.rowset.spi.SyncFactoryException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#registerProvider(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Javax.Sql.Rowset.Spi.SyncFactoryException"/>
         public static void RegisterProvider(string arg0)
         {
             SExecute("registerProvider", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#setJNDIContext(javax.naming.Context) throws javax.sql.rowset.spi.SyncFactoryException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#setJNDIContext(javax.naming.Context)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Context"/></param>
+        /// <exception cref="Javax.Sql.Rowset.Spi.SyncFactoryException"/>
         public static void SetJNDIContext(Javax.Naming.Context arg0)
         {
             SExecute("setJNDIContext", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#unregisterProvider(java.lang.String) throws javax.sql.rowset.spi.SyncFactoryException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#unregisterProvider(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Javax.Sql.Rowset.Spi.SyncFactoryException"/>
         public static void UnregisterProvider(string arg0)
         {
             SExecute("unregisterProvider", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#setLogger(java.util.logging.Logger,java.util.logging.Level)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#setLogger(java.util.logging.Logger,java.util.logging.Level)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Logging.Logger"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Logging.Level"/></param>
         public static void SetLogger(Java.Util.Logging.Logger arg0, Java.Util.Logging.Level arg1)
         {
             SExecute("setLogger", arg0, arg1);

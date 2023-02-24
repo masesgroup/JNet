@@ -33,14 +33,20 @@ namespace Javax.Crypto
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Crypto.SecretKey"/> to <see cref="Java.Security.Key"/>
+        /// </summary>
         public static implicit operator Java.Security.Key(Javax.Crypto.SecretKey t) => t.Cast<Java.Security.Key>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Crypto.SecretKey"/> to <see cref="Javax.Security.Auth.Destroyable"/>
+        /// </summary>
         public static implicit operator Javax.Security.Auth.Destroyable(Javax.Crypto.SecretKey t) => t.Cast<Javax.Security.Auth.Destroyable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKey.html#serialVersionUID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         

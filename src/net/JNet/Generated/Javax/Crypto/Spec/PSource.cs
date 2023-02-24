@@ -46,7 +46,7 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PSource.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PSource.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
@@ -61,8 +61,9 @@ namespace Javax.Crypto.Spec
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PSource.PSpecified.html#<init>(byte[])
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PSource.PSpecified.html#%3Cinit%3E(byte[])"/>
             /// </summary>
+            /// <param name="arg0"><see cref="byte"/></param>
             public PSpecified(byte[] arg0)
                 : base(arg0)
             {
@@ -76,7 +77,7 @@ namespace Javax.Crypto.Spec
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PSource.PSpecified.html#DEFAULT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PSource.PSpecified.html#DEFAULT"/>
             /// </summary>
             public static Javax.Crypto.Spec.PSource.PSpecified DEFAULT => Clazz.GetField<Javax.Crypto.Spec.PSource.PSpecified>("DEFAULT");
             
@@ -88,7 +89,7 @@ namespace Javax.Crypto.Spec
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PSource.PSpecified.html#getValue() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PSource.PSpecified.html#getValue()"/> 
             /// </summary>
             public byte[] Value
             {

@@ -38,11 +38,11 @@ namespace Javax.Xml.Transform
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#PI_DISABLE_OUTPUT_ESCAPING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#PI_DISABLE_OUTPUT_ESCAPING"/>
         /// </summary>
         public static string PI_DISABLE_OUTPUT_ESCAPING => Clazz.GetField<string>("PI_DISABLE_OUTPUT_ESCAPING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#PI_ENABLE_OUTPUT_ESCAPING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#PI_ENABLE_OUTPUT_ESCAPING"/>
         /// </summary>
         public static string PI_ENABLE_OUTPUT_ESCAPING => Clazz.GetField<string>("PI_ENABLE_OUTPUT_ESCAPING");
         
@@ -54,7 +54,7 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#getSystemId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#setSystemId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public string SystemId
         {

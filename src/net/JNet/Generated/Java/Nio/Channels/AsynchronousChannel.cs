@@ -33,6 +33,9 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.AsynchronousChannel"/> to <see cref="Java.Nio.Channels.Channel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.Channel(Java.Nio.Channels.AsynchronousChannel t) => t.Cast<Java.Nio.Channels.Channel>();
         
         #endregion
@@ -47,8 +50,10 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannel.html#close() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannel.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");

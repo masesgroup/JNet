@@ -30,15 +30,18 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#<init>(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#%3Cinit%3E(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public Dimension(int arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#<init>(java.awt.Dimension)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#%3Cinit%3E(java.awt.Dimension)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dimension"/></param>
         public Dimension(Java.Awt.Dimension arg0)
             : base(arg0)
         {
@@ -47,17 +50,20 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Dimension"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Dimension t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#height
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#height"/>
         /// </summary>
         public int height => Instance.GetField<int>("height");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#width
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#width"/>
         /// </summary>
         public int width => Instance.GetField<int>("width");
         
@@ -69,15 +75,17 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#getSize() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#setSize(java.awt.Dimension)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#setSize(java.awt.Dimension)"/>
         /// </summary>
         public Java.Awt.Dimension Size
         {
             get { return IExecute<Java.Awt.Dimension>("getSize"); } set { IExecute("setSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#setSize(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#setSize(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetSize(int arg0, int arg1)
         {
             IExecute("setSize", arg0, arg1);

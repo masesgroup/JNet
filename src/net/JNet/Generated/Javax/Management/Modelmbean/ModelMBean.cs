@@ -33,8 +33,17 @@ namespace Javax.Management.Modelmbean
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Modelmbean.ModelMBean"/> to <see cref="Javax.Management.DynamicMBean"/>
+        /// </summary>
         public static implicit operator Javax.Management.DynamicMBean(Javax.Management.Modelmbean.ModelMBean t) => t.Cast<Javax.Management.DynamicMBean>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Modelmbean.ModelMBean"/> to <see cref="Javax.Management.PersistentMBean"/>
+        /// </summary>
         public static implicit operator Javax.Management.PersistentMBean(Javax.Management.Modelmbean.ModelMBean t) => t.Cast<Javax.Management.PersistentMBean>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Modelmbean.ModelMBean"/> to <see cref="Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster"/>
+        /// </summary>
         public static implicit operator Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster(Javax.Management.Modelmbean.ModelMBean t) => t.Cast<Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster>();
         
         #endregion
@@ -49,15 +58,24 @@ namespace Javax.Management.Modelmbean
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBean.html#setManagedResource(java.lang.Object,java.lang.String) throws javax.management.MBeanException,javax.management.RuntimeOperationsException,javax.management.InstanceNotFoundException,javax.management.modelmbean.InvalidTargetObjectTypeException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBean.html#setManagedResource(java.lang.Object,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.Modelmbean.InvalidTargetObjectTypeException"/>
         public void SetManagedResource(object arg0, string arg1)
         {
             IExecute("setManagedResource", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBean.html#setModelMBeanInfo(javax.management.modelmbean.ModelMBeanInfo) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBean.html#setModelMBeanInfo(javax.management.modelmbean.ModelMBeanInfo)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Modelmbean.ModelMBeanInfo"/></param>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SetModelMBeanInfo(Javax.Management.Modelmbean.ModelMBeanInfo arg0)
         {
             IExecute("setModelMBeanInfo", arg0);

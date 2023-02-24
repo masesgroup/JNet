@@ -30,15 +30,18 @@ namespace Javax.Sql
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEvent.html#<init>(javax.sql.PooledConnection,java.sql.SQLException)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEvent.html#%3Cinit%3E(javax.sql.PooledConnection,java.sql.SQLException)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.PooledConnection"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.SQLException"/></param>
         public ConnectionEvent(Javax.Sql.PooledConnection arg0, Java.Sql.SQLException arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEvent.html#<init>(javax.sql.PooledConnection)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEvent.html#%3Cinit%3E(javax.sql.PooledConnection)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.PooledConnection"/></param>
         public ConnectionEvent(Javax.Sql.PooledConnection arg0)
             : base(arg0)
         {
@@ -60,7 +63,7 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEvent.html#getSQLException() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEvent.html#getSQLException()"/> 
         /// </summary>
         public Java.Sql.SQLException SQLException
         {

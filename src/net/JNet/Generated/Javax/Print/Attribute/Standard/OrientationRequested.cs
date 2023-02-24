@@ -33,27 +33,36 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.OrientationRequested"/> to <see cref="Javax.Print.Attribute.DocAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.DocAttribute(Javax.Print.Attribute.Standard.OrientationRequested t) => t.Cast<Javax.Print.Attribute.DocAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.OrientationRequested"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.OrientationRequested t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.OrientationRequested"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.OrientationRequested t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#LANDSCAPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#LANDSCAPE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.OrientationRequested LANDSCAPE => Clazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("LANDSCAPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#PORTRAIT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#PORTRAIT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.OrientationRequested PORTRAIT => Clazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("PORTRAIT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#REVERSE_LANDSCAPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#REVERSE_LANDSCAPE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.OrientationRequested REVERSE_LANDSCAPE => Clazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("REVERSE_LANDSCAPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#REVERSE_PORTRAIT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#REVERSE_PORTRAIT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.OrientationRequested REVERSE_PORTRAIT => Clazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("REVERSE_PORTRAIT");
         
@@ -65,7 +74,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#getName()"/> 
         /// </summary>
         public string Name
         {

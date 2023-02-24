@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Element.Name"/> to <see cref="Java.Lang.CharSequence"/>
+        /// </summary>
         public static implicit operator Java.Lang.CharSequence(Javax.Lang.Model.Element.Name t) => t.Cast<Java.Lang.CharSequence>();
         
         #endregion
@@ -47,8 +50,10 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Name.html#contentEquals(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Name.html#contentEquals(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool ContentEquals(Java.Lang.CharSequence arg0)
         {
             return IExecute<bool>("contentEquals", arg0);

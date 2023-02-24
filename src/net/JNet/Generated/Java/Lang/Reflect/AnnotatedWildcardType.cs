@@ -33,6 +33,9 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Reflect.AnnotatedWildcardType"/> to <see cref="Java.Lang.Reflect.AnnotatedType"/>
+        /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedType(Java.Lang.Reflect.AnnotatedWildcardType t) => t.Cast<Java.Lang.Reflect.AnnotatedType>();
         
         #endregion
@@ -47,21 +50,21 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html#getAnnotatedLowerBounds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html#getAnnotatedLowerBounds()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType[] AnnotatedLowerBounds
         {
             get { return IExecuteArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedLowerBounds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html#getAnnotatedOwnerType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html#getAnnotatedOwnerType()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType AnnotatedOwnerType
         {
             get { return IExecute<Java.Lang.Reflect.AnnotatedType>("getAnnotatedOwnerType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html#getAnnotatedUpperBounds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html#getAnnotatedUpperBounds()"/> 
         /// </summary>
         public Java.Lang.Reflect.AnnotatedType[] AnnotatedUpperBounds
         {

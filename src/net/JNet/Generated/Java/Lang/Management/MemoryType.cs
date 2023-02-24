@@ -38,11 +38,11 @@ namespace Java.Lang.Management
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#HEAP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#HEAP"/>
         /// </summary>
         public static Java.Lang.Management.MemoryType HEAP => Clazz.GetField<Java.Lang.Management.MemoryType>("HEAP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#NON_HEAP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#NON_HEAP"/>
         /// </summary>
         public static Java.Lang.Management.MemoryType NON_HEAP => Clazz.GetField<Java.Lang.Management.MemoryType>("NON_HEAP");
         
@@ -50,8 +50,10 @@ namespace Java.Lang.Management
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Management.MemoryType"/></returns>
         public static Java.Lang.Management.MemoryType[] Values()
         {
             return SExecuteArray<Java.Lang.Management.MemoryType>("values");

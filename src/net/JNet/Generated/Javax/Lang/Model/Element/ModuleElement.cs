@@ -33,7 +33,13 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Element.ModuleElement"/> to <see cref="Javax.Lang.Model.Element.Element"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Element.Element(Javax.Lang.Model.Element.ModuleElement t) => t.Cast<Javax.Lang.Model.Element.Element>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Element.ModuleElement"/> to <see cref="Javax.Lang.Model.Element.QualifiedNameable"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Element.QualifiedNameable(Javax.Lang.Model.Element.ModuleElement t) => t.Cast<Javax.Lang.Model.Element.QualifiedNameable>();
         
         #endregion
@@ -48,36 +54,40 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getEnclosingElement() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement
         {
             get { return IExecute<Javax.Lang.Model.Element.Element>("getEnclosingElement"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getQualifiedName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getQualifiedName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name QualifiedName
         {
             get { return IExecute<Javax.Lang.Model.Element.Name>("getQualifiedName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getSimpleName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#getSimpleName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name SimpleName
         {
             get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isOpen()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isOpen()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsOpen()
         {
             return IExecute<bool>("isOpen");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isUnnamed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html#isUnnamed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsUnnamed()
         {
             return IExecute<bool>("isUnnamed");
@@ -126,23 +136,23 @@ namespace Javax.Lang.Model.Element
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#EXPORTS
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#EXPORTS"/>
             /// </summary>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind EXPORTS => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("EXPORTS");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#OPENS
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#OPENS"/>
             /// </summary>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind OPENS => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("OPENS");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#PROVIDES
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#PROVIDES"/>
             /// </summary>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind PROVIDES => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("PROVIDES");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#REQUIRES
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#REQUIRES"/>
             /// </summary>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind REQUIRES => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("REQUIRES");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#USES
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#USES"/>
             /// </summary>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind USES => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("USES");
             
@@ -150,8 +160,10 @@ namespace Javax.Lang.Model.Element
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveKind"/></returns>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind[] Values()
             {
                 return SExecuteArray<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("values");
@@ -188,57 +200,80 @@ namespace Javax.Lang.Model.Element
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitExports(javax.lang.model.element.ModuleElement$ExportsDirective,P)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitExports(javax.lang.model.element.ModuleElement$ExportsDirective,P)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.ExportsDirective"/></param>
+            /// <param name="arg1"><see langword="object"/></param>
+            /// <returns><see langword="object"/></returns>
             public object VisitExports(Javax.Lang.Model.Element.ModuleElement.ExportsDirective arg0, object arg1)
             {
                 return IExecute("visitExports", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitOpens(javax.lang.model.element.ModuleElement$OpensDirective,P)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitOpens(javax.lang.model.element.ModuleElement$OpensDirective,P)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.OpensDirective"/></param>
+            /// <param name="arg1"><see langword="object"/></param>
+            /// <returns><see langword="object"/></returns>
             public object VisitOpens(Javax.Lang.Model.Element.ModuleElement.OpensDirective arg0, object arg1)
             {
                 return IExecute("visitOpens", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitProvides(javax.lang.model.element.ModuleElement$ProvidesDirective,P)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitProvides(javax.lang.model.element.ModuleElement$ProvidesDirective,P)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.ProvidesDirective"/></param>
+            /// <param name="arg1"><see langword="object"/></param>
+            /// <returns><see langword="object"/></returns>
             public object VisitProvides(Javax.Lang.Model.Element.ModuleElement.ProvidesDirective arg0, object arg1)
             {
                 return IExecute("visitProvides", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitRequires(javax.lang.model.element.ModuleElement$RequiresDirective,P)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitRequires(javax.lang.model.element.ModuleElement$RequiresDirective,P)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.RequiresDirective"/></param>
+            /// <param name="arg1"><see langword="object"/></param>
+            /// <returns><see langword="object"/></returns>
             public object VisitRequires(Javax.Lang.Model.Element.ModuleElement.RequiresDirective arg0, object arg1)
             {
                 return IExecute("visitRequires", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUses(javax.lang.model.element.ModuleElement$UsesDirective,P)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUses(javax.lang.model.element.ModuleElement$UsesDirective,P)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.UsesDirective"/></param>
+            /// <param name="arg1"><see langword="object"/></param>
+            /// <returns><see langword="object"/></returns>
             public object VisitUses(Javax.Lang.Model.Element.ModuleElement.UsesDirective arg0, object arg1)
             {
                 return IExecute("visitUses", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visit(javax.lang.model.element.ModuleElement$Directive,P)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visit(javax.lang.model.element.ModuleElement$Directive,P)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
+            /// <param name="arg1"><see langword="object"/></param>
+            /// <returns><see langword="object"/></returns>
             public object Visit(Javax.Lang.Model.Element.ModuleElement.Directive arg0, object arg1)
             {
                 return IExecute("visit", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visit(javax.lang.model.element.ModuleElement$Directive)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visit(javax.lang.model.element.ModuleElement$Directive)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
+            /// <returns><see langword="object"/></returns>
             public object Visit(Javax.Lang.Model.Element.ModuleElement.Directive arg0)
             {
                 return IExecute("visit", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUnknown(javax.lang.model.element.ModuleElement$Directive,P)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html#visitUnknown(javax.lang.model.element.ModuleElement$Directive,P)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ModuleElement.Directive"/></param>
+            /// <param name="arg1"><see langword="object"/></param>
+            /// <returns><see langword="object"/></returns>
             public object VisitUnknown(Javax.Lang.Model.Element.ModuleElement.Directive arg0, object arg1)
             {
                 return IExecute("visitUnknown", arg0, arg1);
@@ -271,7 +306,7 @@ namespace Javax.Lang.Model.Element
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ExportsDirective.html#getPackage() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ExportsDirective.html#getPackage()"/> 
             /// </summary>
             public Javax.Lang.Model.Element.PackageElement Package
             {
@@ -305,7 +340,7 @@ namespace Javax.Lang.Model.Element
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.OpensDirective.html#getPackage() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.OpensDirective.html#getPackage()"/> 
             /// </summary>
             public Javax.Lang.Model.Element.PackageElement Package
             {
@@ -339,7 +374,7 @@ namespace Javax.Lang.Model.Element
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ProvidesDirective.html#getService() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ProvidesDirective.html#getService()"/> 
             /// </summary>
             public Javax.Lang.Model.Element.TypeElement Service
             {
@@ -373,22 +408,26 @@ namespace Javax.Lang.Model.Element
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#getDependency() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#getDependency()"/> 
             /// </summary>
             public Javax.Lang.Model.Element.ModuleElement Dependency
             {
                 get { return IExecute<Javax.Lang.Model.Element.ModuleElement>("getDependency"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isStatic()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isStatic()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool IsStaticMethod()
             {
                 return IExecute<bool>("isStatic");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isTransitive()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isTransitive()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool IsTransitive()
             {
                 return IExecute<bool>("isTransitive");
@@ -421,7 +460,7 @@ namespace Javax.Lang.Model.Element
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.UsesDirective.html#getService() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.UsesDirective.html#getService()"/> 
             /// </summary>
             public Javax.Lang.Model.Element.TypeElement Service
             {

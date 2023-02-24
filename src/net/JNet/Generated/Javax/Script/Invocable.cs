@@ -46,15 +46,26 @@ namespace Javax.Script
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeFunction(java.lang.String,java.lang.Object...) throws javax.script.ScriptException,java.lang.NoSuchMethodException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeFunction(java.lang.String,java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
+        /// <exception cref="Java.Lang.NoSuchMethodException"/>
         public object InvokeFunction(string arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return IExecute("invokeFunction", arg0); else return IExecute("invokeFunction", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeMethod(java.lang.Object,java.lang.String,java.lang.Object...) throws javax.script.ScriptException,java.lang.NoSuchMethodException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeMethod(java.lang.Object,java.lang.String,java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
+        /// <exception cref="Java.Lang.NoSuchMethodException"/>
         public object InvokeMethod(object arg0, string arg1, params object[] arg2)
         {
             if (arg2.Length == 0) return IExecute("invokeMethod", arg0, arg1); else return IExecute("invokeMethod", arg0, arg1, arg2);

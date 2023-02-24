@@ -30,8 +30,9 @@ namespace Java.Rmi.Activation
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationID.html#<init>(java.rmi.activation.Activator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationID.html#%3Cinit%3E(java.rmi.activation.Activator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.Activator"/></param>
         public ActivationID(Java.Rmi.Activation.Activator arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Activation.ActivationID"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Rmi.Activation.ActivationID t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,8 +58,13 @@ namespace Java.Rmi.Activation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationID.html#activate(boolean) throws java.rmi.activation.ActivationException,java.rmi.activation.UnknownObjectException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationID.html#activate(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Rmi.Remote"/></returns>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public Java.Rmi.Remote Activate(bool arg0)
         {
             return IExecute<Java.Rmi.Remote>("activate", arg0);

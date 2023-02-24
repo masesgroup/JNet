@@ -33,6 +33,9 @@ namespace Java.Awt.Print
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Print.Book"/> to <see cref="Java.Awt.Print.Pageable"/>
+        /// </summary>
         public static implicit operator Java.Awt.Print.Pageable(Java.Awt.Print.Book t) => t.Cast<Java.Awt.Print.Pageable>();
         
         #endregion
@@ -47,43 +50,58 @@ namespace Java.Awt.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#getNumberOfPages() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#getNumberOfPages()"/> 
         /// </summary>
         public int NumberOfPages
         {
             get { return IExecute<int>("getNumberOfPages"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#getPageFormat(int) throws java.lang.IndexOutOfBoundsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#getPageFormat(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
+        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public Java.Awt.Print.PageFormat GetPageFormat(int arg0)
         {
             return IExecute<Java.Awt.Print.PageFormat>("getPageFormat", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#getPrintable(int) throws java.lang.IndexOutOfBoundsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#getPrintable(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Print.Printable"/></returns>
+        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public Java.Awt.Print.Printable GetPrintable(int arg0)
         {
             return IExecute<Java.Awt.Print.Printable>("getPrintable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#append(java.awt.print.Printable,java.awt.print.PageFormat,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#append(java.awt.print.Printable,java.awt.print.PageFormat,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Print.Printable"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Print.PageFormat"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void Append(Java.Awt.Print.Printable arg0, Java.Awt.Print.PageFormat arg1, int arg2)
         {
             IExecute("append", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#append(java.awt.print.Printable,java.awt.print.PageFormat)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#append(java.awt.print.Printable,java.awt.print.PageFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Print.Printable"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Print.PageFormat"/></param>
         public void Append(Java.Awt.Print.Printable arg0, Java.Awt.Print.PageFormat arg1)
         {
             IExecute("append", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#setPage(int,java.awt.print.Printable,java.awt.print.PageFormat) throws java.lang.IndexOutOfBoundsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html#setPage(int,java.awt.print.Printable,java.awt.print.PageFormat)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Print.Printable"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Print.PageFormat"/></param>
+        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public void SetPage(int arg0, Java.Awt.Print.Printable arg1, Java.Awt.Print.PageFormat arg2)
         {
             IExecute("setPage", arg0, arg1, arg2);

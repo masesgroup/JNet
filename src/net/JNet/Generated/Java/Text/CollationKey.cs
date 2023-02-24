@@ -46,29 +46,35 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#getSourceString() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#getSourceString()"/> 
         /// </summary>
         public string SourceString
         {
             get { return IExecute<string>("getSourceString"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#toByteArray()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#toByteArray()"/>
         /// </summary>
+        
+        /// <returns><see cref="byte"/></returns>
         public byte[] ToByteArray()
         {
             return IExecuteArray<byte>("toByteArray");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#compareTo(java.text.CollationKey)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#compareTo(java.text.CollationKey)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.CollationKey"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Java.Text.CollationKey arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);

@@ -42,1296 +42,1942 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(T[],int,int,T[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(T[],int,int,T[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Comparable"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.Comparable"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(Java.Lang.Comparable[] arg0, int arg1, int arg2, Java.Lang.Comparable[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(T[],T[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(T[],T[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Comparable"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Comparable"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(Java.Lang.Comparable[] arg0, Java.Lang.Comparable[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(T[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(T[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="object"/></returns>
         public static object[] CopyOf(object[] arg0, int arg1)
         {
             return SExecuteArray<object>("copyOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(T[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(T[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="object"/></returns>
         public static object[] CopyOfRange(object[] arg0, int arg1, int arg2)
         {
             return SExecuteArray<object>("copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(T[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(T[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Comparable"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void ParallelSort(Java.Lang.Comparable[] arg0, int arg1, int arg2)
         {
             SExecute("parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(T[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(T[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Comparable"/></param>
         public static void ParallelSort(Java.Lang.Comparable[] arg0)
         {
             SExecute("parallelSort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#deepEquals(java.lang.Object[],java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#deepEquals(java.lang.Object[],java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool DeepEquals(object[] arg0, object[] arg1)
         {
             return SExecute<bool>("deepEquals", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(boolean[],boolean[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(boolean[],boolean[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(bool[] arg0, bool[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(boolean[],int,int,boolean[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(boolean[],int,int,boolean[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(bool[] arg0, int arg1, int arg2, bool[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(byte[],byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(byte[],byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(byte[] arg0, byte[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(byte[],int,int,byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(byte[],int,int,byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(char[],char[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(char[],char[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(char[] arg0, char[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(char[],int,int,char[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(char[],int,int,char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="char"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(char[] arg0, int arg1, int arg2, char[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(double[],double[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(double[],double[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(double[] arg0, double[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(double[],int,int,double[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(double[],int,int,double[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(double[] arg0, int arg1, int arg2, double[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(float[],float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(float[],float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(float[] arg0, float[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(float[],int,int,float[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(float[],int,int,float[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(float[] arg0, int arg1, int arg2, float[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(int[],int,int,int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(int[],int,int,int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(int[] arg0, int arg1, int arg2, int[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(int[],int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(int[],int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(int[] arg0, int[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(java.lang.Object[],int,int,java.lang.Object[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(java.lang.Object[],int,int,java.lang.Object[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(object[] arg0, int arg1, int arg2, object[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(java.lang.Object[],java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(java.lang.Object[],java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(object[] arg0, object[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(long[],int,int,long[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(long[],int,int,long[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(long[] arg0, int arg1, int arg2, long[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(long[],long[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(long[],long[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(long[] arg0, long[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(short[],int,int,short[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(short[],int,int,short[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="short"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(short[] arg0, int arg1, int arg2, short[] arg3, int arg4, int arg5)
         {
             return SExecute<bool>("equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(short[],short[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(short[],short[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="short"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool Equals(short[] arg0, short[] arg1)
         {
             return SExecute<bool>("equals", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(boolean[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(boolean[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="bool"/></returns>
         public static bool[] CopyOf(bool[] arg0, int arg1)
         {
             return SExecuteArray<bool>("copyOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(boolean[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(boolean[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="bool"/></returns>
         public static bool[] CopyOfRange(bool[] arg0, int arg1, int arg2)
         {
             return SExecuteArray<bool>("copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(byte[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(byte[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="byte"/></returns>
         public static byte[] CopyOf(byte[] arg0, int arg1)
         {
             return SExecuteArray<byte>("copyOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="byte"/></returns>
         public static byte[] CopyOfRange(byte[] arg0, int arg1, int arg2)
         {
             return SExecuteArray<byte>("copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(char[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(char[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="char"/></returns>
         public static char[] CopyOf(char[] arg0, int arg1)
         {
             return SExecuteArray<char>("copyOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(char[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="char"/></returns>
         public static char[] CopyOfRange(char[] arg0, int arg1, int arg2)
         {
             return SExecuteArray<char>("copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(double[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(double[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="double"/></returns>
         public static double[] CopyOf(double[] arg0, int arg1)
         {
             return SExecuteArray<double>("copyOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(double[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(double[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="double"/></returns>
         public static double[] CopyOfRange(double[] arg0, int arg1, int arg2)
         {
             return SExecuteArray<double>("copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(float[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(float[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="float"/></returns>
         public static float[] CopyOf(float[] arg0, int arg1)
         {
             return SExecuteArray<float>("copyOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(float[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(float[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="float"/></returns>
         public static float[] CopyOfRange(float[] arg0, int arg1, int arg2)
         {
             return SExecuteArray<float>("copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(byte[],byte)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(byte[],byte)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="byte"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(byte[] arg0, byte arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(byte[],int,int,byte)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(byte[],int,int,byte)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="byte"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(byte[] arg0, int arg1, int arg2, byte arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(char[],char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(char[],char)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="char"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(char[] arg0, char arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(char[],int,int,char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(char[],int,int,char)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="char"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(char[] arg0, int arg1, int arg2, char arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(double[],double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(double[],double)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(double[] arg0, double arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(double[],int,int,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(double[],int,int,double)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(double[] arg0, int arg1, int arg2, double arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(float[],float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(float[],float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(float[] arg0, float arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(float[],int,int,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(float[],int,int,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(float[] arg0, int arg1, int arg2, float arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(int[],int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(int[],int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(int[] arg0, int arg1, int arg2, int arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(int[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(int[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(int[] arg0, int arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],int,int,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],int,int,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(object[] arg0, int arg1, int arg2, object arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(object[] arg0, object arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(long[],int,int,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(long[],int,int,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="long"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(long[] arg0, int arg1, int arg2, long arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(long[],long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(long[],long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(long[] arg0, long arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(short[],int,int,short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(short[],int,int,short)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="short"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(short[] arg0, int arg1, int arg2, short arg3)
         {
             return SExecute<int>("binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(short[],short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(short[],short)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see langword="short"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int BinarySearch(short[] arg0, short arg1)
         {
             return SExecute<int>("binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(boolean[],boolean[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(boolean[],boolean[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(bool[] arg0, bool[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(boolean[],int,int,boolean[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(boolean[],int,int,boolean[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(bool[] arg0, int arg1, int arg2, bool[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(byte[],byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(byte[],byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(byte[] arg0, byte[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(byte[],int,int,byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(byte[],int,int,byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(char[],char[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(char[],char[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(char[] arg0, char[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(char[],int,int,char[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(char[],int,int,char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="char"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(char[] arg0, int arg1, int arg2, char[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(double[],double[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(double[],double[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(double[] arg0, double[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(double[],int,int,double[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(double[],int,int,double[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(double[] arg0, int arg1, int arg2, double[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(float[],float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(float[],float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(float[] arg0, float[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(float[],int,int,float[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(float[],int,int,float[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(float[] arg0, int arg1, int arg2, float[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(int[],int,int,int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(int[],int,int,int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(int[] arg0, int arg1, int arg2, int[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(int[],int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(int[],int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(int[] arg0, int[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(long[],int,int,long[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(long[],int,int,long[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(long[] arg0, int arg1, int arg2, long[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(long[],long[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(long[],long[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(long[] arg0, long[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(short[],int,int,short[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(short[],int,int,short[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="short"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(short[] arg0, int arg1, int arg2, short[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(short[],short[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(short[],short[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="short"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Compare(short[] arg0, short[] arg1)
         {
             return SExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(byte[],byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(byte[],byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int CompareUnsigned(byte[] arg0, byte[] arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(byte[],int,int,byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(byte[],int,int,byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int CompareUnsigned(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(int[],int,int,int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(int[],int,int,int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int CompareUnsigned(int[] arg0, int arg1, int arg2, int[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(int[],int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(int[],int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int CompareUnsigned(int[] arg0, int[] arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(long[],int,int,long[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(long[],int,int,long[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int CompareUnsigned(long[] arg0, int arg1, int arg2, long[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(long[],long[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(long[],long[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int CompareUnsigned(long[] arg0, long[] arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(short[],int,int,short[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(short[],int,int,short[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="short"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int CompareUnsigned(short[] arg0, int arg1, int arg2, short[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(short[],short[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(short[],short[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="short"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int CompareUnsigned(short[] arg0, short[] arg1)
         {
             return SExecute<int>("compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#deepHashCode(java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#deepHashCode(java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int DeepHashCode(object[] arg0)
         {
             return SExecute<int>("deepHashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(boolean[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(boolean[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int HashCode(bool[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int HashCode(byte[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(char[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(char[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int HashCode(char[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(double[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(double[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int HashCode(double[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int HashCode(float[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int HashCode(int[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int HashCode(object[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(long[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(long[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int HashCode(long[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(short[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(short[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int HashCode(short[] arg0)
         {
             return SExecute<int>("hashCode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(boolean[],boolean[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(boolean[],boolean[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(bool[] arg0, bool[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(boolean[],int,int,boolean[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(boolean[],int,int,boolean[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(bool[] arg0, int arg1, int arg2, bool[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(byte[],byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(byte[],byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(byte[] arg0, byte[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(byte[],int,int,byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(byte[],int,int,byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(char[],char[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(char[],char[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(char[] arg0, char[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(char[],int,int,char[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(char[],int,int,char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="char"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(char[] arg0, int arg1, int arg2, char[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(double[],double[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(double[],double[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(double[] arg0, double[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(double[],int,int,double[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(double[],int,int,double[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(double[] arg0, int arg1, int arg2, double[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(float[],float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(float[],float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(float[] arg0, float[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(float[],int,int,float[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(float[],int,int,float[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(float[] arg0, int arg1, int arg2, float[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(int[],int,int,int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(int[],int,int,int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(int[] arg0, int arg1, int arg2, int[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(int[],int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(int[],int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(int[] arg0, int[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],int,int,java.lang.Object[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],int,int,java.lang.Object[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(object[] arg0, int arg1, int arg2, object[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(object[] arg0, object[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(long[],int,int,long[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(long[],int,int,long[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(long[] arg0, int arg1, int arg2, long[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(long[],long[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(long[],long[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(long[] arg0, long[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(short[],int,int,short[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(short[],int,int,short[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="short"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(short[] arg0, int arg1, int arg2, short[] arg3, int arg4, int arg5)
         {
             return SExecute<int>("mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(short[],short[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(short[],short[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="short"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Mismatch(short[] arg0, short[] arg1)
         {
             return SExecute<int>("mismatch", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(int[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(int[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="int"/></returns>
         public static int[] CopyOf(int[] arg0, int arg1)
         {
             return SExecuteArray<int>("copyOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="int"/></returns>
         public static int[] CopyOfRange(int[] arg0, int arg1, int arg2)
         {
             return SExecuteArray<int>("copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#deepToString(java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#deepToString(java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string DeepToString(object[] arg0)
         {
             return SExecute<string>("deepToString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(boolean[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(boolean[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(bool[] arg0)
         {
             return SExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(byte[] arg0)
         {
             return SExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(char[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(char[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(char[] arg0)
         {
             return SExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(double[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(double[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(double[] arg0)
         {
             return SExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(float[] arg0)
         {
             return SExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(int[] arg0)
         {
             return SExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(object[] arg0)
         {
             return SExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(long[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(long[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(long[] arg0)
         {
             return SExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(short[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(short[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string ToString(short[] arg0)
         {
             return SExecute<string>("toString", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream.DoubleStream java.util.Arrays.stream(double[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream.DoubleStream java.util.Arrays.stream(double[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Stream(double[] arg0, int arg1, int arg2)
         {
             return SExecute<Java.Util.Stream.DoubleStream>("stream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream.DoubleStream java.util.Arrays.stream(double[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream.DoubleStream java.util.Arrays.stream(double[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Stream(double[] arg0)
         {
             return SExecute<Java.Util.Stream.DoubleStream>("stream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream.IntStream java.util.Arrays.stream(int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream.IntStream java.util.Arrays.stream(int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Stream(int[] arg0, int arg1, int arg2)
         {
             return SExecute<Java.Util.Stream.IntStream>("stream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream.IntStream java.util.Arrays.stream(int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream.IntStream java.util.Arrays.stream(int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Stream(int[] arg0)
         {
             return SExecute<Java.Util.Stream.IntStream>("stream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream.LongStream java.util.Arrays.stream(long[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream.LongStream java.util.Arrays.stream(long[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Stream(long[] arg0, int arg1, int arg2)
         {
             return SExecute<Java.Util.Stream.LongStream>("stream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream.LongStream java.util.Arrays.stream(long[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream.LongStream java.util.Arrays.stream(long[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Stream(long[] arg0)
         {
             return SExecute<Java.Util.Stream.LongStream>("stream", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(long[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(long[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="long"/></returns>
         public static long[] CopyOf(long[] arg0, int arg1)
         {
             return SExecuteArray<long>("copyOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(long[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(long[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="long"/></returns>
         public static long[] CopyOfRange(long[] arg0, int arg1, int arg2)
         {
             return SExecuteArray<long>("copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(short[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(short[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="short"/></returns>
         public static short[] CopyOf(short[] arg0, int arg1)
         {
             return SExecuteArray<short>("copyOf", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(short[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(short[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="short"/></returns>
         public static short[] CopyOfRange(short[] arg0, int arg1, int arg2)
         {
             return SExecuteArray<short>("copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(boolean[],boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(boolean[],boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public static void Fill(bool[] arg0, bool arg1)
         {
             SExecute("fill", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(boolean[],int,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(boolean[],int,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
         public static void Fill(bool[] arg0, int arg1, int arg2, bool arg3)
         {
             SExecute("fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(byte[],byte)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(byte[],byte)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="byte"/></param>
         public static void Fill(byte[] arg0, byte arg1)
         {
             SExecute("fill", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(byte[],int,int,byte)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(byte[],int,int,byte)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="byte"/></param>
         public static void Fill(byte[] arg0, int arg1, int arg2, byte arg3)
         {
             SExecute("fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(char[],char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(char[],char)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="char"/></param>
         public static void Fill(char[] arg0, char arg1)
         {
             SExecute("fill", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(char[],int,int,char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(char[],int,int,char)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="char"/></param>
         public static void Fill(char[] arg0, int arg1, int arg2, char arg3)
         {
             SExecute("fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(double[],double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(double[],double)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
         public static void Fill(double[] arg0, double arg1)
         {
             SExecute("fill", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(double[],int,int,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(double[],int,int,double)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
         public static void Fill(double[] arg0, int arg1, int arg2, double arg3)
         {
             SExecute("fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(float[],float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(float[],float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
         public static void Fill(float[] arg0, float arg1)
         {
             SExecute("fill", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(float[],int,int,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(float[],int,int,float)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="float"/></param>
         public static void Fill(float[] arg0, int arg1, int arg2, float arg3)
         {
             SExecute("fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(int[],int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(int[],int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public static void Fill(int[] arg0, int arg1, int arg2, int arg3)
         {
             SExecute("fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(int[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(int[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public static void Fill(int[] arg0, int arg1)
         {
             SExecute("fill", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(java.lang.Object[],int,int,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(java.lang.Object[],int,int,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="object"/></param>
         public static void Fill(object[] arg0, int arg1, int arg2, object arg3)
         {
             SExecute("fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(java.lang.Object[],java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(java.lang.Object[],java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public static void Fill(object[] arg0, object arg1)
         {
             SExecute("fill", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(long[],int,int,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(long[],int,int,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="long"/></param>
         public static void Fill(long[] arg0, int arg1, int arg2, long arg3)
         {
             SExecute("fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(long[],long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(long[],long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
         public static void Fill(long[] arg0, long arg1)
         {
             SExecute("fill", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(short[],int,int,short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(short[],int,int,short)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="short"/></param>
         public static void Fill(short[] arg0, int arg1, int arg2, short arg3)
         {
             SExecute("fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(short[],short)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(short[],short)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see langword="short"/></param>
         public static void Fill(short[] arg0, short arg1)
         {
             SExecute("fill", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(double[],int,int,java.util.function.DoubleBinaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(double[],int,int,java.util.function.DoubleBinaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
         public static void ParallelPrefix(double[] arg0, int arg1, int arg2, Java.Util.Function.DoubleBinaryOperator arg3)
         {
             SExecute("parallelPrefix", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(double[],java.util.function.DoubleBinaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(double[],java.util.function.DoubleBinaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
         public static void ParallelPrefix(double[] arg0, Java.Util.Function.DoubleBinaryOperator arg1)
         {
             SExecute("parallelPrefix", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(int[],int,int,java.util.function.IntBinaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(int[],int,int,java.util.function.IntBinaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
         public static void ParallelPrefix(int[] arg0, int arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3)
         {
             SExecute("parallelPrefix", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(int[],java.util.function.IntBinaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(int[],java.util.function.IntBinaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
         public static void ParallelPrefix(int[] arg0, Java.Util.Function.IntBinaryOperator arg1)
         {
             SExecute("parallelPrefix", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(long[],int,int,java.util.function.LongBinaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(long[],int,int,java.util.function.LongBinaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
         public static void ParallelPrefix(long[] arg0, int arg1, int arg2, Java.Util.Function.LongBinaryOperator arg3)
         {
             SExecute("parallelPrefix", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(long[],java.util.function.LongBinaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(long[],java.util.function.LongBinaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
         public static void ParallelPrefix(long[] arg0, Java.Util.Function.LongBinaryOperator arg1)
         {
             SExecute("parallelPrefix", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSetAll(double[],java.util.function.IntToDoubleFunction)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSetAll(double[],java.util.function.IntToDoubleFunction)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.IntToDoubleFunction"/></param>
         public static void ParallelSetAll(double[] arg0, Java.Util.Function.IntToDoubleFunction arg1)
         {
             SExecute("parallelSetAll", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSetAll(int[],java.util.function.IntUnaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSetAll(int[],java.util.function.IntUnaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         public static void ParallelSetAll(int[] arg0, Java.Util.Function.IntUnaryOperator arg1)
         {
             SExecute("parallelSetAll", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSetAll(long[],java.util.function.IntToLongFunction)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSetAll(long[],java.util.function.IntToLongFunction)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.IntToLongFunction"/></param>
         public static void ParallelSetAll(long[] arg0, Java.Util.Function.IntToLongFunction arg1)
         {
             SExecute("parallelSetAll", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void ParallelSort(byte[] arg0, int arg1, int arg2)
         {
             SExecute("parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
         public static void ParallelSort(byte[] arg0)
         {
             SExecute("parallelSort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(char[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void ParallelSort(char[] arg0, int arg1, int arg2)
         {
             SExecute("parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(char[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(char[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
         public static void ParallelSort(char[] arg0)
         {
             SExecute("parallelSort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(double[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(double[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void ParallelSort(double[] arg0, int arg1, int arg2)
         {
             SExecute("parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(double[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(double[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
         public static void ParallelSort(double[] arg0)
         {
             SExecute("parallelSort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(float[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(float[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void ParallelSort(float[] arg0, int arg1, int arg2)
         {
             SExecute("parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
         public static void ParallelSort(float[] arg0)
         {
             SExecute("parallelSort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void ParallelSort(int[] arg0, int arg1, int arg2)
         {
             SExecute("parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
         public static void ParallelSort(int[] arg0)
         {
             SExecute("parallelSort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(long[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(long[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void ParallelSort(long[] arg0, int arg1, int arg2)
         {
             SExecute("parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(long[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(long[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
         public static void ParallelSort(long[] arg0)
         {
             SExecute("parallelSort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(short[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(short[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void ParallelSort(short[] arg0, int arg1, int arg2)
         {
             SExecute("parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(short[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(short[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
         public static void ParallelSort(short[] arg0)
         {
             SExecute("parallelSort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(double[],java.util.function.IntToDoubleFunction)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(double[],java.util.function.IntToDoubleFunction)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.IntToDoubleFunction"/></param>
         public static void SetAll(double[] arg0, Java.Util.Function.IntToDoubleFunction arg1)
         {
             SExecute("setAll", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(int[],java.util.function.IntUnaryOperator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(int[],java.util.function.IntUnaryOperator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         public static void SetAll(int[] arg0, Java.Util.Function.IntUnaryOperator arg1)
         {
             SExecute("setAll", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(long[],java.util.function.IntToLongFunction)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(long[],java.util.function.IntToLongFunction)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.IntToLongFunction"/></param>
         public static void SetAll(long[] arg0, Java.Util.Function.IntToLongFunction arg1)
         {
             SExecute("setAll", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(byte[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(byte[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void Sort(byte[] arg0, int arg1, int arg2)
         {
             SExecute("sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
         public static void Sort(byte[] arg0)
         {
             SExecute("sort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(char[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void Sort(char[] arg0, int arg1, int arg2)
         {
             SExecute("sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(char[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(char[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
         public static void Sort(char[] arg0)
         {
             SExecute("sort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(double[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(double[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void Sort(double[] arg0, int arg1, int arg2)
         {
             SExecute("sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(double[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(double[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
         public static void Sort(double[] arg0)
         {
             SExecute("sort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(float[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(float[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void Sort(float[] arg0, int arg1, int arg2)
         {
             SExecute("sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
         public static void Sort(float[] arg0)
         {
             SExecute("sort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(int[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(int[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void Sort(int[] arg0, int arg1, int arg2)
         {
             SExecute("sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
         public static void Sort(int[] arg0)
         {
             SExecute("sort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void Sort(object[] arg0, int arg1, int arg2)
         {
             SExecute("sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
         public static void Sort(object[] arg0)
         {
             SExecute("sort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(long[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(long[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void Sort(long[] arg0, int arg1, int arg2)
         {
             SExecute("sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(long[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(long[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
         public static void Sort(long[] arg0)
         {
             SExecute("sort", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(short[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(short[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public static void Sort(short[] arg0, int arg1, int arg2)
         {
             SExecute("sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(short[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(short[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
         public static void Sort(short[] arg0)
         {
             SExecute("sort", arg0);

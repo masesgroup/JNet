@@ -30,8 +30,9 @@ namespace Javax.Net.Ssl
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/CertPathTrustManagerParameters.html#<init>(java.security.cert.CertPathParameters)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/CertPathTrustManagerParameters.html#%3Cinit%3E(java.security.cert.CertPathParameters)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.CertPathParameters"/></param>
         public CertPathTrustManagerParameters(Java.Security.Cert.CertPathParameters arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Net.Ssl.CertPathTrustManagerParameters"/> to <see cref="Javax.Net.Ssl.ManagerFactoryParameters"/>
+        /// </summary>
         public static implicit operator Javax.Net.Ssl.ManagerFactoryParameters(Javax.Net.Ssl.CertPathTrustManagerParameters t) => t.Cast<Javax.Net.Ssl.ManagerFactoryParameters>();
         
         #endregion
@@ -54,7 +58,7 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/CertPathTrustManagerParameters.html#getParameters() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/CertPathTrustManagerParameters.html#getParameters()"/> 
         /// </summary>
         public Java.Security.Cert.CertPathParameters Parameters
         {

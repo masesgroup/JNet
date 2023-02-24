@@ -30,8 +30,9 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldFp.html#<init>(java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldFp.html#%3Cinit%3E(java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         public ECFieldFp(Java.Math.BigInteger arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Spec.ECFieldFp"/> to <see cref="Java.Security.Spec.ECField"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.ECField(Java.Security.Spec.ECFieldFp t) => t.Cast<Java.Security.Spec.ECField>();
         
         #endregion
@@ -54,14 +58,14 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldFp.html#getFieldSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldFp.html#getFieldSize()"/> 
         /// </summary>
         public int FieldSize
         {
             get { return IExecute<int>("getFieldSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldFp.html#getP() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldFp.html#getP()"/> 
         /// </summary>
         public Java.Math.BigInteger P
         {

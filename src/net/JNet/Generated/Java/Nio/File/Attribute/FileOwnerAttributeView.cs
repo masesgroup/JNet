@@ -33,6 +33,9 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.Attribute.FileOwnerAttributeView"/> to <see cref="Java.Nio.File.Attribute.FileAttributeView"/>
+        /// </summary>
         public static implicit operator Java.Nio.File.Attribute.FileAttributeView(Java.Nio.File.Attribute.FileOwnerAttributeView t) => t.Cast<Java.Nio.File.Attribute.FileAttributeView>();
         
         #endregion
@@ -47,15 +50,17 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#getOwner() throws java.io.IOException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#setOwner(java.nio.file.attribute.UserPrincipal) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#getOwner()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#setOwner(java.nio.file.attribute.UserPrincipal)"/>
         /// </summary>
         public Java.Nio.File.Attribute.UserPrincipal Owner
         {
             get { return IExecute<Java.Nio.File.Attribute.UserPrincipal>("getOwner"); } set { IExecute("setOwner", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#name()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#name()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Name()
         {
             return IExecute<string>("name");

@@ -46,22 +46,28 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AuthProvider.html#login(javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler) throws javax.security.auth.login.LoginException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AuthProvider.html#login(javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
+        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public void Login(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1)
         {
             IExecute("login", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AuthProvider.html#logout() throws javax.security.auth.login.LoginException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AuthProvider.html#logout()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public void Logout()
         {
             IExecute("logout");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AuthProvider.html#setCallbackHandler(javax.security.auth.callback.CallbackHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AuthProvider.html#setCallbackHandler(javax.security.auth.callback.CallbackHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
         public void SetCallbackHandler(Javax.Security.Auth.Callback.CallbackHandler arg0)
         {
             IExecute("setCallbackHandler", arg0);

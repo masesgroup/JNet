@@ -33,23 +33,32 @@ namespace Java.Time
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.ZoneOffset"/> to <see cref="Java.Time.Temporal.TemporalAccessor"/>
+        /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAccessor(Java.Time.ZoneOffset t) => t.Cast<Java.Time.Temporal.TemporalAccessor>();
+        /// <summary>
+        /// Converter from <see cref="Java.Time.ZoneOffset"/> to <see cref="Java.Time.Temporal.TemporalAdjuster"/>
+        /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.ZoneOffset t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
+        /// <summary>
+        /// Converter from <see cref="Java.Time.ZoneOffset"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.ZoneOffset t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#MAX
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#MAX"/>
         /// </summary>
         public static Java.Time.ZoneOffset MAX => Clazz.GetField<Java.Time.ZoneOffset>("MAX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#MIN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#MIN"/>
         /// </summary>
         public static Java.Time.ZoneOffset MIN => Clazz.GetField<Java.Time.ZoneOffset>("MIN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#UTC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#UTC"/>
         /// </summary>
         public static Java.Time.ZoneOffset UTC => Clazz.GetField<Java.Time.ZoneOffset>("UTC");
         
@@ -57,29 +66,40 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofHours(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofHours(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfHours(int arg0)
         {
             return SExecute<Java.Time.ZoneOffset>("ofHours", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofHoursMinutes(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofHoursMinutes(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfHoursMinutes(int arg0, int arg1)
         {
             return SExecute<Java.Time.ZoneOffset>("ofHoursMinutes", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofHoursMinutesSeconds(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofHoursMinutesSeconds(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfHoursMinutesSeconds(int arg0, int arg1, int arg2)
         {
             return SExecute<Java.Time.ZoneOffset>("ofHoursMinutesSeconds", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofTotalSeconds(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofTotalSeconds(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfTotalSeconds(int arg0)
         {
             return SExecute<Java.Time.ZoneOffset>("ofTotalSeconds", arg0);
@@ -89,57 +109,71 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#getTotalSeconds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#getTotalSeconds()"/> 
         /// </summary>
         public int TotalSeconds
         {
             get { return IExecute<int>("getTotalSeconds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#isSupported(java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#isSupported(java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsSupported(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<bool>("isSupported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#compareTo(java.time.ZoneOffset)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#compareTo(java.time.ZoneOffset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Java.Time.ZoneOffset arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#get(java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#get(java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Get(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<int>("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#adjustInto(java.time.temporal.Temporal)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#adjustInto(java.time.temporal.Temporal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0)
         {
             return IExecute<Java.Time.Temporal.Temporal>("adjustInto", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#range(java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#range(java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#getLong(java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#getLong(java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see langword="long"/></returns>
         public long GetLong(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<long>("getLong", arg0);

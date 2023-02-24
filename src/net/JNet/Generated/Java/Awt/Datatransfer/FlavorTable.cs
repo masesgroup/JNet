@@ -33,6 +33,9 @@ namespace Java.Awt.Datatransfer
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Datatransfer.FlavorTable"/> to <see cref="Java.Awt.Datatransfer.FlavorMap"/>
+        /// </summary>
         public static implicit operator Java.Awt.Datatransfer.FlavorMap(Java.Awt.Datatransfer.FlavorTable t) => t.Cast<Java.Awt.Datatransfer.FlavorMap>();
         
         #endregion

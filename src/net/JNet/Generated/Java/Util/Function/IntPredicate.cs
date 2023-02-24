@@ -46,29 +46,37 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#test(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#test(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Test(int arg0)
         {
             return IExecute<bool>("test", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         public Java.Util.Function.IntPredicate And(Java.Util.Function.IntPredicate arg0)
         {
             return IExecute<Java.Util.Function.IntPredicate>("and", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         public Java.Util.Function.IntPredicate Negate()
         {
             return IExecute<Java.Util.Function.IntPredicate>("negate");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         public Java.Util.Function.IntPredicate Or(Java.Util.Function.IntPredicate arg0)
         {
             return IExecute<Java.Util.Function.IntPredicate>("or", arg0);

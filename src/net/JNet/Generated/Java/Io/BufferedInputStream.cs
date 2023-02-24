@@ -30,15 +30,18 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedInputStream.html#<init>(java.io.InputStream,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedInputStream.html#%3Cinit%3E(java.io.InputStream,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public BufferedInputStream(Java.Io.InputStream arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedInputStream.html#<init>(java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public BufferedInputStream(Java.Io.InputStream arg0)
             : base(arg0)
         {

@@ -30,8 +30,10 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#<init>(java.awt.GraphicsDevice) throws java.awt.AWTException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#%3Cinit%3E(java.awt.GraphicsDevice)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.GraphicsDevice"/></param>
+        /// <exception cref="Java.Awt.AWTException"/>
         public Robot(Java.Awt.GraphicsDevice arg0)
             : base(arg0)
         {
@@ -53,98 +55,116 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#getAutoDelay() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#setAutoDelay(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#getAutoDelay()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#setAutoDelay(int)"/>
         /// </summary>
         public int AutoDelay
         {
             get { return IExecute<int>("getAutoDelay"); } set { IExecute("setAutoDelay", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#isAutoWaitForIdle()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#isAutoWaitForIdle()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAutoWaitForIdle()
         {
             return IExecute<bool>("isAutoWaitForIdle");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#getPixelColor(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#getPixelColor(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetPixelColor(int arg0, int arg1)
         {
             return IExecute<Java.Awt.Color>("getPixelColor", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#createScreenCapture(java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#createScreenCapture(java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage CreateScreenCapture(Java.Awt.Rectangle arg0)
         {
             return IExecute<Java.Awt.ImageNs.BufferedImage>("createScreenCapture", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#createMultiResolutionScreenCapture(java.awt.Rectangle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#createMultiResolutionScreenCapture(java.awt.Rectangle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.MultiResolutionImage"/></returns>
         public Java.Awt.ImageNs.MultiResolutionImage CreateMultiResolutionScreenCapture(Java.Awt.Rectangle arg0)
         {
             return IExecute<Java.Awt.ImageNs.MultiResolutionImage>("createMultiResolutionScreenCapture", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#delay(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#delay(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Delay(int arg0)
         {
             IExecute("delay", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#keyPress(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#keyPress(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void KeyPress(int arg0)
         {
             IExecute("keyPress", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#keyRelease(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#keyRelease(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void KeyRelease(int arg0)
         {
             IExecute("keyRelease", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#mouseMove(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#mouseMove(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void MouseMove(int arg0, int arg1)
         {
             IExecute("mouseMove", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#mousePress(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#mousePress(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void MousePress(int arg0)
         {
             IExecute("mousePress", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#mouseRelease(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#mouseRelease(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void MouseRelease(int arg0)
         {
             IExecute("mouseRelease", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#mouseWheel(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#mouseWheel(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void MouseWheel(int arg0)
         {
             IExecute("mouseWheel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#setAutoWaitForIdle(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#setAutoWaitForIdle(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetAutoWaitForIdle(bool arg0)
         {
             IExecute("setAutoWaitForIdle", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#waitForIdle()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#waitForIdle()"/>
         /// </summary>
         public void WaitForIdle()
         {

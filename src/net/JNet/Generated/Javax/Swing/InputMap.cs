@@ -33,6 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.InputMap"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.InputMap t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,57 +50,68 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#getParent() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#setParent(javax.swing.InputMap)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#getParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#setParent(javax.swing.InputMap)"/>
         /// </summary>
         public Javax.Swing.InputMap Parent
         {
             get { return IExecute<Javax.Swing.InputMap>("getParent"); } set { IExecute("setParent", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#size()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#get(javax.swing.KeyStroke)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#get(javax.swing.KeyStroke)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <returns><see langword="object"/></returns>
         public object Get(Javax.Swing.KeyStroke arg0)
         {
             return IExecute("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#allKeys()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#allKeys()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public Javax.Swing.KeyStroke[] AllKeys()
         {
             return IExecuteArray<Javax.Swing.KeyStroke>("allKeys");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#keys()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#keys()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public Javax.Swing.KeyStroke[] Keys()
         {
             return IExecuteArray<Javax.Swing.KeyStroke>("keys");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#clear()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecute("clear");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#putMap.put(javax.swing.KeyStroke,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#putMap.put(javax.swing.KeyStroke,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
         public void Put(Javax.Swing.KeyStroke arg0, object arg1)
         {
             IExecute("put", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#remove(javax.swing.KeyStroke)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#remove(javax.swing.KeyStroke)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
         public void Remove(Javax.Swing.KeyStroke arg0)
         {
             IExecute("remove", arg0);

@@ -33,6 +33,9 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Tools.SimpleJavaFileObject"/> to <see cref="Javax.Tools.JavaFileObject"/>
+        /// </summary>
         public static implicit operator Javax.Tools.JavaFileObject(Javax.Tools.SimpleJavaFileObject t) => t.Cast<Javax.Tools.JavaFileObject>();
         
         #endregion
@@ -47,64 +50,83 @@ namespace Javax.Tools
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#getLastModified() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#getLastModified()"/> 
         /// </summary>
         public long LastModified
         {
             get { return IExecute<long>("getLastModified"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#delete()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#delete()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Delete()
         {
             return IExecute<bool>("delete");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#openInputStream() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#openInputStream()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Io.InputStream OpenInputStream()
         {
             return IExecute<Java.Io.InputStream>("openInputStream");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#openOutputStream() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#openOutputStream()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Io.OutputStream OpenOutputStream()
         {
             return IExecute<Java.Io.OutputStream>("openOutputStream");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#openReader(boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#openReader(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Io.Reader"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Io.Reader OpenReader(bool arg0)
         {
             return IExecute<Java.Io.Reader>("openReader", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#openWriter() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#openWriter()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Io.Writer"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Io.Writer OpenWriter()
         {
             return IExecute<Java.Io.Writer>("openWriter");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#getCharContent(boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#getCharContent(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.CharSequence GetCharContent(bool arg0)
         {
             return IExecute<Java.Lang.CharSequence>("getCharContent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#toUri()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#toUri()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI ToUri()
         {
             return IExecute<Java.Net.URI>("toUri");

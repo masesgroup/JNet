@@ -46,43 +46,51 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getBinaryStream() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getBinaryStream()"/> 
         /// </summary>
         public Java.Io.InputStream BinaryStream
         {
             get { return IExecute<Java.Io.InputStream>("getBinaryStream"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getCharacterStream() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getCharacterStream()"/> 
         /// </summary>
         public Java.Io.Reader CharacterStream
         {
             get { return IExecute<Java.Io.Reader>("getCharacterStream"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getString() throws java.sql.SQLException https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setString(java.lang.String) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getString()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setString(java.lang.String)"/>
         /// </summary>
         public string String
         {
             get { return IExecute<string>("getString"); } set { IExecute("setString", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setBinaryStream() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setBinaryStream()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.OutputStream SetBinaryStream()
         {
             return IExecute<Java.Io.OutputStream>("setBinaryStream");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setCharacterStream() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setCharacterStream()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Io.Writer"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Writer SetCharacterStream()
         {
             return IExecute<Java.Io.Writer>("setCharacterStream");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#free() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#free()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Sql.SQLException"/>
         public void Free()
         {
             IExecute("free");

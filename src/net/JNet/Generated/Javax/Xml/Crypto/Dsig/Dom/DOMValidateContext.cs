@@ -30,15 +30,19 @@ namespace Javax.Xml.Crypto.Dsig.Dom
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html#<init>(java.security.Key,org.w3c.dom.Node)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html#%3Cinit%3E(java.security.Key,org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
         public DOMValidateContext(Java.Security.Key arg0, Org.W3c.Dom.Node arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html#<init>(javax.xml.crypto.KeySelector,org.w3c.dom.Node)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html#%3Cinit%3E(javax.xml.crypto.KeySelector,org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.KeySelector"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
         public DOMValidateContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
             : base(arg0, arg1)
         {
@@ -47,6 +51,9 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Dom.DOMValidateContext"/> to <see cref="Javax.Xml.Crypto.Dsig.XMLValidateContext"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Crypto.Dsig.XMLValidateContext(Javax.Xml.Crypto.Dsig.Dom.DOMValidateContext t) => t.Cast<Javax.Xml.Crypto.Dsig.XMLValidateContext>();
         
         #endregion
@@ -61,7 +68,7 @@ namespace Javax.Xml.Crypto.Dsig.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html#getNode() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html#setNode(org.w3c.dom.Node)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html#getNode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html#setNode(org.w3c.dom.Node)"/>
         /// </summary>
         public Org.W3c.Dom.Node Node
         {

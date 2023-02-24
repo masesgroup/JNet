@@ -33,42 +33,48 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.PresentationDirection"/> to <see cref="Javax.Print.Attribute.PrintJobAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.PresentationDirection t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.PresentationDirection"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.PresentationDirection t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOBOTTOM_TOLEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOBOTTOM_TOLEFT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PresentationDirection TOBOTTOM_TOLEFT => Clazz.GetField<Javax.Print.Attribute.Standard.PresentationDirection>("TOBOTTOM_TOLEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOBOTTOM_TORIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOBOTTOM_TORIGHT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PresentationDirection TOBOTTOM_TORIGHT => Clazz.GetField<Javax.Print.Attribute.Standard.PresentationDirection>("TOBOTTOM_TORIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOLEFT_TOBOTTOM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOLEFT_TOBOTTOM"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PresentationDirection TOLEFT_TOBOTTOM => Clazz.GetField<Javax.Print.Attribute.Standard.PresentationDirection>("TOLEFT_TOBOTTOM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOLEFT_TOTOP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOLEFT_TOTOP"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PresentationDirection TOLEFT_TOTOP => Clazz.GetField<Javax.Print.Attribute.Standard.PresentationDirection>("TOLEFT_TOTOP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TORIGHT_TOBOTTOM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TORIGHT_TOBOTTOM"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PresentationDirection TORIGHT_TOBOTTOM => Clazz.GetField<Javax.Print.Attribute.Standard.PresentationDirection>("TORIGHT_TOBOTTOM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TORIGHT_TOTOP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TORIGHT_TOTOP"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PresentationDirection TORIGHT_TOTOP => Clazz.GetField<Javax.Print.Attribute.Standard.PresentationDirection>("TORIGHT_TOTOP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOTOP_TOLEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOTOP_TOLEFT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PresentationDirection TOTOP_TOLEFT => Clazz.GetField<Javax.Print.Attribute.Standard.PresentationDirection>("TOTOP_TOLEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOTOP_TORIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOTOP_TORIGHT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PresentationDirection TOTOP_TORIGHT => Clazz.GetField<Javax.Print.Attribute.Standard.PresentationDirection>("TOTOP_TORIGHT");
         
@@ -80,7 +86,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#getName()"/> 
         /// </summary>
         public string Name
         {

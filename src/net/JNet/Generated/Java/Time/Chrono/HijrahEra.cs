@@ -33,13 +33,16 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.HijrahEra"/> to <see cref="Java.Time.Chrono.Era"/>
+        /// </summary>
         public static implicit operator Java.Time.Chrono.Era(Java.Time.Chrono.HijrahEra t) => t.Cast<Java.Time.Chrono.Era>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#AH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#AH"/>
         /// </summary>
         public static Java.Time.Chrono.HijrahEra AH => Clazz.GetField<Java.Time.Chrono.HijrahEra>("AH");
         
@@ -47,8 +50,10 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.HijrahEra"/></returns>
         public static Java.Time.Chrono.HijrahEra[] Values()
         {
             return SExecuteArray<Java.Time.Chrono.HijrahEra>("values");
@@ -58,15 +63,17 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#getValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#getValue()"/> 
         /// </summary>
         public int Value
         {
             get { return IExecute<int>("getValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#range(java.time.temporal.TemporalField)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#range(java.time.temporal.TemporalField)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<Java.Time.Temporal.ValueRange>("range", arg0);

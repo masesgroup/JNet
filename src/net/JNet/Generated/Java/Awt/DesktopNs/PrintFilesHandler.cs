@@ -46,8 +46,9 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PrintFilesHandler.html#printFiles(java.awt.desktop.PrintFilesEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PrintFilesHandler.html#printFiles(java.awt.desktop.PrintFilesEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PrintFilesEvent"/></param>
         public void PrintFiles(Java.Awt.DesktopNs.PrintFilesEvent arg0)
         {
             IExecute("printFiles", arg0);

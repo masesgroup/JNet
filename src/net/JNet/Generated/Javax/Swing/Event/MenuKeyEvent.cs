@@ -30,8 +30,16 @@ namespace Javax.Swing.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyEvent.html#<init>(java.awt.Component,int,long,int,int,char,javax.swing.MenuElement[],javax.swing.MenuSelectionManager)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyEvent.html#%3Cinit%3E(java.awt.Component,int,long,int,int,char,javax.swing.MenuElement[],javax.swing.MenuSelectionManager)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="char"/></param>
+        /// <param name="arg6"><see cref="Javax.Swing.MenuElement"/></param>
+        /// <param name="arg7"><see cref="Javax.Swing.MenuSelectionManager"/></param>
         public MenuKeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5, Javax.Swing.MenuElement[] arg6, Javax.Swing.MenuSelectionManager arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
@@ -53,14 +61,14 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyEvent.html#getMenuSelectionManager() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyEvent.html#getMenuSelectionManager()"/> 
         /// </summary>
         public Javax.Swing.MenuSelectionManager MenuSelectionManager
         {
             get { return IExecute<Javax.Swing.MenuSelectionManager>("getMenuSelectionManager"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyEvent.html#getPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyEvent.html#getPath()"/> 
         /// </summary>
         public Javax.Swing.MenuElement[] Path
         {

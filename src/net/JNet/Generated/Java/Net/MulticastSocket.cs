@@ -30,15 +30,19 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#<init>(int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public MulticastSocket(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#<init>(java.net.SocketAddress) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#%3Cinit%3E(java.net.SocketAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public MulticastSocket(Java.Net.SocketAddress arg0)
             : base(arg0)
         {
@@ -60,57 +64,67 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#getInterface() throws java.net.SocketException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#setInterface(java.net.InetAddress) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#getInterface()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#setInterface(java.net.InetAddress)"/>
         /// </summary>
         public Java.Net.InetAddress Interface
         {
             get { return IExecute<Java.Net.InetAddress>("getInterface"); } set { IExecute("setInterface", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#getLoopbackMode() throws java.net.SocketException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#setLoopbackMode(boolean) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#getLoopbackMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#setLoopbackMode(boolean)"/>
         /// </summary>
         public bool LoopbackMode
         {
             get { return IExecute<bool>("getLoopbackMode"); } set { IExecute("setLoopbackMode", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#getNetworkInterface() throws java.net.SocketException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#setNetworkInterface(java.net.NetworkInterface) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#getNetworkInterface()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#setNetworkInterface(java.net.NetworkInterface)"/>
         /// </summary>
         public Java.Net.NetworkInterface NetworkInterface
         {
             get { return IExecute<Java.Net.NetworkInterface>("getNetworkInterface"); } set { IExecute("setNetworkInterface", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#getTimeToLive() throws java.io.IOException https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#setTimeToLive(int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#getTimeToLive()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#setTimeToLive(int)"/>
         /// </summary>
         public int TimeToLive
         {
             get { return IExecute<int>("getTimeToLive"); } set { IExecute("setTimeToLive", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.InetAddress) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.InetAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void JoinGroup(Java.Net.InetAddress arg0)
         {
             IExecute("joinGroup", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.SocketAddress,java.net.NetworkInterface) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#joinGroup(java.net.SocketAddress,java.net.NetworkInterface)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void JoinGroup(Java.Net.SocketAddress arg0, Java.Net.NetworkInterface arg1)
         {
             IExecute("joinGroup", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.InetAddress) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.InetAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void LeaveGroup(Java.Net.InetAddress arg0)
         {
             IExecute("leaveGroup", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.SocketAddress,java.net.NetworkInterface) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.SocketAddress,java.net.NetworkInterface)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void LeaveGroup(Java.Net.SocketAddress arg0, Java.Net.NetworkInterface arg1)
         {
             IExecute("leaveGroup", arg0, arg1);

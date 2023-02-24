@@ -30,15 +30,19 @@ namespace Javax.Sound.Sampled
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html#<init>(java.io.InputStream,javax.sound.sampled.AudioFormat,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html#%3Cinit%3E(java.io.InputStream,javax.sound.sampled.AudioFormat,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
         public AudioInputStream(Java.Io.InputStream arg0, Javax.Sound.Sampled.AudioFormat arg1, long arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html#<init>(javax.sound.sampled.TargetDataLine)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html#%3Cinit%3E(javax.sound.sampled.TargetDataLine)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.TargetDataLine"/></param>
         public AudioInputStream(Javax.Sound.Sampled.TargetDataLine arg0)
             : base(arg0)
         {
@@ -60,14 +64,14 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html#getFormat() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html#getFormat()"/> 
         /// </summary>
         public Javax.Sound.Sampled.AudioFormat Format
         {
             get { return IExecute<Javax.Sound.Sampled.AudioFormat>("getFormat"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html#getFrameLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioInputStream.html#getFrameLength()"/> 
         /// </summary>
         public long FrameLength
         {

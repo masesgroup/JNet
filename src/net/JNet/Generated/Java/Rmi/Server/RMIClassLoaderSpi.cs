@@ -46,8 +46,11 @@ namespace Java.Rmi.Server
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html#getClassLoader(java.lang.String) throws java.net.MalformedURLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html#getClassLoader(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
+        /// <exception cref="Java.Net.MalformedURLException"/>
         public Java.Lang.ClassLoader GetClassLoader(string arg0)
         {
             return IExecute<Java.Lang.ClassLoader>("getClassLoader", arg0);

@@ -38,27 +38,27 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#TAG_GEO_ASCII_PARAMS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#TAG_GEO_ASCII_PARAMS"/>
         /// </summary>
         public static int TAG_GEO_ASCII_PARAMS => Clazz.GetField<int>("TAG_GEO_ASCII_PARAMS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#TAG_GEO_DOUBLE_PARAMS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#TAG_GEO_DOUBLE_PARAMS"/>
         /// </summary>
         public static int TAG_GEO_DOUBLE_PARAMS => Clazz.GetField<int>("TAG_GEO_DOUBLE_PARAMS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#TAG_GEO_KEY_DIRECTORY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#TAG_GEO_KEY_DIRECTORY"/>
         /// </summary>
         public static int TAG_GEO_KEY_DIRECTORY => Clazz.GetField<int>("TAG_GEO_KEY_DIRECTORY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#TAG_MODEL_PIXEL_SCALE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#TAG_MODEL_PIXEL_SCALE"/>
         /// </summary>
         public static int TAG_MODEL_PIXEL_SCALE => Clazz.GetField<int>("TAG_MODEL_PIXEL_SCALE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#TAG_MODEL_TIE_POINT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#TAG_MODEL_TIE_POINT"/>
         /// </summary>
         public static int TAG_MODEL_TIE_POINT => Clazz.GetField<int>("TAG_MODEL_TIE_POINT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#TAG_MODEL_TRANSFORMATION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#TAG_MODEL_TRANSFORMATION"/>
         /// </summary>
         public static int TAG_MODEL_TRANSFORMATION => Clazz.GetField<int>("TAG_MODEL_TRANSFORMATION");
         
@@ -66,8 +66,10 @@ namespace Javax.Imageio.Plugins.Tiff
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#getInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html#getInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Imageio.Plugins.Tiff.GeoTIFFTagSet"/></returns>
         public static Javax.Imageio.Plugins.Tiff.GeoTIFFTagSet GetInstance()
         {
             return SExecute<Javax.Imageio.Plugins.Tiff.GeoTIFFTagSet>("getInstance");

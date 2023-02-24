@@ -33,6 +33,9 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sound.Midi.Transmitter"/> to <see cref="Java.Lang.AutoCloseable"/>
+        /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Javax.Sound.Midi.Transmitter t) => t.Cast<Java.Lang.AutoCloseable>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Javax.Sound.Midi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html#getReceiver() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html#setReceiver(javax.sound.midi.Receiver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html#getReceiver()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html#setReceiver(javax.sound.midi.Receiver)"/>
         /// </summary>
         public Javax.Sound.Midi.Receiver Receiver
         {
             get { return IExecute<Javax.Sound.Midi.Receiver>("getReceiver"); } set { IExecute("setReceiver", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html#close()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html#close()"/>
         /// </summary>
         public void Close()
         {

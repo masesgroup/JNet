@@ -46,8 +46,10 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetReader.html#readData(javax.sql.RowSetInternal) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetReader.html#readData(javax.sql.RowSetInternal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetInternal"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void ReadData(Javax.Sql.RowSetInternal arg0)
         {
             IExecute("readData", arg0);

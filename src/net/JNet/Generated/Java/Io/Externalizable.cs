@@ -33,6 +33,9 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Io.Externalizable"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Io.Externalizable t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,15 +50,20 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Externalizable.html#readExternal(java.io.ObjectInput) throws java.io.IOException,java.lang.ClassNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Externalizable.html#readExternal(java.io.ObjectInput)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.ObjectInput"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public void ReadExternal(Java.Io.ObjectInput arg0)
         {
             IExecute("readExternal", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Externalizable.html#writeExternal(java.io.ObjectOutput) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Externalizable.html#writeExternal(java.io.ObjectOutput)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void WriteExternal(Java.Io.ObjectOutput arg0)
         {
             IExecute("writeExternal", arg0);

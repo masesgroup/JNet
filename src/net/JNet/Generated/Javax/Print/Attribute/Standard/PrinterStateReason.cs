@@ -33,141 +33,144 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.PrinterStateReason"/> to <see cref="Javax.Print.Attribute.Attribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.Attribute(Javax.Print.Attribute.Standard.PrinterStateReason t) => t.Cast<Javax.Print.Attribute.Attribute>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#CONNECTING_TO_DEVICE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#CONNECTING_TO_DEVICE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason CONNECTING_TO_DEVICE => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("CONNECTING_TO_DEVICE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#COVER_OPEN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#COVER_OPEN"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason COVER_OPEN => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("COVER_OPEN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#DEVELOPER_EMPTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#DEVELOPER_EMPTY"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason DEVELOPER_EMPTY => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("DEVELOPER_EMPTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#DEVELOPER_LOW
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#DEVELOPER_LOW"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason DEVELOPER_LOW => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("DEVELOPER_LOW");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#DOOR_OPEN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#DOOR_OPEN"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason DOOR_OPEN => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("DOOR_OPEN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#FUSER_OVER_TEMP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#FUSER_OVER_TEMP"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason FUSER_OVER_TEMP => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("FUSER_OVER_TEMP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#FUSER_UNDER_TEMP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#FUSER_UNDER_TEMP"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason FUSER_UNDER_TEMP => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("FUSER_UNDER_TEMP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#INPUT_TRAY_MISSING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#INPUT_TRAY_MISSING"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason INPUT_TRAY_MISSING => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("INPUT_TRAY_MISSING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#INTERLOCK_OPEN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#INTERLOCK_OPEN"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason INTERLOCK_OPEN => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("INTERLOCK_OPEN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#INTERPRETER_RESOURCE_UNAVAILABLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#INTERPRETER_RESOURCE_UNAVAILABLE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason INTERPRETER_RESOURCE_UNAVAILABLE => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("INTERPRETER_RESOURCE_UNAVAILABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MARKER_SUPPLY_EMPTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MARKER_SUPPLY_EMPTY"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason MARKER_SUPPLY_EMPTY => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("MARKER_SUPPLY_EMPTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MARKER_SUPPLY_LOW
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MARKER_SUPPLY_LOW"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason MARKER_SUPPLY_LOW => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("MARKER_SUPPLY_LOW");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MARKER_WASTE_ALMOST_FULL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MARKER_WASTE_ALMOST_FULL"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason MARKER_WASTE_ALMOST_FULL => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("MARKER_WASTE_ALMOST_FULL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MARKER_WASTE_FULL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MARKER_WASTE_FULL"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason MARKER_WASTE_FULL => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("MARKER_WASTE_FULL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MEDIA_EMPTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MEDIA_EMPTY"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason MEDIA_EMPTY => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("MEDIA_EMPTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MEDIA_JAM
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MEDIA_JAM"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason MEDIA_JAM => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("MEDIA_JAM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MEDIA_LOW
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MEDIA_LOW"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason MEDIA_LOW => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("MEDIA_LOW");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MEDIA_NEEDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MEDIA_NEEDED"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason MEDIA_NEEDED => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("MEDIA_NEEDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MOVING_TO_PAUSED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#MOVING_TO_PAUSED"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason MOVING_TO_PAUSED => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("MOVING_TO_PAUSED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#OPC_LIFE_OVER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#OPC_LIFE_OVER"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason OPC_LIFE_OVER => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("OPC_LIFE_OVER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#OPC_NEAR_EOL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#OPC_NEAR_EOL"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason OPC_NEAR_EOL => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("OPC_NEAR_EOL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#OTHER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#OTHER"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason OTHER => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("OTHER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#OUTPUT_AREA_ALMOST_FULL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#OUTPUT_AREA_ALMOST_FULL"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason OUTPUT_AREA_ALMOST_FULL => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("OUTPUT_AREA_ALMOST_FULL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#OUTPUT_AREA_FULL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#OUTPUT_AREA_FULL"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason OUTPUT_AREA_FULL => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("OUTPUT_AREA_FULL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#OUTPUT_TRAY_MISSING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#OUTPUT_TRAY_MISSING"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason OUTPUT_TRAY_MISSING => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("OUTPUT_TRAY_MISSING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#PAUSED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#PAUSED"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason PAUSED => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("PAUSED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#SHUTDOWN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#SHUTDOWN"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason SHUTDOWN => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("SHUTDOWN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#SPOOL_AREA_FULL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#SPOOL_AREA_FULL"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason SPOOL_AREA_FULL => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("SPOOL_AREA_FULL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#STOPPED_PARTLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#STOPPED_PARTLY"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason STOPPED_PARTLY => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("STOPPED_PARTLY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#STOPPING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#STOPPING"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason STOPPING => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("STOPPING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#TIMED_OUT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#TIMED_OUT"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason TIMED_OUT => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("TIMED_OUT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#TONER_EMPTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#TONER_EMPTY"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason TONER_EMPTY => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("TONER_EMPTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#TONER_LOW
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#TONER_LOW"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterStateReason TONER_LOW => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterStateReason>("TONER_LOW");
         
@@ -179,7 +182,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReason.html#getName()"/> 
         /// </summary>
         public string Name
         {

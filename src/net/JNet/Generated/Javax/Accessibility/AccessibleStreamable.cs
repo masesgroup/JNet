@@ -46,15 +46,17 @@ namespace Javax.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStreamable.html#getMimeTypes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStreamable.html#getMimeTypes()"/> 
         /// </summary>
         public Java.Awt.Datatransfer.DataFlavor[] MimeTypes
         {
             get { return IExecuteArray<Java.Awt.Datatransfer.DataFlavor>("getMimeTypes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStreamable.html#getStream(java.awt.datatransfer.DataFlavor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStreamable.html#getStream(java.awt.datatransfer.DataFlavor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
         public Java.Io.InputStream GetStream(Java.Awt.Datatransfer.DataFlavor arg0)
         {
             return IExecute<Java.Io.InputStream>("getStream", arg0);

@@ -33,6 +33,9 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.Html.CSS"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.CSS t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -43,15 +46,17 @@ namespace Javax.Swing.Text.Html
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.html#getAllAttributeKeys() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.html#getAllAttributeKeys()"/> 
         /// </summary>
         public static Javax.Swing.Text.Html.CSS.Attribute[] AllAttributeKeys
         {
             get { return SExecuteArray<Javax.Swing.Text.Html.CSS.Attribute>("getAllAttributeKeys"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.html#getAttribute(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.html#getAttribute(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Html.CSS.Attribute"/></returns>
         public static Javax.Swing.Text.Html.CSS.Attribute GetAttribute(string arg0)
         {
             return SExecute<Javax.Swing.Text.Html.CSS.Attribute>("getAttribute", arg0);
@@ -77,247 +82,247 @@ namespace Javax.Swing.Text.Html
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BACKGROUND");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_ATTACHMENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_ATTACHMENT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_ATTACHMENT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BACKGROUND_ATTACHMENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_COLOR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_COLOR"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_COLOR => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BACKGROUND_COLOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_IMAGE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_IMAGE"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_IMAGE => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BACKGROUND_IMAGE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_POSITION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_POSITION"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_POSITION => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BACKGROUND_POSITION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_REPEAT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_REPEAT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_REPEAT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BACKGROUND_REPEAT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_BOTTOM
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_BOTTOM"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_BOTTOM => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_BOTTOM");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_BOTTOM_COLOR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_BOTTOM_COLOR"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_BOTTOM_COLOR => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_BOTTOM_COLOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_BOTTOM_STYLE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_BOTTOM_STYLE"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_BOTTOM_STYLE => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_BOTTOM_STYLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_BOTTOM_WIDTH
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_BOTTOM_WIDTH"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_BOTTOM_WIDTH => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_BOTTOM_WIDTH");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_COLOR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_COLOR"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_COLOR => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_COLOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_LEFT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_LEFT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_LEFT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_LEFT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_LEFT_COLOR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_LEFT_COLOR"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_LEFT_COLOR => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_LEFT_COLOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_LEFT_STYLE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_LEFT_STYLE"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_LEFT_STYLE => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_LEFT_STYLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_LEFT_WIDTH
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_LEFT_WIDTH"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_LEFT_WIDTH => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_LEFT_WIDTH");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_RIGHT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_RIGHT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_RIGHT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_RIGHT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_RIGHT_COLOR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_RIGHT_COLOR"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_RIGHT_COLOR => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_RIGHT_COLOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_RIGHT_STYLE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_RIGHT_STYLE"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_RIGHT_STYLE => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_RIGHT_STYLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_RIGHT_WIDTH
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_RIGHT_WIDTH"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_RIGHT_WIDTH => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_RIGHT_WIDTH");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_STYLE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_STYLE"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_STYLE => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_STYLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_TOP
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_TOP"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_TOP => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_TOP");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_TOP_COLOR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_TOP_COLOR"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_TOP_COLOR => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_TOP_COLOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_TOP_STYLE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_TOP_STYLE"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_TOP_STYLE => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_TOP_STYLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_TOP_WIDTH
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_TOP_WIDTH"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_TOP_WIDTH => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_TOP_WIDTH");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_WIDTH
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_WIDTH"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute BORDER_WIDTH => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("BORDER_WIDTH");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#CLEAR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#CLEAR"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute CLEAR => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("CLEAR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#COLOR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#COLOR"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute COLOR => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("COLOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#DISPLAY
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#DISPLAY"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute DISPLAY => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("DISPLAY");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FLOAT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FLOAT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute FLOAT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("FLOAT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute FONT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("FONT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_FAMILY
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_FAMILY"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute FONT_FAMILY => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("FONT_FAMILY");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_SIZE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_SIZE"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute FONT_SIZE => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("FONT_SIZE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_STYLE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_STYLE"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute FONT_STYLE => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("FONT_STYLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_VARIANT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_VARIANT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute FONT_VARIANT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("FONT_VARIANT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_WEIGHT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_WEIGHT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute FONT_WEIGHT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("FONT_WEIGHT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#HEIGHT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#HEIGHT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute HEIGHT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("HEIGHT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LETTER_SPACING
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LETTER_SPACING"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute LETTER_SPACING => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("LETTER_SPACING");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LINE_HEIGHT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LINE_HEIGHT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute LINE_HEIGHT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("LINE_HEIGHT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LIST_STYLE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LIST_STYLE"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute LIST_STYLE => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("LIST_STYLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LIST_STYLE_IMAGE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LIST_STYLE_IMAGE"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute LIST_STYLE_IMAGE => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("LIST_STYLE_IMAGE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LIST_STYLE_POSITION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LIST_STYLE_POSITION"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute LIST_STYLE_POSITION => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("LIST_STYLE_POSITION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LIST_STYLE_TYPE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LIST_STYLE_TYPE"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute LIST_STYLE_TYPE => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("LIST_STYLE_TYPE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute MARGIN => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("MARGIN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN_BOTTOM
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN_BOTTOM"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute MARGIN_BOTTOM => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("MARGIN_BOTTOM");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN_LEFT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN_LEFT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute MARGIN_LEFT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("MARGIN_LEFT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN_RIGHT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN_RIGHT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute MARGIN_RIGHT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("MARGIN_RIGHT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN_TOP
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN_TOP"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute MARGIN_TOP => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("MARGIN_TOP");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute PADDING => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("PADDING");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING_BOTTOM
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING_BOTTOM"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute PADDING_BOTTOM => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("PADDING_BOTTOM");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING_LEFT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING_LEFT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute PADDING_LEFT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("PADDING_LEFT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING_RIGHT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING_RIGHT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute PADDING_RIGHT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("PADDING_RIGHT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING_TOP
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING_TOP"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute PADDING_TOP => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("PADDING_TOP");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#TEXT_ALIGN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#TEXT_ALIGN"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute TEXT_ALIGN => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("TEXT_ALIGN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#TEXT_DECORATION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#TEXT_DECORATION"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute TEXT_DECORATION => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("TEXT_DECORATION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#TEXT_INDENT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#TEXT_INDENT"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute TEXT_INDENT => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("TEXT_INDENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#TEXT_TRANSFORM
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#TEXT_TRANSFORM"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute TEXT_TRANSFORM => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("TEXT_TRANSFORM");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#VERTICAL_ALIGN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#VERTICAL_ALIGN"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute VERTICAL_ALIGN => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("VERTICAL_ALIGN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WHITE_SPACE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WHITE_SPACE"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute WHITE_SPACE => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("WHITE_SPACE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WIDTH
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WIDTH"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute WIDTH => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("WIDTH");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WORD_SPACING
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WORD_SPACING"/>
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute WORD_SPACING => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("WORD_SPACING");
             
@@ -329,15 +334,17 @@ namespace Javax.Swing.Text.Html
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#getDefaultValue() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#getDefaultValue()"/> 
             /// </summary>
             public string DefaultValue
             {
                 get { return IExecute<string>("getDefaultValue"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#isInherited()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#isInherited()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool IsInherited()
             {
                 return IExecute<bool>("isInherited");

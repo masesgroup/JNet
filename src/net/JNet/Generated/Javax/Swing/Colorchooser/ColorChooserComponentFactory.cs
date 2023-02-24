@@ -42,14 +42,14 @@ namespace Javax.Swing.Colorchooser
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/ColorChooserComponentFactory.html#getDefaultChooserPanels() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/ColorChooserComponentFactory.html#getDefaultChooserPanels()"/> 
         /// </summary>
         public static Javax.Swing.Colorchooser.AbstractColorChooserPanel[] DefaultChooserPanels
         {
             get { return SExecuteArray<Javax.Swing.Colorchooser.AbstractColorChooserPanel>("getDefaultChooserPanels"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/ColorChooserComponentFactory.html#getPreviewPanel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/ColorChooserComponentFactory.html#getPreviewPanel()"/> 
         /// </summary>
         public static Javax.Swing.JComponent PreviewPanel
         {

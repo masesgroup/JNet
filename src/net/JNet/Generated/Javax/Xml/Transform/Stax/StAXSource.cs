@@ -30,15 +30,18 @@ namespace Javax.Xml.Transform.Stax
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#<init>(javax.xml.stream.XMLEventReader) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#%3Cinit%3E(javax.xml.stream.XMLEventReader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLEventReader"/></param>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public StAXSource(Javax.Xml.Stream.XMLEventReader arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#<init>(javax.xml.stream.XMLStreamReader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#%3Cinit%3E(javax.xml.stream.XMLStreamReader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamReader"/></param>
         public StAXSource(Javax.Xml.Stream.XMLStreamReader arg0)
             : base(arg0)
         {
@@ -47,13 +50,16 @@ namespace Javax.Xml.Transform.Stax
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Transform.Stax.StAXSource"/> to <see cref="Javax.Xml.Transform.Source"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Transform.Source(Javax.Xml.Transform.Stax.StAXSource t) => t.Cast<Javax.Xml.Transform.Source>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#FEATURE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#FEATURE"/>
         /// </summary>
         public static string FEATURE => Clazz.GetField<string>("FEATURE");
         
@@ -65,29 +71,31 @@ namespace Javax.Xml.Transform.Stax
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#getSystemId() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#setSystemId(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public string SystemId
         {
             get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#getXMLEventReader() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#getXMLEventReader()"/> 
         /// </summary>
         public Javax.Xml.Stream.XMLEventReader XMLEventReader
         {
             get { return IExecute<Javax.Xml.Stream.XMLEventReader>("getXMLEventReader"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#getXMLStreamReader() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#getXMLStreamReader()"/> 
         /// </summary>
         public Javax.Xml.Stream.XMLStreamReader XMLStreamReader
         {
             get { return IExecute<Javax.Xml.Stream.XMLStreamReader>("getXMLStreamReader"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#isEmpty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html#isEmpty()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecute<bool>("isEmpty");

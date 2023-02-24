@@ -30,22 +30,28 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#<init>(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public JEditorPane(string arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#<init>(java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public JEditorPane(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#<init>(java.net.URL) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#%3Cinit%3E(java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public JEditorPane(Java.Net.URL arg0)
             : base(arg0)
         {
@@ -59,11 +65,11 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#HONOR_DISPLAY_PROPERTIES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#HONOR_DISPLAY_PROPERTIES"/>
         /// </summary>
         public static string HONOR_DISPLAY_PROPERTIES => Clazz.GetField<string>("HONOR_DISPLAY_PROPERTIES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#W3C_LENGTH_UNITS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#W3C_LENGTH_UNITS"/>
         /// </summary>
         public static string W3C_LENGTH_UNITS => Clazz.GetField<string>("W3C_LENGTH_UNITS");
         
@@ -71,29 +77,38 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitClassNameForContentType(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitClassNameForContentType(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string GetEditorKitClassNameForContentType(string arg0)
         {
             return SExecute<string>("getEditorKitClassNameForContentType", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#createEditorKitForContentType(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#createEditorKitForContentType(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Text.EditorKit"/></returns>
         public static Javax.Swing.Text.EditorKit CreateEditorKitForContentType(string arg0)
         {
             return SExecute<Javax.Swing.Text.EditorKit>("createEditorKitForContentType", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String,java.lang.ClassLoader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         public static void RegisterEditorKitForContentType(string arg0, string arg1, Java.Lang.ClassLoader arg2)
         {
             SExecute("registerEditorKitForContentType", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public static void RegisterEditorKitForContentType(string arg0, string arg1)
         {
             SExecute("registerEditorKitForContentType", arg0, arg1);
@@ -103,92 +118,107 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getContentType() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setContentType(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getContentType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setContentType(java.lang.String)"/>
         /// </summary>
         public string ContentType
         {
             get { return IExecute<string>("getContentType"); } set { IExecute("setContentType", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKit() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setEditorKit(javax.swing.text.EditorKit)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKit()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setEditorKit(javax.swing.text.EditorKit)"/>
         /// </summary>
         public Javax.Swing.Text.EditorKit EditorKit
         {
             get { return IExecute<Javax.Swing.Text.EditorKit>("getEditorKit"); } set { IExecute("setEditorKit", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getHyperlinkListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getHyperlinkListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.HyperlinkListener[] HyperlinkListeners
         {
             get { return IExecuteArray<Javax.Swing.Event.HyperlinkListener>("getHyperlinkListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getPage() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getPage()"/> 
         /// </summary>
         public Java.Net.URL Page
         {
             get { return IExecute<Java.Net.URL>("getPage"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitForContentType(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitForContentType(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Swing.Text.EditorKit"/></returns>
         public Javax.Swing.Text.EditorKit GetEditorKitForContentType(string arg0)
         {
             return IExecute<Javax.Swing.Text.EditorKit>("getEditorKitForContentType", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#addHyperlinkListener(javax.swing.event.HyperlinkListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#addHyperlinkListener(javax.swing.event.HyperlinkListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkListener"/></param>
         public void AddHyperlinkListener(Javax.Swing.Event.HyperlinkListener arg0)
         {
             IExecute("addHyperlinkListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#removeHyperlinkListener(javax.swing.event.HyperlinkListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#removeHyperlinkListener(javax.swing.event.HyperlinkListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkListener"/></param>
         public void RemoveHyperlinkListener(Javax.Swing.Event.HyperlinkListener arg0)
         {
             IExecute("removeHyperlinkListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#fireHyperlinkUpdate(javax.swing.event.HyperlinkEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#fireHyperlinkUpdate(javax.swing.event.HyperlinkEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkEvent"/></param>
         public void FireHyperlinkUpdate(Javax.Swing.Event.HyperlinkEvent arg0)
         {
             IExecute("fireHyperlinkUpdate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#read(java.io.InputStream,java.lang.Object) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#read(java.io.InputStream,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Read(Java.Io.InputStream arg0, object arg1)
         {
             IExecute("read", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#scrollToReference(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#scrollToReference(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void ScrollToReference(string arg0)
         {
             IExecute("scrollToReference", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setEditorKitForContentType(java.lang.String,javax.swing.text.EditorKit)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setEditorKitForContentType(java.lang.String,javax.swing.text.EditorKit)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Text.EditorKit"/></param>
         public void SetEditorKitForContentType(string arg0, Javax.Swing.Text.EditorKit arg1)
         {
             IExecute("setEditorKitForContentType", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setPage(java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setPage(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void SetPage(string arg0)
         {
             IExecute("setPage", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setPage(java.net.URL) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setPage(java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void SetPage(Java.Net.URL arg0)
         {
             IExecute("setPage", arg0);

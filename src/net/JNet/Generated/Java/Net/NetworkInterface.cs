@@ -42,22 +42,31 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getByIndex(int) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getByIndex(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
         public static Java.Net.NetworkInterface GetByIndex(int arg0)
         {
             return SExecute<Java.Net.NetworkInterface>("getByIndex", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getByInetAddress(java.net.InetAddress) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getByInetAddress(java.net.InetAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
         public static Java.Net.NetworkInterface GetByInetAddress(Java.Net.InetAddress arg0)
         {
             return SExecute<Java.Net.NetworkInterface>("getByInetAddress", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getByName(java.lang.String) throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getByName(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
         public static Java.Net.NetworkInterface GetByName(string arg0)
         {
             return SExecute<Java.Net.NetworkInterface>("getByName", arg0);
@@ -67,78 +76,92 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getDisplayName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getDisplayName()"/> 
         /// </summary>
         public string DisplayName
         {
             get { return IExecute<string>("getDisplayName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getHardwareAddress() throws java.net.SocketException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getHardwareAddress()"/> 
         /// </summary>
         public byte[] HardwareAddress
         {
             get { return IExecuteArray<byte>("getHardwareAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getIndex() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getIndex()"/> 
         /// </summary>
         public int Index
         {
             get { return IExecute<int>("getIndex"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getMTU() throws java.net.SocketException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getMTU()"/> 
         /// </summary>
         public int MTU
         {
             get { return IExecute<int>("getMTU"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getParent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getParent()"/> 
         /// </summary>
         public Java.Net.NetworkInterface Parent
         {
             get { return IExecute<Java.Net.NetworkInterface>("getParent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isLoopback() throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isLoopback()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
         public bool IsLoopback()
         {
             return IExecute<bool>("isLoopback");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isPointToPoint() throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isPointToPoint()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
         public bool IsPointToPoint()
         {
             return IExecute<bool>("isPointToPoint");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isUp() throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isUp()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
         public bool IsUp()
         {
             return IExecute<bool>("isUp");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isVirtual()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#isVirtual()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsVirtual()
         {
             return IExecute<bool>("isVirtual");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#supportsMulticast() throws java.net.SocketException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#supportsMulticast()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
         public bool SupportsMulticast()
         {
             return IExecute<bool>("supportsMulticast");

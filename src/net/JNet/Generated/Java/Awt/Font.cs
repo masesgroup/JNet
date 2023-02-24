@@ -30,8 +30,11 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#<init>(java.lang.String,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#%3Cinit%3E(java.lang.String,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public Font(string arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -40,77 +43,80 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Font"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Font t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#BOLD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#BOLD"/>
         /// </summary>
         public static int BOLD => Clazz.GetField<int>("BOLD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#CENTER_BASELINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#CENTER_BASELINE"/>
         /// </summary>
         public static int CENTER_BASELINE => Clazz.GetField<int>("CENTER_BASELINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#HANGING_BASELINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#HANGING_BASELINE"/>
         /// </summary>
         public static int HANGING_BASELINE => Clazz.GetField<int>("HANGING_BASELINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#ITALIC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#ITALIC"/>
         /// </summary>
         public static int ITALIC => Clazz.GetField<int>("ITALIC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_LEFT_TO_RIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_LEFT_TO_RIGHT"/>
         /// </summary>
         public static int LAYOUT_LEFT_TO_RIGHT => Clazz.GetField<int>("LAYOUT_LEFT_TO_RIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_NO_LIMIT_CONTEXT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_NO_LIMIT_CONTEXT"/>
         /// </summary>
         public static int LAYOUT_NO_LIMIT_CONTEXT => Clazz.GetField<int>("LAYOUT_NO_LIMIT_CONTEXT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_NO_START_CONTEXT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_NO_START_CONTEXT"/>
         /// </summary>
         public static int LAYOUT_NO_START_CONTEXT => Clazz.GetField<int>("LAYOUT_NO_START_CONTEXT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_RIGHT_TO_LEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_RIGHT_TO_LEFT"/>
         /// </summary>
         public static int LAYOUT_RIGHT_TO_LEFT => Clazz.GetField<int>("LAYOUT_RIGHT_TO_LEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#PLAIN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#PLAIN"/>
         /// </summary>
         public static int PLAIN => Clazz.GetField<int>("PLAIN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#ROMAN_BASELINE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#ROMAN_BASELINE"/>
         /// </summary>
         public static int ROMAN_BASELINE => Clazz.GetField<int>("ROMAN_BASELINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#TRUETYPE_FONT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#TRUETYPE_FONT"/>
         /// </summary>
         public static int TRUETYPE_FONT => Clazz.GetField<int>("TRUETYPE_FONT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#TYPE1_FONT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#TYPE1_FONT"/>
         /// </summary>
         public static int TYPE1_FONT => Clazz.GetField<int>("TYPE1_FONT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#DIALOG
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#DIALOG"/>
         /// </summary>
         public static string DIALOG => Clazz.GetField<string>("DIALOG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#DIALOG_INPUT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#DIALOG_INPUT"/>
         /// </summary>
         public static string DIALOG_INPUT => Clazz.GetField<string>("DIALOG_INPUT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#MONOSPACED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#MONOSPACED"/>
         /// </summary>
         public static string MONOSPACED => Clazz.GetField<string>("MONOSPACED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#SANS_SERIF
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#SANS_SERIF"/>
         /// </summary>
         public static string SANS_SERIF => Clazz.GetField<string>("SANS_SERIF");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#SERIF
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#SERIF"/>
         /// </summary>
         public static string SERIF => Clazz.GetField<string>("SERIF");
         
@@ -118,57 +124,86 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#textRequiresLayout(char[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#textRequiresLayout(char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool TextRequiresLayout(char[] arg0, int arg1, int arg2)
         {
             return SExecute<bool>("textRequiresLayout", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFont(int,java.io.File) throws java.awt.FontFormatException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFont(int,java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
+        /// <exception cref="Java.Awt.FontFormatException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.Font CreateFont(int arg0, Java.Io.File arg1)
         {
             return SExecute<Java.Awt.Font>("createFont", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFont(int,java.io.InputStream) throws java.awt.FontFormatException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFont(int,java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
+        /// <exception cref="Java.Awt.FontFormatException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.Font CreateFont(int arg0, Java.Io.InputStream arg1)
         {
             return SExecute<Java.Awt.Font>("createFont", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#decode(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#decode(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font Decode(string arg0)
         {
             return SExecute<Java.Awt.Font>("decode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFont(java.lang.String,java.awt.Font)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFont(java.lang.String,java.awt.Font)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Font"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font GetFont(string arg0, Java.Awt.Font arg1)
         {
             return SExecute<Java.Awt.Font>("getFont", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFont(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFont(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font GetFont(string arg0)
         {
             return SExecute<Java.Awt.Font>("getFont", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFonts(java.io.File) throws java.awt.FontFormatException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFonts(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
+        /// <exception cref="Java.Awt.FontFormatException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.Font[] CreateFonts(Java.Io.File arg0)
         {
             return SExecuteArray<Java.Awt.Font>("createFonts", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFonts(java.io.InputStream) throws java.awt.FontFormatException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFonts(java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
+        /// <exception cref="Java.Awt.FontFormatException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.Font[] CreateFonts(Java.Io.InputStream arg0)
         {
             return SExecuteArray<Java.Awt.Font>("createFonts", arg0);
@@ -178,316 +213,416 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getAvailableAttributes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getAvailableAttributes()"/> 
         /// </summary>
         public Java.Text.AttributedCharacterIterator.Attribute[] AvailableAttributes
         {
             get { return IExecuteArray<Java.Text.AttributedCharacterIterator.Attribute>("getAvailableAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFamily() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFamily()"/> 
         /// </summary>
         public string Family
         {
             get { return IExecute<string>("getFamily"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFontName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFontName()"/> 
         /// </summary>
         public string FontName
         {
             get { return IExecute<string>("getFontName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getItalicAngle() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getItalicAngle()"/> 
         /// </summary>
         public float ItalicAngle
         {
             get { return IExecute<float>("getItalicAngle"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getMissingGlyphCode() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getMissingGlyphCode()"/> 
         /// </summary>
         public int MissingGlyphCode
         {
             get { return IExecute<int>("getMissingGlyphCode"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getNumGlyphs() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getNumGlyphs()"/> 
         /// </summary>
         public int NumGlyphs
         {
             get { return IExecute<int>("getNumGlyphs"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getPSName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getPSName()"/> 
         /// </summary>
         public string PSName
         {
             get { return IExecute<string>("getPSName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getSize()"/> 
         /// </summary>
         public int Size
         {
             get { return IExecute<int>("getSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getSize2D() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getSize2D()"/> 
         /// </summary>
         public float Size2D
         {
             get { return IExecute<float>("getSize2D"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStyle() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStyle()"/> 
         /// </summary>
         public int Style
         {
             get { return IExecute<int>("getStyle"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getTransform() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getTransform()"/> 
         /// </summary>
         public Java.Awt.Geom.AffineTransform Transform
         {
             get { return IExecute<Java.Awt.Geom.AffineTransform>("getTransform"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplay(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplay(char)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="char"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CanDisplay(char arg0)
         {
             return IExecute<bool>("canDisplay", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplay(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplay(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CanDisplay(int arg0)
         {
             return IExecute<bool>("canDisplay", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#hasLayoutAttributes()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#hasLayoutAttributes()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasLayoutAttributes()
         {
             return IExecute<bool>("hasLayoutAttributes");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#hasUniformLineMetrics()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#hasUniformLineMetrics()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasUniformLineMetrics()
         {
             return IExecute<bool>("hasUniformLineMetrics");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isBold()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isBold()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsBold()
         {
             return IExecute<bool>("isBold");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isItalic()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isItalic()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsItalic()
         {
             return IExecute<bool>("isItalic");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isPlain()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isPlain()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPlain()
         {
             return IExecute<bool>("isPlain");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isTransformed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#isTransformed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsTransformed()
         {
             return IExecute<bool>("isTransformed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getBaselineFor(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getBaselineFor(char)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="char"/></param>
+        /// <returns><see langword="byte"/></returns>
         public byte GetBaselineFor(char arg0)
         {
             return IExecute<byte>("getBaselineFor", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplayUpTo(char[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplayUpTo(char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CanDisplayUpTo(char[] arg0, int arg1, int arg2)
         {
             return IExecute<int>("canDisplayUpTo", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplayUpTo(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplayUpTo(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CanDisplayUpTo(string arg0)
         {
             return IExecute<int>("canDisplayUpTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplayUpTo(java.text.CharacterIterator,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplayUpTo(java.text.CharacterIterator,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CanDisplayUpTo(Java.Text.CharacterIterator arg0, int arg1, int arg2)
         {
             return IExecute<int>("canDisplayUpTo", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveFont(float arg0)
         {
             return IExecute<Java.Awt.Font>("deriveFont", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(int,float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(int,float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveFont(int arg0, float arg1)
         {
             return IExecute<Java.Awt.Font>("deriveFont", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(int,java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(int,java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveFont(int arg0, Java.Awt.Geom.AffineTransform arg1)
         {
             return IExecute<Java.Awt.Font>("deriveFont", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveFont(int arg0)
         {
             return IExecute<Java.Awt.Font>("deriveFont", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveFont(Java.Awt.Geom.AffineTransform arg0)
         {
             return IExecute<Java.Awt.Font>("deriveFont", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createGlyphVector(java.awt.font.FontRenderContext,char[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createGlyphVector(java.awt.font.FontRenderContext,char[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.GlyphVector"/></returns>
         public Java.Awt.FontNs.GlyphVector CreateGlyphVector(Java.Awt.FontNs.FontRenderContext arg0, char[] arg1)
         {
             return IExecute<Java.Awt.FontNs.GlyphVector>("createGlyphVector", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createGlyphVector(java.awt.font.FontRenderContext,int[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createGlyphVector(java.awt.font.FontRenderContext,int[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.GlyphVector"/></returns>
         public Java.Awt.FontNs.GlyphVector CreateGlyphVector(Java.Awt.FontNs.FontRenderContext arg0, int[] arg1)
         {
             return IExecute<Java.Awt.FontNs.GlyphVector>("createGlyphVector", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createGlyphVector(java.awt.font.FontRenderContext,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createGlyphVector(java.awt.font.FontRenderContext,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.GlyphVector"/></returns>
         public Java.Awt.FontNs.GlyphVector CreateGlyphVector(Java.Awt.FontNs.FontRenderContext arg0, string arg1)
         {
             return IExecute<Java.Awt.FontNs.GlyphVector>("createGlyphVector", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createGlyphVector(java.awt.font.FontRenderContext,java.text.CharacterIterator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createGlyphVector(java.awt.font.FontRenderContext,java.text.CharacterIterator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <param name="arg1"><see cref="Java.Text.CharacterIterator"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.GlyphVector"/></returns>
         public Java.Awt.FontNs.GlyphVector CreateGlyphVector(Java.Awt.FontNs.FontRenderContext arg0, Java.Text.CharacterIterator arg1)
         {
             return IExecute<Java.Awt.FontNs.GlyphVector>("createGlyphVector", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#layoutGlyphVector(java.awt.font.FontRenderContext,char[],int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#layoutGlyphVector(java.awt.font.FontRenderContext,char[],int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.GlyphVector"/></returns>
         public Java.Awt.FontNs.GlyphVector LayoutGlyphVector(Java.Awt.FontNs.FontRenderContext arg0, char[] arg1, int arg2, int arg3, int arg4)
         {
             return IExecute<Java.Awt.FontNs.GlyphVector>("layoutGlyphVector", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(char[],int,int,java.awt.font.FontRenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(char[],int,int,java.awt.font.FontRenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(char[] arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
         {
             return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(java.lang.String,int,int,java.awt.font.FontRenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(java.lang.String,int,int,java.awt.font.FontRenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(string arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
         {
             return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(java.lang.String,java.awt.font.FontRenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(java.lang.String,java.awt.font.FontRenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(string arg0, Java.Awt.FontNs.FontRenderContext arg1)
         {
             return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(java.text.CharacterIterator,int,int,java.awt.font.FontRenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(java.text.CharacterIterator,int,int,java.awt.font.FontRenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Text.CharacterIterator arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
         {
             return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getMaxCharBounds(java.awt.font.FontRenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getMaxCharBounds(java.awt.font.FontRenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetMaxCharBounds(Java.Awt.FontNs.FontRenderContext arg0)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getMaxCharBounds", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(char[],int,int,java.awt.font.FontRenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(char[],int,int,java.awt.font.FontRenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(char[] arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(java.lang.String,int,int,java.awt.font.FontRenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(java.lang.String,int,int,java.awt.font.FontRenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(string arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(java.lang.String,java.awt.font.FontRenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(java.lang.String,java.awt.font.FontRenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(string arg0, Java.Awt.FontNs.FontRenderContext arg1)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(java.text.CharacterIterator,int,int,java.awt.font.FontRenderContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(java.text.CharacterIterator,int,int,java.awt.font.FontRenderContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Text.CharacterIterator arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
         {
             return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFamily(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFamily(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetFamily(Java.Util.Locale arg0)
         {
             return IExecute<string>("getFamily", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFontName(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFontName(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetFontName(Java.Util.Locale arg0)
         {
             return IExecute<string>("getFontName", arg0);

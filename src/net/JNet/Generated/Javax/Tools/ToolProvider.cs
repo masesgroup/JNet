@@ -42,14 +42,14 @@ namespace Javax.Tools
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ToolProvider.html#getSystemDocumentationTool() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ToolProvider.html#getSystemDocumentationTool()"/> 
         /// </summary>
         public static Javax.Tools.DocumentationTool SystemDocumentationTool
         {
             get { return SExecute<Javax.Tools.DocumentationTool>("getSystemDocumentationTool"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ToolProvider.html#getSystemJavaCompiler() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ToolProvider.html#getSystemJavaCompiler()"/> 
         /// </summary>
         public static Javax.Tools.JavaCompiler SystemJavaCompiler
         {

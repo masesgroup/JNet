@@ -30,8 +30,10 @@ namespace Javax.Security.Auth
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/PrivateCredentialPermission.html#<init>(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/PrivateCredentialPermission.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public PrivateCredentialPermission(string arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -53,14 +55,14 @@ namespace Javax.Security.Auth
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/PrivateCredentialPermission.html#getCredentialClass() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/PrivateCredentialPermission.html#getCredentialClass()"/> 
         /// </summary>
         public string CredentialClass
         {
             get { return IExecute<string>("getCredentialClass"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/PrivateCredentialPermission.html#getPrincipals() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/PrivateCredentialPermission.html#getPrincipals()"/> 
         /// </summary>
         public string[] Principals
         {

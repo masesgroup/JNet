@@ -30,8 +30,12 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html#<init>(java.security.spec.EllipticCurve,java.security.spec.ECPoint,java.math.BigInteger,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html#%3Cinit%3E(java.security.spec.EllipticCurve,java.security.spec.ECPoint,java.math.BigInteger,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Spec.EllipticCurve"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Spec.ECPoint"/></param>
+        /// <param name="arg2"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public ECParameterSpec(Java.Security.Spec.EllipticCurve arg0, Java.Security.Spec.ECPoint arg1, Java.Math.BigInteger arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -40,6 +44,9 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Spec.ECParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
+        /// </summary>
         public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Java.Security.Spec.ECParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
         
         #endregion
@@ -54,28 +61,28 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html#getCofactor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html#getCofactor()"/> 
         /// </summary>
         public int Cofactor
         {
             get { return IExecute<int>("getCofactor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html#getCurve() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html#getCurve()"/> 
         /// </summary>
         public Java.Security.Spec.EllipticCurve Curve
         {
             get { return IExecute<Java.Security.Spec.EllipticCurve>("getCurve"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html#getGenerator() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html#getGenerator()"/> 
         /// </summary>
         public Java.Security.Spec.ECPoint Generator
         {
             get { return IExecute<Java.Security.Spec.ECPoint>("getGenerator"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html#getOrder() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html#getOrder()"/> 
         /// </summary>
         public Java.Math.BigInteger Order
         {

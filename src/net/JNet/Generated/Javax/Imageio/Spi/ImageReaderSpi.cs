@@ -30,8 +30,26 @@ namespace Javax.Imageio.Spi
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#<init>(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,java.lang.Class<?>[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,java.lang.Class%3C?%3E[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg5"><see langword="string"/></param>
+        /// <param name="arg6"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg7"><see cref="string"/></param>
+        /// <param name="arg8"><see langword="bool"/></param>
+        /// <param name="arg9"><see langword="string"/></param>
+        /// <param name="arg10"><see langword="string"/></param>
+        /// <param name="arg11"><see cref="string"/></param>
+        /// <param name="arg12"><see cref="string"/></param>
+        /// <param name="arg13"><see langword="bool"/></param>
+        /// <param name="arg14"><see langword="string"/></param>
+        /// <param name="arg15"><see langword="string"/></param>
+        /// <param name="arg16"><see cref="string"/></param>
+        /// <param name="arg17"><see cref="string"/></param>
         public ImageReaderSpi(string arg0, string arg1, string[] arg2, string[] arg3, string[] arg4, string arg5, Java.Lang.Class[] arg6, string[] arg7, bool arg8, string arg9, string arg10, string[] arg11, string[] arg12, bool arg13, string arg14, string arg15, string[] arg16, string[] arg17)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17)
         {
@@ -53,43 +71,54 @@ namespace Javax.Imageio.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#getImageWriterSpiNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#getImageWriterSpiNames()"/> 
         /// </summary>
         public string[] ImageWriterSpiNames
         {
             get { return IExecuteArray<string>("getImageWriterSpiNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#getInputTypes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#getInputTypes()"/> 
         /// </summary>
         public Java.Lang.Class[] InputTypes
         {
             get { return IExecuteArray<Java.Lang.Class>("getInputTypes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#canDecodeInput(java.lang.Object) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#canDecodeInput(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public bool CanDecodeInput(object arg0)
         {
             return IExecute<bool>("canDecodeInput", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#createReaderInstance(java.lang.Object) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#createReaderInstance(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see cref="Javax.Imageio.ImageReader"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageReader CreateReaderInstance(object arg0)
         {
             return IExecute<Javax.Imageio.ImageReader>("createReaderInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#isOwnReader(javax.imageio.ImageReader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#isOwnReader(javax.imageio.ImageReader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.ImageReader"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsOwnReader(Javax.Imageio.ImageReader arg0)
         {
             return IExecute<bool>("isOwnReader", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#createReaderInstance() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageReaderSpi.html#createReaderInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Imageio.ImageReader"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageReader CreateReaderInstance()
         {
             return IExecute<Javax.Imageio.ImageReader>("createReaderInstance");

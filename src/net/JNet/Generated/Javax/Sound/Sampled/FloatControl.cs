@@ -46,71 +46,74 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMaximum() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMaximum()"/> 
         /// </summary>
         public float Maximum
         {
             get { return IExecute<float>("getMaximum"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMaxLabel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMaxLabel()"/> 
         /// </summary>
         public string MaxLabel
         {
             get { return IExecute<string>("getMaxLabel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMidLabel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMidLabel()"/> 
         /// </summary>
         public string MidLabel
         {
             get { return IExecute<string>("getMidLabel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMinimum() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMinimum()"/> 
         /// </summary>
         public float Minimum
         {
             get { return IExecute<float>("getMinimum"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMinLabel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getMinLabel()"/> 
         /// </summary>
         public string MinLabel
         {
             get { return IExecute<string>("getMinLabel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getPrecision() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getPrecision()"/> 
         /// </summary>
         public float Precision
         {
             get { return IExecute<float>("getPrecision"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getUnits() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getUnits()"/> 
         /// </summary>
         public string Units
         {
             get { return IExecute<string>("getUnits"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getUpdatePeriod() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getUpdatePeriod()"/> 
         /// </summary>
         public int UpdatePeriod
         {
             get { return IExecute<int>("getUpdatePeriod"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getValue() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#setValue(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#setValue(float)"/>
         /// </summary>
         public float Value
         {
             get { return IExecute<float>("getValue"); } set { IExecute("setValue", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#shift(float,float,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.html#shift(float,float,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public void Shift(float arg0, float arg1, int arg2)
         {
             IExecute("shift", arg0, arg1, arg2);
@@ -132,39 +135,39 @@ namespace Javax.Sound.Sampled
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#AUX_RETURN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#AUX_RETURN"/>
             /// </summary>
             public static Javax.Sound.Sampled.FloatControl.Type AUX_RETURN => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("AUX_RETURN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#AUX_SEND
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#AUX_SEND"/>
             /// </summary>
             public static Javax.Sound.Sampled.FloatControl.Type AUX_SEND => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("AUX_SEND");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#BALANCE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#BALANCE"/>
             /// </summary>
             public static Javax.Sound.Sampled.FloatControl.Type BALANCE => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("BALANCE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#MASTER_GAIN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#MASTER_GAIN"/>
             /// </summary>
             public static Javax.Sound.Sampled.FloatControl.Type MASTER_GAIN => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("MASTER_GAIN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#PAN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#PAN"/>
             /// </summary>
             public static Javax.Sound.Sampled.FloatControl.Type PAN => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("PAN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#REVERB_RETURN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#REVERB_RETURN"/>
             /// </summary>
             public static Javax.Sound.Sampled.FloatControl.Type REVERB_RETURN => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("REVERB_RETURN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#REVERB_SEND
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#REVERB_SEND"/>
             /// </summary>
             public static Javax.Sound.Sampled.FloatControl.Type REVERB_SEND => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("REVERB_SEND");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#SAMPLE_RATE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#SAMPLE_RATE"/>
             /// </summary>
             public static Javax.Sound.Sampled.FloatControl.Type SAMPLE_RATE => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("SAMPLE_RATE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#VOLUME
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#VOLUME"/>
             /// </summary>
             public static Javax.Sound.Sampled.FloatControl.Type VOLUME => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("VOLUME");
             

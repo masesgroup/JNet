@@ -33,6 +33,9 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Activation.ActivationGroup"/> to <see cref="Java.Rmi.Activation.ActivationInstantiator"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Activation.ActivationInstantiator(Java.Rmi.Activation.ActivationGroup t) => t.Cast<Java.Rmi.Activation.ActivationInstantiator>();
         
         #endregion
@@ -43,22 +46,29 @@ namespace Java.Rmi.Activation
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#getSystem() throws java.rmi.activation.ActivationException https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#setSystem(java.rmi.activation.ActivationSystem) throws java.rmi.activation.ActivationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#getSystem()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#setSystem(java.rmi.activation.ActivationSystem)"/>
         /// </summary>
         public static Java.Rmi.Activation.ActivationSystem System
         {
             get { return SExecute<Java.Rmi.Activation.ActivationSystem>("getSystem"); } set { SExecute("setSystem", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#createGroup(java.rmi.activation.ActivationGroupID,java.rmi.activation.ActivationGroupDesc,long) throws java.rmi.activation.ActivationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#createGroup(java.rmi.activation.ActivationGroupID,java.rmi.activation.ActivationGroupDesc,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationGroupDesc"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <returns><see cref="Java.Rmi.Activation.ActivationGroup"/></returns>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
         public static Java.Rmi.Activation.ActivationGroup CreateGroup(Java.Rmi.Activation.ActivationGroupID arg0, Java.Rmi.Activation.ActivationGroupDesc arg1, long arg2)
         {
             return SExecute<Java.Rmi.Activation.ActivationGroup>("createGroup", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#currentGroupID()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#currentGroupID()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Rmi.Activation.ActivationGroupID"/></returns>
         public static Java.Rmi.Activation.ActivationGroupID CurrentGroupID()
         {
             return SExecute<Java.Rmi.Activation.ActivationGroupID>("currentGroupID");
@@ -68,15 +78,25 @@ namespace Java.Rmi.Activation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#activeObject(java.rmi.activation.ActivationID,java.rmi.Remote) throws java.rmi.activation.ActivationException,java.rmi.activation.UnknownObjectException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#activeObject(java.rmi.activation.ActivationID,java.rmi.Remote)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public void ActiveObject(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.Remote arg1)
         {
             IExecute("activeObject", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#inactiveObject(java.rmi.activation.ActivationID) throws java.rmi.activation.ActivationException,java.rmi.activation.UnknownObjectException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#inactiveObject(java.rmi.activation.ActivationID)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public bool InactiveObject(Java.Rmi.Activation.ActivationID arg0)
         {
             return IExecute<bool>("inactiveObject", arg0);

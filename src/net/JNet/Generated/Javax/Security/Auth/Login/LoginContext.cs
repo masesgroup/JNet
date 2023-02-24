@@ -30,36 +30,53 @@ namespace Javax.Security.Auth.Login
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#<init>(java.lang.String,javax.security.auth.callback.CallbackHandler) throws javax.security.auth.login.LoginException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#%3Cinit%3E(java.lang.String,javax.security.auth.callback.CallbackHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
+        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public LoginContext(string arg0, Javax.Security.Auth.Callback.CallbackHandler arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#<init>(java.lang.String,javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler,javax.security.auth.login.Configuration) throws javax.security.auth.login.LoginException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#%3Cinit%3E(java.lang.String,javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler,javax.security.auth.login.Configuration)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <param name="arg2"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
+        /// <param name="arg3"><see cref="Javax.Security.Auth.Login.Configuration"/></param>
+        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public LoginContext(string arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2, Javax.Security.Auth.Login.Configuration arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#<init>(java.lang.String,javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler) throws javax.security.auth.login.LoginException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#%3Cinit%3E(java.lang.String,javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <param name="arg2"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
+        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public LoginContext(string arg0, Javax.Security.Auth.Subject arg1, Javax.Security.Auth.Callback.CallbackHandler arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#<init>(java.lang.String,javax.security.auth.Subject) throws javax.security.auth.login.LoginException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#%3Cinit%3E(java.lang.String,javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public LoginContext(string arg0, Javax.Security.Auth.Subject arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#<init>(java.lang.String) throws javax.security.auth.login.LoginException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public LoginContext(string arg0)
             : base(arg0)
         {
@@ -81,22 +98,26 @@ namespace Javax.Security.Auth.Login
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#getSubject() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#getSubject()"/> 
         /// </summary>
         public Javax.Security.Auth.Subject Subject
         {
             get { return IExecute<Javax.Security.Auth.Subject>("getSubject"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#login.LoginContext.login() throws javax.security.auth.login.LoginException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#login.LoginContext.login()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public void Login()
         {
             IExecute("login");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#logout() throws javax.security.auth.login.LoginException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#logout()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public void Logout()
         {
             IExecute("logout");

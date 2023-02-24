@@ -46,8 +46,11 @@ namespace Java.Awt.ImageNs.Renderable
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderedImageFactory.html#create(java.awt.image.renderable.ParameterBlock,java.awt.RenderingHints)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderedImageFactory.html#create(java.awt.image.renderable.ParameterBlock,java.awt.RenderingHints)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.RenderingHints"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
         public Java.Awt.ImageNs.RenderedImage Create(Java.Awt.ImageNs.Renderable.ParameterBlock arg0, Java.Awt.RenderingHints arg1)
         {
             return IExecute<Java.Awt.ImageNs.RenderedImage>("create", arg0, arg1);

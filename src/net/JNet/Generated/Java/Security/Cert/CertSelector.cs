@@ -33,6 +33,9 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Cert.CertSelector"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Security.Cert.CertSelector t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -47,8 +50,10 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertSelector.html#match(java.security.cert.Certificate)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertSelector.html#match(java.security.cert.Certificate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Match(Java.Security.Cert.Certificate arg0)
         {
             return IExecute<bool>("match", arg0);

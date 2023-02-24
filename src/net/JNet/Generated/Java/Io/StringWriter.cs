@@ -30,8 +30,9 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StringWriter.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StringWriter.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public StringWriter(int arg0)
             : base(arg0)
         {
@@ -53,7 +54,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StringWriter.html#getBuffer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StringWriter.html#getBuffer()"/> 
         /// </summary>
         public Java.Lang.StringBuffer Buffer
         {

@@ -46,15 +46,19 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Element()
         {
             return IExecute("element");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Remove()
         {
             return IExecute("remove");

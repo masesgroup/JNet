@@ -38,7 +38,7 @@ namespace Javax.Naming.Spi
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#CPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#CPE"/>
         /// </summary>
         public static string CPE => Clazz.GetField<string>("CPE");
         
@@ -46,29 +46,38 @@ namespace Javax.Naming.Spi
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#hasInitialContextFactoryBuilder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#hasInitialContextFactoryBuilder()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public static bool HasInitialContextFactoryBuilder()
         {
             return SExecute<bool>("hasInitialContextFactoryBuilder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getContinuationContext(javax.naming.CannotProceedException) throws javax.naming.NamingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getContinuationContext(javax.naming.CannotProceedException)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.CannotProceedException"/></param>
+        /// <returns><see cref="Javax.Naming.Context"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
         public static Javax.Naming.Context GetContinuationContext(Javax.Naming.CannotProceedException arg0)
         {
             return SExecute<Javax.Naming.Context>("getContinuationContext", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#setInitialContextFactoryBuilder(javax.naming.spi.InitialContextFactoryBuilder) throws javax.naming.NamingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#setInitialContextFactoryBuilder(javax.naming.spi.InitialContextFactoryBuilder)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Spi.InitialContextFactoryBuilder"/></param>
+        /// <exception cref="Javax.Naming.NamingException"/>
         public static void SetInitialContextFactoryBuilder(Javax.Naming.Spi.InitialContextFactoryBuilder arg0)
         {
             SExecute("setInitialContextFactoryBuilder", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#setObjectFactoryBuilder(javax.naming.spi.ObjectFactoryBuilder) throws javax.naming.NamingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#setObjectFactoryBuilder(javax.naming.spi.ObjectFactoryBuilder)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Spi.ObjectFactoryBuilder"/></param>
+        /// <exception cref="Javax.Naming.NamingException"/>
         public static void SetObjectFactoryBuilder(Javax.Naming.Spi.ObjectFactoryBuilder arg0)
         {
             SExecute("setObjectFactoryBuilder", arg0);

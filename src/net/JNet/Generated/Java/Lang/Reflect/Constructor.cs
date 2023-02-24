@@ -46,8 +46,14 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Constructor.html#newInstance(java.lang.Object...) throws java.lang.InstantiationException,java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Constructor.html#newInstance(java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.InstantiationException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.Reflect.InvocationTargetException"/>
         public object NewInstance(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("newInstance"); else return IExecute("newInstance", arg0);

@@ -46,15 +46,18 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDoc.html#getDoc() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDoc.html#getDoc()"/> 
         /// </summary>
         public Javax.Print.Doc Doc
         {
             get { return IExecute<Javax.Print.Doc>("getDoc"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDoc.html#next() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDoc.html#next()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Print.MultiDoc"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Print.MultiDoc Next()
         {
             return IExecute<Javax.Print.MultiDoc>("next");

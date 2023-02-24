@@ -38,15 +38,15 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#ASCENDING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#ASCENDING"/>
         /// </summary>
         public static Javax.Swing.SortOrder ASCENDING => Clazz.GetField<Javax.Swing.SortOrder>("ASCENDING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#DESCENDING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#DESCENDING"/>
         /// </summary>
         public static Javax.Swing.SortOrder DESCENDING => Clazz.GetField<Javax.Swing.SortOrder>("DESCENDING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#UNSORTED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#UNSORTED"/>
         /// </summary>
         public static Javax.Swing.SortOrder UNSORTED => Clazz.GetField<Javax.Swing.SortOrder>("UNSORTED");
         
@@ -54,8 +54,10 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.SortOrder"/></returns>
         public static Javax.Swing.SortOrder[] Values()
         {
             return SExecuteArray<Javax.Swing.SortOrder>("values");

@@ -33,6 +33,9 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Geom.Dimension2D"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.Dimension2D t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -47,29 +50,32 @@ namespace Java.Awt.Geom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Dimension2D.html#getHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Dimension2D.html#getHeight()"/> 
         /// </summary>
         public double Height
         {
             get { return IExecute<double>("getHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Dimension2D.html#getWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Dimension2D.html#getWidth()"/> 
         /// </summary>
         public double Width
         {
             get { return IExecute<double>("getWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Dimension2D.html#setSize(double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Dimension2D.html#setSize(double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
         public void SetSize(double arg0, double arg1)
         {
             IExecute("setSize", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Dimension2D.html#setSize(java.awt.geom.Dimension2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Dimension2D.html#setSize(java.awt.geom.Dimension2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Dimension2D"/></param>
         public void SetSize(Java.Awt.Geom.Dimension2D arg0)
         {
             IExecute("setSize", arg0);

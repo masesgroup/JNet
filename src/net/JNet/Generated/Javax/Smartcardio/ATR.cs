@@ -30,8 +30,9 @@ namespace Javax.Smartcardio
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ATR.html#<init>(byte[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ATR.html#%3Cinit%3E(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
         public ATR(byte[] arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Smartcardio
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Smartcardio.ATR"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Smartcardio.ATR t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,14 +58,14 @@ namespace Javax.Smartcardio
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ATR.html#getBytes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ATR.html#getBytes()"/> 
         /// </summary>
         public byte[] Bytes
         {
             get { return IExecuteArray<byte>("getBytes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ATR.html#getHistoricalBytes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ATR.html#getHistoricalBytes()"/> 
         /// </summary>
         public byte[] HistoricalBytes
         {

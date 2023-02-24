@@ -46,22 +46,31 @@ namespace Org.W3c.Dom.Events
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#dispatchEvent(org.w3c.dom.events.Event) throws org.w3c.dom.events.EventException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#dispatchEvent(org.w3c.dom.events.Event)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Events.Event"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Org.W3c.Dom.Events.EventException"/>
         public bool DispatchEvent(Org.W3c.Dom.Events.Event arg0)
         {
             return IExecute<bool>("dispatchEvent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#addEventListener(java.lang.String,org.w3c.dom.events.EventListener,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#addEventListener(java.lang.String,org.w3c.dom.events.EventListener,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Events.EventListener"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public void AddEventListener(string arg0, Org.W3c.Dom.Events.EventListener arg1, bool arg2)
         {
             IExecute("addEventListener", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#removeEventListener(java.lang.String,org.w3c.dom.events.EventListener,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#removeEventListener(java.lang.String,org.w3c.dom.events.EventListener,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Events.EventListener"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
         public void RemoveEventListener(string arg0, Org.W3c.Dom.Events.EventListener arg1, bool arg2)
         {
             IExecute("removeEventListener", arg0, arg1, arg2);

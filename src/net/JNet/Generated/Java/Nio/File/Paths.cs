@@ -42,15 +42,20 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Paths.html#get(java.lang.String,java.lang.String...)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Paths.html#get(java.lang.String,java.lang.String...)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public static Java.Nio.File.Path Get(string arg0, params string[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>("get", arg0); else return SExecute<Java.Nio.File.Path>("get", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Paths.html#get(java.net.URI)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Paths.html#get(java.net.URI)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public static Java.Nio.File.Path Get(Java.Net.URI arg0)
         {
             return SExecute<Java.Nio.File.Path>("get", arg0);

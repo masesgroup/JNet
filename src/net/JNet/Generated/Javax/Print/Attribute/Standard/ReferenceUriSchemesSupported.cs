@@ -33,41 +33,44 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported"/> to <see cref="Javax.Print.Attribute.Attribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.Attribute(Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported t) => t.Cast<Javax.Print.Attribute.Attribute>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#FILE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#FILE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported FILE => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("FILE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#FTP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#FTP"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported FTP => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("FTP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#GOPHER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#GOPHER"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported GOPHER => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("GOPHER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#HTTP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#HTTP"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported HTTP => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("HTTP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#HTTPS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#HTTPS"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported HTTPS => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("HTTPS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#NEWS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#NEWS"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported NEWS => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("NEWS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#NNTP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#NNTP"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported NNTP => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("NNTP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#WAIS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#WAIS"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported WAIS => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("WAIS");
         
@@ -79,7 +82,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#getName()"/> 
         /// </summary>
         public string Name
         {

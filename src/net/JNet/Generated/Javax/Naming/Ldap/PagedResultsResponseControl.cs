@@ -30,8 +30,12 @@ namespace Javax.Naming.Ldap
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/PagedResultsResponseControl.html#<init>(java.lang.String,boolean,byte[]) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/PagedResultsResponseControl.html#%3Cinit%3E(java.lang.String,boolean,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="byte"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public PagedResultsResponseControl(string arg0, bool arg1, byte[] arg2)
             : base(arg0, arg1, arg2)
         {
@@ -45,7 +49,7 @@ namespace Javax.Naming.Ldap
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/PagedResultsResponseControl.html#OID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/PagedResultsResponseControl.html#OID"/>
         /// </summary>
         public static string OID => Clazz.GetField<string>("OID");
         
@@ -57,14 +61,14 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/PagedResultsResponseControl.html#getCookie() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/PagedResultsResponseControl.html#getCookie()"/> 
         /// </summary>
         public byte[] Cookie
         {
             get { return IExecuteArray<byte>("getCookie"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/PagedResultsResponseControl.html#getResultSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/PagedResultsResponseControl.html#getResultSize()"/> 
         /// </summary>
         public int ResultSize
         {

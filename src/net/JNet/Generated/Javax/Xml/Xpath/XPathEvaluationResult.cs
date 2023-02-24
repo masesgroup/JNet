@@ -46,8 +46,10 @@ namespace Javax.Xml.Xpath
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Value()
         {
             return IExecute("value");
@@ -69,27 +71,27 @@ namespace Javax.Xml.Xpath
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#ANY
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#ANY"/>
             /// </summary>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType ANY => Clazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("ANY");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#BOOLEAN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#BOOLEAN"/>
             /// </summary>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType BOOLEAN => Clazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("BOOLEAN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NODE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NODE"/>
             /// </summary>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODE => Clazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("NODE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NODESET
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NODESET"/>
             /// </summary>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODESET => Clazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("NODESET");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NUMBER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NUMBER"/>
             /// </summary>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NUMBER => Clazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("NUMBER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#STRING
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#STRING"/>
             /// </summary>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType STRING => Clazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("STRING");
             
@@ -97,8 +99,10 @@ namespace Javax.Xml.Xpath
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType[] Values()
             {
                 return SExecuteArray<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("values");

@@ -46,15 +46,18 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#accept(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#accept(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Accept(int arg0)
         {
             IExecute("accept", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
+        /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
         public Java.Util.Function.IntConsumer AndThen(Java.Util.Function.IntConsumer arg0)
         {
             return IExecute<Java.Util.Function.IntConsumer>("andThen", arg0);

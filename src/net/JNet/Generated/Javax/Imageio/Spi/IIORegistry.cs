@@ -42,7 +42,7 @@ namespace Javax.Imageio.Spi
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIORegistry.html#getDefaultInstance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIORegistry.html#getDefaultInstance()"/> 
         /// </summary>
         public static Javax.Imageio.Spi.IIORegistry DefaultInstance
         {
@@ -53,7 +53,7 @@ namespace Javax.Imageio.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIORegistry.html#registerApplicationClasspathSpis()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIORegistry.html#registerApplicationClasspathSpis()"/>
         /// </summary>
         public void RegisterApplicationClasspathSpis()
         {

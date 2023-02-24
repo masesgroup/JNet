@@ -46,15 +46,22 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ContentHandler.html#getContent(java.net.URLConnection) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ContentHandler.html#getContent(java.net.URLConnection)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URLConnection"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public object GetContent(Java.Net.URLConnection arg0)
         {
             return IExecute("getContent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ContentHandler.html#getContent(java.net.URLConnection,java.lang.Class[]) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ContentHandler.html#getContent(java.net.URLConnection,java.lang.Class[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URLConnection"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public object GetContent(Java.Net.URLConnection arg0, Java.Lang.Class[] arg1)
         {
             return IExecute("getContent", arg0, arg1);

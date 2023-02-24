@@ -46,8 +46,10 @@ namespace Java.Awt.Datatransfer
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/ClipboardOwner.html#lostOwnership(java.awt.datatransfer.Clipboard,java.awt.datatransfer.Transferable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/ClipboardOwner.html#lostOwnership(java.awt.datatransfer.Clipboard,java.awt.datatransfer.Transferable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.Clipboard"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
         public void LostOwnership(Java.Awt.Datatransfer.Clipboard arg0, Java.Awt.Datatransfer.Transferable arg1)
         {
             IExecute("lostOwnership", arg0, arg1);

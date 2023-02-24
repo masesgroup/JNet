@@ -62,19 +62,19 @@ namespace Java.Text
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#NFC
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#NFC"/>
             /// </summary>
             public static Java.Text.Normalizer.Form NFC => Clazz.GetField<Java.Text.Normalizer.Form>("NFC");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#NFD
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#NFD"/>
             /// </summary>
             public static Java.Text.Normalizer.Form NFD => Clazz.GetField<Java.Text.Normalizer.Form>("NFD");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#NFKC
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#NFKC"/>
             /// </summary>
             public static Java.Text.Normalizer.Form NFKC => Clazz.GetField<Java.Text.Normalizer.Form>("NFKC");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#NFKD
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#NFKD"/>
             /// </summary>
             public static Java.Text.Normalizer.Form NFKD => Clazz.GetField<Java.Text.Normalizer.Form>("NFKD");
             
@@ -82,8 +82,10 @@ namespace Java.Text
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Text.Normalizer.Form"/></returns>
             public static Java.Text.Normalizer.Form[] Values()
             {
                 return SExecuteArray<Java.Text.Normalizer.Form>("values");

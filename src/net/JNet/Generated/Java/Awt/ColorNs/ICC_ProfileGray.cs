@@ -46,21 +46,21 @@ namespace Java.Awt.ColorNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileGray.html#getGamma() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileGray.html#getGamma()"/> 
         /// </summary>
         public float Gamma
         {
             get { return IExecute<float>("getGamma"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileGray.html#getMediaWhitePoint() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileGray.html#getMediaWhitePoint()"/> 
         /// </summary>
         public float[] MediaWhitePoint
         {
             get { return IExecuteArray<float>("getMediaWhitePoint"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileGray.html#getTRC() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileGray.html#getTRC()"/> 
         /// </summary>
         public short[] TRC
         {

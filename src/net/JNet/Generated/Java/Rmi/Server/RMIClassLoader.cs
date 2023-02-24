@@ -42,15 +42,19 @@ namespace Java.Rmi.Server
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#getDefaultProviderInstance() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#getDefaultProviderInstance()"/> 
         /// </summary>
         public static Java.Rmi.Server.RMIClassLoaderSpi DefaultProviderInstance
         {
             get { return SExecute<Java.Rmi.Server.RMIClassLoaderSpi>("getDefaultProviderInstance"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#getClassLoader(java.lang.String) throws java.net.MalformedURLException,java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#getClassLoader(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
+        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <exception cref="Java.Lang.SecurityException"/>
         public static Java.Lang.ClassLoader GetClassLoader(string arg0)
         {
             return SExecute<Java.Lang.ClassLoader>("getClassLoader", arg0);

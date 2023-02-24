@@ -46,15 +46,17 @@ namespace Java.Awt.Dnd.Peer
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetPeer.html#addDropTarget(java.awt.dnd.DropTarget)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetPeer.html#addDropTarget(java.awt.dnd.DropTarget)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTarget"/></param>
         public void AddDropTarget(Java.Awt.Dnd.DropTarget arg0)
         {
             IExecute("addDropTarget", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetPeer.html#removeDropTarget(java.awt.dnd.DropTarget)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetPeer.html#removeDropTarget(java.awt.dnd.DropTarget)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTarget"/></param>
         public void RemoveDropTarget(Java.Awt.Dnd.DropTarget arg0)
         {
             IExecute("removeDropTarget", arg0);

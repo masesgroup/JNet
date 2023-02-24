@@ -42,7 +42,7 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ResponseCache.html#getDefault() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ResponseCache.html#setDefault(java.net.ResponseCache)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ResponseCache.html#getDefault()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ResponseCache.html#setDefault(java.net.ResponseCache)"/>
         /// </summary>
         public static Java.Net.ResponseCache Default
         {
@@ -53,8 +53,12 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ResponseCache.html#put(java.net.URI,java.net.URLConnection) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ResponseCache.html#put(java.net.URI,java.net.URLConnection)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg1"><see cref="Java.Net.URLConnection"/></param>
+        /// <returns><see cref="Java.Net.CacheRequest"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.CacheRequest Put(Java.Net.URI arg0, Java.Net.URLConnection arg1)
         {
             return IExecute<Java.Net.CacheRequest>("put", arg0, arg1);

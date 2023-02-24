@@ -42,15 +42,17 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#getContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#getContext()"/> 
         /// </summary>
         public static Java.Security.AccessControlContext Context
         {
             get { return SExecute<Java.Security.AccessControlContext>("getContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#checkPermission(java.security.Permission) throws java.security.AccessControlException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#checkPermission(java.security.Permission)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
+        /// <exception cref="Java.Security.AccessControlException"/>
         public static void CheckPermission(Java.Security.Permission arg0)
         {
             SExecute("checkPermission", arg0);

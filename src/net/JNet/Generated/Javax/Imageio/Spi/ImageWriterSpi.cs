@@ -30,8 +30,26 @@ namespace Javax.Imageio.Spi
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#<init>(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,java.lang.Class<?>[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,java.lang.Class%3C?%3E[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg5"><see langword="string"/></param>
+        /// <param name="arg6"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg7"><see cref="string"/></param>
+        /// <param name="arg8"><see langword="bool"/></param>
+        /// <param name="arg9"><see langword="string"/></param>
+        /// <param name="arg10"><see langword="string"/></param>
+        /// <param name="arg11"><see cref="string"/></param>
+        /// <param name="arg12"><see cref="string"/></param>
+        /// <param name="arg13"><see langword="bool"/></param>
+        /// <param name="arg14"><see langword="string"/></param>
+        /// <param name="arg15"><see langword="string"/></param>
+        /// <param name="arg16"><see cref="string"/></param>
+        /// <param name="arg17"><see cref="string"/></param>
         public ImageWriterSpi(string arg0, string arg1, string[] arg2, string[] arg3, string[] arg4, string arg5, Java.Lang.Class[] arg6, string[] arg7, bool arg8, string arg9, string arg10, string[] arg11, string[] arg12, bool arg13, string arg14, string arg15, string[] arg16, string[] arg17)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17)
         {
@@ -53,57 +71,71 @@ namespace Javax.Imageio.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#getImageReaderSpiNames() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#getImageReaderSpiNames()"/> 
         /// </summary>
         public string[] ImageReaderSpiNames
         {
             get { return IExecuteArray<string>("getImageReaderSpiNames"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#getOutputTypes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#getOutputTypes()"/> 
         /// </summary>
         public Java.Lang.Class[] OutputTypes
         {
             get { return IExecuteArray<Java.Lang.Class>("getOutputTypes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#canEncodeImage(javax.imageio.ImageTypeSpecifier)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#canEncodeImage(javax.imageio.ImageTypeSpecifier)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.ImageTypeSpecifier"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CanEncodeImage(Javax.Imageio.ImageTypeSpecifier arg0)
         {
             return IExecute<bool>("canEncodeImage", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#createWriterInstance(java.lang.Object) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#createWriterInstance(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see cref="Javax.Imageio.ImageWriter"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageWriter CreateWriterInstance(object arg0)
         {
             return IExecute<Javax.Imageio.ImageWriter>("createWriterInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#canEncodeImage(java.awt.image.RenderedImage)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#canEncodeImage(java.awt.image.RenderedImage)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.RenderedImage"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool CanEncodeImage(Java.Awt.ImageNs.RenderedImage arg0)
         {
             return IExecute<bool>("canEncodeImage", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#isFormatLossless()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#isFormatLossless()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsFormatLossless()
         {
             return IExecute<bool>("isFormatLossless");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#isOwnWriter(javax.imageio.ImageWriter)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#isOwnWriter(javax.imageio.ImageWriter)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsOwnWriter(Javax.Imageio.ImageWriter arg0)
         {
             return IExecute<bool>("isOwnWriter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#createWriterInstance() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#createWriterInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Imageio.ImageWriter"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageWriter CreateWriterInstance()
         {
             return IExecute<Javax.Imageio.ImageWriter>("createWriterInstance");

@@ -38,15 +38,15 @@ namespace Org.W3c.Dom
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_ERROR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_ERROR"/>
         /// </summary>
         public static short SEVERITY_ERROR => Clazz.GetField<short>("SEVERITY_ERROR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_FATAL_ERROR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_FATAL_ERROR"/>
         /// </summary>
         public static short SEVERITY_FATAL_ERROR => Clazz.GetField<short>("SEVERITY_FATAL_ERROR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_WARNING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_WARNING"/>
         /// </summary>
         public static short SEVERITY_WARNING => Clazz.GetField<short>("SEVERITY_WARNING");
         
@@ -58,42 +58,42 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getLocation() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getLocation()"/> 
         /// </summary>
         public Org.W3c.Dom.DOMLocator Location
         {
             get { return IExecute<Org.W3c.Dom.DOMLocator>("getLocation"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getMessage() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getMessage()"/> 
         /// </summary>
         public string Message
         {
             get { return IExecute<string>("getMessage"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getRelatedData() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getRelatedData()"/> 
         /// </summary>
         public object RelatedData
         {
             get { return IExecute("getRelatedData"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getRelatedException() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getRelatedException()"/> 
         /// </summary>
         public object RelatedException
         {
             get { return IExecute("getRelatedException"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getSeverity() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getSeverity()"/> 
         /// </summary>
         public short Severity
         {
             get { return IExecute<short>("getSeverity"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getType()"/> 
         /// </summary>
         public string Type
         {

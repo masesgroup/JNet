@@ -33,6 +33,9 @@ namespace Javax.Swing.Plaf.Synth
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Plaf.Synth.SynthIcon"/> to <see cref="Javax.Swing.Icon"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Synth.SynthIcon t) => t.Cast<Javax.Swing.Icon>();
         
         #endregion
@@ -47,43 +50,57 @@ namespace Javax.Swing.Plaf.Synth
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#getIconHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#getIconHeight()"/> 
         /// </summary>
         public int IconHeight
         {
             get { return IExecute<int>("getIconHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#getIconWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#getIconWidth()"/> 
         /// </summary>
         public int IconWidth
         {
             get { return IExecute<int>("getIconWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#getIconHeight(javax.swing.plaf.synth.SynthContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#getIconHeight(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetIconHeight(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecute<int>("getIconHeight", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#getIconWidth(javax.swing.plaf.synth.SynthContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#getIconWidth(javax.swing.plaf.synth.SynthContext)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetIconWidth(Javax.Swing.Plaf.Synth.SynthContext arg0)
         {
             return IExecute<int>("getIconWidth", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#paintIcon(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#paintIcon(javax.swing.plaf.synth.SynthContext,java.awt.Graphics,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
         public void PaintIcon(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintIcon", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
         {
             IExecute("paintIcon", arg0, arg1, arg2, arg3);

@@ -46,85 +46,102 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#getErrorStream() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#getErrorStream()"/> 
         /// </summary>
         public Java.Io.InputStream ErrorStream
         {
             get { return IExecute<Java.Io.InputStream>("getErrorStream"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#getInputStream() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#getInputStream()"/> 
         /// </summary>
         public Java.Io.InputStream InputStream
         {
             get { return IExecute<Java.Io.InputStream>("getInputStream"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#getOutputStream() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#getOutputStream()"/> 
         /// </summary>
         public Java.Io.OutputStream OutputStream
         {
             get { return IExecute<Java.Io.OutputStream>("getOutputStream"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#exitValue()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#exitValue()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int ExitValue()
         {
             return IExecute<int>("exitValue");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#waitFor() throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#waitFor()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public int WaitFor()
         {
             return IExecute<int>("waitFor");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#destroy()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#destroy()"/>
         /// </summary>
         public void Destroy()
         {
             IExecute("destroy");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#isAlive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#isAlive()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAlive()
         {
             return IExecute<bool>("isAlive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#supportsNormalTermination()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#supportsNormalTermination()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool SupportsNormalTermination()
         {
             return IExecute<bool>("supportsNormalTermination");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#destroyForcibly()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#destroyForcibly()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Process"/></returns>
         public Java.Lang.Process DestroyForcibly()
         {
             return IExecute<Java.Lang.Process>("destroyForcibly");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#toHandle()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#toHandle()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.ProcessHandle"/></returns>
         public Java.Lang.ProcessHandle ToHandle()
         {
             return IExecute<Java.Lang.ProcessHandle>("toHandle");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#info()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#info()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.ProcessHandle.Info"/></returns>
         public Java.Lang.ProcessHandle.Info Info()
         {
             return IExecute<Java.Lang.ProcessHandle.Info>("info");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#pid()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#pid()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long Pid()
         {
             return IExecute<long>("pid");

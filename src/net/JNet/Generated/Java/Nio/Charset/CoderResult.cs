@@ -38,11 +38,11 @@ namespace Java.Nio.Charset
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#OVERFLOW
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#OVERFLOW"/>
         /// </summary>
         public static Java.Nio.Charset.CoderResult OVERFLOW => Clazz.GetField<Java.Nio.Charset.CoderResult>("OVERFLOW");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#UNDERFLOW
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#UNDERFLOW"/>
         /// </summary>
         public static Java.Nio.Charset.CoderResult UNDERFLOW => Clazz.GetField<Java.Nio.Charset.CoderResult>("UNDERFLOW");
         
@@ -50,15 +50,19 @@ namespace Java.Nio.Charset
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#malformedForLength(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#malformedForLength(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
         public static Java.Nio.Charset.CoderResult MalformedForLength(int arg0)
         {
             return SExecute<Java.Nio.Charset.CoderResult>("malformedForLength", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#unmappableForLength(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#unmappableForLength(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
         public static Java.Nio.Charset.CoderResult UnmappableForLength(int arg0)
         {
             return SExecute<Java.Nio.Charset.CoderResult>("unmappableForLength", arg0);
@@ -68,50 +72,64 @@ namespace Java.Nio.Charset
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isError()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isError()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsError()
         {
             return IExecute<bool>("isError");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isMalformed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isMalformed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMalformed()
         {
             return IExecute<bool>("isMalformed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isOverflow()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isOverflow()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsOverflow()
         {
             return IExecute<bool>("isOverflow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isUnderflow()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isUnderflow()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsUnderflow()
         {
             return IExecute<bool>("isUnderflow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isUnmappable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#isUnmappable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsUnmappable()
         {
             return IExecute<bool>("isUnmappable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#length()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#length()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Length()
         {
             return IExecute<int>("length");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#throwException() throws java.nio.charset.CharacterCodingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#throwException()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Nio.Charset.CharacterCodingException"/>
         public void ThrowException()
         {
             IExecute("throwException");

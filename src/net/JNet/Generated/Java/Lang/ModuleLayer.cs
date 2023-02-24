@@ -42,15 +42,19 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#boot()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#boot()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
         public static Java.Lang.ModuleLayer Boot()
         {
             return SExecute<Java.Lang.ModuleLayer>("boot");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#empty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#empty()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
         public static Java.Lang.ModuleLayer Empty()
         {
             return SExecute<Java.Lang.ModuleLayer>("empty");
@@ -60,29 +64,39 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#findLoader(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#findLoader(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
         public Java.Lang.ClassLoader FindLoader(string arg0)
         {
             return IExecute<Java.Lang.ClassLoader>("findLoader", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#configuration()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#configuration()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
         public Java.Lang.ModuleNs.Configuration Configuration()
         {
             return IExecute<Java.Lang.ModuleNs.Configuration>("configuration");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithManyLoaders(java.lang.module.Configuration,java.lang.ClassLoader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithManyLoaders(java.lang.module.Configuration,java.lang.ClassLoader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ModuleNs.Configuration"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
         public Java.Lang.ModuleLayer DefineModulesWithManyLoaders(Java.Lang.ModuleNs.Configuration arg0, Java.Lang.ClassLoader arg1)
         {
             return IExecute<Java.Lang.ModuleLayer>("defineModulesWithManyLoaders", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithOneLoader(java.lang.module.Configuration,java.lang.ClassLoader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithOneLoader(java.lang.module.Configuration,java.lang.ClassLoader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ModuleNs.Configuration"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
         public Java.Lang.ModuleLayer DefineModulesWithOneLoader(Java.Lang.ModuleNs.Configuration arg0, Java.Lang.ClassLoader arg1)
         {
             return IExecute<Java.Lang.ModuleLayer>("defineModulesWithOneLoader", arg0, arg1);
@@ -112,29 +126,42 @@ namespace Java.Lang
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#layer()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#layer()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
             public Java.Lang.ModuleLayer Layer()
             {
                 return IExecute<Java.Lang.ModuleLayer>("layer");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#addExports(java.lang.Module,java.lang.String,java.lang.Module)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#addExports(java.lang.Module,java.lang.String,java.lang.Module)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
+            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.Module"/></param>
+            /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
             public Java.Lang.ModuleLayer.Controller AddExports(Java.Lang.Module arg0, string arg1, Java.Lang.Module arg2)
             {
                 return IExecute<Java.Lang.ModuleLayer.Controller>("addExports", arg0, arg1, arg2);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#addOpens(java.lang.Module,java.lang.String,java.lang.Module)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#addOpens(java.lang.Module,java.lang.String,java.lang.Module)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
+            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.Module"/></param>
+            /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
             public Java.Lang.ModuleLayer.Controller AddOpens(Java.Lang.Module arg0, string arg1, Java.Lang.Module arg2)
             {
                 return IExecute<Java.Lang.ModuleLayer.Controller>("addOpens", arg0, arg1, arg2);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#addReads(java.lang.Module,java.lang.Module)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#addReads(java.lang.Module,java.lang.Module)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
+            /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
             public Java.Lang.ModuleLayer.Controller AddReads(Java.Lang.Module arg0, Java.Lang.Module arg1)
             {
                 return IExecute<Java.Lang.ModuleLayer.Controller>("addReads", arg0, arg1);

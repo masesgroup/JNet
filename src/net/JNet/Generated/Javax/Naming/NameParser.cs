@@ -46,8 +46,11 @@ namespace Javax.Naming
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameParser.html#parse(java.lang.String) throws javax.naming.NamingException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameParser.html#parse(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Naming.Name"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Name Parse(string arg0)
         {
             return IExecute<Javax.Naming.Name>("parse", arg0);

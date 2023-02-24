@@ -46,8 +46,11 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetWriter.html#writeData(javax.sql.RowSetInternal) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetWriter.html#writeData(javax.sql.RowSetInternal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetInternal"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public bool WriteData(Javax.Sql.RowSetInternal arg0)
         {
             return IExecute<bool>("writeData", arg0);

@@ -33,7 +33,13 @@ namespace Javax.Rmi.Ssl
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Rmi.Ssl.SslRMIClientSocketFactory"/> to <see cref="Java.Rmi.Server.RMIClientSocketFactory"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Server.RMIClientSocketFactory(Javax.Rmi.Ssl.SslRMIClientSocketFactory t) => t.Cast<Java.Rmi.Server.RMIClientSocketFactory>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Rmi.Ssl.SslRMIClientSocketFactory"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Rmi.Ssl.SslRMIClientSocketFactory t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -48,8 +54,12 @@ namespace Javax.Rmi.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIClientSocketFactory.html#createSocket(java.lang.String,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIClientSocketFactory.html#createSocket(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(string arg0, int arg1)
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);

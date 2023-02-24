@@ -33,6 +33,9 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.ScheduledFuture"/> to <see cref="Java.Util.Concurrent.Delayed"/>
+        /// </summary>
         public static implicit operator Java.Util.Concurrent.Delayed(Java.Util.Concurrent.ScheduledFuture t) => t.Cast<Java.Util.Concurrent.Delayed>();
         
         #endregion

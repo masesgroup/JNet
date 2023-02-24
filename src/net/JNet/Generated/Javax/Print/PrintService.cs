@@ -46,78 +46,91 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getAttributes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getAttributes()"/> 
         /// </summary>
         public Javax.Print.Attribute.PrintServiceAttributeSet Attributes
         {
             get { return IExecute<Javax.Print.Attribute.PrintServiceAttributeSet>("getAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getServiceUIFactory() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getServiceUIFactory()"/> 
         /// </summary>
         public Javax.Print.ServiceUIFactory ServiceUIFactory
         {
             get { return IExecute<Javax.Print.ServiceUIFactory>("getServiceUIFactory"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getSupportedAttributeCategories() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getSupportedAttributeCategories()"/> 
         /// </summary>
         public Java.Lang.Class[] SupportedAttributeCategories
         {
             get { return IExecuteArray<Java.Lang.Class>("getSupportedAttributeCategories"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getSupportedDocFlavors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getSupportedDocFlavors()"/> 
         /// </summary>
         public Javax.Print.DocFlavor[] SupportedDocFlavors
         {
             get { return IExecuteArray<Javax.Print.DocFlavor>("getSupportedDocFlavors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#isAttributeValueSupported(javax.print.attribute.Attribute,javax.print.DocFlavor,javax.print.attribute.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#isAttributeValueSupported(javax.print.attribute.Attribute,javax.print.DocFlavor,javax.print.attribute.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
+        /// <param name="arg1"><see cref="Javax.Print.DocFlavor"/></param>
+        /// <param name="arg2"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsAttributeValueSupported(Javax.Print.Attribute.Attribute arg0, Javax.Print.DocFlavor arg1, Javax.Print.Attribute.AttributeSet arg2)
         {
             return IExecute<bool>("isAttributeValueSupported", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#isDocFlavorSupported(javax.print.DocFlavor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#isDocFlavorSupported(javax.print.DocFlavor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.DocFlavor"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsDocFlavorSupported(Javax.Print.DocFlavor arg0)
         {
             return IExecute<bool>("isDocFlavorSupported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getUnsupportedAttributes(javax.print.DocFlavor,javax.print.attribute.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getUnsupportedAttributes(javax.print.DocFlavor,javax.print.attribute.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.DocFlavor"/></param>
+        /// <param name="arg1"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.AttributeSet"/></returns>
         public Javax.Print.Attribute.AttributeSet GetUnsupportedAttributes(Javax.Print.DocFlavor arg0, Javax.Print.Attribute.AttributeSet arg1)
         {
             return IExecute<Javax.Print.Attribute.AttributeSet>("getUnsupportedAttributes", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#createPrintJob()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#createPrintJob()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Print.DocPrintJob"/></returns>
         public Javax.Print.DocPrintJob CreatePrintJob()
         {
             return IExecute<Javax.Print.DocPrintJob>("createPrintJob");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#addPrintServiceAttributeListener(javax.print.event.PrintServiceAttributeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#addPrintServiceAttributeListener(javax.print.event.PrintServiceAttributeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintServiceAttributeListener"/></param>
         public void AddPrintServiceAttributeListener(Javax.Print.Event.PrintServiceAttributeListener arg0)
         {
             IExecute("addPrintServiceAttributeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#removePrintServiceAttributeListener(javax.print.event.PrintServiceAttributeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#removePrintServiceAttributeListener(javax.print.event.PrintServiceAttributeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintServiceAttributeListener"/></param>
         public void RemovePrintServiceAttributeListener(Javax.Print.Event.PrintServiceAttributeListener arg0)
         {
             IExecute("removePrintServiceAttributeListener", arg0);

@@ -33,6 +33,9 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Tree.MutableTreeNode"/> to <see cref="Javax.Swing.Tree.TreeNode"/>
+        /// </summary>
         public static implicit operator Javax.Swing.Tree.TreeNode(Javax.Swing.Tree.MutableTreeNode t) => t.Cast<Javax.Swing.Tree.TreeNode>();
         
         #endregion
@@ -47,43 +50,49 @@ namespace Javax.Swing.Tree
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#insert(javax.swing.tree.MutableTreeNode,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#insert(javax.swing.tree.MutableTreeNode,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Insert(Javax.Swing.Tree.MutableTreeNode arg0, int arg1)
         {
             IExecute("insert", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#remove(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#remove(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void Remove(int arg0)
         {
             IExecute("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#remove(javax.swing.tree.MutableTreeNode)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#remove(javax.swing.tree.MutableTreeNode)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
         public void Remove(Javax.Swing.Tree.MutableTreeNode arg0)
         {
             IExecute("remove", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#removeFromParent()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#removeFromParent()"/>
         /// </summary>
         public void RemoveFromParent()
         {
             IExecute("removeFromParent");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#setParent(javax.swing.tree.MutableTreeNode)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#setParent(javax.swing.tree.MutableTreeNode)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
         public void SetParent(Javax.Swing.Tree.MutableTreeNode arg0)
         {
             IExecute("setParent", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#setUserObject(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#setUserObject(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void SetUserObject(object arg0)
         {
             IExecute("setUserObject", arg0);

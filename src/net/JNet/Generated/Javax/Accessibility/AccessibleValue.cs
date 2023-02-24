@@ -46,29 +46,31 @@ namespace Javax.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#getCurrentAccessibleValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#getCurrentAccessibleValue()"/> 
         /// </summary>
         public Java.Lang.Number CurrentAccessibleValue
         {
             get { return IExecute<Java.Lang.Number>("getCurrentAccessibleValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#getMaximumAccessibleValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#getMaximumAccessibleValue()"/> 
         /// </summary>
         public Java.Lang.Number MaximumAccessibleValue
         {
             get { return IExecute<Java.Lang.Number>("getMaximumAccessibleValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#getMinimumAccessibleValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#getMinimumAccessibleValue()"/> 
         /// </summary>
         public Java.Lang.Number MinimumAccessibleValue
         {
             get { return IExecute<Java.Lang.Number>("getMinimumAccessibleValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#setCurrentAccessibleValue(java.lang.Number)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#setCurrentAccessibleValue(java.lang.Number)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Number"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool SetCurrentAccessibleValue(Java.Lang.Number arg0)
         {
             return IExecute<bool>("setCurrentAccessibleValue", arg0);

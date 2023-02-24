@@ -30,8 +30,10 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#<init>(java.awt.Component,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#%3Cinit%3E(java.awt.Component,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public ComponentEvent(Java.Awt.Component arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -45,27 +47,27 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_FIRST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_FIRST"/>
         /// </summary>
         public static int COMPONENT_FIRST => Clazz.GetField<int>("COMPONENT_FIRST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_HIDDEN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_HIDDEN"/>
         /// </summary>
         public static int COMPONENT_HIDDEN => Clazz.GetField<int>("COMPONENT_HIDDEN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_LAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_LAST"/>
         /// </summary>
         public static int COMPONENT_LAST => Clazz.GetField<int>("COMPONENT_LAST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_MOVED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_MOVED"/>
         /// </summary>
         public static int COMPONENT_MOVED => Clazz.GetField<int>("COMPONENT_MOVED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_RESIZED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_RESIZED"/>
         /// </summary>
         public static int COMPONENT_RESIZED => Clazz.GetField<int>("COMPONENT_RESIZED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_SHOWN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_SHOWN"/>
         /// </summary>
         public static int COMPONENT_SHOWN => Clazz.GetField<int>("COMPONENT_SHOWN");
         
@@ -77,7 +79,7 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#getComponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#getComponent()"/> 
         /// </summary>
         public Java.Awt.Component Component
         {

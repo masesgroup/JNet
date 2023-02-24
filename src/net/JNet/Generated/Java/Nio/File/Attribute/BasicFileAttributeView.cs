@@ -33,6 +33,9 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.Attribute.BasicFileAttributeView"/> to <see cref="Java.Nio.File.Attribute.FileAttributeView"/>
+        /// </summary>
         public static implicit operator Java.Nio.File.Attribute.FileAttributeView(Java.Nio.File.Attribute.BasicFileAttributeView t) => t.Cast<Java.Nio.File.Attribute.FileAttributeView>();
         
         #endregion
@@ -47,22 +50,31 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#name()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#name()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Name()
         {
             return IExecute<string>("name");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#readAttributes() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#readAttributes()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes()
         {
             return IExecute<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#setTimes(java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#setTimes(java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void SetTimes(Java.Nio.File.Attribute.FileTime arg0, Java.Nio.File.Attribute.FileTime arg1, Java.Nio.File.Attribute.FileTime arg2)
         {
             IExecute("setTimes", arg0, arg1, arg2);

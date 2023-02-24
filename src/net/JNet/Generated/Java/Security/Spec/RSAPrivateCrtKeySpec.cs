@@ -30,15 +30,32 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#<init>(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg2"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg3"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg4"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg5"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg6"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg7"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg8"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
         public RSAPrivateCrtKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigInteger arg6, Java.Math.BigInteger arg7, Java.Security.Spec.AlgorithmParameterSpec arg8)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#<init>(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg2"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg3"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg4"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg5"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg6"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg7"><see cref="Java.Math.BigInteger"/></param>
         public RSAPrivateCrtKeySpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, Java.Math.BigInteger arg2, Java.Math.BigInteger arg3, Java.Math.BigInteger arg4, Java.Math.BigInteger arg5, Java.Math.BigInteger arg6, Java.Math.BigInteger arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
@@ -60,42 +77,42 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#getCrtCoefficient() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#getCrtCoefficient()"/> 
         /// </summary>
         public Java.Math.BigInteger CrtCoefficient
         {
             get { return IExecute<Java.Math.BigInteger>("getCrtCoefficient"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#getPrimeExponentP() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#getPrimeExponentP()"/> 
         /// </summary>
         public Java.Math.BigInteger PrimeExponentP
         {
             get { return IExecute<Java.Math.BigInteger>("getPrimeExponentP"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#getPrimeExponentQ() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#getPrimeExponentQ()"/> 
         /// </summary>
         public Java.Math.BigInteger PrimeExponentQ
         {
             get { return IExecute<Java.Math.BigInteger>("getPrimeExponentQ"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#getPrimeP() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#getPrimeP()"/> 
         /// </summary>
         public Java.Math.BigInteger PrimeP
         {
             get { return IExecute<Java.Math.BigInteger>("getPrimeP"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#getPrimeQ() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#getPrimeQ()"/> 
         /// </summary>
         public Java.Math.BigInteger PrimeQ
         {
             get { return IExecute<Java.Math.BigInteger>("getPrimeQ"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#getPublicExponent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateCrtKeySpec.html#getPublicExponent()"/> 
         /// </summary>
         public Java.Math.BigInteger PublicExponent
         {

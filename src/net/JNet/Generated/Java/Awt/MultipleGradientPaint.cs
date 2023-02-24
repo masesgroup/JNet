@@ -33,6 +33,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.MultipleGradientPaint"/> to <see cref="Java.Awt.Paint"/>
+        /// </summary>
         public static implicit operator Java.Awt.Paint(Java.Awt.MultipleGradientPaint t) => t.Cast<Java.Awt.Paint>();
         
         #endregion
@@ -47,28 +50,28 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getColors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getColors()"/> 
         /// </summary>
         public Java.Awt.Color[] Colors
         {
             get { return IExecuteArray<Java.Awt.Color>("getColors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getFractions() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getFractions()"/> 
         /// </summary>
         public float[] Fractions
         {
             get { return IExecuteArray<float>("getFractions"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getTransform() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getTransform()"/> 
         /// </summary>
         public Java.Awt.Geom.AffineTransform Transform
         {
             get { return IExecute<Java.Awt.Geom.AffineTransform>("getTransform"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getTransparency() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getTransparency()"/> 
         /// </summary>
         public int Transparency
         {
@@ -91,11 +94,11 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#LINEAR_RGB
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#LINEAR_RGB"/>
             /// </summary>
             public static Java.Awt.MultipleGradientPaint.ColorSpaceType LINEAR_RGB => Clazz.GetField<Java.Awt.MultipleGradientPaint.ColorSpaceType>("LINEAR_RGB");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#SRGB
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#SRGB"/>
             /// </summary>
             public static Java.Awt.MultipleGradientPaint.ColorSpaceType SRGB => Clazz.GetField<Java.Awt.MultipleGradientPaint.ColorSpaceType>("SRGB");
             
@@ -103,8 +106,10 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Awt.MultipleGradientPaint.ColorSpaceType"/></returns>
             public static Java.Awt.MultipleGradientPaint.ColorSpaceType[] Values()
             {
                 return SExecuteArray<Java.Awt.MultipleGradientPaint.ColorSpaceType>("values");
@@ -133,15 +138,15 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#NO_CYCLE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#NO_CYCLE"/>
             /// </summary>
             public static Java.Awt.MultipleGradientPaint.CycleMethod NO_CYCLE => Clazz.GetField<Java.Awt.MultipleGradientPaint.CycleMethod>("NO_CYCLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#REFLECT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#REFLECT"/>
             /// </summary>
             public static Java.Awt.MultipleGradientPaint.CycleMethod REFLECT => Clazz.GetField<Java.Awt.MultipleGradientPaint.CycleMethod>("REFLECT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#REPEAT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#REPEAT"/>
             /// </summary>
             public static Java.Awt.MultipleGradientPaint.CycleMethod REPEAT => Clazz.GetField<Java.Awt.MultipleGradientPaint.CycleMethod>("REPEAT");
             
@@ -149,8 +154,10 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Awt.MultipleGradientPaint.CycleMethod"/></returns>
             public static Java.Awt.MultipleGradientPaint.CycleMethod[] Values()
             {
                 return SExecuteArray<Java.Awt.MultipleGradientPaint.CycleMethod>("values");

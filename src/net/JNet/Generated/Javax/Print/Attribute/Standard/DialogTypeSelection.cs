@@ -33,17 +33,20 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.Standard.DialogTypeSelection"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.DialogTypeSelection t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogTypeSelection.html#COMMON
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogTypeSelection.html#COMMON"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.DialogTypeSelection COMMON => Clazz.GetField<Javax.Print.Attribute.Standard.DialogTypeSelection>("COMMON");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogTypeSelection.html#NATIVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogTypeSelection.html#NATIVE"/>
         /// </summary>
         public static Javax.Print.Attribute.Standard.DialogTypeSelection NATIVE => Clazz.GetField<Javax.Print.Attribute.Standard.DialogTypeSelection>("NATIVE");
         
@@ -55,7 +58,7 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogTypeSelection.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogTypeSelection.html#getName()"/> 
         /// </summary>
         public string Name
         {

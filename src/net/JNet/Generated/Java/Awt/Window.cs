@@ -30,22 +30,26 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#<init>(java.awt.Frame)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#%3Cinit%3E(java.awt.Frame)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
         public Window(Java.Awt.Frame arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#<init>(java.awt.Window,java.awt.GraphicsConfiguration)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#%3Cinit%3E(java.awt.Window,java.awt.GraphicsConfiguration)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.GraphicsConfiguration"/></param>
         public Window(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#<init>(java.awt.Window)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#%3Cinit%3E(java.awt.Window)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
         public Window(Java.Awt.Window arg0)
             : base(arg0)
         {
@@ -54,6 +58,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Window"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.Window t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
@@ -64,14 +71,14 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getOwnerlessWindows() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getOwnerlessWindows()"/> 
         /// </summary>
         public static Java.Awt.Window[] OwnerlessWindows
         {
             get { return SExecuteArray<Java.Awt.Window>("getOwnerlessWindows"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWindows() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWindows()"/> 
         /// </summary>
         public static Java.Awt.Window[] Windows
         {
@@ -82,252 +89,282 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getBufferStrategy() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getBufferStrategy()"/> 
         /// </summary>
         public Java.Awt.ImageNs.BufferStrategy BufferStrategy
         {
             get { return IExecute<Java.Awt.ImageNs.BufferStrategy>("getBufferStrategy"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getFocusableWindowState() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setFocusableWindowState(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getFocusableWindowState()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setFocusableWindowState(boolean)"/>
         /// </summary>
         public bool FocusableWindowState
         {
             get { return IExecute<bool>("getFocusableWindowState"); } set { IExecute("setFocusableWindowState", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getFocusOwner() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getFocusOwner()"/> 
         /// </summary>
         public Java.Awt.Component FocusOwner
         {
             get { return IExecute<Java.Awt.Component>("getFocusOwner"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getMostRecentFocusOwner() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getMostRecentFocusOwner()"/> 
         /// </summary>
         public Java.Awt.Component MostRecentFocusOwner
         {
             get { return IExecute<Java.Awt.Component>("getMostRecentFocusOwner"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getOpacity() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setOpacity(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getOpacity()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setOpacity(float)"/>
         /// </summary>
         public float Opacity
         {
             get { return IExecute<float>("getOpacity"); } set { IExecute("setOpacity", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getOwnedWindows() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getOwnedWindows()"/> 
         /// </summary>
         public Java.Awt.Window[] OwnedWindows
         {
             get { return IExecuteArray<Java.Awt.Window>("getOwnedWindows"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getOwner() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getOwner()"/> 
         /// </summary>
         public Java.Awt.Window Owner
         {
             get { return IExecute<Java.Awt.Window>("getOwner"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getShape() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setShape(java.awt.Shape)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getShape()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setShape(java.awt.Shape)"/>
         /// </summary>
         public Java.Awt.Shape Shape
         {
             get { return IExecute<Java.Awt.Shape>("getShape"); } set { IExecute("setShape", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWarningString() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWarningString()"/> 
         /// </summary>
         public string WarningString
         {
             get { return IExecute<string>("getWarningString"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWindowFocusListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWindowFocusListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.WindowFocusListener[] WindowFocusListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.WindowFocusListener>("getWindowFocusListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWindowListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWindowListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.WindowListener[] WindowListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.WindowListener>("getWindowListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWindowStateListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getWindowStateListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.WindowStateListener[] WindowStateListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.WindowStateListener>("getWindowStateListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isActive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isActive()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsActive()
         {
             return IExecute<bool>("isActive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAlwaysOnTopSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAlwaysOnTopSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAlwaysOnTopSupported()
         {
             return IExecute<bool>("isAlwaysOnTopSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAutoRequestFocus()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAutoRequestFocus()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAutoRequestFocus()
         {
             return IExecute<bool>("isAutoRequestFocus");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isFocused()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isFocused()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsFocused()
         {
             return IExecute<bool>("isFocused");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isLocationByPlatform()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isLocationByPlatform()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsLocationByPlatform()
         {
             return IExecute<bool>("isLocationByPlatform");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAlwaysOnTop()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAlwaysOnTop()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAlwaysOnTop()
         {
             return IExecute<bool>("isAlwaysOnTop");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isFocusableWindow()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isFocusableWindow()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsFocusableWindow()
         {
             return IExecute<bool>("isFocusableWindow");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setAlwaysOnTop(boolean) throws java.lang.SecurityException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setAlwaysOnTop(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <exception cref="Java.Lang.SecurityException"/>
         public void SetAlwaysOnTop(bool arg0)
         {
             IExecute("setAlwaysOnTop", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#addWindowFocusListener(java.awt.event.WindowFocusListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#addWindowFocusListener(java.awt.event.WindowFocusListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
         public void AddWindowFocusListener(Java.Awt.EventNs.WindowFocusListener arg0)
         {
             IExecute("addWindowFocusListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#addWindowListener(java.awt.event.WindowListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#addWindowListener(java.awt.event.WindowListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowListener"/></param>
         public void AddWindowListener(Java.Awt.EventNs.WindowListener arg0)
         {
             IExecute("addWindowListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#addWindowStateListener(java.awt.event.WindowStateListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#addWindowStateListener(java.awt.event.WindowStateListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
         public void AddWindowStateListener(Java.Awt.EventNs.WindowStateListener arg0)
         {
             IExecute("addWindowStateListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#removeWindowFocusListener(java.awt.event.WindowFocusListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#removeWindowFocusListener(java.awt.event.WindowFocusListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
         public void RemoveWindowFocusListener(Java.Awt.EventNs.WindowFocusListener arg0)
         {
             IExecute("removeWindowFocusListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#removeWindowListener(java.awt.event.WindowListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#removeWindowListener(java.awt.event.WindowListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowListener"/></param>
         public void RemoveWindowListener(Java.Awt.EventNs.WindowListener arg0)
         {
             IExecute("removeWindowListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#removeWindowStateListener(java.awt.event.WindowStateListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#removeWindowStateListener(java.awt.event.WindowStateListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowStateListener"/></param>
         public void RemoveWindowStateListener(Java.Awt.EventNs.WindowStateListener arg0)
         {
             IExecute("removeWindowStateListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#createBufferStrategy(int,java.awt.BufferCapabilities) throws java.awt.AWTException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#createBufferStrategy(int,java.awt.BufferCapabilities)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.BufferCapabilities"/></param>
+        /// <exception cref="Java.Awt.AWTException"/>
         public void CreateBufferStrategy(int arg0, Java.Awt.BufferCapabilities arg1)
         {
             IExecute("createBufferStrategy", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#createBufferStrategy(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#createBufferStrategy(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void CreateBufferStrategy(int arg0)
         {
             IExecute("createBufferStrategy", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#dispose()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#dispose()"/>
         /// </summary>
-        public void Dispose()
+        public new void Dispose()
         {
             IExecute("dispose");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#pack()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#pack()"/>
         /// </summary>
         public void Pack()
         {
             IExecute("pack");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setAutoRequestFocus(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setAutoRequestFocus(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetAutoRequestFocus(bool arg0)
         {
             IExecute("setAutoRequestFocus", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setIconImage(java.awt.Image)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setIconImage(java.awt.Image)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
         public void SetIconImage(Java.Awt.Image arg0)
         {
             IExecute("setIconImage", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setLocationByPlatform(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setLocationByPlatform(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetLocationByPlatform(bool arg0)
         {
             IExecute("setLocationByPlatform", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setLocationRelativeTo(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setLocationRelativeTo(java.awt.Component)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void SetLocationRelativeTo(Java.Awt.Component arg0)
         {
             IExecute("setLocationRelativeTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#toBack()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#toBack()"/>
         /// </summary>
         public void ToBack()
         {
             IExecute("toBack");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#toFront()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#toFront()"/>
         /// </summary>
         public void ToFront()
         {
@@ -350,15 +387,15 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#NORMAL
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#NORMAL"/>
             /// </summary>
             public static Java.Awt.Window.Type NORMAL => Clazz.GetField<Java.Awt.Window.Type>("NORMAL");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#POPUP
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#POPUP"/>
             /// </summary>
             public static Java.Awt.Window.Type POPUP => Clazz.GetField<Java.Awt.Window.Type>("POPUP");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#UTILITY
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#UTILITY"/>
             /// </summary>
             public static Java.Awt.Window.Type UTILITY => Clazz.GetField<Java.Awt.Window.Type>("UTILITY");
             
@@ -366,8 +403,10 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Awt.Window.Type"/></returns>
             public static Java.Awt.Window.Type[] Values()
             {
                 return SExecuteArray<Java.Awt.Window.Type>("values");

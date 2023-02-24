@@ -33,21 +33,24 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.StandardCopyOption"/> to <see cref="Java.Nio.File.CopyOption"/>
+        /// </summary>
         public static implicit operator Java.Nio.File.CopyOption(Java.Nio.File.StandardCopyOption t) => t.Cast<Java.Nio.File.CopyOption>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#ATOMIC_MOVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#ATOMIC_MOVE"/>
         /// </summary>
         public static Java.Nio.File.StandardCopyOption ATOMIC_MOVE => Clazz.GetField<Java.Nio.File.StandardCopyOption>("ATOMIC_MOVE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#COPY_ATTRIBUTES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#COPY_ATTRIBUTES"/>
         /// </summary>
         public static Java.Nio.File.StandardCopyOption COPY_ATTRIBUTES => Clazz.GetField<Java.Nio.File.StandardCopyOption>("COPY_ATTRIBUTES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#REPLACE_EXISTING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#REPLACE_EXISTING"/>
         /// </summary>
         public static Java.Nio.File.StandardCopyOption REPLACE_EXISTING => Clazz.GetField<Java.Nio.File.StandardCopyOption>("REPLACE_EXISTING");
         
@@ -55,8 +58,10 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.StandardCopyOption"/></returns>
         public static Java.Nio.File.StandardCopyOption[] Values()
         {
             return SExecuteArray<Java.Nio.File.StandardCopyOption>("values");

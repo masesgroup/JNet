@@ -33,17 +33,20 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.ThaiBuddhistEra"/> to <see cref="Java.Time.Chrono.Era"/>
+        /// </summary>
         public static implicit operator Java.Time.Chrono.Era(Java.Time.Chrono.ThaiBuddhistEra t) => t.Cast<Java.Time.Chrono.Era>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#BE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#BE"/>
         /// </summary>
         public static Java.Time.Chrono.ThaiBuddhistEra BE => Clazz.GetField<Java.Time.Chrono.ThaiBuddhistEra>("BE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#BEFORE_BE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#BEFORE_BE"/>
         /// </summary>
         public static Java.Time.Chrono.ThaiBuddhistEra BEFORE_BE => Clazz.GetField<Java.Time.Chrono.ThaiBuddhistEra>("BEFORE_BE");
         
@@ -51,8 +54,10 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.ThaiBuddhistEra"/></returns>
         public static Java.Time.Chrono.ThaiBuddhistEra[] Values()
         {
             return SExecuteArray<Java.Time.Chrono.ThaiBuddhistEra>("values");
@@ -62,7 +67,7 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#getValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#getValue()"/> 
         /// </summary>
         public int Value
         {

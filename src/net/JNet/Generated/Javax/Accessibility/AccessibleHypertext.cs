@@ -33,6 +33,9 @@ namespace Javax.Accessibility
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Accessibility.AccessibleHypertext"/> to <see cref="Javax.Accessibility.AccessibleText"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.AccessibleText(Javax.Accessibility.AccessibleHypertext t) => t.Cast<Javax.Accessibility.AccessibleText>();
         
         #endregion
@@ -47,22 +50,26 @@ namespace Javax.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHypertext.html#getLinkCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHypertext.html#getLinkCount()"/> 
         /// </summary>
         public int LinkCount
         {
             get { return IExecute<int>("getLinkCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHypertext.html#getLinkIndex(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHypertext.html#getLinkIndex(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetLinkIndex(int arg0)
         {
             return IExecute<int>("getLinkIndex", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHypertext.html#getLink(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHypertext.html#getLink(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Accessibility.AccessibleHyperlink"/></returns>
         public Javax.Accessibility.AccessibleHyperlink GetLink(int arg0)
         {
             return IExecute<Javax.Accessibility.AccessibleHyperlink>("getLink", arg0);

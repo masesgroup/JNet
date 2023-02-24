@@ -30,8 +30,12 @@ namespace Javax.Management.Relation
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationTypeSupport.html#<init>(java.lang.String,javax.management.relation.RoleInfo[]) throws java.lang.IllegalArgumentException,javax.management.relation.InvalidRelationTypeException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationTypeSupport.html#%3Cinit%3E(java.lang.String,javax.management.relation.RoleInfo[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.Relation.RoleInfo"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Javax.Management.Relation.InvalidRelationTypeException"/>
         public RelationTypeSupport(string arg0, Javax.Management.Relation.RoleInfo[] arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +44,9 @@ namespace Javax.Management.Relation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Relation.RelationTypeSupport"/> to <see cref="Javax.Management.Relation.RelationType"/>
+        /// </summary>
         public static implicit operator Javax.Management.Relation.RelationType(Javax.Management.Relation.RelationTypeSupport t) => t.Cast<Javax.Management.Relation.RelationType>();
         
         #endregion
@@ -54,15 +61,19 @@ namespace Javax.Management.Relation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationTypeSupport.html#getRelationTypeName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationTypeSupport.html#getRelationTypeName()"/> 
         /// </summary>
         public string RelationTypeName
         {
             get { return IExecute<string>("getRelationTypeName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationTypeSupport.html#getRoleInfo(java.lang.String) throws java.lang.IllegalArgumentException,javax.management.relation.RoleInfoNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationTypeSupport.html#getRoleInfo(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Management.Relation.RoleInfo"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Javax.Management.Relation.RoleInfoNotFoundException"/>
         public Javax.Management.Relation.RoleInfo GetRoleInfo(string arg0)
         {
             return IExecute<Javax.Management.Relation.RoleInfo>("getRoleInfo", arg0);

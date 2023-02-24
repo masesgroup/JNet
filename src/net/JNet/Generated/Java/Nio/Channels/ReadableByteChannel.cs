@@ -33,6 +33,9 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.ReadableByteChannel"/> to <see cref="Java.Nio.Channels.Channel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.Channel(Java.Nio.Channels.ReadableByteChannel t) => t.Cast<Java.Nio.Channels.Channel>();
         
         #endregion
@@ -47,8 +50,11 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ReadableByteChannel.html#read(java.nio.ByteBuffer) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ReadableByteChannel.html#read(java.nio.ByteBuffer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public int Read(Java.Nio.ByteBuffer arg0)
         {
             return IExecute<int>("read", arg0);

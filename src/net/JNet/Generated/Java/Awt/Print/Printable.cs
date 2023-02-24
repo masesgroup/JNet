@@ -38,11 +38,11 @@ namespace Java.Awt.Print
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#NO_SUCH_PAGE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#NO_SUCH_PAGE"/>
         /// </summary>
         public static int NO_SUCH_PAGE => Clazz.GetField<int>("NO_SUCH_PAGE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#PAGE_EXISTS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#PAGE_EXISTS"/>
         /// </summary>
         public static int PAGE_EXISTS => Clazz.GetField<int>("PAGE_EXISTS");
         
@@ -54,8 +54,13 @@ namespace Java.Awt.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#print.Printable.print(java.awt.Graphics,java.awt.print.PageFormat,int) throws java.awt.print.PrinterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#print.Printable.print(java.awt.Graphics,java.awt.print.PageFormat,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Print.PageFormat"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Awt.Print.PrinterException"/>
         public int Print(Java.Awt.Graphics arg0, Java.Awt.Print.PageFormat arg1, int arg2)
         {
             return IExecute<int>("print", arg0, arg1, arg2);

@@ -33,13 +33,16 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Ldap.StartTlsResponse"/> to <see cref="Javax.Naming.Ldap.ExtendedResponse"/>
+        /// </summary>
         public static implicit operator Javax.Naming.Ldap.ExtendedResponse(Javax.Naming.Ldap.StartTlsResponse t) => t.Cast<Javax.Naming.Ldap.ExtendedResponse>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#OID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#OID"/>
         /// </summary>
         public static string OID => Clazz.GetField<string>("OID");
         
@@ -51,50 +54,60 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#getEncodedValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#getEncodedValue()"/> 
         /// </summary>
         public byte[] EncodedValue
         {
             get { return IExecuteArray<byte>("getEncodedValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#getID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#getID()"/> 
         /// </summary>
         public string ID
         {
             get { return IExecute<string>("getID"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#negotiate() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#negotiate()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Net.Ssl.SSLSession Negotiate()
         {
             return IExecute<Javax.Net.Ssl.SSLSession>("negotiate");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#negotiate(javax.net.ssl.SSLSocketFactory) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#negotiate(javax.net.ssl.SSLSocketFactory)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSocketFactory"/></param>
+        /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Net.Ssl.SSLSession Negotiate(Javax.Net.Ssl.SSLSocketFactory arg0)
         {
             return IExecute<Javax.Net.Ssl.SSLSession>("negotiate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#close() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#setEnabledCipherSuites(java.lang.String[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#setEnabledCipherSuites(java.lang.String[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
         public void SetEnabledCipherSuites(string[] arg0)
         {
             IExecute("setEnabledCipherSuites", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#setHostnameVerifier(javax.net.ssl.HostnameVerifier)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html#setHostnameVerifier(javax.net.ssl.HostnameVerifier)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.HostnameVerifier"/></param>
         public void SetHostnameVerifier(Javax.Net.Ssl.HostnameVerifier arg0)
         {
             IExecute("setHostnameVerifier", arg0);

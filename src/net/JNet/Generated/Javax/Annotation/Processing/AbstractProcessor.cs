@@ -33,6 +33,9 @@ namespace Javax.Annotation.Processing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Annotation.Processing.AbstractProcessor"/> to <see cref="Javax.Annotation.Processing.Processor"/>
+        /// </summary>
         public static implicit operator Javax.Annotation.Processing.Processor(Javax.Annotation.Processing.AbstractProcessor t) => t.Cast<Javax.Annotation.Processing.Processor>();
         
         #endregion
@@ -47,8 +50,9 @@ namespace Javax.Annotation.Processing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/AbstractProcessor.html#init(javax.annotation.processing.ProcessingEnvironment)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/AbstractProcessor.html#init(javax.annotation.processing.ProcessingEnvironment)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Annotation.Processing.ProcessingEnvironment"/></param>
         public void Init(Javax.Annotation.Processing.ProcessingEnvironment arg0)
         {
             IExecute("init", arg0);

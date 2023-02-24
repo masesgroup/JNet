@@ -21,10 +21,18 @@ using System.Collections.Generic;
 
 namespace MASES.JNet.Extensions
 {
+    /// <summary>
+    /// Extension for JAva.Util classes
+    /// </summary>
     public static class JavaUtilExtensions
     {
         #region List Extensions
-
+        /// <summary>
+        /// Converts a <see cref="Collection{T}"/> to <see cref="ICollection{T}"/>
+        /// </summary>
+        /// <typeparam name="T">Type</typeparam>
+        /// <param name="set">The <see cref="Collection{T}"/></param>
+        /// <returns>The <see cref="ICollection{T}"/></returns>
         public static ICollection<T> ToCollection<T>(this Collection<T> set)
         {
             System.Collections.Generic.List<T> list = new ();
@@ -35,7 +43,12 @@ namespace MASES.JNet.Extensions
             }
             return list;
         }
-
+        /// <summary>
+        /// Converts a <see cref="Collection{T}"/> to <see cref="System.Collections.Generic.List{T}"/>
+        /// </summary>
+        /// <typeparam name="T">Type</typeparam>
+        /// <param name="set">The <see cref="Collection{T}"/></param>
+        /// <returns>The <see cref="System.Collections.Generic.List{T}"/></returns>
         public static System.Collections.Generic.List<T> ToList<T>(this Collection<T> set)
         {
             System.Collections.Generic.List<T> list = new();
@@ -46,7 +59,12 @@ namespace MASES.JNet.Extensions
             }
             return list;
         }
-
+        /// <summary>
+        /// Converts a <see cref="ICollection{T}"/> to <see cref="Collection{T}"/>
+        /// </summary>
+        /// <typeparam name="T">Type</typeparam>
+        /// <param name="collection">The <see cref="ICollection{T}"/></param>
+        /// <returns>The <see cref="Collection{T}"/></returns>
         public static Collection<T> ToJCollection<T>(this ICollection<T> collection)
         {
             ArrayList<T> list = new();
@@ -57,7 +75,12 @@ namespace MASES.JNet.Extensions
             }
             return list;
         }
-
+        /// <summary>
+        /// Converts a <see cref="ICollection{T}"/> to <see cref="Java.Util.List{T}"/>
+        /// </summary>
+        /// <typeparam name="T">Type</typeparam>
+        /// <param name="collection">The <see cref="ICollection{T}"/></param>
+        /// <returns>The <see cref="Java.Util.List{T}"/></returns>
         public static Java.Util.List<T> ToJList<T>(this ICollection<T> collection)
         {
             ArrayList<T> list = new();
@@ -72,7 +95,13 @@ namespace MASES.JNet.Extensions
         #endregion
 
         #region Map/Dictionary Extensions
-
+        /// <summary>
+        /// Converts a <see cref="Map{K, V}"/> to <see cref="System.Collections.Generic.Dictionary{K, V}"/>
+        /// </summary>
+        /// <typeparam name="K">Key</typeparam>
+        /// <typeparam name="V">Value</typeparam>
+        /// <param name="map">The <see cref="Map{K, V}"/></param>
+        /// <returns>The <see cref="System.Collections.Generic.Dictionary{K, V}"/></returns>
         public static System.Collections.Generic.Dictionary<K, V> ToDictiony<K, V>(this Map<K, V> map)
         {
             System.Collections.Generic.Dictionary<K, V> dictionary = new();
@@ -83,7 +112,13 @@ namespace MASES.JNet.Extensions
             }
             return dictionary;
         }
-
+        /// <summary>
+        /// Converts a <see cref="IDictionary{K, V}"/> to <see cref="Map{K, V}"/>
+        /// </summary>
+        /// <typeparam name="K">Key</typeparam>
+        /// <typeparam name="V">Value</typeparam>
+        /// <param name="dictionary">The <see cref="IDictionary{K, V}"/></param>
+        /// <returns>The <see cref="Map{K, V}"/></returns>
         public static Map<K, V> ToMap<K,V>(this IDictionary<K, V> dictionary)
         {
             HashMap<K, V> map = new();
@@ -94,7 +129,13 @@ namespace MASES.JNet.Extensions
             }
             return map;
         }
-
+        /// <summary>
+        /// Converts a <see cref="IDictionary{K, V}"/> to <see cref="Hashtable{K, V}"/>
+        /// </summary>
+        /// <typeparam name="K">Key</typeparam>
+        /// <typeparam name="V">Value</typeparam>
+        /// <param name="dictionary">The <see cref="IDictionary{K, V}"/></param>
+        /// <returns>The <see cref="Hashtable{K, V}"/></returns>
         public static Hashtable<K, V> ToHashtable<K, V>(this IDictionary<K, V> dictionary)
         {
             Hashtable<K, V> hTable = new();

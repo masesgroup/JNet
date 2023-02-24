@@ -30,57 +30,77 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.Runnable,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.Runnable,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public Thread(Java.Lang.Runnable arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.Runnable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         public Thread(Java.Lang.Runnable arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public Thread(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="long"/></param>
+        /// <param name="arg4"><see langword="bool"/></param>
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, string arg2, long arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="long"/></param>
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, string arg2, long arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.ThreadGroup,java.lang.Runnable)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.ThreadGroup,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public Thread(Java.Lang.ThreadGroup arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -89,21 +109,24 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Thread"/> to <see cref="Java.Lang.Runnable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Runnable(Java.Lang.Thread t) => t.Cast<Java.Lang.Runnable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#MAX_PRIORITY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#MAX_PRIORITY"/>
         /// </summary>
         public static int MAX_PRIORITY => Clazz.GetField<int>("MAX_PRIORITY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#MIN_PRIORITY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#MIN_PRIORITY"/>
         /// </summary>
         public static int MIN_PRIORITY => Clazz.GetField<int>("MIN_PRIORITY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#NORM_PRIORITY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#NORM_PRIORITY"/>
         /// </summary>
         public static int NORM_PRIORITY => Clazz.GetField<int>("NORM_PRIORITY");
         
@@ -111,78 +134,93 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getDefaultUncaughtExceptionHandler() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setDefaultUncaughtExceptionHandler(java.lang.Thread$UncaughtExceptionHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getDefaultUncaughtExceptionHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setDefaultUncaughtExceptionHandler(java.lang.Thread$UncaughtExceptionHandler)"/>
         /// </summary>
         public static Java.Lang.Thread.UncaughtExceptionHandler DefaultUncaughtExceptionHandler
         {
             get { return SExecute<Java.Lang.Thread.UncaughtExceptionHandler>("getDefaultUncaughtExceptionHandler"); } set { SExecute("setDefaultUncaughtExceptionHandler", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupted()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupted()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public static bool Interrupted()
         {
             return SExecute<bool>("interrupted");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#activeCount()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#activeCount()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public static int ActiveCount()
         {
             return SExecute<int>("activeCount");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#enumerate(java.lang.Thread[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#enumerate(java.lang.Thread[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int Enumerate(Java.Lang.Thread[] arg0)
         {
             return SExecute<int>("enumerate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#holdsLock(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#holdsLock(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool HoldsLock(object arg0)
         {
             return SExecute<bool>("holdsLock", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#currentThread()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#currentThread()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Thread"/></returns>
         public static Java.Lang.Thread CurrentThread()
         {
             return SExecute<Java.Lang.Thread>("currentThread");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public static void Sleep(long arg0)
         {
             SExecute("sleep", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#yield()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#yield()"/>
         /// </summary>
         public static void Yield()
         {
             SExecute("yield");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#dumpStack()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#dumpStack()"/>
         /// </summary>
         public static void DumpStack()
         {
             SExecute("dumpStack");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#onSpinWait()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#onSpinWait()"/>
         /// </summary>
         public static void OnSpinWait()
         {
             SExecute("onSpinWait");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long,int) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public static void Sleep(long arg0, int arg1)
         {
             SExecute("sleep", arg0, arg1);
@@ -192,134 +230,151 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getContextClassLoader() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setContextClassLoader(java.lang.ClassLoader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getContextClassLoader()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setContextClassLoader(java.lang.ClassLoader)"/>
         /// </summary>
         public Java.Lang.ClassLoader ContextClassLoader
         {
             get { return IExecute<Java.Lang.ClassLoader>("getContextClassLoader"); } set { IExecute("setContextClassLoader", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getId()"/> 
         /// </summary>
         public long Id
         {
             get { return IExecute<long>("getId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getName() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setName(java.lang.String)"/>
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); } set { IExecute("setName", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getPriority() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setPriority(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getPriority()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setPriority(int)"/>
         /// </summary>
         public int Priority
         {
             get { return IExecute<int>("getPriority"); } set { IExecute("setPriority", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getStackTrace() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getStackTrace()"/> 
         /// </summary>
         public Java.Lang.StackTraceElement[] StackTrace
         {
             get { return IExecuteArray<Java.Lang.StackTraceElement>("getStackTrace"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getThreadGroup() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getThreadGroup()"/> 
         /// </summary>
         public Java.Lang.ThreadGroup ThreadGroup
         {
             get { return IExecute<Java.Lang.ThreadGroup>("getThreadGroup"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isInterrupted()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isInterrupted()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsInterrupted()
         {
             return IExecute<bool>("isInterrupted");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isDaemon()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isDaemon()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDaemon()
         {
             return IExecute<bool>("isDaemon");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isAlive()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isAlive()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAlive()
         {
             return IExecute<bool>("isAlive");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join(long,int) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join(long,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public void Join(long arg0, int arg1)
         {
             IExecute("join", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join(long) throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public void Join(long arg0)
         {
             IExecute("join", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#checkAccess()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#checkAccess()"/>
         /// </summary>
         public void CheckAccess()
         {
             IExecute("checkAccess");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join() throws java.lang.InterruptedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Lang.InterruptedException"/>
         public void Join()
         {
             IExecute("join");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setDaemon(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setDaemon(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetDaemon(bool arg0)
         {
             IExecute("setDaemon", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getUncaughtExceptionHandler()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getUncaughtExceptionHandler()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Thread.UncaughtExceptionHandler"/></returns>
         public Java.Lang.Thread.UncaughtExceptionHandler GetUncaughtExceptionHandler()
         {
             return IExecute<Java.Lang.Thread.UncaughtExceptionHandler>("getUncaughtExceptionHandler");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#start()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#start()"/>
         /// </summary>
         public void Start()
         {
             IExecute("start");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupt()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupt()"/>
         /// </summary>
         public void Interrupt()
         {
             IExecute("interrupt");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#run()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#run()"/>
         /// </summary>
         public void Run()
         {
             IExecute("run");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setUncaughtExceptionHandler(java.lang.Thread$UncaughtExceptionHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setUncaughtExceptionHandler(java.lang.Thread$UncaughtExceptionHandler)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Thread.UncaughtExceptionHandler"/></param>
         public void SetUncaughtExceptionHandler(Java.Lang.Thread.UncaughtExceptionHandler arg0)
         {
             IExecute("setUncaughtExceptionHandler", arg0);
@@ -341,27 +396,27 @@ namespace Java.Lang
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#BLOCKED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#BLOCKED"/>
             /// </summary>
             public static Java.Lang.Thread.State BLOCKED => Clazz.GetField<Java.Lang.Thread.State>("BLOCKED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#NEW
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#NEW"/>
             /// </summary>
             public static Java.Lang.Thread.State NEW => Clazz.GetField<Java.Lang.Thread.State>("NEW");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#RUNNABLE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#RUNNABLE"/>
             /// </summary>
             public static Java.Lang.Thread.State RUNNABLE => Clazz.GetField<Java.Lang.Thread.State>("RUNNABLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TERMINATED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TERMINATED"/>
             /// </summary>
             public static Java.Lang.Thread.State TERMINATED => Clazz.GetField<Java.Lang.Thread.State>("TERMINATED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TIMED_WAITING
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TIMED_WAITING"/>
             /// </summary>
             public static Java.Lang.Thread.State TIMED_WAITING => Clazz.GetField<Java.Lang.Thread.State>("TIMED_WAITING");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#WAITING
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#WAITING"/>
             /// </summary>
             public static Java.Lang.Thread.State WAITING => Clazz.GetField<Java.Lang.Thread.State>("WAITING");
             
@@ -369,8 +424,10 @@ namespace Java.Lang
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Lang.Thread.State"/></returns>
             public static Java.Lang.Thread.State[] Values()
             {
                 return SExecuteArray<Java.Lang.Thread.State>("values");
@@ -407,8 +464,10 @@ namespace Java.Lang
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html#uncaughtException(java.lang.Thread,java.lang.Throwable)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html#uncaughtException(java.lang.Thread,java.lang.Throwable)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
             public void UncaughtException(Java.Lang.Thread arg0, Java.Lang.Throwable arg1)
             {
                 IExecute("uncaughtException", arg0, arg1);

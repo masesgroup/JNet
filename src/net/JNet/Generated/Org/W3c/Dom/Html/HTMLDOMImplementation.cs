@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Html
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Html.HTMLDOMImplementation"/> to <see cref="Org.W3c.Dom.DOMImplementation"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.DOMImplementation(Org.W3c.Dom.Html.HTMLDOMImplementation t) => t.Cast<Org.W3c.Dom.DOMImplementation>();
         
         #endregion
@@ -47,8 +50,10 @@ namespace Org.W3c.Dom.Html
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDOMImplementation.html#createHTMLDocument(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDOMImplementation.html#createHTMLDocument(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Html.HTMLDocument"/></returns>
         public Org.W3c.Dom.Html.HTMLDocument CreateHTMLDocument(string arg0)
         {
             return IExecute<Org.W3c.Dom.Html.HTMLDocument>("createHTMLDocument", arg0);

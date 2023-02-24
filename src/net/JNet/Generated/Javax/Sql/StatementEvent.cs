@@ -30,15 +30,20 @@ namespace Javax.Sql
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#<init>(javax.sql.PooledConnection,java.sql.PreparedStatement,java.sql.SQLException)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#%3Cinit%3E(javax.sql.PooledConnection,java.sql.PreparedStatement,java.sql.SQLException)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.PooledConnection"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.PreparedStatement"/></param>
+        /// <param name="arg2"><see cref="Java.Sql.SQLException"/></param>
         public StatementEvent(Javax.Sql.PooledConnection arg0, Java.Sql.PreparedStatement arg1, Java.Sql.SQLException arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#<init>(javax.sql.PooledConnection,java.sql.PreparedStatement)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#%3Cinit%3E(javax.sql.PooledConnection,java.sql.PreparedStatement)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.PooledConnection"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.PreparedStatement"/></param>
         public StatementEvent(Javax.Sql.PooledConnection arg0, Java.Sql.PreparedStatement arg1)
             : base(arg0, arg1)
         {
@@ -60,14 +65,14 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#getSQLException() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#getSQLException()"/> 
         /// </summary>
         public Java.Sql.SQLException SQLException
         {
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getSQLException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLException>(obj); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#getStatement() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#getStatement()"/> 
         /// </summary>
         public Java.Sql.PreparedStatement Statement
         {

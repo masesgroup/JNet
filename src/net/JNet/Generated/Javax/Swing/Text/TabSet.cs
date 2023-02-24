@@ -30,8 +30,9 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#<init>(javax.swing.text.TabStop[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#%3Cinit%3E(javax.swing.text.TabStop[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.TabStop"/></param>
         public TabSet(Javax.Swing.Text.TabStop[] arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.Text.TabSet"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.Text.TabSet t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,36 +58,44 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabCount()"/> 
         /// </summary>
         public int TabCount
         {
             get { return IExecute<int>("getTabCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabIndex(javax.swing.text.TabStop)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabIndex(javax.swing.text.TabStop)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.TabStop"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetTabIndex(Javax.Swing.Text.TabStop arg0)
         {
             return IExecute<int>("getTabIndex", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabIndexAfter(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabIndexAfter(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetTabIndexAfter(float arg0)
         {
             return IExecute<int>("getTabIndexAfter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTab(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTab(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Text.TabStop"/></returns>
         public Javax.Swing.Text.TabStop GetTab(int arg0)
         {
             return IExecute<Javax.Swing.Text.TabStop>("getTab", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabAfter(float)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html#getTabAfter(float)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="float"/></param>
+        /// <returns><see cref="Javax.Swing.Text.TabStop"/></returns>
         public Javax.Swing.Text.TabStop GetTabAfter(float arg0)
         {
             return IExecute<Javax.Swing.Text.TabStop>("getTabAfter", arg0);

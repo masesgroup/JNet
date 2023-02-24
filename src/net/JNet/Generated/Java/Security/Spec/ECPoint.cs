@@ -30,8 +30,10 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPoint.html#<init>(java.math.BigInteger,java.math.BigInteger)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPoint.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
+        /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
         public ECPoint(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1)
             : base(arg0, arg1)
         {
@@ -45,7 +47,7 @@ namespace Java.Security.Spec
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPoint.html#POINT_INFINITY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPoint.html#POINT_INFINITY"/>
         /// </summary>
         public static Java.Security.Spec.ECPoint POINT_INFINITY => Clazz.GetField<Java.Security.Spec.ECPoint>("POINT_INFINITY");
         
@@ -57,14 +59,14 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPoint.html#getAffineX() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPoint.html#getAffineX()"/> 
         /// </summary>
         public Java.Math.BigInteger AffineX
         {
             get { return IExecute<Java.Math.BigInteger>("getAffineX"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPoint.html#getAffineY() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPoint.html#getAffineY()"/> 
         /// </summary>
         public Java.Math.BigInteger AffineY
         {

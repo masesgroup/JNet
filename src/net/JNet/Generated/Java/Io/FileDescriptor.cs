@@ -38,15 +38,15 @@ namespace Java.Io
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#err
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#err"/>
         /// </summary>
         public static Java.Io.FileDescriptor err => Clazz.GetField<Java.Io.FileDescriptor>("err");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#in
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#in"/>
         /// </summary>
         public static Java.Io.FileDescriptor inField => Clazz.GetField<Java.Io.FileDescriptor>("in");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#out
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#out"/>
         /// </summary>
         public static Java.Io.FileDescriptor outField => Clazz.GetField<Java.Io.FileDescriptor>("out");
         
@@ -58,15 +58,19 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#valid()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#valid()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Valid()
         {
             return IExecute<bool>("valid");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#sync() throws java.io.SyncFailedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#sync()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.SyncFailedException"/>
         public void Sync()
         {
             IExecute("sync");

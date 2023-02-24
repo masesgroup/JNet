@@ -46,8 +46,10 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLStreamHandlerFactory.html#createURLStreamHandler(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLStreamHandlerFactory.html#createURLStreamHandler(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Net.URLStreamHandler"/></returns>
         public Java.Net.URLStreamHandler CreateURLStreamHandler(string arg0)
         {
             return IExecute<Java.Net.URLStreamHandler>("createURLStreamHandler", arg0);

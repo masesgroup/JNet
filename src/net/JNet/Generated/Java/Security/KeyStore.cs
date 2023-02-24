@@ -42,36 +42,58 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getDefaultType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getDefaultType()"/> 
         /// </summary>
         public static string DefaultType
         {
             get { return SExecute<string>("getDefaultType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.io.File,char[]) throws java.security.KeyStoreException,java.io.IOException,java.security.NoSuchAlgorithmException,java.security.cert.CertificateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.io.File,char[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <returns><see cref="Java.Security.KeyStore"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
         public static Java.Security.KeyStore GetInstance(Java.Io.File arg0, char[] arg1)
         {
             return SExecute<Java.Security.KeyStore>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.io.File,java.security.KeyStore$LoadStoreParameter) throws java.security.KeyStoreException,java.io.IOException,java.security.NoSuchAlgorithmException,java.security.cert.CertificateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.io.File,java.security.KeyStore$LoadStoreParameter)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg1"><see cref="Java.Security.KeyStore.LoadStoreParameter"/></param>
+        /// <returns><see cref="Java.Security.KeyStore"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
         public static Java.Security.KeyStore GetInstance(Java.Io.File arg0, Java.Security.KeyStore.LoadStoreParameter arg1)
         {
             return SExecute<Java.Security.KeyStore>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.lang.String,java.lang.String) throws java.security.KeyStoreException,java.security.NoSuchProviderException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.KeyStore"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.KeyStore GetInstance(string arg0, string arg1)
         {
             return SExecute<Java.Security.KeyStore>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.lang.String) throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.KeyStore"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public static Java.Security.KeyStore GetInstance(string arg0)
         {
             return SExecute<Java.Security.KeyStore>("getInstance", arg0);
@@ -81,141 +103,215 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#containsAlias(java.lang.String) throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#containsAlias(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public bool ContainsAlias(string arg0)
         {
             return IExecute<bool>("containsAlias", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#isCertificateEntry(java.lang.String) throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#isCertificateEntry(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public bool IsCertificateEntry(string arg0)
         {
             return IExecute<bool>("isCertificateEntry", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#isKeyEntry(java.lang.String) throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#isKeyEntry(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public bool IsKeyEntry(string arg0)
         {
             return IExecute<bool>("isKeyEntry", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#size() throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public int Size()
         {
             return IExecute<int>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificateAlias(java.security.cert.Certificate) throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificateAlias(java.security.cert.Certificate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public string GetCertificateAlias(Java.Security.Cert.Certificate arg0)
         {
             return IExecute<string>("getCertificateAlias", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificate(java.lang.String) throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificate(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Security.Cert.Certificate GetCertificate(string arg0)
         {
             return IExecute<Java.Security.Cert.Certificate>("getCertificate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificateChain(java.lang.String) throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificateChain(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Security.Cert.Certificate[] GetCertificateChain(string arg0)
         {
             return IExecuteArray<Java.Security.Cert.Certificate>("getCertificateChain", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getKey(java.lang.String,char[]) throws java.security.KeyStoreException,java.security.NoSuchAlgorithmException,java.security.UnrecoverableKeyException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getKey(java.lang.String,char[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <returns><see cref="Java.Security.Key"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.UnrecoverableKeyException"/>
         public Java.Security.Key GetKey(string arg0, char[] arg1)
         {
             return IExecute<Java.Security.Key>("getKey", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getEntry(java.lang.String,java.security.KeyStore$ProtectionParameter) throws java.security.NoSuchAlgorithmException,java.security.UnrecoverableEntryException,java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getEntry(java.lang.String,java.security.KeyStore$ProtectionParameter)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
+        /// <returns><see cref="Java.Security.KeyStore.Entry"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.UnrecoverableEntryException"/>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Security.KeyStore.Entry GetEntry(string arg0, Java.Security.KeyStore.ProtectionParameter arg1)
         {
             return IExecute<Java.Security.KeyStore.Entry>("getEntry", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCreationDate(java.lang.String) throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCreationDate(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Util.Date GetCreationDate(string arg0)
         {
             return IExecute<Java.Util.Date>("getCreationDate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#deleteEntry(java.lang.String) throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#deleteEntry(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public void DeleteEntry(string arg0)
         {
             IExecute("deleteEntry", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#load(java.io.InputStream,char[]) throws java.io.IOException,java.security.NoSuchAlgorithmException,java.security.cert.CertificateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#load(java.io.InputStream,char[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void Load(Java.Io.InputStream arg0, char[] arg1)
         {
             IExecute("load", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#load(java.security.KeyStore$LoadStoreParameter) throws java.io.IOException,java.security.NoSuchAlgorithmException,java.security.cert.CertificateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#load(java.security.KeyStore$LoadStoreParameter)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.KeyStore.LoadStoreParameter"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void Load(Java.Security.KeyStore.LoadStoreParameter arg0)
         {
             IExecute("load", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setCertificateEntry(java.lang.String,java.security.cert.Certificate) throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setCertificateEntry(java.lang.String,java.security.cert.Certificate)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public void SetCertificateEntry(string arg0, Java.Security.Cert.Certificate arg1)
         {
             IExecute("setCertificateEntry", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setEntry(java.lang.String,java.security.KeyStore$Entry,java.security.KeyStore$ProtectionParameter) throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setEntry(java.lang.String,java.security.KeyStore$Entry,java.security.KeyStore$ProtectionParameter)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.KeyStore.Entry"/></param>
+        /// <param name="arg2"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public void SetEntry(string arg0, Java.Security.KeyStore.Entry arg1, Java.Security.KeyStore.ProtectionParameter arg2)
         {
             IExecute("setEntry", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setKeyEntry(java.lang.String,byte[],java.security.cert.Certificate[]) throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setKeyEntry(java.lang.String,byte[],java.security.cert.Certificate[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Cert.Certificate"/></param>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public void SetKeyEntry(string arg0, byte[] arg1, Java.Security.Cert.Certificate[] arg2)
         {
             IExecute("setKeyEntry", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setKeyEntry(java.lang.String,java.security.Key,char[],java.security.cert.Certificate[]) throws java.security.KeyStoreException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#setKeyEntry(java.lang.String,java.security.Key,char[],java.security.cert.Certificate[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg2"><see cref="char"/></param>
+        /// <param name="arg3"><see cref="Java.Security.Cert.Certificate"/></param>
+        /// <exception cref="Java.Security.KeyStoreException"/>
         public void SetKeyEntry(string arg0, Java.Security.Key arg1, char[] arg2, Java.Security.Cert.Certificate[] arg3)
         {
             IExecute("setKeyEntry", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#store(java.io.OutputStream,char[]) throws java.security.KeyStoreException,java.io.IOException,java.security.NoSuchAlgorithmException,java.security.cert.CertificateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#store(java.io.OutputStream,char[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <exception cref="Java.Security.KeyStoreException"/>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void Store(Java.Io.OutputStream arg0, char[] arg1)
         {
             IExecute("store", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#store(java.security.KeyStore$LoadStoreParameter) throws java.security.KeyStoreException,java.io.IOException,java.security.NoSuchAlgorithmException,java.security.cert.CertificateException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#store(java.security.KeyStore$LoadStoreParameter)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.KeyStore.LoadStoreParameter"/></param>
+        /// <exception cref="Java.Security.KeyStoreException"/>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void Store(Java.Security.KeyStore.LoadStoreParameter arg0)
         {
             IExecute("store", arg0);
@@ -241,15 +337,21 @@ namespace Java.Security
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#newInstance(java.io.File,java.security.KeyStore$ProtectionParameter)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#newInstance(java.io.File,java.security.KeyStore$ProtectionParameter)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Io.File"/></param>
+            /// <param name="arg1"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
+            /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
             public static Java.Security.KeyStore.Builder NewInstance(Java.Io.File arg0, Java.Security.KeyStore.ProtectionParameter arg1)
             {
                 return SExecute<Java.Security.KeyStore.Builder>("newInstance", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#newInstance(java.security.KeyStore,java.security.KeyStore$ProtectionParameter)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#newInstance(java.security.KeyStore,java.security.KeyStore$ProtectionParameter)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Security.KeyStore"/></param>
+            /// <param name="arg1"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
+            /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
             public static Java.Security.KeyStore.Builder NewInstance(Java.Security.KeyStore arg0, Java.Security.KeyStore.ProtectionParameter arg1)
             {
                 return SExecute<Java.Security.KeyStore.Builder>("newInstance", arg0, arg1);
@@ -259,15 +361,21 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#getKeyStore() throws java.security.KeyStoreException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#getKeyStore()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Security.KeyStore"/></returns>
+            /// <exception cref="Java.Security.KeyStoreException"/>
             public Java.Security.KeyStore GetKeyStore()
             {
                 return IExecute<Java.Security.KeyStore>("getKeyStore");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#getProtectionParameter(java.lang.String) throws java.security.KeyStoreException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html#getProtectionParameter(java.lang.String)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <returns><see cref="Java.Security.KeyStore.ProtectionParameter"/></returns>
+            /// <exception cref="Java.Security.KeyStoreException"/>
             public Java.Security.KeyStore.ProtectionParameter GetProtectionParameter(string arg0)
             {
                 return IExecute<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter", arg0);
@@ -284,8 +392,9 @@ namespace Java.Security
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.CallbackHandlerProtection.html#<init>(javax.security.auth.callback.CallbackHandler)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.CallbackHandlerProtection.html#%3Cinit%3E(javax.security.auth.callback.CallbackHandler)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
             public CallbackHandlerProtection(Javax.Security.Auth.Callback.CallbackHandler arg0)
                 : base(arg0)
             {
@@ -307,7 +416,7 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.CallbackHandlerProtection.html#getCallbackHandler() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.CallbackHandlerProtection.html#getCallbackHandler()"/> 
             /// </summary>
             public Javax.Security.Auth.Callback.CallbackHandler CallbackHandler
             {
@@ -368,8 +477,10 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.LoadStoreParameter.html#getProtectionParameter()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.LoadStoreParameter.html#getProtectionParameter()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Security.KeyStore.ProtectionParameter"/></returns>
             public Java.Security.KeyStore.ProtectionParameter GetProtectionParameter()
             {
                 return IExecute<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter");
@@ -386,15 +497,19 @@ namespace Java.Security
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#<init>(char[],java.lang.String,java.security.spec.AlgorithmParameterSpec)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#%3Cinit%3E(char[],java.lang.String,java.security.spec.AlgorithmParameterSpec)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="char"/></param>
+            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg2"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
             public PasswordProtection(char[] arg0, string arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
                 : base(arg0, arg1, arg2)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#<init>(char[])
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#%3Cinit%3E(char[])"/>
             /// </summary>
+            /// <param name="arg0"><see cref="char"/></param>
             public PasswordProtection(char[] arg0)
                 : base(arg0)
             {
@@ -403,6 +518,9 @@ namespace Java.Security
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Security.KeyStore.PasswordProtection"/> to <see cref="Javax.Security.Auth.Destroyable"/>
+            /// </summary>
             public static implicit operator Javax.Security.Auth.Destroyable(Java.Security.KeyStore.PasswordProtection t) => t.Cast<Javax.Security.Auth.Destroyable>();
             
             #endregion
@@ -417,36 +535,40 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#getPassword() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#getPassword()"/> 
             /// </summary>
             public char[] Password
             {
                 get { return IExecuteArray<char>("getPassword"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#getProtectionAlgorithm() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#getProtectionAlgorithm()"/> 
             /// </summary>
             public string ProtectionAlgorithm
             {
                 get { return IExecute<string>("getProtectionAlgorithm"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#getProtectionParameters() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#getProtectionParameters()"/> 
             /// </summary>
             public Java.Security.Spec.AlgorithmParameterSpec ProtectionParameters
             {
                 get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getProtectionParameters"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#isDestroyed()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#isDestroyed()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool IsDestroyed()
             {
                 return IExecute<bool>("isDestroyed");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#destroy() throws javax.security.auth.DestroyFailedException
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#destroy()"/>
             /// </summary>
+            
+            /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
             public void Destroy()
             {
                 IExecute("destroy");
@@ -463,8 +585,10 @@ namespace Java.Security
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#<init>(java.security.PrivateKey,java.security.cert.Certificate[])
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#%3Cinit%3E(java.security.PrivateKey,java.security.cert.Certificate[])"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Security.PrivateKey"/></param>
+            /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
             public PrivateKeyEntry(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1)
                 : base(arg0, arg1)
             {
@@ -486,21 +610,21 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificate() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificate()"/> 
             /// </summary>
             public Java.Security.Cert.Certificate Certificate
             {
                 get { return IExecute<Java.Security.Cert.Certificate>("getCertificate"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificateChain() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificateChain()"/> 
             /// </summary>
             public Java.Security.Cert.Certificate[] CertificateChain
             {
                 get { return IExecuteArray<Java.Security.Cert.Certificate>("getCertificateChain"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getPrivateKey() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getPrivateKey()"/> 
             /// </summary>
             public Java.Security.PrivateKey PrivateKey
             {
@@ -545,8 +669,9 @@ namespace Java.Security
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html#<init>(javax.crypto.SecretKey)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html#%3Cinit%3E(javax.crypto.SecretKey)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Crypto.SecretKey"/></param>
             public SecretKeyEntry(Javax.Crypto.SecretKey arg0)
                 : base(arg0)
             {
@@ -568,7 +693,7 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html#getSecretKey() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html#getSecretKey()"/> 
             /// </summary>
             public Javax.Crypto.SecretKey SecretKey
             {
@@ -586,8 +711,9 @@ namespace Java.Security
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#<init>(java.security.cert.Certificate)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#%3Cinit%3E(java.security.cert.Certificate)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
             public TrustedCertificateEntry(Java.Security.Cert.Certificate arg0)
                 : base(arg0)
             {
@@ -609,7 +735,7 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#getTrustedCertificate() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#getTrustedCertificate()"/> 
             /// </summary>
             public Java.Security.Cert.Certificate TrustedCertificate
             {

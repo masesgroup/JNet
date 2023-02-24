@@ -42,15 +42,23 @@ namespace Javax.Crypto
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String,java.lang.String) throws java.security.NoSuchAlgorithmException,java.security.NoSuchProviderException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Crypto.SecretKeyFactory"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Crypto.SecretKeyFactory GetInstance(string arg0, string arg1)
         {
             return SExecute<Javax.Crypto.SecretKeyFactory>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Crypto.SecretKeyFactory"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Crypto.SecretKeyFactory GetInstance(string arg0)
         {
             return SExecute<Javax.Crypto.SecretKeyFactory>("getInstance", arg0);
@@ -60,22 +68,28 @@ namespace Javax.Crypto
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#generateSecret(java.security.spec.KeySpec) throws java.security.spec.InvalidKeySpecException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#generateSecret(java.security.spec.KeySpec)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Spec.KeySpec"/></param>
+        /// <returns><see cref="Javax.Crypto.SecretKey"/></returns>
+        /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
         public Javax.Crypto.SecretKey GenerateSecret(Java.Security.Spec.KeySpec arg0)
         {
             return IExecute<Javax.Crypto.SecretKey>("generateSecret", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#translateKey(javax.crypto.SecretKey) throws java.security.InvalidKeyException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#translateKey(javax.crypto.SecretKey)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Crypto.SecretKey"/></param>
+        /// <returns><see cref="Javax.Crypto.SecretKey"/></returns>
+        /// <exception cref="Java.Security.InvalidKeyException"/>
         public Javax.Crypto.SecretKey TranslateKey(Javax.Crypto.SecretKey arg0)
         {
             return IExecute<Javax.Crypto.SecretKey>("translateKey", arg0);

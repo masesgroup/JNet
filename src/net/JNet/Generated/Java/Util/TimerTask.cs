@@ -33,6 +33,9 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.TimerTask"/> to <see cref="Java.Lang.Runnable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Runnable(Java.Util.TimerTask t) => t.Cast<Java.Lang.Runnable>();
         
         #endregion
@@ -47,22 +50,26 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html#run()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html#run()"/>
         /// </summary>
         public void Run()
         {
             IExecute("run");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html#cancel()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html#cancel()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Cancel()
         {
             return IExecute<bool>("cancel");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html#scheduledExecutionTime()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html#scheduledExecutionTime()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long ScheduledExecutionTime()
         {
             return IExecute<long>("scheduledExecutionTime");

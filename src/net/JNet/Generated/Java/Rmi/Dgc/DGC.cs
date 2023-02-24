@@ -33,6 +33,9 @@ namespace Java.Rmi.Dgc
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Dgc.DGC"/> to <see cref="Java.Rmi.Remote"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Remote(Java.Rmi.Dgc.DGC t) => t.Cast<Java.Rmi.Remote>();
         
         #endregion
@@ -47,15 +50,25 @@ namespace Java.Rmi.Dgc
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/DGC.html#dirty(java.rmi.server.ObjID[],long,java.rmi.dgc.Lease) throws java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/DGC.html#dirty(java.rmi.server.ObjID[],long,java.rmi.dgc.Lease)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Server.ObjID"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="Java.Rmi.Dgc.Lease"/></param>
+        /// <returns><see cref="Java.Rmi.Dgc.Lease"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public Java.Rmi.Dgc.Lease Dirty(Java.Rmi.Server.ObjID[] arg0, long arg1, Java.Rmi.Dgc.Lease arg2)
         {
             return IExecute<Java.Rmi.Dgc.Lease>("dirty", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/DGC.html#clean(java.rmi.server.ObjID[],long,java.rmi.dgc.VMID,boolean) throws java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/DGC.html#clean(java.rmi.server.ObjID[],long,java.rmi.dgc.VMID,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Server.ObjID"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="Java.Rmi.Dgc.VMID"/></param>
+        /// <param name="arg3"><see langword="bool"/></param>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public void Clean(Java.Rmi.Server.ObjID[] arg0, long arg1, Java.Rmi.Dgc.VMID arg2, bool arg3)
         {
             IExecute("clean", arg0, arg1, arg2, arg3);

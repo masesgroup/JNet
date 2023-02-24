@@ -33,6 +33,9 @@ namespace Java.Lang.Annotation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Annotation.Native"/> to <see cref="Java.Lang.Annotation.Annotation"/>
+        /// </summary>
         public static implicit operator Java.Lang.Annotation.Annotation(Java.Lang.Annotation.Native t) => t.Cast<Java.Lang.Annotation.Annotation>();
         
         #endregion

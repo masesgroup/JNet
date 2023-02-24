@@ -46,22 +46,29 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html#generateKeyPair()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html#generateKeyPair()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Security.KeyPair"/></returns>
         public Java.Security.KeyPair GenerateKeyPair()
         {
             return IExecute<Java.Security.KeyPair>("generateKeyPair");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html#initialize(int,java.security.SecureRandom)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html#initialize(int,java.security.SecureRandom)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
         public void Initialize(int arg0, Java.Security.SecureRandom arg1)
         {
             IExecute("initialize", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html#initialize(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html#initialize(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
+        /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Initialize(Java.Security.Spec.AlgorithmParameterSpec arg0, Java.Security.SecureRandom arg1)
         {
             IExecute("initialize", arg0, arg1);

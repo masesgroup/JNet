@@ -33,6 +33,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.AttributeChangeNotificationFilter"/> to <see cref="Javax.Management.NotificationFilter"/>
+        /// </summary>
         public static implicit operator Javax.Management.NotificationFilter(Javax.Management.AttributeChangeNotificationFilter t) => t.Cast<Javax.Management.NotificationFilter>();
         
         #endregion
@@ -47,29 +50,34 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#isNotificationEnabled(javax.management.Notification)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsNotificationEnabled(Javax.Management.Notification arg0)
         {
             return IExecute<bool>("isNotificationEnabled", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#disableAllAttributes()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#disableAllAttributes()"/>
         /// </summary>
         public void DisableAllAttributes()
         {
             IExecute("disableAllAttributes");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#disableAttribute(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#disableAttribute(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void DisableAttribute(string arg0)
         {
             IExecute("disableAttribute", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#enableAttribute(java.lang.String) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeChangeNotificationFilter.html#enableAttribute(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void EnableAttribute(string arg0)
         {
             IExecute("enableAttribute", arg0);

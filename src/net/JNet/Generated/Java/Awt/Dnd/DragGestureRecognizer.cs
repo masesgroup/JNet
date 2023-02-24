@@ -33,6 +33,9 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Dnd.DragGestureRecognizer"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Awt.Dnd.DragGestureRecognizer t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,49 +50,52 @@ namespace Java.Awt.Dnd
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#getComponent() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#setComponent(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#getComponent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#setComponent(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component Component
         {
             get { return IExecute<Java.Awt.Component>("getComponent"); } set { IExecute("setComponent", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#getDragSource() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#getDragSource()"/> 
         /// </summary>
         public Java.Awt.Dnd.DragSource DragSource
         {
             get { return IExecute<Java.Awt.Dnd.DragSource>("getDragSource"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#getSourceActions() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#setSourceActions(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#getSourceActions()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#setSourceActions(int)"/>
         /// </summary>
         public int SourceActions
         {
             get { return IExecute<int>("getSourceActions"); } set { IExecute("setSourceActions", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#getTriggerEvent() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#getTriggerEvent()"/> 
         /// </summary>
         public Java.Awt.EventNs.InputEvent TriggerEvent
         {
             get { return IExecute<Java.Awt.EventNs.InputEvent>("getTriggerEvent"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#addDragGestureListener(java.awt.dnd.DragGestureListener) throws java.util.TooManyListenersException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#addDragGestureListener(java.awt.dnd.DragGestureListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragGestureListener"/></param>
+        /// <exception cref="Java.Util.TooManyListenersException"/>
         public void AddDragGestureListener(Java.Awt.Dnd.DragGestureListener arg0)
         {
             IExecute("addDragGestureListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#removeDragGestureListener(java.awt.dnd.DragGestureListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#removeDragGestureListener(java.awt.dnd.DragGestureListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragGestureListener"/></param>
         public void RemoveDragGestureListener(Java.Awt.Dnd.DragGestureListener arg0)
         {
             IExecute("removeDragGestureListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#resetRecognizer()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html#resetRecognizer()"/>
         /// </summary>
         public void ResetRecognizer()
         {

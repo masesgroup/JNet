@@ -46,22 +46,28 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#bytesConsumed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#bytesConsumed()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int BytesConsumed()
         {
             return IExecute<int>("bytesConsumed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#bytesProduced()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#bytesProduced()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int BytesProduced()
         {
             return IExecute<int>("bytesProduced");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#sequenceNumber()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html#sequenceNumber()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long SequenceNumber()
         {
             return IExecute<long>("sequenceNumber");
@@ -83,27 +89,27 @@ namespace Javax.Net.Ssl
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#FINISHED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#FINISHED"/>
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus FINISHED => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("FINISHED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#NEED_TASK
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#NEED_TASK"/>
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus NEED_TASK => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("NEED_TASK");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#NEED_UNWRAP
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#NEED_UNWRAP"/>
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus NEED_UNWRAP => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("NEED_UNWRAP");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#NEED_UNWRAP_AGAIN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#NEED_UNWRAP_AGAIN"/>
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus NEED_UNWRAP_AGAIN => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("NEED_UNWRAP_AGAIN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#NEED_WRAP
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#NEED_WRAP"/>
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus NEED_WRAP => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("NEED_WRAP");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#NOT_HANDSHAKING
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#NOT_HANDSHAKING"/>
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus NOT_HANDSHAKING => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("NOT_HANDSHAKING");
             
@@ -111,8 +117,10 @@ namespace Javax.Net.Ssl
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.HandshakeStatus"/></returns>
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus[] Values()
             {
                 return SExecuteArray<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("values");
@@ -141,19 +149,19 @@ namespace Javax.Net.Ssl
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#BUFFER_OVERFLOW
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#BUFFER_OVERFLOW"/>
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.Status BUFFER_OVERFLOW => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.Status>("BUFFER_OVERFLOW");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#BUFFER_UNDERFLOW
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#BUFFER_UNDERFLOW"/>
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.Status BUFFER_UNDERFLOW => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.Status>("BUFFER_UNDERFLOW");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#CLOSED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#CLOSED"/>
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.Status CLOSED => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.Status>("CLOSED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#OK
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#OK"/>
             /// </summary>
             public static Javax.Net.Ssl.SSLEngineResult.Status OK => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.Status>("OK");
             
@@ -161,8 +169,10 @@ namespace Javax.Net.Ssl
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Javax.Net.Ssl.SSLEngineResult.Status"/></returns>
             public static Javax.Net.Ssl.SSLEngineResult.Status[] Values()
             {
                 return SExecuteArray<Javax.Net.Ssl.SSLEngineResult.Status>("values");

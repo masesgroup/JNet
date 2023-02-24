@@ -30,8 +30,9 @@ namespace Javax.Swing.Plaf.Basic
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#<init>(javax.swing.JFileChooser)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#%3Cinit%3E(javax.swing.JFileChooser)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
         public BasicFileChooserUI(Javax.Swing.JFileChooser arg0)
             : base(arg0)
         {
@@ -53,120 +54,142 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getAccessoryPanel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getAccessoryPanel()"/> 
         /// </summary>
         public Javax.Swing.JPanel AccessoryPanel
         {
             get { return IExecute<Javax.Swing.JPanel>("getAccessoryPanel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getDirectoryName() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#setDirectoryName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getDirectoryName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#setDirectoryName(java.lang.String)"/>
         /// </summary>
         public string DirectoryName
         {
             get { return IExecute<string>("getDirectoryName"); } set { IExecute("setDirectoryName", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getFileChooser() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getFileChooser()"/> 
         /// </summary>
         public Javax.Swing.JFileChooser FileChooser
         {
             get { return IExecute<Javax.Swing.JFileChooser>("getFileChooser"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getFileName() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#setFileName(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getFileName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#setFileName(java.lang.String)"/>
         /// </summary>
         public string FileName
         {
             get { return IExecute<string>("getFileName"); } set { IExecute("setFileName", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonMnemonic(javax.swing.JFileChooser)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonMnemonic(javax.swing.JFileChooser)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetApproveButtonMnemonic(Javax.Swing.JFileChooser arg0)
         {
             return IExecute<int>("getApproveButtonMnemonic", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createPropertyChangeListener(javax.swing.JFileChooser)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createPropertyChangeListener(javax.swing.JFileChooser)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
+        /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener CreatePropertyChangeListener(Javax.Swing.JFileChooser arg0)
         {
             return IExecute<Java.Beans.PropertyChangeListener>("createPropertyChangeListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonToolTipText(javax.swing.JFileChooser)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonToolTipText(javax.swing.JFileChooser)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
+        /// <returns><see langword="string"/></returns>
         public string GetApproveButtonToolTipText(Javax.Swing.JFileChooser arg0)
         {
             return IExecute<string>("getApproveButtonToolTipText", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveSelectionAction()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveSelectionAction()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Action"/></returns>
         public Javax.Swing.Action GetApproveSelectionAction()
         {
             return IExecute<Javax.Swing.Action>("getApproveSelectionAction");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getCancelSelectionAction()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getCancelSelectionAction()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Action"/></returns>
         public Javax.Swing.Action GetCancelSelectionAction()
         {
             return IExecute<Javax.Swing.Action>("getCancelSelectionAction");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getChangeToParentDirectoryAction()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getChangeToParentDirectoryAction()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Action"/></returns>
         public Javax.Swing.Action GetChangeToParentDirectoryAction()
         {
             return IExecute<Javax.Swing.Action>("getChangeToParentDirectoryAction");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getGoHomeAction()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getGoHomeAction()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Action"/></returns>
         public Javax.Swing.Action GetGoHomeAction()
         {
             return IExecute<Javax.Swing.Action>("getGoHomeAction");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getNewFolderAction()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getNewFolderAction()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Action"/></returns>
         public Javax.Swing.Action GetNewFolderAction()
         {
             return IExecute<Javax.Swing.Action>("getNewFolderAction");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getUpdateAction()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getUpdateAction()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Action"/></returns>
         public Javax.Swing.Action GetUpdateAction()
         {
             return IExecute<Javax.Swing.Action>("getUpdateAction");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createListSelectionListener(javax.swing.JFileChooser)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#createListSelectionListener(javax.swing.JFileChooser)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
+        /// <returns><see cref="Javax.Swing.Event.ListSelectionListener"/></returns>
         public Javax.Swing.Event.ListSelectionListener CreateListSelectionListener(Javax.Swing.JFileChooser arg0)
         {
             return IExecute<Javax.Swing.Event.ListSelectionListener>("createListSelectionListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#clearIconCache()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#clearIconCache()"/>
         /// </summary>
         public void ClearIconCache()
         {
             IExecute("clearIconCache");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#installComponents(javax.swing.JFileChooser)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#installComponents(javax.swing.JFileChooser)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
         public void InstallComponents(Javax.Swing.JFileChooser arg0)
         {
             IExecute("installComponents", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#uninstallComponents(javax.swing.JFileChooser)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#uninstallComponents(javax.swing.JFileChooser)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>
         public void UninstallComponents(Javax.Swing.JFileChooser arg0)
         {
             IExecute("uninstallComponents", arg0);

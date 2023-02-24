@@ -30,8 +30,19 @@ namespace Javax.Security.Auth.Kerberos
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#<init>(byte[],javax.security.auth.kerberos.KerberosPrincipal,javax.security.auth.kerberos.KerberosPrincipal,byte[],int,boolean[],java.util.Date,java.util.Date,java.util.Date,java.util.Date,java.net.InetAddress[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#%3Cinit%3E(byte[],javax.security.auth.kerberos.KerberosPrincipal,javax.security.auth.kerberos.KerberosPrincipal,byte[],int,boolean[],java.util.Date,java.util.Date,java.util.Date,java.util.Date,java.net.InetAddress[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
+        /// <param name="arg2"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
+        /// <param name="arg6"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg7"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg8"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg9"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg10"><see cref="Java.Net.InetAddress"/></param>
         public KerberosTicket(byte[] arg0, Javax.Security.Auth.Kerberos.KerberosPrincipal arg1, Javax.Security.Auth.Kerberos.KerberosPrincipal arg2, byte[] arg3, int arg4, bool[] arg5, Java.Util.Date arg6, Java.Util.Date arg7, Java.Util.Date arg8, Java.Util.Date arg9, Java.Net.InetAddress[] arg10)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10)
         {
@@ -40,8 +51,17 @@ namespace Javax.Security.Auth.Kerberos
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosTicket"/> to <see cref="Javax.Security.Auth.Destroyable"/>
+        /// </summary>
         public static implicit operator Javax.Security.Auth.Destroyable(Javax.Security.Auth.Kerberos.KerberosTicket t) => t.Cast<Javax.Security.Auth.Destroyable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosTicket"/> to <see cref="Javax.Security.Auth.Refreshable"/>
+        /// </summary>
         public static implicit operator Javax.Security.Auth.Refreshable(Javax.Security.Auth.Kerberos.KerberosTicket t) => t.Cast<Javax.Security.Auth.Refreshable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosTicket"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Kerberos.KerberosTicket t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -56,155 +76,177 @@ namespace Javax.Security.Auth.Kerberos
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getAuthTime() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getAuthTime()"/> 
         /// </summary>
         public Java.Util.Date AuthTime
         {
             get { return IExecute<Java.Util.Date>("getAuthTime"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getClient() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getClient()"/> 
         /// </summary>
         public Javax.Security.Auth.Kerberos.KerberosPrincipal Client
         {
             get { return IExecute<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getClient"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getClientAddresses() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getClientAddresses()"/> 
         /// </summary>
         public Java.Net.InetAddress[] ClientAddresses
         {
             get { return IExecuteArray<Java.Net.InetAddress>("getClientAddresses"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getEncoded() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
             get { return IExecuteArray<byte>("getEncoded"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getEndTime() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getEndTime()"/> 
         /// </summary>
         public Java.Util.Date EndTime
         {
             get { return IExecute<Java.Util.Date>("getEndTime"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getFlags() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getFlags()"/> 
         /// </summary>
         public bool[] Flags
         {
             get { return IExecuteArray<bool>("getFlags"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getRenewTill() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getRenewTill()"/> 
         /// </summary>
         public Java.Util.Date RenewTill
         {
             get { return IExecute<Java.Util.Date>("getRenewTill"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getServer() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getServer()"/> 
         /// </summary>
         public Javax.Security.Auth.Kerberos.KerberosPrincipal Server
         {
             get { return IExecute<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getServer"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getSessionKey() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getSessionKey()"/> 
         /// </summary>
         public Javax.Crypto.SecretKey SessionKey
         {
             get { return IExecute<Javax.Crypto.SecretKey>("getSessionKey"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getSessionKeyType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getSessionKeyType()"/> 
         /// </summary>
         public int SessionKeyType
         {
             get { return IExecute<int>("getSessionKeyType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getStartTime() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getStartTime()"/> 
         /// </summary>
         public Java.Util.Date StartTime
         {
             get { return IExecute<Java.Util.Date>("getStartTime"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isCurrent()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isCurrent()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCurrent()
         {
             return IExecute<bool>("isCurrent");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isDestroyed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isDestroyed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDestroyed()
         {
             return IExecute<bool>("isDestroyed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isForwardable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isForwardable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsForwardable()
         {
             return IExecute<bool>("isForwardable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isForwarded()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isForwarded()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsForwarded()
         {
             return IExecute<bool>("isForwarded");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isInitial()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isInitial()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsInitial()
         {
             return IExecute<bool>("isInitial");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isPostdated()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isPostdated()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPostdated()
         {
             return IExecute<bool>("isPostdated");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isProxiable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isProxiable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsProxiable()
         {
             return IExecute<bool>("isProxiable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isProxy()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isProxy()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsProxy()
         {
             return IExecute<bool>("isProxy");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isRenewable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isRenewable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsRenewable()
         {
             return IExecute<bool>("isRenewable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#destroy() throws javax.security.auth.DestroyFailedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#destroy()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
         public void Destroy()
         {
             IExecute("destroy");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#refresh() throws javax.security.auth.RefreshFailedException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#refresh()"/>
         /// </summary>
+        
+        /// <exception cref="Javax.Security.Auth.RefreshFailedException"/>
         public void Refresh()
         {
             IExecute("refresh");

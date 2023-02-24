@@ -33,6 +33,9 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.ChronoPeriod"/> to <see cref="Java.Time.Temporal.TemporalAmount"/>
+        /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAmount(Java.Time.Chrono.ChronoPeriod t) => t.Cast<Java.Time.Temporal.TemporalAmount>();
         
         #endregion
@@ -43,8 +46,11 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#between(java.time.chrono.ChronoLocalDate,java.time.chrono.ChronoLocalDate)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#between(java.time.chrono.ChronoLocalDate,java.time.chrono.ChronoLocalDate)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public static Java.Time.Chrono.ChronoPeriod Between(Java.Time.Chrono.ChronoLocalDate arg0, Java.Time.Chrono.ChronoLocalDate arg1)
         {
             return SExecute<Java.Time.Chrono.ChronoPeriod>("between", arg0, arg1);
@@ -54,78 +60,98 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#getChronology() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#getChronology()"/> 
         /// </summary>
         public Java.Time.Chrono.Chronology Chronology
         {
             get { return IExecute<Java.Time.Chrono.Chronology>("getChronology"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#minus(java.time.temporal.TemporalAmount)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#minus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Minus(Java.Time.Temporal.TemporalAmount arg0)
         {
             return IExecute<Java.Time.Chrono.ChronoPeriod>("minus", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#multipliedBy(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#multipliedBy(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod MultipliedBy(int arg0)
         {
             return IExecute<Java.Time.Chrono.ChronoPeriod>("multipliedBy", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#normalized()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#normalized()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Normalized()
         {
             return IExecute<Java.Time.Chrono.ChronoPeriod>("normalized");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#plus(java.time.temporal.TemporalAmount)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#plus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Plus(Java.Time.Temporal.TemporalAmount arg0)
         {
             return IExecute<Java.Time.Chrono.ChronoPeriod>("plus", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#addTo(java.time.temporal.Temporal)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#addTo(java.time.temporal.Temporal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AddTo(Java.Time.Temporal.Temporal arg0)
         {
             return IExecute<Java.Time.Temporal.Temporal>("addTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#subtractFrom(java.time.temporal.Temporal)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#subtractFrom(java.time.temporal.Temporal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal SubtractFrom(Java.Time.Temporal.Temporal arg0)
         {
             return IExecute<Java.Time.Temporal.Temporal>("subtractFrom", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#get(java.time.temporal.TemporalUnit)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#get(java.time.temporal.TemporalUnit)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
+        /// <returns><see langword="long"/></returns>
         public long Get(Java.Time.Temporal.TemporalUnit arg0)
         {
             return IExecute<long>("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isNegative()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isNegative()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsNegative()
         {
             return IExecute<bool>("isNegative");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isZero()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isZero()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsZero()
         {
             return IExecute<bool>("isZero");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#negated()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#negated()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Negated()
         {
             return IExecute<Java.Time.Chrono.ChronoPeriod>("negated");

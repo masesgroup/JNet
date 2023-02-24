@@ -30,8 +30,10 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ZoneView.html#<init>(javax.swing.text.Element,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ZoneView.html#%3Cinit%3E(javax.swing.text.Element,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public ZoneView(Javax.Swing.Text.Element arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -53,14 +55,14 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ZoneView.html#getMaximumZoneSize() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ZoneView.html#setMaximumZoneSize(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ZoneView.html#getMaximumZoneSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ZoneView.html#setMaximumZoneSize(int)"/>
         /// </summary>
         public int MaximumZoneSize
         {
             get { return IExecute<int>("getMaximumZoneSize"); } set { IExecute("setMaximumZoneSize", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ZoneView.html#getMaxZonesLoaded() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ZoneView.html#setMaxZonesLoaded(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ZoneView.html#getMaxZonesLoaded()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ZoneView.html#setMaxZonesLoaded(int)"/>
         /// </summary>
         public int MaxZonesLoaded
         {

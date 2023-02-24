@@ -30,22 +30,31 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#<init>(char[],int,byte[],int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#%3Cinit%3E(char[],int,byte[],int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="byte"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
         public Bidi(char[] arg0, int arg1, byte[] arg2, int arg3, int arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#<init>(java.lang.String,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public Bidi(string arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#<init>(java.text.AttributedCharacterIterator)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#%3Cinit%3E(java.text.AttributedCharacterIterator)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
         public Bidi(Java.Text.AttributedCharacterIterator arg0)
             : base(arg0)
         {
@@ -59,19 +68,19 @@ namespace Java.Text
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_DEFAULT_LEFT_TO_RIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_DEFAULT_LEFT_TO_RIGHT"/>
         /// </summary>
         public static int DIRECTION_DEFAULT_LEFT_TO_RIGHT => Clazz.GetField<int>("DIRECTION_DEFAULT_LEFT_TO_RIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_DEFAULT_RIGHT_TO_LEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_DEFAULT_RIGHT_TO_LEFT"/>
         /// </summary>
         public static int DIRECTION_DEFAULT_RIGHT_TO_LEFT => Clazz.GetField<int>("DIRECTION_DEFAULT_RIGHT_TO_LEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_LEFT_TO_RIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_LEFT_TO_RIGHT"/>
         /// </summary>
         public static int DIRECTION_LEFT_TO_RIGHT => Clazz.GetField<int>("DIRECTION_LEFT_TO_RIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_RIGHT_TO_LEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_RIGHT_TO_LEFT"/>
         /// </summary>
         public static int DIRECTION_RIGHT_TO_LEFT => Clazz.GetField<int>("DIRECTION_RIGHT_TO_LEFT");
         
@@ -79,15 +88,24 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#requiresBidi(char[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#requiresBidi(char[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool RequiresBidi(char[] arg0, int arg1, int arg2)
         {
             return SExecute<bool>("requiresBidi", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#reorderVisually(byte[],int,java.lang.Object[],int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#reorderVisually(byte[],int,java.lang.Object[],int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public static void ReorderVisually(byte[] arg0, int arg1, object[] arg2, int arg3, int arg4)
         {
             SExecute("reorderVisually", arg0, arg1, arg2, arg3, arg4);
@@ -97,85 +115,104 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getBaseLevel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getBaseLevel()"/> 
         /// </summary>
         public int BaseLevel
         {
             get { return IExecute<int>("getBaseLevel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getLength() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getLength()"/> 
         /// </summary>
         public int Length
         {
             get { return IExecute<int>("getLength"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunCount()"/> 
         /// </summary>
         public int RunCount
         {
             get { return IExecute<int>("getRunCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#baseIsLeftToRight()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#baseIsLeftToRight()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool BaseIsLeftToRight()
         {
             return IExecute<bool>("baseIsLeftToRight");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isLeftToRight()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isLeftToRight()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsLeftToRight()
         {
             return IExecute<bool>("isLeftToRight");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isMixed()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isMixed()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMixed()
         {
             return IExecute<bool>("isMixed");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isRightToLeft()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isRightToLeft()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsRightToLeft()
         {
             return IExecute<bool>("isRightToLeft");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getLevelAt(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getLevelAt(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetLevelAt(int arg0)
         {
             return IExecute<int>("getLevelAt", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunLevel(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunLevel(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRunLevel(int arg0)
         {
             return IExecute<int>("getRunLevel", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunLimit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunLimit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRunLimit(int arg0)
         {
             return IExecute<int>("getRunLimit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunStart(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getRunStart(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetRunStart(int arg0)
         {
             return IExecute<int>("getRunStart", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#createLineBidi(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#createLineBidi(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see cref="Java.Text.Bidi"/></returns>
         public Java.Text.Bidi CreateLineBidi(int arg0, int arg1)
         {
             return IExecute<Java.Text.Bidi>("createLineBidi", arg0, arg1);

@@ -46,15 +46,19 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#enter()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#enter()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Enter()
         {
             return IExecute<bool>("enter");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#exit()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#exit()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Exit()
         {
             return IExecute<bool>("exit");

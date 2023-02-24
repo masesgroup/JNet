@@ -33,6 +33,9 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.AsynchronousFileChannel"/> to <see cref="Java.Nio.Channels.AsynchronousChannel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.AsynchronousChannel(Java.Nio.Channels.AsynchronousFileChannel t) => t.Cast<Java.Nio.Channels.AsynchronousChannel>();
         
         #endregion
@@ -43,8 +46,12 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#open(java.nio.file.Path,java.nio.file.OpenOption...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#open(java.nio.file.Path,java.nio.file.OpenOption...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
+        /// <returns><see cref="Java.Nio.Channels.AsynchronousFileChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousFileChannel Open(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.Channels.AsynchronousFileChannel>("open", arg0); else return SExecute<Java.Nio.Channels.AsynchronousFileChannel>("open", arg0, arg1);
@@ -54,36 +61,52 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#truncate(long) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#truncate(long)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <returns><see cref="Java.Nio.Channels.AsynchronousFileChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.AsynchronousFileChannel Truncate(long arg0)
         {
             return IExecute<Java.Nio.Channels.AsynchronousFileChannel>("truncate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#tryLock(long,long,boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#tryLock(long,long,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <returns><see cref="Java.Nio.Channels.FileLock"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.FileLock TryLock(long arg0, long arg1, bool arg2)
         {
             return IExecute<Java.Nio.Channels.FileLock>("tryLock", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#size() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public long Size()
         {
             return IExecute<long>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#force(boolean) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#force(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void Force(bool arg0)
         {
             IExecute("force", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#tryLock() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#tryLock()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Channels.FileLock"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.FileLock TryLock()
         {
             return IExecute<Java.Nio.Channels.FileLock>("tryLock");

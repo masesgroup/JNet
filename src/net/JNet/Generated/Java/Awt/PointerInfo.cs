@@ -46,14 +46,14 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PointerInfo.html#getDevice() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PointerInfo.html#getDevice()"/> 
         /// </summary>
         public Java.Awt.GraphicsDevice Device
         {
             get { return IExecute<Java.Awt.GraphicsDevice>("getDevice"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PointerInfo.html#getLocation() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PointerInfo.html#getLocation()"/> 
         /// </summary>
         public Java.Awt.Point Location
         {

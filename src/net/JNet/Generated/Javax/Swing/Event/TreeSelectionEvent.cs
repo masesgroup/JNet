@@ -30,15 +30,25 @@ namespace Javax.Swing.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#<init>(java.lang.Object,javax.swing.tree.TreePath,boolean,javax.swing.tree.TreePath,javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.tree.TreePath,boolean,javax.swing.tree.TreePath,javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg4"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public TreeSelectionEvent(object arg0, Javax.Swing.Tree.TreePath arg1, bool arg2, Javax.Swing.Tree.TreePath arg3, Javax.Swing.Tree.TreePath arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#<init>(java.lang.Object,javax.swing.tree.TreePath[],boolean[],javax.swing.tree.TreePath,javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.tree.TreePath[],boolean[],javax.swing.tree.TreePath,javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <param name="arg4"><see cref="Javax.Swing.Tree.TreePath"/></param>
         public TreeSelectionEvent(object arg0, Javax.Swing.Tree.TreePath[] arg1, bool[] arg2, Javax.Swing.Tree.TreePath arg3, Javax.Swing.Tree.TreePath arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -60,57 +70,65 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#getNewLeadSelectionPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#getNewLeadSelectionPath()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath NewLeadSelectionPath
         {
             get { return IExecute<Javax.Swing.Tree.TreePath>("getNewLeadSelectionPath"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#getOldLeadSelectionPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#getOldLeadSelectionPath()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath OldLeadSelectionPath
         {
             get { return IExecute<Javax.Swing.Tree.TreePath>("getOldLeadSelectionPath"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#getPath() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#getPath()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath Path
         {
             get { return IExecute<Javax.Swing.Tree.TreePath>("getPath"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#getPaths() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#getPaths()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath[] Paths
         {
             get { return IExecuteArray<Javax.Swing.Tree.TreePath>("getPaths"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#isAddedPath()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#isAddedPath()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAddedPath()
         {
             return IExecute<bool>("isAddedPath");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#isAddedPath(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#isAddedPath(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsAddedPath(int arg0)
         {
             return IExecute<bool>("isAddedPath", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#isAddedPath(javax.swing.tree.TreePath)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#isAddedPath(javax.swing.tree.TreePath)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsAddedPath(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<bool>("isAddedPath", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#cloneWithSource(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#cloneWithSource(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="object"/></returns>
         public object CloneWithSource(object arg0)
         {
             return IExecute("cloneWithSource", arg0);

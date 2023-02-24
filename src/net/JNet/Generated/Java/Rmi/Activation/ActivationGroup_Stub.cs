@@ -30,8 +30,9 @@ namespace Java.Rmi.Activation
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup_Stub.html#<init>(java.rmi.server.RemoteRef)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup_Stub.html#%3Cinit%3E(java.rmi.server.RemoteRef)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteRef"/></param>
         public ActivationGroup_Stub(Java.Rmi.Server.RemoteRef arg0)
             : base(arg0)
         {
@@ -40,7 +41,13 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Activation.ActivationGroup_Stub"/> to <see cref="Java.Rmi.Activation.ActivationInstantiator"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Activation.ActivationInstantiator(Java.Rmi.Activation.ActivationGroup_Stub t) => t.Cast<Java.Rmi.Activation.ActivationInstantiator>();
+        /// <summary>
+        /// Converter from <see cref="Java.Rmi.Activation.ActivationGroup_Stub"/> to <see cref="Java.Rmi.Remote"/>
+        /// </summary>
         public static implicit operator Java.Rmi.Remote(Java.Rmi.Activation.ActivationGroup_Stub t) => t.Cast<Java.Rmi.Remote>();
         
         #endregion

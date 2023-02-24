@@ -30,15 +30,19 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#<init>(java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#%3Cinit%3E(java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
         public StringJoiner(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#<init>(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#%3Cinit%3E(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         public StringJoiner(Java.Lang.CharSequence arg0)
             : base(arg0)
         {
@@ -60,29 +64,37 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#length()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#length()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Length()
         {
             return IExecute<int>("length");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#add(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#add(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Java.Util.StringJoiner"/></returns>
         public Java.Util.StringJoiner Add(Java.Lang.CharSequence arg0)
         {
             return IExecute<Java.Util.StringJoiner>("add", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#merge(java.util.StringJoiner)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#merge(java.util.StringJoiner)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.StringJoiner"/></param>
+        /// <returns><see cref="Java.Util.StringJoiner"/></returns>
         public Java.Util.StringJoiner Merge(Java.Util.StringJoiner arg0)
         {
             return IExecute<Java.Util.StringJoiner>("merge", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#setEmptyValue(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#setEmptyValue(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Java.Util.StringJoiner"/></returns>
         public Java.Util.StringJoiner SetEmptyValue(Java.Lang.CharSequence arg0)
         {
             return IExecute<Java.Util.StringJoiner>("setEmptyValue", arg0);

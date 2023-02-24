@@ -33,6 +33,9 @@ namespace Javax.Lang.Model.Type
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Lang.Model.Type.ReferenceType"/> to <see cref="Javax.Lang.Model.Type.TypeMirror"/>
+        /// </summary>
         public static implicit operator Javax.Lang.Model.Type.TypeMirror(Javax.Lang.Model.Type.ReferenceType t) => t.Cast<Javax.Lang.Model.Type.TypeMirror>();
         
         #endregion

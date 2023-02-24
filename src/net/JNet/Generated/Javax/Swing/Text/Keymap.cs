@@ -46,78 +46,87 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getBoundActions() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getBoundActions()"/> 
         /// </summary>
         public Javax.Swing.Action[] BoundActions
         {
             get { return IExecuteArray<Javax.Swing.Action>("getBoundActions"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getBoundKeyStrokes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getBoundKeyStrokes()"/> 
         /// </summary>
         public Javax.Swing.KeyStroke[] BoundKeyStrokes
         {
             get { return IExecuteArray<Javax.Swing.KeyStroke>("getBoundKeyStrokes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getDefaultAction() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#setDefaultAction(javax.swing.Action)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getDefaultAction()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#setDefaultAction(javax.swing.Action)"/>
         /// </summary>
         public Javax.Swing.Action DefaultAction
         {
             get { return IExecute<Javax.Swing.Action>("getDefaultAction"); } set { IExecute("setDefaultAction", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getResolveParent() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#setResolveParent(javax.swing.text.Keymap)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getResolveParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#setResolveParent(javax.swing.text.Keymap)"/>
         /// </summary>
         public Javax.Swing.Text.Keymap ResolveParent
         {
             get { return IExecute<Javax.Swing.Text.Keymap>("getResolveParent"); } set { IExecute("setResolveParent", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#isLocallyDefined(javax.swing.KeyStroke)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#isLocallyDefined(javax.swing.KeyStroke)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsLocallyDefined(Javax.Swing.KeyStroke arg0)
         {
             return IExecute<bool>("isLocallyDefined", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getAction(javax.swing.KeyStroke)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getAction(javax.swing.KeyStroke)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <returns><see cref="Javax.Swing.Action"/></returns>
         public Javax.Swing.Action GetAction(Javax.Swing.KeyStroke arg0)
         {
             return IExecute<Javax.Swing.Action>("getAction", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getKeyStrokesForAction(javax.swing.Action)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getKeyStrokesForAction(javax.swing.Action)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
+        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
         public Javax.Swing.KeyStroke[] GetKeyStrokesForAction(Javax.Swing.Action arg0)
         {
             return IExecuteArray<Javax.Swing.KeyStroke>("getKeyStrokesForAction", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#addActionForKeyStroke(javax.swing.KeyStroke,javax.swing.Action)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#addActionForKeyStroke(javax.swing.KeyStroke,javax.swing.Action)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Action"/></param>
         public void AddActionForKeyStroke(Javax.Swing.KeyStroke arg0, Javax.Swing.Action arg1)
         {
             IExecute("addActionForKeyStroke", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#removeBindings()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#removeBindings()"/>
         /// </summary>
         public void RemoveBindings()
         {
             IExecute("removeBindings");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#removeKeyStrokeBinding(javax.swing.KeyStroke)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#removeKeyStrokeBinding(javax.swing.KeyStroke)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
         public void RemoveKeyStrokeBinding(Javax.Swing.KeyStroke arg0)
         {
             IExecute("removeKeyStrokeBinding", arg0);

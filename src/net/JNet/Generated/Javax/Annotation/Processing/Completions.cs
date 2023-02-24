@@ -42,15 +42,20 @@ namespace Javax.Annotation.Processing
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completions.html#of(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completions.html#of(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Annotation.Processing.Completion"/></returns>
         public static Javax.Annotation.Processing.Completion Of(string arg0, string arg1)
         {
             return SExecute<Javax.Annotation.Processing.Completion>("of", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completions.html#of(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completions.html#of(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Annotation.Processing.Completion"/></returns>
         public static Javax.Annotation.Processing.Completion Of(string arg0)
         {
             return SExecute<Javax.Annotation.Processing.Completion>("of", arg0);

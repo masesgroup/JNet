@@ -33,8 +33,17 @@ namespace Javax.Management.Remote.Rmi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIConnector"/> to <see cref="Javax.Management.Remote.JMXConnector"/>
+        /// </summary>
         public static implicit operator Javax.Management.Remote.JMXConnector(Javax.Management.Remote.Rmi.RMIConnector t) => t.Cast<Javax.Management.Remote.JMXConnector>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIConnector"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Management.Remote.Rmi.RMIConnector t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIConnector"/> to <see cref="Javax.Management.Remote.JMXAddressable"/>
+        /// </summary>
         public static implicit operator Javax.Management.Remote.JMXAddressable(Javax.Management.Remote.Rmi.RMIConnector t) => t.Cast<Javax.Management.Remote.JMXAddressable>();
         
         #endregion
@@ -49,64 +58,80 @@ namespace Javax.Management.Remote.Rmi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#getAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#getAddress()"/> 
         /// </summary>
         public Javax.Management.Remote.JMXServiceURL Address
         {
             get { return IExecute<Javax.Management.Remote.JMXServiceURL>("getAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#getConnectionId() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#getConnectionId()"/> 
         /// </summary>
         public string ConnectionId
         {
             get { return IExecute<string>("getConnectionId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#getMBeanServerConnection() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#getMBeanServerConnection()"/> 
         /// </summary>
         public Javax.Management.MBeanServerConnection MBeanServerConnection
         {
             get { return IExecute<Javax.Management.MBeanServerConnection>("getMBeanServerConnection"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#getMBeanServerConnection(javax.security.auth.Subject) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#getMBeanServerConnection(javax.security.auth.Subject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see cref="Javax.Management.MBeanServerConnection"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.MBeanServerConnection GetMBeanServerConnection(Javax.Security.Auth.Subject arg0)
         {
             return IExecute<Javax.Management.MBeanServerConnection>("getMBeanServerConnection", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#close() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#addConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#addConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
         public void AddConnectionNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
             IExecute("addConnectionNotificationListener", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#connect() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#connect()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Connect()
         {
             IExecute("connect");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#removeConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object) throws javax.management.ListenerNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#removeConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveConnectionNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
             IExecute("removeConnectionNotificationListener", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#removeConnectionNotificationListener(javax.management.NotificationListener) throws javax.management.ListenerNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#removeConnectionNotificationListener(javax.management.NotificationListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveConnectionNotificationListener(Javax.Management.NotificationListener arg0)
         {
             IExecute("removeConnectionNotificationListener", arg0);

@@ -33,6 +33,9 @@ namespace Javax.Naming.Spi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Spi.DirStateFactory"/> to <see cref="Javax.Naming.Spi.StateFactory"/>
+        /// </summary>
         public static implicit operator Javax.Naming.Spi.StateFactory(Javax.Naming.Spi.DirStateFactory t) => t.Cast<Javax.Naming.Spi.StateFactory>();
         
         #endregion
@@ -55,8 +58,10 @@ namespace Javax.Naming.Spi
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.Result.html#<init>(java.lang.Object,javax.naming.directory.Attributes)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.Result.html#%3Cinit%3E(java.lang.Object,javax.naming.directory.Attributes)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg1"><see cref="Javax.Naming.Directory.Attributes"/></param>
             public Result(object arg0, Javax.Naming.Directory.Attributes arg1)
                 : base(arg0, arg1)
             {
@@ -78,14 +83,14 @@ namespace Javax.Naming.Spi
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.Result.html#getAttributes() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.Result.html#getAttributes()"/> 
             /// </summary>
             public Javax.Naming.Directory.Attributes Attributes
             {
                 get { return IExecute<Javax.Naming.Directory.Attributes>("getAttributes"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.Result.html#getObject() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.Result.html#getObject()"/> 
             /// </summary>
             public object Object
             {

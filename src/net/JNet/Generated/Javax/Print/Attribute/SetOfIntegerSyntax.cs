@@ -33,7 +33,13 @@ namespace Javax.Print.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.SetOfIntegerSyntax"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Print.Attribute.SetOfIntegerSyntax t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.SetOfIntegerSyntax"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Print.Attribute.SetOfIntegerSyntax t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -48,29 +54,35 @@ namespace Javax.Print.Attribute
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/SetOfIntegerSyntax.html#getMembers() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/SetOfIntegerSyntax.html#getMembers()"/> 
         /// </summary>
         public int[] Members
         {
             get { return IExecuteArray<int>("getMembers"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/SetOfIntegerSyntax.html#contains(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/SetOfIntegerSyntax.html#contains(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(int arg0)
         {
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/SetOfIntegerSyntax.html#contains(javax.print.attribute.IntegerSyntax)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/SetOfIntegerSyntax.html#contains(javax.print.attribute.IntegerSyntax)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.IntegerSyntax"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(Javax.Print.Attribute.IntegerSyntax arg0)
         {
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/SetOfIntegerSyntax.html#next(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/SetOfIntegerSyntax.html#next(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Next(int arg0)
         {
             return IExecute<int>("next", arg0);

@@ -42,8 +42,11 @@ namespace Javax.Print
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#lookupStreamPrintServiceFactories(javax.print.DocFlavor,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#lookupStreamPrintServiceFactories(javax.print.DocFlavor,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.DocFlavor"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Print.StreamPrintServiceFactory"/></returns>
         public static Javax.Print.StreamPrintServiceFactory[] LookupStreamPrintServiceFactories(Javax.Print.DocFlavor arg0, string arg1)
         {
             return SExecuteArray<Javax.Print.StreamPrintServiceFactory>("lookupStreamPrintServiceFactories", arg0, arg1);
@@ -53,22 +56,24 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#getOutputFormat() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#getOutputFormat()"/> 
         /// </summary>
         public string OutputFormat
         {
             get { return IExecute<string>("getOutputFormat"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#getSupportedDocFlavors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#getSupportedDocFlavors()"/> 
         /// </summary>
         public Javax.Print.DocFlavor[] SupportedDocFlavors
         {
             get { return IExecuteArray<Javax.Print.DocFlavor>("getSupportedDocFlavors"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#getPrintService(java.io.OutputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintServiceFactory.html#getPrintService(java.io.OutputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <returns><see cref="Javax.Print.StreamPrintService"/></returns>
         public Javax.Print.StreamPrintService GetPrintService(Java.Io.OutputStream arg0)
         {
             return IExecute<Javax.Print.StreamPrintService>("getPrintService", arg0);

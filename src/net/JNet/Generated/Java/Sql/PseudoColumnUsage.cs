@@ -38,19 +38,19 @@ namespace Java.Sql
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#NO_USAGE_RESTRICTIONS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#NO_USAGE_RESTRICTIONS"/>
         /// </summary>
         public static Java.Sql.PseudoColumnUsage NO_USAGE_RESTRICTIONS => Clazz.GetField<Java.Sql.PseudoColumnUsage>("NO_USAGE_RESTRICTIONS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#SELECT_LIST_ONLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#SELECT_LIST_ONLY"/>
         /// </summary>
         public static Java.Sql.PseudoColumnUsage SELECT_LIST_ONLY => Clazz.GetField<Java.Sql.PseudoColumnUsage>("SELECT_LIST_ONLY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#USAGE_UNKNOWN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#USAGE_UNKNOWN"/>
         /// </summary>
         public static Java.Sql.PseudoColumnUsage USAGE_UNKNOWN => Clazz.GetField<Java.Sql.PseudoColumnUsage>("USAGE_UNKNOWN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#WHERE_CLAUSE_ONLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#WHERE_CLAUSE_ONLY"/>
         /// </summary>
         public static Java.Sql.PseudoColumnUsage WHERE_CLAUSE_ONLY => Clazz.GetField<Java.Sql.PseudoColumnUsage>("WHERE_CLAUSE_ONLY");
         
@@ -58,8 +58,10 @@ namespace Java.Sql
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Sql.PseudoColumnUsage"/></returns>
         public static Java.Sql.PseudoColumnUsage[] Values()
         {
             return SExecuteArray<Java.Sql.PseudoColumnUsage>("values");

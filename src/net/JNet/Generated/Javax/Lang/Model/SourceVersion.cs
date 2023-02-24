@@ -38,51 +38,51 @@ namespace Javax.Lang.Model
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_0
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_0"/>
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_0 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_0");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_1
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_1"/>
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_1 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_1");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_10
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_10"/>
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_10 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_10");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_11
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_11"/>
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_11 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_11");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_2
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_2"/>
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_2 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_2");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_3
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_3"/>
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_3 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_3");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_4
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_4"/>
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_4 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_4");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_5
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_5"/>
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_5 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_5");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_6
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_6"/>
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_6 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_6");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_7
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_7"/>
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_7 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_7");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_8
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_8"/>
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_8 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_8");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_9
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_9"/>
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_9 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_9");
         
@@ -90,29 +90,37 @@ namespace Javax.Lang.Model
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isIdentifier(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isIdentifier(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsIdentifier(Java.Lang.CharSequence arg0)
         {
             return SExecute<bool>("isIdentifier", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isKeyword(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isKeyword(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsKeyword(Java.Lang.CharSequence arg0)
         {
             return SExecute<bool>("isKeyword", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isName(java.lang.CharSequence)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isName(java.lang.CharSequence)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see langword="bool"/></returns>
         public static bool IsName(Java.Lang.CharSequence arg0)
         {
             return SExecute<bool>("isName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
         public static Javax.Lang.Model.SourceVersion[] Values()
         {
             return SExecuteArray<Javax.Lang.Model.SourceVersion>("values");

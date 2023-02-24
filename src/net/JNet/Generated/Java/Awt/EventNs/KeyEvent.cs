@@ -30,15 +30,28 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#<init>(java.awt.Component,int,long,int,int,char,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#%3Cinit%3E(java.awt.Component,int,long,int,int,char,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="char"/></param>
+        /// <param name="arg6"><see langword="int"/></param>
         public KeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5, int arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#<init>(java.awt.Component,int,long,int,int,char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#%3Cinit%3E(java.awt.Component,int,long,int,int,char)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="char"/></param>
         public KeyEvent(Java.Awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -52,803 +65,803 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#CHAR_UNDEFINED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#CHAR_UNDEFINED"/>
         /// </summary>
         public static char CHAR_UNDEFINED => Clazz.GetField<char>("CHAR_UNDEFINED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_FIRST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_FIRST"/>
         /// </summary>
         public static int KEY_FIRST => Clazz.GetField<int>("KEY_FIRST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LAST"/>
         /// </summary>
         public static int KEY_LAST => Clazz.GetField<int>("KEY_LAST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_LEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_LEFT"/>
         /// </summary>
         public static int KEY_LOCATION_LEFT => Clazz.GetField<int>("KEY_LOCATION_LEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_NUMPAD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_NUMPAD"/>
         /// </summary>
         public static int KEY_LOCATION_NUMPAD => Clazz.GetField<int>("KEY_LOCATION_NUMPAD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_RIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_RIGHT"/>
         /// </summary>
         public static int KEY_LOCATION_RIGHT => Clazz.GetField<int>("KEY_LOCATION_RIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_STANDARD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_STANDARD"/>
         /// </summary>
         public static int KEY_LOCATION_STANDARD => Clazz.GetField<int>("KEY_LOCATION_STANDARD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_UNKNOWN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_LOCATION_UNKNOWN"/>
         /// </summary>
         public static int KEY_LOCATION_UNKNOWN => Clazz.GetField<int>("KEY_LOCATION_UNKNOWN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_PRESSED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_PRESSED"/>
         /// </summary>
         public static int KEY_PRESSED => Clazz.GetField<int>("KEY_PRESSED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_RELEASED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_RELEASED"/>
         /// </summary>
         public static int KEY_RELEASED => Clazz.GetField<int>("KEY_RELEASED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_TYPED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#KEY_TYPED"/>
         /// </summary>
         public static int KEY_TYPED => Clazz.GetField<int>("KEY_TYPED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_0
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_0"/>
         /// </summary>
         public static int VK_0 => Clazz.GetField<int>("VK_0");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_1
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_1"/>
         /// </summary>
         public static int VK_1 => Clazz.GetField<int>("VK_1");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_2
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_2"/>
         /// </summary>
         public static int VK_2 => Clazz.GetField<int>("VK_2");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_3
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_3"/>
         /// </summary>
         public static int VK_3 => Clazz.GetField<int>("VK_3");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_4
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_4"/>
         /// </summary>
         public static int VK_4 => Clazz.GetField<int>("VK_4");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_5
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_5"/>
         /// </summary>
         public static int VK_5 => Clazz.GetField<int>("VK_5");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_6
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_6"/>
         /// </summary>
         public static int VK_6 => Clazz.GetField<int>("VK_6");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_7
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_7"/>
         /// </summary>
         public static int VK_7 => Clazz.GetField<int>("VK_7");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_8
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_8"/>
         /// </summary>
         public static int VK_8 => Clazz.GetField<int>("VK_8");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_9
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_9"/>
         /// </summary>
         public static int VK_9 => Clazz.GetField<int>("VK_9");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_A
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_A"/>
         /// </summary>
         public static int VK_A => Clazz.GetField<int>("VK_A");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ACCEPT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ACCEPT"/>
         /// </summary>
         public static int VK_ACCEPT => Clazz.GetField<int>("VK_ACCEPT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ADD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ADD"/>
         /// </summary>
         public static int VK_ADD => Clazz.GetField<int>("VK_ADD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_AGAIN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_AGAIN"/>
         /// </summary>
         public static int VK_AGAIN => Clazz.GetField<int>("VK_AGAIN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ALL_CANDIDATES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ALL_CANDIDATES"/>
         /// </summary>
         public static int VK_ALL_CANDIDATES => Clazz.GetField<int>("VK_ALL_CANDIDATES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ALPHANUMERIC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ALPHANUMERIC"/>
         /// </summary>
         public static int VK_ALPHANUMERIC => Clazz.GetField<int>("VK_ALPHANUMERIC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ALT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ALT"/>
         /// </summary>
         public static int VK_ALT => Clazz.GetField<int>("VK_ALT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ALT_GRAPH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ALT_GRAPH"/>
         /// </summary>
         public static int VK_ALT_GRAPH => Clazz.GetField<int>("VK_ALT_GRAPH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_AMPERSAND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_AMPERSAND"/>
         /// </summary>
         public static int VK_AMPERSAND => Clazz.GetField<int>("VK_AMPERSAND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ASTERISK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ASTERISK"/>
         /// </summary>
         public static int VK_ASTERISK => Clazz.GetField<int>("VK_ASTERISK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_AT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_AT"/>
         /// </summary>
         public static int VK_AT => Clazz.GetField<int>("VK_AT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_B
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_B"/>
         /// </summary>
         public static int VK_B => Clazz.GetField<int>("VK_B");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BACK_QUOTE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BACK_QUOTE"/>
         /// </summary>
         public static int VK_BACK_QUOTE => Clazz.GetField<int>("VK_BACK_QUOTE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BACK_SLASH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BACK_SLASH"/>
         /// </summary>
         public static int VK_BACK_SLASH => Clazz.GetField<int>("VK_BACK_SLASH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BACK_SPACE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BACK_SPACE"/>
         /// </summary>
         public static int VK_BACK_SPACE => Clazz.GetField<int>("VK_BACK_SPACE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BEGIN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BEGIN"/>
         /// </summary>
         public static int VK_BEGIN => Clazz.GetField<int>("VK_BEGIN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BRACELEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BRACELEFT"/>
         /// </summary>
         public static int VK_BRACELEFT => Clazz.GetField<int>("VK_BRACELEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BRACERIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_BRACERIGHT"/>
         /// </summary>
         public static int VK_BRACERIGHT => Clazz.GetField<int>("VK_BRACERIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_C
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_C"/>
         /// </summary>
         public static int VK_C => Clazz.GetField<int>("VK_C");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CANCEL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CANCEL"/>
         /// </summary>
         public static int VK_CANCEL => Clazz.GetField<int>("VK_CANCEL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CAPS_LOCK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CAPS_LOCK"/>
         /// </summary>
         public static int VK_CAPS_LOCK => Clazz.GetField<int>("VK_CAPS_LOCK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CIRCUMFLEX
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CIRCUMFLEX"/>
         /// </summary>
         public static int VK_CIRCUMFLEX => Clazz.GetField<int>("VK_CIRCUMFLEX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CLEAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CLEAR"/>
         /// </summary>
         public static int VK_CLEAR => Clazz.GetField<int>("VK_CLEAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CLOSE_BRACKET
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CLOSE_BRACKET"/>
         /// </summary>
         public static int VK_CLOSE_BRACKET => Clazz.GetField<int>("VK_CLOSE_BRACKET");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CODE_INPUT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CODE_INPUT"/>
         /// </summary>
         public static int VK_CODE_INPUT => Clazz.GetField<int>("VK_CODE_INPUT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_COLON
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_COLON"/>
         /// </summary>
         public static int VK_COLON => Clazz.GetField<int>("VK_COLON");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_COMMA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_COMMA"/>
         /// </summary>
         public static int VK_COMMA => Clazz.GetField<int>("VK_COMMA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_COMPOSE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_COMPOSE"/>
         /// </summary>
         public static int VK_COMPOSE => Clazz.GetField<int>("VK_COMPOSE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CONTEXT_MENU
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CONTEXT_MENU"/>
         /// </summary>
         public static int VK_CONTEXT_MENU => Clazz.GetField<int>("VK_CONTEXT_MENU");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CONTROL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CONTROL"/>
         /// </summary>
         public static int VK_CONTROL => Clazz.GetField<int>("VK_CONTROL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CONVERT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CONVERT"/>
         /// </summary>
         public static int VK_CONVERT => Clazz.GetField<int>("VK_CONVERT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_COPY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_COPY"/>
         /// </summary>
         public static int VK_COPY => Clazz.GetField<int>("VK_COPY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CUT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_CUT"/>
         /// </summary>
         public static int VK_CUT => Clazz.GetField<int>("VK_CUT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_D
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_D"/>
         /// </summary>
         public static int VK_D => Clazz.GetField<int>("VK_D");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_ABOVEDOT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_ABOVEDOT"/>
         /// </summary>
         public static int VK_DEAD_ABOVEDOT => Clazz.GetField<int>("VK_DEAD_ABOVEDOT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_ABOVERING
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_ABOVERING"/>
         /// </summary>
         public static int VK_DEAD_ABOVERING => Clazz.GetField<int>("VK_DEAD_ABOVERING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_ACUTE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_ACUTE"/>
         /// </summary>
         public static int VK_DEAD_ACUTE => Clazz.GetField<int>("VK_DEAD_ACUTE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_BREVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_BREVE"/>
         /// </summary>
         public static int VK_DEAD_BREVE => Clazz.GetField<int>("VK_DEAD_BREVE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_CARON
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_CARON"/>
         /// </summary>
         public static int VK_DEAD_CARON => Clazz.GetField<int>("VK_DEAD_CARON");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_CEDILLA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_CEDILLA"/>
         /// </summary>
         public static int VK_DEAD_CEDILLA => Clazz.GetField<int>("VK_DEAD_CEDILLA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_CIRCUMFLEX
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_CIRCUMFLEX"/>
         /// </summary>
         public static int VK_DEAD_CIRCUMFLEX => Clazz.GetField<int>("VK_DEAD_CIRCUMFLEX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_DIAERESIS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_DIAERESIS"/>
         /// </summary>
         public static int VK_DEAD_DIAERESIS => Clazz.GetField<int>("VK_DEAD_DIAERESIS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_DOUBLEACUTE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_DOUBLEACUTE"/>
         /// </summary>
         public static int VK_DEAD_DOUBLEACUTE => Clazz.GetField<int>("VK_DEAD_DOUBLEACUTE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_GRAVE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_GRAVE"/>
         /// </summary>
         public static int VK_DEAD_GRAVE => Clazz.GetField<int>("VK_DEAD_GRAVE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_IOTA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_IOTA"/>
         /// </summary>
         public static int VK_DEAD_IOTA => Clazz.GetField<int>("VK_DEAD_IOTA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_MACRON
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_MACRON"/>
         /// </summary>
         public static int VK_DEAD_MACRON => Clazz.GetField<int>("VK_DEAD_MACRON");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_OGONEK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_OGONEK"/>
         /// </summary>
         public static int VK_DEAD_OGONEK => Clazz.GetField<int>("VK_DEAD_OGONEK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_SEMIVOICED_SOUND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_SEMIVOICED_SOUND"/>
         /// </summary>
         public static int VK_DEAD_SEMIVOICED_SOUND => Clazz.GetField<int>("VK_DEAD_SEMIVOICED_SOUND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_TILDE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_TILDE"/>
         /// </summary>
         public static int VK_DEAD_TILDE => Clazz.GetField<int>("VK_DEAD_TILDE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_VOICED_SOUND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DEAD_VOICED_SOUND"/>
         /// </summary>
         public static int VK_DEAD_VOICED_SOUND => Clazz.GetField<int>("VK_DEAD_VOICED_SOUND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DECIMAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DECIMAL"/>
         /// </summary>
         public static int VK_DECIMAL => Clazz.GetField<int>("VK_DECIMAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DELETE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DELETE"/>
         /// </summary>
         public static int VK_DELETE => Clazz.GetField<int>("VK_DELETE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DIVIDE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DIVIDE"/>
         /// </summary>
         public static int VK_DIVIDE => Clazz.GetField<int>("VK_DIVIDE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DOLLAR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DOLLAR"/>
         /// </summary>
         public static int VK_DOLLAR => Clazz.GetField<int>("VK_DOLLAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DOWN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_DOWN"/>
         /// </summary>
         public static int VK_DOWN => Clazz.GetField<int>("VK_DOWN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_E
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_E"/>
         /// </summary>
         public static int VK_E => Clazz.GetField<int>("VK_E");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_END
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_END"/>
         /// </summary>
         public static int VK_END => Clazz.GetField<int>("VK_END");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ENTER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ENTER"/>
         /// </summary>
         public static int VK_ENTER => Clazz.GetField<int>("VK_ENTER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_EQUALS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_EQUALS"/>
         /// </summary>
         public static int VK_EQUALS => Clazz.GetField<int>("VK_EQUALS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ESCAPE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ESCAPE"/>
         /// </summary>
         public static int VK_ESCAPE => Clazz.GetField<int>("VK_ESCAPE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_EURO_SIGN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_EURO_SIGN"/>
         /// </summary>
         public static int VK_EURO_SIGN => Clazz.GetField<int>("VK_EURO_SIGN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_EXCLAMATION_MARK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_EXCLAMATION_MARK"/>
         /// </summary>
         public static int VK_EXCLAMATION_MARK => Clazz.GetField<int>("VK_EXCLAMATION_MARK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F"/>
         /// </summary>
         public static int VK_F => Clazz.GetField<int>("VK_F");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F1
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F1"/>
         /// </summary>
         public static int VK_F1 => Clazz.GetField<int>("VK_F1");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F10
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F10"/>
         /// </summary>
         public static int VK_F10 => Clazz.GetField<int>("VK_F10");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F11
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F11"/>
         /// </summary>
         public static int VK_F11 => Clazz.GetField<int>("VK_F11");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F12
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F12"/>
         /// </summary>
         public static int VK_F12 => Clazz.GetField<int>("VK_F12");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F13
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F13"/>
         /// </summary>
         public static int VK_F13 => Clazz.GetField<int>("VK_F13");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F14
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F14"/>
         /// </summary>
         public static int VK_F14 => Clazz.GetField<int>("VK_F14");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F15
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F15"/>
         /// </summary>
         public static int VK_F15 => Clazz.GetField<int>("VK_F15");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F16
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F16"/>
         /// </summary>
         public static int VK_F16 => Clazz.GetField<int>("VK_F16");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F17
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F17"/>
         /// </summary>
         public static int VK_F17 => Clazz.GetField<int>("VK_F17");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F18
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F18"/>
         /// </summary>
         public static int VK_F18 => Clazz.GetField<int>("VK_F18");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F19
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F19"/>
         /// </summary>
         public static int VK_F19 => Clazz.GetField<int>("VK_F19");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F2
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F2"/>
         /// </summary>
         public static int VK_F2 => Clazz.GetField<int>("VK_F2");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F20
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F20"/>
         /// </summary>
         public static int VK_F20 => Clazz.GetField<int>("VK_F20");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F21
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F21"/>
         /// </summary>
         public static int VK_F21 => Clazz.GetField<int>("VK_F21");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F22
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F22"/>
         /// </summary>
         public static int VK_F22 => Clazz.GetField<int>("VK_F22");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F23
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F23"/>
         /// </summary>
         public static int VK_F23 => Clazz.GetField<int>("VK_F23");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F24
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F24"/>
         /// </summary>
         public static int VK_F24 => Clazz.GetField<int>("VK_F24");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F3
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F3"/>
         /// </summary>
         public static int VK_F3 => Clazz.GetField<int>("VK_F3");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F4
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F4"/>
         /// </summary>
         public static int VK_F4 => Clazz.GetField<int>("VK_F4");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F5
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F5"/>
         /// </summary>
         public static int VK_F5 => Clazz.GetField<int>("VK_F5");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F6
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F6"/>
         /// </summary>
         public static int VK_F6 => Clazz.GetField<int>("VK_F6");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F7
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F7"/>
         /// </summary>
         public static int VK_F7 => Clazz.GetField<int>("VK_F7");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F8
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F8"/>
         /// </summary>
         public static int VK_F8 => Clazz.GetField<int>("VK_F8");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F9
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_F9"/>
         /// </summary>
         public static int VK_F9 => Clazz.GetField<int>("VK_F9");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_FINAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_FINAL"/>
         /// </summary>
         public static int VK_FINAL => Clazz.GetField<int>("VK_FINAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_FIND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_FIND"/>
         /// </summary>
         public static int VK_FIND => Clazz.GetField<int>("VK_FIND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_FULL_WIDTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_FULL_WIDTH"/>
         /// </summary>
         public static int VK_FULL_WIDTH => Clazz.GetField<int>("VK_FULL_WIDTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_G
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_G"/>
         /// </summary>
         public static int VK_G => Clazz.GetField<int>("VK_G");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_GREATER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_GREATER"/>
         /// </summary>
         public static int VK_GREATER => Clazz.GetField<int>("VK_GREATER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_H
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_H"/>
         /// </summary>
         public static int VK_H => Clazz.GetField<int>("VK_H");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_HALF_WIDTH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_HALF_WIDTH"/>
         /// </summary>
         public static int VK_HALF_WIDTH => Clazz.GetField<int>("VK_HALF_WIDTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_HELP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_HELP"/>
         /// </summary>
         public static int VK_HELP => Clazz.GetField<int>("VK_HELP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_HIRAGANA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_HIRAGANA"/>
         /// </summary>
         public static int VK_HIRAGANA => Clazz.GetField<int>("VK_HIRAGANA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_HOME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_HOME"/>
         /// </summary>
         public static int VK_HOME => Clazz.GetField<int>("VK_HOME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_I
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_I"/>
         /// </summary>
         public static int VK_I => Clazz.GetField<int>("VK_I");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_INPUT_METHOD_ON_OFF
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_INPUT_METHOD_ON_OFF"/>
         /// </summary>
         public static int VK_INPUT_METHOD_ON_OFF => Clazz.GetField<int>("VK_INPUT_METHOD_ON_OFF");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_INSERT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_INSERT"/>
         /// </summary>
         public static int VK_INSERT => Clazz.GetField<int>("VK_INSERT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_INVERTED_EXCLAMATION_MARK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_INVERTED_EXCLAMATION_MARK"/>
         /// </summary>
         public static int VK_INVERTED_EXCLAMATION_MARK => Clazz.GetField<int>("VK_INVERTED_EXCLAMATION_MARK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_J
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_J"/>
         /// </summary>
         public static int VK_J => Clazz.GetField<int>("VK_J");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_JAPANESE_HIRAGANA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_JAPANESE_HIRAGANA"/>
         /// </summary>
         public static int VK_JAPANESE_HIRAGANA => Clazz.GetField<int>("VK_JAPANESE_HIRAGANA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_JAPANESE_KATAKANA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_JAPANESE_KATAKANA"/>
         /// </summary>
         public static int VK_JAPANESE_KATAKANA => Clazz.GetField<int>("VK_JAPANESE_KATAKANA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_JAPANESE_ROMAN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_JAPANESE_ROMAN"/>
         /// </summary>
         public static int VK_JAPANESE_ROMAN => Clazz.GetField<int>("VK_JAPANESE_ROMAN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_K
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_K"/>
         /// </summary>
         public static int VK_K => Clazz.GetField<int>("VK_K");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KANA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KANA"/>
         /// </summary>
         public static int VK_KANA => Clazz.GetField<int>("VK_KANA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KANA_LOCK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KANA_LOCK"/>
         /// </summary>
         public static int VK_KANA_LOCK => Clazz.GetField<int>("VK_KANA_LOCK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KANJI
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KANJI"/>
         /// </summary>
         public static int VK_KANJI => Clazz.GetField<int>("VK_KANJI");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KATAKANA
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KATAKANA"/>
         /// </summary>
         public static int VK_KATAKANA => Clazz.GetField<int>("VK_KATAKANA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KP_DOWN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KP_DOWN"/>
         /// </summary>
         public static int VK_KP_DOWN => Clazz.GetField<int>("VK_KP_DOWN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KP_LEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KP_LEFT"/>
         /// </summary>
         public static int VK_KP_LEFT => Clazz.GetField<int>("VK_KP_LEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KP_RIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KP_RIGHT"/>
         /// </summary>
         public static int VK_KP_RIGHT => Clazz.GetField<int>("VK_KP_RIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KP_UP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_KP_UP"/>
         /// </summary>
         public static int VK_KP_UP => Clazz.GetField<int>("VK_KP_UP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_L
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_L"/>
         /// </summary>
         public static int VK_L => Clazz.GetField<int>("VK_L");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_LEFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_LEFT"/>
         /// </summary>
         public static int VK_LEFT => Clazz.GetField<int>("VK_LEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_LEFT_PARENTHESIS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_LEFT_PARENTHESIS"/>
         /// </summary>
         public static int VK_LEFT_PARENTHESIS => Clazz.GetField<int>("VK_LEFT_PARENTHESIS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_LESS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_LESS"/>
         /// </summary>
         public static int VK_LESS => Clazz.GetField<int>("VK_LESS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_M
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_M"/>
         /// </summary>
         public static int VK_M => Clazz.GetField<int>("VK_M");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_META
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_META"/>
         /// </summary>
         public static int VK_META => Clazz.GetField<int>("VK_META");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_MINUS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_MINUS"/>
         /// </summary>
         public static int VK_MINUS => Clazz.GetField<int>("VK_MINUS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_MODECHANGE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_MODECHANGE"/>
         /// </summary>
         public static int VK_MODECHANGE => Clazz.GetField<int>("VK_MODECHANGE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_MULTIPLY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_MULTIPLY"/>
         /// </summary>
         public static int VK_MULTIPLY => Clazz.GetField<int>("VK_MULTIPLY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_N
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_N"/>
         /// </summary>
         public static int VK_N => Clazz.GetField<int>("VK_N");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NONCONVERT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NONCONVERT"/>
         /// </summary>
         public static int VK_NONCONVERT => Clazz.GetField<int>("VK_NONCONVERT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUM_LOCK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUM_LOCK"/>
         /// </summary>
         public static int VK_NUM_LOCK => Clazz.GetField<int>("VK_NUM_LOCK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMBER_SIGN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMBER_SIGN"/>
         /// </summary>
         public static int VK_NUMBER_SIGN => Clazz.GetField<int>("VK_NUMBER_SIGN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD0
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD0"/>
         /// </summary>
         public static int VK_NUMPAD0 => Clazz.GetField<int>("VK_NUMPAD0");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD1
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD1"/>
         /// </summary>
         public static int VK_NUMPAD1 => Clazz.GetField<int>("VK_NUMPAD1");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD2
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD2"/>
         /// </summary>
         public static int VK_NUMPAD2 => Clazz.GetField<int>("VK_NUMPAD2");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD3
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD3"/>
         /// </summary>
         public static int VK_NUMPAD3 => Clazz.GetField<int>("VK_NUMPAD3");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD4
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD4"/>
         /// </summary>
         public static int VK_NUMPAD4 => Clazz.GetField<int>("VK_NUMPAD4");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD5
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD5"/>
         /// </summary>
         public static int VK_NUMPAD5 => Clazz.GetField<int>("VK_NUMPAD5");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD6
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD6"/>
         /// </summary>
         public static int VK_NUMPAD6 => Clazz.GetField<int>("VK_NUMPAD6");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD7
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD7"/>
         /// </summary>
         public static int VK_NUMPAD7 => Clazz.GetField<int>("VK_NUMPAD7");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD8
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD8"/>
         /// </summary>
         public static int VK_NUMPAD8 => Clazz.GetField<int>("VK_NUMPAD8");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD9
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_NUMPAD9"/>
         /// </summary>
         public static int VK_NUMPAD9 => Clazz.GetField<int>("VK_NUMPAD9");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_O
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_O"/>
         /// </summary>
         public static int VK_O => Clazz.GetField<int>("VK_O");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_OPEN_BRACKET
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_OPEN_BRACKET"/>
         /// </summary>
         public static int VK_OPEN_BRACKET => Clazz.GetField<int>("VK_OPEN_BRACKET");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_P
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_P"/>
         /// </summary>
         public static int VK_P => Clazz.GetField<int>("VK_P");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PAGE_DOWN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PAGE_DOWN"/>
         /// </summary>
         public static int VK_PAGE_DOWN => Clazz.GetField<int>("VK_PAGE_DOWN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PAGE_UP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PAGE_UP"/>
         /// </summary>
         public static int VK_PAGE_UP => Clazz.GetField<int>("VK_PAGE_UP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PASTE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PASTE"/>
         /// </summary>
         public static int VK_PASTE => Clazz.GetField<int>("VK_PASTE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PAUSE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PAUSE"/>
         /// </summary>
         public static int VK_PAUSE => Clazz.GetField<int>("VK_PAUSE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PERIOD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PERIOD"/>
         /// </summary>
         public static int VK_PERIOD => Clazz.GetField<int>("VK_PERIOD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PLUS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PLUS"/>
         /// </summary>
         public static int VK_PLUS => Clazz.GetField<int>("VK_PLUS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PREVIOUS_CANDIDATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PREVIOUS_CANDIDATE"/>
         /// </summary>
         public static int VK_PREVIOUS_CANDIDATE => Clazz.GetField<int>("VK_PREVIOUS_CANDIDATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PRINTSCREEN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PRINTSCREEN"/>
         /// </summary>
         public static int VK_PRINTSCREEN => Clazz.GetField<int>("VK_PRINTSCREEN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PROPS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_PROPS"/>
         /// </summary>
         public static int VK_PROPS => Clazz.GetField<int>("VK_PROPS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_Q
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_Q"/>
         /// </summary>
         public static int VK_Q => Clazz.GetField<int>("VK_Q");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_QUOTE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_QUOTE"/>
         /// </summary>
         public static int VK_QUOTE => Clazz.GetField<int>("VK_QUOTE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_QUOTEDBL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_QUOTEDBL"/>
         /// </summary>
         public static int VK_QUOTEDBL => Clazz.GetField<int>("VK_QUOTEDBL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_R
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_R"/>
         /// </summary>
         public static int VK_R => Clazz.GetField<int>("VK_R");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_RIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_RIGHT"/>
         /// </summary>
         public static int VK_RIGHT => Clazz.GetField<int>("VK_RIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_RIGHT_PARENTHESIS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_RIGHT_PARENTHESIS"/>
         /// </summary>
         public static int VK_RIGHT_PARENTHESIS => Clazz.GetField<int>("VK_RIGHT_PARENTHESIS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ROMAN_CHARACTERS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_ROMAN_CHARACTERS"/>
         /// </summary>
         public static int VK_ROMAN_CHARACTERS => Clazz.GetField<int>("VK_ROMAN_CHARACTERS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_S
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_S"/>
         /// </summary>
         public static int VK_S => Clazz.GetField<int>("VK_S");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SCROLL_LOCK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SCROLL_LOCK"/>
         /// </summary>
         public static int VK_SCROLL_LOCK => Clazz.GetField<int>("VK_SCROLL_LOCK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SEMICOLON
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SEMICOLON"/>
         /// </summary>
         public static int VK_SEMICOLON => Clazz.GetField<int>("VK_SEMICOLON");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SEPARATER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SEPARATER"/>
         /// </summary>
         public static int VK_SEPARATER => Clazz.GetField<int>("VK_SEPARATER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SEPARATOR
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SEPARATOR"/>
         /// </summary>
         public static int VK_SEPARATOR => Clazz.GetField<int>("VK_SEPARATOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SHIFT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SHIFT"/>
         /// </summary>
         public static int VK_SHIFT => Clazz.GetField<int>("VK_SHIFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SLASH
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SLASH"/>
         /// </summary>
         public static int VK_SLASH => Clazz.GetField<int>("VK_SLASH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SPACE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SPACE"/>
         /// </summary>
         public static int VK_SPACE => Clazz.GetField<int>("VK_SPACE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_STOP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_STOP"/>
         /// </summary>
         public static int VK_STOP => Clazz.GetField<int>("VK_STOP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SUBTRACT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_SUBTRACT"/>
         /// </summary>
         public static int VK_SUBTRACT => Clazz.GetField<int>("VK_SUBTRACT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_T
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_T"/>
         /// </summary>
         public static int VK_T => Clazz.GetField<int>("VK_T");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_TAB
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_TAB"/>
         /// </summary>
         public static int VK_TAB => Clazz.GetField<int>("VK_TAB");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_U
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_U"/>
         /// </summary>
         public static int VK_U => Clazz.GetField<int>("VK_U");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_UNDEFINED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_UNDEFINED"/>
         /// </summary>
         public static int VK_UNDEFINED => Clazz.GetField<int>("VK_UNDEFINED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_UNDERSCORE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_UNDERSCORE"/>
         /// </summary>
         public static int VK_UNDERSCORE => Clazz.GetField<int>("VK_UNDERSCORE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_UNDO
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_UNDO"/>
         /// </summary>
         public static int VK_UNDO => Clazz.GetField<int>("VK_UNDO");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_UP
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_UP"/>
         /// </summary>
         public static int VK_UP => Clazz.GetField<int>("VK_UP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_V
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_V"/>
         /// </summary>
         public static int VK_V => Clazz.GetField<int>("VK_V");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_W
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_W"/>
         /// </summary>
         public static int VK_W => Clazz.GetField<int>("VK_W");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_WINDOWS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_WINDOWS"/>
         /// </summary>
         public static int VK_WINDOWS => Clazz.GetField<int>("VK_WINDOWS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_X
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_X"/>
         /// </summary>
         public static int VK_X => Clazz.GetField<int>("VK_X");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_Y
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_Y"/>
         /// </summary>
         public static int VK_Y => Clazz.GetField<int>("VK_Y");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_Z
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#VK_Z"/>
         /// </summary>
         public static int VK_Z => Clazz.GetField<int>("VK_Z");
         
@@ -856,15 +869,19 @@ namespace Java.Awt.EventNs
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getExtendedKeyCodeForChar(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getExtendedKeyCodeForChar(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int GetExtendedKeyCodeForChar(int arg0)
         {
             return SExecute<int>("getExtendedKeyCodeForChar", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyText(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyText(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public static string GetKeyText(int arg0)
         {
             return SExecute<string>("getKeyText", arg0);
@@ -874,36 +891,38 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getExtendedKeyCode() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getExtendedKeyCode()"/> 
         /// </summary>
         public int ExtendedKeyCode
         {
             get { return IExecute<int>("getExtendedKeyCode"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyChar() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#setKeyChar(char)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyChar()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#setKeyChar(char)"/>
         /// </summary>
         public char KeyChar
         {
             get { return IExecute<char>("getKeyChar"); } set { IExecute("setKeyChar", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyCode() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#setKeyCode(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyCode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#setKeyCode(int)"/>
         /// </summary>
         public int KeyCode
         {
             get { return IExecute<int>("getKeyCode"); } set { IExecute("setKeyCode", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyLocation() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyLocation()"/> 
         /// </summary>
         public int KeyLocation
         {
             get { return IExecute<int>("getKeyLocation"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#isActionKey()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#isActionKey()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsActionKey()
         {
             return IExecute<bool>("isActionKey");

@@ -30,15 +30,18 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedWriter.html#<init>(java.io.Writer,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedWriter.html#%3Cinit%3E(java.io.Writer,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public BufferedWriter(Java.Io.Writer arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedWriter.html#<init>(java.io.Writer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedWriter.html#%3Cinit%3E(java.io.Writer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         public BufferedWriter(Java.Io.Writer arg0)
             : base(arg0)
         {
@@ -60,8 +63,10 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedWriter.html#newLine() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedWriter.html#newLine()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void NewLine()
         {
             IExecute("newLine");

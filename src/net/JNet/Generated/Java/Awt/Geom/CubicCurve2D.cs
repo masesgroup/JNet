@@ -33,7 +33,13 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Geom.CubicCurve2D"/> to <see cref="Java.Awt.Shape"/>
+        /// </summary>
         public static implicit operator Java.Awt.Shape(Java.Awt.Geom.CubicCurve2D t) => t.Cast<Java.Awt.Shape>();
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Geom.CubicCurve2D"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.CubicCurve2D t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -44,57 +50,95 @@ namespace Java.Awt.Geom
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatness(double,double,double,double,double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatness(double,double,double,double,double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg4"><see langword="double"/></param>
+        /// <param name="arg5"><see langword="double"/></param>
+        /// <param name="arg6"><see langword="double"/></param>
+        /// <param name="arg7"><see langword="double"/></param>
+        /// <returns><see langword="double"/></returns>
         public static double GetFlatness(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
         {
             return SExecute<double>("getFlatness", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatness(double[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatness(double[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="double"/></returns>
         public static double GetFlatness(double[] arg0, int arg1)
         {
             return SExecute<double>("getFlatness", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatnessSq(double,double,double,double,double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatnessSq(double,double,double,double,double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg4"><see langword="double"/></param>
+        /// <param name="arg5"><see langword="double"/></param>
+        /// <param name="arg6"><see langword="double"/></param>
+        /// <param name="arg7"><see langword="double"/></param>
+        /// <returns><see langword="double"/></returns>
         public static double GetFlatnessSq(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
         {
             return SExecute<double>("getFlatnessSq", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatnessSq(double[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatnessSq(double[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="double"/></returns>
         public static double GetFlatnessSq(double[] arg0, int arg1)
         {
             return SExecute<double>("getFlatnessSq", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#solveCubic(double[],double[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#solveCubic(double[],double[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int SolveCubic(double[] arg0, double[] arg1)
         {
             return SExecute<int>("solveCubic", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#solveCubic(double[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#solveCubic(double[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see langword="int"/></returns>
         public static int SolveCubic(double[] arg0)
         {
             return SExecute<int>("solveCubic", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#subdivide(double[],int,double[],int,double[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#subdivide(double[],int,double[],int,double[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="double"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
         public static void Subdivide(double[] arg0, int arg1, double[] arg2, int arg3, double[] arg4, int arg5)
         {
             SExecute("subdivide", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#subdivide(java.awt.geom.CubicCurve2D,java.awt.geom.CubicCurve2D,java.awt.geom.CubicCurve2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#subdivide(java.awt.geom.CubicCurve2D,java.awt.geom.CubicCurve2D,java.awt.geom.CubicCurve2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.CubicCurve2D"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.CubicCurve2D"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Geom.CubicCurve2D"/></param>
         public static void Subdivide(Java.Awt.Geom.CubicCurve2D arg0, Java.Awt.Geom.CubicCurve2D arg1, Java.Awt.Geom.CubicCurve2D arg2)
         {
             SExecute("subdivide", arg0, arg1, arg2);
@@ -104,204 +148,247 @@ namespace Java.Awt.Geom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getBounds() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getBounds()"/> 
         /// </summary>
         public Java.Awt.Rectangle Bounds
         {
             get { return IExecute<Java.Awt.Rectangle>("getBounds"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getCtrlP1() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getCtrlP1()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D CtrlP1
         {
             get { return IExecute<Java.Awt.Geom.Point2D>("getCtrlP1"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getCtrlP2() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getCtrlP2()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D CtrlP2
         {
             get { return IExecute<Java.Awt.Geom.Point2D>("getCtrlP2"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getCtrlX1() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getCtrlX1()"/> 
         /// </summary>
         public double CtrlX1
         {
             get { return IExecute<double>("getCtrlX1"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getCtrlX2() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getCtrlX2()"/> 
         /// </summary>
         public double CtrlX2
         {
             get { return IExecute<double>("getCtrlX2"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getCtrlY1() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getCtrlY1()"/> 
         /// </summary>
         public double CtrlY1
         {
             get { return IExecute<double>("getCtrlY1"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getCtrlY2() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getCtrlY2()"/> 
         /// </summary>
         public double CtrlY2
         {
             get { return IExecute<double>("getCtrlY2"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatness() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatness()"/> 
         /// </summary>
         public double Flatness
         {
             get { return IExecute<double>("getFlatness"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatnessSq() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatnessSq()"/> 
         /// </summary>
         public double FlatnessSq
         {
             get { return IExecute<double>("getFlatnessSq"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getP1() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getP1()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D P1
         {
             get { return IExecute<Java.Awt.Geom.Point2D>("getP1"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getP2() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getP2()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D P2
         {
             get { return IExecute<Java.Awt.Geom.Point2D>("getP2"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getX1() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getX1()"/> 
         /// </summary>
         public double X1
         {
             get { return IExecute<double>("getX1"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getX2() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getX2()"/> 
         /// </summary>
         public double X2
         {
             get { return IExecute<double>("getX2"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getY1() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getY1()"/> 
         /// </summary>
         public double Y1
         {
             get { return IExecute<double>("getY1"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getY2() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getY2()"/> 
         /// </summary>
         public double Y2
         {
             get { return IExecute<double>("getY2"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#setCurve(double,double,double,double,double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#setCurve(double,double,double,double,double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg4"><see langword="double"/></param>
+        /// <param name="arg5"><see langword="double"/></param>
+        /// <param name="arg6"><see langword="double"/></param>
+        /// <param name="arg7"><see langword="double"/></param>
         public void SetCurve(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
         {
             IExecute("setCurve", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#contains(double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#contains(double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(double arg0, double arg1, double arg2, double arg3)
         {
             return IExecute<bool>("contains", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#contains(double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#contains(double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(double arg0, double arg1)
         {
             return IExecute<bool>("contains", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#contains(java.awt.geom.Point2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#contains(java.awt.geom.Point2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Point2D arg0)
         {
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#contains(java.awt.geom.Rectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#contains(java.awt.geom.Rectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Contains(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#intersects(double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#intersects(double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Intersects(double arg0, double arg1, double arg2, double arg3)
         {
             return IExecute<bool>("intersects", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#intersects(java.awt.geom.Rectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#intersects(java.awt.geom.Rectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Intersects(Java.Awt.Geom.Rectangle2D arg0)
         {
             return IExecute<bool>("intersects", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getPathIterator(java.awt.geom.AffineTransform,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getPathIterator(java.awt.geom.AffineTransform,double)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0, double arg1)
         {
             return IExecute<Java.Awt.Geom.PathIterator>("getPathIterator", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getPathIterator(java.awt.geom.AffineTransform)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getPathIterator(java.awt.geom.AffineTransform)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
+        /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0)
         {
             return IExecute<Java.Awt.Geom.PathIterator>("getPathIterator", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#setCurve(double[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#setCurve(double[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetCurve(double[] arg0, int arg1)
         {
             IExecute("setCurve", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#setCurve(java.awt.geom.CubicCurve2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#setCurve(java.awt.geom.CubicCurve2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.CubicCurve2D"/></param>
         public void SetCurve(Java.Awt.Geom.CubicCurve2D arg0)
         {
             IExecute("setCurve", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#setCurve(java.awt.geom.Point2D,java.awt.geom.Point2D,java.awt.geom.Point2D,java.awt.geom.Point2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#setCurve(java.awt.geom.Point2D,java.awt.geom.Point2D,java.awt.geom.Point2D,java.awt.geom.Point2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Geom.Point2D"/></param>
         public void SetCurve(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Geom.Point2D arg3)
         {
             IExecute("setCurve", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#setCurve(java.awt.geom.Point2D[],int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#setCurve(java.awt.geom.Point2D[],int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.Point2D"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetCurve(Java.Awt.Geom.Point2D[] arg0, int arg1)
         {
             IExecute("setCurve", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#subdivide(java.awt.geom.CubicCurve2D,java.awt.geom.CubicCurve2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#subdivide(java.awt.geom.CubicCurve2D,java.awt.geom.CubicCurve2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.CubicCurve2D"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Geom.CubicCurve2D"/></param>
         public void Subdivide(Java.Awt.Geom.CubicCurve2D arg0, Java.Awt.Geom.CubicCurve2D arg1)
         {
             IExecute("subdivide", arg0, arg1);
@@ -315,8 +402,16 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#<init>(double,double,double,double,double,double,double,double)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#%3Cinit%3E(double,double,double,double,double,double,double,double)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="double"/></param>
+            /// <param name="arg1"><see langword="double"/></param>
+            /// <param name="arg2"><see langword="double"/></param>
+            /// <param name="arg3"><see langword="double"/></param>
+            /// <param name="arg4"><see langword="double"/></param>
+            /// <param name="arg5"><see langword="double"/></param>
+            /// <param name="arg6"><see langword="double"/></param>
+            /// <param name="arg7"><see langword="double"/></param>
             public Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
             {
@@ -325,41 +420,44 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Awt.Geom.CubicCurve2D.Double"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.CubicCurve2D.Double t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrlx1
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrlx1"/>
             /// </summary>
             public double ctrlx1 => Instance.GetField<double>("ctrlx1");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrlx2
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrlx2"/>
             /// </summary>
             public double ctrlx2 => Instance.GetField<double>("ctrlx2");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrly1
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrly1"/>
             /// </summary>
             public double ctrly1 => Instance.GetField<double>("ctrly1");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrly2
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrly2"/>
             /// </summary>
             public double ctrly2 => Instance.GetField<double>("ctrly2");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#x1
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#x1"/>
             /// </summary>
             public double x1 => Instance.GetField<double>("x1");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#x2
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#x2"/>
             /// </summary>
             public double x2 => Instance.GetField<double>("x2");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#y1
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#y1"/>
             /// </summary>
             public double y1 => Instance.GetField<double>("y1");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#y2
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#y2"/>
             /// </summary>
             public double y2 => Instance.GetField<double>("y2");
             
@@ -382,8 +480,16 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#<init>(float,float,float,float,float,float,float,float)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#%3Cinit%3E(float,float,float,float,float,float,float,float)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="float"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg2"><see langword="float"/></param>
+            /// <param name="arg3"><see langword="float"/></param>
+            /// <param name="arg4"><see langword="float"/></param>
+            /// <param name="arg5"><see langword="float"/></param>
+            /// <param name="arg6"><see langword="float"/></param>
+            /// <param name="arg7"><see langword="float"/></param>
             public Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
             {
@@ -392,41 +498,44 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Awt.Geom.CubicCurve2D.Float"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.CubicCurve2D.Float t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#ctrlx1
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#ctrlx1"/>
             /// </summary>
             public float ctrlx1 => Instance.GetField<float>("ctrlx1");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#ctrlx2
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#ctrlx2"/>
             /// </summary>
             public float ctrlx2 => Instance.GetField<float>("ctrlx2");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#ctrly1
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#ctrly1"/>
             /// </summary>
             public float ctrly1 => Instance.GetField<float>("ctrly1");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#ctrly2
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#ctrly2"/>
             /// </summary>
             public float ctrly2 => Instance.GetField<float>("ctrly2");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#x1
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#x1"/>
             /// </summary>
             public float x1 => Instance.GetField<float>("x1");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#x2
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#x2"/>
             /// </summary>
             public float x2 => Instance.GetField<float>("x2");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#y1
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#y1"/>
             /// </summary>
             public float y1 => Instance.GetField<float>("y1");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#y2
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#y2"/>
             /// </summary>
             public float y2 => Instance.GetField<float>("y2");
             
@@ -438,8 +547,16 @@ namespace Java.Awt.Geom
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#setCurve(float,float,float,float,float,float,float,float)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Float.html#setCurve(float,float,float,float,float,float,float,float)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="float"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg2"><see langword="float"/></param>
+            /// <param name="arg3"><see langword="float"/></param>
+            /// <param name="arg4"><see langword="float"/></param>
+            /// <param name="arg5"><see langword="float"/></param>
+            /// <param name="arg6"><see langword="float"/></param>
+            /// <param name="arg7"><see langword="float"/></param>
             public void SetCurve(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7)
             {
                 IExecute("setCurve", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);

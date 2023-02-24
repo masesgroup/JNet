@@ -38,15 +38,15 @@ namespace Java.Lang.Invoke
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_BRIDGES
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_BRIDGES"/>
         /// </summary>
         public static int FLAG_BRIDGES => Clazz.GetField<int>("FLAG_BRIDGES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_MARKERS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_MARKERS"/>
         /// </summary>
         public static int FLAG_MARKERS => Clazz.GetField<int>("FLAG_MARKERS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_SERIALIZABLE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_SERIALIZABLE"/>
         /// </summary>
         public static int FLAG_SERIALIZABLE => Clazz.GetField<int>("FLAG_SERIALIZABLE");
         
@@ -54,15 +54,29 @@ namespace Java.Lang.Invoke
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#altMetafactory(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.Object...) throws java.lang.invoke.LambdaConversionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#altMetafactory(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.Object...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodType"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.CallSite"/></returns>
+        /// <exception cref="Java.Lang.Invoke.LambdaConversionException"/>
         public static Java.Lang.Invoke.CallSite AltMetafactory(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Invoke.MethodType arg2, params object[] arg3)
         {
             if (arg3.Length == 0) return SExecute<Java.Lang.Invoke.CallSite>("altMetafactory", arg0, arg1, arg2); else return SExecute<Java.Lang.Invoke.CallSite>("altMetafactory", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#metafactory(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.invoke.MethodType,java.lang.invoke.MethodHandle,java.lang.invoke.MethodType) throws java.lang.invoke.LambdaConversionException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#metafactory(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.invoke.MethodType,java.lang.invoke.MethodHandle,java.lang.invoke.MethodType)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodType"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.Invoke.MethodType"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg5"><see cref="Java.Lang.Invoke.MethodType"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.CallSite"/></returns>
+        /// <exception cref="Java.Lang.Invoke.LambdaConversionException"/>
         public static Java.Lang.Invoke.CallSite Metafactory(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Invoke.MethodType arg2, Java.Lang.Invoke.MethodType arg3, Java.Lang.Invoke.MethodHandle arg4, Java.Lang.Invoke.MethodType arg5)
         {
             return SExecute<Java.Lang.Invoke.CallSite>("metafactory", arg0, arg1, arg2, arg3, arg4, arg5);

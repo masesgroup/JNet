@@ -46,22 +46,30 @@ namespace Javax.Xml.Stream.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#allocate(javax.xml.stream.XMLStreamReader) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#allocate(javax.xml.stream.XMLStreamReader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamReader"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.Events.XMLEvent Allocate(Javax.Xml.Stream.XMLStreamReader arg0)
         {
             return IExecute<Javax.Xml.Stream.Events.XMLEvent>("allocate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#newInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#newInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Stream.Util.XMLEventAllocator"/></returns>
         public Javax.Xml.Stream.Util.XMLEventAllocator NewInstance()
         {
             return IExecute<Javax.Xml.Stream.Util.XMLEventAllocator>("newInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#allocate(javax.xml.stream.XMLStreamReader,javax.xml.stream.util.XMLEventConsumer) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#allocate(javax.xml.stream.XMLStreamReader,javax.xml.stream.util.XMLEventConsumer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamReader"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Stream.Util.XMLEventConsumer"/></param>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Allocate(Javax.Xml.Stream.XMLStreamReader arg0, Javax.Xml.Stream.Util.XMLEventConsumer arg1)
         {
             IExecute("allocate", arg0, arg1);

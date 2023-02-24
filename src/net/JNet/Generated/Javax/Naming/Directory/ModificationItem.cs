@@ -30,8 +30,10 @@ namespace Javax.Naming.Directory
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/ModificationItem.html#<init>(int,javax.naming.directory.Attribute)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/ModificationItem.html#%3Cinit%3E(int,javax.naming.directory.Attribute)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Naming.Directory.Attribute"/></param>
         public ModificationItem(int arg0, Javax.Naming.Directory.Attribute arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Javax.Naming.Directory
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Directory.ModificationItem"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.Directory.ModificationItem t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,14 +59,14 @@ namespace Javax.Naming.Directory
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/ModificationItem.html#getAttribute() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/ModificationItem.html#getAttribute()"/> 
         /// </summary>
         public Javax.Naming.Directory.Attribute Attribute
         {
             get { return IExecute<Javax.Naming.Directory.Attribute>("getAttribute"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/ModificationItem.html#getModificationOp() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/ModificationItem.html#getModificationOp()"/> 
         /// </summary>
         public int ModificationOp
         {

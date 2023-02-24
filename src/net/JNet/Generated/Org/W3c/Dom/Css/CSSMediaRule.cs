@@ -33,6 +33,9 @@ namespace Org.W3c.Dom.Css
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Css.CSSMediaRule"/> to <see cref="Org.W3c.Dom.Css.CSSRule"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Css.CSSRule(Org.W3c.Dom.Css.CSSMediaRule t) => t.Cast<Org.W3c.Dom.Css.CSSRule>();
         
         #endregion
@@ -47,29 +50,35 @@ namespace Org.W3c.Dom.Css
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#getCssRules() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#getCssRules()"/> 
         /// </summary>
         public Org.W3c.Dom.Css.CSSRuleList CssRules
         {
             get { return IExecute<Org.W3c.Dom.Css.CSSRuleList>("getCssRules"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#getMedia() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#getMedia()"/> 
         /// </summary>
         public Org.W3c.Dom.Stylesheets.MediaList Media
         {
             get { return IExecute<Org.W3c.Dom.Stylesheets.MediaList>("getMedia"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#insertRule(java.lang.String,int) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#insertRule(java.lang.String,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public int InsertRule(string arg0, int arg1)
         {
             return IExecute<int>("insertRule", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#deleteRule(int) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#deleteRule(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void DeleteRule(int arg0)
         {
             IExecute("deleteRule", arg0);

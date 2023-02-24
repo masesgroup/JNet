@@ -30,8 +30,10 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#<init>(int) throws java.awt.HeadlessException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <exception cref="Java.Awt.HeadlessException"/>
         public ScrollPane(int arg0)
             : base(arg0)
         {
@@ -40,21 +42,24 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ScrollPane"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.ScrollPane t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_ALWAYS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_ALWAYS"/>
         /// </summary>
         public static int SCROLLBARS_ALWAYS => Clazz.GetField<int>("SCROLLBARS_ALWAYS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_AS_NEEDED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_AS_NEEDED"/>
         /// </summary>
         public static int SCROLLBARS_AS_NEEDED => Clazz.GetField<int>("SCROLLBARS_AS_NEEDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_NEVER
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_NEVER"/>
         /// </summary>
         public static int SCROLLBARS_NEVER => Clazz.GetField<int>("SCROLLBARS_NEVER");
         
@@ -66,78 +71,85 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getHAdjustable() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getHAdjustable()"/> 
         /// </summary>
         public Java.Awt.Adjustable HAdjustable
         {
             get { return IExecute<Java.Awt.Adjustable>("getHAdjustable"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getHScrollbarHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getHScrollbarHeight()"/> 
         /// </summary>
         public int HScrollbarHeight
         {
             get { return IExecute<int>("getHScrollbarHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getScrollbarDisplayPolicy() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getScrollbarDisplayPolicy()"/> 
         /// </summary>
         public int ScrollbarDisplayPolicy
         {
             get { return IExecute<int>("getScrollbarDisplayPolicy"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getScrollPosition() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#setScrollPosition(java.awt.Point)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getScrollPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#setScrollPosition(java.awt.Point)"/>
         /// </summary>
         public Java.Awt.Point ScrollPosition
         {
             get { return IExecute<Java.Awt.Point>("getScrollPosition"); } set { IExecute("setScrollPosition", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getVAdjustable() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getVAdjustable()"/> 
         /// </summary>
         public Java.Awt.Adjustable VAdjustable
         {
             get { return IExecute<Java.Awt.Adjustable>("getVAdjustable"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getViewportSize() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getViewportSize()"/> 
         /// </summary>
         public Java.Awt.Dimension ViewportSize
         {
             get { return IExecute<Java.Awt.Dimension>("getViewportSize"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getVScrollbarWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getVScrollbarWidth()"/> 
         /// </summary>
         public int VScrollbarWidth
         {
             get { return IExecute<int>("getVScrollbarWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#isWheelScrollingEnabled()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#isWheelScrollingEnabled()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsWheelScrollingEnabled()
         {
             return IExecute<bool>("isWheelScrollingEnabled");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#paramString()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#paramString()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string ParamString()
         {
             return IExecute<string>("paramString");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#setScrollPosition(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#setScrollPosition(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetScrollPosition(int arg0, int arg1)
         {
             IExecute("setScrollPosition", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#setWheelScrollingEnabled(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#setWheelScrollingEnabled(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetWheelScrollingEnabled(bool arg0)
         {
             IExecute("setWheelScrollingEnabled", arg0);

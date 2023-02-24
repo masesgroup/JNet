@@ -33,6 +33,9 @@ namespace Javax.Management.Modelmbean
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster"/> to <see cref="Javax.Management.NotificationBroadcaster"/>
+        /// </summary>
         public static implicit operator Javax.Management.NotificationBroadcaster(Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster t) => t.Cast<Javax.Management.NotificationBroadcaster>();
         
         #endregion
@@ -47,43 +50,67 @@ namespace Javax.Management.Modelmbean
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#addAttributeChangeNotificationListener(javax.management.NotificationListener,java.lang.String,java.lang.Object) throws javax.management.MBeanException,javax.management.RuntimeOperationsException,java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#addAttributeChangeNotificationListener(javax.management.NotificationListener,java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void AddAttributeChangeNotificationListener(Javax.Management.NotificationListener arg0, string arg1, object arg2)
         {
             IExecute("addAttributeChangeNotificationListener", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#removeAttributeChangeNotificationListener(javax.management.NotificationListener,java.lang.String) throws javax.management.MBeanException,javax.management.RuntimeOperationsException,javax.management.ListenerNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#removeAttributeChangeNotificationListener(javax.management.NotificationListener,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveAttributeChangeNotificationListener(Javax.Management.NotificationListener arg0, string arg1)
         {
             IExecute("removeAttributeChangeNotificationListener", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendAttributeChangeNotification(javax.management.Attribute,javax.management.Attribute) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendAttributeChangeNotification(javax.management.Attribute,javax.management.Attribute)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Attribute"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.Attribute"/></param>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SendAttributeChangeNotification(Javax.Management.Attribute arg0, Javax.Management.Attribute arg1)
         {
             IExecute("sendAttributeChangeNotification", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendAttributeChangeNotification(javax.management.AttributeChangeNotification) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendAttributeChangeNotification(javax.management.AttributeChangeNotification)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.AttributeChangeNotification"/></param>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SendAttributeChangeNotification(Javax.Management.AttributeChangeNotification arg0)
         {
             IExecute("sendAttributeChangeNotification", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendNotification(java.lang.String) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendNotification(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SendNotification(string arg0)
         {
             IExecute("sendNotification", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendNotification(javax.management.Notification) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendNotification(javax.management.Notification)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
+        /// <exception cref="Javax.Management.MBeanException"/>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SendNotification(Javax.Management.Notification arg0)
         {
             IExecute("sendNotification", arg0);

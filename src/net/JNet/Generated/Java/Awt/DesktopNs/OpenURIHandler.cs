@@ -46,8 +46,9 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIHandler.html#openURI(java.awt.desktop.OpenURIEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIHandler.html#openURI(java.awt.desktop.OpenURIEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.OpenURIEvent"/></param>
         public void OpenURI(Java.Awt.DesktopNs.OpenURIEvent arg0)
         {
             IExecute("openURI", arg0);

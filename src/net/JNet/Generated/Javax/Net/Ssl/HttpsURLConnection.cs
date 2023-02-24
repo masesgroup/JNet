@@ -42,22 +42,25 @@ namespace Javax.Net.Ssl
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getDefaultSSLSocketFactory() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#setDefaultSSLSocketFactory(javax.net.ssl.SSLSocketFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getDefaultSSLSocketFactory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#setDefaultSSLSocketFactory(javax.net.ssl.SSLSocketFactory)"/>
         /// </summary>
         public static Javax.Net.Ssl.SSLSocketFactory DefaultSSLSocketFactory
         {
             get { return SExecute<Javax.Net.Ssl.SSLSocketFactory>("getDefaultSSLSocketFactory"); } set { SExecute("setDefaultSSLSocketFactory", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getDefaultHostnameVerifier()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getDefaultHostnameVerifier()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Net.Ssl.HostnameVerifier"/></returns>
         public static Javax.Net.Ssl.HostnameVerifier GetDefaultHostnameVerifier()
         {
             return SExecute<Javax.Net.Ssl.HostnameVerifier>("getDefaultHostnameVerifier");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#setDefaultHostnameVerifier(javax.net.ssl.HostnameVerifier)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#setDefaultHostnameVerifier(javax.net.ssl.HostnameVerifier)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.HostnameVerifier"/></param>
         public static void SetDefaultHostnameVerifier(Javax.Net.Ssl.HostnameVerifier arg0)
         {
             SExecute("setDefaultHostnameVerifier", arg0);
@@ -67,49 +70,49 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getCipherSuite() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getCipherSuite()"/> 
         /// </summary>
         public string CipherSuite
         {
             get { return IExecute<string>("getCipherSuite"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getHostnameVerifier() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#setHostnameVerifier(javax.net.ssl.HostnameVerifier)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getHostnameVerifier()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#setHostnameVerifier(javax.net.ssl.HostnameVerifier)"/>
         /// </summary>
         public Javax.Net.Ssl.HostnameVerifier HostnameVerifier
         {
             get { return IExecute<Javax.Net.Ssl.HostnameVerifier>("getHostnameVerifier"); } set { IExecute("setHostnameVerifier", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getLocalCertificates() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getLocalCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] LocalCertificates
         {
             get { return IExecuteArray<Java.Security.Cert.Certificate>("getLocalCertificates"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getLocalPrincipal() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getLocalPrincipal()"/> 
         /// </summary>
         public Java.Security.Principal LocalPrincipal
         {
             get { return IExecute<Java.Security.Principal>("getLocalPrincipal"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getPeerPrincipal() throws javax.net.ssl.SSLPeerUnverifiedException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getPeerPrincipal()"/> 
         /// </summary>
         public Java.Security.Principal PeerPrincipal
         {
             get { return IExecute<Java.Security.Principal>("getPeerPrincipal"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getServerCertificates() throws javax.net.ssl.SSLPeerUnverifiedException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getServerCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] ServerCertificates
         {
             get { return IExecuteArray<Java.Security.Cert.Certificate>("getServerCertificates"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getSSLSocketFactory() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#setSSLSocketFactory(javax.net.ssl.SSLSocketFactory)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getSSLSocketFactory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#setSSLSocketFactory(javax.net.ssl.SSLSocketFactory)"/>
         /// </summary>
         public Javax.Net.Ssl.SSLSocketFactory SSLSocketFactory
         {

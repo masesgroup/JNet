@@ -33,6 +33,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.DescriptorAccess"/> to <see cref="Javax.Management.DescriptorRead"/>
+        /// </summary>
         public static implicit operator Javax.Management.DescriptorRead(Javax.Management.DescriptorAccess t) => t.Cast<Javax.Management.DescriptorRead>();
         
         #endregion
@@ -47,8 +50,9 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DescriptorAccess.html#setDescriptor(javax.management.Descriptor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DescriptorAccess.html#setDescriptor(javax.management.Descriptor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
         public void SetDescriptor(Javax.Management.Descriptor arg0)
         {
             IExecute("setDescriptor", arg0);

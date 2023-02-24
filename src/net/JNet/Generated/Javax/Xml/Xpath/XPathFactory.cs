@@ -38,11 +38,11 @@ namespace Javax.Xml.Xpath
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#DEFAULT_OBJECT_MODEL_URI
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#DEFAULT_OBJECT_MODEL_URI"/>
         /// </summary>
         public static string DEFAULT_OBJECT_MODEL_URI => Clazz.GetField<string>("DEFAULT_OBJECT_MODEL_URI");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#DEFAULT_PROPERTY_NAME
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#DEFAULT_PROPERTY_NAME"/>
         /// </summary>
         public static string DEFAULT_PROPERTY_NAME => Clazz.GetField<string>("DEFAULT_PROPERTY_NAME");
         
@@ -50,29 +50,41 @@ namespace Javax.Xml.Xpath
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newDefaultInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newDefaultInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
         public static Javax.Xml.Xpath.XPathFactory NewDefaultInstance()
         {
             return SExecute<Javax.Xml.Xpath.XPathFactory>("newDefaultInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
         public static Javax.Xml.Xpath.XPathFactory NewInstance()
         {
             return SExecute<Javax.Xml.Xpath.XPathFactory>("newInstance");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader) throws javax.xml.xpath.XPathFactoryConfigurationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
+        /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
         public static Javax.Xml.Xpath.XPathFactory NewInstance(string arg0, string arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecute<Javax.Xml.Xpath.XPathFactory>("newInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance(java.lang.String) throws javax.xml.xpath.XPathFactoryConfigurationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
+        /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
         public static Javax.Xml.Xpath.XPathFactory NewInstance(string arg0)
         {
             return SExecute<Javax.Xml.Xpath.XPathFactory>("newInstance", arg0);
@@ -82,43 +94,55 @@ namespace Javax.Xml.Xpath
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#getFeature(java.lang.String) throws javax.xml.xpath.XPathFactoryConfigurationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#getFeature(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
         public bool GetFeature(string arg0)
         {
             return IExecute<bool>("getFeature", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#isObjectModelSupported(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#isObjectModelSupported(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsObjectModelSupported(string arg0)
         {
             return IExecute<bool>("isObjectModelSupported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newXPath()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newXPath()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Xpath.XPath"/></returns>
         public Javax.Xml.Xpath.XPath NewXPath()
         {
             return IExecute<Javax.Xml.Xpath.XPath>("newXPath");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setFeature(java.lang.String,boolean) throws javax.xml.xpath.XPathFactoryConfigurationException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
         public void SetFeature(string arg0, bool arg1)
         {
             IExecute("setFeature", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Xpath.XPathFunctionResolver"/></param>
         public void SetXPathFunctionResolver(Javax.Xml.Xpath.XPathFunctionResolver arg0)
         {
             IExecute("setXPathFunctionResolver", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Xpath.XPathVariableResolver"/></param>
         public void SetXPathVariableResolver(Javax.Xml.Xpath.XPathVariableResolver arg0)
         {
             IExecute("setXPathVariableResolver", arg0);

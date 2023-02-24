@@ -46,15 +46,21 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#build() throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#build()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Sql.ShardingKey"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ShardingKey Build()
         {
             return IExecute<Java.Sql.ShardingKey>("build");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#subkey(java.lang.Object,java.sql.SQLType)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#subkey(java.lang.Object,java.sql.SQLType)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.SQLType"/></param>
+        /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
         public Java.Sql.ShardingKeyBuilder Subkey(object arg0, Java.Sql.SQLType arg1)
         {
             return IExecute<Java.Sql.ShardingKeyBuilder>("subkey", arg0, arg1);

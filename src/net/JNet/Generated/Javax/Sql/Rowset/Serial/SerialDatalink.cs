@@ -30,8 +30,10 @@ namespace Javax.Sql.Rowset.Serial
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialDatalink.html#<init>(java.net.URL) throws javax.sql.rowset.serial.SerialException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialDatalink.html#%3Cinit%3E(java.net.URL)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public SerialDatalink(Java.Net.URL arg0)
             : base(arg0)
         {
@@ -40,7 +42,13 @@ namespace Javax.Sql.Rowset.Serial
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialDatalink"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Sql.Rowset.Serial.SerialDatalink t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SerialDatalink"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.Serial.SerialDatalink t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -55,7 +63,7 @@ namespace Javax.Sql.Rowset.Serial
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialDatalink.html#getDatalink() throws javax.sql.rowset.serial.SerialException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialDatalink.html#getDatalink()"/> 
         /// </summary>
         public Java.Net.URL Datalink
         {

@@ -30,22 +30,25 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#<init>(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public JarEntry(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#<init>(java.util.jar.JarEntry)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#%3Cinit%3E(java.util.jar.JarEntry)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Jar.JarEntry"/></param>
         public JarEntry(Java.Util.Jar.JarEntry arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#<init>(java.util.zip.ZipEntry)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#%3Cinit%3E(java.util.zip.ZipEntry)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Zip.ZipEntry"/></param>
         public JarEntry(Java.Util.Zip.ZipEntry arg0)
             : base(arg0)
         {
@@ -67,28 +70,28 @@ namespace Java.Util.Jar
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#getAttributes() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#getAttributes()"/> 
         /// </summary>
         public Java.Util.Jar.Attributes Attributes
         {
             get { return IExecute<Java.Util.Jar.Attributes>("getAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#getCertificates() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#getCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] Certificates
         {
             get { return IExecuteArray<Java.Security.Cert.Certificate>("getCertificates"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#getCodeSigners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#getCodeSigners()"/> 
         /// </summary>
         public Java.Security.CodeSigner[] CodeSigners
         {
             get { return IExecuteArray<Java.Security.CodeSigner>("getCodeSigners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#getRealName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#getRealName()"/> 
         /// </summary>
         public string RealName
         {

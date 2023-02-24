@@ -33,7 +33,13 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Ldap.UnsolicitedNotification"/> to <see cref="Javax.Naming.Ldap.ExtendedResponse"/>
+        /// </summary>
         public static implicit operator Javax.Naming.Ldap.ExtendedResponse(Javax.Naming.Ldap.UnsolicitedNotification t) => t.Cast<Javax.Naming.Ldap.ExtendedResponse>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Ldap.UnsolicitedNotification"/> to <see cref="Javax.Naming.Ldap.HasControls"/>
+        /// </summary>
         public static implicit operator Javax.Naming.Ldap.HasControls(Javax.Naming.Ldap.UnsolicitedNotification t) => t.Cast<Javax.Naming.Ldap.HasControls>();
         
         #endregion
@@ -48,14 +54,14 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotification.html#getException() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotification.html#getException()"/> 
         /// </summary>
         public Javax.Naming.NamingException Exception
         {
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Javax.Naming.NamingException>(obj); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotification.html#getReferrals() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotification.html#getReferrals()"/> 
         /// </summary>
         public string[] Referrals
         {

@@ -42,8 +42,9 @@ namespace Java.Lang.Invoke
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SwitchPoint.html#invalidateAll(java.lang.invoke.SwitchPoint[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SwitchPoint.html#invalidateAll(java.lang.invoke.SwitchPoint[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.SwitchPoint"/></param>
         public static void InvalidateAll(Java.Lang.Invoke.SwitchPoint[] arg0)
         {
             SExecute("invalidateAll", arg0);
@@ -53,15 +54,20 @@ namespace Java.Lang.Invoke
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SwitchPoint.html#hasBeenInvalidated()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SwitchPoint.html#hasBeenInvalidated()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasBeenInvalidated()
         {
             return IExecute<bool>("hasBeenInvalidated");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SwitchPoint.html#guardWithTest(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SwitchPoint.html#guardWithTest(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle GuardWithTest(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodHandle arg1)
         {
             return IExecute<Java.Lang.Invoke.MethodHandle>("guardWithTest", arg0, arg1);

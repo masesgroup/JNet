@@ -38,7 +38,7 @@ namespace Java.Net
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#NO_PROXY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#NO_PROXY"/>
         /// </summary>
         public static Java.Net.Proxy NO_PROXY => Clazz.GetField<Java.Net.Proxy>("NO_PROXY");
         
@@ -50,8 +50,10 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#address()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#address()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.SocketAddress"/></returns>
         public Java.Net.SocketAddress Address()
         {
             return IExecute<Java.Net.SocketAddress>("address");
@@ -73,15 +75,15 @@ namespace Java.Net
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#DIRECT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#DIRECT"/>
             /// </summary>
             public static Java.Net.Proxy.Type DIRECT => Clazz.GetField<Java.Net.Proxy.Type>("DIRECT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#HTTP
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#HTTP"/>
             /// </summary>
             public static Java.Net.Proxy.Type HTTP => Clazz.GetField<Java.Net.Proxy.Type>("HTTP");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#SOCKS
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#SOCKS"/>
             /// </summary>
             public static Java.Net.Proxy.Type SOCKS => Clazz.GetField<Java.Net.Proxy.Type>("SOCKS");
             
@@ -89,8 +91,10 @@ namespace Java.Net
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Net.Proxy.Type"/></returns>
             public static Java.Net.Proxy.Type[] Values()
             {
                 return SExecuteArray<Java.Net.Proxy.Type>("values");

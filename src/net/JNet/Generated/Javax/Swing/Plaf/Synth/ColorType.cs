@@ -38,27 +38,27 @@ namespace Javax.Swing.Plaf.Synth
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#MAX_COUNT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#MAX_COUNT"/>
         /// </summary>
         public static int MAX_COUNT => Clazz.GetField<int>("MAX_COUNT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#BACKGROUND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#BACKGROUND"/>
         /// </summary>
         public static Javax.Swing.Plaf.Synth.ColorType BACKGROUND => Clazz.GetField<Javax.Swing.Plaf.Synth.ColorType>("BACKGROUND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#FOCUS
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#FOCUS"/>
         /// </summary>
         public static Javax.Swing.Plaf.Synth.ColorType FOCUS => Clazz.GetField<Javax.Swing.Plaf.Synth.ColorType>("FOCUS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#FOREGROUND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#FOREGROUND"/>
         /// </summary>
         public static Javax.Swing.Plaf.Synth.ColorType FOREGROUND => Clazz.GetField<Javax.Swing.Plaf.Synth.ColorType>("FOREGROUND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#TEXT_BACKGROUND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#TEXT_BACKGROUND"/>
         /// </summary>
         public static Javax.Swing.Plaf.Synth.ColorType TEXT_BACKGROUND => Clazz.GetField<Javax.Swing.Plaf.Synth.ColorType>("TEXT_BACKGROUND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#TEXT_FOREGROUND
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#TEXT_FOREGROUND"/>
         /// </summary>
         public static Javax.Swing.Plaf.Synth.ColorType TEXT_FOREGROUND => Clazz.GetField<Javax.Swing.Plaf.Synth.ColorType>("TEXT_FOREGROUND");
         
@@ -70,7 +70,7 @@ namespace Javax.Swing.Plaf.Synth
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#getID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/ColorType.html#getID()"/> 
         /// </summary>
         public int ID
         {

@@ -30,15 +30,20 @@ namespace Java.Awt.Geom
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#<init>(java.awt.geom.PathIterator,double,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#%3Cinit%3E(java.awt.geom.PathIterator,double,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#<init>(java.awt.geom.PathIterator,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#%3Cinit%3E(java.awt.geom.PathIterator,double)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.PathIterator"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
         public FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1)
             : base(arg0, arg1)
         {
@@ -47,6 +52,9 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.Geom.FlatteningPathIterator"/> to <see cref="Java.Awt.Geom.PathIterator"/>
+        /// </summary>
         public static implicit operator Java.Awt.Geom.PathIterator(Java.Awt.Geom.FlatteningPathIterator t) => t.Cast<Java.Awt.Geom.PathIterator>();
         
         #endregion
@@ -61,49 +69,55 @@ namespace Java.Awt.Geom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#getFlatness() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#getFlatness()"/> 
         /// </summary>
         public double Flatness
         {
             get { return IExecute<double>("getFlatness"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#getRecursionLimit() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#getRecursionLimit()"/> 
         /// </summary>
         public int RecursionLimit
         {
             get { return IExecute<int>("getRecursionLimit"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#getWindingRule() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#getWindingRule()"/> 
         /// </summary>
         public int WindingRule
         {
             get { return IExecute<int>("getWindingRule"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#isDone()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#isDone()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDone()
         {
             return IExecute<bool>("isDone");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#currentSegment(double[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#currentSegment(double[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CurrentSegment(double[] arg0)
         {
             return IExecute<int>("currentSegment", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#currentSegment(float[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#currentSegment(float[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CurrentSegment(float[] arg0)
         {
             return IExecute<int>("currentSegment", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#next()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#next()"/>
         /// </summary>
         public void Next()
         {

@@ -30,8 +30,10 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/SequenceInputStream.html#<init>(java.io.InputStream,java.io.InputStream)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/SequenceInputStream.html#%3Cinit%3E(java.io.InputStream,java.io.InputStream)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
         public SequenceInputStream(Java.Io.InputStream arg0, Java.Io.InputStream arg1)
             : base(arg0, arg1)
         {

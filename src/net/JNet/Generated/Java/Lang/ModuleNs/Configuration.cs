@@ -42,8 +42,10 @@ namespace Java.Lang.ModuleNs
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#empty()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#empty()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
         public static Java.Lang.ModuleNs.Configuration Empty()
         {
             return SExecute<Java.Lang.ModuleNs.Configuration>("empty");

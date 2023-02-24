@@ -46,14 +46,14 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CacheRequest.html#getBody() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CacheRequest.html#getBody()"/> 
         /// </summary>
         public Java.Io.OutputStream Body
         {
             get { return IExecute<Java.Io.OutputStream>("getBody"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CacheRequest.html#abort()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CacheRequest.html#abort()"/>
         /// </summary>
         public void Abort()
         {

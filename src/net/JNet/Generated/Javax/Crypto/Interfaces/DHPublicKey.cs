@@ -33,14 +33,20 @@ namespace Javax.Crypto.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Crypto.Interfaces.DHPublicKey"/> to <see cref="Javax.Crypto.Interfaces.DHKey"/>
+        /// </summary>
         public static implicit operator Javax.Crypto.Interfaces.DHKey(Javax.Crypto.Interfaces.DHPublicKey t) => t.Cast<Javax.Crypto.Interfaces.DHKey>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Crypto.Interfaces.DHPublicKey"/> to <see cref="Java.Security.PublicKey"/>
+        /// </summary>
         public static implicit operator Java.Security.PublicKey(Javax.Crypto.Interfaces.DHPublicKey t) => t.Cast<Java.Security.PublicKey>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html#serialVersionUID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html#serialVersionUID"/>
         /// </summary>
         public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         
@@ -52,7 +58,7 @@ namespace Javax.Crypto.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html#getY() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html#getY()"/> 
         /// </summary>
         public Java.Math.BigInteger Y
         {

@@ -62,19 +62,19 @@ namespace Java.Awt.DesktopNs
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#CONSOLE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#CONSOLE"/>
             /// </summary>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason CONSOLE => Clazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("CONSOLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#LOCK
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#LOCK"/>
             /// </summary>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason LOCK => Clazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("LOCK");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#REMOTE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#REMOTE"/>
             /// </summary>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason REMOTE => Clazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("REMOTE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#UNSPECIFIED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#UNSPECIFIED"/>
             /// </summary>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason UNSPECIFIED => Clazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("UNSPECIFIED");
             
@@ -82,8 +82,10 @@ namespace Java.Awt.DesktopNs
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Awt.DesktopNs.UserSessionEvent.Reason"/></returns>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason[] Values()
             {
                 return SExecuteArray<Java.Awt.DesktopNs.UserSessionEvent.Reason>("values");

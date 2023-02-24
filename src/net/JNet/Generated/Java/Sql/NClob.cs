@@ -33,6 +33,9 @@ namespace Java.Sql
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Sql.NClob"/> to <see cref="Java.Sql.Clob"/>
+        /// </summary>
         public static implicit operator Java.Sql.Clob(Java.Sql.NClob t) => t.Cast<Java.Sql.Clob>();
         
         #endregion

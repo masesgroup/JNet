@@ -30,8 +30,10 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/GuardedObject.html#<init>(java.lang.Object,java.security.Guard)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/GuardedObject.html#%3Cinit%3E(java.lang.Object,java.security.Guard)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Guard"/></param>
         public GuardedObject(object arg0, Java.Security.Guard arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Security
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.GuardedObject"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.GuardedObject t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,7 +59,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/GuardedObject.html#getObject() throws java.lang.SecurityException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/GuardedObject.html#getObject()"/> 
         /// </summary>
         public object Object
         {

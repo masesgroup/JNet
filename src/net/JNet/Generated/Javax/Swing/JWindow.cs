@@ -30,29 +30,34 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#<init>(java.awt.Frame)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#%3Cinit%3E(java.awt.Frame)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
         public JWindow(Java.Awt.Frame arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#<init>(java.awt.GraphicsConfiguration)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#%3Cinit%3E(java.awt.GraphicsConfiguration)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
         public JWindow(Java.Awt.GraphicsConfiguration arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#<init>(java.awt.Window,java.awt.GraphicsConfiguration)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#%3Cinit%3E(java.awt.Window,java.awt.GraphicsConfiguration)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.GraphicsConfiguration"/></param>
         public JWindow(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#<init>(java.awt.Window)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#%3Cinit%3E(java.awt.Window)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
         public JWindow(Java.Awt.Window arg0)
             : base(arg0)
         {
@@ -61,7 +66,13 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JWindow"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JWindow t) => t.Cast<Javax.Accessibility.Accessible>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.JWindow"/> to <see cref="Javax.Swing.RootPaneContainer"/>
+        /// </summary>
         public static implicit operator Javax.Swing.RootPaneContainer(Javax.Swing.JWindow t) => t.Cast<Javax.Swing.RootPaneContainer>();
         
         #endregion
@@ -76,35 +87,35 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getContentPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#setContentPane(java.awt.Container)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getContentPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#setContentPane(java.awt.Container)"/>
         /// </summary>
         public Java.Awt.Container ContentPane
         {
             get { return IExecute<Java.Awt.Container>("getContentPane"); } set { IExecute("setContentPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getGlassPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#setGlassPane(java.awt.Component)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getGlassPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#setGlassPane(java.awt.Component)"/>
         /// </summary>
         public Java.Awt.Component GlassPane
         {
             get { return IExecute<Java.Awt.Component>("getGlassPane"); } set { IExecute("setGlassPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getLayeredPane() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#setLayeredPane(javax.swing.JLayeredPane)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getLayeredPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#setLayeredPane(javax.swing.JLayeredPane)"/>
         /// </summary>
         public Javax.Swing.JLayeredPane LayeredPane
         {
             get { return IExecute<Javax.Swing.JLayeredPane>("getLayeredPane"); } set { IExecute("setLayeredPane", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getRootPane() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getRootPane()"/> 
         /// </summary>
         public Javax.Swing.JRootPane RootPane
         {
             get { return IExecute<Javax.Swing.JRootPane>("getRootPane"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getTransferHandler() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#setTransferHandler(javax.swing.TransferHandler)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#getTransferHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#setTransferHandler(javax.swing.TransferHandler)"/>
         /// </summary>
         public Javax.Swing.TransferHandler TransferHandler
         {

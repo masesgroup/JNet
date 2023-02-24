@@ -30,8 +30,10 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreSpi.html#<init>(java.security.cert.CertStoreParameters) throws java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreSpi.html#%3Cinit%3E(java.security.cert.CertStoreParameters)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public CertStoreSpi(Java.Security.Cert.CertStoreParameters arg0)
             : base(arg0)
         {

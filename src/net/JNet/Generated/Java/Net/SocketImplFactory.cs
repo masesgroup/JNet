@@ -46,8 +46,10 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketImplFactory.html#createSocketImpl()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketImplFactory.html#createSocketImpl()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Net.SocketImpl"/></returns>
         public Java.Net.SocketImpl CreateSocketImpl()
         {
             return IExecute<Java.Net.SocketImpl>("createSocketImpl");

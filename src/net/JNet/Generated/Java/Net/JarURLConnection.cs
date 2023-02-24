@@ -46,56 +46,56 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getAttributes() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getAttributes()"/> 
         /// </summary>
         public Java.Util.Jar.Attributes Attributes
         {
             get { return IExecute<Java.Util.Jar.Attributes>("getAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getCertificates() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] Certificates
         {
             get { return IExecuteArray<Java.Security.Cert.Certificate>("getCertificates"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getEntryName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getEntryName()"/> 
         /// </summary>
         public string EntryName
         {
             get { return IExecute<string>("getEntryName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getJarEntry() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getJarEntry()"/> 
         /// </summary>
         public Java.Util.Jar.JarEntry JarEntry
         {
             get { return IExecute<Java.Util.Jar.JarEntry>("getJarEntry"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getJarFile() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getJarFile()"/> 
         /// </summary>
         public Java.Util.Jar.JarFile JarFile
         {
             get { return IExecute<Java.Util.Jar.JarFile>("getJarFile"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getJarFileURL() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getJarFileURL()"/> 
         /// </summary>
         public Java.Net.URL JarFileURL
         {
             get { return IExecute<Java.Net.URL>("getJarFileURL"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getMainAttributes() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getMainAttributes()"/> 
         /// </summary>
         public Java.Util.Jar.Attributes MainAttributes
         {
             get { return IExecute<Java.Util.Jar.Attributes>("getMainAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getManifest() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/JarURLConnection.html#getManifest()"/> 
         /// </summary>
         public Java.Util.Jar.Manifest Manifest
         {

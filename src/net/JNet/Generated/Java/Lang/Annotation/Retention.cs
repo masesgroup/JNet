@@ -33,6 +33,9 @@ namespace Java.Lang.Annotation
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Annotation.Retention"/> to <see cref="Java.Lang.Annotation.Annotation"/>
+        /// </summary>
         public static implicit operator Java.Lang.Annotation.Annotation(Java.Lang.Annotation.Retention t) => t.Cast<Java.Lang.Annotation.Annotation>();
         
         #endregion

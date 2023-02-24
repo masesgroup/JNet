@@ -33,6 +33,9 @@ namespace Org.Xml.Sax
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.Xml.Sax.XMLFilter"/> to <see cref="Org.Xml.Sax.XMLReader"/>
+        /// </summary>
         public static implicit operator Org.Xml.Sax.XMLReader(Org.Xml.Sax.XMLFilter t) => t.Cast<Org.Xml.Sax.XMLReader>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Org.Xml.Sax
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLFilter.html#getParent() https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLFilter.html#setParent(org.xml.sax.XMLReader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLFilter.html#getParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLFilter.html#setParent(org.xml.sax.XMLReader)"/>
         /// </summary>
         public Org.Xml.Sax.XMLReader Parent
         {

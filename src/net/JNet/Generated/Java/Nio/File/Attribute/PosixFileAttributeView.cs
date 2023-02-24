@@ -33,7 +33,13 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.Attribute.PosixFileAttributeView"/> to <see cref="Java.Nio.File.Attribute.BasicFileAttributeView"/>
+        /// </summary>
         public static implicit operator Java.Nio.File.Attribute.BasicFileAttributeView(Java.Nio.File.Attribute.PosixFileAttributeView t) => t.Cast<Java.Nio.File.Attribute.BasicFileAttributeView>();
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.Attribute.PosixFileAttributeView"/> to <see cref="Java.Nio.File.Attribute.FileOwnerAttributeView"/>
+        /// </summary>
         public static implicit operator Java.Nio.File.Attribute.FileOwnerAttributeView(Java.Nio.File.Attribute.PosixFileAttributeView t) => t.Cast<Java.Nio.File.Attribute.FileOwnerAttributeView>();
         
         #endregion
@@ -48,22 +54,29 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#name()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#name()"/>
         /// </summary>
+        
+        /// <returns><see langword="string"/></returns>
         public string Name()
         {
             return IExecute<string>("name");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setGroup(java.nio.file.attribute.GroupPrincipal) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setGroup(java.nio.file.attribute.GroupPrincipal)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.GroupPrincipal"/></param>
+        /// <exception cref="Java.Io.IOException"/>
         public void SetGroup(Java.Nio.File.Attribute.GroupPrincipal arg0)
         {
             IExecute("setGroup", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#readAttributes() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#readAttributes()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes()
         {
             return IExecute<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes");

@@ -33,6 +33,9 @@ namespace Javax.Print
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.MultiDocPrintJob"/> to <see cref="Javax.Print.DocPrintJob"/>
+        /// </summary>
         public static implicit operator Javax.Print.DocPrintJob(Javax.Print.MultiDocPrintJob t) => t.Cast<Javax.Print.DocPrintJob>();
         
         #endregion
@@ -47,8 +50,11 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintJob.html#print.MultiDocPrintJob.print(javax.print.MultiDoc,javax.print.attribute.PrintRequestAttributeSet) throws javax.print.PrintException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintJob.html#print.MultiDocPrintJob.print(javax.print.MultiDoc,javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.MultiDoc"/></param>
+        /// <param name="arg1"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <exception cref="Javax.Print.PrintException"/>
         public void Print(Javax.Print.MultiDoc arg0, Javax.Print.Attribute.PrintRequestAttributeSet arg1)
         {
             IExecute("print", arg0, arg1);

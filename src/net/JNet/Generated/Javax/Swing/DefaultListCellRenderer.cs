@@ -33,6 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.DefaultListCellRenderer"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.DefaultListCellRenderer t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -58,6 +61,9 @@ namespace Javax.Swing
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.DefaultListCellRenderer.UIResource"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.DefaultListCellRenderer.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion

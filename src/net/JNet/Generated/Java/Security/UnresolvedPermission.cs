@@ -30,8 +30,12 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#<init>(java.lang.String,java.lang.String,java.lang.String,java.security.cert.Certificate[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.security.cert.Certificate[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see cref="Java.Security.Cert.Certificate"/></param>
         public UnresolvedPermission(string arg0, string arg1, string arg2, Java.Security.Cert.Certificate[] arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -40,6 +44,9 @@ namespace Java.Security
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.UnresolvedPermission"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Security.UnresolvedPermission t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,28 +61,28 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedActions() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedActions()"/> 
         /// </summary>
         public string UnresolvedActions
         {
             get { return IExecute<string>("getUnresolvedActions"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedCerts() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedCerts()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] UnresolvedCerts
         {
             get { return IExecuteArray<Java.Security.Cert.Certificate>("getUnresolvedCerts"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedName()"/> 
         /// </summary>
         public string UnresolvedName
         {
             get { return IExecute<string>("getUnresolvedName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/UnresolvedPermission.html#getUnresolvedType()"/> 
         /// </summary>
         public string UnresolvedType
         {

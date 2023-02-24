@@ -33,7 +33,13 @@ namespace Java.Security.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.XECPublicKey"/> to <see cref="Java.Security.Interfaces.XECKey"/>
+        /// </summary>
         public static implicit operator Java.Security.Interfaces.XECKey(Java.Security.Interfaces.XECPublicKey t) => t.Cast<Java.Security.Interfaces.XECKey>();
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.XECPublicKey"/> to <see cref="Java.Security.PublicKey"/>
+        /// </summary>
         public static implicit operator Java.Security.PublicKey(Java.Security.Interfaces.XECPublicKey t) => t.Cast<Java.Security.PublicKey>();
         
         #endregion
@@ -48,7 +54,7 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECPublicKey.html#getU() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECPublicKey.html#getU()"/> 
         /// </summary>
         public Java.Math.BigInteger U
         {

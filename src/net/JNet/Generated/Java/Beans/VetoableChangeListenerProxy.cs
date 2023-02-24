@@ -30,8 +30,10 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html#<init>(java.lang.String,java.beans.VetoableChangeListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html#%3Cinit%3E(java.lang.String,java.beans.VetoableChangeListener)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
         public VetoableChangeListenerProxy(string arg0, Java.Beans.VetoableChangeListener arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Beans.VetoableChangeListenerProxy"/> to <see cref="Java.Beans.VetoableChangeListener"/>
+        /// </summary>
         public static implicit operator Java.Beans.VetoableChangeListener(Java.Beans.VetoableChangeListenerProxy t) => t.Cast<Java.Beans.VetoableChangeListener>();
         
         #endregion
@@ -54,15 +59,17 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html#getPropertyName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html#getPropertyName()"/> 
         /// </summary>
         public string PropertyName
         {
             get { return IExecute<string>("getPropertyName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html#vetoableChange(java.beans.PropertyChangeEvent) throws java.beans.PropertyVetoException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html#vetoableChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        /// <exception cref="Java.Beans.PropertyVetoException"/>
         public void VetoableChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecute("vetoableChange", arg0);

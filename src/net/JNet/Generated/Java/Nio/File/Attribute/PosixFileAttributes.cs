@@ -33,6 +33,9 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.Attribute.PosixFileAttributes"/> to <see cref="Java.Nio.File.Attribute.BasicFileAttributes"/>
+        /// </summary>
         public static implicit operator Java.Nio.File.Attribute.BasicFileAttributes(Java.Nio.File.Attribute.PosixFileAttributes t) => t.Cast<Java.Nio.File.Attribute.BasicFileAttributes>();
         
         #endregion
@@ -47,15 +50,19 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#group()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#group()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.Attribute.GroupPrincipal"/></returns>
         public Java.Nio.File.Attribute.GroupPrincipal Group()
         {
             return IExecute<Java.Nio.File.Attribute.GroupPrincipal>("group");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#owner()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#owner()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.Attribute.UserPrincipal"/></returns>
         public Java.Nio.File.Attribute.UserPrincipal Owner()
         {
             return IExecute<Java.Nio.File.Attribute.UserPrincipal>("owner");

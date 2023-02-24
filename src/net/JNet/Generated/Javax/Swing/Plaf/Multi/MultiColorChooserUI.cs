@@ -46,7 +46,7 @@ namespace Javax.Swing.Plaf.Multi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/multi/MultiColorChooserUI.html#getUIs() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/multi/MultiColorChooserUI.html#getUIs()"/> 
         /// </summary>
         public Javax.Swing.Plaf.ComponentUI[] UIs
         {

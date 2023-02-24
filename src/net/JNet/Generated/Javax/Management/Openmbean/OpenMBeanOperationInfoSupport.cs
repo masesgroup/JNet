@@ -33,6 +33,9 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Openmbean.OpenMBeanOperationInfoSupport"/> to <see cref="Javax.Management.Openmbean.OpenMBeanOperationInfo"/>
+        /// </summary>
         public static implicit operator Javax.Management.Openmbean.OpenMBeanOperationInfo(Javax.Management.Openmbean.OpenMBeanOperationInfoSupport t) => t.Cast<Javax.Management.Openmbean.OpenMBeanOperationInfo>();
         
         #endregion

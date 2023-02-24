@@ -42,36 +42,42 @@ namespace Javax.Swing.Plaf.Metal
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getDesktopIconBorder() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getDesktopIconBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border DesktopIconBorder
         {
             get { return SExecute<Javax.Swing.Border.Border>("getDesktopIconBorder"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getTextBorder() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getTextBorder()"/> 
         /// </summary>
         public static Javax.Swing.Border.Border TextBorder
         {
             get { return SExecute<Javax.Swing.Border.Border>("getTextBorder"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getButtonBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getButtonBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border GetButtonBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("getButtonBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getTextFieldBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getTextFieldBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border GetTextFieldBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("getTextFieldBorder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getToggleButtonBorder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalBorders.html#getToggleButtonBorder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public static Javax.Swing.Border.Border GetToggleButtonBorder()
         {
             return SExecute<Javax.Swing.Border.Border>("getToggleButtonBorder");
@@ -92,6 +98,9 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalBorders.ButtonBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.ButtonBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -120,6 +129,9 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalBorders.Flush3DBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.Flush3DBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -148,6 +160,9 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalBorders.InternalFrameBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.InternalFrameBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -176,6 +191,9 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalBorders.MenuBarBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.MenuBarBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -204,6 +222,9 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalBorders.MenuItemBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.MenuItemBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -232,6 +253,9 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalBorders.OptionDialogBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.OptionDialogBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -260,6 +284,9 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalBorders.PaletteBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.PaletteBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -288,6 +315,9 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalBorders.PopupMenuBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.PopupMenuBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -343,6 +373,9 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalBorders.ScrollPaneBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.ScrollPaneBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
@@ -452,7 +485,13 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalBorders.ToolBarBorder"/> to <see cref="Javax.Swing.Plaf.UIResource"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.ToolBarBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalBorders.ToolBarBorder"/> to <see cref="Javax.Swing.SwingConstants"/>
+            /// </summary>
             public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Plaf.Metal.MetalBorders.ToolBarBorder t) => t.Cast<Javax.Swing.SwingConstants>();
             
             #endregion

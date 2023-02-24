@@ -46,7 +46,7 @@ namespace Javax.Swing.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Position.html#getOffset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Position.html#getOffset()"/> 
         /// </summary>
         public int Offset
         {
@@ -69,11 +69,11 @@ namespace Javax.Swing.Text
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Position.Bias.html#Backward
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Position.Bias.html#Backward"/>
             /// </summary>
             public static Javax.Swing.Text.Position.Bias Backward => Clazz.GetField<Javax.Swing.Text.Position.Bias>("Backward");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Position.Bias.html#Forward
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Position.Bias.html#Forward"/>
             /// </summary>
             public static Javax.Swing.Text.Position.Bias Forward => Clazz.GetField<Javax.Swing.Text.Position.Bias>("Forward");
             

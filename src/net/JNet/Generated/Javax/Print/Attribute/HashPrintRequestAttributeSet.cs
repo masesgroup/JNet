@@ -30,22 +30,25 @@ namespace Javax.Print.Attribute
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintRequestAttributeSet.html#<init>(javax.print.attribute.PrintRequestAttribute)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintRequestAttributeSet.html#%3Cinit%3E(javax.print.attribute.PrintRequestAttribute)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttribute"/></param>
         public HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttribute arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintRequestAttributeSet.html#<init>(javax.print.attribute.PrintRequestAttribute[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintRequestAttributeSet.html#%3Cinit%3E(javax.print.attribute.PrintRequestAttribute[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttribute"/></param>
         public HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttribute[] arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintRequestAttributeSet.html#<init>(javax.print.attribute.PrintRequestAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintRequestAttributeSet.html#%3Cinit%3E(javax.print.attribute.PrintRequestAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
         public HashPrintRequestAttributeSet(Javax.Print.Attribute.PrintRequestAttributeSet arg0)
             : base(arg0)
         {
@@ -54,7 +57,13 @@ namespace Javax.Print.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.HashPrintRequestAttributeSet"/> to <see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.PrintRequestAttributeSet(Javax.Print.Attribute.HashPrintRequestAttributeSet t) => t.Cast<Javax.Print.Attribute.PrintRequestAttributeSet>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.HashPrintRequestAttributeSet"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Print.Attribute.HashPrintRequestAttributeSet t) => t.Cast<Java.Io.Serializable>();
         
         #endregion

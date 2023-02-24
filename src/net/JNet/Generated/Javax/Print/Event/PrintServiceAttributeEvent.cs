@@ -30,8 +30,10 @@ namespace Javax.Print.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeEvent.html#<init>(javax.print.PrintService,javax.print.attribute.PrintServiceAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeEvent.html#%3Cinit%3E(javax.print.PrintService,javax.print.attribute.PrintServiceAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.PrintService"/></param>
+        /// <param name="arg1"><see cref="Javax.Print.Attribute.PrintServiceAttributeSet"/></param>
         public PrintServiceAttributeEvent(Javax.Print.PrintService arg0, Javax.Print.Attribute.PrintServiceAttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -53,14 +55,14 @@ namespace Javax.Print.Event
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeEvent.html#getAttributes() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeEvent.html#getAttributes()"/> 
         /// </summary>
         public Javax.Print.Attribute.PrintServiceAttributeSet Attributes
         {
             get { return IExecute<Javax.Print.Attribute.PrintServiceAttributeSet>("getAttributes"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeEvent.html#getPrintService() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeEvent.html#getPrintService()"/> 
         /// </summary>
         public Javax.Print.PrintService PrintService
         {

@@ -46,15 +46,19 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationSource.html#getDOMImplementation(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationSource.html#getDOMImplementation(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.DOMImplementation"/></returns>
         public Org.W3c.Dom.DOMImplementation GetDOMImplementation(string arg0)
         {
             return IExecute<Org.W3c.Dom.DOMImplementation>("getDOMImplementation", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationSource.html#getDOMImplementationList(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationSource.html#getDOMImplementationList(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.DOMImplementationList"/></returns>
         public Org.W3c.Dom.DOMImplementationList GetDOMImplementationList(string arg0)
         {
             return IExecute<Org.W3c.Dom.DOMImplementationList>("getDOMImplementationList", arg0);

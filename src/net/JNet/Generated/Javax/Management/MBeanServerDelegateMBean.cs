@@ -46,49 +46,49 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationName()"/> 
         /// </summary>
         public string ImplementationName
         {
             get { return IExecute<string>("getImplementationName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationVendor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationVendor()"/> 
         /// </summary>
         public string ImplementationVendor
         {
             get { return IExecute<string>("getImplementationVendor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationVersion()"/> 
         /// </summary>
         public string ImplementationVersion
         {
             get { return IExecute<string>("getImplementationVersion"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getMBeanServerId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getMBeanServerId()"/> 
         /// </summary>
         public string MBeanServerId
         {
             get { return IExecute<string>("getMBeanServerId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationName()"/> 
         /// </summary>
         public string SpecificationName
         {
             get { return IExecute<string>("getSpecificationName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationVendor() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationVendor()"/> 
         /// </summary>
         public string SpecificationVendor
         {
             get { return IExecute<string>("getSpecificationVendor"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationVersion() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationVersion()"/> 
         /// </summary>
         public string SpecificationVersion
         {

@@ -46,8 +46,13 @@ namespace Javax.Xml.Stream
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLReporter.html#report(java.lang.String,java.lang.String,java.lang.Object,javax.xml.stream.Location) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLReporter.html#report(java.lang.String,java.lang.String,java.lang.Object,javax.xml.stream.Location)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg3"><see cref="Javax.Xml.Stream.Location"/></param>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Report(string arg0, string arg1, object arg2, Javax.Xml.Stream.Location arg3)
         {
             IExecute("report", arg0, arg1, arg2, arg3);

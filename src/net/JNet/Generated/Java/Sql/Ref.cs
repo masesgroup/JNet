@@ -46,14 +46,14 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#getBaseTypeName() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#getBaseTypeName()"/> 
         /// </summary>
         public string BaseTypeName
         {
             get { return IExecute<string>("getBaseTypeName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#getObject() throws java.sql.SQLException https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#setObject(java.lang.Object) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#getObject()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Ref.html#setObject(java.lang.Object)"/>
         /// </summary>
         public object Object
         {

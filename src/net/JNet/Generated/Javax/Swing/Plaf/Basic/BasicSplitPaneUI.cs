@@ -46,64 +46,71 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getDivider() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getDivider()"/> 
         /// </summary>
         public Javax.Swing.Plaf.Basic.BasicSplitPaneDivider Divider
         {
             get { return IExecute<Javax.Swing.Plaf.Basic.BasicSplitPaneDivider>("getDivider"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getLastDragLocation() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#setLastDragLocation(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getLastDragLocation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#setLastDragLocation(int)"/>
         /// </summary>
         public int LastDragLocation
         {
             get { return IExecute<int>("getLastDragLocation"); } set { IExecute("setLastDragLocation", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getNonContinuousLayoutDivider() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getNonContinuousLayoutDivider()"/> 
         /// </summary>
         public Java.Awt.Component NonContinuousLayoutDivider
         {
             get { return IExecute<Java.Awt.Component>("getNonContinuousLayoutDivider"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getOrientation() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#setOrientation(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getOrientation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#setOrientation(int)"/>
         /// </summary>
         public int Orientation
         {
             get { return IExecute<int>("getOrientation"); } set { IExecute("setOrientation", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getSplitPane() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getSplitPane()"/> 
         /// </summary>
         public Javax.Swing.JSplitPane SplitPane
         {
             get { return IExecute<Javax.Swing.JSplitPane>("getSplitPane"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#isContinuousLayout()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#isContinuousLayout()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsContinuousLayout()
         {
             return IExecute<bool>("isContinuousLayout");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getInsets(javax.swing.JComponent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#getInsets(javax.swing.JComponent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetInsets(Javax.Swing.JComponent arg0)
         {
             return IExecute<Java.Awt.Insets>("getInsets", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#createDefaultDivider()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#createDefaultDivider()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneDivider"/></returns>
         public Javax.Swing.Plaf.Basic.BasicSplitPaneDivider CreateDefaultDivider()
         {
             return IExecute<Javax.Swing.Plaf.Basic.BasicSplitPaneDivider>("createDefaultDivider");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#setContinuousLayout(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.html#setContinuousLayout(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetContinuousLayout(bool arg0)
         {
             IExecute("setContinuousLayout", arg0);
@@ -120,6 +127,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.BasicHorizontalLayoutManager"/> to <see cref="Java.Awt.LayoutManager2"/>
+            /// </summary>
             public static implicit operator Java.Awt.LayoutManager2(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.BasicHorizontalLayoutManager t) => t.Cast<Java.Awt.LayoutManager2>();
             
             #endregion
@@ -134,77 +144,94 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#getLayoutAlignmentX(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#getLayoutAlignmentX(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <returns><see langword="float"/></returns>
             public float GetLayoutAlignmentX(Java.Awt.Container arg0)
             {
                 return IExecute<float>("getLayoutAlignmentX", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#getLayoutAlignmentY(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#getLayoutAlignmentY(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <returns><see langword="float"/></returns>
             public float GetLayoutAlignmentY(Java.Awt.Container arg0)
             {
                 return IExecute<float>("getLayoutAlignmentY", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#maximumLayoutSize(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#maximumLayoutSize(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <returns><see cref="Java.Awt.Dimension"/></returns>
             public Java.Awt.Dimension MaximumLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecute<Java.Awt.Dimension>("maximumLayoutSize", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#minimumLayoutSize(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#minimumLayoutSize(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <returns><see cref="Java.Awt.Dimension"/></returns>
             public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#preferredLayoutSize(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#preferredLayoutSize(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+            /// <returns><see cref="Java.Awt.Dimension"/></returns>
             public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
             {
                 return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#addLayoutComponent(java.awt.Component,java.lang.Object)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#addLayoutComponent(java.awt.Component,java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg1"><see langword="object"/></param>
             public void AddLayoutComponent(Java.Awt.Component arg0, object arg1)
             {
                 IExecute("addLayoutComponent", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#addLayoutComponent(java.lang.String,java.awt.Component)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
             public void AddLayoutComponent(string arg0, Java.Awt.Component arg1)
             {
                 IExecute("addLayoutComponent", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#invalidateLayout(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#invalidateLayout(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
             public void InvalidateLayout(Java.Awt.Container arg0)
             {
                 IExecute("invalidateLayout", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#layoutContainer(java.awt.Container)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#layoutContainer(java.awt.Container)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
             public void LayoutContainer(Java.Awt.Container arg0)
             {
                 IExecute("layoutContainer", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#removeLayoutComponent(java.awt.Component)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#removeLayoutComponent(java.awt.Component)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
                 IExecute("removeLayoutComponent", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#resetToPreferredSizes()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html#resetToPreferredSizes()"/>
             /// </summary>
             public void ResetToPreferredSizes()
             {
@@ -222,8 +249,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicVerticalLayoutManager.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicVerticalLayoutManager.html#%3Cinit%3E(javax.swing.plaf.basic.BasicSplitPaneUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI"/></param>
             public BasicVerticalLayoutManager(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
                 : base(arg0)
             {
@@ -256,8 +284,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardDownRightHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardDownRightHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicSplitPaneUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI"/></param>
             public KeyboardDownRightHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
                 : base(arg0)
             {
@@ -266,6 +295,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardDownRightHandler"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
+            /// </summary>
             public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardDownRightHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
             
             #endregion
@@ -280,8 +312,9 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardDownRightHandler.html#actionPerformed(java.awt.event.ActionEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardDownRightHandler.html#actionPerformed(java.awt.event.ActionEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
             public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
             {
                 IExecute("actionPerformed", arg0);
@@ -298,8 +331,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardEndHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardEndHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicSplitPaneUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI"/></param>
             public KeyboardEndHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
                 : base(arg0)
             {
@@ -308,6 +342,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardEndHandler"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
+            /// </summary>
             public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardEndHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
             
             #endregion
@@ -322,8 +359,9 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardEndHandler.html#actionPerformed(java.awt.event.ActionEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardEndHandler.html#actionPerformed(java.awt.event.ActionEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
             public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
             {
                 IExecute("actionPerformed", arg0);
@@ -340,8 +378,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardHomeHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardHomeHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicSplitPaneUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI"/></param>
             public KeyboardHomeHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
                 : base(arg0)
             {
@@ -350,6 +389,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardHomeHandler"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
+            /// </summary>
             public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardHomeHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
             
             #endregion
@@ -364,8 +406,9 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardHomeHandler.html#actionPerformed(java.awt.event.ActionEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardHomeHandler.html#actionPerformed(java.awt.event.ActionEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
             public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
             {
                 IExecute("actionPerformed", arg0);
@@ -382,8 +425,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardResizeToggleHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardResizeToggleHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicSplitPaneUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI"/></param>
             public KeyboardResizeToggleHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
                 : base(arg0)
             {
@@ -392,6 +436,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardResizeToggleHandler"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
+            /// </summary>
             public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardResizeToggleHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
             
             #endregion
@@ -406,8 +453,9 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardResizeToggleHandler.html#actionPerformed(java.awt.event.ActionEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardResizeToggleHandler.html#actionPerformed(java.awt.event.ActionEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
             public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
             {
                 IExecute("actionPerformed", arg0);
@@ -424,8 +472,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardUpLeftHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardUpLeftHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicSplitPaneUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI"/></param>
             public KeyboardUpLeftHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
                 : base(arg0)
             {
@@ -434,6 +483,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardUpLeftHandler"/> to <see cref="Java.Awt.EventNs.ActionListener"/>
+            /// </summary>
             public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardUpLeftHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
             
             #endregion
@@ -448,8 +500,9 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardUpLeftHandler.html#actionPerformed(java.awt.event.ActionEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardUpLeftHandler.html#actionPerformed(java.awt.event.ActionEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
             public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
             {
                 IExecute("actionPerformed", arg0);
@@ -466,8 +519,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.PropertyHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.PropertyHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicSplitPaneUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI"/></param>
             public PropertyHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
                 : base(arg0)
             {
@@ -476,6 +530,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.PropertyHandler"/> to <see cref="Java.Beans.PropertyChangeListener"/>
+            /// </summary>
             public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.PropertyHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
             
             #endregion
@@ -490,8 +547,9 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.PropertyHandler.html#propertyChange(java.beans.PropertyChangeEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.PropertyHandler.html#propertyChange(java.beans.PropertyChangeEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
                 IExecute("propertyChange", arg0);

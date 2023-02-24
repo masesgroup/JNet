@@ -42,36 +42,58 @@ namespace Java.Rmi
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#list(java.lang.String) throws java.rmi.RemoteException,java.net.MalformedURLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#list(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Net.MalformedURLException"/>
         public static string[] List(string arg0)
         {
             return SExecuteArray<string>("list", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#lookup(java.lang.String) throws java.rmi.NotBoundException,java.net.MalformedURLException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#lookup(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Rmi.Remote"/></returns>
+        /// <exception cref="Java.Rmi.NotBoundException"/>
+        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote Lookup(string arg0)
         {
             return SExecute<Java.Rmi.Remote>("lookup", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#bind(java.lang.String,java.rmi.Remote) throws java.rmi.AlreadyBoundException,java.net.MalformedURLException,java.rmi.RemoteException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#bind(java.lang.String,java.rmi.Remote)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
+        /// <exception cref="Java.Rmi.AlreadyBoundException"/>
+        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
         public static void Bind(string arg0, Java.Rmi.Remote arg1)
         {
             SExecute("bind", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#rebind(java.lang.String,java.rmi.Remote) throws java.rmi.RemoteException,java.net.MalformedURLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#rebind(java.lang.String,java.rmi.Remote)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Net.MalformedURLException"/>
         public static void Rebind(string arg0, Java.Rmi.Remote arg1)
         {
             SExecute("rebind", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#unbind(java.lang.String) throws java.rmi.RemoteException,java.rmi.NotBoundException,java.net.MalformedURLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#unbind(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Rmi.NotBoundException"/>
+        /// <exception cref="Java.Net.MalformedURLException"/>
         public static void Unbind(string arg0)
         {
             SExecute("unbind", arg0);

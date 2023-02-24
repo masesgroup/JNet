@@ -33,6 +33,9 @@ namespace Javax.Sql.Rowset.Spi
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sql.Rowset.Spi.XmlReader"/> to <see cref="Javax.Sql.RowSetReader"/>
+        /// </summary>
         public static implicit operator Javax.Sql.RowSetReader(Javax.Sql.Rowset.Spi.XmlReader t) => t.Cast<Javax.Sql.RowSetReader>();
         
         #endregion
@@ -47,8 +50,11 @@ namespace Javax.Sql.Rowset.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/XmlReader.html#readXML(javax.sql.rowset.WebRowSet,java.io.Reader) throws java.sql.SQLException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/XmlReader.html#readXML(javax.sql.rowset.WebRowSet,java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.Rowset.WebRowSet"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
         public void ReadXML(Javax.Sql.Rowset.WebRowSet arg0, Java.Io.Reader arg1)
         {
             IExecute("readXML", arg0, arg1);

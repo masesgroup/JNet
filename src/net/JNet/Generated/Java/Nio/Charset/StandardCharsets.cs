@@ -38,27 +38,27 @@ namespace Java.Nio.Charset
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#ISO_8859_1
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#ISO_8859_1"/>
         /// </summary>
         public static Java.Nio.Charset.Charset ISO_8859_1 => Clazz.GetField<Java.Nio.Charset.Charset>("ISO_8859_1");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#US_ASCII
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#US_ASCII"/>
         /// </summary>
         public static Java.Nio.Charset.Charset US_ASCII => Clazz.GetField<Java.Nio.Charset.Charset>("US_ASCII");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_16
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_16"/>
         /// </summary>
         public static Java.Nio.Charset.Charset UTF_16 => Clazz.GetField<Java.Nio.Charset.Charset>("UTF_16");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_16BE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_16BE"/>
         /// </summary>
         public static Java.Nio.Charset.Charset UTF_16BE => Clazz.GetField<Java.Nio.Charset.Charset>("UTF_16BE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_16LE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_16LE"/>
         /// </summary>
         public static Java.Nio.Charset.Charset UTF_16LE => Clazz.GetField<Java.Nio.Charset.Charset>("UTF_16LE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_8
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/StandardCharsets.html#UTF_8"/>
         /// </summary>
         public static Java.Nio.Charset.Charset UTF_8 => Clazz.GetField<Java.Nio.Charset.Charset>("UTF_8");
         

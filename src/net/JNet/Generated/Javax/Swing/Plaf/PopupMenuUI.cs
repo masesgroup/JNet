@@ -46,15 +46,21 @@ namespace Javax.Swing.Plaf
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/PopupMenuUI.html#isPopupTrigger(java.awt.event.MouseEvent)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/PopupMenuUI.html#isPopupTrigger(java.awt.event.MouseEvent)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsPopupTrigger(Java.Awt.EventNs.MouseEvent arg0)
         {
             return IExecute<bool>("isPopupTrigger", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/PopupMenuUI.html#getPopup(javax.swing.JPopupMenu,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/PopupMenuUI.html#getPopup(javax.swing.JPopupMenu,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JPopupMenu"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see cref="Javax.Swing.Popup"/></returns>
         public Javax.Swing.Popup GetPopup(Javax.Swing.JPopupMenu arg0, int arg1, int arg2)
         {
             return IExecute<Javax.Swing.Popup>("getPopup", arg0, arg1, arg2);

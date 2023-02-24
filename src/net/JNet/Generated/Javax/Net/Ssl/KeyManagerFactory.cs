@@ -42,22 +42,30 @@ namespace Javax.Net.Ssl
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getDefaultAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getDefaultAlgorithm()"/> 
         /// </summary>
         public static string DefaultAlgorithm
         {
             get { return SExecute<string>("getDefaultAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getInstance(java.lang.String,java.lang.String) throws java.security.NoSuchAlgorithmException,java.security.NoSuchProviderException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Net.Ssl.KeyManagerFactory"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Net.Ssl.KeyManagerFactory GetInstance(string arg0, string arg1)
         {
             return SExecute<Javax.Net.Ssl.KeyManagerFactory>("getInstance", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Net.Ssl.KeyManagerFactory"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Net.Ssl.KeyManagerFactory GetInstance(string arg0)
         {
             return SExecute<Javax.Net.Ssl.KeyManagerFactory>("getInstance", arg0);
@@ -67,29 +75,36 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getAlgorithm() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getAlgorithm()"/> 
         /// </summary>
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getKeyManagers() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#getKeyManagers()"/> 
         /// </summary>
         public Javax.Net.Ssl.KeyManager[] KeyManagers
         {
             get { return IExecuteArray<Javax.Net.Ssl.KeyManager>("getKeyManagers"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#init(java.security.KeyStore,char[]) throws java.security.KeyStoreException,java.security.NoSuchAlgorithmException,java.security.UnrecoverableKeyException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#init(java.security.KeyStore,char[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.KeyStore"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <exception cref="Java.Security.KeyStoreException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.UnrecoverableKeyException"/>
         public void Init(Java.Security.KeyStore arg0, char[] arg1)
         {
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#init(javax.net.ssl.ManagerFactoryParameters) throws java.security.InvalidAlgorithmParameterException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html#init(javax.net.ssl.ManagerFactoryParameters)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.ManagerFactoryParameters"/></param>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(Javax.Net.Ssl.ManagerFactoryParameters arg0)
         {
             IExecute("init", arg0);

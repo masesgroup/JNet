@@ -46,7 +46,7 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/FlavorException.html#getUnsupportedFlavors() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/FlavorException.html#getUnsupportedFlavors()"/> 
         /// </summary>
         public Javax.Print.DocFlavor[] UnsupportedFlavors
         {

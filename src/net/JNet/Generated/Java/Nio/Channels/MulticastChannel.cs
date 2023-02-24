@@ -33,6 +33,9 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.Channels.MulticastChannel"/> to <see cref="Java.Nio.Channels.NetworkChannel"/>
+        /// </summary>
         public static implicit operator Java.Nio.Channels.NetworkChannel(Java.Nio.Channels.MulticastChannel t) => t.Cast<Java.Nio.Channels.NetworkChannel>();
         
         #endregion
@@ -47,22 +50,33 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html#join(java.net.InetAddress,java.net.NetworkInterface,java.net.InetAddress) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html#join(java.net.InetAddress,java.net.NetworkInterface,java.net.InetAddress)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
+        /// <param name="arg2"><see cref="Java.Net.InetAddress"/></param>
+        /// <returns><see cref="Java.Nio.Channels.MembershipKey"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.MembershipKey Join(Java.Net.InetAddress arg0, Java.Net.NetworkInterface arg1, Java.Net.InetAddress arg2)
         {
             return IExecute<Java.Nio.Channels.MembershipKey>("join", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html#join(java.net.InetAddress,java.net.NetworkInterface) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html#join(java.net.InetAddress,java.net.NetworkInterface)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
+        /// <returns><see cref="Java.Nio.Channels.MembershipKey"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.MembershipKey Join(Java.Net.InetAddress arg0, Java.Net.NetworkInterface arg1)
         {
             return IExecute<Java.Nio.Channels.MembershipKey>("join", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html#close() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");

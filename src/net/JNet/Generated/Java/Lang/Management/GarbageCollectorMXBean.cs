@@ -33,6 +33,9 @@ namespace Java.Lang.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Management.GarbageCollectorMXBean"/> to <see cref="Java.Lang.Management.MemoryManagerMXBean"/>
+        /// </summary>
         public static implicit operator Java.Lang.Management.MemoryManagerMXBean(Java.Lang.Management.GarbageCollectorMXBean t) => t.Cast<Java.Lang.Management.MemoryManagerMXBean>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Java.Lang.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/GarbageCollectorMXBean.html#getCollectionCount() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/GarbageCollectorMXBean.html#getCollectionCount()"/> 
         /// </summary>
         public long CollectionCount
         {
             get { return IExecute<long>("getCollectionCount"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/GarbageCollectorMXBean.html#getCollectionTime() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/GarbageCollectorMXBean.html#getCollectionTime()"/> 
         /// </summary>
         public long CollectionTime
         {

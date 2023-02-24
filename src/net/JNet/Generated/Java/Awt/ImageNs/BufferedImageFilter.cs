@@ -30,8 +30,9 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImageFilter.html#<init>(java.awt.image.BufferedImageOp)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImageFilter.html#%3Cinit%3E(java.awt.image.BufferedImageOp)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.BufferedImageOp"/></param>
         public BufferedImageFilter(Java.Awt.ImageNs.BufferedImageOp arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageNs.BufferedImageFilter"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.BufferedImageFilter t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -54,7 +58,7 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImageFilter.html#getBufferedImageOp() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImageFilter.html#getBufferedImageOp()"/> 
         /// </summary>
         public Java.Awt.ImageNs.BufferedImageOp BufferedImageOp
         {

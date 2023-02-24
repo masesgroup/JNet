@@ -42,8 +42,10 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.html#defaultBufferSize()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.html#defaultBufferSize()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public static int DefaultBufferSize()
         {
             return SExecute<int>("defaultBufferSize");
@@ -131,29 +133,32 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onComplete()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onComplete()"/>
             /// </summary>
             public void OnComplete()
             {
                 IExecute("onComplete");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onError(java.lang.Throwable)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onError(java.lang.Throwable)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
             public void OnError(Java.Lang.Throwable arg0)
             {
                 IExecute("onError", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onNext(T)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onNext(T)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
             public void OnNext(object arg0)
             {
                 IExecute("onNext", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onSubscribe(java.util.concurrent.Flow$Subscription)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html#onSubscribe(java.util.concurrent.Flow$Subscription)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscription"/></param>
             public void OnSubscribe(Java.Util.Concurrent.Flow.Subscription arg0)
             {
                 IExecute("onSubscribe", arg0);
@@ -186,15 +191,16 @@ namespace Java.Util.Concurrent
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscription.html#cancel()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscription.html#cancel()"/>
             /// </summary>
             public void Cancel()
             {
                 IExecute("cancel");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscription.html#request(long)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscription.html#request(long)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="long"/></param>
             public void Request(long arg0)
             {
                 IExecute("request", arg0);

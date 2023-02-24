@@ -46,134 +46,172 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#hasArray()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#hasArray()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasArray()
         {
             return IExecute<bool>("hasArray");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#isDirect()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#isDirect()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsDirect()
         {
             return IExecute<bool>("isDirect");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#isReadOnly()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#isReadOnly()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsReadOnly()
         {
             return IExecute<bool>("isReadOnly");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#arrayOffset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#arrayOffset()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int ArrayOffset()
         {
             return IExecute<int>("arrayOffset");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#array()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#array()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object Array()
         {
             return IExecute("array");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#duplicate()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#duplicate()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Duplicate()
         {
             return IExecute<Java.Nio.Buffer>("duplicate");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#slice()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#slice()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Slice()
         {
             return IExecute<Java.Nio.Buffer>("slice");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#hasRemaining()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#hasRemaining()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool HasRemaining()
         {
             return IExecute<bool>("hasRemaining");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#capacity()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#capacity()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Capacity()
         {
             return IExecute<int>("capacity");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#limit()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#limit()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Limit()
         {
             return IExecute<int>("limit");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#position()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#position()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Position()
         {
             return IExecute<int>("position");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#remaining()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#remaining()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Remaining()
         {
             return IExecute<int>("remaining");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#clear()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#clear()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Clear()
         {
             return IExecute<Java.Nio.Buffer>("clear");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#flip()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#flip()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Flip()
         {
             return IExecute<Java.Nio.Buffer>("flip");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#limit(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#limit(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Limit(int arg0)
         {
             return IExecute<Java.Nio.Buffer>("limit", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#mark()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#mark()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Mark()
         {
             return IExecute<Java.Nio.Buffer>("mark");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#position(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#position(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Position(int arg0)
         {
             return IExecute<Java.Nio.Buffer>("position", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#reset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#reset()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Reset()
         {
             return IExecute<Java.Nio.Buffer>("reset");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#rewind()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html#rewind()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Rewind()
         {
             return IExecute<Java.Nio.Buffer>("rewind");

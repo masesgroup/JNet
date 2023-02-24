@@ -46,7 +46,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CacheResponse.html#getBody() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CacheResponse.html#getBody()"/> 
         /// </summary>
         public Java.Io.InputStream Body
         {

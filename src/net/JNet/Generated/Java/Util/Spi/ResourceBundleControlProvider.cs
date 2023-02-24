@@ -46,8 +46,10 @@ namespace Java.Util.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ResourceBundleControlProvider.html#getControl(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ResourceBundleControlProvider.html#getControl(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
         public Java.Util.ResourceBundle.Control GetControl(string arg0)
         {
             return IExecute<Java.Util.ResourceBundle.Control>("getControl", arg0);

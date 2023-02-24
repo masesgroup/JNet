@@ -33,6 +33,9 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sound.Sampled.Mixer"/> to <see cref="Javax.Sound.Sampled.Line"/>
+        /// </summary>
         public static implicit operator Javax.Sound.Sampled.Line(Javax.Sound.Sampled.Mixer t) => t.Cast<Javax.Sound.Sampled.Line>();
         
         #endregion
@@ -47,92 +50,109 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getMixerInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getMixerInfo()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Mixer.Info MixerInfo
         {
             get { return IExecute<Javax.Sound.Sampled.Mixer.Info>("getMixerInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getSourceLineInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getSourceLineInfo()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Line.Info[] SourceLineInfo
         {
             get { return IExecuteArray<Javax.Sound.Sampled.Line.Info>("getSourceLineInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getSourceLines() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getSourceLines()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Line[] SourceLines
         {
             get { return IExecuteArray<Javax.Sound.Sampled.Line>("getSourceLines"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getTargetLineInfo() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getTargetLineInfo()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Line.Info[] TargetLineInfo
         {
             get { return IExecuteArray<Javax.Sound.Sampled.Line.Info>("getTargetLineInfo"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getTargetLines() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getTargetLines()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Line[] TargetLines
         {
             get { return IExecuteArray<Javax.Sound.Sampled.Line>("getTargetLines"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#isLineSupported(javax.sound.sampled.Line$Info)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#isLineSupported(javax.sound.sampled.Line$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsLineSupported(Javax.Sound.Sampled.Line.Info arg0)
         {
             return IExecute<bool>("isLineSupported", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#isSynchronizationSupported(javax.sound.sampled.Line[],boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#isSynchronizationSupported(javax.sound.sampled.Line[],boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsSynchronizationSupported(Javax.Sound.Sampled.Line[] arg0, bool arg1)
         {
             return IExecute<bool>("isSynchronizationSupported", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getMaxLines(javax.sound.sampled.Line$Info)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getMaxLines(javax.sound.sampled.Line$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
+        /// <returns><see langword="int"/></returns>
         public int GetMaxLines(Javax.Sound.Sampled.Line.Info arg0)
         {
             return IExecute<int>("getMaxLines", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getLine(javax.sound.sampled.Line$Info) throws javax.sound.sampled.LineUnavailableException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getLine(javax.sound.sampled.Line$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.Line"/></returns>
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public Javax.Sound.Sampled.Line GetLine(Javax.Sound.Sampled.Line.Info arg0)
         {
             return IExecute<Javax.Sound.Sampled.Line>("getLine", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getSourceLineInfo(javax.sound.sampled.Line$Info)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getSourceLineInfo(javax.sound.sampled.Line$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.Line.Info"/></returns>
         public Javax.Sound.Sampled.Line.Info[] GetSourceLineInfo(Javax.Sound.Sampled.Line.Info arg0)
         {
             return IExecuteArray<Javax.Sound.Sampled.Line.Info>("getSourceLineInfo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getTargetLineInfo(javax.sound.sampled.Line$Info)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getTargetLineInfo(javax.sound.sampled.Line$Info)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line.Info"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.Line.Info"/></returns>
         public Javax.Sound.Sampled.Line.Info[] GetTargetLineInfo(Javax.Sound.Sampled.Line.Info arg0)
         {
             return IExecuteArray<Javax.Sound.Sampled.Line.Info>("getTargetLineInfo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#synchronize(javax.sound.sampled.Line[],boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#synchronize(javax.sound.sampled.Line[],boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public void Synchronize(Javax.Sound.Sampled.Line[] arg0, bool arg1)
         {
             IExecute("synchronize", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#unsynchronize(javax.sound.sampled.Line[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#unsynchronize(javax.sound.sampled.Line[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
         public void Unsynchronize(Javax.Sound.Sampled.Line[] arg0)
         {
             IExecute("unsynchronize", arg0);
@@ -162,28 +182,28 @@ namespace Javax.Sound.Sampled
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html#getDescription() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html#getDescription()"/> 
             /// </summary>
             public string Description
             {
                 get { return IExecute<string>("getDescription"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html#getName() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html#getName()"/> 
             /// </summary>
             public string Name
             {
                 get { return IExecute<string>("getName"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html#getVendor() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html#getVendor()"/> 
             /// </summary>
             public string Vendor
             {
                 get { return IExecute<string>("getVendor"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html#getVersion() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.Info.html#getVersion()"/> 
             /// </summary>
             public string Version
             {

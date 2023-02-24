@@ -30,8 +30,10 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CheckedInputStream.html#<init>(java.io.InputStream,java.util.zip.Checksum)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CheckedInputStream.html#%3Cinit%3E(java.io.InputStream,java.util.zip.Checksum)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Zip.Checksum"/></param>
         public CheckedInputStream(Java.Io.InputStream arg0, Java.Util.Zip.Checksum arg1)
             : base(arg0, arg1)
         {
@@ -53,7 +55,7 @@ namespace Java.Util.Zip
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CheckedInputStream.html#getChecksum() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CheckedInputStream.html#getChecksum()"/> 
         /// </summary>
         public Java.Util.Zip.Checksum Checksum
         {

@@ -30,15 +30,24 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#<init>(java.awt.Adjustable,int,int,int,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#%3Cinit%3E(java.awt.Adjustable,int,int,int,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Adjustable"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="bool"/></param>
         public AdjustmentEvent(Java.Awt.Adjustable arg0, int arg1, int arg2, int arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#<init>(java.awt.Adjustable,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#%3Cinit%3E(java.awt.Adjustable,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Adjustable"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public AdjustmentEvent(Java.Awt.Adjustable arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -52,35 +61,35 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#ADJUSTMENT_FIRST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#ADJUSTMENT_FIRST"/>
         /// </summary>
         public static int ADJUSTMENT_FIRST => Clazz.GetField<int>("ADJUSTMENT_FIRST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#ADJUSTMENT_LAST
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#ADJUSTMENT_LAST"/>
         /// </summary>
         public static int ADJUSTMENT_LAST => Clazz.GetField<int>("ADJUSTMENT_LAST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#ADJUSTMENT_VALUE_CHANGED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#ADJUSTMENT_VALUE_CHANGED"/>
         /// </summary>
         public static int ADJUSTMENT_VALUE_CHANGED => Clazz.GetField<int>("ADJUSTMENT_VALUE_CHANGED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#BLOCK_DECREMENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#BLOCK_DECREMENT"/>
         /// </summary>
         public static int BLOCK_DECREMENT => Clazz.GetField<int>("BLOCK_DECREMENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#BLOCK_INCREMENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#BLOCK_INCREMENT"/>
         /// </summary>
         public static int BLOCK_INCREMENT => Clazz.GetField<int>("BLOCK_INCREMENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#TRACK
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#TRACK"/>
         /// </summary>
         public static int TRACK => Clazz.GetField<int>("TRACK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#UNIT_DECREMENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#UNIT_DECREMENT"/>
         /// </summary>
         public static int UNIT_DECREMENT => Clazz.GetField<int>("UNIT_DECREMENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#UNIT_INCREMENT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#UNIT_INCREMENT"/>
         /// </summary>
         public static int UNIT_INCREMENT => Clazz.GetField<int>("UNIT_INCREMENT");
         
@@ -92,28 +101,28 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#getAdjustable() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#getAdjustable()"/> 
         /// </summary>
         public Java.Awt.Adjustable Adjustable
         {
             get { return IExecute<Java.Awt.Adjustable>("getAdjustable"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#getAdjustmentType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#getAdjustmentType()"/> 
         /// </summary>
         public int AdjustmentType
         {
             get { return IExecute<int>("getAdjustmentType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#getValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#getValue()"/> 
         /// </summary>
         public int Value
         {
             get { return IExecute<int>("getValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#getValueIsAdjusting() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#getValueIsAdjusting()"/> 
         /// </summary>
         public bool ValueIsAdjusting
         {

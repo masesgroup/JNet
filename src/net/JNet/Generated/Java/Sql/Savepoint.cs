@@ -46,14 +46,14 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Savepoint.html#getSavepointId() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Savepoint.html#getSavepointId()"/> 
         /// </summary>
         public int SavepointId
         {
             get { return IExecute<int>("getSavepointId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Savepoint.html#getSavepointName() throws java.sql.SQLException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Savepoint.html#getSavepointName()"/> 
         /// </summary>
         public string SavepointName
         {

@@ -42,15 +42,19 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public static bool IsTaskbarSupported()
         {
             return SExecute<bool>("isTaskbarSupported");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#getTaskbar()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#getTaskbar()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Awt.Taskbar"/></returns>
         public static Java.Awt.Taskbar GetTaskbar()
         {
             return SExecute<Java.Awt.Taskbar>("getTaskbar");
@@ -60,57 +64,66 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#getIconImage() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setIconImage(java.awt.Image)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#getIconImage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setIconImage(java.awt.Image)"/>
         /// </summary>
         public Java.Awt.Image IconImage
         {
             get { return IExecute<Java.Awt.Image>("getIconImage"); } set { IExecute("setIconImage", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#getMenu() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setMenu(java.awt.PopupMenu)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#getMenu()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setMenu(java.awt.PopupMenu)"/>
         /// </summary>
         public Java.Awt.PopupMenu Menu
         {
             get { return IExecute<Java.Awt.PopupMenu>("getMenu"); } set { IExecute("setMenu", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#requestUserAttention(boolean,boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#requestUserAttention(boolean,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
         public void RequestUserAttention(bool arg0, bool arg1)
         {
             IExecute("requestUserAttention", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#requestWindowUserAttention(java.awt.Window)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#requestWindowUserAttention(java.awt.Window)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
         public void RequestWindowUserAttention(Java.Awt.Window arg0)
         {
             IExecute("requestWindowUserAttention", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setIconBadge(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setIconBadge(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
         public void SetIconBadge(string arg0)
         {
             IExecute("setIconBadge", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setProgressValue(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setProgressValue(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void SetProgressValue(int arg0)
         {
             IExecute("setProgressValue", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowIconBadge(java.awt.Window,java.awt.Image)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowIconBadge(java.awt.Window,java.awt.Image)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Image"/></param>
         public void SetWindowIconBadge(Java.Awt.Window arg0, Java.Awt.Image arg1)
         {
             IExecute("setWindowIconBadge", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowProgressValue(java.awt.Window,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowProgressValue(java.awt.Window,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void SetWindowProgressValue(Java.Awt.Window arg0, int arg1)
         {
             IExecute("setWindowProgressValue", arg0, arg1);
@@ -132,43 +145,43 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_IMAGE_WINDOW
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_IMAGE_WINDOW"/>
             /// </summary>
             public static Java.Awt.Taskbar.Feature ICON_BADGE_IMAGE_WINDOW => Clazz.GetField<Java.Awt.Taskbar.Feature>("ICON_BADGE_IMAGE_WINDOW");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_NUMBER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_NUMBER"/>
             /// </summary>
             public static Java.Awt.Taskbar.Feature ICON_BADGE_NUMBER => Clazz.GetField<Java.Awt.Taskbar.Feature>("ICON_BADGE_NUMBER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_TEXT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_TEXT"/>
             /// </summary>
             public static Java.Awt.Taskbar.Feature ICON_BADGE_TEXT => Clazz.GetField<Java.Awt.Taskbar.Feature>("ICON_BADGE_TEXT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_IMAGE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_IMAGE"/>
             /// </summary>
             public static Java.Awt.Taskbar.Feature ICON_IMAGE => Clazz.GetField<Java.Awt.Taskbar.Feature>("ICON_IMAGE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#MENU
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#MENU"/>
             /// </summary>
             public static Java.Awt.Taskbar.Feature MENU => Clazz.GetField<Java.Awt.Taskbar.Feature>("MENU");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#PROGRESS_STATE_WINDOW
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#PROGRESS_STATE_WINDOW"/>
             /// </summary>
             public static Java.Awt.Taskbar.Feature PROGRESS_STATE_WINDOW => Clazz.GetField<Java.Awt.Taskbar.Feature>("PROGRESS_STATE_WINDOW");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#PROGRESS_VALUE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#PROGRESS_VALUE"/>
             /// </summary>
             public static Java.Awt.Taskbar.Feature PROGRESS_VALUE => Clazz.GetField<Java.Awt.Taskbar.Feature>("PROGRESS_VALUE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#PROGRESS_VALUE_WINDOW
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#PROGRESS_VALUE_WINDOW"/>
             /// </summary>
             public static Java.Awt.Taskbar.Feature PROGRESS_VALUE_WINDOW => Clazz.GetField<Java.Awt.Taskbar.Feature>("PROGRESS_VALUE_WINDOW");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#USER_ATTENTION
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#USER_ATTENTION"/>
             /// </summary>
             public static Java.Awt.Taskbar.Feature USER_ATTENTION => Clazz.GetField<Java.Awt.Taskbar.Feature>("USER_ATTENTION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#USER_ATTENTION_WINDOW
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#USER_ATTENTION_WINDOW"/>
             /// </summary>
             public static Java.Awt.Taskbar.Feature USER_ATTENTION_WINDOW => Clazz.GetField<Java.Awt.Taskbar.Feature>("USER_ATTENTION_WINDOW");
             
@@ -176,8 +189,10 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Awt.Taskbar.Feature"/></returns>
             public static Java.Awt.Taskbar.Feature[] Values()
             {
                 return SExecuteArray<Java.Awt.Taskbar.Feature>("values");
@@ -206,23 +221,23 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#ERROR
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#ERROR"/>
             /// </summary>
             public static Java.Awt.Taskbar.State ERROR => Clazz.GetField<Java.Awt.Taskbar.State>("ERROR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#INDETERMINATE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#INDETERMINATE"/>
             /// </summary>
             public static Java.Awt.Taskbar.State INDETERMINATE => Clazz.GetField<Java.Awt.Taskbar.State>("INDETERMINATE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#NORMAL
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#NORMAL"/>
             /// </summary>
             public static Java.Awt.Taskbar.State NORMAL => Clazz.GetField<Java.Awt.Taskbar.State>("NORMAL");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#OFF
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#OFF"/>
             /// </summary>
             public static Java.Awt.Taskbar.State OFF => Clazz.GetField<Java.Awt.Taskbar.State>("OFF");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#PAUSED
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#PAUSED"/>
             /// </summary>
             public static Java.Awt.Taskbar.State PAUSED => Clazz.GetField<Java.Awt.Taskbar.State>("PAUSED");
             
@@ -230,8 +245,10 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#values()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#values()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Awt.Taskbar.State"/></returns>
             public static Java.Awt.Taskbar.State[] Values()
             {
                 return SExecuteArray<Java.Awt.Taskbar.State>("values");

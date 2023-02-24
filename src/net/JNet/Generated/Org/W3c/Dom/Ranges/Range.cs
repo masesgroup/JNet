@@ -38,19 +38,19 @@ namespace Org.W3c.Dom.Ranges
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#END_TO_END
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#END_TO_END"/>
         /// </summary>
         public static short END_TO_END => Clazz.GetField<short>("END_TO_END");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#END_TO_START
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#END_TO_START"/>
         /// </summary>
         public static short END_TO_START => Clazz.GetField<short>("END_TO_START");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#START_TO_END
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#START_TO_END"/>
         /// </summary>
         public static short START_TO_END => Clazz.GetField<short>("START_TO_END");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#START_TO_START
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#START_TO_START"/>
         /// </summary>
         public static short START_TO_START => Clazz.GetField<short>("START_TO_START");
         
@@ -62,162 +62,213 @@ namespace Org.W3c.Dom.Ranges
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getCollapsed() throws org.w3c.dom.DOMException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getCollapsed()"/> 
         /// </summary>
         public bool Collapsed
         {
             get { return IExecute<bool>("getCollapsed"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getCommonAncestorContainer() throws org.w3c.dom.DOMException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getCommonAncestorContainer()"/> 
         /// </summary>
         public Org.W3c.Dom.Node CommonAncestorContainer
         {
             get { return IExecute<Org.W3c.Dom.Node>("getCommonAncestorContainer"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getEndContainer() throws org.w3c.dom.DOMException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getEndContainer()"/> 
         /// </summary>
         public Org.W3c.Dom.Node EndContainer
         {
             get { return IExecute<Org.W3c.Dom.Node>("getEndContainer"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getEndOffset() throws org.w3c.dom.DOMException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getEndOffset()"/> 
         /// </summary>
         public int EndOffset
         {
             get { return IExecute<int>("getEndOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getStartContainer() throws org.w3c.dom.DOMException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getStartContainer()"/> 
         /// </summary>
         public Org.W3c.Dom.Node StartContainer
         {
             get { return IExecute<Org.W3c.Dom.Node>("getStartContainer"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getStartOffset() throws org.w3c.dom.DOMException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getStartOffset()"/> 
         /// </summary>
         public int StartOffset
         {
             get { return IExecute<int>("getStartOffset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneContents() throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneContents()"/>
         /// </summary>
+        
+        /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.DocumentFragment CloneContents()
         {
             return IExecute<Org.W3c.Dom.DocumentFragment>("cloneContents");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#extractContents() throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#extractContents()"/>
         /// </summary>
+        
+        /// <returns><see cref="Org.W3c.Dom.DocumentFragment"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.DocumentFragment ExtractContents()
         {
             return IExecute<Org.W3c.Dom.DocumentFragment>("extractContents");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneRange() throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneRange()"/>
         /// </summary>
+        
+        /// <returns><see cref="Org.W3c.Dom.Ranges.Range"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Ranges.Range CloneRange()
         {
             return IExecute<Org.W3c.Dom.Ranges.Range>("cloneRange");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#compareBoundaryPoints(short,org.w3c.dom.ranges.Range) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#compareBoundaryPoints(short,org.w3c.dom.ranges.Range)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="short"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Ranges.Range"/></param>
+        /// <returns><see langword="short"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public short CompareBoundaryPoints(short arg0, Org.W3c.Dom.Ranges.Range arg1)
         {
             return IExecute<short>("compareBoundaryPoints", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#collapse(boolean) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#collapse(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void Collapse(bool arg0)
         {
             IExecute("collapse", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#deleteContents() throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#deleteContents()"/>
         /// </summary>
+        
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void DeleteContents()
         {
             IExecute("deleteContents");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#detach() throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#detach()"/>
         /// </summary>
+        
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void Detach()
         {
             IExecute("detach");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#insertNode(org.w3c.dom.Node) throws org.w3c.dom.DOMException,org.w3c.dom.ranges.RangeException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#insertNode(org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
         public void InsertNode(Org.W3c.Dom.Node arg0)
         {
             IExecute("insertNode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNode(org.w3c.dom.Node) throws org.w3c.dom.ranges.RangeException,org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNode(org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SelectNode(Org.W3c.Dom.Node arg0)
         {
             IExecute("selectNode", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNodeContents(org.w3c.dom.Node) throws org.w3c.dom.ranges.RangeException,org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNodeContents(org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SelectNodeContents(Org.W3c.Dom.Node arg0)
         {
             IExecute("selectNodeContents", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEnd(org.w3c.dom.Node,int) throws org.w3c.dom.ranges.RangeException,org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEnd(org.w3c.dom.Node,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetEnd(Org.W3c.Dom.Node arg0, int arg1)
         {
             IExecute("setEnd", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndAfter(org.w3c.dom.Node) throws org.w3c.dom.ranges.RangeException,org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndAfter(org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetEndAfter(Org.W3c.Dom.Node arg0)
         {
             IExecute("setEndAfter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndBefore(org.w3c.dom.Node) throws org.w3c.dom.ranges.RangeException,org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndBefore(org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetEndBefore(Org.W3c.Dom.Node arg0)
         {
             IExecute("setEndBefore", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStart(org.w3c.dom.Node,int) throws org.w3c.dom.ranges.RangeException,org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStart(org.w3c.dom.Node,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetStart(Org.W3c.Dom.Node arg0, int arg1)
         {
             IExecute("setStart", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartAfter(org.w3c.dom.Node) throws org.w3c.dom.ranges.RangeException,org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartAfter(org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetStartAfter(Org.W3c.Dom.Node arg0)
         {
             IExecute("setStartAfter", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartBefore(org.w3c.dom.Node) throws org.w3c.dom.ranges.RangeException,org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartBefore(org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetStartBefore(Org.W3c.Dom.Node arg0)
         {
             IExecute("setStartBefore", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#surroundContents(org.w3c.dom.Node) throws org.w3c.dom.DOMException,org.w3c.dom.ranges.RangeException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#surroundContents(org.w3c.dom.Node)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
         public void SurroundContents(Org.W3c.Dom.Node arg0)
         {
             IExecute("surroundContents", arg0);

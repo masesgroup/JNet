@@ -30,22 +30,25 @@ namespace Javax.Print.Attribute
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html#<init>(javax.print.attribute.DocAttribute)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html#%3Cinit%3E(javax.print.attribute.DocAttribute)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.DocAttribute"/></param>
         public HashDocAttributeSet(Javax.Print.Attribute.DocAttribute arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html#<init>(javax.print.attribute.DocAttribute[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html#%3Cinit%3E(javax.print.attribute.DocAttribute[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.DocAttribute"/></param>
         public HashDocAttributeSet(Javax.Print.Attribute.DocAttribute[] arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html#<init>(javax.print.attribute.DocAttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html#%3Cinit%3E(javax.print.attribute.DocAttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.DocAttributeSet"/></param>
         public HashDocAttributeSet(Javax.Print.Attribute.DocAttributeSet arg0)
             : base(arg0)
         {
@@ -54,7 +57,13 @@ namespace Javax.Print.Attribute
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.HashDocAttributeSet"/> to <see cref="Javax.Print.Attribute.DocAttributeSet"/>
+        /// </summary>
         public static implicit operator Javax.Print.Attribute.DocAttributeSet(Javax.Print.Attribute.HashDocAttributeSet t) => t.Cast<Javax.Print.Attribute.DocAttributeSet>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Print.Attribute.HashDocAttributeSet"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Print.Attribute.HashDocAttributeSet t) => t.Cast<Java.Io.Serializable>();
         
         #endregion

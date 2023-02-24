@@ -30,43 +30,61 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#<init>(int,int,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(int,int,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg5"><see langword="int"/></param>
         public GregorianCalendar(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#<init>(int,int,int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(int,int,int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg4"><see langword="int"/></param>
         public GregorianCalendar(int arg0, int arg1, int arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#<init>(int,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public GregorianCalendar(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#<init>(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public GregorianCalendar(Java.Util.Locale arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#<init>(java.util.TimeZone,java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(java.util.TimeZone,java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         public GregorianCalendar(Java.Util.TimeZone arg0, Java.Util.Locale arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#<init>(java.util.TimeZone)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(java.util.TimeZone)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
         public GregorianCalendar(Java.Util.TimeZone arg0)
             : base(arg0)
         {
@@ -80,11 +98,11 @@ namespace Java.Util
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#AD
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#AD"/>
         /// </summary>
         public static int AD => Clazz.GetField<int>("AD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#BC
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#BC"/>
         /// </summary>
         public static int BC => Clazz.GetField<int>("BC");
         
@@ -92,8 +110,10 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#from(java.time.ZonedDateTime)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#from(java.time.ZonedDateTime)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.ZonedDateTime"/></param>
+        /// <returns><see cref="Java.Util.GregorianCalendar"/></returns>
         public static Java.Util.GregorianCalendar From(Java.Time.ZonedDateTime arg0)
         {
             return SExecute<Java.Util.GregorianCalendar>("from", arg0);
@@ -103,22 +123,26 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#getGregorianChange() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#setGregorianChange(java.util.Date)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#getGregorianChange()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#setGregorianChange(java.util.Date)"/>
         /// </summary>
         public Java.Util.Date GregorianChange
         {
             get { return IExecute<Java.Util.Date>("getGregorianChange"); } set { IExecute("setGregorianChange", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#isLeapYear(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#isLeapYear(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsLeapYear(int arg0)
         {
             return IExecute<bool>("isLeapYear", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#toZonedDateTime()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#toZonedDateTime()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime ToZonedDateTime()
         {
             return IExecute<Java.Time.ZonedDateTime>("toZonedDateTime");

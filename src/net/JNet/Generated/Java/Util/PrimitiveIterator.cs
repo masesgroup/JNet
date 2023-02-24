@@ -46,8 +46,9 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.html#forEachRemaining(T_CONS)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.html#forEachRemaining(T_CONS)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
         public void ForEachRemaining(object arg0)
         {
             IExecute("forEachRemaining", arg0);
@@ -77,29 +78,35 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#nextDouble()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#nextDouble()"/>
             /// </summary>
+            
+            /// <returns><see langword="double"/></returns>
             public double NextDouble()
             {
                 return IExecute<double>("nextDouble");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#next()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#next()"/>
             /// </summary>
+            
+            /// <returns><see langword="object"/></returns>
             public object Next()
             {
                 return IExecute("next");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.lang.Object)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.util.function.DoubleConsumer)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.util.function.DoubleConsumer)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
             public void ForEachRemaining(Java.Util.Function.DoubleConsumer arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -132,29 +139,35 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#nextInt()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#nextInt()"/>
             /// </summary>
+            
+            /// <returns><see langword="int"/></returns>
             public int NextInt()
             {
                 return IExecute<int>("nextInt");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#next()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#next()"/>
             /// </summary>
+            
+            /// <returns><see langword="object"/></returns>
             public object Next()
             {
                 return IExecute("next");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.lang.Object)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.util.function.IntConsumer)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.util.function.IntConsumer)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
             public void ForEachRemaining(Java.Util.Function.IntConsumer arg0)
             {
                 IExecute("forEachRemaining", arg0);
@@ -187,29 +200,35 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#nextLong()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#nextLong()"/>
             /// </summary>
+            
+            /// <returns><see langword="long"/></returns>
             public long NextLong()
             {
                 return IExecute<long>("nextLong");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#next()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#next()"/>
             /// </summary>
+            
+            /// <returns><see langword="object"/></returns>
             public object Next()
             {
                 return IExecute("next");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.lang.Object)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="object"/></param>
             public void ForEachRemaining(object arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.LongConsumer)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.LongConsumer)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
             public void ForEachRemaining(Java.Util.Function.LongConsumer arg0)
             {
                 IExecute("forEachRemaining", arg0);

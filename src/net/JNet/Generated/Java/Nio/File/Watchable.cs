@@ -46,15 +46,24 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent$Kind<?>...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent$Kind%3C?%3E...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
+        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent$Kind<?>[],java.nio.file.WatchEvent$Modifier...) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent$Kind%3C?%3E[],java.nio.file.WatchEvent$Modifier...)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.WatchEvent.Modifier"/></param>
+        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
         {
             if (arg2.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1, arg2);

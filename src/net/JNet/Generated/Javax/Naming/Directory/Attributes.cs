@@ -33,7 +33,13 @@ namespace Javax.Naming.Directory
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Directory.Attributes"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Javax.Naming.Directory.Attributes t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Directory.Attributes"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.Directory.Attributes t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -48,43 +54,56 @@ namespace Javax.Naming.Directory
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#isCaseIgnored()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#isCaseIgnored()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCaseIgnored()
         {
             return IExecute<bool>("isCaseIgnored");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#size()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#size()"/>
         /// </summary>
+        
+        /// <returns><see langword="int"/></returns>
         public int Size()
         {
             return IExecute<int>("size");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#get(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#get(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Naming.Directory.Attribute"/></returns>
         public Javax.Naming.Directory.Attribute Get(string arg0)
         {
             return IExecute<Javax.Naming.Directory.Attribute>("get", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#put(java.lang.String,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#put(java.lang.String,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see cref="Javax.Naming.Directory.Attribute"/></returns>
         public Javax.Naming.Directory.Attribute Put(string arg0, object arg1)
         {
             return IExecute<Javax.Naming.Directory.Attribute>("put", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#put(javax.naming.directory.Attribute)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#put(javax.naming.directory.Attribute)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Directory.Attribute"/></param>
+        /// <returns><see cref="Javax.Naming.Directory.Attribute"/></returns>
         public Javax.Naming.Directory.Attribute Put(Javax.Naming.Directory.Attribute arg0)
         {
             return IExecute<Javax.Naming.Directory.Attribute>("put", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#remove(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#remove(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Naming.Directory.Attribute"/></returns>
         public Javax.Naming.Directory.Attribute Remove(string arg0)
         {
             return IExecute<Javax.Naming.Directory.Attribute>("remove", arg0);

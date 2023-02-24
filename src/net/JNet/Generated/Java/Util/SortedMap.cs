@@ -46,15 +46,19 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#firstKey()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#firstKey()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object FirstKey()
         {
             return IExecute("firstKey");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#lastKey()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#lastKey()"/>
         /// </summary>
+        
+        /// <returns><see langword="object"/></returns>
         public object LastKey()
         {
             return IExecute("lastKey");

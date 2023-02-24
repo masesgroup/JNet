@@ -54,8 +54,9 @@ namespace Javax.Swing.Plaf.Basic
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#<init>(javax.swing.plaf.basic.BasicTableHeaderUI)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#%3Cinit%3E(javax.swing.plaf.basic.BasicTableHeaderUI)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Plaf.Basic.BasicTableHeaderUI"/></param>
             public MouseInputHandler(Javax.Swing.Plaf.Basic.BasicTableHeaderUI arg0)
                 : base(arg0)
             {
@@ -64,6 +65,9 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTableHeaderUI.MouseInputHandler"/> to <see cref="Javax.Swing.Event.MouseInputListener"/>
+            /// </summary>
             public static implicit operator Javax.Swing.Event.MouseInputListener(Javax.Swing.Plaf.Basic.BasicTableHeaderUI.MouseInputHandler t) => t.Cast<Javax.Swing.Event.MouseInputListener>();
             
             #endregion
@@ -78,50 +82,57 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseClicked(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseClicked(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseClicked", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseDragged(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseDragged(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseDragged", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseEntered(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseEntered(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseEntered", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseExited(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseExited(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseExited", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseMoved(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseMoved(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseMoved", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mousePressed(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mousePressed(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mousePressed", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseReleased(java.awt.event.MouseEvent)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableHeaderUI.MouseInputHandler.html#mouseReleased(java.awt.event.MouseEvent)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
             public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
             {
                 IExecute("mouseReleased", arg0);

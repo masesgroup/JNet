@@ -33,37 +33,40 @@ namespace Java.Text
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Text.Collator"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.Collator t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#CANONICAL_DECOMPOSITION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#CANONICAL_DECOMPOSITION"/>
         /// </summary>
         public static int CANONICAL_DECOMPOSITION => Clazz.GetField<int>("CANONICAL_DECOMPOSITION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#FULL_DECOMPOSITION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#FULL_DECOMPOSITION"/>
         /// </summary>
         public static int FULL_DECOMPOSITION => Clazz.GetField<int>("FULL_DECOMPOSITION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#IDENTICAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#IDENTICAL"/>
         /// </summary>
         public static int IDENTICAL => Clazz.GetField<int>("IDENTICAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#NO_DECOMPOSITION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#NO_DECOMPOSITION"/>
         /// </summary>
         public static int NO_DECOMPOSITION => Clazz.GetField<int>("NO_DECOMPOSITION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#PRIMARY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#PRIMARY"/>
         /// </summary>
         public static int PRIMARY => Clazz.GetField<int>("PRIMARY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#SECONDARY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#SECONDARY"/>
         /// </summary>
         public static int SECONDARY => Clazz.GetField<int>("SECONDARY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#TERTIARY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#TERTIARY"/>
         /// </summary>
         public static int TERTIARY => Clazz.GetField<int>("TERTIARY");
         
@@ -71,22 +74,26 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getAvailableLocales() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getAvailableLocales()"/> 
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
             get { return SExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getInstance(java.util.Locale)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getInstance(java.util.Locale)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Text.Collator"/></returns>
         public static Java.Text.Collator GetInstance(Java.Util.Locale arg0)
         {
             return SExecute<Java.Text.Collator>("getInstance", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Text.Collator"/></returns>
         public static Java.Text.Collator GetInstance()
         {
             return SExecute<Java.Text.Collator>("getInstance");
@@ -96,43 +103,54 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getDecomposition() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#setDecomposition(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getDecomposition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#setDecomposition(int)"/>
         /// </summary>
         public int Decomposition
         {
             get { return IExecute<int>("getDecomposition"); } set { IExecute("setDecomposition", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getStrength() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#setStrength(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getStrength()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#setStrength(int)"/>
         /// </summary>
         public int Strength
         {
             get { return IExecute<int>("getStrength"); } set { IExecute("setStrength", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#compare(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#compare(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Compare(string arg0, string arg1)
         {
             return IExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getCollationKey(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getCollationKey(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Text.CollationKey"/></returns>
         public Java.Text.CollationKey GetCollationKey(string arg0)
         {
             return IExecute<Java.Text.CollationKey>("getCollationKey", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#equals(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#equals(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Equals(string arg0, string arg1)
         {
             return IExecute<bool>("equals", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#compare(java.lang.Object,java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#compare(java.lang.Object,java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int Compare(object arg0, object arg1)
         {
             return IExecute<int>("compare", arg0, arg1);

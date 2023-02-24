@@ -33,6 +33,9 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Ldap.ExtendedResponse"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.Ldap.ExtendedResponse t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -47,14 +50,14 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedResponse.html#getEncodedValue() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedResponse.html#getEncodedValue()"/> 
         /// </summary>
         public byte[] EncodedValue
         {
             get { return IExecuteArray<byte>("getEncodedValue"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedResponse.html#getID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedResponse.html#getID()"/> 
         /// </summary>
         public string ID
         {

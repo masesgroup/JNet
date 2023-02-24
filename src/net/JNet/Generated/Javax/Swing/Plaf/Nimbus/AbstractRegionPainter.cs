@@ -46,15 +46,23 @@ namespace Javax.Swing.Plaf.Nimbus
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/AbstractRegionPainter.html#paint(java.awt.Graphics2D,javax.swing.JComponent,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/AbstractRegionPainter.html#paint(java.awt.Graphics2D,javax.swing.JComponent,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics2D"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public void Paint(Java.Awt.Graphics2D arg0, Javax.Swing.JComponent arg1, int arg2, int arg3)
         {
             IExecute("paint", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/AbstractRegionPainter.html#paint(java.awt.Graphics2D,java.lang.Object,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/AbstractRegionPainter.html#paint(java.awt.Graphics2D,java.lang.Object,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics2D"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg3"><see langword="int"/></param>
         public void Paint(Java.Awt.Graphics2D arg0, object arg1, int arg2, int arg3)
         {
             IExecute("paint", arg0, arg1, arg2, arg3);

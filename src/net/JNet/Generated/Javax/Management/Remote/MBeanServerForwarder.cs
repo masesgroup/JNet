@@ -33,6 +33,9 @@ namespace Javax.Management.Remote
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Remote.MBeanServerForwarder"/> to <see cref="Javax.Management.MBeanServer"/>
+        /// </summary>
         public static implicit operator Javax.Management.MBeanServer(Javax.Management.Remote.MBeanServerForwarder t) => t.Cast<Javax.Management.MBeanServer>();
         
         #endregion
@@ -47,7 +50,7 @@ namespace Javax.Management.Remote
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/MBeanServerForwarder.html#getMBeanServer() https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/MBeanServerForwarder.html#setMBeanServer(javax.management.MBeanServer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/MBeanServerForwarder.html#getMBeanServer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/MBeanServerForwarder.html#setMBeanServer(javax.management.MBeanServer)"/>
         /// </summary>
         public Javax.Management.MBeanServer MBeanServer
         {

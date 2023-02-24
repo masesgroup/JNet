@@ -30,15 +30,20 @@ namespace Java.Awt.Im
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#<init>(boolean,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#%3Cinit%3E(boolean,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
         public InputMethodHighlight(bool arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#<init>(boolean,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#%3Cinit%3E(boolean,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public InputMethodHighlight(bool arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -52,27 +57,27 @@ namespace Java.Awt.Im
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#CONVERTED_TEXT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#CONVERTED_TEXT"/>
         /// </summary>
         public static int CONVERTED_TEXT => Clazz.GetField<int>("CONVERTED_TEXT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#RAW_TEXT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#RAW_TEXT"/>
         /// </summary>
         public static int RAW_TEXT => Clazz.GetField<int>("RAW_TEXT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#SELECTED_CONVERTED_TEXT_HIGHLIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#SELECTED_CONVERTED_TEXT_HIGHLIGHT"/>
         /// </summary>
         public static Java.Awt.Im.InputMethodHighlight SELECTED_CONVERTED_TEXT_HIGHLIGHT => Clazz.GetField<Java.Awt.Im.InputMethodHighlight>("SELECTED_CONVERTED_TEXT_HIGHLIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#SELECTED_RAW_TEXT_HIGHLIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#SELECTED_RAW_TEXT_HIGHLIGHT"/>
         /// </summary>
         public static Java.Awt.Im.InputMethodHighlight SELECTED_RAW_TEXT_HIGHLIGHT => Clazz.GetField<Java.Awt.Im.InputMethodHighlight>("SELECTED_RAW_TEXT_HIGHLIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#UNSELECTED_CONVERTED_TEXT_HIGHLIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#UNSELECTED_CONVERTED_TEXT_HIGHLIGHT"/>
         /// </summary>
         public static Java.Awt.Im.InputMethodHighlight UNSELECTED_CONVERTED_TEXT_HIGHLIGHT => Clazz.GetField<Java.Awt.Im.InputMethodHighlight>("UNSELECTED_CONVERTED_TEXT_HIGHLIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#UNSELECTED_RAW_TEXT_HIGHLIGHT
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#UNSELECTED_RAW_TEXT_HIGHLIGHT"/>
         /// </summary>
         public static Java.Awt.Im.InputMethodHighlight UNSELECTED_RAW_TEXT_HIGHLIGHT => Clazz.GetField<Java.Awt.Im.InputMethodHighlight>("UNSELECTED_RAW_TEXT_HIGHLIGHT");
         
@@ -84,22 +89,24 @@ namespace Java.Awt.Im
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#getState() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#getState()"/> 
         /// </summary>
         public int State
         {
             get { return IExecute<int>("getState"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#getVariation() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#getVariation()"/> 
         /// </summary>
         public int Variation
         {
             get { return IExecute<int>("getVariation"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#isSelected()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#isSelected()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSelected()
         {
             return IExecute<bool>("isSelected");

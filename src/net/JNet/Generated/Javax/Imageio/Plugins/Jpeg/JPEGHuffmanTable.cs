@@ -30,8 +30,10 @@ namespace Javax.Imageio.Plugins.Jpeg
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#<init>(short[],short[])
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#%3Cinit%3E(short[],short[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="short"/></param>
         public JPEGHuffmanTable(short[] arg0, short[] arg1)
             : base(arg0, arg1)
         {
@@ -45,19 +47,19 @@ namespace Javax.Imageio.Plugins.Jpeg
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdACChrominance
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdACChrominance"/>
         /// </summary>
         public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdACChrominance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("StdACChrominance");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdACLuminance
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdACLuminance"/>
         /// </summary>
         public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdACLuminance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("StdACLuminance");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdDCChrominance
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdDCChrominance"/>
         /// </summary>
         public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdDCChrominance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("StdDCChrominance");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdDCLuminance
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdDCLuminance"/>
         /// </summary>
         public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdDCLuminance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("StdDCLuminance");
         
@@ -69,14 +71,14 @@ namespace Javax.Imageio.Plugins.Jpeg
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#getLengths() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#getLengths()"/> 
         /// </summary>
         public short[] Lengths
         {
             get { return IExecuteArray<short>("getLengths"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#getValues() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#getValues()"/> 
         /// </summary>
         public short[] Values
         {

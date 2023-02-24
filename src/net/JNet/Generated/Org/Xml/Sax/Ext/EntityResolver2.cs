@@ -33,6 +33,9 @@ namespace Org.Xml.Sax.Ext
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.Xml.Sax.Ext.EntityResolver2"/> to <see cref="Org.Xml.Sax.EntityResolver"/>
+        /// </summary>
         public static implicit operator Org.Xml.Sax.EntityResolver(Org.Xml.Sax.Ext.EntityResolver2 t) => t.Cast<Org.Xml.Sax.EntityResolver>();
         
         #endregion
@@ -47,15 +50,27 @@ namespace Org.Xml.Sax.Ext
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/EntityResolver2.html#getExternalSubset(java.lang.String,java.lang.String) throws org.xml.sax.SAXException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/EntityResolver2.html#getExternalSubset(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Org.Xml.Sax.InputSource GetExternalSubset(string arg0, string arg1)
         {
             return IExecute<Org.Xml.Sax.InputSource>("getExternalSubset", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/EntityResolver2.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws org.xml.sax.SAXException,java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/EntityResolver2.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see langword="string"/></param>
+        /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        /// <exception cref="Java.Io.IOException"/>
         public Org.Xml.Sax.InputSource ResolveEntity(string arg0, string arg1, string arg2, string arg3)
         {
             return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1, arg2, arg3);

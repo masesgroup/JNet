@@ -33,6 +33,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.TextComponent"/> to <see cref="Javax.Accessibility.Accessible"/>
+        /// </summary>
         public static implicit operator Javax.Accessibility.Accessible(Java.Awt.TextComponent t) => t.Cast<Javax.Accessibility.Accessible>();
         
         #endregion
@@ -47,85 +50,92 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getCaretPosition() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setCaretPosition(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getCaretPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setCaretPosition(int)"/>
         /// </summary>
         public int CaretPosition
         {
             get { return IExecute<int>("getCaretPosition"); } set { IExecute("setCaretPosition", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getSelectedText() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getSelectedText()"/> 
         /// </summary>
         public string SelectedText
         {
             get { return IExecute<string>("getSelectedText"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getSelectionEnd() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setSelectionEnd(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getSelectionEnd()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setSelectionEnd(int)"/>
         /// </summary>
         public int SelectionEnd
         {
             get { return IExecute<int>("getSelectionEnd"); } set { IExecute("setSelectionEnd", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getSelectionStart() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setSelectionStart(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getSelectionStart()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setSelectionStart(int)"/>
         /// </summary>
         public int SelectionStart
         {
             get { return IExecute<int>("getSelectionStart"); } set { IExecute("setSelectionStart", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getText() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setText(java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setText(java.lang.String)"/>
         /// </summary>
         public string Text
         {
             get { return IExecute<string>("getText"); } set { IExecute("setText", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getTextListeners() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#getTextListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.TextListener[] TextListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.TextListener>("getTextListeners"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#isEditable()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#isEditable()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEditable()
         {
             return IExecute<bool>("isEditable");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#addTextListener(java.awt.event.TextListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#addTextListener(java.awt.event.TextListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextListener"/></param>
         public void AddTextListener(Java.Awt.EventNs.TextListener arg0)
         {
             IExecute("addTextListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#removeTextListener(java.awt.event.TextListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#removeTextListener(java.awt.event.TextListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextListener"/></param>
         public void RemoveTextListener(Java.Awt.EventNs.TextListener arg0)
         {
             IExecute("removeTextListener", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#select(int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#select(int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public void Select(int arg0, int arg1)
         {
             IExecute("select", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#selectAll()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#selectAll()"/>
         /// </summary>
         public void SelectAll()
         {
             IExecute("selectAll");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setEditable(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextComponent.html#setEditable(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public void SetEditable(bool arg0)
         {
             IExecute("setEditable", arg0);

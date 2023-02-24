@@ -38,19 +38,19 @@ namespace Java.Sql
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#REASON_UNKNOWN
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#REASON_UNKNOWN"/>
         /// </summary>
         public static Java.Sql.ClientInfoStatus REASON_UNKNOWN => Clazz.GetField<Java.Sql.ClientInfoStatus>("REASON_UNKNOWN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#REASON_UNKNOWN_PROPERTY
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#REASON_UNKNOWN_PROPERTY"/>
         /// </summary>
         public static Java.Sql.ClientInfoStatus REASON_UNKNOWN_PROPERTY => Clazz.GetField<Java.Sql.ClientInfoStatus>("REASON_UNKNOWN_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#REASON_VALUE_INVALID
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#REASON_VALUE_INVALID"/>
         /// </summary>
         public static Java.Sql.ClientInfoStatus REASON_VALUE_INVALID => Clazz.GetField<Java.Sql.ClientInfoStatus>("REASON_VALUE_INVALID");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#REASON_VALUE_TRUNCATED
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#REASON_VALUE_TRUNCATED"/>
         /// </summary>
         public static Java.Sql.ClientInfoStatus REASON_VALUE_TRUNCATED => Clazz.GetField<Java.Sql.ClientInfoStatus>("REASON_VALUE_TRUNCATED");
         
@@ -58,8 +58,10 @@ namespace Java.Sql
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#values()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html#values()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Sql.ClientInfoStatus"/></returns>
         public static Java.Sql.ClientInfoStatus[] Values()
         {
             return SExecuteArray<Java.Sql.ClientInfoStatus>("values");

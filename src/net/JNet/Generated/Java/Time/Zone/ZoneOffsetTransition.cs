@@ -33,6 +33,9 @@ namespace Java.Time.Zone
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Zone.ZoneOffsetTransition"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Zone.ZoneOffsetTransition t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -43,8 +46,12 @@ namespace Java.Time.Zone
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#of(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneOffset)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#of(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneOffset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
+        /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <param name="arg2"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransition"/></returns>
         public static Java.Time.Zone.ZoneOffsetTransition Of(Java.Time.LocalDateTime arg0, Java.Time.ZoneOffset arg1, Java.Time.ZoneOffset arg2)
         {
             return SExecute<Java.Time.Zone.ZoneOffsetTransition>("of", arg0, arg1, arg2);
@@ -54,85 +61,97 @@ namespace Java.Time.Zone
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getDateTimeAfter() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getDateTimeAfter()"/> 
         /// </summary>
         public Java.Time.LocalDateTime DateTimeAfter
         {
             get { return IExecute<Java.Time.LocalDateTime>("getDateTimeAfter"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getDateTimeBefore() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getDateTimeBefore()"/> 
         /// </summary>
         public Java.Time.LocalDateTime DateTimeBefore
         {
             get { return IExecute<Java.Time.LocalDateTime>("getDateTimeBefore"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getDuration() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getDuration()"/> 
         /// </summary>
         public Java.Time.Duration Duration
         {
             get { return IExecute<Java.Time.Duration>("getDuration"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getInstant() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getInstant()"/> 
         /// </summary>
         public Java.Time.Instant Instant
         {
             get { return IExecute<Java.Time.Instant>("getInstant"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getOffsetAfter() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getOffsetAfter()"/> 
         /// </summary>
         public Java.Time.ZoneOffset OffsetAfter
         {
             get { return IExecute<Java.Time.ZoneOffset>("getOffsetAfter"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getOffsetBefore() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#getOffsetBefore()"/> 
         /// </summary>
         public Java.Time.ZoneOffset OffsetBefore
         {
             get { return IExecute<Java.Time.ZoneOffset>("getOffsetBefore"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isGap()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isGap()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsGap()
         {
             return IExecute<bool>("isGap");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isOverlap()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isOverlap()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsOverlap()
         {
             return IExecute<bool>("isOverlap");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isValidOffset(java.time.ZoneOffset)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#isValidOffset(java.time.ZoneOffset)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsValidOffset(Java.Time.ZoneOffset arg0)
         {
             return IExecute<bool>("isValidOffset", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#compareTo(java.lang.Object)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#compareTo(java.lang.Object)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#compareTo(java.time.zone.ZoneOffsetTransition)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#compareTo(java.time.zone.ZoneOffsetTransition)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Zone.ZoneOffsetTransition"/></param>
+        /// <returns><see langword="int"/></returns>
         public int CompareTo(Java.Time.Zone.ZoneOffsetTransition arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#toEpochSecond()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransition.html#toEpochSecond()"/>
         /// </summary>
+        
+        /// <returns><see langword="long"/></returns>
         public long ToEpochSecond()
         {
             return IExecute<long>("toEpochSecond");

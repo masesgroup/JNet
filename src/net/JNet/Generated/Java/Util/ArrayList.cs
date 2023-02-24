@@ -30,8 +30,9 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public ArrayList(int arg0)
             : base(arg0)
         {
@@ -40,8 +41,17 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.ArrayList"/> to <see cref="Java.Util.RandomAccess"/>
+        /// </summary>
         public static implicit operator Java.Util.RandomAccess(Java.Util.ArrayList t) => t.Cast<Java.Util.RandomAccess>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.ArrayList"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.ArrayList t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.ArrayList"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.ArrayList t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -56,14 +66,15 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#ensureCapacity(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#ensureCapacity(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public void EnsureCapacity(int arg0)
         {
             IExecute("ensureCapacity", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#trimToSize()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#trimToSize()"/>
         /// </summary>
         public void TrimToSize()
         {

@@ -30,8 +30,14 @@ namespace Javax.Management.Timer
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerNotification.html#<init>(java.lang.String,java.lang.Object,long,long,java.lang.String,java.lang.Integer)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerNotification.html#%3Cinit%3E(java.lang.String,java.lang.Object,long,long,java.lang.String,java.lang.Integer)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg3"><see langword="long"/></param>
+        /// <param name="arg4"><see langword="string"/></param>
+        /// <param name="arg5"><see langword="int?"/></param>
         public TimerNotification(string arg0, object arg1, long arg2, long arg3, string arg4, int? arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -53,7 +59,7 @@ namespace Javax.Management.Timer
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerNotification.html#getNotificationID() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerNotification.html#getNotificationID()"/> 
         /// </summary>
         public int? NotificationID
         {

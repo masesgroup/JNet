@@ -30,36 +30,47 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#<init>(java.io.File,boolean) throws java.io.FileNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#%3Cinit%3E(java.io.File,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Java.Io.FileNotFoundException"/>
         public FileOutputStream(Java.Io.File arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#<init>(java.io.File) throws java.io.FileNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <exception cref="Java.Io.FileNotFoundException"/>
         public FileOutputStream(Java.Io.File arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#<init>(java.io.FileDescriptor)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#%3Cinit%3E(java.io.FileDescriptor)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public FileOutputStream(Java.Io.FileDescriptor arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#<init>(java.lang.String,boolean) throws java.io.FileNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="bool"/></param>
+        /// <exception cref="Java.Io.FileNotFoundException"/>
         public FileOutputStream(string arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#<init>(java.lang.String) throws java.io.FileNotFoundException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <exception cref="Java.Io.FileNotFoundException"/>
         public FileOutputStream(string arg0)
             : base(arg0)
         {
@@ -81,14 +92,14 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#getChannel() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#getChannel()"/> 
         /// </summary>
         public Java.Nio.Channels.FileChannel Channel
         {
             get { return IExecute<Java.Nio.Channels.FileChannel>("getChannel"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#getFD() throws java.io.IOException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#getFD()"/> 
         /// </summary>
         public Java.Io.FileDescriptor FD
         {

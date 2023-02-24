@@ -30,8 +30,10 @@ namespace Javax.Imageio.Spi
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#<init>(java.lang.String,java.lang.String)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
         public ImageTranscoderSpi(string arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -53,22 +55,24 @@ namespace Javax.Imageio.Spi
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#getReaderServiceProviderName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#getReaderServiceProviderName()"/> 
         /// </summary>
         public string ReaderServiceProviderName
         {
             get { return IExecute<string>("getReaderServiceProviderName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#getWriterServiceProviderName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#getWriterServiceProviderName()"/> 
         /// </summary>
         public string WriterServiceProviderName
         {
             get { return IExecute<string>("getWriterServiceProviderName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#createTranscoderInstance()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#createTranscoderInstance()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Imageio.ImageTranscoder"/></returns>
         public Javax.Imageio.ImageTranscoder CreateTranscoderInstance()
         {
             return IExecute<Javax.Imageio.ImageTranscoder>("createTranscoderInstance");

@@ -30,8 +30,10 @@ namespace Javax.Naming.Ldap
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationEvent.html#<init>(java.lang.Object,javax.naming.ldap.UnsolicitedNotification)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationEvent.html#%3Cinit%3E(java.lang.Object,javax.naming.ldap.UnsolicitedNotification)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Naming.Ldap.UnsolicitedNotification"/></param>
         public UnsolicitedNotificationEvent(object arg0, Javax.Naming.Ldap.UnsolicitedNotification arg1)
             : base(arg0, arg1)
         {
@@ -53,15 +55,16 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationEvent.html#getNotification() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationEvent.html#getNotification()"/> 
         /// </summary>
         public Javax.Naming.Ldap.UnsolicitedNotification Notification
         {
             get { return IExecute<Javax.Naming.Ldap.UnsolicitedNotification>("getNotification"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationEvent.html#dispatch(javax.naming.ldap.UnsolicitedNotificationListener)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationEvent.html#dispatch(javax.naming.ldap.UnsolicitedNotificationListener)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Ldap.UnsolicitedNotificationListener"/></param>
         public void Dispatch(Javax.Naming.Ldap.UnsolicitedNotificationListener arg0)
         {
             IExecute("dispatch", arg0);

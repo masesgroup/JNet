@@ -30,8 +30,9 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParsePosition.html#<init>(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParsePosition.html#%3Cinit%3E(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
         public ParsePosition(int arg0)
             : base(arg0)
         {
@@ -53,14 +54,14 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParsePosition.html#getErrorIndex() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParsePosition.html#setErrorIndex(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParsePosition.html#getErrorIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParsePosition.html#setErrorIndex(int)"/>
         /// </summary>
         public int ErrorIndex
         {
             get { return IExecute<int>("getErrorIndex"); } set { IExecute("setErrorIndex", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParsePosition.html#getIndex() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParsePosition.html#setIndex(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParsePosition.html#getIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParsePosition.html#setIndex(int)"/>
         /// </summary>
         public int Index
         {

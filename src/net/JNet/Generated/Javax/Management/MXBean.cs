@@ -33,6 +33,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.MXBean"/> to <see cref="Java.Lang.Annotation.Annotation"/>
+        /// </summary>
         public static implicit operator Java.Lang.Annotation.Annotation(Javax.Management.MXBean t) => t.Cast<Java.Lang.Annotation.Annotation>();
         
         #endregion
@@ -47,8 +50,10 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MXBean.html#value()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MXBean.html#value()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool Value()
         {
             return IExecute<bool>("value");

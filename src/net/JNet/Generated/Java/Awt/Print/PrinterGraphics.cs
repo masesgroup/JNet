@@ -46,7 +46,7 @@ namespace Java.Awt.Print
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterGraphics.html#getPrinterJob() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterGraphics.html#getPrinterJob()"/> 
         /// </summary>
         public Java.Awt.Print.PrinterJob PrinterJob
         {

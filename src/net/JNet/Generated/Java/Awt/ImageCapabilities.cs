@@ -30,8 +30,9 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#<init>(boolean)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#%3Cinit%3E(boolean)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="bool"/></param>
         public ImageCapabilities(bool arg0)
             : base(arg0)
         {
@@ -40,6 +41,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Awt.ImageCapabilities"/> to <see cref="Java.Lang.Cloneable"/>
+        /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageCapabilities t) => t.Cast<Java.Lang.Cloneable>();
         
         #endregion
@@ -54,15 +58,19 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#isAccelerated()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#isAccelerated()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAccelerated()
         {
             return IExecute<bool>("isAccelerated");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#isTrueVolatile()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#isTrueVolatile()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsTrueVolatile()
         {
             return IExecute<bool>("isTrueVolatile");

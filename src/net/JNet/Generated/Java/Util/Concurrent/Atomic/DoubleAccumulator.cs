@@ -30,8 +30,10 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#<init>(java.util.function.DoubleBinaryOperator,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#%3Cinit%3E(java.util.function.DoubleBinaryOperator,double)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
         public DoubleAccumulator(Java.Util.Function.DoubleBinaryOperator arg0, double arg1)
             : base(arg0, arg1)
         {
@@ -40,6 +42,9 @@ namespace Java.Util.Concurrent.Atomic
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.Atomic.DoubleAccumulator"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Atomic.DoubleAccumulator t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -54,28 +59,31 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#getThenReset() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#getThenReset()"/> 
         /// </summary>
         public double ThenReset
         {
             get { return IExecute<double>("getThenReset"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#get()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#get()"/>
         /// </summary>
+        
+        /// <returns><see langword="double"/></returns>
         public double Get()
         {
             return IExecute<double>("get");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#accumulate(double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#accumulate(double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
         public void Accumulate(double arg0)
         {
             IExecute("accumulate", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#reset()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#reset()"/>
         /// </summary>
         public void Reset()
         {

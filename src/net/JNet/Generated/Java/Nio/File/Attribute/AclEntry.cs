@@ -42,15 +42,19 @@ namespace Java.Nio.File.Attribute
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#newBuilder()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#newBuilder()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
         public static Java.Nio.File.Attribute.AclEntry.Builder NewBuilder()
         {
             return SExecute<Java.Nio.File.Attribute.AclEntry.Builder>("newBuilder");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#newBuilder(java.nio.file.attribute.AclEntry)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#newBuilder(java.nio.file.attribute.AclEntry)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.AclEntry"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
         public static Java.Nio.File.Attribute.AclEntry.Builder NewBuilder(Java.Nio.File.Attribute.AclEntry arg0)
         {
             return SExecute<Java.Nio.File.Attribute.AclEntry.Builder>("newBuilder", arg0);
@@ -60,8 +64,10 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#principal()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#principal()"/>
         /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.Attribute.UserPrincipal"/></returns>
         public Java.Nio.File.Attribute.UserPrincipal Principal()
         {
             return IExecute<Java.Nio.File.Attribute.UserPrincipal>("principal");
@@ -91,29 +97,37 @@ namespace Java.Nio.File.Attribute
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#build()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#build()"/>
             /// </summary>
+            
+            /// <returns><see cref="Java.Nio.File.Attribute.AclEntry"/></returns>
             public Java.Nio.File.Attribute.AclEntry Build()
             {
                 return IExecute<Java.Nio.File.Attribute.AclEntry>("build");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setFlags(java.nio.file.attribute.AclEntryFlag...)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setFlags(java.nio.file.attribute.AclEntryFlag...)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Nio.File.Attribute.AclEntryFlag"/></param>
+            /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
             public Java.Nio.File.Attribute.AclEntry.Builder SetFlags(params Java.Nio.File.Attribute.AclEntryFlag[] arg0)
             {
                 if (arg0.Length == 0) return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setFlags"); else return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setFlags", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setPermissions(java.nio.file.attribute.AclEntryPermission...)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setPermissions(java.nio.file.attribute.AclEntryPermission...)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Nio.File.Attribute.AclEntryPermission"/></param>
+            /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
             public Java.Nio.File.Attribute.AclEntry.Builder SetPermissions(params Java.Nio.File.Attribute.AclEntryPermission[] arg0)
             {
                 if (arg0.Length == 0) return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setPermissions"); else return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setPermissions", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setPrincipal(java.nio.file.attribute.UserPrincipal)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setPrincipal(java.nio.file.attribute.UserPrincipal)"/>
             /// </summary>
+            /// <param name="arg0"><see cref="Java.Nio.File.Attribute.UserPrincipal"/></param>
+            /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
             public Java.Nio.File.Attribute.AclEntry.Builder SetPrincipal(Java.Nio.File.Attribute.UserPrincipal arg0)
             {
                 return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setPrincipal", arg0);

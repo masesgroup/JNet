@@ -46,22 +46,24 @@ namespace Java.Beans.Beancontext
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html#getBeanContext() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html#getBeanContext()"/> 
         /// </summary>
         public Java.Beans.Beancontext.BeanContext BeanContext
         {
             get { return IExecute<Java.Beans.Beancontext.BeanContext>("getBeanContext"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html#getPropagatedFrom() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html#setPropagatedFrom(java.beans.beancontext.BeanContext)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html#getPropagatedFrom()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html#setPropagatedFrom(java.beans.beancontext.BeanContext)"/>
         /// </summary>
         public Java.Beans.Beancontext.BeanContext PropagatedFrom
         {
             get { return IExecute<Java.Beans.Beancontext.BeanContext>("getPropagatedFrom"); } set { IExecute("setPropagatedFrom", value); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html#isPropagated()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextEvent.html#isPropagated()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsPropagated()
         {
             return IExecute<bool>("isPropagated");

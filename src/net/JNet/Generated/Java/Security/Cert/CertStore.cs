@@ -42,22 +42,34 @@ namespace Java.Security.Cert
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getDefaultType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getDefaultType()"/> 
         /// </summary>
         public static string DefaultType
         {
             get { return SExecute<string>("getDefaultType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.lang.String) throws java.security.InvalidAlgorithmParameterException,java.security.NoSuchAlgorithmException,java.security.NoSuchProviderException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertStore"/></returns>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.Cert.CertStore GetInstance(string arg0, Java.Security.Cert.CertStoreParameters arg1, string arg2)
         {
             return SExecute<Java.Security.Cert.CertStore>("getInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters) throws java.security.InvalidAlgorithmParameterException,java.security.NoSuchAlgorithmException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertStore"/></returns>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Cert.CertStore GetInstance(string arg0, Java.Security.Cert.CertStoreParameters arg1)
         {
             return SExecute<Java.Security.Cert.CertStore>("getInstance", arg0, arg1);
@@ -67,14 +79,14 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getCertStoreParameters() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getCertStoreParameters()"/> 
         /// </summary>
         public Java.Security.Cert.CertStoreParameters CertStoreParameters
         {
             get { return IExecute<Java.Security.Cert.CertStoreParameters>("getCertStoreParameters"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getType()"/> 
         /// </summary>
         public string Type
         {

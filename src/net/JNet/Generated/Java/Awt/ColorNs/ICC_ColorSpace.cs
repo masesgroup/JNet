@@ -30,8 +30,9 @@ namespace Java.Awt.ColorNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ColorSpace.html#<init>(java.awt.color.ICC_Profile)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ColorSpace.html#%3Cinit%3E(java.awt.color.ICC_Profile)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ColorNs.ICC_Profile"/></param>
         public ICC_ColorSpace(Java.Awt.ColorNs.ICC_Profile arg0)
             : base(arg0)
         {
@@ -53,7 +54,7 @@ namespace Java.Awt.ColorNs
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ColorSpace.html#getProfile() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ColorSpace.html#getProfile()"/> 
         /// </summary>
         public Java.Awt.ColorNs.ICC_Profile Profile
         {

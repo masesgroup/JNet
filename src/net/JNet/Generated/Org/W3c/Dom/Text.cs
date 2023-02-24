@@ -33,6 +33,9 @@ namespace Org.W3c.Dom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.Text"/> to <see cref="Org.W3c.Dom.CharacterData"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.CharacterData(Org.W3c.Dom.Text t) => t.Cast<Org.W3c.Dom.CharacterData>();
         
         #endregion
@@ -47,29 +50,37 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#getWholeText() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#getWholeText()"/> 
         /// </summary>
         public string WholeText
         {
             get { return IExecute<string>("getWholeText"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#isElementContentWhitespace()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#isElementContentWhitespace()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsElementContentWhitespace()
         {
             return IExecute<bool>("isElementContentWhitespace");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#replaceWholeText(java.lang.String) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#replaceWholeText(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Text"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Text ReplaceWholeText(string arg0)
         {
             return IExecute<Org.W3c.Dom.Text>("replaceWholeText", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#splitText(int) throws org.w3c.dom.DOMException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#splitText(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Text"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Text SplitText(int arg0)
         {
             return IExecute<Org.W3c.Dom.Text>("splitText", arg0);

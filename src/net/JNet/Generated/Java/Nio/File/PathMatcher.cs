@@ -46,8 +46,10 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/PathMatcher.html#matches(java.nio.file.Path)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/PathMatcher.html#matches(java.nio.file.Path)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Matches(Java.Nio.File.Path arg0)
         {
             return IExecute<bool>("matches", arg0);

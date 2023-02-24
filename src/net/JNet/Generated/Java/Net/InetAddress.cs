@@ -33,6 +33,9 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Net.InetAddress"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Net.InetAddress t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
@@ -43,43 +46,56 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getLocalHost() throws java.net.UnknownHostException 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getLocalHost()"/> 
         /// </summary>
         public static Java.Net.InetAddress LocalHost
         {
             get { return SExecute<Java.Net.InetAddress>("getLocalHost"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getLoopbackAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getLoopbackAddress()"/> 
         /// </summary>
         public static Java.Net.InetAddress LoopbackAddress
         {
             get { return SExecute<Java.Net.InetAddress>("getLoopbackAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByAddress(byte[]) throws java.net.UnknownHostException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByAddress(byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.InetAddress GetByAddress(byte[] arg0)
         {
             return SExecute<Java.Net.InetAddress>("getByAddress", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByAddress(java.lang.String,byte[]) throws java.net.UnknownHostException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByAddress(java.lang.String,byte[])"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.InetAddress GetByAddress(string arg0, byte[] arg1)
         {
             return SExecute<Java.Net.InetAddress>("getByAddress", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByName(java.lang.String) throws java.net.UnknownHostException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getByName(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.InetAddress GetByName(string arg0)
         {
             return SExecute<Java.Net.InetAddress>("getByName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getAllByName(java.lang.String) throws java.net.UnknownHostException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getAllByName(java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="string"/></param>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.InetAddress[] GetAllByName(string arg0)
         {
             return SExecuteArray<Java.Net.InetAddress>("getAllByName", arg0);
@@ -89,113 +105,141 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getAddress()"/> 
         /// </summary>
         public byte[] Address
         {
             get { return IExecuteArray<byte>("getAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getCanonicalHostName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getCanonicalHostName()"/> 
         /// </summary>
         public string CanonicalHostName
         {
             get { return IExecute<string>("getCanonicalHostName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getHostAddress() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getHostAddress()"/> 
         /// </summary>
         public string HostAddress
         {
             get { return IExecute<string>("getHostAddress"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getHostName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#getHostName()"/> 
         /// </summary>
         public string HostName
         {
             get { return IExecute<string>("getHostName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isAnyLocalAddress()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isAnyLocalAddress()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAnyLocalAddress()
         {
             return IExecute<bool>("isAnyLocalAddress");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isLinkLocalAddress()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isLinkLocalAddress()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsLinkLocalAddress()
         {
             return IExecute<bool>("isLinkLocalAddress");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isLoopbackAddress()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isLoopbackAddress()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsLoopbackAddress()
         {
             return IExecute<bool>("isLoopbackAddress");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCGlobal()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCGlobal()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMCGlobal()
         {
             return IExecute<bool>("isMCGlobal");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCLinkLocal()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCLinkLocal()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMCLinkLocal()
         {
             return IExecute<bool>("isMCLinkLocal");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCNodeLocal()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCNodeLocal()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMCNodeLocal()
         {
             return IExecute<bool>("isMCNodeLocal");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCOrgLocal()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCOrgLocal()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMCOrgLocal()
         {
             return IExecute<bool>("isMCOrgLocal");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCSiteLocal()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMCSiteLocal()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMCSiteLocal()
         {
             return IExecute<bool>("isMCSiteLocal");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMulticastAddress()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isMulticastAddress()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsMulticastAddress()
         {
             return IExecute<bool>("isMulticastAddress");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isReachable(int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isReachable(int)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public bool IsReachable(int arg0)
         {
             return IExecute<bool>("isReachable", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isReachable(java.net.NetworkInterface,int,int) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isReachable(java.net.NetworkInterface,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.NetworkInterface"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public bool IsReachable(Java.Net.NetworkInterface arg0, int arg1, int arg2)
         {
             return IExecute<bool>("isReachable", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isSiteLocalAddress()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html#isSiteLocalAddress()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsSiteLocalAddress()
         {
             return IExecute<bool>("isSiteLocalAddress");

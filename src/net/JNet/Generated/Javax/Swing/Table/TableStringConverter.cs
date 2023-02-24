@@ -46,8 +46,12 @@ namespace Javax.Swing.Table
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableStringConverter.html#toString(javax.swing.table.TableModel,int,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableStringConverter.html#toString(javax.swing.table.TableModel,int,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see langword="int"/></param>
+        /// <returns><see langword="string"/></returns>
         public string ToString(Javax.Swing.Table.TableModel arg0, int arg1, int arg2)
         {
             return IExecute<string>("toString", arg0, arg1, arg2);

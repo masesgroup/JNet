@@ -33,6 +33,9 @@ namespace Javax.Xml.Stream.Events
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Stream.Events.XMLEvent"/> to <see cref="Javax.Xml.Stream.XMLStreamConstants"/>
+        /// </summary>
         public static implicit operator Javax.Xml.Stream.XMLStreamConstants(Javax.Xml.Stream.Events.XMLEvent t) => t.Cast<Javax.Xml.Stream.XMLStreamConstants>();
         
         #endregion
@@ -47,113 +50,139 @@ namespace Javax.Xml.Stream.Events
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#getEventType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#getEventType()"/> 
         /// </summary>
         public int EventType
         {
             get { return IExecute<int>("getEventType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#getLocation() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#getLocation()"/> 
         /// </summary>
         public Javax.Xml.Stream.Location Location
         {
             get { return IExecute<Javax.Xml.Stream.Location>("getLocation"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#getSchemaType() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#getSchemaType()"/> 
         /// </summary>
         public Javax.Xml.Namespace.QName SchemaType
         {
             get { return IExecute<Javax.Xml.Namespace.QName>("getSchemaType"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isAttribute()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isAttribute()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsAttribute()
         {
             return IExecute<bool>("isAttribute");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isCharacters()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isCharacters()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsCharacters()
         {
             return IExecute<bool>("isCharacters");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isEndDocument()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isEndDocument()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEndDocument()
         {
             return IExecute<bool>("isEndDocument");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isEndElement()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isEndElement()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEndElement()
         {
             return IExecute<bool>("isEndElement");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isEntityReference()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isEntityReference()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsEntityReference()
         {
             return IExecute<bool>("isEntityReference");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isNamespace()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isNamespace()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsNamespace()
         {
             return IExecute<bool>("isNamespace");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isProcessingInstruction()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isProcessingInstruction()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsProcessingInstruction()
         {
             return IExecute<bool>("isProcessingInstruction");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isStartDocument()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isStartDocument()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsStartDocument()
         {
             return IExecute<bool>("isStartDocument");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isStartElement()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#isStartElement()"/>
         /// </summary>
+        
+        /// <returns><see langword="bool"/></returns>
         public bool IsStartElement()
         {
             return IExecute<bool>("isStartElement");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#asCharacters()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#asCharacters()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Stream.Events.Characters"/></returns>
         public Javax.Xml.Stream.Events.Characters AsCharacters()
         {
             return IExecute<Javax.Xml.Stream.Events.Characters>("asCharacters");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#asEndElement()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#asEndElement()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Stream.Events.EndElement"/></returns>
         public Javax.Xml.Stream.Events.EndElement AsEndElement()
         {
             return IExecute<Javax.Xml.Stream.Events.EndElement>("asEndElement");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#asStartElement()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#asStartElement()"/>
         /// </summary>
+        
+        /// <returns><see cref="Javax.Xml.Stream.Events.StartElement"/></returns>
         public Javax.Xml.Stream.Events.StartElement AsStartElement()
         {
             return IExecute<Javax.Xml.Stream.Events.StartElement>("asStartElement");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#writeAsEncodedUnicode(java.io.Writer) throws javax.xml.stream.XMLStreamException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/XMLEvent.html#writeAsEncodedUnicode(java.io.Writer)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void WriteAsEncodedUnicode(Java.Io.Writer arg0)
         {
             IExecute("writeAsEncodedUnicode", arg0);

@@ -30,8 +30,11 @@ namespace Javax.Accessibility
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAttributeSequence.html#<init>(int,int,javax.swing.text.AttributeSet)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAttributeSequence.html#%3Cinit%3E(int,int,javax.swing.text.AttributeSet)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         public AccessibleAttributeSequence(int arg0, int arg1, Javax.Swing.Text.AttributeSet arg2)
             : base(arg0, arg1, arg2)
         {
@@ -45,15 +48,15 @@ namespace Javax.Accessibility
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAttributeSequence.html#endIndex
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAttributeSequence.html#endIndex"/>
         /// </summary>
         public int endIndex => Instance.GetField<int>("endIndex");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAttributeSequence.html#startIndex
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAttributeSequence.html#startIndex"/>
         /// </summary>
         public int startIndex => Instance.GetField<int>("startIndex");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAttributeSequence.html#attributes
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAttributeSequence.html#attributes"/>
         /// </summary>
         public Javax.Swing.Text.AttributeSet attributes => Instance.GetField<Javax.Swing.Text.AttributeSet>("attributes");
         

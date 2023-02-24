@@ -33,8 +33,17 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Tools.JavaFileManager"/> to <see cref="Java.Io.Closeable"/>
+        /// </summary>
         public static implicit operator Java.Io.Closeable(Javax.Tools.JavaFileManager t) => t.Cast<Java.Io.Closeable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Tools.JavaFileManager"/> to <see cref="Java.Io.Flushable"/>
+        /// </summary>
         public static implicit operator Java.Io.Flushable(Javax.Tools.JavaFileManager t) => t.Cast<Java.Io.Flushable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Tools.JavaFileManager"/> to <see cref="Javax.Tools.OptionChecker"/>
+        /// </summary>
         public static implicit operator Javax.Tools.OptionChecker(Javax.Tools.JavaFileManager t) => t.Cast<Javax.Tools.OptionChecker>();
         
         #endregion
@@ -49,85 +58,125 @@ namespace Javax.Tools
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#hasLocation(javax.tools.JavaFileManager$Location)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#hasLocation(javax.tools.JavaFileManager$Location)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool HasLocation(Javax.Tools.JavaFileManager.Location arg0)
         {
             return IExecute<bool>("hasLocation", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#isSameFile(javax.tools.FileObject,javax.tools.FileObject)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#isSameFile(javax.tools.FileObject,javax.tools.FileObject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.FileObject"/></param>
+        /// <param name="arg1"><see cref="Javax.Tools.FileObject"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool IsSameFile(Javax.Tools.FileObject arg0, Javax.Tools.FileObject arg1)
         {
             return IExecute<bool>("isSameFile", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getClassLoader(javax.tools.JavaFileManager$Location)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getClassLoader(javax.tools.JavaFileManager$Location)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
         public Java.Lang.ClassLoader GetClassLoader(Javax.Tools.JavaFileManager.Location arg0)
         {
             return IExecute<Java.Lang.ClassLoader>("getClassLoader", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferBinaryName(javax.tools.JavaFileManager$Location,javax.tools.JavaFileObject)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferBinaryName(javax.tools.JavaFileManager$Location,javax.tools.JavaFileObject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <param name="arg1"><see cref="Javax.Tools.JavaFileObject"/></param>
+        /// <returns><see langword="string"/></returns>
         public string InferBinaryName(Javax.Tools.JavaFileManager.Location arg0, Javax.Tools.JavaFileObject arg1)
         {
             return IExecute<string>("inferBinaryName", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForInput(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForInput(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Tools.FileObject"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.FileObject GetFileForInput(Javax.Tools.JavaFileManager.Location arg0, string arg1, string arg2)
         {
             return IExecute<Javax.Tools.FileObject>("getFileForInput", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForOutput(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String,javax.tools.FileObject) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForOutput(javax.tools.JavaFileManager$Location,java.lang.String,java.lang.String,javax.tools.FileObject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg3"><see cref="Javax.Tools.FileObject"/></param>
+        /// <returns><see cref="Javax.Tools.FileObject"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.FileObject GetFileForOutput(Javax.Tools.JavaFileManager.Location arg0, string arg1, string arg2, Javax.Tools.FileObject arg3)
         {
             return IExecute<Javax.Tools.FileObject>("getFileForOutput", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#close() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#close()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
             IExecute("close");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#flush() throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#flush()"/>
         /// </summary>
+        
+        /// <exception cref="Java.Io.IOException"/>
         public void Flush()
         {
             IExecute("flush");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#contains(javax.tools.JavaFileManager$Location,javax.tools.FileObject) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#contains(javax.tools.JavaFileManager$Location,javax.tools.FileObject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <param name="arg1"><see cref="Javax.Tools.FileObject"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public bool Contains(Javax.Tools.JavaFileManager.Location arg0, Javax.Tools.FileObject arg1)
         {
             return IExecute<bool>("contains", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferModuleName(javax.tools.JavaFileManager$Location) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferModuleName(javax.tools.JavaFileManager$Location)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public string InferModuleName(Javax.Tools.JavaFileManager.Location arg0)
         {
             return IExecute<string>("inferModuleName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager$Location,java.lang.String) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager$Location,java.lang.String)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <param name="arg1"><see langword="string"/></param>
+        /// <returns><see cref="Javax.Tools.JavaFileManager.Location"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.JavaFileManager.Location GetLocationForModule(Javax.Tools.JavaFileManager.Location arg0, string arg1)
         {
             return IExecute<Javax.Tools.JavaFileManager.Location>("getLocationForModule", arg0, arg1);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager$Location,javax.tools.JavaFileObject) throws java.io.IOException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager$Location,javax.tools.JavaFileObject)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <param name="arg1"><see cref="Javax.Tools.JavaFileObject"/></param>
+        /// <returns><see cref="Javax.Tools.JavaFileManager.Location"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
         public Javax.Tools.JavaFileManager.Location GetLocationForModule(Javax.Tools.JavaFileManager.Location arg0, Javax.Tools.JavaFileObject arg1)
         {
             return IExecute<Javax.Tools.JavaFileManager.Location>("getLocationForModule", arg0, arg1);
@@ -157,22 +206,26 @@ namespace Javax.Tools
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#getName() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#getName()"/> 
             /// </summary>
             public string Name
             {
                 get { return IExecute<string>("getName"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#isOutputLocation()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#isOutputLocation()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool IsOutputLocation()
             {
                 return IExecute<bool>("isOutputLocation");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#isModuleOrientedLocation()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#isModuleOrientedLocation()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool IsModuleOrientedLocation()
             {
                 return IExecute<bool>("isModuleOrientedLocation");

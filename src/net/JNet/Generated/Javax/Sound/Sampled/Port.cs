@@ -33,6 +33,9 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Sound.Sampled.Port"/> to <see cref="Javax.Sound.Sampled.Line"/>
+        /// </summary>
         public static implicit operator Javax.Sound.Sampled.Line(Javax.Sound.Sampled.Port t) => t.Cast<Javax.Sound.Sampled.Line>();
         
         #endregion
@@ -63,27 +66,27 @@ namespace Javax.Sound.Sampled
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#COMPACT_DISC
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#COMPACT_DISC"/>
             /// </summary>
             public static Javax.Sound.Sampled.Port.Info COMPACT_DISC => Clazz.GetField<Javax.Sound.Sampled.Port.Info>("COMPACT_DISC");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#HEADPHONE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#HEADPHONE"/>
             /// </summary>
             public static Javax.Sound.Sampled.Port.Info HEADPHONE => Clazz.GetField<Javax.Sound.Sampled.Port.Info>("HEADPHONE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#LINE_IN
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#LINE_IN"/>
             /// </summary>
             public static Javax.Sound.Sampled.Port.Info LINE_IN => Clazz.GetField<Javax.Sound.Sampled.Port.Info>("LINE_IN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#LINE_OUT
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#LINE_OUT"/>
             /// </summary>
             public static Javax.Sound.Sampled.Port.Info LINE_OUT => Clazz.GetField<Javax.Sound.Sampled.Port.Info>("LINE_OUT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#MICROPHONE
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#MICROPHONE"/>
             /// </summary>
             public static Javax.Sound.Sampled.Port.Info MICROPHONE => Clazz.GetField<Javax.Sound.Sampled.Port.Info>("MICROPHONE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#SPEAKER
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#SPEAKER"/>
             /// </summary>
             public static Javax.Sound.Sampled.Port.Info SPEAKER => Clazz.GetField<Javax.Sound.Sampled.Port.Info>("SPEAKER");
             
@@ -95,15 +98,17 @@ namespace Javax.Sound.Sampled
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#getName() 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#getName()"/> 
             /// </summary>
             public string Name
             {
                 get { return IExecute<string>("getName"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#isSource()
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#isSource()"/>
             /// </summary>
+            
+            /// <returns><see langword="bool"/></returns>
             public bool IsSource()
             {
                 return IExecute<bool>("isSource");

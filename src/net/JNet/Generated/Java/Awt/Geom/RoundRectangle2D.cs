@@ -46,29 +46,36 @@ namespace Java.Awt.Geom
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.html#getArcHeight() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.html#getArcHeight()"/> 
         /// </summary>
         public double ArcHeight
         {
             get { return IExecute<double>("getArcHeight"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.html#getArcWidth() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.html#getArcWidth()"/> 
         /// </summary>
         public double ArcWidth
         {
             get { return IExecute<double>("getArcWidth"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.html#setRoundRect(double,double,double,double,double,double)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.html#setRoundRect(double,double,double,double,double,double)"/>
         /// </summary>
+        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg4"><see langword="double"/></param>
+        /// <param name="arg5"><see langword="double"/></param>
         public void SetRoundRect(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
             IExecute("setRoundRect", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.html#setRoundRect(java.awt.geom.RoundRectangle2D)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.html#setRoundRect(java.awt.geom.RoundRectangle2D)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Geom.RoundRectangle2D"/></param>
         public void SetRoundRect(Java.Awt.Geom.RoundRectangle2D arg0)
         {
             IExecute("setRoundRect", arg0);
@@ -82,8 +89,14 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#<init>(double,double,double,double,double,double)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#%3Cinit%3E(double,double,double,double,double,double)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="double"/></param>
+            /// <param name="arg1"><see langword="double"/></param>
+            /// <param name="arg2"><see langword="double"/></param>
+            /// <param name="arg3"><see langword="double"/></param>
+            /// <param name="arg4"><see langword="double"/></param>
+            /// <param name="arg5"><see langword="double"/></param>
             public Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
@@ -92,33 +105,36 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Awt.Geom.RoundRectangle2D.Double"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.RoundRectangle2D.Double t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#archeight
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#archeight"/>
             /// </summary>
             public double archeight => Instance.GetField<double>("archeight");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#arcwidth
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#arcwidth"/>
             /// </summary>
             public double arcwidth => Instance.GetField<double>("arcwidth");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#height
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#height"/>
             /// </summary>
             public double height => Instance.GetField<double>("height");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#width
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#width"/>
             /// </summary>
             public double width => Instance.GetField<double>("width");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#x
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#x"/>
             /// </summary>
             public double x => Instance.GetField<double>("x");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#y
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Double.html#y"/>
             /// </summary>
             public double y => Instance.GetField<double>("y");
             
@@ -141,8 +157,14 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#<init>(float,float,float,float,float,float)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#%3Cinit%3E(float,float,float,float,float,float)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="float"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg2"><see langword="float"/></param>
+            /// <param name="arg3"><see langword="float"/></param>
+            /// <param name="arg4"><see langword="float"/></param>
+            /// <param name="arg5"><see langword="float"/></param>
             public Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
@@ -151,33 +173,36 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Awt.Geom.RoundRectangle2D.Float"/> to <see cref="Java.Io.Serializable"/>
+            /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Awt.Geom.RoundRectangle2D.Float t) => t.Cast<Java.Io.Serializable>();
             
             #endregion
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#archeight
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#archeight"/>
             /// </summary>
             public float archeight => Instance.GetField<float>("archeight");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#arcwidth
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#arcwidth"/>
             /// </summary>
             public float arcwidth => Instance.GetField<float>("arcwidth");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#height
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#height"/>
             /// </summary>
             public float height => Instance.GetField<float>("height");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#width
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#width"/>
             /// </summary>
             public float width => Instance.GetField<float>("width");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#x
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#x"/>
             /// </summary>
             public float x => Instance.GetField<float>("x");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#y
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#y"/>
             /// </summary>
             public float y => Instance.GetField<float>("y");
             
@@ -189,8 +214,14 @@ namespace Java.Awt.Geom
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#setRoundRect(float,float,float,float,float,float)
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.Float.html#setRoundRect(float,float,float,float,float,float)"/>
             /// </summary>
+            /// <param name="arg0"><see langword="float"/></param>
+            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg2"><see langword="float"/></param>
+            /// <param name="arg3"><see langword="float"/></param>
+            /// <param name="arg4"><see langword="float"/></param>
+            /// <param name="arg5"><see langword="float"/></param>
             public void SetRoundRect(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
             {
                 IExecute("setRoundRect", arg0, arg1, arg2, arg3, arg4, arg5);

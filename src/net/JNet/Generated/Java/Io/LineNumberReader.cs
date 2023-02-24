@@ -30,15 +30,18 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/LineNumberReader.html#<init>(java.io.Reader,int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/LineNumberReader.html#%3Cinit%3E(java.io.Reader,int)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg1"><see langword="int"/></param>
         public LineNumberReader(Java.Io.Reader arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/LineNumberReader.html#<init>(java.io.Reader)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/LineNumberReader.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public LineNumberReader(Java.Io.Reader arg0)
             : base(arg0)
         {
@@ -60,7 +63,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/LineNumberReader.html#getLineNumber() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/LineNumberReader.html#setLineNumber(int)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/LineNumberReader.html#getLineNumber()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/LineNumberReader.html#setLineNumber(int)"/>
         /// </summary>
         public int LineNumber
         {

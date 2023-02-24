@@ -46,8 +46,10 @@ namespace Java.Rmi.Server
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIFailureHandler.html#failure(java.lang.Exception)
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIFailureHandler.html#failure(java.lang.Exception)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Exception"/></param>
+        /// <returns><see langword="bool"/></returns>
         public bool Failure(Java.Lang.Exception arg0)
         {
             return IExecute<bool>("failure", arg0);

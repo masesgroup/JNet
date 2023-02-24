@@ -46,29 +46,33 @@ namespace Javax.Management.Relation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#disableAllObjectNames()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#disableAllObjectNames()"/>
         /// </summary>
         public void DisableAllObjectNames()
         {
             IExecute("disableAllObjectNames");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#disableObjectName(javax.management.ObjectName) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#disableObjectName(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void DisableObjectName(Javax.Management.ObjectName arg0)
         {
             IExecute("disableObjectName", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#enableAllObjectNames()
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#enableAllObjectNames()"/>
         /// </summary>
         public void EnableAllObjectNames()
         {
             IExecute("enableAllObjectNames");
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#enableObjectName(javax.management.ObjectName) throws java.lang.IllegalArgumentException
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html#enableObjectName(javax.management.ObjectName)"/>
         /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void EnableObjectName(Javax.Management.ObjectName arg0)
         {
             IExecute("enableObjectName", arg0);

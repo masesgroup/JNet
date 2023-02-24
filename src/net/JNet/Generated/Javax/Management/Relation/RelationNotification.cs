@@ -38,27 +38,27 @@ namespace Javax.Management.Relation
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_CREATION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_CREATION"/>
         /// </summary>
         public static string RELATION_BASIC_CREATION => Clazz.GetField<string>("RELATION_BASIC_CREATION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_REMOVAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_REMOVAL"/>
         /// </summary>
         public static string RELATION_BASIC_REMOVAL => Clazz.GetField<string>("RELATION_BASIC_REMOVAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_UPDATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_UPDATE"/>
         /// </summary>
         public static string RELATION_BASIC_UPDATE => Clazz.GetField<string>("RELATION_BASIC_UPDATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_CREATION
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_CREATION"/>
         /// </summary>
         public static string RELATION_MBEAN_CREATION => Clazz.GetField<string>("RELATION_MBEAN_CREATION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_REMOVAL
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_REMOVAL"/>
         /// </summary>
         public static string RELATION_MBEAN_REMOVAL => Clazz.GetField<string>("RELATION_MBEAN_REMOVAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_UPDATE
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_UPDATE"/>
         /// </summary>
         public static string RELATION_MBEAN_UPDATE => Clazz.GetField<string>("RELATION_MBEAN_UPDATE");
         
@@ -70,28 +70,28 @@ namespace Javax.Management.Relation
 
         #region Instance methods
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getObjectName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getObjectName()"/> 
         /// </summary>
         public Javax.Management.ObjectName ObjectName
         {
             get { return IExecute<Javax.Management.ObjectName>("getObjectName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRelationId() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRelationId()"/> 
         /// </summary>
         public string RelationId
         {
             get { return IExecute<string>("getRelationId"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRelationTypeName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRelationTypeName()"/> 
         /// </summary>
         public string RelationTypeName
         {
             get { return IExecute<string>("getRelationTypeName"); }
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRoleName() 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRoleName()"/> 
         /// </summary>
         public string RoleName
         {

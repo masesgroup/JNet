@@ -33,6 +33,9 @@ namespace Org.W3c.Dom
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Org.W3c.Dom.CDATASection"/> to <see cref="Org.W3c.Dom.Text"/>
+        /// </summary>
         public static implicit operator Org.W3c.Dom.Text(Org.W3c.Dom.CDATASection t) => t.Cast<Org.W3c.Dom.Text>();
         
         #endregion
