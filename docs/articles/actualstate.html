@@ -73,13 +73,20 @@
 <ul>
 <li>JNet:
 <ul>
-<li>Few basic classes used in other projects like <a href="https://github.com/masesgroup/KNet">KNet</a>. If something is not available use <a href="API_extensibility.html">API extensibility</a> to cover missing classes.</li>
+<li>Reflected almost all classes of a Temurin JDK 11 with the limits imposed from JNetReflector</li>
+<li>Manually made some classes used in other projects like <a href="https://github.com/masesgroup/KNet">KNet</a>.</li>
+<li>If something is not available use <a href="API_extensibility.html">API extensibility</a> to cover missing classes.</li>
 </ul>
 </li>
 <li>JNetCLI: added REPL shell, run Main-Class and execute C# scripts</li>
-<li>JNetReflector: builds the skeleton of the class</li>
+<li>JNetReflector: reflects classes skeleton, constructor, methods, fields, conversion operators and adds documentation; known limitation are:
+<ul>
+<li>reflects base classes of generics, however does not build corresponding C# generics</li>
+<li>can identify Listener, Adapter, and so on, however is not able to build the corresponding C# class</li>
+</ul>
+</li>
 <li>JNetPSCore: base implementation for JNetPS</li>
-<li>JNetPS: few PowerShell cmdlets</li>
+<li>JNetPS: some PowerShell cmdlets</li>
 </ul>
 </article>
           </div>
