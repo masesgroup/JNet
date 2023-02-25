@@ -3,15 +3,20 @@
 The roadmap can be synthetized in the following points:
 
 * JNet:
-    * Add more classes in JNet to simplify management from .NET
+  - [x] Add more classes in JNet to simplify management from .NET
+  - [ ] Cover missing Listener
 * JNetCLI:
-    * Add more functionalities
+  - [x] REPL shell
+  - [x] run Main-Class
+  - [x] execute C# scripts
 * JNetReflector
-    * Add methods reflection
-    * Add fields reflection
-    * Extend functionalities to cover more JVM classes (e.g. generics)
+  - [x] Add constructor reflection  
+  - [x] Add methods reflection
+  - [x] Add fields reflection
+  - [ ] Extend functionalities to cover more JVM classes (e.g. generics)
 * JNetPSCore:
 	* Add more functionalities
 * JNetPS:
-	* Add more cmdlets or scripts
+  - [x] Add more cmdlets 
+  - [ ] Scripts
 	
