@@ -33,7 +33,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Scanner(Java.Io.File arg0, string arg1)
             : base(arg0, arg1)
@@ -62,7 +62,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#%3Cinit%3E(java.io.InputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public Scanner(Java.Io.InputStream arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -95,7 +95,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public Scanner(string arg0)
             : base(arg0)
         {
@@ -104,7 +104,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#%3Cinit%3E(java.nio.channels.ReadableByteChannel,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public Scanner(Java.Nio.Channels.ReadableByteChannel arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -130,7 +130,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#%3Cinit%3E(java.nio.file.Path,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public Scanner(Java.Nio.File.Path arg0, string arg1)
             : base(arg0, arg1)
@@ -187,7 +187,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNext(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool HasNext(string arg0)
         {
@@ -223,7 +223,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextBigInteger(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool HasNextBigInteger(int arg0)
         {
@@ -250,7 +250,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextByte(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool HasNextByte(int arg0)
         {
@@ -286,7 +286,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextInt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool HasNextInt(int arg0)
         {
@@ -313,7 +313,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextLong(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool HasNextLong(int arg0)
         {
@@ -331,7 +331,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#hasNextShort(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool HasNextShort(int arg0)
         {
@@ -358,7 +358,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextByte(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="byte"/></returns>
         public byte NextByte(int arg0)
         {
@@ -394,7 +394,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextInt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int NextInt(int arg0)
         {
@@ -430,7 +430,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#findInLine(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string FindInLine(string arg0)
         {
@@ -448,8 +448,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#findWithinHorizon(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string FindWithinHorizon(string arg0, int arg1)
         {
@@ -459,7 +459,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#findWithinHorizon(java.util.regex.Pattern,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string FindWithinHorizon(Java.Util.Regex.Pattern arg0, int arg1)
         {
@@ -468,7 +468,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#next(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string Next(string arg0)
         {
@@ -513,7 +513,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextBigInteger(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger NextBigInteger(int arg0)
         {
@@ -558,7 +558,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#skip(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Scanner"/></returns>
         public Java.Util.Scanner Skip(string arg0)
         {
@@ -576,7 +576,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#useDelimiter(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Scanner"/></returns>
         public Java.Util.Scanner UseDelimiter(string arg0)
         {
@@ -603,7 +603,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#useRadix(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Scanner"/></returns>
         public Java.Util.Scanner UseRadix(int arg0)
         {
@@ -621,7 +621,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextLong(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         public long NextLong(int arg0)
         {
@@ -639,7 +639,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextShort(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="short"/></returns>
         public short NextShort(int arg0)
         {

@@ -38,19 +38,25 @@ namespace Java.Nio.Channels.Spi
         /// </summary>
         public AbstractInterruptibleChannel(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.channels.spi.AbstractInterruptibleChannel";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -73,19 +79,25 @@ namespace Java.Nio.Channels.Spi
         /// </summary>
         public AbstractSelectableChannel(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.channels.spi.AbstractSelectableChannel";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -108,19 +120,25 @@ namespace Java.Nio.Channels.Spi
         /// </summary>
         public AbstractSelectionKey(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.channels.spi.AbstractSelectionKey";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -143,19 +161,25 @@ namespace Java.Nio.Channels.Spi
         /// </summary>
         public AbstractSelector(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.channels.spi.AbstractSelector";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -178,19 +202,25 @@ namespace Java.Nio.Channels.Spi
         /// </summary>
         public AsynchronousChannelProvider(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.channels.spi.AsynchronousChannelProvider";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -213,19 +243,25 @@ namespace Java.Nio.Channels.Spi
         /// </summary>
         public SelectorProvider(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.channels.spi.SelectorProvider";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class

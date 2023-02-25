@@ -196,8 +196,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#execute(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Execute(string arg0, int arg1)
@@ -207,7 +207,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#execute(java.lang.String,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -218,7 +218,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#execute(java.lang.String,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -229,7 +229,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#execute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Execute(string arg0)
@@ -239,7 +239,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#getMoreResults(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool GetMoreResults(int arg0)
@@ -279,8 +279,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeUpdate(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int ExecuteUpdate(string arg0, int arg1)
@@ -290,7 +290,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeUpdate(java.lang.String,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -301,7 +301,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeUpdate(java.lang.String,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -312,7 +312,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeUpdate(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int ExecuteUpdate(string arg0)
@@ -332,7 +332,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeQuery(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Sql.ResultSet"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet ExecuteQuery(string arg0)
@@ -342,7 +342,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#addBatch(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void AddBatch(string arg0)
         {
@@ -396,7 +396,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setCursorName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCursorName(string arg0)
         {
@@ -405,7 +405,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setEscapeProcessing(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetEscapeProcessing(bool arg0)
         {
@@ -414,7 +414,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#setPoolable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetPoolable(bool arg0)
         {
@@ -423,7 +423,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#isSimpleIdentifier(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsSimpleIdentifier(string arg0)
@@ -433,8 +433,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#enquoteIdentifier(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string EnquoteIdentifier(string arg0, bool arg1)
@@ -444,7 +444,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#enquoteLiteral(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string EnquoteLiteral(string arg0)
@@ -454,7 +454,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#enquoteNCharLiteral(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string EnquoteNCharLiteral(string arg0)
@@ -464,8 +464,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeLargeUpdate(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long ExecuteLargeUpdate(string arg0, int arg1)
@@ -475,7 +475,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeLargeUpdate(java.lang.String,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -486,7 +486,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeLargeUpdate(java.lang.String,java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -497,7 +497,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeLargeUpdate(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long ExecuteLargeUpdate(string arg0)

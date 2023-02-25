@@ -108,10 +108,10 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#of(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Of(int arg0, int arg1, int arg2, int arg3)
         {
@@ -120,9 +120,9 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#of(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Of(int arg0, int arg1, int arg2)
         {
@@ -131,8 +131,8 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#of(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Of(int arg0, int arg1)
         {
@@ -151,7 +151,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#ofNanoOfDay(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime OfNanoOfDay(long arg0)
         {
@@ -160,7 +160,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#ofSecondOfDay(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime OfSecondOfDay(long arg0)
         {
@@ -256,7 +256,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
@@ -310,7 +310,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#minusHours(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime MinusHours(long arg0)
         {
@@ -319,7 +319,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#minusMinutes(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime MinusMinutes(long arg0)
         {
@@ -328,7 +328,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#minusNanos(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime MinusNanos(long arg0)
         {
@@ -337,7 +337,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#minusSeconds(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime MinusSeconds(long arg0)
         {
@@ -346,7 +346,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#plusHours(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime PlusHours(long arg0)
         {
@@ -355,7 +355,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#plusMinutes(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime PlusMinutes(long arg0)
         {
@@ -364,7 +364,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#plusNanos(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime PlusNanos(long arg0)
         {
@@ -373,7 +373,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#plusSeconds(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime PlusSeconds(long arg0)
         {
@@ -391,7 +391,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#withHour(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime WithHour(int arg0)
         {
@@ -400,7 +400,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#withMinute(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime WithMinute(int arg0)
         {
@@ -409,7 +409,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#withNano(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime WithNano(int arg0)
         {
@@ -418,7 +418,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#withSecond(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime WithSecond(int arg0)
         {
@@ -454,7 +454,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#minus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Minus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
@@ -473,7 +473,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#plus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Plus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
@@ -493,7 +493,7 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#with(java.time.temporal.TemporalField,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalField arg0, long arg1)
         {

@@ -95,7 +95,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#bindTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle BindTo(object arg0)
         {
@@ -104,7 +104,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#withVarargs(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle WithVarargs(bool arg0)
         {

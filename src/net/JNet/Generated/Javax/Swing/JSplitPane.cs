@@ -32,8 +32,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#%3Cinit%3E(int,boolean,java.awt.Component,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg3"><see cref="Java.Awt.Component"/></param>
         public JSplitPane(int arg0, bool arg1, Java.Awt.Component arg2, Java.Awt.Component arg3)
@@ -43,8 +43,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#%3Cinit%3E(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public JSplitPane(int arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -52,7 +52,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#%3Cinit%3E(int,java.awt.Component,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
         public JSplitPane(int arg0, Java.Awt.Component arg1, Java.Awt.Component arg2)
@@ -62,7 +62,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public JSplitPane(int arg0)
             : base(arg0)
         {
@@ -248,7 +248,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setContinuousLayout(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetContinuousLayout(bool arg0)
         {
             IExecute("setContinuousLayout", arg0);
@@ -256,7 +256,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setDividerLocation(double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
         public void SetDividerLocation(double arg0)
         {
             IExecute("setDividerLocation", arg0);
@@ -264,7 +264,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setDividerLocation(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void SetDividerLocation(int arg0)
         {
             IExecute("setDividerLocation", arg0);
@@ -272,7 +272,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#setOneTouchExpandable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetOneTouchExpandable(bool arg0)
         {
             IExecute("setOneTouchExpandable", arg0);

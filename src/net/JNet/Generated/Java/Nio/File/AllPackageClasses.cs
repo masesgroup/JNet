@@ -29,7 +29,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class AccessDeniedException : Java.Nio.File.FileSystemException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.AccessDeniedException";
 
         // TODO: complete the class
@@ -52,19 +54,25 @@ namespace Java.Nio.File
         /// </summary>
         public AccessMode(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.AccessMode";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -78,7 +86,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class AtomicMoveNotSupportedException : Java.Nio.File.FileSystemException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.AtomicMoveNotSupportedException";
 
         // TODO: complete the class
@@ -92,7 +102,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class ClosedDirectoryStreamException : Java.Lang.IllegalStateException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.ClosedDirectoryStreamException";
 
         // TODO: complete the class
@@ -106,7 +118,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class ClosedFileSystemException : Java.Lang.IllegalStateException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.ClosedFileSystemException";
 
         // TODO: complete the class
@@ -120,7 +134,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class ClosedWatchServiceException : Java.Lang.IllegalStateException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.ClosedWatchServiceException";
 
         // TODO: complete the class
@@ -143,19 +159,25 @@ namespace Java.Nio.File
         /// </summary>
         public CopyOption(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.CopyOption";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -169,7 +191,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class DirectoryIteratorException : Java.Util.ConcurrentModificationException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.DirectoryIteratorException";
 
         // TODO: complete the class
@@ -183,7 +207,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class DirectoryNotEmptyException : Java.Nio.File.FileSystemException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.DirectoryNotEmptyException";
 
         // TODO: complete the class
@@ -206,19 +232,25 @@ namespace Java.Nio.File
         /// </summary>
         public DirectoryStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.DirectoryStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -237,19 +269,25 @@ namespace Java.Nio.File
             /// </summary>
             public Filter(params object[] args) : base(args) { }
 
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// </summary>
             public override string ClassName => "java.nio.file.DirectoryStream$Filter";
-
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
-            public override bool IsAbstract => true;
-            
+            /// </summary>
+            public override bool IsAbstract => true;         
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// </summary>
             public override bool IsCloseable => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// </summary>
             public override bool IsInterface => true;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// </summary>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -266,7 +304,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class FileAlreadyExistsException : Java.Nio.File.FileSystemException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.FileAlreadyExistsException";
 
         // TODO: complete the class
@@ -289,19 +329,25 @@ namespace Java.Nio.File
         /// </summary>
         public Files(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.Files";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -324,19 +370,25 @@ namespace Java.Nio.File
         /// </summary>
         public FileStore(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.FileStore";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -359,19 +411,25 @@ namespace Java.Nio.File
         /// </summary>
         public FileSystem(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.FileSystem";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -385,7 +443,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class FileSystemAlreadyExistsException : Java.Lang.RuntimeException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.FileSystemAlreadyExistsException";
 
         // TODO: complete the class
@@ -399,7 +459,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class FileSystemException : Java.Io.IOException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.FileSystemException";
 
         // TODO: complete the class
@@ -413,7 +475,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class FileSystemLoopException : Java.Nio.File.FileSystemException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.FileSystemLoopException";
 
         // TODO: complete the class
@@ -427,7 +491,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class FileSystemNotFoundException : Java.Lang.RuntimeException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.FileSystemNotFoundException";
 
         // TODO: complete the class
@@ -450,19 +516,25 @@ namespace Java.Nio.File
         /// </summary>
         public FileSystems(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.FileSystems";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -485,19 +557,25 @@ namespace Java.Nio.File
         /// </summary>
         public FileVisitOption(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.FileVisitOption";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -520,19 +598,25 @@ namespace Java.Nio.File
         /// </summary>
         public FileVisitor(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.FileVisitor";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -555,19 +639,25 @@ namespace Java.Nio.File
         /// </summary>
         public FileVisitResult(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.FileVisitResult";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -581,7 +671,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class InvalidPathException : Java.Lang.IllegalArgumentException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.InvalidPathException";
 
         // TODO: complete the class
@@ -604,19 +696,25 @@ namespace Java.Nio.File
         /// </summary>
         public LinkOption(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.LinkOption";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -639,19 +737,25 @@ namespace Java.Nio.File
         /// </summary>
         public LinkPermission(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.LinkPermission";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -665,7 +769,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class NoSuchFileException : Java.Nio.File.FileSystemException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.NoSuchFileException";
 
         // TODO: complete the class
@@ -679,7 +785,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class NotDirectoryException : Java.Nio.File.FileSystemException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.NotDirectoryException";
 
         // TODO: complete the class
@@ -693,7 +801,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class NotLinkException : Java.Nio.File.FileSystemException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.NotLinkException";
 
         // TODO: complete the class
@@ -716,19 +826,25 @@ namespace Java.Nio.File
         /// </summary>
         public OpenOption(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.OpenOption";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -751,19 +867,25 @@ namespace Java.Nio.File
         /// </summary>
         public Path(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.Path";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -786,19 +908,25 @@ namespace Java.Nio.File
         /// </summary>
         public PathMatcher(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.PathMatcher";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -821,19 +949,25 @@ namespace Java.Nio.File
         /// </summary>
         public Paths(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.Paths";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -847,7 +981,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class ProviderMismatchException : Java.Lang.IllegalArgumentException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.ProviderMismatchException";
 
         // TODO: complete the class
@@ -861,7 +997,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class ProviderNotFoundException : Java.Lang.RuntimeException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.ProviderNotFoundException";
 
         // TODO: complete the class
@@ -875,7 +1013,9 @@ namespace Java.Nio.File
     /// </summary>
     public partial class ReadOnlyFileSystemException : Java.Lang.UnsupportedOperationException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.ReadOnlyFileSystemException";
 
         // TODO: complete the class
@@ -898,19 +1038,25 @@ namespace Java.Nio.File
         /// </summary>
         public SecureDirectoryStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.SecureDirectoryStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -933,19 +1079,25 @@ namespace Java.Nio.File
         /// </summary>
         public SimpleFileVisitor(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.SimpleFileVisitor";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -968,19 +1120,25 @@ namespace Java.Nio.File
         /// </summary>
         public StandardCopyOption(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.StandardCopyOption";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1003,19 +1161,25 @@ namespace Java.Nio.File
         /// </summary>
         public StandardOpenOption(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.StandardOpenOption";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1038,19 +1202,25 @@ namespace Java.Nio.File
         /// </summary>
         public StandardWatchEventKinds(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.StandardWatchEventKinds";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1073,19 +1243,25 @@ namespace Java.Nio.File
         /// </summary>
         public Watchable(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.Watchable";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1108,19 +1284,25 @@ namespace Java.Nio.File
         /// </summary>
         public WatchEvent(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.WatchEvent";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1139,19 +1321,25 @@ namespace Java.Nio.File
             /// </summary>
             public Kind(params object[] args) : base(args) { }
 
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// </summary>
             public override string ClassName => "java.nio.file.WatchEvent$Kind";
-
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
-            public override bool IsAbstract => true;
-            
+            /// </summary>
+            public override bool IsAbstract => true;         
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// </summary>
             public override bool IsCloseable => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// </summary>
             public override bool IsInterface => true;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// </summary>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1173,19 +1361,25 @@ namespace Java.Nio.File
             /// </summary>
             public Modifier(params object[] args) : base(args) { }
 
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// </summary>
             public override string ClassName => "java.nio.file.WatchEvent$Modifier";
-
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
-            public override bool IsAbstract => true;
-            
+            /// </summary>
+            public override bool IsAbstract => true;         
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// </summary>
             public override bool IsCloseable => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// </summary>
             public override bool IsInterface => true;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// </summary>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1211,19 +1405,25 @@ namespace Java.Nio.File
         /// </summary>
         public WatchKey(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.WatchKey";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1246,19 +1446,25 @@ namespace Java.Nio.File
         /// </summary>
         public WatchService(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.nio.file.WatchService";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class

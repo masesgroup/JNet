@@ -48,7 +48,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#isLockStamp(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool IsLockStamp(long arg0)
         {
@@ -57,7 +57,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#isOptimisticReadStamp(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool IsOptimisticReadStamp(long arg0)
         {
@@ -66,7 +66,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#isReadLockStamp(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool IsReadLockStamp(long arg0)
         {
@@ -75,7 +75,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#isWriteLockStamp(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool IsWriteLockStamp(long arg0)
         {
@@ -131,7 +131,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#validate(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Validate(long arg0)
         {
@@ -186,7 +186,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryConvertToOptimisticRead(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         public long TryConvertToOptimisticRead(long arg0)
         {
@@ -195,7 +195,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryConvertToReadLock(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         public long TryConvertToReadLock(long arg0)
         {
@@ -204,7 +204,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryConvertToWriteLock(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         public long TryConvertToWriteLock(long arg0)
         {
@@ -259,7 +259,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#unlock(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         public void Unlock(long arg0)
         {
             IExecute("unlock", arg0);
@@ -267,7 +267,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#unlockRead(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         public void UnlockRead(long arg0)
         {
             IExecute("unlockRead", arg0);
@@ -275,7 +275,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#unlockWrite(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         public void UnlockWrite(long arg0)
         {
             IExecute("unlockWrite", arg0);

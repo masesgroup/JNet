@@ -133,8 +133,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPathClosestTo(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetPathClosestTo(int arg0, int arg1)
         {
@@ -143,7 +143,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPathForRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetPathForRow(int arg0)
         {
@@ -168,7 +168,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setExpandedState(javax.swing.tree.TreePath,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public void SetExpandedState(Javax.Swing.Tree.TreePath arg0, bool arg1)
         {
             IExecute("setExpandedState", arg0, arg1);
@@ -252,7 +252,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setRootVisible(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetRootVisible(bool arg0)
         {
             IExecute("setRootVisible", arg0);
@@ -284,10 +284,10 @@ namespace Javax.Swing.Tree
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.NodeDimensions.html#getNodeDimensions(java.lang.Object,int,int,boolean,java.awt.Rectangle)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="bool"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="bool"/></param>
             /// <param name="arg4"><see cref="Java.Awt.Rectangle"/></param>
             /// <returns><see cref="Java.Awt.Rectangle"/></returns>
             public Java.Awt.Rectangle GetNodeDimensions(object arg0, int arg1, int arg2, bool arg3, Java.Awt.Rectangle arg4)

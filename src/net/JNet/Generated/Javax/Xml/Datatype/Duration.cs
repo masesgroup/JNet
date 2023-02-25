@@ -193,7 +193,7 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html#multiply(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
         public Javax.Xml.Datatype.Duration Multiply(int arg0)
         {

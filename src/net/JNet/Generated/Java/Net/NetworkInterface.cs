@@ -44,7 +44,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getByIndex(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
         public static Java.Net.NetworkInterface GetByIndex(int arg0)
@@ -64,7 +64,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/NetworkInterface.html#getByName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
         /// <exception cref="Java.Net.SocketException"/>
         public static Java.Net.NetworkInterface GetByName(string arg0)

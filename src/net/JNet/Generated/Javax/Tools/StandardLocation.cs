@@ -96,7 +96,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#locationFor(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Tools.JavaFileManager.Location"/></returns>
         public static Javax.Tools.JavaFileManager.Location LocationFor(string arg0)
         {

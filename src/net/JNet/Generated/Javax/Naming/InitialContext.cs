@@ -48,7 +48,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#doLookup(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public static object DoLookup(string arg0)
@@ -79,8 +79,8 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#addToEnvironment(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public object AddToEnvironment(string arg0, object arg1)
@@ -90,7 +90,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#lookup(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public object Lookup(string arg0)
@@ -110,7 +110,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#lookupLink(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public object LookupLink(string arg0)
@@ -130,7 +130,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#removeFromEnvironment(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public object RemoveFromEnvironment(string arg0)
@@ -140,8 +140,8 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#composeName(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public string ComposeName(string arg0, string arg1)
@@ -151,7 +151,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#createSubcontext(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Context CreateSubcontext(string arg0)
@@ -182,7 +182,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#getNameParser(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Naming.NameParser"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.NameParser GetNameParser(string arg0)
@@ -202,8 +202,8 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#bind(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Bind(string arg0, object arg1)
         {
@@ -213,7 +213,7 @@ namespace Javax.Naming
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#bind(javax.naming.Name,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Bind(Javax.Naming.Name arg0, object arg1)
         {
@@ -231,7 +231,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#destroySubcontext(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void DestroySubcontext(string arg0)
         {
@@ -249,8 +249,8 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#rebind(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Rebind(string arg0, object arg1)
         {
@@ -260,7 +260,7 @@ namespace Javax.Naming
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#rebind(javax.naming.Name,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Rebind(Javax.Naming.Name arg0, object arg1)
         {
@@ -269,8 +269,8 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#rename(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Rename(string arg0, string arg1)
         {
@@ -289,7 +289,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#unbind(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Unbind(string arg0)
         {

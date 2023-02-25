@@ -41,7 +41,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(javax.swing.tree.TreeNode,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public JTree(Javax.Swing.Tree.TreeNode arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -364,7 +364,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isCollapsed(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsCollapsed(int arg0)
         {
@@ -400,7 +400,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isExpanded(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsExpanded(int arg0)
         {
@@ -463,7 +463,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isRowSelected(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsRowSelected(int arg0)
         {
@@ -508,8 +508,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getClosestRowForLocation(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetClosestRowForLocation(int arg0, int arg1)
         {
@@ -518,8 +518,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowForLocation(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetRowForLocation(int arg0, int arg1)
         {
@@ -538,8 +538,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
@@ -549,8 +549,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
@@ -568,7 +568,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowBounds(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetRowBounds(int arg0)
         {
@@ -577,12 +577,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#convertValueToText(java.lang.Object,boolean,boolean,boolean,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
         /// <returns><see langword="string"/></returns>
         public string ConvertValueToText(object arg0, bool arg1, bool arg2, bool arg3, int arg4, bool arg5)
         {
@@ -591,8 +591,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getClosestPathForLocation(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetClosestPathForLocation(int arg0, int arg1)
         {
@@ -601,8 +601,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getNextMatch(java.lang.String,int,javax.swing.text.Position$Bias)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetNextMatch(string arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
@@ -612,8 +612,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathForLocation(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetPathForLocation(int arg0, int arg1)
         {
@@ -622,7 +622,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathForRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetPathForRow(int arg0)
         {
@@ -631,8 +631,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void AddSelectionInterval(int arg0, int arg1)
         {
             IExecute("addSelectionInterval", arg0, arg1);
@@ -656,7 +656,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void AddSelectionRow(int arg0)
         {
             IExecute("addSelectionRow", arg0);
@@ -718,7 +718,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#collapseRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void CollapseRow(int arg0)
         {
             IExecute("collapseRow", arg0);
@@ -734,7 +734,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#expandRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void ExpandRow(int arg0)
         {
             IExecute("expandRow", arg0);
@@ -784,8 +784,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void RemoveSelectionInterval(int arg0, int arg1)
         {
             IExecute("removeSelectionInterval", arg0, arg1);
@@ -809,7 +809,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void RemoveSelectionRow(int arg0)
         {
             IExecute("removeSelectionRow", arg0);
@@ -857,7 +857,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#scrollRowToVisible(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void ScrollRowToVisible(int arg0)
         {
             IExecute("scrollRowToVisible", arg0);
@@ -865,7 +865,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setEditable(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetEditable(bool arg0)
         {
             IExecute("setEditable", arg0);
@@ -873,7 +873,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setLargeModel(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetLargeModel(bool arg0)
         {
             IExecute("setLargeModel", arg0);
@@ -881,7 +881,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setRootVisible(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetRootVisible(bool arg0)
         {
             IExecute("setRootVisible", arg0);
@@ -889,8 +889,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionInterval(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void SetSelectionInterval(int arg0, int arg1)
         {
             IExecute("setSelectionInterval", arg0, arg1);
@@ -898,7 +898,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void SetSelectionRow(int arg0)
         {
             IExecute("setSelectionRow", arg0);
@@ -978,8 +978,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DynamicUtilTreeNode.html#%3Cinit%3E(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             public DynamicUtilTreeNode(object arg0, object arg1)
                 : base(arg0, arg1)
             {
@@ -1000,7 +1000,7 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.DynamicUtilTreeNode.html#createChildren(javax.swing.tree.DefaultMutableTreeNode,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Tree.DefaultMutableTreeNode"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             public static void CreateChildren(Javax.Swing.Tree.DefaultMutableTreeNode arg0, object arg1)
             {
                 SExecute("createChildren", arg0, arg1);

@@ -109,7 +109,7 @@ namespace Javax.Transaction.Xa
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#setTransactionTimeout(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public bool SetTransactionTimeout(int arg0)
@@ -129,7 +129,7 @@ namespace Javax.Transaction.Xa
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#recover(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Transaction.Xa.Xid"/></returns>
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public Javax.Transaction.Xa.Xid[] Recover(int arg0)
@@ -140,7 +140,7 @@ namespace Javax.Transaction.Xa
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#commit(javax.transaction.xa.Xid,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public void Commit(Javax.Transaction.Xa.Xid arg0, bool arg1)
         {
@@ -150,7 +150,7 @@ namespace Javax.Transaction.Xa
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#end(javax.transaction.xa.Xid,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public void End(Javax.Transaction.Xa.Xid arg0, int arg1)
         {
@@ -178,7 +178,7 @@ namespace Javax.Transaction.Xa
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#start(javax.transaction.xa.Xid,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public void Start(Javax.Transaction.Xa.Xid arg0, int arg1)
         {

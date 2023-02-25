@@ -56,8 +56,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#declarePrefix(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool DeclarePrefix(string arg0, string arg1)
         {
@@ -75,7 +75,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefix(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetPrefix(string arg0)
         {
@@ -84,7 +84,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetURI(string arg0)
         {
@@ -93,9 +93,9 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#processName(java.lang.String,java.lang.String[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <returns><see cref="string"/></returns>
         public string[] ProcessName(string arg0, string[] arg1, bool arg2)
         {
@@ -125,7 +125,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#setNamespaceDeclUris(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetNamespaceDeclUris(bool arg0)
         {
             IExecute("setNamespaceDeclUris", arg0);

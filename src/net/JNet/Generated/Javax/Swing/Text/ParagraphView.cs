@@ -60,8 +60,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ParagraphView.html#nextTabStop(float,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="float"/></returns>
         public float NextTabStop(float arg0, int arg1)
         {
@@ -70,8 +70,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ParagraphView.html#getBreakWeight(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetBreakWeight(int arg0, float arg1)
         {
@@ -80,8 +80,8 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ParagraphView.html#breakView(int,float,java.awt.Shape)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Shape"/></param>
         /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public Javax.Swing.Text.View BreakView(int arg0, float arg1, Java.Awt.Shape arg2)

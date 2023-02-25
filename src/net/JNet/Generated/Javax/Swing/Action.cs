@@ -105,7 +105,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#getValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetValue(string arg0)
         {
@@ -122,8 +122,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#putValue(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void PutValue(string arg0, object arg1)
         {
             IExecute("putValue", arg0, arg1);
@@ -139,7 +139,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#setEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetEnabled(bool arg0)
         {
             IExecute("setEnabled", arg0);
@@ -147,7 +147,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#accept(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Accept(object arg0)
         {

@@ -149,7 +149,7 @@ namespace Javax.Sql.Rowset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void AddRowSet(Javax.Sql.RowSet arg0, int arg1)
         {
@@ -159,7 +159,7 @@ namespace Javax.Sql.Rowset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void AddRowSet(Javax.Sql.RowSet arg0, string arg1)
         {

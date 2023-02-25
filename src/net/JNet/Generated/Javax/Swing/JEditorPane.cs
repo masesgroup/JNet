@@ -32,8 +32,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public JEditorPane(string arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -41,7 +41,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public JEditorPane(string arg0)
             : base(arg0)
@@ -79,7 +79,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitClassNameForContentType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public static string GetEditorKitClassNameForContentType(string arg0)
         {
@@ -88,7 +88,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#createEditorKitForContentType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.Text.EditorKit"/></returns>
         public static Javax.Swing.Text.EditorKit CreateEditorKitForContentType(string arg0)
         {
@@ -97,8 +97,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         public static void RegisterEditorKitForContentType(string arg0, string arg1, Java.Lang.ClassLoader arg2)
         {
@@ -107,8 +107,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public static void RegisterEditorKitForContentType(string arg0, string arg1)
         {
             SExecute("registerEditorKitForContentType", arg0, arg1);
@@ -148,7 +148,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitForContentType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.Text.EditorKit"/></returns>
         public Javax.Swing.Text.EditorKit GetEditorKitForContentType(string arg0)
         {
@@ -182,7 +182,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#read(java.io.InputStream,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void Read(Java.Io.InputStream arg0, object arg1)
         {
@@ -191,7 +191,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#scrollToReference(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void ScrollToReference(string arg0)
         {
             IExecute("scrollToReference", arg0);
@@ -199,7 +199,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setEditorKitForContentType(java.lang.String,javax.swing.text.EditorKit)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.EditorKit"/></param>
         public void SetEditorKitForContentType(string arg0, Javax.Swing.Text.EditorKit arg1)
         {
@@ -208,7 +208,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setPage(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void SetPage(string arg0)
         {

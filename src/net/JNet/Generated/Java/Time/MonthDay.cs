@@ -92,8 +92,8 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#of(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Of(int arg0, int arg1)
         {
@@ -166,7 +166,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#isValidYear(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsValidYear(int arg0)
         {
@@ -175,7 +175,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
@@ -211,7 +211,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#atYear(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.LocalDate"/></returns>
         public Java.Time.LocalDate AtYear(int arg0)
         {
@@ -220,7 +220,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#withDayOfMonth(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public Java.Time.MonthDay WithDayOfMonth(int arg0)
         {
@@ -229,7 +229,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#withMonth(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public Java.Time.MonthDay WithMonth(int arg0)
         {

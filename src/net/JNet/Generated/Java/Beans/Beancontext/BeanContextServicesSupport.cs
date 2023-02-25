@@ -34,8 +34,8 @@ namespace Java.Beans.Beancontext
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -45,7 +45,7 @@ namespace Java.Beans.Beancontext
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -113,8 +113,8 @@ namespace Java.Beans.Beancontext
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#releaseService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         public void ReleaseService(Java.Beans.Beancontext.BeanContextChild arg0, object arg1, object arg2)
         {
             IExecute("releaseService", arg0, arg1, arg2);

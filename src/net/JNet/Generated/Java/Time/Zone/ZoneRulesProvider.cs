@@ -53,8 +53,8 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getRules(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Java.Time.Zone.ZoneRules"/></returns>
         public static Java.Time.Zone.ZoneRules GetRules(string arg0, bool arg1)
         {

@@ -66,11 +66,11 @@ namespace Org.W3c.Dom.Events
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html#initUIEvent(java.lang.String,boolean,boolean,org.w3c.dom.views.AbstractView,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="Org.W3c.Dom.Views.AbstractView"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         public void InitUIEvent(string arg0, bool arg1, bool arg2, Org.W3c.Dom.Views.AbstractView arg3, int arg4)
         {
             IExecute("initUIEvent", arg0, arg1, arg2, arg3, arg4);

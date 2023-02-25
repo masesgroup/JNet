@@ -122,7 +122,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String,javax.script.Bindings)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Script.Bindings"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
@@ -133,7 +133,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String,javax.script.ScriptContext)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Script.ScriptContext"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
@@ -144,7 +144,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(string arg0)
@@ -154,7 +154,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#get(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         public object Get(string arg0)
         {
@@ -172,7 +172,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getBindings(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Script.Bindings"/></returns>
         public Javax.Script.Bindings GetBindings(int arg0)
         {
@@ -181,8 +181,8 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#put(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void Put(string arg0, object arg1)
         {
             IExecute("put", arg0, arg1);
@@ -191,7 +191,7 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#setBindings(javax.script.Bindings,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Script.Bindings"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void SetBindings(Javax.Script.Bindings arg0, int arg1)
         {
             IExecute("setBindings", arg0, arg1);

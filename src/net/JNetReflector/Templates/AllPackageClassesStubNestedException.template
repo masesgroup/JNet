@@ -4,7 +4,9 @@
         /// </summary>
         public partial class ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER : ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER
         {
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_ALLPACKAGE_CLASSES_STUB_NESTED_JCOBRIDGE_VERSION_PLACEHOLDER/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+            /// </summary>
             public override string ClassName => "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
         
             // TODO: complete the class

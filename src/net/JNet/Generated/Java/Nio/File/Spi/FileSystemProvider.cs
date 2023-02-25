@@ -156,8 +156,8 @@ namespace Java.Nio.File.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#setAttribute(java.nio.file.Path,java.lang.String,java.lang.Object,java.nio.file.LinkOption...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Nio.File.LinkOption"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void SetAttribute(Java.Nio.File.Path arg0, string arg1, object arg2, params Java.Nio.File.LinkOption[] arg3)

@@ -250,7 +250,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#isDefaultNamespace(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsDefaultNamespace(string arg0)
         {
@@ -277,8 +277,8 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#isSupported(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsSupported(string arg0, string arg1)
         {
@@ -287,8 +287,8 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getFeature(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetFeature(string arg0, string arg1)
         {
@@ -297,7 +297,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#getUserData(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetUserData(string arg0)
         {
@@ -306,8 +306,8 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#setUserData(java.lang.String,java.lang.Object,org.w3c.dom.UserDataHandler)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Org.W3c.Dom.UserDataHandler"/></param>
         /// <returns><see langword="object"/></returns>
         public object SetUserData(string arg0, object arg1, Org.W3c.Dom.UserDataHandler arg2)
@@ -317,7 +317,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#lookupNamespaceURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string LookupNamespaceURI(string arg0)
         {
@@ -326,7 +326,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#lookupPrefix(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string LookupPrefix(string arg0)
         {
@@ -345,7 +345,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#cloneNode(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         public Org.W3c.Dom.Node CloneNode(bool arg0)
         {

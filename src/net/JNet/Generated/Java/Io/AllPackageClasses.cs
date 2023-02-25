@@ -38,19 +38,25 @@ namespace Java.Io
         /// </summary>
         public BufferedInputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.BufferedInputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -73,19 +79,25 @@ namespace Java.Io
         /// </summary>
         public BufferedOutputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.BufferedOutputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -108,19 +120,25 @@ namespace Java.Io
         /// </summary>
         public BufferedReader(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.BufferedReader";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -143,19 +161,25 @@ namespace Java.Io
         /// </summary>
         public BufferedWriter(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.BufferedWriter";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -178,19 +202,25 @@ namespace Java.Io
         /// </summary>
         public ByteArrayInputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.ByteArrayInputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -213,19 +243,25 @@ namespace Java.Io
         /// </summary>
         public ByteArrayOutputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.ByteArrayOutputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -248,19 +284,25 @@ namespace Java.Io
         /// </summary>
         public CharArrayReader(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.CharArrayReader";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -283,19 +325,25 @@ namespace Java.Io
         /// </summary>
         public CharArrayWriter(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.CharArrayWriter";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -309,7 +357,9 @@ namespace Java.Io
     /// </summary>
     public partial class CharConversionException : Java.Io.IOException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.CharConversionException";
 
         // TODO: complete the class
@@ -332,19 +382,25 @@ namespace Java.Io
         /// </summary>
         public Closeable(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.Closeable";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -367,19 +423,25 @@ namespace Java.Io
         /// </summary>
         public Console(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.Console";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -402,19 +464,25 @@ namespace Java.Io
         /// </summary>
         public DataInput(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.DataInput";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -437,19 +505,25 @@ namespace Java.Io
         /// </summary>
         public DataInputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.DataInputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -472,19 +546,25 @@ namespace Java.Io
         /// </summary>
         public DataOutput(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.DataOutput";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -507,19 +587,25 @@ namespace Java.Io
         /// </summary>
         public DataOutputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.DataOutputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -533,7 +619,9 @@ namespace Java.Io
     /// </summary>
     public partial class EOFException : Java.Io.IOException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.EOFException";
 
         // TODO: complete the class
@@ -556,19 +644,25 @@ namespace Java.Io
         /// </summary>
         public Externalizable(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.Externalizable";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -591,19 +685,25 @@ namespace Java.Io
         /// </summary>
         public File(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.File";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -626,19 +726,25 @@ namespace Java.Io
         /// </summary>
         public FileDescriptor(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.FileDescriptor";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -661,19 +767,25 @@ namespace Java.Io
         /// </summary>
         public FileFilter(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.FileFilter";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -696,19 +808,25 @@ namespace Java.Io
         /// </summary>
         public FileInputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.FileInputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -731,19 +849,25 @@ namespace Java.Io
         /// </summary>
         public FilenameFilter(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.FilenameFilter";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -757,7 +881,9 @@ namespace Java.Io
     /// </summary>
     public partial class FileNotFoundException : Java.Io.IOException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.FileNotFoundException";
 
         // TODO: complete the class
@@ -780,19 +906,25 @@ namespace Java.Io
         /// </summary>
         public FileOutputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.FileOutputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -815,19 +947,25 @@ namespace Java.Io
         /// </summary>
         public FilePermission(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.FilePermission";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -850,19 +988,25 @@ namespace Java.Io
         /// </summary>
         public FileReader(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.FileReader";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -885,19 +1029,25 @@ namespace Java.Io
         /// </summary>
         public FileWriter(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.FileWriter";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -920,19 +1070,25 @@ namespace Java.Io
         /// </summary>
         public FilterInputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.FilterInputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -955,19 +1111,25 @@ namespace Java.Io
         /// </summary>
         public FilterOutputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.FilterOutputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -990,19 +1152,25 @@ namespace Java.Io
         /// </summary>
         public FilterReader(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.FilterReader";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1025,19 +1193,25 @@ namespace Java.Io
         /// </summary>
         public FilterWriter(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.FilterWriter";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1060,19 +1234,25 @@ namespace Java.Io
         /// </summary>
         public Flushable(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.Flushable";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1095,19 +1275,25 @@ namespace Java.Io
         /// </summary>
         public InputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.InputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1130,19 +1316,25 @@ namespace Java.Io
         /// </summary>
         public InputStreamReader(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.InputStreamReader";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1156,7 +1348,9 @@ namespace Java.Io
     /// </summary>
     public partial class InterruptedIOException : Java.Io.IOException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.InterruptedIOException";
 
         // TODO: complete the class
@@ -1170,7 +1364,9 @@ namespace Java.Io
     /// </summary>
     public partial class InvalidClassException : Java.Io.ObjectStreamException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.InvalidClassException";
 
         // TODO: complete the class
@@ -1184,7 +1380,9 @@ namespace Java.Io
     /// </summary>
     public partial class InvalidObjectException : Java.Io.ObjectStreamException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.InvalidObjectException";
 
         // TODO: complete the class
@@ -1198,7 +1396,9 @@ namespace Java.Io
     /// </summary>
     public partial class IOError : Java.Lang.Error
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.IOError";
 
         // TODO: complete the class
@@ -1212,7 +1412,9 @@ namespace Java.Io
     /// </summary>
     public partial class IOException : Java.Lang.Exception
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.IOException";
 
         // TODO: complete the class
@@ -1235,19 +1437,25 @@ namespace Java.Io
         /// </summary>
         public LineNumberReader(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.LineNumberReader";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1261,7 +1469,9 @@ namespace Java.Io
     /// </summary>
     public partial class NotActiveException : Java.Io.ObjectStreamException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.NotActiveException";
 
         // TODO: complete the class
@@ -1275,7 +1485,9 @@ namespace Java.Io
     /// </summary>
     public partial class NotSerializableException : Java.Io.ObjectStreamException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.NotSerializableException";
 
         // TODO: complete the class
@@ -1298,19 +1510,25 @@ namespace Java.Io
         /// </summary>
         public ObjectInput(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.ObjectInput";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1333,19 +1551,25 @@ namespace Java.Io
         /// </summary>
         public ObjectInputFilter(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.ObjectInputFilter";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1364,19 +1588,25 @@ namespace Java.Io
             /// </summary>
             public Config(params object[] args) : base(args) { }
 
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// </summary>
             public override string ClassName => "java.io.ObjectInputFilter$Config";
-
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
-            public override bool IsAbstract => false;
-            
+            /// </summary>
+            public override bool IsAbstract => false;         
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// </summary>
             public override bool IsCloseable => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// </summary>
             public override bool IsInterface => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// </summary>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1398,19 +1628,25 @@ namespace Java.Io
             /// </summary>
             public FilterInfo(params object[] args) : base(args) { }
 
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// </summary>
             public override string ClassName => "java.io.ObjectInputFilter$FilterInfo";
-
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
-            public override bool IsAbstract => true;
-            
+            /// </summary>
+            public override bool IsAbstract => true;         
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// </summary>
             public override bool IsCloseable => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// </summary>
             public override bool IsInterface => true;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// </summary>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1432,19 +1668,25 @@ namespace Java.Io
             /// </summary>
             public Status(params object[] args) : base(args) { }
 
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// </summary>
             public override string ClassName => "java.io.ObjectInputFilter$Status";
-
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
-            public override bool IsAbstract => false;
-            
+            /// </summary>
+            public override bool IsAbstract => false;         
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// </summary>
             public override bool IsCloseable => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// </summary>
             public override bool IsInterface => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// </summary>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1470,19 +1712,25 @@ namespace Java.Io
         /// </summary>
         public ObjectInputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.ObjectInputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1501,19 +1749,25 @@ namespace Java.Io
             /// </summary>
             public GetField(params object[] args) : base(args) { }
 
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// </summary>
             public override string ClassName => "java.io.ObjectInputStream$GetField";
-
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
-            public override bool IsAbstract => true;
-            
+            /// </summary>
+            public override bool IsAbstract => true;         
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// </summary>
             public override bool IsCloseable => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// </summary>
             public override bool IsInterface => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// </summary>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1539,19 +1793,25 @@ namespace Java.Io
         /// </summary>
         public ObjectInputValidation(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.ObjectInputValidation";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1574,19 +1834,25 @@ namespace Java.Io
         /// </summary>
         public ObjectOutput(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.ObjectOutput";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1609,19 +1875,25 @@ namespace Java.Io
         /// </summary>
         public ObjectOutputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.ObjectOutputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1640,19 +1912,25 @@ namespace Java.Io
             /// </summary>
             public PutField(params object[] args) : base(args) { }
 
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// </summary>
             public override string ClassName => "java.io.ObjectOutputStream$PutField";
-
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
-            public override bool IsAbstract => true;
-            
+            /// </summary>
+            public override bool IsAbstract => true;         
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// </summary>
             public override bool IsCloseable => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// </summary>
             public override bool IsInterface => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// </summary>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -1678,19 +1956,25 @@ namespace Java.Io
         /// </summary>
         public ObjectStreamClass(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.ObjectStreamClass";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1713,19 +1997,25 @@ namespace Java.Io
         /// </summary>
         public ObjectStreamConstants(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.ObjectStreamConstants";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1739,7 +2029,9 @@ namespace Java.Io
     /// </summary>
     public partial class ObjectStreamException : Java.Io.IOException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.ObjectStreamException";
 
         // TODO: complete the class
@@ -1762,19 +2054,25 @@ namespace Java.Io
         /// </summary>
         public ObjectStreamField(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.ObjectStreamField";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1788,7 +2086,9 @@ namespace Java.Io
     /// </summary>
     public partial class OptionalDataException : Java.Io.ObjectStreamException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.OptionalDataException";
 
         // TODO: complete the class
@@ -1811,19 +2111,25 @@ namespace Java.Io
         /// </summary>
         public OutputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.OutputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1846,19 +2152,25 @@ namespace Java.Io
         /// </summary>
         public OutputStreamWriter(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.OutputStreamWriter";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1881,19 +2193,25 @@ namespace Java.Io
         /// </summary>
         public PipedInputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.PipedInputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1916,19 +2234,25 @@ namespace Java.Io
         /// </summary>
         public PipedOutputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.PipedOutputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1951,19 +2275,25 @@ namespace Java.Io
         /// </summary>
         public PipedReader(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.PipedReader";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -1986,19 +2316,25 @@ namespace Java.Io
         /// </summary>
         public PipedWriter(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.PipedWriter";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2021,19 +2357,25 @@ namespace Java.Io
         /// </summary>
         public PrintStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.PrintStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2056,19 +2398,25 @@ namespace Java.Io
         /// </summary>
         public PrintWriter(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.PrintWriter";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2091,19 +2439,25 @@ namespace Java.Io
         /// </summary>
         public PushbackInputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.PushbackInputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2126,19 +2480,25 @@ namespace Java.Io
         /// </summary>
         public PushbackReader(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.PushbackReader";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2161,19 +2521,25 @@ namespace Java.Io
         /// </summary>
         public RandomAccessFile(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.RandomAccessFile";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2196,19 +2562,25 @@ namespace Java.Io
         /// </summary>
         public Reader(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.Reader";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2231,19 +2603,25 @@ namespace Java.Io
         /// </summary>
         public SequenceInputStream(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.SequenceInputStream";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2266,19 +2644,25 @@ namespace Java.Io
         /// </summary>
         public Serializable(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.Serializable";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2301,19 +2685,25 @@ namespace Java.Io
         /// </summary>
         public SerializablePermission(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.SerializablePermission";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2327,7 +2717,9 @@ namespace Java.Io
     /// </summary>
     public partial class StreamCorruptedException : Java.Io.ObjectStreamException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.StreamCorruptedException";
 
         // TODO: complete the class
@@ -2350,19 +2742,25 @@ namespace Java.Io
         /// </summary>
         public StreamTokenizer(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.StreamTokenizer";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2385,19 +2783,25 @@ namespace Java.Io
         /// </summary>
         public StringReader(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.StringReader";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2420,19 +2824,25 @@ namespace Java.Io
         /// </summary>
         public StringWriter(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.StringWriter";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -2446,7 +2856,9 @@ namespace Java.Io
     /// </summary>
     public partial class SyncFailedException : Java.Io.IOException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.SyncFailedException";
 
         // TODO: complete the class
@@ -2460,7 +2872,9 @@ namespace Java.Io
     /// </summary>
     public partial class UncheckedIOException : Java.Lang.RuntimeException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.UncheckedIOException";
 
         // TODO: complete the class
@@ -2474,7 +2888,9 @@ namespace Java.Io
     /// </summary>
     public partial class UnsupportedEncodingException : Java.Io.IOException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.UnsupportedEncodingException";
 
         // TODO: complete the class
@@ -2488,7 +2904,9 @@ namespace Java.Io
     /// </summary>
     public partial class UTFDataFormatException : Java.Io.IOException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.UTFDataFormatException";
 
         // TODO: complete the class
@@ -2502,7 +2920,9 @@ namespace Java.Io
     /// </summary>
     public partial class WriteAbortedException : Java.Io.ObjectStreamException
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.WriteAbortedException";
 
         // TODO: complete the class
@@ -2525,19 +2945,25 @@ namespace Java.Io
         /// </summary>
         public Writer(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.io.Writer";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class

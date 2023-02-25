@@ -32,10 +32,10 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL,java.lang.String,javax.swing.text.Element,java.awt.event.InputEvent)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Event.HyperlinkEvent.EventType"/></param>
         /// <param name="arg2"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg3"><see langword="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Text.Element"/></param>
         /// <param name="arg5"><see cref="Java.Awt.EventNs.InputEvent"/></param>
         public HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, string arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5)
@@ -45,10 +45,10 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL,java.lang.String,javax.swing.text.Element)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Event.HyperlinkEvent.EventType"/></param>
         /// <param name="arg2"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg3"><see langword="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Text.Element"/></param>
         public HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, string arg3, Javax.Swing.Text.Element arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
@@ -57,10 +57,10 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Event.HyperlinkEvent.EventType"/></param>
         /// <param name="arg2"><see cref="Java.Net.URL"/></param>
-        /// <param name="arg3"><see langword="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
         public HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, string arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -68,7 +68,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.html#%3Cinit%3E(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Event.HyperlinkEvent.EventType"/></param>
         /// <param name="arg2"><see cref="Java.Net.URL"/></param>
         public HyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2)

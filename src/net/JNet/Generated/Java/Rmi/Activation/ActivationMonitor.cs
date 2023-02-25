@@ -53,7 +53,7 @@ namespace Java.Rmi.Activation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html#inactiveGroup(java.rmi.activation.ActivationGroupID,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <exception cref="Java.Rmi.Activation.UnknownGroupException"/>
         /// <exception cref="Java.Rmi.RemoteException"/>
         public void InactiveGroup(Java.Rmi.Activation.ActivationGroupID arg0, long arg1)

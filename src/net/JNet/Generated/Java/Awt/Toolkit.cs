@@ -51,8 +51,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public static string GetProperty(string arg0, string arg1)
         {
@@ -136,8 +136,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#prepareImage(java.awt.Image,int,int,java.awt.image.ImageObserver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool PrepareImage(Java.Awt.Image arg0, int arg1, int arg2, Java.Awt.ImageNs.ImageObserver arg3)
@@ -148,8 +148,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#checkImage(java.awt.Image,int,int,java.awt.image.ImageObserver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
         /// <returns><see langword="int"/></returns>
         public int CheckImage(Java.Awt.Image arg0, int arg1, int arg2, Java.Awt.ImageNs.ImageObserver arg3)
@@ -160,8 +160,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#createImage(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image CreateImage(byte[] arg0, int arg1, int arg2)
         {
@@ -179,7 +179,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#createImage(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image CreateImage(string arg0)
         {
@@ -197,7 +197,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getImage(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image GetImage(string arg0)
         {
@@ -239,7 +239,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getLockingKeyState(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Lang.UnsupportedOperationException"/>
         public bool GetLockingKeyState(int arg0)
@@ -268,7 +268,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isFrameStateSupported(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool IsFrameStateSupported(int arg0)
@@ -278,7 +278,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getDesktopProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetDesktopProperty(string arg0)
         {
@@ -289,7 +289,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Point"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <returns><see cref="Java.Awt.Cursor"/></returns>
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         /// <exception cref="Java.Awt.HeadlessException"/>
@@ -300,8 +300,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getBestCursorSize(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public Java.Awt.Dimension GetBestCursorSize(int arg0, int arg1)
@@ -311,7 +311,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getAWTEventListeners(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Awt.EventNs.AWTEventListener"/></returns>
         public Java.Awt.EventNs.AWTEventListener[] GetAWTEventListeners(long arg0)
         {
@@ -340,7 +340,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getPrintJob(java.awt.Frame,java.lang.String,java.awt.JobAttributes,java.awt.PageAttributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Awt.JobAttributes"/></param>
         /// <param name="arg3"><see cref="Java.Awt.PageAttributes"/></param>
         /// <returns><see cref="Java.Awt.PrintJob"/></returns>
@@ -351,7 +351,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getPropertyChangeListeners(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners(string arg0)
         {
@@ -361,7 +361,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#addAWTEventListener(java.awt.event.AWTEventListener,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.AWTEventListener"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         public void AddAWTEventListener(Java.Awt.EventNs.AWTEventListener arg0, long arg1)
         {
             IExecute("addAWTEventListener", arg0, arg1);
@@ -369,7 +369,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1)
         {
@@ -386,7 +386,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1)
         {
@@ -395,7 +395,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#setDynamicLayout(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public void SetDynamicLayout(bool arg0)
         {
@@ -404,8 +404,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#setLockingKeyState(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Lang.UnsupportedOperationException"/>
         public void SetLockingKeyState(int arg0, bool arg1)
         {

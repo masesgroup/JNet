@@ -23,11 +23,17 @@ namespace Java.Util
     /// </summary>
     public class AbstractMap<K, V> : Map<K, V>
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => true;
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.util.AbstractMap";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

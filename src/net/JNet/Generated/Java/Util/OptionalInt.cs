@@ -53,7 +53,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#of(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.OptionalInt"/></returns>
         public static Java.Util.OptionalInt Of(int arg0)
         {
@@ -91,7 +91,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElse(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int OrElse(int arg0)
         {

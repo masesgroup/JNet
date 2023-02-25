@@ -33,7 +33,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#%3Cinit%3E(javax.swing.tree.TreeNode,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public DefaultTreeModel(Javax.Swing.Tree.TreeNode arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -96,7 +96,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#isLeaf(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsLeaf(object arg0)
         {
@@ -105,7 +105,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#getChildCount(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetChildCount(object arg0)
         {
@@ -114,8 +114,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#getIndexOfChild(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetIndexOfChild(object arg0, object arg1)
         {
@@ -124,8 +124,8 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#getChild(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetChild(object arg0, int arg1)
         {
@@ -153,7 +153,7 @@ namespace Javax.Swing.Tree
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public void InsertNodeInto(Javax.Swing.Tree.MutableTreeNode arg0, Javax.Swing.Tree.MutableTreeNode arg1, int arg2)
         {
             IExecute("insertNodeInto", arg0, arg1, arg2);
@@ -236,7 +236,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#setAsksAllowsChildren(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetAsksAllowsChildren(bool arg0)
         {
             IExecute("setAsksAllowsChildren", arg0);
@@ -245,7 +245,7 @@ namespace Javax.Swing.Tree
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#valueForPathChanged(javax.swing.tree.TreePath,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void ValueForPathChanged(Javax.Swing.Tree.TreePath arg0, object arg1)
         {
             IExecute("valueForPathChanged", arg0, arg1);

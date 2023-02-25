@@ -49,7 +49,7 @@ namespace Javax.Xml.Xpath
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFunctionResolver.html#resolveFunction(javax.xml.namespace.QName,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Xml.Xpath.XPathFunction"/></returns>
         public Javax.Xml.Xpath.XPathFunction ResolveFunction(Javax.Xml.Namespace.QName arg0, int arg1)
         {

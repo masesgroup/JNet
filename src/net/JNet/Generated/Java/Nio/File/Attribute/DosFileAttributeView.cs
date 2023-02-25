@@ -61,7 +61,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setArchive(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void SetArchive(bool arg0)
         {
@@ -70,7 +70,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setHidden(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void SetHidden(bool arg0)
         {
@@ -79,7 +79,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setReadOnly(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void SetReadOnly(bool arg0)
         {
@@ -88,7 +88,7 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setSystem(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void SetSystem(bool arg0)
         {

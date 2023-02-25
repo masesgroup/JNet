@@ -33,7 +33,7 @@ namespace Javax.Crypto.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEParameterSpec.html#%3Cinit%3E(byte[],int,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
         public PBEParameterSpec(byte[] arg0, int arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
             : base(arg0, arg1, arg2)
@@ -43,7 +43,7 @@ namespace Javax.Crypto.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEParameterSpec.html#%3Cinit%3E(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public PBEParameterSpec(byte[] arg0, int arg1)
             : base(arg0, arg1)
         {

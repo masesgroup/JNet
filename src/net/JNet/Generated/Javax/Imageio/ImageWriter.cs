@@ -138,7 +138,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canInsertEmpty(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool CanInsertEmpty(int arg0)
@@ -148,7 +148,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canInsertImage(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool CanInsertImage(int arg0)
@@ -158,7 +158,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canRemoveImage(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool CanRemoveImage(int arg0)
@@ -168,7 +168,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canReplaceImageMetadata(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool CanReplaceImageMetadata(int arg0)
@@ -178,7 +178,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#canReplacePixels(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool CanReplacePixels(int arg0)
@@ -316,7 +316,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#prepareReplacePixels(int,java.awt.Rectangle)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void PrepareReplacePixels(int arg0, Java.Awt.Rectangle arg1)
@@ -365,7 +365,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#removeImage(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void RemoveImage(int arg0)
         {
@@ -374,7 +374,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#replaceImageMetadata(int,javax.imageio.metadata.IIOMetadata)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void ReplaceImageMetadata(int arg0, Javax.Imageio.Metadata.IIOMetadata arg1)
@@ -438,7 +438,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html#writeInsert(int,javax.imageio.IIOImage,javax.imageio.ImageWriteParam)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Imageio.IIOImage"/></param>
         /// <param name="arg2"><see cref="Javax.Imageio.ImageWriteParam"/></param>
         /// <exception cref="Java.Io.IOException"/>

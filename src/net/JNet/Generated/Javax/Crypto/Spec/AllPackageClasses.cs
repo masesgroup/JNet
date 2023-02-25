@@ -38,19 +38,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public ChaCha20ParameterSpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.ChaCha20ParameterSpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -73,19 +79,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public DESedeKeySpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.DESedeKeySpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -108,19 +120,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public DESKeySpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.DESKeySpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -143,19 +161,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public DHGenParameterSpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.DHGenParameterSpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -178,19 +202,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public DHParameterSpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.DHParameterSpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -213,19 +243,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public DHPrivateKeySpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.DHPrivateKeySpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -248,19 +284,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public DHPublicKeySpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.DHPublicKeySpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -283,19 +325,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public GCMParameterSpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.GCMParameterSpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -318,19 +366,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public IvParameterSpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.IvParameterSpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -353,19 +407,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public OAEPParameterSpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.OAEPParameterSpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -388,19 +448,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public PBEKeySpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.PBEKeySpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -423,19 +489,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public PBEParameterSpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.PBEParameterSpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -458,19 +530,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public PSource(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.PSource";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -489,19 +567,25 @@ namespace Javax.Crypto.Spec
             /// </summary>
             public PSpecified(params object[] args) : base(args) { }
 
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// </summary>
             public override string ClassName => "javax.crypto.spec.PSource$PSpecified";
-
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
-            public override bool IsAbstract => false;
-            
+            /// </summary>
+            public override bool IsAbstract => false;         
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// </summary>
             public override bool IsCloseable => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// </summary>
             public override bool IsInterface => false;
-            
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// </summary>
             public override bool IsStatic => true;
 
             // TODO: complete the class
@@ -527,19 +611,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public RC2ParameterSpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.RC2ParameterSpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -562,19 +652,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public RC5ParameterSpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.RC5ParameterSpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class
@@ -597,19 +693,25 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public SecretKeySpec(params object[] args) : base(args) { }
 
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "javax.crypto.spec.SecretKeySpec";
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// </summary>
         public override bool IsCloseable => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => false;
-
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// </summary>
         public override bool IsStatic => false;
 
         // TODO: complete the class

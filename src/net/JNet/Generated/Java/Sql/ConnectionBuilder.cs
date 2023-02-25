@@ -58,7 +58,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#password(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
         public Java.Sql.ConnectionBuilder Password(string arg0)
         {
@@ -85,7 +85,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#user(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
         public Java.Sql.ConnectionBuilder User(string arg0)
         {

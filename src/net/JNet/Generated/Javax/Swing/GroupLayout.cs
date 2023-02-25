@@ -141,8 +141,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#createBaselineGroup(boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Javax.Swing.GroupLayout.ParallelGroup"/></returns>
         public Javax.Swing.GroupLayout.ParallelGroup CreateBaselineGroup(bool arg0, bool arg1)
         {
@@ -170,7 +170,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#addLayoutComponent(java.awt.Component,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void AddLayoutComponent(Java.Awt.Component arg0, object arg1)
         {
             IExecute("addLayoutComponent", arg0, arg1);
@@ -178,7 +178,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public void AddLayoutComponent(string arg0, Java.Awt.Component arg1)
         {
@@ -203,7 +203,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#linkSize(int,java.awt.Component...)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public void LinkSize(int arg0, params Java.Awt.Component[] arg1)
         {
@@ -238,7 +238,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setHonorsVisibility(java.awt.Component,java.lang.Boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="bool?"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public void SetHonorsVisibility(Java.Awt.Component arg0, bool? arg1)
         {
             IExecute("setHonorsVisibility", arg0, arg1);
@@ -339,9 +339,9 @@ namespace Javax.Swing
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addComponent(java.awt.Component,int,int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
             /// <returns><see cref="Javax.Swing.GroupLayout.Group"/></returns>
             public Javax.Swing.GroupLayout.Group AddComponent(Java.Awt.Component arg0, int arg1, int arg2, int arg3)
             {
@@ -359,9 +359,9 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addGap(int,int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
             /// <returns><see cref="Javax.Swing.GroupLayout.Group"/></returns>
             public Javax.Swing.GroupLayout.Group AddGap(int arg0, int arg1, int arg2)
             {
@@ -370,7 +370,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addGap(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Javax.Swing.GroupLayout.Group"/></returns>
             public Javax.Swing.GroupLayout.Group AddGap(int arg0)
             {
@@ -442,11 +442,11 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addComponent(boolean,java.awt.Component,int,int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="bool"/></param>
+            /// <param name="arg0"><see cref="bool"/></param>
             /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
-            /// <param name="arg4"><see langword="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg4"><see cref="int"/></param>
             /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
             public Javax.Swing.GroupLayout.SequentialGroup AddComponent(bool arg0, Java.Awt.Component arg1, int arg2, int arg3, int arg4)
             {
@@ -455,7 +455,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addComponent(boolean,java.awt.Component)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="bool"/></param>
+            /// <param name="arg0"><see cref="bool"/></param>
             /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
             /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
             public Javax.Swing.GroupLayout.SequentialGroup AddComponent(bool arg0, Java.Awt.Component arg1)
@@ -474,8 +474,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addContainerGap(int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
             public Javax.Swing.GroupLayout.SequentialGroup AddContainerGap(int arg0, int arg1)
             {
@@ -484,7 +484,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addGroup(boolean,javax.swing.GroupLayout$Group)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="bool"/></param>
+            /// <param name="arg0"><see cref="bool"/></param>
             /// <param name="arg1"><see cref="Javax.Swing.GroupLayout.Group"/></param>
             /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
             public Javax.Swing.GroupLayout.SequentialGroup AddGroup(bool arg0, Javax.Swing.GroupLayout.Group arg1)

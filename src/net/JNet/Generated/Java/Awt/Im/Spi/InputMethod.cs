@@ -87,7 +87,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#deactivate(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void Deactivate(bool arg0)
         {
             IExecute("deactivate", arg0);
@@ -154,7 +154,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#setCompositionEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetCompositionEnabled(bool arg0)
         {
             IExecute("setCompositionEnabled", arg0);

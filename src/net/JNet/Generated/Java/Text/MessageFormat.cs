@@ -32,7 +32,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#%3Cinit%3E(java.lang.String,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         public MessageFormat(string arg0, Java.Util.Locale arg1)
             : base(arg0, arg1)
@@ -41,7 +41,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public MessageFormat(string arg0)
             : base(arg0)
         {
@@ -61,7 +61,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#format(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="string"/></returns>
         public static string Format(string arg0, params object[] arg1)
@@ -107,7 +107,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Text.ParsePosition"/></param>
         /// <returns><see cref="object"/></returns>
         public object[] Parse(string arg0, Java.Text.ParsePosition arg1)
@@ -117,7 +117,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#parse(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Text.ParseException"/>
         public object[] Parse(string arg0)
@@ -136,7 +136,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#applyPattern(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void ApplyPattern(string arg0)
         {
             IExecute("applyPattern", arg0);
@@ -144,7 +144,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormat(int,java.text.Format)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Text.Format"/></param>
         public void SetFormat(int arg0, Java.Text.Format arg1)
         {
@@ -153,7 +153,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#setFormatByArgumentIndex(int,java.text.Format)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Text.Format"/></param>
         public void SetFormatByArgumentIndex(int arg0, Java.Text.Format arg1)
         {

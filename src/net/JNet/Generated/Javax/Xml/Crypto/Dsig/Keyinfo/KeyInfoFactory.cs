@@ -53,8 +53,8 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory"/></returns>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory GetInstance(string arg0, string arg1)
@@ -64,7 +64,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory"/></returns>
         public static Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfoFactory GetInstance(string arg0)
         {
@@ -91,7 +91,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#isFeatureSupported(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsFeatureSupported(string arg0)
         {
@@ -110,7 +110,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newKeyName(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.KeyName"/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.KeyName NewKeyName(string arg0)
         {
@@ -138,7 +138,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newRetrievalMethod(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod"/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.RetrievalMethod NewRetrievalMethod(string arg0)
         {
@@ -147,7 +147,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newX509IssuerSerial(java.lang.String,java.math.BigInteger)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.X509IssuerSerial"/></returns>
         public Javax.Xml.Crypto.Dsig.Keyinfo.X509IssuerSerial NewX509IssuerSerial(string arg0, Java.Math.BigInteger arg1)

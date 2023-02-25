@@ -28,9 +28,13 @@ namespace Java.Util
     /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html"/></typeparam>
     public class Collection<E> : JVMBridgeBaseEnumerable<Collection<E>, E>
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.util.Collection";
 #if !JNETREFLECTOR
         /// <summary>

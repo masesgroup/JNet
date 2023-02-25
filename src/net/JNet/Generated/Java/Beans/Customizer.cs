@@ -64,7 +64,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Customizer.html#setObject(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public void SetObject(object arg0)
         {
             IExecute("setObject", arg0);

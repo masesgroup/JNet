@@ -228,7 +228,7 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getAttribute(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -381,7 +381,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempDirectory(java.lang.String,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -393,7 +393,7 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempDirectory(java.nio.file.Path,java.lang.String,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -404,8 +404,8 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempFile(java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -417,8 +417,8 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempFile(java.nio.file.Path,java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -452,8 +452,8 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#setAttribute(java.nio.file.Path,java.lang.String,java.lang.Object,java.nio.file.LinkOption...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="Java.Nio.File.LinkOption"/></param>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>

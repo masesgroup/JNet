@@ -69,8 +69,8 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPath.html#evaluate(java.lang.String,java.lang.Object,javax.xml.namespace.QName)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Javax.Xml.Namespace.QName"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
@@ -81,7 +81,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPath.html#evaluate(java.lang.String,org.xml.sax.InputSource,javax.xml.namespace.QName)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.InputSource"/></param>
         /// <param name="arg2"><see cref="Javax.Xml.Namespace.QName"/></param>
         /// <returns><see langword="object"/></returns>
@@ -93,8 +93,8 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPath.html#evaluate(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public string Evaluate(string arg0, object arg1)
@@ -104,7 +104,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPath.html#evaluate(java.lang.String,org.xml.sax.InputSource)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.InputSource"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
@@ -115,7 +115,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPath.html#compile(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Xpath.XPathExpression"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public Javax.Xml.Xpath.XPathExpression Compile(string arg0)

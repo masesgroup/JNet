@@ -97,7 +97,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#localControl(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool LocalControl(bool arg0)
         {
@@ -106,7 +106,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#getController(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetController(int arg0)
         {
@@ -115,7 +115,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#getPolyPressure(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetPolyPressure(int arg0)
         {
@@ -138,8 +138,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#controlChange(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void ControlChange(int arg0, int arg1)
         {
             IExecute("controlChange", arg0, arg1);
@@ -147,8 +147,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#noteOff(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void NoteOff(int arg0, int arg1)
         {
             IExecute("noteOff", arg0, arg1);
@@ -156,7 +156,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#noteOff(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void NoteOff(int arg0)
         {
             IExecute("noteOff", arg0);
@@ -164,8 +164,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#noteOn(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void NoteOn(int arg0, int arg1)
         {
             IExecute("noteOn", arg0, arg1);
@@ -173,8 +173,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#programChange(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void ProgramChange(int arg0, int arg1)
         {
             IExecute("programChange", arg0, arg1);
@@ -182,7 +182,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#programChange(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void ProgramChange(int arg0)
         {
             IExecute("programChange", arg0);
@@ -197,8 +197,8 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#setPolyPressure(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void SetPolyPressure(int arg0, int arg1)
         {
             IExecute("setPolyPressure", arg0, arg1);

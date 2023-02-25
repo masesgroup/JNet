@@ -33,8 +33,8 @@ namespace Java.Math
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public BigInteger(byte[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -50,10 +50,10 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(int,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public BigInteger(int arg0, byte[] arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -61,7 +61,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(int,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         public BigInteger(int arg0, byte[] arg1)
             : base(arg0, arg1)
@@ -70,8 +70,8 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(int,int,java.util.Random)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.Random"/></param>
         public BigInteger(int arg0, int arg1, Java.Util.Random arg2)
             : base(arg0, arg1, arg2)
@@ -80,7 +80,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(int,java.util.Random)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Random"/></param>
         public BigInteger(int arg0, Java.Util.Random arg1)
             : base(arg0, arg1)
@@ -89,8 +89,8 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public BigInteger(string arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -98,7 +98,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public BigInteger(string arg0)
             : base(arg0)
         {
@@ -134,7 +134,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#probablePrime(int,java.util.Random)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Random"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public static Java.Math.BigInteger ProbablePrime(int arg0, Java.Util.Random arg1)
@@ -144,7 +144,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#valueOf(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public static Java.Math.BigInteger ValueOf(long arg0)
         {
@@ -164,7 +164,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#isProbablePrime(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsProbablePrime(int arg0)
         {
@@ -173,7 +173,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#testBit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool TestBit(int arg0)
         {
@@ -218,7 +218,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
@@ -254,7 +254,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#toString(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string ToString(int arg0)
         {
@@ -299,7 +299,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#clearBit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ClearBit(int arg0)
         {
@@ -317,7 +317,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#flipBit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger FlipBit(int arg0)
         {
@@ -426,7 +426,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#pow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger Pow(int arg0)
         {
@@ -444,7 +444,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#setBit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger SetBit(int arg0)
         {
@@ -453,7 +453,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#shiftLeft(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ShiftLeft(int arg0)
         {
@@ -462,7 +462,7 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#shiftRight(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger ShiftRight(int arg0)
         {

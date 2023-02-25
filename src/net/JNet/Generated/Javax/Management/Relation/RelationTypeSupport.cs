@@ -32,7 +32,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationTypeSupport.html#%3Cinit%3E(java.lang.String,javax.management.relation.RoleInfo[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Management.Relation.RoleInfo"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.InvalidRelationTypeException"/>
@@ -70,7 +70,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationTypeSupport.html#getRoleInfo(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Management.Relation.RoleInfo"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RoleInfoNotFoundException"/>

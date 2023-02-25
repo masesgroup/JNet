@@ -67,8 +67,8 @@ namespace Java.Util.Zip
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html#update(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public void Update(byte[] arg0, int arg1, int arg2)
         {
             IExecute("update", arg0, arg1, arg2);
@@ -76,7 +76,7 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html#update(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void Update(int arg0)
         {
             IExecute("update", arg0);

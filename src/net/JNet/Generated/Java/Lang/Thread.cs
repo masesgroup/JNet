@@ -33,7 +33,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.Runnable,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public Thread(Java.Lang.Runnable arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -49,7 +49,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public Thread(string arg0)
             : base(arg0)
         {
@@ -59,9 +59,9 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="long"/></param>
-        /// <param name="arg4"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, string arg2, long arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -71,8 +71,8 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, string arg2, long arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -82,7 +82,7 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
@@ -100,7 +100,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public Thread(Java.Lang.ThreadGroup arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -170,7 +170,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#holdsLock(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool HoldsLock(object arg0)
         {
@@ -188,7 +188,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public static void Sleep(long arg0)
         {
@@ -218,8 +218,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public static void Sleep(long arg0, int arg1)
         {
@@ -301,8 +301,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Join(long arg0, int arg1)
         {
@@ -311,7 +311,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Join(long arg0)
         {
@@ -336,7 +336,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setDaemon(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetDaemon(bool arg0)
         {
             IExecute("setDaemon", arg0);

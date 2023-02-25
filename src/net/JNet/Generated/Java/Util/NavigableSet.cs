@@ -48,7 +48,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#ceiling(E)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object Ceiling(object arg0)
         {
@@ -57,7 +57,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#floor(E)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object Floor(object arg0)
         {
@@ -66,7 +66,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#higher(E)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object Higher(object arg0)
         {
@@ -75,7 +75,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#lower(E)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object Lower(object arg0)
         {

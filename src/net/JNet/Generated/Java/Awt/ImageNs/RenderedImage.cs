@@ -169,8 +169,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTile(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
         public Java.Awt.ImageNs.Raster GetTile(int arg0, int arg1)
         {
@@ -188,7 +188,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetProperty(string arg0)
         {

@@ -32,7 +32,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public ScrollPane(int arg0)
             : base(arg0)
@@ -140,8 +140,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#setScrollPosition(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void SetScrollPosition(int arg0, int arg1)
         {
             IExecute("setScrollPosition", arg0, arg1);
@@ -149,7 +149,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#setWheelScrollingEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetWheelScrollingEnabled(bool arg0)
         {
             IExecute("setWheelScrollingEnabled", arg0);

@@ -101,7 +101,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#setInDefaultEventSet(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetInDefaultEventSet(bool arg0)
         {
             IExecute("setInDefaultEventSet", arg0);
@@ -109,7 +109,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#setUnicast(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetUnicast(bool arg0)
         {
             IExecute("setUnicast", arg0);

@@ -32,8 +32,8 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
         public FileHandler(string arg0, bool arg1)
@@ -43,10 +43,10 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,int,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
         public FileHandler(string arg0, int arg1, int arg2, bool arg3)
@@ -56,9 +56,9 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
         public FileHandler(string arg0, int arg1, int arg2)
@@ -68,10 +68,10 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,long,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public FileHandler(string arg0, long arg1, int arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
@@ -80,7 +80,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
         public FileHandler(string arg0)

@@ -32,7 +32,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#%3Cinit%3E(java.lang.String,java.awt.Font,java.awt.font.FontRenderContext)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Font"/></param>
         /// <param name="arg2"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
         public TextLayout(string arg0, Java.Awt.Font arg1, Java.Awt.FontNs.FontRenderContext arg2)
@@ -163,7 +163,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCharacterLevel(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="byte"/></returns>
         public byte GetCharacterLevel(int arg0)
         {
@@ -201,7 +201,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextLeftHit(int,java.awt.font.TextLayout$CaretPolicy)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.FontNs.TextLayout.CaretPolicy"/></param>
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetNextLeftHit(int arg0, Java.Awt.FontNs.TextLayout.CaretPolicy arg1)
@@ -211,7 +211,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextLeftHit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetNextLeftHit(int arg0)
         {
@@ -229,7 +229,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextRightHit(int,java.awt.font.TextLayout$CaretPolicy)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.FontNs.TextLayout.CaretPolicy"/></param>
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetNextRightHit(int arg0, Java.Awt.FontNs.TextLayout.CaretPolicy arg1)
@@ -239,7 +239,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextRightHit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetNextRightHit(int arg0)
         {
@@ -266,8 +266,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#hitTestChar(float,float,java.awt.geom.Rectangle2D)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo HitTestChar(float arg0, float arg1, Java.Awt.Geom.Rectangle2D arg2)
@@ -277,8 +277,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#hitTestChar(float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo HitTestChar(float arg0, float arg1)
         {
@@ -287,7 +287,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getJustifiedLayout(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="Java.Awt.FontNs.TextLayout"/></returns>
         public Java.Awt.FontNs.TextLayout GetJustifiedLayout(float arg0)
         {
@@ -297,8 +297,8 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getPixelBounds(java.awt.font.FontRenderContext,float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
-        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetPixelBounds(Java.Awt.FontNs.FontRenderContext arg0, float arg1, float arg2)
         {
@@ -307,8 +307,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getBlackBoxBounds(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetBlackBoxBounds(int arg0, int arg1)
         {
@@ -336,8 +336,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLogicalHighlightShape(int,int,java.awt.geom.Rectangle2D)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetLogicalHighlightShape(int arg0, int arg1, Java.Awt.Geom.Rectangle2D arg2)
@@ -347,8 +347,8 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLogicalHighlightShape(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetLogicalHighlightShape(int arg0, int arg1)
         {
@@ -387,7 +387,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShapes(int,java.awt.geom.Rectangle2D,java.awt.font.TextLayout$CaretPolicy)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
         /// <param name="arg2"><see cref="Java.Awt.FontNs.TextLayout.CaretPolicy"/></param>
         /// <returns><see cref="Java.Awt.Shape"/></returns>
@@ -398,7 +398,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShapes(int,java.awt.geom.Rectangle2D)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape[] GetCaretShapes(int arg0, Java.Awt.Geom.Rectangle2D arg1)
@@ -408,7 +408,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShapes(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape[] GetCaretShapes(int arg0)
         {
@@ -418,8 +418,8 @@ namespace Java.Awt.FontNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#draw(java.awt.Graphics2D,float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Graphics2D"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
-        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
         public void Draw(Java.Awt.Graphics2D arg0, float arg1, float arg2)
         {
             IExecute("draw", arg0, arg1, arg2);

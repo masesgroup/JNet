@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAdder.html#add(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         public void Add(long arg0)
         {
             IExecute("add", arg0);

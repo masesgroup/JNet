@@ -32,7 +32,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public JTextField(int arg0)
             : base(arg0)
         {
@@ -40,8 +40,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public JTextField(string arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -49,7 +49,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public JTextField(string arg0)
             : base(arg0)
         {
@@ -58,8 +58,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#%3Cinit%3E(javax.swing.text.Document,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Document"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public JTextField(Javax.Swing.Text.Document arg0, string arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -156,7 +156,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#setActionCommand(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void SetActionCommand(string arg0)
         {
             IExecute("setActionCommand", arg0);

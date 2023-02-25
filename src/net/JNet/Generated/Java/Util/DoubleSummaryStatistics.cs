@@ -32,10 +32,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/DoubleSummaryStatistics.html#%3Cinit%3E(long,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public DoubleSummaryStatistics(long arg0, double arg1, double arg2, double arg3)
             : base(arg0, arg1, arg2, arg3)
@@ -99,7 +99,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/DoubleSummaryStatistics.html#accept(double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
         public void Accept(double arg0)
         {
             IExecute("accept", arg0);

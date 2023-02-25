@@ -118,7 +118,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#cancel(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Cancel(bool arg0)
         {
@@ -136,8 +136,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#compareAndSetForkJoinTaskTag(short,short)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="short"/></param>
-        /// <param name="arg1"><see langword="short"/></param>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="short"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool CompareAndSetForkJoinTaskTag(short arg0, short arg1)
         {
@@ -182,7 +182,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#setForkJoinTaskTag(short)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="short"/></param>
+        /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see langword="short"/></returns>
         public short SetForkJoinTaskTag(short arg0)
         {
@@ -241,7 +241,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#complete(V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public void Complete(object arg0)
         {
             IExecute("complete", arg0);

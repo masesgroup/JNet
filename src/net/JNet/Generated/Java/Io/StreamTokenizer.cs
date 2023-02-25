@@ -103,7 +103,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#commentChar(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void CommentChar(int arg0)
         {
             IExecute("commentChar", arg0);
@@ -111,7 +111,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#eolIsSignificant(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void EolIsSignificant(bool arg0)
         {
             IExecute("eolIsSignificant", arg0);
@@ -119,7 +119,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#lowerCaseMode(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void LowerCaseMode(bool arg0)
         {
             IExecute("lowerCaseMode", arg0);
@@ -127,7 +127,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ordinaryChar(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void OrdinaryChar(int arg0)
         {
             IExecute("ordinaryChar", arg0);
@@ -135,8 +135,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ordinaryChars(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void OrdinaryChars(int arg0, int arg1)
         {
             IExecute("ordinaryChars", arg0, arg1);
@@ -158,7 +158,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#quoteChar(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void QuoteChar(int arg0)
         {
             IExecute("quoteChar", arg0);
@@ -173,7 +173,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#slashSlashComments(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SlashSlashComments(bool arg0)
         {
             IExecute("slashSlashComments", arg0);
@@ -181,7 +181,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#slashStarComments(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SlashStarComments(bool arg0)
         {
             IExecute("slashStarComments", arg0);
@@ -189,8 +189,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#whitespaceChars(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void WhitespaceChars(int arg0, int arg1)
         {
             IExecute("whitespaceChars", arg0, arg1);
@@ -198,8 +198,8 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#wordChars(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void WordChars(int arg0, int arg1)
         {
             IExecute("wordChars", arg0, arg1);

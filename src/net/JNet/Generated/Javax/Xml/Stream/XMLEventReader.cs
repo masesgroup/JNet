@@ -64,7 +64,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public object GetProperty(string arg0)

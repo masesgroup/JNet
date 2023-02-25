@@ -111,7 +111,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getProperty(java.lang.String,java.awt.image.ImageObserver)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Awt.ImageNs.ImageObserver"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetProperty(string arg0, Java.Awt.ImageNs.ImageObserver arg1)
@@ -121,9 +121,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#getScaledInstance(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image GetScaledInstance(int arg0, int arg1, int arg2)
         {

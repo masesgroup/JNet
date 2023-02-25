@@ -33,7 +33,7 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#%3Cinit%3E(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Beans.ExceptionListener"/></param>
         /// <param name="arg3"><see cref="Java.Lang.ClassLoader"/></param>
         public XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2, Java.Lang.ClassLoader arg3)
@@ -44,7 +44,7 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#%3Cinit%3E(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <param name="arg2"><see cref="Java.Beans.ExceptionListener"/></param>
         public XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2)
             : base(arg0, arg1, arg2)
@@ -54,7 +54,7 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#%3Cinit%3E(java.io.InputStream,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public XMLDecoder(Java.Io.InputStream arg0, object arg1)
             : base(arg0, arg1)
         {
@@ -94,7 +94,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#createHandler(java.lang.Object,java.beans.ExceptionListener,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Beans.ExceptionListener"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="Org.Xml.Sax.Helpers.DefaultHandler"/></returns>

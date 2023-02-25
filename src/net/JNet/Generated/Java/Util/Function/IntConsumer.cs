@@ -48,7 +48,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#accept(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void Accept(int arg0)
         {
             IExecute("accept", arg0);

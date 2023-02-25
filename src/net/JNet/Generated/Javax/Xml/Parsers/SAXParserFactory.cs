@@ -62,7 +62,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newInstance(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
         public static Javax.Xml.Parsers.SAXParserFactory NewInstance(string arg0, Java.Lang.ClassLoader arg1)
@@ -83,7 +83,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#getFeature(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
         /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
@@ -106,8 +106,8 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
         /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
@@ -145,7 +145,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#setNamespaceAware(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetNamespaceAware(bool arg0)
         {
             IExecute("setNamespaceAware", arg0);
@@ -153,7 +153,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#setValidating(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetValidating(bool arg0)
         {
             IExecute("setValidating", arg0);
@@ -161,7 +161,7 @@ namespace Javax.Xml.Parsers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#setXIncludeAware(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetXIncludeAware(bool arg0)
         {
             IExecute("setXIncludeAware", arg0);

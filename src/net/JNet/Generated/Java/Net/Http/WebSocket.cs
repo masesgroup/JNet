@@ -84,7 +84,7 @@ namespace Java.Net.Http
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#request(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         public void Request(long arg0)
         {
             IExecute("request", arg0);
@@ -125,8 +125,8 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#header(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
             public Java.Net.Http.WebSocket.Builder Header(string arg0, string arg1)
             {
@@ -135,7 +135,7 @@ namespace Java.Net.Http
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#subprotocols(java.lang.String,java.lang.String...)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="string"/></param>
             /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
             public Java.Net.Http.WebSocket.Builder Subprotocols(string arg0, params string[] arg1)

@@ -32,8 +32,8 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#%3Cinit%3E(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public DefaultTableModel(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -61,7 +61,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addColumn(java.lang.Object,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         public void AddColumn(object arg0, object[] arg1)
         {
@@ -70,7 +70,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addColumn(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public void AddColumn(object arg0)
         {
             IExecute("addColumn", arg0);
@@ -86,7 +86,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#insertRow(int,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         public void InsertRow(int arg0, object[] arg1)
         {
@@ -95,9 +95,9 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#moveRow(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public void MoveRow(int arg0, int arg1, int arg2)
         {
             IExecute("moveRow", arg0, arg1, arg2);
@@ -121,7 +121,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#removeRow(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void RemoveRow(int arg0)
         {
             IExecute("removeRow", arg0);
@@ -137,7 +137,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setColumnCount(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void SetColumnCount(int arg0)
         {
             IExecute("setColumnCount", arg0);
@@ -154,7 +154,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setNumRows(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void SetNumRows(int arg0)
         {
             IExecute("setNumRows", arg0);
@@ -162,7 +162,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setRowCount(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void SetRowCount(int arg0)
         {
             IExecute("setRowCount", arg0);

@@ -32,12 +32,12 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#%3Cinit%3E(java.lang.String,java.lang.Object,java.lang.String,long,java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="long"/></param>
-        /// <param name="arg4"><see langword="string"/></param>
-        /// <param name="arg5"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg5"><see cref="object"/></param>
         public JMXConnectionNotification(string arg0, object arg1, string arg2, long arg3, string arg4, object arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {

@@ -248,7 +248,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#requestFocus(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool RequestFocus(bool arg0)
         {
@@ -266,7 +266,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getClientProperty(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetClientProperty(object arg0)
         {
@@ -275,7 +275,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#getInputMap(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.InputMap"/></returns>
         public Javax.Swing.InputMap GetInputMap(int arg0)
         {
@@ -284,8 +284,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#putClientProperty(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void PutClientProperty(object arg0, object arg1)
         {
             IExecute("putClientProperty", arg0, arg1);
@@ -293,7 +293,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setInputMap(int,javax.swing.InputMap)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.InputMap"/></param>
         public void SetInputMap(int arg0, Javax.Swing.InputMap arg1)
         {
@@ -397,9 +397,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#firePropertyChange(java.lang.String,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         public void FirePropertyChange(string arg0, bool arg1, bool arg2)
         {
             IExecute("firePropertyChange", arg0, arg1, arg2);
@@ -407,9 +407,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#firePropertyChange(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public void FirePropertyChange(string arg0, int arg1, int arg2)
         {
             IExecute("firePropertyChange", arg0, arg1, arg2);
@@ -424,10 +424,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#paintImmediately(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public void PaintImmediately(int arg0, int arg1, int arg2, int arg3)
         {
             IExecute("paintImmediately", arg0, arg1, arg2, arg3);
@@ -444,9 +444,9 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#registerKeyboardAction(java.awt.event.ActionListener,java.lang.String,javax.swing.KeyStroke,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public void RegisterKeyboardAction(Java.Awt.EventNs.ActionListener arg0, string arg1, Javax.Swing.KeyStroke arg2, int arg3)
         {
             IExecute("registerKeyboardAction", arg0, arg1, arg2, arg3);
@@ -456,7 +456,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.KeyStroke"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public void RegisterKeyboardAction(Java.Awt.EventNs.ActionListener arg0, Javax.Swing.KeyStroke arg1, int arg2)
         {
             IExecute("registerKeyboardAction", arg0, arg1, arg2);
@@ -495,7 +495,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setAlignmentX(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         public void SetAlignmentX(float arg0)
         {
             IExecute("setAlignmentX", arg0);
@@ -503,7 +503,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setAlignmentY(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         public void SetAlignmentY(float arg0)
         {
             IExecute("setAlignmentY", arg0);
@@ -511,7 +511,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setDoubleBuffered(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetDoubleBuffered(bool arg0)
         {
             IExecute("setDoubleBuffered", arg0);
@@ -519,7 +519,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setOpaque(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetOpaque(bool arg0)
         {
             IExecute("setOpaque", arg0);
@@ -527,7 +527,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#setRequestFocusEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetRequestFocusEnabled(bool arg0)
         {
             IExecute("setRequestFocusEnabled", arg0);

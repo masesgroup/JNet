@@ -32,7 +32,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public Clipboard(string arg0)
             : base(arg0)
         {
@@ -97,7 +97,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Clipboard.html#getContents(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Awt.Datatransfer.Transferable"/></returns>
         public Java.Awt.Datatransfer.Transferable GetContents(object arg0)
         {

@@ -136,7 +136,7 @@ namespace Javax.Swing.Table
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/JTableHeader.html#getHeaderRect(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetHeaderRect(int arg0)
         {

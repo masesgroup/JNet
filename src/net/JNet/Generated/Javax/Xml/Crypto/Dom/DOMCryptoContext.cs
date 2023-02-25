@@ -80,7 +80,7 @@ namespace Javax.Xml.Crypto.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#get(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object Get(object arg0)
         {
@@ -89,7 +89,7 @@ namespace Javax.Xml.Crypto.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetProperty(string arg0)
         {
@@ -98,8 +98,8 @@ namespace Javax.Xml.Crypto.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object Put(object arg0, object arg1)
         {
@@ -108,8 +108,8 @@ namespace Javax.Xml.Crypto.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object SetProperty(string arg0, object arg1)
         {
@@ -118,8 +118,8 @@ namespace Javax.Xml.Crypto.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#getNamespacePrefix(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetNamespacePrefix(string arg0, string arg1)
         {
@@ -128,8 +128,8 @@ namespace Javax.Xml.Crypto.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#putNamespacePrefix(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string PutNamespacePrefix(string arg0, string arg1)
         {
@@ -138,7 +138,7 @@ namespace Javax.Xml.Crypto.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#getElementById(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Org.W3c.Dom.Element"/></returns>
         public Org.W3c.Dom.Element GetElementById(string arg0)
         {
@@ -148,8 +148,8 @@ namespace Javax.Xml.Crypto.Dom
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#setIdAttributeNS(org.w3c.dom.Element,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Element"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         public void SetIdAttributeNS(Org.W3c.Dom.Element arg0, string arg1, string arg2)
         {
             IExecute("setIdAttributeNS", arg0, arg1, arg2);

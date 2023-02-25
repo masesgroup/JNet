@@ -178,8 +178,8 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#read(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public long Read(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2)
@@ -190,8 +190,8 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public long Write(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2)

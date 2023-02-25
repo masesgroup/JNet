@@ -32,7 +32,7 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html#%3Cinit%3E(java.lang.Object,javax.print.DocFlavor,javax.print.attribute.DocAttributeSet)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Javax.Print.DocFlavor"/></param>
         /// <param name="arg2"><see cref="Javax.Print.Attribute.DocAttributeSet"/></param>
         public SimpleDoc(object arg0, Javax.Print.DocFlavor arg1, Javax.Print.Attribute.DocAttributeSet arg2)

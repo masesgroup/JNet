@@ -102,7 +102,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#add(E)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public void Add(object arg0)
         {
             IExecute("add", arg0);
@@ -117,7 +117,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#set(E)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public void Set(object arg0)
         {
             IExecute("set", arg0);

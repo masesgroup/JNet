@@ -62,7 +62,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#createMBeanServer(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
         public static Javax.Management.MBeanServer CreateMBeanServer(string arg0)
         {
@@ -80,7 +80,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#newMBeanServer(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
         public static Javax.Management.MBeanServer NewMBeanServer(string arg0)
         {

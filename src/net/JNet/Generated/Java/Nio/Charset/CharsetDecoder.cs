@@ -130,7 +130,7 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#replaceWith(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Nio.Charset.CharsetDecoder"/></returns>
         public Java.Nio.Charset.CharsetDecoder ReplaceWith(string arg0)
         {
@@ -150,7 +150,7 @@ namespace Java.Nio.Charset
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="Java.Nio.CharBuffer"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
         public Java.Nio.Charset.CoderResult Decode(Java.Nio.ByteBuffer arg0, Java.Nio.CharBuffer arg1, bool arg2)
         {

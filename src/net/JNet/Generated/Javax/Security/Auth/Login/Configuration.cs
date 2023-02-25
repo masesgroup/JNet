@@ -53,9 +53,9 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration$Parameters,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Security.Auth.Login.Configuration.Parameters"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <returns><see cref="Javax.Security.Auth.Login.Configuration"/></returns>
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
@@ -66,7 +66,7 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration$Parameters)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Security.Auth.Login.Configuration.Parameters"/></param>
         /// <returns><see cref="Javax.Security.Auth.Login.Configuration"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
@@ -96,7 +96,7 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getAppConfigurationEntry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Security.Auth.Login.AppConfigurationEntry"/></returns>
         public Javax.Security.Auth.Login.AppConfigurationEntry[] GetAppConfigurationEntry(string arg0)
         {

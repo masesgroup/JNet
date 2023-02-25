@@ -64,8 +64,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#parseByte(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="byte"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte ParseByte(string arg0, int arg1)
@@ -75,7 +75,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#parseByte(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="byte"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte ParseByte(string arg0)
@@ -85,8 +85,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compare(byte,byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="byte"/></param>
-        /// <param name="arg1"><see langword="byte"/></param>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
         /// <returns><see langword="int"/></returns>
         public static int Compare(byte arg0, byte arg1)
         {
@@ -95,8 +95,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareUnsigned(byte,byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="byte"/></param>
-        /// <param name="arg1"><see langword="byte"/></param>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
         /// <returns><see langword="int"/></returns>
         public static int CompareUnsigned(byte arg0, byte arg1)
         {
@@ -105,7 +105,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#hashCode(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="byte"/></param>
+        /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see langword="int"/></returns>
         public static int HashCode(byte arg0)
         {
@@ -114,7 +114,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toUnsignedInt(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="byte"/></param>
+        /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see langword="int"/></returns>
         public static int ToUnsignedInt(byte arg0)
         {
@@ -123,7 +123,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#decode(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="byte?"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte? Decode(string arg0)
@@ -133,7 +133,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="byte"/></param>
+        /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see langword="byte?"/></returns>
         public static byte? ValueOf(byte arg0)
         {
@@ -142,8 +142,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="byte?"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte? ValueOf(string arg0, int arg1)
@@ -153,7 +153,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="byte?"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte? ValueOf(string arg0)
@@ -163,7 +163,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toString(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="byte"/></param>
+        /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ToString(byte arg0)
         {
@@ -172,7 +172,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toUnsignedLong(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="byte"/></param>
+        /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see langword="long"/></returns>
         public static long ToUnsignedLong(byte arg0)
         {
@@ -185,7 +185,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="byte?"/></param>
+        /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(byte? arg0)
         {
@@ -194,7 +194,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {

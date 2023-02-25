@@ -48,7 +48,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getAWTKeyStroke(char)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="char"/></param>
+        /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Awt.AWTKeyStroke"/></returns>
         public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(char arg0)
         {
@@ -57,9 +57,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getAWTKeyStroke(int,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <returns><see cref="Java.Awt.AWTKeyStroke"/></returns>
         public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(int arg0, int arg1, bool arg2)
         {
@@ -68,8 +68,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getAWTKeyStroke(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.AWTKeyStroke"/></returns>
         public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(int arg0, int arg1)
         {
@@ -78,8 +78,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getAWTKeyStroke(java.lang.Character,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="char?"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.AWTKeyStroke"/></returns>
         public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(char? arg0, int arg1)
         {
@@ -88,7 +88,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getAWTKeyStroke(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Awt.AWTKeyStroke"/></returns>
         public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(string arg0)
         {

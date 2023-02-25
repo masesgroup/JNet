@@ -32,10 +32,10 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#%3Cinit%3E(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public ShortMessage(int arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
@@ -44,9 +44,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public ShortMessage(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
@@ -55,7 +55,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public ShortMessage(int arg0)
             : base(arg0)
@@ -180,10 +180,10 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#setMessage(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public void SetMessage(int arg0, int arg1, int arg2, int arg3)
         {
@@ -192,9 +192,9 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#setMessage(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public void SetMessage(int arg0, int arg1, int arg2)
         {
@@ -203,7 +203,7 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#setMessage(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public void SetMessage(int arg0)
         {

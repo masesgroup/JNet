@@ -213,7 +213,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isAttributeSpecified(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsAttributeSpecified(int arg0)
         {
@@ -276,10 +276,10 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getTextCharacters(int,char[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="char"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public int GetTextCharacters(int arg0, char[] arg1, int arg2, int arg3)
@@ -309,7 +309,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public object GetProperty(string arg0)
@@ -319,7 +319,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getAttributeLocalName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetAttributeLocalName(int arg0)
         {
@@ -328,7 +328,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getAttributeNamespace(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetAttributeNamespace(int arg0)
         {
@@ -337,7 +337,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getAttributePrefix(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetAttributePrefix(int arg0)
         {
@@ -346,7 +346,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getAttributeType(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetAttributeType(int arg0)
         {
@@ -355,7 +355,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getAttributeValue(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetAttributeValue(int arg0)
         {
@@ -364,8 +364,8 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getAttributeValue(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetAttributeValue(string arg0, string arg1)
         {
@@ -374,7 +374,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getNamespacePrefix(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetNamespacePrefix(int arg0)
         {
@@ -383,7 +383,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getNamespaceURI(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetNamespaceURI(int arg0)
         {
@@ -392,7 +392,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getNamespaceURI(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetNamespaceURI(string arg0)
         {
@@ -401,7 +401,7 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getAttributeName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Xml.Namespace.QName"/></returns>
         public Javax.Xml.Namespace.QName GetAttributeName(int arg0)
         {
@@ -419,9 +419,9 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#require(int,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Require(int arg0, string arg1, string arg2)
         {

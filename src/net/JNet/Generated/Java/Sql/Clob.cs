@@ -62,10 +62,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#setString(long,java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int SetString(long arg0, string arg1, int arg2, int arg3)
@@ -75,8 +75,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#setString(long,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int SetString(long arg0, string arg1)
@@ -86,7 +86,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#setAsciiStream(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.OutputStream SetAsciiStream(long arg0)
@@ -96,8 +96,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#getCharacterStream(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="Java.Io.Reader"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Reader GetCharacterStream(long arg0, long arg1)
@@ -107,7 +107,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#setCharacterStream(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Io.Writer"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.Writer SetCharacterStream(long arg0)
@@ -117,8 +117,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#getSubString(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string GetSubString(long arg0, int arg1)
@@ -138,8 +138,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#position(java.lang.String,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(string arg0, long arg1)
@@ -150,7 +150,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#position(java.sql.Clob,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Clob"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(Java.Sql.Clob arg0, long arg1)
@@ -169,7 +169,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Clob.html#truncate(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void Truncate(long arg0)
         {

@@ -32,7 +32,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#%3Cinit%3E(int,java.awt.event.ActionListener)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.EventNs.ActionListener"/></param>
         public Timer(int arg0, Java.Awt.EventNs.ActionListener arg1)
             : base(arg0, arg1)
@@ -146,7 +146,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setCoalesce(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetCoalesce(bool arg0)
         {
             IExecute("setCoalesce", arg0);
@@ -154,7 +154,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html#setRepeats(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetRepeats(bool arg0)
         {
             IExecute("setRepeats", arg0);

@@ -48,11 +48,11 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#attributeDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="string"/></param>
-        /// <param name="arg4"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void AttributeDecl(string arg0, string arg1, string arg2, string arg3, string arg4)
         {
@@ -61,8 +61,8 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#elementDecl(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void ElementDecl(string arg0, string arg1)
         {
@@ -71,9 +71,9 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#externalEntityDecl(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void ExternalEntityDecl(string arg0, string arg1, string arg2)
         {
@@ -82,8 +82,8 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#internalEntityDecl(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void InternalEntityDecl(string arg0, string arg1)
         {

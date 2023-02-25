@@ -55,8 +55,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#getBytes(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public byte[] GetBytes(long arg0, int arg1)
@@ -66,10 +66,10 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBytes(long,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int SetBytes(long arg0, byte[] arg1, int arg2, int arg3)
@@ -79,7 +79,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBytes(long,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -90,8 +90,8 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#getBinaryStream(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream GetBinaryStream(long arg0, long arg1)
@@ -101,7 +101,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#setBinaryStream(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.OutputStream SetBinaryStream(long arg0)
@@ -122,7 +122,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#position(byte[],long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(byte[] arg0, long arg1)
@@ -133,7 +133,7 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#position(java.sql.Blob,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Blob"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(Java.Sql.Blob arg0, long arg1)
@@ -152,7 +152,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Blob.html#truncate(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void Truncate(long arg0)
         {

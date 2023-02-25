@@ -27,9 +27,13 @@ namespace Java.Util
     /// <typeparam name="T"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html"/></typeparam>
     public class Spliterator<T> : JVMBridgeBase<Spliterator<T>>
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.util.Spliterator";
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
         /// <summary>
         /// Returns a set of characteristics of this <see cref="Spliterator{T}"/> and its elements.

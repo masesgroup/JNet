@@ -70,7 +70,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetProperty(string arg0)
         {
@@ -79,7 +79,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#getLogger(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Logging.Logger"/></returns>
         public Java.Util.Logging.Logger GetLogger(string arg0)
         {

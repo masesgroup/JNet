@@ -32,7 +32,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public LinkRef(string arg0)
             : base(arg0)
         {

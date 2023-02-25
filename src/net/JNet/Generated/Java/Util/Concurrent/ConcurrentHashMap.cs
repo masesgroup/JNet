@@ -32,9 +32,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#%3Cinit%3E(int,float,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public ConcurrentHashMap(int arg0, float arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -42,8 +42,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         public ConcurrentHashMap(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -51,7 +51,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public ConcurrentHashMap(int arg0)
             : base(arg0)
         {
@@ -79,7 +79,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#contains(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Contains(object arg0)
         {

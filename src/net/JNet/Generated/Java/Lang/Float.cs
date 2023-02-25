@@ -88,7 +88,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isFinite(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool IsFinite(float arg0)
         {
@@ -97,7 +97,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isInfinite(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool IsInfinite(float arg0)
         {
@@ -106,7 +106,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#isNaN(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool IsNaN(float arg0)
         {
@@ -115,8 +115,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#max(float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <returns><see langword="float"/></returns>
         public static float Max(float arg0, float arg1)
         {
@@ -125,8 +125,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#min(float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <returns><see langword="float"/></returns>
         public static float Min(float arg0, float arg1)
         {
@@ -135,7 +135,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#parseFloat(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="float"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static float ParseFloat(string arg0)
@@ -145,8 +145,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#sum(float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <returns><see langword="float"/></returns>
         public static float Sum(float arg0, float arg1)
         {
@@ -155,8 +155,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compare(float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <returns><see langword="int"/></returns>
         public static int Compare(float arg0, float arg1)
         {
@@ -165,7 +165,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#floatToIntBits(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see langword="int"/></returns>
         public static int FloatToIntBits(float arg0)
         {
@@ -174,7 +174,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#hashCode(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see langword="int"/></returns>
         public static int HashCode(float arg0)
         {
@@ -183,7 +183,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see langword="float?"/></returns>
         public static float? ValueOf(float arg0)
         {
@@ -192,7 +192,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="float?"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static float? ValueOf(string arg0)
@@ -202,7 +202,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#toHexString(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ToHexString(float arg0)
         {
@@ -211,7 +211,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#toString(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ToString(float arg0)
         {
@@ -220,7 +220,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#intBitsToFloat(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="float"/></returns>
         public static float IntBitsToFloat(int arg0)
         {
@@ -229,7 +229,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#floatToRawIntBits(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see langword="int"/></returns>
         public static int FloatToRawIntBits(float arg0)
         {
@@ -260,7 +260,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compareTo(java.lang.Float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float?"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(float? arg0)
         {
@@ -269,7 +269,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {

@@ -58,9 +58,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <returns><see cref="Java.Sql.Connection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Connection GetConnection(string arg0, string arg1, string arg2)
@@ -70,7 +70,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Sql.Connection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Connection GetConnection(string arg0)
@@ -80,7 +80,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getDriver(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Sql.Driver"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Driver GetDriver(string arg0)
@@ -99,7 +99,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#println(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public static void Println(string arg0)
         {
             SExecute("println", arg0);

@@ -33,8 +33,8 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#%3Cinit%3E(java.awt.Component,int,boolean,java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="Java.Awt.Component"/></param>
         public FocusEvent(Java.Awt.Component arg0, int arg1, bool arg2, Java.Awt.Component arg3)
             : base(arg0, arg1, arg2, arg3)
@@ -44,8 +44,8 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#%3Cinit%3E(java.awt.Component,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         public FocusEvent(Java.Awt.Component arg0, int arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -54,7 +54,7 @@ namespace Java.Awt.EventNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#%3Cinit%3E(java.awt.Component,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public FocusEvent(Java.Awt.Component arg0, int arg1)
             : base(arg0, arg1)
         {

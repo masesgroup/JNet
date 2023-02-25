@@ -25,7 +25,9 @@ namespace Java.Lang
     /// </summary>
     public class Throwable : JVMBridgeException<Throwable>
     {
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.lang.Throwable";
         /// <summary>
         /// Appends the specified exception to the exceptions that were suppressed in order to deliver this exception.

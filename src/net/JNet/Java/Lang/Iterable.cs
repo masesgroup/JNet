@@ -25,9 +25,13 @@ namespace Java.Lang
     /// </summary>
     public class Iterable : JVMBridgeBase<Iterable>
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.lang.Iterable";
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
         /// <summary>
         /// Returns an iterator over elements of type <see langref="object"/>
@@ -42,9 +46,13 @@ namespace Java.Lang
     /// <typeparam name="T"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html"/></typeparam>
     public class Iterable<T> : JVMBridgeBase<Iterable<T>>
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.lang.Iterable";
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// </summary>
         public override bool IsInterface => true;
         /// <summary>
         /// Returns an iterator over elements of type <typeparamref name="T"/>.

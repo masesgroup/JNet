@@ -81,7 +81,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#add(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Add(object arg0)
         {
@@ -90,7 +90,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#contains(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Contains(object arg0)
         {
@@ -108,7 +108,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#remove(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Remove(object arg0)
         {
@@ -136,7 +136,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public object Get(int arg0)
@@ -146,7 +146,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="object"/></returns>
         public object Remove(int arg0)
         {
@@ -155,8 +155,8 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#set(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object Set(int arg0, object arg1)
         {
@@ -165,8 +165,8 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#add(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void Add(int arg0, object arg1)
         {
             IExecute("add", arg0, arg1);

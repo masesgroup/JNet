@@ -66,8 +66,8 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Read(char[] arg0, int arg1, int arg2)
@@ -135,7 +135,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#skip(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public long Skip(long arg0)
@@ -155,7 +155,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#mark(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void Mark(int arg0)
         {

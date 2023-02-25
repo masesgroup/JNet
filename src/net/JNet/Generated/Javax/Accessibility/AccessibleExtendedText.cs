@@ -56,8 +56,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#getTextBounds(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetTextBounds(int arg0, int arg1)
         {
@@ -66,8 +66,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#getTextRange(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetTextRange(int arg0, int arg1)
         {
@@ -76,8 +76,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#getTextSequenceAfter(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Accessibility.AccessibleTextSequence"/></returns>
         public Javax.Accessibility.AccessibleTextSequence GetTextSequenceAfter(int arg0, int arg1)
         {
@@ -86,8 +86,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#getTextSequenceAt(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Accessibility.AccessibleTextSequence"/></returns>
         public Javax.Accessibility.AccessibleTextSequence GetTextSequenceAt(int arg0, int arg1)
         {
@@ -96,8 +96,8 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#getTextSequenceBefore(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Accessibility.AccessibleTextSequence"/></returns>
         public Javax.Accessibility.AccessibleTextSequence GetTextSequenceBefore(int arg0, int arg1)
         {

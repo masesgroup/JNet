@@ -44,7 +44,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#afterOffset(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public static Java.Awt.FontNs.TextHitInfo AfterOffset(int arg0)
         {
@@ -53,7 +53,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#beforeOffset(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public static Java.Awt.FontNs.TextHitInfo BeforeOffset(int arg0)
         {
@@ -62,7 +62,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#leading(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public static Java.Awt.FontNs.TextHitInfo Leading(int arg0)
         {
@@ -71,7 +71,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#trailing(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public static Java.Awt.FontNs.TextHitInfo Trailing(int arg0)
         {
@@ -114,7 +114,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextHitInfo.html#getOffsetHit(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetOffsetHit(int arg0)
         {

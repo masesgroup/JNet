@@ -52,7 +52,7 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2.html#isDeclared(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsDeclared(int arg0)
         {
@@ -61,8 +61,8 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2.html#isDeclared(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsDeclared(string arg0, string arg1)
         {
@@ -71,7 +71,7 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2.html#isDeclared(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsDeclared(string arg0)
         {
@@ -80,7 +80,7 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2.html#isSpecified(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsSpecified(int arg0)
         {
@@ -89,8 +89,8 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2.html#isSpecified(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsSpecified(string arg0, string arg1)
         {
@@ -99,7 +99,7 @@ namespace Org.Xml.Sax.Ext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Attributes2.html#isSpecified(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsSpecified(string arg0)
         {

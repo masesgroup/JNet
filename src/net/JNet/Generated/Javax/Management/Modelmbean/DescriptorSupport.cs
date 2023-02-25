@@ -32,7 +32,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public DescriptorSupport(int arg0)
@@ -50,7 +50,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Javax.Management.MBeanException"/>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         /// <exception cref="Javax.Management.Modelmbean.XMLParseException"/>
@@ -113,7 +113,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#getFieldValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public object GetFieldValue(string arg0)
@@ -141,7 +141,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#removeField(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void RemoveField(string arg0)
         {
             IExecute("removeField", arg0);
@@ -149,8 +149,8 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#setField(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SetField(string arg0, object arg1)
         {

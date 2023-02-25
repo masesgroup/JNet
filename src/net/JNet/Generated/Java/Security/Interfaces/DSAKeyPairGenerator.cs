@@ -48,8 +48,8 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html#initialize(int,boolean,java.security.SecureRandom)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <param name="arg2"><see cref="Java.Security.SecureRandom"/></param>
         /// <exception cref="Java.Security.InvalidParameterException"/>
         public void Initialize(int arg0, bool arg1, Java.Security.SecureRandom arg2)

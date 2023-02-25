@@ -95,7 +95,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#getConflictValue(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetConflictValue(int arg0)
@@ -105,7 +105,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#getConflictValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetConflictValue(string arg0)
@@ -115,8 +115,8 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#setResolvedValue(int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetResolvedValue(int arg0, object arg1)
         {
@@ -125,8 +125,8 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#setResolvedValue(java.lang.String,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetResolvedValue(string arg0, object arg1)
         {

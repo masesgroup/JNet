@@ -38,7 +38,9 @@ namespace Javax.Naming.Event
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ObjectChangeListener : IObjectChangeListener
     {
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// </summary>
         public sealed override string ClassName => "org.mases.jnet.naming.event.JNetObjectChangeListener";
 
         readonly Action<NamingEvent> ObjectChangedFunction = null;

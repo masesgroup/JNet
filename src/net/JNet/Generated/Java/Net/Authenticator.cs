@@ -51,12 +51,12 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="string"/></param>
-        /// <param name="arg4"><see langword="string"/></param>
-        /// <param name="arg5"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg5"><see cref="string"/></param>
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(string arg0, Java.Net.InetAddress arg1, int arg2, string arg3, string arg4, string arg5)
         {
@@ -66,10 +66,10 @@ namespace Java.Net
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="string"/></param>
-        /// <param name="arg4"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Net.InetAddress arg0, int arg1, string arg2, string arg3, string arg4)
         {

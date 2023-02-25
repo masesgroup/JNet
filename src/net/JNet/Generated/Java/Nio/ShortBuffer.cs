@@ -44,7 +44,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#allocate(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public static Java.Nio.ShortBuffer Allocate(int arg0)
         {
@@ -54,8 +54,8 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#wrap(short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public static Java.Nio.ShortBuffer Wrap(short[] arg0, int arg1, int arg2)
         {
@@ -104,8 +104,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#put(int,short)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="short"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="short"/></param>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Put(int arg0, short arg1)
         {
@@ -114,7 +114,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#put(short)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="short"/></param>
+        /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Put(short arg0)
         {
@@ -132,7 +132,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="short"/></returns>
         public short Get(int arg0)
         {
@@ -150,7 +150,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
@@ -178,8 +178,8 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#get(short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Get(short[] arg0, int arg1, int arg2)
         {
@@ -207,8 +207,8 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html#put(short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Put(short[] arg0, int arg1, int arg2)
         {

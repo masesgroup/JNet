@@ -129,7 +129,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#firstDayOfYear(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see langword="int"/></returns>
         public int FirstDayOfYear(bool arg0)
         {
@@ -147,7 +147,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#length(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see langword="int"/></returns>
         public int Length(bool arg0)
         {

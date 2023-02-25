@@ -32,7 +32,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Text.ParseException"/>
         public RuleBasedCollator(string arg0)
             : base(arg0)
@@ -64,7 +64,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html#getCollationElementIterator(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Text.CollationElementIterator"/></returns>
         public Java.Text.CollationElementIterator GetCollationElementIterator(string arg0)
         {

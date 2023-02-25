@@ -63,7 +63,7 @@ namespace Java.Time.Temporal
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#adjustInto(R,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0, long arg1)
         {

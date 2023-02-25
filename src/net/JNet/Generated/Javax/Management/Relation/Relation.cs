@@ -76,7 +76,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRoleCardinality(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="int?"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
@@ -99,7 +99,7 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#handleMBeanUnregistration(javax.management.ObjectName,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
         /// <exception cref="Javax.Management.Relation.InvalidRoleValueException"/>

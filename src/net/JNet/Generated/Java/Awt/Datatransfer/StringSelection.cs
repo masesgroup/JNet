@@ -32,7 +32,7 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/StringSelection.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public StringSelection(string arg0)
             : base(arg0)
         {

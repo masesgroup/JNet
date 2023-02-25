@@ -78,7 +78,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#multipliedBy(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod MultipliedBy(int arg0)
         {

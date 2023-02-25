@@ -32,11 +32,11 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#%3Cinit%3E(float,int,int,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
-        /// <param name="arg4"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
         public AudioFormat(float arg0, int arg1, int arg2, bool arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -45,12 +45,12 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#%3Cinit%3E(javax.sound.sampled.AudioFormat$Encoding,float,int,int,int,float,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat.Encoding"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="float"/></param>
-        /// <param name="arg6"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="float"/></param>
+        /// <param name="arg6"><see cref="bool"/></param>
         public AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -127,7 +127,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetProperty(string arg0)
         {
@@ -153,7 +153,7 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public Encoding(string arg0)
                 : base(arg0)
             {

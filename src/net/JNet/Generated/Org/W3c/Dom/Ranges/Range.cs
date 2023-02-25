@@ -136,7 +136,7 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#compareBoundaryPoints(short,org.w3c.dom.ranges.Range)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="short"/></param>
+        /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="Org.W3c.Dom.Ranges.Range"/></param>
         /// <returns><see langword="short"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
@@ -147,7 +147,7 @@ namespace Org.W3c.Dom.Ranges
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#collapse(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void Collapse(bool arg0)
         {
@@ -205,7 +205,7 @@ namespace Org.W3c.Dom.Ranges
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEnd(org.w3c.dom.Node,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetEnd(Org.W3c.Dom.Node arg0, int arg1)
@@ -236,7 +236,7 @@ namespace Org.W3c.Dom.Ranges
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStart(org.w3c.dom.Node,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Org.W3c.Dom.Ranges.RangeException"/>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetStart(Org.W3c.Dom.Node arg0, int arg1)

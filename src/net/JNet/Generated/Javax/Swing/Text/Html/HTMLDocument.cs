@@ -104,7 +104,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getElement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetElement(string arg0)
         {
@@ -114,8 +114,8 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getElement(javax.swing.text.Element,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetElement(Javax.Swing.Text.Element arg0, object arg1, object arg2)
         {
@@ -133,9 +133,9 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getReader(int,int,int,javax.swing.text.html.HTML$Tag)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
         /// <returns><see cref="Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback"/></returns>
         public Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback GetReader(int arg0, int arg1, int arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
@@ -145,7 +145,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#getReader(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback"/></returns>
         public Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback GetReader(int arg0)
         {
@@ -155,7 +155,7 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertAfterEnd(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         /// <exception cref="Java.Io.IOException"/>
         public void InsertAfterEnd(Javax.Swing.Text.Element arg0, string arg1)
@@ -166,7 +166,7 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertAfterStart(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         /// <exception cref="Java.Io.IOException"/>
         public void InsertAfterStart(Javax.Swing.Text.Element arg0, string arg1)
@@ -177,7 +177,7 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertBeforeEnd(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         /// <exception cref="Java.Io.IOException"/>
         public void InsertBeforeEnd(Javax.Swing.Text.Element arg0, string arg1)
@@ -188,7 +188,7 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#insertBeforeStart(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         /// <exception cref="Java.Io.IOException"/>
         public void InsertBeforeStart(Javax.Swing.Text.Element arg0, string arg1)
@@ -207,7 +207,7 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setInnerHTML(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         /// <exception cref="Java.Io.IOException"/>
         public void SetInnerHTML(Javax.Swing.Text.Element arg0, string arg1)
@@ -218,7 +218,7 @@ namespace Javax.Swing.Text.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.html#setOuterHTML(javax.swing.text.Element,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         /// <exception cref="Java.Io.IOException"/>
         public void SetOuterHTML(Javax.Swing.Text.Element arg0, string arg1)
@@ -274,9 +274,9 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument,int,int,int,javax.swing.text.html.HTML$Tag)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
             /// <param name="arg4"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
             public HTMLReader(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1, int arg2, int arg3, Javax.Swing.Text.Html.HTML.Tag arg4)
                 : base(arg0, arg1, arg2, arg3, arg4)
@@ -286,7 +286,7 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.html#%3Cinit%3E(javax.swing.text.html.HTMLDocument,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             public HTMLReader(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1)
                 : base(arg0, arg1)
             {
@@ -395,8 +395,8 @@ namespace Javax.Swing.Text.Html
             /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTMLDocument"/></param>
             /// <param name="arg1"><see cref="Javax.Swing.Text.Element"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
-            /// <param name="arg4"><see langword="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg4"><see cref="int"/></param>
             public RunElement(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2, int arg3, int arg4)
                 : base(arg0, arg1, arg2, arg3, arg4)
             {

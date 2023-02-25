@@ -48,8 +48,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Remove(object arg0, object arg1)
         {
@@ -58,9 +58,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replace(K,V,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Replace(object arg0, object arg1, object arg2)
         {
@@ -69,8 +69,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#putIfAbsent(K,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object PutIfAbsent(object arg0, object arg1)
         {
@@ -79,8 +79,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#replace(K,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object Replace(object arg0, object arg1)
         {
@@ -89,8 +89,8 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html#getOrDefault(java.lang.Object,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetOrDefault(object arg0, object arg1)
         {

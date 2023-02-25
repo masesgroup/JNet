@@ -32,8 +32,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#%3Cinit%3E(V,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public AtomicMarkableReference(object arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -64,8 +64,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#attemptMark(V,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool AttemptMark(object arg0, bool arg1)
         {
@@ -74,10 +74,10 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#compareAndSet(V,V,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool CompareAndSet(object arg0, object arg1, bool arg2, bool arg3)
         {
@@ -95,10 +95,10 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#weakCompareAndSet(V,V,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSet(object arg0, object arg1, bool arg2, bool arg3)
         {
@@ -116,8 +116,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#set(V,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public void Set(object arg0, bool arg1)
         {
             IExecute("set", arg0, arg1);

@@ -191,7 +191,7 @@ namespace Org.W3c.Dom.Css
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#getFloatValue(short)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="short"/></param>
+        /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see langword="float"/></returns>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public float GetFloatValue(short arg0)
@@ -201,8 +201,8 @@ namespace Org.W3c.Dom.Css
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#setFloatValue(short,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="short"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetFloatValue(short arg0, float arg1)
         {
@@ -211,8 +211,8 @@ namespace Org.W3c.Dom.Css
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#setStringValue(short,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="short"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetStringValue(short arg0, string arg1)
         {

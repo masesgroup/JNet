@@ -163,7 +163,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#skipBytes(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int SkipBytes(int arg0)
@@ -236,8 +236,8 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#readFully(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(byte[] arg0, int arg1, int arg2)
         {
@@ -256,7 +256,7 @@ namespace Java.Io
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.html#registerValidation(java.io.ObjectInputValidation,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.ObjectInputValidation"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Io.NotActiveException"/>
         /// <exception cref="Java.Io.InvalidObjectException"/>
         public void RegisterValidation(Java.Io.ObjectInputValidation arg0, int arg1)
@@ -297,7 +297,7 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#defaulted(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see langword="bool"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public bool Defaulted(string arg0)
@@ -307,8 +307,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="bool"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="bool"/></param>
             /// <returns><see langword="bool"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public bool Get(string arg0, bool arg1)
@@ -318,8 +318,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,byte)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="byte"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="byte"/></param>
             /// <returns><see langword="byte"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public byte Get(string arg0, byte arg1)
@@ -329,8 +329,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,char)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="char"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="char"/></param>
             /// <returns><see langword="char"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public char Get(string arg0, char arg1)
@@ -340,8 +340,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,double)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="double"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="double"/></param>
             /// <returns><see langword="double"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public double Get(string arg0, double arg1)
@@ -351,8 +351,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,float)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="float"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
             /// <returns><see langword="float"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public float Get(string arg0, float arg1)
@@ -362,8 +362,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see langword="int"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public int Get(string arg0, int arg1)
@@ -373,8 +373,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see langword="object"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public object Get(string arg0, object arg1)
@@ -384,8 +384,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,long)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="long"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="long"/></param>
             /// <returns><see langword="long"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public long Get(string arg0, long arg1)
@@ -395,8 +395,8 @@ namespace Java.Io
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputStream.GetField.html#get(java.lang.String,short)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="short"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="short"/></param>
             /// <returns><see langword="short"/></returns>
             /// <exception cref="Java.Io.IOException"/>
             public short Get(string arg0, short arg1)

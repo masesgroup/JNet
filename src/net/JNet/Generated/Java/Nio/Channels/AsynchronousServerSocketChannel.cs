@@ -84,7 +84,7 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#bind(java.net.SocketAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousServerSocketChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.AsynchronousServerSocketChannel Bind(Java.Net.SocketAddress arg0, int arg1)

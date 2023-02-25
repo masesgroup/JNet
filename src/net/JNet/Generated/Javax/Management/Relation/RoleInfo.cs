@@ -32,13 +32,13 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,boolean,boolean,int,int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="string"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.InvalidRoleInfoException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
@@ -50,10 +50,10 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
@@ -64,8 +64,8 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
@@ -144,7 +144,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#checkMaxDegree(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool CheckMaxDegree(int arg0)
         {
@@ -153,7 +153,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#checkMinDegree(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool CheckMinDegree(int arg0)
         {

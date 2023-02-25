@@ -79,8 +79,8 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#overlaps(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Overlaps(long arg0, long arg1)
         {

@@ -44,7 +44,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#allocate(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public static Java.Nio.DoubleBuffer Allocate(int arg0)
         {
@@ -54,8 +54,8 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#wrap(double[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public static Java.Nio.DoubleBuffer Wrap(double[] arg0, int arg1, int arg2)
         {
@@ -86,7 +86,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="double"/></returns>
         public double Get(int arg0)
         {
@@ -122,7 +122,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#put(double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public Java.Nio.DoubleBuffer Put(double arg0)
         {
@@ -131,8 +131,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#put(int,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public Java.Nio.DoubleBuffer Put(int arg0, double arg1)
         {
@@ -150,7 +150,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
@@ -178,8 +178,8 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#get(double[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public Java.Nio.DoubleBuffer Get(double[] arg0, int arg1, int arg2)
         {
@@ -198,8 +198,8 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#put(double[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public Java.Nio.DoubleBuffer Put(double[] arg0, int arg1, int arg2)
         {

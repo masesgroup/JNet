@@ -141,10 +141,10 @@ namespace Org.Ietf.Jgss
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#add(org.ietf.jgss.GSSName,int,int,org.ietf.jgss.Oid,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Ietf.Jgss.GSSName"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Org.Ietf.Jgss.Oid"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public void Add(Org.Ietf.Jgss.GSSName arg0, int arg1, int arg2, Org.Ietf.Jgss.Oid arg3, int arg4)
         {

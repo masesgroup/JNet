@@ -32,12 +32,12 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#%3Cinit%3E(float,int,int,float,float[],float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
         /// <param name="arg4"><see cref="float"/></param>
-        /// <param name="arg5"><see langword="float"/></param>
+        /// <param name="arg5"><see cref="float"/></param>
         public BasicStroke(float arg0, int arg1, int arg2, float arg3, float[] arg4, float arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -45,10 +45,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#%3Cinit%3E(float,int,int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
         public BasicStroke(float arg0, int arg1, int arg2, float arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -56,9 +56,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#%3Cinit%3E(float,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public BasicStroke(float arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -66,7 +66,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#%3Cinit%3E(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         public BasicStroke(float arg0)
             : base(arg0)
         {

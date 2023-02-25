@@ -41,7 +41,7 @@ namespace Javax.Xml.Transform.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.InputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public StreamSource(Java.Io.InputStream arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -58,7 +58,7 @@ namespace Javax.Xml.Transform.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.Reader,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public StreamSource(Java.Io.Reader arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -74,7 +74,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public StreamSource(string arg0)
             : base(arg0)
         {
@@ -151,7 +151,7 @@ namespace Javax.Xml.Transform.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#setSystemId(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void SetSystemId(string arg0)
         {
             IExecute("setSystemId", arg0);

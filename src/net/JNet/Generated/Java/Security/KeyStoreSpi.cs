@@ -48,7 +48,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineContainsAlias(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool EngineContainsAlias(string arg0)
         {
@@ -57,7 +57,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineIsCertificateEntry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool EngineIsCertificateEntry(string arg0)
         {
@@ -66,7 +66,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineIsKeyEntry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool EngineIsKeyEntry(string arg0)
         {
@@ -93,7 +93,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetCertificate(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
         public Java.Security.Cert.Certificate EngineGetCertificate(string arg0)
         {
@@ -102,7 +102,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetCertificateChain(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
         public Java.Security.Cert.Certificate[] EngineGetCertificateChain(string arg0)
         {
@@ -111,7 +111,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetKey(java.lang.String,char[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="char"/></param>
         /// <returns><see cref="Java.Security.Key"/></returns>
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
@@ -123,7 +123,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetCreationDate(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Date"/></returns>
         public Java.Util.Date EngineGetCreationDate(string arg0)
         {
@@ -132,7 +132,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineDeleteEntry(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void EngineDeleteEntry(string arg0)
         {
@@ -153,7 +153,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineSetCertificateEntry(java.lang.String,java.security.cert.Certificate)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void EngineSetCertificateEntry(string arg0, Java.Security.Cert.Certificate arg1)
@@ -163,7 +163,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineSetKeyEntry(java.lang.String,byte[],java.security.cert.Certificate[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <param name="arg2"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
@@ -174,7 +174,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineSetKeyEntry(java.lang.String,java.security.Key,char[],java.security.cert.Certificate[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.Key"/></param>
         /// <param name="arg2"><see cref="char"/></param>
         /// <param name="arg3"><see cref="Java.Security.Cert.Certificate"/></param>
@@ -208,7 +208,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetEntry(java.lang.String,java.security.KeyStore$ProtectionParameter)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
         /// <returns><see cref="Java.Security.KeyStore.Entry"/></returns>
         /// <exception cref="Java.Security.KeyStoreException"/>
@@ -232,7 +232,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineSetEntry(java.lang.String,java.security.KeyStore$Entry,java.security.KeyStore$ProtectionParameter)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.KeyStore.Entry"/></param>
         /// <param name="arg2"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>

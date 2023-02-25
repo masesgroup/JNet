@@ -32,8 +32,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#%3Cinit%3E(int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         public UIDefaults(int arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -71,7 +71,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getBoolean(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool GetBoolean(object arg0, Java.Util.Locale arg1)
@@ -81,7 +81,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getBoolean(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool GetBoolean(object arg0)
         {
@@ -90,7 +90,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getInt(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetInt(object arg0, Java.Util.Locale arg1)
@@ -100,7 +100,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getInt(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetInt(object arg0)
         {
@@ -109,7 +109,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getColor(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetColor(object arg0, Java.Util.Locale arg1)
@@ -119,7 +119,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getColor(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetColor(object arg0)
         {
@@ -128,7 +128,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getDimension(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetDimension(object arg0, Java.Util.Locale arg1)
@@ -138,7 +138,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getDimension(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetDimension(object arg0)
         {
@@ -147,7 +147,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getFont(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font GetFont(object arg0, Java.Util.Locale arg1)
@@ -157,7 +157,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getFont(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font GetFont(object arg0)
         {
@@ -166,7 +166,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getInsets(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetInsets(object arg0, Java.Util.Locale arg1)
@@ -176,7 +176,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getInsets(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetInsets(object arg0)
         {
@@ -185,7 +185,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#get(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see langword="object"/></returns>
         public object Get(object arg0, Java.Util.Locale arg1)
@@ -195,7 +195,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getString(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetString(object arg0, Java.Util.Locale arg1)
@@ -205,7 +205,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getString(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetString(object arg0)
         {
@@ -214,7 +214,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getBorder(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public Javax.Swing.Border.Border GetBorder(object arg0, Java.Util.Locale arg1)
@@ -224,7 +224,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getBorder(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public Javax.Swing.Border.Border GetBorder(object arg0)
         {
@@ -233,7 +233,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getIcon(java.lang.Object,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetIcon(object arg0, Java.Util.Locale arg1)
@@ -243,7 +243,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getIcon(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetIcon(object arg0)
         {
@@ -269,7 +269,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#addResourceBundle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void AddResourceBundle(string arg0)
         {
             IExecute("addResourceBundle", arg0);
@@ -285,7 +285,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#removeResourceBundle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void RemoveResourceBundle(string arg0)
         {
             IExecute("removeResourceBundle", arg0);
@@ -390,8 +390,8 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ProxyLazyValue.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             public ProxyLazyValue(string arg0, string arg1)
                 : base(arg0, arg1)
             {
@@ -399,7 +399,7 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ProxyLazyValue.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public ProxyLazyValue(string arg0)
                 : base(arg0)
             {

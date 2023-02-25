@@ -62,10 +62,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#contains(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Contains(double arg0, double arg1, double arg2, double arg3)
         {
@@ -74,8 +74,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#contains(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Contains(double arg0, double arg1)
         {
@@ -102,10 +102,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#intersects(double,double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
-        /// <param name="arg3"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Intersects(double arg0, double arg1, double arg2, double arg3)
         {
@@ -124,7 +124,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Shape.html#getPathIterator(java.awt.geom.AffineTransform,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Geom.AffineTransform"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0, double arg1)
         {

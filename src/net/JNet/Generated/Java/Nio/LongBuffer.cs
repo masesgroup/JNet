@@ -44,7 +44,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#allocate(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public static Java.Nio.LongBuffer Allocate(int arg0)
         {
@@ -54,8 +54,8 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#wrap(long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public static Java.Nio.LongBuffer Wrap(long[] arg0, int arg1, int arg2)
         {
@@ -104,8 +104,8 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#put(int,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Put(int arg0, long arg1)
         {
@@ -114,7 +114,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#put(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Put(long arg0)
         {
@@ -132,7 +132,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#get(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         public long Get(int arg0)
         {
@@ -150,7 +150,7 @@ namespace Java.Nio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
@@ -178,8 +178,8 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#get(long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Get(long[] arg0, int arg1, int arg2)
         {
@@ -207,8 +207,8 @@ namespace Java.Nio
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#put(long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer Put(long[] arg0, int arg1, int arg2)
         {

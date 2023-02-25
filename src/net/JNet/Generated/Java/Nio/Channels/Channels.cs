@@ -81,7 +81,7 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NewReader(Java.Nio.Channels.ReadableByteChannel arg0, string arg1)
         {
@@ -102,7 +102,7 @@ namespace Java.Nio.Channels
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.CharsetDecoder"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NewReader(Java.Nio.Channels.ReadableByteChannel arg0, Java.Nio.Charset.CharsetDecoder arg1, int arg2)
         {
@@ -112,7 +112,7 @@ namespace Java.Nio.Channels
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.WritableByteChannel"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Io.Writer"/></returns>
         public static Java.Io.Writer NewWriter(Java.Nio.Channels.WritableByteChannel arg0, string arg1)
         {
@@ -133,7 +133,7 @@ namespace Java.Nio.Channels
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.WritableByteChannel"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.CharsetEncoder"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Io.Writer"/></returns>
         public static Java.Io.Writer NewWriter(Java.Nio.Channels.WritableByteChannel arg0, Java.Nio.Charset.CharsetEncoder arg1, int arg2)
         {

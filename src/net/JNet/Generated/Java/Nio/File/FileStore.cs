@@ -85,7 +85,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#supportsFileAttributeView(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool SupportsFileAttributeView(string arg0)
         {
@@ -94,7 +94,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#getAttribute(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public object GetAttribute(string arg0)

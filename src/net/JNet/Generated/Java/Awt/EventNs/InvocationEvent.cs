@@ -32,10 +32,10 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#%3Cinit%3E(java.lang.Object,java.lang.Runnable,java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         public InvocationEvent(object arg0, Java.Lang.Runnable arg1, object arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -43,10 +43,10 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#%3Cinit%3E(java.lang.Object,java.lang.Runnable,java.lang.Runnable,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         public InvocationEvent(object arg0, Java.Lang.Runnable arg1, Java.Lang.Runnable arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -54,7 +54,7 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#%3Cinit%3E(java.lang.Object,java.lang.Runnable)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         public InvocationEvent(object arg0, Java.Lang.Runnable arg1)
             : base(arg0, arg1)

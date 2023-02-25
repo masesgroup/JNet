@@ -58,7 +58,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#subkey(java.lang.Object,java.sql.SQLType)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Sql.SQLType"/></param>
         /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
         public Java.Sql.ShardingKeyBuilder Subkey(object arg0, Java.Sql.SQLType arg1)

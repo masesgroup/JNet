@@ -49,7 +49,7 @@ namespace Java.Lang.Reflect
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#setAccessible(java.lang.reflect.AccessibleObject[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Reflect.AccessibleObject"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public static void SetAccessible(Java.Lang.Reflect.AccessibleObject[] arg0, bool arg1)
         {
             SExecute("setAccessible", arg0, arg1);
@@ -75,7 +75,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#canAccess(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool CanAccess(object arg0)
         {
@@ -93,7 +93,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#setAccessible(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetAccessible(bool arg0)
         {
             IExecute("setAccessible", arg0);

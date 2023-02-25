@@ -68,7 +68,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofHours(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfHours(int arg0)
         {
@@ -77,8 +77,8 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofHoursMinutes(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfHoursMinutes(int arg0, int arg1)
         {
@@ -87,9 +87,9 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofHoursMinutesSeconds(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfHoursMinutesSeconds(int arg0, int arg1, int arg2)
         {
@@ -98,7 +98,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofTotalSeconds(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfTotalSeconds(int arg0)
         {
@@ -127,7 +127,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {

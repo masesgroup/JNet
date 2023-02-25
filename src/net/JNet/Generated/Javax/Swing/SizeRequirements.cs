@@ -32,10 +32,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#%3Cinit%3E(int,int,int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
         public SizeRequirements(int arg0, int arg1, int arg2, float arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -75,7 +75,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#adjustSizes(int,javax.swing.SizeRequirements[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
         /// <returns><see cref="int"/></returns>
         public static int[] AdjustSizes(int arg0, Javax.Swing.SizeRequirements[] arg1)
@@ -103,12 +103,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateAlignedPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.SizeRequirements"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see langword="bool"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
         public static void CalculateAlignedPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4, bool arg5)
         {
             SExecute("calculateAlignedPositions", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -116,7 +116,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateAlignedPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.SizeRequirements"/></param>
         /// <param name="arg3"><see cref="int"/></param>
@@ -128,12 +128,12 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateTiledPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[],boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.SizeRequirements"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see langword="bool"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
         public static void CalculateTiledPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4, bool arg5)
         {
             SExecute("calculateTiledPositions", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -141,7 +141,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateTiledPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.SizeRequirements"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.SizeRequirements"/></param>
         /// <param name="arg3"><see cref="int"/></param>

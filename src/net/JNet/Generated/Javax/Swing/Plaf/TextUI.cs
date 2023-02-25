@@ -49,9 +49,9 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getNextVisualPositionFrom(javax.swing.text.JTextComponent,int,javax.swing.text.Position$Bias,int,javax.swing.text.Position$Bias[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
@@ -81,8 +81,8 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#damageRange(javax.swing.text.JTextComponent,int,int,javax.swing.text.Position$Bias,javax.swing.text.Position$Bias)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         public void DamageRange(Javax.Swing.Text.JTextComponent arg0, int arg1, int arg2, Javax.Swing.Text.Position.Bias arg3, Javax.Swing.Text.Position.Bias arg4)
@@ -93,8 +93,8 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#damageRange(javax.swing.text.JTextComponent,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public void DamageRange(Javax.Swing.Text.JTextComponent arg0, int arg1, int arg2)
         {
             IExecute("damageRange", arg0, arg1, arg2);
@@ -114,7 +114,7 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#modelToView2D(javax.swing.text.JTextComponent,int,javax.swing.text.Position$Bias)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.JTextComponent"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>

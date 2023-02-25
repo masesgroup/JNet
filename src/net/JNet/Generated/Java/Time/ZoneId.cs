@@ -61,7 +61,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#of(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public static Java.Time.ZoneId Of(string arg0)
         {
@@ -70,7 +70,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html#ofOffset(java.lang.String,java.time.ZoneOffset)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public static Java.Time.ZoneId OfOffset(string arg0, Java.Time.ZoneOffset arg1)

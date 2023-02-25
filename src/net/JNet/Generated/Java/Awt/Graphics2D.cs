@@ -110,7 +110,7 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Shape"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Hit(Java.Awt.Rectangle arg0, Java.Awt.Shape arg1, bool arg2)
         {
@@ -154,8 +154,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawGlyphVector(java.awt.font.GlyphVector,float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.FontNs.GlyphVector"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
-        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
         public void DrawGlyphVector(Java.Awt.FontNs.GlyphVector arg0, float arg1, float arg2)
         {
             IExecute("drawGlyphVector", arg0, arg1, arg2);
@@ -165,8 +165,8 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
         /// <param name="arg1"><see cref="Java.Awt.ImageNs.BufferedImageOp"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public void DrawImage(Java.Awt.ImageNs.BufferedImage arg0, Java.Awt.ImageNs.BufferedImageOp arg1, int arg2, int arg3)
         {
             IExecute("drawImage", arg0, arg1, arg2, arg3);
@@ -192,9 +192,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawString(java.lang.String,float,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
-        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
         public void DrawString(string arg0, float arg1, float arg2)
         {
             IExecute("drawString", arg0, arg1, arg2);
@@ -203,8 +203,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawString(java.text.AttributedCharacterIterator,float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
-        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
         public void DrawString(Java.Text.AttributedCharacterIterator arg0, float arg1, float arg2)
         {
             IExecute("drawString", arg0, arg1, arg2);
@@ -220,9 +220,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#rotate(double,double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
         public void Rotate(double arg0, double arg1, double arg2)
         {
             IExecute("rotate", arg0, arg1, arg2);
@@ -230,7 +230,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#rotate(double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
         public void Rotate(double arg0)
         {
             IExecute("rotate", arg0);
@@ -238,8 +238,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#scale(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         public void Scale(double arg0, double arg1)
         {
             IExecute("scale", arg0, arg1);
@@ -248,7 +248,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setRenderingHint(java.awt.RenderingHints$Key,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.RenderingHints.Key"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void SetRenderingHint(Java.Awt.RenderingHints.Key arg0, object arg1)
         {
             IExecute("setRenderingHint", arg0, arg1);
@@ -264,8 +264,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#shear(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         public void Shear(double arg0, double arg1)
         {
             IExecute("shear", arg0, arg1);
@@ -281,8 +281,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#translate(double,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
         public void Translate(double arg0, double arg1)
         {
             IExecute("translate", arg0, arg1);

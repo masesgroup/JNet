@@ -97,7 +97,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getColorModel(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.ColorModel"/></returns>
         public Java.Awt.ImageNs.ColorModel GetColorModel(int arg0)
         {
@@ -115,9 +115,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleImage(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage CreateCompatibleImage(int arg0, int arg1, int arg2)
         {
@@ -126,8 +126,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleImage(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage CreateCompatibleImage(int arg0, int arg1)
         {
@@ -136,9 +136,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.VolatileImage"/></returns>
         public Java.Awt.ImageNs.VolatileImage CreateCompatibleVolatileImage(int arg0, int arg1, int arg2)
         {
@@ -147,10 +147,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int,java.awt.ImageCapabilities,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Awt.ImageCapabilities"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.VolatileImage"/></returns>
         /// <exception cref="Java.Awt.AWTException"/>
         public Java.Awt.ImageNs.VolatileImage CreateCompatibleVolatileImage(int arg0, int arg1, Java.Awt.ImageCapabilities arg2, int arg3)
@@ -160,8 +160,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int,java.awt.ImageCapabilities)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Awt.ImageCapabilities"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.VolatileImage"/></returns>
         /// <exception cref="Java.Awt.AWTException"/>
@@ -172,8 +172,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.VolatileImage"/></returns>
         public Java.Awt.ImageNs.VolatileImage CreateCompatibleVolatileImage(int arg0, int arg1)
         {

@@ -48,7 +48,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeFunction(java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>
@@ -60,8 +60,8 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeMethod(java.lang.Object,java.lang.String,java.lang.Object...)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Javax.Script.ScriptException"/>

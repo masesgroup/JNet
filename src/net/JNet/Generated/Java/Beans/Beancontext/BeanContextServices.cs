@@ -65,8 +65,8 @@ namespace Java.Beans.Beancontext
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#releaseService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         public void ReleaseService(Java.Beans.Beancontext.BeanContextChild arg0, object arg1, object arg2)
         {
             IExecute("releaseService", arg0, arg1, arg2);

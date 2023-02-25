@@ -32,10 +32,10 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#%3Cinit%3E(java.lang.String,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public TIFFTag(string arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -43,9 +43,9 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#%3Cinit%3E(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public TIFFTag(string arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -53,8 +53,8 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#%3Cinit%3E(java.lang.String,int,javax.imageio.plugins.tiff.TIFFTagSet)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Imageio.Plugins.Tiff.TIFFTagSet"/></param>
         public TIFFTag(string arg0, int arg1, Javax.Imageio.Plugins.Tiff.TIFFTagSet arg2)
             : base(arg0, arg1, arg2)
@@ -139,7 +139,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#getSizeOfType(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public static int GetSizeOfType(int arg0)
         {
@@ -203,7 +203,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#isDataTypeOK(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsDataTypeOK(int arg0)
         {
@@ -221,7 +221,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#getValueName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetValueName(int arg0)
         {

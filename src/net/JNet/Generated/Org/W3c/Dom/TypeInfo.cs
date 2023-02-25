@@ -78,9 +78,9 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#isDerivedFrom(java.lang.String,java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsDerivedFrom(string arg0, string arg1, int arg2)
         {

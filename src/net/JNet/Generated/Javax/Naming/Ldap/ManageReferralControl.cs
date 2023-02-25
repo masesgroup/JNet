@@ -32,7 +32,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ManageReferralControl.html#%3Cinit%3E(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public ManageReferralControl(bool arg0)
             : base(arg0)
         {

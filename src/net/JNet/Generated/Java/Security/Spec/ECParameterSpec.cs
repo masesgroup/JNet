@@ -35,7 +35,7 @@ namespace Java.Security.Spec
         /// <param name="arg0"><see cref="Java.Security.Spec.EllipticCurve"/></param>
         /// <param name="arg1"><see cref="Java.Security.Spec.ECPoint"/></param>
         /// <param name="arg2"><see cref="Java.Math.BigInteger"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public ECParameterSpec(Java.Security.Spec.EllipticCurve arg0, Java.Security.Spec.ECPoint arg1, Java.Math.BigInteger arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {

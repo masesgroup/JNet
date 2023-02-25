@@ -32,7 +32,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SynchronousQueue.html#%3Cinit%3E(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public SynchronousQueue(bool arg0)
             : base(arg0)
         {
@@ -79,7 +79,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SynchronousQueue.html#put(E)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Put(object arg0)
         {

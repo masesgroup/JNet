@@ -68,7 +68,7 @@ namespace Javax.Management.Remote.Rmi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html#isInstanceOf(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -115,7 +115,7 @@ namespace Javax.Management.Remote.Rmi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html#getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -164,7 +164,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg3"><see cref="Javax.Security.Auth.Subject"/></param>
@@ -183,7 +183,7 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html#createMBean(java.lang.String,javax.management.ObjectName,javax.security.auth.Subject)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <returns><see cref="Javax.Management.ObjectInstance"/></returns>
@@ -212,9 +212,9 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html#fetchNotifications(long,int,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         /// <returns><see cref="Javax.Management.Remote.NotificationResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Management.Remote.NotificationResult FetchNotifications(long arg0, int arg1, long arg2)

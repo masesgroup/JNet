@@ -77,7 +77,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getByteParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="byte"/></returns>
         public byte GetByteParameter(int arg0)
         {
@@ -86,7 +86,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getCharParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="char"/></returns>
         public char GetCharParameter(int arg0)
         {
@@ -95,7 +95,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getDoubleParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="double"/></returns>
         public double GetDoubleParameter(int arg0)
         {
@@ -104,7 +104,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getFloatParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="float"/></returns>
         public float GetFloatParameter(int arg0)
         {
@@ -113,7 +113,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getIntParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetIntParameter(int arg0)
         {
@@ -122,7 +122,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="byte"/></param>
+        /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(byte arg0)
         {
@@ -131,7 +131,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(char)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="char"/></param>
+        /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(char arg0)
         {
@@ -140,7 +140,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(double arg0)
         {
@@ -149,7 +149,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(float arg0)
         {
@@ -158,7 +158,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(int arg0)
         {
@@ -167,7 +167,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(object arg0)
         {
@@ -176,7 +176,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(long arg0)
         {
@@ -185,7 +185,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#add(short)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="short"/></param>
+        /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Add(short arg0)
         {
@@ -194,7 +194,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#addSource(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock AddSource(object arg0)
         {
@@ -203,8 +203,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(byte,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(byte arg0, int arg1)
         {
@@ -213,8 +213,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(char,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="char"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(char arg0, int arg1)
         {
@@ -223,8 +223,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(double,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(double arg0, int arg1)
         {
@@ -233,8 +233,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(float,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(float arg0, int arg1)
         {
@@ -243,8 +243,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(int arg0, int arg1)
         {
@@ -253,8 +253,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(object arg0, int arg1)
         {
@@ -263,8 +263,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(long arg0, int arg1)
         {
@@ -273,8 +273,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(short,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="short"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(short arg0, int arg1)
         {
@@ -283,8 +283,8 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#setSource(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock SetSource(object arg0, int arg1)
         {
@@ -293,7 +293,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getRenderableSource(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.RenderableImage"/></returns>
         public Java.Awt.ImageNs.Renderable.RenderableImage GetRenderableSource(int arg0)
         {
@@ -302,7 +302,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getRenderedSource(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
         public Java.Awt.ImageNs.RenderedImage GetRenderedSource(int arg0)
         {
@@ -311,7 +311,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getObjectParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetObjectParameter(int arg0)
         {
@@ -320,7 +320,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getSource(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetSource(int arg0)
         {
@@ -338,7 +338,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getLongParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         public long GetLongParameter(int arg0)
         {
@@ -347,7 +347,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getShortParameter(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="short"/></returns>
         public short GetShortParameter(int arg0)
         {

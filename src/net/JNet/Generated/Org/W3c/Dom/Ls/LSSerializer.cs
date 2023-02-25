@@ -81,7 +81,7 @@ namespace Org.W3c.Dom.Ls
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#writeToURI(org.w3c.dom.Node,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public bool WriteToURI(Org.W3c.Dom.Node arg0, string arg1)

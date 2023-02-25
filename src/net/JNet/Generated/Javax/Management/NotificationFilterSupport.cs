@@ -68,7 +68,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#disableType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void DisableType(string arg0)
         {
             IExecute("disableType", arg0);
@@ -76,7 +76,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilterSupport.html#enableType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void EnableType(string arg0)
         {

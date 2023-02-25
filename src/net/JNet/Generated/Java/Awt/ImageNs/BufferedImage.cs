@@ -32,9 +32,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#%3Cinit%3E(int,int,int,java.awt.image.IndexColorModel)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.ImageNs.IndexColorModel"/></param>
         public BufferedImage(int arg0, int arg1, int arg2, Java.Awt.ImageNs.IndexColorModel arg3)
             : base(arg0, arg1, arg2, arg3)
@@ -43,9 +43,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public BufferedImage(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -298,8 +298,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#isTileWritable(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsTileWritable(int arg0, int arg1)
         {
@@ -308,8 +308,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getRGB(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetRGB(int arg0, int arg1)
         {
@@ -318,13 +318,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getRGB(int,int,int,int,int[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
         public int[] GetRGB(int arg0, int arg1, int arg2, int arg3, int[] arg4, int arg5, int arg6)
         {
@@ -342,10 +342,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getSubimage(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage GetSubimage(int arg0, int arg1, int arg2, int arg3)
         {
@@ -363,8 +363,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTile(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
         public Java.Awt.ImageNs.Raster GetTile(int arg0, int arg1)
         {
@@ -382,8 +382,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getWritableTile(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster GetWritableTile(int arg0, int arg1)
         {
@@ -392,7 +392,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetProperty(string arg0)
         {
@@ -409,7 +409,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#coerceData(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void CoerceData(bool arg0)
         {
             IExecute("coerceData", arg0);
@@ -417,8 +417,8 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#releaseWritableTile(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void ReleaseWritableTile(int arg0, int arg1)
         {
             IExecute("releaseWritableTile", arg0, arg1);
@@ -434,13 +434,13 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#setRGB(int,int,int,int,int[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
         public void SetRGB(int arg0, int arg1, int arg2, int arg3, int[] arg4, int arg5, int arg6)
         {
             IExecute("setRGB", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -448,9 +448,9 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#setRGB(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public void SetRGB(int arg0, int arg1, int arg2)
         {
             IExecute("setRGB", arg0, arg1, arg2);

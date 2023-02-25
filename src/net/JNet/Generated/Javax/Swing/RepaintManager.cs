@@ -100,8 +100,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#getOffscreenBuffer(java.awt.Component,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image GetOffscreenBuffer(Java.Awt.Component arg0, int arg1, int arg2)
         {
@@ -111,8 +111,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#getVolatileOffscreenBuffer(java.awt.Component,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image GetVolatileOffscreenBuffer(Java.Awt.Component arg0, int arg1, int arg2)
         {
@@ -147,10 +147,10 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#addDirtyRegion(java.awt.Window,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         public void AddDirtyRegion(Java.Awt.Window arg0, int arg1, int arg2, int arg3, int arg4)
         {
             IExecute("addDirtyRegion", arg0, arg1, arg2, arg3, arg4);
@@ -159,10 +159,10 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#addDirtyRegion(javax.swing.JComponent,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         public void AddDirtyRegion(Javax.Swing.JComponent arg0, int arg1, int arg2, int arg3, int arg4)
         {
             IExecute("addDirtyRegion", arg0, arg1, arg2, arg3, arg4);
@@ -193,7 +193,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#setDoubleBufferingEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetDoubleBufferingEnabled(bool arg0)
         {
             IExecute("setDoubleBufferingEnabled", arg0);

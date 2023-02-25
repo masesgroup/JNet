@@ -85,7 +85,7 @@ namespace Java.Awt.Dnd.Peer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#acceptDrag(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void AcceptDrag(int arg0)
         {
             IExecute("acceptDrag", arg0);
@@ -93,7 +93,7 @@ namespace Java.Awt.Dnd.Peer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#acceptDrop(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void AcceptDrop(int arg0)
         {
             IExecute("acceptDrop", arg0);
@@ -101,7 +101,7 @@ namespace Java.Awt.Dnd.Peer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#dropComplete(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void DropComplete(bool arg0)
         {
             IExecute("dropComplete", arg0);

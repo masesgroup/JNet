@@ -32,10 +32,10 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#%3Cinit%3E(java.lang.String,java.lang.Object,long,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
-        /// <param name="arg3"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
         public Notification(string arg0, object arg1, long arg2, string arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -43,11 +43,11 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#%3Cinit%3E(java.lang.String,java.lang.Object,long,long,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
-        /// <param name="arg3"><see langword="long"/></param>
-        /// <param name="arg4"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
         public Notification(string arg0, object arg1, long arg2, long arg3, string arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -55,10 +55,10 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#%3Cinit%3E(java.lang.String,java.lang.Object,long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
-        /// <param name="arg3"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
         public Notification(string arg0, object arg1, long arg2, long arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -66,9 +66,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#%3Cinit%3E(java.lang.String,java.lang.Object,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         public Notification(string arg0, object arg1, long arg2)
             : base(arg0, arg1, arg2)
         {
@@ -127,7 +127,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#setSource(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public void SetSource(object arg0)
         {
             IExecute("setSource", arg0);

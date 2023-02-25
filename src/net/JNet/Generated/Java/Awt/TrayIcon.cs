@@ -33,7 +33,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#%3Cinit%3E(java.awt.Image,java.lang.String,java.awt.PopupMenu)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Awt.PopupMenu"/></param>
         public TrayIcon(Java.Awt.Image arg0, string arg1, Java.Awt.PopupMenu arg2)
             : base(arg0, arg1, arg2)
@@ -43,7 +43,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#%3Cinit%3E(java.awt.Image,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public TrayIcon(Java.Awt.Image arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -188,7 +188,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#setImageAutoSize(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetImageAutoSize(bool arg0)
         {
             IExecute("setImageAutoSize", arg0);

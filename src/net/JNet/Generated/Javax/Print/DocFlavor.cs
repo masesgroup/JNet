@@ -32,8 +32,8 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public DocFlavor(string arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -97,7 +97,7 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#getParameter(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetParameter(string arg0)
         {
@@ -114,7 +114,7 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public BYTE_ARRAY(string arg0)
                 : base(arg0)
             {
@@ -225,7 +225,7 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.CHAR_ARRAY.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public CHAR_ARRAY(string arg0)
                 : base(arg0)
             {
@@ -268,7 +268,7 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public INPUT_STREAM(string arg0)
                 : base(arg0)
             {
@@ -379,7 +379,7 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.READER.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public READER(string arg0)
                 : base(arg0)
             {
@@ -422,7 +422,7 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.SERVICE_FORMATTED.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public SERVICE_FORMATTED(string arg0)
                 : base(arg0)
             {
@@ -469,7 +469,7 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.STRING.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public STRING(string arg0)
                 : base(arg0)
             {
@@ -512,7 +512,7 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public URL(string arg0)
                 : base(arg0)
             {

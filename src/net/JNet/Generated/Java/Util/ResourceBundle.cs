@@ -44,7 +44,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.util.ResourceBundle$Control)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg2"><see cref="Java.Util.ResourceBundle.Control"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.Locale arg1)
@@ -65,7 +65,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.ResourceBundle$Control)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.ResourceBundle.Control"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Util.ResourceBundle.Control arg1)
@@ -75,7 +75,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(string arg0)
         {
@@ -99,7 +99,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.lang.Module)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(string arg0, Java.Lang.Module arg1)
@@ -109,7 +109,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader,java.util.ResourceBundle$Control)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         /// <param name="arg3"><see cref="Java.Util.ResourceBundle.Control"/></param>
@@ -121,7 +121,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
@@ -132,7 +132,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.Module)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Module"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
@@ -161,7 +161,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#containsKey(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool ContainsKey(string arg0)
         {
@@ -170,7 +170,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getObject(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetObject(string arg0)
         {
@@ -179,7 +179,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetString(string arg0)
         {
@@ -188,7 +188,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getStringArray(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="string"/></returns>
         public string[] GetStringArray(string arg0)
         {
@@ -241,12 +241,12 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#needsReload(java.lang.String,java.util.Locale,java.lang.String,java.lang.ClassLoader,java.util.ResourceBundle,long)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-            /// <param name="arg2"><see langword="string"/></param>
+            /// <param name="arg2"><see cref="string"/></param>
             /// <param name="arg3"><see cref="Java.Lang.ClassLoader"/></param>
             /// <param name="arg4"><see cref="Java.Util.ResourceBundle"/></param>
-            /// <param name="arg5"><see langword="long"/></param>
+            /// <param name="arg5"><see cref="long"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool NeedsReload(string arg0, Java.Util.Locale arg1, string arg2, Java.Lang.ClassLoader arg3, Java.Util.ResourceBundle arg4, long arg5)
             {
@@ -255,8 +255,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#toResourceName(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <returns><see langword="string"/></returns>
             public string ToResourceName(string arg0, string arg1)
             {
@@ -265,7 +265,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#toBundleName(java.lang.String,java.util.Locale)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
             /// <returns><see langword="string"/></returns>
             public string ToBundleName(string arg0, Java.Util.Locale arg1)
@@ -275,7 +275,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getFallbackLocale(java.lang.String,java.util.Locale)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
             /// <returns><see cref="Java.Util.Locale"/></returns>
             public Java.Util.Locale GetFallbackLocale(string arg0, Java.Util.Locale arg1)
@@ -285,11 +285,11 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#newBundle(java.lang.String,java.util.Locale,java.lang.String,java.lang.ClassLoader,boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-            /// <param name="arg2"><see langword="string"/></param>
+            /// <param name="arg2"><see cref="string"/></param>
             /// <param name="arg3"><see cref="Java.Lang.ClassLoader"/></param>
-            /// <param name="arg4"><see langword="bool"/></param>
+            /// <param name="arg4"><see cref="bool"/></param>
             /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
             /// <exception cref="Java.Lang.IllegalAccessException"/>
             /// <exception cref="Java.Lang.InstantiationException"/>
@@ -301,7 +301,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getTimeToLive(java.lang.String,java.util.Locale)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
             /// <returns><see langword="long"/></returns>
             public long GetTimeToLive(string arg0, Java.Util.Locale arg1)

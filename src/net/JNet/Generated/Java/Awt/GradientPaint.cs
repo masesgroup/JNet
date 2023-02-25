@@ -32,13 +32,13 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#%3Cinit%3E(float,float,java.awt.Color,float,float,java.awt.Color,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg3"><see langword="float"/></param>
-        /// <param name="arg4"><see langword="float"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see cref="float"/></param>
         /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg6"><see langword="bool"/></param>
+        /// <param name="arg6"><see cref="bool"/></param>
         public GradientPaint(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5, bool arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -46,11 +46,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#%3Cinit%3E(float,float,java.awt.Color,float,float,java.awt.Color)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
-        /// <param name="arg1"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg3"><see langword="float"/></param>
-        /// <param name="arg4"><see langword="float"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see cref="float"/></param>
         /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
         public GradientPaint(float arg0, float arg1, Java.Awt.Color arg2, float arg3, float arg4, Java.Awt.Color arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
@@ -63,7 +63,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
         /// <param name="arg2"><see cref="Java.Awt.Geom.Point2D"/></param>
         /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
-        /// <param name="arg4"><see langword="bool"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
         public GradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Color arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Color arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {

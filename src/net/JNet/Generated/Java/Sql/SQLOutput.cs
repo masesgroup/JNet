@@ -93,7 +93,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeBoolean(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteBoolean(bool arg0)
         {
@@ -102,7 +102,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeByte(byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="byte"/></param>
+        /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteByte(byte arg0)
         {
@@ -147,7 +147,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeDouble(double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="double"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteDouble(double arg0)
         {
@@ -156,7 +156,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeFloat(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteFloat(float arg0)
         {
@@ -165,7 +165,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeInt(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteInt(int arg0)
         {
@@ -174,7 +174,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeLong(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteLong(long arg0)
         {
@@ -192,7 +192,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeNString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteNString(string arg0)
         {
@@ -228,7 +228,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeShort(short)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="short"/></param>
+        /// <param name="arg0"><see cref="short"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteShort(short arg0)
         {
@@ -246,7 +246,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeString(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteString(string arg0)
         {
@@ -291,7 +291,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLOutput.html#writeObject(java.lang.Object,java.sql.SQLType)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Sql.SQLType"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteObject(object arg0, Java.Sql.SQLType arg1)

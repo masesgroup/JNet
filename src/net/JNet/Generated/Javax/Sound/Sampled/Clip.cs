@@ -70,7 +70,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#loop(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void Loop(int arg0)
         {
             IExecute("loop", arg0);
@@ -80,8 +80,8 @@ namespace Javax.Sound.Sampled
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public void Open(Javax.Sound.Sampled.AudioFormat arg0, byte[] arg1, int arg2, int arg3)
         {
@@ -100,7 +100,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setFramePosition(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void SetFramePosition(int arg0)
         {
             IExecute("setFramePosition", arg0);
@@ -108,8 +108,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setLoopPoints(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void SetLoopPoints(int arg0, int arg1)
         {
             IExecute("setLoopPoints", arg0, arg1);
@@ -117,7 +117,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setMicrosecondPosition(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         public void SetMicrosecondPosition(long arg0)
         {
             IExecute("setMicrosecondPosition", arg0);

@@ -100,10 +100,10 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#of(int,int,int,int,java.time.ZoneOffset)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Java.Time.ZoneOffset"/></param>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public static Java.Time.OffsetTime Of(int arg0, int arg1, int arg2, int arg3, Java.Time.ZoneOffset arg4)
@@ -236,7 +236,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
@@ -290,7 +290,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#minusHours(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime MinusHours(long arg0)
         {
@@ -299,7 +299,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#minusMinutes(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime MinusMinutes(long arg0)
         {
@@ -308,7 +308,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#minusNanos(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime MinusNanos(long arg0)
         {
@@ -317,7 +317,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#minusSeconds(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime MinusSeconds(long arg0)
         {
@@ -326,7 +326,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#plusHours(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime PlusHours(long arg0)
         {
@@ -335,7 +335,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#plusMinutes(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime PlusMinutes(long arg0)
         {
@@ -344,7 +344,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#plusNanos(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime PlusNanos(long arg0)
         {
@@ -353,7 +353,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#plusSeconds(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime PlusSeconds(long arg0)
         {
@@ -371,7 +371,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#withHour(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime WithHour(int arg0)
         {
@@ -380,7 +380,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#withMinute(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime WithMinute(int arg0)
         {
@@ -389,7 +389,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#withNano(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime WithNano(int arg0)
         {
@@ -416,7 +416,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#withSecond(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.OffsetTime"/></returns>
         public Java.Time.OffsetTime WithSecond(int arg0)
         {
@@ -443,7 +443,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#minus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Minus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
@@ -462,7 +462,7 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#plus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Plus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
@@ -482,7 +482,7 @@ namespace Java.Time
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetTime.html#with(java.time.temporal.TemporalField,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalField arg0, long arg1)
         {

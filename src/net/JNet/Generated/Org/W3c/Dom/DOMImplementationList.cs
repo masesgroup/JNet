@@ -55,7 +55,7 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationList.html#item(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Org.W3c.Dom.DOMImplementation"/></returns>
         public Org.W3c.Dom.DOMImplementation Item(int arg0)
         {

@@ -135,7 +135,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#setFocusTraversalPolicyProvider(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetFocusTraversalPolicyProvider(bool arg0)
         {
             IExecute("setFocusTraversalPolicyProvider", arg0);
@@ -153,7 +153,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#add(java.awt.Component,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component Add(Java.Awt.Component arg0, int arg1)
         {
@@ -171,7 +171,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#add(java.lang.String,java.awt.Component)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component Add(string arg0, Java.Awt.Component arg1)
@@ -181,8 +181,8 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#findComponentAt(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component FindComponentAt(int arg0, int arg1)
         {
@@ -200,7 +200,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#getComponent(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetComponent(int arg0)
         {
@@ -209,7 +209,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#getMousePosition(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Awt.Point"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
         public Java.Awt.Point GetMousePosition(bool arg0)
@@ -236,8 +236,8 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#add(java.awt.Component,java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         public void Add(Java.Awt.Component arg0, object arg1, int arg2)
         {
             IExecute("add", arg0, arg1, arg2);
@@ -246,7 +246,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#add(java.awt.Component,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void Add(Java.Awt.Component arg0, object arg1)
         {
             IExecute("add", arg0, arg1);
@@ -270,7 +270,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#remove(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void Remove(int arg0)
         {
             IExecute("remove", arg0);
@@ -294,7 +294,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#setComponentZOrder(java.awt.Component,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         public void SetComponentZOrder(Java.Awt.Component arg0, int arg1)
         {
             IExecute("setComponentZOrder", arg0, arg1);
@@ -302,7 +302,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#setFocusCycleRoot(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetFocusCycleRoot(bool arg0)
         {
             IExecute("setFocusCycleRoot", arg0);

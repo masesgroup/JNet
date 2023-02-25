@@ -67,8 +67,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getIndex(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetIndex(string arg0, string arg1)
         {
@@ -77,7 +77,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getIndex(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="int"/></returns>
         public int GetIndex(string arg0)
         {
@@ -86,7 +86,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getLocalName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetLocalName(int arg0)
         {
@@ -95,7 +95,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getQName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetQName(int arg0)
         {
@@ -104,7 +104,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getType(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetType(int arg0)
         {
@@ -113,8 +113,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getType(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetType(string arg0, string arg1)
         {
@@ -123,7 +123,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetType(string arg0)
         {
@@ -132,7 +132,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getURI(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetURI(int arg0)
         {
@@ -141,7 +141,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getValue(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetValue(int arg0)
         {
@@ -150,8 +150,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getValue(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetValue(string arg0, string arg1)
         {
@@ -160,7 +160,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getValue(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetValue(string arg0)
         {
@@ -169,11 +169,11 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#addAttribute(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="string"/></param>
-        /// <param name="arg4"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
         public void AddAttribute(string arg0, string arg1, string arg2, string arg3, string arg4)
         {
             IExecute("addAttribute", arg0, arg1, arg2, arg3, arg4);
@@ -188,7 +188,7 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#removeAttribute(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void RemoveAttribute(int arg0)
         {
             IExecute("removeAttribute", arg0);
@@ -196,12 +196,12 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#setAttribute(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="string"/></param>
-        /// <param name="arg4"><see langword="string"/></param>
-        /// <param name="arg5"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg5"><see cref="string"/></param>
         public void SetAttribute(int arg0, string arg1, string arg2, string arg3, string arg4, string arg5)
         {
             IExecute("setAttribute", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -217,8 +217,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#setLocalName(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public void SetLocalName(int arg0, string arg1)
         {
             IExecute("setLocalName", arg0, arg1);
@@ -226,8 +226,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#setQName(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public void SetQName(int arg0, string arg1)
         {
             IExecute("setQName", arg0, arg1);
@@ -235,8 +235,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#setType(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public void SetType(int arg0, string arg1)
         {
             IExecute("setType", arg0, arg1);
@@ -244,8 +244,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#setURI(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public void SetURI(int arg0, string arg1)
         {
             IExecute("setURI", arg0, arg1);
@@ -253,8 +253,8 @@ namespace Org.Xml.Sax.Helpers
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#setValue(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public void SetValue(int arg0, string arg1)
         {
             IExecute("setValue", arg0, arg1);

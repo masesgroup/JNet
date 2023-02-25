@@ -34,7 +34,7 @@ namespace Javax.Management
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
         /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         public MBeanServerInvocationHandler(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
@@ -94,7 +94,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <param name="arg2"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>

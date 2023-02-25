@@ -23,9 +23,13 @@ namespace Java.Util
     /// </summary>
     public class Hashtable<K, V> : Dictionary<K, V>
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// </summary>
         public override bool IsAbstract => false;
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.util.Hashtable";
         /// <summary>
         /// Converter from <see cref="Hashtable{K, V}"/> to <see cref="Map{K, V}"/>

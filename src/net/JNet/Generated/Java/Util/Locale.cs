@@ -32,9 +32,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         public Locale(string arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
         {
@@ -42,8 +42,8 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public Locale(string arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -51,7 +51,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public Locale(string arg0)
             : base(arg0)
         {
@@ -203,7 +203,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#forLanguageTag(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public static Java.Util.Locale ForLanguageTag(string arg0)
         {
@@ -347,7 +347,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getExtension(char)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="char"/></param>
+        /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetExtension(char arg0)
         {
@@ -356,7 +356,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getUnicodeLocaleType(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetUnicodeLocaleType(string arg0)
         {
@@ -416,7 +416,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#addUnicodeLocaleAttribute(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder AddUnicodeLocaleAttribute(string arg0)
             {
@@ -443,7 +443,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#removeUnicodeLocaleAttribute(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder RemoveUnicodeLocaleAttribute(string arg0)
             {
@@ -452,8 +452,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#setExtension(char,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="char"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="char"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder SetExtension(char arg0, string arg1)
             {
@@ -462,7 +462,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#setLanguage(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder SetLanguage(string arg0)
             {
@@ -471,7 +471,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#setLanguageTag(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder SetLanguageTag(string arg0)
             {
@@ -489,7 +489,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#setRegion(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder SetRegion(string arg0)
             {
@@ -498,7 +498,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#setScript(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder SetScript(string arg0)
             {
@@ -507,8 +507,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#setUnicodeLocaleKeyword(java.lang.String,java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder SetUnicodeLocaleKeyword(string arg0, string arg1)
             {
@@ -517,7 +517,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#setVariant(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder SetVariant(string arg0)
             {
@@ -685,8 +685,8 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#%3Cinit%3E(java.lang.String,double)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
-            /// <param name="arg1"><see langword="double"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="double"/></param>
             public LanguageRange(string arg0, double arg1)
                 : base(arg0, arg1)
             {
@@ -694,7 +694,7 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public LanguageRange(string arg0)
                 : base(arg0)
             {

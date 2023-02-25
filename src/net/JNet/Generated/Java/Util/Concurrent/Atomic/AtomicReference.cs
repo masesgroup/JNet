@@ -32,7 +32,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#%3Cinit%3E(V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public AtomicReference(object arg0)
             : base(arg0)
         {
@@ -81,8 +81,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndSet(V,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool CompareAndSet(object arg0, object arg1)
         {
@@ -91,8 +91,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetAcquire(V,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSetAcquire(object arg0, object arg1)
         {
@@ -101,8 +101,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetPlain(V,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSetPlain(object arg0, object arg1)
         {
@@ -111,8 +111,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetRelease(V,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSetRelease(object arg0, object arg1)
         {
@@ -121,8 +121,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetVolatile(V,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSetVolatile(object arg0, object arg1)
         {
@@ -131,8 +131,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndExchange(V,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object CompareAndExchange(object arg0, object arg1)
         {
@@ -141,8 +141,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeAcquire(V,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object CompareAndExchangeAcquire(object arg0, object arg1)
         {
@@ -151,8 +151,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeRelease(V,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object CompareAndExchangeRelease(object arg0, object arg1)
         {
@@ -170,7 +170,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#getAndSet(V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetAndSet(object arg0)
         {
@@ -179,7 +179,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#lazySet(V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public void LazySet(object arg0)
         {
             IExecute("lazySet", arg0);
@@ -187,7 +187,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#set(V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public void Set(object arg0)
         {
             IExecute("set", arg0);
@@ -195,7 +195,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html#setRelease(V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public void SetRelease(object arg0)
         {
             IExecute("setRelease", arg0);

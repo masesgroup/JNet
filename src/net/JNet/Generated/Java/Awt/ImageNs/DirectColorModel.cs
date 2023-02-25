@@ -32,11 +32,11 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DirectColorModel.html#%3Cinit%3E(int,int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         public DirectColorModel(int arg0, int arg1, int arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -44,10 +44,10 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DirectColorModel.html#%3Cinit%3E(int,int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public DirectColorModel(int arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -56,13 +56,13 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DirectColorModel.html#%3Cinit%3E(java.awt.color.ColorSpace,int,int,int,int,int,boolean,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ColorNs.ColorSpace"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
-        /// <param name="arg6"><see langword="bool"/></param>
-        /// <param name="arg7"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="bool"/></param>
+        /// <param name="arg7"><see cref="int"/></param>
         public DirectColorModel(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {

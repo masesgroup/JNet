@@ -48,7 +48,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Wait(long arg0)
         {
@@ -66,8 +66,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Wait(long arg0, int arg1)
         {

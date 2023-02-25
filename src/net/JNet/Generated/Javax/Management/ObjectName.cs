@@ -32,9 +32,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <exception cref="Javax.Management.MalformedObjectNameException"/>
         public ObjectName(string arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
@@ -43,7 +43,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Javax.Management.MalformedObjectNameException"/>
         public ObjectName(string arg0)
             : base(arg0)
@@ -72,7 +72,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#quote(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public static string Quote(string arg0)
         {
@@ -81,7 +81,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#unquote(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public static string Unquote(string arg0)
         {
@@ -90,9 +90,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <returns><see cref="Javax.Management.ObjectName"/></returns>
         /// <exception cref="Javax.Management.MalformedObjectNameException"/>
         public static Javax.Management.ObjectName GetInstance(string arg0, string arg1, string arg2)
@@ -102,7 +102,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Management.ObjectName"/></returns>
         /// <exception cref="Javax.Management.MalformedObjectNameException"/>
         /// <exception cref="Java.Lang.NullPointerException"/>
@@ -208,7 +208,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#isPropertyValuePattern(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsPropertyValuePattern(string arg0)
         {
@@ -217,7 +217,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {
@@ -235,7 +235,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getKeyProperty(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string GetKeyProperty(string arg0)
         {

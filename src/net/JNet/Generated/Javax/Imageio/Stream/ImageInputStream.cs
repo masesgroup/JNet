@@ -172,8 +172,8 @@ namespace Javax.Imageio.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#read(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int Read(byte[] arg0, int arg1, int arg2)
@@ -233,7 +233,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#skipBytes(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int SkipBytes(int arg0)
@@ -273,7 +273,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readBits(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public long ReadBits(int arg0)
@@ -303,7 +303,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#skipBytes(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public long SkipBytes(long arg0)
@@ -341,7 +341,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#flushBefore(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void FlushBefore(long arg0)
         {
@@ -358,7 +358,7 @@ namespace Javax.Imageio.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readBytes(javax.imageio.stream.IIOByteBuffer,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Imageio.Stream.IIOByteBuffer"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void ReadBytes(Javax.Imageio.Stream.IIOByteBuffer arg0, int arg1)
         {
@@ -368,8 +368,8 @@ namespace Javax.Imageio.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readFully(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(byte[] arg0, int arg1, int arg2)
         {
@@ -388,8 +388,8 @@ namespace Javax.Imageio.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readFully(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(char[] arg0, int arg1, int arg2)
         {
@@ -399,8 +399,8 @@ namespace Javax.Imageio.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readFully(double[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(double[] arg0, int arg1, int arg2)
         {
@@ -410,8 +410,8 @@ namespace Javax.Imageio.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readFully(float[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(float[] arg0, int arg1, int arg2)
         {
@@ -421,8 +421,8 @@ namespace Javax.Imageio.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readFully(int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(int[] arg0, int arg1, int arg2)
         {
@@ -432,8 +432,8 @@ namespace Javax.Imageio.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readFully(long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(long[] arg0, int arg1, int arg2)
         {
@@ -443,8 +443,8 @@ namespace Javax.Imageio.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#readFully(short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(short[] arg0, int arg1, int arg2)
         {
@@ -462,7 +462,7 @@ namespace Javax.Imageio.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStream.html#seek(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void Seek(long arg0)
         {

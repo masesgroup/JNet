@@ -121,7 +121,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashCount(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public static void SetFlashCount(int arg0)
         {
             SExecute("setFlashCount", arg0);
@@ -129,7 +129,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashTime(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public static void SetFlashTime(int arg0)
         {
             SExecute("setFlashTime", arg0);

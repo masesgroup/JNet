@@ -32,7 +32,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/TrustAnchor.html#%3Cinit%3E(java.lang.String,java.security.PublicKey,byte[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Security.PublicKey"/></param>
         /// <param name="arg2"><see cref="byte"/></param>
         public TrustAnchor(string arg0, Java.Security.PublicKey arg1, byte[] arg2)

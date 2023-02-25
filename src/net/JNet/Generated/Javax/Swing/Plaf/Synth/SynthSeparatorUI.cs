@@ -83,10 +83,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.Synth.SynthContext"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);

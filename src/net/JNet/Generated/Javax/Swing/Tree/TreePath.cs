@@ -32,7 +32,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#%3Cinit%3E(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public TreePath(object arg0)
             : base(arg0)
         {
@@ -97,7 +97,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#getPathComponent(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetPathComponent(int arg0)
         {
@@ -106,7 +106,7 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html#pathByAddingChild(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath PathByAddingChild(object arg0)
         {

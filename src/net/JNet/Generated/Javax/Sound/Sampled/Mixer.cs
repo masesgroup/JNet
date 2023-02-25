@@ -97,7 +97,7 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#isSynchronizationSupported(javax.sound.sampled.Line[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsSynchronizationSupported(Javax.Sound.Sampled.Line[] arg0, bool arg1)
         {
@@ -144,7 +144,7 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#synchronize(javax.sound.sampled.Line[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.Line"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public void Synchronize(Javax.Sound.Sampled.Line[] arg0, bool arg1)
         {
             IExecute("synchronize", arg0, arg1);

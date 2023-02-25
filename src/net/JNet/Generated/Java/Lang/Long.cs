@@ -64,7 +64,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#bitCount(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="int"/></returns>
         public static int BitCount(long arg0)
         {
@@ -73,8 +73,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compare(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="int"/></returns>
         public static int Compare(long arg0, long arg1)
         {
@@ -83,8 +83,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compareUnsigned(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="int"/></returns>
         public static int CompareUnsigned(long arg0, long arg1)
         {
@@ -93,7 +93,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#hashCode(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="int"/></returns>
         public static int HashCode(long arg0)
         {
@@ -102,7 +102,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#numberOfLeadingZeros(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="int"/></returns>
         public static int NumberOfLeadingZeros(long arg0)
         {
@@ -111,7 +111,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#numberOfTrailingZeros(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="int"/></returns>
         public static int NumberOfTrailingZeros(long arg0)
         {
@@ -120,7 +120,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#signum(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="int"/></returns>
         public static int Signum(long arg0)
         {
@@ -129,7 +129,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#decode(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="long?"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long? Decode(string arg0)
@@ -139,8 +139,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String,java.lang.Long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="long?"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="long?"/></returns>
         public static long? GetLong(string arg0, long? arg1)
         {
@@ -149,8 +149,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="long?"/></returns>
         public static long? GetLong(string arg0, long arg1)
         {
@@ -159,7 +159,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="long?"/></returns>
         public static long? GetLong(string arg0)
         {
@@ -168,8 +168,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="long?"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long? ValueOf(string arg0, int arg1)
@@ -179,7 +179,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="long?"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long? ValueOf(string arg0)
@@ -189,7 +189,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="long?"/></returns>
         public static long? ValueOf(long arg0)
         {
@@ -198,7 +198,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toBinaryString(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ToBinaryString(long arg0)
         {
@@ -207,7 +207,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toHexString(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ToHexString(long arg0)
         {
@@ -216,7 +216,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toOctalString(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ToOctalString(long arg0)
         {
@@ -225,8 +225,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toString(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ToString(long arg0, int arg1)
         {
@@ -235,7 +235,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toString(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ToString(long arg0)
         {
@@ -244,8 +244,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toUnsignedString(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ToUnsignedString(long arg0, int arg1)
         {
@@ -254,7 +254,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toUnsignedString(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="string"/></returns>
         public static string ToUnsignedString(long arg0)
         {
@@ -263,8 +263,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#divideUnsigned(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         public static long DivideUnsigned(long arg0, long arg1)
         {
@@ -273,7 +273,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#highestOneBit(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         public static long HighestOneBit(long arg0)
         {
@@ -282,7 +282,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#lowestOneBit(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         public static long LowestOneBit(long arg0)
         {
@@ -291,8 +291,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#max(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         public static long Max(long arg0, long arg1)
         {
@@ -301,8 +301,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#min(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         public static long Min(long arg0, long arg1)
         {
@@ -312,9 +312,9 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.CharSequence,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseLong(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
@@ -324,8 +324,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseLong(string arg0, int arg1)
@@ -335,7 +335,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseLong(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseLong(string arg0)
@@ -346,9 +346,9 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.CharSequence,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseUnsignedLong(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
@@ -358,8 +358,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.String,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseUnsignedLong(string arg0, int arg1)
@@ -369,7 +369,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#parseUnsignedLong(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseUnsignedLong(string arg0)
@@ -379,8 +379,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#remainderUnsigned(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         public static long RemainderUnsigned(long arg0, long arg1)
         {
@@ -389,7 +389,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#reverse(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         public static long Reverse(long arg0)
         {
@@ -398,7 +398,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#reverseBytes(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         public static long ReverseBytes(long arg0)
         {
@@ -407,8 +407,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#rotateLeft(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         public static long RotateLeft(long arg0, int arg1)
         {
@@ -417,8 +417,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#rotateRight(long,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         public static long RotateRight(long arg0, int arg1)
         {
@@ -427,8 +427,8 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#sum(long,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see langword="long"/></returns>
         public static long Sum(long arg0, long arg1)
         {
@@ -441,7 +441,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compareTo(java.lang.Long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long?"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(long? arg0)
         {
@@ -450,7 +450,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compareTo(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
         {

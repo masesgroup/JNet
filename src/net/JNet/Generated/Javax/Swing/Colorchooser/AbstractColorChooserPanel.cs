@@ -118,7 +118,7 @@ namespace Javax.Swing.Colorchooser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#setColorTransparencySelectionEnabled(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetColorTransparencySelectionEnabled(bool arg0)
         {
             IExecute("setColorTransparencySelectionEnabled", arg0);

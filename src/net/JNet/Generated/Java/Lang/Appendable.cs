@@ -48,7 +48,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html#append(char)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="char"/></param>
+        /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Lang.Appendable"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Appendable Append(char arg0)
@@ -59,8 +59,8 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html#append(java.lang.CharSequence,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.Appendable"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Appendable Append(Java.Lang.CharSequence arg0, int arg1, int arg2)

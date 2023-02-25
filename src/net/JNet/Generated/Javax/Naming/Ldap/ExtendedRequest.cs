@@ -66,10 +66,10 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedRequest.html#createExtendedResponse(java.lang.String,byte[],int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Javax.Naming.Ldap.ExtendedResponse"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Ldap.ExtendedResponse CreateExtendedResponse(string arg0, byte[] arg1, int arg2, int arg3)

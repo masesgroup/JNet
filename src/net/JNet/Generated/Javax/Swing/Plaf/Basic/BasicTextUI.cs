@@ -53,8 +53,8 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextUI.html#create(javax.swing.text.Element,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public Javax.Swing.Text.View Create(Javax.Swing.Text.Element arg0, int arg1, int arg2)
         {

@@ -240,7 +240,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#getPropertyChangeListeners(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Beans.PropertyChangeListener"/></returns>
         public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners(string arg0)
         {
@@ -249,7 +249,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#getVetoableChangeListeners(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Beans.VetoableChangeListener"/></returns>
         public Java.Beans.VetoableChangeListener[] GetVetoableChangeListeners(string arg0)
         {
@@ -282,7 +282,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1)
         {
@@ -299,7 +299,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#addVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
         public void AddVetoableChangeListener(string arg0, Java.Beans.VetoableChangeListener arg1)
         {
@@ -348,7 +348,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1)
         {
@@ -365,7 +365,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#removeVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
         public void RemoveVetoableChangeListener(string arg0, Java.Beans.VetoableChangeListener arg1)
         {

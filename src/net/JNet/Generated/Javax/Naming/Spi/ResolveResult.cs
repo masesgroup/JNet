@@ -32,8 +32,8 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#%3Cinit%3E(java.lang.Object,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public ResolveResult(object arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -41,7 +41,7 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#%3Cinit%3E(java.lang.Object,javax.naming.Name)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
         public ResolveResult(object arg0, Javax.Naming.Name arg1)
             : base(arg0, arg1)
@@ -84,7 +84,7 @@ namespace Javax.Naming.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#appendRemainingComponent(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void AppendRemainingComponent(string arg0)
         {
             IExecute("appendRemainingComponent", arg0);

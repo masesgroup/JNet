@@ -67,7 +67,7 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#lookup(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Rmi.Remote"/></returns>
         /// <exception cref="Java.Rmi.RemoteException"/>
         /// <exception cref="Java.Rmi.NotBoundException"/>
@@ -79,7 +79,7 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#bind(java.lang.String,java.rmi.Remote)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
         /// <exception cref="Java.Rmi.RemoteException"/>
         /// <exception cref="Java.Rmi.AlreadyBoundException"/>
@@ -91,7 +91,7 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#rebind(java.lang.String,java.rmi.Remote)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
         /// <exception cref="Java.Rmi.RemoteException"/>
         /// <exception cref="Java.Rmi.AccessException"/>
@@ -102,7 +102,7 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#unbind(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <exception cref="Java.Rmi.RemoteException"/>
         /// <exception cref="Java.Rmi.NotBoundException"/>
         /// <exception cref="Java.Rmi.AccessException"/>

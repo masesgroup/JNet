@@ -59,7 +59,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getStaticAttribute(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public static object GetStaticAttribute(object arg0)
         {
@@ -68,7 +68,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getStaticAttributeKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public static object GetStaticAttributeKey(object arg0)
         {
@@ -88,7 +88,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#registerStaticAttributeKey(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public static void RegisterStaticAttributeKey(object arg0)
         {
             SExecute("registerStaticAttributeKey", arg0);
@@ -142,9 +142,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getFont(java.lang.String,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font GetFont(string arg0, int arg1, int arg2)
         {
@@ -171,7 +171,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#addStyle(java.lang.String,javax.swing.text.Style)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Style"/></param>
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style AddStyle(string arg0, Javax.Swing.Text.Style arg1)
@@ -181,7 +181,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getStyle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style GetStyle(string arg0)
         {
@@ -191,8 +191,8 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#addAttribute(javax.swing.text.AttributeSet,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet AddAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1, object arg2)
         {
@@ -212,7 +212,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#removeAttribute(javax.swing.text.AttributeSet,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet RemoveAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1)
         {
@@ -266,7 +266,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#removeStyle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void RemoveStyle(string arg0)
         {
             IExecute("removeStyle", arg0);
@@ -293,7 +293,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#%3Cinit%3E(javax.swing.text.StyleContext,java.lang.String,javax.swing.text.Style)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.StyleContext"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.Style"/></param>
             public NamedStyle(Javax.Swing.Text.StyleContext arg0, string arg1, Javax.Swing.Text.Style arg2)
                 : base(arg0, arg1, arg2)
@@ -371,8 +371,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#containsAttribute(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool ContainsAttribute(object arg0, object arg1)
             {
@@ -390,7 +390,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#isDefined(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool IsDefined(object arg0)
             {
@@ -408,7 +408,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#getAttribute(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see langword="object"/></returns>
             public object GetAttribute(object arg0)
             {
@@ -426,8 +426,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#addAttribute(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             public void AddAttribute(object arg0, object arg1)
             {
                 IExecute("addAttribute", arg0, arg1);
@@ -451,7 +451,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#removeAttribute(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             public void RemoveAttribute(object arg0)
             {
                 IExecute("removeAttribute", arg0);
@@ -529,8 +529,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#containsAttribute(java.lang.Object,java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
-            /// <param name="arg1"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool ContainsAttribute(object arg0, object arg1)
             {
@@ -548,7 +548,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#isDefined(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see langword="bool"/></returns>
             public bool IsDefined(object arg0)
             {
@@ -566,7 +566,7 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getAttribute(java.lang.Object)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="object"/></param>
+            /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see langword="object"/></returns>
             public object GetAttribute(object arg0)
             {

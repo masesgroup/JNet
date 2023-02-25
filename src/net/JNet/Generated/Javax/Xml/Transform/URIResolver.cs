@@ -48,8 +48,8 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/URIResolver.html#resolve(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Transform.Source"/></returns>
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
         public Javax.Xml.Transform.Source Resolve(string arg0, string arg1)

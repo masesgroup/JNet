@@ -32,8 +32,8 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public AuthorizeCallback(string arg0, string arg1)
             : base(arg0, arg1)
         {
@@ -95,7 +95,7 @@ namespace Javax.Security.Sasl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#setAuthorized(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         public void SetAuthorized(bool arg0)
         {
             IExecute("setAuthorized", arg0);

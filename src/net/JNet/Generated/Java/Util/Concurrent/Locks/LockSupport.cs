@@ -60,7 +60,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#park(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         public static void Park(object arg0)
         {
             SExecute("park", arg0);
@@ -68,8 +68,8 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkNanos(java.lang.Object,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         public static void ParkNanos(object arg0, long arg1)
         {
             SExecute("parkNanos", arg0, arg1);
@@ -77,7 +77,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkNanos(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         public static void ParkNanos(long arg0)
         {
             SExecute("parkNanos", arg0);
@@ -85,8 +85,8 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkUntil(java.lang.Object,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         public static void ParkUntil(object arg0, long arg1)
         {
             SExecute("parkUntil", arg0, arg1);
@@ -94,7 +94,7 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/LockSupport.html#parkUntil(long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="long"/></param>
         public static void ParkUntil(long arg0)
         {
             SExecute("parkUntil", arg0);

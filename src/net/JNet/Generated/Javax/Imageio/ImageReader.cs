@@ -104,7 +104,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getHeight(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int GetHeight(int arg0)
@@ -114,7 +114,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getNumImages(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int GetNumImages(bool arg0)
@@ -124,7 +124,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getWidth(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int GetWidth(int arg0)
@@ -134,7 +134,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#read(int,javax.imageio.ImageReadParam)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Imageio.ImageReadParam"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -145,7 +145,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getImageMetadata(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadata"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.Metadata.IIOMetadata GetImageMetadata(int arg0)
@@ -164,7 +164,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#hasThumbnails(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool HasThumbnails(int arg0)
@@ -183,7 +183,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#isImageTiled(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool IsImageTiled(int arg0)
@@ -193,7 +193,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#isRandomAccessEasy(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public bool IsRandomAccessEasy(int arg0)
@@ -221,7 +221,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getAspectRatio(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="float"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public float GetAspectRatio(int arg0)
@@ -231,7 +231,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getNumThumbnails(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int GetNumThumbnails(int arg0)
@@ -241,8 +241,8 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getThumbnailHeight(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int GetThumbnailHeight(int arg0, int arg1)
@@ -252,8 +252,8 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getThumbnailWidth(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int GetThumbnailWidth(int arg0, int arg1)
@@ -263,7 +263,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getTileGridXOffset(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int GetTileGridXOffset(int arg0)
@@ -273,7 +273,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getTileGridYOffset(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int GetTileGridYOffset(int arg0)
@@ -283,7 +283,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getTileHeight(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int GetTileHeight(int arg0)
@@ -293,7 +293,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getTileWidth(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public int GetTileWidth(int arg0)
@@ -303,7 +303,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#read(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Awt.ImageNs.BufferedImage Read(int arg0)
@@ -313,8 +313,8 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readThumbnail(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Awt.ImageNs.BufferedImage ReadThumbnail(int arg0, int arg1)
@@ -324,9 +324,9 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readTile(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Awt.ImageNs.BufferedImage ReadTile(int arg0, int arg1, int arg2)
@@ -336,7 +336,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readRaster(int,javax.imageio.ImageReadParam)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Imageio.ImageReadParam"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -347,9 +347,9 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readTileRaster(int,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Awt.ImageNs.Raster ReadTileRaster(int arg0, int arg1, int arg2)
@@ -359,7 +359,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readAsRenderedImage(int,javax.imageio.ImageReadParam)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Imageio.ImageReadParam"/></param>
         /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -370,7 +370,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readAll(int,javax.imageio.ImageReadParam)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Imageio.ImageReadParam"/></param>
         /// <returns><see cref="Javax.Imageio.IIOImage"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -381,7 +381,7 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getRawImageType(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageTypeSpecifier GetRawImageType(int arg0)
@@ -481,9 +481,9 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#setInput(java.lang.Object,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         public void SetInput(object arg0, bool arg1, bool arg2)
         {
             IExecute("setInput", arg0, arg1, arg2);
@@ -491,8 +491,8 @@ namespace Javax.Imageio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#setInput(java.lang.Object,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public void SetInput(object arg0, bool arg1)
         {
             IExecute("setInput", arg0, arg1);

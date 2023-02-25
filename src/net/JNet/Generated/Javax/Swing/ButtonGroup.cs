@@ -99,7 +99,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#setSelected(javax.swing.ButtonModel,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.ButtonModel"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public void SetSelected(Javax.Swing.ButtonModel arg0, bool arg1)
         {
             IExecute("setSelected", arg0, arg1);

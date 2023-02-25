@@ -148,7 +148,7 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#snapshotItem(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
         /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
         public Org.W3c.Dom.Node SnapshotItem(int arg0)

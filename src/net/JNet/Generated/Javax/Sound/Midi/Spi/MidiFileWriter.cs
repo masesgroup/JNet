@@ -56,7 +56,7 @@ namespace Javax.Sound.Midi.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#write(javax.sound.midi.Sequence,int,java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Io.File"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -68,7 +68,7 @@ namespace Javax.Sound.Midi.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#write(javax.sound.midi.Sequence,int,java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.Sequence"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -88,7 +88,7 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#isFileTypeSupported(int,javax.sound.midi.Sequence)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Sound.Midi.Sequence"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsFileTypeSupported(int arg0, Javax.Sound.Midi.Sequence arg1)
@@ -98,7 +98,7 @@ namespace Javax.Sound.Midi.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileWriter.html#isFileTypeSupported(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool IsFileTypeSupported(int arg0)
         {

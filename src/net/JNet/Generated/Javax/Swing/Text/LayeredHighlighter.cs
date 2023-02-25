@@ -53,8 +53,8 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.html#paintLayeredHighlights(java.awt.Graphics,int,int,java.awt.Shape,javax.swing.text.JTextComponent,javax.swing.text.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Awt.Shape"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.Text.JTextComponent"/></param>
         /// <param name="arg5"><see cref="Javax.Swing.Text.View"/></param>
@@ -90,8 +90,8 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.LayerPainter.html#paintLayer(java.awt.Graphics,int,int,java.awt.Shape,javax.swing.text.JTextComponent,javax.swing.text.View)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
             /// <param name="arg3"><see cref="Java.Awt.Shape"/></param>
             /// <param name="arg4"><see cref="Javax.Swing.Text.JTextComponent"/></param>
             /// <param name="arg5"><see cref="Javax.Swing.Text.View"/></param>

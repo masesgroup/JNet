@@ -44,8 +44,8 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getBoolean(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
@@ -56,8 +56,8 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getByte(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="byte"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
@@ -68,8 +68,8 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getChar(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="char"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
@@ -80,8 +80,8 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getDouble(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="double"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
@@ -92,8 +92,8 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getFloat(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="float"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
@@ -104,8 +104,8 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getInt(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
@@ -116,7 +116,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getLength(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static int GetLength(object arg0)
@@ -126,8 +126,8 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#get(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
@@ -138,8 +138,8 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getLong(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="long"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
@@ -150,8 +150,8 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getShort(java.lang.Object,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see langword="short"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
@@ -162,9 +162,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#set(java.lang.Object,int,java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void Set(object arg0, int arg1, object arg2)
@@ -174,9 +174,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setBoolean(java.lang.Object,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetBoolean(object arg0, int arg1, bool arg2)
@@ -186,9 +186,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setByte(java.lang.Object,int,byte)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="byte"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="byte"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetByte(object arg0, int arg1, byte arg2)
@@ -198,9 +198,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setChar(java.lang.Object,int,char)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="char"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="char"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetChar(object arg0, int arg1, char arg2)
@@ -210,9 +210,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setDouble(java.lang.Object,int,double)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="double"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetDouble(object arg0, int arg1, double arg2)
@@ -222,9 +222,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setFloat(java.lang.Object,int,float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetFloat(object arg0, int arg1, float arg2)
@@ -234,9 +234,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setInt(java.lang.Object,int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetInt(object arg0, int arg1, int arg2)
@@ -246,9 +246,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setLong(java.lang.Object,int,long)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetLong(object arg0, int arg1, long arg2)
@@ -258,9 +258,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#setShort(java.lang.Object,int,short)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="short"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="short"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.ArrayIndexOutOfBoundsException"/>
         public static void SetShort(object arg0, int arg1, short arg2)

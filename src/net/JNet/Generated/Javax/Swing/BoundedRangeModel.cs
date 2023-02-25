@@ -99,11 +99,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoundedRangeModel.html#setRangeProperties(int,int,int,int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
         public void SetRangeProperties(int arg0, int arg1, int arg2, int arg3, bool arg4)
         {
             IExecute("setRangeProperties", arg0, arg1, arg2, arg3, arg4);

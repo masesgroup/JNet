@@ -34,8 +34,8 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.StyledDocument"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
         public MinimalHTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {

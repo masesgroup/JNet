@@ -33,7 +33,7 @@ namespace Java.Util.Zip
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPOutputStream.html#%3Cinit%3E(java.io.OutputStream,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public GZIPOutputStream(Java.Io.OutputStream arg0, bool arg1)
             : base(arg0, arg1)
@@ -43,8 +43,8 @@ namespace Java.Util.Zip
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPOutputStream.html#%3Cinit%3E(java.io.OutputStream,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public GZIPOutputStream(Java.Io.OutputStream arg0, int arg1, bool arg2)
             : base(arg0, arg1, arg2)
@@ -54,7 +54,7 @@ namespace Java.Util.Zip
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPOutputStream.html#%3Cinit%3E(java.io.OutputStream,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public GZIPOutputStream(Java.Io.OutputStream arg0, int arg1)
             : base(arg0, arg1)

@@ -100,7 +100,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getCharacterElement(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
         public Javax.Swing.Text.Element GetCharacterElement(int arg0)
         {
@@ -109,7 +109,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#addStyle(java.lang.String,javax.swing.text.Style)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Style"/></param>
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style AddStyle(string arg0, Javax.Swing.Text.Style arg1)
@@ -119,7 +119,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getLogicalStyle(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style GetLogicalStyle(int arg0)
         {
@@ -128,7 +128,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getStyle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style GetStyle(string arg0)
         {
@@ -145,7 +145,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#removeStyle(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void RemoveStyle(string arg0)
         {
             IExecute("removeStyle", arg0);
@@ -153,10 +153,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#setCharacterAttributes(int,int,javax.swing.text.AttributeSet,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         public void SetCharacterAttributes(int arg0, int arg1, Javax.Swing.Text.AttributeSet arg2, bool arg3)
         {
             IExecute("setCharacterAttributes", arg0, arg1, arg2, arg3);
@@ -164,7 +164,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#setLogicalStyle(int,javax.swing.text.Style)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Style"/></param>
         public void SetLogicalStyle(int arg0, Javax.Swing.Text.Style arg1)
         {
@@ -173,10 +173,10 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#setParagraphAttributes(int,int,javax.swing.text.AttributeSet,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
         public void SetParagraphAttributes(int arg0, int arg1, Javax.Swing.Text.AttributeSet arg2, bool arg3)
         {
             IExecute("setParagraphAttributes", arg0, arg1, arg2, arg3);
@@ -194,7 +194,7 @@ namespace Javax.Swing.Text
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
             /// <param name="arg1"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg2"><see langword="bool"/></param>
+            /// <param name="arg2"><see cref="bool"/></param>
             public AttributeUndoableEdit(Javax.Swing.Text.Element arg0, Javax.Swing.Text.AttributeSet arg1, bool arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -275,8 +275,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#change(int,int,javax.swing.text.AbstractDocument$DefaultDocumentEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent"/></param>
             public void Change(int arg0, int arg1, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg2)
             {
@@ -285,8 +285,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#insert(int,int,javax.swing.text.DefaultStyledDocument$ElementSpec[],javax.swing.text.AbstractDocument$DefaultDocumentEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.DefaultStyledDocument.ElementSpec"/></param>
             /// <param name="arg3"><see cref="Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent"/></param>
             public void Insert(int arg0, int arg1, Javax.Swing.Text.DefaultStyledDocument.ElementSpec[] arg2, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg3)
@@ -296,8 +296,8 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#remove(int,int,javax.swing.text.AbstractDocument$DefaultDocumentEvent)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent"/></param>
             public void Remove(int arg0, int arg1, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg2)
             {
@@ -318,10 +318,10 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#%3Cinit%3E(javax.swing.text.AttributeSet,short,char[],int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg1"><see langword="short"/></param>
+            /// <param name="arg1"><see cref="short"/></param>
             /// <param name="arg2"><see cref="char"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
-            /// <param name="arg4"><see langword="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg4"><see cref="int"/></param>
             public ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1, char[] arg2, int arg3, int arg4)
                 : base(arg0, arg1, arg2, arg3, arg4)
             {
@@ -330,8 +330,8 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#%3Cinit%3E(javax.swing.text.AttributeSet,short,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg1"><see langword="short"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="short"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
             public ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1, int arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -340,7 +340,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#%3Cinit%3E(javax.swing.text.AttributeSet,short)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
-            /// <param name="arg1"><see langword="short"/></param>
+            /// <param name="arg1"><see cref="short"/></param>
             public ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1)
                 : base(arg0, arg1)
             {

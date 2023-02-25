@@ -32,7 +32,7 @@ namespace Java.Rmi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html#%3Cinit%3E(T)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public MarshalledObject(object arg0)
             : base(arg0)

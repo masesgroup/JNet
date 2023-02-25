@@ -33,7 +33,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#%3Cinit%3E(java.awt.image.Kernel,int,java.awt.RenderingHints)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.Kernel"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Awt.RenderingHints"/></param>
         public ConvolveOp(Java.Awt.ImageNs.Kernel arg0, int arg1, Java.Awt.RenderingHints arg2)
             : base(arg0, arg1, arg2)

@@ -109,7 +109,7 @@ namespace Java.Lang.Instrument
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getObjectSize(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="long"/></returns>
         public long GetObjectSize(object arg0)
         {
@@ -119,7 +119,7 @@ namespace Java.Lang.Instrument
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Instrument.ClassFileTransformer"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         public void AddTransformer(Java.Lang.Instrument.ClassFileTransformer arg0, bool arg1)
         {
             IExecute("addTransformer", arg0, arg1);
@@ -171,7 +171,7 @@ namespace Java.Lang.Instrument
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#setNativeMethodPrefix(java.lang.instrument.ClassFileTransformer,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Instrument.ClassFileTransformer"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         public void SetNativeMethodPrefix(Java.Lang.Instrument.ClassFileTransformer arg0, string arg1)
         {
             IExecute("setNativeMethodPrefix", arg0, arg1);

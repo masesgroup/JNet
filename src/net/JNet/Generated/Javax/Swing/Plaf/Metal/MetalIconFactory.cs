@@ -135,7 +135,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameAltMaximizeIcon(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetInternalFrameAltMaximizeIcon(int arg0)
         {
@@ -144,7 +144,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameCloseIcon(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetInternalFrameCloseIcon(int arg0)
         {
@@ -162,7 +162,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameMaximizeIcon(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetInternalFrameMaximizeIcon(int arg0)
         {
@@ -171,7 +171,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getInternalFrameMinimizeIcon(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetInternalFrameMinimizeIcon(int arg0)
         {
@@ -225,7 +225,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html#getTreeControlIcon(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public static Javax.Swing.Icon GetTreeControlIcon(bool arg0)
         {
@@ -345,8 +345,8 @@ namespace Javax.Swing.Plaf.Metal
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
             /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecute("paintIcon", arg0, arg1, arg2, arg3);
@@ -419,8 +419,8 @@ namespace Javax.Swing.Plaf.Metal
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
             /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecute("paintIcon", arg0, arg1, arg2, arg3);
@@ -483,8 +483,8 @@ namespace Javax.Swing.Plaf.Metal
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
             /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecute("paintIcon", arg0, arg1, arg2, arg3);
@@ -503,7 +503,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#%3Cinit%3E(boolean)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="bool"/></param>
+            /// <param name="arg0"><see cref="bool"/></param>
             public TreeControlIcon(bool arg0)
                 : base(arg0)
             {
@@ -551,8 +551,8 @@ namespace Javax.Swing.Plaf.Metal
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
             /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecute("paintIcon", arg0, arg1, arg2, arg3);
@@ -562,8 +562,8 @@ namespace Javax.Swing.Plaf.Metal
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
             /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
             public void PaintMe(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
                 IExecute("paintMe", arg0, arg1, arg2, arg3);

@@ -44,7 +44,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html#isWrapperInstance(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public static bool IsWrapperInstance(object arg0)
         {
@@ -53,7 +53,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html#wrapperInstanceTarget(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle WrapperInstanceTarget(object arg0)
         {

@@ -102,7 +102,7 @@ namespace Javax.Management.Remote.Rmi
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
         /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         public void AddConnectionNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
             IExecute("addConnectionNotificationListener", arg0, arg1, arg2);
@@ -121,7 +121,7 @@ namespace Javax.Management.Remote.Rmi
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>
         /// <param name="arg1"><see cref="Javax.Management.NotificationFilter"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveConnectionNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {

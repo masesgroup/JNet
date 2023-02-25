@@ -48,7 +48,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#quoteReplacement(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public static string QuoteReplacement(string arg0)
         {
@@ -70,7 +70,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#find(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool Find(int arg0)
         {
@@ -142,7 +142,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#end(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int End(int arg0)
         {
@@ -151,7 +151,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#end(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="int"/></returns>
         public int End(string arg0)
         {
@@ -196,7 +196,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#start(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         public int Start(int arg0)
         {
@@ -205,7 +205,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#start(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="int"/></returns>
         public int Start(string arg0)
         {
@@ -223,7 +223,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#group(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         public string Group(int arg0)
         {
@@ -232,7 +232,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#group(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string Group(string arg0)
         {
@@ -241,7 +241,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#replaceAll(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string ReplaceAll(string arg0)
         {
@@ -250,7 +250,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#replaceFirst(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string ReplaceFirst(string arg0)
         {
@@ -278,7 +278,7 @@ namespace Java.Util.Regex
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#appendReplacement(java.lang.StringBuffer,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuffer"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher AppendReplacement(Java.Lang.StringBuffer arg0, string arg1)
         {
@@ -288,7 +288,7 @@ namespace Java.Util.Regex
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#appendReplacement(java.lang.StringBuilder,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuilder"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher AppendReplacement(Java.Lang.StringBuilder arg0, string arg1)
         {
@@ -297,8 +297,8 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#region(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher Region(int arg0, int arg1)
         {
@@ -325,7 +325,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#useAnchoringBounds(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher UseAnchoringBounds(bool arg0)
         {
@@ -343,7 +343,7 @@ namespace Java.Util.Regex
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#useTransparentBounds(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher UseTransparentBounds(bool arg0)
         {

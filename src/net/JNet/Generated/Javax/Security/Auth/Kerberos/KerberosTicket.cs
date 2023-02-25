@@ -36,7 +36,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <param name="arg1"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
         /// <param name="arg2"><see cref="Javax.Security.Auth.Kerberos.KerberosPrincipal"/></param>
         /// <param name="arg3"><see cref="byte"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="bool"/></param>
         /// <param name="arg6"><see cref="Java.Util.Date"/></param>
         /// <param name="arg7"><see cref="Java.Util.Date"/></param>

@@ -58,7 +58,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback"/></param>
-        /// <param name="arg2"><see langword="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.Reader arg0, Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback arg1, bool arg2)
         {

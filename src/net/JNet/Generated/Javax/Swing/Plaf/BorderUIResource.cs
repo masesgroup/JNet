@@ -118,10 +118,10 @@ namespace Javax.Swing.Plaf
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
-        /// <param name="arg2"><see langword="int"/></param>
-        /// <param name="arg3"><see langword="int"/></param>
-        /// <param name="arg4"><see langword="int"/></param>
-        /// <param name="arg5"><see langword="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
         public void PaintBorder(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -137,7 +137,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.BevelBorderUIResource.html#%3Cinit%3E(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
             /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
             /// <param name="arg3"><see cref="Java.Awt.Color"/></param>
@@ -149,7 +149,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.BevelBorderUIResource.html#%3Cinit%3E(int,java.awt.Color,java.awt.Color)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
             /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
             public BevelBorderUIResource(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
@@ -159,7 +159,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.BevelBorderUIResource.html#%3Cinit%3E(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             public BevelBorderUIResource(int arg0)
                 : base(arg0)
             {
@@ -238,10 +238,10 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EmptyBorderUIResource.html#%3Cinit%3E(int,int,int,int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
             public EmptyBorderUIResource(int arg0, int arg1, int arg2, int arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -288,7 +288,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EtchedBorderUIResource.html#%3Cinit%3E(int,java.awt.Color,java.awt.Color)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
             /// <param name="arg2"><see cref="Java.Awt.Color"/></param>
             public EtchedBorderUIResource(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2)
@@ -298,7 +298,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EtchedBorderUIResource.html#%3Cinit%3E(int)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             public EtchedBorderUIResource(int arg0)
                 : base(arg0)
             {
@@ -347,7 +347,7 @@ namespace Javax.Swing.Plaf
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html#%3Cinit%3E(java.awt.Color,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
             public LineBorderUIResource(Java.Awt.Color arg0, int arg1)
                 : base(arg0, arg1)
             {
@@ -394,10 +394,10 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.MatteBorderUIResource.html#%3Cinit%3E(int,int,int,int,java.awt.Color)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
             /// <param name="arg4"><see cref="Java.Awt.Color"/></param>
             public MatteBorderUIResource(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
                 : base(arg0, arg1, arg2, arg3, arg4)
@@ -406,10 +406,10 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.MatteBorderUIResource.html#%3Cinit%3E(int,int,int,int,javax.swing.Icon)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
-            /// <param name="arg1"><see langword="int"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
             /// <param name="arg4"><see cref="Javax.Swing.Icon"/></param>
             public MatteBorderUIResource(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
                 : base(arg0, arg1, arg2, arg3, arg4)
@@ -457,7 +457,7 @@ namespace Javax.Swing.Plaf
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="string"/></param>
+            /// <param name="arg0"><see cref="string"/></param>
             public TitledBorderUIResource(string arg0)
                 : base(arg0)
             {
@@ -466,9 +466,9 @@ namespace Javax.Swing.Plaf
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#%3Cinit%3E(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font,java.awt.Color)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
             /// <param name="arg4"><see cref="Java.Awt.Font"/></param>
             /// <param name="arg5"><see cref="Java.Awt.Color"/></param>
             public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
@@ -479,9 +479,9 @@ namespace Javax.Swing.Plaf
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#%3Cinit%3E(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
             /// <param name="arg4"><see cref="Java.Awt.Font"/></param>
             public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3, Java.Awt.Font arg4)
                 : base(arg0, arg1, arg2, arg3, arg4)
@@ -491,9 +491,9 @@ namespace Javax.Swing.Plaf
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#%3Cinit%3E(javax.swing.border.Border,java.lang.String,int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
-            /// <param name="arg2"><see langword="int"/></param>
-            /// <param name="arg3"><see langword="int"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
             public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -502,7 +502,7 @@ namespace Javax.Swing.Plaf
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#%3Cinit%3E(javax.swing.border.Border,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Border.Border"/></param>
-            /// <param name="arg1"><see langword="string"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
             public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1)
                 : base(arg0, arg1)
             {

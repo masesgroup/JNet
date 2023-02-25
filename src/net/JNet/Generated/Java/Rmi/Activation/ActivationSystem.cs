@@ -132,7 +132,7 @@ namespace Java.Rmi.Activation
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
         /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationInstantiator"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         /// <returns><see cref="Java.Rmi.Activation.ActivationMonitor"/></returns>
         /// <exception cref="Java.Rmi.Activation.UnknownGroupException"/>
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>

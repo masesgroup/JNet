@@ -32,8 +32,8 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <param name="arg3"><see cref="Java.Lang.Reflect.Method"/></param>
         /// <exception cref="Javax.Management.IntrospectionException"/>
@@ -44,12 +44,12 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,javax.management.Descriptor)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
-        /// <param name="arg4"><see langword="bool"/></param>
-        /// <param name="arg5"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
         /// <param name="arg6"><see cref="Javax.Management.Descriptor"/></param>
         public MBeanAttributeInfo(string arg0, string arg1, string arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
@@ -58,12 +58,12 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
-        /// <param name="arg3"><see langword="bool"/></param>
-        /// <param name="arg4"><see langword="bool"/></param>
-        /// <param name="arg5"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
         public MBeanAttributeInfo(string arg0, string arg1, string arg2, bool arg3, bool arg4, bool arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {

@@ -60,7 +60,7 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Receiver.html#send(javax.sound.midi.MidiMessage,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiMessage"/></param>
-        /// <param name="arg1"><see langword="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
         public void Send(Javax.Sound.Midi.MidiMessage arg0, long arg1)
         {
             IExecute("send", arg0, arg1);

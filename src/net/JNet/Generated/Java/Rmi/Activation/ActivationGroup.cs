@@ -57,7 +57,7 @@ namespace Java.Rmi.Activation
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
         /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationGroupDesc"/></param>
-        /// <param name="arg2"><see langword="long"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
         /// <returns><see cref="Java.Rmi.Activation.ActivationGroup"/></returns>
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
         public static Java.Rmi.Activation.ActivationGroup CreateGroup(Java.Rmi.Activation.ActivationGroupID arg0, Java.Rmi.Activation.ActivationGroupDesc arg1, long arg2)

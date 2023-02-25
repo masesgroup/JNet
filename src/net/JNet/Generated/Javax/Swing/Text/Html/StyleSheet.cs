@@ -44,7 +44,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getIndexOfSize(float)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="float"/></param>
+        /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see langword="int"/></returns>
         public static int GetIndexOfSize(float arg0)
         {
@@ -73,7 +73,7 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Html.CSS.Attribute"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool AddCSSAttributeFromHTML(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.Html.CSS.Attribute arg1, string arg2)
         {
@@ -82,7 +82,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getPointSize(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="float"/></returns>
         public float GetPointSize(int arg0)
         {
@@ -91,7 +91,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getPointSize(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="float"/></returns>
         public float GetPointSize(string arg0)
         {
@@ -100,7 +100,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#stringToColor(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color StringToColor(string arg0)
         {
@@ -109,7 +109,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getDeclaration(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
         public Javax.Swing.Text.AttributeSet GetDeclaration(string arg0)
         {
@@ -154,7 +154,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getRule(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style GetRule(string arg0)
         {
@@ -175,7 +175,7 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
         /// <param name="arg1"><see cref="Javax.Swing.Text.Html.CSS.Attribute"/></param>
-        /// <param name="arg2"><see langword="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
         public void AddCSSAttribute(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.Html.CSS.Attribute arg1, string arg2)
         {
             IExecute("addCSSAttribute", arg0, arg1, arg2);
@@ -183,7 +183,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addRule(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         public void AddRule(string arg0)
         {
             IExecute("addRule", arg0);
@@ -225,7 +225,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public void SetBaseFontSize(int arg0)
         {
             IExecute("setBaseFontSize", arg0);
@@ -261,7 +261,7 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html#getInset(int,javax.swing.text.View)"/>
             /// </summary>
-            /// <param name="arg0"><see langword="int"/></param>
+            /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Javax.Swing.Text.View"/></param>
             /// <returns><see langword="float"/></returns>
             public float GetInset(int arg0, Javax.Swing.Text.View arg1)
@@ -272,10 +272,10 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html#paint(java.awt.Graphics,float,float,float,float,javax.swing.text.View)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg1"><see langword="float"/></param>
-            /// <param name="arg2"><see langword="float"/></param>
-            /// <param name="arg3"><see langword="float"/></param>
-            /// <param name="arg4"><see langword="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="float"/></param>
+            /// <param name="arg3"><see cref="float"/></param>
+            /// <param name="arg4"><see cref="float"/></param>
             /// <param name="arg5"><see cref="Javax.Swing.Text.View"/></param>
             public void Paint(Java.Awt.Graphics arg0, float arg1, float arg2, float arg3, float arg4, Javax.Swing.Text.View arg5)
             {
@@ -316,12 +316,12 @@ namespace Javax.Swing.Text.Html
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.ListPainter.html#paint(java.awt.Graphics,float,float,float,float,javax.swing.text.View,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
-            /// <param name="arg1"><see langword="float"/></param>
-            /// <param name="arg2"><see langword="float"/></param>
-            /// <param name="arg3"><see langword="float"/></param>
-            /// <param name="arg4"><see langword="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="float"/></param>
+            /// <param name="arg3"><see cref="float"/></param>
+            /// <param name="arg4"><see cref="float"/></param>
             /// <param name="arg5"><see cref="Javax.Swing.Text.View"/></param>
-            /// <param name="arg6"><see langword="int"/></param>
+            /// <param name="arg6"><see cref="int"/></param>
             public void Paint(Java.Awt.Graphics arg0, float arg1, float arg2, float arg3, float arg4, Javax.Swing.Text.View arg5, int arg6)
             {
                 IExecute("paint", arg0, arg1, arg2, arg3, arg4, arg5, arg6);

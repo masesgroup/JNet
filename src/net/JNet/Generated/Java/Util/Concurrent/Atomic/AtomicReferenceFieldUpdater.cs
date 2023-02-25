@@ -48,9 +48,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#compareAndSet(T,V,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool CompareAndSet(object arg0, object arg1, object arg2)
         {
@@ -59,9 +59,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#weakCompareAndSet(T,V,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
-        /// <param name="arg2"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
         /// <returns><see langword="bool"/></returns>
         public bool WeakCompareAndSet(object arg0, object arg1, object arg2)
         {
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#get(T)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object Get(object arg0)
         {
@@ -79,8 +79,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#lazySet(T,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void LazySet(object arg0, object arg1)
         {
             IExecute("lazySet", arg0, arg1);
@@ -88,8 +88,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#set(T,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         public void Set(object arg0, object arg1)
         {
             IExecute("set", arg0, arg1);
@@ -97,8 +97,8 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndSet(T,V)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
-        /// <param name="arg1"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see langword="object"/></returns>
         public object GetAndSet(object arg0, object arg1)
         {

@@ -32,22 +32,22 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String,java.lang.Class%3C?%3E[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="string"/></param>
-        /// <param name="arg5"><see langword="string"/></param>
+        /// <param name="arg5"><see cref="string"/></param>
         /// <param name="arg6"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg7"><see cref="string"/></param>
-        /// <param name="arg8"><see langword="bool"/></param>
-        /// <param name="arg9"><see langword="string"/></param>
-        /// <param name="arg10"><see langword="string"/></param>
+        /// <param name="arg8"><see cref="bool"/></param>
+        /// <param name="arg9"><see cref="string"/></param>
+        /// <param name="arg10"><see cref="string"/></param>
         /// <param name="arg11"><see cref="string"/></param>
         /// <param name="arg12"><see cref="string"/></param>
-        /// <param name="arg13"><see langword="bool"/></param>
-        /// <param name="arg14"><see langword="string"/></param>
-        /// <param name="arg15"><see langword="string"/></param>
+        /// <param name="arg13"><see cref="bool"/></param>
+        /// <param name="arg14"><see cref="string"/></param>
+        /// <param name="arg15"><see cref="string"/></param>
         /// <param name="arg16"><see cref="string"/></param>
         /// <param name="arg17"><see cref="string"/></param>
         public ImageWriterSpi(string arg0, string arg1, string[] arg2, string[] arg3, string[] arg4, string arg5, Java.Lang.Class[] arg6, string[] arg7, bool arg8, string arg9, string arg10, string[] arg11, string[] arg12, bool arg13, string arg14, string arg15, string[] arg16, string[] arg17)
@@ -96,7 +96,7 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#createWriterInstance(java.lang.Object)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="object"/></param>
+        /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Javax.Imageio.ImageWriter"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Javax.Imageio.ImageWriter CreateWriterInstance(object arg0)

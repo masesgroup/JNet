@@ -25,7 +25,9 @@ namespace Java.Lang
     /// </summary>
     public class Character : JVMBridgeBase<Character>
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.lang.Character";
         /// <summary>
         /// Do not use: it is intended for internal use.
@@ -51,7 +53,9 @@ namespace Java.Lang
         /// </summary>
         public class Subset : JVMBridgeBase<Subset>
         {
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// </summary>
             public override string ClassName => "java.lang.Character.Subset";
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -67,9 +71,13 @@ namespace Java.Lang
         /// </summary>
         public class UnicodeBlock : JVMBridgeBase<UnicodeBlock>
         {
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// </summary>
             public override string ClassName => "java.lang.Character.UnicodeBlock";
+            /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// </summary>
             public override bool IsStatic => true;
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

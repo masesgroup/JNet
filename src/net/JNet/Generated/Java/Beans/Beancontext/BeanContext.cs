@@ -64,7 +64,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#getResourceAsStream(java.lang.String,java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
@@ -75,7 +75,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#instantiateChild(java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="object"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
@@ -86,7 +86,7 @@ namespace Java.Beans.Beancontext
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html#getResource(java.lang.String,java.beans.beancontext.BeanContextChild)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Beans.Beancontext.BeanContextChild"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>

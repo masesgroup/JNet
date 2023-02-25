@@ -63,7 +63,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#isAutoIncrement(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsAutoIncrement(int arg0)
@@ -73,7 +73,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#isCaseSensitive(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsCaseSensitive(int arg0)
@@ -83,7 +83,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#isCurrency(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsCurrency(int arg0)
@@ -93,7 +93,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#isDefinitelyWritable(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsDefinitelyWritable(int arg0)
@@ -103,7 +103,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#isReadOnly(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsReadOnly(int arg0)
@@ -113,7 +113,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#isSearchable(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsSearchable(int arg0)
@@ -123,7 +123,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#isSigned(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsSigned(int arg0)
@@ -133,7 +133,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#isWritable(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public bool IsWritable(int arg0)
@@ -143,7 +143,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#getColumnDisplaySize(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetColumnDisplaySize(int arg0)
@@ -153,7 +153,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#getColumnType(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetColumnType(int arg0)
@@ -163,7 +163,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#getPrecision(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetPrecision(int arg0)
@@ -173,7 +173,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#getScale(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int GetScale(int arg0)
@@ -183,7 +183,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#isNullable(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public int IsNullable(int arg0)
@@ -193,7 +193,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#getCatalogName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string GetCatalogName(int arg0)
@@ -203,7 +203,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#getColumnClassName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string GetColumnClassName(int arg0)
@@ -213,7 +213,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#getColumnLabel(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string GetColumnLabel(int arg0)
@@ -223,7 +223,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#getColumnName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string GetColumnName(int arg0)
@@ -233,7 +233,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#getColumnTypeName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string GetColumnTypeName(int arg0)
@@ -243,7 +243,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#getSchemaName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string GetSchemaName(int arg0)
@@ -253,7 +253,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#getTableName(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see langword="string"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public string GetTableName(int arg0)
@@ -263,8 +263,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setAutoIncrement(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetAutoIncrement(int arg0, bool arg1)
         {
@@ -273,8 +273,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setCaseSensitive(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCaseSensitive(int arg0, bool arg1)
         {
@@ -283,8 +283,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setCatalogName(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCatalogName(int arg0, string arg1)
         {
@@ -293,8 +293,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setColumnDisplaySize(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetColumnDisplaySize(int arg0, int arg1)
         {
@@ -303,8 +303,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setColumnLabel(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetColumnLabel(int arg0, string arg1)
         {
@@ -313,8 +313,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setColumnName(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetColumnName(int arg0, string arg1)
         {
@@ -323,8 +323,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setColumnType(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetColumnType(int arg0, int arg1)
         {
@@ -333,8 +333,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setColumnTypeName(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetColumnTypeName(int arg0, string arg1)
         {
@@ -343,8 +343,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setCurrency(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCurrency(int arg0, bool arg1)
         {
@@ -353,8 +353,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setNullable(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNullable(int arg0, int arg1)
         {
@@ -363,8 +363,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setPrecision(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetPrecision(int arg0, int arg1)
         {
@@ -373,8 +373,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setScale(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetScale(int arg0, int arg1)
         {
@@ -383,8 +383,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setSchemaName(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetSchemaName(int arg0, string arg1)
         {
@@ -393,8 +393,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setSearchable(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetSearchable(int arg0, bool arg1)
         {
@@ -403,8 +403,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setSigned(int,boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetSigned(int arg0, bool arg1)
         {
@@ -413,8 +413,8 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#setTableName(int,java.lang.String)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
-        /// <param name="arg1"><see langword="string"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTableName(int arg0, string arg1)
         {

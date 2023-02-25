@@ -32,7 +32,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#%3Cinit%3E(int,int[])"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         public ECFieldF2m(int arg0, int[] arg1)
             : base(arg0, arg1)
@@ -41,7 +41,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#%3Cinit%3E(int,java.math.BigInteger)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
         public ECFieldF2m(int arg0, Java.Math.BigInteger arg1)
             : base(arg0, arg1)
@@ -50,7 +50,7 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html#%3Cinit%3E(int)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="int"/></param>
+        /// <param name="arg0"><see cref="int"/></param>
         public ECFieldF2m(int arg0)
             : base(arg0)
         {

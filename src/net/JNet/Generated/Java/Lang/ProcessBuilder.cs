@@ -129,7 +129,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#redirectErrorStream(boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see langword="bool"/></param>
+        /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
         public Java.Lang.ProcessBuilder RedirectErrorStream(bool arg0)
         {
