@@ -1,8 +1,24 @@
 # JNet: .NET gateway for JVM APIs
 
-JNet is a .NET mirror of Java APIs.
+JNet is a .NET gateway for JVM APIs (Java, Scala, Kotlin, ...) to use .NET and JVM side-by-side.
 
 This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to coc_reporting@masesgroup.com.
+
+## Status
+
+Latest status is:
+
+### Libraries
+
+|JNet | JNet.Templates | JNetPSCore<br>(version 1.4.9+) |
+|:---:	|:---:	|:---:	|
+|[![JNet nuget](https://img.shields.io/nuget/v/MASES.JNet)](https://www.nuget.org/packages/MASES.JNet) [![downloads](https://img.shields.io/nuget/dt/MASES.JNet)](https://www.nuget.org/packages/MASES.JNet) | [![JNet.Templates nuget](https://img.shields.io/nuget/v/MASES.JNet.Templates)](https://www.nuget.org/packages/MASES.JNet.Templates) [![downloads](https://img.shields.io/nuget/dt/MASES.JNet.Templates)](https://www.nuget.org/packages/MASES.JNet.Templates)| [![JNetPSCore nuget](https://img.shields.io/nuget/v/MASES.JNetPSCore)](https://www.nuget.org/packages/MASES.JNetPSCore) [![downloads](https://img.shields.io/nuget/dt/MASES.JNetPSCore)](https://www.nuget.org/packages/MASES.JNetPSCore)|
+
+### Tools
+
+| JNetCLI<br>(version 1.4.8+) | JNetReflector<br>(version 1.4.8+) | JNetPS<br>(version 1.4.9+) |
+|:---:	|:---:	|:---:	|
+| [![JNetCLI nuget](https://img.shields.io/nuget/v/MASES.JNetCLI)](https://www.nuget.org/packages/MASES.JNetCLI) [![downloads](https://img.shields.io/nuget/dt/MASES.JNetCLI)](https://www.nuget.org/packages/MASES.JNetCLI)| [![JNetReflector nuget](https://img.shields.io/nuget/v/MASES.JNetReflector)](https://www.nuget.org/packages/MASES.JNetReflector) [![downloads](https://img.shields.io/nuget/dt/MASES.JNetReflector)](https://www.nuget.org/packages/MASES.JNetReflector)| [![JNetPS](https://img.shields.io/powershellgallery/v/MASES.JNetPS.svg?style=flat-square&label=MASES.JNetPS)](https://www.powershellgallery.com/packages/MASES.JNetPS/)|
 
 ## Scope of the project
 
@@ -19,6 +35,7 @@ There are many client libraries written to manage communication with Java. Conve
 * V1.4.9+: From version 1.4.9 there are two new projects:
   * JNetPSCore: the core library for PowerShell development, it can be extended in other projects based on JNet;
   * JNetPS: a PowerShell module to use JNet within a PowerShell shell.
+* V1.5.2+: strong improvement of JNetReflector; it is used to generate almost all Java 11 classes available in the corresponding JNet version.
 
 ## Runtime engine
 
