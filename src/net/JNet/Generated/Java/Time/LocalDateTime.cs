@@ -42,6 +42,10 @@ namespace Java.Time
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.LocalDateTime t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
         /// <summary>
+        /// Converter from <see cref="Java.Time.LocalDateTime"/> to <see cref="Java.Time.Chrono.ChronoLocalDateTime"/>
+        /// </summary>
+        public static implicit operator Java.Time.Chrono.ChronoLocalDateTime(Java.Time.LocalDateTime t) => t.Cast<Java.Time.Chrono.ChronoLocalDateTime>();
+        /// <summary>
         /// Converter from <see cref="Java.Time.LocalDateTime"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.LocalDateTime t) => t.Cast<Java.Io.Serializable>();
@@ -131,6 +135,48 @@ namespace Java.Time
             return SExecute<Java.Time.LocalDateTime>("of", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#of(int,java.time.Month,int,int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Month"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
+        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+        public static Java.Time.LocalDateTime Of(int arg0, Java.Time.Month arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
+        {
+            return SExecute<Java.Time.LocalDateTime>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#of(int,java.time.Month,int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Month"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+        public static Java.Time.LocalDateTime Of(int arg0, Java.Time.Month arg1, int arg2, int arg3, int arg4, int arg5)
+        {
+            return SExecute<Java.Time.LocalDateTime>("of", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#of(int,java.time.Month,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Month"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+        public static Java.Time.LocalDateTime Of(int arg0, Java.Time.Month arg1, int arg2, int arg3, int arg4)
+        {
+            return SExecute<Java.Time.LocalDateTime>("of", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#of(java.time.LocalDate,java.time.LocalTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDate"/></param>
@@ -192,6 +238,13 @@ namespace Java.Time
             get { return IExecute<int>("getDayOfMonth"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#getDayOfWeek()"/> 
+        /// </summary>
+        public Java.Time.DayOfWeek DayOfWeek
+        {
+            get { return IExecute<Java.Time.DayOfWeek>("getDayOfWeek"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#getDayOfYear()"/> 
         /// </summary>
         public int DayOfYear
@@ -211,6 +264,13 @@ namespace Java.Time
         public int Minute
         {
             get { return IExecute<int>("getMinute"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#getMonth()"/> 
+        /// </summary>
+        public Java.Time.Month Month
+        {
+            get { return IExecute<Java.Time.Month>("getMonth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#getMonthValue()"/> 
@@ -241,6 +301,42 @@ namespace Java.Time
             get { return IExecute<int>("getYear"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#query(java.time.temporal.TemporalQuery%3CR%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Query(Java.Time.Temporal.TemporalQuery arg0)
+        {
+            return IExecute("query", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#isAfter(java.time.chrono.ChronoLocalDateTime%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsAfter(Java.Time.Chrono.ChronoLocalDateTime arg0)
+        {
+            return IExecute<bool>("isAfter", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#isBefore(java.time.chrono.ChronoLocalDateTime%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsBefore(Java.Time.Chrono.ChronoLocalDateTime arg0)
+        {
+            return IExecute<bool>("isBefore", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#isEqual(java.time.chrono.ChronoLocalDateTime%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsEqual(Java.Time.Chrono.ChronoLocalDateTime arg0)
+        {
+            return IExecute<bool>("isEqual", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#isSupported(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
@@ -264,6 +360,15 @@ namespace Java.Time
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
+        {
+            return IExecute<int>("compareTo", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#compareTo(java.time.chrono.ChronoLocalDateTime%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int CompareTo(Java.Time.Chrono.ChronoLocalDateTime arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
@@ -293,6 +398,15 @@ namespace Java.Time
         public Java.Time.Chrono.ChronoLocalDate ToLocalDate()
         {
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("toLocalDate");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#atZone(java.time.ZoneId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
+        public Java.Time.Chrono.ChronoZonedDateTime AtZone(Java.Time.ZoneId arg0)
+        {
+            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("atZone", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#minusDays(long)"/>

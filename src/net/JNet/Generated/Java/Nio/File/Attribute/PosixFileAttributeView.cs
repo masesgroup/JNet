@@ -72,6 +72,15 @@ namespace Java.Nio.File.Attribute
             IExecute("setGroup", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setPermissions(java.util.Set%3Cjava.nio.file.attribute.PosixFilePermission%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void SetPermissions(Java.Util.Set arg0)
+        {
+            IExecute("setPermissions", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#readAttributes()"/>
         /// </summary>
         

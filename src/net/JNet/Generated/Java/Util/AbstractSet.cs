@@ -33,7 +33,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.AbstractSet"/> to <see cref="Java.Util.Set"/>
+        /// </summary>
+        public static implicit operator Java.Util.Set(Java.Util.AbstractSet t) => t.Cast<Java.Util.Set>();
+        
         #endregion
 
         #region Fields

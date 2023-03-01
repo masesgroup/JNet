@@ -161,6 +161,24 @@ namespace Java.Util.Regex
             return IExecuteArray<string>("split", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asMatchPredicate()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        public Java.Util.Function.Predicate AsMatchPredicate()
+        {
+            return IExecute<Java.Util.Function.Predicate>("asMatchPredicate");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#asPredicate()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        public Java.Util.Function.Predicate AsPredicate()
+        {
+            return IExecute<Java.Util.Function.Predicate>("asPredicate");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#matcher(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -168,6 +186,15 @@ namespace Java.Util.Regex
         public Java.Util.Regex.Matcher Matcher(Java.Lang.CharSequence arg0)
         {
             return IExecute<Java.Util.Regex.Matcher>("matcher", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#splitAsStream(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream SplitAsStream(Java.Lang.CharSequence arg0)
+        {
+            return IExecute<Java.Util.Stream.Stream>("splitAsStream", arg0);
         }
         
         #endregion

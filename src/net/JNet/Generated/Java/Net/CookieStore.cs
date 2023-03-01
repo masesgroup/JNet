@@ -46,6 +46,20 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getCookies()"/> 
+        /// </summary>
+        public Java.Util.List Cookies
+        {
+            get { return IExecute<Java.Util.List>("getCookies"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getURIs()"/> 
+        /// </summary>
+        public Java.Util.List URIs
+        {
+            get { return IExecute<Java.Util.List>("getURIs"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#remove(java.net.URI,java.net.HttpCookie)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
@@ -63,6 +77,15 @@ namespace Java.Net
         public bool RemoveAll()
         {
             return IExecute<bool>("removeAll");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#get(java.net.URI)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List Get(Java.Net.URI arg0)
+        {
+            return IExecute<Java.Util.List>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#add(java.net.URI,java.net.HttpCookie)"/>

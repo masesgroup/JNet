@@ -69,6 +69,18 @@ namespace Javax.Smartcardio
             return SExecute<Javax.Smartcardio.TerminalFactory>("getInstance", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object,java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see cref="Javax.Smartcardio.TerminalFactory"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        public static Javax.Smartcardio.TerminalFactory GetInstance(string arg0, object arg1, Java.Security.Provider arg2)
+        {
+            return SExecute<Javax.Smartcardio.TerminalFactory>("getInstance", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getInstance(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -83,6 +95,13 @@ namespace Javax.Smartcardio
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getProvider()"/> 
+        /// </summary>
+        public Java.Security.Provider Provider
+        {
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html#getType()"/> 
         /// </summary>

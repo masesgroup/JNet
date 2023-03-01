@@ -52,6 +52,16 @@ namespace Javax.Swing
             return SExecute("getDesktopPropertyValue", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#makeIcon(java.lang.Class%3C?%3E,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object MakeIcon(Java.Lang.Class arg0, string arg1)
+        {
+            return SExecute("makeIcon", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#makeComponentInputMap(javax.swing.JComponent,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
@@ -140,6 +150,13 @@ namespace Javax.Swing
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getDefaults()"/> 
+        /// </summary>
+        public Javax.Swing.UIDefaults Defaults
+        {
+            get { return IExecute<Javax.Swing.UIDefaults>("getDefaults"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LookAndFeel.html#getDescription()"/> 
         /// </summary>

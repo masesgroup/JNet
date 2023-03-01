@@ -45,7 +45,19 @@ namespace Javax.Management.Remote
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerProvider.html#newJMXConnectorServer(javax.management.remote.JMXServiceURL,java.util.Map%3Cjava.lang.String, ?%3E,javax.management.MBeanServer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.MBeanServer"/></param>
+        /// <returns><see cref="Javax.Management.Remote.JMXConnectorServer"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Javax.Management.Remote.JMXConnectorServer NewJMXConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map arg1, Javax.Management.MBeanServer arg2)
+        {
+            return IExecute<Javax.Management.Remote.JMXConnectorServer>("newJMXConnectorServer", arg0, arg1, arg2);
+        }
+        
         #endregion
 
         #region Nested classes

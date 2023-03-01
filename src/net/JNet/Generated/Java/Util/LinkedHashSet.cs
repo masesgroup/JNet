@@ -46,10 +46,22 @@ namespace Java.Util
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashSet.html#%3Cinit%3E(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public LinkedHashSet(Java.Util.Collection arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.LinkedHashSet"/> to <see cref="Java.Util.Set"/>
+        /// </summary>
+        public static implicit operator Java.Util.Set(Java.Util.LinkedHashSet t) => t.Cast<Java.Util.Set>();
         /// <summary>
         /// Converter from <see cref="Java.Util.LinkedHashSet"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>

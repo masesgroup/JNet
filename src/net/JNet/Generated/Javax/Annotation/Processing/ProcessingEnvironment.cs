@@ -74,6 +74,20 @@ namespace Javax.Annotation.Processing
             get { return IExecute<Javax.Annotation.Processing.Messager>("getMessager"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getOptions()"/> 
+        /// </summary>
+        public Java.Util.Map Options
+        {
+            get { return IExecute<Java.Util.Map>("getOptions"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getSourceVersion()"/> 
+        /// </summary>
+        public Javax.Lang.Model.SourceVersion SourceVersion
+        {
+            get { return IExecute<Javax.Lang.Model.SourceVersion>("getSourceVersion"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getTypeUtils()"/> 
         /// </summary>
         public Javax.Lang.Model.Util.Types TypeUtils

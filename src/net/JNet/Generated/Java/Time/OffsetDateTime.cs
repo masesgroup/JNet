@@ -42,6 +42,10 @@ namespace Java.Time
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.OffsetDateTime t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
         /// <summary>
+        /// Converter from <see cref="Java.Time.OffsetDateTime"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Time.OffsetDateTime t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
         /// Converter from <see cref="Java.Time.OffsetDateTime"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.OffsetDateTime t) => t.Cast<Java.Io.Serializable>();
@@ -163,6 +167,15 @@ namespace Java.Time
         {
             return SExecute<Java.Time.OffsetDateTime>("parse", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#timeLineOrder()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator TimeLineOrder()
+        {
+            return SExecute<Java.Util.Comparator>("timeLineOrder");
+        }
         
         #endregion
 
@@ -173,6 +186,13 @@ namespace Java.Time
         public int DayOfMonth
         {
             get { return IExecute<int>("getDayOfMonth"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#getDayOfWeek()"/> 
+        /// </summary>
+        public Java.Time.DayOfWeek DayOfWeek
+        {
+            get { return IExecute<Java.Time.DayOfWeek>("getDayOfWeek"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#getDayOfYear()"/> 
@@ -194,6 +214,13 @@ namespace Java.Time
         public int Minute
         {
             get { return IExecute<int>("getMinute"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#getMonth()"/> 
+        /// </summary>
+        public Java.Time.Month Month
+        {
+            get { return IExecute<Java.Time.Month>("getMonth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#getMonthValue()"/> 
@@ -229,6 +256,15 @@ namespace Java.Time
         public int Year
         {
             get { return IExecute<int>("getYear"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#query(java.time.temporal.TemporalQuery%3CR%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Query(Java.Time.Temporal.TemporalQuery arg0)
+        {
+            return IExecute("query", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#isAfter(java.time.OffsetDateTime)"/>

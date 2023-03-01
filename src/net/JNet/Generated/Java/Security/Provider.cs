@@ -60,6 +60,13 @@ namespace Java.Security
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getServices()"/> 
+        /// </summary>
+        public Java.Util.Set Services
+        {
+            get { return IExecute<Java.Util.Set>("getServices"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getVersionStr()"/> 
         /// </summary>
         public string VersionStr
@@ -75,6 +82,25 @@ namespace Java.Security
         {
             return IExecute<bool>("isConfigured");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#configure(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider Configure(string arg0)
+        {
+            return IExecute<Java.Security.Provider>("configure", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getService(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Java.Security.Provider.Service"/></returns>
+        public Java.Security.Provider.Service GetService(string arg0, string arg1)
+        {
+            return IExecute<Java.Security.Provider.Service>("getService", arg0, arg1);
+        }
         
         #endregion
 
@@ -83,7 +109,20 @@ namespace Java.Security
         public partial class Service
         {
             #region Constructors
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#%3Cinit%3E(java.security.Provider,java.lang.String,java.lang.String,java.lang.String,java.util.List%3Cjava.lang.String%3E,java.util.Map%3Cjava.lang.String, java.lang.String%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Security.Provider"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg2"><see cref="string"/></param>
+            /// <param name="arg3"><see cref="string"/></param>
+            /// <param name="arg4"><see cref="Java.Util.List"/></param>
+            /// <param name="arg5"><see cref="Java.Util.Map"/></param>
+            public Service(Java.Security.Provider arg0, string arg1, string arg2, string arg3, Java.Util.List arg4, Java.Util.Map arg5)
+                : base(arg0, arg1, arg2, arg3, arg4, arg5)
+            {
+            }
+            
             #endregion
 
             #region Class/Interface conversion operators
@@ -139,6 +178,15 @@ namespace Java.Security
             public string GetClassName()
             {
                 return IExecute<string>("getClassName");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#getProvider()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Security.Provider"/></returns>
+            public Java.Security.Provider GetProvider()
+            {
+                return IExecute<Java.Security.Provider>("getProvider");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.Service.html#newInstance(java.lang.Object)"/>

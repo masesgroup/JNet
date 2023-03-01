@@ -29,7 +29,15 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     public partial class ExcC14NParameterSpec
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#%3Cinit%3E(java.util.List%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public ExcC14NParameterSpec(Java.Util.List arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -53,7 +61,14 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#getPrefixList()"/> 
+        /// </summary>
+        public Java.Util.List PrefixList
+        {
+            get { return IExecute<Java.Util.List>("getPrefixList"); }
+        }
+        
         #endregion
 
         #region Nested classes

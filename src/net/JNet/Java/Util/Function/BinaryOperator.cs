@@ -37,16 +37,22 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java BinaryOperator <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html"/>. Extends <see cref="JVMBridgeListener"/>
     /// </summary>
-    /// <typeparam name="T">The data type associated to the event</typeparam>
-    public class BinaryOperator<T> : JVMBridgeListener, IBinaryOperator<T>
+    public abstract class BinaryOperator : JVMBridgeListener
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetBinaryOperator";
+    }
 
+    /// <summary>
+    /// Listener for Java BinaryOperator <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html"/>. Extends <see cref="BinaryOperator"/>
+    /// </summary>
+    /// <typeparam name="T">The data type associated to the event</typeparam>
+    public class BinaryOperator<T> : BinaryOperator, IBinaryOperator<T>
+    {
         Func<T, T, T> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{TObject, TReturn}"/> to be executed

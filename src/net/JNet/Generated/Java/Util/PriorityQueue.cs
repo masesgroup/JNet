@@ -30,10 +30,51 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(int,java.util.Comparator%3C? super E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        public PriorityQueue(int arg0, Java.Util.Comparator arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public PriorityQueue(int arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public PriorityQueue(Java.Util.Collection arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.Comparator%3C? super E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        public PriorityQueue(Java.Util.Comparator arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.PriorityQueue%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.PriorityQueue"/></param>
+        public PriorityQueue(Java.Util.PriorityQueue arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.SortedSet%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
+        public PriorityQueue(Java.Util.SortedSet arg0)
             : base(arg0)
         {
         }
@@ -57,7 +98,16 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#comparator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator Comparator()
+        {
+            return IExecute<Java.Util.Comparator>("comparator");
+        }
+        
         #endregion
 
         #region Nested classes

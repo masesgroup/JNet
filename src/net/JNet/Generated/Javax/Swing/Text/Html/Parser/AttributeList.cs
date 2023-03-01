@@ -30,6 +30,19 @@ namespace Javax.Swing.Text.Html.Parser
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#%3Cinit%3E(java.lang.String,int,int,java.lang.String,java.util.Vector%3C?%3E,javax.swing.text.html.parser.AttributeList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="Java.Util.Vector"/></param>
+        /// <param name="arg5"><see cref="Javax.Swing.Text.Html.Parser.AttributeList"/></param>
+        public AttributeList(string arg0, int arg1, int arg2, string arg3, Java.Util.Vector arg4, Javax.Swing.Text.Html.Parser.AttributeList arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -137,6 +150,13 @@ namespace Javax.Swing.Text.Html.Parser
         public string Value
         {
             get { return IExecute<string>("getValue"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#getValues()"/> 
+        /// </summary>
+        public Java.Util.Enumeration Values
+        {
+            get { return IExecute<Java.Util.Enumeration>("getValues"); }
         }
         
         #endregion

@@ -49,11 +49,58 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahDate.html#now()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>
+        public static Java.Time.Chrono.HijrahDate Now()
+        {
+            return SExecute<Java.Time.Chrono.HijrahDate>("now");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahDate.html#now(java.time.Clock)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
+        /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>
+        public static Java.Time.Chrono.HijrahDate Now(Java.Time.Clock arg0)
+        {
+            return SExecute<Java.Time.Chrono.HijrahDate>("now", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahDate.html#now(java.time.ZoneId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
+        /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>
+        public static Java.Time.Chrono.HijrahDate Now(Java.Time.ZoneId arg0)
+        {
+            return SExecute<Java.Time.Chrono.HijrahDate>("now", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahDate.html#of(int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>
+        public static Java.Time.Chrono.HijrahDate Of(int arg0, int arg1, int arg2)
+        {
+            return SExecute<Java.Time.Chrono.HijrahDate>("of", arg0, arg1, arg2);
+        }
+        
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahDate.html#withVariant(java.time.chrono.HijrahChronology)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.HijrahChronology"/></param>
+        /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>
+        public Java.Time.Chrono.HijrahDate WithVariant(Java.Time.Chrono.HijrahChronology arg0)
+        {
+            return IExecute<Java.Time.Chrono.HijrahDate>("withVariant", arg0);
+        }
+        
         #endregion
 
         #region Nested classes

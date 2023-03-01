@@ -41,7 +41,18 @@ namespace Java.Util.Concurrent.Atomic
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#newUpdater(java.lang.Class%3CU%3E,java.lang.Class%3CW%3E,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater"/></returns>
+        public static Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater NewUpdater(Java.Lang.Class arg0, Java.Lang.Class arg1, string arg2)
+        {
+            return SExecute<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater>("newUpdater", arg0, arg1, arg2);
+        }
+        
         #endregion
 
         #region Instance methods
@@ -93,6 +104,48 @@ namespace Java.Util.Concurrent.Atomic
         public void Set(object arg0, object arg1)
         {
             IExecute("set", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#accumulateAndGet(T,V,java.util.function.BinaryOperator%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object AccumulateAndGet(object arg0, object arg1, Java.Util.Function.BinaryOperator arg2)
+        {
+            return IExecute("accumulateAndGet", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndAccumulate(T,V,java.util.function.BinaryOperator%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BinaryOperator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object GetAndAccumulate(object arg0, object arg1, Java.Util.Function.BinaryOperator arg2)
+        {
+            return IExecute("getAndAccumulate", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndUpdate(T,java.util.function.UnaryOperator%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object GetAndUpdate(object arg0, Java.Util.Function.UnaryOperator arg1)
+        {
+            return IExecute("getAndUpdate", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#updateAndGet(T,java.util.function.UnaryOperator%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object UpdateAndGet(object arg0, Java.Util.Function.UnaryOperator arg1)
+        {
+            return IExecute("updateAndGet", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndSet(T,V)"/>

@@ -33,7 +33,11 @@ namespace Javax.Naming
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.NamingEnumeration"/> to <see cref="Java.Util.Enumeration"/>
+        /// </summary>
+        public static implicit operator Java.Util.Enumeration(Javax.Naming.NamingEnumeration t) => t.Cast<Java.Util.Enumeration>();
+        
         #endregion
 
         #region Fields

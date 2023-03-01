@@ -33,7 +33,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.NavigableSet"/> to <see cref="Java.Util.SortedSet"/>
+        /// </summary>
+        public static implicit operator Java.Util.SortedSet(Java.Util.NavigableSet t) => t.Cast<Java.Util.SortedSet>();
+        
         #endregion
 
         #region Fields
@@ -98,6 +102,93 @@ namespace Java.Util
         public object PollLast()
         {
             return IExecute("pollLast");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#descendingIterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator DescendingIterator()
+        {
+            return IExecute<Java.Util.Iterator>("descendingIterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#iterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#descendingSet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet DescendingSet()
+        {
+            return IExecute<Java.Util.NavigableSet>("descendingSet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#headSet(E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet HeadSet(object arg0, bool arg1)
+        {
+            return IExecute<Java.Util.NavigableSet>("headSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#subSet(E,boolean,E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet SubSet(object arg0, bool arg1, object arg2, bool arg3)
+        {
+            return IExecute<Java.Util.NavigableSet>("subSet", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#tailSet(E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet TailSet(object arg0, bool arg1)
+        {
+            return IExecute<Java.Util.NavigableSet>("tailSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#headSet(E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public Java.Util.SortedSet HeadSet(object arg0)
+        {
+            return IExecute<Java.Util.SortedSet>("headSet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#subSet(E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public Java.Util.SortedSet SubSet(object arg0, object arg1)
+        {
+            return IExecute<Java.Util.SortedSet>("subSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#tailSet(E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public Java.Util.SortedSet TailSet(object arg0)
+        {
+            return IExecute<Java.Util.SortedSet>("tailSet", arg0);
         }
         
         #endregion

@@ -65,6 +65,38 @@ namespace Java.Rmi.Activation
             return SExecute<bool>("unexportObject", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#exportObject(java.rmi.Remote,java.lang.String,java.rmi.MarshalledObject%3C?%3E,boolean,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
+        /// <param name="arg6"><see cref="Java.Rmi.Server.RMIServerSocketFactory"/></param>
+        /// <returns><see cref="Java.Rmi.Activation.ActivationID"/></returns>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        public static Java.Rmi.Activation.ActivationID ExportObject(Java.Rmi.Remote arg0, string arg1, Java.Rmi.MarshalledObject arg2, bool arg3, int arg4, Java.Rmi.Server.RMIClientSocketFactory arg5, Java.Rmi.Server.RMIServerSocketFactory arg6)
+        {
+            return SExecute<Java.Rmi.Activation.ActivationID>("exportObject", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#exportObject(java.rmi.Remote,java.lang.String,java.rmi.MarshalledObject%3C?%3E,boolean,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <returns><see cref="Java.Rmi.Activation.ActivationID"/></returns>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        public static Java.Rmi.Activation.ActivationID ExportObject(Java.Rmi.Remote arg0, string arg1, Java.Rmi.MarshalledObject arg2, bool arg3, int arg4)
+        {
+            return SExecute<Java.Rmi.Activation.ActivationID>("exportObject", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#exportObject(java.rmi.Remote,java.rmi.activation.ActivationID,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>

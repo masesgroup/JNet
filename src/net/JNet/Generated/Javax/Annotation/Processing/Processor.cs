@@ -46,6 +46,49 @@ namespace Javax.Annotation.Processing
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedAnnotationTypes()"/> 
+        /// </summary>
+        public Java.Util.Set SupportedAnnotationTypes
+        {
+            get { return IExecute<Java.Util.Set>("getSupportedAnnotationTypes"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedOptions()"/> 
+        /// </summary>
+        public Java.Util.Set SupportedOptions
+        {
+            get { return IExecute<Java.Util.Set>("getSupportedOptions"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedSourceVersion()"/> 
+        /// </summary>
+        public Javax.Lang.Model.SourceVersion SupportedSourceVersion
+        {
+            get { return IExecute<Javax.Lang.Model.SourceVersion>("getSupportedSourceVersion"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#processing.Processor.process(java.util.Set%3C? extends javax.lang.model.element.TypeElement%3E,javax.annotation.processing.RoundEnvironment)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="Javax.Annotation.Processing.RoundEnvironment"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool Process(Java.Util.Set arg0, Javax.Annotation.Processing.RoundEnvironment arg1)
+        {
+            return IExecute<bool>("process", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getCompletions(javax.lang.model.element.Element,javax.lang.model.element.AnnotationMirror,javax.lang.model.element.ExecutableElement,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></param>
+        /// <param name="arg2"><see cref="Javax.Lang.Model.Element.ExecutableElement"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <returns><see cref="Java.Lang.Iterable"/></returns>
+        public Java.Lang.Iterable GetCompletions(Javax.Lang.Model.Element.Element arg0, Javax.Lang.Model.Element.AnnotationMirror arg1, Javax.Lang.Model.Element.ExecutableElement arg2, string arg3)
+        {
+            return IExecute<Java.Lang.Iterable>("getCompletions", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#init(javax.annotation.processing.ProcessingEnvironment)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Annotation.Processing.ProcessingEnvironment"/></param>

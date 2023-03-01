@@ -41,7 +41,19 @@ namespace Java.Time.Format
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#getLocalizedDateTimePattern(java.time.format.FormatStyle,java.time.format.FormatStyle,java.time.chrono.Chronology,java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.FormatStyle"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Format.FormatStyle"/></param>
+        /// <param name="arg2"><see cref="Java.Time.Chrono.Chronology"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see langword="string"/></returns>
+        public static string GetLocalizedDateTimePattern(Java.Time.Format.FormatStyle arg0, Java.Time.Format.FormatStyle arg1, Java.Time.Chrono.Chronology arg2, Java.Util.Locale arg3)
+        {
+            return SExecute<string>("getLocalizedDateTimePattern", arg0, arg1, arg2, arg3);
+        }
+        
         #endregion
 
         #region Instance methods
@@ -82,6 +94,15 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendChronologyId");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendChronologyText(java.time.format.TextStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
+        public Java.Time.Format.DateTimeFormatterBuilder AppendChronologyText(Java.Time.Format.TextStyle arg0)
+        {
+            return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendChronologyText", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendFraction(java.time.temporal.TemporalField,int,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
@@ -92,6 +113,25 @@ namespace Java.Time.Format
         public Java.Time.Format.DateTimeFormatterBuilder AppendFraction(Java.Time.Temporal.TemporalField arg0, int arg1, int arg2, bool arg3)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendFraction", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendGenericZoneText(java.time.format.TextStyle,java.util.Set%3Cjava.time.ZoneId%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
+        public Java.Time.Format.DateTimeFormatterBuilder AppendGenericZoneText(Java.Time.Format.TextStyle arg0, Java.Util.Set arg1)
+        {
+            return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendGenericZoneText", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendGenericZoneText(java.time.format.TextStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
+        public Java.Time.Format.DateTimeFormatterBuilder AppendGenericZoneText(Java.Time.Format.TextStyle arg0)
+        {
+            return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendGenericZoneText", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendInstant()"/>
@@ -128,6 +168,25 @@ namespace Java.Time.Format
         public Java.Time.Format.DateTimeFormatterBuilder AppendLiteral(string arg0)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendLiteral", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendLocalized(java.time.format.FormatStyle,java.time.format.FormatStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.FormatStyle"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Format.FormatStyle"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
+        public Java.Time.Format.DateTimeFormatterBuilder AppendLocalized(Java.Time.Format.FormatStyle arg0, Java.Time.Format.FormatStyle arg1)
+        {
+            return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendLocalized", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendLocalizedOffset(java.time.format.TextStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
+        public Java.Time.Format.DateTimeFormatterBuilder AppendLocalizedOffset(Java.Time.Format.TextStyle arg0)
+        {
+            return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendLocalizedOffset", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendOffset(java.lang.String,java.lang.String)"/>
@@ -167,6 +226,26 @@ namespace Java.Time.Format
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendPattern", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField,java.time.format.TextStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Format.TextStyle"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
+        public Java.Time.Format.DateTimeFormatterBuilder AppendText(Java.Time.Temporal.TemporalField arg0, Java.Time.Format.TextStyle arg1)
+        {
+            return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendText", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField,java.util.Map%3Cjava.lang.Long, java.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
+        public Java.Time.Format.DateTimeFormatterBuilder AppendText(Java.Time.Temporal.TemporalField arg0, Java.Util.Map arg1)
+        {
+            return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendText", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendText(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
@@ -174,6 +253,18 @@ namespace Java.Time.Format
         public Java.Time.Format.DateTimeFormatterBuilder AppendText(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendText", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField,int,int,java.time.format.SignStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Time.Format.SignStyle"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
+        public Java.Time.Format.DateTimeFormatterBuilder AppendValue(Java.Time.Temporal.TemporalField arg0, int arg1, int arg2, Java.Time.Format.SignStyle arg3)
+        {
+            return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendValue", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendValue(java.time.temporal.TemporalField,int)"/>
@@ -244,6 +335,25 @@ namespace Java.Time.Format
         public Java.Time.Format.DateTimeFormatterBuilder AppendZoneRegionId()
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendZoneRegionId");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendZoneText(java.time.format.TextStyle,java.util.Set%3Cjava.time.ZoneId%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
+        public Java.Time.Format.DateTimeFormatterBuilder AppendZoneText(Java.Time.Format.TextStyle arg0, Java.Util.Set arg1)
+        {
+            return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendZoneText", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#appendZoneText(java.time.format.TextStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
+        public Java.Time.Format.DateTimeFormatterBuilder AppendZoneText(Java.Time.Format.TextStyle arg0)
+        {
+            return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendZoneText", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html#optionalEnd()"/>

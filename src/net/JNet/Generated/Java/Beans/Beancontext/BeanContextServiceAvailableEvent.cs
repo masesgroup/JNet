@@ -29,7 +29,16 @@ namespace Java.Beans.Beancontext
     public partial class BeanContextServiceAvailableEvent
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        public BeanContextServiceAvailableEvent(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,6 +54,20 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html#getCurrentServiceSelectors()"/> 
+        /// </summary>
+        public Java.Util.Iterator CurrentServiceSelectors
+        {
+            get { return IExecute<Java.Util.Iterator>("getCurrentServiceSelectors"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html#getServiceClass()"/> 
+        /// </summary>
+        public Java.Lang.Class ServiceClass
+        {
+            get { return IExecute<Java.Lang.Class>("getServiceClass"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceAvailableEvent.html#getSourceAsBeanContextServices()"/> 
         /// </summary>

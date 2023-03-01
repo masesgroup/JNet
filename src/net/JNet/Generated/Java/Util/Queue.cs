@@ -33,7 +33,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Queue"/> to <see cref="Java.Util.Collection"/>
+        /// </summary>
+        public static implicit operator Java.Util.Collection(Java.Util.Queue t) => t.Cast<Java.Util.Collection>();
+        
         #endregion
 
         #region Fields

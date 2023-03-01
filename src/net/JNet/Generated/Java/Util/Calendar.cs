@@ -41,6 +41,10 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Calendar"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Calendar t) => t.Cast<Java.Lang.Cloneable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Calendar"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Util.Calendar t) => t.Cast<Java.Lang.Comparable>();
         
         #endregion
 
@@ -292,6 +296,15 @@ namespace Java.Util
         public static Java.Util.Calendar GetInstance(Java.Util.TimeZone arg0)
         {
             return SExecute<Java.Util.Calendar>("getInstance", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getAvailableCalendarTypes()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set GetAvailableCalendarTypes()
+        {
+            return SExecute<Java.Util.Set>("getAvailableCalendarTypes");
         }
         
         #endregion
@@ -566,6 +579,17 @@ namespace Java.Util
         public string GetDisplayName(int arg0, int arg1, Java.Util.Locale arg2)
         {
             return IExecute<string>("getDisplayName", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getDisplayNames(int,int,java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map GetDisplayNames(int arg0, int arg1, Java.Util.Locale arg2)
+        {
+            return IExecute<Java.Util.Map>("getDisplayNames", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#roll(int,int)"/>

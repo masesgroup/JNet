@@ -60,6 +60,13 @@ namespace Java.Lang.Reflect
             get { return IExecute<Java.Lang.Reflect.Type>("getGenericReturnType"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#getReturnType()"/> 
+        /// </summary>
+        public Java.Lang.Class ReturnType
+        {
+            get { return IExecute<Java.Lang.Class>("getReturnType"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#isBridge()"/>
         /// </summary>
         

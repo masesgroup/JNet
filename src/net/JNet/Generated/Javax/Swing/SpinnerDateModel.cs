@@ -29,7 +29,18 @@ namespace Javax.Swing
     public partial class SpinnerDateModel
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#%3Cinit%3E(java.util.Date,java.lang.Comparable%3Cjava.util.Date%3E,java.lang.Comparable%3Cjava.util.Date%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Comparable"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Comparable"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        public SpinnerDateModel(Java.Util.Date arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -62,6 +73,20 @@ namespace Javax.Swing
         public Java.Util.Date Date
         {
             get { return IExecute<Java.Util.Date>("getDate"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#getEnd()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#setEnd(java.lang.Comparable%3Cjava.util.Date%3E)"/>
+        /// </summary>
+        public Java.Lang.Comparable End
+        {
+            get { return IExecute<Java.Lang.Comparable>("getEnd"); } set { IExecute("setEnd", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#getStart()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerDateModel.html#setStart(java.lang.Comparable%3Cjava.util.Date%3E)"/>
+        /// </summary>
+        public Java.Lang.Comparable Start
+        {
+            get { return IExecute<Java.Lang.Comparable>("getStart"); } set { IExecute("setStart", value); }
         }
         
         #endregion

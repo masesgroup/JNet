@@ -37,6 +37,14 @@ namespace Java.Lang
             : base()
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#%3Cinit%3E(java.util.List%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public ProcessBuilder(Java.Util.List arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
@@ -49,7 +57,17 @@ namespace Java.Lang
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#startPipeline(java.util.List%3Cjava.lang.ProcessBuilder%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public static Java.Util.List StartPipeline(Java.Util.List arg0)
+        {
+            return SExecute<Java.Util.List>("startPipeline", arg0);
+        }
+        
         #endregion
 
         #region Instance methods
@@ -89,6 +107,15 @@ namespace Java.Lang
         public Java.Lang.ProcessBuilder Command(params string[] arg0)
         {
             if (arg0.Length == 0) return IExecute<Java.Lang.ProcessBuilder>("command"); else return IExecute<Java.Lang.ProcessBuilder>("command", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#command(java.util.List%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
+        public Java.Lang.ProcessBuilder Command(Java.Util.List arg0)
+        {
+            return IExecute<Java.Lang.ProcessBuilder>("command", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#directory(java.io.File)"/>
@@ -198,6 +225,24 @@ namespace Java.Lang
         {
             return IExecute<Java.Lang.ProcessBuilder.Redirect>("redirectOutput");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#command()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List Command()
+        {
+            return IExecute<Java.Util.List>("command");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#environment()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map Environment()
+        {
+            return IExecute<Java.Util.Map>("environment");
+        }
         
         #endregion
 
@@ -261,6 +306,15 @@ namespace Java.Lang
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#type()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect.Type"/></returns>
+            public Java.Lang.ProcessBuilder.Redirect.Type Type()
+            {
+                return IExecute<Java.Lang.ProcessBuilder.Redirect.Type>("type");
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#file()"/>
             /// </summary>

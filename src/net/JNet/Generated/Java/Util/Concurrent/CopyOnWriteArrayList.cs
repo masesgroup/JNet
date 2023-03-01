@@ -29,10 +29,22 @@ namespace Java.Util.Concurrent
     public partial class CopyOnWriteArrayList
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#%3Cinit%3E(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public CopyOnWriteArrayList(Java.Util.Collection arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.CopyOnWriteArrayList"/> to <see cref="Java.Util.List"/>
+        /// </summary>
+        public static implicit operator Java.Util.List(Java.Util.Concurrent.CopyOnWriteArrayList t) => t.Cast<Java.Util.List>();
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.CopyOnWriteArrayList"/> to <see cref="Java.Util.RandomAccess"/>
         /// </summary>
@@ -76,6 +88,25 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("add", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAll(int,java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool AddAll(int arg0, Java.Util.Collection arg1)
+        {
+            return IExecute<bool>("addAll", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAll(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool AddAll(Java.Util.Collection arg0)
+        {
+            return IExecute<bool>("addAll", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addIfAbsent(E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -94,6 +125,15 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#containsAll(java.util.Collection%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool ContainsAll(Java.Util.Collection arg0)
+        {
+            return IExecute<bool>("containsAll", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#isEmpty()"/>
         /// </summary>
         
@@ -110,6 +150,33 @@ namespace Java.Util.Concurrent
         public bool Remove(object arg0)
         {
             return IExecute<bool>("remove", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeAll(java.util.Collection%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool RemoveAll(Java.Util.Collection arg0)
+        {
+            return IExecute<bool>("removeAll", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeIf(java.util.function.Predicate%3C? super E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool RemoveIf(Java.Util.Function.Predicate arg0)
+        {
+            return IExecute<bool>("removeIf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#retainAll(java.util.Collection%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool RetainAll(Java.Util.Collection arg0)
+        {
+            return IExecute<bool>("retainAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#get(int)"/>
@@ -138,6 +205,15 @@ namespace Java.Util.Concurrent
         public object Set(int arg0, object arg1)
         {
             return IExecute("set", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#addAllAbsent(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int AddAllAbsent(Java.Util.Collection arg0)
+        {
+            return IExecute<int>("addAllAbsent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#indexOf(E,int)"/>
@@ -196,6 +272,52 @@ namespace Java.Util.Concurrent
             return IExecuteArray<object>("toArray");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#iterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#subList(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List SubList(int arg0, int arg1)
+        {
+            return IExecute<Java.Util.List>("subList", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#listIterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.ListIterator"/></returns>
+        public Java.Util.ListIterator ListIterator()
+        {
+            return IExecute<Java.Util.ListIterator>("listIterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#listIterator(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.ListIterator"/></returns>
+        public Java.Util.ListIterator ListIterator(int arg0)
+        {
+            return IExecute<Java.Util.ListIterator>("listIterator", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#spliterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        public Java.Util.Spliterator Spliterator()
+        {
+            return IExecute<Java.Util.Spliterator>("spliterator");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#add(int,E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -210,6 +332,30 @@ namespace Java.Util.Concurrent
         public void Clear()
         {
             IExecute("clear");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#forEach(java.util.function.Consumer%3C? super E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        public void ForEach(Java.Util.Function.Consumer arg0)
+        {
+            IExecute("forEach", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#replaceAll(java.util.function.UnaryOperator%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
+        public void ReplaceAll(Java.Util.Function.UnaryOperator arg0)
+        {
+            IExecute("replaceAll", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#sort(java.util.Comparator%3C? super E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        public void Sort(Java.Util.Comparator arg0)
+        {
+            IExecute("sort", arg0);
         }
         
         #endregion

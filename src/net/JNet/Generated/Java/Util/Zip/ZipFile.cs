@@ -151,6 +151,24 @@ namespace Java.Util.Zip
             return IExecute<Java.Io.InputStream>("getInputStream", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#entries()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration Entries()
+        {
+            return IExecute<Java.Util.Enumeration>("entries");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#stream.Stream%3C? extends java.util.zip.ZipEntry%3E java.util.zip.ZipFile.stream()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Stream()
+        {
+            return IExecute<Java.Util.Stream.Stream>("stream");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getEntry(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>

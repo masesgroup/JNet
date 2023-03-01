@@ -29,7 +29,16 @@ namespace Javax.Management.Relation
     public partial class RoleResult
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleResult.html#%3Cinit%3E(javax.management.relation.RoleList,javax.management.relation.RoleUnresolvedList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Relation.RoleList"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.Relation.RoleUnresolvedList"/></param>
+        public RoleResult(Javax.Management.Relation.RoleList arg0, Javax.Management.Relation.RoleUnresolvedList arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +58,21 @@ namespace Javax.Management.Relation
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleResult.html#getRoles()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleResult.html#setRoles(javax.management.relation.RoleList)"/>
+        /// </summary>
+        public Javax.Management.Relation.RoleList Roles
+        {
+            get { return IExecute<Javax.Management.Relation.RoleList>("getRoles"); } set { IExecute("setRoles", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleResult.html#getRolesUnresolved()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleResult.html#setRolesUnresolved(javax.management.relation.RoleUnresolvedList)"/>
+        /// </summary>
+        public Javax.Management.Relation.RoleUnresolvedList RolesUnresolved
+        {
+            get { return IExecute<Javax.Management.Relation.RoleUnresolvedList>("getRolesUnresolved"); } set { IExecute("setRolesUnresolved", value); }
+        }
+        
         #endregion
 
         #region Nested classes

@@ -46,6 +46,13 @@ namespace Javax.Tools
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#getSourceVersions()"/> 
+        /// </summary>
+        public Java.Util.Set SourceVersions
+        {
+            get { return IExecute<Java.Util.Set>("getSourceVersions"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Tool.html#run(java.io.InputStream,java.io.OutputStream,java.io.OutputStream,java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>

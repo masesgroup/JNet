@@ -37,6 +37,10 @@ namespace Java.Nio.File
         /// Converter from <see cref="Java.Nio.File.DirectoryStream"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Nio.File.DirectoryStream t) => t.Cast<Java.Io.Closeable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.DirectoryStream"/> to <see cref="Java.Lang.Iterable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Iterable(Java.Nio.File.DirectoryStream t) => t.Cast<Java.Lang.Iterable>();
         
         #endregion
 
@@ -49,7 +53,16 @@ namespace Java.Nio.File
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
+        }
+        
         #endregion
 
         #region Nested classes

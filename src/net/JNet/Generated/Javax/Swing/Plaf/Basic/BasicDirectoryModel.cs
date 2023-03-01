@@ -58,6 +58,20 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#getDirectories()"/> 
+        /// </summary>
+        public Java.Util.Vector Directories
+        {
+            get { return IExecute<Java.Util.Vector>("getDirectories"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#getFiles()"/> 
+        /// </summary>
+        public Java.Util.Vector Files
+        {
+            get { return IExecute<Java.Util.Vector>("getFiles"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#getPropertyChangeListeners()"/> 
         /// </summary>
         public Java.Beans.PropertyChangeListener[] PropertyChangeListeners

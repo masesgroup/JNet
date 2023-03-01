@@ -75,6 +75,13 @@ namespace Javax.Xml.Crypto.Dsig
             get { return IExecute<Javax.Xml.Crypto.KeySelectorResult>("getKeySelectorResult"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getObjects()"/> 
+        /// </summary>
+        public Java.Util.List Objects
+        {
+            get { return IExecute<Java.Util.List>("getObjects"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getSignedInfo()"/> 
         /// </summary>
         public Javax.Xml.Crypto.Dsig.SignedInfo SignedInfo

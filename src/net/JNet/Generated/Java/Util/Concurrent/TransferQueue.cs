@@ -33,7 +33,11 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.TransferQueue"/> to <see cref="Java.Util.Concurrent.BlockingQueue"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.BlockingQueue(Java.Util.Concurrent.TransferQueue t) => t.Cast<Java.Util.Concurrent.BlockingQueue>();
+        
         #endregion
 
         #region Fields
@@ -60,6 +64,18 @@ namespace Java.Util.Concurrent
         public bool HasWaitingConsumer()
         {
             return IExecute<bool>("hasWaitingConsumer");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(E,long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public bool TryTransfer(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
+        {
+            return IExecute<bool>("tryTransfer", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(E)"/>

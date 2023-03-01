@@ -50,6 +50,17 @@ namespace Java.Rmi.Activation
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html#activeObject(java.rmi.activation.ActivationID,java.rmi.MarshalledObject%3C? extends java.rmi.Remote%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
+        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        public void ActiveObject(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.MarshalledObject arg1)
+        {
+            IExecute("activeObject", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html#inactiveGroup(java.rmi.activation.ActivationGroupID,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>

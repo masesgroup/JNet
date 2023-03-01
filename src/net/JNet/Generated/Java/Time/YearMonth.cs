@@ -42,6 +42,10 @@ namespace Java.Time
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.YearMonth t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
         /// <summary>
+        /// Converter from <see cref="Java.Time.YearMonth"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Time.YearMonth t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
         /// Converter from <see cref="Java.Time.YearMonth"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.YearMonth t) => t.Cast<Java.Io.Serializable>();
@@ -100,6 +104,16 @@ namespace Java.Time
             return SExecute<Java.Time.YearMonth>("of", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#of(int,java.time.Month)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Month"/></param>
+        /// <returns><see cref="Java.Time.YearMonth"/></returns>
+        public static Java.Time.YearMonth Of(int arg0, Java.Time.Month arg1)
+        {
+            return SExecute<Java.Time.YearMonth>("of", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -123,6 +137,13 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#getMonth()"/> 
+        /// </summary>
+        public Java.Time.Month Month
+        {
+            get { return IExecute<Java.Time.Month>("getMonth"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#getMonthValue()"/> 
         /// </summary>
         public int MonthValue
@@ -135,6 +156,15 @@ namespace Java.Time
         public int Year
         {
             get { return IExecute<int>("getYear"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#query(java.time.temporal.TemporalQuery%3CR%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Query(Java.Time.Temporal.TemporalQuery arg0)
+        {
+            return IExecute("query", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#isAfter(java.time.YearMonth)"/>

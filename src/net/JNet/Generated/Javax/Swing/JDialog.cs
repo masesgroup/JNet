@@ -124,6 +124,36 @@ namespace Javax.Swing
         {
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Window,java.awt.Dialog$ModalityType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Dialog.ModalityType"/></param>
+        public JDialog(Java.Awt.Window arg0, Java.Awt.Dialog.ModalityType arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Window,java.lang.String,java.awt.Dialog$ModalityType,java.awt.GraphicsConfiguration)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Dialog.ModalityType"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.GraphicsConfiguration"/></param>
+        public JDialog(Java.Awt.Window arg0, string arg1, Java.Awt.Dialog.ModalityType arg2, Java.Awt.GraphicsConfiguration arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Window,java.lang.String,java.awt.Dialog$ModalityType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Dialog.ModalityType"/></param>
+        public JDialog(Java.Awt.Window arg0, string arg1, Java.Awt.Dialog.ModalityType arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#%3Cinit%3E(java.awt.Window,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Window"/></param>

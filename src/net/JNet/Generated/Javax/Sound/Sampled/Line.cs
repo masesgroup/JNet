@@ -130,7 +130,15 @@ namespace Javax.Sound.Sampled
         public partial class Info
         {
             #region Constructors
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.Info.html#%3Cinit%3E(java.lang.Class%3C?%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+            public Info(Java.Lang.Class arg0)
+                : base(arg0)
+            {
+            }
+            
             #endregion
 
             #region Class/Interface conversion operators
@@ -146,6 +154,13 @@ namespace Javax.Sound.Sampled
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.Info.html#getLineClass()"/> 
+            /// </summary>
+            public Java.Lang.Class LineClass
+            {
+                get { return IExecute<Java.Lang.Class>("getLineClass"); }
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.Info.html#matches(javax.sound.sampled.Line$Info)"/>
             /// </summary>

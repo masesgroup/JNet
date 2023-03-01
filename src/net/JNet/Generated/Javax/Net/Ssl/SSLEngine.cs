@@ -88,11 +88,25 @@ namespace Javax.Net.Ssl
             get { return IExecute<string>("getHandshakeApplicationProtocol"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getHandshakeApplicationProtocolSelector()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction%3Cjavax.net.ssl.SSLEngine, java.util.List%3Cjava.lang.String%3E, java.lang.String%3E)"/>
+        /// </summary>
+        public Java.Util.Function.BiFunction HandshakeApplicationProtocolSelector
+        {
+            get { return IExecute<Java.Util.Function.BiFunction>("getHandshakeApplicationProtocolSelector"); } set { IExecute("setHandshakeApplicationProtocolSelector", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getHandshakeSession()"/> 
         /// </summary>
         public Javax.Net.Ssl.SSLSession HandshakeSession
         {
             get { return IExecute<Javax.Net.Ssl.SSLSession>("getHandshakeSession"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getHandshakeStatus()"/> 
+        /// </summary>
+        public Javax.Net.Ssl.SSLEngineResult.HandshakeStatus HandshakeStatus
+        {
+            get { return IExecute<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("getHandshakeStatus"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#getNeedClientAuth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html#setNeedClientAuth(boolean)"/>

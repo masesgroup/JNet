@@ -29,7 +29,54 @@ namespace Javax.Management.Openmbean
     public partial class OpenMBeanParameterInfoSupport
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenType%3CT%3E,T,java.lang.Comparable%3CT%3E,java.lang.Comparable%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenType"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.Comparable"/></param>
+        /// <param name="arg5"><see cref="Java.Lang.Comparable"/></param>
+        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
+        public OpenMBeanParameterInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, Java.Lang.Comparable arg4, Java.Lang.Comparable arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenType%3CT%3E,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenType"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
+        public OpenMBeanParameterInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenType arg2, object arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenType%3C?%3E,javax.management.Descriptor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenType"/></param>
+        /// <param name="arg3"><see cref="Javax.Management.Descriptor"/></param>
+        public OpenMBeanParameterInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenType arg2, Javax.Management.Descriptor arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenType%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenType"/></param>
+        public OpenMBeanParameterInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenType arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -55,6 +102,34 @@ namespace Javax.Management.Openmbean
         public object DefaultValue
         {
             get { return IExecute("getDefaultValue"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getLegalValues()"/> 
+        /// </summary>
+        public Java.Util.Set LegalValues
+        {
+            get { return IExecute<Java.Util.Set>("getLegalValues"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getMaxValue()"/> 
+        /// </summary>
+        public Java.Lang.Comparable MaxValue
+        {
+            get { return IExecute<Java.Lang.Comparable>("getMaxValue"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getMinValue()"/> 
+        /// </summary>
+        public Java.Lang.Comparable MinValue
+        {
+            get { return IExecute<Java.Lang.Comparable>("getMinValue"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#getOpenType()"/> 
+        /// </summary>
+        public Javax.Management.Openmbean.OpenType OpenType
+        {
+            get { return IExecute<Javax.Management.Openmbean.OpenType>("getOpenType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#hasDefaultValue()"/>

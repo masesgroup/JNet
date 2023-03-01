@@ -82,6 +82,13 @@ namespace Java.Lang.Reflect
             get { return IExecute<Java.Lang.Reflect.AnnotatedType>("getAnnotatedReturnType"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getDeclaringClass()"/> 
+        /// </summary>
+        public Java.Lang.Class DeclaringClass
+        {
+            get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getExceptionTypes()"/> 
         /// </summary>
         public Java.Lang.Class[] ExceptionTypes

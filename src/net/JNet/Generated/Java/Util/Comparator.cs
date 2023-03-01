@@ -41,7 +41,89 @@ namespace Java.Util
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#comparing(java.util.function.Function%3C? super T, ? extends U%3E,java.util.Comparator%3C? super U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator Comparing(Java.Util.Function.Function arg0, Java.Util.Comparator arg1)
+        {
+            return SExecute<Java.Util.Comparator>("comparing", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#comparing(java.util.function.Function%3C? super T, ? extends U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator Comparing(Java.Util.Function.Function arg0)
+        {
+            return SExecute<Java.Util.Comparator>("comparing", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#comparingDouble(java.util.function.ToDoubleFunction%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator ComparingDouble(Java.Util.Function.ToDoubleFunction arg0)
+        {
+            return SExecute<Java.Util.Comparator>("comparingDouble", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#comparingInt(java.util.function.ToIntFunction%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToIntFunction"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator ComparingInt(Java.Util.Function.ToIntFunction arg0)
+        {
+            return SExecute<Java.Util.Comparator>("comparingInt", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#comparingLong(java.util.function.ToLongFunction%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator ComparingLong(Java.Util.Function.ToLongFunction arg0)
+        {
+            return SExecute<Java.Util.Comparator>("comparingLong", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#naturalOrder()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator NaturalOrder()
+        {
+            return SExecute<Java.Util.Comparator>("naturalOrder");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#nullsFirst(java.util.Comparator%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator NullsFirst(Java.Util.Comparator arg0)
+        {
+            return SExecute<Java.Util.Comparator>("nullsFirst", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#nullsLast(java.util.Comparator%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator NullsLast(Java.Util.Comparator arg0)
+        {
+            return SExecute<Java.Util.Comparator>("nullsLast", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#reverseOrder()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator ReverseOrder()
+        {
+            return SExecute<Java.Util.Comparator>("reverseOrder");
+        }
+        
         #endregion
 
         #region Instance methods
@@ -54,6 +136,70 @@ namespace Java.Util
         public int Compare(object arg0, object arg1)
         {
             return IExecute<int>("compare", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function%3C? super T, ? extends U%3E,java.util.Comparator%3C? super U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator ThenComparing(Java.Util.Function.Function arg0, Java.Util.Comparator arg1)
+        {
+            return IExecute<Java.Util.Comparator>("thenComparing", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function%3C? super T, ? extends U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator ThenComparing(Java.Util.Function.Function arg0)
+        {
+            return IExecute<Java.Util.Comparator>("thenComparing", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#reversed()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator Reversed()
+        {
+            return IExecute<Java.Util.Comparator>("reversed");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.Comparator%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator ThenComparing(Java.Util.Comparator arg0)
+        {
+            return IExecute<Java.Util.Comparator>("thenComparing", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingDouble(java.util.function.ToDoubleFunction%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator ThenComparingDouble(Java.Util.Function.ToDoubleFunction arg0)
+        {
+            return IExecute<Java.Util.Comparator>("thenComparingDouble", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingInt(java.util.function.ToIntFunction%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToIntFunction"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator ThenComparingInt(Java.Util.Function.ToIntFunction arg0)
+        {
+            return IExecute<Java.Util.Comparator>("thenComparingInt", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingLong(java.util.function.ToLongFunction%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator ThenComparingLong(Java.Util.Function.ToLongFunction arg0)
+        {
+            return IExecute<Java.Util.Comparator>("thenComparingLong", arg0);
         }
         
         #endregion

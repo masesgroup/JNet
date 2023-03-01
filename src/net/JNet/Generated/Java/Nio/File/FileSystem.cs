@@ -50,6 +50,20 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getFileStores()"/> 
+        /// </summary>
+        public Java.Lang.Iterable FileStores
+        {
+            get { return IExecute<Java.Lang.Iterable>("getFileStores"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getRootDirectories()"/> 
+        /// </summary>
+        public Java.Lang.Iterable RootDirectories
+        {
+            get { return IExecute<Java.Lang.Iterable>("getRootDirectories"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#getSeparator()"/> 
         /// </summary>
         public string Separator
@@ -118,6 +132,15 @@ namespace Java.Nio.File
         public Java.Nio.File.WatchService NewWatchService()
         {
             return IExecute<Java.Nio.File.WatchService>("newWatchService");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#supportedFileAttributeViews()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set SupportedFileAttributeViews()
+        {
+            return IExecute<Java.Util.Set>("supportedFileAttributeViews");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html#close()"/>

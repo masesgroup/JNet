@@ -36,16 +36,22 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java UnaryOperator <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html"/>. Extends <see cref="JVMBridgeListener"/>
     /// </summary>
-    /// <typeparam name="TObject">The data type associated to the event</typeparam>
-    public class UnaryOperator<TObject> : JVMBridgeListener, IUnaryOperator<TObject>
+    public abstract class UnaryOperator : JVMBridgeListener
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetUnaryOperator";
+    }
 
+    /// <summary>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html"/>. Extends <see cref="UnaryOperator"/>
+    /// </summary>
+    /// <typeparam name="TObject">The data type associated to the event</typeparam>
+    public class UnaryOperator<TObject> : UnaryOperator, IUnaryOperator<TObject>
+    {
         Func<TObject, TObject> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{TObject, TObject}"/> to be executed

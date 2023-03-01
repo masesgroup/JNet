@@ -107,6 +107,15 @@ namespace Javax.Tools
         {
             return IExecute<string>("getMessage", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getKind()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Javax.Tools.Diagnostic.Kind"/></returns>
+        public Javax.Tools.Diagnostic.Kind GetKind()
+        {
+            return IExecute<Javax.Tools.Diagnostic.Kind>("getKind");
+        }
         
         #endregion
 
@@ -147,6 +156,15 @@ namespace Javax.Tools
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Tools.Diagnostic.Kind"/></returns>
+            public static Javax.Tools.Diagnostic.Kind ValueOf(string arg0)
+            {
+                return SExecute<Javax.Tools.Diagnostic.Kind>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#values()"/>
             /// </summary>

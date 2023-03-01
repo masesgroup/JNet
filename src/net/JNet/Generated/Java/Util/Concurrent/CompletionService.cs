@@ -45,7 +45,56 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Poll()
+        {
+            return IExecute<Java.Util.Concurrent.Future>("poll");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public Java.Util.Concurrent.Future Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("poll", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#submit(java.lang.Runnable,V)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0, object arg1)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("submit", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#submit(java.util.concurrent.Callable%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Submit(Java.Util.Concurrent.Callable arg0)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("submit", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#take()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public Java.Util.Concurrent.Future Take()
+        {
+            return IExecute<Java.Util.Concurrent.Future>("take");
+        }
+        
         #endregion
 
         #region Nested classes

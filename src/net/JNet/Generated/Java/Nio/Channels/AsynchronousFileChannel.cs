@@ -56,10 +56,57 @@ namespace Java.Nio.Channels
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.Channels.AsynchronousFileChannel>("open", arg0); else return SExecute<Java.Nio.Channels.AsynchronousFileChannel>("open", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#open(java.nio.file.Path,java.util.Set%3C? extends java.nio.file.OpenOption%3E,java.util.concurrent.ExecutorService,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.ExecutorService"/></param>
+        /// <param name="arg3"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.Channels.AsynchronousFileChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public static Java.Nio.Channels.AsynchronousFileChannel Open(Java.Nio.File.Path arg0, Java.Util.Set arg1, Java.Util.Concurrent.ExecutorService arg2, params Java.Nio.File.Attribute.FileAttribute[] arg3)
+        {
+            if (arg3.Length == 0) return SExecute<Java.Nio.Channels.AsynchronousFileChannel>("open", arg0, arg1, arg2); else return SExecute<Java.Nio.Channels.AsynchronousFileChannel>("open", arg0, arg1, arg2, arg3);
+        }
         
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#lock(long,long,boolean,A,java.nio.channels.CompletionHandler%3Cjava.nio.channels.FileLock, ? super A%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        public void Lock(long arg0, long arg1, bool arg2, object arg3, Java.Nio.Channels.CompletionHandler arg4)
+        {
+            IExecute("lock", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#read(java.nio.ByteBuffer,long,A,java.nio.channels.CompletionHandler%3Cjava.lang.Integer, ? super A%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        public void Read(Java.Nio.ByteBuffer arg0, long arg1, object arg2, Java.Nio.Channels.CompletionHandler arg3)
+        {
+            IExecute("read", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#write(java.nio.ByteBuffer,long,A,java.nio.channels.CompletionHandler%3Cjava.lang.Integer, ? super A%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        public void Write(Java.Nio.ByteBuffer arg0, long arg1, object arg2, Java.Nio.Channels.CompletionHandler arg3)
+        {
+            IExecute("write", arg0, arg1, arg2, arg3);
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#truncate(long)"/>
         /// </summary>
@@ -83,6 +130,37 @@ namespace Java.Nio.Channels
             return IExecute<Java.Nio.Channels.FileLock>("tryLock", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#read(java.nio.ByteBuffer,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Read(Java.Nio.ByteBuffer arg0, long arg1)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("read", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#write(java.nio.ByteBuffer,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Write(Java.Nio.ByteBuffer arg0, long arg1)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("write", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#lock(long,long,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Lock(long arg0, long arg1, bool arg2)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("lock", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#size()"/>
         /// </summary>
         
@@ -102,6 +180,15 @@ namespace Java.Nio.Channels
             IExecute("force", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#lock(A,java.nio.channels.CompletionHandler%3Cjava.nio.channels.FileLock, ? super A%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        public void Lock(object arg0, Java.Nio.Channels.CompletionHandler arg1)
+        {
+            IExecute("lock", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#tryLock()"/>
         /// </summary>
         
@@ -110,6 +197,15 @@ namespace Java.Nio.Channels
         public Java.Nio.Channels.FileLock TryLock()
         {
             return IExecute<Java.Nio.Channels.FileLock>("tryLock");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#lock()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Lock()
+        {
+            return IExecute<Java.Util.Concurrent.Future>("lock");
         }
         
         #endregion

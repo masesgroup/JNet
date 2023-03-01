@@ -30,6 +30,15 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#%3Cinit%3E(java.util.concurrent.Executor,java.util.concurrent.BlockingQueue%3Cjava.util.concurrent.Future%3CV%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
+        public ExecutorCompletionService(Java.Util.Concurrent.Executor arg0, Java.Util.Concurrent.BlockingQueue arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#%3Cinit%3E(java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -41,7 +50,11 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.ExecutorCompletionService"/> to <see cref="Java.Util.Concurrent.CompletionService"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.CompletionService(Java.Util.Concurrent.ExecutorCompletionService t) => t.Cast<Java.Util.Concurrent.CompletionService>();
+        
         #endregion
 
         #region Fields
@@ -53,7 +66,56 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#poll()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Poll()
+        {
+            return IExecute<Java.Util.Concurrent.Future>("poll");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public Java.Util.Concurrent.Future Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("poll", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#submit(java.lang.Runnable,V)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0, object arg1)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("submit", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#submit(java.util.concurrent.Callable%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Submit(Java.Util.Concurrent.Callable arg0)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("submit", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#take()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public Java.Util.Concurrent.Future Take()
+        {
+            return IExecute<Java.Util.Concurrent.Future>("take");
+        }
+        
         #endregion
 
         #region Nested classes

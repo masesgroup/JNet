@@ -46,6 +46,13 @@ namespace Java.Time.Format
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#getAvailableLocales()"/> 
+        /// </summary>
+        public static Java.Util.Set AvailableLocales
+        {
+            get { return SExecute<Java.Util.Set>("getAvailableLocales"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#of(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>

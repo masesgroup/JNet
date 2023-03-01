@@ -46,11 +46,23 @@ namespace Java.Util
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/WeakHashMap.html#%3Cinit%3E(java.util.Map%3C? extends K, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public WeakHashMap(Java.Util.Map arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.WeakHashMap"/> to <see cref="Java.Util.Map"/>
+        /// </summary>
+        public static implicit operator Java.Util.Map(Java.Util.WeakHashMap t) => t.Cast<Java.Util.Map>();
+        
         #endregion
 
         #region Fields

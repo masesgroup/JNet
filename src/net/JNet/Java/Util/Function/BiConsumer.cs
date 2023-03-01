@@ -22,7 +22,7 @@ using System;
 namespace Java.Util.Function
 {
     /// <summary>
-    /// Listener for Java BiConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html"/>. Extends <see cref="IJVMBridgeBase"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html"/>. Extends <see cref="IJVMBridgeBase"/>
     /// </summary>
     /// <typeparam name="T">The data associated to the event</typeparam>
     /// <typeparam name="U">The data associated to the event</typeparam> 
@@ -37,17 +37,23 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java BiConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html"/>. Extends <see cref="JVMBridgeListener"/>
     /// </summary>
-    /// <typeparam name="T">The data associated to the event</typeparam>
-    /// <typeparam name="U">The data associated to the event</typeparam> 
-    public class BiConsumer<T, U> : JVMBridgeListener, IBiConsumer<T, U>
+    public abstract class BiConsumer : JVMBridgeListener
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
         public override string ClassName => "org.mases.jnet.util.function.JNetBiConsumer";
+    }
 
+    /// <summary>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html"/>. Extends <see cref="BiConsumer"/>
+    /// </summary>
+    /// <typeparam name="T">The data associated to the event</typeparam>
+    /// <typeparam name="U">The data associated to the event</typeparam> 
+    public class BiConsumer<T, U> : BiConsumer, IBiConsumer<T, U>
+    {
         Action<T, U> executionFunction = null;
         /// <summary>
         /// The <see cref="Action{T, U}"/> to be executed

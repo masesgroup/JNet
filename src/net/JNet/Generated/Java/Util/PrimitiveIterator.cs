@@ -33,7 +33,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.PrimitiveIterator"/> to <see cref="Java.Util.Iterator"/>
+        /// </summary>
+        public static implicit operator Java.Util.Iterator(Java.Util.PrimitiveIterator t) => t.Cast<Java.Util.Iterator>();
+        
         #endregion
 
         #region Fields
@@ -65,7 +69,11 @@ namespace Java.Util
             #endregion
 
             #region Class/Interface conversion operators
-
+            /// <summary>
+            /// Converter from <see cref="Java.Util.PrimitiveIterator.OfDouble"/> to <see cref="Java.Util.PrimitiveIterator"/>
+            /// </summary>
+            public static implicit operator Java.Util.PrimitiveIterator(Java.Util.PrimitiveIterator.OfDouble t) => t.Cast<Java.Util.PrimitiveIterator>();
+            
             #endregion
 
             #region Fields
@@ -104,6 +112,14 @@ namespace Java.Util
                 IExecute("forEachRemaining", arg0);
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.util.function.Consumer%3C? super java.lang.Double%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            public void ForEachRemaining(Java.Util.Function.Consumer arg0)
+            {
+                IExecute("forEachRemaining", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.util.function.DoubleConsumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
@@ -126,7 +142,11 @@ namespace Java.Util
             #endregion
 
             #region Class/Interface conversion operators
-
+            /// <summary>
+            /// Converter from <see cref="Java.Util.PrimitiveIterator.OfInt"/> to <see cref="Java.Util.PrimitiveIterator"/>
+            /// </summary>
+            public static implicit operator Java.Util.PrimitiveIterator(Java.Util.PrimitiveIterator.OfInt t) => t.Cast<Java.Util.PrimitiveIterator>();
+            
             #endregion
 
             #region Fields
@@ -165,6 +185,14 @@ namespace Java.Util
                 IExecute("forEachRemaining", arg0);
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.util.function.Consumer%3C? super java.lang.Integer%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            public void ForEachRemaining(Java.Util.Function.Consumer arg0)
+            {
+                IExecute("forEachRemaining", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.util.function.IntConsumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
@@ -187,7 +215,11 @@ namespace Java.Util
             #endregion
 
             #region Class/Interface conversion operators
-
+            /// <summary>
+            /// Converter from <see cref="Java.Util.PrimitiveIterator.OfLong"/> to <see cref="Java.Util.PrimitiveIterator"/>
+            /// </summary>
+            public static implicit operator Java.Util.PrimitiveIterator(Java.Util.PrimitiveIterator.OfLong t) => t.Cast<Java.Util.PrimitiveIterator>();
+            
             #endregion
 
             #region Fields
@@ -222,6 +254,14 @@ namespace Java.Util
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
+            {
+                IExecute("forEachRemaining", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.Consumer%3C? super java.lang.Long%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            public void ForEachRemaining(Java.Util.Function.Consumer arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }

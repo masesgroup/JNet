@@ -112,6 +112,17 @@ namespace Java.Util.Concurrent.Locks
             return IExecute<bool>("tryLock");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public bool TryLock(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            return IExecute<bool>("tryLock", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#hasQueuedThread(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>

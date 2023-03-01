@@ -258,6 +258,11 @@ namespace MASES.JNetReflector
                     }
 
                     bool jSubClassIsOrFromGeneric = jSubClass.IsOrInheritFromJVMGenericClass();
+                    if (JNetReflectorCore.DisableGenerics && jSubClassIsOrFromGeneric)
+                    {
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarding generic class {0}", jSubClass.GenericString);
+                        continue;
+                    }
                     bool jSubClassIsListener = jSubClass.IsJVMListenerClass();
                     string nestedClassBlock;
 
@@ -354,7 +359,11 @@ namespace MASES.JNetReflector
                 return string.Empty;
             }
             bool jClassIsOrFromGeneric = jClass.IsOrInheritFromJVMGenericClass();
-
+            if (JNetReflectorCore.DisableGenerics && jClassIsOrFromGeneric)
+            {
+                ReportTrace(ReflectionTraceLevel.Debug, "Discarding generic class {0}", jClass.GenericString);
+                return string.Empty;
+            }
             ReportTrace(ReflectionTraceLevel.Debug, "Preparing main class {0}", jClass.GenericString);
 
             string classBlock;
@@ -482,7 +491,7 @@ namespace MASES.JNetReflector
                 StringBuilder constructorExecutionParamsBuilder = new StringBuilder();
                 foreach (var parameter in constructor.Parameters)
                 {
-                    if (parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
+                    if (JNetReflectorCore.DisableGenerics && parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
                     if (parameter.Type.MustBeAvoided()) { bypass = true; break; }
                     if (parameter.Type() == "object[]") { bypass = true; break; }
                     if (!parameter.IsVarArgs)
@@ -579,7 +588,7 @@ namespace MASES.JNetReflector
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded static operator {0}", implementedInterface.GenericString);
                     continue;
                 }
-                if (implementedInterface.IsOrInheritFromJVMGenericClass())
+                if (JNetReflectorCore.DisableGenerics && implementedInterface.IsOrInheritFromJVMGenericClass())
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded generic operator {0}", implementedInterface.GenericString);
                     continue;
@@ -640,7 +649,7 @@ namespace MASES.JNetReflector
                 }
 
                 if (!method.IsPublic()) continue; // avoid not public methods
-                if (method.ReturnType.IsOrInheritFromJVMGenericClass())
+                if (JNetReflectorCore.DisableGenerics && method.ReturnType.IsOrInheritFromJVMGenericClass())
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded IsOrInheritFromJVMGenericClass method {0}", genString);
                     continue; // avoid generics till now
@@ -841,7 +850,7 @@ namespace MASES.JNetReflector
                 StringBuilder methodExecutionParamsBuilder = new StringBuilder();
                 foreach (var parameter in method.Parameters)
                 {
-                    if (parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
+                    if (JNetReflectorCore.DisableGenerics && parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
                     if (parameter.Type.MustBeAvoided()) { bypass = true; break; }
                     if (!parameter.IsVarArgs)
                     {
@@ -997,6 +1006,12 @@ namespace MASES.JNetReflector
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated field {0}", field.GenericString);
                     continue; // avoid generics till now
                 }
+                bool isFieldGeneric = field.Type.IsOrInheritFromJVMGenericClass();
+                if (JNetReflectorCore.DisableGenerics && isFieldGeneric)
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarding generic class {0}", field.GenericString);
+                    continue;
+                }
 
                 sortedFilteredFields.Add(field.GenericString, field);
             }
@@ -1005,9 +1020,6 @@ namespace MASES.JNetReflector
             foreach (var field in sortedFilteredFields.Values)
             {
                 bool isDeprecated = field.IsDeprecated();
-
-                bool isFieldGeneric = field.Type.IsOrInheritFromJVMGenericClass();
-
                 string modifier = field.IsStatic() ? " static" : string.Empty;
                 if (field.IsTypeNative())
                 {

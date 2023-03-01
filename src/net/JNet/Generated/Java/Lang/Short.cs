@@ -33,7 +33,11 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="short?"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(short? t) => t.Cast<Java.Lang.Comparable>();
+        
         #endregion
 
         #region Fields

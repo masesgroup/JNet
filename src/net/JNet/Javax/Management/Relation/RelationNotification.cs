@@ -17,6 +17,7 @@
 */
 
 using Java.Util;
+using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
@@ -27,14 +28,14 @@ namespace Javax.Management.Relation
         /// <summary>
         /// Returns the list of ObjectNames of MBeans expected to be unregistered due to a relation removal(only for relation removal).
         /// </summary>
-        public List<ObjectName> MBeansToUnregister => IExecute<List<ObjectName>>("getMBeansToUnregister");
+        public List<ObjectName> MBeansToUnregister2 => MBeansToUnregister.Cast<List<ObjectName>>();
         /// <summary>
         /// Returns new value of updated role(only for role update).
         /// </summary>
-        public List<ObjectName> NewRoleValue => IExecute<List<ObjectName>>("getNewRoleValue");
+        public List<ObjectName> NewRoleValue2 => NewRoleValue.Cast<List<ObjectName>>();
         /// <summary>
         /// Returns old value of updated role (only for role update).
         /// </summary>
-        public List<ObjectName> OldRoleValue => IExecute<List<ObjectName>>("getOldRoleValue");
+        public List<ObjectName> OldRoleValue2 => OldRoleValue.Cast<List<ObjectName>>();
     }
 }

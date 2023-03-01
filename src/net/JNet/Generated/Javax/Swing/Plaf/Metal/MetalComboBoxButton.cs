@@ -29,7 +29,30 @@ namespace Javax.Swing.Plaf.Metal
     public partial class MetalComboBoxButton
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#%3Cinit%3E(javax.swing.JComboBox%3Cjava.lang.Object%3E,javax.swing.Icon,boolean,javax.swing.CellRendererPane,javax.swing.JList%3Cjava.lang.Object%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="Javax.Swing.CellRendererPane"/></param>
+        /// <param name="arg4"><see cref="Javax.Swing.JList"/></param>
+        public MetalComboBoxButton(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, bool arg2, Javax.Swing.CellRendererPane arg3, Javax.Swing.JList arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#%3Cinit%3E(javax.swing.JComboBox%3Cjava.lang.Object%3E,javax.swing.Icon,javax.swing.CellRendererPane,javax.swing.JList%3Cjava.lang.Object%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.CellRendererPane"/></param>
+        /// <param name="arg3"><see cref="Javax.Swing.JList"/></param>
+        public MetalComboBoxButton(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, Javax.Swing.CellRendererPane arg2, Javax.Swing.JList arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,6 +68,13 @@ namespace Javax.Swing.Plaf.Metal
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#getComboBox()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#setComboBox(javax.swing.JComboBox%3Cjava.lang.Object%3E)"/>
+        /// </summary>
+        public Javax.Swing.JComboBox ComboBox
+        {
+            get { return IExecute<Javax.Swing.JComboBox>("getComboBox"); } set { IExecute("setComboBox", value); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#getComboIcon()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#setComboIcon(javax.swing.Icon)"/>
         /// </summary>

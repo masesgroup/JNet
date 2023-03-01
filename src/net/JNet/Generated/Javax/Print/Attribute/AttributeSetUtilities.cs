@@ -42,6 +42,26 @@ namespace Javax.Print.Attribute
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#verifyAttributeCategory(java.lang.Object,java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public static Java.Lang.Class VerifyAttributeCategory(object arg0, Java.Lang.Class arg1)
+        {
+            return SExecute<Java.Lang.Class>("verifyAttributeCategory", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#verifyAttributeValue(java.lang.Object,java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.Attribute"/></returns>
+        public static Javax.Print.Attribute.Attribute VerifyAttributeValue(object arg0, Java.Lang.Class arg1)
+        {
+            return SExecute<Javax.Print.Attribute.Attribute>("verifyAttributeValue", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.AttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.AttributeSet"/></param>
@@ -130,6 +150,15 @@ namespace Javax.Print.Attribute
         public static Javax.Print.Attribute.PrintServiceAttributeSet UnmodifiableView(Javax.Print.Attribute.PrintServiceAttributeSet arg0)
         {
             return SExecute<Javax.Print.Attribute.PrintServiceAttributeSet>("unmodifiableView", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#verifyCategoryForValue(java.lang.Class%3C?%3E,javax.print.attribute.Attribute)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Javax.Print.Attribute.Attribute"/></param>
+        public static void VerifyCategoryForValue(Java.Lang.Class arg0, Javax.Print.Attribute.Attribute arg1)
+        {
+            SExecute("verifyCategoryForValue", arg0, arg1);
         }
         
         #endregion

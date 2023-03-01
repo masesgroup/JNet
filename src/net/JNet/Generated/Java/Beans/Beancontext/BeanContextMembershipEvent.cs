@@ -29,7 +29,16 @@ namespace Java.Beans.Beancontext
     public partial class BeanContextMembershipEvent
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipEvent.html#%3Cinit%3E(java.beans.beancontext.BeanContext,java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContext"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        public BeanContextMembershipEvent(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Collection arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -71,6 +80,15 @@ namespace Java.Beans.Beancontext
         public object[] ToArray()
         {
             return IExecuteArray<object>("toArray");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipEvent.html#iterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
         }
         
         #endregion

@@ -92,6 +92,20 @@ namespace Java.Lang.Management
             get { return SExecute<Java.Lang.Management.CompilationMXBean>("getCompilationMXBean"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getGarbageCollectorMXBeans()"/> 
+        /// </summary>
+        public static Java.Util.List GarbageCollectorMXBeans
+        {
+            get { return SExecute<Java.Util.List>("getGarbageCollectorMXBeans"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getMemoryManagerMXBeans()"/> 
+        /// </summary>
+        public static Java.Util.List MemoryManagerMXBeans
+        {
+            get { return SExecute<Java.Util.List>("getMemoryManagerMXBeans"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getMemoryMXBean()"/> 
         /// </summary>
         public static Java.Lang.Management.MemoryMXBean MemoryMXBean
@@ -99,11 +113,25 @@ namespace Java.Lang.Management
             get { return SExecute<Java.Lang.Management.MemoryMXBean>("getMemoryMXBean"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getMemoryPoolMXBeans()"/> 
+        /// </summary>
+        public static Java.Util.List MemoryPoolMXBeans
+        {
+            get { return SExecute<Java.Util.List>("getMemoryPoolMXBeans"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getOperatingSystemMXBean()"/> 
         /// </summary>
         public static Java.Lang.Management.OperatingSystemMXBean OperatingSystemMXBean
         {
             get { return SExecute<Java.Lang.Management.OperatingSystemMXBean>("getOperatingSystemMXBean"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformManagementInterfaces()"/> 
+        /// </summary>
+        public static Java.Util.Set PlatformManagementInterfaces
+        {
+            get { return SExecute<Java.Util.Set>("getPlatformManagementInterfaces"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformMBeanServer()"/> 
@@ -125,6 +153,58 @@ namespace Java.Lang.Management
         public static Java.Lang.Management.ThreadMXBean ThreadMXBean
         {
             get { return SExecute<Java.Lang.Management.ThreadMXBean>("getThreadMXBean"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformMXBeans(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public static Java.Util.List GetPlatformMXBeans(Java.Lang.Class arg0)
+        {
+            return SExecute<Java.Util.List>("getPlatformMXBeans", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformMXBeans(javax.management.MBeanServerConnection,java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public static Java.Util.List GetPlatformMXBeans(Javax.Management.MBeanServerConnection arg0, Java.Lang.Class arg1)
+        {
+            return SExecute<Java.Util.List>("getPlatformMXBeans", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformMXBean(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Lang.Management.PlatformManagedObject"/></returns>
+        public static Java.Lang.Management.PlatformManagedObject GetPlatformMXBean(Java.Lang.Class arg0)
+        {
+            return SExecute<Java.Lang.Management.PlatformManagedObject>("getPlatformMXBean", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformMXBean(javax.management.MBeanServerConnection,java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Lang.Management.PlatformManagedObject"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public static Java.Lang.Management.PlatformManagedObject GetPlatformMXBean(Javax.Management.MBeanServerConnection arg0, Java.Lang.Class arg1)
+        {
+            return SExecute<Java.Lang.Management.PlatformManagedObject>("getPlatformMXBean", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#newPlatformMXBeanProxy(javax.management.MBeanServerConnection,java.lang.String,java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public static object NewPlatformMXBeanProxy(Javax.Management.MBeanServerConnection arg0, string arg1, Java.Lang.Class arg2)
+        {
+            return SExecute("newPlatformMXBeanProxy", arg0, arg1, arg2);
         }
         
         #endregion

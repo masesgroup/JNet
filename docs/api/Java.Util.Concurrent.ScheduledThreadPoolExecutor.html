@@ -116,6 +116,9 @@
       <a class="xref" href="Java.Util.Concurrent.ThreadPoolExecutor.html#Java_Util_Concurrent_ThreadPoolExecutor_PoolSize">ThreadPoolExecutor.PoolSize</a>
     </div>
     <div>
+      <a class="xref" href="Java.Util.Concurrent.ThreadPoolExecutor.html#Java_Util_Concurrent_ThreadPoolExecutor_Queue">ThreadPoolExecutor.Queue</a>
+    </div>
+    <div>
       <a class="xref" href="Java.Util.Concurrent.ThreadPoolExecutor.html#Java_Util_Concurrent_ThreadPoolExecutor_RejectedExecutionHandler">ThreadPoolExecutor.RejectedExecutionHandler</a>
     </div>
     <div>
@@ -140,10 +143,37 @@
       <a class="xref" href="Java.Util.Concurrent.ThreadPoolExecutor.html#Java_Util_Concurrent_ThreadPoolExecutor_PrestartAllCoreThreads">ThreadPoolExecutor.PrestartAllCoreThreads()</a>
     </div>
     <div>
+      <a class="xref" href="Java.Util.Concurrent.ThreadPoolExecutor.html#Java_Util_Concurrent_ThreadPoolExecutor_GetKeepAliveTime_Java_Util_Concurrent_TimeUnit_">ThreadPoolExecutor.GetKeepAliveTime(TimeUnit)</a>
+    </div>
+    <div>
       <a class="xref" href="Java.Util.Concurrent.ThreadPoolExecutor.html#Java_Util_Concurrent_ThreadPoolExecutor_AllowCoreThreadTimeOut_System_Boolean_">ThreadPoolExecutor.AllowCoreThreadTimeOut(Boolean)</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.Concurrent.ThreadPoolExecutor.html#Java_Util_Concurrent_ThreadPoolExecutor_Purge">ThreadPoolExecutor.Purge()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Concurrent.ThreadPoolExecutor.html#Java_Util_Concurrent_ThreadPoolExecutor_SetKeepAliveTime_System_Int64_Java_Util_Concurrent_TimeUnit_">ThreadPoolExecutor.SetKeepAliveTime(Int64, TimeUnit)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html#Java_Util_Concurrent_AbstractExecutorService_Submit_Java_Lang_Runnable_System_Object_">AbstractExecutorService.Submit(Runnable, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html#Java_Util_Concurrent_AbstractExecutorService_Submit_Java_Util_Concurrent_Callable_">AbstractExecutorService.Submit(Callable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html#Java_Util_Concurrent_AbstractExecutorService_InvokeAll_Java_Util_Collection_System_Int64_Java_Util_Concurrent_TimeUnit_">AbstractExecutorService.InvokeAll(Collection, Int64, TimeUnit)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html#Java_Util_Concurrent_AbstractExecutorService_InvokeAll_Java_Util_Collection_">AbstractExecutorService.InvokeAll(Collection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html#Java_Util_Concurrent_AbstractExecutorService_InvokeAny_Java_Util_Collection_System_Int64_Java_Util_Concurrent_TimeUnit_">AbstractExecutorService.InvokeAny(Collection, Int64, TimeUnit)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html#Java_Util_Concurrent_AbstractExecutorService_InvokeAny_Java_Util_Collection_">AbstractExecutorService.InvokeAny(Collection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html#Java_Util_Concurrent_AbstractExecutorService_Submit_Java_Lang_Runnable_">AbstractExecutorService.Submit(Runnable)</a>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute(System.String, System.Object[])</span>
@@ -812,6 +842,268 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ScheduledThreadPoolExecutor_Schedule_Java_Lang_Runnable_System_Int64_Java_Util_Concurrent_TimeUnit_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ScheduledThreadPoolExecutor.Schedule(Java.Lang.Runnable%2CSystem.Int64%2CJava.Util.Concurrent.TimeUnit)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ScheduledThreadPoolExecutor.cs/#L127">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ScheduledThreadPoolExecutor_Schedule_" data-uid="Java.Util.Concurrent.ScheduledThreadPoolExecutor.Schedule*"></a>
+  <h4 id="Java_Util_Concurrent_ScheduledThreadPoolExecutor_Schedule_Java_Lang_Runnable_System_Int64_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.ScheduledThreadPoolExecutor.Schedule(Java.Lang.Runnable,System.Int64,Java.Util.Concurrent.TimeUnit)">Schedule(Runnable, Int64, TimeUnit)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScheduledFuture Schedule(Runnable arg0, long arg1, TimeUnit arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ScheduledFuture.html">ScheduledFuture</a></td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.ScheduledFuture.html">ScheduledFuture</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ScheduledThreadPoolExecutor_Schedule_Java_Util_Concurrent_Callable_System_Int64_Java_Util_Concurrent_TimeUnit_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ScheduledThreadPoolExecutor.Schedule(Java.Util.Concurrent.Callable%2CSystem.Int64%2CJava.Util.Concurrent.TimeUnit)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ScheduledThreadPoolExecutor.cs/#L116">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ScheduledThreadPoolExecutor_Schedule_" data-uid="Java.Util.Concurrent.ScheduledThreadPoolExecutor.Schedule*"></a>
+  <h4 id="Java_Util_Concurrent_ScheduledThreadPoolExecutor_Schedule_Java_Util_Concurrent_Callable_System_Int64_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.ScheduledThreadPoolExecutor.Schedule(Java.Util.Concurrent.Callable,System.Int64,Java.Util.Concurrent.TimeUnit)">Schedule(Callable, Int64, TimeUnit)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#schedule(java.util.concurrent.Callable%3CV%3E,long,java.util.concurrent.TimeUnit)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#schedule(java.util.concurrent.Callable%3CV%3E,long,java.util.concurrent.TimeUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScheduledFuture Schedule(Callable arg0, long arg1, TimeUnit arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.Callable.html">Callable</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.Callable.html">Callable</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ScheduledFuture.html">ScheduledFuture</a></td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.ScheduledFuture.html">ScheduledFuture</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ScheduledThreadPoolExecutor_ScheduleAtFixedRate_Java_Lang_Runnable_System_Int64_System_Int64_Java_Util_Concurrent_TimeUnit_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ScheduledThreadPoolExecutor.ScheduleAtFixedRate(Java.Lang.Runnable%2CSystem.Int64%2CSystem.Int64%2CJava.Util.Concurrent.TimeUnit)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ScheduledThreadPoolExecutor.cs/#L139">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ScheduledThreadPoolExecutor_ScheduleAtFixedRate_" data-uid="Java.Util.Concurrent.ScheduledThreadPoolExecutor.ScheduleAtFixedRate*"></a>
+  <h4 id="Java_Util_Concurrent_ScheduledThreadPoolExecutor_ScheduleAtFixedRate_Java_Lang_Runnable_System_Int64_System_Int64_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.ScheduledThreadPoolExecutor.ScheduleAtFixedRate(Java.Lang.Runnable,System.Int64,System.Int64,Java.Util.Concurrent.TimeUnit)">ScheduleAtFixedRate(Runnable, Int64, Int64, TimeUnit)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScheduledFuture ScheduleAtFixedRate(Runnable arg0, long arg1, long arg2, TimeUnit arg3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></td>
+        <td><span class="parametername">arg3</span></td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ScheduledFuture.html">ScheduledFuture</a></td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.ScheduledFuture.html">ScheduledFuture</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ScheduledThreadPoolExecutor_ScheduleWithFixedDelay_Java_Lang_Runnable_System_Int64_System_Int64_Java_Util_Concurrent_TimeUnit_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ScheduledThreadPoolExecutor.ScheduleWithFixedDelay(Java.Lang.Runnable%2CSystem.Int64%2CSystem.Int64%2CJava.Util.Concurrent.TimeUnit)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ScheduledThreadPoolExecutor.cs/#L151">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_ScheduledThreadPoolExecutor_ScheduleWithFixedDelay_" data-uid="Java.Util.Concurrent.ScheduledThreadPoolExecutor.ScheduleWithFixedDelay*"></a>
+  <h4 id="Java_Util_Concurrent_ScheduledThreadPoolExecutor_ScheduleWithFixedDelay_Java_Lang_Runnable_System_Int64_System_Int64_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.ScheduledThreadPoolExecutor.ScheduleWithFixedDelay(Java.Lang.Runnable,System.Int64,System.Int64,Java.Util.Concurrent.TimeUnit)">ScheduleWithFixedDelay(Runnable, Int64, Int64, TimeUnit)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScheduledFuture ScheduleWithFixedDelay(Runnable arg0, long arg1, long arg2, TimeUnit arg3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.Runnable.html">Runnable</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></td>
+        <td><span class="parametername">arg3</span></td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.ScheduledFuture.html">ScheduledFuture</a></td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.ScheduledFuture.html">ScheduledFuture</a></p>
+</td>
       </tr>
     </tbody>
   </table>

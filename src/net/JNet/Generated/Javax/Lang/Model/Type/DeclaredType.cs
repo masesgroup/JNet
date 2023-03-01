@@ -57,6 +57,13 @@ namespace Javax.Lang.Model.Type
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getEnclosingType"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#getTypeArguments()"/> 
+        /// </summary>
+        public Java.Util.List TypeArguments
+        {
+            get { return IExecute<Java.Util.List>("getTypeArguments"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#asElement()"/>
         /// </summary>
         

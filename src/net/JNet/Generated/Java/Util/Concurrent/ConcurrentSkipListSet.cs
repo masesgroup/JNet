@@ -29,10 +29,38 @@ namespace Java.Util.Concurrent
     public partial class ConcurrentSkipListSet
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#%3Cinit%3E(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public ConcurrentSkipListSet(Java.Util.Collection arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#%3Cinit%3E(java.util.Comparator%3C? super E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        public ConcurrentSkipListSet(Java.Util.Comparator arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#%3Cinit%3E(java.util.SortedSet%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
+        public ConcurrentSkipListSet(Java.Util.SortedSet arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.ConcurrentSkipListSet"/> to <see cref="Java.Util.NavigableSet"/>
+        /// </summary>
+        public static implicit operator Java.Util.NavigableSet(Java.Util.Concurrent.ConcurrentSkipListSet t) => t.Cast<Java.Util.NavigableSet>();
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentSkipListSet"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
@@ -124,6 +152,102 @@ namespace Java.Util.Concurrent
         public object PollLast()
         {
             return IExecute("pollLast");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#comparator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator Comparator()
+        {
+            return IExecute<Java.Util.Comparator>("comparator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#clone()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListSet"/></returns>
+        public Java.Util.Concurrent.ConcurrentSkipListSet Clone()
+        {
+            return IExecute<Java.Util.Concurrent.ConcurrentSkipListSet>("clone");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#descendingIterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator DescendingIterator()
+        {
+            return IExecute<Java.Util.Iterator>("descendingIterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#descendingSet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet DescendingSet()
+        {
+            return IExecute<Java.Util.NavigableSet>("descendingSet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#headSet(E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet HeadSet(object arg0, bool arg1)
+        {
+            return IExecute<Java.Util.NavigableSet>("headSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#subSet(E,boolean,E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet SubSet(object arg0, bool arg1, object arg2, bool arg3)
+        {
+            return IExecute<Java.Util.NavigableSet>("subSet", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#tailSet(E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet TailSet(object arg0, bool arg1)
+        {
+            return IExecute<Java.Util.NavigableSet>("tailSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#headSet(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public Java.Util.SortedSet HeadSet(object arg0)
+        {
+            return IExecute<Java.Util.SortedSet>("headSet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#subSet(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public Java.Util.SortedSet SubSet(object arg0, object arg1)
+        {
+            return IExecute<Java.Util.SortedSet>("subSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#tailSet(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public Java.Util.SortedSet TailSet(object arg0)
+        {
+            return IExecute<Java.Util.SortedSet>("tailSet", arg0);
         }
         
         #endregion

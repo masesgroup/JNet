@@ -29,7 +29,17 @@ namespace Javax.Security.Auth.Login
     public partial class AppConfigurationEntry
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.html#%3Cinit%3E(java.lang.String,javax.security.auth.login.AppConfigurationEntry$LoginModuleControlFlag,java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
+        public AppConfigurationEntry(string arg0, Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag arg1, Java.Util.Map arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -58,6 +68,13 @@ namespace Javax.Security.Auth.Login
         public string LoginModuleName
         {
             get { return IExecute<string>("getLoginModuleName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.html#getOptions()"/> 
+        /// </summary>
+        public Java.Util.Map Options
+        {
+            get { return IExecute<Java.Util.Map>("getOptions"); }
         }
         
         #endregion

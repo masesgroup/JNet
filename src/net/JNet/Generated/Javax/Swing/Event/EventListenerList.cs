@@ -63,6 +63,42 @@ namespace Javax.Swing.Event
         {
             get { return IExecuteArray<object>("getListenerList"); }
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#getListeners(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.EventListener"/></returns>
+        public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
+        {
+            return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#getListenerCount(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int GetListenerCount(Java.Lang.Class arg0)
+        {
+            return IExecute<int>("getListenerCount", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#add(java.lang.Class%3CT%3E,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Util.EventListener"/></param>
+        public void Add(Java.Lang.Class arg0, Java.Util.EventListener arg1)
+        {
+            IExecute("add", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#remove(java.lang.Class%3CT%3E,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Util.EventListener"/></param>
+        public void Remove(Java.Lang.Class arg0, Java.Util.EventListener arg1)
+        {
+            IExecute("remove", arg0, arg1);
+        }
         
         #endregion
 

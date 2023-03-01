@@ -107,11 +107,6 @@ namespace Java.Lang.Reflect
 #else
     public partial class Executable
     {
-        /// <summary>
-        /// Returns the <see cref="Class"/> object representing the class or interface that declares the executable represented by this object.
-        /// </summary>
-        public Class DeclaringClass => IExecute<Class>("getDeclaringClass");
-
         //abstract Annotation[][] getParameterAnnotations()
         //Returns an array of arrays of Annotations that represent the annotations on the formal parameters, in declaration order, of the Executable represented by this object.
         

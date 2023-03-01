@@ -33,7 +33,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Set"/> to <see cref="Java.Util.Collection"/>
+        /// </summary>
+        public static implicit operator Java.Util.Collection(Java.Util.Set t) => t.Cast<Java.Util.Collection>();
+        
         #endregion
 
         #region Fields
@@ -41,7 +45,169 @@ namespace Java.Util
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#copyOf(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set CopyOf(Java.Util.Collection arg0)
+        {
+            return SExecute<Java.Util.Set>("copyOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set Of()
+        {
+            return SExecute<Java.Util.Set>("of");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E,E,E,E,E,E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see cref="object"/></param>
+        /// <param name="arg5"><see cref="object"/></param>
+        /// <param name="arg6"><see cref="object"/></param>
+        /// <param name="arg7"><see cref="object"/></param>
+        /// <param name="arg8"><see cref="object"/></param>
+        /// <param name="arg9"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9)
+        {
+            return SExecute<Java.Util.Set>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E,E,E,E,E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see cref="object"/></param>
+        /// <param name="arg5"><see cref="object"/></param>
+        /// <param name="arg6"><see cref="object"/></param>
+        /// <param name="arg7"><see cref="object"/></param>
+        /// <param name="arg8"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8)
+        {
+            return SExecute<Java.Util.Set>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E,E,E,E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see cref="object"/></param>
+        /// <param name="arg5"><see cref="object"/></param>
+        /// <param name="arg6"><see cref="object"/></param>
+        /// <param name="arg7"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7)
+        {
+            return SExecute<Java.Util.Set>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E,E,E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see cref="object"/></param>
+        /// <param name="arg5"><see cref="object"/></param>
+        /// <param name="arg6"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6)
+        {
+            return SExecute<Java.Util.Set>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E,E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see cref="object"/></param>
+        /// <param name="arg5"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5)
+        {
+            return SExecute<Java.Util.Set>("of", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3, object arg4)
+        {
+            return SExecute<Java.Util.Set>("of", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3)
+        {
+            return SExecute<Java.Util.Set>("of", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set Of(object arg0, object arg1, object arg2)
+        {
+            return SExecute<Java.Util.Set>("of", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set Of(object arg0, object arg1)
+        {
+            return SExecute<Java.Util.Set>("of", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set Of(params object[] arg0)
+        {
+            if (arg0.Length == 0) return SExecute<Java.Util.Set>("of"); else return SExecute<Java.Util.Set>("of", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set Of(object arg0)
+        {
+            return SExecute<Java.Util.Set>("of", arg0);
+        }
+        
         #endregion
 
         #region Instance methods
@@ -64,6 +230,15 @@ namespace Java.Util
             return IExecute<bool>("add", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#addAll(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool AddAll(Java.Util.Collection arg0)
+        {
+            return IExecute<bool>("addAll", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -71,6 +246,15 @@ namespace Java.Util
         public bool Contains(object arg0)
         {
             return IExecute<bool>("contains", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#containsAll(java.util.Collection%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool ContainsAll(Java.Util.Collection arg0)
+        {
+            return IExecute<bool>("containsAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#isEmpty()"/>
@@ -91,6 +275,24 @@ namespace Java.Util
             return IExecute<bool>("remove", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#removeAll(java.util.Collection%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool RemoveAll(Java.Util.Collection arg0)
+        {
+            return IExecute<bool>("removeAll", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#retainAll(java.util.Collection%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool RetainAll(Java.Util.Collection arg0)
+        {
+            return IExecute<bool>("retainAll", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#size()"/>
         /// </summary>
         
@@ -109,11 +311,29 @@ namespace Java.Util
             return IExecuteArray<object>("toArray");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#iterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecute("clear");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#spliterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        public Java.Util.Spliterator Spliterator()
+        {
+            return IExecute<Java.Util.Spliterator>("spliterator");
         }
         
         #endregion

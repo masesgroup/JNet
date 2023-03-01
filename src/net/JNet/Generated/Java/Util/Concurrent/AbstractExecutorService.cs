@@ -49,7 +49,82 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/AbstractExecutorService.html#submit(java.lang.Runnable,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0, object arg1)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("submit", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/AbstractExecutorService.html#submit(java.util.concurrent.Callable%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Submit(Java.Util.Concurrent.Callable arg0)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("submit", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/AbstractExecutorService.html#invokeAll(java.util.Collection%3C? extends java.util.concurrent.Callable%3CT%3E%3E,long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public Java.Util.List InvokeAll(Java.Util.Collection arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
+        {
+            return IExecute<Java.Util.List>("invokeAll", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/AbstractExecutorService.html#invokeAll(java.util.Collection%3C? extends java.util.concurrent.Callable%3CT%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public Java.Util.List InvokeAll(Java.Util.Collection arg0)
+        {
+            return IExecute<Java.Util.List>("invokeAll", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/AbstractExecutorService.html#invokeAny(java.util.Collection%3C? extends java.util.concurrent.Callable%3CT%3E%3E,long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
+        /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
+        public object InvokeAny(Java.Util.Collection arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
+        {
+            return IExecute("invokeAny", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/AbstractExecutorService.html#invokeAny(java.util.Collection%3C? extends java.util.concurrent.Callable%3CT%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
+        public object InvokeAny(Java.Util.Collection arg0)
+        {
+            return IExecute("invokeAny", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/AbstractExecutorService.html#submit(java.lang.Runnable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("submit", arg0);
+        }
+        
         #endregion
 
         #region Nested classes

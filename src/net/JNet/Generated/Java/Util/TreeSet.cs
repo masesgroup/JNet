@@ -29,10 +29,38 @@ namespace Java.Util
     public partial class TreeSet
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public TreeSet(Java.Util.Collection arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.Comparator%3C? super E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        public TreeSet(Java.Util.Comparator arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.SortedSet%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
+        public TreeSet(Java.Util.SortedSet arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.TreeSet"/> to <see cref="Java.Util.NavigableSet"/>
+        /// </summary>
+        public static implicit operator Java.Util.NavigableSet(Java.Util.TreeSet t) => t.Cast<Java.Util.NavigableSet>();
         /// <summary>
         /// Converter from <see cref="Java.Util.TreeSet"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
@@ -124,6 +152,93 @@ namespace Java.Util
         public object PollLast()
         {
             return IExecute("pollLast");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#comparator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator Comparator()
+        {
+            return IExecute<Java.Util.Comparator>("comparator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingIterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator DescendingIterator()
+        {
+            return IExecute<Java.Util.Iterator>("descendingIterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingSet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet DescendingSet()
+        {
+            return IExecute<Java.Util.NavigableSet>("descendingSet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#headSet(E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet HeadSet(object arg0, bool arg1)
+        {
+            return IExecute<Java.Util.NavigableSet>("headSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#subSet(E,boolean,E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet SubSet(object arg0, bool arg1, object arg2, bool arg3)
+        {
+            return IExecute<Java.Util.NavigableSet>("subSet", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#tailSet(E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet TailSet(object arg0, bool arg1)
+        {
+            return IExecute<Java.Util.NavigableSet>("tailSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#headSet(E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public Java.Util.SortedSet HeadSet(object arg0)
+        {
+            return IExecute<Java.Util.SortedSet>("headSet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#subSet(E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public Java.Util.SortedSet SubSet(object arg0, object arg1)
+        {
+            return IExecute<Java.Util.SortedSet>("subSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#tailSet(E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public Java.Util.SortedSet TailSet(object arg0)
+        {
+            return IExecute<Java.Util.SortedSet>("tailSet", arg0);
         }
         
         #endregion

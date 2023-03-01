@@ -160,6 +160,10 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
+        /// Converter from <see cref="Java.Util.Scanner"/> to <see cref="Java.Util.Iterator"/>
+        /// </summary>
+        public static implicit operator Java.Util.Iterator(Java.Util.Scanner t) => t.Cast<Java.Util.Iterator>();
+        /// <summary>
         /// Converter from <see cref="Java.Util.Scanner"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Util.Scanner t) => t.Cast<Java.Io.Closeable>();
@@ -608,6 +612,33 @@ namespace Java.Util
         public Java.Util.Scanner UseRadix(int arg0)
         {
             return IExecute<Java.Util.Scanner>("useRadix", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#tokens()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Tokens()
+        {
+            return IExecute<Java.Util.Stream.Stream>("tokens");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#findAll(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream FindAll(string arg0)
+        {
+            return IExecute<Java.Util.Stream.Stream>("findAll", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#findAll(java.util.regex.Pattern)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream FindAll(Java.Util.Regex.Pattern arg0)
+        {
+            return IExecute<Java.Util.Stream.Stream>("findAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#nextLong()"/>

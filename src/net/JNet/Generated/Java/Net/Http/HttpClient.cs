@@ -64,6 +64,102 @@ namespace Java.Net.Http
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#send(java.net.http.HttpRequest,java.net.http.HttpResponse$BodyHandler%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
+        /// <returns><see cref="Java.Net.Http.HttpResponse"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public Java.Net.Http.HttpResponse Send(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler arg1)
+        {
+            return IExecute<Java.Net.Http.HttpResponse>("send", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse$BodyHandler%3CT%3E,java.net.http.HttpResponse$PushPromiseHandler%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
+        /// <param name="arg2"><see cref="Java.Net.Http.HttpResponse.PushPromiseHandler"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
+        public Java.Util.Concurrent.CompletableFuture SendAsync(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler arg1, Java.Net.Http.HttpResponse.PushPromiseHandler arg2)
+        {
+            return IExecute<Java.Util.Concurrent.CompletableFuture>("sendAsync", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sendAsync(java.net.http.HttpRequest,java.net.http.HttpResponse$BodyHandler%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.Http.HttpRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
+        public Java.Util.Concurrent.CompletableFuture SendAsync(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpResponse.BodyHandler arg1)
+        {
+            return IExecute<Java.Util.Concurrent.CompletableFuture>("sendAsync", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#followRedirects()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Net.Http.HttpClient.Redirect"/></returns>
+        public Java.Net.Http.HttpClient.Redirect FollowRedirects()
+        {
+            return IExecute<Java.Net.Http.HttpClient.Redirect>("followRedirects");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#version()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
+        public Java.Net.Http.HttpClient.Version VersionMethod()
+        {
+            return IExecute<Java.Net.Http.HttpClient.Version>("version");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#authenticator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional Authenticator()
+        {
+            return IExecute<Java.Util.Optional>("authenticator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#cookieHandler()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional CookieHandler()
+        {
+            return IExecute<Java.Util.Optional>("cookieHandler");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#proxy()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional Proxy()
+        {
+            return IExecute<Java.Util.Optional>("proxy");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#connectTimeout()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional ConnectTimeout()
+        {
+            return IExecute<Java.Util.Optional>("connectTimeout");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#executor()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional Executor()
+        {
+            return IExecute<Java.Util.Optional>("executor");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html#sslContext()"/>
         /// </summary>
         
@@ -164,6 +260,15 @@ namespace Java.Net.Http
                 return IExecute<Java.Net.Http.HttpClient.Builder>("executor", arg0);
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#followRedirects(java.net.http.HttpClient$Redirect)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.HttpClient.Redirect"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
+            public Java.Net.Http.HttpClient.Builder FollowRedirects(Java.Net.Http.HttpClient.Redirect arg0)
+            {
+                return IExecute<Java.Net.Http.HttpClient.Builder>("followRedirects", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#priority(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -198,6 +303,15 @@ namespace Java.Net.Http
             public Java.Net.Http.HttpClient.Builder SslParameters(Javax.Net.Ssl.SSLParameters arg0)
             {
                 return IExecute<Java.Net.Http.HttpClient.Builder>("sslParameters", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#version(java.net.http.HttpClient$Version)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.HttpClient.Version"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpClient.Builder"/></returns>
+            public Java.Net.Http.HttpClient.Builder VersionMethod(Java.Net.Http.HttpClient.Version arg0)
+            {
+                return IExecute<Java.Net.Http.HttpClient.Builder>("version", arg0);
             }
             
             #endregion
@@ -234,6 +348,15 @@ namespace Java.Net.Http
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpClient.Redirect"/></returns>
+            public static Java.Net.Http.HttpClient.Redirect ValueOf(string arg0)
+            {
+                return SExecute<Java.Net.Http.HttpClient.Redirect>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#values()"/>
             /// </summary>
@@ -278,6 +401,15 @@ namespace Java.Net.Http
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpClient.Version"/></returns>
+            public static Java.Net.Http.HttpClient.Version ValueOf(string arg0)
+            {
+                return SExecute<Java.Net.Http.HttpClient.Version>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Version.html#values()"/>
             /// </summary>

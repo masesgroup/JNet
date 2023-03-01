@@ -54,6 +54,15 @@ namespace Java.Nio.Charset.Spi
         {
             return IExecute<Java.Nio.Charset.Charset>("charsetForName", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/spi/CharsetProvider.html#charsets()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Charsets()
+        {
+            return IExecute<Java.Util.Iterator>("charsets");
+        }
         
         #endregion
 

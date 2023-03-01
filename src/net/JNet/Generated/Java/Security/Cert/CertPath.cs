@@ -50,11 +50,25 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getCertificates()"/> 
+        /// </summary>
+        public Java.Util.List Certificates
+        {
+            get { return IExecute<Java.Util.List>("getCertificates"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getEncoded()"/> 
         /// </summary>
         public byte[] Encoded
         {
             get { return IExecuteArray<byte>("getEncoded"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getEncodings()"/> 
+        /// </summary>
+        public Java.Util.Iterator Encodings
+        {
+            get { return IExecute<Java.Util.Iterator>("getEncodings"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html#getType()"/> 

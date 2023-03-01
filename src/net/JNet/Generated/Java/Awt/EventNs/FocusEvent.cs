@@ -30,6 +30,18 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#%3Cinit%3E(java.awt.Component,int,boolean,java.awt.Component,java.awt.event.FocusEvent$Cause)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.EventNs.FocusEvent.Cause"/></param>
+        public FocusEvent(Java.Awt.Component arg0, int arg1, bool arg2, Java.Awt.Component arg3, Java.Awt.EventNs.FocusEvent.Cause arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#%3Cinit%3E(java.awt.Component,int,boolean,java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -107,6 +119,15 @@ namespace Java.Awt.EventNs
         {
             return IExecute<bool>("isTemporary");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#getCause()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Awt.EventNs.FocusEvent.Cause"/></returns>
+        public Java.Awt.EventNs.FocusEvent.Cause GetCause()
+        {
+            return IExecute<Java.Awt.EventNs.FocusEvent.Cause>("getCause");
+        }
         
         #endregion
 
@@ -171,6 +192,15 @@ namespace Java.Awt.EventNs
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Awt.EventNs.FocusEvent.Cause"/></returns>
+            public static Java.Awt.EventNs.FocusEvent.Cause ValueOf(string arg0)
+            {
+                return SExecute<Java.Awt.EventNs.FocusEvent.Cause>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#values()"/>
             /// </summary>

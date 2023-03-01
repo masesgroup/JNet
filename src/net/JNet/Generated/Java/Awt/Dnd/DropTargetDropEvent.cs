@@ -76,6 +76,13 @@ namespace Java.Awt.Dnd
             get { return IExecuteArray<Java.Awt.Datatransfer.DataFlavor>("getCurrentDataFlavors"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html#getCurrentDataFlavorsAsList()"/> 
+        /// </summary>
+        public Java.Util.List CurrentDataFlavorsAsList
+        {
+            get { return IExecute<Java.Util.List>("getCurrentDataFlavorsAsList"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html#getDropAction()"/> 
         /// </summary>
         public int DropAction

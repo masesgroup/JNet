@@ -122,6 +122,26 @@ namespace Javax.Management.Loading
             get { return IExecute<string>("getLibraryDirectory"); } set { IExecute("setLibraryDirectory", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#getMBeansFromURL(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        /// <exception cref="Javax.Management.ServiceNotFoundException"/>
+        public Java.Util.Set GetMBeansFromURL(string arg0)
+        {
+            return IExecute<Java.Util.Set>("getMBeansFromURL", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#getMBeansFromURL(java.net.URL)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        /// <exception cref="Javax.Management.ServiceNotFoundException"/>
+        public Java.Util.Set GetMBeansFromURL(Java.Net.URL arg0)
+        {
+            return IExecute<Java.Util.Set>("getMBeansFromURL", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
@@ -131,6 +151,17 @@ namespace Javax.Management.Loading
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
             return IExecute<Javax.Management.ObjectName>("preRegister", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#loadClass(java.lang.String,javax.management.loading.ClassLoaderRepository)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.Loading.ClassLoaderRepository"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        public Java.Lang.Class LoadClass(string arg0, Javax.Management.Loading.ClassLoaderRepository arg1)
+        {
+            return IExecute<Java.Lang.Class>("loadClass", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#addURL(java.lang.String)"/>

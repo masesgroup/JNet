@@ -94,6 +94,15 @@ namespace Java.Security.Cert
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Security.Cert.CertPathValidatorException.BasicReason"/></returns>
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason ValueOf(string arg0)
+            {
+                return SExecute<Java.Security.Cert.CertPathValidatorException.BasicReason>("valueOf", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#values()"/>
             /// </summary>
             

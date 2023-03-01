@@ -45,7 +45,29 @@ namespace Javax.Naming.Spi
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/Resolver.html#resolveToClass(java.lang.String,java.lang.Class%3C? extends javax.naming.Context%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Javax.Naming.Spi.ResolveResult"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public Javax.Naming.Spi.ResolveResult ResolveToClass(string arg0, Java.Lang.Class arg1)
+        {
+            return IExecute<Javax.Naming.Spi.ResolveResult>("resolveToClass", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/Resolver.html#resolveToClass(javax.naming.Name,java.lang.Class%3C? extends javax.naming.Context%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Javax.Naming.Spi.ResolveResult"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public Javax.Naming.Spi.ResolveResult ResolveToClass(Javax.Naming.Name arg0, Java.Lang.Class arg1)
+        {
+            return IExecute<Javax.Naming.Spi.ResolveResult>("resolveToClass", arg0, arg1);
+        }
+        
         #endregion
 
         #region Nested classes

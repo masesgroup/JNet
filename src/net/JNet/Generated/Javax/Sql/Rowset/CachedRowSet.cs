@@ -159,6 +159,36 @@ namespace Javax.Sql.Rowset
             return IExecute<int>("size");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Util.Collection ToCollection()
+        {
+            return IExecute<Java.Util.Collection>("toCollection");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Util.Collection ToCollection(int arg0)
+        {
+            return IExecute<Java.Util.Collection>("toCollection", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Util.Collection ToCollection(string arg0)
+        {
+            return IExecute<Java.Util.Collection>("toCollection", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createShared()"/>
         /// </summary>
         

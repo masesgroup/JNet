@@ -41,6 +41,10 @@ namespace Javax.Naming
         /// Converter from <see cref="Javax.Naming.Name"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Naming.Name t) => t.Cast<Java.Io.Serializable>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Naming.Name"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Javax.Naming.Name t) => t.Cast<Java.Lang.Comparable>();
         
         #endregion
 
@@ -57,6 +61,13 @@ namespace Javax.Naming
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#getAll()"/> 
+        /// </summary>
+        public Java.Util.Enumeration All
+        {
+            get { return IExecute<Java.Util.Enumeration>("getAll"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#endsWith(javax.naming.Name)"/>
         /// </summary>

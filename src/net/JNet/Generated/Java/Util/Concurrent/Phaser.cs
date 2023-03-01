@@ -158,6 +158,19 @@ namespace Java.Util.Concurrent
             return IExecute<int>("awaitAdvance", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int,long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
+        public int AwaitAdvanceInterruptibly(int arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
+        {
+            return IExecute<int>("awaitAdvanceInterruptibly", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

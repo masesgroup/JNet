@@ -71,6 +71,13 @@ namespace Java.Security.Cert
             get { return IExecute<Java.Util.Date>("getRevocationDate"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getRevocationReason()"/> 
+        /// </summary>
+        public Java.Security.Cert.CRLReason RevocationReason
+        {
+            get { return IExecute<Java.Security.Cert.CRLReason>("getRevocationReason"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html#getSerialNumber()"/> 
         /// </summary>
         public Java.Math.BigInteger SerialNumber

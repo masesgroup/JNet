@@ -39,18 +39,24 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java BiFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
     /// </summary>
-    /// <typeparam name="T">The data type associated to the event</typeparam>
-    /// <typeparam name="U">The data type associated to the event</typeparam>
-    /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
-    public class BiFunction<T, U, TReturn> : JVMBridgeListener, IBiFunction<T, U, TReturn>
+    public abstract class BiFunction : JVMBridgeListener
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetBiFunction";
+    }
 
+    /// <summary>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html"/>. Extends <see cref="BiFunction"/>
+    /// </summary>
+    /// <typeparam name="T">The data type associated to the event</typeparam>
+    /// <typeparam name="U">The data type associated to the event</typeparam>
+    /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
+    public class BiFunction<T, U, TReturn> : BiFunction, IBiFunction<T, U, TReturn>
+    {
         Func<T, U, TReturn> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{T, U, TReturn}"/> to be executed

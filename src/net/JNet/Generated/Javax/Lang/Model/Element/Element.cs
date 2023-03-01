@@ -50,6 +50,20 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getAnnotationMirrors()"/> 
+        /// </summary>
+        public Java.Util.List AnnotationMirrors
+        {
+            get { return IExecute<Java.Util.List>("getAnnotationMirrors"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getEnclosedElements()"/> 
+        /// </summary>
+        public Java.Util.List EnclosedElements
+        {
+            get { return IExecute<Java.Util.List>("getEnclosedElements"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement
@@ -57,11 +71,44 @@ namespace Javax.Lang.Model.Element
             get { return IExecute<Javax.Lang.Model.Element.Element>("getEnclosingElement"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getKind()"/> 
+        /// </summary>
+        public Javax.Lang.Model.Element.ElementKind Kind
+        {
+            get { return IExecute<Javax.Lang.Model.Element.ElementKind>("getKind"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getModifiers()"/> 
+        /// </summary>
+        public Java.Util.Set Modifiers
+        {
+            get { return IExecute<Java.Util.Set>("getModifiers"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getSimpleName()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Name SimpleName
         {
             get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getAnnotation(java.lang.Class%3CA%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation GetAnnotation(Java.Lang.Class arg0)
+        {
+            return IExecute<Java.Lang.Annotation.Annotation>("getAnnotation", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#accept(javax.lang.model.element.ElementVisitor%3CR, P%3E,P)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.ElementVisitor"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Accept(Javax.Lang.Model.Element.ElementVisitor arg0, object arg1)
+        {
+            return IExecute("accept", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#asType()"/>

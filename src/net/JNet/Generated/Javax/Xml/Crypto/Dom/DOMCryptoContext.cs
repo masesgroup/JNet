@@ -136,6 +136,15 @@ namespace Javax.Xml.Crypto.Dom
             return IExecute<string>("putNamespacePrefix", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#iterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html#getElementById(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>

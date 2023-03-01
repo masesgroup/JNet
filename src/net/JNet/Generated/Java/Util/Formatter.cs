@@ -302,6 +302,15 @@ namespace Java.Util
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Util.Formatter.BigDecimalLayoutForm"/></returns>
+            public static Java.Util.Formatter.BigDecimalLayoutForm ValueOf(string arg0)
+            {
+                return SExecute<Java.Util.Formatter.BigDecimalLayoutForm>("valueOf", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#values()"/>
             /// </summary>
             

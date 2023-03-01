@@ -42,6 +42,29 @@ namespace Java.Lang.Reflect
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#newInstance(java.lang.Class%3C?%3E,int...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.NegativeArraySizeException"/>
+        public static object NewInstance(Java.Lang.Class arg0, params int[] arg1)
+        {
+            if (arg1.Length == 0) return SExecute("newInstance", arg0); else return SExecute("newInstance", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#newInstance(java.lang.Class%3C?%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.NegativeArraySizeException"/>
+        public static object NewInstance(Java.Lang.Class arg0, int arg1)
+        {
+            return SExecute("newInstance", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Array.html#getBoolean(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>

@@ -84,6 +84,13 @@ namespace Javax.Sql.Rowset
             get { return IExecuteArray<string>("getRowSetNames"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getRowSets()"/> 
+        /// </summary>
+        public Java.Util.Collection RowSets
+        {
+            get { return IExecute<Java.Util.Collection>("getRowSets"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getWhereClause()"/> 
         /// </summary>
         public string WhereClause

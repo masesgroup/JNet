@@ -74,19 +74,19 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#iterator()"/>
         /// </summary>
-        public Iterator<E> Iterator => IExecute<Iterator<E>>("iterator");
+        public Iterator<E> Iterator2 => Iterator().Cast<Iterator<E>>();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#get(int)"/>
         /// </summary>
-        public ListIterator<E> ListIterator() => IExecute<ListIterator<E>>("listIterator");
+        public ListIterator<E> ListIterator2() => ListIterator().Cast<ListIterator<E>>();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#listIterator()"/>
         /// </summary>
-        public ListIterator<E> ListIterator(int index) => IExecute<ListIterator<E>>("listIterator", index);
+        public ListIterator<E> ListIterator2(int index) => ListIterator(index).Cast<ListIterator<E>>();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of()"/>
         /// </summary>
-        public static List<E> Of() => SExecute<List<E>>("of");
+        public static List<E> Of2() => Of().Cast<List<E>>();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#of(E)"/>
         /// </summary>
@@ -162,10 +162,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#spliterator()"/>
         /// </summary>
-        public Spliterator<E> Spliterator() => IExecute<Spliterator<E>>("spliterator");
+        public Spliterator<E> Spliterator2() => Spliterator().Cast<Spliterator<E>>();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#subList(int,int)"/>
         /// </summary>
-        public List<E> SubList​(int fromIndex, int toIndex) => IExecute<List<E>>("subList​", fromIndex, toIndex);
+        public List<E> SubList​2(int fromIndex, int toIndex) => SubList(fromIndex, toIndex).Cast<List<E>>();
     }
 }

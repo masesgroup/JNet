@@ -29,7 +29,25 @@ namespace Javax.Management.Openmbean
     public partial class TabularDataSupport
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#%3Cinit%3E(javax.management.openmbean.TabularType,int,float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.TabularType"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        public TabularDataSupport(Javax.Management.Openmbean.TabularType arg0, int arg1, float arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#%3Cinit%3E(javax.management.openmbean.TabularType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.TabularType"/></param>
+        public TabularDataSupport(Javax.Management.Openmbean.TabularType arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -37,6 +55,10 @@ namespace Javax.Management.Openmbean
         /// Converter from <see cref="Javax.Management.Openmbean.TabularDataSupport"/> to <see cref="Javax.Management.Openmbean.TabularData"/>
         /// </summary>
         public static implicit operator Javax.Management.Openmbean.TabularData(Javax.Management.Openmbean.TabularDataSupport t) => t.Cast<Javax.Management.Openmbean.TabularData>();
+        /// <summary>
+        /// Converter from <see cref="Javax.Management.Openmbean.TabularDataSupport"/> to <see cref="Java.Util.Map"/>
+        /// </summary>
+        public static implicit operator Java.Util.Map(Javax.Management.Openmbean.TabularDataSupport t) => t.Cast<Java.Util.Map>();
         /// <summary>
         /// Converter from <see cref="Javax.Management.Openmbean.TabularDataSupport"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
@@ -57,6 +79,13 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#getTabularType()"/> 
+        /// </summary>
+        public Javax.Management.Openmbean.TabularType TabularType
+        {
+            get { return IExecute<Javax.Management.Openmbean.TabularType>("getTabularType"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#containsKey(java.lang.Object)"/>
         /// </summary>
@@ -149,6 +178,33 @@ namespace Javax.Management.Openmbean
             return IExecuteArray<object>("calculateIndex", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#values()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection Values()
+        {
+            return IExecute<Java.Util.Collection>("values");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#keySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set KeySet()
+        {
+            return IExecute<Java.Util.Set>("keySet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#entrySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set EntrySet()
+        {
+            return IExecute<Java.Util.Set>("entrySet");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#get(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -180,6 +236,14 @@ namespace Javax.Management.Openmbean
         public void Put(Javax.Management.Openmbean.CompositeData arg0)
         {
             IExecute("put", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#putAll(java.util.Map%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public void PutAll(Java.Util.Map arg0)
+        {
+            IExecute("putAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#putAll(javax.management.openmbean.CompositeData[])"/>

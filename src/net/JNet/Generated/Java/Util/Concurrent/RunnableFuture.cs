@@ -37,6 +37,10 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.RunnableFuture"/> to <see cref="Java.Lang.Runnable"/>
         /// </summary>
         public static implicit operator Java.Lang.Runnable(Java.Util.Concurrent.RunnableFuture t) => t.Cast<Java.Lang.Runnable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.RunnableFuture"/> to <see cref="Java.Util.Concurrent.Future"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.Future(Java.Util.Concurrent.RunnableFuture t) => t.Cast<Java.Util.Concurrent.Future>();
         
         #endregion
 

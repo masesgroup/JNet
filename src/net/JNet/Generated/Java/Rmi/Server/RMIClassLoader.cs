@@ -49,6 +49,56 @@ namespace Java.Rmi.Server
             get { return SExecute<Java.Rmi.Server.RMIClassLoaderSpi>("getDefaultProviderInstance"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#loadClass(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        public static Java.Lang.Class LoadClass(string arg0, string arg1, Java.Lang.ClassLoader arg2)
+        {
+            return SExecute<Java.Lang.Class>("loadClass", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#loadClass(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        public static Java.Lang.Class LoadClass(string arg0, string arg1)
+        {
+            return SExecute<Java.Lang.Class>("loadClass", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#loadClass(java.net.URL,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        public static Java.Lang.Class LoadClass(Java.Net.URL arg0, string arg1)
+        {
+            return SExecute<Java.Lang.Class>("loadClass", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#loadProxyClass(java.lang.String,java.lang.String[],java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Java.Net.MalformedURLException"/>
+        public static Java.Lang.Class LoadProxyClass(string arg0, string[] arg1, Java.Lang.ClassLoader arg2)
+        {
+            return SExecute<Java.Lang.Class>("loadProxyClass", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#getClassLoader(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -58,6 +108,15 @@ namespace Java.Rmi.Server
         public static Java.Lang.ClassLoader GetClassLoader(string arg0)
         {
             return SExecute<Java.Lang.ClassLoader>("getClassLoader", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#getClassAnnotation(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="string"/></returns>
+        public static string GetClassAnnotation(Java.Lang.Class arg0)
+        {
+            return SExecute<string>("getClassAnnotation", arg0);
         }
         
         #endregion

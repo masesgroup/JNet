@@ -45,7 +45,20 @@ namespace Javax.Naming.Spi
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ObjectFactory.html#getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
+        public object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable arg3)
+        {
+            return IExecute("getObjectInstance", arg0, arg1, arg2, arg3);
+        }
+        
         #endregion
 
         #region Nested classes

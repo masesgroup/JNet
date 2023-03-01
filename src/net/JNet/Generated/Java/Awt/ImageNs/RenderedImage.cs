@@ -123,6 +123,13 @@ namespace Java.Awt.ImageNs
             get { return IExecute<Java.Awt.ImageNs.SampleModel>("getSampleModel"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getSources()"/> 
+        /// </summary>
+        public Java.Util.Vector Sources
+        {
+            get { return IExecute<Java.Util.Vector>("getSources"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTileGridXOffset()"/> 
         /// </summary>
         public int TileGridXOffset

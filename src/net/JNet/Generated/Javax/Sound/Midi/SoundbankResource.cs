@@ -53,6 +53,13 @@ namespace Javax.Sound.Midi
             get { return IExecute("getData"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html#getDataClass()"/> 
+        /// </summary>
+        public Java.Lang.Class DataClass
+        {
+            get { return IExecute<Java.Lang.Class>("getDataClass"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html#getName()"/> 
         /// </summary>
         public string Name

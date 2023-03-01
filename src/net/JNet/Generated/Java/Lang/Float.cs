@@ -33,7 +33,11 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="float?"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(float? t) => t.Cast<Java.Lang.Comparable>();
+        
         #endregion
 
         #region Fields

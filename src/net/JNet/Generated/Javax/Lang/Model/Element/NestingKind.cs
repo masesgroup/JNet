@@ -58,6 +58,15 @@ namespace Javax.Lang.Model.Element
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Element.NestingKind"/></returns>
+        public static Javax.Lang.Model.Element.NestingKind ValueOf(string arg0)
+        {
+            return SExecute<Javax.Lang.Model.Element.NestingKind>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#values()"/>
         /// </summary>
         

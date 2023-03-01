@@ -107,7 +107,11 @@ namespace Java.Math
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Math.BigInteger"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Math.BigInteger t) => t.Cast<Java.Lang.Comparable>();
+        
         #endregion
 
         #region Fields

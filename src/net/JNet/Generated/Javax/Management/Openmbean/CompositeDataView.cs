@@ -45,7 +45,16 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataView.html#toCompositeData(javax.management.openmbean.CompositeType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeType"/></param>
+        /// <returns><see cref="Javax.Management.Openmbean.CompositeData"/></returns>
+        public Javax.Management.Openmbean.CompositeData ToCompositeData(Javax.Management.Openmbean.CompositeType arg0)
+        {
+            return IExecute<Javax.Management.Openmbean.CompositeData>("toCompositeData", arg0);
+        }
+        
         #endregion
 
         #region Nested classes

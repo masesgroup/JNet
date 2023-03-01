@@ -29,7 +29,27 @@ namespace Javax.Sql.Rowset.Serial
     public partial class SerialStruct
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#%3Cinit%3E(java.sql.SQLData,java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.SQLData"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        public SerialStruct(Java.Sql.SQLData arg0, Java.Util.Map arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#%3Cinit%3E(java.sql.Struct,java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.Struct"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        public SerialStruct(Java.Sql.Struct arg0, Java.Util.Map arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -70,6 +90,16 @@ namespace Javax.Sql.Rowset.Serial
         public string SQLTypeName
         {
             get { return IExecute<string>("getSQLTypeName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#getAttributes(java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        public object[] GetAttributes(Java.Util.Map arg0)
+        {
+            return IExecuteArray<object>("getAttributes", arg0);
         }
         
         #endregion

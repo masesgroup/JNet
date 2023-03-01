@@ -46,6 +46,25 @@ namespace Javax.Script
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#getInterface(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object GetInterface(Java.Lang.Class arg0)
+        {
+            return IExecute("getInterface", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#getInterface(java.lang.Object,java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object GetInterface(object arg0, Java.Lang.Class arg1)
+        {
+            return IExecute("getInterface", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeFunction(java.lang.String,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>

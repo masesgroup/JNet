@@ -33,7 +33,15 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.RunnableScheduledFuture"/> to <see cref="Java.Util.Concurrent.RunnableFuture"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.RunnableFuture(Java.Util.Concurrent.RunnableScheduledFuture t) => t.Cast<Java.Util.Concurrent.RunnableFuture>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.RunnableScheduledFuture"/> to <see cref="Java.Util.Concurrent.ScheduledFuture"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.ScheduledFuture(Java.Util.Concurrent.RunnableScheduledFuture t) => t.Cast<Java.Util.Concurrent.ScheduledFuture>();
+        
         #endregion
 
         #region Fields

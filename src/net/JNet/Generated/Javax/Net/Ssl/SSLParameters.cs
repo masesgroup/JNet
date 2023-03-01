@@ -119,6 +119,20 @@ namespace Javax.Net.Ssl
             get { return IExecuteArray<string>("getProtocols"); } set { IExecute("setProtocols", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getServerNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setServerNames(java.util.List%3Cjavax.net.ssl.SNIServerName%3E)"/>
+        /// </summary>
+        public Java.Util.List ServerNames
+        {
+            get { return IExecute<Java.Util.List>("getServerNames"); } set { IExecute("setServerNames", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getSNIMatchers()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setSNIMatchers(java.util.Collection%3Cjavax.net.ssl.SNIMatcher%3E)"/>
+        /// </summary>
+        public Java.Util.Collection SNIMatchers
+        {
+            get { return IExecute<Java.Util.Collection>("getSNIMatchers"); } set { IExecute("setSNIMatchers", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#getUseCipherSuitesOrder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html#setUseCipherSuitesOrder(boolean)"/>
         /// </summary>
         public bool UseCipherSuitesOrder

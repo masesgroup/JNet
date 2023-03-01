@@ -298,6 +298,60 @@ namespace Javax.Swing.Tree
             return IExecute<int>("getIndex", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#breadthFirstEnumeration()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration BreadthFirstEnumerationMethod()
+        {
+            return IExecute<Java.Util.Enumeration>("breadthFirstEnumeration");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#children()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration Children()
+        {
+            return IExecute<Java.Util.Enumeration>("children");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#depthFirstEnumeration()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration DepthFirstEnumeration()
+        {
+            return IExecute<Java.Util.Enumeration>("depthFirstEnumeration");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#pathFromAncestorEnumeration(javax.swing.tree.TreeNode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration PathFromAncestorEnumeration(Javax.Swing.Tree.TreeNode arg0)
+        {
+            return IExecute<Java.Util.Enumeration>("pathFromAncestorEnumeration", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#postorderEnumeration()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration PostorderEnumerationMethod()
+        {
+            return IExecute<Java.Util.Enumeration>("postorderEnumeration");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#preorderEnumeration()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration PreorderEnumerationMethod()
+        {
+            return IExecute<Java.Util.Enumeration>("preorderEnumeration");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#getChildAfter(javax.swing.tree.TreeNode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>

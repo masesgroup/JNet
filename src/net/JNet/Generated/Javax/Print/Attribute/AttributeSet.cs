@@ -64,6 +64,15 @@ namespace Javax.Print.Attribute
             return IExecute<bool>("addAll", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#containsKey(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool ContainsKey(Java.Lang.Class arg0)
+        {
+            return IExecute<bool>("containsKey", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#containsValue(javax.print.attribute.Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
@@ -82,6 +91,15 @@ namespace Javax.Print.Attribute
             return IExecute<bool>("isEmpty");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#remove(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool Remove(Java.Lang.Class arg0)
+        {
+            return IExecute<bool>("remove", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#remove(javax.print.attribute.Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.Attribute.Attribute"/></param>
@@ -98,6 +116,15 @@ namespace Javax.Print.Attribute
         public int Size()
         {
             return IExecute<int>("size");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#get(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Javax.Print.Attribute.Attribute"/></returns>
+        public Javax.Print.Attribute.Attribute Get(Java.Lang.Class arg0)
+        {
+            return IExecute<Javax.Print.Attribute.Attribute>("get", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html#toArray()"/>

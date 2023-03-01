@@ -248,11 +248,29 @@ namespace Java.Util.Regex
             return IExecute<string>("replaceAll", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#replaceAll(java.util.function.Function%3Cjava.util.regex.MatchResult, java.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see langword="string"/></returns>
+        public string ReplaceAll(Java.Util.Function.Function arg0)
+        {
+            return IExecute<string>("replaceAll", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#replaceFirst(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see langword="string"/></returns>
         public string ReplaceFirst(string arg0)
+        {
+            return IExecute<string>("replaceFirst", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#replaceFirst(java.util.function.Function%3Cjava.util.regex.MatchResult, java.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see langword="string"/></returns>
+        public string ReplaceFirst(Java.Util.Function.Function arg0)
         {
             return IExecute<string>("replaceFirst", arg0);
         }
@@ -366,6 +384,15 @@ namespace Java.Util.Regex
         public Java.Util.Regex.Pattern Pattern()
         {
             return IExecute<Java.Util.Regex.Pattern>("pattern");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#results()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Results()
+        {
+            return IExecute<Java.Util.Stream.Stream>("results");
         }
         
         #endregion

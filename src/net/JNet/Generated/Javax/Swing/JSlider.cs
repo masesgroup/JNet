@@ -121,6 +121,13 @@ namespace Javax.Swing
             get { return IExecute<bool>("getInverted"); } set { IExecute("setInverted", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getLabelTable()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setLabelTable(java.util.Dictionary)"/>
+        /// </summary>
+        public Java.Util.Dictionary LabelTable
+        {
+            get { return IExecute<Java.Util.Dictionary>("getLabelTable"); } set { IExecute("setLabelTable", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#getMajorTickSpacing()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#setMajorTickSpacing(int)"/>
         /// </summary>
         public int MajorTickSpacing
@@ -203,6 +210,25 @@ namespace Javax.Swing
         public bool ValueIsAdjusting
         {
             get { return IExecute<bool>("getValueIsAdjusting"); } set { IExecute("setValueIsAdjusting", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#createStandardLabels(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.Hashtable"/></returns>
+        public Java.Util.Hashtable CreateStandardLabels(int arg0, int arg1)
+        {
+            return IExecute<Java.Util.Hashtable>("createStandardLabels", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#createStandardLabels(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.Hashtable"/></returns>
+        public Java.Util.Hashtable CreateStandardLabels(int arg0)
+        {
+            return IExecute<Java.Util.Hashtable>("createStandardLabels", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#addChangeListener(javax.swing.event.ChangeListener)"/>

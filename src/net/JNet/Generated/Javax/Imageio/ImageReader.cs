@@ -143,6 +143,16 @@ namespace Javax.Imageio
             return IExecute<Java.Awt.ImageNs.BufferedImage>("read", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getImageTypes(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Iterator GetImageTypes(int arg0)
+        {
+            return IExecute<Java.Util.Iterator>("getImageTypes", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getImageMetadata(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -368,6 +378,16 @@ namespace Javax.Imageio
             return IExecute<Java.Awt.ImageNs.RenderedImage>("readAsRenderedImage", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readAll(java.util.Iterator%3C? extends javax.imageio.ImageReadParam%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Iterator ReadAll(Java.Util.Iterator arg0)
+        {
+            return IExecute<Java.Util.Iterator>("readAll", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readAll(int,javax.imageio.ImageReadParam)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -387,6 +407,29 @@ namespace Javax.Imageio
         public Javax.Imageio.ImageTypeSpecifier GetRawImageType(int arg0)
         {
             return IExecute<Javax.Imageio.ImageTypeSpecifier>("getRawImageType", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getImageMetadata(int,java.lang.String,java.util.Set%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Set"/></param>
+        /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadata"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Javax.Imageio.Metadata.IIOMetadata GetImageMetadata(int arg0, string arg1, Java.Util.Set arg2)
+        {
+            return IExecute<Javax.Imageio.Metadata.IIOMetadata>("getImageMetadata", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getStreamMetadata(java.lang.String,java.util.Set%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadata"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Javax.Imageio.Metadata.IIOMetadata GetStreamMetadata(string arg0, Java.Util.Set arg1)
+        {
+            return IExecute<Javax.Imageio.Metadata.IIOMetadata>("getStreamMetadata", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#abort()"/>

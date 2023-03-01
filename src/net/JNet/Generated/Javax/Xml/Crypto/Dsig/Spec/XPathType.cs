@@ -30,6 +30,16 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#%3Cinit%3E(java.lang.String,javax.xml.crypto.dsig.spec.XPathType$Filter,java.util.Map%3Cjava.lang.String, java.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
+        public XPathType(string arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1, Java.Util.Map arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#%3Cinit%3E(java.lang.String,javax.xml.crypto.dsig.spec.XPathType$Filter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -60,6 +70,13 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         public string Expression
         {
             get { return IExecute<string>("getExpression"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#getNamespaceMap()"/> 
+        /// </summary>
+        public Java.Util.Map NamespaceMap
+        {
+            get { return IExecute<Java.Util.Map>("getNamespaceMap"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.html#getFilter()"/>

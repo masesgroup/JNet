@@ -29,10 +29,22 @@ namespace Javax.Swing
     public partial class DefaultComboBoxModel
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#%3Cinit%3E(java.util.Vector%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        public DefaultComboBoxModel(Java.Util.Vector arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.DefaultComboBoxModel"/> to <see cref="Javax.Swing.MutableComboBoxModel"/>
+        /// </summary>
+        public static implicit operator Javax.Swing.MutableComboBoxModel(Javax.Swing.DefaultComboBoxModel t) => t.Cast<Javax.Swing.MutableComboBoxModel>();
         /// <summary>
         /// Converter from <see cref="Javax.Swing.DefaultComboBoxModel"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
@@ -64,6 +76,23 @@ namespace Javax.Swing
         public int GetIndexOf(object arg0)
         {
             return IExecute<int>("getIndexOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addAll(int,java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        public void AddAll(int arg0, Java.Util.Collection arg1)
+        {
+            IExecute("addAll", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addAll(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public void AddAll(Java.Util.Collection arg0)
+        {
+            IExecute("addAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addElement(E)"/>

@@ -97,7 +97,7 @@ namespace MASES.JNet.Extensions
         {
             System.Collections.Generic.Dictionary<K, V> dictionary = new();
             if (map.IsEmpty()) return dictionary;
-            foreach (var item in map.EntrySet)
+            foreach (var item in map.EntrySet2)
             {
                 dictionary.Add(item.Key, item.Value);
             }

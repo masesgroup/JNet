@@ -42,6 +42,13 @@ namespace Java.Time.Zone
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getAvailableZoneIds()"/> 
+        /// </summary>
+        public static Java.Util.Set AvailableZoneIds
+        {
+            get { return SExecute<Java.Util.Set>("getAvailableZoneIds"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#refresh()"/>
         /// </summary>
         
@@ -59,6 +66,15 @@ namespace Java.Time.Zone
         public static Java.Time.Zone.ZoneRules GetRules(string arg0, bool arg1)
         {
             return SExecute<Java.Time.Zone.ZoneRules>("getRules", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getVersions(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
+        public static Java.Util.NavigableMap GetVersions(string arg0)
+        {
+            return SExecute<Java.Util.NavigableMap>("getVersions", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#registerProvider(java.time.zone.ZoneRulesProvider)"/>

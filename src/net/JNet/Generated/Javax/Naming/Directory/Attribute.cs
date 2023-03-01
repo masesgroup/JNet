@@ -58,6 +58,13 @@ namespace Javax.Naming.Directory
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#getAll()"/> 
+        /// </summary>
+        public Javax.Naming.NamingEnumeration All
+        {
+            get { return IExecute<Javax.Naming.NamingEnumeration>("getAll"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#getAttributeDefinition()"/> 
         /// </summary>
         public Javax.Naming.Directory.DirContext AttributeDefinition

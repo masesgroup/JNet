@@ -191,6 +191,16 @@ namespace Javax.Swing
             return SExecute<Java.Awt.Container>("getAncestorNamed", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAncestorOfClass(java.lang.Class%3C?%3E,java.awt.Component)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Container"/></returns>
+        public static Java.Awt.Container GetAncestorOfClass(Java.Lang.Class arg0, Java.Awt.Component arg1)
+        {
+            return SExecute<Java.Awt.Container>("getAncestorOfClass", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getUnwrappedParent(java.awt.Component)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>

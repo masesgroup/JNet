@@ -106,6 +106,13 @@ namespace Javax.Sql
             get { return IExecute<int>("getTransactionIsolation"); } set { IExecute("setTransactionIsolation", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#getTypeMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setTypeMap(java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        public Java.Util.Map TypeMap
+        {
+            get { return IExecute<Java.Util.Map>("getTypeMap"); } set { IExecute("setTypeMap", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#getUrl()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setUrl(java.lang.String)"/>
         /// </summary>
         public string Url

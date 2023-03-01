@@ -81,6 +81,51 @@ namespace Java.Lang.Invoke
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#isAccessModeSupported(java.lang.invoke.VarHandle$AccessMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsAccessModeSupported(Java.Lang.Invoke.VarHandle.AccessMode arg0)
+        {
+            return IExecute<bool>("isAccessModeSupported", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#varType()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class VarType()
+        {
+            return IExecute<Java.Lang.Class>("varType");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#toMethodHandle(java.lang.invoke.VarHandle$AccessMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+        public Java.Lang.Invoke.MethodHandle ToMethodHandle(Java.Lang.Invoke.VarHandle.AccessMode arg0)
+        {
+            return IExecute<Java.Lang.Invoke.MethodHandle>("toMethodHandle", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#accessModeType(java.lang.invoke.VarHandle$AccessMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
+        public Java.Lang.Invoke.MethodType AccessModeType(Java.Lang.Invoke.VarHandle.AccessMode arg0)
+        {
+            return IExecute<Java.Lang.Invoke.MethodType>("accessModeType", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#coordinateTypes()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List CoordinateTypes()
+        {
+            return IExecute<Java.Util.List>("coordinateTypes");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndSet(java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -499,6 +544,24 @@ namespace Java.Lang.Invoke
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#valueFromMethodName(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></returns>
+            public static Java.Lang.Invoke.VarHandle.AccessMode ValueFromMethodName(string arg0)
+            {
+                return SExecute<Java.Lang.Invoke.VarHandle.AccessMode>("valueFromMethodName", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></returns>
+            public static Java.Lang.Invoke.VarHandle.AccessMode ValueOf(string arg0)
+            {
+                return SExecute<Java.Lang.Invoke.VarHandle.AccessMode>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#values()"/>
             /// </summary>

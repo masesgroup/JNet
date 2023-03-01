@@ -49,7 +49,23 @@ namespace Javax.Swing.Undo
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html#restoreState(java.util.Hashtable%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
+        public void RestoreState(Java.Util.Hashtable arg0)
+        {
+            IExecute("restoreState", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html#storeState(java.util.Hashtable%3Cjava.lang.Object, java.lang.Object%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
+        public void StoreState(Java.Util.Hashtable arg0)
+        {
+            IExecute("storeState", arg0);
+        }
+        
         #endregion
 
         #region Nested classes

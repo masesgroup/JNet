@@ -50,6 +50,13 @@ namespace Javax.Xml.Stream.Events
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getAttributes()"/> 
+        /// </summary>
+        public Java.Util.Iterator Attributes
+        {
+            get { return IExecute<Java.Util.Iterator>("getAttributes"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getName()"/> 
         /// </summary>
         public Javax.Xml.Namespace.QName Name
@@ -62,6 +69,13 @@ namespace Javax.Xml.Stream.Events
         public Javax.Xml.Namespace.NamespaceContext NamespaceContext
         {
             get { return IExecute<Javax.Xml.Namespace.NamespaceContext>("getNamespaceContext"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaces()"/> 
+        /// </summary>
+        public Java.Util.Iterator Namespaces
+        {
+            get { return IExecute<Java.Util.Iterator>("getNamespaces"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaceURI(java.lang.String)"/>

@@ -61,6 +61,13 @@ namespace Javax.Lang.Model.Element
             get { return IExecute<Javax.Lang.Model.Element.AnnotationValue>("getDefaultValue"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getParameters()"/> 
+        /// </summary>
+        public Java.Util.List Parameters
+        {
+            get { return IExecute<Java.Util.List>("getParameters"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getReceiverType()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror ReceiverType
@@ -80,6 +87,20 @@ namespace Javax.Lang.Model.Element
         public Javax.Lang.Model.Element.Name SimpleName
         {
             get { return IExecute<Javax.Lang.Model.Element.Name>("getSimpleName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getThrownTypes()"/> 
+        /// </summary>
+        public Java.Util.List ThrownTypes
+        {
+            get { return IExecute<Java.Util.List>("getThrownTypes"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getTypeParameters()"/> 
+        /// </summary>
+        public Java.Util.List TypeParameters
+        {
+            get { return IExecute<Java.Util.List>("getTypeParameters"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isDefault()"/>

@@ -55,6 +55,32 @@ namespace Javax.Naming.Spi
             return SExecute<bool>("hasInitialContextFactoryBuilder");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
+        public static object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable arg3)
+        {
+            return SExecute("getObjectInstance", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getStateToBind(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public static object GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable arg3)
+        {
+            return SExecute("getStateToBind", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getContinuationContext(javax.naming.CannotProceedException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.CannotProceedException"/></param>
@@ -63,6 +89,27 @@ namespace Javax.Naming.Spi
         public static Javax.Naming.Context GetContinuationContext(Javax.Naming.CannotProceedException arg0)
         {
             return SExecute<Javax.Naming.Context>("getContinuationContext", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getInitialContext(java.util.Hashtable%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
+        /// <returns><see cref="Javax.Naming.Context"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public static Javax.Naming.Context GetInitialContext(Java.Util.Hashtable arg0)
+        {
+            return SExecute<Javax.Naming.Context>("getInitialContext", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getURLContext(java.lang.String,java.util.Hashtable%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
+        /// <returns><see cref="Javax.Naming.Context"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public static Javax.Naming.Context GetURLContext(string arg0, Java.Util.Hashtable arg1)
+        {
+            return SExecute<Javax.Naming.Context>("getURLContext", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#setInitialContextFactoryBuilder(javax.naming.spi.InitialContextFactoryBuilder)"/>

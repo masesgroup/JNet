@@ -195,6 +195,26 @@ namespace Org.Ietf.Jgss
         {
             return IExecuteArray<Org.Ietf.Jgss.Oid>("getNamesForMech", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#addProviderAtEnd(java.security.Provider,org.ietf.jgss.Oid)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Provider"/></param>
+        /// <param name="arg1"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        public void AddProviderAtEnd(Java.Security.Provider arg0, Org.Ietf.Jgss.Oid arg1)
+        {
+            IExecute("addProviderAtEnd", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#addProviderAtFront(java.security.Provider,org.ietf.jgss.Oid)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Provider"/></param>
+        /// <param name="arg1"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        public void AddProviderAtFront(Java.Security.Provider arg0, Org.Ietf.Jgss.Oid arg1)
+        {
+            IExecute("addProviderAtFront", arg0, arg1);
+        }
         
         #endregion
 

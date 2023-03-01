@@ -154,6 +154,12 @@
       <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_TrafficClass">Socket.TrafficClass</a>
     </div>
     <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SetOption_Java_Net_SocketOption_System_Object_">Socket.SetOption(SocketOption, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_GetOption_Java_Net_SocketOption_">Socket.GetOption(SocketOption)</a>
+    </div>
+    <div>
       <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_IsBound">Socket.IsBound()</a>
     </div>
     <div>
@@ -167,6 +173,9 @@
     </div>
     <div>
       <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_IsOutputShutdown">Socket.IsOutputShutdown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_SupportedOptions">Socket.SupportedOptions()</a>
     </div>
     <div>
       <a class="xref" href="Java.Net.Socket.html#Java_Net_Socket_Close">Socket.Close()</a>
@@ -637,10 +646,41 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket_HandshakeSession.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket.HandshakeSession%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket_HandshakeApplicationProtocolSelector.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket.HandshakeApplicationProtocolSelector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L86">View Source</a>
+  </span>
+  <a id="Javax_Net_Ssl_SSLSocket_HandshakeApplicationProtocolSelector_" data-uid="Javax.Net.Ssl.SSLSocket.HandshakeApplicationProtocolSelector*"></a>
+  <h4 id="Javax_Net_Ssl_SSLSocket_HandshakeApplicationProtocolSelector" data-uid="Javax.Net.Ssl.SSLSocket.HandshakeApplicationProtocolSelector">HandshakeApplicationProtocolSelector</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocolSelector()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocolSelector()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocket.html#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction%3Cjavax.net.ssl.SSLSocket, java.util.List%3Cjava.lang.String%3E, java.lang.String%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocket.html#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction%3Cjavax.net.ssl.SSLSocket, java.util.List%3Cjava.lang.String%3E, java.lang.String%3E)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BiFunction HandshakeApplicationProtocolSelector { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.BiFunction.html">BiFunction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket_HandshakeSession.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket.HandshakeSession%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L93">View Source</a>
   </span>
   <a id="Javax_Net_Ssl_SSLSocket_HandshakeSession_" data-uid="Javax.Net.Ssl.SSLSocket.HandshakeSession*"></a>
   <h4 id="Javax_Net_Ssl_SSLSocket_HandshakeSession" data-uid="Javax.Net.Ssl.SSLSocket.HandshakeSession">HandshakeSession</h4>
@@ -803,7 +843,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket_NeedClientAuth.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket.NeedClientAuth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L93">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L100">View Source</a>
   </span>
   <a id="Javax_Net_Ssl_SSLSocket_NeedClientAuth_" data-uid="Javax.Net.Ssl.SSLSocket.NeedClientAuth*"></a>
   <h4 id="Javax_Net_Ssl_SSLSocket_NeedClientAuth" data-uid="Javax.Net.Ssl.SSLSocket.NeedClientAuth">NeedClientAuth</h4>
@@ -834,7 +874,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket_Session.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket.Session%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L100">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L107">View Source</a>
   </span>
   <a id="Javax_Net_Ssl_SSLSocket_Session_" data-uid="Javax.Net.Ssl.SSLSocket.Session*"></a>
   <h4 id="Javax_Net_Ssl_SSLSocket_Session" data-uid="Javax.Net.Ssl.SSLSocket.Session">Session</h4>
@@ -865,7 +905,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket_SSLParameters.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket.SSLParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L107">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L114">View Source</a>
   </span>
   <a id="Javax_Net_Ssl_SSLSocket_SSLParameters_" data-uid="Javax.Net.Ssl.SSLSocket.SSLParameters*"></a>
   <h4 id="Javax_Net_Ssl_SSLSocket_SSLParameters" data-uid="Javax.Net.Ssl.SSLSocket.SSLParameters">SSLParameters</h4>
@@ -896,7 +936,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket_SupportedCipherSuites.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket.SupportedCipherSuites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L114">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L121">View Source</a>
   </span>
   <a id="Javax_Net_Ssl_SSLSocket_SupportedCipherSuites_" data-uid="Javax.Net.Ssl.SSLSocket.SupportedCipherSuites*"></a>
   <h4 id="Javax_Net_Ssl_SSLSocket_SupportedCipherSuites" data-uid="Javax.Net.Ssl.SSLSocket.SupportedCipherSuites">SupportedCipherSuites</h4>
@@ -927,7 +967,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket_SupportedProtocols.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket.SupportedProtocols%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L121">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L128">View Source</a>
   </span>
   <a id="Javax_Net_Ssl_SSLSocket_SupportedProtocols_" data-uid="Javax.Net.Ssl.SSLSocket.SupportedProtocols*"></a>
   <h4 id="Javax_Net_Ssl_SSLSocket_SupportedProtocols" data-uid="Javax.Net.Ssl.SSLSocket.SupportedProtocols">SupportedProtocols</h4>
@@ -958,7 +998,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket_UseClientMode.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket.UseClientMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L128">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L135">View Source</a>
   </span>
   <a id="Javax_Net_Ssl_SSLSocket_UseClientMode_" data-uid="Javax.Net.Ssl.SSLSocket.UseClientMode*"></a>
   <h4 id="Javax_Net_Ssl_SSLSocket_UseClientMode" data-uid="Javax.Net.Ssl.SSLSocket.UseClientMode">UseClientMode</h4>
@@ -989,7 +1029,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket_WantClientAuth.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket.WantClientAuth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L135">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L142">View Source</a>
   </span>
   <a id="Javax_Net_Ssl_SSLSocket_WantClientAuth_" data-uid="Javax.Net.Ssl.SSLSocket.WantClientAuth*"></a>
   <h4 id="Javax_Net_Ssl_SSLSocket_WantClientAuth" data-uid="Javax.Net.Ssl.SSLSocket.WantClientAuth">WantClientAuth</h4>
@@ -1022,7 +1062,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket_AddHandshakeCompletedListener_Javax_Net_Ssl_HandshakeCompletedListener_.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket.AddHandshakeCompletedListener(Javax.Net.Ssl.HandshakeCompletedListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L143">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L150">View Source</a>
   </span>
   <a id="Javax_Net_Ssl_SSLSocket_AddHandshakeCompletedListener_" data-uid="Javax.Net.Ssl.SSLSocket.AddHandshakeCompletedListener*"></a>
   <h4 id="Javax_Net_Ssl_SSLSocket_AddHandshakeCompletedListener_Javax_Net_Ssl_HandshakeCompletedListener_" data-uid="Javax.Net.Ssl.SSLSocket.AddHandshakeCompletedListener(Javax.Net.Ssl.HandshakeCompletedListener)">AddHandshakeCompletedListener(HandshakeCompletedListener)</h4>
@@ -1056,7 +1096,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket_RemoveHandshakeCompletedListener_Javax_Net_Ssl_HandshakeCompletedListener_.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket.RemoveHandshakeCompletedListener(Javax.Net.Ssl.HandshakeCompletedListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L151">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L158">View Source</a>
   </span>
   <a id="Javax_Net_Ssl_SSLSocket_RemoveHandshakeCompletedListener_" data-uid="Javax.Net.Ssl.SSLSocket.RemoveHandshakeCompletedListener*"></a>
   <h4 id="Javax_Net_Ssl_SSLSocket_RemoveHandshakeCompletedListener_Javax_Net_Ssl_HandshakeCompletedListener_" data-uid="Javax.Net.Ssl.SSLSocket.RemoveHandshakeCompletedListener(Javax.Net.Ssl.HandshakeCompletedListener)">RemoveHandshakeCompletedListener(HandshakeCompletedListener)</h4>
@@ -1090,7 +1130,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Net_Ssl_SSLSocket_StartHandshake.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.SSLSocket.StartHandshake%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L160">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Net/Ssl/SSLSocket.cs/#L167">View Source</a>
   </span>
   <a id="Javax_Net_Ssl_SSLSocket_StartHandshake_" data-uid="Javax.Net.Ssl.SSLSocket.StartHandshake*"></a>
   <h4 id="Javax_Net_Ssl_SSLSocket_StartHandshake" data-uid="Javax.Net.Ssl.SSLSocket.StartHandshake">StartHandshake()</h4>

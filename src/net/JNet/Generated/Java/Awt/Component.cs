@@ -386,6 +386,15 @@ namespace Java.Awt
             get { return IExecute<int>("getY"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getListeners(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.EventListener"/></returns>
+        public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
+        {
+            return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#areFocusTraversalKeysSet(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -630,6 +639,15 @@ namespace Java.Awt
             return IExecute<bool>("requestFocusInWindow");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#requestFocusInWindow(java.awt.event.FocusEvent$Cause)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent.Cause"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool RequestFocusInWindow(Java.Awt.EventNs.FocusEvent.Cause arg0)
+        {
+            return IExecute<bool>("requestFocusInWindow", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#dispatchEvent(java.awt.AWTEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
@@ -687,6 +705,15 @@ namespace Java.Awt
         public Java.Awt.Component GetComponentAt(Java.Awt.Point arg0)
         {
             return IExecute<Java.Awt.Component>("getComponentAt", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getBaselineResizeBehavior()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Awt.Component.BaselineResizeBehavior"/></returns>
+        public Java.Awt.Component.BaselineResizeBehavior GetBaselineResizeBehavior()
+        {
+            return IExecute<Java.Awt.Component.BaselineResizeBehavior>("getBaselineResizeBehavior");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getSize(java.awt.Dimension)"/>
@@ -773,6 +800,15 @@ namespace Java.Awt
         public Java.Beans.PropertyChangeListener[] GetPropertyChangeListeners(string arg0)
         {
             return IExecuteArray<Java.Beans.PropertyChangeListener>("getPropertyChangeListeners", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#getFocusTraversalKeys(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetFocusTraversalKeys(int arg0)
+        {
+            return IExecute<Java.Util.Set>("getFocusTraversalKeys", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#addComponentListener(java.awt.event.ComponentListener)"/>
@@ -1191,6 +1227,14 @@ namespace Java.Awt
             IExecute("requestFocus");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#requestFocus(java.awt.event.FocusEvent$Cause)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent.Cause"/></param>
+        public void RequestFocus(Java.Awt.EventNs.FocusEvent.Cause arg0)
+        {
+            IExecute("requestFocus", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#revalidate()"/>
         /// </summary>
         public void Revalidate()
@@ -1223,6 +1267,15 @@ namespace Java.Awt
         public void SetFocusable(bool arg0)
         {
             IExecute("setFocusable", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setFocusTraversalKeys(int,java.util.Set%3C? extends java.awt.AWTKeyStroke%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        public void SetFocusTraversalKeys(int arg0, Java.Util.Set arg1)
+        {
+            IExecute("setFocusTraversalKeys", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#setLocation(int,int)"/>
@@ -1330,6 +1383,15 @@ namespace Java.Awt
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Awt.Component.BaselineResizeBehavior"/></returns>
+            public static Java.Awt.Component.BaselineResizeBehavior ValueOf(string arg0)
+            {
+                return SExecute<Java.Awt.Component.BaselineResizeBehavior>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#values()"/>
             /// </summary>

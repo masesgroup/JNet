@@ -30,6 +30,15 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#%3Cinit%3E(java.lang.String,java.util.Map%3C? extends java.text.AttributedCharacterIterator$Attribute, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        public AttributedString(string arg0, Java.Util.Map arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -128,6 +137,16 @@ namespace Java.Text
         public void AddAttribute(Java.Text.AttributedCharacterIterator.Attribute arg0, object arg1)
         {
             IExecute("addAttribute", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#addAttributes(java.util.Map%3C? extends java.text.AttributedCharacterIterator$Attribute, ?%3E,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        public void AddAttributes(Java.Util.Map arg0, int arg1, int arg2)
+        {
+            IExecute("addAttributes", arg0, arg1, arg2);
         }
         
         #endregion

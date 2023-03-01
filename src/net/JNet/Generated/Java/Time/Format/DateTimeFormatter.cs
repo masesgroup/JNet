@@ -102,6 +102,61 @@ namespace Java.Time.Format
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#parsedLeapSecond()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
+        public static Java.Time.Temporal.TemporalQuery ParsedLeapSecond()
+        {
+            return SExecute<Java.Time.Temporal.TemporalQuery>("parsedLeapSecond");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#parsedExcessDays()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
+        public static Java.Time.Temporal.TemporalQuery ParsedExcessDays()
+        {
+            return SExecute<Java.Time.Temporal.TemporalQuery>("parsedExcessDays");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofLocalizedDate(java.time.format.FormatStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.FormatStyle"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
+        public static Java.Time.Format.DateTimeFormatter OfLocalizedDate(Java.Time.Format.FormatStyle arg0)
+        {
+            return SExecute<Java.Time.Format.DateTimeFormatter>("ofLocalizedDate", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofLocalizedDateTime(java.time.format.FormatStyle,java.time.format.FormatStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.FormatStyle"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Format.FormatStyle"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
+        public static Java.Time.Format.DateTimeFormatter OfLocalizedDateTime(Java.Time.Format.FormatStyle arg0, Java.Time.Format.FormatStyle arg1)
+        {
+            return SExecute<Java.Time.Format.DateTimeFormatter>("ofLocalizedDateTime", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofLocalizedDateTime(java.time.format.FormatStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.FormatStyle"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
+        public static Java.Time.Format.DateTimeFormatter OfLocalizedDateTime(Java.Time.Format.FormatStyle arg0)
+        {
+            return SExecute<Java.Time.Format.DateTimeFormatter>("ofLocalizedDateTime", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofLocalizedTime(java.time.format.FormatStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.FormatStyle"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
+        public static Java.Time.Format.DateTimeFormatter OfLocalizedTime(Java.Time.Format.FormatStyle arg0)
+        {
+            return SExecute<Java.Time.Format.DateTimeFormatter>("ofLocalizedTime", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofPattern(java.lang.String,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -146,11 +201,35 @@ namespace Java.Time.Format
             get { return IExecute<Java.Util.Locale>("getLocale"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#getResolverFields()"/> 
+        /// </summary>
+        public Java.Util.Set ResolverFields
+        {
+            get { return IExecute<Java.Util.Set>("getResolverFields"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#getResolverStyle()"/> 
+        /// </summary>
+        public Java.Time.Format.ResolverStyle ResolverStyle
+        {
+            get { return IExecute<Java.Time.Format.ResolverStyle>("getResolverStyle"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#getZone()"/> 
         /// </summary>
         public Java.Time.ZoneId Zone
         {
             get { return IExecute<Java.Time.ZoneId>("getZone"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#parse(java.lang.CharSequence,java.time.temporal.TemporalQuery%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Parse(Java.Lang.CharSequence arg0, Java.Time.Temporal.TemporalQuery arg1)
+        {
+            return IExecute("parse", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#format.DateTimeFormatter.format(java.time.temporal.TemporalAccessor)"/>
@@ -169,6 +248,15 @@ namespace Java.Time.Format
         public Java.Text.Format ToFormat()
         {
             return IExecute<Java.Text.Format>("toFormat");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#toFormat(java.time.temporal.TemporalQuery%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
+        /// <returns><see cref="Java.Text.Format"/></returns>
+        public Java.Text.Format ToFormat(Java.Time.Temporal.TemporalQuery arg0)
+        {
+            return IExecute<Java.Text.Format>("toFormat", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#localizedBy(java.util.Locale)"/>
@@ -214,6 +302,24 @@ namespace Java.Time.Format
         public Java.Time.Format.DateTimeFormatter WithResolverFields(params Java.Time.Temporal.TemporalField[] arg0)
         {
             if (arg0.Length == 0) return IExecute<Java.Time.Format.DateTimeFormatter>("withResolverFields"); else return IExecute<Java.Time.Format.DateTimeFormatter>("withResolverFields", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#withResolverFields(java.util.Set%3Cjava.time.temporal.TemporalField%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
+        public Java.Time.Format.DateTimeFormatter WithResolverFields(Java.Util.Set arg0)
+        {
+            return IExecute<Java.Time.Format.DateTimeFormatter>("withResolverFields", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#withResolverStyle(java.time.format.ResolverStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.ResolverStyle"/></param>
+        /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
+        public Java.Time.Format.DateTimeFormatter WithResolverStyle(Java.Time.Format.ResolverStyle arg0)
+        {
+            return IExecute<Java.Time.Format.DateTimeFormatter>("withResolverStyle", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#withZone(java.time.ZoneId)"/>

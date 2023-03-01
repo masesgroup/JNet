@@ -98,6 +98,33 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#from(java.time.temporal.TemporalAccessor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
+        /// <returns><see cref="Java.Time.Month"/></returns>
+        public static Java.Time.Month From(Java.Time.Temporal.TemporalAccessor arg0)
+        {
+            return SExecute<Java.Time.Month>("from", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#of(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Time.Month"/></returns>
+        public static Java.Time.Month Of(int arg0)
+        {
+            return SExecute<Java.Time.Month>("of", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Time.Month"/></returns>
+        public static Java.Time.Month ValueOf(string arg0)
+        {
+            return SExecute<Java.Time.Month>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#values()"/>
         /// </summary>
         
@@ -116,6 +143,15 @@ namespace Java.Time
         public int Value
         {
             get { return IExecute<int>("getValue"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#query(java.time.temporal.TemporalQuery%3CR%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Query(Java.Time.Temporal.TemporalQuery arg0)
+        {
+            return IExecute("query", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#isSupported(java.time.temporal.TemporalField)"/>
@@ -170,6 +206,43 @@ namespace Java.Time
         public int MinLength()
         {
             return IExecute<int>("minLength");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see langword="string"/></returns>
+        public string GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1)
+        {
+            return IExecute<string>("getDisplayName", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#firstMonthOfQuarter()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Month"/></returns>
+        public Java.Time.Month FirstMonthOfQuarter()
+        {
+            return IExecute<Java.Time.Month>("firstMonthOfQuarter");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#minus(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="Java.Time.Month"/></returns>
+        public Java.Time.Month Minus(long arg0)
+        {
+            return IExecute<Java.Time.Month>("minus", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#plus(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="Java.Time.Month"/></returns>
+        public Java.Time.Month Plus(long arg0)
+        {
+            return IExecute<Java.Time.Month>("plus", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Month.html#adjustInto(java.time.temporal.Temporal)"/>

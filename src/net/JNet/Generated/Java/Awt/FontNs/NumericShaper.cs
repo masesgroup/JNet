@@ -145,11 +145,39 @@ namespace Java.Awt.FontNs
             return SExecute<Java.Awt.FontNs.NumericShaper>("getContextualShaper", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getContextualShaper(java.util.Set%3Cjava.awt.font.NumericShaper$Range%3E,java.awt.font.NumericShaper$Range)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.FontNs.NumericShaper.Range"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.NumericShaper"/></returns>
+        public static Java.Awt.FontNs.NumericShaper GetContextualShaper(Java.Util.Set arg0, Java.Awt.FontNs.NumericShaper.Range arg1)
+        {
+            return SExecute<Java.Awt.FontNs.NumericShaper>("getContextualShaper", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getContextualShaper(java.util.Set%3Cjava.awt.font.NumericShaper$Range%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.NumericShaper"/></returns>
+        public static Java.Awt.FontNs.NumericShaper GetContextualShaper(Java.Util.Set arg0)
+        {
+            return SExecute<Java.Awt.FontNs.NumericShaper>("getContextualShaper", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getShaper(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.FontNs.NumericShaper"/></returns>
         public static Java.Awt.FontNs.NumericShaper GetShaper(int arg0)
+        {
+            return SExecute<Java.Awt.FontNs.NumericShaper>("getShaper", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getShaper(java.awt.font.NumericShaper$Range)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.NumericShaper.Range"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.NumericShaper"/></returns>
+        public static Java.Awt.FontNs.NumericShaper GetShaper(Java.Awt.FontNs.NumericShaper.Range arg0)
         {
             return SExecute<Java.Awt.FontNs.NumericShaper>("getShaper", arg0);
         }
@@ -163,6 +191,13 @@ namespace Java.Awt.FontNs
         public int Ranges
         {
             get { return IExecute<int>("getRanges"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getRangeSet()"/> 
+        /// </summary>
+        public Java.Util.Set RangeSet
+        {
+            get { return IExecute<Java.Util.Set>("getRangeSet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#isContextual()"/>
@@ -181,6 +216,17 @@ namespace Java.Awt.FontNs
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         public void Shape(char[] arg0, int arg1, int arg2, int arg3)
+        {
+            IExecute("shape", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#shape(char[],int,int,java.awt.font.NumericShaper$Range)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.FontNs.NumericShaper.Range"/></param>
+        public void Shape(char[] arg0, int arg1, int arg2, Java.Awt.FontNs.NumericShaper.Range arg3)
         {
             IExecute("shape", arg0, arg1, arg2, arg3);
         }
@@ -362,6 +408,15 @@ namespace Java.Awt.FontNs
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Awt.FontNs.NumericShaper.Range"/></returns>
+            public static Java.Awt.FontNs.NumericShaper.Range ValueOf(string arg0)
+            {
+                return SExecute<Java.Awt.FontNs.NumericShaper.Range>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#values()"/>
             /// </summary>

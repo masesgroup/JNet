@@ -49,7 +49,14 @@ namespace Javax.Lang.Model.Type
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/UnionType.html#getAlternatives()"/> 
+        /// </summary>
+        public Java.Util.List Alternatives
+        {
+            get { return IExecute<Java.Util.List>("getAlternatives"); }
+        }
+        
         #endregion
 
         #region Nested classes

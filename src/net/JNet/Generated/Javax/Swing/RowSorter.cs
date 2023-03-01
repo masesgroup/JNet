@@ -60,6 +60,13 @@ namespace Javax.Swing
             get { return IExecute<int>("getModelRowCount"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#getSortKeys()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#setSortKeys(java.util.List%3C? extends javax.swing.RowSorter$SortKey%3E)"/>
+        /// </summary>
+        public Java.Util.List SortKeys
+        {
+            get { return IExecute<Java.Util.List>("getSortKeys"); } set { IExecute("setSortKeys", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#getViewRowCount()"/> 
         /// </summary>
         public int ViewRowCount
@@ -167,7 +174,16 @@ namespace Javax.Swing
         public partial class SortKey
         {
             #region Constructors
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.SortKey.html#%3Cinit%3E(int,javax.swing.SortOrder)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.SortOrder"/></param>
+            public SortKey(int arg0, Javax.Swing.SortOrder arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
             #endregion
 
             #region Class/Interface conversion operators
@@ -189,6 +205,13 @@ namespace Javax.Swing
             public int Column
             {
                 get { return IExecute<int>("getColumn"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.SortKey.html#getSortOrder()"/> 
+            /// </summary>
+            public Javax.Swing.SortOrder SortOrder
+            {
+                get { return IExecute<Javax.Swing.SortOrder>("getSortOrder"); }
             }
             
             #endregion

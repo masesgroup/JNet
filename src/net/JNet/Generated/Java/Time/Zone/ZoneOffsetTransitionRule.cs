@@ -45,7 +45,24 @@ namespace Java.Time.Zone
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#of(java.time.Month,int,java.time.DayOfWeek,java.time.LocalTime,boolean,java.time.zone.ZoneOffsetTransitionRule$TimeDefinition,java.time.ZoneOffset,java.time.ZoneOffset,java.time.ZoneOffset)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Month"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Time.DayOfWeek"/></param>
+        /// <param name="arg3"><see cref="Java.Time.LocalTime"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
+        /// <param name="arg5"><see cref="Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition"/></param>
+        /// <param name="arg6"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <param name="arg7"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <param name="arg8"><see cref="Java.Time.ZoneOffset"/></param>
+        /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransitionRule"/></returns>
+        public static Java.Time.Zone.ZoneOffsetTransitionRule Of(Java.Time.Month arg0, int arg1, Java.Time.DayOfWeek arg2, Java.Time.LocalTime arg3, bool arg4, Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition arg5, Java.Time.ZoneOffset arg6, Java.Time.ZoneOffset arg7, Java.Time.ZoneOffset arg8)
+        {
+            return SExecute<Java.Time.Zone.ZoneOffsetTransitionRule>("of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+        
         #endregion
 
         #region Instance methods
@@ -57,11 +74,25 @@ namespace Java.Time.Zone
             get { return IExecute<int>("getDayOfMonthIndicator"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getDayOfWeek()"/> 
+        /// </summary>
+        public Java.Time.DayOfWeek DayOfWeek
+        {
+            get { return IExecute<Java.Time.DayOfWeek>("getDayOfWeek"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getLocalTime()"/> 
         /// </summary>
         public Java.Time.LocalTime LocalTime
         {
             get { return IExecute<Java.Time.LocalTime>("getLocalTime"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getMonth()"/> 
+        /// </summary>
+        public Java.Time.Month Month
+        {
+            get { return IExecute<Java.Time.Month>("getMonth"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getOffsetAfter()"/> 
@@ -102,6 +133,15 @@ namespace Java.Time.Zone
         {
             return IExecute<Java.Time.Zone.ZoneOffsetTransition>("createTransition", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getTimeDefinition()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition"/></returns>
+        public Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition GetTimeDefinition()
+        {
+            return IExecute<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("getTimeDefinition");
+        }
         
         #endregion
 
@@ -134,6 +174,15 @@ namespace Java.Time.Zone
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition"/></returns>
+            public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition ValueOf(string arg0)
+            {
+                return SExecute<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#values()"/>
             /// </summary>

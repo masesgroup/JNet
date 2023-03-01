@@ -74,6 +74,13 @@ namespace Javax.Management.Timer
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getAllNotificationIDs()"/> 
+        /// </summary>
+        public Java.Util.Vector AllNotificationIDs
+        {
+            get { return IExecute<Java.Util.Vector>("getAllNotificationIDs"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNbNotifications()"/> 
         /// </summary>
         public int NbNotifications
@@ -236,6 +243,15 @@ namespace Javax.Management.Timer
         public Java.Util.Date GetDate(int? arg0)
         {
             return IExecute<Java.Util.Date>("getDate", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNotificationIDs(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Vector"/></returns>
+        public Java.Util.Vector GetNotificationIDs(string arg0)
+        {
+            return IExecute<Java.Util.Vector>("getNotificationIDs", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#removeAllNotifications()"/>

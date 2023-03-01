@@ -40,6 +40,16 @@ namespace Java.Awt.FontNs
         {
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#%3Cinit%3E(java.lang.String,java.util.Map%3C? extends java.text.AttributedCharacterIterator$Attribute, ?%3E,java.awt.font.FontRenderContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.FontNs.FontRenderContext"/></param>
+        public TextLayout(string arg0, Java.Util.Map arg1, Java.Awt.FontNs.FontRenderContext arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#%3Cinit%3E(java.text.AttributedCharacterIterator,java.awt.font.FontRenderContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>

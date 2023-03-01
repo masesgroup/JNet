@@ -29,7 +29,59 @@ namespace Java.Util.Concurrent
     public partial class ThreadPoolExecutor
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue%3Cjava.lang.Runnable%3E,java.util.concurrent.RejectedExecutionHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <param name="arg4"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
+        /// <param name="arg5"><see cref="Java.Util.Concurrent.RejectedExecutionHandler"/></param>
+        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue arg4, Java.Util.Concurrent.RejectedExecutionHandler arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue%3Cjava.lang.Runnable%3E,java.util.concurrent.ThreadFactory,java.util.concurrent.RejectedExecutionHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <param name="arg4"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
+        /// <param name="arg5"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
+        /// <param name="arg6"><see cref="Java.Util.Concurrent.RejectedExecutionHandler"/></param>
+        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue arg4, Java.Util.Concurrent.ThreadFactory arg5, Java.Util.Concurrent.RejectedExecutionHandler arg6)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue%3Cjava.lang.Runnable%3E,java.util.concurrent.ThreadFactory)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <param name="arg4"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
+        /// <param name="arg5"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
+        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue arg4, Java.Util.Concurrent.ThreadFactory arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#%3Cinit%3E(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue%3Cjava.lang.Runnable%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <param name="arg4"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
+        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -86,6 +138,13 @@ namespace Java.Util.Concurrent
         public int PoolSize
         {
             get { return IExecute<int>("getPoolSize"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getQueue()"/> 
+        /// </summary>
+        public Java.Util.Concurrent.BlockingQueue Queue
+        {
+            get { return IExecute<Java.Util.Concurrent.BlockingQueue>("getQueue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getRejectedExecutionHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler)"/>
@@ -154,6 +213,15 @@ namespace Java.Util.Concurrent
             return IExecute<int>("prestartAllCoreThreads");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getKeepAliveTime(java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="long"/></returns>
+        public long GetKeepAliveTime(Java.Util.Concurrent.TimeUnit arg0)
+        {
+            return IExecute<long>("getKeepAliveTime", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#allowCoreThreadTimeOut(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -167,6 +235,15 @@ namespace Java.Util.Concurrent
         public void Purge()
         {
             IExecute("purge");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#setKeepAliveTime(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        public void SetKeepAliveTime(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            IExecute("setKeepAliveTime", arg0, arg1);
         }
         
         #endregion

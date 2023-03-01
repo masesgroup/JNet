@@ -98,6 +98,16 @@ namespace Javax.Swing.Plaf.Synth
             return IExecute<bool>("shouldUpdateStyleOnAncestorChanged");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#load(java.io.InputStream,java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <exception cref="Java.Text.ParseException"/>
+        public void Load(Java.Io.InputStream arg0, Java.Lang.Class arg1)
+        {
+            IExecute("load", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#load(java.net.URL)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>

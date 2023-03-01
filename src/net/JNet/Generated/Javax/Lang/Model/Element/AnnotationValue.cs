@@ -52,6 +52,16 @@ namespace Javax.Lang.Model.Element
         {
             get { return IExecute("getValue"); }
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValue.html#accept(javax.lang.model.element.AnnotationValueVisitor%3CR, P%3E,P)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValueVisitor"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Accept(Javax.Lang.Model.Element.AnnotationValueVisitor arg0, object arg1)
+        {
+            return IExecute("accept", arg0, arg1);
+        }
         
         #endregion
 

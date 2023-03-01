@@ -46,6 +46,13 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getIds()"/> 
+        /// </summary>
+        public Java.Util.Enumeration Ids
+        {
+            get { return IExecute<Java.Util.Enumeration>("getIds"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#getSessionCacheSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int)"/>
         /// </summary>
         public int SessionCacheSize

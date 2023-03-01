@@ -29,7 +29,23 @@ namespace Javax.Swing
     public partial class JList
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#%3Cinit%3E(java.util.Vector%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        public JList(Java.Util.Vector arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#%3Cinit%3E(javax.swing.ListModel%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.ListModel"/></param>
+        public JList(Javax.Swing.ListModel arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -73,11 +89,25 @@ namespace Javax.Swing
             get { return IExecute<int>("getAnchorSelectionIndex"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getCellRenderer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setCellRenderer(javax.swing.ListCellRenderer%3C? super E%3E)"/>
+        /// </summary>
+        public Javax.Swing.ListCellRenderer CellRenderer
+        {
+            get { return IExecute<Javax.Swing.ListCellRenderer>("getCellRenderer"); } set { IExecute("setCellRenderer", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDragEnabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDragEnabled(boolean)"/>
         /// </summary>
         public bool DragEnabled
         {
             get { return IExecute<bool>("getDragEnabled"); } set { IExecute("setDragEnabled", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setDropMode(javax.swing.DropMode)"/>
+        /// </summary>
+        public Javax.Swing.DropMode DropMode
+        {
+            get { return IExecute<Javax.Swing.DropMode>("getDropMode"); } set { IExecute("setDropMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getFirstVisibleIndex()"/> 
@@ -143,6 +173,13 @@ namespace Javax.Swing
             get { return IExecute<int>("getMinSelectionIndex"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setModel(javax.swing.ListModel%3CE%3E)"/>
+        /// </summary>
+        public Javax.Swing.ListModel Model
+        {
+            get { return IExecute<Javax.Swing.ListModel>("getModel"); } set { IExecute("setModel", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getPreferredScrollableViewportSize()"/> 
         /// </summary>
         public Java.Awt.Dimension PreferredScrollableViewportSize
@@ -190,6 +227,13 @@ namespace Javax.Swing
         public object SelectedValue
         {
             get { return IExecute("getSelectedValue"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectedValuesList()"/> 
+        /// </summary>
+        public Java.Util.List SelectedValuesList
+        {
+            get { return IExecute<Java.Util.List>("getSelectedValuesList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getSelectionBackground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionBackground(java.awt.Color)"/>
@@ -250,6 +294,15 @@ namespace Javax.Swing
         public bool IsSelectionEmpty()
         {
             return IExecute<bool>("isSelectionEmpty");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getDropLocation()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.JList.DropLocation"/></returns>
+        public Javax.Swing.JList.DropLocation GetDropLocation()
+        {
+            return IExecute<Javax.Swing.JList.DropLocation>("getDropLocation");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getNextMatch(java.lang.String,int,javax.swing.text.Position$Bias)"/>
@@ -360,6 +413,14 @@ namespace Javax.Swing
         public void RemoveSelectionInterval(int arg0, int arg1)
         {
             IExecute("removeSelectionInterval", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(java.util.Vector%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        public void SetListData(Java.Util.Vector arg0)
+        {
+            IExecute("setListData", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedValue(java.lang.Object,boolean)"/>

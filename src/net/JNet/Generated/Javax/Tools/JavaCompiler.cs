@@ -53,7 +53,32 @@ namespace Javax.Tools
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.html#getTask(java.io.Writer,javax.tools.JavaFileManager,javax.tools.DiagnosticListener%3C? super javax.tools.JavaFileObject%3E,java.lang.Iterable%3Cjava.lang.String%3E,java.lang.Iterable%3Cjava.lang.String%3E,java.lang.Iterable%3C? extends javax.tools.JavaFileObject%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <param name="arg1"><see cref="Javax.Tools.JavaFileManager"/></param>
+        /// <param name="arg2"><see cref="Javax.Tools.DiagnosticListener"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.Iterable"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.Iterable"/></param>
+        /// <param name="arg5"><see cref="Java.Lang.Iterable"/></param>
+        /// <returns><see cref="Javax.Tools.JavaCompiler.CompilationTask"/></returns>
+        public Javax.Tools.JavaCompiler.CompilationTask GetTask(Java.Io.Writer arg0, Javax.Tools.JavaFileManager arg1, Javax.Tools.DiagnosticListener arg2, Java.Lang.Iterable arg3, Java.Lang.Iterable arg4, Java.Lang.Iterable arg5)
+        {
+            return IExecute<Javax.Tools.JavaCompiler.CompilationTask>("getTask", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.html#getStandardFileManager(javax.tools.DiagnosticListener%3C? super javax.tools.JavaFileObject%3E,java.util.Locale,java.nio.charset.Charset)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.DiagnosticListener"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <returns><see cref="Javax.Tools.StandardJavaFileManager"/></returns>
+        public Javax.Tools.StandardJavaFileManager GetStandardFileManager(Javax.Tools.DiagnosticListener arg0, Java.Util.Locale arg1, Java.Nio.Charset.Charset arg2)
+        {
+            return IExecute<Javax.Tools.StandardJavaFileManager>("getStandardFileManager", arg0, arg1, arg2);
+        }
+        
         #endregion
 
         #region Nested classes
@@ -65,7 +90,11 @@ namespace Javax.Tools
             #endregion
 
             #region Class/Interface conversion operators
-
+            /// <summary>
+            /// Converter from <see cref="Javax.Tools.JavaCompiler.CompilationTask"/> to <see cref="Java.Util.Concurrent.Callable"/>
+            /// </summary>
+            public static implicit operator Java.Util.Concurrent.Callable(Javax.Tools.JavaCompiler.CompilationTask t) => t.Cast<Java.Util.Concurrent.Callable>();
+            
             #endregion
 
             #region Fields
@@ -78,12 +107,28 @@ namespace Javax.Tools
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#addModules(java.lang.Iterable%3Cjava.lang.String%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+            public void AddModules(Java.Lang.Iterable arg0)
+            {
+                IExecute("addModules", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#setLocale(java.util.Locale)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
             public void SetLocale(Java.Util.Locale arg0)
             {
                 IExecute("setLocale", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#setProcessors(java.lang.Iterable%3C? extends javax.annotation.processing.Processor%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+            public void SetProcessors(Java.Lang.Iterable arg0)
+            {
+                IExecute("setProcessors", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#call()"/>

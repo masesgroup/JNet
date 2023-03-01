@@ -46,6 +46,14 @@ namespace Javax.Print.Attribute.Standard
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReasons.html#%3Cinit%3E(java.util.Collection%3Cjavax.print.attribute.standard.JobStateReason%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public JobStateReasons(Java.Util.Collection arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
@@ -66,6 +74,13 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReasons.html#getCategory()"/> 
+        /// </summary>
+        public Java.Lang.Class Category
+        {
+            get { return IExecute<Java.Lang.Class>("getCategory"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReasons.html#getName()"/> 
         /// </summary>

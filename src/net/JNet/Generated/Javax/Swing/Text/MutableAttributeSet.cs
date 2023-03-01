@@ -75,6 +75,14 @@ namespace Javax.Swing.Text
             IExecute("removeAttribute", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#removeAttributes(java.util.Enumeration%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
+        public void RemoveAttributes(Java.Util.Enumeration arg0)
+        {
+            IExecute("removeAttributes", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#removeAttributes(javax.swing.text.AttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>

@@ -54,6 +54,20 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getenv()"/> 
+        /// </summary>
+        public static Java.Util.Map Env
+        {
+            get { return SExecute<Java.Util.Map>("getenv"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getProperties()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setProperties(java.util.Properties)"/>
+        /// </summary>
+        public static Java.Util.Properties Properties
+        {
+            get { return SExecute<Java.Util.Properties>("getProperties"); } set { SExecute("setProperties", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getSecurityManager()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setSecurityManager(java.lang.SecurityManager)"/>
         /// </summary>
         public static Java.Lang.SecurityManager SecurityManager
@@ -298,6 +312,94 @@ namespace Java.Lang
             public string Name
             {
                 get { return IExecute<string>("getName"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#isLoggable(java.lang.System$Logger$Level)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
+            /// <returns><see langword="bool"/></returns>
+            public bool IsLoggable(Java.Lang.System.Logger.Level arg0)
+            {
+                return IExecute<bool>("isLoggable", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System$Logger$Level,java.util.ResourceBundle,java.lang.String,java.lang.Object...)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
+            /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
+            /// <param name="arg2"><see cref="string"/></param>
+            /// <param name="arg3"><see cref="object"/></param>
+            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.ResourceBundle arg1, string arg2, params object[] arg3)
+            {
+                if (arg3.Length == 0) IExecute("log", arg0, arg1, arg2); else IExecute("log", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System$Logger$Level,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
+            /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
+            /// <param name="arg2"><see cref="string"/></param>
+            /// <param name="arg3"><see cref="Java.Lang.Throwable"/></param>
+            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.ResourceBundle arg1, string arg2, Java.Lang.Throwable arg3)
+            {
+                IExecute("log", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System$Logger$Level,java.lang.Object)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
+            /// <param name="arg1"><see cref="object"/></param>
+            public void Log(Java.Lang.System.Logger.Level arg0, object arg1)
+            {
+                IExecute("log", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System$Logger$Level,java.lang.String,java.lang.Object...)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg2"><see cref="object"/></param>
+            public void Log(Java.Lang.System.Logger.Level arg0, string arg1, params object[] arg2)
+            {
+                if (arg2.Length == 0) IExecute("log", arg0, arg1); else IExecute("log", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System$Logger$Level,java.lang.String,java.lang.Throwable)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.Throwable"/></param>
+            public void Log(Java.Lang.System.Logger.Level arg0, string arg1, Java.Lang.Throwable arg2)
+            {
+                IExecute("log", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System$Logger$Level,java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
+            public void Log(Java.Lang.System.Logger.Level arg0, string arg1)
+            {
+                IExecute("log", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System$Logger$Level,java.util.function.Supplier%3Cjava.lang.String%3E,java.lang.Throwable)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.Throwable"/></param>
+            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.Function.Supplier arg1, Java.Lang.Throwable arg2)
+            {
+                IExecute("log", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System$Logger$Level,java.util.function.Supplier%3Cjava.lang.String%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
+            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.Function.Supplier arg1)
+            {
+                IExecute("log", arg0, arg1);
             }
             
             #endregion

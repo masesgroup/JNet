@@ -130,6 +130,15 @@ namespace Java.Security
             return IExecute<Java.Util.Date>("engineGetCreationDate", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineAliases()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration EngineAliases()
+        {
+            return IExecute<Java.Util.Enumeration>("engineAliases");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineDeleteEntry(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -194,6 +203,16 @@ namespace Java.Security
         public void EngineStore(Java.Io.OutputStream arg0, char[] arg1)
         {
             IExecute("engineStore", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineEntryInstanceOf(java.lang.String,java.lang.Class%3C? extends java.security.KeyStore$Entry%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool EngineEntryInstanceOf(string arg0, Java.Lang.Class arg1)
+        {
+            return IExecute<bool>("engineEntryInstanceOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineProbe(java.io.InputStream)"/>

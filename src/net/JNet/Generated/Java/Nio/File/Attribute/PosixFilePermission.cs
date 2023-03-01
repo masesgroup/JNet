@@ -78,6 +78,15 @@ namespace Java.Nio.File.Attribute
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.PosixFilePermission"/></returns>
+        public static Java.Nio.File.Attribute.PosixFilePermission ValueOf(string arg0)
+        {
+            return SExecute<Java.Nio.File.Attribute.PosixFilePermission>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#values()"/>
         /// </summary>
         

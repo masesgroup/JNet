@@ -102,6 +102,13 @@ namespace Javax.Swing.Text
             get { return IExecuteArray<Javax.Swing.Event.DocumentListener>("getDocumentListeners"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getDocumentProperties()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#setDocumentProperties(java.util.Dictionary%3Cjava.lang.Object, java.lang.Object%3E)"/>
+        /// </summary>
+        public Java.Util.Dictionary DocumentProperties
+        {
+            get { return IExecute<Java.Util.Dictionary>("getDocumentProperties"); } set { IExecute("setDocumentProperties", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getEndPosition()"/> 
         /// </summary>
         public Javax.Swing.Text.Position EndPosition
@@ -135,6 +142,15 @@ namespace Javax.Swing.Text
         public Javax.Swing.Event.UndoableEditListener[] UndoableEditListeners
         {
             get { return IExecuteArray<Javax.Swing.Event.UndoableEditListener>("getUndoableEditListeners"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getListeners(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.EventListener"/></returns>
+        public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
+        {
+            return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getParagraphElement(int)"/>
@@ -364,6 +380,13 @@ namespace Javax.Swing.Text
                 get { return IExecute<int>("getAttributeCount"); }
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getAttributeNames()"/> 
+            /// </summary>
+            public Java.Util.Enumeration AttributeNames
+            {
+                get { return IExecute<Java.Util.Enumeration>("getAttributeNames"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getAttributes()"/> 
             /// </summary>
             public Javax.Swing.Text.AttributeSet Attributes
@@ -450,6 +473,15 @@ namespace Javax.Swing.Text
             public int GetElementIndex(int arg0)
             {
                 return IExecute<int>("getElementIndex", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#children()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Util.Enumeration"/></returns>
+            public Java.Util.Enumeration Children()
+            {
+                return IExecute<Java.Util.Enumeration>("children");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getElement(int)"/>
@@ -568,6 +600,14 @@ namespace Javax.Swing.Text
                 IExecute("removeAttribute", arg0);
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#removeAttributes(java.util.Enumeration%3C?%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
+            public void RemoveAttributes(Java.Util.Enumeration arg0)
+            {
+                IExecute("removeAttributes", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#removeAttributes(javax.swing.text.AttributeSet)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
@@ -639,6 +679,16 @@ namespace Javax.Swing.Text
             public Javax.Swing.Text.AttributeSet RemoveAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1)
             {
                 return IExecute<Javax.Swing.Text.AttributeSet>("removeAttribute", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttributes(javax.swing.text.AttributeSet,java.util.Enumeration%3C?%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Enumeration"/></param>
+            /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+            public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Java.Util.Enumeration arg1)
+            {
+                return IExecute<Javax.Swing.Text.AttributeSet>("removeAttributes", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)"/>

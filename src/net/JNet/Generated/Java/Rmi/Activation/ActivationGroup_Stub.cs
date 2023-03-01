@@ -61,7 +61,19 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup_Stub.html#newInstance(java.rmi.activation.ActivationID,java.rmi.activation.ActivationDesc)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationDesc"/></param>
+        /// <returns><see cref="Java.Rmi.MarshalledObject"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        public Java.Rmi.MarshalledObject NewInstance(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.Activation.ActivationDesc arg1)
+        {
+            return IExecute<Java.Rmi.MarshalledObject>("newInstance", arg0, arg1);
+        }
+        
         #endregion
 
         #region Nested classes

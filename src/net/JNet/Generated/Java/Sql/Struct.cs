@@ -59,6 +59,16 @@ namespace Java.Sql
         {
             get { return IExecute<string>("getSQLTypeName"); }
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Struct.html#getAttributes(java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public object[] GetAttributes(Java.Util.Map arg0)
+        {
+            return IExecuteArray<object>("getAttributes", arg0);
+        }
         
         #endregion
 

@@ -45,7 +45,25 @@ namespace Javax.Imageio.Spi
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/RegisterableService.html#onDeregistration(javax.imageio.spi.ServiceRegistry,java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Spi.ServiceRegistry"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        public void OnDeregistration(Javax.Imageio.Spi.ServiceRegistry arg0, Java.Lang.Class arg1)
+        {
+            IExecute("onDeregistration", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/RegisterableService.html#onRegistration(javax.imageio.spi.ServiceRegistry,java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Spi.ServiceRegistry"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        public void OnRegistration(Javax.Imageio.Spi.ServiceRegistry arg0, Java.Lang.Class arg1)
+        {
+            IExecute("onRegistration", arg0, arg1);
+        }
+        
         #endregion
 
         #region Nested classes

@@ -57,6 +57,13 @@ namespace Java.Awt
             get { return IExecuteArray<Java.Awt.Color>("getColors"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getColorSpace()"/> 
+        /// </summary>
+        public Java.Awt.MultipleGradientPaint.ColorSpaceType ColorSpace
+        {
+            get { return IExecute<Java.Awt.MultipleGradientPaint.ColorSpaceType>("getColorSpace"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getFractions()"/> 
         /// </summary>
         public float[] Fractions
@@ -76,6 +83,15 @@ namespace Java.Awt
         public int Transparency
         {
             get { return IExecute<int>("getTransparency"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html#getCycleMethod()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Awt.MultipleGradientPaint.CycleMethod"/></returns>
+        public Java.Awt.MultipleGradientPaint.CycleMethod GetCycleMethod()
+        {
+            return IExecute<Java.Awt.MultipleGradientPaint.CycleMethod>("getCycleMethod");
         }
         
         #endregion
@@ -105,6 +121,15 @@ namespace Java.Awt
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Awt.MultipleGradientPaint.ColorSpaceType"/></returns>
+            public static Java.Awt.MultipleGradientPaint.ColorSpaceType ValueOf(string arg0)
+            {
+                return SExecute<Java.Awt.MultipleGradientPaint.ColorSpaceType>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#values()"/>
             /// </summary>
@@ -153,6 +178,15 @@ namespace Java.Awt
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Awt.MultipleGradientPaint.CycleMethod"/></returns>
+            public static Java.Awt.MultipleGradientPaint.CycleMethod ValueOf(string arg0)
+            {
+                return SExecute<Java.Awt.MultipleGradientPaint.CycleMethod>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#values()"/>
             /// </summary>

@@ -53,7 +53,625 @@ namespace Java.Util
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedCollection(java.util.Collection%3CE%3E,java.lang.Class%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public static Java.Util.Collection CheckedCollectionMethod(Java.Util.Collection arg0, Java.Lang.Class arg1)
+        {
+            return SExecute<Java.Util.Collection>("checkedCollection", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedList(java.util.List%3CE%3E,java.lang.Class%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public static Java.Util.List CheckedListMethod(Java.Util.List arg0, Java.Lang.Class arg1)
+        {
+            return SExecute<Java.Util.List>("checkedList", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedNavigableSet(java.util.NavigableSet%3CE%3E,java.lang.Class%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.NavigableSet"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public static Java.Util.NavigableSet CheckedNavigableSetMethod(Java.Util.NavigableSet arg0, Java.Lang.Class arg1)
+        {
+            return SExecute<Java.Util.NavigableSet>("checkedNavigableSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableSet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public static Java.Util.NavigableSet EmptyNavigableSet()
+        {
+            return SExecute<Java.Util.NavigableSet>("emptyNavigableSet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedQueue(java.util.Queue%3CE%3E,java.lang.Class%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Queue"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.Queue"/></returns>
+        public static Java.Util.Queue CheckedQueueMethod(Java.Util.Queue arg0, Java.Lang.Class arg1)
+        {
+            return SExecute<Java.Util.Queue>("checkedQueue", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedSet(java.util.Set%3CE%3E,java.lang.Class%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set CheckedSetMethod(Java.Util.Set arg0, Java.Lang.Class arg1)
+        {
+            return SExecute<Java.Util.Set>("checkedSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#newSetFromMap(java.util.Map%3CE, java.lang.Boolean%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set NewSetFromMap(Java.Util.Map arg0)
+        {
+            return SExecute<Java.Util.Set>("newSetFromMap", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedSortedSet(java.util.SortedSet%3CE%3E,java.lang.Class%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public static Java.Util.SortedSet CheckedSortedSetMethod(Java.Util.SortedSet arg0, Java.Lang.Class arg1)
+        {
+            return SExecute<Java.Util.SortedSet>("checkedSortedSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedSet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public static Java.Util.SortedSet EmptySortedSet()
+        {
+            return SExecute<Java.Util.SortedSet>("emptySortedSet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedMap(java.util.Map%3CK, V%3E,java.lang.Class%3CK%3E,java.lang.Class%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public static Java.Util.Map CheckedMapMethod(Java.Util.Map arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
+        {
+            return SExecute<Java.Util.Map>("checkedMap", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonMap(K,V)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public static Java.Util.Map SingletonMapMethod(object arg0, object arg1)
+        {
+            return SExecute<Java.Util.Map>("singletonMap", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedMap(java.util.Map%3CK, V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public static Java.Util.Map SynchronizedMapMethod(Java.Util.Map arg0)
+        {
+            return SExecute<Java.Util.Map>("synchronizedMap", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableMap(java.util.Map%3C? extends K, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public static Java.Util.Map UnmodifiableMapMethod(Java.Util.Map arg0)
+        {
+            return SExecute<Java.Util.Map>("unmodifiableMap", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedNavigableMap(java.util.NavigableMap%3CK, V%3E,java.lang.Class%3CK%3E,java.lang.Class%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.NavigableMap"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
+        public static Java.Util.NavigableMap CheckedNavigableMapMethod(Java.Util.NavigableMap arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
+        {
+            return SExecute<Java.Util.NavigableMap>("checkedNavigableMap", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedNavigableMap(java.util.NavigableMap%3CK, V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.NavigableMap"/></param>
+        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
+        public static Java.Util.NavigableMap SynchronizedNavigableMapMethod(Java.Util.NavigableMap arg0)
+        {
+            return SExecute<Java.Util.NavigableMap>("synchronizedNavigableMap", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableNavigableMap(java.util.NavigableMap%3CK, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.NavigableMap"/></param>
+        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
+        public static Java.Util.NavigableMap UnmodifiableNavigableMapMethod(Java.Util.NavigableMap arg0)
+        {
+            return SExecute<Java.Util.NavigableMap>("unmodifiableNavigableMap", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedSortedMap(java.util.SortedMap%3CK, V%3E,java.lang.Class%3CK%3E,java.lang.Class%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        public static Java.Util.SortedMap CheckedSortedMapMethod(Java.Util.SortedMap arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
+        {
+            return SExecute<Java.Util.SortedMap>("checkedSortedMap", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSortedMap(java.util.SortedMap%3CK, V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        public static Java.Util.SortedMap SynchronizedSortedMapMethod(Java.Util.SortedMap arg0)
+        {
+            return SExecute<Java.Util.SortedMap>("synchronizedSortedMap", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSortedMap(java.util.SortedMap%3CK, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        public static Java.Util.SortedMap UnmodifiableSortedMapMethod(Java.Util.SortedMap arg0)
+        {
+            return SExecute<Java.Util.SortedMap>("unmodifiableSortedMap", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#addAll(java.util.Collection%3C? super T%3E,T...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public static bool AddAll(Java.Util.Collection arg0, params object[] arg1)
+        {
+            if (arg1.Length == 0) return SExecute<bool>("addAll", arg0); else return SExecute<bool>("addAll", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#replaceAll(java.util.List%3CT%3E,T,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public static bool ReplaceAll(Java.Util.List arg0, object arg1, object arg2)
+        {
+            return SExecute<bool>("replaceAll", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#binarySearch(java.util.List%3C? extends java.lang.Comparable%3C? super T%3E%3E,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="int"/></returns>
+        public static int BinarySearch(Java.Util.List arg0, object arg1)
+        {
+            return SExecute<int>("binarySearch", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#binarySearch(java.util.List%3C? extends T%3E,T,java.util.Comparator%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see langword="int"/></returns>
+        public static int BinarySearch(Java.Util.List arg0, object arg1, Java.Util.Comparator arg2)
+        {
+            return SExecute<int>("binarySearch", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#list(java.util.Enumeration%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
+        /// <returns><see cref="Java.Util.ArrayList"/></returns>
+        public static Java.Util.ArrayList List(Java.Util.Enumeration arg0)
+        {
+            return SExecute<Java.Util.ArrayList>("list", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedCollection(java.util.Collection%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public static Java.Util.Collection SynchronizedCollectionMethod(Java.Util.Collection arg0)
+        {
+            return SExecute<Java.Util.Collection>("synchronizedCollection", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableCollection(java.util.Collection%3C? extends T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public static Java.Util.Collection UnmodifiableCollectionMethod(Java.Util.Collection arg0)
+        {
+            return SExecute<Java.Util.Collection>("unmodifiableCollection", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator ReverseOrder()
+        {
+            return SExecute<Java.Util.Comparator>("reverseOrder");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverseOrder(java.util.Comparator%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator ReverseOrder(Java.Util.Comparator arg0)
+        {
+            return SExecute<Java.Util.Comparator>("reverseOrder", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyEnumeration()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public static Java.Util.Enumeration EmptyEnumerationMethod()
+        {
+            return SExecute<Java.Util.Enumeration>("emptyEnumeration");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#enumeration(java.util.Collection%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public static Java.Util.Enumeration Enumeration(Java.Util.Collection arg0)
+        {
+            return SExecute<Java.Util.Enumeration>("enumeration", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyIterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public static Java.Util.Iterator EmptyIteratorMethod()
+        {
+            return SExecute<Java.Util.Iterator>("emptyIterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#nCopies(int,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public static Java.Util.List NCopies(int arg0, object arg1)
+        {
+            return SExecute<Java.Util.List>("nCopies", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonList(T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public static Java.Util.List SingletonListMethod(object arg0)
+        {
+            return SExecute<Java.Util.List>("singletonList", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedList(java.util.List%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public static Java.Util.List SynchronizedListMethod(Java.Util.List arg0)
+        {
+            return SExecute<Java.Util.List>("synchronizedList", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableList(java.util.List%3C? extends T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public static Java.Util.List UnmodifiableListMethod(Java.Util.List arg0)
+        {
+            return SExecute<Java.Util.List>("unmodifiableList", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyListIterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.ListIterator"/></returns>
+        public static Java.Util.ListIterator EmptyListIteratorMethod()
+        {
+            return SExecute<Java.Util.ListIterator>("emptyListIterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedNavigableSet(java.util.NavigableSet%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.NavigableSet"/></param>
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public static Java.Util.NavigableSet SynchronizedNavigableSetMethod(Java.Util.NavigableSet arg0)
+        {
+            return SExecute<Java.Util.NavigableSet>("synchronizedNavigableSet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableNavigableSet(java.util.NavigableSet%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.NavigableSet"/></param>
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public static Java.Util.NavigableSet UnmodifiableNavigableSetMethod(Java.Util.NavigableSet arg0)
+        {
+            return SExecute<Java.Util.NavigableSet>("unmodifiableNavigableSet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#asLifoQueue(java.util.Deque%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Deque"/></param>
+        /// <returns><see cref="Java.Util.Queue"/></returns>
+        public static Java.Util.Queue AsLifoQueue(Java.Util.Deque arg0)
+        {
+            return SExecute<Java.Util.Queue>("asLifoQueue", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singleton(T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set Singleton(object arg0)
+        {
+            return SExecute<Java.Util.Set>("singleton", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSet(java.util.Set%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set SynchronizedSetMethod(Java.Util.Set arg0)
+        {
+            return SExecute<Java.Util.Set>("synchronizedSet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSet(java.util.Set%3C? extends T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set UnmodifiableSetMethod(Java.Util.Set arg0)
+        {
+            return SExecute<Java.Util.Set>("unmodifiableSet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSortedSet(java.util.SortedSet%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public static Java.Util.SortedSet SynchronizedSortedSetMethod(Java.Util.SortedSet arg0)
+        {
+            return SExecute<Java.Util.SortedSet>("synchronizedSortedSet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSortedSet(java.util.SortedSet%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public static Java.Util.SortedSet UnmodifiableSortedSetMethod(Java.Util.SortedSet arg0)
+        {
+            return SExecute<Java.Util.SortedSet>("unmodifiableSortedSet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection%3C? extends T%3E,java.util.Comparator%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object Max(Java.Util.Collection arg0, Java.Util.Comparator arg1)
+        {
+            return SExecute("max", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection%3C? extends T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object Max(Java.Util.Collection arg0)
+        {
+            return SExecute("max", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#min(java.util.Collection%3C? extends T%3E,java.util.Comparator%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object Min(Java.Util.Collection arg0, Java.Util.Comparator arg1)
+        {
+            return SExecute("min", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#min(java.util.Collection%3C? extends T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object Min(Java.Util.Collection arg0)
+        {
+            return SExecute("min", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#copy(java.util.List%3C? super T%3E,java.util.List%3C? extends T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        public static void Copy(Java.Util.List arg0, Java.Util.List arg1)
+        {
+            SExecute("copy", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#fill(java.util.List%3C? super T%3E,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        public static void Fill(Java.Util.List arg0, object arg1)
+        {
+            SExecute("fill", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List%3CT%3E,java.util.Comparator%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        public static void Sort(Java.Util.List arg0, Java.Util.Comparator arg1)
+        {
+            SExecute("sort", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public static void Sort(Java.Util.List arg0)
+        {
+            SExecute("sort", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#disjoint(java.util.Collection%3C?%3E,java.util.Collection%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public static bool Disjoint(Java.Util.Collection arg0, Java.Util.Collection arg1)
+        {
+            return SExecute<bool>("disjoint", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyMap()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public static Java.Util.Map EmptyMapMethod()
+        {
+            return SExecute<Java.Util.Map>("emptyMap");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableMap()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
+        public static Java.Util.NavigableMap EmptyNavigableMap()
+        {
+            return SExecute<Java.Util.NavigableMap>("emptyNavigableMap");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedMap()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        public static Java.Util.SortedMap EmptySortedMap()
+        {
+            return SExecute<Java.Util.SortedMap>("emptySortedMap");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyList()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public static Java.Util.List EmptyListMethod()
+        {
+            return SExecute<Java.Util.List>("emptyList");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set EmptySetMethod()
+        {
+            return SExecute<Java.Util.Set>("emptySet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#frequency(java.util.Collection%3C?%3E,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="int"/></returns>
+        public static int Frequency(Java.Util.Collection arg0, object arg1)
+        {
+            return SExecute<int>("frequency", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#indexOfSubList(java.util.List%3C?%3E,java.util.List%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <returns><see langword="int"/></returns>
+        public static int IndexOfSubList(Java.Util.List arg0, Java.Util.List arg1)
+        {
+            return SExecute<int>("indexOfSubList", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#lastIndexOfSubList(java.util.List%3C?%3E,java.util.List%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <returns><see langword="int"/></returns>
+        public static int LastIndexOfSubList(Java.Util.List arg0, Java.Util.List arg1)
+        {
+            return SExecute<int>("lastIndexOfSubList", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverse(java.util.List%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public static void Reverse(Java.Util.List arg0)
+        {
+            SExecute("reverse", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#rotate(java.util.List%3C?%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public static void Rotate(Java.Util.List arg0, int arg1)
+        {
+            SExecute("rotate", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List%3C?%3E,java.util.Random)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Random"/></param>
+        public static void Shuffle(Java.Util.List arg0, Java.Util.Random arg1)
+        {
+            SExecute("shuffle", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public static void Shuffle(Java.Util.List arg0)
+        {
+            SExecute("shuffle", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#swap(java.util.List%3C?%3E,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        public static void Swap(Java.Util.List arg0, int arg1, int arg2)
+        {
+            SExecute("swap", arg0, arg1, arg2);
+        }
+        
         #endregion
 
         #region Instance methods

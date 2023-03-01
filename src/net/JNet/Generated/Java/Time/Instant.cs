@@ -42,6 +42,10 @@ namespace Java.Time
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.Instant t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
         /// <summary>
+        /// Converter from <see cref="Java.Time.Instant"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Time.Instant t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
         /// Converter from <see cref="Java.Time.Instant"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Instant t) => t.Cast<Java.Io.Serializable>();
@@ -146,6 +150,15 @@ namespace Java.Time
         public int Nano
         {
             get { return IExecute<int>("getNano"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#query(java.time.temporal.TemporalQuery%3CR%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Query(Java.Time.Temporal.TemporalQuery arg0)
+        {
+            return IExecute("query", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#isAfter(java.time.Instant)"/>

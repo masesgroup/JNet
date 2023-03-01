@@ -103,6 +103,15 @@ namespace Javax.Lang.Model.Util
             return IExecute<bool>("isSubtype", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#directSupertypes(javax.lang.model.type.TypeMirror)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List DirectSupertypes(Javax.Lang.Model.Type.TypeMirror arg0)
+        {
+            return IExecute<Java.Util.List>("directSupertypes", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#asElement(javax.lang.model.type.TypeMirror)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
@@ -149,6 +158,24 @@ namespace Javax.Lang.Model.Util
         public Javax.Lang.Model.Type.DeclaredType GetDeclaredType(Javax.Lang.Model.Type.DeclaredType arg0, Javax.Lang.Model.Element.TypeElement arg1, params Javax.Lang.Model.Type.TypeMirror[] arg2)
         {
             if (arg2.Length == 0) return IExecute<Javax.Lang.Model.Type.DeclaredType>("getDeclaredType", arg0, arg1); else return IExecute<Javax.Lang.Model.Type.DeclaredType>("getDeclaredType", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getNoType(javax.lang.model.type.TypeKind)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeKind"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Type.NoType"/></returns>
+        public Javax.Lang.Model.Type.NoType GetNoType(Javax.Lang.Model.Type.TypeKind arg0)
+        {
+            return IExecute<Javax.Lang.Model.Type.NoType>("getNoType", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getPrimitiveType(javax.lang.model.type.TypeKind)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeKind"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Type.PrimitiveType"/></returns>
+        public Javax.Lang.Model.Type.PrimitiveType GetPrimitiveType(Javax.Lang.Model.Type.TypeKind arg0)
+        {
+            return IExecute<Javax.Lang.Model.Type.PrimitiveType>("getPrimitiveType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#unboxedType(javax.lang.model.type.TypeMirror)"/>

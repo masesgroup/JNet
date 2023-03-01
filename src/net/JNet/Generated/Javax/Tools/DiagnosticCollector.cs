@@ -33,7 +33,11 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Javax.Tools.DiagnosticCollector"/> to <see cref="Javax.Tools.DiagnosticListener"/>
+        /// </summary>
+        public static implicit operator Javax.Tools.DiagnosticListener(Javax.Tools.DiagnosticCollector t) => t.Cast<Javax.Tools.DiagnosticListener>();
+        
         #endregion
 
         #region Fields
@@ -45,7 +49,22 @@ namespace Javax.Tools
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticCollector.html#getDiagnostics()"/> 
+        /// </summary>
+        public Java.Util.List Diagnostics
+        {
+            get { return IExecute<Java.Util.List>("getDiagnostics"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticCollector.html#report(javax.tools.Diagnostic%3C? extends S%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.Diagnostic"/></param>
+        public void Report(Javax.Tools.Diagnostic arg0)
+        {
+            IExecute("report", arg0);
+        }
+        
         #endregion
 
         #region Nested classes

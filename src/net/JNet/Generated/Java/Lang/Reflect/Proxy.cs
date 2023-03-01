@@ -46,6 +46,15 @@ namespace Java.Lang.Reflect
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#isProxyClass(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public static bool IsProxyClass(Java.Lang.Class arg0)
+        {
+            return SExecute<bool>("isProxyClass", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#newProxyInstance(java.lang.ClassLoader,java.lang.Class%3C?%3E[],java.lang.reflect.InvocationHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>

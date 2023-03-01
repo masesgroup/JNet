@@ -37,10 +37,22 @@ namespace Java.Util
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#%3Cinit%3E(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public ArrayDeque(Java.Util.Collection arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.ArrayDeque"/> to <see cref="Java.Util.Deque"/>
+        /// </summary>
+        public static implicit operator Java.Util.Deque(Java.Util.ArrayDeque t) => t.Cast<Java.Util.Deque>();
         /// <summary>
         /// Converter from <see cref="Java.Util.ArrayDeque"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
@@ -218,6 +230,24 @@ namespace Java.Util
         public object RemoveLast()
         {
             return IExecute("removeLast");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#clone()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.ArrayDeque"/></returns>
+        public Java.Util.ArrayDeque Clone()
+        {
+            return IExecute<Java.Util.ArrayDeque>("clone");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#descendingIterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator DescendingIteratorMethod()
+        {
+            return IExecute<Java.Util.Iterator>("descendingIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayDeque.html#addFirst(E)"/>

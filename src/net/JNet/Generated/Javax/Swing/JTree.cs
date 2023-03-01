@@ -30,6 +30,22 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(java.util.Hashtable%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
+        public JTree(Java.Util.Hashtable arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(java.util.Vector%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        public JTree(Java.Util.Vector arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(javax.swing.tree.TreeModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeModel"/></param>
@@ -169,6 +185,13 @@ namespace Javax.Swing
         public bool DragEnabled
         {
             get { return IExecute<bool>("getDragEnabled"); } set { IExecute("setDragEnabled", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getDropMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setDropMode(javax.swing.DropMode)"/>
+        /// </summary>
+        public Javax.Swing.DropMode DropMode
+        {
+            get { return IExecute<Javax.Swing.DropMode>("getDropMode"); } set { IExecute("setDropMode", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getEditingPath()"/> 
@@ -587,6 +610,15 @@ namespace Javax.Swing
         public string ConvertValueToText(object arg0, bool arg1, bool arg2, bool arg3, int arg4, bool arg5)
         {
             return IExecute<string>("convertValueToText", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getExpandedDescendants(javax.swing.tree.TreePath)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration GetExpandedDescendants(Javax.Swing.Tree.TreePath arg0)
+        {
+            return IExecute<Java.Util.Enumeration>("getExpandedDescendants", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getClosestPathForLocation(int,int)"/>

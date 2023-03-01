@@ -29,7 +29,25 @@ namespace Javax.Swing.Event
     public partial class RowSorterEvent
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html#%3Cinit%3E(javax.swing.RowSorter%3C?%3E,javax.swing.event.RowSorterEvent$Type,int[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.RowSorter"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Event.RowSorterEvent.Type"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        public RowSorterEvent(Javax.Swing.RowSorter arg0, Javax.Swing.Event.RowSorterEvent.Type arg1, int[] arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html#%3Cinit%3E(javax.swing.RowSorter%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.RowSorter"/></param>
+        public RowSorterEvent(Javax.Swing.RowSorter arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,6 +79,15 @@ namespace Javax.Swing.Event
         {
             return IExecute<int>("convertPreviousRowIndexToModel", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.html#getType()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.Event.RowSorterEvent.Type"/></returns>
+        public Javax.Swing.Event.RowSorterEvent.Type GetType()
+        {
+            return IExecute<Javax.Swing.Event.RowSorterEvent.Type>("getType");
+        }
         
         #endregion
 
@@ -89,6 +116,15 @@ namespace Javax.Swing.Event
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Swing.Event.RowSorterEvent.Type"/></returns>
+            public static Javax.Swing.Event.RowSorterEvent.Type ValueOf(string arg0)
+            {
+                return SExecute<Javax.Swing.Event.RowSorterEvent.Type>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#values()"/>
             /// </summary>

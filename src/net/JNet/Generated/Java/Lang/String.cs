@@ -150,6 +150,10 @@ namespace Java.Lang
         /// </summary>
         public static implicit operator Java.Io.Serializable(string t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
+        /// Converter from <see cref="string"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(string t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
         /// Converter from <see cref="string"/> to <see cref="Java.Lang.CharSequence"/>
         /// </summary>
         public static implicit operator Java.Lang.CharSequence(string t) => t.Cast<Java.Lang.CharSequence>();
@@ -215,6 +219,16 @@ namespace Java.Lang
         public static string Join(Java.Lang.CharSequence arg0, params Java.Lang.CharSequence[] arg1)
         {
             if (arg1.Length == 0) return SExecute<string>("join", arg0); else return SExecute<string>("join", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#join(java.lang.CharSequence,java.lang.Iterable%3C? extends java.lang.CharSequence%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Iterable"/></param>
+        /// <returns><see langword="string"/></returns>
+        public static string Join(Java.Lang.CharSequence arg0, Java.Lang.Iterable arg1)
+        {
+            return SExecute<string>("join", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#valueOf(boolean)"/>
@@ -808,6 +822,15 @@ namespace Java.Lang
         public Java.Util.Stream.IntStream CodePoints()
         {
             return IExecute<Java.Util.Stream.IntStream>("codePoints");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#lines()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Lines()
+        {
+            return IExecute<Java.Util.Stream.Stream>("lines");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#intern()"/>

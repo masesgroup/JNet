@@ -164,6 +164,28 @@ namespace Java.Sql
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getWarnings"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLWarning>(obj); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(int,java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public object GetObject(int arg0, Java.Lang.Class arg1)
+        {
+            return IExecute("getObject", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String,java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public object GetObject(string arg0, Java.Lang.Class arg1)
+        {
+            return IExecute("getObject", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#absolute(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -524,6 +546,17 @@ namespace Java.Sql
             return IExecute<Java.Io.Reader>("getNCharacterStream", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(int,java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public object GetObject(int arg0, Java.Util.Map arg1)
+        {
+            return IExecute("getObject", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -532,6 +565,17 @@ namespace Java.Sql
         public object GetObject(int arg0)
         {
             return IExecute("getObject", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String,java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public object GetObject(string arg0, Java.Util.Map arg1)
+        {
+            return IExecute("getObject", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String)"/>

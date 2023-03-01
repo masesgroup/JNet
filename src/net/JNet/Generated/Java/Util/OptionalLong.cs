@@ -71,6 +71,16 @@ namespace Java.Util
             get { return IExecute<long>("getAsLong"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElseThrow(java.util.function.Supplier%3C? extends X%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Lang.Throwable"/>
+        public long OrElseThrow(Java.Util.Function.Supplier arg0)
+        {
+            return IExecute<long>("orElseThrow", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#isEmpty()"/>
         /// </summary>
         

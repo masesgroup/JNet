@@ -56,6 +56,26 @@ namespace Javax.Smartcardio
             return IExecute<bool>("waitForChange", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#list(javax.smartcardio.CardTerminals$State)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Smartcardio.CardTerminals.State"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Javax.Smartcardio.CardException"/>
+        public Java.Util.List List(Javax.Smartcardio.CardTerminals.State arg0)
+        {
+            return IExecute<Java.Util.List>("list", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#list()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Javax.Smartcardio.CardException"/>
+        public Java.Util.List List()
+        {
+            return IExecute<Java.Util.List>("list");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html#getTerminal(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -113,6 +133,15 @@ namespace Javax.Smartcardio
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Smartcardio.CardTerminals.State"/></returns>
+            public static Javax.Smartcardio.CardTerminals.State ValueOf(string arg0)
+            {
+                return SExecute<Javax.Smartcardio.CardTerminals.State>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#values()"/>
             /// </summary>

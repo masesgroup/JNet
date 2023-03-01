@@ -38,6 +38,14 @@ namespace Java.Io
             : base(arg0, arg1)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/SequenceInputStream.html#%3Cinit%3E(java.util.Enumeration%3C? extends java.io.InputStream%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
+        public SequenceInputStream(Java.Util.Enumeration arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 

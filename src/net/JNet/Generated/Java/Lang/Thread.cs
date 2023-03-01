@@ -134,6 +134,13 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getAllStackTraces()"/> 
+        /// </summary>
+        public static Java.Util.Map AllStackTraces
+        {
+            get { return SExecute<Java.Util.Map>("getAllStackTraces"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getDefaultUncaughtExceptionHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setDefaultUncaughtExceptionHandler(java.lang.Thread$UncaughtExceptionHandler)"/>
         /// </summary>
         public static Java.Lang.Thread.UncaughtExceptionHandler DefaultUncaughtExceptionHandler
@@ -342,6 +349,15 @@ namespace Java.Lang
             IExecute("setDaemon", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getState()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Thread.State"/></returns>
+        public Java.Lang.Thread.State GetState()
+        {
+            return IExecute<Java.Lang.Thread.State>("getState");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getUncaughtExceptionHandler()"/>
         /// </summary>
         
@@ -423,6 +439,15 @@ namespace Java.Lang
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Lang.Thread.State"/></returns>
+            public static Java.Lang.Thread.State ValueOf(string arg0)
+            {
+                return SExecute<Java.Lang.Thread.State>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#values()"/>
             /// </summary>

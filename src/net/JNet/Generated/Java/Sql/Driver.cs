@@ -85,6 +85,28 @@ namespace Java.Sql
         {
             return IExecute<bool>("jdbcCompliant");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#connect(java.lang.String,java.util.Properties)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
+        /// <returns><see cref="Java.Sql.Connection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.Connection Connect(string arg0, Java.Util.Properties arg1)
+        {
+            return IExecute<Java.Sql.Connection>("connect", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Driver.html#getPropertyInfo(java.lang.String,java.util.Properties)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
+        /// <returns><see cref="Java.Sql.DriverPropertyInfo"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.DriverPropertyInfo[] GetPropertyInfo(string arg0, Java.Util.Properties arg1)
+        {
+            return IExecuteArray<Java.Sql.DriverPropertyInfo>("getPropertyInfo", arg0, arg1);
+        }
         
         #endregion
 

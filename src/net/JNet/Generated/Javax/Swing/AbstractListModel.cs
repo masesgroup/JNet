@@ -34,6 +34,10 @@ namespace Javax.Swing
 
         #region Class/Interface conversion operators
         /// <summary>
+        /// Converter from <see cref="Javax.Swing.AbstractListModel"/> to <see cref="Javax.Swing.ListModel"/>
+        /// </summary>
+        public static implicit operator Javax.Swing.ListModel(Javax.Swing.AbstractListModel t) => t.Cast<Javax.Swing.ListModel>();
+        /// <summary>
         /// Converter from <see cref="Javax.Swing.AbstractListModel"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Swing.AbstractListModel t) => t.Cast<Java.Io.Serializable>();
@@ -55,6 +59,15 @@ namespace Javax.Swing
         public Javax.Swing.Event.ListDataListener[] ListDataListeners
         {
             get { return IExecuteArray<Javax.Swing.Event.ListDataListener>("getListDataListeners"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#getListeners(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.EventListener"/></returns>
+        public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
+        {
+            return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractListModel.html#addListDataListener(javax.swing.event.ListDataListener)"/>

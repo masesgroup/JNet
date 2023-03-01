@@ -41,7 +41,16 @@ namespace Java.Lang
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#withInitial(java.util.function.Supplier%3C? extends S%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <returns><see cref="Java.Lang.ThreadLocal"/></returns>
+        public static Java.Lang.ThreadLocal WithInitial(Java.Util.Function.Supplier arg0)
+        {
+            return SExecute<Java.Lang.ThreadLocal>("withInitial", arg0);
+        }
+        
         #endregion
 
         #region Instance methods

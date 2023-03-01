@@ -30,6 +30,17 @@ namespace Javax.Sql.Rowset.Serial
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#%3Cinit%3E(java.sql.Array,java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.Array"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public SerialArray(Java.Sql.Array arg0, Java.Util.Map arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#%3Cinit%3E(java.sql.Array)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Array"/></param>
@@ -96,6 +107,28 @@ namespace Javax.Sql.Rowset.Serial
             get { return IExecute<Java.Sql.ResultSet>("getResultSet"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getArray(java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        public object GetArray(Java.Util.Map arg0)
+        {
+            return IExecute("getArray", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getArray(long,int,java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        public object GetArray(long arg0, int arg1, Java.Util.Map arg2)
+        {
+            return IExecute("getArray", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getArray(long,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -105,6 +138,28 @@ namespace Javax.Sql.Rowset.Serial
         public object GetArray(long arg0, int arg1)
         {
             return IExecute("getArray", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet(java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        public Java.Sql.ResultSet GetResultSet(Java.Util.Map arg0)
+        {
+            return IExecute<Java.Sql.ResultSet>("getResultSet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet(long,int,java.util.Map%3Cjava.lang.String, java.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
+        public Java.Sql.ResultSet GetResultSet(long arg0, int arg1, Java.Util.Map arg2)
+        {
+            return IExecute<Java.Sql.ResultSet>("getResultSet", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialArray.html#getResultSet(long,int)"/>

@@ -30,6 +30,30 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.Class%3C?%3E,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg5"><see cref="string"/></param>
+        /// <exception cref="Java.Beans.IntrospectionException"/>
+        public IndexedPropertyDescriptor(string arg0, Java.Lang.Class arg1, string arg2, string arg3, string arg4, string arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <exception cref="Java.Beans.IntrospectionException"/>
+        public IndexedPropertyDescriptor(string arg0, Java.Lang.Class arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method,java.lang.reflect.Method,java.lang.reflect.Method)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -58,6 +82,13 @@ namespace Java.Beans
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#getIndexedPropertyType()"/> 
+        /// </summary>
+        public Java.Lang.Class IndexedPropertyType
+        {
+            get { return IExecute<Java.Lang.Class>("getIndexedPropertyType"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#getIndexedReadMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html#setIndexedReadMethod(java.lang.reflect.Method)"/>
         /// </summary>

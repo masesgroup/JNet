@@ -46,6 +46,13 @@ namespace Java.Awt.ImageNs
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html#getResolutionVariants()"/> 
+        /// </summary>
+        public Java.Util.List ResolutionVariants
+        {
+            get { return IExecute<Java.Util.List>("getResolutionVariants"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html#getResolutionVariant(double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>

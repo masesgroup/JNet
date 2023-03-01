@@ -57,6 +57,13 @@ namespace Javax.Swing
             get { return IExecute<int>("getButtonCount"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#getElements()"/> 
+        /// </summary>
+        public Java.Util.Enumeration Elements
+        {
+            get { return IExecute<Java.Util.Enumeration>("getElements"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html#getSelection()"/> 
         /// </summary>
         public Javax.Swing.ButtonModel Selection

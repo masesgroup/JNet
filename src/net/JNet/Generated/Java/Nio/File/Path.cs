@@ -34,6 +34,14 @@ namespace Java.Nio.File
 
         #region Class/Interface conversion operators
         /// <summary>
+        /// Converter from <see cref="Java.Nio.File.Path"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Nio.File.Path t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.Path"/> to <see cref="Java.Lang.Iterable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Iterable(Java.Nio.File.Path t) => t.Cast<Java.Lang.Iterable>();
+        /// <summary>
         /// Converter from <see cref="Java.Nio.File.Path"/> to <see cref="Java.Nio.File.Watchable"/>
         /// </summary>
         public static implicit operator Java.Nio.File.Watchable(Java.Nio.File.Path t) => t.Cast<Java.Nio.File.Watchable>();
@@ -298,6 +306,15 @@ namespace Java.Nio.File
         public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#iterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
         }
         
         #endregion

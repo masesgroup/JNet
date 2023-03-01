@@ -238,6 +238,15 @@ namespace Java.Awt
             IExecute("upFocusCycle");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#getDefaultFocusTraversalKeys(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetDefaultFocusTraversalKeys(int arg0)
+        {
+            return IExecute<Java.Util.Set>("getDefaultFocusTraversalKeys", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#getPropertyChangeListeners(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -370,6 +379,15 @@ namespace Java.Awt
         public void RemoveVetoableChangeListener(string arg0, Java.Beans.VetoableChangeListener arg1)
         {
             IExecute("removeVetoableChangeListener", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#setDefaultFocusTraversalKeys(int,java.util.Set%3C? extends java.awt.AWTKeyStroke%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        public void SetDefaultFocusTraversalKeys(int arg0, Java.Util.Set arg1)
+        {
+            IExecute("setDefaultFocusTraversalKeys", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#setGlobalCurrentFocusCycleRoot(java.awt.Container)"/>

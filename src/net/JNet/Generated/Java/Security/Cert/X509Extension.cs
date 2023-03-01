@@ -46,6 +46,20 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getCriticalExtensionOIDs()"/> 
+        /// </summary>
+        public Java.Util.Set CriticalExtensionOIDs
+        {
+            get { return IExecute<Java.Util.Set>("getCriticalExtensionOIDs"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getNonCriticalExtensionOIDs()"/> 
+        /// </summary>
+        public Java.Util.Set NonCriticalExtensionOIDs
+        {
+            get { return IExecute<Java.Util.Set>("getNonCriticalExtensionOIDs"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/>
         /// </summary>
         

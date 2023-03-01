@@ -17,6 +17,7 @@
 */
 
 using Java.Util;
+using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
@@ -27,6 +28,6 @@ namespace Javax.Management
         /// <summary>
         /// Return a view of this list as a <see cref="List{Attribute}"/>.
         /// </summary>
-        public List<Attribute> AsList => IExecute<List<Attribute>>("asList");
+        public List<Attribute> AsList2 => AsList().Cast< List<Attribute>>();
     }
 }

@@ -193,6 +193,15 @@ namespace Javax.Swing
             return IExecuteArray<object>("toArray");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#elements()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration Elements()
+        {
+            return IExecute<Java.Util.Enumeration>("elements");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#add(int,E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -200,6 +209,23 @@ namespace Javax.Swing
         public void Add(int arg0, object arg1)
         {
             IExecute("add", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#addAll(int,java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        public void AddAll(int arg0, Java.Util.Collection arg1)
+        {
+            IExecute("addAll", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#addAll(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public void AddAll(Java.Util.Collection arg0)
+        {
+            IExecute("addAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListModel.html#addElement(E)"/>

@@ -152,6 +152,13 @@ namespace Java.Util
             get { return IExecute<string>("getBaseBundleName"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getKeys()"/> 
+        /// </summary>
+        public Java.Util.Enumeration Keys
+        {
+            get { return IExecute<Java.Util.Enumeration>("getKeys"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getLocale()"/> 
         /// </summary>
         public Java.Util.Locale Locale
@@ -194,6 +201,15 @@ namespace Java.Util
         {
             return IExecuteArray<string>("getStringArray", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#keySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set KeySet()
+        {
+            return IExecute<Java.Util.Set>("keySet");
+        }
         
         #endregion
 
@@ -234,7 +250,25 @@ namespace Java.Util
             #endregion
 
             #region Static methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getControl(java.util.List%3Cjava.lang.String%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
+            public static Java.Util.ResourceBundle.Control GetControl(Java.Util.List arg0)
+            {
+                return SExecute<Java.Util.ResourceBundle.Control>("getControl", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getNoFallbackControl(java.util.List%3Cjava.lang.String%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
+            public static Java.Util.ResourceBundle.Control GetNoFallbackControl(Java.Util.List arg0)
+            {
+                return SExecute<Java.Util.ResourceBundle.Control>("getNoFallbackControl", arg0);
+            }
+            
             #endregion
 
             #region Instance methods
@@ -271,6 +305,25 @@ namespace Java.Util
             public string ToBundleName(string arg0, Java.Util.Locale arg1)
             {
                 return IExecute<string>("toBundleName", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getFormats(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List GetFormats(string arg0)
+            {
+                return IExecute<Java.Util.List>("getFormats", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getCandidateLocales(java.lang.String,java.util.Locale)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List GetCandidateLocales(string arg0, Java.Util.Locale arg1)
+            {
+                return IExecute<Java.Util.List>("getCandidateLocales", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#getFallbackLocale(java.lang.String,java.util.Locale)"/>

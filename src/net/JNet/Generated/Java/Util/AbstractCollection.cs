@@ -33,7 +33,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.AbstractCollection"/> to <see cref="Java.Util.Collection"/>
+        /// </summary>
+        public static implicit operator Java.Util.Collection(Java.Util.AbstractCollection t) => t.Cast<Java.Util.Collection>();
+        
         #endregion
 
         #region Fields
@@ -64,6 +68,15 @@ namespace Java.Util
             return IExecute<int>("size");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#iterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#add(E)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -73,6 +86,15 @@ namespace Java.Util
             return IExecute<bool>("add", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#addAll(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool AddAll(Java.Util.Collection arg0)
+        {
+            return IExecute<bool>("addAll", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -80,6 +102,15 @@ namespace Java.Util
         public bool Contains(object arg0)
         {
             return IExecute<bool>("contains", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#containsAll(java.util.Collection%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool ContainsAll(Java.Util.Collection arg0)
+        {
+            return IExecute<bool>("containsAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#isEmpty()"/>
@@ -98,6 +129,24 @@ namespace Java.Util
         public bool Remove(object arg0)
         {
             return IExecute<bool>("remove", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#removeAll(java.util.Collection%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool RemoveAll(Java.Util.Collection arg0)
+        {
+            return IExecute<bool>("removeAll", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#retainAll(java.util.Collection%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool RetainAll(Java.Util.Collection arg0)
+        {
+            return IExecute<bool>("retainAll", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#toArray()"/>

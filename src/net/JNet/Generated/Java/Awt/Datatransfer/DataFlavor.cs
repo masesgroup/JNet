@@ -30,6 +30,15 @@ namespace Java.Awt.Datatransfer
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#%3Cinit%3E(java.lang.Class%3C?%3E,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        public DataFlavor(Java.Lang.Class arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -135,6 +144,13 @@ namespace Java.Awt.Datatransfer
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getDefaultRepresentationClass()"/> 
+        /// </summary>
+        public Java.Lang.Class DefaultRepresentationClass
+        {
+            get { return IExecute<Java.Lang.Class>("getDefaultRepresentationClass"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getDefaultRepresentationClassAsString()"/> 
         /// </summary>
         public string DefaultRepresentationClassAsString
@@ -161,6 +177,13 @@ namespace Java.Awt.Datatransfer
         public string PrimaryType
         {
             get { return IExecute<string>("getPrimaryType"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getRepresentationClass()"/> 
+        /// </summary>
+        public Java.Lang.Class RepresentationClass
+        {
+            get { return IExecute<Java.Lang.Class>("getRepresentationClass"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#getSubType()"/> 

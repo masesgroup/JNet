@@ -78,6 +78,15 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.PopupMenu>("getMenu"); } set { IExecute("setMenu", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isSupported(java.awt.Taskbar$Feature)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Taskbar.Feature"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsSupported(Java.Awt.Taskbar.Feature arg0)
+        {
+            return IExecute<bool>("isSupported", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#requestUserAttention(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -118,6 +127,15 @@ namespace Java.Awt
         public void SetWindowIconBadge(Java.Awt.Window arg0, Java.Awt.Image arg1)
         {
             IExecute("setWindowIconBadge", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowProgressState(java.awt.Window,java.awt.Taskbar$State)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Taskbar.State"/></param>
+        public void SetWindowProgressState(Java.Awt.Window arg0, Java.Awt.Taskbar.State arg1)
+        {
+            IExecute("setWindowProgressState", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowProgressValue(java.awt.Window,int)"/>
@@ -189,6 +207,15 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Awt.Taskbar.Feature"/></returns>
+            public static Java.Awt.Taskbar.Feature ValueOf(string arg0)
+            {
+                return SExecute<Java.Awt.Taskbar.Feature>("valueOf", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#values()"/>
             /// </summary>
             
@@ -244,6 +271,15 @@ namespace Java.Awt
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Awt.Taskbar.State"/></returns>
+            public static Java.Awt.Taskbar.State ValueOf(string arg0)
+            {
+                return SExecute<Java.Awt.Taskbar.State>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#values()"/>
             /// </summary>

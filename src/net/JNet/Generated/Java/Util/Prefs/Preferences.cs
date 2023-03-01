@@ -54,6 +54,15 @@ namespace Java.Util.Prefs
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#systemNodeForPackage(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
+        public static Java.Util.Prefs.Preferences SystemNodeForPackage(Java.Lang.Class arg0)
+        {
+            return SExecute<Java.Util.Prefs.Preferences>("systemNodeForPackage", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#systemRoot()"/>
         /// </summary>
         
@@ -61,6 +70,15 @@ namespace Java.Util.Prefs
         public static Java.Util.Prefs.Preferences SystemRoot()
         {
             return SExecute<Java.Util.Prefs.Preferences>("systemRoot");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#userNodeForPackage(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
+        public static Java.Util.Prefs.Preferences UserNodeForPackage(Java.Lang.Class arg0)
+        {
+            return SExecute<Java.Util.Prefs.Preferences>("userNodeForPackage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#userRoot()"/>

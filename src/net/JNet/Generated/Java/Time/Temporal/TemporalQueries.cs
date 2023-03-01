@@ -41,7 +41,70 @@ namespace Java.Time.Temporal
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#chronology()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
+        public static Java.Time.Temporal.TemporalQuery Chronology()
+        {
+            return SExecute<Java.Time.Temporal.TemporalQuery>("chronology");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#localDate()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
+        public static Java.Time.Temporal.TemporalQuery LocalDate()
+        {
+            return SExecute<Java.Time.Temporal.TemporalQuery>("localDate");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#localTime()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
+        public static Java.Time.Temporal.TemporalQuery LocalTime()
+        {
+            return SExecute<Java.Time.Temporal.TemporalQuery>("localTime");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#precision()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
+        public static Java.Time.Temporal.TemporalQuery Precision()
+        {
+            return SExecute<Java.Time.Temporal.TemporalQuery>("precision");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#zone()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
+        public static Java.Time.Temporal.TemporalQuery Zone()
+        {
+            return SExecute<Java.Time.Temporal.TemporalQuery>("zone");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#zoneId()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
+        public static Java.Time.Temporal.TemporalQuery ZoneId()
+        {
+            return SExecute<Java.Time.Temporal.TemporalQuery>("zoneId");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html#offset()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
+        public static Java.Time.Temporal.TemporalQuery Offset()
+        {
+            return SExecute<Java.Time.Temporal.TemporalQuery>("offset");
+        }
+        
         #endregion
 
         #region Instance methods

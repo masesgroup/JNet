@@ -22,7 +22,7 @@ using System;
 namespace Java.Util.Function
 {
     /// <summary>
-    /// Listener for Java Predicate <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html"/>. Extends <see cref="IJVMBridgeBase"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html"/>. Extends <see cref="IJVMBridgeBase"/>
     /// </summary>
     /// <typeparam name="TObject">The data type associated to the event</typeparam>
     public interface IPredicate<TObject> : IJVMBridgeBase
@@ -36,16 +36,22 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java Predicate <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html"/>. Extends <see cref="JVMBridgeListener"/>
     /// </summary>
-    /// <typeparam name="TObject">The data type associated to the event</typeparam>
-    public class Predicate<TObject> : JVMBridgeListener, IPredicate<TObject>
+    public abstract class Predicate : JVMBridgeListener
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
         public override string ClassName => "org.mases.jnet.util.function.JNetPredicate";
+    }
 
+    /// <summary>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html"/>. Extends <see cref="Predicate"/>
+    /// </summary>
+    /// <typeparam name="TObject">The data type associated to the event</typeparam>
+    public class Predicate<TObject> : Predicate, IPredicate<TObject>
+    {
         Func<TObject, bool> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{TObject, Boolean}"/> to be executed

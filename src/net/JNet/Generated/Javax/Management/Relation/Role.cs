@@ -29,7 +29,17 @@ namespace Javax.Management.Relation
     public partial class Role
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html#%3Cinit%3E(java.lang.String,java.util.List%3Cjavax.management.ObjectName%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        public Role(string arg0, Java.Util.List arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +55,17 @@ namespace Javax.Management.Relation
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html#roleValueToString(java.util.List%3Cjavax.management.ObjectName%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <returns><see langword="string"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        public static string RoleValueToString(Java.Util.List arg0)
+        {
+            return SExecute<string>("roleValueToString", arg0);
+        }
+        
         #endregion
 
         #region Instance methods
@@ -55,6 +75,13 @@ namespace Javax.Management.Relation
         public string RoleName
         {
             get { return IExecute<string>("getRoleName"); } set { IExecute("setRoleName", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html#getRoleValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html#setRoleValue(java.util.List%3Cjavax.management.ObjectName%3E)"/>
+        /// </summary>
+        public Java.Util.List RoleValue
+        {
+            get { return IExecute<Java.Util.List>("getRoleValue"); } set { IExecute("setRoleValue", value); }
         }
         
         #endregion

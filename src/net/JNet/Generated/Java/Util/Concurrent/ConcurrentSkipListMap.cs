@@ -29,10 +29,38 @@ namespace Java.Util.Concurrent
     public partial class ConcurrentSkipListMap
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#%3Cinit%3E(java.util.Comparator%3C? super K%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        public ConcurrentSkipListMap(Java.Util.Comparator arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#%3Cinit%3E(java.util.Map%3C? extends K, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public ConcurrentSkipListMap(Java.Util.Map arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#%3Cinit%3E(java.util.SortedMap%3CK, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
+        public ConcurrentSkipListMap(Java.Util.SortedMap arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.ConcurrentSkipListMap"/> to <see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.ConcurrentNavigableMap(Java.Util.Concurrent.ConcurrentSkipListMap t) => t.Cast<Java.Util.Concurrent.ConcurrentNavigableMap>();
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentSkipListMap"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
@@ -53,6 +81,183 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#comparator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator Comparator()
+        {
+            return IExecute<Java.Util.Comparator>("comparator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingMap()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
+        public Java.Util.Concurrent.ConcurrentNavigableMap DescendingMap()
+        {
+            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("descendingMap");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#headMap(K,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
+        public Java.Util.Concurrent.ConcurrentNavigableMap HeadMap(object arg0, bool arg1)
+        {
+            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("headMap", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#headMap(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
+        public Java.Util.Concurrent.ConcurrentNavigableMap HeadMap(object arg0)
+        {
+            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("headMap", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#subMap(K,boolean,K,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
+        public Java.Util.Concurrent.ConcurrentNavigableMap SubMapMethod(object arg0, bool arg1, object arg2, bool arg3)
+        {
+            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("subMap", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#subMap(K,K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
+        public Java.Util.Concurrent.ConcurrentNavigableMap SubMapMethod(object arg0, object arg1)
+        {
+            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("subMap", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(K,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
+        public Java.Util.Concurrent.ConcurrentNavigableMap TailMap(object arg0, bool arg1)
+        {
+            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("tailMap", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#tailMap(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/></returns>
+        public Java.Util.Concurrent.ConcurrentNavigableMap TailMap(object arg0)
+        {
+            return IExecute<Java.Util.Concurrent.ConcurrentNavigableMap>("tailMap", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#clone()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.ConcurrentSkipListMap"/></returns>
+        public Java.Util.Concurrent.ConcurrentSkipListMap Clone()
+        {
+            return IExecute<Java.Util.Concurrent.ConcurrentSkipListMap>("clone");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#ceilingEntry(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry CeilingEntry(object arg0)
+        {
+            return IExecute<Java.Util.Map.Entry>("ceilingEntry", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#firstEntry()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry FirstEntry()
+        {
+            return IExecute<Java.Util.Map.Entry>("firstEntry");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#floorEntry(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry FloorEntry(object arg0)
+        {
+            return IExecute<Java.Util.Map.Entry>("floorEntry", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#higherEntry(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry HigherEntry(object arg0)
+        {
+            return IExecute<Java.Util.Map.Entry>("higherEntry", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lastEntry()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry LastEntry()
+        {
+            return IExecute<Java.Util.Map.Entry>("lastEntry");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#lowerEntry(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry LowerEntry(object arg0)
+        {
+            return IExecute<Java.Util.Map.Entry>("lowerEntry", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollFirstEntry()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry PollFirstEntry()
+        {
+            return IExecute<Java.Util.Map.Entry>("pollFirstEntry");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#pollLastEntry()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry PollLastEntry()
+        {
+            return IExecute<Java.Util.Map.Entry>("pollLastEntry");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#descendingKeySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet DescendingKeySet()
+        {
+            return IExecute<Java.Util.NavigableSet>("descendingKeySet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#navigableKeySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet NavigableKeySet()
+        {
+            return IExecute<Java.Util.NavigableSet>("navigableKeySet");
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListMap.html#ceilingKey(K)"/>
         /// </summary>

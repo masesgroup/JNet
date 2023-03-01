@@ -33,7 +33,11 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.SwingWorker"/> to <see cref="Java.Util.Concurrent.RunnableFuture"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.RunnableFuture(Javax.Swing.SwingWorker t) => t.Cast<Java.Util.Concurrent.RunnableFuture>();
+        
         #endregion
 
         #region Fields
@@ -58,6 +62,13 @@ namespace Javax.Swing
         public Java.Beans.PropertyChangeSupport PropertyChangeSupport
         {
             get { return IExecute<Java.Beans.PropertyChangeSupport>("getPropertyChangeSupport"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#getState()"/> 
+        /// </summary>
+        public Javax.Swing.SwingWorker.StateValue State
+        {
+            get { return IExecute<Javax.Swing.SwingWorker.StateValue>("getState"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#cancel(boolean)"/>
@@ -96,6 +107,19 @@ namespace Javax.Swing
         public object Get()
         {
             return IExecute("get");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
+        /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
+        public object Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            return IExecute("get", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -169,6 +193,15 @@ namespace Javax.Swing
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Swing.SwingWorker.StateValue"/></returns>
+            public static Javax.Swing.SwingWorker.StateValue ValueOf(string arg0)
+            {
+                return SExecute<Javax.Swing.SwingWorker.StateValue>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#values()"/>
             /// </summary>

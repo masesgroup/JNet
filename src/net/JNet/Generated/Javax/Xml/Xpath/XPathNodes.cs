@@ -33,7 +33,11 @@ namespace Javax.Xml.Xpath
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Xpath.XPathNodes"/> to <see cref="Java.Lang.Iterable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Iterable(Javax.Xml.Xpath.XPathNodes t) => t.Cast<Java.Lang.Iterable>();
+        
         #endregion
 
         #region Fields
@@ -53,6 +57,15 @@ namespace Javax.Xml.Xpath
         public int Size()
         {
             return IExecute<int>("size");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#iterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#get(int)"/>
