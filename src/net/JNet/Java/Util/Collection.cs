@@ -64,10 +64,6 @@ namespace Java.Util
         /// </summary>
         public bool IsEmpty => IExecute<bool>("isEmpty");
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#iterator()"/>
-        /// </summary>
-        public Iterator<E> Iterator() => IExecute<Iterator<E>>("iterator");
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#remove(java.lang.Object)"/>
         /// </summary>
         public bool Remove​(object o) => IExecute<bool>("remove​​", o);
