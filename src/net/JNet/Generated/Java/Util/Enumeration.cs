@@ -63,6 +63,15 @@ namespace Java.Util
         {
             return IExecute("nextElement");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator AsIterator()
+        {
+            return IExecute<Java.Util.Iterator>("asIterator");
+        }
         
         #endregion
 

@@ -37,10 +37,22 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingQueue.html#%3Cinit%3E(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public LinkedBlockingQueue(Java.Util.Collection arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.LinkedBlockingQueue"/> to <see cref="Java.Util.Concurrent.BlockingQueue"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.BlockingQueue(Java.Util.Concurrent.LinkedBlockingQueue t) => t.Cast<Java.Util.Concurrent.BlockingQueue>();
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.LinkedBlockingQueue"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
@@ -58,6 +70,29 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingQueue.html#offer(E,long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public bool Offer(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
+        {
+            return IExecute<bool>("offer", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public object Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            return IExecute("poll", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingQueue.html#take()"/>
         /// </summary>
         
@@ -66,6 +101,25 @@ namespace Java.Util.Concurrent
         public object Take()
         {
             return IExecute("take");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingQueue.html#drainTo(java.util.Collection%3C? super E%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int DrainTo(Java.Util.Collection arg0, int arg1)
+        {
+            return IExecute<int>("drainTo", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingQueue.html#drainTo(java.util.Collection%3C? super E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int DrainTo(Java.Util.Collection arg0)
+        {
+            return IExecute<int>("drainTo", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/LinkedBlockingQueue.html#remainingCapacity()"/>

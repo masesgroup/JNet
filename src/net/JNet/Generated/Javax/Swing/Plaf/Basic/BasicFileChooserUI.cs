@@ -82,6 +82,13 @@ namespace Javax.Swing.Plaf.Basic
             get { return IExecute<string>("getFileName"); } set { IExecute("setFileName", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getModel()"/> 
+        /// </summary>
+        public Javax.Swing.Plaf.Basic.BasicDirectoryModel Model
+        {
+            get { return IExecute<Javax.Swing.Plaf.Basic.BasicDirectoryModel>("getModel"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicFileChooserUI.html#getApproveButtonMnemonic(javax.swing.JFileChooser)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JFileChooser"/></param>

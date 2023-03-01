@@ -33,7 +33,11 @@ namespace Java.Util.Function
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Function.BinaryOperator"/> to <see cref="Java.Util.Function.BiFunction"/>
+        /// </summary>
+        public static implicit operator Java.Util.Function.BiFunction(Java.Util.Function.BinaryOperator t) => t.Cast<Java.Util.Function.BiFunction>();
+        
         #endregion
 
         #region Fields
@@ -41,7 +45,25 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#maxBy(java.util.Comparator%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
+        public static Java.Util.Function.BinaryOperator MaxBy(Java.Util.Comparator arg0)
+        {
+            return SExecute<Java.Util.Function.BinaryOperator>("maxBy", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#minBy(java.util.Comparator%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
+        public static Java.Util.Function.BinaryOperator MinBy(Java.Util.Comparator arg0)
+        {
+            return SExecute<Java.Util.Function.BinaryOperator>("minBy", arg0);
+        }
+        
         #endregion
 
         #region Instance methods

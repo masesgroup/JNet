@@ -158,6 +158,25 @@ namespace Javax.Swing
             return IExecute<Javax.Swing.GroupLayout.ParallelGroup>("createParallelGroup");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#createParallelGroup(javax.swing.GroupLayout$Alignment,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.GroupLayout.Alignment"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Javax.Swing.GroupLayout.ParallelGroup"/></returns>
+        public Javax.Swing.GroupLayout.ParallelGroup CreateParallelGroup(Javax.Swing.GroupLayout.Alignment arg0, bool arg1)
+        {
+            return IExecute<Javax.Swing.GroupLayout.ParallelGroup>("createParallelGroup", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#createParallelGroup(javax.swing.GroupLayout$Alignment)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.GroupLayout.Alignment"/></param>
+        /// <returns><see cref="Javax.Swing.GroupLayout.ParallelGroup"/></returns>
+        public Javax.Swing.GroupLayout.ParallelGroup CreateParallelGroup(Javax.Swing.GroupLayout.Alignment arg0)
+        {
+            return IExecute<Javax.Swing.GroupLayout.ParallelGroup>("createParallelGroup", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#createSequentialGroup()"/>
         /// </summary>
         
@@ -296,6 +315,15 @@ namespace Javax.Swing
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Swing.GroupLayout.Alignment"/></returns>
+            public static Javax.Swing.GroupLayout.Alignment ValueOf(string arg0)
+            {
+                return SExecute<Javax.Swing.GroupLayout.Alignment>("valueOf", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#values()"/>
             /// </summary>
             
@@ -412,7 +440,40 @@ namespace Javax.Swing
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.ParallelGroup.html#addComponent(java.awt.Component,javax.swing.GroupLayout$Alignment,int,int,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.GroupLayout.Alignment"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg4"><see cref="int"/></param>
+            /// <returns><see cref="Javax.Swing.GroupLayout.ParallelGroup"/></returns>
+            public Javax.Swing.GroupLayout.ParallelGroup AddComponent(Java.Awt.Component arg0, Javax.Swing.GroupLayout.Alignment arg1, int arg2, int arg3, int arg4)
+            {
+                return IExecute<Javax.Swing.GroupLayout.ParallelGroup>("addComponent", arg0, arg1, arg2, arg3, arg4);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.ParallelGroup.html#addComponent(java.awt.Component,javax.swing.GroupLayout$Alignment)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.GroupLayout.Alignment"/></param>
+            /// <returns><see cref="Javax.Swing.GroupLayout.ParallelGroup"/></returns>
+            public Javax.Swing.GroupLayout.ParallelGroup AddComponent(Java.Awt.Component arg0, Javax.Swing.GroupLayout.Alignment arg1)
+            {
+                return IExecute<Javax.Swing.GroupLayout.ParallelGroup>("addComponent", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.ParallelGroup.html#addGroup(javax.swing.GroupLayout$Alignment,javax.swing.GroupLayout$Group)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.GroupLayout.Alignment"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.GroupLayout.Group"/></param>
+            /// <returns><see cref="Javax.Swing.GroupLayout.ParallelGroup"/></returns>
+            public Javax.Swing.GroupLayout.ParallelGroup AddGroup(Javax.Swing.GroupLayout.Alignment arg0, Javax.Swing.GroupLayout.Group arg1)
+            {
+                return IExecute<Javax.Swing.GroupLayout.ParallelGroup>("addGroup", arg0, arg1);
+            }
+            
             #endregion
 
             // TODO: complete the class
@@ -490,6 +551,50 @@ namespace Javax.Swing
             public Javax.Swing.GroupLayout.SequentialGroup AddGroup(bool arg0, Javax.Swing.GroupLayout.Group arg1)
             {
                 return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addGroup", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addPreferredGap(javax.swing.JComponent,javax.swing.JComponent,javax.swing.LayoutStyle$ComponentPlacement,int,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
+            /// <param name="arg2"><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg4"><see cref="int"/></param>
+            /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
+            public Javax.Swing.GroupLayout.SequentialGroup AddPreferredGap(Javax.Swing.JComponent arg0, Javax.Swing.JComponent arg1, Javax.Swing.LayoutStyle.ComponentPlacement arg2, int arg3, int arg4)
+            {
+                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addPreferredGap", arg0, arg1, arg2, arg3, arg4);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addPreferredGap(javax.swing.JComponent,javax.swing.JComponent,javax.swing.LayoutStyle$ComponentPlacement)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
+            /// <param name="arg2"><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></param>
+            /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
+            public Javax.Swing.GroupLayout.SequentialGroup AddPreferredGap(Javax.Swing.JComponent arg0, Javax.Swing.JComponent arg1, Javax.Swing.LayoutStyle.ComponentPlacement arg2)
+            {
+                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addPreferredGap", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addPreferredGap(javax.swing.LayoutStyle$ComponentPlacement,int,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
+            public Javax.Swing.GroupLayout.SequentialGroup AddPreferredGap(Javax.Swing.LayoutStyle.ComponentPlacement arg0, int arg1, int arg2)
+            {
+                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addPreferredGap", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addPreferredGap(javax.swing.LayoutStyle$ComponentPlacement)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></param>
+            /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
+            public Javax.Swing.GroupLayout.SequentialGroup AddPreferredGap(Javax.Swing.LayoutStyle.ComponentPlacement arg0)
+            {
+                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addPreferredGap", arg0);
             }
             
             #endregion

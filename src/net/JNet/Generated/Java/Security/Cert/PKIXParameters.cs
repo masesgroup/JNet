@@ -39,6 +39,15 @@ namespace Java.Security.Cert
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#%3Cinit%3E(java.util.Set%3Cjava.security.cert.TrustAnchor%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        public PKIXParameters(Java.Util.Set arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
@@ -60,11 +69,32 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getCertPathCheckers()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setCertPathCheckers(java.util.List%3Cjava.security.cert.PKIXCertPathChecker%3E)"/>
+        /// </summary>
+        public Java.Util.List CertPathCheckers
+        {
+            get { return IExecute<Java.Util.List>("getCertPathCheckers"); } set { IExecute("setCertPathCheckers", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getCertStores()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setCertStores(java.util.List%3Cjava.security.cert.CertStore%3E)"/>
+        /// </summary>
+        public Java.Util.List CertStores
+        {
+            get { return IExecute<Java.Util.List>("getCertStores"); } set { IExecute("setCertStores", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getDate()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setDate(java.util.Date)"/>
         /// </summary>
         public Java.Util.Date Date
         {
             get { return IExecute<Java.Util.Date>("getDate"); } set { IExecute("setDate", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getInitialPolicies()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setInitialPolicies(java.util.Set%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        public Java.Util.Set InitialPolicies
+        {
+            get { return IExecute<Java.Util.Set>("getInitialPolicies"); } set { IExecute("setInitialPolicies", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getPolicyQualifiersRejected()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setPolicyQualifiersRejected(boolean)"/>
@@ -86,6 +116,13 @@ namespace Java.Security.Cert
         public Java.Security.Cert.CertSelector TargetCertConstraints
         {
             get { return IExecute<Java.Security.Cert.CertSelector>("getTargetCertConstraints"); } set { IExecute("setTargetCertConstraints", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getTrustAnchors()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setTrustAnchors(java.util.Set%3Cjava.security.cert.TrustAnchor%3E)"/>
+        /// </summary>
+        public Java.Util.Set TrustAnchors
+        {
+            get { return IExecute<Java.Util.Set>("getTrustAnchors"); } set { IExecute("setTrustAnchors", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isAnyPolicyInhibited()"/>

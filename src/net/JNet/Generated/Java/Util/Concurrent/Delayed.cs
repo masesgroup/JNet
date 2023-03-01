@@ -33,7 +33,11 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.Delayed"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Util.Concurrent.Delayed t) => t.Cast<Java.Lang.Comparable>();
+        
         #endregion
 
         #region Fields
@@ -45,7 +49,16 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Delayed.html#getDelay(java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="long"/></returns>
+        public long GetDelay(Java.Util.Concurrent.TimeUnit arg0)
+        {
+            return IExecute<long>("getDelay", arg0);
+        }
+        
         #endregion
 
         #region Nested classes

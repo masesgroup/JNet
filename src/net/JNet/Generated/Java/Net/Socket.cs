@@ -238,6 +238,27 @@ namespace Java.Net
             get { return IExecute<int>("getTrafficClass"); } set { IExecute("setTrafficClass", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setOption(java.net.SocketOption%3CT%3E,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Net.Socket SetOption(Java.Net.SocketOption arg0, object arg1)
+        {
+            return IExecute<Java.Net.Socket>("setOption", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getOption(java.net.SocketOption%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public object GetOption(Java.Net.SocketOption arg0)
+        {
+            return IExecute("getOption", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isBound()"/>
         /// </summary>
         
@@ -281,6 +302,15 @@ namespace Java.Net
         public bool IsOutputShutdown()
         {
             return IExecute<bool>("isOutputShutdown");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#supportedOptions()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set SupportedOptions()
+        {
+            return IExecute<Java.Util.Set>("supportedOptions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#close()"/>

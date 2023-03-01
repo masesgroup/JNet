@@ -72,7 +72,25 @@ namespace Java.Lang.ModuleNs
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#find(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional Find(string arg0)
+        {
+            return IExecute<Java.Util.Optional>("find", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set FindAll()
+        {
+            return IExecute<Java.Util.Set>("findAll");
+        }
+        
         #endregion
 
         #region Nested classes

@@ -29,6 +29,7 @@ _jnr_ accepts the following command-line switch:
 * **ClassesToBeListener**: A CSV list of class names to be treated as Listener
 * **NamespacesInConflict**: A CSV list of namespaces in conflict with class name: to this one will be added an "Ns" at the end
 * **ReflectDeprecated**: The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated
+* **DisableGenerics**: The option forces the tool to disable any generic type
 * **DryRun**: Execute everything, but do not write anything to disk
 * **TraceLevel**: The level of traces to be reported: 0 - Critical ... 5 - Verbose
 * **TraceTo**: The file name where traces will be write, default write to console

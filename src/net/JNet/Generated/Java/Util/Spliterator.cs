@@ -78,11 +78,27 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getComparator()"/> 
+        /// </summary>
+        public Java.Util.Comparator Comparator
+        {
+            get { return IExecute<Java.Util.Comparator>("getComparator"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getExactSizeIfKnown()"/> 
         /// </summary>
         public long ExactSizeIfKnown
         {
             get { return IExecute<long>("getExactSizeIfKnown"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#tryAdvance(java.util.function.Consumer%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool TryAdvance(Java.Util.Function.Consumer arg0)
+        {
+            return IExecute<bool>("tryAdvance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#characteristics()"/>
@@ -92,6 +108,15 @@ namespace Java.Util
         public int Characteristics()
         {
             return IExecute<int>("characteristics");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#trySplit()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        public Java.Util.Spliterator TrySplit()
+        {
+            return IExecute<Java.Util.Spliterator>("trySplit");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#estimateSize()"/>
@@ -110,6 +135,14 @@ namespace Java.Util
         public bool HasCharacteristics(int arg0)
         {
             return IExecute<bool>("hasCharacteristics", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#forEachRemaining(java.util.function.Consumer%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        public void ForEachRemaining(Java.Util.Function.Consumer arg0)
+        {
+            IExecute("forEachRemaining", arg0);
         }
         
         #endregion
@@ -154,10 +187,36 @@ namespace Java.Util
                 return IExecute<bool>("tryAdvance", arg0);
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.util.function.Consumer%3C? super java.lang.Double%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            /// <returns><see langword="bool"/></returns>
+            public bool TryAdvance(Java.Util.Function.Consumer arg0)
+            {
+                return IExecute<bool>("tryAdvance", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#trySplit()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Util.Spliterator.OfPrimitive"/></returns>
+            public Java.Util.Spliterator.OfPrimitive TrySplit()
+            {
+                return IExecute<Java.Util.Spliterator.OfPrimitive>("trySplit");
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
+            {
+                IExecute("forEachRemaining", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.util.function.Consumer%3C? super java.lang.Double%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            public void ForEachRemaining(Java.Util.Function.Consumer arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
@@ -215,10 +274,36 @@ namespace Java.Util
                 return IExecute<bool>("tryAdvance", arg0);
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.util.function.Consumer%3C? super java.lang.Integer%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            /// <returns><see langword="bool"/></returns>
+            public bool TryAdvance(Java.Util.Function.Consumer arg0)
+            {
+                return IExecute<bool>("tryAdvance", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#trySplit()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Util.Spliterator.OfPrimitive"/></returns>
+            public Java.Util.Spliterator.OfPrimitive TrySplit()
+            {
+                return IExecute<Java.Util.Spliterator.OfPrimitive>("trySplit");
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
+            {
+                IExecute("forEachRemaining", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.util.function.Consumer%3C? super java.lang.Integer%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            public void ForEachRemaining(Java.Util.Function.Consumer arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
@@ -276,10 +361,36 @@ namespace Java.Util
                 return IExecute<bool>("tryAdvance", arg0);
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.util.function.Consumer%3C? super java.lang.Long%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            /// <returns><see langword="bool"/></returns>
+            public bool TryAdvance(Java.Util.Function.Consumer arg0)
+            {
+                return IExecute<bool>("tryAdvance", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#trySplit()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Util.Spliterator.OfPrimitive"/></returns>
+            public Java.Util.Spliterator.OfPrimitive TrySplit()
+            {
+                return IExecute<Java.Util.Spliterator.OfPrimitive>("trySplit");
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
+            {
+                IExecute("forEachRemaining", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.util.function.Consumer%3C? super java.lang.Long%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+            public void ForEachRemaining(Java.Util.Function.Consumer arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
@@ -306,7 +417,11 @@ namespace Java.Util
             #endregion
 
             #region Class/Interface conversion operators
-
+            /// <summary>
+            /// Converter from <see cref="Java.Util.Spliterator.OfPrimitive"/> to <see cref="Java.Util.Spliterator"/>
+            /// </summary>
+            public static implicit operator Java.Util.Spliterator(Java.Util.Spliterator.OfPrimitive t) => t.Cast<Java.Util.Spliterator>();
+            
             #endregion
 
             #region Fields
@@ -326,6 +441,15 @@ namespace Java.Util
             public bool TryAdvance(object arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#trySplit()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Util.Spliterator"/></returns>
+            public Java.Util.Spliterator TrySplit()
+            {
+                return IExecute<Java.Util.Spliterator>("trySplit");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#forEachRemaining(T_CONS)"/>

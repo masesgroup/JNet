@@ -50,6 +50,13 @@ namespace Java.Lang.Management
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html#getLoggerNames()"/> 
+        /// </summary>
+        public Java.Util.List LoggerNames
+        {
+            get { return IExecute<Java.Util.List>("getLoggerNames"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformLoggingMXBean.html#getLoggerLevel(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>

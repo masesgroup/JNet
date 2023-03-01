@@ -57,7 +57,14 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html#getContent()"/> 
+        /// </summary>
+        public Java.Util.List Content
+        {
+            get { return IExecute<Java.Util.List>("getContent"); }
+        }
+        
         #endregion
 
         #region Nested classes

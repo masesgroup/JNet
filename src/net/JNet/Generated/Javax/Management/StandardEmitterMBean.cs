@@ -29,7 +29,28 @@ namespace Javax.Management
     public partial class StandardEmitterMBean
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#%3Cinit%3E(T,java.lang.Class%3CT%3E,boolean,javax.management.NotificationEmitter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="Javax.Management.NotificationEmitter"/></param>
+        public StandardEmitterMBean(object arg0, Java.Lang.Class arg1, bool arg2, Javax.Management.NotificationEmitter arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardEmitterMBean.html#%3Cinit%3E(T,java.lang.Class%3CT%3E,javax.management.NotificationEmitter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.NotificationEmitter"/></param>
+        public StandardEmitterMBean(object arg0, Java.Lang.Class arg1, Javax.Management.NotificationEmitter arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators

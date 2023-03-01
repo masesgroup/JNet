@@ -56,10 +56,22 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#%3Cinit%3E(java.util.Map%3C? extends K, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public ConcurrentHashMap(Java.Util.Map arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.ConcurrentHashMap"/> to <see cref="Java.Util.Concurrent.ConcurrentMap"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.ConcurrentMap(Java.Util.Concurrent.ConcurrentHashMap t) => t.Cast<Java.Util.Concurrent.ConcurrentMap>();
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentHashMap"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
@@ -72,10 +84,152 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#newKeySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
+        public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView NewKeySet()
+        {
+            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>("newKeySet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#newKeySet(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
+        public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView NewKeySet(int arg0)
+        {
+            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>("newKeySet", arg0);
+        }
+        
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduce(long,java.util.function.BiFunction%3C? super K, ? super V, ? extends U%3E,java.util.function.BiFunction%3C? super U, ? super U, ? extends U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Reduce(long arg0, Java.Util.Function.BiFunction arg1, Java.Util.Function.BiFunction arg2)
+        {
+            return IExecute("reduce", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntries(long,java.util.function.Function%3Cjava.util.Map$Entry%3CK, V%3E, ? extends U%3E,java.util.function.BiFunction%3C? super U, ? super U, ? extends U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object ReduceEntries(long arg0, Java.Util.Function.Function arg1, Java.Util.Function.BiFunction arg2)
+        {
+            return IExecute("reduceEntries", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceKeys(long,java.util.function.Function%3C? super K, ? extends U%3E,java.util.function.BiFunction%3C? super U, ? super U, ? extends U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object ReduceKeys(long arg0, Java.Util.Function.Function arg1, Java.Util.Function.BiFunction arg2)
+        {
+            return IExecute("reduceKeys", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceValues(long,java.util.function.Function%3C? super V, ? extends U%3E,java.util.function.BiFunction%3C? super U, ? super U, ? extends U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object ReduceValues(long arg0, Java.Util.Function.Function arg1, Java.Util.Function.BiFunction arg2)
+        {
+            return IExecute("reduceValues", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#search(long,java.util.function.BiFunction%3C? super K, ? super V, ? extends U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Search(long arg0, Java.Util.Function.BiFunction arg1)
+        {
+            return IExecute("search", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#searchEntries(long,java.util.function.Function%3Cjava.util.Map$Entry%3CK, V%3E, ? extends U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object SearchEntries(long arg0, Java.Util.Function.Function arg1)
+        {
+            return IExecute("searchEntries", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#searchKeys(long,java.util.function.Function%3C? super K, ? extends U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object SearchKeys(long arg0, Java.Util.Function.Function arg1)
+        {
+            return IExecute("searchKeys", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#searchValues(long,java.util.function.Function%3C? super V, ? extends U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object SearchValues(long arg0, Java.Util.Function.Function arg1)
+        {
+            return IExecute("searchValues", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#forEach(long,java.util.function.BiFunction%3C? super K, ? super V, ? extends U%3E,java.util.function.Consumer%3C? super U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
+        public void ForEach(long arg0, Java.Util.Function.BiFunction arg1, Java.Util.Function.Consumer arg2)
+        {
+            IExecute("forEach", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#forEachEntry(long,java.util.function.Function%3Cjava.util.Map$Entry%3CK, V%3E, ? extends U%3E,java.util.function.Consumer%3C? super U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
+        public void ForEachEntry(long arg0, Java.Util.Function.Function arg1, Java.Util.Function.Consumer arg2)
+        {
+            IExecute("forEachEntry", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#forEachKey(long,java.util.function.Function%3C? super K, ? extends U%3E,java.util.function.Consumer%3C? super U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
+        public void ForEachKey(long arg0, Java.Util.Function.Function arg1, Java.Util.Function.Consumer arg2)
+        {
+            IExecute("forEachKey", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#forEachValue(long,java.util.function.Function%3C? super V, ? extends U%3E,java.util.function.Consumer%3C? super U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
+        public void ForEachValue(long arg0, Java.Util.Function.Function arg1, Java.Util.Function.Consumer arg2)
+        {
+            IExecute("forEachValue", arg0, arg1, arg2);
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#contains(java.lang.Object)"/>
         /// </summary>
@@ -86,6 +240,149 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntriesToDouble(long,java.util.function.ToDoubleFunction%3Cjava.util.Map$Entry%3CK, V%3E%3E,double,java.util.function.DoubleBinaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
+        /// <returns><see langword="double"/></returns>
+        public double ReduceEntriesToDouble(long arg0, Java.Util.Function.ToDoubleFunction arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3)
+        {
+            return IExecute<double>("reduceEntriesToDouble", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceKeysToDouble(long,java.util.function.ToDoubleFunction%3C? super K%3E,double,java.util.function.DoubleBinaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
+        /// <returns><see langword="double"/></returns>
+        public double ReduceKeysToDouble(long arg0, Java.Util.Function.ToDoubleFunction arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3)
+        {
+            return IExecute<double>("reduceKeysToDouble", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceToDouble(long,java.util.function.ToDoubleBiFunction%3C? super K, ? super V%3E,double,java.util.function.DoubleBinaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.ToDoubleBiFunction"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
+        /// <returns><see langword="double"/></returns>
+        public double ReduceToDouble(long arg0, Java.Util.Function.ToDoubleBiFunction arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3)
+        {
+            return IExecute<double>("reduceToDouble", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceValuesToDouble(long,java.util.function.ToDoubleFunction%3C? super V%3E,double,java.util.function.DoubleBinaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
+        /// <returns><see langword="double"/></returns>
+        public double ReduceValuesToDouble(long arg0, Java.Util.Function.ToDoubleFunction arg1, double arg2, Java.Util.Function.DoubleBinaryOperator arg3)
+        {
+            return IExecute<double>("reduceValuesToDouble", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntriesToInt(long,java.util.function.ToIntFunction%3Cjava.util.Map$Entry%3CK, V%3E%3E,int,java.util.function.IntBinaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.ToIntFunction"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int ReduceEntriesToInt(long arg0, Java.Util.Function.ToIntFunction arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3)
+        {
+            return IExecute<int>("reduceEntriesToInt", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceKeysToInt(long,java.util.function.ToIntFunction%3C? super K%3E,int,java.util.function.IntBinaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.ToIntFunction"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int ReduceKeysToInt(long arg0, Java.Util.Function.ToIntFunction arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3)
+        {
+            return IExecute<int>("reduceKeysToInt", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceToInt(long,java.util.function.ToIntBiFunction%3C? super K, ? super V%3E,int,java.util.function.IntBinaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.ToIntBiFunction"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int ReduceToInt(long arg0, Java.Util.Function.ToIntBiFunction arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3)
+        {
+            return IExecute<int>("reduceToInt", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceValuesToInt(long,java.util.function.ToIntFunction%3C? super V%3E,int,java.util.function.IntBinaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.ToIntFunction"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int ReduceValuesToInt(long arg0, Java.Util.Function.ToIntFunction arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3)
+        {
+            return IExecute<int>("reduceValuesToInt", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#keySet(V)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
+        public Java.Util.Concurrent.ConcurrentHashMap.KeySetView KeySet(object arg0)
+        {
+            return IExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>("keySet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#keys()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration Keys()
+        {
+            return IExecute<Java.Util.Enumeration>("keys");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#elements()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration Elements()
+        {
+            return IExecute<Java.Util.Enumeration>("elements");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntries(long,java.util.function.BiFunction%3Cjava.util.Map$Entry%3CK, V%3E, java.util.Map$Entry%3CK, V%3E, ? extends java.util.Map$Entry%3CK, V%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry ReduceEntries(long arg0, Java.Util.Function.BiFunction arg1)
+        {
+            return IExecute<Java.Util.Map.Entry>("reduceEntries", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceKeys(long,java.util.function.BiFunction%3C? super K, ? super K, ? extends K%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object ReduceKeys(long arg0, Java.Util.Function.BiFunction arg1)
+        {
+            return IExecute("reduceKeys", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#mappingCount()"/>
         /// </summary>
         
@@ -93,6 +390,100 @@ namespace Java.Util.Concurrent
         public long MappingCount()
         {
             return IExecute<long>("mappingCount");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntriesToLong(long,java.util.function.ToLongFunction%3Cjava.util.Map$Entry%3CK, V%3E%3E,long,java.util.function.LongBinaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.ToLongFunction"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
+        /// <returns><see langword="long"/></returns>
+        public long ReduceEntriesToLong(long arg0, Java.Util.Function.ToLongFunction arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3)
+        {
+            return IExecute<long>("reduceEntriesToLong", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceKeysToLong(long,java.util.function.ToLongFunction%3C? super K%3E,long,java.util.function.LongBinaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.ToLongFunction"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
+        /// <returns><see langword="long"/></returns>
+        public long ReduceKeysToLong(long arg0, Java.Util.Function.ToLongFunction arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3)
+        {
+            return IExecute<long>("reduceKeysToLong", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceToLong(long,java.util.function.ToLongBiFunction%3C? super K, ? super V%3E,long,java.util.function.LongBinaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.ToLongBiFunction"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
+        /// <returns><see langword="long"/></returns>
+        public long ReduceToLong(long arg0, Java.Util.Function.ToLongBiFunction arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3)
+        {
+            return IExecute<long>("reduceToLong", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceValuesToLong(long,java.util.function.ToLongFunction%3C? super V%3E,long,java.util.function.LongBinaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.ToLongFunction"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
+        /// <returns><see langword="long"/></returns>
+        public long ReduceValuesToLong(long arg0, Java.Util.Function.ToLongFunction arg1, long arg2, Java.Util.Function.LongBinaryOperator arg3)
+        {
+            return IExecute<long>("reduceValuesToLong", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceValues(long,java.util.function.BiFunction%3C? super V, ? super V, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object ReduceValues(long arg0, Java.Util.Function.BiFunction arg1)
+        {
+            return IExecute("reduceValues", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#forEach(long,java.util.function.BiConsumer%3C? super K, ? super V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
+        public void ForEach(long arg0, Java.Util.Function.BiConsumer arg1)
+        {
+            IExecute("forEach", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#forEachEntry(long,java.util.function.Consumer%3C? super java.util.Map$Entry%3CK, V%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+        public void ForEachEntry(long arg0, Java.Util.Function.Consumer arg1)
+        {
+            IExecute("forEachEntry", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#forEachKey(long,java.util.function.Consumer%3C? super K%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+        public void ForEachKey(long arg0, Java.Util.Function.Consumer arg1)
+        {
+            IExecute("forEachKey", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#forEachValue(long,java.util.function.Consumer%3C? super V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+        public void ForEachValue(long arg0, Java.Util.Function.Consumer arg1)
+        {
+            IExecute("forEachValue", arg0, arg1);
         }
         
         #endregion
@@ -106,6 +497,10 @@ namespace Java.Util.Concurrent
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/> to <see cref="Java.Util.Set"/>
+            /// </summary>
+            public static implicit operator Java.Util.Set(Java.Util.Concurrent.ConcurrentHashMap.KeySetView t) => t.Cast<Java.Util.Set>();
             /// <summary>
             /// Converter from <see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>

@@ -33,7 +33,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.ListIterator"/> to <see cref="Java.Util.Iterator"/>
+        /// </summary>
+        public static implicit operator Java.Util.Iterator(Java.Util.ListIterator t) => t.Cast<Java.Util.Iterator>();
+        
         #endregion
 
         #region Fields

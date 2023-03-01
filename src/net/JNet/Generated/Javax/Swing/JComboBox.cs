@@ -29,7 +29,23 @@ namespace Javax.Swing
     public partial class JComboBox
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#%3Cinit%3E(java.util.Vector%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        public JComboBox(Java.Util.Vector arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#%3Cinit%3E(javax.swing.ComboBoxModel%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.ComboBoxModel"/></param>
+        public JComboBox(Javax.Swing.ComboBoxModel arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -111,6 +127,13 @@ namespace Javax.Swing
             get { return IExecute<int>("getMaximumRowCount"); } set { IExecute("setMaximumRowCount", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setModel(javax.swing.ComboBoxModel%3CE%3E)"/>
+        /// </summary>
+        public Javax.Swing.ComboBoxModel Model
+        {
+            get { return IExecute<Javax.Swing.ComboBoxModel>("getModel"); } set { IExecute("setModel", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getPopupMenuListeners()"/> 
         /// </summary>
         public Javax.Swing.Event.PopupMenuListener[] PopupMenuListeners
@@ -123,6 +146,13 @@ namespace Javax.Swing
         public object PrototypeDisplayValue
         {
             get { return IExecute("getPrototypeDisplayValue"); } set { IExecute("setPrototypeDisplayValue", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getRenderer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setRenderer(javax.swing.ListCellRenderer%3C? super E%3E)"/>
+        /// </summary>
+        public Javax.Swing.ListCellRenderer Renderer
+        {
+            get { return IExecute<Javax.Swing.ListCellRenderer>("getRenderer"); } set { IExecute("setRenderer", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getSelectedIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setSelectedIndex(int)"/>
@@ -189,6 +219,15 @@ namespace Javax.Swing
         public object GetItemAt(int arg0)
         {
             return IExecute("getItemAt", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getKeySelectionManager()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Javax.Swing.JComboBox.KeySelectionManager"/></returns>
+        public Javax.Swing.JComboBox.KeySelectionManager GetKeySelectionManager()
+        {
+            return IExecute<Javax.Swing.JComboBox.KeySelectionManager>("getKeySelectionManager");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#actionPerformed(java.awt.event.ActionEvent)"/>
@@ -364,6 +403,14 @@ namespace Javax.Swing
             IExecute("setEditable", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setKeySelectionManager(javax.swing.JComboBox$KeySelectionManager)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComboBox.KeySelectionManager"/></param>
+        public void SetKeySelectionManager(Javax.Swing.JComboBox.KeySelectionManager arg0)
+        {
+            IExecute("setKeySelectionManager", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#setLightWeightPopupEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -418,7 +465,17 @@ namespace Javax.Swing
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.KeySelectionManager.html#selectionForKey(char,javax.swing.ComboBoxModel%3C?%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="char"/></param>
+            /// <param name="arg1"><see cref="Javax.Swing.ComboBoxModel"/></param>
+            /// <returns><see langword="int"/></returns>
+            public int SelectionForKey(char arg0, Javax.Swing.ComboBoxModel arg1)
+            {
+                return IExecute<int>("selectionForKey", arg0, arg1);
+            }
+            
             #endregion
 
             // TODO: complete the class

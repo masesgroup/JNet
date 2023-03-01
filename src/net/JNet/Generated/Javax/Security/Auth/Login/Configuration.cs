@@ -64,6 +64,18 @@ namespace Javax.Security.Auth.Login
             return SExecute<Javax.Security.Auth.Login.Configuration>("getInstance", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration$Parameters,java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Login.Configuration.Parameters"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see cref="Javax.Security.Auth.Login.Configuration"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        public static Javax.Security.Auth.Login.Configuration GetInstance(string arg0, Javax.Security.Auth.Login.Configuration.Parameters arg1, Java.Security.Provider arg2)
+        {
+            return SExecute<Javax.Security.Auth.Login.Configuration>("getInstance", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration$Parameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -86,6 +98,13 @@ namespace Javax.Security.Auth.Login
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getProvider()"/> 
+        /// </summary>
+        public Java.Security.Provider Provider
+        {
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getType()"/> 
         /// </summary>

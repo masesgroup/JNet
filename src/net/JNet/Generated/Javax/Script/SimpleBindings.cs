@@ -29,7 +29,15 @@ namespace Javax.Script
     public partial class SimpleBindings
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#%3Cinit%3E(java.util.Map%3Cjava.lang.String, java.lang.Object%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public SimpleBindings(Java.Util.Map arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -124,11 +132,46 @@ namespace Javax.Script
             return IExecute("remove", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#values()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection Values()
+        {
+            return IExecute<Java.Util.Collection>("values");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#keySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set KeySet()
+        {
+            return IExecute<Java.Util.Set>("keySet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#entrySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set EntrySet()
+        {
+            return IExecute<Java.Util.Set>("entrySet");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecute("clear");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#putAll(java.util.Map%3C? extends java.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public void PutAll(Java.Util.Map arg0)
+        {
+            IExecute("putAll", arg0);
         }
         
         #endregion

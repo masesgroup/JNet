@@ -99,6 +99,33 @@ namespace Java.Net.Http
         {
             return IExecute<Java.Net.URI>("uri");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#version()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional Version()
+        {
+            return IExecute<Java.Util.Optional>("version");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#bodyPublisher()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional BodyPublisherMethod()
+        {
+            return IExecute<Java.Util.Optional>("bodyPublisher");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html#timeout()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional Timeout()
+        {
+            return IExecute<Java.Util.Optional>("timeout");
+        }
         
         #endregion
 
@@ -156,6 +183,25 @@ namespace Java.Net.Http
 
             #region Static methods
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#fromPublisher(java.util.concurrent.Flow$Publisher%3C? extends java.nio.ByteBuffer%3E,long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Publisher"/></param>
+            /// <param name="arg1"><see cref="long"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
+            public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher(Java.Util.Concurrent.Flow.Publisher arg0, long arg1)
+            {
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("fromPublisher", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#fromPublisher(java.util.concurrent.Flow$Publisher%3C? extends java.nio.ByteBuffer%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Publisher"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
+            public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher(Java.Util.Concurrent.Flow.Publisher arg0)
+            {
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("fromPublisher", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#noBody()"/>
             /// </summary>
             
@@ -185,6 +231,15 @@ namespace Java.Net.Http
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArray", arg0);
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArrays(java.lang.Iterable%3Cbyte[]%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
+            public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArrays(Java.Lang.Iterable arg0)
+            {
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArrays", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofFile(java.nio.file.Path)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
@@ -193,6 +248,15 @@ namespace Java.Net.Http
             public static Java.Net.Http.HttpRequest.BodyPublisher OfFile(Java.Nio.File.Path arg0)
             {
                 return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofFile", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofInputStream(java.util.function.Supplier%3C? extends java.io.InputStream%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
+            public static Java.Net.Http.HttpRequest.BodyPublisher OfInputStream(Java.Util.Function.Supplier arg0)
+            {
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofInputStream", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String,java.nio.charset.Charset)"/>
@@ -363,6 +427,15 @@ namespace Java.Net.Http
             public Java.Net.Http.HttpRequest.Builder Uri(Java.Net.URI arg0)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("uri", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#version(java.net.http.HttpClient$Version)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.HttpClient.Version"/></param>
+            /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
+            public Java.Net.Http.HttpRequest.Builder Version(Java.Net.Http.HttpClient.Version arg0)
+            {
+                return IExecute<Java.Net.Http.HttpRequest.Builder>("version", arg0);
             }
             
             #endregion

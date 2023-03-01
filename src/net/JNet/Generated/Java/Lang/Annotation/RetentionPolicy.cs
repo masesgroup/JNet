@@ -54,6 +54,15 @@ namespace Java.Lang.Annotation
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Lang.Annotation.RetentionPolicy"/></returns>
+        public static Java.Lang.Annotation.RetentionPolicy ValueOf(string arg0)
+        {
+            return SExecute<Java.Lang.Annotation.RetentionPolicy>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#values()"/>
         /// </summary>
         

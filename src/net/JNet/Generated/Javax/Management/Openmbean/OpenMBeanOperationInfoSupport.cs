@@ -29,7 +29,32 @@ namespace Javax.Management.Openmbean
     public partial class OpenMBeanOperationInfoSupport
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[],javax.management.openmbean.OpenType%3C?%3E,int,javax.management.Descriptor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenMBeanParameterInfo"/></param>
+        /// <param name="arg3"><see cref="Javax.Management.Openmbean.OpenType"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="Javax.Management.Descriptor"/></param>
+        public OpenMBeanOperationInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Openmbean.OpenType arg3, int arg4, Javax.Management.Descriptor arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[],javax.management.openmbean.OpenType%3C?%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenMBeanParameterInfo"/></param>
+        /// <param name="arg3"><see cref="Javax.Management.Openmbean.OpenType"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        public OpenMBeanOperationInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Openmbean.OpenType arg3, int arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +74,14 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfoSupport.html#getReturnOpenType()"/> 
+        /// </summary>
+        public Javax.Management.Openmbean.OpenType ReturnOpenType
+        {
+            get { return IExecute<Javax.Management.Openmbean.OpenType>("getReturnOpenType"); }
+        }
+        
         #endregion
 
         #region Nested classes

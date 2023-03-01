@@ -63,6 +63,15 @@ namespace Javax.Xml.Namespace
         {
             return IExecute<string>("getPrefix", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/namespace/NamespaceContext.html#getPrefixes(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator GetPrefixes(string arg0)
+        {
+            return IExecute<Java.Util.Iterator>("getPrefixes", arg0);
+        }
         
         #endregion
 

@@ -57,6 +57,13 @@ namespace Java.Lang.Reflect
             get { return IExecute<Java.Lang.Reflect.AnnotatedType>("getAnnotatedType"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getDeclaringClass()"/> 
+        /// </summary>
+        public Java.Lang.Class DeclaringClass
+        {
+            get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getGenericType()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type GenericType
@@ -76,6 +83,13 @@ namespace Java.Lang.Reflect
         public string Name
         {
             get { return IExecute<string>("getName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getType()"/> 
+        /// </summary>
+        public Java.Lang.Class Type
+        {
+            get { return IExecute<Java.Lang.Class>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Field.html#getBoolean(java.lang.Object)"/>

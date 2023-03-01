@@ -50,6 +50,13 @@ namespace Javax.Lang.Model.Type
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getParameterTypes()"/> 
+        /// </summary>
+        public Java.Util.List ParameterTypes
+        {
+            get { return IExecute<Java.Util.List>("getParameterTypes"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getReceiverType()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror ReceiverType
@@ -62,6 +69,20 @@ namespace Javax.Lang.Model.Type
         public Javax.Lang.Model.Type.TypeMirror ReturnType
         {
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getReturnType"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getThrownTypes()"/> 
+        /// </summary>
+        public Java.Util.List ThrownTypes
+        {
+            get { return IExecute<Java.Util.List>("getThrownTypes"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getTypeVariables()"/> 
+        /// </summary>
+        public Java.Util.List TypeVariables
+        {
+            get { return IExecute<Java.Util.List>("getTypeVariables"); }
         }
         
         #endregion

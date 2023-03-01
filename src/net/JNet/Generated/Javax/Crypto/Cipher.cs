@@ -103,6 +103,18 @@ namespace Javax.Crypto
             return SExecute<Javax.Crypto.Cipher>("getInstance", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see cref="Javax.Crypto.Cipher"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
+        public static Javax.Crypto.Cipher GetInstance(string arg0, Java.Security.Provider arg1)
+        {
+            return SExecute<Javax.Crypto.Cipher>("getInstance", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -151,6 +163,13 @@ namespace Javax.Crypto
         public Java.Security.AlgorithmParameters Parameters
         {
             get { return IExecute<Java.Security.AlgorithmParameters>("getParameters"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getProvider()"/> 
+        /// </summary>
+        public Java.Security.Provider Provider
+        {
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#doFinal()"/>

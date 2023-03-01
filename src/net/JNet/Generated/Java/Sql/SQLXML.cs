@@ -67,6 +67,26 @@ namespace Java.Sql
             get { return IExecute<string>("getString"); } set { IExecute("setString", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getSource(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Javax.Xml.Transform.Source"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Javax.Xml.Transform.Source GetSource(Java.Lang.Class arg0)
+        {
+            return IExecute<Javax.Xml.Transform.Source>("getSource", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setResult(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Javax.Xml.Transform.Result"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Javax.Xml.Transform.Result SetResult(Java.Lang.Class arg0)
+        {
+            return IExecute<Javax.Xml.Transform.Result>("setResult", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setBinaryStream()"/>
         /// </summary>
         

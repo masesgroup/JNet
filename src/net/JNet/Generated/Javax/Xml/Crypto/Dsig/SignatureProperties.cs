@@ -60,6 +60,13 @@ namespace Javax.Xml.Crypto.Dsig
         {
             get { return IExecute<string>("getId"); }
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureProperties.html#getProperties()"/> 
+        /// </summary>
+        public Java.Util.List Properties
+        {
+            get { return IExecute<Java.Util.List>("getProperties"); }
+        }
         
         #endregion
 

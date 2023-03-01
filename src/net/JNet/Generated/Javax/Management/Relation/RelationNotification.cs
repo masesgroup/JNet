@@ -29,7 +29,43 @@ namespace Javax.Management.Relation
     public partial class RelationNotification
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#%3Cinit%3E(java.lang.String,java.lang.Object,long,long,java.lang.String,java.lang.String,java.lang.String,javax.management.ObjectName,java.lang.String,java.util.List%3Cjavax.management.ObjectName%3E,java.util.List%3Cjavax.management.ObjectName%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg5"><see cref="string"/></param>
+        /// <param name="arg6"><see cref="string"/></param>
+        /// <param name="arg7"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg8"><see cref="string"/></param>
+        /// <param name="arg9"><see cref="Java.Util.List"/></param>
+        /// <param name="arg10"><see cref="Java.Util.List"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        public RelationNotification(string arg0, object arg1, long arg2, long arg3, string arg4, string arg5, string arg6, Javax.Management.ObjectName arg7, string arg8, Java.Util.List arg9, Java.Util.List arg10)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#%3Cinit%3E(java.lang.String,java.lang.Object,long,long,java.lang.String,java.lang.String,java.lang.String,javax.management.ObjectName,java.util.List%3Cjavax.management.ObjectName%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg5"><see cref="string"/></param>
+        /// <param name="arg6"><see cref="string"/></param>
+        /// <param name="arg7"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg8"><see cref="Java.Util.List"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        public RelationNotification(string arg0, object arg1, long arg2, long arg3, string arg4, string arg5, string arg6, Javax.Management.ObjectName arg7, Java.Util.List arg8)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -70,11 +106,32 @@ namespace Javax.Management.Relation
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getMBeansToUnregister()"/> 
+        /// </summary>
+        public Java.Util.List MBeansToUnregister
+        {
+            get { return IExecute<Java.Util.List>("getMBeansToUnregister"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getNewRoleValue()"/> 
+        /// </summary>
+        public Java.Util.List NewRoleValue
+        {
+            get { return IExecute<Java.Util.List>("getNewRoleValue"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getObjectName()"/> 
         /// </summary>
         public Javax.Management.ObjectName ObjectName
         {
             get { return IExecute<Javax.Management.ObjectName>("getObjectName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getOldRoleValue()"/> 
+        /// </summary>
+        public Java.Util.List OldRoleValue
+        {
+            get { return IExecute<Java.Util.List>("getOldRoleValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#getRelationId()"/> 

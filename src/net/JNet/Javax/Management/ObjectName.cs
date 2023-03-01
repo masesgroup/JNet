@@ -38,6 +38,6 @@ namespace Javax.Management
         /// <summary>
         /// Returns the key properties as a Hashtable.
         /// </summary>
-        public Hashtable<string, string> KeyPropertyList => IExecute<Hashtable<string, string>>("getKeyPropertyList");
+        public Hashtable<string, string> KeyPropertyList2 => KeyPropertyList.Cast<Hashtable<string, string>>();
     }
 }

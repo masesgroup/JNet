@@ -53,7 +53,32 @@ namespace Javax.Tools
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.html#getTask(java.io.Writer,javax.tools.JavaFileManager,javax.tools.DiagnosticListener%3C? super javax.tools.JavaFileObject%3E,java.lang.Class%3C?%3E,java.lang.Iterable%3Cjava.lang.String%3E,java.lang.Iterable%3C? extends javax.tools.JavaFileObject%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <param name="arg1"><see cref="Javax.Tools.JavaFileManager"/></param>
+        /// <param name="arg2"><see cref="Javax.Tools.DiagnosticListener"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.Iterable"/></param>
+        /// <param name="arg5"><see cref="Java.Lang.Iterable"/></param>
+        /// <returns><see cref="Javax.Tools.DocumentationTool.DocumentationTask"/></returns>
+        public Javax.Tools.DocumentationTool.DocumentationTask GetTask(Java.Io.Writer arg0, Javax.Tools.JavaFileManager arg1, Javax.Tools.DiagnosticListener arg2, Java.Lang.Class arg3, Java.Lang.Iterable arg4, Java.Lang.Iterable arg5)
+        {
+            return IExecute<Javax.Tools.DocumentationTool.DocumentationTask>("getTask", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.html#getStandardFileManager(javax.tools.DiagnosticListener%3C? super javax.tools.JavaFileObject%3E,java.util.Locale,java.nio.charset.Charset)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.DiagnosticListener"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <returns><see cref="Javax.Tools.StandardJavaFileManager"/></returns>
+        public Javax.Tools.StandardJavaFileManager GetStandardFileManager(Javax.Tools.DiagnosticListener arg0, Java.Util.Locale arg1, Java.Nio.Charset.Charset arg2)
+        {
+            return IExecute<Javax.Tools.StandardJavaFileManager>("getStandardFileManager", arg0, arg1, arg2);
+        }
+        
         #endregion
 
         #region Nested classes
@@ -65,7 +90,11 @@ namespace Javax.Tools
             #endregion
 
             #region Class/Interface conversion operators
-
+            /// <summary>
+            /// Converter from <see cref="Javax.Tools.DocumentationTool.DocumentationTask"/> to <see cref="Java.Util.Concurrent.Callable"/>
+            /// </summary>
+            public static implicit operator Java.Util.Concurrent.Callable(Javax.Tools.DocumentationTool.DocumentationTask t) => t.Cast<Java.Util.Concurrent.Callable>();
+            
             #endregion
 
             #region Fields
@@ -77,6 +106,14 @@ namespace Javax.Tools
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#addModules(java.lang.Iterable%3Cjava.lang.String%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+            public void AddModules(Java.Lang.Iterable arg0)
+            {
+                IExecute("addModules", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#setLocale(java.util.Locale)"/>
             /// </summary>
@@ -130,6 +167,15 @@ namespace Javax.Tools
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Tools.DocumentationTool.Location"/></returns>
+            public static Javax.Tools.DocumentationTool.Location ValueOf(string arg0)
+            {
+                return SExecute<Javax.Tools.DocumentationTool.Location>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#values()"/>
             /// </summary>

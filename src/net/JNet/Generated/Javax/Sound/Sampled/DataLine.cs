@@ -154,7 +154,37 @@ namespace Javax.Sound.Sampled
         public partial class Info
         {
             #region Constructors
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#%3Cinit%3E(java.lang.Class%3C?%3E,javax.sound.sampled.AudioFormat,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+            /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            public Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2)
+                : base(arg0, arg1, arg2)
+            {
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#%3Cinit%3E(java.lang.Class%3C?%3E,javax.sound.sampled.AudioFormat)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+            /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+            public Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat arg1)
+                : base(arg0, arg1)
+            {
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.Info.html#%3Cinit%3E(java.lang.Class%3C?%3E,javax.sound.sampled.AudioFormat[],int,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+            /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            public Info(Java.Lang.Class arg0, Javax.Sound.Sampled.AudioFormat[] arg1, int arg2, int arg3)
+                : base(arg0, arg1, arg2, arg3)
+            {
+            }
+            
             #endregion
 
             #region Class/Interface conversion operators

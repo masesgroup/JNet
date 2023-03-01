@@ -33,7 +33,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.NavigableMap"/> to <see cref="Java.Util.SortedMap"/>
+        /// </summary>
+        public static implicit operator Java.Util.SortedMap(Java.Util.NavigableMap t) => t.Cast<Java.Util.SortedMap>();
+        
         #endregion
 
         #region Fields
@@ -45,6 +49,165 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#ceilingEntry(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry CeilingEntry(object arg0)
+        {
+            return IExecute<Java.Util.Map.Entry>("ceilingEntry", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#firstEntry()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry FirstEntry()
+        {
+            return IExecute<Java.Util.Map.Entry>("firstEntry");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#floorEntry(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry FloorEntry(object arg0)
+        {
+            return IExecute<Java.Util.Map.Entry>("floorEntry", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#higherEntry(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry HigherEntry(object arg0)
+        {
+            return IExecute<Java.Util.Map.Entry>("higherEntry", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#lastEntry()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry LastEntry()
+        {
+            return IExecute<Java.Util.Map.Entry>("lastEntry");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#lowerEntry(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry LowerEntry(object arg0)
+        {
+            return IExecute<Java.Util.Map.Entry>("lowerEntry", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#pollFirstEntry()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry PollFirstEntry()
+        {
+            return IExecute<Java.Util.Map.Entry>("pollFirstEntry");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#pollLastEntry()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+        public Java.Util.Map.Entry PollLastEntry()
+        {
+            return IExecute<Java.Util.Map.Entry>("pollLastEntry");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#descendingMap()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
+        public Java.Util.NavigableMap DescendingMap()
+        {
+            return IExecute<Java.Util.NavigableMap>("descendingMap");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#headMap(K,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
+        public Java.Util.NavigableMap HeadMap(object arg0, bool arg1)
+        {
+            return IExecute<Java.Util.NavigableMap>("headMap", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#subMap(K,boolean,K,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
+        public Java.Util.NavigableMap SubMap(object arg0, bool arg1, object arg2, bool arg3)
+        {
+            return IExecute<Java.Util.NavigableMap>("subMap", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#tailMap(K,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
+        public Java.Util.NavigableMap TailMap(object arg0, bool arg1)
+        {
+            return IExecute<Java.Util.NavigableMap>("tailMap", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#descendingKeySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet DescendingKeySet()
+        {
+            return IExecute<Java.Util.NavigableSet>("descendingKeySet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#navigableKeySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet NavigableKeySet()
+        {
+            return IExecute<Java.Util.NavigableSet>("navigableKeySet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#headMap(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        public Java.Util.SortedMap HeadMap(object arg0)
+        {
+            return IExecute<Java.Util.SortedMap>("headMap", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#subMap(K,K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        public Java.Util.SortedMap SubMap(object arg0, object arg1)
+        {
+            return IExecute<Java.Util.SortedMap>("subMap", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#tailMap(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        public Java.Util.SortedMap TailMap(object arg0)
+        {
+            return IExecute<Java.Util.SortedMap>("tailMap", arg0);
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#ceilingKey(K)"/>
         /// </summary>

@@ -49,7 +49,57 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseDate.html#now()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
+        public static Java.Time.Chrono.JapaneseDate Now()
+        {
+            return SExecute<Java.Time.Chrono.JapaneseDate>("now");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseDate.html#now(java.time.Clock)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
+        /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
+        public static Java.Time.Chrono.JapaneseDate Now(Java.Time.Clock arg0)
+        {
+            return SExecute<Java.Time.Chrono.JapaneseDate>("now", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseDate.html#now(java.time.ZoneId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
+        /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
+        public static Java.Time.Chrono.JapaneseDate Now(Java.Time.ZoneId arg0)
+        {
+            return SExecute<Java.Time.Chrono.JapaneseDate>("now", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseDate.html#of(int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
+        public static Java.Time.Chrono.JapaneseDate Of(int arg0, int arg1, int arg2)
+        {
+            return SExecute<Java.Time.Chrono.JapaneseDate>("of", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseDate.html#of(java.time.chrono.JapaneseEra,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.JapaneseEra"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
+        public static Java.Time.Chrono.JapaneseDate Of(Java.Time.Chrono.JapaneseEra arg0, int arg1, int arg2, int arg3)
+        {
+            return SExecute<Java.Time.Chrono.JapaneseDate>("of", arg0, arg1, arg2, arg3);
+        }
+        
         #endregion
 
         #region Instance methods

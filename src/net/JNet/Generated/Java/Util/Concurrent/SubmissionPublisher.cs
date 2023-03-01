@@ -30,6 +30,16 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#%3Cinit%3E(java.util.concurrent.Executor,int,java.util.function.BiConsumer%3C? super java.util.concurrent.Flow$Subscriber%3C? super T%3E, ? super java.lang.Throwable%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BiConsumer"/></param>
+        public SubmissionPublisher(Java.Util.Concurrent.Executor arg0, int arg1, Java.Util.Function.BiConsumer arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#%3Cinit%3E(java.util.concurrent.Executor,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -87,6 +97,13 @@ namespace Java.Util.Concurrent
             get { return IExecute<int>("getNumberOfSubscribers"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#getSubscribers()"/> 
+        /// </summary>
+        public Java.Util.List Subscribers
+        {
+            get { return IExecute<Java.Util.List>("getSubscribers"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#hasSubscribers()"/>
         /// </summary>
         
@@ -105,6 +122,15 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("isClosed");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#isSubscribed(java.util.concurrent.Flow$Subscriber%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsSubscribed(Java.Util.Concurrent.Flow.Subscriber arg0)
+        {
+            return IExecute<bool>("isSubscribed", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMaximumLag()"/>
         /// </summary>
         
@@ -114,6 +140,28 @@ namespace Java.Util.Concurrent
             return IExecute<int>("estimateMaximumLag");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#offer(T,java.util.function.BiPredicate%3Cjava.util.concurrent.Flow$Subscriber%3C? super T%3E, ? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiPredicate"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int Offer(object arg0, Java.Util.Function.BiPredicate arg1)
+        {
+            return IExecute<int>("offer", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#offer(T,long,java.util.concurrent.TimeUnit,java.util.function.BiPredicate%3Cjava.util.concurrent.Flow$Subscriber%3C? super T%3E, ? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.BiPredicate"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int Offer(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, Java.Util.Function.BiPredicate arg3)
+        {
+            return IExecute<int>("offer", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#submit(T)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -121,6 +169,15 @@ namespace Java.Util.Concurrent
         public int Submit(object arg0)
         {
             return IExecute<int>("submit", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#consume(java.util.function.Consumer%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
+        public Java.Util.Concurrent.CompletableFuture Consume(Java.Util.Function.Consumer arg0)
+        {
+            return IExecute<Java.Util.Concurrent.CompletableFuture>("consume", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMinimumDemand()"/>
@@ -145,6 +202,14 @@ namespace Java.Util.Concurrent
         public void CloseExceptionally(Java.Lang.Throwable arg0)
         {
             IExecute("closeExceptionally", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#subscribe(java.util.concurrent.Flow$Subscriber%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
+        public void Subscribe(Java.Util.Concurrent.Flow.Subscriber arg0)
+        {
+            IExecute("subscribe", arg0);
         }
         
         #endregion

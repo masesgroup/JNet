@@ -118,6 +118,27 @@ namespace Java.Awt.Dnd
             get { return IExecute<Java.Awt.Datatransfer.FlavorMap>("getFlavorMap"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#createDragGestureRecognizer(java.lang.Class%3CT%3E,java.awt.Component,int,java.awt.dnd.DragGestureListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Dnd.DragGestureListener"/></param>
+        /// <returns><see cref="Java.Awt.Dnd.DragGestureRecognizer"/></returns>
+        public Java.Awt.Dnd.DragGestureRecognizer CreateDragGestureRecognizer(Java.Lang.Class arg0, Java.Awt.Component arg1, int arg2, Java.Awt.Dnd.DragGestureListener arg3)
+        {
+            return IExecute<Java.Awt.Dnd.DragGestureRecognizer>("createDragGestureRecognizer", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#getListeners(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.EventListener"/></returns>
+        public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
+        {
+            return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#createDefaultDragGestureRecognizer(java.awt.Component,int,java.awt.dnd.DragGestureListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>

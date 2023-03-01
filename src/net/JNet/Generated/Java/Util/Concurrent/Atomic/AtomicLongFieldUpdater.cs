@@ -41,7 +41,17 @@ namespace Java.Util.Concurrent.Atomic
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#newUpdater(java.lang.Class%3CU%3E,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicLongFieldUpdater"/></returns>
+        public static Java.Util.Concurrent.Atomic.AtomicLongFieldUpdater NewUpdater(Java.Lang.Class arg0, string arg1)
+        {
+            return SExecute<Java.Util.Concurrent.Atomic.AtomicLongFieldUpdater>("newUpdater", arg0, arg1);
+        }
+        
         #endregion
 
         #region Instance methods

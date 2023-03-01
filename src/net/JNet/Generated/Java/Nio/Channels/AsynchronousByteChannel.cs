@@ -49,7 +49,45 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#read(java.nio.ByteBuffer,A,java.nio.channels.CompletionHandler%3Cjava.lang.Integer, ? super A%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        public void Read(Java.Nio.ByteBuffer arg0, object arg1, Java.Nio.Channels.CompletionHandler arg2)
+        {
+            IExecute("read", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#write(java.nio.ByteBuffer,A,java.nio.channels.CompletionHandler%3Cjava.lang.Integer, ? super A%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
+        public void Write(Java.Nio.ByteBuffer arg0, object arg1, Java.Nio.Channels.CompletionHandler arg2)
+        {
+            IExecute("write", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#read(java.nio.ByteBuffer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Read(Java.Nio.ByteBuffer arg0)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("read", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html#write(java.nio.ByteBuffer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        public Java.Util.Concurrent.Future Write(Java.Nio.ByteBuffer arg0)
+        {
+            return IExecute<Java.Util.Concurrent.Future>("write", arg0);
+        }
+        
         #endregion
 
         #region Nested classes

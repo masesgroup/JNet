@@ -54,6 +54,17 @@ namespace Javax.Crypto
             return SExecute<Javax.Crypto.KeyGenerator>("getInstance", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyGenerator.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see cref="Javax.Crypto.KeyGenerator"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        public static Javax.Crypto.KeyGenerator GetInstance(string arg0, Java.Security.Provider arg1)
+        {
+            return SExecute<Javax.Crypto.KeyGenerator>("getInstance", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyGenerator.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -73,6 +84,13 @@ namespace Javax.Crypto
         public string Algorithm
         {
             get { return IExecute<string>("getAlgorithm"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyGenerator.html#getProvider()"/> 
+        /// </summary>
+        public Java.Security.Provider Provider
+        {
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyGenerator.html#generateKey()"/>

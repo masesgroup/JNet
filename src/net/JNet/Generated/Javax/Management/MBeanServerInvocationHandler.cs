@@ -64,7 +64,19 @@ namespace Javax.Management
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#newProxyInstance(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class%3CT%3E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <returns><see langword="object"/></returns>
+        public static object NewProxyInstance(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
+        {
+            return SExecute("newProxyInstance", arg0, arg1, arg2, arg3);
+        }
+        
         #endregion
 
         #region Instance methods

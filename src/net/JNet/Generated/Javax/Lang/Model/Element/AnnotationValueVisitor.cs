@@ -66,6 +66,16 @@ namespace Javax.Lang.Model.Element
             return IExecute("visitAnnotation", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitArray(java.util.List%3C? extends javax.lang.model.element.AnnotationValue%3E,P)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object VisitArray(Java.Util.List arg0, object arg1)
+        {
+            return IExecute("visitArray", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitBoolean(boolean,P)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

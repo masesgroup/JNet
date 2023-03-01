@@ -42,6 +42,17 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html#instantiation(int,java.security.DrbgParameters$Capability,byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Security.DrbgParameters.Capability"/></param>
+        /// <param name="arg2"><see cref="byte"/></param>
+        /// <returns><see cref="Java.Security.DrbgParameters.Instantiation"/></returns>
+        public static Java.Security.DrbgParameters.Instantiation InstantiationMethod(int arg0, Java.Security.DrbgParameters.Capability arg1, byte[] arg2)
+        {
+            return SExecute<Java.Security.DrbgParameters.Instantiation>("instantiation", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html#nextBytes(int,boolean,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -98,6 +109,15 @@ namespace Java.Security
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Security.DrbgParameters.Capability"/></returns>
+            public static Java.Security.DrbgParameters.Capability ValueOf(string arg0)
+            {
+                return SExecute<Java.Security.DrbgParameters.Capability>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#values()"/>
             /// </summary>
@@ -173,6 +193,15 @@ namespace Java.Security
             public int Strength
             {
                 get { return IExecute<int>("getStrength"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html#getCapability()"/>
+            /// </summary>
+            
+            /// <returns><see cref="Java.Security.DrbgParameters.Capability"/></returns>
+            public Java.Security.DrbgParameters.Capability GetCapability()
+            {
+                return IExecute<Java.Security.DrbgParameters.Capability>("getCapability");
             }
             
             #endregion

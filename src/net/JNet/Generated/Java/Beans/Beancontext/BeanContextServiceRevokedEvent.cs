@@ -29,7 +29,17 @@ namespace Java.Beans.Beancontext
     public partial class BeanContextServiceRevokedEvent
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.lang.Class%3C?%3E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        public BeanContextServiceRevokedEvent(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1, bool arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -46,6 +56,13 @@ namespace Java.Beans.Beancontext
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#getServiceClass()"/> 
+        /// </summary>
+        public Java.Lang.Class ServiceClass
+        {
+            get { return IExecute<Java.Lang.Class>("getServiceClass"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#getSourceAsBeanContextServices()"/> 
         /// </summary>
         public Java.Beans.Beancontext.BeanContextServices SourceAsBeanContextServices
@@ -60,6 +77,15 @@ namespace Java.Beans.Beancontext
         public bool IsCurrentServiceInvalidNow()
         {
             return IExecute<bool>("isCurrentServiceInvalidNow");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedEvent.html#isServiceClass(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsServiceClass(Java.Lang.Class arg0)
+        {
+            return IExecute<bool>("isServiceClass", arg0);
         }
         
         #endregion

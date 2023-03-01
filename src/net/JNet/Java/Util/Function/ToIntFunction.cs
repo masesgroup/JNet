@@ -22,7 +22,7 @@ using System;
 namespace Java.Util.Function
 {
     /// <summary>
-    /// Listener for Java ToIntFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html"/>. Extends <see cref="IJVMBridgeBase"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html"/>. Extends <see cref="IJVMBridgeBase"/>
     /// </summary>
     /// <typeparam name="T">The data type associated to the event</typeparam>
     public interface IToIntFunction<T> : IJVMBridgeBase
@@ -36,16 +36,22 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java ToIntFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
     /// </summary>
-    /// <typeparam name="T">The data type associated to the event</typeparam>
-    public class ToIntFunction<T> : JVMBridgeListener, IToIntFunction<T>
+    public abstract class ToIntFunction : JVMBridgeListener
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetToIntFunction";
+    }
 
+    /// <summary>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html"/>. Extends <see cref="ToIntFunction"/>
+    /// </summary>
+    /// <typeparam name="T">The data type associated to the event</typeparam>
+    public class ToIntFunction<T> : ToIntFunction, IToIntFunction<T>
+    {
         Func<T, int> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{T, Int32}"/> to be executed

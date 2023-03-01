@@ -29,7 +29,24 @@ namespace Java.Beans
     public partial class BeanDescriptor
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanDescriptor.html#%3Cinit%3E(java.lang.Class%3C?%3E,java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        public BeanDescriptor(Java.Lang.Class arg0, Java.Lang.Class arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanDescriptor.html#%3Cinit%3E(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        public BeanDescriptor(Java.Lang.Class arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +62,21 @@ namespace Java.Beans
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanDescriptor.html#getBeanClass()"/> 
+        /// </summary>
+        public Java.Lang.Class BeanClass
+        {
+            get { return IExecute<Java.Lang.Class>("getBeanClass"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanDescriptor.html#getCustomizerClass()"/> 
+        /// </summary>
+        public Java.Lang.Class CustomizerClass
+        {
+            get { return IExecute<Java.Lang.Class>("getCustomizerClass"); }
+        }
+        
         #endregion
 
         #region Nested classes

@@ -122,6 +122,13 @@ namespace Javax.Swing.Text
             get { return IExecute<Javax.Swing.Text.AttributeSet>("getEmptySet"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getStyleNames()"/> 
+        /// </summary>
+        public Java.Util.Enumeration StyleNames
+        {
+            get { return IExecute<Java.Util.Enumeration>("getStyleNames"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getBackground(javax.swing.text.AttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
@@ -217,6 +224,16 @@ namespace Javax.Swing.Text
         public Javax.Swing.Text.AttributeSet RemoveAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1)
         {
             return IExecute<Javax.Swing.Text.AttributeSet>("removeAttribute", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#removeAttributes(javax.swing.text.AttributeSet,java.util.Enumeration%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Enumeration"/></param>
+        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+        public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Java.Util.Enumeration arg1)
+        {
+            return IExecute<Javax.Swing.Text.AttributeSet>("removeAttributes", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#removeAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)"/>
@@ -348,6 +365,13 @@ namespace Javax.Swing.Text
                 get { return IExecute<int>("getAttributeCount"); }
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#getAttributeNames()"/> 
+            /// </summary>
+            public Java.Util.Enumeration AttributeNames
+            {
+                get { return IExecute<Java.Util.Enumeration>("getAttributeNames"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#getChangeListeners()"/> 
             /// </summary>
             public Javax.Swing.Event.ChangeListener[] ChangeListeners
@@ -367,6 +391,15 @@ namespace Javax.Swing.Text
             public Javax.Swing.Text.AttributeSet ResolveParent
             {
                 get { return IExecute<Javax.Swing.Text.AttributeSet>("getResolveParent"); } set { IExecute("setResolveParent", value); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#getListeners(java.lang.Class%3CT%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+            /// <returns><see cref="Java.Util.EventListener"/></returns>
+            public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
+            {
+                return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#containsAttribute(java.lang.Object,java.lang.Object)"/>
@@ -457,6 +490,14 @@ namespace Javax.Swing.Text
                 IExecute("removeAttribute", arg0);
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#removeAttributes(java.util.Enumeration%3C?%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
+            public void RemoveAttributes(Java.Util.Enumeration arg0)
+            {
+                IExecute("removeAttributes", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#removeAttributes(javax.swing.text.AttributeSet)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
@@ -518,6 +559,13 @@ namespace Javax.Swing.Text
             public int AttributeCount
             {
                 get { return IExecute<int>("getAttributeCount"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getAttributeNames()"/> 
+            /// </summary>
+            public Java.Util.Enumeration AttributeNames
+            {
+                get { return IExecute<Java.Util.Enumeration>("getAttributeNames"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getResolveParent()"/> 

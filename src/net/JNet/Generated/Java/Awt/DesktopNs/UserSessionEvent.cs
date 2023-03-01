@@ -29,7 +29,15 @@ namespace Java.Awt.DesktopNs
     public partial class UserSessionEvent
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.html#%3Cinit%3E(java.awt.desktop.UserSessionEvent$Reason)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.UserSessionEvent.Reason"/></param>
+        public UserSessionEvent(Java.Awt.DesktopNs.UserSessionEvent.Reason arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,7 +53,16 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.html#getReason()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Awt.DesktopNs.UserSessionEvent.Reason"/></returns>
+        public Java.Awt.DesktopNs.UserSessionEvent.Reason GetReason()
+        {
+            return IExecute<Java.Awt.DesktopNs.UserSessionEvent.Reason>("getReason");
+        }
+        
         #endregion
 
         #region Nested classes
@@ -81,6 +98,15 @@ namespace Java.Awt.DesktopNs
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Awt.DesktopNs.UserSessionEvent.Reason"/></returns>
+            public static Java.Awt.DesktopNs.UserSessionEvent.Reason ValueOf(string arg0)
+            {
+                return SExecute<Java.Awt.DesktopNs.UserSessionEvent.Reason>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#values()"/>
             /// </summary>

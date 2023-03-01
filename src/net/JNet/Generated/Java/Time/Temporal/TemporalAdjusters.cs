@@ -42,6 +42,16 @@ namespace Java.Time.Temporal
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#dayOfWeekInMonth(int,java.time.DayOfWeek)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Time.DayOfWeek"/></param>
+        /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
+        public static Java.Time.Temporal.TemporalAdjuster DayOfWeekInMonth(int arg0, Java.Time.DayOfWeek arg1)
+        {
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>("dayOfWeekInMonth", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#firstDayOfMonth()"/>
         /// </summary>
         
@@ -78,6 +88,15 @@ namespace Java.Time.Temporal
             return SExecute<Java.Time.Temporal.TemporalAdjuster>("firstDayOfYear");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#firstInMonth(java.time.DayOfWeek)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
+        /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
+        public static Java.Time.Temporal.TemporalAdjuster FirstInMonth(Java.Time.DayOfWeek arg0)
+        {
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>("firstInMonth", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#lastDayOfMonth()"/>
         /// </summary>
         
@@ -94,6 +113,60 @@ namespace Java.Time.Temporal
         public static Java.Time.Temporal.TemporalAdjuster LastDayOfYear()
         {
             return SExecute<Java.Time.Temporal.TemporalAdjuster>("lastDayOfYear");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#lastInMonth(java.time.DayOfWeek)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
+        /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
+        public static Java.Time.Temporal.TemporalAdjuster LastInMonth(Java.Time.DayOfWeek arg0)
+        {
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>("lastInMonth", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#next(java.time.DayOfWeek)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
+        /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
+        public static Java.Time.Temporal.TemporalAdjuster Next(Java.Time.DayOfWeek arg0)
+        {
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>("next", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#nextOrSame(java.time.DayOfWeek)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
+        /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
+        public static Java.Time.Temporal.TemporalAdjuster NextOrSame(Java.Time.DayOfWeek arg0)
+        {
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>("nextOrSame", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#ofDateAdjuster(java.util.function.UnaryOperator%3Cjava.time.LocalDate%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
+        /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
+        public static Java.Time.Temporal.TemporalAdjuster OfDateAdjuster(Java.Util.Function.UnaryOperator arg0)
+        {
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>("ofDateAdjuster", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#previous(java.time.DayOfWeek)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
+        /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
+        public static Java.Time.Temporal.TemporalAdjuster Previous(Java.Time.DayOfWeek arg0)
+        {
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>("previous", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html#previousOrSame(java.time.DayOfWeek)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
+        /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
+        public static Java.Time.Temporal.TemporalAdjuster PreviousOrSame(Java.Time.DayOfWeek arg0)
+        {
+            return SExecute<Java.Time.Temporal.TemporalAdjuster>("previousOrSame", arg0);
         }
         
         #endregion

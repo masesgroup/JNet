@@ -72,6 +72,15 @@ namespace Java.Io
         {
             return IExecute<string>("readLine");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html#lines()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Lines()
+        {
+            return IExecute<Java.Util.Stream.Stream>("lines");
+        }
         
         #endregion
 

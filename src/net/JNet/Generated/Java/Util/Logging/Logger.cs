@@ -174,6 +174,14 @@ namespace Java.Util.Logging
             IExecute("config", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#config(java.util.function.Supplier%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        public void Config(Java.Util.Function.Supplier arg0)
+        {
+            IExecute("config", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#entering(java.lang.String,java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -230,10 +238,26 @@ namespace Java.Util.Logging
             IExecute("fine", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#fine(java.util.function.Supplier%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        public void Fine(Java.Util.Function.Supplier arg0)
+        {
+            IExecute("fine", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#finer(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         public void Finer(string arg0)
+        {
+            IExecute("finer", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#finer(java.util.function.Supplier%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        public void Finer(Java.Util.Function.Supplier arg0)
         {
             IExecute("finer", arg0);
         }
@@ -246,10 +270,26 @@ namespace Java.Util.Logging
             IExecute("finest", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#finest(java.util.function.Supplier%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        public void Finest(Java.Util.Function.Supplier arg0)
+        {
+            IExecute("finest", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#info(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         public void Info(string arg0)
+        {
+            IExecute("info", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#info(java.util.function.Supplier%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        public void Info(Java.Util.Function.Supplier arg0)
         {
             IExecute("info", arg0);
         }
@@ -289,6 +329,25 @@ namespace Java.Util.Logging
         /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         public void Log(Java.Util.Logging.Level arg0, string arg1)
+        {
+            IExecute("log", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logging.Logger.log(java.util.logging.Level,java.lang.Throwable,java.util.function.Supplier%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.Supplier"/></param>
+        public void Log(Java.Util.Logging.Level arg0, Java.Lang.Throwable arg1, Java.Util.Function.Supplier arg2)
+        {
+            IExecute("log", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logging.Logger.log(java.util.logging.Level,java.util.function.Supplier%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
+        public void Log(Java.Util.Logging.Level arg0, Java.Util.Function.Supplier arg1)
         {
             IExecute("log", arg0, arg1);
         }
@@ -344,6 +403,29 @@ namespace Java.Util.Logging
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="string"/></param>
         public void Logp(Java.Util.Logging.Level arg0, string arg1, string arg2, string arg3)
+        {
+            IExecute("logp", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.Throwable,java.util.function.Supplier%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.Throwable"/></param>
+        /// <param name="arg4"><see cref="Java.Util.Function.Supplier"/></param>
+        public void Logp(Java.Util.Logging.Level arg0, string arg1, string arg2, Java.Lang.Throwable arg3, Java.Util.Function.Supplier arg4)
+        {
+            IExecute("logp", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#logp(java.util.logging.Level,java.lang.String,java.lang.String,java.util.function.Supplier%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.Supplier"/></param>
+        public void Logp(Java.Util.Logging.Level arg0, string arg1, string arg2, Java.Util.Function.Supplier arg3)
         {
             IExecute("logp", arg0, arg1, arg2, arg3);
         }
@@ -413,6 +495,14 @@ namespace Java.Util.Logging
             IExecute("severe", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#severe(java.util.function.Supplier%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        public void Severe(Java.Util.Function.Supplier arg0)
+        {
+            IExecute("severe", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#throwing(java.lang.String,java.lang.String,java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -427,6 +517,14 @@ namespace Java.Util.Logging
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         public void Warning(string arg0)
+        {
+            IExecute("warning", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Logger.html#warning(java.util.function.Supplier%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        public void Warning(Java.Util.Function.Supplier arg0)
         {
             IExecute("warning", arg0);
         }

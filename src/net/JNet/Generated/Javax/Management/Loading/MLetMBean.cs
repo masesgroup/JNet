@@ -78,6 +78,36 @@ namespace Javax.Management.Loading
             return IExecute<Java.Net.URL>("getResource", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getResources(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Enumeration GetResources(string arg0)
+        {
+            return IExecute<Java.Util.Enumeration>("getResources", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getMBeansFromURL(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        /// <exception cref="Javax.Management.ServiceNotFoundException"/>
+        public Java.Util.Set GetMBeansFromURL(string arg0)
+        {
+            return IExecute<Java.Util.Set>("getMBeansFromURL", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getMBeansFromURL(java.net.URL)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        /// <exception cref="Javax.Management.ServiceNotFoundException"/>
+        public Java.Util.Set GetMBeansFromURL(Java.Net.URL arg0)
+        {
+            return IExecute<Java.Util.Set>("getMBeansFromURL", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#addURL(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>

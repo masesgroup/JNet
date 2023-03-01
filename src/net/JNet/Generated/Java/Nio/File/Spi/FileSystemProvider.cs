@@ -41,7 +41,16 @@ namespace Java.Nio.File.Spi
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#installedProviders()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public static Java.Util.List InstalledProviders()
+        {
+            return SExecute<Java.Util.List>("installedProviders");
+        }
+        
         #endregion
 
         #region Instance methods
@@ -51,6 +60,29 @@ namespace Java.Nio.File.Spi
         public string Scheme
         {
             get { return IExecute<string>("getScheme"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#readAttributes(java.nio.file.Path,java.lang.Class%3CA%3E,java.nio.file.LinkOption...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2)
+        {
+            if (arg2.Length == 0) return IExecute<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes", arg0, arg1); else return IExecute<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#getFileAttributeView(java.nio.file.Path,java.lang.Class%3CV%3E,java.nio.file.LinkOption...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.FileAttributeView"/></returns>
+        public Java.Nio.File.Attribute.FileAttributeView GetFileAttributeView(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2)
+        {
+            if (arg2.Length == 0) return IExecute<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", arg0, arg1); else return IExecute<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#isHidden(java.nio.file.Path)"/>
@@ -74,6 +106,29 @@ namespace Java.Nio.File.Spi
             return IExecute<bool>("isSameFile", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#newByteChannel(java.nio.file.Path,java.util.Set%3C? extends java.nio.file.OpenOption%3E,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.Channels.SeekableByteChannel NewByteChannel(Java.Nio.File.Path arg0, Java.Util.Set arg1, params Java.Nio.File.Attribute.FileAttribute[] arg2)
+        {
+            if (arg2.Length == 0) return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1); else return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#newDirectoryStream(java.nio.file.Path,java.nio.file.DirectoryStream$Filter%3C? super java.nio.file.Path%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.DirectoryStream.Filter"/></param>
+        /// <returns><see cref="Java.Nio.File.DirectoryStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.File.DirectoryStream NewDirectoryStream(Java.Nio.File.Path arg0, Java.Nio.File.DirectoryStream.Filter arg1)
+        {
+            return IExecute<Java.Nio.File.DirectoryStream>("newDirectoryStream", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#getFileStore(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
@@ -93,6 +148,17 @@ namespace Java.Nio.File.Spi
             return IExecute<Java.Nio.File.FileSystem>("getFileSystem", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#newFileSystem(java.net.URI,java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map arg1)
+        {
+            return IExecute<Java.Nio.File.FileSystem>("newFileSystem", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#getPath(java.net.URI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
@@ -100,6 +166,18 @@ namespace Java.Nio.File.Spi
         public Java.Nio.File.Path GetPath(Java.Net.URI arg0)
         {
             return IExecute<Java.Nio.File.Path>("getPath", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#readAttributes(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Map ReadAttributes(Java.Nio.File.Path arg0, string arg1, params Java.Nio.File.LinkOption[] arg2)
+        {
+            if (arg2.Length == 0) return IExecute<Java.Util.Map>("readAttributes", arg0, arg1); else return IExecute<Java.Util.Map>("readAttributes", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#checkAccess(java.nio.file.Path,java.nio.file.AccessMode...)"/>
@@ -195,6 +273,42 @@ namespace Java.Nio.File.Spi
         public Java.Io.OutputStream NewOutputStream(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Io.OutputStream>("newOutputStream", arg0); else return IExecute<Java.Io.OutputStream>("newOutputStream", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#newAsynchronousFileChannel(java.nio.file.Path,java.util.Set%3C? extends java.nio.file.OpenOption%3E,java.util.concurrent.ExecutorService,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.ExecutorService"/></param>
+        /// <param name="arg3"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.Channels.AsynchronousFileChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.Channels.AsynchronousFileChannel NewAsynchronousFileChannel(Java.Nio.File.Path arg0, Java.Util.Set arg1, Java.Util.Concurrent.ExecutorService arg2, params Java.Nio.File.Attribute.FileAttribute[] arg3)
+        {
+            if (arg3.Length == 0) return IExecute<Java.Nio.Channels.AsynchronousFileChannel>("newAsynchronousFileChannel", arg0, arg1, arg2); else return IExecute<Java.Nio.Channels.AsynchronousFileChannel>("newAsynchronousFileChannel", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#newFileChannel(java.nio.file.Path,java.util.Set%3C? extends java.nio.file.OpenOption%3E,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.Channels.FileChannel NewFileChannel(Java.Nio.File.Path arg0, Java.Util.Set arg1, params Java.Nio.File.Attribute.FileAttribute[] arg2)
+        {
+            if (arg2.Length == 0) return IExecute<Java.Nio.Channels.FileChannel>("newFileChannel", arg0, arg1); else return IExecute<Java.Nio.Channels.FileChannel>("newFileChannel", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#newFileSystem(java.nio.file.Path,java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.File.FileSystem NewFileSystem(Java.Nio.File.Path arg0, Java.Util.Map arg1)
+        {
+            return IExecute<Java.Nio.File.FileSystem>("newFileSystem", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html#readSymbolicLink(java.nio.file.Path)"/>

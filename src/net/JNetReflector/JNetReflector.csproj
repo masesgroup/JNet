@@ -70,6 +70,7 @@
     <Compile Include="..\JNet\Java\Lang\InstantiationException.cs" Link="Java\Lang\InstantiationException.cs" />
     <Compile Include="..\JNet\Java\Lang\InternalError.cs" Link="Java\Lang\InternalError.cs" />
     <Compile Include="..\JNet\Java\Lang\InterruptedException.cs" Link="Java\Lang\InterruptedException.cs" />
+    <Compile Include="..\JNet\Java\Lang\Iterable.cs" Link="Java\Lang\Iterable.cs" />
     <Compile Include="..\JNet\Java\Lang\LinkageError.cs" Link="Java\Lang\LinkageError.cs" />
     <Compile Include="..\JNet\Java\Lang\Module.cs" Link="Java\Lang\Module.cs" />
     <Compile Include="..\JNet\Java\Lang\NegativeArraySizeException.cs" Link="Java\Lang\NegativeArraySizeException.cs" />

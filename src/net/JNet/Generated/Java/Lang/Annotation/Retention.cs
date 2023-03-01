@@ -49,7 +49,16 @@ namespace Java.Lang.Annotation
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Retention.html#value()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Annotation.RetentionPolicy"/></returns>
+        public Java.Lang.Annotation.RetentionPolicy Value()
+        {
+            return IExecute<Java.Lang.Annotation.RetentionPolicy>("value");
+        }
+        
         #endregion
 
         #region Nested classes

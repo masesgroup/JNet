@@ -37,17 +37,23 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java Function <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html"/>. Extends <see cref="JVMBridgeListener"/>
     /// </summary>
-    /// <typeparam name="TObject">The data type associated to the event</typeparam>
-    /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
-    public class Function<TObject, TReturn> : JVMBridgeListener, IFunction<TObject, TReturn>
+    public abstract class Function : JVMBridgeListener
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
         public override string ClassName => "org.mases.jnet.util.function.JNetFunction";
+    }
 
+    /// <summary>
+    /// Listener for Java Function <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html"/>. Extends <see cref="Function"/>
+    /// </summary>
+    /// <typeparam name="TObject">The data type associated to the event</typeparam>
+    /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
+    public class Function<TObject, TReturn> : Function, IFunction<TObject, TReturn>
+    {
         Func<TObject, TReturn> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{TObject, TReturn}"/> to be executed

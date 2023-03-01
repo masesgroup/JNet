@@ -60,11 +60,39 @@ namespace Javax.Management.Openmbean
             get { return IExecute<string>("getDescription"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getLegalValues()"/> 
+        /// </summary>
+        public Java.Util.Set LegalValues
+        {
+            get { return IExecute<Java.Util.Set>("getLegalValues"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getMaxValue()"/> 
+        /// </summary>
+        public Java.Lang.Comparable MaxValue
+        {
+            get { return IExecute<Java.Lang.Comparable>("getMaxValue"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getMinValue()"/> 
+        /// </summary>
+        public Java.Lang.Comparable MinValue
+        {
+            get { return IExecute<Java.Lang.Comparable>("getMinValue"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getOpenType()"/> 
+        /// </summary>
+        public Javax.Management.Openmbean.OpenType OpenType
+        {
+            get { return IExecute<Javax.Management.Openmbean.OpenType>("getOpenType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasDefaultValue()"/>

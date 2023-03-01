@@ -46,6 +46,13 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getAvailableCurrencies()"/> 
+        /// </summary>
+        public static Java.Util.Set AvailableCurrencies
+        {
+            get { return SExecute<Java.Util.Set>("getAvailableCurrencies"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>

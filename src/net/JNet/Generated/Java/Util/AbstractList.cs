@@ -33,7 +33,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.AbstractList"/> to <see cref="Java.Util.List"/>
+        /// </summary>
+        public static implicit operator Java.Util.List(Java.Util.AbstractList t) => t.Cast<Java.Util.List>();
+        
         #endregion
 
         #region Fields
@@ -53,6 +57,16 @@ namespace Java.Util
         public object Get(int arg0)
         {
             return IExecute("get", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#addAll(int,java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool AddAll(int arg0, Java.Util.Collection arg1)
+        {
+            return IExecute<bool>("addAll", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#remove(int)"/>
@@ -90,6 +104,34 @@ namespace Java.Util
         public int LastIndexOf(object arg0)
         {
             return IExecute<int>("lastIndexOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#subList(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List SubListMethod(int arg0, int arg1)
+        {
+            return IExecute<Java.Util.List>("subList", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.ListIterator"/></returns>
+        public Java.Util.ListIterator ListIterator()
+        {
+            return IExecute<Java.Util.ListIterator>("listIterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.ListIterator"/></returns>
+        public Java.Util.ListIterator ListIterator(int arg0)
+        {
+            return IExecute<Java.Util.ListIterator>("listIterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#add(int,E)"/>

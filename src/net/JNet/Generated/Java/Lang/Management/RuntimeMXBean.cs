@@ -64,6 +64,13 @@ namespace Java.Lang.Management
             get { return IExecute<string>("getClassPath"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getInputArguments()"/> 
+        /// </summary>
+        public Java.Util.List InputArguments
+        {
+            get { return IExecute<Java.Util.List>("getInputArguments"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getLibraryPath()"/> 
         /// </summary>
         public string LibraryPath
@@ -118,6 +125,13 @@ namespace Java.Lang.Management
         public long StartTime
         {
             get { return IExecute<long>("getStartTime"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getSystemProperties()"/> 
+        /// </summary>
+        public Java.Util.Map SystemProperties
+        {
+            get { return IExecute<Java.Util.Map>("getSystemProperties"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getUptime()"/> 

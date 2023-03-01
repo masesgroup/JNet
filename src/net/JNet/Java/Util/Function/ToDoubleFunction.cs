@@ -36,16 +36,22 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java ToDoubleFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
     /// </summary>
-    /// <typeparam name="T">The data type associated to the event</typeparam>
-    public class ToDoubleFunction<T> : JVMBridgeListener, IToDoubleFunction<T>
+    public abstract class ToDoubleFunction : JVMBridgeListener
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetToDoubleFunction";
+    }
 
+    /// <summary>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleFunction.html"/>. Extends <see cref="ToDoubleFunction"/>
+    /// </summary>
+    /// <typeparam name="T">The data type associated to the event</typeparam>
+    public class ToDoubleFunction<T> : ToDoubleFunction, IToDoubleFunction<T>
+    {
         Func<T, double> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{T, Double}"/> to be executed

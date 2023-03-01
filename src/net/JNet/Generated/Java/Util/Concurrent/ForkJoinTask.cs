@@ -34,6 +34,10 @@ namespace Java.Util.Concurrent
 
         #region Class/Interface conversion operators
         /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.ForkJoinTask"/> to <see cref="Java.Util.Concurrent.Future"/>
+        /// </summary>
+        public static implicit operator Java.Util.Concurrent.Future(Java.Util.Concurrent.ForkJoinTask t) => t.Cast<Java.Util.Concurrent.Future>();
+        /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.ForkJoinTask"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.ForkJoinTask t) => t.Cast<Java.Io.Serializable>();
@@ -67,6 +71,34 @@ namespace Java.Util.Concurrent
             get { return SExecute<int>("getSurplusQueuedTaskCount"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.Collection%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public static Java.Util.Collection InvokeAll(Java.Util.Collection arg0)
+        {
+            return SExecute<Java.Util.Collection>("invokeAll", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
+        public static Java.Util.Concurrent.ForkJoinTask Adapt(Java.Lang.Runnable arg0, object arg1)
+        {
+            return SExecute<Java.Util.Concurrent.ForkJoinTask>("adapt", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.util.concurrent.Callable%3C? extends T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
+        public static Java.Util.Concurrent.ForkJoinTask Adapt(Java.Util.Concurrent.Callable arg0)
+        {
+            return SExecute<Java.Util.Concurrent.ForkJoinTask>("adapt", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#inForkJoinPool()"/>
         /// </summary>
         
@@ -76,11 +108,29 @@ namespace Java.Util.Concurrent
             return SExecute<bool>("inForkJoinPool");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
+        public static Java.Util.Concurrent.ForkJoinTask Adapt(Java.Lang.Runnable arg0)
+        {
+            return SExecute<Java.Util.Concurrent.ForkJoinTask>("adapt", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#helpQuiesce()"/>
         /// </summary>
         public static void HelpQuiesce()
         {
             SExecute("helpQuiesce");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask%3C?%3E,java.util.concurrent.ForkJoinTask%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
+        public static void InvokeAll(Java.Util.Concurrent.ForkJoinTask arg0, Java.Util.Concurrent.ForkJoinTask arg1)
+        {
+            SExecute("invokeAll", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask%3C?%3E...)"/>
@@ -180,6 +230,15 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("isDone");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#fork()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
+        public Java.Util.Concurrent.ForkJoinTask Fork()
+        {
+            return IExecute<Java.Util.Concurrent.ForkJoinTask>("fork");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#setForkJoinTaskTag(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
@@ -198,6 +257,19 @@ namespace Java.Util.Concurrent
         public object Get()
         {
             return IExecute("get");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#get(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
+        /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
+        public object Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            return IExecute("get", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invoke()"/>

@@ -77,6 +77,13 @@ namespace Javax.Swing.Text
             get { return IExecute<int>("getAttributeCount"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#getAttributeNames()"/> 
+        /// </summary>
+        public Java.Util.Enumeration AttributeNames
+        {
+            get { return IExecute<Java.Util.Enumeration>("getAttributeNames"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#getResolveParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#setResolveParent(javax.swing.text.AttributeSet)"/>
         /// </summary>
         public Javax.Swing.Text.AttributeSet ResolveParent
@@ -171,6 +178,14 @@ namespace Javax.Swing.Text
         public void RemoveAttribute(object arg0)
         {
             IExecute("removeAttribute", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#removeAttributes(java.util.Enumeration%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
+        public void RemoveAttributes(Java.Util.Enumeration arg0)
+        {
+            IExecute("removeAttributes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#removeAttributes(javax.swing.text.AttributeSet)"/>

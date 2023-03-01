@@ -57,6 +57,27 @@ namespace Java.Nio.Channels
             get { return IExecute<Java.Net.SocketAddress>("getLocalAddress"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#setOption(java.net.SocketOption%3CT%3E,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.Channels.NetworkChannel SetOption(Java.Net.SocketOption arg0, object arg1)
+        {
+            return IExecute<Java.Nio.Channels.NetworkChannel>("setOption", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#getOption(java.net.SocketOption%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public object GetOption(Java.Net.SocketOption arg0)
+        {
+            return IExecute("getOption", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#bind(java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
@@ -65,6 +86,15 @@ namespace Java.Nio.Channels
         public Java.Nio.Channels.NetworkChannel Bind(Java.Net.SocketAddress arg0)
         {
             return IExecute<Java.Nio.Channels.NetworkChannel>("bind", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#supportedOptions()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set SupportedOptions()
+        {
+            return IExecute<Java.Util.Set>("supportedOptions");
         }
         
         #endregion

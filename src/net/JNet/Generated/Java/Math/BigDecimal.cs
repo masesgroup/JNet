@@ -175,7 +175,11 @@ namespace Java.Math
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Math.BigDecimal"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Math.BigDecimal t) => t.Cast<Java.Lang.Comparable>();
+        
         #endregion
 
         #region Fields
@@ -346,12 +350,33 @@ namespace Java.Math
             return IExecute<Java.Math.BigDecimal>("add", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#divide(java.math.BigDecimal,int,java.math.RoundingMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigDecimal"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Math.RoundingMode"/></param>
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, int arg1, Java.Math.RoundingMode arg2)
+        {
+            return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#divide(java.math.BigDecimal,java.math.MathContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigDecimal"/></param>
         /// <param name="arg1"><see cref="Java.Math.MathContext"/></param>
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
+        {
+            return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#divide(java.math.BigDecimal,java.math.RoundingMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigDecimal"/></param>
+        /// <param name="arg1"><see cref="Java.Math.RoundingMode"/></param>
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, Java.Math.RoundingMode arg1)
         {
             return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1);
         }
@@ -529,6 +554,16 @@ namespace Java.Math
         public Java.Math.BigDecimal ScaleByPowerOfTen(int arg0)
         {
             return IExecute<Java.Math.BigDecimal>("scaleByPowerOfTen", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#setScale(int,java.math.RoundingMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Math.RoundingMode"/></param>
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        public Java.Math.BigDecimal SetScale(int arg0, Java.Math.RoundingMode arg1)
+        {
+            return IExecute<Java.Math.BigDecimal>("setScale", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#setScale(int)"/>

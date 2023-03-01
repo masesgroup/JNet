@@ -42,6 +42,20 @@ namespace Javax.Naming.Spi
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirectoryManager.html#getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable%3C?, ?%3E,javax.naming.directory.Attributes)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
+        /// <param name="arg4"><see cref="Javax.Naming.Directory.Attributes"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
+        public static object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable arg3, Javax.Naming.Directory.Attributes arg4)
+        {
+            return SExecute("getObjectInstance", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirectoryManager.html#getContinuationDirContext(javax.naming.CannotProceedException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.CannotProceedException"/></param>
@@ -50,6 +64,20 @@ namespace Javax.Naming.Spi
         public static Javax.Naming.Directory.DirContext GetContinuationDirContext(Javax.Naming.CannotProceedException arg0)
         {
             return SExecute<Javax.Naming.Directory.DirContext>("getContinuationDirContext", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirectoryManager.html#getStateToBind(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable%3C?, ?%3E,javax.naming.directory.Attributes)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
+        /// <param name="arg4"><see cref="Javax.Naming.Directory.Attributes"/></param>
+        /// <returns><see cref="Javax.Naming.Spi.DirStateFactory.Result"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public static Javax.Naming.Spi.DirStateFactory.Result GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable arg3, Javax.Naming.Directory.Attributes arg4)
+        {
+            return SExecute<Javax.Naming.Spi.DirStateFactory.Result>("getStateToBind", arg0, arg1, arg2, arg3, arg4);
         }
         
         #endregion

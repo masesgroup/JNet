@@ -38,6 +38,24 @@ namespace Javax.Swing.Table
             : base(arg0, arg1)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#%3Cinit%3E(java.util.Vector%3C? extends java.util.Vector%3E,java.util.Vector%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
+        public DefaultTableModel(Java.Util.Vector arg0, Java.Util.Vector arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#%3Cinit%3E(java.util.Vector%3C?%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public DefaultTableModel(Java.Util.Vector arg0, int arg1)
+            : base(arg0, arg1)
+        {
+        }
         
         #endregion
 
@@ -59,11 +77,27 @@ namespace Javax.Swing.Table
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#getDataVector()"/> 
+        /// </summary>
+        public Java.Util.Vector DataVector
+        {
+            get { return IExecute<Java.Util.Vector>("getDataVector"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addColumn(java.lang.Object,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         public void AddColumn(object arg0, object[] arg1)
+        {
+            IExecute("addColumn", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addColumn(java.lang.Object,java.util.Vector%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
+        public void AddColumn(object arg0, Java.Util.Vector arg1)
         {
             IExecute("addColumn", arg0, arg1);
         }
@@ -84,11 +118,28 @@ namespace Javax.Swing.Table
             IExecute("addRow", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addRow(java.util.Vector%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        public void AddRow(Java.Util.Vector arg0)
+        {
+            IExecute("addRow", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#insertRow(int,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         public void InsertRow(int arg0, object[] arg1)
+        {
+            IExecute("insertRow", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#insertRow(int,java.util.Vector%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
+        public void InsertRow(int arg0, Java.Util.Vector arg1)
         {
             IExecute("insertRow", arg0, arg1);
         }
@@ -143,11 +194,28 @@ namespace Javax.Swing.Table
             IExecute("setColumnCount", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setColumnIdentifiers(java.util.Vector%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        public void SetColumnIdentifiers(Java.Util.Vector arg0)
+        {
+            IExecute("setColumnIdentifiers", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setDataVector(java.lang.Object[][],java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         public void SetDataVector(object[][] arg0, object[] arg1)
+        {
+            IExecute("setDataVector", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setDataVector(java.util.Vector%3C? extends java.util.Vector%3E,java.util.Vector%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
+        public void SetDataVector(Java.Util.Vector arg0, Java.Util.Vector arg1)
         {
             IExecute("setDataVector", arg0, arg1);
         }

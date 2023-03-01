@@ -61,6 +61,16 @@ namespace Javax.Sql.Rowset
             get { return IExecute<int>("getColumnCount"); } set { IExecute("setColumnCount", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#unwrap(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public object Unwrap(Java.Lang.Class arg0)
+        {
+            return IExecute("unwrap", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#isAutoIncrement(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -129,6 +139,16 @@ namespace Javax.Sql.Rowset
         public bool IsSigned(int arg0)
         {
             return IExecute<bool>("isSigned", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#isWrapperFor(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool IsWrapperFor(Java.Lang.Class arg0)
+        {
+            return IExecute<bool>("isWrapperFor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetMetaDataImpl.html#isWritable(int)"/>

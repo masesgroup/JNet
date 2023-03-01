@@ -30,6 +30,15 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#%3Cinit%3E(V,javax.swing.plaf.LayerUI%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Plaf.LayerUI"/></param>
+        public JLayer(Java.Awt.Component arg0, Javax.Swing.Plaf.LayerUI arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#%3Cinit%3E(V)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -145,6 +154,14 @@ namespace Javax.Swing
         public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
         {
             IExecute("propertyChange", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setUI(javax.swing.plaf.LayerUI%3C? super V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Plaf.LayerUI"/></param>
+        public void SetUI(Javax.Swing.Plaf.LayerUI arg0)
+        {
+            IExecute("setUI", arg0);
         }
         
         #endregion

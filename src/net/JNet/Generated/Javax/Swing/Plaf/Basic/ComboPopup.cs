@@ -53,6 +53,13 @@ namespace Javax.Swing.Plaf.Basic
             get { return IExecute<Java.Awt.EventNs.KeyListener>("getKeyListener"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getList()"/> 
+        /// </summary>
+        public Javax.Swing.JList List
+        {
+            get { return IExecute<Javax.Swing.JList>("getList"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getMouseListener()"/> 
         /// </summary>
         public Java.Awt.EventNs.MouseListener MouseListener

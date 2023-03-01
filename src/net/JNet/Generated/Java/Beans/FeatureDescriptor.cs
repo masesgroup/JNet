@@ -103,6 +103,15 @@ namespace Java.Beans
             return IExecute("getValue", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#attributeNames()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration AttributeNames()
+        {
+            return IExecute<Java.Util.Enumeration>("attributeNames");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#setExpert(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

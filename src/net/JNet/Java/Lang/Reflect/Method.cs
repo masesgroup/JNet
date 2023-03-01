@@ -45,10 +45,6 @@ namespace Java.Lang.Reflect
 #else
     public partial class Method
     {
-        /// <summary>
-        /// Returns a <see cref="Class"/> object that represents the formal return type of the method represented by this <see cref="Method"/> object.
-        /// </summary>
-        public Class ReturnType => IExecute<Class>("getReturnType");
 #endif
     }
 }

@@ -29,7 +29,27 @@ namespace Javax.Management
     public partial class StandardMBean
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#%3Cinit%3E(T,java.lang.Class%3CT%3E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        public StandardMBean(object arg0, Java.Lang.Class arg1, bool arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#%3Cinit%3E(T,java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
+        public StandardMBean(object arg0, Java.Lang.Class arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -61,11 +81,25 @@ namespace Javax.Management
             get { return IExecute("getImplementation"); } set { IExecute("setImplementation", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getImplementationClass()"/> 
+        /// </summary>
+        public Java.Lang.Class ImplementationClass
+        {
+            get { return IExecute<Java.Lang.Class>("getImplementationClass"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getMBeanInfo()"/> 
         /// </summary>
         public Javax.Management.MBeanInfo MBeanInfo
         {
             get { return IExecute<Javax.Management.MBeanInfo>("getMBeanInfo"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getMBeanInterface()"/> 
+        /// </summary>
+        public Java.Lang.Class MBeanInterface
+        {
+            get { return IExecute<Java.Lang.Class>("getMBeanInterface"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getAttribute(java.lang.String)"/>
@@ -91,6 +125,24 @@ namespace Javax.Management
         public object Invoke(string arg0, object[] arg1, string[] arg2)
         {
             return IExecute("invoke", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getAttributes(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Management.AttributeList"/></returns>
+        public Javax.Management.AttributeList GetAttributes(string[] arg0)
+        {
+            return IExecute<Javax.Management.AttributeList>("getAttributes", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#setAttributes(javax.management.AttributeList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.AttributeList"/></param>
+        /// <returns><see cref="Javax.Management.AttributeList"/></returns>
+        public Javax.Management.AttributeList SetAttributes(Javax.Management.AttributeList arg0)
+        {
+            return IExecute<Javax.Management.AttributeList>("setAttributes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>

@@ -33,7 +33,11 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.Attribute.FileTime"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Nio.File.Attribute.FileTime t) => t.Cast<Java.Lang.Comparable>();
+        
         #endregion
 
         #region Fields
@@ -49,6 +53,16 @@ namespace Java.Nio.File.Attribute
         public static Java.Nio.File.Attribute.FileTime From(Java.Time.Instant arg0)
         {
             return SExecute<Java.Nio.File.Attribute.FileTime>("from", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#from(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        public static Java.Nio.File.Attribute.FileTime From(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            return SExecute<Java.Nio.File.Attribute.FileTime>("from", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#fromMillis(long)"/>
@@ -89,6 +103,15 @@ namespace Java.Nio.File.Attribute
         public Java.Time.Instant ToInstant()
         {
             return IExecute<Java.Time.Instant>("toInstant");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#to(java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="long"/></returns>
+        public long To(Java.Util.Concurrent.TimeUnit arg0)
+        {
+            return IExecute<long>("to", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toMillis()"/>

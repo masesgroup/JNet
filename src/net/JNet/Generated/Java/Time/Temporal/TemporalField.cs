@@ -132,6 +132,17 @@ namespace Java.Time.Temporal
         {
             return IExecute<string>("getDisplayName", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#resolve(java.util.Map%3Cjava.time.temporal.TemporalField, java.lang.Long%3E,java.time.temporal.TemporalAccessor,java.time.format.ResolverStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
+        /// <param name="arg2"><see cref="Java.Time.Format.ResolverStyle"/></param>
+        /// <returns><see cref="Java.Time.Temporal.TemporalAccessor"/></returns>
+        public Java.Time.Temporal.TemporalAccessor Resolve(Java.Util.Map arg0, Java.Time.Temporal.TemporalAccessor arg1, Java.Time.Format.ResolverStyle arg2)
+        {
+            return IExecute<Java.Time.Temporal.TemporalAccessor>("resolve", arg0, arg1, arg2);
+        }
         
         #endregion
 

@@ -29,7 +29,15 @@ namespace Javax.Imageio.Spi
     public partial class ServiceRegistry
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#%3Cinit%3E(java.util.Iterator%3Cjava.lang.Class%3C?%3E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
+        public ServiceRegistry(Java.Util.Iterator arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -41,10 +49,108 @@ namespace Javax.Imageio.Spi
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#lookupProviders(java.lang.Class%3CT%3E,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public static Java.Util.Iterator LookupProviders(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
+        {
+            return SExecute<Java.Util.Iterator>("lookupProviders", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#lookupProviders(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public static Java.Util.Iterator LookupProviders(Java.Lang.Class arg0)
+        {
+            return SExecute<Java.Util.Iterator>("lookupProviders", arg0);
+        }
+        
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#getCategories()"/> 
+        /// </summary>
+        public Java.Util.Iterator Categories
+        {
+            get { return IExecute<Java.Util.Iterator>("getCategories"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#deregisterServiceProvider(T,java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool DeregisterServiceProvider(object arg0, Java.Lang.Class arg1)
+        {
+            return IExecute<bool>("deregisterServiceProvider", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#registerServiceProvider(T,java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool RegisterServiceProvider(object arg0, Java.Lang.Class arg1)
+        {
+            return IExecute<bool>("registerServiceProvider", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#setOrdering(java.lang.Class%3CT%3E,T,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool SetOrdering(Java.Lang.Class arg0, object arg1, object arg2)
+        {
+            return IExecute<bool>("setOrdering", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#unsetOrdering(java.lang.Class%3CT%3E,T,T)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool UnsetOrdering(Java.Lang.Class arg0, object arg1, object arg2)
+        {
+            return IExecute<bool>("unsetOrdering", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#getServiceProviders(java.lang.Class%3CT%3E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator GetServiceProviders(Java.Lang.Class arg0, bool arg1)
+        {
+            return IExecute<Java.Util.Iterator>("getServiceProviders", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#getServiceProviders(java.lang.Class%3CT%3E,javax.imageio.spi.ServiceRegistry$Filter,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Javax.Imageio.Spi.ServiceRegistry.Filter"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator GetServiceProviders(Java.Lang.Class arg0, Javax.Imageio.Spi.ServiceRegistry.Filter arg1, bool arg2)
+        {
+            return IExecute<Java.Util.Iterator>("getServiceProviders", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#getServiceProviderByClass(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object GetServiceProviderByClass(Java.Lang.Class arg0)
+        {
+            return IExecute("getServiceProviderByClass", arg0);
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#contains(java.lang.Object)"/>
         /// </summary>
@@ -62,6 +168,14 @@ namespace Javax.Imageio.Spi
             IExecute("deregisterAll");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#deregisterAll(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        public void DeregisterAll(Java.Lang.Class arg0)
+        {
+            IExecute("deregisterAll", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#deregisterServiceProvider(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -76,6 +190,14 @@ namespace Javax.Imageio.Spi
         public void RegisterServiceProvider(object arg0)
         {
             IExecute("registerServiceProvider", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#registerServiceProviders(java.util.Iterator%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
+        public void RegisterServiceProviders(Java.Util.Iterator arg0)
+        {
+            IExecute("registerServiceProviders", arg0);
         }
         
         #endregion

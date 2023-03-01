@@ -29,11 +29,34 @@ namespace Java.Io
     public partial class ObjectStreamField
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#%3Cinit%3E(java.lang.String,java.lang.Class%3C?%3E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        public ObjectStreamField(string arg0, Java.Lang.Class arg1, bool arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#%3Cinit%3E(java.lang.String,java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        public ObjectStreamField(string arg0, Java.Lang.Class arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Io.ObjectStreamField"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Io.ObjectStreamField t) => t.Cast<Java.Lang.Comparable>();
+        
         #endregion
 
         #region Fields
@@ -58,6 +81,13 @@ namespace Java.Io
         public int Offset
         {
             get { return IExecute<int>("getOffset"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getType()"/> 
+        /// </summary>
+        public Java.Lang.Class Type
+        {
+            get { return IExecute<Java.Lang.Class>("getType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getTypeCode()"/> 

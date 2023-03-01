@@ -63,6 +63,20 @@ namespace Javax.Net.Ssl
         {
             get { return IExecuteArray<string>("getPeerSupportedSignatureAlgorithms"); }
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getRequestedServerNames()"/> 
+        /// </summary>
+        public Java.Util.List RequestedServerNames
+        {
+            get { return IExecute<Java.Util.List>("getRequestedServerNames"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html#getStatusResponses()"/> 
+        /// </summary>
+        public Java.Util.List StatusResponses
+        {
+            get { return IExecute<Java.Util.List>("getStatusResponses"); }
+        }
         
         #endregion
 

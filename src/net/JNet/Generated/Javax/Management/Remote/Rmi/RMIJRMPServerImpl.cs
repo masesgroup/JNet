@@ -29,7 +29,19 @@ namespace Javax.Management.Remote.Rmi
     public partial class RMIJRMPServerImpl
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIJRMPServerImpl.html#%3Cinit%3E(int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory,java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Server.RMIClientSocketFactory"/></param>
+        /// <param name="arg2"><see cref="Java.Rmi.Server.RMIServerSocketFactory"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Map"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public RMIJRMPServerImpl(int arg0, Java.Rmi.Server.RMIClientSocketFactory arg1, Java.Rmi.Server.RMIServerSocketFactory arg2, Java.Util.Map arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators

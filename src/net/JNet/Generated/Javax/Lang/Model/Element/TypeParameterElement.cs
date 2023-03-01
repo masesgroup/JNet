@@ -50,6 +50,13 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html#getBounds()"/> 
+        /// </summary>
+        public Java.Util.List Bounds
+        {
+            get { return IExecute<Java.Util.List>("getBounds"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement

@@ -33,7 +33,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.SortedMap"/> to <see cref="Java.Util.Map"/>
+        /// </summary>
+        public static implicit operator Java.Util.Map(Java.Util.SortedMap t) => t.Cast<Java.Util.Map>();
+        
         #endregion
 
         #region Fields
@@ -45,6 +49,70 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#values()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection Values()
+        {
+            return IExecute<Java.Util.Collection>("values");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator Comparator()
+        {
+            return IExecute<Java.Util.Comparator>("comparator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set EntrySet()
+        {
+            return IExecute<Java.Util.Set>("entrySet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#keySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set KeySet()
+        {
+            return IExecute<Java.Util.Set>("keySet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#headMap(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        public Java.Util.SortedMap HeadMap(object arg0)
+        {
+            return IExecute<Java.Util.SortedMap>("headMap", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#subMap(K,K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        public Java.Util.SortedMap SubMap(object arg0, object arg1)
+        {
+            return IExecute<Java.Util.SortedMap>("subMap", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#tailMap(K)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        public Java.Util.SortedMap TailMap(object arg0)
+        {
+            return IExecute<Java.Util.SortedMap>("tailMap", arg0);
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#firstKey()"/>
         /// </summary>

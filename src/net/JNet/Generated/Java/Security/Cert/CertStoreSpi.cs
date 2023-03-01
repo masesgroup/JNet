@@ -54,7 +54,27 @@ namespace Java.Security.Cert
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreSpi.html#engineGetCertificates(java.security.cert.CertSelector)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.CertSelector"/></param>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Security.Cert.CertStoreException"/>
+        public Java.Util.Collection EngineGetCertificates(Java.Security.Cert.CertSelector arg0)
+        {
+            return IExecute<Java.Util.Collection>("engineGetCertificates", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreSpi.html#engineGetCRLs(java.security.cert.CRLSelector)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.CRLSelector"/></param>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Security.Cert.CertStoreException"/>
+        public Java.Util.Collection EngineGetCRLs(Java.Security.Cert.CRLSelector arg0)
+        {
+            return IExecute<Java.Util.Collection>("engineGetCRLs", arg0);
+        }
+        
         #endregion
 
         #region Nested classes

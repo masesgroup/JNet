@@ -61,6 +61,15 @@ namespace Javax.Swing.Table
             get { return IExecuteArray<Javax.Swing.Event.TableModelListener>("getTableModelListeners"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#getListeners(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Util.EventListener"/></returns>
+        public Java.Util.EventListener[] GetListeners(Java.Lang.Class arg0)
+        {
+            return IExecuteArray<Java.Util.EventListener>("getListeners", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#isCellEditable(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -78,6 +87,15 @@ namespace Javax.Swing.Table
         public int FindColumn(string arg0)
         {
             return IExecute<int>("findColumn", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#getColumnClass(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetColumnClass(int arg0)
+        {
+            return IExecute<Java.Lang.Class>("getColumnClass", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#getColumnName(int)"/>

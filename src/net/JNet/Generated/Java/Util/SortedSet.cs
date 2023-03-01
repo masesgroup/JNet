@@ -33,7 +33,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.SortedSet"/> to <see cref="Java.Util.Set"/>
+        /// </summary>
+        public static implicit operator Java.Util.Set(Java.Util.SortedSet t) => t.Cast<Java.Util.Set>();
+        
         #endregion
 
         #region Fields
@@ -62,6 +66,52 @@ namespace Java.Util
         public object Last()
         {
             return IExecute("last");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#comparator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator Comparator()
+        {
+            return IExecute<Java.Util.Comparator>("comparator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#headSet(E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public Java.Util.SortedSet HeadSet(object arg0)
+        {
+            return IExecute<Java.Util.SortedSet>("headSet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#subSet(E,E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public Java.Util.SortedSet SubSet(object arg0, object arg1)
+        {
+            return IExecute<Java.Util.SortedSet>("subSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#tailSet(E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public Java.Util.SortedSet TailSet(object arg0)
+        {
+            return IExecute<Java.Util.SortedSet>("tailSet", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#spliterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        public Java.Util.Spliterator Spliterator()
+        {
+            return IExecute<Java.Util.Spliterator>("spliterator");
         }
         
         #endregion

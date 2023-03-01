@@ -73,6 +73,19 @@ namespace Javax.Swing
         {
             return IExecute<int>("getContainerGap", arg0, arg1, arg2);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#getPreferredGap(javax.swing.JComponent,javax.swing.JComponent,javax.swing.LayoutStyle$ComponentPlacement,int,java.awt.Container)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg2"><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int GetPreferredGap(Javax.Swing.JComponent arg0, Javax.Swing.JComponent arg1, Javax.Swing.LayoutStyle.ComponentPlacement arg2, int arg3, Java.Awt.Container arg4)
+        {
+            return IExecute<int>("getPreferredGap", arg0, arg1, arg2, arg3, arg4);
+        }
         
         #endregion
 
@@ -105,6 +118,15 @@ namespace Javax.Swing
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></returns>
+            public static Javax.Swing.LayoutStyle.ComponentPlacement ValueOf(string arg0)
+            {
+                return SExecute<Javax.Swing.LayoutStyle.ComponentPlacement>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#values()"/>
             /// </summary>

@@ -46,6 +46,13 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#getTabularType()"/> 
+        /// </summary>
+        public Javax.Management.Openmbean.TabularType TabularType
+        {
+            get { return IExecute<Javax.Management.Openmbean.TabularType>("getTabularType"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#containsKey(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -89,6 +96,24 @@ namespace Javax.Management.Openmbean
         public object[] CalculateIndex(Javax.Management.Openmbean.CompositeData arg0)
         {
             return IExecuteArray<object>("calculateIndex", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#values()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection Values()
+        {
+            return IExecute<Java.Util.Collection>("values");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#keySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set KeySet()
+        {
+            return IExecute<Java.Util.Set>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#get(java.lang.Object[])"/>

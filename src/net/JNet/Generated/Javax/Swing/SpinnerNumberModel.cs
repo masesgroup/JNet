@@ -51,6 +51,17 @@ namespace Javax.Swing
             : base(arg0, arg1, arg2, arg3)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#%3Cinit%3E(java.lang.Number,java.lang.Comparable%3C?%3E,java.lang.Comparable%3C?%3E,java.lang.Number)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Number"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Comparable"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Comparable"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.Number"/></param>
+        public SpinnerNumberModel(Java.Lang.Number arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, Java.Lang.Number arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
         
         #endregion
 
@@ -71,6 +82,20 @@ namespace Javax.Swing
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#setMaximum(java.lang.Comparable%3C?%3E)"/>
+        /// </summary>
+        public Java.Lang.Comparable Maximum
+        {
+            get { return IExecute<Java.Lang.Comparable>("getMaximum"); } set { IExecute("setMaximum", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#setMinimum(java.lang.Comparable%3C?%3E)"/>
+        /// </summary>
+        public Java.Lang.Comparable Minimum
+        {
+            get { return IExecute<Java.Lang.Comparable>("getMinimum"); } set { IExecute("setMinimum", value); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerNumberModel.html#getNumber()"/> 
         /// </summary>

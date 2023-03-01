@@ -33,7 +33,11 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Nio.File.SimpleFileVisitor"/> to <see cref="Java.Nio.File.FileVisitor"/>
+        /// </summary>
+        public static implicit operator Java.Nio.File.FileVisitor(Java.Nio.File.SimpleFileVisitor t) => t.Cast<Java.Nio.File.FileVisitor>();
+        
         #endregion
 
         #region Fields
@@ -45,7 +49,51 @@ namespace Java.Nio.File
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#postVisitDirectory(T,java.io.IOException)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
+        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.File.FileVisitResult PostVisitDirectory(object arg0, Java.Io.IOException arg1)
+        {
+            return IExecute<Java.Nio.File.FileVisitResult>("postVisitDirectory", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#preVisitDirectory(T,java.nio.file.attribute.BasicFileAttributes)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
+        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.File.FileVisitResult PreVisitDirectory(object arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1)
+        {
+            return IExecute<Java.Nio.File.FileVisitResult>("preVisitDirectory", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#visitFile(T,java.nio.file.attribute.BasicFileAttributes)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
+        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.File.FileVisitResult VisitFile(object arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1)
+        {
+            return IExecute<Java.Nio.File.FileVisitResult>("visitFile", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html#visitFileFailed(T,java.io.IOException)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
+        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.File.FileVisitResult VisitFileFailed(object arg0, Java.Io.IOException arg1)
+        {
+            return IExecute<Java.Nio.File.FileVisitResult>("visitFileFailed", arg0, arg1);
+        }
+        
         #endregion
 
         #region Nested classes

@@ -133,6 +133,37 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.Datatransfer.Clipboard>("getSystemSelection"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#createDragGestureRecognizer(java.lang.Class%3CT%3E,java.awt.dnd.DragSource,java.awt.Component,int,java.awt.dnd.DragGestureListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Dnd.DragSource"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.Dnd.DragGestureListener"/></param>
+        /// <returns><see cref="Java.Awt.Dnd.DragGestureRecognizer"/></returns>
+        public Java.Awt.Dnd.DragGestureRecognizer CreateDragGestureRecognizer(Java.Lang.Class arg0, Java.Awt.Dnd.DragSource arg1, Java.Awt.Component arg2, int arg3, Java.Awt.Dnd.DragGestureListener arg4)
+        {
+            return IExecute<Java.Awt.Dnd.DragGestureRecognizer>("createDragGestureRecognizer", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isModalExclusionTypeSupported(java.awt.Dialog$ModalExclusionType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dialog.ModalExclusionType"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsModalExclusionTypeSupported(Java.Awt.Dialog.ModalExclusionType arg0)
+        {
+            return IExecute<bool>("isModalExclusionTypeSupported", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isModalityTypeSupported(java.awt.Dialog$ModalityType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dialog.ModalityType"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsModalityTypeSupported(Java.Awt.Dialog.ModalityType arg0)
+        {
+            return IExecute<bool>("isModalityTypeSupported", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#prepareImage(java.awt.Image,int,int,java.awt.image.ImageObserver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
@@ -211,6 +242,27 @@ namespace Java.Awt
         public Java.Awt.Image GetImage(Java.Net.URL arg0)
         {
             return IExecute<Java.Awt.Image>("getImage", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getPrintJob(java.awt.Frame,java.lang.String,java.util.Properties)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Frame"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Properties"/></param>
+        /// <returns><see cref="Java.Awt.PrintJob"/></returns>
+        public Java.Awt.PrintJob GetPrintJob(Java.Awt.Frame arg0, string arg1, Java.Util.Properties arg2)
+        {
+            return IExecute<Java.Awt.PrintJob>("getPrintJob", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#mapInputMethodHighlight(java.awt.im.InputMethodHighlight)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Im.InputMethodHighlight"/></param>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public Java.Util.Map MapInputMethodHighlight(Java.Awt.Im.InputMethodHighlight arg0)
+        {
+            return IExecute<Java.Util.Map>("mapInputMethodHighlight", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#beep()"/>

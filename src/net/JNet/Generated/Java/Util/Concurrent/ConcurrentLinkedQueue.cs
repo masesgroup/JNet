@@ -29,10 +29,22 @@ namespace Java.Util.Concurrent
     public partial class ConcurrentLinkedQueue
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html#%3Cinit%3E(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public ConcurrentLinkedQueue(Java.Util.Collection arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.Concurrent.ConcurrentLinkedQueue"/> to <see cref="Java.Util.Queue"/>
+        /// </summary>
+        public static implicit operator Java.Util.Queue(Java.Util.Concurrent.ConcurrentLinkedQueue t) => t.Cast<Java.Util.Queue>();
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentLinkedQueue"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>

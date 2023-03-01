@@ -29,7 +29,15 @@ namespace Java.Awt.DesktopNs
     public partial class PrintFilesEvent
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PrintFilesEvent.html#%3Cinit%3E(java.util.List%3Cjava.io.File%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public PrintFilesEvent(Java.Util.List arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators

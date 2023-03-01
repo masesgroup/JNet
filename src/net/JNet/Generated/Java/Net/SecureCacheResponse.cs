@@ -53,6 +53,13 @@ namespace Java.Net
             get { return IExecute<string>("getCipherSuite"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getLocalCertificateChain()"/> 
+        /// </summary>
+        public Java.Util.List LocalCertificateChain
+        {
+            get { return IExecute<Java.Util.List>("getLocalCertificateChain"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getLocalPrincipal()"/> 
         /// </summary>
         public Java.Security.Principal LocalPrincipal
@@ -65,6 +72,13 @@ namespace Java.Net
         public Java.Security.Principal PeerPrincipal
         {
             get { return IExecute<Java.Security.Principal>("getPeerPrincipal"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SecureCacheResponse.html#getServerCertificateChain()"/> 
+        /// </summary>
+        public Java.Util.List ServerCertificateChain
+        {
+            get { return IExecute<Java.Util.List>("getServerCertificateChain"); }
         }
         
         #endregion

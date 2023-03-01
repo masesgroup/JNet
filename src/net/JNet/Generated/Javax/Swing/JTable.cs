@@ -39,6 +39,15 @@ namespace Javax.Swing
         {
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#%3Cinit%3E(java.util.Vector%3C? extends java.util.Vector%3E,java.util.Vector%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
+        public JTable(Java.Util.Vector arg0, Java.Util.Vector arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#%3Cinit%3E(javax.swing.table.TableModel,javax.swing.table.TableColumnModel,javax.swing.ListSelectionModel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Table.TableModel"/></param>
@@ -193,6 +202,13 @@ namespace Javax.Swing
             get { return IExecute<bool>("getDragEnabled"); } set { IExecute("setDragEnabled", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDropMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDropMode(javax.swing.DropMode)"/>
+        /// </summary>
+        public Javax.Swing.DropMode DropMode
+        {
+            get { return IExecute<Javax.Swing.DropMode>("getDropMode"); } set { IExecute("setDropMode", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getEditingColumn()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setEditingColumn(int)"/>
         /// </summary>
         public int EditingColumn
@@ -275,6 +291,13 @@ namespace Javax.Swing
         public bool RowSelectionAllowed
         {
             get { return IExecute<bool>("getRowSelectionAllowed"); } set { IExecute("setRowSelectionAllowed", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getRowSorter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowSorter(javax.swing.RowSorter%3C? extends javax.swing.table.TableModel%3E)"/>
+        /// </summary>
+        public Javax.Swing.RowSorter RowSorter
+        {
+            get { return IExecute<Javax.Swing.RowSorter>("getRowSorter"); } set { IExecute("setRowSorter", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getScrollableTracksViewportHeight()"/> 
@@ -467,6 +490,61 @@ namespace Javax.Swing
             return IExecute<bool>("print");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#print(javax.swing.JTable$PrintMode,java.text.MessageFormat,java.text.MessageFormat,boolean,javax.print.attribute.PrintRequestAttributeSet,boolean,javax.print.PrintService)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTable.PrintMode"/></param>
+        /// <param name="arg1"><see cref="Java.Text.MessageFormat"/></param>
+        /// <param name="arg2"><see cref="Java.Text.MessageFormat"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
+        /// <param name="arg6"><see cref="Javax.Print.PrintService"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Awt.Print.PrinterException"/>
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public bool Print(Javax.Swing.JTable.PrintMode arg0, Java.Text.MessageFormat arg1, Java.Text.MessageFormat arg2, bool arg3, Javax.Print.Attribute.PrintRequestAttributeSet arg4, bool arg5, Javax.Print.PrintService arg6)
+        {
+            return IExecute<bool>("print", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#print(javax.swing.JTable$PrintMode,java.text.MessageFormat,java.text.MessageFormat,boolean,javax.print.attribute.PrintRequestAttributeSet,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTable.PrintMode"/></param>
+        /// <param name="arg1"><see cref="Java.Text.MessageFormat"/></param>
+        /// <param name="arg2"><see cref="Java.Text.MessageFormat"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Awt.Print.PrinterException"/>
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public bool Print(Javax.Swing.JTable.PrintMode arg0, Java.Text.MessageFormat arg1, Java.Text.MessageFormat arg2, bool arg3, Javax.Print.Attribute.PrintRequestAttributeSet arg4, bool arg5)
+        {
+            return IExecute<bool>("print", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#print(javax.swing.JTable$PrintMode,java.text.MessageFormat,java.text.MessageFormat)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTable.PrintMode"/></param>
+        /// <param name="arg1"><see cref="Java.Text.MessageFormat"/></param>
+        /// <param name="arg2"><see cref="Java.Text.MessageFormat"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Awt.Print.PrinterException"/>
+        public bool Print(Javax.Swing.JTable.PrintMode arg0, Java.Text.MessageFormat arg1, Java.Text.MessageFormat arg2)
+        {
+            return IExecute<bool>("print", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#print(javax.swing.JTable$PrintMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTable.PrintMode"/></param>
+        /// <returns><see langword="bool"/></returns>
+        /// <exception cref="Java.Awt.Print.PrinterException"/>
+        public bool Print(Javax.Swing.JTable.PrintMode arg0)
+        {
+            return IExecute<bool>("print", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDropLocation()"/>
         /// </summary>
         
@@ -583,6 +661,17 @@ namespace Javax.Swing
             return IExecute<Java.Awt.Component>("prepareRenderer", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getPrintable(javax.swing.JTable$PrintMode,java.text.MessageFormat,java.text.MessageFormat)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTable.PrintMode"/></param>
+        /// <param name="arg1"><see cref="Java.Text.MessageFormat"/></param>
+        /// <param name="arg2"><see cref="Java.Text.MessageFormat"/></param>
+        /// <returns><see cref="Java.Awt.Print.Printable"/></returns>
+        public Java.Awt.Print.Printable GetPrintable(Javax.Swing.JTable.PrintMode arg0, Java.Text.MessageFormat arg1, Java.Text.MessageFormat arg2)
+        {
+            return IExecute<Java.Awt.Print.Printable>("getPrintable", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellRect(int,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -592,6 +681,15 @@ namespace Javax.Swing
         public Java.Awt.Rectangle GetCellRect(int arg0, int arg1, bool arg2)
         {
             return IExecute<Java.Awt.Rectangle>("getCellRect", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnClass(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetColumnClass(int arg0)
+        {
+            return IExecute<Java.Lang.Class>("getColumnClass", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getValueAt(int,int)"/>
@@ -623,6 +721,15 @@ namespace Javax.Swing
             return IExecute<Javax.Swing.Table.TableCellEditor>("getCellEditor", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDefaultEditor(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Javax.Swing.Table.TableCellEditor"/></returns>
+        public Javax.Swing.Table.TableCellEditor GetDefaultEditor(Java.Lang.Class arg0)
+        {
+            return IExecute<Javax.Swing.Table.TableCellEditor>("getDefaultEditor", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellRenderer(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -631,6 +738,15 @@ namespace Javax.Swing
         public Javax.Swing.Table.TableCellRenderer GetCellRenderer(int arg0, int arg1)
         {
             return IExecute<Javax.Swing.Table.TableCellRenderer>("getCellRenderer", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDefaultRenderer(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Javax.Swing.Table.TableCellRenderer"/></returns>
+        public Javax.Swing.Table.TableCellRenderer GetDefaultRenderer(Java.Lang.Class arg0)
+        {
+            return IExecute<Javax.Swing.Table.TableCellRenderer>("getDefaultRenderer", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumn(java.lang.Object)"/>
@@ -807,6 +923,24 @@ namespace Javax.Swing
             IExecute("setColumnSelectionInterval", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDefaultEditor(java.lang.Class%3C?%3E,javax.swing.table.TableCellEditor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Table.TableCellEditor"/></param>
+        public void SetDefaultEditor(Java.Lang.Class arg0, Javax.Swing.Table.TableCellEditor arg1)
+        {
+            IExecute("setDefaultEditor", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDefaultRenderer(java.lang.Class%3C?%3E,javax.swing.table.TableCellRenderer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Table.TableCellRenderer"/></param>
+        public void SetDefaultRenderer(Java.Lang.Class arg0, Javax.Swing.Table.TableCellRenderer arg1)
+        {
+            IExecute("setDefaultRenderer", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowHeight(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -977,6 +1111,15 @@ namespace Javax.Swing
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Swing.JTable.PrintMode"/></returns>
+            public static Javax.Swing.JTable.PrintMode ValueOf(string arg0)
+            {
+                return SExecute<Javax.Swing.JTable.PrintMode>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#values()"/>
             /// </summary>

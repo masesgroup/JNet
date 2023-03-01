@@ -29,7 +29,18 @@ namespace Java.Awt.Dnd
     public partial class DragGestureEvent
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#%3Cinit%3E(java.awt.dnd.DragGestureRecognizer,int,java.awt.Point,java.util.List%3C? extends java.awt.event.InputEvent%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragGestureRecognizer"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Point"/></param>
+        /// <param name="arg3"><see cref="Java.Util.List"/></param>
+        public DragGestureEvent(Java.Awt.Dnd.DragGestureRecognizer arg0, int arg1, Java.Awt.Point arg2, Java.Util.List arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -104,6 +115,15 @@ namespace Java.Awt.Dnd
         public object[] ToArray(object[] arg0)
         {
             return IExecuteArray<object>("toArray", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#iterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#startDrag(java.awt.Cursor,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)"/>

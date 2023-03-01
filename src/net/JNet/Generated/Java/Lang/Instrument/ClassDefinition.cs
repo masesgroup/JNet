@@ -29,7 +29,16 @@ namespace Java.Lang.Instrument
     public partial class ClassDefinition
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassDefinition.html#%3Cinit%3E(java.lang.Class%3C?%3E,byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        public ClassDefinition(Java.Lang.Class arg0, byte[] arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -45,6 +54,13 @@ namespace Java.Lang.Instrument
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassDefinition.html#getDefinitionClass()"/> 
+        /// </summary>
+        public Java.Lang.Class DefinitionClass
+        {
+            get { return IExecute<Java.Lang.Class>("getDefinitionClass"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassDefinition.html#getDefinitionClassFile()"/> 
         /// </summary>

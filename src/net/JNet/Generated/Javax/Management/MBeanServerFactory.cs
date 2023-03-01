@@ -87,6 +87,15 @@ namespace Javax.Management
             return SExecute<Javax.Management.MBeanServer>("newMBeanServer", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#findMBeanServer(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.ArrayList"/></returns>
+        public static Java.Util.ArrayList FindMBeanServer(string arg0)
+        {
+            return SExecute<Java.Util.ArrayList>("findMBeanServer", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerFactory.html#releaseMBeanServer(javax.management.MBeanServer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>

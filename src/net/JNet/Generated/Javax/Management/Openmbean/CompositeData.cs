@@ -46,6 +46,13 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#getCompositeType()"/> 
+        /// </summary>
+        public Javax.Management.Openmbean.CompositeType CompositeType
+        {
+            get { return IExecute<Javax.Management.Openmbean.CompositeType>("getCompositeType"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#containsKey(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -80,6 +87,15 @@ namespace Javax.Management.Openmbean
         public object[] GetAll(string[] arg0)
         {
             return IExecuteArray<object>("getAll", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#values()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection Values()
+        {
+            return IExecute<Java.Util.Collection>("values");
         }
         
         #endregion

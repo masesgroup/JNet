@@ -49,7 +49,25 @@ namespace Java.Io
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#lookup(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Io.ObjectStreamClass"/></returns>
+        public static Java.Io.ObjectStreamClass Lookup(Java.Lang.Class arg0)
+        {
+            return SExecute<Java.Io.ObjectStreamClass>("lookup", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#lookupAny(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Io.ObjectStreamClass"/></returns>
+        public static Java.Io.ObjectStreamClass LookupAny(Java.Lang.Class arg0)
+        {
+            return SExecute<Java.Io.ObjectStreamClass>("lookupAny", arg0);
+        }
+        
         #endregion
 
         #region Instance methods
@@ -82,6 +100,15 @@ namespace Java.Io
         public Java.Io.ObjectStreamField GetField(string arg0)
         {
             return IExecute<Java.Io.ObjectStreamField>("getField", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#forClass()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class ForClass()
+        {
+            return IExecute<Java.Lang.Class>("forClass");
         }
         
         #endregion

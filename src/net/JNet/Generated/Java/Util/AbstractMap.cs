@@ -33,7 +33,11 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Java.Util.AbstractMap"/> to <see cref="Java.Util.Map"/>
+        /// </summary>
+        public static implicit operator Java.Util.Map(Java.Util.AbstractMap t) => t.Cast<Java.Util.Map>();
+        
         #endregion
 
         #region Fields
@@ -45,6 +49,15 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#entrySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set EntrySet()
+        {
+            return IExecute<Java.Util.Set>("entrySet");
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#containsKey(java.lang.Object)"/>
         /// </summary>
@@ -82,6 +95,24 @@ namespace Java.Util
             return IExecute<int>("size");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#values()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection Values()
+        {
+            return IExecute<Java.Util.Collection>("values");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#keySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set KeySet()
+        {
+            return IExecute<Java.Util.Set>("keySet");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -116,6 +147,14 @@ namespace Java.Util
         {
             IExecute("clear");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html#putAll(java.util.Map%3C? extends K, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public void PutAll(Java.Util.Map arg0)
+        {
+            IExecute("putAll", arg0);
+        }
         
         #endregion
 
@@ -124,6 +163,14 @@ namespace Java.Util
         public partial class SimpleEntry
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html#%3Cinit%3E(java.util.Map$Entry%3C? extends K, ? extends V%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
+            public SimpleEntry(Java.Util.Map.Entry arg0)
+                : base(arg0)
+            {
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html#%3Cinit%3E(K,V)"/>
             /// </summary>
@@ -187,6 +234,14 @@ namespace Java.Util
         public partial class SimpleImmutableEntry
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#%3Cinit%3E(java.util.Map$Entry%3C? extends K, ? extends V%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
+            public SimpleImmutableEntry(Java.Util.Map.Entry arg0)
+                : base(arg0)
+            {
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#%3Cinit%3E(K,V)"/>
             /// </summary>

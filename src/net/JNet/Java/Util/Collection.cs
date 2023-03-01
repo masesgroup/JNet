@@ -15,6 +15,8 @@
 *
 *  Refer to LICENSE for more information.
 */
+
+using Java.Lang;
 #if !JNETREFLECTOR
 using Java.Util.Function;
 #endif
@@ -26,7 +28,7 @@ namespace Java.Util
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html"/>
     /// </summary>
     /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html"/></typeparam>
-    public class Collection<E> : JVMBridgeBaseEnumerable<Collection<E>, E>
+    public class Collection<E> : Iterable<E>
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
@@ -37,10 +39,6 @@ namespace Java.Util
         /// </summary>
         public override string ClassName => "java.util.Collection";
 #if !JNETREFLECTOR
-        /// <summary>
-        /// Converter from <see cref="Collection{E}"/> to <see cref="Lang.Iterable{E}"/>
-        /// </summary>
-        public static implicit operator Lang.Iterable<E>(Collection<E> instance) => instance.Cast<Lang.Iterable<E>>();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#add(E)"/>
         /// </summary>
@@ -65,10 +63,6 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#isEmpty()"/>
         /// </summary>
         public bool IsEmpty => IExecute<bool>("isEmpty");
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#iterator()"/>
-        /// </summary>
-        public Iterator<E> Iterator() => IExecute<Iterator<E>>("iterator");
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#remove(java.lang.Object)"/>
         /// </summary>

@@ -94,6 +94,10 @@ namespace Java.Net
 
         #region Class/Interface conversion operators
         /// <summary>
+        /// Converter from <see cref="Java.Net.URI"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Net.URI t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
         /// Converter from <see cref="Java.Net.URI"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Net.URI t) => t.Cast<Java.Io.Serializable>();

@@ -41,7 +41,25 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        public static Java.Util.Function.Predicate IsEqual(object arg0)
+        {
+            return SExecute<Java.Util.Function.Predicate>("isEqual", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#not(java.util.function.Predicate%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
+        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        public static Java.Util.Function.Predicate Not(Java.Util.Function.Predicate arg0)
+        {
+            return SExecute<Java.Util.Function.Predicate>("not", arg0);
+        }
+        
         #endregion
 
         #region Instance methods
@@ -53,6 +71,33 @@ namespace Java.Util.Function
         public bool Test(object arg0)
         {
             return IExecute<bool>("test", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
+        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        public Java.Util.Function.Predicate And(Java.Util.Function.Predicate arg0)
+        {
+            return IExecute<Java.Util.Function.Predicate>("and", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        public Java.Util.Function.Predicate Negate()
+        {
+            return IExecute<Java.Util.Function.Predicate>("negate");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate%3C? super T%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
+        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
+        public Java.Util.Function.Predicate Or(Java.Util.Function.Predicate arg0)
+        {
+            return IExecute<Java.Util.Function.Predicate>("or", arg0);
         }
         
         #endregion

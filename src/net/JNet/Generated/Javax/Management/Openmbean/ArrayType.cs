@@ -29,7 +29,27 @@ namespace Javax.Management.Openmbean
     public partial class ArrayType
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#%3Cinit%3E(int,javax.management.openmbean.OpenType%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.Openmbean.OpenType"/></param>
+        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
+        public ArrayType(int arg0, Javax.Management.Openmbean.OpenType arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#%3Cinit%3E(javax.management.openmbean.SimpleType%3C?%3E,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.SimpleType"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
+        public ArrayType(Javax.Management.Openmbean.SimpleType arg0, bool arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -41,7 +61,26 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#getArrayType(javax.management.openmbean.OpenType%3CE%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.OpenType"/></param>
+        /// <returns><see cref="Javax.Management.Openmbean.ArrayType"/></returns>
+        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
+        public static Javax.Management.Openmbean.ArrayType GetArrayType(Javax.Management.Openmbean.OpenType arg0)
+        {
+            return SExecute<Javax.Management.Openmbean.ArrayType>("getArrayType", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#getPrimitiveArrayType(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Javax.Management.Openmbean.ArrayType"/></returns>
+        public static Javax.Management.Openmbean.ArrayType GetPrimitiveArrayType(Java.Lang.Class arg0)
+        {
+            return SExecute<Javax.Management.Openmbean.ArrayType>("getPrimitiveArrayType", arg0);
+        }
+        
         #endregion
 
         #region Instance methods
@@ -51,6 +90,13 @@ namespace Javax.Management.Openmbean
         public int Dimension
         {
             get { return IExecute<int>("getDimension"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#getElementOpenType()"/> 
+        /// </summary>
+        public Javax.Management.Openmbean.OpenType ElementOpenType
+        {
+            get { return IExecute<Javax.Management.Openmbean.OpenType>("getElementOpenType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#isPrimitiveArray()"/>

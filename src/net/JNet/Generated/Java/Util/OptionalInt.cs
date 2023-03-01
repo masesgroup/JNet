@@ -71,6 +71,16 @@ namespace Java.Util
             get { return IExecute<int>("getAsInt"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseThrow(java.util.function.Supplier%3C? extends X%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <returns><see langword="int"/></returns>
+        /// <exception cref="Java.Lang.Throwable"/>
+        public int OrElseThrow(Java.Util.Function.Supplier arg0)
+        {
+            return IExecute<int>("orElseThrow", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isEmpty()"/>
         /// </summary>
         

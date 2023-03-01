@@ -64,6 +64,15 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#isSupported(java.awt.Desktop$Action)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Desktop.Action"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsSupported(Java.Awt.Desktop.Action arg0)
+        {
+            return IExecute<bool>("isSupported", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#moveToTrash(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -235,6 +244,14 @@ namespace Java.Awt
         {
             IExecute("setQuitHandler", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#setQuitStrategy(java.awt.desktop.QuitStrategy)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.QuitStrategy"/></param>
+        public void SetQuitStrategy(Java.Awt.DesktopNs.QuitStrategy arg0)
+        {
+            IExecute("setQuitStrategy", arg0);
+        }
         
         #endregion
 
@@ -351,6 +368,15 @@ namespace Java.Awt
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Awt.Desktop.Action"/></returns>
+            public static Java.Awt.Desktop.Action ValueOf(string arg0)
+            {
+                return SExecute<Java.Awt.Desktop.Action>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#values()"/>
             /// </summary>

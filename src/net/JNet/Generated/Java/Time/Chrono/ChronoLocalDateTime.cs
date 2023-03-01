@@ -41,6 +41,10 @@ namespace Java.Time.Chrono
         /// Converter from <see cref="Java.Time.Chrono.ChronoLocalDateTime"/> to <see cref="Java.Time.Temporal.TemporalAdjuster"/>
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.Chrono.ChronoLocalDateTime t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.ChronoLocalDateTime"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Time.Chrono.ChronoLocalDateTime t) => t.Cast<Java.Lang.Comparable>();
         
         #endregion
 
@@ -49,7 +53,25 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#from(java.time.temporal.TemporalAccessor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
+        public static Java.Time.Chrono.ChronoLocalDateTime From(Java.Time.Temporal.TemporalAccessor arg0)
+        {
+            return SExecute<Java.Time.Chrono.ChronoLocalDateTime>("from", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#timeLineOrder()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator TimeLineOrder()
+        {
+            return SExecute<Java.Util.Comparator>("timeLineOrder");
+        }
+        
         #endregion
 
         #region Instance methods
@@ -79,6 +101,15 @@ namespace Java.Time.Chrono
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("toLocalDate");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#atZone(java.time.ZoneId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
+        public Java.Time.Chrono.ChronoZonedDateTime AtZone(Java.Time.ZoneId arg0)
+        {
+            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("atZone", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#toLocalTime()"/>
         /// </summary>
         
@@ -86,6 +117,42 @@ namespace Java.Time.Chrono
         public Java.Time.LocalTime ToLocalTime()
         {
             return IExecute<Java.Time.LocalTime>("toLocalTime");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#query(java.time.temporal.TemporalQuery%3CR%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Query(Java.Time.Temporal.TemporalQuery arg0)
+        {
+            return IExecute("query", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#isAfter(java.time.chrono.ChronoLocalDateTime%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsAfter(Java.Time.Chrono.ChronoLocalDateTime arg0)
+        {
+            return IExecute<bool>("isAfter", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#isBefore(java.time.chrono.ChronoLocalDateTime%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsBefore(Java.Time.Chrono.ChronoLocalDateTime arg0)
+        {
+            return IExecute<bool>("isBefore", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#isEqual(java.time.chrono.ChronoLocalDateTime%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsEqual(Java.Time.Chrono.ChronoLocalDateTime arg0)
+        {
+            return IExecute<bool>("isEqual", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#isSupported(java.time.temporal.TemporalUnit)"/>
@@ -102,6 +169,15 @@ namespace Java.Time.Chrono
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
+        {
+            return IExecute<int>("compareTo", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDateTime.html#compareTo(java.time.chrono.ChronoLocalDateTime%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int CompareTo(Java.Time.Chrono.ChronoLocalDateTime arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

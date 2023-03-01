@@ -27,6 +27,6 @@ namespace Javax.Management
         /// <summary>
         /// Gets all the enabled attribute names for this filter.
         /// </summary>
-        public Java.Util.Vector<string> EnabledAttributes => IExecute<Java.Util.Vector<string>>("getEnabledAttributes");
+        public Java.Util.Vector<string> EnabledAttributes2 => EnabledAttributes.Cast<Java.Util.Vector<string>>();
     }
 }

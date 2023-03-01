@@ -48,6 +48,24 @@ namespace Java.Beans
         {
             get { return SExecuteArray<string>("getEditorSearchPath"); } set { SExecute("setEditorSearchPath", value); }
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html#findEditor(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Beans.PropertyEditor"/></returns>
+        public static Java.Beans.PropertyEditor FindEditor(Java.Lang.Class arg0)
+        {
+            return SExecute<Java.Beans.PropertyEditor>("findEditor", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html#registerEditor(java.lang.Class%3C?%3E,java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        public static void RegisterEditor(Java.Lang.Class arg0, Java.Lang.Class arg1)
+        {
+            SExecute("registerEditor", arg0, arg1);
+        }
         
         #endregion
 

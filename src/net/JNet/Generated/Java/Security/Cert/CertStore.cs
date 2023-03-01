@@ -63,6 +63,19 @@ namespace Java.Security.Cert
             return SExecute<Java.Security.Cert.CertStore>("getInstance", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertStore"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
+        public static Java.Security.Cert.CertStore GetInstance(string arg0, Java.Security.Cert.CertStoreParameters arg1, Java.Security.Provider arg2)
+        {
+            return SExecute<Java.Security.Cert.CertStore>("getInstance", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -86,11 +99,38 @@ namespace Java.Security.Cert
             get { return IExecute<Java.Security.Cert.CertStoreParameters>("getCertStoreParameters"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getProvider()"/> 
+        /// </summary>
+        public Java.Security.Provider Provider
+        {
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getCertificates(java.security.cert.CertSelector)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.CertSelector"/></param>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Security.Cert.CertStoreException"/>
+        public Java.Util.Collection GetCertificates(Java.Security.Cert.CertSelector arg0)
+        {
+            return IExecute<Java.Util.Collection>("getCertificates", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStore.html#getCRLs(java.security.cert.CRLSelector)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.CRLSelector"/></param>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Security.Cert.CertStoreException"/>
+        public Java.Util.Collection GetCRLs(Java.Security.Cert.CRLSelector arg0)
+        {
+            return IExecute<Java.Util.Collection>("getCRLs", arg0);
         }
         
         #endregion

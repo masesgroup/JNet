@@ -178,6 +178,13 @@ namespace Java.Text
             get { return IExecute<int>("getMinimumIntegerDigits"); } set { IExecute("setMinimumIntegerDigits", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getRoundingMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#setRoundingMode(java.math.RoundingMode)"/>
+        /// </summary>
+        public Java.Math.RoundingMode RoundingMode
+        {
+            get { return IExecute<Java.Math.RoundingMode>("getRoundingMode"); } set { IExecute("setRoundingMode", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>

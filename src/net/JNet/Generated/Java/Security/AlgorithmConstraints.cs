@@ -45,7 +45,40 @@ namespace Java.Security
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmConstraints.html#permits(java.util.Set%3Cjava.security.CryptoPrimitive%3E,java.lang.String,java.security.AlgorithmParameters)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Security.AlgorithmParameters"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool Permits(Java.Util.Set arg0, string arg1, Java.Security.AlgorithmParameters arg2)
+        {
+            return IExecute<bool>("permits", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmConstraints.html#permits(java.util.Set%3Cjava.security.CryptoPrimitive%3E,java.lang.String,java.security.Key,java.security.AlgorithmParameters)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Security.Key"/></param>
+        /// <param name="arg3"><see cref="Java.Security.AlgorithmParameters"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool Permits(Java.Util.Set arg0, string arg1, Java.Security.Key arg2, Java.Security.AlgorithmParameters arg3)
+        {
+            return IExecute<bool>("permits", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmConstraints.html#permits(java.util.Set%3Cjava.security.CryptoPrimitive%3E,java.security.Key)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Key"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool Permits(Java.Util.Set arg0, Java.Security.Key arg1)
+        {
+            return IExecute<bool>("permits", arg0, arg1);
+        }
+        
         #endregion
 
         #region Nested classes

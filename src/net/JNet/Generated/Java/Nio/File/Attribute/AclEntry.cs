@@ -64,6 +64,15 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#type()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Nio.File.Attribute.AclEntryType"/></returns>
+        public Java.Nio.File.Attribute.AclEntryType Type()
+        {
+            return IExecute<Java.Nio.File.Attribute.AclEntryType>("type");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#principal()"/>
         /// </summary>
         
@@ -71,6 +80,24 @@ namespace Java.Nio.File.Attribute
         public Java.Nio.File.Attribute.UserPrincipal Principal()
         {
             return IExecute<Java.Nio.File.Attribute.UserPrincipal>("principal");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#flags()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set Flags()
+        {
+            return IExecute<Java.Util.Set>("flags");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#permissions()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set Permissions()
+        {
+            return IExecute<Java.Util.Set>("permissions");
         }
         
         #endregion
@@ -115,6 +142,15 @@ namespace Java.Nio.File.Attribute
                 if (arg0.Length == 0) return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setFlags"); else return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setFlags", arg0);
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setFlags(java.util.Set%3Cjava.nio.file.attribute.AclEntryFlag%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+            /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
+            public Java.Nio.File.Attribute.AclEntry.Builder SetFlags(Java.Util.Set arg0)
+            {
+                return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setFlags", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setPermissions(java.nio.file.attribute.AclEntryPermission...)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Nio.File.Attribute.AclEntryPermission"/></param>
@@ -124,6 +160,15 @@ namespace Java.Nio.File.Attribute
                 if (arg0.Length == 0) return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setPermissions"); else return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setPermissions", arg0);
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setPermissions(java.util.Set%3Cjava.nio.file.attribute.AclEntryPermission%3E)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+            /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
+            public Java.Nio.File.Attribute.AclEntry.Builder SetPermissions(Java.Util.Set arg0)
+            {
+                return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setPermissions", arg0);
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setPrincipal(java.nio.file.attribute.UserPrincipal)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Nio.File.Attribute.UserPrincipal"/></param>
@@ -131,6 +176,15 @@ namespace Java.Nio.File.Attribute
             public Java.Nio.File.Attribute.AclEntry.Builder SetPrincipal(Java.Nio.File.Attribute.UserPrincipal arg0)
             {
                 return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setPrincipal", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setType(java.nio.file.attribute.AclEntryType)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Nio.File.Attribute.AclEntryType"/></param>
+            /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
+            public Java.Nio.File.Attribute.AclEntry.Builder SetType(Java.Nio.File.Attribute.AclEntryType arg0)
+            {
+                return IExecute<Java.Nio.File.Attribute.AclEntry.Builder>("setType", arg0);
             }
             
             #endregion

@@ -61,6 +61,50 @@ namespace Java.Beans
             get { return SExecuteArray<string>("getBeanInfoSearchPath"); } set { SExecute("setBeanInfoSearchPath", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfo(java.lang.Class%3C?%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Beans.BeanInfo"/></returns>
+        /// <exception cref="Java.Beans.IntrospectionException"/>
+        public static Java.Beans.BeanInfo GetBeanInfo(Java.Lang.Class arg0, int arg1)
+        {
+            return SExecute<Java.Beans.BeanInfo>("getBeanInfo", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfo(java.lang.Class%3C?%3E,java.lang.Class%3C?%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Beans.BeanInfo"/></returns>
+        /// <exception cref="Java.Beans.IntrospectionException"/>
+        public static Java.Beans.BeanInfo GetBeanInfo(Java.Lang.Class arg0, Java.Lang.Class arg1, int arg2)
+        {
+            return SExecute<Java.Beans.BeanInfo>("getBeanInfo", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfo(java.lang.Class%3C?%3E,java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Beans.BeanInfo"/></returns>
+        /// <exception cref="Java.Beans.IntrospectionException"/>
+        public static Java.Beans.BeanInfo GetBeanInfo(Java.Lang.Class arg0, Java.Lang.Class arg1)
+        {
+            return SExecute<Java.Beans.BeanInfo>("getBeanInfo", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfo(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Beans.BeanInfo"/></returns>
+        /// <exception cref="Java.Beans.IntrospectionException"/>
+        public static Java.Beans.BeanInfo GetBeanInfo(Java.Lang.Class arg0)
+        {
+            return SExecute<Java.Beans.BeanInfo>("getBeanInfo", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#decapitalize(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -75,6 +119,14 @@ namespace Java.Beans
         public static void FlushCaches()
         {
             SExecute("flushCaches");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#flushFromCaches(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        public static void FlushFromCaches(Java.Lang.Class arg0)
+        {
+            SExecute("flushFromCaches", arg0);
         }
         
         #endregion

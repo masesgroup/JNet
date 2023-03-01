@@ -29,7 +29,17 @@ namespace Javax.Naming
     public partial class CompoundName
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompoundName.html#%3Cinit%3E(java.lang.String,java.util.Properties)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
+        /// <exception cref="Javax.Naming.InvalidNameException"/>
+        public CompoundName(string arg0, Java.Util.Properties arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,6 +59,13 @@ namespace Javax.Naming
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompoundName.html#getAll()"/> 
+        /// </summary>
+        public Java.Util.Enumeration All
+        {
+            get { return IExecute<Java.Util.Enumeration>("getAll"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompoundName.html#endsWith(javax.naming.Name)"/>
         /// </summary>

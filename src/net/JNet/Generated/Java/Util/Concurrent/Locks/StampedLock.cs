@@ -229,6 +229,17 @@ namespace Java.Util.Concurrent.Locks
             return IExecute<long>("tryReadLock");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryReadLock(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public long TryReadLock(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            return IExecute<long>("tryReadLock", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryWriteLock()"/>
         /// </summary>
         
@@ -236,6 +247,17 @@ namespace Java.Util.Concurrent.Locks
         public long TryWriteLock()
         {
             return IExecute<long>("tryWriteLock");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryWriteLock(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="long"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public long TryWriteLock(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            return IExecute<long>("tryWriteLock", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#writeLock()"/>

@@ -88,6 +88,15 @@ namespace Javax.Swing.Border
             return IExecute<int>("getBaseline", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getBaselineResizeBehavior(java.awt.Component)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <returns><see cref="Java.Awt.Component.BaselineResizeBehavior"/></returns>
+        public Java.Awt.Component.BaselineResizeBehavior GetBaselineResizeBehavior(Java.Awt.Component arg0)
+        {
+            return IExecute<Java.Awt.Component.BaselineResizeBehavior>("getBaselineResizeBehavior", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/AbstractBorder.html#getBorderInsets(java.awt.Component,java.awt.Insets)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>

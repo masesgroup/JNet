@@ -58,11 +58,32 @@ namespace Javax.Lang.Model.Element
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getEnclosedElements()"/> 
+        /// </summary>
+        public Java.Util.List EnclosedElements
+        {
+            get { return IExecute<Java.Util.List>("getEnclosedElements"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getEnclosingElement()"/> 
         /// </summary>
         public Javax.Lang.Model.Element.Element EnclosingElement
         {
             get { return IExecute<Javax.Lang.Model.Element.Element>("getEnclosingElement"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getInterfaces()"/> 
+        /// </summary>
+        public Java.Util.List Interfaces
+        {
+            get { return IExecute<Java.Util.List>("getInterfaces"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getNestingKind()"/> 
+        /// </summary>
+        public Javax.Lang.Model.Element.NestingKind NestingKind
+        {
+            get { return IExecute<Javax.Lang.Model.Element.NestingKind>("getNestingKind"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getQualifiedName()"/> 
@@ -84,6 +105,13 @@ namespace Javax.Lang.Model.Element
         public Javax.Lang.Model.Type.TypeMirror Superclass
         {
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getSuperclass"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getTypeParameters()"/> 
+        /// </summary>
+        public Java.Util.List TypeParameters
+        {
+            get { return IExecute<Java.Util.List>("getTypeParameters"); }
         }
         
         #endregion

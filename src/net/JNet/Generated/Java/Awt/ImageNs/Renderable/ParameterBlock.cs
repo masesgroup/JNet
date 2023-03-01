@@ -29,7 +29,24 @@ namespace Java.Awt.ImageNs.Renderable
     public partial class ParameterBlock
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#%3Cinit%3E(java.util.Vector%3Cjava.lang.Object%3E,java.util.Vector%3Cjava.lang.Object%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
+        public ParameterBlock(Java.Util.Vector arg0, Java.Util.Vector arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#%3Cinit%3E(java.util.Vector%3Cjava.lang.Object%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
+        public ParameterBlock(Java.Util.Vector arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -73,6 +90,20 @@ namespace Java.Awt.ImageNs.Renderable
         public Java.Lang.Class[] ParamClasses
         {
             get { return IExecuteArray<Java.Lang.Class>("getParamClasses"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getParameters()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#setParameters(java.util.Vector%3Cjava.lang.Object%3E)"/>
+        /// </summary>
+        public Java.Util.Vector Parameters
+        {
+            get { return IExecute<Java.Util.Vector>("getParameters"); } set { IExecute("setParameters", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getSources()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#setSources(java.util.Vector%3Cjava.lang.Object%3E)"/>
+        /// </summary>
+        public Java.Util.Vector Sources
+        {
+            get { return IExecute<Java.Util.Vector>("getSources"); } set { IExecute("setSources", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getByteParameter(int)"/>

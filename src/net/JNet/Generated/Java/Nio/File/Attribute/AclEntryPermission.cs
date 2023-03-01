@@ -110,6 +110,15 @@ namespace Java.Nio.File.Attribute
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.AclEntryPermission"/></returns>
+        public static Java.Nio.File.Attribute.AclEntryPermission ValueOf(string arg0)
+        {
+            return SExecute<Java.Nio.File.Attribute.AclEntryPermission>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#values()"/>
         /// </summary>
         

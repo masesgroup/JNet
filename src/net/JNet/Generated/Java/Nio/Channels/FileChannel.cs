@@ -64,6 +64,18 @@ namespace Java.Nio.Channels
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.Channels.FileChannel>("open", arg0); else return SExecute<Java.Nio.Channels.FileChannel>("open", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html#open(java.nio.file.Path,java.util.Set%3C? extends java.nio.file.OpenOption%3E,java.nio.file.attribute.FileAttribute%3C?%3E...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
+        /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public static Java.Nio.Channels.FileChannel Open(Java.Nio.File.Path arg0, Java.Util.Set arg1, params Java.Nio.File.Attribute.FileAttribute[] arg2)
+        {
+            if (arg2.Length == 0) return SExecute<Java.Nio.Channels.FileChannel>("open", arg0, arg1); else return SExecute<Java.Nio.Channels.FileChannel>("open", arg0, arg1, arg2);
+        }
         
         #endregion
 

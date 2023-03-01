@@ -57,7 +57,17 @@ namespace Javax.Sound.Sampled
         public partial class Info
         {
             #region Constructors
-
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#%3Cinit%3E(java.lang.Class%3C?%3E,java.lang.String,boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+            /// <param name="arg1"><see cref="string"/></param>
+            /// <param name="arg2"><see cref="bool"/></param>
+            public Info(Java.Lang.Class arg0, string arg1, bool arg2)
+                : base(arg0, arg1, arg2)
+            {
+            }
+            
             #endregion
 
             #region Class/Interface conversion operators

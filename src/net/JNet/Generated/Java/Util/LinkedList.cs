@@ -29,10 +29,26 @@ namespace Java.Util
     public partial class LinkedList
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#%3Cinit%3E(java.util.Collection%3C? extends E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public LinkedList(Java.Util.Collection arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.LinkedList"/> to <see cref="Java.Util.List"/>
+        /// </summary>
+        public static implicit operator Java.Util.List(Java.Util.LinkedList t) => t.Cast<Java.Util.List>();
+        /// <summary>
+        /// Converter from <see cref="Java.Util.LinkedList"/> to <see cref="Java.Util.Deque"/>
+        /// </summary>
+        public static implicit operator Java.Util.Deque(Java.Util.LinkedList t) => t.Cast<Java.Util.Deque>();
         /// <summary>
         /// Converter from <see cref="Java.Util.LinkedList"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
@@ -210,6 +226,15 @@ namespace Java.Util
         public object RemoveLast()
         {
             return IExecute("removeLast");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#descendingIterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator DescendingIteratorMethod()
+        {
+            return IExecute<Java.Util.Iterator>("descendingIterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html#addFirst(E)"/>

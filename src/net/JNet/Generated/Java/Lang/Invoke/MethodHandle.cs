@@ -75,6 +75,27 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecute("invokeExact"); else return IExecute("invokeExact", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asCollector(int,java.lang.Class%3C?%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+        public Java.Lang.Invoke.MethodHandle AsCollector(int arg0, Java.Lang.Class arg1, int arg2)
+        {
+            return IExecute<Java.Lang.Invoke.MethodHandle>("asCollector", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asCollector(java.lang.Class%3C?%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+        public Java.Lang.Invoke.MethodHandle AsCollector(Java.Lang.Class arg0, int arg1)
+        {
+            return IExecute<Java.Lang.Invoke.MethodHandle>("asCollector", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asFixedArity()"/>
         /// </summary>
         
@@ -84,6 +105,27 @@ namespace Java.Lang.Invoke
             return IExecute<Java.Lang.Invoke.MethodHandle>("asFixedArity");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asSpreader(int,java.lang.Class%3C?%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+        public Java.Lang.Invoke.MethodHandle AsSpreader(int arg0, Java.Lang.Class arg1, int arg2)
+        {
+            return IExecute<Java.Lang.Invoke.MethodHandle>("asSpreader", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asSpreader(java.lang.Class%3C?%3E,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+        public Java.Lang.Invoke.MethodHandle AsSpreader(Java.Lang.Class arg0, int arg1)
+        {
+            return IExecute<Java.Lang.Invoke.MethodHandle>("asSpreader", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asType(java.lang.invoke.MethodType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodType"/></param>
@@ -91,6 +133,15 @@ namespace Java.Lang.Invoke
         public Java.Lang.Invoke.MethodHandle AsType(Java.Lang.Invoke.MethodType arg0)
         {
             return IExecute<Java.Lang.Invoke.MethodHandle>("asType", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asVarargsCollector(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+        public Java.Lang.Invoke.MethodHandle AsVarargsCollector(Java.Lang.Class arg0)
+        {
+            return IExecute<Java.Lang.Invoke.MethodHandle>("asVarargsCollector", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#bindTo(java.lang.Object)"/>
@@ -128,6 +179,16 @@ namespace Java.Lang.Invoke
         public object InvokeWithArguments(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecute("invokeWithArguments"); else return IExecute("invokeWithArguments", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invokeWithArguments(java.util.List%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <returns><see langword="object"/></returns>
+        /// <exception cref="Java.Lang.Throwable"/>
+        public object InvokeWithArguments(Java.Util.List arg0)
+        {
+            return IExecute("invokeWithArguments", arg0);
         }
         
         #endregion

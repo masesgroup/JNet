@@ -67,6 +67,16 @@ namespace Java.Time.Chrono
         {
             return IExecute<int>("compareTo", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/AbstractChronology.html#resolveDate(java.util.Map%3Cjava.time.temporal.TemporalField, java.lang.Long%3E,java.time.format.ResolverStyle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Format.ResolverStyle"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
+        public Java.Time.Chrono.ChronoLocalDate ResolveDate(Java.Util.Map arg0, Java.Time.Format.ResolverStyle arg1)
+        {
+            return IExecute<Java.Time.Chrono.ChronoLocalDate>("resolveDate", arg0, arg1);
+        }
         
         #endregion
 

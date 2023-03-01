@@ -104,6 +104,16 @@ namespace Java.Time.Chrono
             get { return IExecute<int>("getValue"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see langword="string"/></returns>
+        public string GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1)
+        {
+            return IExecute<string>("getDisplayName", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#range(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>

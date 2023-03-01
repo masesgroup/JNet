@@ -29,7 +29,16 @@ namespace Java.Net
     public partial class Proxy
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#%3Cinit%3E(java.net.Proxy$Type,java.net.SocketAddress)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.Proxy.Type"/></param>
+        /// <param name="arg1"><see cref="Java.Net.SocketAddress"/></param>
+        public Proxy(Java.Net.Proxy.Type arg0, Java.Net.SocketAddress arg1)
+            : base(arg0, arg1)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,6 +58,15 @@ namespace Java.Net
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#type()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Net.Proxy.Type"/></returns>
+        public Java.Net.Proxy.Type TypeMethod()
+        {
+            return IExecute<Java.Net.Proxy.Type>("type");
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#address()"/>
         /// </summary>
@@ -90,6 +108,15 @@ namespace Java.Net
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Net.Proxy.Type"/></returns>
+            public static Java.Net.Proxy.Type ValueOf(string arg0)
+            {
+                return SExecute<Java.Net.Proxy.Type>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#values()"/>
             /// </summary>

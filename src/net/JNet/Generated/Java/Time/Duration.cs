@@ -38,6 +38,10 @@ namespace Java.Time
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalAmount(Java.Time.Duration t) => t.Cast<Java.Time.Temporal.TemporalAmount>();
         /// <summary>
+        /// Converter from <see cref="Java.Time.Duration"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Time.Duration t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
         /// Converter from <see cref="Java.Time.Duration"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Duration t) => t.Cast<Java.Io.Serializable>();
@@ -172,6 +176,13 @@ namespace Java.Time
         public long Seconds
         {
             get { return IExecute<long>("getSeconds"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#getUnits()"/> 
+        /// </summary>
+        public Java.Util.List Units
+        {
+            get { return IExecute<Java.Util.List>("getUnits"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#isNegative()"/>

@@ -54,6 +54,13 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#getDeclaringClass()"/> 
+        /// </summary>
+        public Java.Lang.Class DeclaringClass
+        {
+            get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#getModifiers()"/> 
         /// </summary>
         public int Modifiers

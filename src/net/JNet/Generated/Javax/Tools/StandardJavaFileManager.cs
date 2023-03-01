@@ -60,6 +60,88 @@ namespace Javax.Tools
             return IExecute<bool>("isSameFile", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getLocation(javax.tools.JavaFileManager$Location)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <returns><see cref="Java.Lang.Iterable"/></returns>
+        public Java.Lang.Iterable GetLocation(Javax.Tools.JavaFileManager.Location arg0)
+        {
+            return IExecute<Java.Lang.Iterable>("getLocation", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjects(java.io.File...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Java.Lang.Iterable"/></returns>
+        public Java.Lang.Iterable GetJavaFileObjects(params Java.Io.File[] arg0)
+        {
+            if (arg0.Length == 0) return IExecute<Java.Lang.Iterable>("getJavaFileObjects"); else return IExecute<Java.Lang.Iterable>("getJavaFileObjects", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjects(java.lang.String...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Lang.Iterable"/></returns>
+        public Java.Lang.Iterable GetJavaFileObjects(params string[] arg0)
+        {
+            if (arg0.Length == 0) return IExecute<Java.Lang.Iterable>("getJavaFileObjects"); else return IExecute<Java.Lang.Iterable>("getJavaFileObjects", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjectsFromFiles(java.lang.Iterable%3C? extends java.io.File%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <returns><see cref="Java.Lang.Iterable"/></returns>
+        public Java.Lang.Iterable GetJavaFileObjectsFromFiles(Java.Lang.Iterable arg0)
+        {
+            return IExecute<Java.Lang.Iterable>("getJavaFileObjectsFromFiles", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjectsFromStrings(java.lang.Iterable%3Cjava.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <returns><see cref="Java.Lang.Iterable"/></returns>
+        public Java.Lang.Iterable GetJavaFileObjectsFromStrings(Java.Lang.Iterable arg0)
+        {
+            return IExecute<Java.Lang.Iterable>("getJavaFileObjectsFromStrings", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#setLocation(javax.tools.JavaFileManager$Location,java.lang.Iterable%3C? extends java.io.File%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Iterable"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void SetLocation(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.Iterable arg1)
+        {
+            IExecute("setLocation", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getLocationAsPaths(javax.tools.JavaFileManager$Location)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <returns><see cref="Java.Lang.Iterable"/></returns>
+        public Java.Lang.Iterable GetLocationAsPaths(Javax.Tools.JavaFileManager.Location arg0)
+        {
+            return IExecute<Java.Lang.Iterable>("getLocationAsPaths", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjects(java.nio.file.Path...)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see cref="Java.Lang.Iterable"/></returns>
+        public Java.Lang.Iterable GetJavaFileObjects(params Java.Nio.File.Path[] arg0)
+        {
+            if (arg0.Length == 0) return IExecute<Java.Lang.Iterable>("getJavaFileObjects"); else return IExecute<Java.Lang.Iterable>("getJavaFileObjects", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjectsFromPaths(java.lang.Iterable%3C? extends java.nio.file.Path%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <returns><see cref="Java.Lang.Iterable"/></returns>
+        public Java.Lang.Iterable GetJavaFileObjectsFromPaths(Java.Lang.Iterable arg0)
+        {
+            return IExecute<Java.Lang.Iterable>("getJavaFileObjectsFromPaths", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#asPath(javax.tools.FileObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Tools.FileObject"/></param>
@@ -67,6 +149,27 @@ namespace Javax.Tools
         public Java.Nio.File.Path AsPath(Javax.Tools.FileObject arg0)
         {
             return IExecute<Java.Nio.File.Path>("asPath", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#setLocationForModule(javax.tools.JavaFileManager$Location,java.lang.String,java.util.Collection%3C? extends java.nio.file.Path%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Collection"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void SetLocationForModule(Javax.Tools.JavaFileManager.Location arg0, string arg1, Java.Util.Collection arg2)
+        {
+            IExecute("setLocationForModule", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#setLocationFromPaths(javax.tools.JavaFileManager$Location,java.util.Collection%3C? extends java.nio.file.Path%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void SetLocationFromPaths(Javax.Tools.JavaFileManager.Location arg0, Java.Util.Collection arg1)
+        {
+            IExecute("setLocationFromPaths", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#setPathFactory(javax.tools.StandardJavaFileManager$PathFactory)"/>

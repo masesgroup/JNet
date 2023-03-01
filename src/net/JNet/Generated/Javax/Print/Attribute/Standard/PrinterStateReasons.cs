@@ -46,6 +46,14 @@ namespace Javax.Print.Attribute.Standard
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#%3Cinit%3E(java.util.Map%3Cjavax.print.attribute.standard.PrinterStateReason, javax.print.attribute.standard.Severity%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public PrinterStateReasons(Java.Util.Map arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
@@ -67,11 +75,27 @@ namespace Javax.Print.Attribute.Standard
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#getCategory()"/> 
+        /// </summary>
+        public Java.Lang.Class Category
+        {
+            get { return IExecute<Java.Lang.Class>("getCategory"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#printerStateReasonSet(javax.print.attribute.standard.Severity)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Attribute.Standard.Severity"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set PrinterStateReasonSetMethod(Javax.Print.Attribute.Standard.Severity arg0)
+        {
+            return IExecute<Java.Util.Set>("printerStateReasonSet", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#put(javax.print.attribute.standard.PrinterStateReason,javax.print.attribute.standard.Severity)"/>

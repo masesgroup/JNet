@@ -95,6 +95,15 @@ namespace Java.Awt
             return IExecute<Java.Awt.MenuItem>("getShortcutMenuItem", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#shortcuts()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration Shortcuts()
+        {
+            return IExecute<Java.Util.Enumeration>("shortcuts");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuBar.html#addNotify()"/>
         /// </summary>
         public void AddNotify()

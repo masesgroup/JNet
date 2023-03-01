@@ -49,7 +49,20 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activator.html#activate(java.rmi.activation.ActivationID,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Rmi.MarshalledObject"/></returns>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        public Java.Rmi.MarshalledObject Activate(Java.Rmi.Activation.ActivationID arg0, bool arg1)
+        {
+            return IExecute<Java.Rmi.MarshalledObject>("activate", arg0, arg1);
+        }
+        
         #endregion
 
         #region Nested classes

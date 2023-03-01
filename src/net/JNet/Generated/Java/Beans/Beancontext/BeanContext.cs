@@ -38,6 +38,10 @@ namespace Java.Beans.Beancontext
         /// </summary>
         public static implicit operator Java.Beans.Beancontext.BeanContextChild(Java.Beans.Beancontext.BeanContext t) => t.Cast<Java.Beans.Beancontext.BeanContextChild>();
         /// <summary>
+        /// Converter from <see cref="Java.Beans.Beancontext.BeanContext"/> to <see cref="Java.Util.Collection"/>
+        /// </summary>
+        public static implicit operator Java.Util.Collection(Java.Beans.Beancontext.BeanContext t) => t.Cast<Java.Util.Collection>();
+        /// <summary>
         /// Converter from <see cref="Java.Beans.Beancontext.BeanContext"/> to <see cref="Java.Beans.DesignMode"/>
         /// </summary>
         public static implicit operator Java.Beans.DesignMode(Java.Beans.Beancontext.BeanContext t) => t.Cast<Java.Beans.DesignMode>();

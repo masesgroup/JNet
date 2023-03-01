@@ -46,6 +46,13 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getChildren()"/> 
+        /// </summary>
+        public Java.Util.Iterator Children
+        {
+            get { return IExecute<Java.Util.Iterator>("getChildren"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getDepth()"/> 
         /// </summary>
         public int Depth
@@ -53,11 +60,25 @@ namespace Java.Security.Cert
             get { return IExecute<int>("getDepth"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getExpectedPolicies()"/> 
+        /// </summary>
+        public Java.Util.Set ExpectedPolicies
+        {
+            get { return IExecute<Java.Util.Set>("getExpectedPolicies"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getParent()"/> 
         /// </summary>
         public Java.Security.Cert.PolicyNode Parent
         {
             get { return IExecute<Java.Security.Cert.PolicyNode>("getParent"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getPolicyQualifiers()"/> 
+        /// </summary>
+        public Java.Util.Set PolicyQualifiers
+        {
+            get { return IExecute<Java.Util.Set>("getPolicyQualifiers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getValidPolicy()"/> 

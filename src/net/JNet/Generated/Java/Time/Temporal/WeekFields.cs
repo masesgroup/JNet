@@ -58,6 +58,16 @@ namespace Java.Time.Temporal
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#of(java.time.DayOfWeek,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Time.Temporal.WeekFields"/></returns>
+        public static Java.Time.Temporal.WeekFields Of(Java.Time.DayOfWeek arg0, int arg1)
+        {
+            return SExecute<Java.Time.Temporal.WeekFields>("of", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#of(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
@@ -70,6 +80,13 @@ namespace Java.Time.Temporal
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#getFirstDayOfWeek()"/> 
+        /// </summary>
+        public Java.Time.DayOfWeek FirstDayOfWeek
+        {
+            get { return IExecute<Java.Time.DayOfWeek>("getFirstDayOfWeek"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#getMinimalDaysInFirstWeek()"/> 
         /// </summary>

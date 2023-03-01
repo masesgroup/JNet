@@ -62,6 +62,10 @@ namespace Java.Lang
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Lang.StringBuilder t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
+        /// Converter from <see cref="Java.Lang.StringBuilder"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Lang.StringBuilder t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
         /// Converter from <see cref="Java.Lang.StringBuilder"/> to <see cref="Java.Lang.CharSequence"/>
         /// </summary>
         public static implicit operator Java.Lang.CharSequence(Java.Lang.StringBuilder t) => t.Cast<Java.Lang.CharSequence>();

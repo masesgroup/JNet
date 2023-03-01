@@ -71,6 +71,16 @@ namespace Java.Util
             get { return IExecute<double>("getAsDouble"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#orElseThrow(java.util.function.Supplier%3C? extends X%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
+        /// <returns><see langword="double"/></returns>
+        /// <exception cref="Java.Lang.Throwable"/>
+        public double OrElseThrow(Java.Util.Function.Supplier arg0)
+        {
+            return IExecute<double>("orElseThrow", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalDouble.html#isEmpty()"/>
         /// </summary>
         

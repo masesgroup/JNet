@@ -92,6 +92,13 @@ namespace Javax.Naming
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#getAll()"/> 
+        /// </summary>
+        public Java.Util.Enumeration All
+        {
+            get { return IExecute<Java.Util.Enumeration>("getAll"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#getFactoryClassLocation()"/> 
         /// </summary>
         public string FactoryClassLocation

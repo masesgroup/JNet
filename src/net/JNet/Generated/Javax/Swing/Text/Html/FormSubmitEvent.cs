@@ -52,6 +52,13 @@ namespace Javax.Swing.Text.Html
         {
             get { return IExecute<string>("getData"); }
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.html#getMethod()"/> 
+        /// </summary>
+        public Javax.Swing.Text.Html.FormSubmitEvent.MethodType Method
+        {
+            get { return IExecute<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>("getMethod"); }
+        }
         
         #endregion
 
@@ -80,6 +87,15 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Javax.Swing.Text.Html.FormSubmitEvent.MethodType"/></returns>
+            public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType ValueOf(string arg0)
+            {
+                return SExecute<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#values()"/>
             /// </summary>

@@ -189,6 +189,13 @@ namespace Java.Net
             get { return IExecute<long>("getExpiration"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFields()"/> 
+        /// </summary>
+        public Java.Util.Map HeaderFields
+        {
+            get { return IExecute<Java.Util.Map>("getHeaderFields"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getIfModifiedSince()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setIfModifiedSince(long)"/>
         /// </summary>
         public long IfModifiedSince
@@ -229,6 +236,13 @@ namespace Java.Net
         public int ReadTimeout
         {
             get { return IExecute<int>("getReadTimeout"); } set { IExecute("setReadTimeout", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getRequestProperties()"/> 
+        /// </summary>
+        public Java.Util.Map RequestProperties
+        {
+            get { return IExecute<Java.Util.Map>("getRequestProperties"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getURL()"/> 

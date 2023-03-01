@@ -64,6 +64,14 @@ namespace Java.Util
             return IExecute("next");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer%3C? super E%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        public void ForEachRemaining(Java.Util.Function.Consumer arg0)
+        {
+            IExecute("forEachRemaining", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#remove()"/>
         /// </summary>
         public void Remove()

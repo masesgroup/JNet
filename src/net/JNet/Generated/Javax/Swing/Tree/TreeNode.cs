@@ -85,6 +85,15 @@ namespace Javax.Swing.Tree
             return IExecute<int>("getIndex", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#children()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration Children()
+        {
+            return IExecute<Java.Util.Enumeration>("children");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getChildAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

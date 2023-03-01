@@ -46,6 +46,32 @@ namespace Java.Rmi.Server
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html#loadClass(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        public Java.Lang.Class LoadClass(string arg0, string arg1, Java.Lang.ClassLoader arg2)
+        {
+            return IExecute<Java.Lang.Class>("loadClass", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html#loadProxyClass(java.lang.String,java.lang.String[],java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Net.MalformedURLException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        public Java.Lang.Class LoadProxyClass(string arg0, string[] arg1, Java.Lang.ClassLoader arg2)
+        {
+            return IExecute<Java.Lang.Class>("loadProxyClass", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html#getClassLoader(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -54,6 +80,15 @@ namespace Java.Rmi.Server
         public Java.Lang.ClassLoader GetClassLoader(string arg0)
         {
             return IExecute<Java.Lang.ClassLoader>("getClassLoader", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html#getClassAnnotation(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="string"/></returns>
+        public string GetClassAnnotation(Java.Lang.Class arg0)
+        {
+            return IExecute<string>("getClassAnnotation", arg0);
         }
         
         #endregion

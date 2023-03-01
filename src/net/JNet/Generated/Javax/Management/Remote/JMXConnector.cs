@@ -106,6 +106,15 @@ namespace Javax.Management.Remote
             IExecute("connect");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect(java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void Connect(Java.Util.Map arg0)
+        {
+            IExecute("connect", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#removeConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.NotificationListener"/></param>

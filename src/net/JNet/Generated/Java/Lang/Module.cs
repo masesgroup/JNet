@@ -92,6 +92,22 @@ namespace Java.Lang
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getPackages()"/> 
+        /// </summary>
+        public Java.Util.Set Packages
+        {
+            get { return IExecute<Java.Util.Set>("getPackages"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getAnnotation(java.lang.Class%3CT%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation GetAnnotation(Java.Lang.Class arg0)
+        {
+            return IExecute<Java.Lang.Annotation.Annotation>("getAnnotation", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#canRead(java.lang.Module)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
@@ -99,6 +115,15 @@ namespace Java.Lang
         public bool CanRead(Java.Lang.Module arg0)
         {
             return IExecute<bool>("canRead", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#canUse(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool CanUse(Java.Lang.Class arg0)
+        {
+            return IExecute<bool>("canUse", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isExported(java.lang.String,java.lang.Module)"/>
@@ -185,6 +210,15 @@ namespace Java.Lang
         public Java.Lang.Module AddReads(Java.Lang.Module arg0)
         {
             return IExecute<Java.Lang.Module>("addReads", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addUses(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Lang.Module"/></returns>
+        public Java.Lang.Module AddUses(Java.Lang.Class arg0)
+        {
+            return IExecute<Java.Lang.Module>("addUses", arg0);
         }
         
         #endregion

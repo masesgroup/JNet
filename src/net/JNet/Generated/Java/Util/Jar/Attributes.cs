@@ -50,6 +50,10 @@ namespace Java.Util.Jar
 
         #region Class/Interface conversion operators
         /// <summary>
+        /// Converter from <see cref="Java.Util.Jar.Attributes"/> to <see cref="Java.Util.Map"/>
+        /// </summary>
+        public static implicit operator Java.Util.Map(Java.Util.Jar.Attributes t) => t.Cast<Java.Util.Map>();
+        /// <summary>
         /// Converter from <see cref="Java.Util.Jar.Attributes"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.Jar.Attributes t) => t.Cast<Java.Lang.Cloneable>();
@@ -158,11 +162,46 @@ namespace Java.Util.Jar
             return IExecute<string>("putValue", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#values()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection Values()
+        {
+            return IExecute<Java.Util.Collection>("values");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#keySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set KeySet()
+        {
+            return IExecute<Java.Util.Set>("keySet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#entrySet()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set EntrySet()
+        {
+            return IExecute<Java.Util.Set>("entrySet");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecute("clear");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#putAll(java.util.Map%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public void PutAll(Java.Util.Map arg0)
+        {
+            IExecute("putAll", arg0);
         }
         
         #endregion

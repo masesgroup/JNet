@@ -34,6 +34,10 @@ namespace Java.Nio
 
         #region Class/Interface conversion operators
         /// <summary>
+        /// Converter from <see cref="Java.Nio.CharBuffer"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Nio.CharBuffer t) => t.Cast<Java.Lang.Comparable>();
+        /// <summary>
         /// Converter from <see cref="Java.Nio.CharBuffer"/> to <see cref="Java.Lang.Appendable"/>
         /// </summary>
         public static implicit operator Java.Lang.Appendable(Java.Nio.CharBuffer t) => t.Cast<Java.Lang.Appendable>();

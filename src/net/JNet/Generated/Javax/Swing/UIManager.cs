@@ -60,6 +60,13 @@ namespace Javax.Swing
             get { return SExecute<string>("getCrossPlatformLookAndFeelClassName"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getDefaults()"/> 
+        /// </summary>
+        public static Javax.Swing.UIDefaults Defaults
+        {
+            get { return SExecute<Javax.Swing.UIDefaults>("getDefaults"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getInstalledLookAndFeels()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#setInstalledLookAndFeels(javax.swing.UIManager$LookAndFeelInfo[])"/>
         /// </summary>
         public static Javax.Swing.UIManager.LookAndFeelInfo[] InstalledLookAndFeels
@@ -72,6 +79,13 @@ namespace Javax.Swing
         public static Javax.Swing.LookAndFeel LookAndFeel
         {
             get { return SExecute<Javax.Swing.LookAndFeel>("getLookAndFeel"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getLookAndFeelDefaults()"/> 
+        /// </summary>
+        public static Javax.Swing.UIDefaults LookAndFeelDefaults
+        {
+            get { return SExecute<Javax.Swing.UIDefaults>("getLookAndFeelDefaults"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html#getPropertyChangeListeners()"/> 

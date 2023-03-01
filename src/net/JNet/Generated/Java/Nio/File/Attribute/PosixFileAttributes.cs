@@ -67,6 +67,15 @@ namespace Java.Nio.File.Attribute
         {
             return IExecute<Java.Nio.File.Attribute.UserPrincipal>("owner");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#permissions()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set Permissions()
+        {
+            return IExecute<Java.Util.Set>("permissions");
+        }
         
         #endregion
 

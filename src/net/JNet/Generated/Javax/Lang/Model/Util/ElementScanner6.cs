@@ -46,6 +46,16 @@ namespace Javax.Lang.Model.Util
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan(java.lang.Iterable%3C? extends javax.lang.model.element.Element%3E,P)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Scan(Java.Lang.Iterable arg0, object arg1)
+        {
+            return IExecute("scan", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan(javax.lang.model.element.Element)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.Element"/></param>

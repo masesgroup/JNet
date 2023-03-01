@@ -84,6 +84,16 @@ namespace Javax.Management.Remote
             get { return IExecute<Javax.Management.MBeanServer>("getMBeanServer"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#toJMXConnector(java.util.Map%3Cjava.lang.String, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Javax.Management.Remote.JMXConnector ToJMXConnector(Java.Util.Map arg0)
+        {
+            return IExecute<Javax.Management.Remote.JMXConnector>("toJMXConnector", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>

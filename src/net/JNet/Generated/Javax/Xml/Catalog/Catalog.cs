@@ -72,6 +72,15 @@ namespace Javax.Xml.Catalog
         {
             return IExecute<string>("matchURI", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/Catalog.html#catalogs()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Catalogs()
+        {
+            return IExecute<Java.Util.Stream.Stream>("catalogs");
+        }
         
         #endregion
 

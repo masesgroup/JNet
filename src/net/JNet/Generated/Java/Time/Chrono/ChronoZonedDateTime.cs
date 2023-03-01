@@ -37,6 +37,10 @@ namespace Java.Time.Chrono
         /// Converter from <see cref="Java.Time.Chrono.ChronoZonedDateTime"/> to <see cref="Java.Time.Temporal.Temporal"/>
         /// </summary>
         public static implicit operator Java.Time.Temporal.Temporal(Java.Time.Chrono.ChronoZonedDateTime t) => t.Cast<Java.Time.Temporal.Temporal>();
+        /// <summary>
+        /// Converter from <see cref="Java.Time.Chrono.ChronoZonedDateTime"/> to <see cref="Java.Lang.Comparable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Comparable(Java.Time.Chrono.ChronoZonedDateTime t) => t.Cast<Java.Lang.Comparable>();
         
         #endregion
 
@@ -45,7 +49,25 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#from(java.time.temporal.TemporalAccessor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
+        public static Java.Time.Chrono.ChronoZonedDateTime From(Java.Time.Temporal.TemporalAccessor arg0)
+        {
+            return SExecute<Java.Time.Chrono.ChronoZonedDateTime>("from", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#timeLineOrder()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator TimeLineOrder()
+        {
+            return SExecute<Java.Util.Comparator>("timeLineOrder");
+        }
+        
         #endregion
 
         #region Instance methods
@@ -80,6 +102,87 @@ namespace Java.Time.Chrono
             return IExecute<bool>("isSupported", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#toLocalDateTime()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
+        public Java.Time.Chrono.ChronoLocalDateTime ToLocalDateTime()
+        {
+            return IExecute<Java.Time.Chrono.ChronoLocalDateTime>("toLocalDateTime");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#withEarlierOffsetAtOverlap()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
+        public Java.Time.Chrono.ChronoZonedDateTime WithEarlierOffsetAtOverlap()
+        {
+            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("withEarlierOffsetAtOverlap");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#withLaterOffsetAtOverlap()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
+        public Java.Time.Chrono.ChronoZonedDateTime WithLaterOffsetAtOverlap()
+        {
+            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("withLaterOffsetAtOverlap");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#withZoneSameInstant(java.time.ZoneId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
+        public Java.Time.Chrono.ChronoZonedDateTime WithZoneSameInstant(Java.Time.ZoneId arg0)
+        {
+            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("withZoneSameInstant", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#withZoneSameLocal(java.time.ZoneId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
+        public Java.Time.Chrono.ChronoZonedDateTime WithZoneSameLocal(Java.Time.ZoneId arg0)
+        {
+            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("withZoneSameLocal", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#query(java.time.temporal.TemporalQuery%3CR%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
+        /// <returns><see langword="object"/></returns>
+        public object Query(Java.Time.Temporal.TemporalQuery arg0)
+        {
+            return IExecute("query", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#isAfter(java.time.chrono.ChronoZonedDateTime%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsAfter(Java.Time.Chrono.ChronoZonedDateTime arg0)
+        {
+            return IExecute<bool>("isAfter", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#isBefore(java.time.chrono.ChronoZonedDateTime%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsBefore(Java.Time.Chrono.ChronoZonedDateTime arg0)
+        {
+            return IExecute<bool>("isBefore", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#isEqual(java.time.chrono.ChronoZonedDateTime%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool IsEqual(Java.Time.Chrono.ChronoZonedDateTime arg0)
+        {
+            return IExecute<bool>("isEqual", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#isSupported(java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
@@ -103,6 +206,15 @@ namespace Java.Time.Chrono
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see langword="int"/></returns>
         public int CompareTo(object arg0)
+        {
+            return IExecute<int>("compareTo", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#compareTo(java.time.chrono.ChronoZonedDateTime%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></param>
+        /// <returns><see langword="int"/></returns>
+        public int CompareTo(Java.Time.Chrono.ChronoZonedDateTime arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

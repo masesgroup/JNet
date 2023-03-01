@@ -46,10 +46,22 @@ namespace Java.Util
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html#%3Cinit%3E(java.util.Map%3C? extends K, ? extends V%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public HashMap(Java.Util.Map arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.HashMap"/> to <see cref="Java.Util.Map"/>
+        /// </summary>
+        public static implicit operator Java.Util.Map(Java.Util.HashMap t) => t.Cast<Java.Util.Map>();
         /// <summary>
         /// Converter from <see cref="Java.Util.HashMap"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>

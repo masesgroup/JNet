@@ -50,6 +50,13 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#getAcl()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#setAcl(java.util.List%3Cjava.nio.file.attribute.AclEntry%3E)"/>
+        /// </summary>
+        public Java.Util.List Acl
+        {
+            get { return IExecute<Java.Util.List>("getAcl"); } set { IExecute("setAcl", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#name()"/>
         /// </summary>
         

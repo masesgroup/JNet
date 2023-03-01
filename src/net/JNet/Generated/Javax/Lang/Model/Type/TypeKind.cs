@@ -130,6 +130,15 @@ namespace Javax.Lang.Model.Type
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Lang.Model.Type.TypeKind"/></returns>
+        public static Javax.Lang.Model.Type.TypeKind ValueOf(string arg0)
+        {
+            return SExecute<Javax.Lang.Model.Type.TypeKind>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#values()"/>
         /// </summary>
         

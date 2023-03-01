@@ -64,6 +64,15 @@ namespace Java.Lang.ModuleNs
         {
             return IExecute<Java.Lang.ModuleNs.ModuleDescriptor>("descriptor");
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReference.html#location()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional Location()
+        {
+            return IExecute<Java.Util.Optional>("location");
+        }
         
         #endregion
 

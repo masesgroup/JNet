@@ -74,6 +74,15 @@ namespace Java.Nio.File
             get { return IExecute<long>("getUsableSpace"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#getFileStoreAttributeView(java.lang.Class%3CV%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Java.Nio.File.Attribute.FileStoreAttributeView"/></returns>
+        public Java.Nio.File.Attribute.FileStoreAttributeView GetFileStoreAttributeView(Java.Lang.Class arg0)
+        {
+            return IExecute<Java.Nio.File.Attribute.FileStoreAttributeView>("getFileStoreAttributeView", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#isReadOnly()"/>
         /// </summary>
         
@@ -81,6 +90,15 @@ namespace Java.Nio.File
         public bool IsReadOnly()
         {
             return IExecute<bool>("isReadOnly");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#supportsFileAttributeView(java.lang.Class%3C? extends java.nio.file.attribute.FileAttributeView%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see langword="bool"/></returns>
+        public bool SupportsFileAttributeView(Java.Lang.Class arg0)
+        {
+            return IExecute<bool>("supportsFileAttributeView", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html#supportsFileAttributeView(java.lang.String)"/>

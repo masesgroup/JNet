@@ -45,7 +45,39 @@ namespace Javax.Management.Loading
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClass(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        public Java.Lang.Class LoadClass(string arg0)
+        {
+            return IExecute<Java.Lang.Class>("loadClass", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClassBefore(java.lang.ClassLoader,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        public Java.Lang.Class LoadClassBefore(Java.Lang.ClassLoader arg0, string arg1)
+        {
+            return IExecute<Java.Lang.Class>("loadClassBefore", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClassWithout(java.lang.ClassLoader,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        public Java.Lang.Class LoadClassWithout(Java.Lang.ClassLoader arg0, string arg1)
+        {
+            return IExecute<Java.Lang.Class>("loadClassWithout", arg0, arg1);
+        }
+        
         #endregion
 
         #region Nested classes

@@ -22,7 +22,7 @@ using System;
 namespace Java.Util.Function
 {
     /// <summary>
-    /// Listener for Java DoubleFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleFunction.html"/>. Extends <see cref="IJVMBridgeBase"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleFunction.html"/>. Extends <see cref="IJVMBridgeBase"/>
     /// </summary>
     /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
     public interface IDoubleFunction<TReturn> : IJVMBridgeBase
@@ -36,16 +36,22 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java DoubleFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
     /// </summary>
-    /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
-    public class DoubleFunction<TReturn> : JVMBridgeListener, IDoubleFunction<TReturn>
+    public abstract class DoubleFunction : JVMBridgeListener
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
         /// </summary>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetDoubleFunction";
+    }
 
+    /// <summary>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleFunction.html"/>. Extends <see cref="DoubleFunction"/>
+    /// </summary>
+    /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
+    public class DoubleFunction<TReturn> : DoubleFunction, IDoubleFunction<TReturn>
+    {
         Func<double, TReturn> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{Double, TReturn}"/> to be executed

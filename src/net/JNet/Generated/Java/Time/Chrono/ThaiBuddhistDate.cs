@@ -49,7 +49,45 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistDate.html#now()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Chrono.ThaiBuddhistDate"/></returns>
+        public static Java.Time.Chrono.ThaiBuddhistDate Now()
+        {
+            return SExecute<Java.Time.Chrono.ThaiBuddhistDate>("now");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistDate.html#now(java.time.Clock)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ThaiBuddhistDate"/></returns>
+        public static Java.Time.Chrono.ThaiBuddhistDate Now(Java.Time.Clock arg0)
+        {
+            return SExecute<Java.Time.Chrono.ThaiBuddhistDate>("now", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistDate.html#now(java.time.ZoneId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ThaiBuddhistDate"/></returns>
+        public static Java.Time.Chrono.ThaiBuddhistDate Now(Java.Time.ZoneId arg0)
+        {
+            return SExecute<Java.Time.Chrono.ThaiBuddhistDate>("now", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistDate.html#of(int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ThaiBuddhistDate"/></returns>
+        public static Java.Time.Chrono.ThaiBuddhistDate Of(int arg0, int arg1, int arg2)
+        {
+            return SExecute<Java.Time.Chrono.ThaiBuddhistDate>("of", arg0, arg1, arg2);
+        }
+        
         #endregion
 
         #region Instance methods

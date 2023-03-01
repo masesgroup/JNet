@@ -78,6 +78,24 @@ namespace Javax.Management
             return IExecute("invoke", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html#getAttributes(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Management.AttributeList"/></returns>
+        public Javax.Management.AttributeList GetAttributes(string[] arg0)
+        {
+            return IExecute<Javax.Management.AttributeList>("getAttributes", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html#setAttributes(javax.management.AttributeList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.AttributeList"/></param>
+        /// <returns><see cref="Javax.Management.AttributeList"/></returns>
+        public Javax.Management.AttributeList SetAttributes(Javax.Management.AttributeList arg0)
+        {
+            return IExecute<Javax.Management.AttributeList>("setAttributes", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html#setAttribute(javax.management.Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Attribute"/></param>

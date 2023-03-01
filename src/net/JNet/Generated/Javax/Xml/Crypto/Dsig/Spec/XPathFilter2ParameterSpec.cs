@@ -29,7 +29,15 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     public partial class XPathFilter2ParameterSpec
     {
         #region Constructors
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilter2ParameterSpec.html#%3Cinit%3E(java.util.List%3Cjavax.xml.crypto.dsig.spec.XPathType%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public XPathFilter2ParameterSpec(Java.Util.List arg0)
+            : base(arg0)
+        {
+        }
+        
         #endregion
 
         #region Class/Interface conversion operators
@@ -49,7 +57,14 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         #endregion
 
         #region Instance methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilter2ParameterSpec.html#getXPathList()"/> 
+        /// </summary>
+        public Java.Util.List XPathList
+        {
+            get { return IExecute<Java.Util.List>("getXPathList"); }
+        }
+        
         #endregion
 
         #region Nested classes

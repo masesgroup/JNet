@@ -199,6 +199,50 @@ namespace Javax.Management
             return IExecute("invoke", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#queryMBeans(javax.management.ObjectName,javax.management.QueryExp)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.QueryExp"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set QueryMBeans(Javax.Management.ObjectName arg0, Javax.Management.QueryExp arg1)
+        {
+            return IExecute<Java.Util.Set>("queryMBeans", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#queryNames(javax.management.ObjectName,javax.management.QueryExp)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.QueryExp"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set QueryNames(Javax.Management.ObjectName arg0, Javax.Management.QueryExp arg1)
+        {
+            return IExecute<Java.Util.Set>("queryNames", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#getAttributes(javax.management.ObjectName,java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Management.AttributeList"/></returns>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        public Javax.Management.AttributeList GetAttributes(Javax.Management.ObjectName arg0, string[] arg1)
+        {
+            return IExecute<Javax.Management.AttributeList>("getAttributes", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#setAttributes(javax.management.ObjectName,javax.management.AttributeList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.AttributeList"/></param>
+        /// <returns><see cref="Javax.Management.AttributeList"/></returns>
+        /// <exception cref="Javax.Management.InstanceNotFoundException"/>
+        /// <exception cref="Javax.Management.ReflectionException"/>
+        public Javax.Management.AttributeList SetAttributes(Javax.Management.ObjectName arg0, Javax.Management.AttributeList arg1)
+        {
+            return IExecute<Javax.Management.AttributeList>("setAttributes", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#getMBeanInfo(javax.management.ObjectName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>

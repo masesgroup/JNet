@@ -59,6 +59,60 @@ namespace Java.Util.Stream
             return IExecute<bool>("isParallel");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        public Java.Util.Spliterator Spliterator()
+        {
+            return IExecute<Java.Util.Spliterator>("spliterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        public Java.Util.Stream.BaseStream OnClose(Java.Lang.Runnable arg0)
+        {
+            return IExecute<Java.Util.Stream.BaseStream>("onClose", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        public Java.Util.Stream.BaseStream Parallel()
+        {
+            return IExecute<Java.Util.Stream.BaseStream>("parallel");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        public Java.Util.Stream.BaseStream Sequential()
+        {
+            return IExecute<Java.Util.Stream.BaseStream>("sequential");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        public Java.Util.Stream.BaseStream Unordered()
+        {
+            return IExecute<Java.Util.Stream.BaseStream>("unordered");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#close()"/>
         /// </summary>
         public void Close()

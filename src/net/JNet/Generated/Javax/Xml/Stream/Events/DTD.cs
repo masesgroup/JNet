@@ -57,6 +57,20 @@ namespace Javax.Xml.Stream.Events
             get { return IExecute<string>("getDocumentTypeDeclaration"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getEntities()"/> 
+        /// </summary>
+        public Java.Util.List Entities
+        {
+            get { return IExecute<Java.Util.List>("getEntities"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getNotations()"/> 
+        /// </summary>
+        public Java.Util.List Notations
+        {
+            get { return IExecute<Java.Util.List>("getNotations"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getProcessedDTD()"/> 
         /// </summary>
         public object ProcessedDTD

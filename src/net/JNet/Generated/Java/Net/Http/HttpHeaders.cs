@@ -41,10 +41,47 @@ namespace Java.Net.Http
         #endregion
 
         #region Static methods
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#of(java.util.Map%3Cjava.lang.String, java.util.List%3Cjava.lang.String%3E%3E,java.util.function.BiPredicate%3Cjava.lang.String, java.lang.String%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiPredicate"/></param>
+        /// <returns><see cref="Java.Net.Http.HttpHeaders"/></returns>
+        public static Java.Net.Http.HttpHeaders Of(Java.Util.Map arg0, Java.Util.Function.BiPredicate arg1)
+        {
+            return SExecute<Java.Net.Http.HttpHeaders>("of", arg0, arg1);
+        }
+        
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#allValues(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List AllValues(string arg0)
+        {
+            return IExecute<Java.Util.List>("allValues", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#map()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map Map()
+        {
+            return IExecute<Java.Util.Map>("map");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#firstValue(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional FirstValue(string arg0)
+        {
+            return IExecute<Java.Util.Optional>("firstValue", arg0);
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html#firstValueAsLong(java.lang.String)"/>
         /// </summary>

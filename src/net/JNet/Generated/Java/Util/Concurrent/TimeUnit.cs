@@ -70,6 +70,24 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#of(java.time.temporal.ChronoUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.ChronoUnit"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
+        public static Java.Util.Concurrent.TimeUnit Of(Java.Time.Temporal.ChronoUnit arg0)
+        {
+            return SExecute<Java.Util.Concurrent.TimeUnit>("of", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
+        public static Java.Util.Concurrent.TimeUnit ValueOf(string arg0)
+        {
+            return SExecute<Java.Util.Concurrent.TimeUnit>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#values()"/>
         /// </summary>
         
@@ -83,6 +101,15 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toChronoUnit()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Time.Temporal.ChronoUnit"/></returns>
+        public Java.Time.Temporal.ChronoUnit ToChronoUnit()
+        {
+            return IExecute<Java.Time.Temporal.ChronoUnit>("toChronoUnit");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#convert(java.time.Duration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Duration"/></param>
@@ -90,6 +117,16 @@ namespace Java.Util.Concurrent
         public long Convert(Java.Time.Duration arg0)
         {
             return IExecute<long>("convert", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#convert(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see langword="long"/></returns>
+        public long Convert(long arg0, Java.Util.Concurrent.TimeUnit arg1)
+        {
+            return IExecute<long>("convert", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toDays(long)"/>

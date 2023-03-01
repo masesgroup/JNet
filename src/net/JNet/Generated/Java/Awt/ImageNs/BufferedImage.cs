@@ -50,6 +50,17 @@ namespace Java.Awt.ImageNs
             : base(arg0, arg1, arg2)
         {
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#%3Cinit%3E(java.awt.image.ColorModel,java.awt.image.WritableRaster,boolean,java.util.Hashtable%3C?, ?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
+        public BufferedImage(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.WritableRaster arg1, bool arg2, Java.Util.Hashtable arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
         
         #endregion
 
@@ -220,6 +231,13 @@ namespace Java.Awt.ImageNs
         public Java.Awt.ImageNs.SampleModel SampleModel
         {
             get { return IExecute<Java.Awt.ImageNs.SampleModel>("getSampleModel"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getSources()"/> 
+        /// </summary>
+        public Java.Util.Vector Sources
+        {
+            get { return IExecute<Java.Util.Vector>("getSources"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getTileGridXOffset()"/> 

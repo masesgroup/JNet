@@ -33,7 +33,11 @@ namespace Javax.Xml.Stream
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Javax.Xml.Stream.XMLEventReader"/> to <see cref="Java.Util.Iterator"/>
+        /// </summary>
+        public static implicit operator Java.Util.Iterator(Javax.Xml.Stream.XMLEventReader t) => t.Cast<Java.Util.Iterator>();
+        
         #endregion
 
         #region Fields

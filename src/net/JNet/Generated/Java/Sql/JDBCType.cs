@@ -202,6 +202,24 @@ namespace Java.Sql
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#valueOf(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Sql.JDBCType"/></returns>
+        public static Java.Sql.JDBCType ValueOf(int arg0)
+        {
+            return SExecute<Java.Sql.JDBCType>("valueOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#valueOf(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.JDBCType"/></returns>
+        public static Java.Sql.JDBCType ValueOf(string arg0)
+        {
+            return SExecute<Java.Sql.JDBCType>("valueOf", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#values()"/>
         /// </summary>
         

@@ -30,6 +30,28 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.Class%3C?%3E,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <exception cref="Java.Beans.IntrospectionException"/>
+        public PropertyDescriptor(string arg0, Java.Lang.Class arg1, string arg2, string arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <exception cref="Java.Beans.IntrospectionException"/>
+        public PropertyDescriptor(string arg0, Java.Lang.Class arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -56,6 +78,20 @@ namespace Java.Beans
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#getPropertyEditorClass()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setPropertyEditorClass(java.lang.Class%3C?%3E)"/>
+        /// </summary>
+        public Java.Lang.Class PropertyEditorClass
+        {
+            get { return IExecute<Java.Lang.Class>("getPropertyEditorClass"); } set { IExecute("setPropertyEditorClass", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#getPropertyType()"/> 
+        /// </summary>
+        public Java.Lang.Class PropertyType
+        {
+            get { return IExecute<Java.Lang.Class>("getPropertyType"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#getReadMethod()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setReadMethod(java.lang.reflect.Method)"/>
         /// </summary>

@@ -54,6 +54,17 @@ namespace Java.Security.Cert
             return SExecute<Java.Security.Cert.CertificateFactory>("getInstance", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertificateFactory"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
+        public static Java.Security.Cert.CertificateFactory GetInstance(string arg0, Java.Security.Provider arg1)
+        {
+            return SExecute<Java.Security.Cert.CertificateFactory>("getInstance", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -67,6 +78,20 @@ namespace Java.Security.Cert
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getCertPathEncodings()"/> 
+        /// </summary>
+        public Java.Util.Iterator CertPathEncodings
+        {
+            get { return IExecute<Java.Util.Iterator>("getCertPathEncodings"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getProvider()"/> 
+        /// </summary>
+        public Java.Security.Provider Provider
+        {
+            get { return IExecute<Java.Security.Provider>("getProvider"); }
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getType()"/> 
         /// </summary>
@@ -106,6 +131,16 @@ namespace Java.Security.Cert
             return IExecute<Java.Security.Cert.CertPath>("generateCertPath", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertPath(java.util.List%3C? extends java.security.cert.Certificate%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <returns><see cref="Java.Security.Cert.CertPath"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
+        public Java.Security.Cert.CertPath GenerateCertPath(Java.Util.List arg0)
+        {
+            return IExecute<Java.Security.Cert.CertPath>("generateCertPath", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCRL(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
@@ -114,6 +149,26 @@ namespace Java.Security.Cert
         public Java.Security.Cert.CRL GenerateCRL(Java.Io.InputStream arg0)
         {
             return IExecute<Java.Security.Cert.CRL>("generateCRL", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertificates(java.io.InputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
+        public Java.Util.Collection GenerateCertificates(Java.Io.InputStream arg0)
+        {
+            return IExecute<Java.Util.Collection>("generateCertificates", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCRLs(java.io.InputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Security.Cert.CRLException"/>
+        public Java.Util.Collection GenerateCRLs(Java.Io.InputStream arg0)
+        {
+            return IExecute<Java.Util.Collection>("generateCRLs", arg0);
         }
         
         #endregion

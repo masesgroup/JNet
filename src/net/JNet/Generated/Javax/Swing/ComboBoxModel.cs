@@ -33,7 +33,11 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        /// <summary>
+        /// Converter from <see cref="Javax.Swing.ComboBoxModel"/> to <see cref="Javax.Swing.ListModel"/>
+        /// </summary>
+        public static implicit operator Javax.Swing.ListModel(Javax.Swing.ComboBoxModel t) => t.Cast<Javax.Swing.ListModel>();
+        
         #endregion
 
         #region Fields

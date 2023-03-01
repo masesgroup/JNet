@@ -181,6 +181,18 @@ namespace Javax.Xml.Stream
             return IExecute<Javax.Xml.Stream.Events.EndDocument>("createEndDocument");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createEndElement(java.lang.String,java.lang.String,java.lang.String,java.util.Iterator%3C? extends javax.xml.stream.events.Namespace%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Iterator"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.Events.EndElement"/></returns>
+        public Javax.Xml.Stream.Events.EndElement CreateEndElement(string arg0, string arg1, string arg2, Java.Util.Iterator arg3)
+        {
+            return IExecute<Javax.Xml.Stream.Events.EndElement>("createEndElement", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createEndElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -190,6 +202,16 @@ namespace Javax.Xml.Stream
         public Javax.Xml.Stream.Events.EndElement CreateEndElement(string arg0, string arg1, string arg2)
         {
             return IExecute<Javax.Xml.Stream.Events.EndElement>("createEndElement", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createEndElement(javax.xml.namespace.QName,java.util.Iterator%3C? extends javax.xml.stream.events.Namespace%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Iterator"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.Events.EndElement"/></returns>
+        public Javax.Xml.Stream.Events.EndElement CreateEndElement(Javax.Xml.Namespace.QName arg0, Java.Util.Iterator arg1)
+        {
+            return IExecute<Javax.Xml.Stream.Events.EndElement>("createEndElement", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createEntityReference(java.lang.String,javax.xml.stream.events.EntityDeclaration)"/>
@@ -270,6 +292,33 @@ namespace Javax.Xml.Stream
             return IExecute<Javax.Xml.Stream.Events.StartDocument>("createStartDocument", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createStartElement(java.lang.String,java.lang.String,java.lang.String,java.util.Iterator%3C? extends javax.xml.stream.events.Attribute%3E,java.util.Iterator%3C? extends javax.xml.stream.events.Namespace%3E,javax.xml.namespace.NamespaceContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Iterator"/></param>
+        /// <param name="arg4"><see cref="Java.Util.Iterator"/></param>
+        /// <param name="arg5"><see cref="Javax.Xml.Namespace.NamespaceContext"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.Events.StartElement"/></returns>
+        public Javax.Xml.Stream.Events.StartElement CreateStartElement(string arg0, string arg1, string arg2, Java.Util.Iterator arg3, Java.Util.Iterator arg4, Javax.Xml.Namespace.NamespaceContext arg5)
+        {
+            return IExecute<Javax.Xml.Stream.Events.StartElement>("createStartElement", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createStartElement(java.lang.String,java.lang.String,java.lang.String,java.util.Iterator%3C? extends javax.xml.stream.events.Attribute%3E,java.util.Iterator%3C? extends javax.xml.stream.events.Namespace%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Iterator"/></param>
+        /// <param name="arg4"><see cref="Java.Util.Iterator"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.Events.StartElement"/></returns>
+        public Javax.Xml.Stream.Events.StartElement CreateStartElement(string arg0, string arg1, string arg2, Java.Util.Iterator arg3, Java.Util.Iterator arg4)
+        {
+            return IExecute<Javax.Xml.Stream.Events.StartElement>("createStartElement", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createStartElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -277,6 +326,17 @@ namespace Javax.Xml.Stream
         /// <param name="arg2"><see cref="string"/></param>
         /// <returns><see cref="Javax.Xml.Stream.Events.StartElement"/></returns>
         public Javax.Xml.Stream.Events.StartElement CreateStartElement(string arg0, string arg1, string arg2)
+        {
+            return IExecute<Javax.Xml.Stream.Events.StartElement>("createStartElement", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html#createStartElement(javax.xml.namespace.QName,java.util.Iterator%3C? extends javax.xml.stream.events.Attribute%3E,java.util.Iterator%3C? extends javax.xml.stream.events.Namespace%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Iterator"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Iterator"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.Events.StartElement"/></returns>
+        public Javax.Xml.Stream.Events.StartElement CreateStartElement(Javax.Xml.Namespace.QName arg0, Java.Util.Iterator arg1, Java.Util.Iterator arg2)
         {
             return IExecute<Javax.Xml.Stream.Events.StartElement>("createStartElement", arg0, arg1, arg2);
         }

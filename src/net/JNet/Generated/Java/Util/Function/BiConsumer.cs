@@ -54,6 +54,15 @@ namespace Java.Util.Function
         {
             IExecute("accept", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer%3C? super T, ? super U%3E)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
+        public Java.Util.Function.BiConsumer AndThen(Java.Util.Function.BiConsumer arg0)
+        {
+            return IExecute<Java.Util.Function.BiConsumer>("andThen", arg0);
+        }
         
         #endregion
 

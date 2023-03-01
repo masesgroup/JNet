@@ -236,6 +236,17 @@ namespace Java.Nio.Channels
         {
             return IExecute<Java.Nio.Channels.NetworkChannel>("bind", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.Channels.NetworkChannel SetOption(Java.Net.SocketOption arg0, object arg1)
+        {
+            return IExecute<Java.Nio.Channels.NetworkChannel>("setOption", arg0, arg1);
+        }
         
         #endregion
 

@@ -110,6 +110,20 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.Component>("getFocusOwner"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getIconImages()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setIconImages(java.util.List%3C? extends java.awt.Image%3E)"/>
+        /// </summary>
+        public Java.Util.List IconImages
+        {
+            get { return IExecute<Java.Util.List>("getIconImages"); } set { IExecute("setIconImages", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getModalExclusionType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setModalExclusionType(java.awt.Dialog$ModalExclusionType)"/>
+        /// </summary>
+        public Java.Awt.Dialog.ModalExclusionType ModalExclusionType
+        {
+            get { return IExecute<Java.Awt.Dialog.ModalExclusionType>("getModalExclusionType"); } set { IExecute("setModalExclusionType", value); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getMostRecentFocusOwner()"/> 
         /// </summary>
         public Java.Awt.Component MostRecentFocusOwner
@@ -245,6 +259,15 @@ namespace Java.Awt
             IExecute("setAlwaysOnTop", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getType()"/>
+        /// </summary>
+        
+        /// <returns><see cref="Java.Awt.Window.Type"/></returns>
+        public Java.Awt.Window.Type GetType()
+        {
+            return IExecute<Java.Awt.Window.Type>("getType");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#addWindowFocusListener(java.awt.event.WindowFocusListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowFocusListener"/></param>
@@ -357,6 +380,14 @@ namespace Java.Awt
             IExecute("setLocationRelativeTo", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setType(java.awt.Window$Type)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Window.Type"/></param>
+        public void SetType(Java.Awt.Window.Type arg0)
+        {
+            IExecute("setType", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#toBack()"/>
         /// </summary>
         public void ToBack()
@@ -402,6 +433,15 @@ namespace Java.Awt
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="string"/></param>
+            /// <returns><see cref="Java.Awt.Window.Type"/></returns>
+            public static Java.Awt.Window.Type ValueOf(string arg0)
+            {
+                return SExecute<Java.Awt.Window.Type>("valueOf", arg0);
+            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#values()"/>
             /// </summary>
