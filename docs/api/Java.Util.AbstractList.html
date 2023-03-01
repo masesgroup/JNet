@@ -106,16 +106,31 @@
       <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_Size">AbstractCollection.Size()</a>
     </div>
     <div>
+      <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_Iterator">AbstractCollection.Iterator()</a>
+    </div>
+    <div>
       <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_Add_System_Object_">AbstractCollection.Add(Object)</a>
     </div>
     <div>
+      <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_AddAll_Java_Util_Collection_">AbstractCollection.AddAll(Collection)</a>
+    </div>
+    <div>
       <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_Contains_System_Object_">AbstractCollection.Contains(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_ContainsAll_Java_Util_Collection_">AbstractCollection.ContainsAll(Collection)</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_IsEmpty">AbstractCollection.IsEmpty()</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_Remove_System_Object_">AbstractCollection.Remove(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_RemoveAll_Java_Util_Collection_">AbstractCollection.RemoveAll(Collection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_RetainAll_Java_Util_Collection_">AbstractCollection.RetainAll(Collection)</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.AbstractCollection.html#Java_Util_AbstractCollection_ToArray">AbstractCollection.ToArray()</a>
@@ -547,7 +562,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_AbstractList_Add_System_Int32_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.AbstractList.Add(System.Int32%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L99">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L141">View Source</a>
   </span>
   <a id="Java_Util_AbstractList_Add_" data-uid="Java.Util.AbstractList.Add*"></a>
   <h4 id="Java_Util_AbstractList_Add_System_Int32_System_Object_" data-uid="Java.Util.AbstractList.Add(System.Int32,System.Object)">Add(Int32, Object)</h4>
@@ -584,10 +599,66 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_AbstractList_AddAll_System_Int32_Java_Util_Collection_.md&amp;value=---%0Auid%3A%20Java.Util.AbstractList.AddAll(System.Int32%2CJava.Util.Collection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L67">View Source</a>
+  </span>
+  <a id="Java_Util_AbstractList_AddAll_" data-uid="Java.Util.AbstractList.AddAll*"></a>
+  <h4 id="Java_Util_AbstractList_AddAll_System_Int32_Java_Util_Collection_" data-uid="Java.Util.AbstractList.AddAll(System.Int32,Java.Util.Collection)">AddAll(Int32, Collection)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#addAll(int,java.util.Collection%3C? extends E%3E)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#addAll(int,java.util.Collection%3C? extends E%3E)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddAll(int arg0, Collection arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Collection.html">Collection</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><span class="xref">langword_csharp_bool</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_AbstractList_Get_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.AbstractList.Get(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L53">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L57">View Source</a>
   </span>
   <a id="Java_Util_AbstractList_Get_" data-uid="Java.Util.AbstractList.Get*"></a>
   <h4 id="Java_Util_AbstractList_Get_System_Int32_" data-uid="Java.Util.AbstractList.Get(System.Int32)">Get(Int32)</h4>
@@ -637,7 +708,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_AbstractList_IndexOf_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.AbstractList.IndexOf(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L81">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L95">View Source</a>
   </span>
   <a id="Java_Util_AbstractList_IndexOf_" data-uid="Java.Util.AbstractList.IndexOf*"></a>
   <h4 id="Java_Util_AbstractList_IndexOf_System_Object_" data-uid="Java.Util.AbstractList.IndexOf(System.Object)">IndexOf(Object)</h4>
@@ -687,7 +758,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_AbstractList_LastIndexOf_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.AbstractList.LastIndexOf(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L90">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L104">View Source</a>
   </span>
   <a id="Java_Util_AbstractList_LastIndexOf_" data-uid="Java.Util.AbstractList.LastIndexOf*"></a>
   <h4 id="Java_Util_AbstractList_LastIndexOf_System_Object_" data-uid="Java.Util.AbstractList.LastIndexOf(System.Object)">LastIndexOf(Object)</h4>
@@ -734,10 +805,92 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_AbstractList_ListIterator.md&amp;value=---%0Auid%3A%20Java.Util.AbstractList.ListIterator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L123">View Source</a>
+  </span>
+  <a id="Java_Util_AbstractList_ListIterator_" data-uid="Java.Util.AbstractList.ListIterator*"></a>
+  <h4 id="Java_Util_AbstractList_ListIterator" data-uid="Java.Util.AbstractList.ListIterator">ListIterator()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListIterator ListIterator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.ListIterator.html">ListIterator</a></td>
+        <td><p><a class="xref" href="Java.Util.ListIterator.html">ListIterator</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_AbstractList_ListIterator_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.AbstractList.ListIterator(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L132">View Source</a>
+  </span>
+  <a id="Java_Util_AbstractList_ListIterator_" data-uid="Java.Util.AbstractList.ListIterator*"></a>
+  <h4 id="Java_Util_AbstractList_ListIterator_System_Int32_" data-uid="Java.Util.AbstractList.ListIterator(System.Int32)">ListIterator(Int32)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#listIterator(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListIterator ListIterator(int arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.ListIterator.html">ListIterator</a></td>
+        <td><p><a class="xref" href="Java.Util.ListIterator.html">ListIterator</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_AbstractList_Remove_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.AbstractList.Remove(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L62">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L76">View Source</a>
   </span>
   <a id="Java_Util_AbstractList_Remove_" data-uid="Java.Util.AbstractList.Remove*"></a>
   <h4 id="Java_Util_AbstractList_Remove_System_Int32_" data-uid="Java.Util.AbstractList.Remove(System.Int32)">Remove(Int32)</h4>
@@ -787,7 +940,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_AbstractList_Set_System_Int32_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.AbstractList.Set(System.Int32%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L72">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L86">View Source</a>
   </span>
   <a id="Java_Util_AbstractList_Set_" data-uid="Java.Util.AbstractList.Set*"></a>
   <h4 id="Java_Util_AbstractList_Set_System_Int32_System_Object_" data-uid="Java.Util.AbstractList.Set(System.Int32,System.Object)">Set(Int32, Object)</h4>
@@ -835,6 +988,112 @@
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><p><span class="xref">langword_csharp_object</span></p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_AbstractList_SubListMethod_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.AbstractList.SubListMethod(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L114">View Source</a>
+  </span>
+  <a id="Java_Util_AbstractList_SubListMethod_" data-uid="Java.Util.AbstractList.SubListMethod*"></a>
+  <h4 id="Java_Util_AbstractList_SubListMethod_System_Int32_System_Int32_" data-uid="Java.Util.AbstractList.SubListMethod(System.Int32,System.Int32)">SubListMethod(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#subList(int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractList.html#subList(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List SubListMethod(int arg0, int arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_AbstractList_op_Implicit_Java_Util_AbstractList__Java_Util_List.md&amp;value=---%0Auid%3A%20Java.Util.AbstractList.op_Implicit(Java.Util.AbstractList)~Java.Util.List%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractList.cs/#L39">View Source</a>
+  </span>
+  <a id="Java_Util_AbstractList_op_Implicit_" data-uid="Java.Util.AbstractList.op_Implicit*"></a>
+  <h4 id="Java_Util_AbstractList_op_Implicit_Java_Util_AbstractList__Java_Util_List" data-uid="Java.Util.AbstractList.op_Implicit(Java.Util.AbstractList)~Java.Util.List">Implicit(AbstractList to List)</h4>
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.AbstractList.html">AbstractList</a> to <a class="xref" href="Java.Util.List.html">List</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator List(AbstractList t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.AbstractList.html">AbstractList</a></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.List.html">List</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

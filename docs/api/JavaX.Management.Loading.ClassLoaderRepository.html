@@ -519,16 +519,16 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Loading_ClassLoaderRepository_LoadClass_System_String_.md&amp;value=---%0Auid%3A%20Javax.Management.Loading.ClassLoaderRepository.LoadClass(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Javax/Management/Loading/ClassLoaderRepository.cs/#L30">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Loading/ClassLoaderRepository.cs/#L54">View Source</a>
   </span>
   <a id="Javax_Management_Loading_ClassLoaderRepository_LoadClass_" data-uid="Javax.Management.Loading.ClassLoaderRepository.LoadClass*"></a>
   <h4 id="Javax_Management_Loading_ClassLoaderRepository_LoadClass_System_String_" data-uid="Javax.Management.Loading.ClassLoaderRepository.LoadClass(System.String)">LoadClass(String)</h4>
-  <div class="markdown level1 summary"><p>Load the given class name through the list of class loaders.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClass(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClass(java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Class LoadClass(string className)</code></pre>
+    <pre><code class="lang-csharp hljs">public Class LoadClass(string arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -542,8 +542,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">className</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -558,6 +559,22 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Lang.Class.html">Class</a></td>
+        <td><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ClassNotFoundException.html">ClassNotFoundException</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -567,16 +584,16 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Loading_ClassLoaderRepository_LoadClassBefore_Java_Lang_ClassLoader_System_String_.md&amp;value=---%0Auid%3A%20Javax.Management.Loading.ClassLoaderRepository.LoadClassBefore(Java.Lang.ClassLoader%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Javax/Management/Loading/ClassLoaderRepository.cs/#L34">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Loading/ClassLoaderRepository.cs/#L65">View Source</a>
   </span>
   <a id="Javax_Management_Loading_ClassLoaderRepository_LoadClassBefore_" data-uid="Javax.Management.Loading.ClassLoaderRepository.LoadClassBefore*"></a>
   <h4 id="Javax_Management_Loading_ClassLoaderRepository_LoadClassBefore_Java_Lang_ClassLoader_System_String_" data-uid="Javax.Management.Loading.ClassLoaderRepository.LoadClassBefore(Java.Lang.ClassLoader,System.String)">LoadClassBefore(ClassLoader, String)</h4>
-  <div class="markdown level1 summary"><p>Load the given class name through the list of class loaders, stopping at the given one.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClassBefore(java.lang.ClassLoader,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClassBefore(java.lang.ClassLoader,java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Class LoadClassBefore(ClassLoader stop, string className)</code></pre>
+    <pre><code class="lang-csharp hljs">public Class LoadClassBefore(ClassLoader arg0, string arg1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -590,13 +607,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></td>
-        <td><span class="parametername">stop</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">className</span></td>
-        <td></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -611,6 +630,22 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Lang.Class.html">Class</a></td>
+        <td><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ClassNotFoundException.html">ClassNotFoundException</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -620,16 +655,16 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Loading_ClassLoaderRepository_LoadClassWithout_Java_Lang_ClassLoader_System_String_.md&amp;value=---%0Auid%3A%20Javax.Management.Loading.ClassLoaderRepository.LoadClassWithout(Java.Lang.ClassLoader%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Javax/Management/Loading/ClassLoaderRepository.cs/#L38">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Loading/ClassLoaderRepository.cs/#L76">View Source</a>
   </span>
   <a id="Javax_Management_Loading_ClassLoaderRepository_LoadClassWithout_" data-uid="Javax.Management.Loading.ClassLoaderRepository.LoadClassWithout*"></a>
   <h4 id="Javax_Management_Loading_ClassLoaderRepository_LoadClassWithout_Java_Lang_ClassLoader_System_String_" data-uid="Javax.Management.Loading.ClassLoaderRepository.LoadClassWithout(Java.Lang.ClassLoader,System.String)">LoadClassWithout(ClassLoader, String)</h4>
-  <div class="markdown level1 summary"><p>Load the given class name through the list of class loaders, excluding the given one.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClassWithout(java.lang.ClassLoader,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClassWithout(java.lang.ClassLoader,java.lang.String)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Class LoadClassWithout(ClassLoader exclude, string className)</code></pre>
+    <pre><code class="lang-csharp hljs">public Class LoadClassWithout(ClassLoader arg0, string arg1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -643,13 +678,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></td>
-        <td><span class="parametername">exclude</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">className</span></td>
-        <td></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -664,6 +701,22 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Lang.Class.html">Class</a></td>
+        <td><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ClassNotFoundException.html">ClassNotFoundException</a></td>
         <td></td>
       </tr>
     </tbody>

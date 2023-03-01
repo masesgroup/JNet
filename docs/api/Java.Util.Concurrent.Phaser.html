@@ -959,7 +959,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_Phaser_AwaitAdvanceInterruptibly_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.Phaser.AwaitAdvanceInterruptibly(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Phaser.cs/#L166">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Phaser.cs/#L179">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_Phaser_AwaitAdvanceInterruptibly_" data-uid="Java.Util.Concurrent.Phaser.AwaitAdvanceInterruptibly*"></a>
   <h4 id="Java_Util_Concurrent_Phaser_AwaitAdvanceInterruptibly_System_Int32_" data-uid="Java.Util.Concurrent.Phaser.AwaitAdvanceInterruptibly(System.Int32)">AwaitAdvanceInterruptibly(Int32)</h4>
@@ -1021,10 +1021,91 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_Phaser_AwaitAdvanceInterruptibly_System_Int32_System_Int64_Java_Util_Concurrent_TimeUnit_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.Phaser.AwaitAdvanceInterruptibly(System.Int32%2CSystem.Int64%2CJava.Util.Concurrent.TimeUnit)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Phaser.cs/#L169">View Source</a>
+  </span>
+  <a id="Java_Util_Concurrent_Phaser_AwaitAdvanceInterruptibly_" data-uid="Java.Util.Concurrent.Phaser.AwaitAdvanceInterruptibly*"></a>
+  <h4 id="Java_Util_Concurrent_Phaser_AwaitAdvanceInterruptibly_System_Int32_System_Int64_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.Phaser.AwaitAdvanceInterruptibly(System.Int32,System.Int64,Java.Util.Concurrent.TimeUnit)">AwaitAdvanceInterruptibly(Int32, Int64, TimeUnit)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int,long,java.util.concurrent.TimeUnit)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int,long,java.util.concurrent.TimeUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AwaitAdvanceInterruptibly(int arg0, long arg1, TimeUnit arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.TimeUnit.html">TimeUnit</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p><span class="xref">langword_csharp_int</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.InterruptedException.html">InterruptedException</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Concurrent.TimeoutException.html">TimeoutException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_Phaser_BulkRegister_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.Phaser.BulkRegister(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Phaser.cs/#L175">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Phaser.cs/#L188">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_Phaser_BulkRegister_" data-uid="Java.Util.Concurrent.Phaser.BulkRegister*"></a>
   <h4 id="Java_Util_Concurrent_Phaser_BulkRegister_System_Int32_" data-uid="Java.Util.Concurrent.Phaser.BulkRegister(System.Int32)">BulkRegister(Int32)</h4>
@@ -1074,7 +1155,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_Phaser_ForceTermination.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.Phaser.ForceTermination%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Phaser.cs/#L191">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Phaser.cs/#L204">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_Phaser_ForceTermination_" data-uid="Java.Util.Concurrent.Phaser.ForceTermination*"></a>
   <h4 id="Java_Util_Concurrent_Phaser_ForceTermination" data-uid="Java.Util.Concurrent.Phaser.ForceTermination">ForceTermination()</h4>
@@ -1122,7 +1203,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_Phaser_Register.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.Phaser.Register%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Phaser.cs/#L184">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Phaser.cs/#L197">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_Phaser_Register_" data-uid="Java.Util.Concurrent.Phaser.Register*"></a>
   <h4 id="Java_Util_Concurrent_Phaser_Register" data-uid="Java.Util.Concurrent.Phaser.Register">Register()</h4>
