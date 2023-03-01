@@ -34,15 +34,15 @@ namespace Java.Util
         /// <summary>
         /// Converter from <see cref="ArrayList{E}"/> to <see cref="Iterable{E}"/>
         /// </summary>
-        public static implicit operator Iterable<E>(ArrayList<E> array) { return Wraps<Iterable<E>>(array.Instance); }
+        public static implicit operator Iterable<E>(ArrayList<E> array) => array.Cast<Iterable<E>>();
         /// <summary>
         /// Converter from <see cref="ArrayList{E}"/> to <see cref="Collection{E}"/>
         /// </summary>
-        public static implicit operator Collection<E>(ArrayList<E> array) { return Wraps<Collection<E>>(array.Instance); }
+        public static implicit operator Collection<E>(ArrayList<E> array) => array.Cast<Collection<E>>();
         /// <summary>
         /// Converter from <see cref="ArrayList{E}"/> to <see cref="List{E}"/>
         /// </summary>
-        public static implicit operator List<E>(ArrayList<E> array) { return Wraps<List<E>>(array.Instance); }
+        public static implicit operator List<E>(ArrayList<E> array) => array.Cast<List<E>>();
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
