@@ -15,8 +15,9 @@
 *
 *  Refer to LICENSE for more information.
 */
-#if !JNETREFLECTOR
+
 using Java.Lang;
+#if !JNETREFLECTOR
 using Java.Util.Function;
 #endif
 using MASES.JCOBridge.C2JBridge;

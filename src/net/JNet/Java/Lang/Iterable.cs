@@ -33,11 +33,13 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         /// </summary>
         public override bool IsInterface => true;
+#if !JNETREFLECTOR
         /// <summary>
         /// Returns an iterator over elements of type <see langref="object"/>
         /// </summary>
         /// <returns>An <see cref="Util.Iterator{T}"/></returns>
         public Util.Iterator Iterator => IExecute<Util.Iterator>("iterator");
+#endif
     }
 
     /// <summary>
@@ -54,10 +56,12 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
         /// </summary>
         public override bool IsInterface => true;
+#if !JNETREFLECTOR
         /// <summary>
         /// Returns an iterator over elements of type <typeparamref name="T"/>.
         /// </summary>
         /// <returns>An <see cref="Util.Iterator{T}"/></returns>
         public Util.Iterator<T> Iterator => IExecute<Util.Iterator<T>>("iterator");
+#endif
     }
 }
